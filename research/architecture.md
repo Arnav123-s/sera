@@ -1,6 +1,6 @@
 # SERA architecture, version 0.2
 
-I implement the handbook's recommended first integration: R1 with a separated R2 program-learning path. These components share an executable solver and admission lifecycle. The physics atlas constrains representations, reductions and mathematical claims; its 154 concepts are not 154 implemented cognitive functions. R3–R8 are separate future architectures.
+I implement the SERA Architecture Handbook's recommended first integration: R1 with a separated R2 program-learning path. These components share an executable solver and admission lifecycle. Quantum Theory Foundations constrains representations, reductions and mathematical claims; its 154 concepts are not 154 implemented cognitive functions. R3–R8 are separate future architectures. The [reference catalog](reference-catalog.json) preserves the source identities behind these working titles.
 
 The [original-source audit](../reports/original-source-alignment-audit.md) distinguishes the working narrow integration from missing full-blueprint contracts. Version 0.2.1 repairs admission and search guards; the recorded learning study used 0.2.0.
 

@@ -4,17 +4,18 @@
 
 I am developing **SERA, State-Space Engine for Reasoning and Adaptation**, as an independent research project. I want to connect persistent state, precise associative binding, executable skills and measured continual learning in one experimental system.
 
-My target learner should acquire unfamiliar tasks, test hypotheses, preserve old capabilities, acquire reusable procedures, and eventually improve how it learns. I start with R1 and a separate R2 program-acquisition path. My central question is whether complementary state mechanisms and verified programs improve transfer and learning efficiency.
+My target learner should acquire unfamiliar tasks, test hypotheses, preserve old capabilities, acquire reusable procedures, and eventually improve how it learns. After a failure, the system should acquire the missing capability, retain it and improve how it handles the next learning problem. I start with R1 and a separate R2 program-acquisition path. My central question is whether complementary state mechanisms and verified programs improve transfer and learning efficiency. The [supplemental project context](project-context.md) clarifies how this objective sets the implementation priorities.
 
 ## Research inputs
 
 | Source | Scope | Treatment |
 |---|---|---|
-| Quantum_AGI_Research_Package.zip | 82-page handbook, editable manuscript, 8 system blueprints, 12 prototype cores, historical results, graph, 36,900 schematic configurations | Extracted with path and size checks; code inspected as reference; no supplied scripts or checkpoints executed |
-| Quantum_Physics_Deep_Knowledge_Atlas.pdf | 86 pages, 154 concepts, mathematical definitions, derivations, limits and source anchors | Full text extracted; architecture-relevant state, composition, dynamics, measurement and computation sections examined |
-| Quantum_Physics_Layered_Maps.pdf | 14 maps distinguishing representation, evolution, measurement, approximations and evidence | Text extracted; state-composition and measurement/open-system diagrams visually inspected |
+| SERA Research Archive | SERA Architecture Handbook in PDF, Markdown and HTML; 8 system blueprints, 12 prototype cores, historical results, graph, 36,900 schematic configurations | Extracted with path and size checks; code inspected as reference; no supplied scripts or checkpoints executed |
+| Quantum Theory Foundations | 86 pages, 154 concepts, mathematical definitions, derivations, limits and source anchors | Full text extracted; architecture-relevant state, composition, dynamics, measurement and computation sections examined |
+| Quantum State and Process Maps | 14 maps distinguishing representation, evolution, measurement, approximations and evidence | Text extracted; state-composition and measurement/open-system diagrams visually inspected |
+| SERA Project Context | Supplemental rationale emphasizing failure response, informative experiments, reusable computation and improvement of the learning procedure | Read in full; priorities reconciled with the handbook and current audit; original experiment claims kept separate from SERA measurements |
 
-Source sizes and SHA-256 digests are in `source_manifest.json`. The packaged handbook, PDF and graph hashes matched the supplied release manifest. The registry contains 36,900 entries marked as schematic. `intake_audit.json` records the distinction between an integrity check and independent experimental reproduction.
+The [reference catalog](reference-catalog.json) maps these working names to their original source identities. Source sizes and SHA-256 digests remain in `source_manifest.json`. The packaged handbook, PDF and graph hashes matched the supplied release manifest. The registry contains 36,900 entries marked as schematic. `intake_audit.json` records the distinction between an integrity check and independent experimental reproduction.
 
 ## Evidence policy
 

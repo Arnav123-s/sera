@@ -1,6 +1,6 @@
 # SERA architecture alignment audit
 
-I audited commit `c7cb959da73a94a11e9a2d470577ab81e899c127` against the architecture handbook in the original research package, its R1/R2 diagrams, and the relevant distinctions in the physics atlas and layered maps. I inspected the executable paths as well as the documentation and tests. I also re-evaluated the saved integrated-run checkpoint with and without its verified program.
+I audited commit `c7cb959da73a94a11e9a2d470577ab81e899c127` against the SERA Architecture Handbook in the original research archive, its R1/R2 diagrams, and the relevant distinctions in Quantum Theory Foundations and Quantum State and Process Maps. I inspected the executable paths as well as the documentation and tests. I also re-evaluated the saved integrated-run checkpoint with and without its verified program.
 
 **Verdict: SERA 0.1 is a working mechanism study and a partial first integration. It follows the recommended research direction, but it does not implement the complete proposed architecture. Several missing connections are architectural gaps, not merely smaller tensor dimensions.**
 
@@ -14,7 +14,7 @@ The atlas distinguishes representation, reduction, approximation and experimenta
 
 ## Requirement-to-code comparison
 
-Manuscript line references below refer to `Quantum_AGI_Architecture_Handbook.md` inside the original ZIP. The original inputs are identified by SHA-256 in [the source manifest](../research/source_manifest.json).
+Manuscript line references below refer to the SERA Architecture Handbook, available under the working filename `sera-architecture-handbook.md`. The [reference catalog](../research/reference-catalog.json) maps that name to its original ZIP member. The original inputs are identified by SHA-256 in [the source manifest](../research/source_manifest.json).
 
 | Reference requirement | What I found in SERA | Assessment |
 |---|---|---|

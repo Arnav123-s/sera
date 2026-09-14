@@ -4,13 +4,19 @@ My long-term target is a learner that can acquire unfamiliar capabilities, trans
 
 ## Completed first foundation
 
-From-scratch neural training; selective binding and temporal tasks; interchangeable classical and quantum-inspired cores; stateful sessions and serialization; finite action prediction and planning; active program acquisition; continual-learning controls; fresh paired promotion; evidence ledger; rollback; repeatable local experiments and cross-platform CI configuration.
+From-scratch neural training; selective binding and temporal tasks; interchangeable classical and quantum-inspired cores; legacy symbolic-session serialization; finite action prediction and planning; active program acquisition; continual-learning controls; fresh paired promotion; evidence ledger; rollback; repeatable local experiments and cross-platform CI configuration. Live world-session ownership and save/resume remain open.
 
 ## Connected foundation implemented in 0.2
 
 Persistent executable versions; learned recurrent observation/reward prediction; planning through that same model; actual feedback admitted into replay; controlled instruments guiding typed program search; verified trace learning; a learned intervention-value policy; independent meta-test family; successive learning rounds and behavioral rollback. The handbook-sized low-rank state preset is implemented and tested separately from compact training. See the [checklist](implementation-checklist.md) and [connected study](../reports/connected-study.md) for evidence and negative results.
 
-## Next experiment: isolate the hybrid's benefit
+## Immediate architecture priorities
+
+The [supplemental project context](project-context.md) reinforces the first integration's purpose: acquire a useful capability after failure, preserve it and improve the learning procedure. I prioritize the [open source-audit contracts](../reports/original-source-alignment-audit.md#open-acceptance-checklist): validated live-session persistence; acquired skills as primitives in subsequent program searches; history-preserving R2 event branches with matched classical controls; and failure-aware intervention selection using prior attempts and remaining budget. Each needs its own behavioral and learning evidence before it is marked complete.
+
+The mechanism and capability experiments below support that objective. Adding more quantum-inspired branches is justified by controlled results and a specific unresolved failure.
+
+## Mechanism experiment: isolate the hybrid's benefit
 
 The first study includes a parameter-count control. Next, compare the current hybrid to delta+rotor without density, delta+density without rotor, and the same hybrid with phase disabled. Keep the training data, initialization rules, parameter counts and tuning budget declared. Add long-range binding, ordered transformations and interference-sensitive synthetic tasks with meaningful real-coordinate controls. Five seeds and confidence intervals should replace rankings based on three seed means when making a design decision.
 

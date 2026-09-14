@@ -12,13 +12,13 @@ I freshly hashed all three original files, reread the handbook directly from the
 
 | Original source | Audit anchors | Identity check |
 |---|---|---|
-| `Quantum_AGI_Research_Package.zip` | `Quantum_AGI_Architecture_Handbook.md` and its 82-page PDF; source graph and R1/R2 diagrams | SHA-256 starts `7e9268f8a0281190`; editable handbook starts `2371a18a074680d1` |
-| `Quantum_Physics_Deep_Knowledge_Atlas.pdf` | 86 PDF pages; chapters 1, 10 and 24; concept registry | SHA-256 starts `d72d68f196a01d3a` |
-| `Quantum_Physics_Layered_Maps.pdf` | 14 maps; especially maps 1, 2, 4 and 7 | SHA-256 starts `62278878de0d41d7` |
+| SERA Research Archive (`sera-research-archive.zip`) | SERA Architecture Handbook (`sera-architecture-handbook.md`) and its 82-page PDF; source graph and R1/R2 diagrams | SHA-256 starts `7e9268f8a0281190`; editable handbook starts `2371a18a074680d1` |
+| Quantum Theory Foundations (`quantum-theory-foundations.pdf`) | 86 PDF pages; chapters 1, 10 and 24; concept registry | SHA-256 starts `d72d68f196a01d3a` |
+| Quantum State and Process Maps (`quantum-state-and-process-maps.pdf`) | 14 maps; especially maps 1, 2, 4 and 7 | SHA-256 starts `62278878de0d41d7` |
 
-All bytes and hashes match the original [source manifest](../research/source_manifest.json). I compared the actual graph identifier sets, not just their sizes: the ZIP's graph and SERA's physics map contain exactly the same 154 unique identifiers. This verifies traceability, not implementation of 154 cognitive functions.
+These working names are defined in the [reference catalog](../research/reference-catalog.json); their source bytes and the audit findings are unchanged by the naming update. All bytes and hashes match the original [source manifest](../research/source_manifest.json). I compared the actual graph identifier sets, not just their sizes: the ZIP's graph and SERA's physics map contain exactly the same 154 unique identifiers. This verifies traceability, not implementation of 154 cognitive functions.
 
-Below, **H** means the original handbook; page numbers are one-based PDF pages and match its printed pages. Editable manuscript line numbers identify the exact source passages. **A** means the atlas; its printed page numbers are eight below its PDF page numbers. **M** means a numbered layered map. These references distinguish the source's requirements, explicit small prototypes and future hypotheses.
+Below, **H** means the SERA Architecture Handbook; page numbers are one-based PDF pages and match its printed pages. Editable manuscript line numbers identify the exact source passages. **A** means Quantum Theory Foundations; its printed page numbers are eight below its PDF page numbers. **M** means a numbered Quantum State and Process Map. These references distinguish the source's requirements, explicit small prototypes and future hypotheses.
 
 ## Requirement-by-requirement findings
 

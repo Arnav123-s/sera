@@ -4,7 +4,7 @@
 
 [Repository](https://github.com/Arnav123-s/sera) · Research by [Arnav123-s](https://github.com/Arnav123-s)
 
-I am building SERA to study how a learner maintains state, predicts action consequences, acquires executable skills, and learns which improvement procedure to try next.
+I am building SERA to study how a learner maintains state, predicts action consequences, acquires executable skills, and learns which improvement procedure to try next. The research objective is to respond to failure by acquiring a missing capability, retaining it and improving how the next capability is learned. The [project context](research/project-context.md) and [research references](research/references.md) define that direction.
 
 Version 0.2 connects the first R1/R2 research path: recurrent memory drives observation and reward prediction; planning produces real execution feedback; admitted feedback trains candidates; a controlled event instrument guides bounded program search; and a trained intervention policy selects among six learning procedures. A persistent solver restores its models, policy and accepted skills together. Promotion, rejection and rollback affect ordinary inference and later learning rounds.
 
@@ -61,6 +61,7 @@ research/        original-source hashes, 154-concept map, protocol, checklist an
 reports/         measured findings, raw selected evidence and checksums
 runs/            full local studies, checkpoints, evidence, candidates and journals (ignored)
 research/intake/ original reference package and extracted PDF text (ignored)
+research/reference-materials/ consistently named working references (ignored)
 ```
 
 I keep a [task checklist](research/implementation-checklist.md), [development log](research/development-log.md), [architecture](research/architecture.md) and [reproduction guide](research/reproducing-connected-study.md). I inspected the supplied package as research material and did not execute its scripts or load its checkpoints. The source manifest distinguishes original material from independently measured SERA results. The 36,900 supplied registry entries are schematic configurations.
