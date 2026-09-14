@@ -13,6 +13,6 @@ I verified the final executable source `0d28049174092ae48ff91af9ff37c2478eedf51c
 - A working copy at `runs/sera-0.3-current` completes an additional CLI learning round; its result is separate from the frozen study.
 - Twenty evidence artifacts and all 154 original source concepts pass release verification. The scientific figure was visually inspected.
 
-Public Windows/Linux CI is the remaining publication check. Its outcome will be recorded after the push.
+Public Windows and Linux CI both passed for implementation commit `d1ca2829db358a22c4d3c1fdff07e1286d5d1be0`: [verification run](https://github.com/Arnav123-s/sera/actions/runs/34810417587). The public study-data checksum matches the local artifact, the repository is public, and GitHub attributes the commit to Arnav123-s.
 
 The measured results and limitations are in the [study](stage-three-study.md), [architecture audit](stage-three-architecture-audit.md), [artifact audit](stage-three-verification.json), [installation record](stage-three-installation.json) and [continued-learning record](stage-three-continuation.json). Some interrupted development cost records are unavailable and explicitly excluded from complete-cost claims.
