@@ -56,6 +56,6 @@ The repaired run is a follow-up after observing failures, not a preregistered cl
 - [x] A failed query can trigger admitted corrective evidence and a persistent candidate through the ordinary interface.
 - [x] Candidate evaluation remains independent; parents, rejected candidates and previous studies remain available.
 - [x] Independent checkpoint replay, source comparison and 71 local tests pass.
-- [ ] The published revision passes the Windows and Ubuntu CI jobs.
+- [x] The published implementation passes the Windows and Ubuntu CI jobs at commit `2dd44f9`: [verification run](https://github.com/Arnav123-s/sera/actions/runs/34827893690).
 
 The [completed study](../reports/shared-learner-study.md) records the behavioral outcomes and the [source audit](../reports/shared-source-audit.md) records remaining architecture work. Negative learning results are retained and do not become completion claims. This checklist closes the bounded shared-learner study, not the remaining recipes for sustained learner/improver evolution.

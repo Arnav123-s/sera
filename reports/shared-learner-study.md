@@ -119,4 +119,6 @@ All 114 saved inference conditions were reconstructed and replayed; 108 fixed-su
 
 All 71 local tests passed. The installable 0.5.0 wheel was built in a fresh directory and installed into an isolated target. Its source hash matches the training code, and it restores the shared R1/R2 solver with the same parameter owner. The original archive and handbook hashes were checked again against the supplied files.
 
+The published implementation at commit `2dd44f9` passed [Windows and Ubuntu verification](https://github.com/Arnav123-s/sera/actions/runs/34827893690), including tests, lint, evidence integrity and CLI startup.
+
 The shared R1 defect is repaired in the new variants. Broad learned representations, calibrated stochastic planning, general program abstraction, compatible model growth, external evaluator isolation and coupled learner/improver improvement remain open. The [source audit](shared-source-audit.md) states these limits explicitly. Earlier HMM, hybrid, compact-world and typed models remain useful research records; their task protocols differ and should not be pooled into a single model ranking.
