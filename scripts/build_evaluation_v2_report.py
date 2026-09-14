@@ -37,6 +37,11 @@ def main():
     live = read("runs/evaluation-v2-review/live-continuation.json")
     preservation = read("runs/evaluation-v2-review/preservation-verification.json")
     data = copy.deepcopy(source)
+    data["costs"]["scope"] = (
+        "Whole timed study including generation, acquisition, updates, validation, search, evaluation and recorded failures. "
+        "RSS is the process high-water mark; phase times may overlap if nested; counts are not FLOPs. "
+        "Implementation effort, previous development, separate verification, energy and external services are outside this measurement."
+    )
     for trial in data["typed"]:
         history = trial["training"]
         trial["training"] = {k: history[k] for k in ("steps", "examples", "validation_best_macro")}
