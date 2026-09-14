@@ -1,6 +1,21 @@
 # SERA research roadmap
 
-The original 0.2 priorities below are preserved as the design history. Version 0.3 implements live-session persistence, automatic composition, general event instruments, typed learning, failure/budget/history connections, reference training, adaptation controls, archive retrieval and actual outer-policy updates. The [current audit](../reports/stage-three-architecture-audit.md) and [measured results](../reports/stage-three-study.md) determine which research benefits are established. Remaining priorities are robust neural arithmetic/binding, stronger perception and belief planning, policy gains over fixed controls at full cost, broader mutation search and independent evaluator ownership.
+The [full source-packet comparison](../reports/source-packet-comparison.md) is the current architecture judgment. SERA 0.3 is partial: typed/world learning and solver/improver evolution are separate, some evaluation labels overstate structure transfer, and the retention/growth contracts need further work. The [workspace index](workspace-index.md) preserves existing alternatives and experiments under explicit roles.
+
+## Current implementation sequence
+
+1. Repair semantic evaluation partitions and add separate critical-capability retention gates. Preserve the original 0.3 results with an interpretation correction; new evaluation data receives a new identity.
+2. Connect one minimal typed task stream to ordinary failure-driven learning. Demonstrate acquisition, new-case transfer and retention in the same persistent learner, with a separate-component control.
+3. Train the next improver from actual sequential learner histories. Use an independent fixed anchor, cumulative frontier, strong fixed procedure and comparable complete run budgets.
+4. Remove one supplied state/identity aid, then connect calibrated belief inference to planning and model-class selection. Keep HMM and recurrent controls.
+5. Implement one explicit compatible growth or program-abstraction mechanism, preserving its parent and validating transfer. Fresh random instrument replacement is not function-preserving growth.
+6. Revisit a preserved R3-R8 hypothesis only when it addresses an identified bottleneck and has a decisive conventional control.
+
+Each item remains open. Broader candidate-written host code requires independent evaluator/resource ownership first. New work uses fresh output names and source/parent/status records; no old experiment or package is discarded to simplify the tree.
+
+## Preserved earlier roadmap
+
+The original 0.2 priorities below are design history. Some bounded implementations now exist, but their acceptance statements are not automatically satisfied by the 0.3 studies. Current dispositions are recorded in the later source-packet audit.
 
 
 My long-term target is a learner that can acquire unfamiliar capabilities, transfer them, retain earlier competence and improve the methods it uses to learn. Release 0.2 adds a connected R1/R2 platform and a trained selector over learning procedures. I do not interpret a connected implementation as evidence of general intelligence or recursive acceleration.

@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "inventory_at": "2026-09-14T05:51:30.222297+00:00",
+  "baseline_commit": "2f6207060473436891e31fcc15b799b13605a82a",
+  "baseline_manifest": {
+    "path": "runs/source-packet-review/preservation-baseline.json.gz",
+    "sha256": "62edf3b529e1ee1d2db38795bc7ea2aecbc7de02f77884174b4ad143c86c6383"
+  },
+  "inventory_scope": "All repository work files, including ignored runs, references, build, dist and package metadata. Excludes .git, .venv, runtime caches and this new review directory.",
+  "total_files_at_review_start": 1972,
+  "total_bytes_at_review_start": 201461509,
+  "preservation": {
+    "baseline_files": 1972,
+    "unchanged_files": 1967,
+    "corrected_documents_preserved_in_git": [
+      {
+        "path": "README.md",
+        "original_sha256": "ff13a1475feb331dd17085c8f07928068443ca4f597caace5aa0d503acbcf77e",
+        "current_sha256": "bb50b6d06753b11ee0d49dbcb4e6d22ea481fe1e4914510970b0e3a5f162f1af",
+        "preserved_at": "2f6207060473436891e31fcc15b799b13605a82a:README.md"
+      },
+      {
+        "path": "reports/stage-three-architecture-audit.md",
+        "original_sha256": "a79d760b9a05256d4e67dc54d4733a7d2f525c346b751a0695fece3996dbaf73",
+        "current_sha256": "bbd6f9f7d22c1d1196f94524abd5b953c148beeef209908f9d7ebe4389b966b7",
+        "preserved_at": "2f6207060473436891e31fcc15b799b13605a82a:reports/stage-three-architecture-audit.md"
+      },
+      {
+        "path": "research/architecture.md",
+        "original_sha256": "191cb7e876892841a2bd47ab4261b4fa844ae73799d4b073bb3f2d2bb2ef97f8",
+        "current_sha256": "9027b03b93f9e1f72af082d40224afb6445c8fcf7423b68bc611232b7828a619",
+        "preserved_at": "2f6207060473436891e31fcc15b799b13605a82a:research/architecture.md"
+      },
+      {
+        "path": "research/roadmap.md",
+        "original_sha256": "e38570619a165f369535e8d98498c44b60d280ac3174104cec0362ac927ee43e",
+        "current_sha256": "4366af01cd0b7124555a1f6e4278d981f6fd88815fc222e422ee4bb042f59467",
+        "preserved_at": "2f6207060473436891e31fcc15b799b13605a82a:research/roadmap.md"
+      },
+      {
+        "path": "research/stage-three-checklist.md",
+        "original_sha256": "83ea43882eb9f2d9325421c77f325201ae1b2e12e0371a52c0e8fc0fd6993d9f",
+        "current_sha256": "72cf4d375f65cf5bb7ee46317660b5f583af7111530df7d4e5d24afbe5f9a725",
+        "preserved_at": "2f6207060473436891e31fcc15b799b13605a82a:research/stage-three-checklist.md"
+      }
+    ],
+    "missing_files": [],
+    "unexpected_changes": [],
+    "passed": true,
+    "boundary": "Verifies work present at review start. Git metadata, third-party environment and runtime caches are excluded. This is local preservation, not an off-device backup claim."
+  },
+  "active_solver": "runs/sera-0.3-current",
+  "frozen_study": "runs/stage-three-complete",
+  "current_audit": "reports/source-packet-comparison.md",
+  "groups": [
+    {
+      "path": ".github",
+      "role": "active-verification",
+      "purpose": "Public continuous integration configuration.",
+      "files": 1,
+      "bytes": 654,
+      "baseline_inventory_sha256": "ccced8cb5fbd6ceae979813a040b4538c78d9f03fb1643c5074b124bfe7c3b67"
+    },
+    {
+      "path": "build",
+      "role": "build-snapshot",
+      "purpose": "Existing generated build tree; never the source of truth and not updated by this review.",
+      "files": 33,
+      "bytes": 276518,
+      "baseline_inventory_sha256": "cd66d402752b5bd26074d4b7ed35bd72585405201b51b5e25b0a4d2ee6446c82"
+    },
+    {
+      "path": "dist",
+      "role": "release-artifacts",
+      "purpose": "Versioned wheels/source archives and historical packaged solver. Existing filenames are never overwritten by this review.",
+      "files": 11,
+      "bytes": 5018023,
+      "baseline_inventory_sha256": "c4c80c05d7ee0a685c04ac1fb6097f9c3c203eda214b327efba16855d78caa02"
+    },
+    {
+      "path": "examples",
+      "role": "active-interface",
+      "purpose": "Declared typed request examples.",
+      "files": 1,
+      "bytes": 307,
+      "baseline_inventory_sha256": "1241861945416e0e64e2231207120a78996d32d5e77817c48162d5a84ddd5c5d"
+    },
+    {
+      "path": "reports",
+      "role": "research-evidence",
+      "purpose": "Versioned measurements and reviews. Current interpretation: source-packet-comparison.md; frozen 0.3 data: stage-three-data.json.",
+      "files": 38,
+      "bytes": 11987991,
+      "baseline_inventory_sha256": "b7d5e26a666fb624b76fe0797ebbf4a197bd8895afd2160433b28dbbcdced8ee"
+    },
+    {
+      "path": "repository-root",
+      "role": "project-entry",
+      "purpose": "Project description, dependencies and contribution settings.",
+      "files": 6,
+      "bytes": 10145,
+      "baseline_inventory_sha256": "57ad3f79f352885a0ef8cc12a49dec60969705c4e705859960495ef6873c6a6f"
+    },
+    {
+      "path": "research",
+      "role": "research-record",
+      "purpose": "Current design/provenance documents and explicitly dated historical protocols. The source-packet audit supersedes completion claims.",
+      "files": 17,
+      "bytes": 160106,
+      "baseline_inventory_sha256": "4d36b01b5c089cc8f7f2196dcf6cb177aeafb54dbf2496b30ab582f4da268b91"
+    },
+    {
+      "path": "research/intake",
+      "role": "historical-intake",
+      "purpose": "Early source reading, naming and repository setup records; nested source and installation trees have separate roles.",
+      "files": 8,
+      "bytes": 213957,
+      "baseline_inventory_sha256": "0a6c1d2bae2564c3707c728a8dbdced94d311b9a3c6a2437e4023669c959f578"
+    },
+    {
+      "path": "research/intake/Quantum_AGI_Research_Package",
+      "role": "source-reference",
+      "purpose": "Complete original packet extraction; keep embedded names and source bytes.",
+      "files": 166,
+      "bytes": 19545274,
+      "baseline_inventory_sha256": "539de21d5f9a77c24d51441ed20f36440fdfe0023cf8d9fa3f895ddf821d1daf"
+    },
+    {
+      "path": "research/intake/release-check",
+      "role": "historical-package-check",
+      "purpose": "Early release verification files; not active code.",
+      "files": 45,
+      "bytes": 497308,
+      "baseline_inventory_sha256": "b175df89320f97ad2e57e40af6acbfef33e6a56591d765de5a89d1428b27c1bb"
+    },
+    {
+      "path": "research/intake/renders",
+      "role": "source-visual-review",
+      "purpose": "Original source page rendering artifacts.",
+      "files": 2,
+      "bytes": 360621,
+      "baseline_inventory_sha256": "c4ffe1ebeb382bdc1a045650de478909f500e90cd0816f4cbc00a0f47ad7151a"
+    },
+    {
+      "path": "research/intake/sera-release-check",
+      "role": "historical-package-check",
+      "purpose": "Early SERA renamed-release checkout; preserved source snapshot, not a reference architecture.",
+      "files": 46,
+      "bytes": 506662,
+      "baseline_inventory_sha256": "d0f0bb0442111ee09646c0b38f609bd020a0171520450ce3b044d9d77cc1fa5e"
+    },
+    {
+      "path": "research/intake/visual-review",
+      "role": "source-visual-review",
+      "purpose": "Original visual review records.",
+      "files": 3,
+      "bytes": 514822,
+      "baseline_inventory_sha256": "0e6567adab266adccd0c4d1488a4c8c1c78c44130017771c6d2ec1f6df5839fb"
+    },
+    {
+      "path": "research/intake/wheel-check",
+      "role": "historical-package-check",
+      "purpose": "Early installed-wheel snapshot; not active code.",
+      "files": 23,
+      "bytes": 187389,
+      "baseline_inventory_sha256": "f5ae723abc2b6d6f394b0ec3947b2540d33c4370456c14ca107fe85accff4dcd"
+    },
+    {
+      "path": "research/reference-materials",
+      "role": "source-reference",
+      "purpose": "Professionally named byte-identical references; original-package is a partial reading extraction.",
+      "files": 81,
+      "bytes": 21975033,
+      "baseline_inventory_sha256": "ed3854e08c9f87bae463bf1fe100cea0f8851aafaa5ce3a9c663401a326a7567"
+    },
+    {
+      "path": "runs/baseline-v1",
+      "role": "historical-evidence",
+      "purpose": "First SERA mechanism cohort; changed task encoding and models relative to the original packet.",
+      "files": 74,
+      "bytes": 3702074,
+      "baseline_inventory_sha256": "8fdddcc3f9c8c03646b64730331802e167ad46e3b7e64868bc191fffd37c2af9",
+      "recorded_source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06"
+    },
+    {
+      "path": "runs/cli-learning-check",
+      "role": "historical-verification",
+      "purpose": "0.2 CLI continuation check; preserve its journal and preparation record.",
+      "files": 28,
+      "bytes": 1614774,
+      "baseline_inventory_sha256": "315a3badc6baf0583a6755ff33478eada083f37528536715c2e7ed198eb054ce",
+      "solver_at_review": {
+        "version": "v5",
+        "solver_sha256": "9bb09fcf81ede1f9a2d501e5465f4fda0ac6fd274492e2272042d8ca6c2887ea",
+        "checkpoint_sha256": "2dd4e458d13bc1e5e730db18bbdb44fb942af01a714d9231f7aada9eca7b227c"
+      }
+    },
+    {
+      "path": "runs/connected-dev-r1",
+      "role": "development",
+      "purpose": "Early connected R1 model probe.",
+      "files": 2,
+      "bytes": 78233,
+      "baseline_inventory_sha256": "a460b8bba4f403c5c47f3daa4c8a07344f1de2230ad13f2c98bc9a1fb0da6dba"
+    },
+    {
+      "path": "runs/connected-smoke-v2",
+      "role": "smoke-check",
+      "purpose": "Short 0.2 integration check; not release capability evidence.",
+      "files": 61,
+      "bytes": 3445321,
+      "baseline_inventory_sha256": "2fde71afded788c1b372b72683ee2e4acf4a878d10f7f0645e07983d2b1a0157",
+      "recorded_source_sha256": "70a9da3a0fd15b937d7c2da7467a1e9ad767fc7e7d930c824bedf6124562843c"
+    },
+    {
+      "path": "runs/connected-v2",
+      "role": "incomplete",
+      "purpose": "Early 0.2 cohort with a manifest but no complete summary; exact termination is not reconstructed.",
+      "files": 10,
+      "bytes": 570694,
+      "baseline_inventory_sha256": "e18ea496fc4cd48d8b24ffc461d9706636596f7b5b11e889f95ff17cdf601d35",
+      "recorded_source_sha256": "e1a550179aab0060b207cf609e06733f2f4430dfe9c77071e795d3035386dfc9"
+    },
+    {
+      "path": "runs/connected-v2-final",
+      "role": "historical-release-evidence",
+      "purpose": "Completed 0.2 study, preserved with its own source and verification.",
+      "files": 234,
+      "bytes": 12091210,
+      "baseline_inventory_sha256": "6eac6e93b2a483e024db2daf59fa1cc027c90e7b0960cdfac665b02862eaba31",
+      "recorded_source_sha256": "59c0835fba356932d945dc67c04b781aa5549702ee40389b09b9e03c73016594"
+    },
+    {
+      "path": "runs/instrument-complex-0",
+      "role": "development",
+      "purpose": "Early single-instrument run; not an extra seed of the later suite.",
+      "files": 2,
+      "bytes": 3379,
+      "baseline_inventory_sha256": "66b3ff2b8fe61908d84bf474765084b82578d27d17c756d5015d46e74b63fdbb"
+    },
+    {
+      "path": "runs/instrument-suite-v1",
+      "role": "historical-evidence",
+      "purpose": "Earlier separate real/complex EventInstrument suite.",
+      "files": 13,
+      "bytes": 28012,
+      "baseline_inventory_sha256": "bbdb1108c730d6b43a70d83f256836ccdd73a26489b2864226f12b06871e4ab1"
+    },
+    {
+      "path": "runs/integrated-v1",
+      "role": "historical-evidence",
+      "purpose": "First integration and adaptation evidence.",
+      "files": 14,
+      "bytes": 170320,
+      "baseline_inventory_sha256": "529221493911dd5e35c09d9ed27f33951c2469ce1935ad5be79f4e1a0577d5ee"
+    },
+    {
+      "path": "runs/matched-delta-v1",
+      "role": "historical-control",
+      "purpose": "Early parameter-count control; use its own design and source identity.",
+      "files": 11,
+      "bytes": 661826,
+      "baseline_inventory_sha256": "4a6438a75071c84a406cf3856fe120c7fb282e93e24f1b23a0cd559d06a26e2a"
+    },
+    {
+      "path": "runs/original-reproduction-stage-three",
+      "role": "source-reproduction",
+      "purpose": "Original 12 cores: numerical checks, 36 checkpoint evaluations and 36 fresh training/adaptation/scratch procedures. Separate from SERA models.",
+      "files": 76,
+      "bytes": 1057315,
+      "baseline_inventory_sha256": "cdcc9f0a11c537d1e896e8df14b0d540a7767630ed2a2fdcad7fd31f2437fcaa"
+    },
+    {
+      "path": "runs/original-source-audit",
+      "role": "historical-verification",
+      "purpose": "Earlier source audit, rendered reference pages and baseline source archive.",
+      "files": 75,
+      "bytes": 2493707,
+      "baseline_inventory_sha256": "e8c1ddb314f852d3828e85eba5a148a2c2c828baf3c381fbaa15cf912e433317"
+    },
+    {
+      "path": "runs/package-check",
+      "role": "historical-package-check",
+      "purpose": "Earlier package installation check; not source to edit.",
+      "files": 33,
+      "bytes": 277549,
+      "baseline_inventory_sha256": "233e7b0c6b16859f887bfc94b7743758af6a859b518bfc36ef7cd20153a4da77"
+    },
+    {
+      "path": "runs/release-check-v2",
+      "role": "historical-package-check",
+      "purpose": "Preserved 0.2 checkout/install verification tree.",
+      "files": 75,
+      "bytes": 2821255,
+      "baseline_inventory_sha256": "c0867f1fe9aa619074e00c342f2765f39e2654301b44e681766e29d742b08bae"
+    },
+    {
+      "path": "runs/sera-0.3-current",
+      "role": "active-solver",
+      "purpose": "Only designated continuation workspace; seed-zero 0.3 solver plus a separately recorded CLI learning attempt. Not a new study seed.",
+      "files": 28,
+      "bytes": 3894047,
+      "baseline_inventory_sha256": "3afdad41c06986be86d271b1075800edca58d1ade20222805eafb4261248840f",
+      "solver_at_review": {
+        "version": "v2",
+        "solver_sha256": "832634337fafd492531d5a18858479b3b1190bff96cce345dc21d8df39814055",
+        "checkpoint_sha256": "f0aa314cdae25c7f1314d23f227feb2df1a0375e83807da641d8ce85b2f8e5ce"
+      }
+    },
+    {
+      "path": "runs/sera-current",
+      "role": "historical-solver",
+      "purpose": "Preserved 0.2 continuation workspace despite its old current name; not the active solver.",
+      "files": 24,
+      "bytes": 1303539,
+      "baseline_inventory_sha256": "1486d90019a94499ce6aacb9640d03e6e1021d2c1f9b5cc132320815279b5edc",
+      "solver_at_review": {
+        "version": "v5",
+        "solver_sha256": "9bb09fcf81ede1f9a2d501e5465f4fda0ac6fd274492e2272042d8ca6c2887ea",
+        "checkpoint_sha256": "2dd4e458d13bc1e5e730db18bbdb44fb942af01a714d9231f7aada9eca7b227c"
+      }
+    },
+    {
+      "path": "runs/sera-v3-current",
+      "role": "superseded-solver",
+      "purpose": "Working copy from the obsolete 0.3 cohort. Do not pool its results with the repaired release.",
+      "files": 27,
+      "bytes": 3825376,
+      "baseline_inventory_sha256": "c59b5ec4f41386edbddf1cbdf0733354e829bf4b41f63bfe1333c145ce53bc8b",
+      "solver_at_review": {
+        "version": "v2",
+        "solver_sha256": "ab39ac9b70dc9299b58298fe82342ad7533ca13dc21e65dfd1d2edbbb2816524",
+        "checkpoint_sha256": "bc661a295545c536166358ab8abe23497b05e059097813f84a0db02c4a72d0d1"
+      }
+    },
+    {
+      "path": "runs/stage-three-audit",
+      "role": "verification",
+      "purpose": "Independent reconstruction of trained reference memories and live sessions; not additional training-cohort seeds.",
+      "files": 6,
+      "bytes": 11486361,
+      "baseline_inventory_sha256": "d3a36ad9dc4d64964f9290cc6cf03cc78d0e0a5bc8e764959fa7897a7f9c3571"
+    },
+    {
+      "path": "runs/stage-three-complete",
+      "role": "frozen-release-evidence",
+      "purpose": "Canonical repaired 0.3 study, seeds 0/1/2. Checkpoints, journals and measurements are immutable.",
+      "files": 190,
+      "bytes": 32703922,
+      "baseline_inventory_sha256": "411345d2916535c983f261847c358160fe68825261a816f6efa6f6df5c7a3ca4",
+      "recorded_source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+    },
+    {
+      "path": "runs/stage-three-complete/worker-runs",
+      "role": "preserved-worker-evidence",
+      "purpose": "Original worker outputs. Canonical 0/1/2 copies belong to these same runs, not additional independent seeds.",
+      "files": 195,
+      "bytes": 32548748,
+      "baseline_inventory_sha256": "2f97df1efeed7657e74a4477497c51dea1dc169a78c224846fe144564b0a9d73"
+    },
+    {
+      "path": "runs/stage-three-development",
+      "role": "development",
+      "purpose": "Tuning, pilots and probe results. Exposed development evidence; excluded from the final cohort.",
+      "files": 10,
+      "bytes": 1328120,
+      "baseline_inventory_sha256": "2af3c264d629b2dc53a4f533db326b71cf097c086219c836013f521b07640270"
+    },
+    {
+      "path": "runs/stage-three-final",
+      "role": "interrupted",
+      "purpose": "Stopped after discovering the untrained legacy decoder in the study setup. Incomplete cost records.",
+      "files": 2,
+      "bytes": 14320,
+      "baseline_inventory_sha256": "2636619cf3dda1de01b508acce2cf74ea0576430856915dc6ab7d198f8c320d5",
+      "recorded_source_sha256": "3b0e7ee16387c4d137f313901990e4c1104b7665529d6530e16d77004dfebd7d"
+    },
+    {
+      "path": "runs/stage-three-installed",
+      "role": "superseded-package-check",
+      "purpose": "Installed pre-repair package labeled 0.3.0; source identity, not version string, distinguishes it.",
+      "files": 42,
+      "bytes": 390219,
+      "baseline_inventory_sha256": "6af1e6f6bd8d506020bf23eace7ff293a13d3024d0ef12f8f25cd746bcba1d3a"
+    },
+    {
+      "path": "runs/stage-three-installed-final",
+      "role": "release-package-check",
+      "purpose": "Installed repaired 0.3 package used for final installation checks.",
+      "files": 42,
+      "bytes": 390680,
+      "baseline_inventory_sha256": "57600c493493234f371104fc08499627ba2c3ec25af8d5bf9137048eb4d2bf66"
+    },
+    {
+      "path": "runs/stage-three-release",
+      "role": "failed-cohort",
+      "purpose": "Obsolete source ee62373c; seed one failed on all-missing likelihood targets. Preserve complete and partial outputs together.",
+      "files": 91,
+      "bytes": 15367099,
+      "baseline_inventory_sha256": "71b1fe256e9a1bf4dcbf39dda4a65e7eff6a8466df84f8144567a073412268de",
+      "recorded_source_sha256": "ee62373c93126336b50e6397eecdd45a5ccfbac7ebea23d11aa10911aaa28c98"
+    },
+    {
+      "path": "runs/stage-three-smoke-1",
+      "role": "failed-smoke",
+      "purpose": "Short integration run rejected by source-freeze checking; not capability evidence.",
+      "files": 53,
+      "bytes": 7382253,
+      "baseline_inventory_sha256": "44d69013f131a54ca13c4ae40c06cd3ed3e7024426f2f6cbdb8268585df73189",
+      "recorded_source_sha256": "672aacdd8091881345e77ea5260c049398fc2fee56f6415cce8ac171b212bd8c"
+    },
+    {
+      "path": "runs/stage-three-verified",
+      "role": "interrupted",
+      "purpose": "Repaired serial cohort stopped before independent-worker orchestration. Not the final cohort.",
+      "files": 6,
+      "bytes": 126277,
+      "baseline_inventory_sha256": "d7ffd856339ef66f3d57263e81c56131e332d1ba64b10f47eb779a841d7ca521",
+      "recorded_source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+    },
+    {
+      "path": "scripts",
+      "role": "active-verification",
+      "purpose": "Reproduction, reporting and audit entry points.",
+      "files": 14,
+      "bytes": 107854,
+      "baseline_inventory_sha256": "6551a6d1f5a373f2a0477491f993a8431af0dca11a117854991819f5c06eca03"
+    },
+    {
+      "path": "src/sable_learning.egg-info",
+      "role": "historical-package-metadata",
+      "purpose": "Preserved early package-name metadata; not an active second project.",
+      "files": 6,
+      "bytes": 1236,
+      "baseline_inventory_sha256": "a6b0471b2d5248511c5275d8e2e0cacb2c0235238bf909f53d37fd20a4aa5575"
+    },
+    {
+      "path": "src/sera",
+      "role": "active-code",
+      "purpose": "SERA 0.3 executable source; edit here for subsequent versioned research.",
+      "files": 33,
+      "bytes": 276518,
+      "baseline_inventory_sha256": "fe9ea2280d5e0676c6b42712c2d6a2e55db6018ddc94c3d5edef8dc6a3684469"
+    },
+    {
+      "path": "src/sera_learning.egg-info",
+      "role": "package-metadata",
+      "purpose": "Existing editable-install metadata; generated, not model source.",
+      "files": 6,
+      "bytes": 1974,
+      "baseline_inventory_sha256": "48638e94f1d6067a3407fad342535135f6c1988d0402dc098ad24f955c005be9"
+    },
+    {
+      "path": "tests",
+      "role": "active-verification",
+      "purpose": "Numerical and lifecycle regression suite.",
+      "files": 8,
+      "bytes": 42487,
+      "baseline_inventory_sha256": "86eb49861a3d19b3c1f5f71ee80a157aa30fc71eb0933205859e17892369bbfe"
+    }
+  ],
+  "new_review_work": {
+    "path": "runs/source-packet-review",
+    "role": "current-audit",
+    "purpose": "New audit outputs are outside the pre-existing-work inventory."
+  },
+  "preserved_source_snapshots": [
+    {
+      "path": "build/lib/sera",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+    },
+    {
+      "path": "research/intake/sera-release-check/src/sera",
+      "source_sha256": "fde70a0ed462e2e550032b49f1201b96b2215abc0fbc537035ab658090b742f0"
+    },
+    {
+      "path": "research/intake/wheel-check/sera",
+      "source_sha256": "fde70a0ed462e2e550032b49f1201b96b2215abc0fbc537035ab658090b742f0"
+    },
+    {
+      "path": "runs/original-source-audit/baseline-source/src/sera",
+      "source_sha256": "59c0835fba356932d945dc67c04b781aa5549702ee40389b09b9e03c73016594"
+    },
+    {
+      "path": "runs/original-source-audit/wheel-installed/sera",
+      "source_sha256": "69a7e361cae0bb337491647bafda862b645814dbcf2537d8d56d636b8bb12d35"
+    },
+    {
+      "path": "runs/package-check/site/sera",
+      "source_sha256": "59c0835fba356932d945dc67c04b781aa5549702ee40389b09b9e03c73016594"
+    },
+    {
+      "path": "runs/release-check-v2/src/sera",
+      "source_sha256": "59c0835fba356932d945dc67c04b781aa5549702ee40389b09b9e03c73016594"
+    },
+    {
+      "path": "runs/stage-three-installed/package/sera",
+      "source_sha256": "ee62373c93126336b50e6397eecdd45a5ccfbac7ebea23d11aa10911aaa28c98"
+    },
+    {
+      "path": "runs/stage-three-installed-final/package/sera",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+    },
+    {
+      "path": "src/sera",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+    }
+  ],
+  "duplicate_content": {
+    "exact_duplicate_groups": 458,
+    "additional_copy_bytes": 76467181,
+    "meaning": "Logical file-byte duplication, not measured reclaimable disk space. No copies removed or hard-linked.",
+    "largest_groups": [
+      {
+        "sha256": "1a37d46af30883676fae28542bdcaca14f75d93a746c0f76cf6a2667f903a5a0",
+        "bytes_each": 15677330,
+        "paths": [
+          "research/intake/Quantum_AGI_Research_Package/results/architecture_registry.csv",
+          "research/reference-materials/original-package/results/architecture_registry.csv"
+        ]
+      },
+      {
+        "sha256": "d76af65debf5002cb50938dcce09a2110279a5a4ecb9079a637c316bc92451bd",
+        "bytes_each": 3453961,
+        "paths": [
+          "runs/stage-three-complete/0/reference-top1.pt",
+          "runs/stage-three-complete/worker-runs/0/0/reference-top1.pt",
+          "runs/stage-three-release/0/reference-top1.pt"
+        ]
+      },
+      {
+        "sha256": "3fbd61b9a70feeb6f778670ddc1637514e7a56f5627c4841ac40b88161f45d99",
+        "bytes_each": 3453961,
+        "paths": [
+          "runs/stage-three-complete/1/reference-top1.pt",
+          "runs/stage-three-complete/worker-runs/1/1/reference-top1.pt",
+          "runs/stage-three-release/1/reference-top1.pt"
+        ]
+      },
+      {
+        "sha256": "a3a3d94c52f661aa73056041909494115176b5f2021d7a80a0367bbc269fbaeb",
+        "bytes_each": 4522304,
+        "paths": [
+          "reports/stage-three-data.json",
+          "runs/stage-three-complete/summary.json"
+        ]
+      },
+      {
+        "sha256": "dc7cefbf2fbff0d0bb94bb40221dd738a6711537ac33320691b3dcf38c0a6180",
+        "bytes_each": 3453961,
+        "paths": [
+          "runs/stage-three-complete/2/reference-top1.pt",
+          "runs/stage-three-complete/worker-runs/2/2/reference-top1.pt"
+        ]
+      },
+      {
+        "sha256": "23bfeae0e256f4fe3a524cfb672339f06285a18016dca67e7c04bc2d865d7e43",
+        "bytes_each": 1325073,
+        "paths": [
+          "runs/stage-three-complete/2/study.json",
+          "runs/stage-three-complete/worker-runs/2/2/study.json"
+        ]
+      },
+      {
+        "sha256": "2149e42692d1b87b794fe66283de0c4dc62f733c0ef5c13b29646acc197c378f",
+        "bytes_each": 1323736,
+        "paths": [
+          "runs/stage-three-complete/0/study.json",
+          "runs/stage-three-complete/worker-runs/0/0/study.json"
+        ]
+      },
+      {
+        "sha256": "3fd3a5a1f9d1721d5fce6952835181eb43c5ccf55d0b8ad01e26e86d08b949e6",
+        "bytes_each": 1302981,
+        "paths": [
+          "runs/stage-three-complete/1/study.json",
+          "runs/stage-three-complete/worker-runs/1/1/study.json"
+        ]
+      },
+      {
+        "sha256": "2696eb82606bdca2eb65c69290fb0263af71ab23387bed7ae9f228bc171c0f68",
+        "bytes_each": 1222443,
+        "paths": [
+          "reports/connected-policy-episodes.json",
+          "runs/release-check-v2/reports/connected-policy-episodes.json"
+        ]
+      },
+      {
+        "sha256": "ef73fb36bde29be7219fcf1253c88423675d3b53d7b76bacbd07e054efc20539",
+        "bytes_each": 349905,
+        "paths": [
+          "runs/connected-v2/0/initial-evidence.json",
+          "runs/connected-v2-final/0/initial-evidence.json",
+          "runs/connected-v2-final/0/rollback-check/experience.json",
+          "runs/connected-v2-final/0/solver/experience.json"
+        ]
+      },
+      {
+        "sha256": "ceaea16a3cf5980eead8f1d7fe94fc28dac570c28dd41d8545f31122b6c14f53",
+        "bytes_each": 476092,
+        "paths": [
+          "runs/sera-0.3-current/versions/v3.pt",
+          "runs/stage-three-complete/0/solver/versions/v3.pt",
+          "runs/stage-three-complete/worker-runs/0/0/solver/versions/v3.pt"
+        ]
+      },
+      {
+        "sha256": "c2962f68c877cc07015131685e683712c6f4a01a2e3796820de06cab866b9d74",
+        "bytes_each": 426904,
+        "paths": [
+          "runs/sera-0.3-current/versions/v4.pt",
+          "runs/stage-three-complete/0/solver/versions/v4.pt",
+          "runs/stage-three-complete/worker-runs/0/0/solver/versions/v4.pt"
+        ]
+      }
+    ]
+  },
+  "policy": [
+    "Keep original sources and frozen evidence immutable.",
+    "Use this catalog for labels; do not infer status from final/current/verified in old directory names.",
+    "Keep original worker outputs and canonical copies as one experiment identity.",
+    "Start future experiments in fresh descriptive directories with parent, source hash, purpose and status.",
+    "Revise interpretations through Git; preserve the original result bytes and the earlier document revision.",
+    "Do not edit installed/build copies, rename immutable RNG tags, overwrite same-version artifacts or purge unsuccessful runs."
+  ]
+}

@@ -1,12 +1,14 @@
 # SERA architecture, version 0.3
 
-I implement the handbook's recommended R1/R2 starting direction. The [0.3 source audit](../reports/stage-three-architecture-audit.md), [protocol](stage-three-protocol.md) and [results](../reports/stage-three-study.md) separate architecture contracts, controlled learning and unresolved hypotheses. The 154 source concepts constrain representations and claims; they are not 154 demonstrated cognitive abilities.
+I implement part of the handbook's recommended R1/R2 starting direction. The [full source-packet comparison](../reports/source-packet-comparison.md) records the actual connections, changed models and open contracts; the [protocol](stage-three-protocol.md) and [results](../reports/stage-three-study.md) preserve the bounded experiments. The 154 source concepts constrain representations and claims; they are not 154 demonstrated cognitive abilities.
 
 ## Connected execution
 
 ```mermaid
 flowchart TD
-    O[Typed or world observations] --> E[Learned encoder and owned working state]
+    T[Typed observations and supplied task ID] --> TT[Separate typed model and arithmetic procedures]
+    TT --> TA[Typed prediction]
+    O[World observations] --> E[R1 encoder and owned working state]
     E --> P[Prediction and bounded planning]
     P --> X[Actual execution]
     X --> D[Failure diagnosis and admitted evidence]
@@ -19,17 +21,17 @@ flowchart TD
     V --> L[Versioned reusable library]
     L --> R
     L --> P
-    U --> G[Fresh paired gain and retention checks]
+    U --> G[Fresh paired composite world scores and retention]
     L --> G
     G --> S[Immutable executable solver versions]
     S --> E
     S --> H[Development-evaluated useful archive]
     H --> U
-    D --> M[Measured support/query intervention outcomes]
+    B[Separate fixed-base intervention study] --> M[Measured support/query outcomes and controller training]
     M --> C
 ```
 
-The implementation keeps three rates distinct. Fast tensors change with observed events; task parameters and programs change through admitted learning; the intervention-value network changes through measured outer episodes. The outer-policy experiment holds the inner solver fixed to compare successive policy updates fairly. Persistent solver generations separately evaluate real task updates and retention. This decomposition does not establish a recursively self-invented optimizer.
+The implementation keeps three rates distinct, but does not yet connect them into the packet's complete successive improvement loop. Fast tensors change with observed events; world parameters and programs change through admitted learning; the intervention-value network changes in the separate outer study. The outer experiment holds the inner solver fixed; persistent solver generations hold the controller fixed. Typed and legacy model parameters also remain unchanged during those persistent rounds. A common checkpoint contains these components without sharing their parameters or automatically updating all of them.
 
 ## Working state and R1
 
@@ -43,7 +45,7 @@ The full reference preset has a 256-dimensional embedding, 128 complex rotor coo
 
 ## Typed observations and procedures
 
-`TypedReasoner` maps five modalities into shared recurrent state. Its adapters consume normalized values, masks, position, scale and unit indicators; numerical conversions preserve declared physical units. Provenance is checked at the data boundary rather than encoded as a shortcut to the answer. Categorical and numeric heads serve seven small synthetic tasks. Independent calls reset state.
+`TypedReasoner` maps five modalities into its own shared recurrent state, separate from R1's world state and parameters. Its adapters consume normalized values, masks, position, scale and unit indicators; numerical conversions preserve declared physical units. Provenance is checked at the data boundary rather than encoded as a shortcut to the answer. Categorical and numeric heads serve seven small synthetic tasks. Independent calls reset state. Three tasks' extended and structure test examples duplicate semantic content; those labels do not establish distinct structural generalization tests.
 
 Arithmetic induction searches a supplied 21-candidate integer grammar. A unique support-consistent rule must pass separate validation before it enters the saved typed component. Ordinary inference checks the procedure's domain and falls back to neural prediction outside it. The decimal parser and operations are supplied; selection from examples is learned procedure acquisition. Neural and procedure-assisted scores are both reported, with frozen neural weights in the comparison.
 
@@ -63,7 +65,7 @@ A transparent hybrid diagnostic assigns solved, missing-evidence, missing-proced
 
 Targeted acquisition uses observed transition coverage, disagreement and, for prediction failures, model errors on admitted outcomes. It executes the requested experiments and stores actual consequences. Random extra evidence, uniform and difficulty curricula, explicit diagnosis rules and fixed learning methods provide controls. The learned selector chooses among supplied interventions; it does not learn a new arbitrary acquisition program.
 
-The finite mutation grammar includes adapter insertion, selective routing and instrument expansion. Adapter insertion is function-preserving at initialization; other operations require fresh training and admission. The measured mutation experiment screens validity and development transfer before fresh gain/retention evaluation. Immutable parents support rollback.
+The finite mutation grammar includes adapter insertion, selective routing and an operation named instrument expansion. Adapter insertion is function-preserving at initialization. The instrument operation creates a fresh random replacement, even at unchanged dimension; it does not migrate learned behavior. The measured mutation experiment screens an adapter family before fresh composite gain/retention evaluation. Broader compatible growth remains open. Immutable parents support rollback.
 
 A useful archive evaluates saved lineages on declared development data and retains nondominated competence/storage records. A task specialist can seed an actual replay candidate; current accepted behavior remains its rollback parent. Cumulative replay retains learning evidence after rejected proposals. The study reports attempted and accepted retention separately.
 
@@ -71,6 +73,6 @@ A useful archive evaluates saved lineages on declared development data and retai
 
 `SolverStore` persists the trained legacy sequence decoder, world and typed components, instruments, controller and libraries. Registered settings, tensor digests and skills determine executable identity. Loading uses `weights_only=True`, component validation and pinned program dependencies. The journal records freezes, reservations, decisions and rollback with a single-writer lock.
 
-Candidates freeze before fresh paired evaluation randomness. The gain lower bound is `mean_gain - sqrt(2 log(1/alpha_k)/n)` with `alpha_k = 0.05 / 2^(k+1)`. Admission requires a lower bound above the declared margin, empirical per-task retention, validity and the counted-operation cap. Bytes and time are separate quantities. Retention checks are empirical, and the local journal is not hostile-process isolation.
+Candidates freeze before fresh paired evaluation randomness. The gain lower bound is `mean_gain - sqrt(2 log(1/alpha_k)/n)` with `alpha_k = 0.05 / 2^(k+1)`. Admission requires a lower bound above the declared margin, empirical per-world composite retention, validity and the counted-operation cap. Prediction and control are averaged within each world, so this gate can hide a component regression; typed and legacy capabilities are outside the world evaluator. Separate critical-capability gates remain open. Bytes and time are separate quantities. The local journal provides integrity checking without isolating the evaluator from candidate host code.
 
 Whole-run and phase accounting includes failed work, CPU time and cumulative peak RSS. Research pilots and the independently reproduced original benchmark remain separate. Unmeasured external assistance, labor and energy prevent a complete research-efficiency claim. R3–R8, unrestricted language/perception, broad program transfer and sustained acceleration remain separate research objectives.
