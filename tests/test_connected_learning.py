@@ -1,4 +1,7 @@
 import copy
+import json
+import subprocess
+import sys
 
 import pytest
 import torch
@@ -104,3 +107,60 @@ def test_reference_state_dimensions_and_lowrank_density_validity():
     torch.testing.assert_close(rho.diagonal(dim1=-2, dim2=-1).sum(-1).real, torch.ones(1, 4))
     assert torch.linalg.eigvalsh(rho).min() > -1e-6
     assert 0 <= model.memory.density.last_discarded_mass <= 1
+
+
+def test_lowrank_update_matches_full_density_spectral_projection():
+    from sera.lowrank import LowRankWorkspaces
+    torch.manual_seed(456)
+    workspace = LowRankWorkspaces(8, count=2, dimension=8, rank=2)
+    encoded = torch.randn(3, 8)
+    factor = workspace.initial(encoded)
+    rho = factor @ factor.mH
+    phase = workspace.phase(encoded).reshape(3, 2, 8)
+    unitary = workspace.mix @ torch.diag_embed(torch.exp(1j * phase)) @ workspace.mix
+    raw = workspace.prepare(encoded).reshape(3, 2, 8, 2)
+    vector = torch.view_as_complex(raw.contiguous()).clone()
+    vector[..., -1] = 1
+    vector = vector / vector.norm(dim=-1, keepdim=True)
+    alpha = workspace.gate(encoded).sigmoid()[..., None, None]
+    full = alpha * (unitary @ rho @ unitary.mH) + (1 - alpha) * (
+        vector[..., :, None] @ vector.conj()[..., None, :])
+    eigenvalues, eigenvectors = torch.linalg.eigh(full)
+    keep = eigenvalues[..., -2:]
+    basis = eigenvectors[..., -2:]
+    expected = (basis * (keep / keep.sum(-1, keepdim=True))[..., None, :]) @ basis.mH
+    _, actual_factor = workspace.step(encoded, factor, torch.ones(3, 1))
+    actual = actual_factor @ actual_factor.mH
+    torch.testing.assert_close(actual, expected, atol=2e-6, rtol=2e-5)
+    torch.testing.assert_close(actual.diagonal(dim1=-2, dim2=-1).sum(-1).real, torch.ones(3, 2))
+    assert torch.linalg.eigvalsh(actual).min() > -1e-6
+    assert abs(workspace.last_discarded_mass - float(eigenvalues[..., :-2].sum(-1).max().detach())) < 2e-6
+    _, bypass = workspace.step(encoded, factor, torch.zeros(3, 1))
+    torch.testing.assert_close(bypass, factor, atol=0, rtol=0)
+
+
+def test_connected_components_and_verified_program_survive_fresh_process(tmp_path):
+    from sera.curriculum import ImprovementPolicy
+    from sera.models import ModelConfig, StatefulModel
+    from sera.r2 import search_program
+    from sera.solver import Solver, SolverStore
+    world = make_world(238)
+    found = search_program(world, 0, 3, budget=32)
+    assert found["success"]
+    solver = Solver(StatefulModel(ModelConfig(width=8, memory_dim=4)),
+                    components={"r1": RecurrentWorldModel(width=16, memory_dim=4, planning_horizon=2),
+                                "controller": ImprovementPolicy(),
+                                f"r2:{world.identifier}": ControlledInstrument()},
+                    skills={found["skill_id"]: {"kind": "action_program", **found["record"]}})
+    store = SolverStore(tmp_path)
+    store.initialize(solver)
+    reloaded = store.load()
+    assert solver.identity() == reloaded.identity()
+    assert reloaded.components["r1"].planning_horizon == 2
+    result = subprocess.run([sys.executable, "-m", "sera", "solve", str(tmp_path),
+                             "--family", "permutation", "--world-seed", "238",
+                             "--start", "0", "--goal", "3"],
+                            capture_output=True, text=True, check=True)
+    actual = json.loads(result.stdout)
+    assert actual["success"] and actual["used_skill"] and actual["version"] == "v0"
+    assert actual["actions"] == found["record"]["actions"]

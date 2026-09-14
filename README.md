@@ -4,80 +4,75 @@
 
 [Repository](https://github.com/Arnav123-s/sera) · Research by [Arnav123-s](https://github.com/Arnav123-s)
 
-I am building SERA to study how a learner can maintain state, bind information in associative memory, predict action consequences, and acquire verified executable skills when its neural model fails.
+I am building SERA to study how a learner maintains state, predicts action consequences, acquires executable skills, and learns which improvement procedure to try next.
 
-In this first release, I implement a bounded R1/R2 experimental path from my architecture research. I include from-scratch training, eight interchangeable neural cores, a learned finite world model, planning, active program discovery, continual-learning controls, independent candidate evaluation, an evidence journal, and rollback. The system runs locally without a pretrained model, hosted LLM, or quantum device.
+Version 0.2 connects the first R1/R2 research path: recurrent memory drives observation and reward prediction; planning produces real execution feedback; admitted feedback trains candidates; a controlled event instrument guides bounded program search; and a trained intervention policy selects among six learning procedures. A persistent solver restores its models, policy and accepted skills together. Promotion, rejection and rollback affect ordinary inference and later learning rounds.
 
-**Research status:** an executable symbolic research system. Open-ended language, perception, learned representations, autonomous invention of learning algorithms, and general intelligence remain research objectives. Results and limitations are recorded in [the first study](reports/first-study.md).
+**Research status:** a working symbolic research system trained locally from scratch. Its four-color worlds, action vocabulary, task identifiers, program grammar and feedback access are supplied. General language, perception, invention of new learning algorithms, R3–R8 and general intelligence remain research objectives. I distinguish implemented connections from demonstrated learning in the [connected study](reports/connected-study.md) and [audit resolution](reports/architecture-audit-resolution.md).
 
-## Run it
+## Run the connected study
 
-Use Python 3.11 or newer. The verified local environment uses Python 3.12 and CPU PyTorch 2.10. Install the CPU wheel explicitly to keep the initial environment small.
+Use Python 3.11 or newer. I verify Python 3.12 with CPU PyTorch 2.10.
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
-.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.venv\Scripts\python.exe -m pip install -e ".[dev,reports]"
 .venv\Scripts\python.exe -m pytest
-.venv\Scripts\python.exe -m sera run --output runs/my-first-run --steps 500
+.venv\Scripts\python.exe -m sera study --output runs/my-study --seeds 0 1 2
 ```
 
-On Linux/macOS replace `.venv\Scripts\python.exe` with `.venv/bin/python`. After activation, `sera` and `python -m sera` are equivalent.
-
-An integrated run trains a neural memory model, learns action transitions, tests planning, compares adaptation with and without replay, diagnoses an ordered-control failure, acquires a transition program through experiments, checks the candidate on fresh tasks, and records whether it was promoted. All budgets are finite. A run can produce a rejection or an explicit unresolved result.
+After activation, `sera` and `python -m sera` are equivalent. On Linux/macOS use `.venv/bin/python`. The default study trains three separate solvers, measures every available intervention during policy development, evaluates withheld reset-family worlds, and retains successes and failures. Budgets and assumptions are in the [study protocol](research/connected-study-protocol.md).
 
 ```text
-sera train --kind delta --output runs/delta --steps 500
-sera train --kind delta --output runs/delta --steps 1000 --resume
-sera benchmark --output runs/comparison --kinds delta gru rotor real hybrid --seeds 0 1 2
-sera evaluate runs/delta/checkpoint.pt --output runs/evaluation
-sera adapt runs/delta/checkpoint.pt --output runs/adaptation
-sera improve runs/delta/checkpoint.pt --output runs/improvement --max-queries 100
-sera status runs/improvement
-sera rollback runs/improvement
-sera world --output runs/world
-sera instrument --output runs/instrument --steps 300
+sera solve runs/my-study/0/solver --family rotation --world-seed 50000 --start 0 --goal 3
+sera evaluate runs/my-study/0/solver --output runs/current-evaluation
+sera status runs/my-study/0/solver
+sera learn runs/my-study/0/solver --family reset --world-seed 123456 --steps 32
+sera rollback runs/my-study/0/solver
 ```
 
-Use a new output directory for a new experiment. Training resume preserves configuration and source identity; only the training-step budget may increase. The checkpoint contains the current optimizer trajectory and separately the best validation-selected weights. Evaluation loads the latter. Benchmark resume requires an identical manifest.
+`solve` loads the current accepted solver and executes its acquired skill or neural plan. `learn` collects evidence, uses the saved learned policy, constructs a candidate and evaluates it against the incumbent on fresh paired problems. A rejection preserves the current solver. `rollback` restores the accepted parent and preserves the cumulative evaluation ledger. Learning mutates that solver directory; keep the study's original directory intact when doing additional experiments.
 
-## Implemented components
+## What is implemented
 
-| Component | Implementation | Evidence boundary |
+| Path | Executable behavior | Evidence boundary |
 |---|---|---|
-| Associative binding | Gated rank-one delta writes | Classical memory; learned keys can interfere |
-| Complex state | Input-controlled rotation, write and forgetting | Classical arithmetic with a real no-phase control |
-| Collision state | Exact Bloch-coordinate partial swap | Independent local states; no arbitrary joint entanglement |
-| Density workspace | Exact 4 x 4 controlled reset channel | Small full-rank workspace; no compression claim |
-| Hybrid | Learned routing over delta, rotor and density branches | Larger parameter count is explicitly controlled |
-| Event instrument | QR-normalized real or complex Kraus operators | Tiny cyclic vocabulary; conditional update and generation |
-| World model | Learned action-conditioned categorical transitions | Fully observed finite simulator |
-| Program acquisition | Active transition identification and finite interpreter | Resettable deterministic dynamics and observable state IDs |
-| Continual learning | No update, full update, replay and scratch controls | One related withheld task; empirical retention |
-| Improvement | Diagnose, acquire, verify, compare, promote or reject | Fixed diagnostic/routing policy in this release |
+| R1 | Current event plus recurrent state → action-conditioned observation/reward prediction → bounded planning → actual feedback → replay update | Compact associative model; symbolic sensors; most-probable imagined states |
+| R2 | Learned action channels → shared event instrument → predictive-state program proposals → execution/verification → trace learning | Four-dimensional instrument; finite typed DSL; reset access required for search |
+| Improvement policy | Fits measured intervention utilities and selects no change, update, replay, evidence, planning or program acquisition | Learns a selector over supplied methods; final test family withheld |
+| Durable solver | Neural model, world model, controller and verified skills in immutable versions | Finite task/domain routing; validated component registry |
+| Admission | Fresh paired scores, empirical retention, validity and counted-cost gates | Small finite generators; retention is not a statistical certificate |
+| Reference R1 preset | 256-wide embedding, 128-complex rotor, eight 32×32 memories, four 16×4 density factors | 35,840-byte core state tested; full preset not trained in this study |
+| Original core controls | Delta, GRU, rotor, no-phase rotor, collision and no-cross control, full density, hybrid | Historical mechanism study; eight cores do not mean eight architecture families |
 
-## Working state and durable learning
+The [first study](reports/first-study.md) remains historical evidence. Its larger hybrid did not outperform a comparable-parameter classical memory on longer sequences. I make no quantum advantage claim. The [0.1 audit](reports/architecture-alignment-audit.md) records the missing connections that motivated this build.
 
-`StatefulModel.forward()` resets state for each independent batch. `Session` owns streaming state with a session ID, model version, encoder version, shape and dtype checks. Observing an event changes working state; it does not run an optimizer. `Experience` requires simulator or verified target provenance. Model predictions are not automatically accepted as training truth.
-
-The current neural encoder processes the declared 20-feature symbolic format. Other modality names in the metadata contract reserve types; text, image and audio encoders are not implemented. The broader R1 dimensions in the handbook are scaling proposals, not hidden defaults in this repository.
-
-## Evidence and project layout
+## Evidence and reproducibility
 
 ```text
-src/sera/        models, finite quantum operations, training, evaluator, engine, CLI
-tests/           independent numerical references and end-to-end regression tests
-scripts/         repeatable parameter-count control and instrument suite
-research/        source hashes, concept graph, requirements, literature, roadmap
-reports/         measured findings and selected JSON evidence
-runs/            local checkpoints, full experiments, journals and verified skills (ignored)
+src/sera/        solver, memory, R1/R2, experience, policy, evaluation and CLI
+tests/           numerical references, provenance and executable lifecycle tests
+scripts/         report generation and release verification
+research/        original-source hashes, 154-concept map, protocol, checklist and roadmap
+reports/         measured findings, raw selected evidence and checksums
+runs/            full local studies, checkpoints, evidence, candidates and journals (ignored)
 research/intake/ original reference package and extracted PDF text (ignored)
 ```
 
-I use the architecture handbook and physics atlas as research references. I implemented this code independently and did not execute or reuse the reference package's scripts or checkpoints. I retain the original 154-node concept graph and component mapping with provenance, and distinguish the 36,900 schematic registry entries from trained systems. Read [my research brief](research/brief.md), [architecture](research/architecture.md), [primary sources](research/sources.md), and [research roadmap](research/roadmap.md).
+I keep a [task checklist](research/implementation-checklist.md), [development log](research/development-log.md), [architecture](research/architecture.md) and [reproduction guide](research/reproducing-connected-study.md). I inspected the supplied package as research material and did not execute its scripts or load its checkpoints. The source manifest distinguishes original material from independently measured SERA results. The 36,900 supplied registry entries are schematic configurations.
 
-The evidence journal detects ordinary local tampering and rejects reuse of a recorded evaluation suite. It is not process isolation against malicious code. The candidate uses a validated finite program interpreter and does not rewrite the evaluator or execute arbitrary generated Python. The statistical gain bound assumes fresh independent bounded paired observations; retention gates are empirical and are not statistical certificates.
+```text
+python scripts/build_connected_report.py
+python scripts/verify_release.py
+python -m ruff check src tests scripts
+python -m pytest
+```
 
-Install `.[reports]` to rebuild the measured report with `python scripts/build_report.py`. `requirements-lock.txt` records the complete verified Python 3.12 environment, including reporting tools; install its CPU PyTorch entry using `--extra-index-url https://download.pytorch.org/whl/cpu`. Selected evidence files use LF line endings so their hashes survive checkout on either platform. Run `python scripts/verify_release.py` to check them.
+The connected report can be rebuilt from committed JSON evidence; its tables do not require rerunning training. Model checkpoints and full journals remain local. `requirements-lock.txt` records the verified Python 3.12 environment; install its CPU PyTorch entry using `--extra-index-url https://download.pytorch.org/whl/cpu`.
+
+All operation categories are retained separately. Their sum is a declared cost proxy, not FLOPs. The local hash journal catches ordinary tampering; it does not isolate a malicious process. Generated programs are bounded data interpreted by fixed code. No arbitrary generated Python is executed.
+
+Legacy `train`, `benchmark`, `world`, `instrument`, `adapt` and `run` commands remain available for the original mechanism experiments. Legacy neural checkpoints can be evaluated, but historical version-0.1 directories are not silently migrated into connected solvers.
 
 I have not assigned an open-source license to this research release. Original reference materials retain their source attribution.

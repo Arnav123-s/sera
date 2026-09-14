@@ -1,59 +1,83 @@
-# SERA architecture, release 0.1
+# SERA architecture, version 0.2
 
-I organize SERA around a stateful neural path, an executable skill path, and an independent evaluation path. I keep their assumptions and evidence separate so that I can identify which mechanism contributes to an improvement.
+I implement the handbook's recommended first integration: R1 with a separated R2 program-learning path. These components share an executable solver and admission lifecycle. The physics atlas constrains representations, reductions and mathematical claims; its 154 concepts are not 154 implemented cognitive functions. R3–R8 are separate future architectures.
+
+## Connected execution
 
 ```mermaid
-flowchart LR
-  O[Symbolic observation and task instruction] --> E[Learned encoder]
-  E --> D[Associative delta memory]
-  E --> R[Optional rotor]
-  E --> Q[Optional density workspace]
-  D --> F[Normalized routing and readout]
-  R --> F
-  Q --> F
-  F --> P[Prediction]
-  P --> X[Observed failure]
-  X --> C[Fixed diagnostic policy]
-  C --> A[Bounded active experiments]
-  A --> S[Transition program candidate]
-  S --> V[Fresh execution and paired evaluation]
-  V --> L[Versioned verified skill library]
-  L --> P
-  O --> W[Action-conditioned world model]
-  W --> B[Bounded planner]
-  B --> T[Execute and check in simulator]
+flowchart TD
+    E[Observed sensor, action, reward and goal] --> H[Current event encoder and retained R1 state]
+    H --> W[Action-conditioned observation and reward heads]
+    W --> P[Bounded imagined planning]
+    P --> X[Execute in environment]
+    X --> E
+    X --> A[Admitted experience with provenance]
+    A --> U[Candidate parameter update with optional replay]
+    A --> I[Controlled R2 instrument]
+    I --> Q[Rank bounded typed programs]
+    Q --> V[Execute and independently verify]
+    V --> I
+    V --> S[Candidate executable skills]
+    D[Observed diagnostic outcomes] --> C[Learned intervention policy]
+    C --> U
+    C --> Q
+    C --> P
+    U --> G[Fresh paired admission and retention gates]
+    S --> G
+    G --> L[Accepted persistent solver version]
+    L --> H
+    L --> C
+    L --> S
 ```
 
-## Neural path
+These are executable paths in `r1.py`, `r2.py`, `connected.py`, `curriculum.py` and `solver.py`. The separate `world.py` and original `quantum.py` experiments remain historical component controls.
 
-Twenty symbolic input features encode key, observed value, task, marked position, query flag, relative position and initial observable state. Query value features are zero. The default width is 32 with two 8 x 8 associative memory heads. Independent examples reset working state. A query reads memory without writing to delta, rotor, collision or density state. The GRU control processes the query as another token; this convention is part of the declared architecture comparison.
+## R1: working state, world prediction and feedback
 
-For a normalized key, the memory update is `M' = alpha*M + beta*(v-alpha*M*k)*k^T`. At alpha=beta=1 the addressed value is replaced exactly. Keys are learned, so interference remains possible.
+The compact study encodes 22 symbolic features: visible sensor color (4), previous action (4), actual reward (1), goal (4), public world-identity encoding (8), and sensor availability (1). Missing sensors contribute zeros and an availability flag. Internal simulator indices and transition tables never enter the neural encoder. A visible color nevertheless fully identifies the state within its world; learned perception remains absent.
 
-The rotor stores real and imaginary coordinates and performs input-controlled phase rotation plus gated write/forgetting. Its no-phase control keeps the same parameter allocation but disables angles. The driven recurrence is a classical state-space model; it is not a unitary quantum channel as a whole.
+`RecurrentWorldModel.observe()` combines the current embedding with the recurrent readout. The default core has width 48, two associative heads and memory dimension 8. For a normalized key, the corrective write is `M' = alpha*M + beta*(v-alpha*M*k)*k^T`. Learned addressing may interfere. Separate heads predict the next sensor distribution and reward given the aggregate and a proposed action.
 
-The density workspace retains an exact complex 4 x 4 matrix. An input-conditioned unitary uses a fixed Hadamard mixer and learned phases. A convex mixture with a prepared pure state supplies forgetting. Preparation fixes one nonzero coordinate to avoid the zero-factor singularity. The linear channel includes the trace factor for unnormalized operators. No rank compression is performed in the recurrent workspace.
+`WorldSession` owns fast state. Its planner branches through the same model without changing the live session. It keeps at most eight beam states and considers four actions, with a horizon of one or three in this study. Imagined observations are argmax predictions. This bounded heuristic does not propagate a full calibrated belief distribution. Only real execution feedback changes the live session.
 
-The hybrid normalizes each branch and learns input-dependent mixture weights over delta, rotor and density outputs. It has more parameters than any one component. The parameter-count control is selected without consulting its task scores. Parameter equality does not imply equal state memory, training FLOPs, or tuning budgets.
+`planned_evidence()` records actual plan consequences as admitted trajectories. Learning uses next-sensor cross-entropy where the target is visible, plus half-weighted reward binary cross-entropy. It differentiates the encoder, recurrent core, fusion and heads. Replay mixes prior and new admitted trajectories. Imagined outcomes are never labels.
 
-## Program and world-model paths
+The full reference preset is separately executable with `RecurrentWorldModel(width=256, heads=8, memory_dim=32, kind="reference")`. It contains 128 complex rotor coordinates, eight 32×32 memories and four 16×4 complex density factors: 35,840 retained core bytes at batch size one. Factors define positive density matrices through `rho = L L*`. A controlled channel expands rank; SVD truncation and renormalization impose the budget and record discarded mass. The preset is differentiated and checked numerically, but full-size training is not claimed. Core bytes exclude parameters, gradients, optimizer state, activations and planning branches.
 
-The transition learner explores a resettable finite system by access sequences. It repeats every transition query once to detect simple inconsistencies. Observable state IDs and an action alphabet are supplied; semantic state discovery and reliable identification under noise are open work. Repeated-query agreement is a diagnostic, not proof that an arbitrary system is deterministic.
+## R2: controlled instruments and verified programs
 
-An acquired program is a typed, validated transition table executed under a maximum instruction count. Each skill has a content hash, environment version, assumptions and independent trajectory tests. The skill router currently uses the explicit ordered-control task identifier. Learning applicability is an upcoming experiment.
+`ControlledInstrument` uses QR-normalized action Kraus operators and a shared projective event instrument with a learned orthonormal basis. Action control, event likelihood, conditioning and proposals use the same predictive state. Missing events apply the sum of event branches, without conditioning on a guessed or hidden sensor.
 
-The world model is a separate action-conditioned MLP over observable finite states. The planner performs bounded breadth-first search over the model's most probable sufficiently confident transitions. Plans are executed in the simulator. It is appropriate only for this deterministic finite setup; it does not implement uncertainty-aware belief-space planning or an actor-critic world-model algorithm.
+The proposal head receives real/imaginary density entries and the goal. Search ranks bounded typed programs using its action logits and predicted goal probability. The interpreter supports `action`, `sequence`, bounded `repeat` and library `call`, with depth, fuel and recursion checks. The experiments mainly acquire action sequences; syntax for calls/repeats does not establish useful abstraction discovery.
 
-## Promotion and persistence
+Search executes candidates in a resettable world and independently re-executes successful candidates. Verified traces train likelihood and proposal credit. A skill stores domain, start/goal, typed body, flattened actions, dependencies, evidence and verification. Ordinary goal solving consults admitted skills before neural planning. Applicability still uses explicit world/start/goal routing.
 
-The engine freezes the neural hash and program candidate, then draws a fresh evaluation seed. Equal-sized independent task strata keep the pooled paired score equal to macro accuracy. For differences in [-1,1], the one-sided Hoeffding lower bound is `mean_gain - sqrt(2*log(1/alpha_k)/n)`, where `alpha_k=0.05/2^(k+1)`. The lower bound must exceed 0.01, all empirical per-task retention losses must be at most 0.02, and validity and acquisition-cost gates must pass.
+The independent R2 test withholds four start/goal pairs from eight demonstrations, with four candidate executions for each fixed, untrained-instrument and learned-instrument search. Likelihood training can observe transition types used in test programs. Training and model-proposal costs are reported separately.
 
-The acquisition-cost unit in this release is `oracle calls + executed oracle actions`. It is not total system compute. Reports separately retain training and end-to-end wall time and parameter/core-state sizes. Total optimizer FLOPs, peak resident memory and data-acquisition economics are future accounting work.
+## Three update rates
 
-The SQLite journal reserves evaluation identifiers before scoring, tracks the cumulative round index, and chains event hashes. This makes honest single-process experiments auditable and rejects recorded reuse. It is not a security boundary against a candidate with filesystem access. The current candidate cannot generate or execute arbitrary code.
+| Rate | State that changes | Source |
+|---|---|---|
+| Fast working state | Recurrent tensors or instrument posterior | Actual observations and execution events |
+| Durable task learning | World/instrument parameters and executable skills | Admitted trajectories and verified programs |
+| Improvement-policy learning | Eight-input, 32-hidden-unit intervention-value network | Measured candidate outcomes on separate support/query episodes |
 
-Raw tensor checkpoints use `weights_only=True` when loaded. Model snapshots store current and best-validation weights separately, optimizer state, RNG state, configuration, package versions and a source hash. Session files carry explicit ownership and tensor contracts. Rollback selects the recorded parent; unsuccessful candidate proposals do not replace the incumbent pointer.
+The policy chooses `none`, `update`, `replay`, `evidence`, `planning` or `program`. Optimizers and procedures are supplied. The policy is trained during development, saved in the solver and held fixed during final meta-tests and autonomous generations. This is limited learned selection, not recursive invention of learning algorithms.
 
-## Deliberate release limits
+Features use observed accuracy, actual reward error, entropy, executed goal success, support size, reset permission, a reserved previous-score input and planning horizon. Query outcomes supply development targets, never diagnostic inputs. Normalization uses training episodes; validation selects a checkpoint. Final reset-family outcomes are generated after freezing it. Fixed methods requiring unavailable reset access fall back to no change.
 
-The implemented path is a bounded first integration. The full handbook-scale encoder, low-rank multiworkspace stack, language and perceptual decoders, learned curriculum, learned diagnostic policy, open-ended DSL expansion, multi-generation meta-learning and R3-R8 architectures are not claimed as delivered. The original 154 concepts remain an indexed source of future constraints and experiments, rather than a requirement to add every physical concept to one network.
+## Evidence, promotion and persistence
+
+`EvidenceReplay` admits validated synthetic/verified trajectories and rejects prediction-only provenance and evaluation/query/test/promotion splits. Content hashes and serialization preserve provenance. The original symbolic task generator remains a separate declared source of synthetic labels. Additional CLI learning retains actual collected evidence even after a rejected candidate; rollback restores solver behavior, not deletion of facts.
+
+`SolverStore` snapshots neural parameters, component settings/weights and skills together. It verifies payload and executable identity, restores only registered types, checks finite state and instrument validity, and compares interpreted program bodies to their action records. Checkpoints use `weights_only=True`. Atomic pointers and an exclusive lock support one writer; an interrupted lock requires inspection.
+
+Candidates freeze before fresh evaluation randomness. Equal world counts and equal prediction/control weights define the score. Goal outcomes are enumerated on twelve deterministic unmasked start/goal pairs and independently sampled; this supports a finite-distribution estimate, not a large task-diversity claim.
+
+The gain lower bound is `mean_gain - sqrt(2*log(1/alpha_k)/n)`, with `alpha_k=0.05/2^(k+1)`. Promotion requires it above 0.01, empirical per-task regressions at most 0.02, validity and the configured counted-cost budget. Only the gain bound has this conditional independence interpretation. The ledger reserves evaluations before use and preserves cumulative rounds across rejection/rollback. It is an audit mechanism, not isolation against hostile code.
+
+A failed evaluation retains its work/failure record and preserves the incumbent. Rejection retains a candidate snapshot. Rollback verifies the accepted parent before changing current behavior. Fresh-process tests cover symbolic and connected skill use. Model updates, skills and planning horizon all contribute to executable identity.
+
+## Evidence boundaries
+
+This release does not demonstrate representation discovery, broad partial-observation control, general program transfer, a learned optimizer, open-ended language, R3–R8, quantum hardware advantage or recursive research acceleration. The compact trained R1 and tested full reference preset must not be conflated. The [connected study](../reports/connected-study.md) separates software validity, measured learning and cost.

@@ -28,7 +28,7 @@ The source's numerical leaderboard is historical evidence. SERA results come fro
 2. All supplied neural cores struggled with ordered program composition. A separate exact execution pathway is therefore a concrete engineering target.
 3. Learning a new binding rule caused forgetting. Replay and per-task retention measurements are necessary to interpret improvement.
 4. An instrument defines both event probability and conditional state update. Validity of that operation does not guarantee successful optimization.
-5. Finite-register and low-rank representations have real storage and contraction costs. The initial density workspace is deliberately small and exact.
+5. Finite-register and low-rank representations have real storage and contraction costs. The original density workspace is small and exact; the connected release adds a tested reference-size factor preset without claiming its trained performance.
 6. The source's active program learner receives richer feedback than its neural learners. The new integration records and preserves that distinction.
 7. The source's full R1-R8 systems, representation discovery and learned improvement controller were unimplemented. SERA begins with a bounded R1/R2 path and records remaining work explicitly.
 
@@ -37,11 +37,13 @@ The source's numerical leaderboard is historical evidence. SERA results come fro
 | Source requirement | SERA implementation | Verification |
 |---|---|---|
 | Input/state/output/learn/evaluate contracts | `contracts.py`, `models.py`, `training.py`, `evaluation.py` | Metadata, target admission, streaming equivalence, shape/dtype checks |
-| Three learning time scales | Session state, optimizer checkpoints, explicit improvement engine | Parameter immutability during observation; resume; parent versions |
+| Three learning time scales | Working state, admitted model/skill updates, learned intervention selector | State isolation; durable reload; support/query policy learning. The selector chooses supplied methods, not new optimizers. |
 | B1/B3/B4/B5/B6/B7 mechanisms | `models.py`, `quantum.py` | Matrix reference, gradients, probability normalization, exact writes |
-| R1 action-conditioned prediction | `world.py` | All finite transitions and executed plans |
-| R2 acquired executable programs | `programs.py` | New environments, long sequences, budget and domain rejection |
-| Failure-driven lifecycle | `engine.py` | Actual failure, discovery, fresh paired test, promotion, rollback |
+| R1 action-conditioned prediction and feedback | `r1.py`, `experience.py`, `connected.py` | Retained-state gradients, missing observations, executed planning, admitted replay and retention |
+| R2 controlled program learning | `r2.py`; original symbolic control in `programs.py` | Independent instrument likelihood, bounded typed execution, verification and guided/fixed search |
+| Failure-driven lifecycle | `solver.py`, `engine.py`, `curriculum.py` | Current executable reload, measured policy outcomes, repeated promotion/rejection and behavioral rollback |
 | Provenance and independent admission | `storage.py`, `evaluation.py` | Data fingerprints, ledger integrity, reuse rejection, bounded scores |
 | Retention | `adaptation_experiment` | No update/full/replay/scratch, separate support/query namespaces |
-| Larger-scale generality | Roadmap, not an implemented capability | Future acceptance criteria |
+| Larger-scale generality | Roadmap, not an implemented capability | Full trained reference preset, learned perception, general program transfer and R3–R8 remain open |
+
+The [0.1 alignment audit](../reports/architecture-alignment-audit.md) preserves the original gaps. The [0.2 disposition](../reports/architecture-audit-resolution.md) and [connected results](../reports/connected-study.md) document the implemented corrections and their measured limits.

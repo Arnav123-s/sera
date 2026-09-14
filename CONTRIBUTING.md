@@ -12,4 +12,6 @@ Final evaluation data belongs to the evaluator. Freeze a candidate before genera
 
 The finite interpreter is intentionally narrow. Extensions must define an input domain, execution budget, numerical/type contract and independent tests. Generated programs are data; do not add unrestricted `eval`, shell execution or automatic package installation to the learner.
 
-The first release's fixed controller and supplied-state assumptions are explicit research limitations. Preserve them in summaries until experiments actually remove them.
+Version 0.2 learns an intervention selector, while optimizers, task/domain routing, symbolic colors and program grammar remain supplied. Preserve those assumptions in summaries. A successful software lifecycle or a trained controller does not establish superiority over fixed methods; preserve the measured comparisons and failures.
+
+The connected study freezes source and policy before final tests, retains support-record identifiers, and uses a separate namespace for each meta episode. Run `python scripts/audit_connected_run.py --input RUN_DIRECTORY` to reproduce exposed admission decisions; label that exercise as verification, not new generalization evidence. Report generation from committed evidence must work in a clean checkout.

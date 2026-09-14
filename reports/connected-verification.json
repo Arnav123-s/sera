@@ -1,0 +1,231 @@
+{
+  "scope": "Reproduction of exposed results; no new training or generalization claim",
+  "source_sha256": "59c0835fba356932d945dc67c04b781aa5549702ee40389b09b9e03c73016594",
+  "runs": [
+    {
+      "seed": 0,
+      "rounds": [
+        {
+          "round": 0,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "a959394afc2f35219080ff5134eaad01b2c09a37a316a21fa53349d65e31b60e",
+          "paired_scores_sha256": "ac94ee2705236d21f9f5da6e655295bd409242e51a8158ecc32422102ff70f13",
+          "paired_samples": 10240
+        },
+        {
+          "round": 1,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "24d2b2452616ab51a6e4b0a3cc40237a76ef28872a533796cca5321372ee7274",
+          "paired_scores_sha256": "97d441e5738f0c1cf6bfdbbcc0ba6d4af48a1bf32143e04e0dcd4407a01a9e89",
+          "paired_samples": 10240
+        },
+        {
+          "round": 2,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "7445ac92a0780a7abf40724145ebb44c37da489ce7b96ad93343151d09d4a335",
+          "paired_scores_sha256": "5f8b90836e578179361a57a4e84a473c2b35657c8b72b25a4d2d954080b87ceb",
+          "paired_samples": 2048
+        },
+        {
+          "round": 3,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "2ceab41d363b459a61135c3f883ac0257cdcdb3ebe368195843c048e14dd010e",
+          "paired_scores_sha256": "ac23c48b698e6ebf0e94c834663ca6f6e28b96a4e57ca30fecd4f712ddf65f14",
+          "paired_samples": 3072
+        },
+        {
+          "round": 4,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "aae75518de901204448dfa4579ef0785d9bef31b4306c0fdfe0dd9e431daa6b3",
+          "paired_scores_sha256": "821fdff7f264f59f5f0e38a3dc24343910cc01f8396ec0e3f0911e237ee75167",
+          "paired_samples": 4096
+        }
+      ],
+      "meta_episodes": 16,
+      "verified_goal_skills": 28,
+      "execution_examples": [
+        {
+          "success": true,
+          "actions": [
+            1
+          ],
+          "observations": [
+            0,
+            1
+          ],
+          "rewards": [
+            1.0
+          ],
+          "used_skill": true,
+          "world_id": "reset-90000",
+          "start": 0,
+          "goal": 1
+        },
+        {
+          "success": true,
+          "actions": [
+            2
+          ],
+          "observations": [
+            0,
+            2
+          ],
+          "rewards": [
+            1.0
+          ],
+          "used_skill": true,
+          "world_id": "reset-90000",
+          "start": 0,
+          "goal": 2
+        },
+        {
+          "success": true,
+          "actions": [
+            0
+          ],
+          "observations": [
+            0,
+            3
+          ],
+          "rewards": [
+            1.0
+          ],
+          "used_skill": true,
+          "world_id": "reset-90000",
+          "start": 0,
+          "goal": 3
+        }
+      ],
+      "solver_identity": "9bb09fcf81ede1f9a2d501e5465f4fda0ac6fd274492e2272042d8ca6c2887ea",
+      "component_parameters": {
+        "r1": 17530,
+        "controller": 486,
+        "r2:reset-90000": 2244,
+        "r2:reset-90001": 2244
+      },
+      "symbolic_parameters": 3225,
+      "r1_core_state_bytes": 512,
+      "symbolic_final_reproduced": true
+    },
+    {
+      "seed": 1,
+      "rounds": [
+        {
+          "round": 0,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "ef9d89fdfd1fcb960624562bb63505bc4d0b48c226de0ba419add084c5a5bfc8",
+          "paired_scores_sha256": "6b10a5950d5a01c488e8f21cb39f900896ce74d4653bcf4f266ba4a22eed5e21",
+          "paired_samples": 10240
+        },
+        {
+          "round": 1,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "de101ae262dc47d9de2776f053966c176ca2cbf74f086ab858f76ab8c0d76f0d",
+          "paired_scores_sha256": "8fdae268fb10350d2b8b55dd5f4121016420d69b328c97ec0091c136b3afecdc",
+          "paired_samples": 10240
+        },
+        {
+          "round": 2,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "79452d785bc4ff56b064d4e54afd6e17294bdf74a1bfe0db4e96a78455d5834b",
+          "paired_scores_sha256": "455b0950e2306215f99248177bca7adddbc92a5ded55c68774ff6f3fc8ab0b9e",
+          "paired_samples": 2048
+        },
+        {
+          "round": 3,
+          "status": "rejected",
+          "reproduced": true,
+          "dataset_id": "1d5b1a13b0ca974cba3141b6dec2e41d4809f90bd7308ee4f97a37669077c7fa",
+          "paired_scores_sha256": "d3c87d06424cc273b0859991aa3c963e927d598dedda0f75e808443bd0ca4a3c",
+          "paired_samples": 3072
+        },
+        {
+          "round": 4,
+          "status": "rejected",
+          "reproduced": true,
+          "dataset_id": "2133e857841d4a8d0f45f9c8737dbe8d2d10eb9504d3f1f731c0300144a1251a",
+          "paired_scores_sha256": "a9108bcef253d096036dcf317af5ae9f4bce4cb8c58f9e0b3e6ab080c2ff6c97",
+          "paired_samples": 4096
+        }
+      ],
+      "meta_episodes": 16,
+      "verified_goal_skills": 0,
+      "execution_examples": [],
+      "solver_identity": "ca0025fac1af3ba3ea9ce82649106050a42d7d3a3b51768301ccb34f1157f7b3",
+      "component_parameters": {
+        "r1": 17530,
+        "controller": 486
+      },
+      "symbolic_parameters": 3225,
+      "r1_core_state_bytes": 512,
+      "symbolic_final_reproduced": true
+    },
+    {
+      "seed": 2,
+      "rounds": [
+        {
+          "round": 0,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "41c458b1fd7d92a0bb20a5c204baf583beb2d80650fa150b3fea3600daa985a8",
+          "paired_scores_sha256": "eb933805d75c25c24f2225b431013234bd4e7ac46eff4f32d45428c068e0a386",
+          "paired_samples": 10240
+        },
+        {
+          "round": 1,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "5880c7de799eaf2165782dcffdefa3107adcb17f39ad10d0a106c247b359e02a",
+          "paired_scores_sha256": "2a9a31a2a27446d1ea904cc9c9477b89dea31dd90f8e904825d34ef3ce69008a",
+          "paired_samples": 10240
+        },
+        {
+          "round": 2,
+          "status": "promoted",
+          "reproduced": true,
+          "dataset_id": "182cfc16dc31ffdcb64aa55c7868abb095dc6d4a11b4b695a53b26b9ed96601e",
+          "paired_scores_sha256": "9f893184db3c1f5a96aefd567dbe43a610f50c4128618e74a52bc07f000af6e0",
+          "paired_samples": 2048
+        },
+        {
+          "round": 3,
+          "status": "rejected",
+          "reproduced": true,
+          "dataset_id": "e1a3f748ba38f84d1b7bb3a4184cbc57694c8de9cf1fbb2e34fe98db34be7f2a",
+          "paired_scores_sha256": "3b4aadb84b436a3c77094538df960c14796286f3c975fef7e36608c97a8f7e72",
+          "paired_samples": 3072
+        },
+        {
+          "round": 4,
+          "status": "rejected",
+          "reproduced": true,
+          "dataset_id": "4615e290ce0d8d08c4a6f5472b2f359f39519f630c85665e2b46e45ed118c4ea",
+          "paired_scores_sha256": "83a64f7b2d5e2987e3f1c58881f1ddaf789539cfab0ef98ed5b9044293bafe8b",
+          "paired_samples": 4096
+        }
+      ],
+      "meta_episodes": 16,
+      "verified_goal_skills": 0,
+      "execution_examples": [],
+      "solver_identity": "3c6896baa134724ccf29d19dc811e6f0ef8bf4b9716db25dcfc1c36f84e33c4f",
+      "component_parameters": {
+        "r1": 17530,
+        "controller": 486
+      },
+      "symbolic_parameters": 3225,
+      "r1_core_state_bytes": 512,
+      "symbolic_final_reproduced": true
+    }
+  ],
+  "unique_meta_support_records": 1920,
+  "unique_meta_query_datasets": 48,
+  "additional_audit_wall_seconds": 63.0971744999988
+}

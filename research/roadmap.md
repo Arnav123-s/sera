@@ -1,10 +1,14 @@
 # SERA research roadmap
 
-My long-term target is a learner that can acquire unfamiliar capabilities, transfer them, retain earlier competence and improve the methods it uses to learn. With release 0.1, I establish a measured experimental platform for this question. I do not interpret this first release as evidence of general intelligence or recursive acceleration.
+My long-term target is a learner that can acquire unfamiliar capabilities, transfer them, retain earlier competence and improve the methods it uses to learn. Release 0.2 adds a connected R1/R2 platform and a trained selector over learning procedures. I do not interpret a connected implementation as evidence of general intelligence or recursive acceleration.
 
 ## Completed first foundation
 
 From-scratch neural training; selective binding and temporal tasks; interchangeable classical and quantum-inspired cores; stateful sessions and serialization; finite action prediction and planning; active program acquisition; continual-learning controls; fresh paired promotion; evidence ledger; rollback; repeatable local experiments and cross-platform CI configuration.
+
+## Connected foundation implemented in 0.2
+
+Persistent executable versions; learned recurrent observation/reward prediction; planning through that same model; actual feedback admitted into replay; controlled instruments guiding typed program search; verified trace learning; a learned intervention-value policy; independent meta-test family; successive learning rounds and behavioral rollback. The handbook-sized low-rank state preset is implemented and tested separately from compact training. See the [checklist](implementation-checklist.md) and [connected study](../reports/connected-study.md) for evidence and negative results.
 
 ## Next experiment: isolate the hybrid's benefit
 
@@ -12,15 +16,15 @@ The first study includes a parameter-count control. Next, compare the current hy
 
 **Acceptance:** a complementary benefit survives parameter and compute controls on withheld task generators and longer sequences. **Failure response:** remove unhelpful branches or route them only to the domain where a benefit is measured. A negative result is preserved.
 
-## Next capability: learn when to acquire a program
+## Next policy experiment: beat fixed learning procedures
 
-Replace the fixed `ordered_control` router and diagnostic threshold with a learned controller. Construct support/query episodes where replay, new observations, program search and additional planning have different measured payoffs. Train a small controller from those payoffs. Hold out task families and use a fixed-budget uniform policy as a control.
+Version 0.2 trains a small controller on actual measured support/query outcomes for replay, updates, observations, planning and programs. It tests a withheld reset family against every fixed method. Broaden the development distribution and compare uncertainty-aware selection to fixed and uniform policies at the full meta-training plus deployment budget. Keep the finite symbolic router explicitly separate from this controller.
 
 **Acceptance:** better query improvement per total acquisition/update cost, with worst-task retention at least as good as the fixed controller. Report failure categories and rejected proposals. The first controller must not train on its own final evaluation pool.
 
-## Remove privileged observable state IDs
+## Remove supplied identifying sensor colors
 
-Begin with deterministic finite worlds whose states are rendered as noisy feature vectors. The learner must infer a stable abstraction from observations. Then introduce perceptual aliasing and partial observability. Evaluate multiple independently generated worlds and withheld rendering conventions.
+Version 0.2 withholds internal simulator indices and masks some readings, but each visible color identifies a state and a public world identity is supplied. Next render states as noisy feature vectors and introduce perceptual aliasing. The learner must infer a stable abstraction and calibrate uncertainty across withheld rendering conventions. Missing readings alone do not remove the supplied-representation assumption.
 
 **Acceptance:** long-horizon prediction and plan execution succeed under new observation noise, while calibration detects aliasing. Compare to an exact observable-state upper bound and a conventional recurrent belief model. State-ID access must be excluded from learner inputs.
 
