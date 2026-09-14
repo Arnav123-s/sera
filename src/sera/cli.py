@@ -13,8 +13,9 @@ from sera.engine import improve, rollback, run_world
 from sera.evaluation import evaluate
 from sera.experiments import benchmark, instrument_experiment, integrated_run
 from sera.models import KINDS, ModelConfig
+from sera.solver import load_solver
 from sera.storage import Journal, write_json
-from sera.training import TrainConfig, adaptation_experiment, load_model, train
+from sera.training import TrainConfig, adaptation_experiment, train
 
 
 def positive(value):
@@ -60,10 +61,32 @@ def parser():
         child.add_argument("--samples", type=positive, default=1024)
         if name == "improve":
             child.add_argument("--max-queries", type=positive, default=100)
+            child.add_argument("--task", type=int, choices=range(5), default=2)
     child = sub.add_parser("status")
     child.add_argument("directory", type=Path)
     child = sub.add_parser("rollback")
     child.add_argument("directory", type=Path)
+    child = sub.add_parser("study")
+    child.add_argument("--output", type=Path, required=True)
+    child.add_argument("--steps", type=positive, default=900)
+    child.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
+    child.add_argument("--meta-train", type=positive, default=8)
+    child.add_argument("--meta-validation", type=positive, default=4)
+    child.add_argument("--meta-test", type=positive, default=4)
+    child.add_argument("--inner-steps", type=positive, default=16)
+    child.add_argument("--instrument-steps", type=positive, default=200)
+    for name in ("solve", "learn"):
+        child = sub.add_parser(name)
+        child.add_argument("directory", type=Path)
+        child.add_argument("--world-seed", type=int, required=True)
+        child.add_argument("--family", choices=("rotation", "permutation", "reset"), default="rotation")
+        if name == "solve":
+            child.add_argument("--start", type=int, choices=range(4), required=True)
+            child.add_argument("--goal", type=int, choices=range(4), required=True)
+        else:
+            child.add_argument("--seed", type=int, default=0)
+            child.add_argument("--samples", type=positive, default=1024)
+            child.add_argument("--steps", type=positive, default=32)
     return p
 
 
@@ -118,7 +141,7 @@ def main(argv=None):
                 args.output / "instrument.pt",
             )
         elif args.command in {"evaluate", "adapt", "improve"}:
-            model, _ = load_model(args.checkpoint)
+            model = load_solver(args.checkpoint)
             if args.command == "evaluate":
                 result, _ = evaluate(
                     model, seed=args.seed, split="user-evaluation", samples=args.samples
@@ -134,7 +157,43 @@ def main(argv=None):
                     seed=args.seed,
                     samples=args.samples,
                     max_queries=args.max_queries,
+                    task=args.task,
                 )
+        elif args.command == "study":
+            from sera.study import connected_study
+            reports = connected_study(args.output, seeds=args.seeds, steps=args.steps,
+                                       meta_train=args.meta_train, meta_validation=args.meta_validation,
+                                       meta_test=args.meta_test, inner_steps=args.inner_steps,
+                                       instrument_steps=args.instrument_steps)
+            result = {"output": str(args.output), "runs": len(reports),
+                      "versions": [report["current_version"] for report in reports]}
+        elif args.command in {"solve", "learn"}:
+            from dataclasses import asdict
+
+            from sera.connected import autonomous_round, execute_goal
+            from sera.environments import WorldSpec, make_world
+            from sera.experience import EvidenceReplay
+            from sera.solver import SolverStore
+            store = SolverStore(args.directory)
+            world = make_world(args.world_seed, family=args.family)
+            if args.command == "solve":
+                solver = store.load()
+                result = {"version": solver.version,
+                          **execute_goal(solver, world, args.start, args.goal)}
+            else:
+                replay = EvidenceReplay.load(args.directory / "experience.json")
+                known = [WorldSpec(row["identifier"], tuple(tuple(r) for r in row["table"]),
+                                   tuple(row["colors"]), row["resettable"])
+                         for row in json.loads((args.directory / "worlds.json").read_text(encoding="utf-8"))]
+                result, construction, evidence = autonomous_round(store, world, known, replay,
+                                                                    seed=args.seed, samples=args.samples,
+                                                                    steps=args.steps)
+                for row in evidence.records:
+                    replay.admit(row)
+                replay.save(args.directory / "experience.json")
+                known = list({spec.identifier: spec for spec in [*known, world]}.values())
+                write_json(args.directory / "worlds.json", [asdict(spec) for spec in known])
+                result["construction"] = construction
         elif args.command == "rollback":
             result = rollback(args.directory)
         else:

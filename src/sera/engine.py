@@ -4,18 +4,15 @@ from __future__ import annotations
 
 import hashlib
 import json
-import secrets
 import time
 from pathlib import Path
 
-import numpy as np
 import torch
 
 from sera.data import make_batch, seed_for
-from sera.evaluation import assess, evaluate
+from sera.evaluation import evaluate
 from sera.programs import BudgetExhausted, SkillLibrary, discover, verify_program
-from sera.storage import Journal, digest, write_json
-from sera.training import source_hash
+from sera.storage import Journal, write_json
 from sera.world import FiniteWorld, world_experiment
 
 
@@ -27,138 +24,86 @@ def model_digest(model):
     return h.hexdigest()
 
 
-def improve(model, output: Path, *, seed=0, samples=1024, max_queries=100):
-    """Fixed diagnostic policy in v0.1; it is not a learned general improver.
+def improve(model, output: Path, *, seed=0, samples=1024, max_queries=100, task=2):
+    """Acquire a verified skill against the current executable incumbent.
 
-    The candidate obtains resettable observable-state feedback unavailable in
-    supervised pretraining. This intervention tests integration, not superiority
-    at the same information budget.
+    The legacy symbolic diagnostic is an explicit fixed control. The connected
+    learner trains its intervention policy separately and persists it in the solver.
     """
-    output.mkdir(parents=True, exist_ok=True)
-    journal = Journal(output / "journal.sqlite")
-    journal.verify()
-    if (output / "improvement.json").exists():
-        raise FileExistsError("Improvement run already exists; choose a fresh directory")
+    from dataclasses import asdict
+
+    from sera.skills import acquire_rule
+    from sera.solver import SolverStore, Work
+
+    store = SolverStore(output)
+    store.initialize(model)
+    current = store.load()
     started = time.perf_counter()
-    diagnosis, _ = evaluate(model, seed=seed, split="diagnosis", samples=256)
-    score = diagnosis["tasks"]["ordered_control"]["accuracy"]
-    journal.append(
-        "diagnosis",
-        {
-            "kind": "missing_compositional_procedure" if score < 0.95 else "solved",
-            "score": score,
-            "policy": "fixed_v1",
-            "dataset_id": diagnosis["dataset_id"],
-        },
-    )
-    incumbent_hash = model_digest(model)
-    incumbent = {"version": "v0", "neural_sha256": incumbent_hash, "skill_id": None}
-    write_json(output / "versions" / "v0.json", incumbent)
-    write_json(output / "current.json", incumbent)
+    work = Work()
+    diagnosis, _ = evaluate(current, seed=seed, split="diagnosis", samples=256, tasks=range(5))
+    from sera.data import TASKS
+    score = diagnosis["tasks"][TASKS[task]]["accuracy"]
+    work.add("diagnosis_examples", 256 * 5)
+    store.journal.append("diagnosis", {"task": TASKS[task], "score": score,
+                                      "version": current.version, "policy": "fixed_symbolic_control"})
     if score >= 0.95:
-        result = {
-            "status": "no_change",
-            "reason": "diagnostic_task_already_solved",
-            "diagnosis": diagnosis,
-        }
-        write_json(output / "improvement.json", result)
+        result = {"status": "no_change", "reason": "diagnostic_task_already_solved",
+                  "diagnosis": diagnosis, "current": current.version, "work": work.record()}
+        store.journal.append("no_change", result)
         return result
-    world = FiniteWorld()
+    candidate = store.load()
     try:
-        discovery = discover(
-            world.query,
-            environment_id=world.environment_id,
-            actions=world.actions,
-            max_queries=max_queries,
-        )
+        if task == 2:
+            world = FiniteWorld()
+            def query(actions):
+                work.add("discovery_oracle_queries")
+                work.add("discovery_oracle_actions", len(actions))
+                return world.query(actions)
+            discovery = discover(query, environment_id=world.environment_id,
+                                 actions=world.actions, max_queries=max_queries)
+            def verify_query(actions):
+                work.add("verification_oracle_queries")
+                work.add("verification_oracle_actions", len(actions))
+                return world.query(actions)
+            verification = verify_program(discovery.program, verify_query,
+                                          seed=seed_for("skill-verification", seed))
+            library = SkillLibrary(output / "skills")
+            skill_id = library.admit(discovery, verification)
+            candidate.skills[str(task)] = {"kind": "transition", "skill_id": skill_id,
+                                          "program": asdict(discovery.program)}
+            details = {"skill_id": skill_id, "oracle_queries": discovery.oracle_queries,
+                       "executed_actions": discovery.executed_actions, "verification": verification}
+        else:
+            support = make_batch(128, 12, seed, split="rule-support", task=task)
+            verification = make_batch(256, 24, seed, split="rule-verification", task=task)
+            work.add("support_examples", 128)
+            work.add("verification_examples", 256)
+            candidate.skills[str(task)] = acquire_rule(support, verification)
+            details = {"rule": candidate.skills[str(task)]["rule"]}
     except (BudgetExhausted, ValueError) as error:
-        result = {"status": "unresolved", "reason": str(error), "diagnosis": diagnosis}
-        journal.append("unresolved", result)
+        work.seconds = time.perf_counter() - started
+        result = {"status": "unresolved", "reason": str(error), "diagnosis": diagnosis,
+                  "work": work.record()}
+        store.journal.append("unresolved", result)
         write_json(output / "improvement.json", result)
         return result
-    verification = verify_program(
-        discovery.program, world.query, seed=seed_for("skill-verification", seed)
-    )
-    library = SkillLibrary(output / "skills")
-    skill_id = library.admit(discovery, verification)
-    candidate = {
-        "version": "v1",
-        "parent": "v0",
-        "neural_sha256": incumbent_hash,
-        "skill_id": skill_id,
-    }
-    write_json(output / "versions" / "v1.json", candidate)
-    journal.append("candidate_frozen", {**candidate, "source_sha256": source_hash()})
-    # The candidate is fixed before this fresh seed is generated. The evaluator
-    # logs the seed after scoring for reproducibility, never supplies it to discovery.
-    evaluation_seed = secrets.randbits(63)
-    split = "promotion-fresh"
-    dataset_id = digest(
-        [
-            make_batch(samples, 24, evaluation_seed, split=split, index=t, task=t).dataset_id
-            for t in range(4)
-        ]
-    )
-    round_index = journal.reserve_evaluation(dataset_id)
-    baseline, baseline_scores = evaluate(
-        model, seed=evaluation_seed, split=split, length=24, samples=samples
-    )
-    after, candidate_scores = evaluate(
-        model,
-        seed=evaluation_seed,
-        split=split,
-        length=24,
-        samples=samples,
-        program=library.load(skill_id),
-    )
-    if baseline["dataset_id"] != dataset_id or after["dataset_id"] != dataset_id:
-        raise RuntimeError("Paired evaluation identity mismatch")
-    invariants_ok = verification["passed"] and model_digest(model) == incumbent_hash
-    decision = assess(
-        candidate_scores,
-        baseline_scores,
-        round_index=round_index,
-        invariants_ok=invariants_ok,
-        candidate_cost=discovery.executed_actions + discovery.oracle_queries,
-    )
-    np.savez_compressed(
-        output / "paired_scores.npz",
-        **{
-            f"{side}_{task}": values
-            for side, scores in (("incumbent", baseline_scores), ("candidate", candidate_scores))
-            for task, values in scores.items()
-        },
-    )
-    if decision["admitted"]:
-        write_json(output / "current.json", candidate)
-    result = {
-        "status": "promoted" if decision["admitted"] else "rejected",
-        "diagnosis": diagnosis,
-        "incumbent": baseline,
-        "candidate": after,
-        "decision": decision,
-        "skill_id": skill_id,
-        "verification": verification,
-        "oracle_queries": discovery.oracle_queries,
-        "executed_actions": discovery.executed_actions,
-        "evaluation_seed": evaluation_seed,
-        "dataset_id": dataset_id,
-        "seconds": time.perf_counter() - started,
-        "limitations": [
-            "fixed diagnostic and routing policy",
-            "observable resettable finite-state world",
-            "extra oracle feedback compared with neural pretraining",
-            "empirical retention gate",
-            "local ledger is not security isolation",
-        ],
-    }
-    journal.append("promotion_decision", result)
-    journal.verify()
+    work.seconds = time.perf_counter() - started
+    def evaluator(solver, fresh_seed):
+        return evaluate(solver, seed=fresh_seed, split="promotion-fresh-v2", length=24,
+                        samples=samples, tasks=range(5))
+    result = store.consider(candidate, evaluator, work=work,
+                            description={"task": TASKS[task], "method": "verified_program"})
+    result.update(details)
+    result["diagnosis"] = diagnosis
     write_json(output / "improvement.json", result)
     return result
 
 
 def rollback(output: Path):
+    from sera.solver import SolverStore
+    record = json.loads((output / "current.json").read_text(encoding="utf-8"))
+    if record.get("schema_version") == 2:
+        return SolverStore(output).rollback()
     current = json.loads((output / "current.json").read_text(encoding="utf-8"))
     parent = current.get("parent")
     if parent is None:

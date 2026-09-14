@@ -20,8 +20,14 @@ def evaluate(model, *, seed, split, length=12, samples=512, tasks=range(4), prog
     results, all_scores, ids = {}, {}, []
     for task in tasks:
         batch = make_batch(samples, length, seed, split=split, index=task, task=task)
-        logits = torch.cat([model(chunk.to(device)).cpu() for chunk in batch.inputs.split(128)])
-        probabilities = logits.softmax(-1)
+        if hasattr(model, "predict_probabilities"):
+            probabilities = torch.cat([model.predict_probabilities(chunk.to(device)).cpu()
+                                       for chunk in batch.inputs.split(128)])
+        else:
+            logits = torch.cat([model(chunk.to(device)).cpu() for chunk in batch.inputs.split(128)])
+            probabilities = logits.softmax(-1)
+        if not torch.isfinite(probabilities).all() or torch.any(probabilities < 0):
+            raise ValueError("Invalid predictive probabilities")
         if program is not None and task == 2:
             predicted = torch.tensor(
                 [
@@ -34,7 +40,7 @@ def evaluate(model, *, seed, split, length=12, samples=512, tasks=range(4), prog
             # A symbolic procedure returns an exact categorical answer in its domain.
             probabilities = F.one_hot(predicted, 4).float()
         else:
-            predicted = logits.argmax(-1)
+            predicted = probabilities.argmax(-1)
         scores = (predicted == batch.targets).float().numpy()
         truth = F.one_hot(batch.targets, 4)
         target_probs = probabilities[torch.arange(samples), batch.targets]
