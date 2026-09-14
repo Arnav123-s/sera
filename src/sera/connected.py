@@ -31,6 +31,8 @@ def restore_component(config, components=None):
         from sera.shared import SharedR1
         settings.setdefault("encoding", "legacy-v1")
         settings.setdefault("structured_addresses", False)
+        settings.setdefault("density_gradient", "spectral")
+        settings.setdefault("scope_version", 1)
         return SharedR1(**settings)
     if kind == "independent_typed_control":
         from sera.shared import IndependentTypedControl

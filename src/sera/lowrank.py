@@ -32,6 +32,7 @@ class LowRankWorkspaces(nn.Module):
         self.register_buffer("mix", hadamard(dimension).to(torch.complex64))
         self.last_discarded_mass = 0.0
         self.last_diagnostics = None
+        self.truncation_gradient = "spectral"
 
     def initial(self, reference):
         diagonal = torch.linspace(1.0, 0.5, self.rank, device=reference.device)
@@ -50,16 +51,25 @@ class LowRankWorkspaces(nn.Module):
         vector = torch.cat((vector[..., :-1], torch.ones_like(vector[..., -1:])), -1)
         vector = vector / vector.abs().square().sum(-1, keepdim=True).sqrt()
         alpha = self.gate(encoded).sigmoid()
+        if self.truncation_gradient == "frozen-projector":
+            alpha = alpha.clamp(1e-6, 1-1e-6)
         expanded = torch.cat((alpha[..., None, None].sqrt() * rotated,
                               (1 - alpha)[..., None, None].sqrt() * vector[..., None]), -1)
-        u, singular, _ = torch.linalg.svd(expanded, full_matrices=False)
+        if self.truncation_gradient == "frozen-projector":
+            # Preserve spectral truncation in the forward pass, while treating
+            # its selected subspace as constant during each backward pass.
+            with torch.no_grad():
+                _, singular, vh = torch.linalg.svd(expanded, full_matrices=False)
+            retained = expanded @ vh.conj().transpose(-1, -2)[..., :self.rank]
+        else:
+            u, singular, _ = torch.linalg.svd(expanded, full_matrices=False)
+            retained = u[..., :self.rank] * singular[..., None, :self.rank]
         discarded = singular[..., self.rank:].square().sum(-1)
         self.last_discarded_mass = float(discarded.max().detach())
         applied_discard = discarded * write
         self.last_diagnostics = {"rank": self.rank, "dimension": self.dimension,
                                  "discarded_mass": applied_discard.detach().cpu().tolist(),
                                  "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"}
-        retained = u[..., :self.rank] * singular[..., None, :self.rank]
         retained = retained / retained.abs().square().sum((-2, -1), keepdim=True).sqrt()
         # Query bypass preserves the factor itself; no rank approximation is applied to a query.
         factor = write[..., None, None] * retained + (1 - write[..., None, None]) * factor

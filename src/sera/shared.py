@@ -30,12 +30,28 @@ class SharedTypedEncoder(TypedEncoder):
         return values
 
 
+class LowRankUpdate(nn.Module):
+    def __init__(self, rows, columns, rank):
+        super().__init__()
+        self.left = nn.Parameter(torch.zeros(rows, rank))
+        self.right = nn.Parameter(torch.randn(rank, columns) * .01)
+
+    def forward(self):
+        return self.left @ self.right
+
+
 class SharedR1(RecurrentWorldModel):
     def __init__(self, width=256, heads=8, memory_dim=32, kind="delta", programs=None,
-                 encoding="symbolic-v2", structured_addresses=True, **options):
+                 encoding="symbolic-v2", structured_addresses=True, density_gradient="frozen-projector", scope_rank=0,
+                 scope_version=2, **options):
         super().__init__(width, heads, memory_dim, kind, **options)
         self.encoding = encoding
         self.structured_addresses = structured_addresses
+        if density_gradient not in {"spectral", "frozen-projector"}:
+            raise ValueError("Unknown low-rank truncation gradient")
+        self.density_gradient = density_gradient
+        if kind in {"reference", "lowrank_hybrid"}:
+            self.memory.density.truncation_gradient = density_gradient
         self.address_encoder = nn.Linear(4, width, bias=False) if structured_addresses else None
         self.typed_encoder = SharedTypedEncoder(width, encoding)
         self.typed_instruction = nn.Embedding(len(TASKS), width)
@@ -46,11 +62,23 @@ class SharedR1(RecurrentWorldModel):
         self.sequence_encoder = nn.Sequential(nn.Linear(20, width), nn.Tanh())
         self.sequence_decoder = nn.Linear(width, 4)
         self.programs = copy.deepcopy(programs or {})
+        self.scope_adapter = None
+        self.scope_rank = 0
+        self.scope_version = scope_version
+        if scope_rank:
+            self.add_scoped_adapter(scope_rank, version=scope_version)
         self.validity()
 
     def export_config(self):
-        return {**super().export_config(), "type": "shared_r1", "programs": copy.deepcopy(self.programs),
-                "encoding": self.encoding, "structured_addresses": self.structured_addresses}
+        config = {**super().export_config(), "type": "shared_r1", "programs": copy.deepcopy(self.programs),
+                  "encoding": self.encoding, "structured_addresses": self.structured_addresses}
+        if self.density_gradient != "spectral":
+            config["density_gradient"] = self.density_gradient
+        if self.scope_rank:
+            config["scope_rank"] = self.scope_rank
+            if self.scope_version != 1:
+                config["scope_version"] = self.scope_version
+        return config
 
     def validity(self):
         from sera.typed_programs import validate_program
@@ -67,7 +95,43 @@ class SharedR1(RecurrentWorldModel):
             fused = fused + self.adapter(fused)
         return fused, state
 
+    @staticmethod
+    def first_rule_event(obs):
+        return (obs.modality == "symbolic" and len(obs.values) == 10 and obs.scale == 1
+                and obs.values[8:10] == (1., 0.) and all((obs.available or (True,)*len(obs.values))[8:10]))
+
+    def forward(self, *args, route="world", **kwargs):
+        if route == "typed-core":
+            return self._forward_typed(*args, **kwargs)
+        if route != "world":
+            raise ValueError("Unknown shared forward route")
+        return super().forward(*args, **kwargs)
+
     def forward_typed(self, observations, tasks):
+        if not observations or len(observations) != len(tasks) or any(not row for row in observations):
+            raise ValueError("Typed observations and task instructions must align")
+        if self.scope_adapter is None or self.scope_version == 1:
+            return self._forward_typed(observations, tasks)
+        enabled = [task == "binding" and bool(events) and all(self.first_rule_event(obs) for obs in events)
+                   for task, events in zip(tasks, observations)]
+        result = {"categorical": next(self.parameters()).new_zeros(len(tasks), 4),
+                  "numeric": next(self.parameters()).new_zeros(len(tasks), 2)}
+        for scoped in (False, True):
+            rows = [i for i, active in enumerate(enabled) if active == scoped]
+            if not rows:
+                continue
+            args = ([observations[i] for i in rows], [tasks[i] for i in rows])
+            if scoped:
+                original = dict(self.named_parameters())
+                replacements = {name: original[name] + self.scope_adapter[str(i)]()
+                                for i, name in enumerate(self.scope_parameter_names)}
+                output = torch.func.functional_call(self, replacements, args, {"route": "typed-core"})
+            else:
+                output = self._forward_typed(*args)
+            result = {name: values.index_copy(0, torch.tensor(rows), output[name]) for name, values in result.items()}
+        return result
+
+    def _forward_typed(self, observations, tasks):
         if not observations or len(observations) != len(tasks) or any(not row for row in observations):
             raise ValueError("Typed observations and task instructions must align")
         state = self.initial(len(tasks))
@@ -77,6 +141,11 @@ class SharedR1(RecurrentWorldModel):
             indices = torch.tensor(rows)
             events = [observations[i][position] for i in rows]
             encoded = self.typed_encoder(events) + self.typed_instruction(torch.tensor([TASKS.index(tasks[i]) for i in rows]))
+            if self.scope_adapter is not None and self.scope_version == 1:
+                enabled = [tasks[i] == "binding" and obs.modality == "symbolic" and len(obs.values) == 10
+                           and obs.scale == 1 and obs.values[8:10] == (1., 0.)
+                           and all((obs.available or (True,)*len(obs.values))[8:10]) for i, obs in zip(rows, events)]
+                encoded = encoded + self.scope_adapter(encoded) * encoded.new_tensor(enabled)[:, None]
             write = encoded.new_tensor([[float(not (tasks[i] == "binding" and position == len(observations[i])-1))] for i in rows])
             address, mask = None, None
             if self.address_encoder is not None:
@@ -116,6 +185,27 @@ class SharedR1(RecurrentWorldModel):
         self.adapter = nn.Sequential(nn.Linear(width, rank, bias=False), nn.Tanh(), nn.Linear(rank, width, bias=False))
         nn.init.zeros_(self.adapter[-1].weight)
         self.settings["adapter_rank"] = rank
+
+    def add_scoped_adapter(self, rank=16, *, version=2):
+        if self.scope_adapter is not None or type(rank) is not int or not 1 <= rank <= self.settings["width"]:
+            raise ValueError("Scoped adapter insertion requires a fresh valid rank")
+        self.scope_rank = rank
+        self.scope_version = version
+        width = self.settings["width"]
+        if version == 1:
+            self.scope_adapter = nn.Sequential(nn.Linear(width, rank), nn.Tanh(), nn.Linear(rank, width))
+            nn.init.zeros_(self.scope_adapter[-1].weight)
+            nn.init.zeros_(self.scope_adapter[-1].bias)
+        elif version == 2:
+            selected = [(name, p) for name, p in self.named_parameters() if p.ndim == 2
+                        and name.startswith(("memory.", "fusion.", "typed_encoder.adapters.symbolic.",
+                                             "typed_instruction.", "typed_categorical.", "address_encoder."))
+                        and not name.startswith("memory.encoder.")]
+            self.scope_parameter_names = [name for name, _ in selected]
+            self.scope_adapter = nn.ModuleDict({str(i): LowRankUpdate(*p.shape, min(rank, *p.shape))
+                                                for i, (_, p) in enumerate(selected)})
+        else:
+            raise ValueError("Unknown scoped adaptation version")
 
 
 @dataclass(frozen=True)

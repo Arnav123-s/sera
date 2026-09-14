@@ -75,7 +75,7 @@ def parser():
     child.add_argument("--support", type=positive, default=128)
     child.add_argument("--steps", type=positive, default=192)
     child.add_argument("--samples", type=positive, default=1024)
-    child.add_argument("--method", choices=("full", "replay", "adapter"), default="replay")
+    child.add_argument("--method", choices=("full", "replay", "adapter", "scoped"), default="scoped")
     child = sub.add_parser("shared-study")
     child.add_argument("--output", type=Path, required=True)
     child.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])

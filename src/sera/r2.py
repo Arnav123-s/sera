@@ -290,8 +290,16 @@ def enumerate_programs(library, max_length, max_candidates, *, work=None):
                 work.add("program_combinations_examined")
             actions = sum((units[index][0] for index in selection), ())
             if actions not in seen and len(actions) <= 12:
-                seen.add(actions)
                 body = {"op": "sequence", "items": [units[index][1] for index in selection]}
+                try:
+                    flatten_program(body, library)
+                except BudgetExhausted:
+                    if work is not None:
+                        work.add("program_candidates_rejected_depth")
+                    if examined >= 16384:
+                        return
+                    continue
+                seen.add(actions)
                 produced += 1
                 yield actions, body
                 if produced >= max_candidates:

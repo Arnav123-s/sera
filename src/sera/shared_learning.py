@@ -200,7 +200,7 @@ def pretrain_shared(model, evidence, validation, *, seed, steps=1600, batch_size
 
 def adapt_shared(parent, evidence, support, validation, *, method, seed, steps=256, batch_size=32, work=None):
     evidence.validate()
-    if method not in {"none", "full", "replay", "adapter", "scratch"}:
+    if method not in {"none", "full", "replay", "adapter", "scratch", "scoped"}:
         raise ValueError("Unknown shared-core adaptation control")
     admitted = TypedEvidence(support)
     if not admitted.records or any(not r.split.startswith("support") for r in admitted.records):
@@ -222,8 +222,12 @@ def adapt_shared(parent, evidence, support, validation, *, method, seed, steps=2
     if method == "adapter":
         torch.manual_seed(seed_for("shared-adapter", seed))
         candidate.add_adapter()
+    if method == "scoped" and candidate.scope_adapter is None:
+        torch.manual_seed(seed_for("shared-scoped-adapter", seed))
+        candidate.add_scoped_adapter()
     for name, parameter in candidate.named_parameters():
-        parameter.requires_grad_(method != "adapter" or name.startswith("adapter."))
+        parameter.requires_grad_(name.startswith("scope_adapter.") if method == "scoped" else
+                                 method != "adapter" or name.startswith("adapter."))
     optimizer = torch.optim.AdamW([p for p in candidate.parameters() if p.requires_grad], lr=.003, weight_decay=1e-4)
     rng = np.random.default_rng(seed_for("shared-adaptation-order", seed))
     history, best, best_state = [], -float("inf"), None

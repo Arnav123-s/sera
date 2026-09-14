@@ -28,10 +28,10 @@ def shared_trial(root, *, seed, kind, pretrain_steps=1600, adapt_steps=192,
     root.mkdir(parents=True, exist_ok=False)
     costs, work = Costs(), Work()
     record = {"schema_version": 1, "seed": seed, "kind": kind, "environment": environment(),
-              "role": "confirmatory bounded shared-learner study after validation-only development",
+              "role": "bounded shared-learner follow-up with fresh query cases after numerical and retention repairs",
               "budget": {"pretrain_steps": pretrain_steps, "adapt_steps": adapt_steps,
                          "batch_size": 32, "support_sizes": list(support_sizes), "samples": samples,
-                         "retained_samples": retained_samples, "typed_samples": typed_samples},
+                         "retained_samples": retained_samples, "typed_samples": typed_samples, "query_seed_base": 1_300_000},
               "runs": [], "status": "running"}
     try:
         with costs.phase("development-evidence", work):
@@ -67,7 +67,7 @@ def shared_trial(root, *, seed, kind, pretrain_steps=1600, adapt_steps=192,
         candidates = []
         # All weights and validation selections are frozen before any query is scored.
         for count in support_sizes:
-            for method in ("full", "replay", "adapter", "scratch"):
+            for method in ("full", "replay", "adapter", "scratch", "scoped"):
                 label = f"{method}-{count}"
                 with costs.phase(f"adaptation/{label}", work):
                     core, training = adapt_shared(base, evidence, support[:count], checks, method=method,
@@ -80,7 +80,7 @@ def shared_trial(root, *, seed, kind, pretrain_steps=1600, adapt_steps=192,
                 write_json(root / "progress.json", {"frozen_candidates": len(candidates), "last": label})
                 print(f"{kind} seed {seed}: froze {label}", flush=True)
         with costs.phase("paired-sealed-evaluation", work):
-            args = dict(seed=1_000_000+seed, samples=samples, retained_samples=retained_samples,
+            args = dict(seed=1_300_000+seed, samples=samples, retained_samples=retained_samples,
                         typed_samples=typed_samples, work=work)
             baseline, before = evaluate_shared(make_shared_solver(base), [spec], **args)
             record["baseline"] = baseline
@@ -112,6 +112,8 @@ def shared_trial(root, *, seed, kind, pretrain_steps=1600, adapt_steps=192,
         record["status"] = "completed"
     except Exception as error:
         record.update(status="failed", failure=f"{type(error).__name__}: {error}")
+        if "base" in locals():
+            record["failed_base_checkpoint"] = save_shared_checkpoint(root / "failed-base.pt", base)
         raise
     finally:
         record.update(costs=costs.record(), work=work.record())

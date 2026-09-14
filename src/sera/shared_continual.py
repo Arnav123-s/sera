@@ -35,8 +35,8 @@ def initialize_shared_store(root, solver, evidence, specs):
     return store.initialize(solver)
 
 
-def learn_binding(root, *, seed=0, support_count=128, steps=192, method="replay", samples=1024):
-    if method not in {"full", "replay", "adapter"}:
+def learn_binding(root, *, seed=0, support_count=128, steps=192, method="scoped", samples=1024):
+    if method not in {"full", "replay", "adapter", "scoped"}:
         raise ValueError("Ordinary binding learning needs full, replay or adapter updating")
     root = Path(root)
     store, costs, work = SolverStore(root), Costs(), Work()

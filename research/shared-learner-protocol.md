@@ -35,6 +35,16 @@ All controls select checkpoints using only novel-binding validation accuracy, wi
 
 Development exposed unstable binding addresses. The correction gives eligible symbolic binding events a learned key-only address projection shared across typed and sequence interfaces; query and write keys use the same learned projection. Payload values, rule-dependent update gates, fusion and outputs remain learned. The implementation does not execute an earliest/latest binding algorithm. Categorical features use unit scale and instruction embeddings initialize at standard deviation 0.05. Earlier unsuccessful pilots remain labeled as development evidence.
 
+## Amendment after the first full run
+
+The first three delta trials completed, but all three reference trials stopped on non-finite gradients. The delta trials also exposed severe old-capability regression under unrestricted binding adaptation. Those trials remain in `runs/shared-learner-complete` at source commit `4a530c98d37493d5b8fef7dc0d048476de6144f9`; they are not silently replaced with successful runs.
+
+The repaired study uses the same pretraining/update/support budgets and fresh query seed namespace 1,300,000. It adds a scoped rank-at-most-16 weight adapter, enabled only for explicitly instructed first-binding episodes. The base parameters stay frozen during this adaptation; learned low-rank residuals alter the existing core projections and readout. It is a supplied applicability boundary, not a discovered task router or a separate complete model. All unrelated input routes use the unchanged base exactly. The separate-model control remains in the comparison.
+
+The reference keeps the same spectral rank truncation in its forward computation, but freezes the selected right-singular subspace during each backward pass and clamps the mixture gate to `[1e-6, 1-1e-6]`. This is an explicit approximate gradient, not the exact derivative of spectral truncation. Repeated/small singular values make singular-vector derivatives unstable; the implementation also avoids saturated square-root mixture derivatives. The mathematical limitation is documented in [PyTorch's SVD reference](https://docs.pytorch.org/docs/stable/generated/torch.linalg.svd.html). Tests cover degenerate spectra, saturated gates and valid normalized state.
+
+The repaired run is a follow-up after observing failures, not a preregistered claim covering all development decisions. Repeated seeds are paired recreations, not six independent delta seeds. The final record must include the earlier failure costs and any unmeasured development cost. A longer ordinary correction may use 1,024 updates; its result must be kept separate from the 192-update comparison.
+
 ## Acceptance checklist
 
 - [ ] One registered learned core serves all three interfaces before and after serialization.
