@@ -34,7 +34,7 @@ R2 learns action-controlled CPTP maps and a shared projective event instrument w
 
 ## Policy objective and admission
 
-The improvement policy predicts the measured utility of six supplied choices: no change, parameter update, replay update, additional evidence, increased planning, and program acquisition. Features come from observed diagnostic outcomes, confidence, support size and permitted reset access. Query outcomes are policy-training targets; they are not diagnostic input features. Final test episodes are produced after freezing the policy.
+The improvement policy predicts the measured utility of six supplied choices: no change, parameter update, replay update, additional evidence, increased planning, and program acquisition. Features come from observed diagnostic outcomes, confidence, support size and permitted reset access. Query outcomes are policy-training targets; they are not diagnostic input features. Final test episodes are produced after freezing the policy. Development and validation deliberately include known-world episodes, but episode seeds include the split and index so their support and diagnostics remain distinct. I retain each support-record identifier for a direct overlap audit. Repeated worlds are not counted as independent world families.
 
 Utility is target-world score improvement minus twice the worst prior-world regression and `0.002 * log(1 + counted operations)`. Scores equally weight trajectory prediction accuracy and goal success. These weights are declared experimental choices. The policy learns which existing procedure to select; it does not invent an optimizer or architecture.
 

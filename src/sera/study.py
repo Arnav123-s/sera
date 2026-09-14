@@ -44,6 +44,7 @@ def compact_report(report):
 
 def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, steps=16):
     episode_id = f"{split}/{seed}/{index}"
+    episode_seed = seed_for(f"meta-episode/{split}", seed, index)
     known = split != "meta-test" and index % 4 == 0
     family = "reset" if split == "meta-test" else ("rotation" if index % 2 == 0 else "permutation")
     spec = base_spec if known else make_world(seed * 1000 + index +
@@ -51,12 +52,12 @@ def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, s
                                               "meta-test": 30000}[split], family=family,
                                              resettable=index % 3 != 1)
     work = Work()
-    support, _ = collect(spec, seed=seed + index, count=16 if index % 2 else 64, length=8,
+    support, _ = collect(spec, seed=episode_seed, count=16 if index % 2 else 64, length=8,
                          mask_rate=0.4 if index % 2 else 0.0, split="meta-support", work=work)
     evidence = EvidenceReplay(support)
     initial = copy.deepcopy(base)
     initial.components["r1"].planning_horizon = 1
-    features = diagnostic_features(initial, spec, seed=seed + index, support=evidence, work=work)
+    features = diagnostic_features(initial, spec, seed=episode_seed, support=evidence, work=work)
     specs = list({s.identifier: s for s in [base_spec, spec]}.values())
     query_seed = seed_for(f"{split}-query", seed, index)
     baseline_work = Work()
@@ -68,7 +69,7 @@ def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, s
             continue
         trial_work = Work()
         candidate, construction = intervene(initial, spec, evidence, old_replay,
-                                             method=method, seed=seed + index, steps=steps,
+                                             method=method, seed=episode_seed, steps=steps,
                                              work=trial_work)
         construction_cost = trial_work.record()
         evaluation_work = Work()
@@ -82,7 +83,9 @@ def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, s
                             "result": compact_report(result), "construction_work": construction_cost,
                             "evaluation_work": evaluation_work.record(), "charged_work": trial_work.record(),
                             "training": construction["training"], "programs": construction["programs"]}
-    row = {"episode_id": episode_id, "world": asdict(spec), "features": features.tolist(),
+    row = {"episode_id": episode_id, "episode_seed": episode_seed,
+           "support_record_ids": sorted(evidence.identifiers),
+           "world": asdict(spec), "features": features.tolist(),
            "evidence_kind": "verified_outcome", "support_dataset_id": digest(sorted(evidence.identifiers)),
            "query_dataset_id": baseline["dataset_id"], "baseline": compact_report(baseline),
            "diagnosis_and_acquisition_work": work.record(), "outcomes": outcomes}
