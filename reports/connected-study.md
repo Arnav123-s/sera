@@ -1,6 +1,6 @@
 # SERA: connected learning study
 
-I trained three independent SERA solvers from scratch, connected their R1/R2 learning paths, and measured both successful and rejected improvements. This report describes version 0.2; the first release's experiments remain historical evidence.
+I trained three independent SERA solvers from scratch, connected their R1/R2 learning paths, and measured both successful and rejected improvements. This report describes version 0.2; the first release's experiments remain historical evidence. The supplied physics documents informed the architecture. The learning evidence comes from generated symbolic tasks, not factual question-answer training on those documents.
 
 ## Findings
 
@@ -100,7 +100,7 @@ This trains a selector over fixed learning procedures. It does not discover opti
 
 ## Every persistent proposal
 
-Each candidate is frozen before drawing fresh paired admission samples. Gain is the equal-task/world score difference; the lower bound is the declared one-sided bound. Old-world/task loss is the largest positive empirical regression. Both symbolic gates include five tasks; later gates include all worlds known at that point.
+Each candidate is frozen before drawing fresh paired admission samples. Gain is the equal-task/world score difference; the lower bound is the declared one-sided bound. Max loss is the largest positive empirical regression across evaluated tasks/worlds, including the proposed target. Both symbolic gates include five tasks; later gates include all worlds known at that point.
 
 | Seed / round | Method | Version / parent | Mean gain (pp) | Lower bound (pp) | Max loss (pp) | Decision |
 |---|---|---|---:|---:|---:|---|

@@ -21,7 +21,7 @@ I use the architecture alignment audit as the acceptance baseline for this build
 - [x] V2. Run declared multi-seed studies from scratch, retain raw evidence, and document negative results.
 - [x] D1. Produce a teaching record: tasks, available inputs, targets, examples, updates, outcomes, retention and limitations.
 - [x] D2. Update architecture, CLI examples, audit disposition and reproducibility instructions.
-- [ ] D3. Build/install the package, verify a clean checkout, publish under Arnav123-s and check Windows/Linux CI.
+- [x] D3. Build/install the package, verify a clean checkout, publish under Arnav123-s and check Windows/Linux CI. Both public jobs passed in [the release verification run](https://github.com/Arnav123-s/sera/actions/runs/34800392826).
 
 ## Completion rule
 

@@ -16,7 +16,12 @@ I verified the executable implementation associated with source SHA-256 `59c0835
 | Continued-learning copy | Prepared v5 with 608 actual support trajectories across four known worlds; no model/skill changes |
 | Real CLI learning | Separate copy chose replay for a new reset world, consumed round 5, rejected the candidate for gain/retention, preserved current state and retained 640 actual support records |
 | Solver archive | Local trained-solver ZIP includes the current solver, parent versions, manifests, journals and prepared experience |
+| Clean checkout | 36 tests pass in 28.13 seconds; imports resolve to the clean checkout rather than the development tree |
+| Clean report rebuild | Rebuilt every connected table, plot and evidence manifest from committed JSON; no report bytes changed |
+| Public artifact check | Downloaded the three primary JSON evidence files from the published commit; all SHA-256 hashes match local evidence |
+| GitHub Ubuntu CI | Passed tests, lint, evidence verification and CLI check |
+| GitHub Windows CI | Passed tests, lint, evidence verification and CLI check |
 
 The CLI check used four update steps and 256 paired samples per world on a disposable copy. It is a runtime verification, excluded from the formal learning tables. The prepared solver retains seed 0 by a fixed example convention, not by choosing a checkpoint within a seed using its final test score.
 
-Clean-checkout report rebuilding and public Windows/Linux CI are recorded below once completed. The original learning run and its source hash are unchanged by release documentation.
+Both jobs completed successfully in [GitHub run 34800392826](https://github.com/Arnav123-s/sera/actions/runs/34800392826) for published commit `7dd6b23cd651209faa4b2cfcc8e1eb447dcaa089`. The original learning run and its source hash are unchanged by subsequent release documentation.

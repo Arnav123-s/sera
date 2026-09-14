@@ -131,7 +131,7 @@ def build(input_directory=None):
     plt.close(fig)
 
     lines = ["# SERA: connected learning study", "",
-             "I trained three independent SERA solvers from scratch, connected their R1/R2 learning paths, and measured both successful and rejected improvements. This report describes version 0.2; the first release's experiments remain historical evidence.", "",
+             "I trained three independent SERA solvers from scratch, connected their R1/R2 learning paths, and measured both successful and rejected improvements. This report describes version 0.2; the first release's experiments remain historical evidence. The supplied physics documents informed the architecture. The learning evidence comes from generated symbolic tasks, not factual question-answer training on those documents.", "",
              "## Findings", "",
              f"After compact R1 training, next-sensor accuracy with 40% missing readings was {estimate([r['r1_evaluation']['partial']['accuracy'] for r in runs], scale=100, suffix='%')}. Resetting the same model's memory at every step reduced it to {estimate([r['r1_evaluation']['partial_reset_memory']['accuracy'] for r in runs], scale=100, suffix='%')}. This ablation measures dependence on retained state; it is not a comparison with a separately trained memoryless model.", "",
              f"The learned improvement policy achieved utility {estimate(learned, digits=4)} on the withheld reset family. The strongest fixed-method mean was {strongest_fixed}, at {estimate(fixed[strongest_fixed], digits=4)}. " +
@@ -184,7 +184,7 @@ def build(input_directory=None):
         lines.append(f"| {case['episode_id']} | {case['chosen']} | {case['posthoc_best']} | {case['utility']:.4f} | {case['regret']:.4f} |")
     lines += ["", "This trains a selector over fixed learning procedures. It does not discover optimizers or invent learning algorithms. The model remains fixed during the subsequent generations; their outcomes do not establish a recursively improving improver. The complete meta-development cost must also be paid before deployment.", "",
               "## Every persistent proposal", "",
-              "Each candidate is frozen before drawing fresh paired admission samples. Gain is the equal-task/world score difference; the lower bound is the declared one-sided bound. Old-world/task loss is the largest positive empirical regression. Both symbolic gates include five tasks; later gates include all worlds known at that point.", "",
+              "Each candidate is frozen before drawing fresh paired admission samples. Gain is the equal-task/world score difference; the lower bound is the declared one-sided bound. Max loss is the largest positive empirical regression across evaluated tasks/worlds, including the proposed target. Both symbolic gates include five tasks; later gates include all worlds known at that point.", "",
               "| Seed / round | Method | Version / parent | Mean gain (pp) | Lower bound (pp) | Max loss (pp) | Decision |", "|---|---|---|---:|---:|---:|---|"]
     for run in runs:
         for row in rounds(run):

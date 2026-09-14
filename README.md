@@ -28,8 +28,9 @@ After activation, `sera` and `python -m sera` are equivalent. On Linux/macOS use
 sera solve runs/my-study/0/solver --family rotation --world-seed 50000 --start 0 --goal 3
 sera evaluate runs/my-study/0/solver --output runs/current-evaluation
 sera status runs/my-study/0/solver
-sera learn runs/my-study/0/solver --family reset --world-seed 123456 --steps 32
-sera rollback runs/my-study/0/solver
+python scripts/prepare_solver.py --input runs/my-study/0 --output runs/current-solver
+sera learn runs/current-solver --family reset --world-seed 123456 --steps 32
+sera rollback runs/current-solver
 ```
 
 `solve` loads the current accepted solver and executes its acquired skill or neural plan. `learn` collects evidence, uses the saved learned policy, constructs a candidate and evaluates it against the incumbent on fresh paired problems. A rejection preserves the current solver. `rollback` restores the accepted parent and preserves the cumulative evaluation ledger. Learning mutates that solver directory; keep the study's original directory intact when doing additional experiments.
