@@ -1,0 +1,388 @@
+flowchart TB
+%% Concept IDs match the atlas registry; labels are not ontological assertions.
+  subgraph operational["Operational and algebraic core"]
+    A01["A01: Preparation"]
+    A02["A02: Effect"]
+    A03["A03: Probability pairing"]
+    A04["A04: Convex mixture"]
+    A05["A05: Observable algebra"]
+    A06["A06: Positive functional"]
+    A07["A07: Null ideal"]
+    A08["A08: GNS representation"]
+    A09["A09: Classical commutative case"]
+    A10["A10: Noncommutativity"]
+    A11["A11: Operational assumptions"]
+    A12["A12: Superselection"]
+  end
+  subgraph mathematics["Mathematical structures"]
+    H01["H01: Complex field"]
+    H02["H02: Vector space"]
+    H03["H03: Inner product"]
+    H04["H04: Hilbert space"]
+    H05["H05: Ray and projective space"]
+    H06["H06: Dual and adjoint"]
+    H07["H07: Linear operator"]
+    H08["H08: Self-adjoint operator"]
+    H09["H09: Spectral measure"]
+    H10["H10: Functional calculus"]
+    H11["H11: Distribution"]
+    H12["H12: Fourier transform"]
+    H13["H13: Tensor product"]
+    H14["H14: Differential geometry"]
+    H15["H15: Units and dimensions"]
+  end
+  subgraph states["States, phases and composition"]
+    S01["S01: Pure state"]
+    S02["S02: Amplitude"]
+    S03["S03: Relative phase"]
+    S04["S04: Density operator"]
+    S05["S05: Coherence"]
+    S06["S06: Purity and spectrum"]
+    S07["S07: Bloch ball"]
+    S08["S08: Joint state"]
+    S09["S09: Partial trace"]
+    S10["S10: Schmidt decomposition"]
+    S11["S11: Entanglement"]
+    S12["S12: Purification"]
+    S13["S13: Direct sum"]
+    S14["S14: Wavefunction"]
+  end
+  subgraph symmetry["Symmetry and momentum"]
+    Y01["Y01: Symmetry transformation"]
+    Y02["Y02: Unitary representation"]
+    Y03["Y03: Continuous generator"]
+    Y04["Y04: Translation"]
+    Y05["Y05: Canonical momentum"]
+    Y06["Y06: Kinetic momentum"]
+    Y07["Y07: Angular momentum"]
+    Y08["Y08: Spinor and SU(2)"]
+    Y09["Y09: Noether current"]
+    Y10["Y10: Conservation law"]
+    Y11["Y11: Gauge redundancy"]
+    Y12["Y12: Geometric phase"]
+  end
+  subgraph dynamics["Closed dynamics and path amplitudes"]
+    D01["D01: Hamiltonian"]
+    D02["D02: Unitary propagator"]
+    D03["D03: Schrodinger equation"]
+    D04["D04: von Neumann equation"]
+    D05["D05: Heisenberg picture"]
+    D06["D06: Time ordering"]
+    D07["D07: Action"]
+    D08["D08: Path integral"]
+    D09["D09: Stationary phase"]
+    D10["D10: Uncertainty relation"]
+    D11["D11: Boundary and initial data"]
+    D12["D12: Imaginary time"]
+  end
+  subgraph open["Measurement and open dynamics"]
+    E01["E01: Born rule"]
+    E02["E02: POVM"]
+    E03["E03: Instrument"]
+    E04["E04: Kraus operators"]
+    E05["E05: Quantum channel"]
+    E06["E06: Complete positivity"]
+    E07["E07: Environment dilation"]
+    E08["E08: Lindblad generator"]
+    E09["E09: Decoherence"]
+    E10["E10: Amplitude damping"]
+    E11["E11: Dephasing"]
+    E12["E12: Memory effects"]
+  end
+  subgraph fields["Local quantum fields"]
+    F01["F01: Spacetime locality"]
+    F02["F02: Field distribution"]
+    F03["F03: Lorentz covariance"]
+    F04["F04: Microcausality"]
+    F05["F05: Scalar field modes"]
+    F06["F06: Creation and annihilation"]
+    F07["F07: Fock space"]
+    F08["F08: Vacuum correlations"]
+    F09["F09: Propagator"]
+    F10["F10: Interaction vertex"]
+    F11["F11: Scattering amplitude"]
+    F12["F12: Renormalization"]
+    F13["F13: Inequivalent representations"]
+  end
+  subgraph relativistic["Spin, gauge fields and QED"]
+    G01["G01: Relativistic dispersion"]
+    G02["G02: Klein-Gordon equation"]
+    G03["G03: Clifford algebra"]
+    G04["G04: Dirac equation"]
+    G05["G05: Antiparticle sector"]
+    G06["G06: Spin-statistics connection"]
+    G07["G07: Covariant derivative"]
+    G08["G08: Gauge curvature"]
+    G09["G09: QED"]
+    G10["G10: Gauge constraint"]
+    G11["G11: Wilson phase"]
+    G12["G12: Anomaly"]
+  end
+  subgraph effective["Effective theories and reduction"]
+    R01["R01: Resolution scale"]
+    R02["R02: Effective action"]
+    R03["R03: Integrating out"]
+    R04["R04: Renormalization flow"]
+    R05["R05: Nonrelativistic limit"]
+    R06["R06: Pauli equation"]
+    R07["R07: Schrodinger model"]
+    R08["R08: Born-Oppenheimer separation"]
+    R09["R09: Gravity as EFT"]
+    R10["R10: Approximation error"]
+  end
+  subgraph models["Canonical models and material structure"]
+    P01["P01: Particle in a box"]
+    P02["P02: Harmonic oscillator"]
+    P03["P03: Hydrogenic atom"]
+    P04["P04: Spin in a field"]
+    P05["P05: Tunnelling"]
+    P06["P06: Perturbation theory"]
+    P07["P07: Identical particles"]
+    P08["P08: Fermi and Bose statistics"]
+    P09["P09: Quasiparticle"]
+    P10["P10: Band structure"]
+    P11["P11: Collective phases"]
+    P12["P12: Topological response"]
+    P13["P13: Anyons"]
+  end
+  subgraph emergence["Classical and thermodynamic emergence"]
+    K01["K01: Reduced description"]
+    K02["K02: Ehrenfest equations"]
+    K03["K03: Narrow wavepacket"]
+    K04["K04: WKB expansion"]
+    K05["K05: Wigner function"]
+    K06["K06: Classical Liouville flow"]
+    K07["K07: Gibbs state"]
+    K08["K08: Entropy"]
+    K09["K09: Coarse graining"]
+    K10["K10: Measurement problem"]
+  end
+  subgraph information["Information and experimental surface"]
+    I01["I01: No cloning"]
+    I02["I02: Bell correlations"]
+    I03["I03: No signalling"]
+    I04["I04: Tomography"]
+    I05["I05: Error correction"]
+    I06["I06: Interferometer"]
+    I07["I07: Spin analyzer"]
+    I08["I08: Spectroscopy"]
+    I09["I09: Scattering experiment"]
+    I10["I10: Statistical validation"]
+  end
+  subgraph computation["Representation, computation and limits"]
+    N01["N01: Dense statevector"]
+    N02["N02: Dense density matrix"]
+    N03["N03: Tensor network"]
+    N04["N04: Finite cutoff"]
+    N05["N05: Trotter splitting"]
+    N06["N06: Physical invariants"]
+    N07["N07: State preparation and readout"]
+    N08["N08: Quantum-inspired algorithm"]
+    N09["N09: Open research boundary"]
+  end
+  A01 -->|"is tested by"| A02
+  A01 -->|"is paired through"| A03
+  A02 -->|"is paired through"| A03
+  A04 -->|"mixes"| A01
+  A11 -->|"constrains"| A03
+  A05 -->|"admits"| A06
+  A06 -->|"induces"| A07
+  A07 -->|"is quotiented in"| A08
+  A08 -->|"constructs"| H04
+  A08 -->|"represents"| A05
+  A09 -->|"is a special case of"| A05
+  A10 -->|"distinguishes"| A05
+  A12 -->|"restricts"| A02
+  A06 -->|"is represented finitely by"| S04
+  H01 -->|"provides scalars for"| H02
+  H02 -->|"is equipped with"| H03
+  H03 -->|"defines completion to"| H04
+  H04 -->|"contains representatives of"| H05
+  H03 -->|"defines"| H06
+  H06 -->|"defines adjoints of"| H07
+  H07 -->|"has a constrained subclass"| H08
+  H08 -->|"has"| H09
+  H09 -->|"defines"| H10
+  H11 -->|"generalizes coordinate kernels in"| H12
+  H04 -->|"composes through"| H13
+  H05 -->|"represents"| S01
+  H09 -->|"determines sharp instances of"| E02
+  H14 -->|"organizes"| Y12
+  H15 -->|"checks"| D03
+  S01 -->|"has overlaps called"| S02
+  S02 -->|"contains"| S03
+  S01 -->|"has projector representation"| S04
+  S04 -->|"contains basis-relative"| S05
+  S04 -->|"has diagnostics"| S06
+  S07 -->|"parametrizes qubit"| S04
+  S14 -->|"represents"| S01
+  S08 -->|"reduces through"| S09
+  S10 -->|"diagnoses pure"| S11
+  S12 -->|"realizes"| S04
+  S12 -->|"uses"| S08
+  H13 -->|"supports"| S08
+  S09 -->|"produces"| S04
+  S11 -->|"is a property of"| S08
+  S13 -->|"organizes"| A12
+  S03 -->|"controls"| I06
+  Y01 -->|"can be represented by"| Y02
+  Y02 -->|"has continuous"| Y03
+  Y04 -->|"is generated by"| Y05
+  Y03 -->|"includes"| Y05
+  Y03 -->|"includes"| Y07
+  Y03 -->|"includes"| D01
+  Y07 -->|"has intrinsic representations in"| Y08
+  Y09 -->|"implies local"| Y10
+  Y11 -->|"requires consistent"| G07
+  Y12 -->|"is a holonomy from"| H14
+  Y05 -->|"differs with fields from"| Y06
+  Y10 -->|"is checked using"| D05
+  Y08 -->|"informs"| G03
+  D01 -->|"generates"| D02
+  D02 -->|"satisfies"| D03
+  D03 -->|"implies for density states"| D04
+  D04 -->|"is equivalent to"| D05
+  D06 -->|"orders"| D02
+  D11 -->|"completes"| D03
+  D07 -->|"sets phases in"| D08
+  D08 -->|"admits suitable"| D09
+  D09 -->|"leads toward"| K04
+  H03 -->|"with operator positivity bounds"| D10
+  H10 -->|"defines exponentials in"| D02
+  D12 -->|"filters spectrum of"| D01
+  S04 -->|"is paired with effects by"| E01
+  E02 -->|"supplies effects to"| E01
+  E03 -->|"refines"| E02
+  E04 -->|"represents"| E03
+  E05 -->|"has representations by"| E04
+  E06 -->|"is required by"| E05
+  E07 -->|"realizes"| E05
+  E07 -->|"discards via"| S09
+  E08 -->|"generates semigroups of"| E05
+  E08 -->|"includes"| E10
+  E08 -->|"includes"| E11
+  E09 -->|"suppresses selected"| S05
+  E11 -->|"is a model of"| E09
+  E12 -->|"can invalidate simple"| E08
+  E09 -->|"does not alone settle"| K10
+  F01 -->|"organizes"| F02
+  F03 -->|"constrains transformations of"| F02
+  F04 -->|"implements causal locality of"| F01
+  H11 -->|"gives meaning to"| F02
+  F05 -->|"uses oscillators described by"| P02
+  F06 -->|"acts on"| F07
+  F07 -->|"uses particle alternatives in"| S13
+  F08 -->|"is measured by correlations of"| F02
+  F09 -->|"encodes selected"| F08
+  F10 -->|"enters expansions of"| F11
+  F12 -->|"organizes regulated"| F11
+  F13 -->|"extends representation issues in"| A08
+  G01 -->|"motivates scalar dynamics in"| G02
+  G03 -->|"factors the wave operator for"| G04
+  G04 -->|"has the free mass shell"| G01
+  G04 -->|"quantizes with"| G05
+  G06 -->|"constrains statistics in"| F07
+  G07 -->|"has commutator"| G08
+  G08 -->|"enters the action of"| G09
+  G04 -->|"provides matter for"| G09
+  G09 -->|"obeys"| G10
+  G10 -->|"removes redundant"| Y11
+  G11 -->|"probes"| G08
+  G12 -->|"tests consistency of"| Y11
+  F06 -->|"implements"| G06
+  R01 -->|"sets validity of"| R02
+  R03 -->|"constructs"| R02
+  R04 -->|"tracks scale dependence of"| R02
+  F12 -->|"connects to"| R04
+  R05 -->|"reduces Dirac theory to"| R06
+  R06 -->|"reduces with neglected spin effects to"| R07
+  R08 -->|"constructs approximate potentials for"| R07
+  R09 -->|"is an application of"| R02
+  R10 -->|"qualifies predictions from"| R02
+  G04 -->|"admits controlled"| R05
+  G02 -->|"admits controlled"| R05
+  R07 -->|"models"| P01
+  R07 -->|"models"| P02
+  R07 -->|"models"| P03
+  R06 -->|"models"| P04
+  R07 -->|"models"| P05
+  P06 -->|"approximates spectra of"| D01
+  P01 -->|"depends on"| D11
+  P02 -->|"uses"| F06
+  P03 -->|"is tested by"| I08
+  P04 -->|"is tested by"| I07
+  P07 -->|"constrains"| F07
+  P07 -->|"leads to"| P08
+  P08 -->|"governs occupation in"| K07
+  P09 -->|"emerges from"| P11
+  P10 -->|"uses periodic"| Y04
+  P12 -->|"uses geometric information in"| Y12
+  P13 -->|"generalizes exchange in"| P07
+  P11 -->|"requires many-body"| S08
+  K01 -->|"uses"| S09
+  K02 -->|"follows from"| D05
+  K03 -->|"can close"| K02
+  K04 -->|"is an expansion of"| D03
+  K05 -->|"represents"| S04
+  K05 -->|"evolves approximately by"| K06
+  K07 -->|"has"| K08
+  K09 -->|"coarsens"| K01
+  K09 -->|"can increase effective"| K08
+  E09 -->|"supports selected classical"| K01
+  K10 -->|"concerns outcomes beyond"| E09
+  I01 -->|"follows from linearity of"| D02
+  I02 -->|"is enabled by some"| S11
+  I03 -->|"follows from locality and"| E05
+  I04 -->|"estimates"| S04
+  I05 -->|"corrects a family of"| E04
+  I06 -->|"tests"| S03
+  I07 -->|"tests measurement via"| E03
+  I08 -->|"probes eigenvalue differences of"| D01
+  I09 -->|"tests predictions from"| F11
+  I10 -->|"qualifies evidence in"| I04
+  I10 -->|"qualifies evidence in"| I02
+  N01 -->|"stores coordinates of"| S01
+  N02 -->|"stores coordinates of"| S04
+  N03 -->|"factorizes structured"| S08
+  N04 -->|"limits stored"| N01
+  N04 -->|"limits stored"| N02
+  N05 -->|"approximates"| D02
+  N06 -->|"tests numerical"| D04
+  N06 -->|"tests numerical"| E05
+  N07 -->|"costs resources in"| I04
+  N08 -->|"uses classical"| N01
+  N08 -->|"can use"| N03
+  N09 -->|"limits interpretation of"| R09
+  N09 -->|"includes"| K10
+  H12 -->|"represents"| Y05
+  D10 -->|"bounds conjugate spreads of"| Y05
+  H08 -->|"needs domains and"| D11
+  F04 -->|"supports causal"| I03
+  E07 -->|"couples"| S08
+  F13 -->|"complicates infinite-dimensional"| S09
+  classDef c0 fill:#E8F0F8,stroke:#506780,color:#172D45;
+  class A01,A02,A03,A04,A05,A06,A07,A08,A09,A10,A11,A12 c0;
+  classDef c1 fill:#E7F3F1,stroke:#506780,color:#172D45;
+  class H01,H02,H03,H04,H05,H06,H07,H08,H09,H10,H11,H12,H13,H14,H15 c1;
+  classDef c2 fill:#F0EBF7,stroke:#506780,color:#172D45;
+  class S01,S02,S03,S04,S05,S06,S07,S08,S09,S10,S11,S12,S13,S14 c2;
+  classDef c3 fill:#FFF3DF,stroke:#506780,color:#172D45;
+  class Y01,Y02,Y03,Y04,Y05,Y06,Y07,Y08,Y09,Y10,Y11,Y12 c3;
+  classDef c4 fill:#E8F0F8,stroke:#506780,color:#172D45;
+  class D01,D02,D03,D04,D05,D06,D07,D08,D09,D10,D11,D12 c4;
+  classDef c5 fill:#E7F3F1,stroke:#506780,color:#172D45;
+  class E01,E02,E03,E04,E05,E06,E07,E08,E09,E10,E11,E12 c5;
+  classDef c6 fill:#F0EBF7,stroke:#506780,color:#172D45;
+  class F01,F02,F03,F04,F05,F06,F07,F08,F09,F10,F11,F12,F13 c6;
+  classDef c7 fill:#FFF3DF,stroke:#506780,color:#172D45;
+  class G01,G02,G03,G04,G05,G06,G07,G08,G09,G10,G11,G12 c7;
+  classDef c8 fill:#E8F0F8,stroke:#506780,color:#172D45;
+  class R01,R02,R03,R04,R05,R06,R07,R08,R09,R10 c8;
+  classDef c9 fill:#E7F3F1,stroke:#506780,color:#172D45;
+  class P01,P02,P03,P04,P05,P06,P07,P08,P09,P10,P11,P12,P13 c9;
+  classDef c10 fill:#F0EBF7,stroke:#506780,color:#172D45;
+  class K01,K02,K03,K04,K05,K06,K07,K08,K09,K10 c10;
+  classDef c11 fill:#FFF3DF,stroke:#506780,color:#172D45;
+  class I01,I02,I03,I04,I05,I06,I07,I08,I09,I10 c11;
+  classDef c12 fill:#E8F0F8,stroke:#506780,color:#172D45;
+  class N01,N02,N03,N04,N05,N06,N07,N08,N09 c12;

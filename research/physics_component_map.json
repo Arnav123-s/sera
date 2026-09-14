@@ -1,0 +1,1388 @@
+[
+  {
+    "id": "A01",
+    "concept": "Preparation",
+    "mathematical_meaning": "A preparation selects a valid state.",
+    "input_role": "Encode an observed event with provenance.",
+    "model_role": "Initialize or reset a working state.",
+    "output_or_test": "Check normalization and repeatability.",
+    "limit": "Preparation does not supply semantics or labels."
+  },
+  {
+    "id": "A02",
+    "concept": "Effect",
+    "mathematical_meaning": "An effect is an operator between zero and identity.",
+    "input_role": "Encode a query as a question asked of a state.",
+    "model_role": "Provide a bounded readout channel.",
+    "output_or_test": "Compare predicted effect probabilities with outcomes.",
+    "limit": "A positive matrix needs an upper bound to be an effect."
+  },
+  {
+    "id": "A03",
+    "concept": "Probability pairing",
+    "mathematical_meaning": "Probability is the state-effect pairing.",
+    "input_role": "Specify which observation and query are paired.",
+    "model_role": "Compute trace or an equivalent factor contraction.",
+    "output_or_test": "Validate probabilities and calibration.",
+    "limit": "The same matrices can have different meanings under different interfaces."
+  },
+  {
+    "id": "A04",
+    "concept": "Convex mixture",
+    "mathematical_meaning": "A convex mixture has nonnegative normalized weights.",
+    "input_role": "Represent ambiguous observations or augmentation choices.",
+    "model_role": "Combine alternative states without coherence terms.",
+    "output_or_test": "Check weighted predictions and mixture baselines.",
+    "limit": "Mixture is not coherent superposition."
+  },
+  {
+    "id": "A05",
+    "concept": "Observable algebra",
+    "mathematical_meaning": "An observable algebra specifies composition and adjoints.",
+    "input_role": "Define the allowed family of input and query operators.",
+    "model_role": "Use a typed operator library.",
+    "output_or_test": "Test closure, identities and numerical representations.",
+    "limit": "An abstract algebra is not an executable intelligence model."
+  },
+  {
+    "id": "A06",
+    "concept": "Positive functional",
+    "mathematical_meaning": "A positive normalized functional assigns expectations.",
+    "input_role": "Specify a consistent statistical state over operations.",
+    "model_role": "Use finite moment or Gram representations.",
+    "output_or_test": "Check positivity on tested operator combinations.",
+    "limit": "Finite checks do not establish positivity on an unrestricted algebra."
+  },
+  {
+    "id": "A07",
+    "concept": "Null ideal",
+    "mathematical_meaning": "A null ideal identifies zero-norm directions.",
+    "input_role": "Remove directions indistinguishable under a chosen pairing.",
+    "model_role": "Form an equivalence-aware representation.",
+    "output_or_test": "Check predictions before and after quotienting.",
+    "limit": "The equivalence depends on the chosen functional."
+  },
+  {
+    "id": "A08",
+    "concept": "GNS representation",
+    "mathematical_meaning": "GNS builds a Hilbert representation from an algebra and state.",
+    "input_role": "Provide a conceptual route from operational data to coordinates.",
+    "model_role": "Use finite Gram factorization as a limited analogue.",
+    "output_or_test": "Preserve the declared expectation pairings.",
+    "limit": "The abstract construction is not a universal finite encoder."
+  },
+  {
+    "id": "A09",
+    "concept": "Classical commutative case",
+    "mathematical_meaning": "Commutative observables admit classical statistical structure.",
+    "input_role": "Construct a classical baseline with the same evidence.",
+    "model_role": "Remove noncommuting operations from an ablation.",
+    "output_or_test": "Compare prediction and memory performance.",
+    "limit": "Classical does not mean weak or incapable of complex computation."
+  },
+  {
+    "id": "A10",
+    "concept": "Noncommutativity",
+    "mathematical_meaning": "Noncommutativity makes operation order matter.",
+    "input_role": "Preserve token and intervention ordering.",
+    "model_role": "Compose operators in declared sequence.",
+    "output_or_test": "Swap operations and measure the change.",
+    "limit": "Order sensitivity alone is not general reasoning."
+  },
+  {
+    "id": "A11",
+    "concept": "Operational assumptions",
+    "mathematical_meaning": "Operational assumptions define allowable experiments.",
+    "input_role": "Specify sensors, interventions and available information.",
+    "model_role": "Define the environment and task contract.",
+    "output_or_test": "Audit train-test leakage and impossible observations.",
+    "limit": "Incorrect assumptions can make a valid computation answer the wrong question."
+  },
+  {
+    "id": "A12",
+    "concept": "Superselection",
+    "mathematical_meaning": "Superselection restricts coherent access between sectors.",
+    "input_role": "Type distinct modalities or sectors without assumed coherent mixing.",
+    "model_role": "Use block-diagonal state and operation families when justified.",
+    "output_or_test": "Check forbidden transitions remain absent.",
+    "limit": "A software type partition is an analogy, not a physical superselection law."
+  },
+  {
+    "id": "H01",
+    "concept": "Complex field",
+    "mathematical_meaning": "Complex numbers have real and imaginary coordinates.",
+    "input_role": "Encode amplitude and relative phase where useful.",
+    "model_role": "Implement rotations and complex linear maps.",
+    "output_or_test": "Compare against the exact real-coordinate equivalent.",
+    "limit": "Complex coordinates do not create extra information for free."
+  },
+  {
+    "id": "H02",
+    "concept": "Vector space",
+    "mathematical_meaning": "A vector space supports linear combination.",
+    "input_role": "Create ordered feature coordinates.",
+    "model_role": "Specify basis and dimension of every state.",
+    "output_or_test": "Check shape, coordinate order and basis transformations.",
+    "limit": "A list of scalars needs the same structure to represent the same vector."
+  },
+  {
+    "id": "H03",
+    "concept": "Inner product",
+    "mathematical_meaning": "An inner product defines overlaps and norms.",
+    "input_role": "Compare embeddings with a learned or fixed metric.",
+    "model_role": "Normalize states and compute similarities.",
+    "output_or_test": "Check positive definiteness and scale behavior.",
+    "limit": "A useful metric must be trained or justified for the task."
+  },
+  {
+    "id": "H04",
+    "concept": "Hilbert space",
+    "mathematical_meaning": "A Hilbert space is complete under its inner-product norm.",
+    "input_role": "Choose a finite truncation for implementation.",
+    "model_role": "Define state and operator domains.",
+    "output_or_test": "Check convergence as the cutoff changes.",
+    "limit": "A finite model is not an unrestricted infinite-dimensional theory."
+  },
+  {
+    "id": "H05",
+    "concept": "Ray and projective space",
+    "mathematical_meaning": "A ray identifies vectors differing by global phase.",
+    "input_role": "Remove irrelevant global phase from state encodings.",
+    "model_role": "Use projectors or gauge-consistent coordinates.",
+    "output_or_test": "Verify phase-invariant predictions.",
+    "limit": "Magnitude and global phase may contain ordinary input metadata that must be stored separately."
+  },
+  {
+    "id": "H06",
+    "concept": "Dual and adjoint",
+    "mathematical_meaning": "The adjoint reverses maps under an inner product.",
+    "input_role": "Define encoder and decoder duals consistently.",
+    "model_role": "Build Hermitian operators, channels and gradients.",
+    "output_or_test": "Test adjoint identities numerically.",
+    "limit": "Transpose and conjugate transpose are different for complex arrays."
+  },
+  {
+    "id": "H07",
+    "concept": "Linear operator",
+    "mathematical_meaning": "A linear operator maps one vector space to another.",
+    "input_role": "Let an input specify a transformation.",
+    "model_role": "Use sparse or factored operator-valued weights.",
+    "output_or_test": "Check dimensions, spectra and action on test vectors.",
+    "limit": "A general linear map need not be a valid quantum operation."
+  },
+  {
+    "id": "H08",
+    "concept": "Self-adjoint operator",
+    "mathematical_meaning": "A self-adjoint operator has real spectral values.",
+    "input_role": "Map controls into a Hermitian generator.",
+    "model_role": "Parameterize H as a Hermitian basis expansion.",
+    "output_or_test": "Check H equals its adjoint.",
+    "limit": "Unbounded operators additionally require domains and boundary data."
+  },
+  {
+    "id": "H09",
+    "concept": "Spectral measure",
+    "mathematical_meaning": "A spectral measure generalizes eigenprojectors.",
+    "input_role": "Resolve evidence relative to a declared observable.",
+    "model_role": "Implement finite eigenspaces or spectral filters.",
+    "output_or_test": "Check reconstructed operators and measurement sums.",
+    "limit": "Spectral bins and truncation errors must be declared."
+  },
+  {
+    "id": "H10",
+    "concept": "Functional calculus",
+    "mathematical_meaning": "Functional calculus applies functions to an operator spectrum.",
+    "input_role": "Map control values into exponentials or filters.",
+    "model_role": "Construct propagators and imaginary-time kernels.",
+    "output_or_test": "Compare with small exact diagonalizations.",
+    "limit": "A compact operator function still requires numerical work."
+  },
+  {
+    "id": "H11",
+    "concept": "Distribution",
+    "mathematical_meaning": "Distributions generalize ordinary pointwise functions.",
+    "input_role": "Treat sensor impulses and field smearing carefully.",
+    "model_role": "Use discretized or smeared operators.",
+    "output_or_test": "Check predictions under grid refinement.",
+    "limit": "Delta functions are not finite arrays of arbitrarily large numbers."
+  },
+  {
+    "id": "H12",
+    "concept": "Fourier transform",
+    "mathematical_meaning": "The Fourier transform changes between conjugate representations.",
+    "input_role": "Encode periodic or spectral information.",
+    "model_role": "Apply convolution, translation and kinetic steps efficiently.",
+    "output_or_test": "Check normalization conventions and aliasing.",
+    "limit": "FFT speed relies on structure and costs nonconstant work."
+  },
+  {
+    "id": "H13",
+    "concept": "Tensor product",
+    "mathematical_meaning": "Tensor products compose independent subsystem spaces.",
+    "input_role": "Prepare joint multimodal or input-memory registers.",
+    "model_role": "Represent interactions and joint correlations.",
+    "output_or_test": "Compare joint and marginal predictions.",
+    "limit": "Dimensions multiply, and initial products need not remain products."
+  },
+  {
+    "id": "H14",
+    "concept": "Differential geometry",
+    "mathematical_meaning": "Differential geometry describes curved parameter/state spaces.",
+    "input_role": "Respect a representation's metric and gauge.",
+    "model_role": "Explore natural-gradient or manifold updates.",
+    "output_or_test": "Check coordinate-invariant behavior.",
+    "limit": "Geometry requires a specified manifold and computationally tractable metric."
+  },
+  {
+    "id": "H15",
+    "concept": "Units and dimensions",
+    "mathematical_meaning": "Units distinguish compatible physical quantities.",
+    "input_role": "Retain units, scale and uncertainty in numerical data.",
+    "model_role": "Use dimensionally consistent physics submodels.",
+    "output_or_test": "Reject unit-incompatible predictions.",
+    "limit": "Algorithmic time is not physical time without an explicit calibration."
+  },
+  {
+    "id": "S01",
+    "concept": "Pure state",
+    "mathematical_meaning": "A pure state is a normalized ray.",
+    "input_role": "Encode a feature state.",
+    "model_role": "Use statevectors when mixture is unnecessary.",
+    "output_or_test": "Check unit norm and readout probabilities.",
+    "limit": "A pure state need not represent certainty about a real-world answer."
+  },
+  {
+    "id": "S02",
+    "concept": "Amplitude",
+    "mathematical_meaning": "An amplitude is a complex coordinate or overlap.",
+    "input_role": "Map features to magnitudes and phases.",
+    "model_role": "Combine compatible pathways before readout.",
+    "output_or_test": "Measure interference-sensitive predictions.",
+    "limit": "An amplitude is not a probability."
+  },
+  {
+    "id": "S03",
+    "concept": "Relative phase",
+    "mathematical_meaning": "Relative phase changes interference.",
+    "input_role": "Encode ordered relations or periodic structure.",
+    "model_role": "Use phase gates and interference features.",
+    "output_or_test": "Ablate phase while matching dimensions.",
+    "limit": "Untrained phase assignments do not encode meaning automatically."
+  },
+  {
+    "id": "S04",
+    "concept": "Density operator",
+    "mathematical_meaning": "A density operator is positive and trace one.",
+    "input_role": "Encode mixtures or reduced information.",
+    "model_role": "Use valid-state memory and controlled channels.",
+    "output_or_test": "Check positivity, trace, spectra and task output.",
+    "limit": "Entropy and factual uncertainty are not automatically identical."
+  },
+  {
+    "id": "S05",
+    "concept": "Coherence",
+    "mathematical_meaning": "Coherence is off-diagonal structure in a chosen basis.",
+    "input_role": "Represent relationships between alternatives.",
+    "model_role": "Retain or suppress selected off-diagonal terms.",
+    "output_or_test": "Compare full and dephased models.",
+    "limit": "Coherence is basis-relative, not a universal intelligence measure."
+  },
+  {
+    "id": "S06",
+    "concept": "Purity and spectrum",
+    "mathematical_meaning": "Purity and spectrum diagnose mixture.",
+    "input_role": "Measure input-state collapse or redundancy.",
+    "model_role": "Monitor state degeneracy during training.",
+    "output_or_test": "Track spectrum alongside predictive performance.",
+    "limit": "Maximizing purity alone can destroy useful ambiguity."
+  },
+  {
+    "id": "S07",
+    "concept": "Bloch ball",
+    "mathematical_meaning": "The Bloch ball parametrizes qubit density states.",
+    "input_role": "Map three features into a valid local state.",
+    "model_role": "Use exact three-coordinate updates.",
+    "output_or_test": "Compare coordinates with dense matrices.",
+    "limit": "A qubit does not store arbitrary data losslessly in three finite-precision numbers."
+  },
+  {
+    "id": "S08",
+    "concept": "Joint state",
+    "mathematical_meaning": "A joint state contains marginal and correlation information.",
+    "input_role": "Combine input and retained memory before interaction.",
+    "model_role": "Store small correlated workspaces.",
+    "output_or_test": "Test tasks requiring joint information.",
+    "limit": "Independent local states cannot generally reconstruct the joint state."
+  },
+  {
+    "id": "S09",
+    "concept": "Partial trace",
+    "mathematical_meaning": "Partial trace discards a subsystem.",
+    "input_role": "Remove temporary input or bath registers.",
+    "model_role": "Create open-system memory updates.",
+    "output_or_test": "Check trace preservation and expected marginals.",
+    "limit": "Discarded correlations can carry useful task information."
+  },
+  {
+    "id": "S10",
+    "concept": "Schmidt decomposition",
+    "mathematical_meaning": "Schmidt decomposition resolves pure bipartite correlations.",
+    "input_role": "Diagnose input-memory coupling.",
+    "model_role": "Set or adapt tensor bond budgets.",
+    "output_or_test": "Measure discarded singular-value weight.",
+    "limit": "A low-rank truncation is an approximation unless exact rank is small."
+  },
+  {
+    "id": "S11",
+    "concept": "Entanglement",
+    "mathematical_meaning": "Entanglement is nonseparability of a joint state.",
+    "input_role": "Represent nonclassical joint structure where warranted.",
+    "model_role": "Compare entangling and non-entangling mechanisms.",
+    "output_or_test": "Measure actual task gain and simulation cost.",
+    "limit": "Entanglement is not by itself a source of semantic knowledge or free computation."
+  },
+  {
+    "id": "S12",
+    "concept": "Purification",
+    "mathematical_meaning": "Purification represents a mixed state as a larger pure state.",
+    "input_role": "Prepare uncertain input by adding an auxiliary register.",
+    "model_role": "Use factors or purified tensor networks.",
+    "output_or_test": "Verify reduced-state equivalence.",
+    "limit": "The auxiliary space and its cost still exist."
+  },
+  {
+    "id": "S13",
+    "concept": "Direct sum",
+    "mathematical_meaning": "A direct sum represents labeled alternatives or sectors.",
+    "input_role": "Type modalities or variable-size hypotheses.",
+    "model_role": "Use block-structured routing and state spaces.",
+    "output_or_test": "Check sector weights and permitted transitions.",
+    "limit": "Direct sum and tensor product encode different forms of combination."
+  },
+  {
+    "id": "S14",
+    "concept": "Wavefunction",
+    "mathematical_meaning": "A wavefunction is a state in a selected representation.",
+    "input_role": "Encode a finite spatial, spectral or parameter grid.",
+    "model_role": "Apply structured wave evolution.",
+    "output_or_test": "Read declared observables rather than treating the plot as an answer.",
+    "limit": "Basis, measure, cutoff and boundary conditions are required."
+  },
+  {
+    "id": "Y01",
+    "concept": "Symmetry transformation",
+    "mathematical_meaning": "A symmetry leaves the relevant structure unchanged.",
+    "input_role": "Augment data with valid transformations.",
+    "model_role": "Constrain an equivariant architecture.",
+    "output_or_test": "Test transformed examples and outputs.",
+    "limit": "Not every input transformation preserves meaning."
+  },
+  {
+    "id": "Y02",
+    "concept": "Unitary representation",
+    "mathematical_meaning": "A unitary representation realizes a symmetry on states.",
+    "input_role": "Encode frame changes consistently.",
+    "model_role": "Apply norm-preserving group actions.",
+    "output_or_test": "Verify group composition and unitarity.",
+    "limit": "A unitary representation is not a trained task solver."
+  },
+  {
+    "id": "Y03",
+    "concept": "Continuous generator",
+    "mathematical_meaning": "A continuous generator defines infinitesimal transformations.",
+    "input_role": "Convert controls into evolution parameters.",
+    "model_role": "Build a structured generator bank.",
+    "output_or_test": "Check small-step derivatives against finite transformations.",
+    "limit": "Generator units and domains must be specified."
+  },
+  {
+    "id": "Y04",
+    "concept": "Translation",
+    "mathematical_meaning": "Translations shift position or an analogous coordinate.",
+    "input_role": "Handle shifted signals and positions.",
+    "model_role": "Use convolution or translation generators.",
+    "output_or_test": "Test equivariance to shifts.",
+    "limit": "Token index shifts can interact with boundaries and task semantics."
+  },
+  {
+    "id": "Y05",
+    "concept": "Canonical momentum",
+    "mathematical_meaning": "Canonical momentum generates translations.",
+    "input_role": "Use a declared coordinate and its conjugate representation.",
+    "model_role": "Implement finite differences or spectral derivatives.",
+    "output_or_test": "Check translation action and boundary conventions.",
+    "limit": "p equals mv only in particular classical regimes."
+  },
+  {
+    "id": "Y06",
+    "concept": "Kinetic momentum",
+    "mathematical_meaning": "Kinetic momentum includes gauge coupling.",
+    "input_role": "Represent physical velocities and fields with units.",
+    "model_role": "Use covariant transport in scientific world models.",
+    "output_or_test": "Compare canonical and kinetic predictions.",
+    "limit": "A learned latent derivative is not automatically physical momentum."
+  },
+  {
+    "id": "Y07",
+    "concept": "Angular momentum",
+    "mathematical_meaning": "Angular momentum generates rotations.",
+    "input_role": "Encode orientation and rotational tasks.",
+    "model_role": "Use rotation-equivariant features or operator algebras.",
+    "output_or_test": "Check commutators and rotation behavior.",
+    "limit": "Orbital rotation and intrinsic spin are distinct structures."
+  },
+  {
+    "id": "Y08",
+    "concept": "Spinor and SU(2)",
+    "mathematical_meaning": "Spinors carry representations of SU(2).",
+    "input_role": "Encode orientation-sensitive local features.",
+    "model_role": "Explore spinor or matrix-valued state blocks.",
+    "output_or_test": "Test the intended transformation law.",
+    "limit": "Spin is not a small classical object spinning in place."
+  },
+  {
+    "id": "Y09",
+    "concept": "Noether current",
+    "mathematical_meaning": "A Noether current follows from a continuous symmetry of an action.",
+    "input_role": "Use physical trajectories with known conservation structure.",
+    "model_role": "Constrain a scientific world model.",
+    "output_or_test": "Check predicted local balance equations.",
+    "limit": "The symmetry-action assumptions must actually hold."
+  },
+  {
+    "id": "Y10",
+    "concept": "Conservation law",
+    "mathematical_meaning": "Conservation laws constrain dynamics.",
+    "input_role": "Preserve known invariants in data.",
+    "model_role": "Use structure-preserving updates.",
+    "output_or_test": "Measure drift and task errors.",
+    "limit": "Arbitrary learning dynamics need not conserve a physical energy."
+  },
+  {
+    "id": "Y11",
+    "concept": "Gauge redundancy",
+    "mathematical_meaning": "Gauge redundancy changes description, not physical observables.",
+    "input_role": "Represent local coordinate freedom.",
+    "model_role": "Use transport-consistent relational features.",
+    "output_or_test": "Test basis-invariant readouts.",
+    "limit": "Gauge symmetry is not permission to identify semantically different states."
+  },
+  {
+    "id": "Y12",
+    "concept": "Geometric phase",
+    "mathematical_meaning": "Geometric phase depends on a path through parameter space.",
+    "input_role": "Encode controlled cyclic transformations.",
+    "model_role": "Explore holonomy-sensitive relational memory.",
+    "output_or_test": "Compare path-dependent and local-only models.",
+    "limit": "An arbitrary loop score is not automatically a physical Berry phase."
+  },
+  {
+    "id": "D01",
+    "concept": "Hamiltonian",
+    "mathematical_meaning": "A Hamiltonian generates closed-system evolution.",
+    "input_role": "Map input controls into Hermitian coefficients.",
+    "model_role": "Apply structured unitary transitions.",
+    "output_or_test": "Check predicted observables and invariants.",
+    "limit": "The generator does not supply a learning objective."
+  },
+  {
+    "id": "D02",
+    "concept": "Unitary propagator",
+    "mathematical_meaning": "A unitary propagator evolves a closed state.",
+    "input_role": "Transform encoded evidence reversibly.",
+    "model_role": "Preserve selected information between writes.",
+    "output_or_test": "Check norm and spectrum invariance.",
+    "limit": "Purely unitary memory cannot generally perform irreversible forgetting alone."
+  },
+  {
+    "id": "D03",
+    "concept": "Schrodinger equation",
+    "mathematical_meaning": "The Schrodinger equation evolves state amplitudes.",
+    "input_role": "Specify initial states and controls.",
+    "model_role": "Build a continuous or discretized state processor.",
+    "output_or_test": "Check solver error against exact cases.",
+    "limit": "Its compact expression does not imply cheap large-state simulation."
+  },
+  {
+    "id": "D04",
+    "concept": "von Neumann equation",
+    "mathematical_meaning": "The von Neumann equation evolves density operators.",
+    "input_role": "Use input-dependent generators for mixed states.",
+    "model_role": "Model coherent retained-state dynamics.",
+    "output_or_test": "Check trace, positivity and stationary commuting cases.",
+    "limit": "A Hamiltonian that commutes with the state produces no state change."
+  },
+  {
+    "id": "D05",
+    "concept": "Heisenberg picture",
+    "mathematical_meaning": "The Heisenberg picture evolves observables.",
+    "input_role": "Specify the limited outputs needed.",
+    "model_role": "Propagate effects backward instead of full states when cheaper.",
+    "output_or_test": "Compare with state-side predictions.",
+    "limit": "Observable complexity can also grow rapidly."
+  },
+  {
+    "id": "D06",
+    "concept": "Time ordering",
+    "mathematical_meaning": "Time ordering preserves noncommuting event order.",
+    "input_role": "Retain causal sequence order.",
+    "model_role": "Use ordered composition or a valid parallel scan.",
+    "output_or_test": "Swap events as a controlled ablation.",
+    "limit": "Parallel workers do not justify reordering the dynamics."
+  },
+  {
+    "id": "D07",
+    "concept": "Action",
+    "mathematical_meaning": "An action assigns a scalar functional to a path.",
+    "input_role": "Define a physical or explicitly artificial path cost.",
+    "model_role": "Generate path-dependent phases or optimization criteria.",
+    "output_or_test": "Check dimensions and variational derivatives.",
+    "limit": "An invented action must be justified by learning evidence."
+  },
+  {
+    "id": "D08",
+    "concept": "Path integral",
+    "mathematical_meaning": "A path integral combines compatible path amplitudes.",
+    "input_role": "Enumerate a finite path set for a reference calculation.",
+    "model_role": "Contract paths through transfer operators.",
+    "output_or_test": "Compare exact enumeration and contraction.",
+    "limit": "There are infinitely many continuous paths; a finite cutoff is not all of them."
+  },
+  {
+    "id": "D09",
+    "concept": "Stationary phase",
+    "mathematical_meaning": "Stationary phase approximates oscillatory integrals in a regime.",
+    "input_role": "Identify a large phase parameter and boundary data.",
+    "model_role": "Explore semiclassical approximations for relevant models.",
+    "output_or_test": "Check error away from stationary points and caustics.",
+    "limit": "It is not a generic rule that the best answer is the largest amplitude path."
+  },
+  {
+    "id": "D10",
+    "concept": "Uncertainty relation",
+    "mathematical_meaning": "Uncertainty relations constrain conjugate observables.",
+    "input_role": "Preserve the meanings of conjugate input features.",
+    "model_role": "Use constraints in physical simulation and diagnostics.",
+    "output_or_test": "Check variances and commutator expectations.",
+    "limit": "They do not imply a general accuracy-speed tradeoff for every AI model."
+  },
+  {
+    "id": "D11",
+    "concept": "Boundary and initial data",
+    "mathematical_meaning": "Initial and boundary data complete an evolution problem.",
+    "input_role": "Specify resets, endpoints and support.",
+    "model_role": "Make solvers and sequence models well posed.",
+    "output_or_test": "Test sensitivity to boundaries and reset rules.",
+    "limit": "An equation without these data need not determine an answer."
+  },
+  {
+    "id": "D12",
+    "concept": "Imaginary time",
+    "mathematical_meaning": "Imaginary time filters spectral components.",
+    "input_role": "Prepare a candidate state and an explicit loss/energy.",
+    "model_role": "Build energy filtering or small optimization experiments.",
+    "output_or_test": "Count normalization, objective and convergence costs.",
+    "limit": "Filtering is not ordinary physical real-time unitary evolution."
+  },
+  {
+    "id": "E01",
+    "concept": "Born rule",
+    "mathematical_meaning": "The Born rule maps states and effects to probabilities.",
+    "input_role": "Define the measurement represented by a query.",
+    "model_role": "Produce normalized probabilistic readouts.",
+    "output_or_test": "Measure likelihood and calibration.",
+    "limit": "A probability is not a verified fact."
+  },
+  {
+    "id": "E02",
+    "concept": "POVM",
+    "mathematical_meaning": "A POVM is a complete family of effects.",
+    "input_role": "Encode event types as trainable effects.",
+    "model_role": "Tie input conditioning and output vocabulary.",
+    "output_or_test": "Check positivity and sum-to-identity.",
+    "limit": "Large outcome tables can dominate memory."
+  },
+  {
+    "id": "E03",
+    "concept": "Instrument",
+    "mathematical_meaning": "An instrument gives outcomes and conditional state changes.",
+    "input_role": "Process observed events and generate unobserved ones.",
+    "model_role": "Use a shared predictive-state model.",
+    "output_or_test": "Check likelihood chains and posterior normalization.",
+    "limit": "Conditional updates are not forced physical outcomes."
+  },
+  {
+    "id": "E04",
+    "concept": "Kraus operators",
+    "mathematical_meaning": "Kraus operators represent completely positive operations.",
+    "input_role": "Construct valid event maps.",
+    "model_role": "Parameterize channels through isometries.",
+    "output_or_test": "Test completeness and gradients.",
+    "limit": "Kraus descriptions are not unique."
+  },
+  {
+    "id": "E05",
+    "concept": "Quantum channel",
+    "mathematical_meaning": "A quantum channel is a valid unconditional state map.",
+    "input_role": "Represent fixed-input controlled transformations.",
+    "model_role": "Combine reversible evolution, noise and reset.",
+    "output_or_test": "Verify channel properties on extended states when needed.",
+    "limit": "A nonlinear normalized filter needs an outcome-conditioning interpretation."
+  },
+  {
+    "id": "E06",
+    "concept": "Complete positivity",
+    "mathematical_meaning": "Complete positivity protects validity with auxiliary systems.",
+    "input_role": "Allow inputs correlated with retained memory.",
+    "model_role": "Reject merely positive but nonphysical joint updates.",
+    "output_or_test": "Use Kraus or Choi-based checks.",
+    "limit": "Checking isolated state positivity is not a complete proof of channel validity."
+  },
+  {
+    "id": "E07",
+    "concept": "Environment dilation",
+    "mathematical_meaning": "Dilation realizes a channel through a larger unitary system.",
+    "input_role": "Add explicit input and environment registers.",
+    "model_role": "Derive reduced memory updates.",
+    "output_or_test": "Compare dilation and channel implementations.",
+    "limit": "The larger temporary space must be included in the cost."
+  },
+  {
+    "id": "E08",
+    "concept": "Lindblad generator",
+    "mathematical_meaning": "A Lindblad generator describes a Markovian open-system regime.",
+    "input_role": "Specify controls, jumps and rates.",
+    "model_role": "Use learned structured dissipation.",
+    "output_or_test": "Check trace, positivity and the assumed regime.",
+    "limit": "A history-dependent process may not fit a fixed Markovian generator."
+  },
+  {
+    "id": "E09",
+    "concept": "Decoherence",
+    "mathematical_meaning": "Decoherence suppresses selected coherences.",
+    "input_role": "Represent a declared loss of accessible information.",
+    "model_role": "Test selective forgetting and noise robustness.",
+    "output_or_test": "Compare with classical forgetting at matched cost.",
+    "limit": "Decoherence does not by itself solve the measurement problem or train a model."
+  },
+  {
+    "id": "E10",
+    "concept": "Amplitude damping",
+    "mathematical_meaning": "Amplitude damping transfers population toward a reference state.",
+    "input_role": "Encode a physical decay model or controlled reset.",
+    "model_role": "Implement asymmetric forgetting channels.",
+    "output_or_test": "Check fixed points and rate dependence.",
+    "limit": "Forgetting toward a reference state need not be useful for the task."
+  },
+  {
+    "id": "E11",
+    "concept": "Dephasing",
+    "mathematical_meaning": "Dephasing removes off-diagonal components in a basis.",
+    "input_role": "Separate phase-sensitive from population information.",
+    "model_role": "Run a coherence ablation or noise model.",
+    "output_or_test": "Compare readouts before and after dephasing.",
+    "limit": "Basis choice determines what is erased."
+  },
+  {
+    "id": "E12",
+    "concept": "Memory effects",
+    "mathematical_meaning": "Memory effects retain dependence beyond a simple Markov state.",
+    "input_role": "Include past evidence or auxiliary memory.",
+    "model_role": "Augment latent states or use explicit history kernels.",
+    "output_or_test": "Test delayed and intervention-dependent predictions.",
+    "limit": "A too-small state can falsely appear Markovian in training data."
+  },
+  {
+    "id": "F01",
+    "concept": "Spacetime locality",
+    "mathematical_meaning": "Locality organizes interactions by spacetime region.",
+    "input_role": "Use spatially localized observations.",
+    "model_role": "Build sparse physical world models or local computation.",
+    "output_or_test": "Test propagation and spatial generalization.",
+    "limit": "Locality in an artificial graph is a design choice, not automatically spacetime locality."
+  },
+  {
+    "id": "F02",
+    "concept": "Field distribution",
+    "mathematical_meaning": "Quantum fields are operator-valued distributions.",
+    "input_role": "Use smeared or discretized field observations.",
+    "model_role": "Provide domain-specific scientific simulators.",
+    "output_or_test": "Compare physical observables after cutoff refinement.",
+    "limit": "An arbitrary feature grid is not literally a quantum field."
+  },
+  {
+    "id": "F03",
+    "concept": "Lorentz covariance",
+    "mathematical_meaning": "Lorentz covariance constrains relativistic transformations.",
+    "input_role": "Retain frames and units in relativistic data.",
+    "model_role": "Use appropriate scientific-model equivariance.",
+    "output_or_test": "Check predictions across inertial frames.",
+    "limit": "Language and generic latent dynamics need not obey Lorentz symmetry."
+  },
+  {
+    "id": "F04",
+    "concept": "Microcausality",
+    "mathematical_meaning": "Microcausality constrains spacelike-separated observables.",
+    "input_role": "Define causal separation in a physical task.",
+    "model_role": "Validate a relativistic world model.",
+    "output_or_test": "Check the appropriate commutator structure.",
+    "limit": "It does not enable instantaneous communication between model modules."
+  },
+  {
+    "id": "F05",
+    "concept": "Scalar field modes",
+    "mathematical_meaning": "Field modes provide a spectral expansion.",
+    "input_role": "Encode spatial and frequency structure.",
+    "model_role": "Use mode-based representations and cutoffs.",
+    "output_or_test": "Test energy and observables against resolution.",
+    "limit": "A finite mode count limits represented phenomena."
+  },
+  {
+    "id": "F06",
+    "concept": "Creation and annihilation",
+    "mathematical_meaning": "Creation and annihilation operators change occupation.",
+    "input_role": "Represent variable-count entities in a typed model.",
+    "model_role": "Explore Fock-like allocation and structured scientific dynamics.",
+    "output_or_test": "Check occupation rules and operator action.",
+    "limit": "Adding a memory slot is only an analogy unless the algebra is specified."
+  },
+  {
+    "id": "F07",
+    "concept": "Fock space",
+    "mathematical_meaning": "Fock space combines variable-particle-number sectors.",
+    "input_role": "Encode variable-size structured observations.",
+    "model_role": "Use sector-aware representations or domain simulators.",
+    "output_or_test": "Check count, statistics and normalization.",
+    "limit": "Unbounded occupation requires a finite computational cutoff."
+  },
+  {
+    "id": "F08",
+    "concept": "Vacuum correlations",
+    "mathematical_meaning": "Vacuum correlations are nontrivial ground-state correlations.",
+    "input_role": "Use physical correlation data or a defined reference prior.",
+    "model_role": "Model scientific baselines and fluctuations.",
+    "output_or_test": "Compare connected correlation functions.",
+    "limit": "A random initialization is not a quantum vacuum."
+  },
+  {
+    "id": "F09",
+    "concept": "Propagator",
+    "mathematical_meaning": "A propagator describes selected response/correlation structure.",
+    "input_role": "Represent interactions in a physical or learned linear model.",
+    "model_role": "Use structured kernels and response prediction.",
+    "output_or_test": "Check boundary conditions and causal conventions.",
+    "limit": "Not every learned transition matrix is a field-theory propagator."
+  },
+  {
+    "id": "F10",
+    "concept": "Interaction vertex",
+    "mathematical_meaning": "Interaction vertices specify couplings in expansions.",
+    "input_role": "Encode typed relations between factors.",
+    "model_role": "Use sparse, learned interaction rules.",
+    "output_or_test": "Ablate couplings and test compositional prediction.",
+    "limit": "A Feynman-style drawing is not a computational derivation."
+  },
+  {
+    "id": "F11",
+    "concept": "Scattering amplitude",
+    "mathematical_meaning": "Scattering amplitudes describe specified transition processes.",
+    "input_role": "Provide scientific input-output examples.",
+    "model_role": "Train or validate physical world-model modules.",
+    "output_or_test": "Predict cross sections with correct normalization.",
+    "limit": "They do not directly define generic language-answer amplitudes."
+  },
+  {
+    "id": "F12",
+    "concept": "Renormalization",
+    "mathematical_meaning": "Renormalization organizes scale-dependent regulated predictions.",
+    "input_role": "Track measurement scale and regulator.",
+    "model_role": "Motivate controlled multiscale models.",
+    "output_or_test": "Check cutoff-independent observables in a regime.",
+    "limit": "Compressing weights is not automatically physical renormalization."
+  },
+  {
+    "id": "F13",
+    "concept": "Inequivalent representations",
+    "mathematical_meaning": "Inequivalent representations arise in infinite systems.",
+    "input_role": "Mark limits of a finite representation's scope.",
+    "model_role": "Maintain explicit domain assumptions.",
+    "output_or_test": "Avoid invalid global-state or trace claims.",
+    "limit": "Finite-dimensional identities need not extend unchanged to infinite systems."
+  },
+  {
+    "id": "G01",
+    "concept": "Relativistic dispersion",
+    "mathematical_meaning": "Relativistic dispersion links energy, momentum and mass.",
+    "input_role": "Retain physical energy and momentum data.",
+    "model_role": "Build a scientific world-model constraint.",
+    "output_or_test": "Check low- and high-speed predictions.",
+    "limit": "An artificial latent space has no physical mass shell by default."
+  },
+  {
+    "id": "G02",
+    "concept": "Klein-Gordon equation",
+    "mathematical_meaning": "The Klein-Gordon equation is a relativistic scalar equation.",
+    "input_role": "Use scalar field boundary and initial data.",
+    "model_role": "Implement a domain solver or structured wave experiment.",
+    "output_or_test": "Validate dispersion and conserved quantities.",
+    "limit": "It is not a generic learning rule for arbitrary information."
+  },
+  {
+    "id": "G03",
+    "concept": "Clifford algebra",
+    "mathematical_meaning": "Clifford generators obey an anticommutation algebra.",
+    "input_role": "Represent oriented or multigrade features.",
+    "model_role": "Explore structured matrix-valued operators.",
+    "output_or_test": "Check anticommutation and task ablations.",
+    "limit": "Choosing a Clifford algebra does not ensure useful semantics."
+  },
+  {
+    "id": "G04",
+    "concept": "Dirac equation",
+    "mathematical_meaning": "The Dirac equation couples spinor components relativistically.",
+    "input_role": "Encode actual spinor data or a declared graph analogue.",
+    "model_role": "Build structured first-order coupled propagation.",
+    "output_or_test": "Compare against simpler graph and wave operators.",
+    "limit": "The graph Dirac construction is not the physical electron equation."
+  },
+  {
+    "id": "G05",
+    "concept": "Antiparticle sector",
+    "mathematical_meaning": "Antiparticle sectors arise in relativistic quantum theory.",
+    "input_role": "Represent scientific data with the correct sectors.",
+    "model_role": "Support a domain simulator's typed states.",
+    "output_or_test": "Check charges and process rules.",
+    "limit": "A negative feature value is not an antiparticle."
+  },
+  {
+    "id": "G06",
+    "concept": "Spin-statistics connection",
+    "mathematical_meaning": "Spin-statistics connects spin and exchange behavior under assumptions.",
+    "input_role": "Use correct particle statistics in scientific data.",
+    "model_role": "Constrain Fock-space model modules.",
+    "output_or_test": "Test permitted occupation and exchange behavior.",
+    "limit": "It is not a rule assigning reasoning styles to artificial neurons."
+  },
+  {
+    "id": "G07",
+    "concept": "Covariant derivative",
+    "mathematical_meaning": "A covariant derivative includes connection/transport structure.",
+    "input_role": "Encode local frames and relations.",
+    "model_role": "Build gauge-consistent message passing.",
+    "output_or_test": "Check transformation laws.",
+    "limit": "The chosen connection must correspond to a meaningful redundancy."
+  },
+  {
+    "id": "G08",
+    "concept": "Gauge curvature",
+    "mathematical_meaning": "Gauge curvature measures nontrivial transport around loops.",
+    "input_role": "Encode loop-dependent relational evidence.",
+    "model_role": "Explore consistency and holonomy features.",
+    "output_or_test": "Check loop products under local basis changes.",
+    "limit": "Arbitrary graph inconsistency is not automatically physical field strength."
+  },
+  {
+    "id": "G09",
+    "concept": "QED",
+    "mathematical_meaning": "QED describes electromagnetic interactions of charged fields.",
+    "input_role": "Use electromagnetic scientific tasks and measurements.",
+    "model_role": "Provide a specialized simulator or learned surrogate.",
+    "output_or_test": "Validate against physical observables.",
+    "limit": "QED is not a general intelligence architecture by itself."
+  },
+  {
+    "id": "G10",
+    "concept": "Gauge constraint",
+    "mathematical_meaning": "Gauge constraints remove unphysical degrees of freedom.",
+    "input_role": "Identify redundant coordinates in a domain model.",
+    "model_role": "Constrain states and updates consistently.",
+    "output_or_test": "Check constraint preservation.",
+    "limit": "Imposing unjustified constraints can remove useful information."
+  },
+  {
+    "id": "G11",
+    "concept": "Wilson phase",
+    "mathematical_meaning": "A Wilson phase probes transport along a path or loop.",
+    "input_role": "Represent frame-consistent path information.",
+    "model_role": "Explore relational path features.",
+    "output_or_test": "Test gauge-invariant loop readouts.",
+    "limit": "A useful artificial analogue requires explicit transport maps."
+  },
+  {
+    "id": "G12",
+    "concept": "Anomaly",
+    "mathematical_meaning": "An anomaly signals a symmetry consistency issue after quantization.",
+    "input_role": "Document model assumptions that may conflict.",
+    "model_role": "Use as a scientific consistency topic and design caution.",
+    "output_or_test": "Check preserved versus broken symmetries in the actual implementation.",
+    "limit": "This is not an executable generic AGI component without a concrete construction."
+  },
+  {
+    "id": "R01",
+    "concept": "Resolution scale",
+    "mathematical_meaning": "Resolution determines which distinctions are retained.",
+    "input_role": "Preserve observation scale and sampling rate.",
+    "model_role": "Allocate computation adaptively.",
+    "output_or_test": "Test accuracy versus resolution and cost.",
+    "limit": "Coarse inputs cannot recover arbitrary unobserved detail without assumptions."
+  },
+  {
+    "id": "R02",
+    "concept": "Effective action",
+    "mathematical_meaning": "An effective action describes retained degrees of freedom in a regime.",
+    "input_role": "Encode task-relevant coarse variables.",
+    "model_role": "Motivate a conditional reduced world model.",
+    "output_or_test": "Test predictions inside and outside its stated regime.",
+    "limit": "A reduced model must report the effects it omits."
+  },
+  {
+    "id": "R03",
+    "concept": "Integrating out",
+    "mathematical_meaning": "Integrating out removes variables while changing effective interactions.",
+    "input_role": "Marginalize unavailable or irrelevant inputs.",
+    "model_role": "Construct reduced probabilistic models.",
+    "output_or_test": "Compare retained predictions with a reference.",
+    "limit": "Simply deleting variables does not generally perform the required marginalization."
+  },
+  {
+    "id": "R04",
+    "concept": "Renormalization flow",
+    "mathematical_meaning": "Renormalization flow tracks model change with scale.",
+    "input_role": "Use multiresolution observations.",
+    "model_role": "Learn scale-conditioned coarse-to-fine modules.",
+    "output_or_test": "Check consistency across resolutions.",
+    "limit": "Neural compression is an analogy unless its flow is derived."
+  },
+  {
+    "id": "R05",
+    "concept": "Nonrelativistic limit",
+    "mathematical_meaning": "The nonrelativistic limit is a controlled low-energy reduction.",
+    "input_role": "Recognize the regime of physical input data.",
+    "model_role": "Select a cheaper domain solver.",
+    "output_or_test": "Measure neglected relativistic corrections.",
+    "limit": "Approximation is not an identity at all energies."
+  },
+  {
+    "id": "R06",
+    "concept": "Pauli equation",
+    "mathematical_meaning": "The Pauli equation retains spin coupling in a nonrelativistic regime.",
+    "input_role": "Encode magnetic fields and spin states.",
+    "model_role": "Provide a scientific primitive or structured local model.",
+    "output_or_test": "Check magnetic response and units.",
+    "limit": "It does not describe arbitrary symbolic reasoning."
+  },
+  {
+    "id": "R07",
+    "concept": "Schrodinger model",
+    "mathematical_meaning": "A Schrodinger model describes a specified quantum system.",
+    "input_role": "Supply mass, potential and boundary data.",
+    "model_role": "Use an explicit domain solver or artificial analogue.",
+    "output_or_test": "Check spectra and time evolution.",
+    "limit": "The equation needs a problem-dependent Hamiltonian."
+  },
+  {
+    "id": "R08",
+    "concept": "Born-Oppenheimer separation",
+    "mathematical_meaning": "Born-Oppenheimer separation exploits different physical time scales.",
+    "input_role": "Distinguish slow and fast observed variables.",
+    "model_role": "Motivate separated fast state and slow learning parameters.",
+    "output_or_test": "Test whether scale separation is accurate.",
+    "limit": "The learning-timescale analogy is not the molecular theorem."
+  },
+  {
+    "id": "R09",
+    "concept": "Gravity as EFT",
+    "mathematical_meaning": "Gravity as EFT is a regime-limited physical description.",
+    "input_role": "Include gravitational tasks where relevant.",
+    "model_role": "Provide a domain model with error limits.",
+    "output_or_test": "Check scale assumptions and observables.",
+    "limit": "No quantum-gravity solution is asserted or required for this architecture."
+  },
+  {
+    "id": "R10",
+    "concept": "Approximation error",
+    "mathematical_meaning": "Approximation error qualifies a prediction.",
+    "input_role": "Record uncertainty from input compression and discretization.",
+    "model_role": "Allocate rank, precision or solver effort.",
+    "output_or_test": "Propagate error into the final answer.",
+    "limit": "An internal matrix tolerance does not alone prove semantic correctness."
+  },
+  {
+    "id": "P01",
+    "concept": "Particle in a box",
+    "mathematical_meaning": "A box model quantizes modes through boundaries.",
+    "input_role": "Generate controlled spectral training tasks.",
+    "model_role": "Test boundary-sensitive solvers and encoders.",
+    "output_or_test": "Recover spectra under changed box size.",
+    "limit": "Memorizing one spectrum is not learning general quantum mechanics."
+  },
+  {
+    "id": "P02",
+    "concept": "Harmonic oscillator",
+    "mathematical_meaning": "The harmonic oscillator has structured ladder and spectral relations.",
+    "input_role": "Generate time, frequency and energy examples.",
+    "model_role": "Use exact local formulas and domain modules.",
+    "output_or_test": "Check commutators, spectra and prediction.",
+    "limit": "An oscillator analogy does not create a learning objective."
+  },
+  {
+    "id": "P03",
+    "concept": "Hydrogenic atom",
+    "mathematical_meaning": "A hydrogenic atom supplies a central-potential model.",
+    "input_role": "Train scientific reasoning with parameters and units.",
+    "model_role": "Validate angular and radial solution modules.",
+    "output_or_test": "Compare levels and selection rules.",
+    "limit": "A fixed textbook case is not broad scientific understanding."
+  },
+  {
+    "id": "P04",
+    "concept": "Spin in a field",
+    "mathematical_meaning": "Spin in a field gives a compact rotation model.",
+    "input_role": "Encode field direction and spin preparation.",
+    "model_role": "Implement exact two-level evolution.",
+    "output_or_test": "Compare Bloch rotations with matrix propagation.",
+    "limit": "Physical spin semantics require appropriate input and measurement data."
+  },
+  {
+    "id": "P05",
+    "concept": "Tunnelling",
+    "mathematical_meaning": "Tunnelling describes transmission through classically forbidden regions.",
+    "input_role": "Provide barrier tasks or explicitly designed search analogues.",
+    "model_role": "Explore wave-based small optimization experiments.",
+    "output_or_test": "Compare transmission or search success against controls.",
+    "limit": "Calling an optimizer move tunnelling does not give a physical or computational advantage."
+  },
+  {
+    "id": "P06",
+    "concept": "Perturbation theory",
+    "mathematical_meaning": "Perturbation theory expands around a solvable model.",
+    "input_role": "Identify a small parameter and reference solution.",
+    "model_role": "Use low-rank or small-update approximations.",
+    "output_or_test": "Check convergence and neglected terms.",
+    "limit": "A large architecture change is not a small perturbation."
+  },
+  {
+    "id": "P07",
+    "concept": "Identical particles",
+    "mathematical_meaning": "Identical particles impose exchange structure.",
+    "input_role": "Use exchange-symmetric scientific inputs.",
+    "model_role": "Explore permutation-aware sets of entities.",
+    "output_or_test": "Test relabeling invariance and physical statistics separately.",
+    "limit": "Artificial objects are not necessarily identical particles."
+  },
+  {
+    "id": "P08",
+    "concept": "Fermi and Bose statistics",
+    "mathematical_meaning": "Fermi/Bose statistics govern occupation in their regimes.",
+    "input_role": "Encode correct physical occupation data.",
+    "model_role": "Constrain scientific simulation modules.",
+    "output_or_test": "Check counting and distribution laws.",
+    "limit": "Competition or cooperation between artificial units is only a loose analogy."
+  },
+  {
+    "id": "P09",
+    "concept": "Quasiparticle",
+    "mathematical_meaning": "A quasiparticle is an effective collective excitation.",
+    "input_role": "Represent learned reusable collective features.",
+    "model_role": "Motivate emergent skill or mode abstractions.",
+    "output_or_test": "Test whether the abstraction predicts new cases.",
+    "limit": "A learned feature is not automatically a physical quasiparticle."
+  },
+  {
+    "id": "P10",
+    "concept": "Band structure",
+    "mathematical_meaning": "Band structure uses periodicity and spectral organization.",
+    "input_role": "Encode periodic materials or repeated spatial structure.",
+    "model_role": "Use Fourier/block-diagonal computation where valid.",
+    "output_or_test": "Check dispersion and translation structure.",
+    "limit": "Arbitrary token sequences are not periodic crystals."
+  },
+  {
+    "id": "P11",
+    "concept": "Collective phases",
+    "mathematical_meaning": "Collective phases are many-body regimes.",
+    "input_role": "Supply domain data across phase boundaries.",
+    "model_role": "Test correlated world models and order parameters.",
+    "output_or_test": "Measure actual predictive behavior across regimes.",
+    "limit": "A sudden training gain is not evidence of a physical phase transition."
+  },
+  {
+    "id": "P12",
+    "concept": "Topological response",
+    "mathematical_meaning": "Topological response can depend on global structure.",
+    "input_role": "Encode loop and global relational tasks.",
+    "model_role": "Explore topology-aware features and domain modules.",
+    "output_or_test": "Test robustness under allowed deformations.",
+    "limit": "Not every robust neural representation has a topological invariant."
+  },
+  {
+    "id": "P13",
+    "concept": "Anyons",
+    "mathematical_meaning": "Anyons generalize exchange behavior in appropriate settings.",
+    "input_role": "Use specialized physical tasks or braid representations.",
+    "model_role": "Explore algebraically defined sequence operators.",
+    "output_or_test": "Check braid relations and empirical utility.",
+    "limit": "Anyons are not generic software particles or a guaranteed route to intelligence."
+  },
+  {
+    "id": "K01",
+    "concept": "Reduced description",
+    "mathematical_meaning": "A reduced description retains selected information.",
+    "input_role": "Choose task-relevant features and marginals.",
+    "model_role": "Compress state with a declared loss criterion.",
+    "output_or_test": "Compare answers before and after reduction.",
+    "limit": "A reduction can erase exactly the information a future task needs."
+  },
+  {
+    "id": "K02",
+    "concept": "Ehrenfest equations",
+    "mathematical_meaning": "Ehrenfest equations relate expectation dynamics to commutators.",
+    "input_role": "Provide mean-observable trajectories.",
+    "model_role": "Build moment-based approximate world models.",
+    "output_or_test": "Check whether higher moments are needed.",
+    "limit": "The mean equations need not form a closed classical system."
+  },
+  {
+    "id": "K03",
+    "concept": "Narrow wavepacket",
+    "mathematical_meaning": "A narrow wavepacket can justify local approximations.",
+    "input_role": "Recognize concentrated input distributions.",
+    "model_role": "Use local linearization or mode approximations.",
+    "output_or_test": "Test spread and approximation error.",
+    "limit": "Concentration must be measured, not assumed."
+  },
+  {
+    "id": "K04",
+    "concept": "WKB expansion",
+    "mathematical_meaning": "WKB is an asymptotic wave approximation.",
+    "input_role": "Identify scale-separated physical data.",
+    "model_role": "Accelerate a suitable scientific solver.",
+    "output_or_test": "Test turning-point failures and regime bounds.",
+    "limit": "It is not a universal shortcut for arbitrary neural inference."
+  },
+  {
+    "id": "K05",
+    "concept": "Wigner function",
+    "mathematical_meaning": "A Wigner function is a phase-space representation.",
+    "input_role": "Encode conjugate-coordinate information.",
+    "model_role": "Explore phase-space models of small systems.",
+    "output_or_test": "Check marginals and reconstruction.",
+    "limit": "It may be negative and is not an ordinary probability density."
+  },
+  {
+    "id": "K06",
+    "concept": "Classical Liouville flow",
+    "mathematical_meaning": "Classical Liouville flow transports a phase-space density.",
+    "input_role": "Use classical dynamical observations.",
+    "model_role": "Provide a baseline world model or distribution transport.",
+    "output_or_test": "Compare with quantum corrections where relevant.",
+    "limit": "Classical and quantum flow are not generally identical."
+  },
+  {
+    "id": "K07",
+    "concept": "Gibbs state",
+    "mathematical_meaning": "A Gibbs state weights energies by temperature.",
+    "input_role": "Encode an energy-based hypothesis distribution.",
+    "model_role": "Use probabilistic selection or equilibrium modeling.",
+    "output_or_test": "Check partition normalization and temperature dependence.",
+    "limit": "A learned energy must be connected to the task objective."
+  },
+  {
+    "id": "K08",
+    "concept": "Entropy",
+    "mathematical_meaning": "Entropy summarizes a distribution or state spectrum.",
+    "input_role": "Measure uncertainty under a specified interpretation.",
+    "model_role": "Regularize diversity or diagnose collapse.",
+    "output_or_test": "Compare entropy with calibration and useful learning.",
+    "limit": "High entropy is not ignorance in every semantic sense, and low entropy is not correctness."
+  },
+  {
+    "id": "K09",
+    "concept": "Coarse graining",
+    "mathematical_meaning": "Coarse graining discards distinctions at a chosen scale.",
+    "input_role": "Aggregate tokens, patches or physical variables.",
+    "model_role": "Build adaptive multiscale state.",
+    "output_or_test": "Measure information and task loss after compression.",
+    "limit": "Discarding distinctions can change future learning ability."
+  },
+  {
+    "id": "K10",
+    "concept": "Measurement problem",
+    "mathematical_meaning": "The measurement problem concerns interpretation of outcomes.",
+    "input_role": "Label unresolved foundational assumptions honestly.",
+    "model_role": "Keep interpretation separate from executable update rules.",
+    "output_or_test": "Avoid using an interpretation as performance evidence.",
+    "limit": "No solution to this foundational question is claimed by an AI architecture."
+  },
+  {
+    "id": "I01",
+    "concept": "No cloning",
+    "mathematical_meaning": "No cloning constrains unknown physical quantum states.",
+    "input_role": "Account for physical data-copy limits.",
+    "model_role": "Distinguish hardware registers from stored classical descriptions.",
+    "output_or_test": "Check that hardware procedures do not assume free clones.",
+    "limit": "Classical arrays and known state-preparation programs can be copied."
+  },
+  {
+    "id": "I02",
+    "concept": "Bell correlations",
+    "mathematical_meaning": "Bell correlations test joint quantum predictions under assumptions.",
+    "input_role": "Use proper scientific correlation data.",
+    "model_role": "Validate specialized quantum models and entanglement tests.",
+    "output_or_test": "Check experimental assumptions and statistics.",
+    "limit": "Bell violation does not establish AGI or permit signalling."
+  },
+  {
+    "id": "I03",
+    "concept": "No signalling",
+    "mathematical_meaning": "No signalling constrains remote marginal changes.",
+    "input_role": "Define permitted causal information flow.",
+    "model_role": "Check physical communication claims.",
+    "output_or_test": "Compare marginals under local trace-preserving maps.",
+    "limit": "It does not imply that classical parallel modules communicate for free."
+  },
+  {
+    "id": "I04",
+    "concept": "Tomography",
+    "mathematical_meaning": "Tomography estimates a state from measurement data.",
+    "input_role": "Convert repeated physical measurements into an estimate.",
+    "model_role": "Calibrate small state models.",
+    "output_or_test": "Report sample complexity and uncertainty.",
+    "limit": "A single measurement does not reveal a full unknown state."
+  },
+  {
+    "id": "I05",
+    "concept": "Error correction",
+    "mathematical_meaning": "Error correction uses redundancy to protect information.",
+    "input_role": "Model actual noise and error syndromes.",
+    "model_role": "Explore robust encodings or a hardware QEC layer.",
+    "output_or_test": "Test failures at declared noise levels.",
+    "limit": "Quantum error correction is not a free cure for model reasoning errors."
+  },
+  {
+    "id": "I06",
+    "concept": "Interferometer",
+    "mathematical_meaning": "An interferometer probes relative phase.",
+    "input_role": "Generate phase-sensitive sensor tasks.",
+    "model_role": "Test coherent encoders and readouts.",
+    "output_or_test": "Compare fringe predictions under controls.",
+    "limit": "An interference image alone does not show useful learning."
+  },
+  {
+    "id": "I07",
+    "concept": "Spin analyzer",
+    "mathematical_meaning": "A spin analyzer implements a spin measurement.",
+    "input_role": "Define preparation and measurement axes.",
+    "model_role": "Validate local state and effect components.",
+    "output_or_test": "Check observed outcome probabilities.",
+    "limit": "Axis metadata is necessary to interpret the result."
+  },
+  {
+    "id": "I08",
+    "concept": "Spectroscopy",
+    "mathematical_meaning": "Spectroscopy probes energy differences and transitions.",
+    "input_role": "Supply scientific measurements with uncertainties.",
+    "model_role": "Train inverse or forward domain models.",
+    "output_or_test": "Validate predicted spectra on unseen conditions.",
+    "limit": "A spectral match may not uniquely identify the underlying model."
+  },
+  {
+    "id": "I09",
+    "concept": "Scattering experiment",
+    "mathematical_meaning": "A scattering experiment tests process predictions.",
+    "input_role": "Encode beams, targets and detector geometry.",
+    "model_role": "Use a specialized scientific world model.",
+    "output_or_test": "Compare cross sections and error bars.",
+    "limit": "It is a domain task, not a generic input-output learning law."
+  },
+  {
+    "id": "I10",
+    "concept": "Statistical validation",
+    "mathematical_meaning": "Statistical validation qualifies empirical evidence.",
+    "input_role": "Keep support, validation and test data separate.",
+    "model_role": "Gate learning and model promotion.",
+    "output_or_test": "Report seeds, uncertainty, baselines and failures.",
+    "limit": "Adaptive reuse of a holdout can invalidate a simple confidence claim."
+  },
+  {
+    "id": "N01",
+    "concept": "Dense statevector",
+    "mathematical_meaning": "A dense statevector stores all finite amplitudes.",
+    "input_role": "Use small exact reference states.",
+    "model_role": "Provide an oracle implementation for comparisons.",
+    "output_or_test": "Measure memory and numerical accuracy.",
+    "limit": "Storage grows exponentially in qubit count."
+  },
+  {
+    "id": "N02",
+    "concept": "Dense density matrix",
+    "mathematical_meaning": "A dense density matrix stores a general finite mixed state.",
+    "input_role": "Represent small correlated evidence exactly.",
+    "model_role": "Validate reduced and approximate models.",
+    "output_or_test": "Track trace, eigenvalues and temporary registers.",
+    "limit": "Its cost grows as four to the number of qubits."
+  },
+  {
+    "id": "N03",
+    "concept": "Tensor network",
+    "mathematical_meaning": "A tensor network factorizes a structured state or operator.",
+    "input_role": "Encode ordered or hierarchical dependencies.",
+    "model_role": "Compress and contract controlled correlations.",
+    "output_or_test": "Track bond dimensions and discarded information.",
+    "limit": "Efficient simulation depends on structure, not on the notation alone."
+  },
+  {
+    "id": "N04",
+    "concept": "Finite cutoff",
+    "mathematical_meaning": "A finite cutoff bounds an otherwise larger space.",
+    "input_role": "Limit grids, particle counts or sequence supports.",
+    "model_role": "Make an explicit computable approximation.",
+    "output_or_test": "Increase the cutoff and test convergence.",
+    "limit": "A finite basis does not enumerate every possible quantum state."
+  },
+  {
+    "id": "N05",
+    "concept": "Trotter splitting",
+    "mathematical_meaning": "Trotter splitting approximates ordered evolution.",
+    "input_role": "Use decomposable controlled generators.",
+    "model_role": "Build sequences of cheap local updates.",
+    "output_or_test": "Refine step size and measure error.",
+    "limit": "Noncommuting terms produce a real approximation error."
+  },
+  {
+    "id": "N06",
+    "concept": "Physical invariants",
+    "mathematical_meaning": "Physical invariants provide numerical checks.",
+    "input_role": "Generate valid reference inputs.",
+    "model_role": "Monitor structure-preserving operations.",
+    "output_or_test": "Fail tests on trace, norm, positivity or conservation drift.",
+    "limit": "Passing invariants does not establish intelligence or generalization."
+  },
+  {
+    "id": "N07",
+    "concept": "State preparation and readout",
+    "mathematical_meaning": "State preparation and readout consume resources.",
+    "input_role": "Count conversion from original data and desired outputs.",
+    "model_role": "Include encoders, measurements and decoding in benchmarks.",
+    "output_or_test": "Measure end-to-end cost.",
+    "limit": "A small core is not a small complete system if its interfaces are huge."
+  },
+  {
+    "id": "N08",
+    "concept": "Quantum-inspired algorithm",
+    "mathematical_meaning": "Quantum-inspired computation runs selected mathematics classically.",
+    "input_role": "Use classical data and arrays.",
+    "model_role": "Explore structured complex, probabilistic and tensor mechanisms.",
+    "output_or_test": "Compare against strong classical alternatives.",
+    "limit": "Quantum-inspired is not evidence of a quantum hardware speedup."
+  },
+  {
+    "id": "N09",
+    "concept": "Open research boundary",
+    "mathematical_meaning": "Open boundaries identify assumptions and unresolved results.",
+    "input_role": "State what evidence and theory are missing.",
+    "model_role": "Generate explicit next experiments and alternative constructions.",
+    "output_or_test": "Update claims when evidence changes.",
+    "limit": "An open question is a research target, not a guarantee or a reason to abandon useful attempts."
+  }
+]

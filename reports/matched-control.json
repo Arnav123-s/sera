@@ -1,0 +1,235 @@
+{
+  "config": {
+    "kind": "delta",
+    "width": 85,
+    "heads": 2,
+    "memory_dim": 12
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "parameters": 11216,
+      "core_state_bytes": 1152,
+      "id": {
+        "tasks": {
+          "marked_retrieval": {
+            "accuracy": 1.0,
+            "nll_floor_1e_12": 0.0015456352848559618,
+            "brier": 0.00012595205043908209,
+            "majority_baseline": 0.296875,
+            "samples": 512
+          },
+          "latest_binding": {
+            "accuracy": 0.998046875,
+            "nll_floor_1e_12": 0.010040497407317162,
+            "brier": 0.004858178552240133,
+            "majority_baseline": 0.27734375,
+            "samples": 512
+          },
+          "ordered_control": {
+            "accuracy": 0.373046875,
+            "nll_floor_1e_12": 1.2674978971481323,
+            "brier": 0.7157779932022095,
+            "majority_baseline": 0.34375,
+            "samples": 512
+          },
+          "majority": {
+            "accuracy": 0.875,
+            "nll_floor_1e_12": 0.2678598165512085,
+            "brier": 0.16530951857566833,
+            "majority_baseline": 0.32421875,
+            "samples": 512
+          }
+        },
+        "macro_accuracy": 0.8115234375,
+        "dataset_id": "3251f5217b5de934df23d5030eefdd95124be92c5efb8bdcdab7b4725344d73f",
+        "length": 12
+      },
+      "ood": {
+        "tasks": {
+          "marked_retrieval": {
+            "accuracy": 0.9921875,
+            "nll_floor_1e_12": 0.02440742403268814,
+            "brier": 0.012223788537085056,
+            "majority_baseline": 0.255859375,
+            "samples": 512
+          },
+          "latest_binding": {
+            "accuracy": 0.9921875,
+            "nll_floor_1e_12": 0.04309426620602608,
+            "brier": 0.015755606815218925,
+            "majority_baseline": 0.27734375,
+            "samples": 512
+          },
+          "ordered_control": {
+            "accuracy": 0.380859375,
+            "nll_floor_1e_12": 1.2466270923614502,
+            "brier": 0.7052479386329651,
+            "majority_baseline": 0.369140625,
+            "samples": 512
+          },
+          "majority": {
+            "accuracy": 0.73828125,
+            "nll_floor_1e_12": 0.7759459018707275,
+            "brier": 0.39766085147857666,
+            "majority_baseline": 0.2890625,
+            "samples": 512
+          }
+        },
+        "macro_accuracy": 0.77587890625,
+        "dataset_id": "952d0bd21dbe4210899808c60d98d788f8f02807d5202658abe787dfae9eb845",
+        "length": 24
+      }
+    },
+    {
+      "seed": 1,
+      "parameters": 11216,
+      "core_state_bytes": 1152,
+      "id": {
+        "tasks": {
+          "marked_retrieval": {
+            "accuracy": 1.0,
+            "nll_floor_1e_12": 0.002836985746398568,
+            "brier": 0.00016851568943820894,
+            "majority_baseline": 0.255859375,
+            "samples": 512
+          },
+          "latest_binding": {
+            "accuracy": 0.99609375,
+            "nll_floor_1e_12": 0.014330493286252022,
+            "brier": 0.005500271916389465,
+            "majority_baseline": 0.30078125,
+            "samples": 512
+          },
+          "ordered_control": {
+            "accuracy": 0.3828125,
+            "nll_floor_1e_12": 1.2198292016983032,
+            "brier": 0.68470698595047,
+            "majority_baseline": 0.37890625,
+            "samples": 512
+          },
+          "majority": {
+            "accuracy": 0.943359375,
+            "nll_floor_1e_12": 0.16781923174858093,
+            "brier": 0.0914534479379654,
+            "majority_baseline": 0.318359375,
+            "samples": 512
+          }
+        },
+        "macro_accuracy": 0.83056640625,
+        "dataset_id": "5d7bbe8a6cf736786e8ef6ad96a9d9db866d992bcf36de8b8536ac7affb06ee8",
+        "length": 12
+      },
+      "ood": {
+        "tasks": {
+          "marked_retrieval": {
+            "accuracy": 0.998046875,
+            "nll_floor_1e_12": 0.018388252705335617,
+            "brier": 0.0067978547886013985,
+            "majority_baseline": 0.259765625,
+            "samples": 512
+          },
+          "latest_binding": {
+            "accuracy": 0.9921875,
+            "nll_floor_1e_12": 0.023774070665240288,
+            "brier": 0.01182452030479908,
+            "majority_baseline": 0.267578125,
+            "samples": 512
+          },
+          "ordered_control": {
+            "accuracy": 0.361328125,
+            "nll_floor_1e_12": 1.275721788406372,
+            "brier": 0.7206668257713318,
+            "majority_baseline": 0.359375,
+            "samples": 512
+          },
+          "majority": {
+            "accuracy": 0.78125,
+            "nll_floor_1e_12": 0.5870836973190308,
+            "brier": 0.3226414918899536,
+            "majority_baseline": 0.333984375,
+            "samples": 512
+          }
+        },
+        "macro_accuracy": 0.783203125,
+        "dataset_id": "60d9170d51e2f3acf4d5673a46e431f8d132ba33811098b1f9917877eb9ca112",
+        "length": 24
+      }
+    },
+    {
+      "seed": 2,
+      "parameters": 11216,
+      "core_state_bytes": 1152,
+      "id": {
+        "tasks": {
+          "marked_retrieval": {
+            "accuracy": 1.0,
+            "nll_floor_1e_12": 0.0030390878673642874,
+            "brier": 0.0006854001549072564,
+            "majority_baseline": 0.275390625,
+            "samples": 512
+          },
+          "latest_binding": {
+            "accuracy": 0.994140625,
+            "nll_floor_1e_12": 0.024306559935212135,
+            "brier": 0.01144881546497345,
+            "majority_baseline": 0.296875,
+            "samples": 512
+          },
+          "ordered_control": {
+            "accuracy": 0.36328125,
+            "nll_floor_1e_12": 1.2553505897521973,
+            "brier": 0.7016944289207458,
+            "majority_baseline": 0.29296875,
+            "samples": 512
+          },
+          "majority": {
+            "accuracy": 0.9140625,
+            "nll_floor_1e_12": 0.20293614268302917,
+            "brier": 0.12370414286851883,
+            "majority_baseline": 0.322265625,
+            "samples": 512
+          }
+        },
+        "macro_accuracy": 0.81787109375,
+        "dataset_id": "53c5ed383e06d4aad78148adb3ce79162e8d43a45e5b1b3859d2aeaebc2e483c",
+        "length": 12
+      },
+      "ood": {
+        "tasks": {
+          "marked_retrieval": {
+            "accuracy": 0.98046875,
+            "nll_floor_1e_12": 0.04733693227171898,
+            "brier": 0.023213116452097893,
+            "majority_baseline": 0.265625,
+            "samples": 512
+          },
+          "latest_binding": {
+            "accuracy": 0.990234375,
+            "nll_floor_1e_12": 0.027031218633055687,
+            "brier": 0.015545654110610485,
+            "majority_baseline": 0.2734375,
+            "samples": 512
+          },
+          "ordered_control": {
+            "accuracy": 0.376953125,
+            "nll_floor_1e_12": 1.2334388494491577,
+            "brier": 0.6943646669387817,
+            "majority_baseline": 0.3515625,
+            "samples": 512
+          },
+          "majority": {
+            "accuracy": 0.830078125,
+            "nll_floor_1e_12": 0.45408809185028076,
+            "brier": 0.25251504778862,
+            "majority_baseline": 0.328125,
+            "samples": 512
+          }
+        },
+        "macro_accuracy": 0.79443359375,
+        "dataset_id": "2e13c0e7dde603434278ea85a32759b51031b4729cf643204770af159ca11725",
+        "length": 24
+      }
+    }
+  ]
+}

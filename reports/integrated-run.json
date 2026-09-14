@@ -1,0 +1,607 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06"
+  },
+  "seed": 0,
+  "steps": 500,
+  "neural": {
+    "tasks": {
+      "marked_retrieval": {
+        "accuracy": 1.0,
+        "nll_floor_1e_12": 0.010323239490389824,
+        "brier": 0.0016619301168248057,
+        "majority_baseline": 0.2724609375,
+        "samples": 1024
+      },
+      "latest_binding": {
+        "accuracy": 0.7353515625,
+        "nll_floor_1e_12": 0.6503114700317383,
+        "brier": 0.370594322681427,
+        "majority_baseline": 0.271484375,
+        "samples": 1024
+      },
+      "ordered_control": {
+        "accuracy": 0.3798828125,
+        "nll_floor_1e_12": 1.2870646715164185,
+        "brier": 0.7044638395309448,
+        "majority_baseline": 0.328125,
+        "samples": 1024
+      },
+      "majority": {
+        "accuracy": 0.9052734375,
+        "nll_floor_1e_12": 0.2702029049396515,
+        "brier": 0.15091559290885925,
+        "majority_baseline": 0.3447265625,
+        "samples": 1024
+      }
+    },
+    "macro_accuracy": 0.755126953125,
+    "dataset_id": "07c89ae35d9b9c10f8b7d93b5eba72417aa9a5f687bce90abe0657da839eced5",
+    "length": 12
+  },
+  "world": {
+    "seed": 0,
+    "training_steps": 300,
+    "training_transitions": 19200,
+    "observed_pairs": 16,
+    "possible_pairs": 16,
+    "transition_accuracy": 1.0,
+    "plans": [
+      {
+        "start": 0,
+        "goal": 1,
+        "actions": [
+          0
+        ],
+        "model_expansions": 4,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": true,
+        "random_steps": 1
+      },
+      {
+        "start": 0,
+        "goal": 2,
+        "actions": [
+          0,
+          1
+        ],
+        "model_expansions": 8,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 2,
+        "random_success": true,
+        "random_steps": 7
+      },
+      {
+        "start": 0,
+        "goal": 3,
+        "actions": [
+          0,
+          1,
+          0
+        ],
+        "model_expansions": 12,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 3,
+        "random_success": true,
+        "random_steps": 7
+      },
+      {
+        "start": 1,
+        "goal": 0,
+        "actions": [
+          0
+        ],
+        "model_expansions": 4,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": false,
+        "random_steps": 8
+      },
+      {
+        "start": 1,
+        "goal": 2,
+        "actions": [
+          1
+        ],
+        "model_expansions": 8,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": true,
+        "random_steps": 3
+      },
+      {
+        "start": 1,
+        "goal": 3,
+        "actions": [
+          1,
+          0
+        ],
+        "model_expansions": 12,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 2,
+        "random_success": false,
+        "random_steps": 8
+      },
+      {
+        "start": 2,
+        "goal": 0,
+        "actions": [
+          0,
+          3
+        ],
+        "model_expansions": 12,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 2,
+        "random_success": false,
+        "random_steps": 8
+      },
+      {
+        "start": 2,
+        "goal": 1,
+        "actions": [
+          1
+        ],
+        "model_expansions": 8,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": true,
+        "random_steps": 1
+      },
+      {
+        "start": 2,
+        "goal": 3,
+        "actions": [
+          0
+        ],
+        "model_expansions": 4,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": true,
+        "random_steps": 1
+      },
+      {
+        "start": 3,
+        "goal": 0,
+        "actions": [
+          3
+        ],
+        "model_expansions": 8,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": true,
+        "random_steps": 5
+      },
+      {
+        "start": 3,
+        "goal": 1,
+        "actions": [
+          0,
+          1
+        ],
+        "model_expansions": 12,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 2,
+        "random_success": true,
+        "random_steps": 3
+      },
+      {
+        "start": 3,
+        "goal": 2,
+        "actions": [
+          0
+        ],
+        "model_expansions": 4,
+        "learned_success": true,
+        "oracle_success": true,
+        "oracle_steps": 1,
+        "random_success": true,
+        "random_steps": 3
+      }
+    ],
+    "learned_success": 1.0,
+    "oracle_success": 1.0,
+    "random_success": 0.75,
+    "scope": "Observable state IDs; all finite transitions may be seen in training; no unseen-dynamics claim"
+  },
+  "adaptation": {
+    "support_dataset_id": "c5c610bd498608e9adac48862d9759bb2fda7e5cb216d0a397dc527c0dfa54af",
+    "support_examples": 128,
+    "conditions": {
+      "no_update": {
+        "novel": {
+          "tasks": {
+            "earliest_binding": {
+              "accuracy": 0.31640625,
+              "nll_floor_1e_12": 2.95414662361145,
+              "brier": 1.1406307220458984,
+              "majority_baseline": 0.3046875,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.31640625,
+          "dataset_id": "98ad6bca2bb973055588b662f1654a1e73a9633b245132bba491c053431d75bd",
+          "length": 12
+        },
+        "retention": {
+          "tasks": {
+            "marked_retrieval": {
+              "accuracy": 1.0,
+              "nll_floor_1e_12": 0.007052494212985039,
+              "brier": 0.0003186232934240252,
+              "majority_baseline": 0.26171875,
+              "samples": 256
+            },
+            "latest_binding": {
+              "accuracy": 0.71484375,
+              "nll_floor_1e_12": 0.6679818034172058,
+              "brier": 0.3852974772453308,
+              "majority_baseline": 0.296875,
+              "samples": 256
+            },
+            "ordered_control": {
+              "accuracy": 0.3203125,
+              "nll_floor_1e_12": 1.3375061750411987,
+              "brier": 0.7329830527305603,
+              "majority_baseline": 0.328125,
+              "samples": 256
+            },
+            "majority": {
+              "accuracy": 0.890625,
+              "nll_floor_1e_12": 0.2863030433654785,
+              "brier": 0.15978576242923737,
+              "majority_baseline": 0.34765625,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.7314453125,
+          "dataset_id": "e55ffa1c8a6532e0f5174840c790c61dee6300a54dc1b524c98917f7b16b3dad",
+          "length": 12
+        },
+        "optimizer_steps": 0,
+        "novel_draws": 0
+      },
+      "full_update": {
+        "novel": {
+          "tasks": {
+            "earliest_binding": {
+              "accuracy": 0.59765625,
+              "nll_floor_1e_12": 1.226304292678833,
+              "brier": 0.5637894868850708,
+              "majority_baseline": 0.3046875,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.59765625,
+          "dataset_id": "98ad6bca2bb973055588b662f1654a1e73a9633b245132bba491c053431d75bd",
+          "length": 12
+        },
+        "retention": {
+          "tasks": {
+            "marked_retrieval": {
+              "accuracy": 0.7578125,
+              "nll_floor_1e_12": 0.7753227949142456,
+              "brier": 0.382470041513443,
+              "majority_baseline": 0.26171875,
+              "samples": 256
+            },
+            "latest_binding": {
+              "accuracy": 0.546875,
+              "nll_floor_1e_12": 1.2575910091400146,
+              "brier": 0.6444388628005981,
+              "majority_baseline": 0.296875,
+              "samples": 256
+            },
+            "ordered_control": {
+              "accuracy": 0.3359375,
+              "nll_floor_1e_12": 1.427929162979126,
+              "brier": 0.7700573205947876,
+              "majority_baseline": 0.328125,
+              "samples": 256
+            },
+            "majority": {
+              "accuracy": 0.453125,
+              "nll_floor_1e_12": 1.9114810228347778,
+              "brier": 0.8563948273658752,
+              "majority_baseline": 0.34765625,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.5234375,
+          "dataset_id": "e55ffa1c8a6532e0f5174840c790c61dee6300a54dc1b524c98917f7b16b3dad",
+          "length": 12
+        },
+        "optimizer_steps": 64,
+        "novel_draws": 4096
+      },
+      "replay": {
+        "novel": {
+          "tasks": {
+            "earliest_binding": {
+              "accuracy": 0.54296875,
+              "nll_floor_1e_12": 1.3141111135482788,
+              "brier": 0.6569225788116455,
+              "majority_baseline": 0.3046875,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.54296875,
+          "dataset_id": "98ad6bca2bb973055588b662f1654a1e73a9633b245132bba491c053431d75bd",
+          "length": 12
+        },
+        "retention": {
+          "tasks": {
+            "marked_retrieval": {
+              "accuracy": 1.0,
+              "nll_floor_1e_12": 0.01900753751397133,
+              "brier": 0.002027855021879077,
+              "majority_baseline": 0.26171875,
+              "samples": 256
+            },
+            "latest_binding": {
+              "accuracy": 0.69140625,
+              "nll_floor_1e_12": 0.7712032198905945,
+              "brier": 0.4436311423778534,
+              "majority_baseline": 0.296875,
+              "samples": 256
+            },
+            "ordered_control": {
+              "accuracy": 0.359375,
+              "nll_floor_1e_12": 1.2850935459136963,
+              "brier": 0.7085890173912048,
+              "majority_baseline": 0.328125,
+              "samples": 256
+            },
+            "majority": {
+              "accuracy": 0.80078125,
+              "nll_floor_1e_12": 0.47292330861091614,
+              "brier": 0.2735854685306549,
+              "majority_baseline": 0.34765625,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.712890625,
+          "dataset_id": "e55ffa1c8a6532e0f5174840c790c61dee6300a54dc1b524c98917f7b16b3dad",
+          "length": 12
+        },
+        "optimizer_steps": 64,
+        "novel_draws": 2048
+      },
+      "scratch": {
+        "novel": {
+          "tasks": {
+            "earliest_binding": {
+              "accuracy": 0.3828125,
+              "nll_floor_1e_12": 1.339372158050537,
+              "brier": 0.7297027111053467,
+              "majority_baseline": 0.3046875,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.3828125,
+          "dataset_id": "98ad6bca2bb973055588b662f1654a1e73a9633b245132bba491c053431d75bd",
+          "length": 12
+        },
+        "retention": {
+          "tasks": {
+            "marked_retrieval": {
+              "accuracy": 0.3359375,
+              "nll_floor_1e_12": 1.5337259769439697,
+              "brier": 0.8316963911056519,
+              "majority_baseline": 0.26171875,
+              "samples": 256
+            },
+            "latest_binding": {
+              "accuracy": 0.26171875,
+              "nll_floor_1e_12": 1.667675256729126,
+              "brier": 0.8932643532752991,
+              "majority_baseline": 0.296875,
+              "samples": 256
+            },
+            "ordered_control": {
+              "accuracy": 0.203125,
+              "nll_floor_1e_12": 1.9581751823425293,
+              "brier": 1.001725435256958,
+              "majority_baseline": 0.328125,
+              "samples": 256
+            },
+            "majority": {
+              "accuracy": 0.265625,
+              "nll_floor_1e_12": 1.8387293815612793,
+              "brier": 1.0123146772384644,
+              "majority_baseline": 0.34765625,
+              "samples": 256
+            }
+          },
+          "macro_accuracy": 0.2666015625,
+          "dataset_id": "e55ffa1c8a6532e0f5174840c790c61dee6300a54dc1b524c98917f7b16b3dad",
+          "length": 12
+        },
+        "optimizer_steps": 64,
+        "novel_draws": 4096
+      }
+    },
+    "scope": "Related earliest-binding task; equal update batches; replay uses half as many novel draws"
+  },
+  "improvement": {
+    "status": "promoted",
+    "diagnosis": {
+      "tasks": {
+        "marked_retrieval": {
+          "accuracy": 1.0,
+          "nll_floor_1e_12": 0.008483845740556717,
+          "brier": 0.0006626068498007953,
+          "majority_baseline": 0.2734375,
+          "samples": 256
+        },
+        "latest_binding": {
+          "accuracy": 0.71484375,
+          "nll_floor_1e_12": 0.6715736389160156,
+          "brier": 0.39153340458869934,
+          "majority_baseline": 0.26953125,
+          "samples": 256
+        },
+        "ordered_control": {
+          "accuracy": 0.38671875,
+          "nll_floor_1e_12": 1.2867660522460938,
+          "brier": 0.7029004693031311,
+          "majority_baseline": 0.32421875,
+          "samples": 256
+        },
+        "majority": {
+          "accuracy": 0.8828125,
+          "nll_floor_1e_12": 0.3021503984928131,
+          "brier": 0.1692161113023758,
+          "majority_baseline": 0.34765625,
+          "samples": 256
+        }
+      },
+      "macro_accuracy": 0.74609375,
+      "dataset_id": "4510c57ce1ec9b734ae3f286bd4526f209a56f5f89d22b0496feb4d5e9c8f2e5",
+      "length": 12
+    },
+    "incumbent": {
+      "tasks": {
+        "marked_retrieval": {
+          "accuracy": 0.96484375,
+          "nll_floor_1e_12": 0.10852667689323425,
+          "brier": 0.054519154131412506,
+          "majority_baseline": 0.271484375,
+          "samples": 1024
+        },
+        "latest_binding": {
+          "accuracy": 0.7275390625,
+          "nll_floor_1e_12": 0.6744064092636108,
+          "brier": 0.3812673091888428,
+          "majority_baseline": 0.259765625,
+          "samples": 1024
+        },
+        "ordered_control": {
+          "accuracy": 0.380859375,
+          "nll_floor_1e_12": 1.282848834991455,
+          "brier": 0.7029827833175659,
+          "majority_baseline": 0.345703125,
+          "samples": 1024
+        },
+        "majority": {
+          "accuracy": 0.5751953125,
+          "nll_floor_1e_12": 1.3259563446044922,
+          "brier": 0.6652382016181946,
+          "majority_baseline": 0.2734375,
+          "samples": 1024
+        }
+      },
+      "macro_accuracy": 0.662109375,
+      "dataset_id": "c05b84681e79df8bb93ebd1086c9a31e295d92b293f77b456ea7aa8444aa5202",
+      "length": 24
+    },
+    "candidate": {
+      "tasks": {
+        "marked_retrieval": {
+          "accuracy": 0.96484375,
+          "nll_floor_1e_12": 0.10852667689323425,
+          "brier": 0.054519154131412506,
+          "majority_baseline": 0.271484375,
+          "samples": 1024
+        },
+        "latest_binding": {
+          "accuracy": 0.7275390625,
+          "nll_floor_1e_12": 0.6744064092636108,
+          "brier": 0.3812673091888428,
+          "majority_baseline": 0.259765625,
+          "samples": 1024
+        },
+        "ordered_control": {
+          "accuracy": 1.0,
+          "nll_floor_1e_12": -0.0,
+          "brier": 0.0,
+          "majority_baseline": 0.345703125,
+          "samples": 1024
+        },
+        "majority": {
+          "accuracy": 0.5751953125,
+          "nll_floor_1e_12": 1.3259563446044922,
+          "brier": 0.6652382016181946,
+          "majority_baseline": 0.2734375,
+          "samples": 1024
+        }
+      },
+      "macro_accuracy": 0.81689453125,
+      "dataset_id": "c05b84681e79df8bb93ebd1086c9a31e295d92b293f77b456ea7aa8444aa5202",
+      "length": 24
+    },
+    "decision": {
+      "admitted": true,
+      "reasons": [],
+      "mean_gain": 0.15478515625,
+      "gain_lower_bound": 0.11234448388310564,
+      "log_alpha": -3.6888794541139363,
+      "round_index": 0,
+      "samples": 4096,
+      "retention_loss_by_task": {
+        "latest_binding": 0.0,
+        "majority": 0.0,
+        "marked_retrieval": 0.0,
+        "ordered_control": -0.619140625
+      },
+      "candidate_cost": 113,
+      "policy": {
+        "global_alpha": 0.05,
+        "minimum_gain": 0.01,
+        "max_retention_loss": 0.02,
+        "max_candidate_cost": 1000000
+      },
+      "assumptions": "Fixed bounded scores; independent fresh examples conditional on prior search. Retention gates are empirical, not confidence bounds."
+    },
+    "skill_id": "8f371858df69d8507223277eb7c619c75d2e442684feb327dd213797d608f0ed",
+    "verification": {
+      "by_length": {
+        "12": {
+          "correct": 256,
+          "samples": 256,
+          "accuracy": 1.0
+        },
+        "24": {
+          "correct": 256,
+          "samples": 256,
+          "accuracy": 1.0
+        },
+        "96": {
+          "correct": 256,
+          "samples": 256,
+          "accuracy": 1.0
+        }
+      },
+      "dataset_id": "ba8a33ab89ba4a471bfcecae44354ced7be46237a9a8e8d9fc5fad43f265852f",
+      "passed": true
+    },
+    "oracle_queries": 33,
+    "executed_actions": 80,
+    "evaluation_seed": 1737292015656208210,
+    "dataset_id": "c05b84681e79df8bb93ebd1086c9a31e295d92b293f77b456ea7aa8444aa5202",
+    "seconds": 1.4015252999961376,
+    "limitations": [
+      "fixed diagnostic and routing policy",
+      "observable resettable finite-state world",
+      "extra oracle feedback compared with neural pretraining",
+      "empirical retention gate",
+      "local ledger is not security isolation"
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "historical_source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+  "sera_source_sha256": "fde70a0ed462e2e550032b49f1201b96b2215abc0fbc537035ab658090b742f0",
+  "checkpoints_verified": 27,
+  "evaluation_suites": 54,
+  "examples_per_task_per_suite": 512,
+  "comparison": "Exact equality of all task scores, NLL, Brier scores, class baselines and dataset fingerprints under the recorded CPU environment",
+  "scope": "Re-evaluation of the same comparison datasets validates the rename; this is not fresh generalization evidence or retraining",
+  "checkpoints": [
+    {
+      "checkpoint": "runs/baseline-v1/collision-0/checkpoint.pt",
+      "checkpoint_sha256": "b8e865f8850b69048382fcca2f5cf85991562d5d92871090d35f659c7bc94988",
+      "kind": "collision",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/collision-1/checkpoint.pt",
+      "checkpoint_sha256": "94baf1968452b826aca8d4258f86126221998d412766115778ce77b1f366c1b3",
+      "kind": "collision",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/collision-2/checkpoint.pt",
+      "checkpoint_sha256": "fe4a4e3a5a8553ba38cb80bc55808f511df57c031e79cecdf84476e91cc90f87",
+      "kind": "collision",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/collision_no_cross-0/checkpoint.pt",
+      "checkpoint_sha256": "b1e6f6d84e837c3970ba82df7da3b82fe364ad5d455bda3946693f7c53bc7a90",
+      "kind": "collision_no_cross",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/collision_no_cross-1/checkpoint.pt",
+      "checkpoint_sha256": "5a4b9c2298c7bf333460d58269f7a69327d293877e856bc31345f7dac94ad0b7",
+      "kind": "collision_no_cross",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/collision_no_cross-2/checkpoint.pt",
+      "checkpoint_sha256": "943943a425013705365c7cb3d473e5fb39f2526ad3cbe95076085b67c7426c5d",
+      "kind": "collision_no_cross",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/delta-0/checkpoint.pt",
+      "checkpoint_sha256": "aca0bb12392ccab979f296617a1fd9d20a68461daaa2afeaa68310465dc43d55",
+      "kind": "delta",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/delta-1/checkpoint.pt",
+      "checkpoint_sha256": "be3a361a0055e3681883d5b8280f2894b0430681219a08625952d1cc070b4c65",
+      "kind": "delta",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/delta-2/checkpoint.pt",
+      "checkpoint_sha256": "24bdd29c9b6d9eec179ec33c96e69eca2a91934e066acdf4c80d3627a998aaaa",
+      "kind": "delta",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/density-0/checkpoint.pt",
+      "checkpoint_sha256": "fd55431f812d1fe12c6d5ec466d581daf641db327f1ecc4874e21d394d25657d",
+      "kind": "density",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/density-1/checkpoint.pt",
+      "checkpoint_sha256": "d8ba19c12c79ad83965bb460d35776cc5debc02a45f86c778df152b0cbab07dd",
+      "kind": "density",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/density-2/checkpoint.pt",
+      "checkpoint_sha256": "9e8858d6ac384bd93b06876de2d29492784c3c7234f2696397a062b61e5de92d",
+      "kind": "density",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/gru-0/checkpoint.pt",
+      "checkpoint_sha256": "35102a346cd7128dc6d711de3a3b9c14bb827b78449e03e29c5d42c5d100f9ed",
+      "kind": "gru",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/gru-1/checkpoint.pt",
+      "checkpoint_sha256": "666294e310457377b99b502227bc6ead14d2c2e8f298249081a61a437c50a4ca",
+      "kind": "gru",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/gru-2/checkpoint.pt",
+      "checkpoint_sha256": "7931024067b2c32fe09f331d60a98752a677e05b6f02904d4709a6287652d515",
+      "kind": "gru",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/hybrid-0/checkpoint.pt",
+      "checkpoint_sha256": "4207f5842bac4e3b0d46402a1cc7cf91aaa833d2a20006934b027dada2778996",
+      "kind": "hybrid",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/hybrid-1/checkpoint.pt",
+      "checkpoint_sha256": "1d196eca2654d8c129bdac150d0a174820c021f03ad42ea4e175a54f4f00b773",
+      "kind": "hybrid",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/hybrid-2/checkpoint.pt",
+      "checkpoint_sha256": "079c9c8e4d17695989d07210ed8c8c4ca4300a7ee8eb0ff9e968996cc79a4712",
+      "kind": "hybrid",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/real-0/checkpoint.pt",
+      "checkpoint_sha256": "8ccb67019191c4a5e2282a2047c2d2b4ca8544e6209ae289dd8ee8b5b9c2021c",
+      "kind": "real",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/real-1/checkpoint.pt",
+      "checkpoint_sha256": "e715b45d7b144c9d2e2fe380343abbae677bc0f253e4e31b98047c8319aa720e",
+      "kind": "real",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/real-2/checkpoint.pt",
+      "checkpoint_sha256": "887bd13e31f3ae5a79740b3819de87a6f9f38a2268e67aed68c6a027c3bd6aac",
+      "kind": "real",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/rotor-0/checkpoint.pt",
+      "checkpoint_sha256": "eeef8e972e1c1385102dfd03e6c1d379ea407e5d4ac15e72cdbe479591031036",
+      "kind": "rotor",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/rotor-1/checkpoint.pt",
+      "checkpoint_sha256": "60d9611065eecf2a3d6c696f9f1fd5e8eba0b4ac89c9d9b0c4976bce37297b62",
+      "kind": "rotor",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/baseline-v1/rotor-2/checkpoint.pt",
+      "checkpoint_sha256": "08ae3d197c22c4d9ac44dd4422dfe1ce2ffdf920735b24750f93dba0c0eb5b52",
+      "kind": "rotor",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/matched-delta-v1/0/checkpoint.pt",
+      "checkpoint_sha256": "427657ec4e54a7be93842cce5d3ae0063c2109dae198ffc8cd33fa235fe01b02",
+      "kind": "delta",
+      "seed": 0,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/matched-delta-v1/1/checkpoint.pt",
+      "checkpoint_sha256": "da66a654c4184784d58a255ec54d920516302a2465d1f9102fb2821c3ecd3239",
+      "kind": "delta",
+      "seed": 1,
+      "all_metrics_and_dataset_ids_identical": true
+    },
+    {
+      "checkpoint": "runs/matched-delta-v1/2/checkpoint.pt",
+      "checkpoint_sha256": "7b888fd364701ac0c3260cc056ac998a3ab16e322b862dd45610f68bf7ba6dee",
+      "kind": "delta",
+      "seed": 2,
+      "all_metrics_and_dataset_ids_identical": true
+    }
+  ]
+}
