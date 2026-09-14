@@ -42,7 +42,8 @@ def compact_report(report):
                       for name, row in report["tasks"].items()}}
 
 
-def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, steps=16):
+def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, steps=16,
+                   methods=METHODS, feature_count=8, samples=64):
     episode_id = f"{split}/{seed}/{index}"
     episode_seed = seed_for(f"meta-episode/{split}", seed, index)
     known = split != "meta-test" and index % 4 == 0
@@ -54,26 +55,30 @@ def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, s
     work = Work()
     support, _ = collect(spec, seed=episode_seed, count=16 if index % 2 else 64, length=8,
                          mask_rate=0.4 if index % 2 else 0.0, split="meta-support", work=work)
+    if feature_count == 16 and index % 3 == 2:
+        support, _ = collect(spec, seed=episode_seed, count=2, length=4,
+                             mask_rate=.75, split="sparse-meta-support", work=work)
     evidence = EvidenceReplay(support)
     initial = copy.deepcopy(base)
     initial.components["r1"].planning_horizon = 1
-    features = diagnostic_features(initial, spec, seed=episode_seed, support=evidence, work=work)
+    features, diagnosis = diagnostic_features(initial, spec, seed=episode_seed, support=evidence, work=work,
+                                                feature_count=feature_count, return_diagnosis=True)
     specs = list({s.identifier: s for s in [base_spec, spec]}.values())
     query_seed = seed_for(f"{split}-query", seed, index)
     baseline_work = Work()
-    baseline, _ = evaluate_worlds(initial, specs, seed=query_seed, samples=64, length=12,
+    baseline, _ = evaluate_worlds(initial, specs, seed=query_seed, samples=samples, length=12,
                                   work=baseline_work)
     outcomes = {}
-    for method in METHODS:
-        if method == "program" and not spec.resettable:
+    for method in methods:
+        if method in {"program", "targeted"} and not spec.resettable:
             continue
         trial_work = Work()
-        candidate, construction = intervene(initial, spec, evidence, old_replay,
+        candidate, construction = intervene(initial, spec, EvidenceReplay(evidence.records), old_replay,
                                              method=method, seed=episode_seed, steps=steps,
-                                             work=trial_work)
+                                             work=trial_work, diagnosis=diagnosis)
         construction_cost = trial_work.record()
         evaluation_work = Work()
-        result, _ = evaluate_worlds(candidate, specs, seed=query_seed, samples=64, length=12,
+        result, _ = evaluate_worlds(candidate, specs, seed=query_seed, samples=samples, length=12,
                                     work=evaluation_work)
         # Charge the extra planning work used by the changed policy as well as construction.
         extra = max(0, evaluation_work.counts.get("planning_model_transitions", 0)
@@ -82,13 +87,15 @@ def policy_episode(base, base_spec, old_replay, *, seed, index, split, output, s
         outcomes[method] = {"utility": utility(result, baseline, trial_work.record(), target=spec.identifier),
                             "result": compact_report(result), "construction_work": construction_cost,
                             "evaluation_work": evaluation_work.record(), "charged_work": trial_work.record(),
-                            "training": construction["training"], "programs": construction["programs"]}
+                            "training": construction["training"], "programs": construction["programs"],
+                            "support_record_ids": construction["support_record_ids"]}
     row = {"episode_id": episode_id, "episode_seed": episode_seed,
            "support_record_ids": sorted(evidence.identifiers),
-           "world": asdict(spec), "features": features.tolist(),
+           "world": asdict(spec), "features": features.tolist(), "diagnosis": diagnosis.record(), "split": split,
            "evidence_kind": "verified_outcome", "support_dataset_id": digest(sorted(evidence.identifiers)),
            "query_dataset_id": baseline["dataset_id"], "baseline": compact_report(baseline),
-           "diagnosis_and_acquisition_work": work.record(), "outcomes": outcomes}
+           "diagnosis_and_acquisition_work": work.record(),
+           "baseline_evaluation_work": baseline_work.record(), "outcomes": outcomes}
     write_json(output / f"{split}-{index}.json", row)
     print(f"{episode_id}: measured {len(outcomes)} interventions", flush=True)
     return row
@@ -106,7 +113,7 @@ def policy_summary(policy, rows):
                       "score": row["outcomes"][chosen]["result"]["macro_score"],
                       "baseline_score": row["baseline"]["macro_score"]})
     fixed = {method: float(np.mean([row["outcomes"].get(method, row["outcomes"]["none"])["utility"]
-                                    for row in rows])) for method in METHODS}
+                                    for row in rows])) for method in policy.methods}
     return {"cases": cases, "mean_utility": float(np.mean([r["utility"] for r in cases])),
             "mean_regret": float(np.mean([r["regret"] for r in cases])),
             "mean_score": float(np.mean([r["score"] for r in cases])),

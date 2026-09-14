@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import copy
+
 import torch
 from torch import nn
 
@@ -29,6 +31,7 @@ class LowRankWorkspaces(nn.Module):
         self.output = nn.Linear(count * dimension * 2, width)
         self.register_buffer("mix", hadamard(dimension).to(torch.complex64))
         self.last_discarded_mass = 0.0
+        self.last_diagnostics = None
 
     def initial(self, reference):
         diagonal = torch.linspace(1.0, 0.5, self.rank, device=reference.device)
@@ -52,6 +55,10 @@ class LowRankWorkspaces(nn.Module):
         u, singular, _ = torch.linalg.svd(expanded, full_matrices=False)
         discarded = singular[..., self.rank:].square().sum(-1)
         self.last_discarded_mass = float(discarded.max().detach())
+        applied_discard = discarded * write
+        self.last_diagnostics = {"rank": self.rank, "dimension": self.dimension,
+                                 "discarded_mass": applied_discard.detach().cpu().tolist(),
+                                 "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"}
         retained = u[..., :self.rank] * singular[..., None, :self.rank]
         retained = retained / retained.abs().square().sum((-2, -1), keepdim=True).sqrt()
         # Query bypass preserves the factor itself; no rank approximation is applied to a query.
@@ -62,19 +69,33 @@ class LowRankWorkspaces(nn.Module):
 
 
 class ReferenceMemory(nn.Module):
-    def __init__(self, width=256, heads=8, memory_dim=32, *, compact=False):
+    def __init__(self, width=256, heads=8, memory_dim=32, *, compact=False, routing="all",
+                 density_rank=None, density_dimension=None, density_count=None):
         super().__init__()
+        if routing not in {"all", "top1"}:
+            raise ValueError("Unknown event routing policy")
         self.width = width
+        self.routing = routing
         rotor_width = width // 2
         self.delta = DeltaMemory(width, heads, memory_dim)
         self.rotor_input = nn.Linear(width, rotor_width)
         self.rotor = Rotor(rotor_width)
         self.rotor_output = nn.Linear(rotor_width, width)
-        self.density = LowRankWorkspaces(width, count=2 if compact else 4,
-                                         dimension=8 if compact else 16, rank=2 if compact else 4)
+        self.density = LowRankWorkspaces(width, count=density_count or (2 if compact else 4),
+                                         dimension=density_dimension or (8 if compact else 16),
+                                         rank=density_rank or (2 if compact else 4))
         self.router = nn.Linear(width, 3)
         self.norms = nn.ModuleList([nn.LayerNorm(width) for _ in range(3)])
         self.encoder = nn.Sequential(nn.Linear(22, width), nn.Tanh())
+        self.last_step_diagnostics = None
+        self.diagnostic_history = None
+
+    def begin_diagnostics(self):
+        self.diagnostic_history = []
+
+    def end_diagnostics(self):
+        result, self.diagnostic_history = self.diagnostic_history or [], None
+        return result
 
     def initial_state(self, batch):
         ref = next(self.parameters()).new_zeros(batch, self.width)
@@ -82,10 +103,33 @@ class ReferenceMemory(nn.Module):
                 "density": self.density.initial(ref)}
 
     def step(self, state, encoded, *, write):
-        d, ds = self.delta.step(encoded, state["delta"], write)
-        r, rs = self.rotor.step(self.rotor_input(encoded), state["rotor"], write)
-        q, qs = self.density.step(encoded, state["density"], write)
-        outputs = torch.stack([norm(value) for norm, value in
-                               zip(self.norms, (d, self.rotor_output(r), q))], 1)
-        hidden = (outputs * self.router(encoded).softmax(-1)[..., None]).sum(1)
-        return hidden, {"delta": ds, "rotor": rs, "density": qs}
+        weights = self.router(encoded).softmax(-1)
+        selected = weights.argmax(-1)
+        hidden, next_state, evaluated = torch.zeros_like(encoded), dict(state), {}
+        density_diagnostics = None
+        for index, (name, core) in enumerate((("delta", self.delta), ("rotor", self.rotor),
+                                             ("density", self.density))):
+            rows = (torch.arange(len(encoded), device=encoded.device) if self.routing == "all"
+                    else (selected == index).nonzero().flatten())
+            evaluated[name] = len(rows)
+            if not len(rows):
+                continue
+            inputs = self.rotor_input(encoded[rows]) if name == "rotor" else encoded[rows]
+            output, updated = core.step(inputs, state[name][rows], write[rows])
+            if name == "rotor":
+                output = self.rotor_output(output)
+            next_state[name] = state[name].index_copy(0, rows, updated)
+            gate = weights[rows, index]
+            if self.routing == "top1":
+                # Hard event delivery uses a declared straight-through routing gradient.
+                gate = gate / gate.detach().clamp_min(1e-12)
+            hidden = hidden.index_add(0, rows, self.norms[index](output) * gate[:, None])
+            if name == "density":
+                density_diagnostics = {"batch_rows": rows.tolist(), **copy.deepcopy(core.last_diagnostics)}
+        self.last_step_diagnostics = {"routing": self.routing, "branch_rows_executed": evaluated,
+                                      "density": density_diagnostics}
+        if self.diagnostic_history is not None:
+            if len(self.diagnostic_history) >= 4096:
+                raise ValueError("Flush the bounded diagnostic history before continuing")
+            self.diagnostic_history.append(copy.deepcopy(self.last_step_diagnostics))
+        return hidden, next_state

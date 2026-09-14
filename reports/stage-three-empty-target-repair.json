@@ -1,0 +1,207 @@
+{
+  "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+  "episode_seed": 7096086013135168180,
+  "world": "reset-31002",
+  "original_support": [
+    [
+      0,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      3,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "result": {
+    "method": "program",
+    "training": {
+      "steps": 7,
+      "requested_steps": 7,
+      "max_seconds": null,
+      "learning_rate": 0.015,
+      "validation_checkpoints": [],
+      "selected_validation_nll": null,
+      "training_seconds": 3.435422899958212,
+      "initial_batch_loss": 1.4122244119644165,
+      "final_batch_loss": 2.2533376216888428,
+      "history": [
+        1.4122244119644165,
+        2.7783191204071045,
+        2.632969856262207,
+        2.5524022579193115,
+        2.5077314376831055,
+        2.3533263206481934,
+        2.2533376216888428
+      ],
+      "validity": {
+        "channel_completeness": 3.5762786865234375e-07,
+        "instrument_completeness": 2.384185791015625e-07
+      }
+    },
+    "update_steps": 8,
+    "programs": [
+      {
+        "start": 0,
+        "goal": 1,
+        "actions": [
+          0
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 0,
+        "goal": 3,
+        "actions": [
+          0,
+          0
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 1,
+        "goal": 0,
+        "actions": [
+          1
+        ],
+        "attempts": 2
+      },
+      {
+        "start": 1,
+        "goal": 2,
+        "actions": [
+          0,
+          0
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 1,
+        "goal": 3,
+        "actions": [
+          0
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 2,
+        "goal": 0,
+        "actions": [
+          0
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 2,
+        "goal": 1,
+        "actions": [
+          1,
+          1
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 2,
+        "goal": 3,
+        "actions": [
+          1
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 3,
+        "goal": 0,
+        "actions": [
+          1,
+          1
+        ],
+        "attempts": 2
+      },
+      {
+        "start": 3,
+        "goal": 1,
+        "actions": [
+          1
+        ],
+        "attempts": 1
+      },
+      {
+        "start": 3,
+        "goal": 2,
+        "actions": [
+          0
+        ],
+        "attempts": 2
+      }
+    ],
+    "acquisition": null,
+    "mutation": null,
+    "support_record_ids": [
+      "0c57c83338b448b55be3295746b533af449f166a367ebe9dcff6ae38d7fd806e",
+      "1904c77f1b21b85ec83318ef079210ef03a048ac198e110fabefc0fff8d8f4c9",
+      "1984879dc28e3f5af8e90983a267398fd78dd1e4490868590983d5462bf44360",
+      "1e736e0e98293d2440dbdb18be547d1d7d0cfaea0fd722ddc6a55877ee8a5b6b",
+      "1fef8ee33ba88f879b6f330894aea4bc30f30823c1f85d8a97a3bc725fbb091f",
+      "28e149932ae618827b0bc10020fa5269e96aff516369fc4852eeded7fd5fd0d8",
+      "2c48d7ac5078bf5a6a8fca20a21151aa5df5ec20eba1f3464d5a7936ab62f7e0",
+      "2c86ccff89dd49042edbcd9f76fd1069d5f39a34cb44a7587e6f16d37db3d03c",
+      "2e276d7d1f0d21a49d6e159d11fc6a930df490edc86b6ac196ba7a7ca161ef41",
+      "2fecd846c7ef096fa4b14575aae27e4b1be73f7e8133e91714de34ded4b27f7f",
+      "4c0780661d8413863b566d7f28774a08a8b3014111529e944e79971175edc99b",
+      "5f262b2fa43af8b20fe85e36a68c1afb071fae1665ca542079ffa4bd5ee35fd4",
+      "664957580d9fff05bc1f0535cc287379b1db6653b5726c2889bd2f5b8ca79e19",
+      "676c63f638818eddc005650b9b6ff923f0886879e8bf656bff7a572f2b22d0d6",
+      "678245d9224350ee487628a5da51c3e4aac17618d9bcf0b3d5dc32cfb5b0d095",
+      "67ec393d06625fdf7fb9d37277b4f63af28a015028d7c82facd6f113553d6522",
+      "68d02412a66a6996a2d28e13bd8f1683d089cfa801002d73c69943b5b4f6356a",
+      "6b3ee80761488689bbccae5c32799c9af39e9f690d652184d966d7b9fa0b72f4",
+      "6de41ea0511c06f3a33e9cf25ba34fd8aebbb0e35d7875bd4a360a4e82afddf5",
+      "6f2e7f23dde28f337137bb15498c9c449fadf4b7978ab52e37ddd54e908d886a",
+      "7659316b86a17786cc2c4f95afd461e2f9c36c658dc570d4c06996fe4fa15f8a",
+      "7712262723c1cf649c668e7dd5830a3fc3147b4a21e215e6343f9376ed1f972a",
+      "7bd70c4114e45453caeb3082fb2d9c46f6a593a9303284794d42e427ebb4bdd9",
+      "a16d723b9709e0108a8d6a635300ad6792896385105be7f40ee2a745e4d0d9d9",
+      "a2a0ecedc0a78462db936c5b16b2a8df0b9906643faa9485cbc86b97870cd6c6",
+      "a445d0a15baf4db0a5813d83f9514fbddd1f3fb680d6b8d7c807f4fdc9d4978d",
+      "a8f077a8b6d6062406b2752e029dbaca2c6ae047a6794f0062d7513925867bbb",
+      "a9e6643eb7792b4b86956c875fc34d74135b32037266988c8c33e4ed4a7ade15",
+      "ad1c8994f97e164bedd414199efbd1de3344a82c41f6fe5bd319f4b54b6f9e96",
+      "ad2a47cab6e9fb27f4ef65b7aa53113da88e5486a0a1a873247a21361bbb7ac5",
+      "b6888d95619e48cd7a0d4e613d3bd4556d0cb188eaceada3813ec237d0dc1608",
+      "b8c82b211e4e3c2970cf828a0e9cb4db65458a9cf00f00d374f7a2c5e19344de",
+      "bf403ec69a3ce7db4d2866c6d3792ad9febf5bb8233a04e6f4aadb18afdc2132",
+      "c0780e387c847cf41c4daa0bfdfcfe700f1f4a07eff4d612f9ee1eec7d2fa745",
+      "c6056900f772a4e6eec9e1e6adf4197dc718580b1694eae90cadc27052356f7a",
+      "df5640d487ba9edac87715976ab348fc6a095637a258c5d86a0621073851da45",
+      "f27cdc4b0772f0c0de4f92a0ce5bec3ee87227ea16d11777bd0725d2f403236f",
+      "f8798817d22c117200ddb8a257cee28869f10b2d138b8b517f28d19235b2bef4"
+    ],
+    "curriculum": null,
+    "work": {
+      "operations": {
+        "program_combinations_examined": 2107,
+        "program_candidates_constructed": 1815,
+        "program_environment_resets": 45,
+        "program_environment_actions": 54,
+        "program_candidates_executed": 45,
+        "program_verification_resets": 21,
+        "program_verification_actions": 25,
+        "instrument_optimizer_steps": 8,
+        "instrument_transition_draws": 352,
+        "instrument_visible_target_draws": 224,
+        "verified_program_credit_draws": 64,
+        "instrument_operator_factorizations": 12,
+        "program_proposal_model_transitions": 6056
+      },
+      "operation_sum": 10828,
+      "wall_seconds": 7.689213500008918,
+      "units": "Heterogeneous counted operations; byte counters excluded from operation_sum. Wall time and storage bytes reported separately; not FLOPs"
+    }
+  },
+  "candidate_valid": true
+}

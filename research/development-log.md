@@ -18,3 +18,12 @@ I retain these development failures separately from the final three-seed evidenc
 I reread the supplied originals and audited commit `00d61b8` against their contracts. Two counterexamples justified a 0.2.1 repair: query-marked traces could enter instrument program-credit updates, and fixed search constructed the full action enumeration before applying its execution cap. Program credit now passes the existing admission validator before any update. Fixed search validates length and budget and materializes only its bounded prefix. Valid-input training and 216 search outcomes agree with the baseline; cost counters intentionally reflect less construction.
 
 I also identified incomplete live-session persistence, automatic library composition, general instrument memory, selective routing, approximation diagnostics and the full failure/curriculum loop. The [source audit](../reports/original-source-alignment-audit.md) keeps these open. No learning hyperparameters, original evidence tables or promotion thresholds changed in this repair. Post-publication library-removal probes are diagnostic evidence, excluded from the original generalization estimates.
+
+
+## SERA 0.3 audit follow-through
+
+I completed C01–C11 of the new architecture checklist with owned live state, general event instruments, library composition, typed encoders and procedures, active evidence, persistent failure/budget history, adapters, reference routing, useful lineage retrieval and successive policy updates. Self-review also caught duplicate final-event scoring, cross-method evidence contamination and all-missing-target averaging; regression tests cover the fixes.
+
+The final source-frozen cohort contains three seeds, 558 intervention outcomes, nine policy versions and fifteen persistent proposals (three promoted, twelve rejected). Arithmetic procedures reach 100% on declared structural draws while neural arithmetic remains near chance. The classical belief model reaches 100% on aliased history, ahead of the general instrument. These are controlled findings within supplied finite tasks, not general intelligence or quantum advantage. The original benchmark was separately reproduced, including 36 fresh training runs.
+
+The artifact audit, isolated installation, fresh-process behavior, continued CLI learning and report figure are verified. Public CI remains the final publication check. The new report retains weak binding, full-reference undertraining, retention failures, policy regressions and incomplete development-cost observations.

@@ -12,6 +12,9 @@ if connected.exists():
 source_audit = root / "reports/original-source-audit-manifest.json"
 if source_audit.exists():
     manifest += json.loads(source_audit.read_text(encoding="utf-8"))
+stage_three = root / "reports/stage-three-evidence-manifest.json"
+if stage_three.exists():
+    manifest += json.loads(stage_three.read_text(encoding="utf-8"))
 for entry in manifest:
     path = root / "reports" / entry["file"]
     if hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
@@ -56,4 +59,33 @@ if source_audit.exists():
         raise ValueError("Search-length guard did not hold")
     if budget["valid_length_five_budget_one_work"]["operations"]["program_candidates_constructed"] != 1:
         raise ValueError("Fixed candidate construction exceeded its execution budget")
+if stage_three.exists():
+    data = json.loads((root / "reports/stage-three-data.json").read_text(encoding="utf-8"))
+    verified = json.loads((root / "reports/stage-three-verification.json").read_text(encoding="utf-8"))
+    from sera.training import source_hash
+    if source_hash() != data["manifest"]["environment"]["source_sha256"] or source_hash() != verified["source_sha256"]:
+        raise ValueError("Stage-three source, study and verification identities differ")
+    if not verified["passed"] or [row["seed"] for row in data["runs"]] != data["manifest"]["seeds"]:
+        raise ValueError("Stage-three verification or seed coverage failed")
+    episodes = json.loads((root / "reports/stage-three-policy-episodes.json").read_text(encoding="utf-8"))
+    ids = [row["episode_id"] for row in episodes]
+    if len(ids) != len(set(ids)):
+        raise ValueError("Policy episodes repeated")
+    by_id = {row["episode_id"]: row for row in episodes}
+    for run in data["runs"]:
+        model_ids = set()
+        for generation in run["outer"]["generations"]:
+            if generation["before"] == generation["after"] or generation["after"] in model_ids:
+                raise ValueError("An outer generation did not change the policy")
+            model_ids.add(generation["after"])
+            for episode in generation["training_episode_ids"]:
+                row = by_id[episode]
+                if row["split"] != "meta-train" or row["query_dataset_id"] == row["support_dataset_id"]:
+                    raise ValueError("Outer learning used sealed or overlapping evidence")
+        for model in run["predictors"]["models"].values():
+            if model["training"]["steps"] < 1 or model["training"]["training_seconds"] < data["manifest"]["config"]["predictor_seconds"]:
+                raise ValueError("A predictor did not receive its declared training budget")
+    source = json.loads((root / "reports/stage-three-source-reproduction.json").read_text(encoding="utf-8"))
+    if len(source["checkpoint_checks"]) != 36 or len(source["retraining"]) != 36 or not all(row["passed"] for row in source["mathematics"] + source["checkpoint_checks"]):
+        raise ValueError("Original source reproduction is incomplete")
 print(f"Verified {len(manifest)} evidence artifacts and 154 unique source concepts.")

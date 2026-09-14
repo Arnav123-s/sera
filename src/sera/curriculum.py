@@ -9,31 +9,41 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from sera.connected import METHODS
+from sera.connected import EXTENDED_METHODS, METHODS
 
 
 class ImprovementPolicy(nn.Module):
-    def __init__(self, features=8, width=32):
+    def __init__(self, features=8, width=32, methods=None):
         super().__init__()
         self.features, self.width = features, width
+        self.methods = tuple(METHODS if methods is None else methods)
+        if not self.methods or len(set(self.methods)) != len(self.methods) or not set(self.methods).issubset(EXTENDED_METHODS):
+            raise ValueError("Invalid improvement-policy intervention vocabulary")
         self.register_buffer("center", torch.zeros(features))
         self.register_buffer("scale", torch.ones(features))
-        self.network = nn.Sequential(nn.Linear(features, width), nn.Tanh(), nn.Linear(width, len(METHODS)))
+        self.network = nn.Sequential(nn.Linear(features, width), nn.Tanh(), nn.Linear(width, len(self.methods)))
 
     def export_config(self):
-        return {"type": "controller", "features": self.features, "width": self.width}
+        config = {"type": "controller", "features": self.features, "width": self.width}
+        if self.methods != METHODS:
+            config["methods"] = list(self.methods)
+        return config
 
     def forward(self, features):
         return self.network((features - self.center) / self.scale.clamp_min(0.05))
 
     @torch.no_grad()
-    def choose(self, features, *, resettable=True):
+    def choose(self, features, *, resettable=True, remaining_budget=None):
         self.eval()
         values = self(torch.as_tensor(features, dtype=torch.float32)[None])[0]
-        if not resettable:
-            values[METHODS.index("program")] = -torch.inf
-        return METHODS[int(values.argmax())], {method: float(values[i])
-                                              for i, method in enumerate(METHODS)
+        for index, method in enumerate(self.methods):
+            if ((not resettable and method in {"program", "targeted"})
+                    or (remaining_budget is not None and remaining_budget <= 0 and method != "none")):
+                values[index] = -torch.inf
+        if not torch.isfinite(values).any():
+            raise ValueError("Policy has no intervention permitted by the remaining budget")
+        return self.methods[int(values.argmax())], {method: float(values[i])
+                                              for i, method in enumerate(self.methods)
                                               if torch.isfinite(values[i])}
 
 
@@ -52,6 +62,8 @@ def fit_policy(model, training, validation, *, steps=500, seed=0):
     if {row["episode_id"] for row in training} & {row["episode_id"] for row in validation}:
         raise ValueError("Meta-training and validation episodes overlap")
     for row in [*training, *validation]:
+        if row.get("split", "").startswith(("test", "meta-test", "evaluation", "promotion", "anchor", "frontier")):
+            raise ValueError("Sealed outer evaluation cannot train the improvement policy")
         if row.get("evidence_kind") != "verified_outcome":
             raise ValueError("Policy targets require measured, verified intervention outcomes")
         if not row.get("query_dataset_id") or not row.get("support_dataset_id"):
@@ -60,15 +72,15 @@ def fit_policy(model, training, validation, *, steps=500, seed=0):
             raise ValueError("Policy support and query evidence overlap")
         if len(row["features"]) != model.features or not np.isfinite(row["features"]).all():
             raise ValueError("Invalid diagnostic feature vector")
-        if not row["outcomes"] or not set(row["outcomes"]).issubset(METHODS):
+        if not row["outcomes"] or not set(row["outcomes"]).issubset(model.methods):
             raise ValueError("Unknown or empty intervention outcomes")
         if not all(np.isfinite(outcome["utility"]) for outcome in row["outcomes"].values()):
             raise ValueError("Nonfinite policy utility")
     def prepare(rows):
         x = torch.tensor([row["features"] for row in rows])
         y = torch.tensor([[row["outcomes"].get(method, {}).get("utility", 0.0)
-                           for method in METHODS] for row in rows])
-        mask = torch.tensor([[method in row["outcomes"] for method in METHODS] for row in rows])
+                           for method in model.methods] for row in rows])
+        mask = torch.tensor([[method in row["outcomes"] for method in model.methods] for row in rows])
         return x, y, mask
     x, targets, mask = prepare(training)
     vx, vy, vm = prepare(validation)
@@ -95,4 +107,5 @@ def fit_policy(model, training, validation, *, steps=500, seed=0):
     model.eval()
     return {"steps": steps, "training_episodes": len(training),
             "validation_episodes": len(validation), "validation_mse": best, "history": history,
-            "scope": "A learned selector over six supplied interventions; it does not invent update algorithms"}
+            "methods": list(model.methods),
+            "scope": "A learned selector over declared interventions; subsequent outer updates are evaluated separately"}

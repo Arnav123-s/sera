@@ -21,7 +21,7 @@ def digest(value):
 def write_json(path: Path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    temp.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
     os.replace(temp, path)
 
 

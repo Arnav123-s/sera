@@ -1,0 +1,1746 @@
+{
+  "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+  "seeds": [
+    {
+      "seed": 0,
+      "versions_checked": [
+        "v0",
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "programs_reexecuted": 267,
+      "predictor_checkpoint_checks": [
+        {
+          "model": "projective",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "projective",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "projective",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        }
+      ],
+      "decision_checks": 5,
+      "paired_admission_reexecuted": "v3",
+      "replay_records": 479,
+      "ordinary_typed_fresh_process": {
+        "version": "v2",
+        "kind": "model_prediction",
+        "task": "modular_sum",
+        "class": 2,
+        "procedure": "3b5b9cfaf9b3cedb5fc41a7e6e22822f95bbfb962994a362a68adee4ee4e99d5",
+        "route": "verified-program"
+      },
+      "live_session_fresh_process_digest": "a50a88cfed0fc4f0f1f3c331ceea7417b66a7b836838310d04117e7796ea3aaf",
+      "journal_verified": true,
+      "full_reference_reproduction": {
+        "maximum_training_loss_difference": 0.0,
+        "prediction": {
+          "accuracy": 0.36393229238456115,
+          "nll": 1.279334026388824,
+          "brier": 0.7078511791769415,
+          "reward_mse": 0.17982443953223992,
+          "entropy": 1.0762439682148397,
+          "episodes": 128
+        },
+        "wall_seconds": 19.44293530000141,
+        "observations": [
+          0,
+          3,
+          -1,
+          3,
+          -1,
+          2,
+          -1,
+          1,
+          2,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          3
+        ],
+        "actions": [
+          3,
+          3,
+          0,
+          3,
+          2,
+          2,
+          3,
+          0,
+          3,
+          3,
+          0,
+          2,
+          0,
+          2,
+          0,
+          1
+        ],
+        "session_restored": true,
+        "event_diagnostics": [
+          {
+            "event": 1,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.05989080294966698,
+                  0.05831058695912361,
+                  0.06823813170194626,
+                  0.037122275680303574
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 2,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.04181577265262604,
+                  0.06280124932527542,
+                  0.08193474262952805,
+                  0.015158863738179207
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 3,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.028656180948019028,
+                  0.06597867608070374,
+                  0.07812708616256714,
+                  0.010378916747868061
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 4,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.03137819841504097,
+                  0.035420965403318405,
+                  0.060369230806827545,
+                  0.002070170594379306
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 5,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.02351653203368187,
+                  0.03083842433989048,
+                  0.07682496309280396,
+                  0.0016563920071348548
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 6,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.010099883191287518,
+                  0.036357149481773376,
+                  0.04202575609087944,
+                  0.0008117950055748224
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 7,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.007992158643901348,
+                  0.0314907543361187,
+                  0.02732766605913639,
+                  0.0017916642827913165
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 8,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.00980212539434433,
+                  0.019856883212924004,
+                  0.02945147454738617,
+                  0.00196976400911808
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 9,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.006764241028577089,
+                  0.023112498223781586,
+                  0.015056115575134754,
+                  0.0011890012538060546
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 10,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.006161293480545282,
+                  0.01827889308333397,
+                  0.03488139808177948,
+                  0.0007064129458740354
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 11,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.009735815227031708,
+                  0.020254582166671753,
+                  0.04121120646595955,
+                  0.0022225703578442335
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 12,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.006663728039711714,
+                  0.024316227063536644,
+                  0.027995558455586433,
+                  0.0011358901392668486
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 13,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.010653329081833363,
+                  0.027124427258968353,
+                  0.037492915987968445,
+                  0.00448564114049077
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 14,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.012307890690863132,
+                  0.013131534680724144,
+                  0.047855161130428314,
+                  0.0020005195401608944
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 15,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.010971843264997005,
+                  0.023761531338095665,
+                  0.03906936198472977,
+                  0.00345701165497303
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 16,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.007979623042047024,
+                  0.01461199950426817,
+                  0.05598017945885658,
+                  0.0011285098735243082
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 17,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.00755502050742507,
+                  0.015438496135175228,
+                  0.05731722712516785,
+                  0.0018131525721400976
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "versions_checked": [
+        "v0",
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "programs_reexecuted": 121,
+      "predictor_checkpoint_checks": [
+        {
+          "model": "projective",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "projective",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "projective",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        }
+      ],
+      "decision_checks": 5,
+      "paired_admission_reexecuted": "v3",
+      "replay_records": 494,
+      "ordinary_typed_fresh_process": {
+        "version": "v0",
+        "kind": "model_prediction",
+        "task": "modular_sum",
+        "class": 2,
+        "procedure": "2a5ef6657d704c4915b49c70796b19926f6f6547a606bed73a74b41f8bbd31f4",
+        "route": "verified-program"
+      },
+      "live_session_fresh_process_digest": "5d4b383d39aa3ed9e24004a8de4406f1310938d3839186ef722e2d4d9d2fe507",
+      "journal_verified": true,
+      "full_reference_reproduction": {
+        "maximum_training_loss_difference": 0.0,
+        "prediction": {
+          "accuracy": 0.4212239582557231,
+          "nll": 1.2058197427541018,
+          "brier": 0.6769391810521483,
+          "reward_mse": 0.179930274724029,
+          "entropy": 1.2051866669207811,
+          "episodes": 128
+        },
+        "wall_seconds": 15.68127420003293,
+        "observations": [
+          1,
+          0,
+          1,
+          3,
+          -1,
+          2,
+          -1,
+          1,
+          3,
+          1,
+          2,
+          -1,
+          -1,
+          -1,
+          1,
+          3,
+          -1
+        ],
+        "actions": [
+          0,
+          1,
+          2,
+          0,
+          3,
+          2,
+          1,
+          2,
+          3,
+          3,
+          0,
+          1,
+          1,
+          0,
+          2,
+          2
+        ],
+        "session_restored": true,
+        "event_diagnostics": [
+          {
+            "event": 1,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.07500758022069931,
+                  0.06515133380889893,
+                  0.07234954833984375,
+                  0.05722157657146454
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 2,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.03501494973897934,
+                  0.03737230971455574,
+                  0.024749377742409706,
+                  0.04646379500627518
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 3,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.043148141354322433,
+                  0.04439005255699158,
+                  0.03152576461434364,
+                  0.020284099504351616
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 4,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.05289682000875473,
+                  0.03865952417254448,
+                  0.042072977870702744,
+                  0.02621474117040634
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 5,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.03537150099873543,
+                  0.043508049100637436,
+                  0.02609957754611969,
+                  0.031556788831949234
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 6,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.0404292456805706,
+                  0.03983310982584953,
+                  0.015241277404129505,
+                  0.0374460443854332
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 7,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.023399032652378082,
+                  0.02350851707160473,
+                  0.01773473061621189,
+                  0.024088844656944275
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 8,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.023384209722280502,
+                  0.01945282705128193,
+                  0.01722700335085392,
+                  0.01329309307038784
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 9,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.028405195102095604,
+                  0.01894906908273697,
+                  0.017070699483156204,
+                  0.02572520636022091
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 10,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.02574329823255539,
+                  0.020186198875308037,
+                  0.010502943769097328,
+                  0.02603023499250412
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 11,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.013376221060752869,
+                  0.020743869245052338,
+                  0.010680618695914745,
+                  0.011081326752901077
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 12,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.01884607784450054,
+                  0.0315043069422245,
+                  0.01927298493683338,
+                  0.030178343877196312
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 13,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.015685195103287697,
+                  0.010596754029393196,
+                  0.018706349655985832,
+                  0.018491419032216072
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 14,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.012878749519586563,
+                  0.015059740282595158,
+                  0.004502486437559128,
+                  0.007516675628721714
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 15,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.02656414732336998,
+                  0.02244332619011402,
+                  0.010146098211407661,
+                  0.020538417622447014
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 16,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.02160014770925045,
+                  0.0238529983907938,
+                  0.009074561297893524,
+                  0.022192662581801414
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 17,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.010992703959345818,
+                  0.01230605412274599,
+                  0.009191124700009823,
+                  0.022066261619329453
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "versions_checked": [
+        "v0",
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "programs_reexecuted": 90,
+      "predictor_checkpoint_checks": [
+        {
+          "model": "projective",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "projective",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "projective",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "complex",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "real",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "hmm",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "ordinary",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "repeated",
+          "maximum_metric_difference": 0.0
+        },
+        {
+          "model": "gru",
+          "split": "long-random",
+          "maximum_metric_difference": 0.0
+        }
+      ],
+      "decision_checks": 5,
+      "paired_admission_reexecuted": "v3",
+      "replay_records": 352,
+      "ordinary_typed_fresh_process": {
+        "version": "v1",
+        "kind": "model_prediction",
+        "task": "modular_sum",
+        "class": 2,
+        "procedure": "3e33f075957e3535d3d79d406ebfcfd3c91496d03143464806d6be75e05ec703",
+        "route": "verified-program"
+      },
+      "live_session_fresh_process_digest": "1529f91fd53ab87954688ef04e8a0480b429325d30545aea527a67cd7192ba0a",
+      "journal_verified": true,
+      "full_reference_reproduction": {
+        "maximum_training_loss_difference": 0.0,
+        "prediction": {
+          "accuracy": 0.37499999976716936,
+          "nll": 1.2585170343518257,
+          "brier": 0.7004984267987311,
+          "reward_mse": 0.1822332899319008,
+          "entropy": 1.222336234524846,
+          "episodes": 128
+        },
+        "wall_seconds": 15.826313700003084,
+        "observations": [
+          3,
+          -1,
+          3,
+          -1,
+          -1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          3,
+          1,
+          1,
+          1
+        ],
+        "actions": [
+          3,
+          3,
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          1,
+          1,
+          3,
+          3,
+          0,
+          3,
+          2,
+          2
+        ],
+        "session_restored": true,
+        "event_diagnostics": [
+          {
+            "event": 1,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.05455394834280014,
+                  0.033875446766614914,
+                  0.07386238127946854,
+                  0.02804885432124138
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 2,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.03262120485305786,
+                  0.03362169489264488,
+                  0.027705108746886253,
+                  0.03069715015590191
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 3,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.03584820032119751,
+                  0.01712244749069214,
+                  0.034542862325906754,
+                  0.01936272904276848
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 4,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.027974354103207588,
+                  0.0191771499812603,
+                  0.031222183257341385,
+                  0.015544440597295761
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 5,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.01172860898077488,
+                  0.012062632478773594,
+                  0.02042246423661709,
+                  0.00814601220190525
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 6,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.007407575845718384,
+                  0.008443995378911495,
+                  0.03232717886567116,
+                  0.0064405458979308605
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 7,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.007229716517031193,
+                  0.006748064886778593,
+                  0.027763932943344116,
+                  0.00476005719974637
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 8,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.009379100985825062,
+                  0.004753644112497568,
+                  0.017884496599435806,
+                  0.003861829172819853
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 9,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.003704100614413619,
+                  0.0026418992783874273,
+                  0.006287730298936367,
+                  0.0015192594146355987
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 10,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.007504505570977926,
+                  0.004446583800017834,
+                  0.010855091735720634,
+                  0.0015946084167808294
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 11,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.002399962395429611,
+                  0.0017935169162228703,
+                  0.00554782385006547,
+                  0.00039777735946699977
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 12,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.0024608164094388485,
+                  0.0015901244478300214,
+                  0.007830995135009289,
+                  0.0005001518875360489
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 13,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.0017693904228508472,
+                  0.00316138518974185,
+                  0.005276015494018793,
+                  0.0009276851778849959
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 14,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.0036608027294278145,
+                  0.004765270743519068,
+                  0.010323936119675636,
+                  0.0005897351657040417
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 15,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.003837695112451911,
+                  0.004007761366665363,
+                  0.015090451575815678,
+                  0.0005273412098176777
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 16,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.011684264056384563,
+                  0.0045111957006156445,
+                  0.008776153437793255,
+                  0.001170016243122518
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          },
+          {
+            "event": 17,
+            "routing": "all",
+            "branch_rows_executed": {
+              "delta": 1,
+              "rotor": 1,
+              "density": 1
+            },
+            "density": {
+              "batch_rows": [
+                0
+              ],
+              "rank": 4,
+              "dimension": 16,
+              "discarded_mass": [
+                [
+                  0.004550511948764324,
+                  0.002795090898871422,
+                  0.004727975465357304,
+                  0.002361421938985586
+                ]
+              ],
+              "meaning": "Single normalized spectral truncation; no cumulative conditional-error guarantee"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "proposal_decisions_checked": 15,
+  "reference_catalog_sha256": "adde82474577a4c5aab234edec37b92b9966830e3395a77378c07fc327019a8b",
+  "study_summary_sha256": "a3a3d94c52f661aa73056041909494115176b5f2021d7a80a0367bbc269fbaeb",
+  "passed": true
+}

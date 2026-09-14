@@ -15,3 +15,5 @@ These are SERA's working names for supplied materials. The [reference catalog](r
 The local working files live in `research/reference-materials/`. Each is a byte-identical copy of its source; embedded document titles, archive member names, equations and source attribution are preserved. The reference copies remain outside Git history. The catalog, context interpretation and SERA's independent results are committed.
 
 The archive includes its original prototype reports. Their experiments are distinct from SERA's [first study](../reports/first-study.md), [connected study](../reports/connected-study.md) and [architecture audit](../reports/original-source-alignment-audit.md).
+
+The [0.3 source reproduction](../reports/stage-three-source-reproduction.json) separately rechecks the original checkpoints and reruns all 36 benchmark training combinations. The [0.3 results](../reports/stage-three-study.md) remain a separate experiment.

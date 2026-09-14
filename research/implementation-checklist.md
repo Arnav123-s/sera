@@ -1,4 +1,6 @@
-# SERA connected learning implementation checklist
+# SERA 0.2 historical implementation checklist
+
+This is the historical 0.2 milestone. The current acceptance record is the [0.3 checklist](stage-three-checklist.md) and [new source audit](../reports/stage-three-architecture-audit.md).
 
 I use the architecture alignment audit as the acceptance baseline for this build. The target is the first connected R1/R2 research system with a learned improvement policy. The other six architectural families and unrestricted multimodal intelligence remain separate research programs; a completed engineering checklist does not establish those capabilities.
 

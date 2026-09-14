@@ -1,5 +1,7 @@
 # SERA audit against the original research documents
 
+This is the preserved 0.2.1 audit. The [0.3 follow-through audit](stage-three-architecture-audit.md) records the subsequent fixes and experiments.
+
 I rechecked the original ZIP, both supplied physics PDFs, the executable implementation and the recorded study. **SERA follows the recommended first R1/R2 research direction, but it does not yet implement the full architecture or complete the training plan.** The connected 0.2 build is a narrow, working experiment. Treating its completed engineering checklist as completion of the handbook would be inaccurate.
 
 This audit found two reproducible implementation defects, repaired in 0.2.1, and several substantive architecture and evaluation gaps. I preserve the original 0.2.0 results as historical measurements. I do not assign a compliance percentage: a missing connection matters more than the number of matching names or dimensions.

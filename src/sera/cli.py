@@ -66,6 +66,9 @@ def parser():
     child.add_argument("directory", type=Path)
     child = sub.add_parser("rollback")
     child.add_argument("directory", type=Path)
+    child = sub.add_parser("typed-solve")
+    child.add_argument("directory", type=Path)
+    child.add_argument("request", type=Path, help="JSON with task and typed observations")
     child = sub.add_parser("study")
     child.add_argument("--output", type=Path, required=True)
     child.add_argument("--steps", type=positive, default=900)
@@ -196,6 +199,23 @@ def main(argv=None):
                 result["construction"] = construction
         elif args.command == "rollback":
             result = rollback(args.directory)
+        elif args.command == "typed-solve":
+            from sera.contracts import EvidenceKind, Observation, Provenance
+            from sera.solver import SolverStore
+            request = json.loads(args.request.read_text(encoding="utf-8"))
+            observations = []
+            for index, value in enumerate(request["observations"]):
+                settings = dict(value)
+                settings["values"] = tuple(settings["values"])
+                if settings.get("available") is not None:
+                    settings["available"] = tuple(settings["available"])
+                settings["provenance"] = Provenance("user-request", str(index), EvidenceKind.OBSERVATION)
+                observations.append(Observation(**settings))
+            solver = SolverStore(args.directory).load()
+            if "typed" not in solver.components:
+                raise ValueError("This solver has no trained typed component")
+            result = {"version": solver.version,
+                      **solver.components["typed"].predict(observations, request["task"])}
         else:
             journal = Journal(args.directory / "journal.sqlite")
             journal.verify()

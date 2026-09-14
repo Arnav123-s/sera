@@ -12,6 +12,9 @@ class EvidenceKind(StrEnum):
     VERIFIED = "verified_outcome"
     SYNTHETIC = "simulator_ground_truth"
     PREDICTION = "model_prediction"
+    ANNOTATION = "annotation"
+    COUNTEREXAMPLE = "counterexample"
+    WEAK_SUPERVISION = "weak_supervision"
 
 
 @dataclass(frozen=True)
@@ -33,6 +36,7 @@ class Observation:
     provenance: Provenance
     units: str | None = None
     scale: float = 1.0
+    available: tuple[bool, ...] | None = None
 
     def __post_init__(self):
         if self.modality not in {"symbolic", "numeric", "text_bytes", "image_patch", "audio_frame"}:
@@ -43,6 +47,9 @@ class Observation:
             raise ValueError("Scale must be positive and finite")
         if self.modality == "numeric" and not self.units:
             raise ValueError("Numerical observations require units, including 'dimensionless'")
+        if self.available is not None and (len(self.available) != len(self.values)
+                                           or any(type(value) is not bool for value in self.available)):
+            raise ValueError("Observation availability must align with its values")
 
 
 @dataclass(frozen=True)

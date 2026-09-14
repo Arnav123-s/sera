@@ -20,12 +20,15 @@ def prepare(source, output):
     if (source / "solver/.writer.lock").exists():
         raise RuntimeError("Study solver has an active or interrupted writer")
     evidence, sources = EvidenceReplay(), []
-    paths = [source / "initial-evidence.json", source / "planned-evidence.json",
+    paths = [source / "solver/experience.json", source / "initial-evidence.json", source / "planned-evidence.json",
              *sorted(source.glob("generation-*-evidence.json"))]
+    paths = [path for path in paths if path.is_file()]
+    if not paths:
+        raise ValueError("No admitted support archive exists for this solver")
     for path in paths:
         for row in EvidenceReplay.load(path).records:
             evidence.admit(row)
-        sources.append({"file": path.name, "sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
+        sources.append({"file": path.relative_to(source).as_posix(), "sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
     shutil.copytree(source / "solver", output)
     evidence.save(output / "experience.json")
     assert SolverStore(output).load().identity() == current.identity()

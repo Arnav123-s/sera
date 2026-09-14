@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import itertools
+import json
 import time
 
 import numpy as np
@@ -15,9 +16,10 @@ from sera.experience import EvidenceReplay
 from sera.r1 import RecurrentWorldModel, WorldSession, fit, score
 from sera.r2 import ControlledInstrument, fit_instrument, flatten_program, search_program
 from sera.solver import Work
-from sera.storage import digest
+from sera.storage import digest, write_json
 
 METHODS = ("none", "update", "replay", "evidence", "planning", "program")
+EXTENDED_METHODS = METHODS + ("targeted", "adapter", "scratch")
 
 
 def restore_component(config):
@@ -30,6 +32,14 @@ def restore_component(config):
     if kind == "controller":
         from sera.curriculum import ImprovementPolicy
         return ImprovementPolicy(**settings)
+    if kind in {"classical_belief", "recurrent_predictor"}:
+        from sera.belief import ClassicalBelief, RecurrentPredictor
+        return (ClassicalBelief if kind == "classical_belief" else RecurrentPredictor)(**settings)
+    if kind == "typed_reasoner":
+        from sera.typed_learning import TypedReasoner
+        if settings.pop("event_schema") != 1:
+            raise ValueError("Unsupported typed event schema")
+        return TypedReasoner(**settings)
     raise ValueError("Unknown component schema")
 
 
@@ -43,7 +53,8 @@ def execute_goal(solver, spec, start, goal, *, mask_rate=0.0, seed=0, max_action
                  work=None, force_reactive=False, use_library=True, stop_on_success=True):
     """The public behavior path resolves admitted programs before neural planning."""
     rng = np.random.default_rng(seed)
-    session = WorldSession(solver.components["r1"], spec.identifier, goal, start)
+    session = WorldSession(solver.components["r1"], spec.identifier, goal, start,
+                           model_version=solver.version)
     library = world_programs(solver, spec.identifier) if use_library else {}
     choices = [record for record in library.values()
                if record["start"] == start and record["goal"] == goal]
@@ -88,25 +99,48 @@ def planned_evidence(solver, spec, *, seed, count=32, length=8, work=None):
     return replay
 
 
-def autonomous_round(store, spec, prior_specs, replay, *, seed, samples=1024, steps=32):
+def autonomous_round(store, spec, prior_specs, replay, *, seed, samples=1024, steps=32,
+                     total_update_budget=256):
     """Load current solver, diagnose, select a learned intervention, execute and verify it."""
     incumbent = store.load()
     if "controller" not in incumbent.components:
         raise ValueError("Autonomous improvement requires a trained policy component")
     work = Work()
+    history_path = store.root / "learning-history.json"
+    history = json.loads(history_path.read_text(encoding="utf-8")) if history_path.exists() else []
+    previous = [row for row in history if row["world"] == spec.identifier]
+    used = sum(row["update_steps"] for row in history)
+    available = max(0, total_update_budget - used)
+    remaining = available / max(total_update_budget, 1)
     support, _ = collect(spec, seed=seed, count=32, length=8, split="support", work=work)
     evidence = EvidenceReplay(support)
-    features = diagnostic_features(incumbent, spec, seed=seed, support=evidence, work=work)
-    method, utilities = incumbent.components["controller"].choose(features, resettable=spec.resettable)
+    features, diagnosis = diagnostic_features(incumbent, spec, seed=seed, support=evidence, work=work,
+                                               previous_score=previous[-1]["diagnostic_score"] if previous else 0.0,
+                                               previous_attempts=len(previous), remaining_budget=remaining,
+                                               feature_count=incumbent.components["controller"].features,
+                                               return_diagnosis=True)
+    method, utilities = incumbent.components["controller"].choose(features, resettable=spec.resettable,
+                                                                 remaining_budget=available)
     candidate, construction = intervene(incumbent, spec, evidence, replay,
-                                         method=method, seed=seed, steps=steps, work=work)
+                                         method=method, seed=seed, steps=max(1, min(steps, available)), work=work,
+                                         diagnosis=diagnosis)
     specs = list({s.identifier: s for s in [*prior_specs, spec]}.values())
     def evaluator(solver, fresh_seed):
         return evaluate_worlds(solver, specs, seed=fresh_seed, samples=samples, work=work)
     result = store.consider(candidate, evaluator, work=work,
                              description={"policy": "learned_intervention_values",
                                           "method": method, "world": spec.identifier,
-                                          "features": features.tolist(), "predicted_utilities": utilities})
+                                          "features": features.tolist(), "predicted_utilities": utilities,
+                                          "diagnosis": diagnosis.record(), "remaining_update_budget": available})
+    for row in evidence.records:
+        replay.admit(row)
+    replay.save(store.root / "experience.json")
+    actual_steps = construction.get("update_steps", 0)
+    history.append({"world": spec.identifier, "method": method, "diagnosis": diagnosis.record(),
+                    "diagnostic_score": float((features[0] + features[1]) / 2),
+                    "update_steps": actual_steps, "candidate": result.get("candidate", result.get("version")),
+                    "work": work.record(), "admitted_replay_records": len(replay.records)})
+    write_json(history_path, history)
     return result, construction, evidence
 
 
@@ -122,7 +156,7 @@ def evaluate_worlds(solver, specs, *, seed, samples=128, length=12, mask_rate=0.
     for spec in specs:
         records, truth = collect(spec, seed=seed, count=samples, length=length,
                                  mask_rate=mask_rate, split="promotion-world", work=work)
-        prediction, prediction_scores = score(solver.components["r1"], records, truth)
+        prediction, prediction_scores = score(solver.components["r1"], records, truth, work=work)
         # Exact enumeration caches deterministic unmasked control outcomes. Fresh random
         # pairs below are IID draws from this explicitly finite evaluation distribution.
         controls = control_table(solver, spec, work=work)
@@ -142,23 +176,44 @@ def evaluate_worlds(solver, specs, *, seed, samples=128, length=12, mask_rate=0.
             "control_scope": "Finite deterministic start/goal pairs; future-world generalization is reported separately"}, scores
 
 
-def intervene(solver, spec, evidence, replay, *, method, seed=0, steps=32, work=None):
+def intervene(solver, spec, evidence, replay, *, method, seed=0, steps=32, work=None, diagnosis=None):
     """Actual candidate construction. The learning-policy targets come from measured results."""
-    if method not in METHODS:
+    if method not in EXTENDED_METHODS:
         raise ValueError("Unknown learning intervention")
     work = Work() if work is None else work
     started = time.perf_counter()
     candidate = copy.deepcopy(solver)
-    training, programs = None, []
-    if method in {"update", "replay", "evidence"}:
+    training, programs, acquisition, mutation, update_steps = None, [], None, None, 0
+    if method in {"update", "replay", "evidence", "targeted", "adapter", "scratch"}:
         support = EvidenceReplay(evidence.records)
         if method == "evidence":
             extra, _ = collect(spec, seed=seed, count=64, length=len(support.records[0].actions),
                                split="extra-support", work=work)
             for record in extra:
                 support.admit(record)
+                evidence.admit(record)
+        elif method == "targeted":
+            from sera.diagnostics import acquire_targeted, choose_curriculum
+            extra, acquisition = acquire_targeted(spec, support, count=64,
+                                                   length=len(support.records[0].actions), seed=seed, work=work,
+                                                   model=candidate.components["r1"],
+                                                   curriculum=choose_curriculum(diagnosis) if diagnosis else "uncovered-transitions")
+            for record in extra:
+                support.admit(record)
+                evidence.admit(record)
+        elif method == "adapter":
+            if candidate.components["r1"].adapter is None:
+                from sera.mutations import Mutation, mutate
+                candidate, mutation = mutate(candidate, Mutation("insert_adapter", "r1", 4), seed=seed)
+        elif method == "scratch":
+            settings = dict(candidate.components["r1"].settings)
+            torch.manual_seed(seed_for("scratch-world", seed))
+            candidate.components["r1"] = RecurrentWorldModel(**settings,
+                                                              planning_horizon=candidate.components["r1"].planning_horizon)
         training = fit(candidate.components["r1"], support, steps=steps, batch_size=32,
-                       seed=seed, replay=replay if method == "replay" else None, work=work)
+                       seed=seed, replay=replay if method == "replay" else None, work=work,
+                       update_mode="adapter" if method == "adapter" else "all")
+        update_steps = steps
     elif method == "planning":
         candidate.components["r1"].planning_horizon = 3
     elif method == "program":
@@ -167,20 +222,25 @@ def intervene(solver, spec, evidence, replay, *, method, seed=0, steps=32, work=
         key = f"r2:{spec.identifier}"
         torch.manual_seed(seed_for("r2-init", seed))
         instrument = (candidate.components[key] if key in candidate.components
-                      else ControlledInstrument())
+                      else ControlledInstrument(dimension=8, rank=2, event_kind="kraus"))
         successful = []
         library = world_programs(candidate, spec.identifier)
         # Bootstrap verified execution credit using a supplied bounded fixed search.
         for start, goal in itertools.permutations(range(4), 2):
-            found = search_program(spec, start, goal, budget=4, work=work)
+            found = search_program(spec, start, goal, library=library, budget=4, work=work)
+            for row in found["traces"]:
+                evidence.admit(row)
             if found["success"]:
                 successful.append(found["successful_trace"])
                 record = {"kind": "action_program", **found["record"]}
                 library[found["skill_id"]] = record
+        instrument_steps = max(1, steps - max(1, steps // 5))
         training = fit_instrument(instrument, evidence, plans=successful,
-                                  steps=steps, seed=seed, work=work)
+                                  steps=instrument_steps, seed=seed, work=work)
         for start, goal in itertools.permutations(range(4), 2):
-            found = search_program(spec, start, goal, model=instrument, budget=4, work=work)
+            found = search_program(spec, start, goal, model=instrument, library=library, budget=4, work=work)
+            for row in found["traces"]:
+                evidence.admit(row)
             if found["success"]:
                 successful.append(found["successful_trace"])
                 record = {"kind": "action_program", **found["record"]}
@@ -188,17 +248,27 @@ def intervene(solver, spec, evidence, replay, *, method, seed=0, steps=32, work=
                 programs.append({"start": start, "goal": goal, "actions": record["actions"],
                                  "attempts": found["attempts"]})
         # Verified post-training traces supply another genuine update to the proposal model.
-        if successful:
-            fit_instrument(instrument, evidence, plans=successful, steps=max(1, steps // 4),
+        if successful and steps > instrument_steps:
+            credit_steps = steps - instrument_steps
+            fit_instrument(instrument, evidence, plans=successful, steps=credit_steps,
                            seed=seed + 1, work=work)
+        else:
+            credit_steps = 0
+        update_steps = instrument_steps + credit_steps
         candidate.components[key] = instrument
         candidate.skills.update(library)
     work.seconds += time.perf_counter() - started
-    return candidate.eval(), {"method": method, "training": training,
-                              "programs": programs, "work": work.record()}
+    from sera.diagnostics import choose_curriculum
+    return candidate.eval(), {"method": method, "training": training, "update_steps": update_steps,
+                              "programs": programs, "acquisition": acquisition, "mutation": mutation,
+                              "support_record_ids": sorted(evidence.identifiers),
+                              "curriculum": choose_curriculum(diagnosis) if diagnosis is not None else None,
+                              "work": work.record()}
 
 
-def diagnostic_features(solver, spec, *, seed, support, previous_score=0.0, work=None):
+def diagnostic_features(solver, spec, *, seed, support, previous_score=0.0, work=None,
+                        previous_attempts=0, remaining_budget=1.0, feature_count=8,
+                        return_diagnosis=False):
     records, _ = collect(spec, seed=seed, count=24, length=8, mask_rate=0.4,
                          split="diagnostic", work=work)
     # The competence estimator uses observable labels only, not missing sensor values.
@@ -217,4 +287,15 @@ def diagnostic_features(solver, spec, *, seed, support, previous_score=0.0, work
                 entropy / np.log(4), reward_mse,
                 min(len(support.records), 128) / 128, float(spec.resettable),
                 previous_score, solver.components["r1"].planning_horizon / 8]
-    return np.asarray(features, dtype=np.float32)
+    from sera.diagnostics import FAILURES, diagnose
+    diagnosis = diagnose(observed_accuracy, features[1], support, previous_score=previous_score,
+                          previous_attempts=previous_attempts, remaining_budget=remaining_budget)
+    if feature_count == 16:
+        features += [float(diagnosis.category == name) for name in FAILURES]
+        features += [float(np.clip(remaining_budget, 0, 1)), min(previous_attempts, 16) / 16]
+    elif feature_count != 8:
+        raise ValueError("Unknown diagnostic feature schema")
+    if work is not None:
+        work.add("diagnostic_model_transitions", sum(len(row.actions) for row in records))
+    result = np.asarray(features, dtype=np.float32)
+    return (result, diagnosis) if return_diagnosis else result

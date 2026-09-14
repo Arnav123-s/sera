@@ -10,7 +10,7 @@ My target learner should acquire unfamiliar tasks, test hypotheses, preserve old
 
 | Source | Scope | Treatment |
 |---|---|---|
-| SERA Research Archive | SERA Architecture Handbook in PDF, Markdown and HTML; 8 system blueprints, 12 prototype cores, historical results, graph, 36,900 schematic configurations | Extracted with path and size checks; code inspected as reference; no supplied scripts or checkpoints executed |
+| SERA Research Archive | SERA Architecture Handbook in PDF, Markdown and HTML; 8 system blueprints, 12 prototype cores, historical results, graph, 36,900 schematic configurations | Extracted with path and size checks; two reviewed modules hash-pinned for separate reproduction; 45 checks, 36 checkpoint rechecks and 36 fresh benchmark runs |
 | Quantum Theory Foundations | 86 pages, 154 concepts, mathematical definitions, derivations, limits and source anchors | Full text extracted; architecture-relevant state, composition, dynamics, measurement and computation sections examined |
 | Quantum State and Process Maps | 14 maps distinguishing representation, evolution, measurement, approximations and evidence | Text extracted; state-composition and measurement/open-system diagrams visually inspected |
 | SERA Project Context | Supplemental rationale emphasizing failure response, informative experiments, reusable computation and improvement of the learning procedure | Read in full; priorities reconciled with the handbook and current audit; original experiment claims kept separate from SERA measurements |
@@ -29,7 +29,7 @@ The source's numerical leaderboard is historical evidence. SERA results come fro
 2. All supplied neural cores struggled with ordered program composition. A separate exact execution pathway is therefore a concrete engineering target.
 3. Learning a new binding rule caused forgetting. Replay and per-task retention measurements are necessary to interpret improvement.
 4. An instrument defines both event probability and conditional state update. Validity of that operation does not guarantee successful optimization.
-5. Finite-register and low-rank representations have real storage and contraction costs. The original density workspace is small and exact; the connected release adds a tested reference-size factor preset without claiming its trained performance.
+5. Finite-register and low-rank representations have real storage and contraction costs. The original density workspace is small and exact; release 0.3 trains the full reference-size factor preset and measures selective routing and rank sensitivity.
 6. The source's active program learner receives richer feedback than its neural learners. The new integration records and preserves that distinction.
 7. The source's full R1-R8 systems, representation discovery and learned improvement controller were unimplemented. SERA begins with a bounded R1/R2 path and records remaining work explicitly.
 
@@ -45,6 +45,8 @@ The source's numerical leaderboard is historical evidence. SERA results come fro
 | Failure-driven lifecycle | `solver.py`, `engine.py`, `curriculum.py` | Current executable reload, measured policy outcomes, repeated promotion/rejection and behavioral rollback |
 | Provenance and independent admission | `storage.py`, `evaluation.py` | Data fingerprints, ledger integrity, reuse rejection, bounded scores |
 | Retention | `adaptation_experiment` | No update/full/replay/scratch, separate support/query namespaces |
-| Larger-scale generality | Roadmap, not an implemented capability | Full trained reference preset, learned perception, general program transfer and R3–R8 remain open |
+| Larger-scale generality | Roadmap, not an implemented capability | Full trained reference preset, learned perception, general program transfer and R3â€“R8 remain open |
 
 The [0.1 alignment audit](../reports/architecture-alignment-audit.md) preserves the original gaps. The [0.2 disposition](../reports/architecture-audit-resolution.md) and [connected results](../reports/connected-study.md) document the implemented corrections and their measured limits.
+
+The [0.3 study](../reports/stage-three-study.md) and [current original-source audit](../reports/stage-three-architecture-audit.md) record the new implementation, controls, source reproduction and remaining scientific limits.

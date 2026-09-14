@@ -1,10 +1,13 @@
 # SERA research roadmap
 
+The original 0.2 priorities below are preserved as the design history. Version 0.3 implements live-session persistence, automatic composition, general event instruments, typed learning, failure/budget/history connections, reference training, adaptation controls, archive retrieval and actual outer-policy updates. The [current audit](../reports/stage-three-architecture-audit.md) and [measured results](../reports/stage-three-study.md) determine which research benefits are established. Remaining priorities are robust neural arithmetic/binding, stronger perception and belief planning, policy gains over fixed controls at full cost, broader mutation search and independent evaluator ownership.
+
+
 My long-term target is a learner that can acquire unfamiliar capabilities, transfer them, retain earlier competence and improve the methods it uses to learn. Release 0.2 adds a connected R1/R2 platform and a trained selector over learning procedures. I do not interpret a connected implementation as evidence of general intelligence or recursive acceleration.
 
 ## Completed first foundation
 
-From-scratch neural training; selective binding and temporal tasks; interchangeable classical and quantum-inspired cores; legacy symbolic-session serialization; finite action prediction and planning; active program acquisition; continual-learning controls; fresh paired promotion; evidence ledger; rollback; repeatable local experiments and cross-platform CI configuration. Live world-session ownership and save/resume remain open.
+From-scratch neural training; selective binding and temporal tasks; interchangeable classical and quantum-inspired cores; legacy symbolic-session serialization; finite action prediction and planning; active program acquisition; continual-learning controls; fresh paired promotion; evidence ledger; rollback; repeatable local experiments and cross-platform CI configuration. Live world-session ownership and save/resume were subsequently implemented in 0.3.
 
 ## Connected foundation implemented in 0.2
 

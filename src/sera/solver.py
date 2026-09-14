@@ -35,9 +35,10 @@ class Work:
         self.counts[kind] = self.counts.get(kind, 0) + count
 
     def record(self):
-        return {"operations": dict(self.counts), "operation_sum": sum(self.counts.values()),
+        return {"operations": dict(self.counts),
+                "operation_sum": sum(value for key, value in self.counts.items() if "_bytes" not in key),
                 "wall_seconds": self.seconds,
-                "units": "Heterogeneous counted operations; wall time reported separately; not FLOPs"}
+                "units": "Heterogeneous counted operations; byte counters excluded from operation_sum. Wall time and storage bytes reported separately; not FLOPs"}
 
 
 def tensor_digest(model):
@@ -109,14 +110,17 @@ class Solver(nn.Module):
         for component in self.components.values():
             if hasattr(component, "validity") and max(component.validity().values()) > 1e-4:
                 raise ValueError("Solver instrument validity contract failed")
+        checked_worlds = set()
         for record in self.skills.values():
             if record.get("kind") == "action_program":
-                from sera.r2 import flatten_program
+                from sera.r2 import validate_library
+                if record["world_id"] in checked_worlds:
+                    continue
                 library = {key: value for key, value in self.skills.items()
                            if value.get("kind") == "action_program"
                            and value["world_id"] == record["world_id"]}
-                if list(flatten_program(record["body"], library)) != record["actions"]:
-                    raise ValueError("Stored program body and action trace differ")
+                validate_library(library, record["world_id"])
+                checked_worlds.add(record["world_id"])
         return True
 
 
@@ -245,7 +249,7 @@ class SolverStore:
                 count = sum(len(values) for values in before.values())
                 work.add("evaluation_examples", count * 2)
                 decision = assess(after, before, round_index=round_index,
-                                  invariants_ok=True, candidate_cost=sum(work.counts.values()),
+                                  invariants_ok=True, candidate_cost=work.record()["operation_sum"],
                                   policy=policy)
                 result = {"status": "promoted" if decision["admitted"] else "rejected",
                           "version": frozen["version"], "parent": incumbent_record["version"],

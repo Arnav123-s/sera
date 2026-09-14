@@ -1,0 +1,248 @@
+{
+  "development_started_utc": "2026-09-14 03:44:27 UTC",
+  "artifacts": [
+    {
+      "file": "runs/stage-three-development/alias-pilot.json",
+      "bytes": 173679,
+      "sha256": "f3940dc754c7de2d28f7ff317d96de9c1929076871fc3637439c94f082d4a148"
+    },
+    {
+      "file": "runs/stage-three-development/alias-tuning.json",
+      "bytes": 171940,
+      "sha256": "cb39ba57ab35e023828c0d91ab5def094d006d433d7770714aaa971c4c899a83"
+    },
+    {
+      "file": "runs/stage-three-development/typed-pilot.json",
+      "bytes": 127660,
+      "sha256": "d345d5d8f4d9030d7952dfb238c7e22577a3be8a85fcfa4a1b4f0257626ce274"
+    },
+    {
+      "file": "runs/stage-three-development/policy-probe/meta-train-2.json",
+      "bytes": 46652,
+      "sha256": "6b89b73f5cda851e58556b3b6e7ddab02c5d30521e3ec647f65e72d0f4544ff7"
+    },
+    {
+      "file": "runs/stage-three-development/program-probe/0.json",
+      "bytes": 247909,
+      "sha256": "17095000d3baa7452127aea52ceb7ac2bb3937ba9cc576891c157e08bf12fe27"
+    },
+    {
+      "file": "runs/stage-three-development/program-probe/1.json",
+      "bytes": 224920,
+      "sha256": "06f3fc074a2e828eb031f57836d8c0d1f866335250779bdc324191121f948f3a"
+    },
+    {
+      "file": "runs/stage-three-development/program-probe/2.json",
+      "bytes": 252995,
+      "sha256": "258ba1d887ba29688f8f8f1566d9aac89362ceeeac1dc70f50143a436279e008"
+    },
+    {
+      "file": "runs/stage-three-development/program-probe/acquired-programs.json",
+      "bytes": 78641,
+      "sha256": "b7980d8e406ce9f41c7f01cfd8a60d686534f19fc5ef1ac08223aa697c84eb3c"
+    }
+  ],
+  "scope": "Development and failed/aborted integrations remain distinct from release evidence. The initial alias pilot source identity and tuning inputs are recorded in the protocol. Runtime of independent research assistance, human labor and energy is not measured.",
+  "stage-three-smoke-1": {
+    "manifest": {
+      "schema_version": 1,
+      "seeds": [
+        19
+      ],
+      "config": {
+        "predictor_seconds": 1,
+        "typed_steps": 2,
+        "world_steps": 2,
+        "reference_steps": 2,
+        "adaptation_steps": 2,
+        "outer_inner_steps": 1,
+        "outer_episodes": 3,
+        "evaluation_samples": 8,
+        "predictor_rates": [
+          0.015,
+          0.015,
+          0.015,
+          0.015,
+          0.015
+        ]
+      },
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.10.0+cpu",
+        "numpy": "2.5.3",
+        "device": "cpu",
+        "source_sha256": "672aacdd8091881345e77ea5260c049398fc2fee56f6415cce8ac171b212bd8c"
+      },
+      "archive_sha256": "7e9268f8a0281190551ecfdadf8270eab989190e62e4621c03b93590c3932cce",
+      "protocol": "Bounded architecture-audit follow-up. Per-seed training is independent. No final-result-driven configuration changes within this invocation."
+    },
+    "created_utc": "2026-09-14T04:37:40.705069+00:00",
+    "accounting": {
+      "wall_seconds": 278.82692100002896,
+      "process_cpu_seconds": 277.4375,
+      "process_peak_rss_bytes": 324362240,
+      "phases": [],
+      "hardware": {
+        "system": "Windows-11-10.0.26200-SP0",
+        "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+        "logical_cpus": 16,
+        "torch": "2.10.0+cpu",
+        "torch_threads": 1,
+        "device": "cpu"
+      },
+      "scope": "Whole invocation including acquisition, updates, validation, search, evaluation and failures. RSS is the cumulative process high-water mark. Phase costs may overlap if nested. Counts are not FLOPs; human/assistant labor, prior development, energy and external service costs are not measured here."
+    }
+  },
+  "stage-three-final": {
+    "manifest": {
+      "schema_version": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config": {
+        "predictor_seconds": 24,
+        "typed_steps": 1400,
+        "world_steps": 360,
+        "reference_steps": 120,
+        "adaptation_steps": 32,
+        "outer_inner_steps": 8,
+        "outer_episodes": 12,
+        "evaluation_samples": 128,
+        "predictor_rates": [
+          0.015,
+          0.015,
+          0.015,
+          0.015,
+          0.015
+        ]
+      },
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.10.0+cpu",
+        "numpy": "2.5.3",
+        "device": "cpu",
+        "source_sha256": "3b0e7ee16387c4d137f313901990e4c1104b7665529d6530e16d77004dfebd7d"
+      },
+      "archive_sha256": "7e9268f8a0281190551ecfdadf8270eab989190e62e4621c03b93590c3932cce",
+      "protocol": "Bounded architecture-audit follow-up. Per-seed training is independent. No final-result-driven configuration changes within this invocation."
+    },
+    "accounting": null,
+    "status": "interrupted-development-run",
+    "cost_availability": "Externally interrupted process did not flush complete wall/CPU accounting; this cost is unavailable, not zero."
+  },
+  "stage-three-release": {
+    "manifest": {
+      "schema_version": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config": {
+        "predictor_seconds": 24,
+        "symbolic_steps": 500,
+        "typed_steps": 1400,
+        "world_steps": 360,
+        "reference_steps": 120,
+        "adaptation_steps": 32,
+        "outer_inner_steps": 8,
+        "outer_episodes": 12,
+        "evaluation_samples": 128,
+        "predictor_rates": [
+          0.015,
+          0.015,
+          0.015,
+          0.015,
+          0.015
+        ]
+      },
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.10.0+cpu",
+        "numpy": "2.5.3",
+        "device": "cpu",
+        "source_sha256": "ee62373c93126336b50e6397eecdd45a5ccfbac7ebea23d11aa10911aaa28c98"
+      },
+      "archive_sha256": "7e9268f8a0281190551ecfdadf8270eab989190e62e4621c03b93590c3932cce",
+      "protocol": "Bounded architecture-audit follow-up. Per-seed training is independent. No final-result-driven configuration changes within this invocation."
+    },
+    "accounting": {
+      "wall_seconds": 1221.8059177999967,
+      "process_cpu_seconds": 1216.234375,
+      "process_peak_rss_bytes": 360280064,
+      "phases": [],
+      "hardware": {
+        "system": "Windows-11-10.0.26200-SP0",
+        "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+        "logical_cpus": 16,
+        "torch": "2.10.0+cpu",
+        "torch_threads": 1,
+        "device": "cpu"
+      },
+      "scope": "Whole invocation including acquisition, updates, validation, search, evaluation and failures. RSS is the cumulative process high-water mark. Phase costs may overlap if nested. Counts are not FLOPs; human/assistant labor, prior development, energy and external service costs are not measured here."
+    },
+    "status": "failed-empty-target-loss",
+    "cost_availability": "Complete saved invocation record"
+  },
+  "stage-three-verified": {
+    "manifest": {
+      "schema_version": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "config": {
+        "predictor_seconds": 24,
+        "symbolic_steps": 500,
+        "typed_steps": 1400,
+        "world_steps": 360,
+        "reference_steps": 120,
+        "adaptation_steps": 32,
+        "outer_inner_steps": 8,
+        "outer_episodes": 12,
+        "evaluation_samples": 128,
+        "predictor_rates": [
+          0.015,
+          0.015,
+          0.015,
+          0.015,
+          0.015
+        ]
+      },
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "torch": "2.10.0+cpu",
+        "numpy": "2.5.3",
+        "device": "cpu",
+        "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+      },
+      "archive_sha256": "7e9268f8a0281190551ecfdadf8270eab989190e62e4621c03b93590c3932cce",
+      "protocol": "Bounded architecture-audit follow-up. Per-seed training is independent. No final-result-driven configuration changes within this invocation."
+    },
+    "accounting": null,
+    "status": "interrupted-development-run",
+    "cost_availability": "Externally interrupted process did not flush complete wall/CPU accounting; this cost is unavailable, not zero."
+  },
+  "repair": "All-missing event batches contribute zero likelihood loss; verified program credit remains usable. The exact failing episode was rerun successfully. Final cohort starts from scratch under the repaired source.",
+  "final_orchestration": {
+    "workers": 3,
+    "torch_threads_per_worker": 1,
+    "script_sha256": "cc417fcd77c7a58dfd9c02af204ca795891a821a317827a34f025a58fa933e65",
+    "environment": {
+      "python": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "torch": "2.10.0+cpu",
+      "numpy": "2.5.3",
+      "device": "cpu",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd"
+    },
+    "scope": "Independent seeded Python processes share this host. Each model uses the same wall cap and one Torch thread. Recorded timings include observed host contention; no exclusive-core or equal-FLOP claim."
+  }
+}

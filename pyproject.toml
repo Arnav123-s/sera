@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sera-learning"
-version = "0.2.1"
+version = "0.3.0"
 description = "SERA: State-Space Engine for Reasoning and Adaptation"
 authors = [{name = "Arnav123-s"}]
 requires-python = ">=3.11"
@@ -13,6 +13,7 @@ dependencies = ["torch>=2.10,<2.11", "numpy>=2.3,<3"]
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
 reports = ["matplotlib>=3.10,<4"]
+reference = ["scipy>=1.16,<2"]
 
 [project.urls]
 Repository = "https://github.com/Arnav123-s/sera"
