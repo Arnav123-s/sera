@@ -8,7 +8,9 @@ I am building SERA to study how a learner maintains state, predicts action conse
 
 Version 0.2 connects the first R1/R2 research path: recurrent memory drives observation and reward prediction; planning produces real execution feedback; admitted feedback trains candidates; a controlled event instrument guides bounded program search; and a trained intervention policy selects among six learning procedures. A persistent solver restores its models, policy and accepted skills together. Promotion, rejection and rollback affect ordinary inference and later learning rounds.
 
-**Research status:** a working symbolic research system trained locally from scratch. Its four-color worlds, action vocabulary, task identifiers, program grammar and feedback access are supplied. General language, perception, invention of new learning algorithms, R3–R8 and general intelligence remain research objectives. I distinguish implemented connections from demonstrated learning in the [connected study](reports/connected-study.md) and [audit resolution](reports/architecture-audit-resolution.md).
+**Research status:** a working symbolic research system trained locally from scratch. Its four-color worlds, action vocabulary, task identifiers, program grammar and feedback access are supplied. The [audit against the original documents](reports/original-source-alignment-audit.md) finds alignment with the recommended starting direction and substantive gaps in the complete blueprint: live-session persistence, automatic skill composition, a broader R2 instrument and the full failure/curriculum loop remain open. General language, perception, R3–R8 and general intelligence remain research objectives.
+
+Version 0.2.1 repairs program-credit evidence admission and fixed-search candidate construction. The [connected study](reports/connected-study.md) remains a 0.2.0 measurement; its training results are not relabeled as a new run.
 
 ## Run the connected study
 
@@ -40,7 +42,7 @@ sera rollback runs/current-solver
 | Path | Executable behavior | Evidence boundary |
 |---|---|---|
 | R1 | Current event plus recurrent state → action-conditioned observation/reward prediction → bounded planning → actual feedback → replay update | Compact associative model; symbolic sensors; most-probable imagined states |
-| R2 | Learned action channels → shared event instrument → predictive-state program proposals → execution/verification → trace learning | Four-dimensional instrument; finite typed DSL; reset access required for search |
+| R2 | Learned action channels → shared event instrument → predictive-state program proposals → execution/verification → trace learning | Rank-one event branches admit a four-state classical filter; automatic search does not yet compose saved skills |
 | Improvement policy | Fits measured intervention utilities and selects no change, update, replay, evidence, planning or program acquisition | Learns a selector over supplied methods; final test family withheld |
 | Durable solver | Neural model, world model, controller and verified skills in immutable versions | Finite task/domain routing; validated component registry |
 | Admission | Fresh paired scores, empirical retention, validity and counted-cost gates | Small finite generators; retention is not a statistical certificate |

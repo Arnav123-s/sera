@@ -164,3 +164,37 @@ def test_connected_components_and_verified_program_survive_fresh_process(tmp_pat
     actual = json.loads(result.stdout)
     assert actual["success"] and actual["used_skill"] and actual["version"] == "v0"
     assert actual["actions"] == found["record"]["actions"]
+
+
+def test_program_credit_cannot_bypass_sealed_evidence_admission():
+    from sera.r2 import fit_instrument
+    from sera.solver import tensor_digest
+    world = make_world(991)
+    support, _ = collect(world, seed=0, count=8, length=3)
+    sealed, _ = collect(world, seed=1, count=1, length=3, split="query-final")
+    model = ControlledInstrument()
+    before = tensor_digest(model)
+    with pytest.raises(ValueError, match="evaluation"):
+        fit_instrument(model, EvidenceReplay(support), plans=sealed, steps=1)
+    assert tensor_digest(model) == before
+
+
+@pytest.mark.parametrize("guided", [False, True])
+def test_search_rejects_overlength_before_constructing_or_executing(guided):
+    from sera.r2 import search_program
+    from sera.solver import Work
+    work = Work()
+    guide = ControlledInstrument() if guided else None
+    with pytest.raises(ValueError, match="length budget"):
+        search_program(make_world(123), 0, 1, budget=1, max_length=6, model=guide, work=work)
+    assert work.record()["operation_sum"] == 0
+
+
+def test_fixed_search_constructs_only_candidates_within_execution_budget():
+    from sera.r2 import search_program
+    from sera.solver import Work
+    work = Work()
+    search_program(make_world(123), 0, 1, budget=1, max_length=5, work=work)
+    counts = work.record()["operations"]
+    assert counts["program_candidates_constructed"] == 1
+    assert counts["program_candidates_executed"] == 1

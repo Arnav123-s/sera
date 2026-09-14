@@ -12,3 +12,9 @@ I preserve development failures separately from the final study. Final evaluatio
 7. A provenance review during the first full run found that known-world meta-training and validation episodes could reuse support samples because the support seed omitted the split. Final reset-family tests had not run or been read. I stopped the partial run after meta-training episode 5, retained `runs/connected-v2`, derived support/diagnostic/update seeds from each complete episode identity, and added support-record identifiers to the artifacts. I restarted all three seeds in `runs/connected-v2-final`. No learning hyperparameters or evaluation thresholds changed because of this correction.
 
 I retain these development failures separately from the final three-seed evidence.
+
+## Original-document audit after publication
+
+I reread the supplied originals and audited commit `00d61b8` against their contracts. Two counterexamples justified a 0.2.1 repair: query-marked traces could enter instrument program-credit updates, and fixed search constructed the full action enumeration before applying its execution cap. Program credit now passes the existing admission validator before any update. Fixed search validates length and budget and materializes only its bounded prefix. Valid-input training and 216 search outcomes agree with the baseline; cost counters intentionally reflect less construction.
+
+I also identified incomplete live-session persistence, automatic library composition, general instrument memory, selective routing, approximation diagnostics and the full failure/curriculum loop. The [source audit](../reports/original-source-alignment-audit.md) keeps these open. No learning hyperparameters, original evidence tables or promotion thresholds changed in this repair. Post-publication library-removal probes are diagnostic evidence, excluded from the original generalization estimates.

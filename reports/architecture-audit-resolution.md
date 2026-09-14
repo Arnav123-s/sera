@@ -2,6 +2,8 @@
 
 I retain the [original audit](architecture-alignment-audit.md) against the published 0.1 commit. This table records the connected 0.2 build and the requirements it leaves open. Handbook references identify the editable manuscript inside the ZIP recorded in the [source manifest](../research/source_manifest.json).
 
+**Scope correction:** the subsequent [audit against the original ZIP and PDFs](original-source-alignment-audit.md) found remaining integration gaps and two implementation defects repaired in 0.2.1. This table resolves selected 0.1 findings; it is not a full-blueprint acceptance audit. In particular, live world-session persistence, automatic library composition, expressive history-preserving event branches and the complete failure/curriculum loop remain open.
+
 | Audit finding | Implemented resolution | Verification and remaining scope |
 |---|---|---|
 | Separate observed-state MLP; lines 430–445 | `r1.py` fuses current events with retained state and conditions observation/reward heads on actions | Gradients reach encoder, memory and heads; visible/partial/long tests and memory-reset controls. Symbolic sensors remain supplied. |
@@ -17,4 +19,4 @@ I retain the [original audit](architecture-alignment-audit.md) against the publi
 | Narrow task distribution | Masked/longer trajectories, new permutation worlds, reset-family policy holdout and withheld goal combinations | Still finite four-state symbolic generators. |
 | Multimodal decoding, R3–R8 and unrestricted self-improvement absent | Explicitly separate roadmap items | Not marked implemented or learned. |
 
-The tests and connected study address the first integration's engineering gaps. I assess stronger capability claims separately using [measured learning, retention and cost](connected-study.md). The source's recommended direction is preserved; its entire long-term architecture is not declared complete.
+The tests and connected study address the listed connections, with the qualifications in the later source audit. I assess stronger capability claims separately using [measured learning, retention and cost](connected-study.md). The source's recommended direction is preserved; its entire long-term architecture is not declared complete.

@@ -2,6 +2,8 @@
 
 I separate rebuilding a report, rerunning a learning experiment and reproducing an already exposed admission decision. These operations answer different questions.
 
+The published three-seed study used **0.2.0**, preserved at commit `00d61b8ce4de4c27afabb743cb54b5ddae7ea682` with source SHA-256 `59c0835fba356932d945dc67c04b781aa5549702ee40389b09b9e03c73016594`. To reproduce its saved admission decisions, use that commit in a separate checkout and install that checkout. Version 0.2.1 changes evidence validation and fixed-search construction cost; it is not a rerun of the published study. `audit_connected_run.py` intentionally rejects mismatched implementation hashes. Use a fresh output directory for a new 0.2.1 learning study.
+
 ## Rebuild the published tables
 
 Install `.[reports]`, then run:
@@ -65,3 +67,5 @@ The formal study replays its fixed initial-world buffer; later support is archiv
 ## Verification and remaining research
 
 Run `python -m ruff check src tests scripts`, `python -m pytest` and the release verifier. Tests cover mathematical invariants and executable behavior, including reload and rollback; final learning tables test performance. Full-width reference-state correctness is tested separately from compact-model training. The [checklist](implementation-checklist.md) and [roadmap](roadmap.md) distinguish completed engineering from open research acceptance criteria.
+
+For the original-document audit, run `python scripts/audit_architecture_contracts.py --output runs/my-architecture-audit.json`. Its numerical reduction, admission counterexample, search-budget checks, structural inspection and valid-input fixture need no saved study. Add `--study runs/connected-v2-final` to reproduce library ablations when those checkpoints exist. The [audit report](../reports/original-source-alignment-audit.md) explains how its post-publication evidence differs from a new held-out performance estimate.

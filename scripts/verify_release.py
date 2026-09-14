@@ -9,6 +9,9 @@ manifest = json.loads((root / "reports/evidence_manifest.json").read_text(encodi
 connected = root / "reports/connected-evidence-manifest.json"
 if connected.exists():
     manifest += json.loads(connected.read_text(encoding="utf-8"))
+source_audit = root / "reports/original-source-audit-manifest.json"
+if source_audit.exists():
+    manifest += json.loads(source_audit.read_text(encoding="utf-8"))
 for entry in manifest:
     path = root / "reports" / entry["file"]
     if hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
@@ -33,4 +36,24 @@ if connected.exists():
         queries.add(row["query_dataset_id"])
     if len(seen) != audited["unique_meta_support_records"] or len(queries) != audited["unique_meta_query_datasets"]:
         raise ValueError("Published provenance counts differ from the audit")
+if source_audit.exists():
+    audit = json.loads((root / "reports/original-source-audit-evidence.json").read_text(encoding="utf-8"))
+    originals = json.loads((root / "research/source_manifest.json").read_text(encoding="utf-8"))
+    if [{key: row[key] for key in ("filename", "bytes", "sha256")}
+            for row in audit["original_sources"]] != originals:
+        raise ValueError("Original-source audit used different reference files")
+    if sorted(c["id"] for c in concepts) != audit["original_physics_concept_ids"]:
+        raise ValueError("Source concept identities differ from the original-source audit")
+    if audit["before"]["valid_behavior_reference"] != audit["after"]["valid_behavior_reference"]:
+        raise ValueError("Valid-input baseline comparison differs")
+    if connected.exists() and audit["before"]["source_sha256"] != data["manifest"]["environment"]["source_sha256"]:
+        raise ValueError("Original-source audit baseline differs from the published study")
+    credit = audit["after"]["program_credit_contract"]
+    budget = audit["after"]["proposal_budget_contract"]
+    if credit["sealed_program_credit_accepted"] or credit["parameters_changed"]:
+        raise ValueError("Program-credit admission repair did not hold")
+    if not budget["overlength_fixed_search_rejected"] or budget["work"]["operation_sum"] != 0:
+        raise ValueError("Search-length guard did not hold")
+    if budget["valid_length_five_budget_one_work"]["operations"]["program_candidates_constructed"] != 1:
+        raise ValueError("Fixed candidate construction exceeded its execution budget")
 print(f"Verified {len(manifest)} evidence artifacts and 154 unique source concepts.")

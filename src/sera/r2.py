@@ -100,6 +100,9 @@ class ControlledInstrument(nn.Module):
 def fit_instrument(model, evidence: EvidenceReplay, *, plans=(), steps=300, seed=0, work=None):
     if not isinstance(evidence, EvidenceReplay) or not evidence.records or steps < 1:
         raise ValueError("Instrument learning requires admitted trajectories")
+    # Program credit obeys the same provenance and held-out split contract as likelihood data.
+    # Validate without deduplicating or changing the original sampling distribution.
+    EvidenceReplay(plans)
     rng = np.random.default_rng(seed_for("r2-update-order", seed))
     optimizer = torch.optim.Adam(model.parameters(), lr=0.015)
     history = []
@@ -183,7 +186,8 @@ def program_body(actions):
 
 @torch.no_grad()
 def ranked_programs(model, start, goal, *, max_length=3, library=None, max_candidates=256, work=None):
-    if not 1 <= max_length <= 5 or not 1 <= max_candidates <= 4096:
+    if (type(max_length) is not int or not 1 <= max_length <= 5
+            or type(max_candidates) is not int or not 1 <= max_candidates <= 4096):
         raise ValueError("Invalid program proposal budget")
     library = {} if library is None else library
     units = [((a,), {"op": "action", "value": a}) for a in range(4)]
@@ -223,13 +227,16 @@ def search_program(spec, start, goal, *, model=None, library=None, budget=8, max
                    work=None, split="program-support"):
     if not spec.resettable:
         raise ValueError("This program search requires declared reset access")
-    if budget < 1:
-        raise ValueError("Search budget must be positive")
+    if type(budget) is not int or not 1 <= budget <= 4096:
+        raise ValueError("Search budget must be an integer in [1, 4096]")
+    if type(max_length) is not int or not 1 <= max_length <= 5:
+        raise ValueError("Program length budget must be an integer in [1, 5]")
     library = {} if library is None else library
     if model is None:
+        action_sequences = itertools.chain.from_iterable(
+            itertools.product(range(4), repeat=length) for length in range(1, max_length + 1))
         candidates = [(0.0, actions, program_body(actions))
-                      for length in range(1, max_length + 1)
-                      for actions in itertools.product(range(4), repeat=length)]
+                      for actions in itertools.islice(action_sequences, budget)]
     else:
         candidates = ranked_programs(model, start, goal, max_length=max_length, library=library, work=work)
     if model is None and work is not None:

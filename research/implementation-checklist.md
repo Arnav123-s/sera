@@ -2,6 +2,8 @@
 
 I use the architecture alignment audit as the acceptance baseline for this build. The target is the first connected R1/R2 research system with a learned improvement policy. The other six architectural families and unrestricted multimodal intelligence remain separate research programs; a completed engineering checklist does not establish those capabilities.
 
+The checked items below describe the bounded 0.2 engineering milestone. The [audit against the original documents](../reports/original-source-alignment-audit.md) is the broader acceptance record and identifies additional gaps inside R1/R2 itself.
+
 ## Required work
 
 - [x] P1. Store and load an executable solver version, including its neural checkpoint and admitted skills.
@@ -31,8 +33,23 @@ I mark an item complete only when implementation and its stated verification exi
 
 - The [connected report](../reports/connected-study.md) documents three independently trained seeds, 276 measured intervention outcomes, 15 persistent proposals and every admission/rejection. Two of six learned-policy generations were admitted; four were rejected.
 - The [artifact audit](../reports/connected-verification.json) reproduces all 15 paired decisions, checks 1,920 unique meta-support identifiers and 48 unique query datasets, re-executes accepted goal skills and verifies final symbolic scores.
-- The test suite contains 36 passing cases, including fresh-process symbolic/connected skill use and an independent full-density eigendecomposition reference for the low-rank update.
+- The 0.2.0 test suite contained 36 passing cases, including fresh-process skill use and an independent full-density reference for the low-rank update. The 0.2.1 audit repair passes 40 cases, adding sealed program-credit and bounded-construction regression checks.
 - A separately installed 0.2.0 wheel loads the accepted solver and executes its saved program. Continued CLI learning in a disposable prepared copy consumes the next round, retains the incumbent on rejection and archives its actual new support.
 - The [audit disposition](../reports/architecture-audit-resolution.md) maps each original gap to code and evidence; the [release verification record](../reports/connected-release-verification.md) records packaging and publication checks.
 
 The untrained reference preset, restricted replay coverage in the formal generational experiment, supplied symbolic representations, finite program grammar and small family holdout remain explicit limitations. These are future research acceptance criteria, not silently completed capability claims.
+
+## Original-source audit follow-through
+
+- [x] Recheck the original ZIP/PDF hashes, manuscript and exact graph identifier set.
+- [x] Repair the program-credit admission bypass and excessive fixed candidate construction; compare valid behavior with 0.2.0.
+- [x] Document the R2 classical-filter reduction and actual saved-library ablation.
+- [ ] Implement validated live world-session ownership and save/resume.
+- [ ] Use acquired libraries in automatic program search and test held-out composition.
+- [ ] Evaluate a history-preserving R2 instrument against matched trained classical controls.
+- [ ] Complete selective routing, full-reference training and persisted rank/error/cost diagnostics.
+- [ ] Connect failure diagnosis, previous attempts, budget and targeted evidence to curriculum choice.
+- [ ] Complete the missing teaching, adaptation, planning, retention and full-cost controls.
+- [ ] Demonstrate improvements to the improvement policy across outer generations.
+
+The [full open checklist](../reports/original-source-alignment-audit.md#open-acceptance-checklist) defines the evidence required for each item. These remain incomplete, including where syntax or a component API already exists.
