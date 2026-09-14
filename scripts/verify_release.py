@@ -102,11 +102,19 @@ if stage_three.exists():
     if len(source["checkpoint_checks"]) != 36 or len(source["retraining"]) != 36 or not all(row["passed"] for row in source["mathematics"] + source["checkpoint_checks"]):
         raise ValueError("Original source reproduction is incomplete")
 if evaluation_v2.exists():
-    from sera.training import source_hash
     data = json.loads((root / "reports/evaluation-v2-data.json").read_text(encoding="utf-8"))
     verified = json.loads((root / "reports/evaluation-v2-verification.json").read_text(encoding="utf-8"))
-    if source_hash() != data["environment"]["source_sha256"] or source_hash() != verified["source_sha256"]:
-        raise ValueError("Current evaluation and executable source identities differ")
+    release = json.loads((root / "research/release-sources.json").read_text(encoding="utf-8"))["0.4.0"]
+    paths = subprocess.check_output(["git", "-c", f"safe.directory={root.as_posix()}", "ls-tree", "-r", "--name-only",
+                                     release["git_commit"], "src/sera"], cwd=root).decode().splitlines()
+    historical = hashlib.sha256()
+    for filename in sorted(p for p in paths if p.endswith(".py") and p.count("/") == 2):
+        historical.update(Path(filename).name.encode())
+        historical.update(subprocess.check_output(["git", "-c", f"safe.directory={root.as_posix()}", "show",
+                          f"{release['git_commit']}:{filename}"], cwd=root).replace(b"\r\n", b"\n"))
+    if (historical.hexdigest() != release["source_sha256"] or release["source_sha256"] != data["environment"]["source_sha256"]
+            or release["source_sha256"] != verified["source_sha256"]):
+        raise ValueError("Historical evaluation-v2 and executable source identities differ")
     if data["status"] != "completed" or not verified["passed"]:
         raise ValueError("Current evaluation was not completed and verified")
     if [r["seed"] for r in data["typed"]] != data["configuration"]["seeds"]:

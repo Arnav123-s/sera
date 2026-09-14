@@ -102,7 +102,7 @@ class ReferenceMemory(nn.Module):
         return {"delta": self.delta.initial(ref), "rotor": self.rotor.initial(ref),
                 "density": self.density.initial(ref)}
 
-    def step(self, state, encoded, *, write):
+    def step(self, state, encoded, *, write, address=None, address_mask=None):
         weights = self.router(encoded).softmax(-1)
         selected = weights.argmax(-1)
         hidden, next_state, evaluated = torch.zeros_like(encoded), dict(state), {}
@@ -115,7 +115,10 @@ class ReferenceMemory(nn.Module):
             if not len(rows):
                 continue
             inputs = self.rotor_input(encoded[rows]) if name == "rotor" else encoded[rows]
-            output, updated = core.step(inputs, state[name][rows], write[rows])
+            options = ({"address": address[rows] if address is not None else None,
+                        "address_mask": address_mask[rows] if address_mask is not None else None}
+                       if name == "delta" else {})
+            output, updated = core.step(inputs, state[name][rows], write[rows], **options)
             if name == "rotor":
                 output = self.rotor_output(output)
             next_state[name] = state[name].index_copy(0, rows, updated)

@@ -68,4 +68,4 @@ class Costs:
                 "hardware": {"system": platform.platform(), "processor": platform.processor(),
                              "logical_cpus": os.cpu_count(), "torch": torch.__version__,
                              "torch_threads": torch.get_num_threads(), "device": "cpu"},
-                "scope": "Whole invocation including acquisition, updates, validation, search, evaluation and failures. RSS is the cumulative process high-water mark. Phase costs may overlap if nested. Counts are not FLOPs; human/assistant labor, prior development, energy and external service costs are not measured here."}
+                "scope": "Whole invocation including acquisition, updates, validation, search, evaluation and failures. RSS is the cumulative process high-water mark. Phase costs may overlap if nested. Counts are not FLOPs; design and implementation labor, prior development, energy and external service costs are not measured here."}

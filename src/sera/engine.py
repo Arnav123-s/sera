@@ -102,7 +102,7 @@ def improve(model, output: Path, *, seed=0, samples=1024, max_queries=100, task=
 def rollback(output: Path):
     from sera.solver import SolverStore
     record = json.loads((output / "current.json").read_text(encoding="utf-8"))
-    if record.get("schema_version") == 2:
+    if record.get("schema_version") in {2, 3}:
         return SolverStore(output).rollback()
     current = json.loads((output / "current.json").read_text(encoding="utf-8"))
     parent = current.get("parent")

@@ -28,6 +28,11 @@ class Mutation:
 def insert_adapter(model, rank=4):
     if model.adapter is not None:
         raise ValueError("This model already has an adapter; use a separate expansion proposal")
+    from sera.shared import SharedR1
+    if isinstance(model, SharedR1):
+        candidate = copy.deepcopy(model)
+        candidate.add_adapter(rank)
+        return candidate.eval()
     settings = dict(model.settings)
     candidate = RecurrentWorldModel(**settings, planning_horizon=model.planning_horizon, adapter_rank=rank)
     missing, unexpected = candidate.load_state_dict(model.state_dict(), strict=False)
@@ -61,7 +66,11 @@ def mutate(solver, specification, *, seed=0):
         child = ControlledInstrument(dimension=specification.value, rank=2, event_kind="kraus", event_rank=2,
                                       complex_valued=parent.complex_valued)
         preserving = False
-    candidate.components[specification.component] = child
+    from sera.shared import SharedR1, replace_shared_owner
+    if isinstance(child, SharedR1):
+        replace_shared_owner(candidate, child)
+    else:
+        candidate.components[specification.component] = child
     candidate.validate()
     record = {"grammar_version": 1, "mutation": asdict(specification),
               "parent_solver": solver.identity(), "parent_component": tensor_digest(parent),

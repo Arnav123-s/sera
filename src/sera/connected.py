@@ -22,11 +22,25 @@ METHODS = ("none", "update", "replay", "evidence", "planning", "program")
 EXTENDED_METHODS = METHODS + ("targeted", "adapter", "scratch")
 
 
-def restore_component(config):
+def restore_component(config, components=None):
     settings = dict(config)
     kind = settings.pop("type")
     if kind == "r1":
         return RecurrentWorldModel(**settings)
+    if kind == "shared_r1":
+        from sera.shared import SharedR1
+        settings.setdefault("encoding", "legacy-v1")
+        settings.setdefault("structured_addresses", False)
+        return SharedR1(**settings)
+    if kind == "independent_typed_control":
+        from sera.shared import IndependentTypedControl
+        return IndependentTypedControl(restore_component(settings["core"]))
+    if kind in {"shared_typed_view", "shared_sequence_view"}:
+        from sera.shared import SharedSequenceView, SharedTypedView
+        name = settings.pop("owner")
+        if settings or components is None or name not in components:
+            raise ValueError("Restore the registered shared owner before its interfaces")
+        return (SharedTypedView if kind == "shared_typed_view" else SharedSequenceView)(components[name], name)
     if kind == "r2":
         return ControlledInstrument(**settings)
     if kind == "controller":
@@ -129,7 +143,16 @@ def autonomous_round(store, spec, prior_specs, replay, *, seed, samples=1024, st
     if admission_contract not in {"world-composite-v1", "separate-retention-v2"}:
         raise ValueError("Unknown admission contract")
     required = required_capabilities(incumbent, specs) if admission_contract == "separate-retention-v2" else None
+    from sera.shared import SharedR1
+    shared = isinstance(incumbent.components["r1"], SharedR1)
+    if shared and admission_contract == "separate-retention-v2":
+        from sera.shared_evaluation import shared_capabilities
+        required = shared_capabilities(incumbent, specs, world_learning=True)
     def evaluator(solver, fresh_seed):
+        if shared and required is not None:
+            from sera.shared_evaluation import evaluate_shared
+            return evaluate_shared(solver, specs, seed=fresh_seed, samples=samples, retained_samples=samples,
+                                    work=work, world_learning=True)
         if required is not None:
             return evaluate_capabilities(solver, specs, seed=fresh_seed, samples=samples, work=work)
         return evaluate_worlds(solver, specs, seed=fresh_seed, samples=samples, work=work)
@@ -142,6 +165,16 @@ def autonomous_round(store, spec, prior_specs, replay, *, seed, samples=1024, st
     for row in evidence.records:
         replay.admit(row)
     replay.save(store.root / "experience.json")
+    if shared and (store.root / "evidence-current.json").exists():
+        from sera.shared_learning import SharedEvidence
+        pointer = json.loads((store.root / "evidence-current.json").read_text(encoding="utf-8"))
+        shared_evidence = SharedEvidence.load(store.root / "evidence" / pointer["revision"])
+        shared_evidence.world = replay
+        revision = "e" + digest([pointer, sorted(replay.identifiers)])[:16]
+        with store.writing():
+            shared_evidence.save(store.root / "evidence" / revision)
+            write_json(store.root / "evidence-current.json", {"revision": revision})
+            store.journal.append("shared_world_evidence_admitted", {"parent_revision": pointer["revision"], "revision": revision})
     actual_steps = construction.get("update_steps", 0)
     history.append({"world": spec.identifier, "method": method, "diagnosis": diagnosis.record(),
                     "diagnostic_score": float((features[0] + features[1]) / 2),
@@ -225,8 +258,15 @@ def intervene(solver, spec, evidence, replay, *, method, seed=0, steps=32, work=
         elif method == "scratch":
             settings = dict(candidate.components["r1"].settings)
             torch.manual_seed(seed_for("scratch-world", seed))
-            candidate.components["r1"] = RecurrentWorldModel(**settings,
-                                                              planning_horizon=candidate.components["r1"].planning_horizon)
+            from sera.shared import SharedR1, replace_shared_owner
+            if isinstance(candidate.components["r1"], SharedR1):
+                settings = dict(candidate.components["r1"].export_config())
+                settings.pop("type")
+                settings.pop("programs")
+                replace_shared_owner(candidate, SharedR1(**settings))
+            else:
+                candidate.components["r1"] = RecurrentWorldModel(**settings,
+                                                                  planning_horizon=candidate.components["r1"].planning_horizon)
         training = fit(candidate.components["r1"], support, steps=steps, batch_size=32,
                        seed=seed, replay=replay if method == "replay" else None, work=work,
                        update_mode="adapter" if method == "adapter" else "all")

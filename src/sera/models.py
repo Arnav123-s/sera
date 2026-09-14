@@ -54,10 +54,16 @@ class DeltaMemory(nn.Module):
     def initial(self, e):
         return e.new_zeros(len(e), self.heads, self.dimension, self.dimension)
 
-    def step(self, e, memory, write):
+    def step(self, e, memory, write, *, address=None, address_mask=None):
         shape = (len(e), self.heads, self.dimension)
-        key = F.normalize(self.key(e).reshape(shape), dim=-1, eps=1e-8)
-        query = F.normalize(self.query(e).reshape(shape), dim=-1, eps=1e-8)
+        key_source, query_projection = e, self.query(e)
+        if address is not None:
+            if address.shape != e.shape or address_mask is None or address_mask.shape != (len(e), 1):
+                raise ValueError("Explicit addresses must align with event rows")
+            key_source = torch.where(address_mask, address, e)
+            query_projection = torch.where(address_mask, self.key(address), query_projection)
+        key = F.normalize(self.key(key_source).reshape(shape), dim=-1, eps=1e-8)
+        query = F.normalize(query_projection.reshape(shape), dim=-1, eps=1e-8)
         value = self.value(e).tanh().reshape(shape)
         alpha, beta = self.gates(e).sigmoid().chunk(2, -1)
         alpha = 1 - write * (1 - alpha)
@@ -176,13 +182,14 @@ class StatefulModel(nn.Module):
             return {"gru": ref}
         return {name: core.initial(ref) for name, core in self.cores.items()}
 
-    def step(self, state, encoded, *, write):
+    def step(self, state, encoded, *, write, address=None, address_mask=None):
         if self.config.kind == "gru":
             hidden = self.gru(encoded, state["gru"])
             return hidden, {"gru": hidden}
         outputs, next_state = [], {}
         for name, core in self.cores.items():
-            output, next_state[name] = core.step(encoded, state[name], write)
+            options = {"address": address, "address_mask": address_mask} if name == "delta" else {}
+            output, next_state[name] = core.step(encoded, state[name], write, **options)
             outputs.append(self.norms[name](output))
         weights = self.router(encoded).softmax(-1)
         hidden = (torch.stack(outputs, 1) * weights[..., None]).sum(1)

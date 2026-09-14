@@ -100,11 +100,18 @@ class Solver(nn.Module):
         return self.neural.state_bytes(batch)
 
     def identity(self):
-        return digest({"weights": tensor_digest(self), "skills": self.skills,
-                       "components": {name: module.export_config()
-                                      for name, module in self.components.items()}})
+        record = {"weights": tensor_digest(self), "skills": self.skills,
+                  "components": {name: module.export_config() for name, module in self.components.items()}}
+        if hasattr(self.neural, "export_config"):
+            record["neural_interface"] = self.neural.export_config()
+        return digest(record)
 
     def validate(self):
+        from sera.shared import SharedView
+        for module in (self.neural, *self.components.values()):
+            if isinstance(module, SharedView) and (module.owner_name not in self.components
+                    or module.owner is not self.components[module.owner_name]):
+                raise ValueError("A shared interface is detached from its registered parameter owner")
         if any(not torch.isfinite(value).all() for value in self.state_dict().values()):
             raise ValueError("Solver contains nonfinite state or parameters")
         for component in self.components.values():
@@ -169,16 +176,19 @@ class SolverStore:
         directory.mkdir(exist_ok=True)
         indices = [int(p.stem[1:]) for p in directory.glob("v*.json") if p.stem[1:].isdigit()]
         version = f"v{max(indices, default=-1) + 1}"
-        payload = {"schema_version": 2, "model_config": asdict(solver.config),
+        schema = 3 if hasattr(solver.neural, "export_config") else 2
+        payload = {"schema_version": schema, "model_config": asdict(solver.config),
                    "neural_state": solver.neural.state_dict(), "skills": solver.skills,
                    "components": {name: {"config": module.export_config(),
                                           "state": module.state_dict()}
                                   for name, module in solver.components.items()}}
+        if schema == 3:
+            payload["neural_interface"] = solver.neural.export_config()
         path = directory / f"{version}.pt"
         temporary = path.with_suffix(".tmp")
         torch.save(payload, temporary)
         os.replace(temporary, path)
-        record = {"schema_version": 2, "version": version, "parent": parent,
+        record = {"schema_version": schema, "version": version, "parent": parent,
                   "checkpoint_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                   "solver_sha256": solver.identity(), "skills": sorted(solver.skills),
                   "components": sorted(solver.components)}
@@ -198,21 +208,25 @@ class SolverStore:
 
     def load(self, version=None):
         record = self.current_record() if version is None else self.record(version)
-        if record.get("schema_version") != 2:
+        if record.get("schema_version") not in {2, 3}:
             raise ValueError("This directory needs explicit migration from the historical format")
         path = self.root / "versions" / f"{record['version']}.pt"
         if hashlib.sha256(path.read_bytes()).hexdigest() != record["checkpoint_sha256"]:
             raise ValueError("Solver checkpoint integrity failure")
         payload = torch.load(path, weights_only=True, map_location="cpu")
-        neural = StatefulModel(ModelConfig(**payload["model_config"]))
-        neural.load_state_dict(payload["neural_state"])
         components = {}
         if payload["components"]:
             from sera.connected import restore_component
-            for name, component in payload["components"].items():
-                module = restore_component(component["config"])
+            ordered = sorted(payload["components"].items(), key=lambda item: item[1]["config"]["type"].endswith("_view"))
+            for name, component in ordered:
+                module = restore_component(component["config"], components)
                 module.load_state_dict(component["state"])
                 components[name] = module
+        if record["schema_version"] == 3:
+            neural = restore_component(payload["neural_interface"], components)
+        else:
+            neural = StatefulModel(ModelConfig(**payload["model_config"]))
+        neural.load_state_dict(payload["neural_state"])
         solver = Solver(neural, skills=payload["skills"], components=components,
                         version=record["version"]).eval()
         if solver.identity() != record["solver_sha256"]:
@@ -221,13 +235,15 @@ class SolverStore:
         return solver
 
     def consider(self, candidate, evaluator, *, work=None, policy=None, description=None,
-                 required_capabilities=None):
+                 required_capabilities=None, expected_parent=None):
         """Freeze before drawing fresh evaluation randomness; every attempt consumes a round."""
         work = Work() if work is None else work
         policy = AdmissionPolicy() if policy is None else policy
         started = time.perf_counter()
         with self.writing():
             incumbent_record = self.current_record()
+            if expected_parent is not None and incumbent_record["solver_sha256"] != expected_parent:
+                raise ValueError("The incumbent changed while this candidate was being trained")
             incumbent = self.load()
             try:
                 frozen = self._save(candidate, incumbent_record["version"])

@@ -69,6 +69,21 @@ def parser():
     child = sub.add_parser("typed-solve")
     child.add_argument("directory", type=Path)
     child.add_argument("request", type=Path, help="JSON with task and typed observations")
+    child = sub.add_parser("learn-binding")
+    child.add_argument("directory", type=Path)
+    child.add_argument("--seed", type=int, default=0)
+    child.add_argument("--support", type=positive, default=128)
+    child.add_argument("--steps", type=positive, default=192)
+    child.add_argument("--samples", type=positive, default=1024)
+    child.add_argument("--method", choices=("full", "replay", "adapter"), default="replay")
+    child = sub.add_parser("shared-study")
+    child.add_argument("--output", type=Path, required=True)
+    child.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
+    child.add_argument("--kinds", choices=("delta", "reference"), nargs="+", default=["delta", "reference"])
+    child.add_argument("--pretrain-steps", type=positive, default=1600)
+    child.add_argument("--adapt-steps", type=positive, default=192)
+    child.add_argument("--support-sizes", type=positive, nargs="+", default=[32, 128, 512])
+    child.add_argument("--samples", type=positive, default=256)
     child = sub.add_parser("study")
     child.add_argument("--output", type=Path, required=True)
     child.add_argument("--steps", type=positive, default=900)
@@ -162,6 +177,18 @@ def main(argv=None):
                     max_queries=args.max_queries,
                     task=args.task,
                 )
+        elif args.command == "learn-binding":
+            from sera.shared_continual import learn_binding
+            learned = learn_binding(args.directory, seed=args.seed, support_count=args.support,
+                                     steps=args.steps, method=args.method, samples=args.samples)
+            result = {"status": learned["status"], "current": learned["current"],
+                      "diagnosis": learned["diagnosis"], "decision": learned["admission"]["decision"]}
+        elif args.command == "shared-study":
+            from sera.shared_study import shared_trial
+            reports = [shared_trial(args.output / str(seed) / kind, seed=seed, kind=kind,
+                pretrain_steps=args.pretrain_steps, adapt_steps=args.adapt_steps,
+                support_sizes=args.support_sizes, samples=args.samples) for seed in args.seeds for kind in args.kinds]
+            result = {"output": str(args.output), "trials": len(reports), "statuses": [r["status"] for r in reports]}
         elif args.command == "study":
             from sera.study import connected_study
             reports = connected_study(args.output, seeds=args.seeds, steps=args.steps,
