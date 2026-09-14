@@ -81,6 +81,21 @@ class AdmissionPolicy:
             raise ValueError("Invalid candidate cost cap")
 
 
+class CapabilityScores(dict):
+    """Objective samples plus independent empirical retention checks.
+
+    Only objective samples enter the gain bound. Correlated capability checks do
+    not inflate its sample count. Dataset identities cover ordered paired cases.
+    """
+
+    def __init__(self, objective, capabilities, dataset_ids):
+        super().__init__(objective)
+        self.capabilities = capabilities
+        self.dataset_ids = dataset_ids
+        if not capabilities or set(capabilities) != set(dataset_ids):
+            raise ValueError("Every required capability needs scores and a dataset identity")
+
+
 def assess(
     candidate,
     incumbent,
@@ -126,7 +141,7 @@ def assess(
         reasons.append("invalid_candidate")
     if candidate_cost > policy.max_candidate_cost:
         reasons.append("cost_budget_exceeded")
-    return {
+    result = {
         "admitted": not reasons,
         "reasons": reasons,
         "mean_gain": mean_gain,
@@ -139,3 +154,28 @@ def assess(
         "policy": asdict(policy),
         "assumptions": "Fixed bounded scores; independent fresh examples conditional on prior search. Retention gates are empirical, not confidence bounds.",
     }
+    if isinstance(candidate, CapabilityScores) or isinstance(incumbent, CapabilityScores):
+        if not isinstance(candidate, CapabilityScores) or not isinstance(incumbent, CapabilityScores):
+            raise ValueError("Both paired evaluations must use the same capability contract")
+        if (not incumbent.capabilities or set(candidate.capabilities) != set(incumbent.capabilities)
+                or set(candidate.capabilities) != set(candidate.dataset_ids)
+                or set(incumbent.capabilities) != set(incumbent.dataset_ids)
+                or candidate.dataset_ids != incumbent.dataset_ids):
+            raise ValueError("Required capabilities or paired capability datasets differ")
+        losses = {}
+        for name in sorted(incumbent.capabilities):
+            a = np.asarray(candidate.capabilities[name], float)
+            b = np.asarray(incumbent.capabilities[name], float)
+            if a.ndim != 1 or not len(a) or a.shape != b.shape:
+                raise ValueError("Capability samples must be nonempty paired vectors")
+            if not (np.isfinite(a).all() and np.isfinite(b).all()) or np.any((a < 0) | (a > 1) | (b < 0) | (b > 1)):
+                raise ValueError("Capability scores must be finite in [0,1]")
+            losses[name] = float((b - a).mean())
+        failed = [name for name, loss in losses.items() if loss > policy.max_retention_loss]
+        if failed:
+            reasons.append("critical_capability_regression")
+        result.update(admitted=not reasons, capability_contract="separate-retention-v2",
+                      retention_loss_by_capability=losses, failed_capabilities=failed,
+                      capability_dataset_ids=incumbent.dataset_ids,
+                      capability_samples={name: len(v) for name, v in incumbent.capabilities.items()})
+    return result

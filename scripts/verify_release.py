@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
@@ -15,6 +16,9 @@ if source_audit.exists():
 stage_three = root / "reports/stage-three-evidence-manifest.json"
 if stage_three.exists():
     manifest += json.loads(stage_three.read_text(encoding="utf-8"))
+evaluation_v2 = root / "reports/evaluation-v2-evidence-manifest.json"
+if evaluation_v2.exists():
+    manifest += json.loads(evaluation_v2.read_text(encoding="utf-8"))
 for entry in manifest:
     path = root / "reports" / entry["file"]
     if hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
@@ -62,8 +66,17 @@ if source_audit.exists():
 if stage_three.exists():
     data = json.loads((root / "reports/stage-three-data.json").read_text(encoding="utf-8"))
     verified = json.loads((root / "reports/stage-three-verification.json").read_text(encoding="utf-8"))
-    from sera.training import source_hash
-    if source_hash() != data["manifest"]["environment"]["source_sha256"] or source_hash() != verified["source_sha256"]:
+    release = json.loads((root / "research/release-sources.json").read_text(encoding="utf-8"))["0.3.0"]
+    def historical_git(*args):
+        return subprocess.check_output(["git", "-c", f"safe.directory={root.as_posix()}", *args], cwd=root)
+    paths = historical_git("ls-tree", "-r", "--name-only", release["git_commit"], "src/sera").decode().splitlines()
+    historical = hashlib.sha256()
+    for filename in sorted(p for p in paths if p.endswith(".py") and p.count("/") == 2):
+        historical.update(Path(filename).name.encode())
+        historical.update(historical_git("show", f"{release['git_commit']}:{filename}").replace(b"\r\n", b"\n"))
+    if historical.hexdigest() != release["source_sha256"]:
+        raise ValueError("Historical executable source differs from its pinned identity")
+    if release["source_sha256"] != data["manifest"]["environment"]["source_sha256"] or release["source_sha256"] != verified["source_sha256"]:
         raise ValueError("Stage-three source, study and verification identities differ")
     if not verified["passed"] or [row["seed"] for row in data["runs"]] != data["manifest"]["seeds"]:
         raise ValueError("Stage-three verification or seed coverage failed")
@@ -88,4 +101,25 @@ if stage_three.exists():
     source = json.loads((root / "reports/stage-three-source-reproduction.json").read_text(encoding="utf-8"))
     if len(source["checkpoint_checks"]) != 36 or len(source["retraining"]) != 36 or not all(row["passed"] for row in source["mathematics"] + source["checkpoint_checks"]):
         raise ValueError("Original source reproduction is incomplete")
+if evaluation_v2.exists():
+    from sera.training import source_hash
+    data = json.loads((root / "reports/evaluation-v2-data.json").read_text(encoding="utf-8"))
+    verified = json.loads((root / "reports/evaluation-v2-verification.json").read_text(encoding="utf-8"))
+    if source_hash() != data["environment"]["source_sha256"] or source_hash() != verified["source_sha256"]:
+        raise ValueError("Current evaluation and executable source identities differ")
+    if data["status"] != "completed" or not verified["passed"]:
+        raise ValueError("Current evaluation was not completed and verified")
+    if [r["seed"] for r in data["typed"]] != data["configuration"]["seeds"]:
+        raise ValueError("Current evaluation seed coverage differs")
+    if not all(r["manifest"]["cross_partition_overlap"] == 0 and r["manifest"]["within_partition_duplicates"] == 0
+               for r in data["typed"]):
+        raise ValueError("Current semantic partitions contain overlap")
+    if len(verified["typed_checkpoint_checks"]) != 36 or max(r["maximum_score_difference"] for r in verified["typed_checkpoint_checks"]) > 1e-7:
+        raise ValueError("Typed checkpoint replay is incomplete")
+    if verified["decision_arithmetic_checks"] != 15 or not all(r["old_contract_reproduced"] for r in data["retention"]):
+        raise ValueError("Historical proposal comparison is incomplete")
+    if not data["preservation"]["passed"] or not data["live_continuation"]["parent_unchanged"]:
+        raise ValueError("Preservation check failed")
+    if data["live_continuation"]["result"]["decision"]["capability_contract"] != "separate-retention-v2":
+        raise ValueError("Ordinary continuation did not use the current retention contract")
 print(f"Verified {len(manifest)} evidence artifacts and 154 unique source concepts.")

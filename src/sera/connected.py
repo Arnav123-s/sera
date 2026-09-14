@@ -100,7 +100,7 @@ def planned_evidence(solver, spec, *, seed, count=32, length=8, work=None):
 
 
 def autonomous_round(store, spec, prior_specs, replay, *, seed, samples=1024, steps=32,
-                     total_update_budget=256):
+                     total_update_budget=256, admission_contract="separate-retention-v2"):
     """Load current solver, diagnose, select a learned intervention, execute and verify it."""
     incumbent = store.load()
     if "controller" not in incumbent.components:
@@ -125,9 +125,16 @@ def autonomous_round(store, spec, prior_specs, replay, *, seed, samples=1024, st
                                          method=method, seed=seed, steps=max(1, min(steps, available)), work=work,
                                          diagnosis=diagnosis)
     specs = list({s.identifier: s for s in [*prior_specs, spec]}.values())
+    from sera.capability_evaluation import evaluate_capabilities, required_capabilities
+    if admission_contract not in {"world-composite-v1", "separate-retention-v2"}:
+        raise ValueError("Unknown admission contract")
+    required = required_capabilities(incumbent, specs) if admission_contract == "separate-retention-v2" else None
     def evaluator(solver, fresh_seed):
+        if required is not None:
+            return evaluate_capabilities(solver, specs, seed=fresh_seed, samples=samples, work=work)
         return evaluate_worlds(solver, specs, seed=fresh_seed, samples=samples, work=work)
     result = store.consider(candidate, evaluator, work=work,
+                             required_capabilities=required,
                              description={"policy": "learned_intervention_values",
                                           "method": method, "world": spec.identifier,
                                           "features": features.tolist(), "predicted_utilities": utilities,
@@ -150,9 +157,10 @@ def control_table(solver, spec, *, work=None, force_reactive=False, use_library=
             for start in range(4) for goal in range(4) if start != goal]
 
 
-def evaluate_worlds(solver, specs, *, seed, samples=128, length=12, mask_rate=0.4, work=None):
+def evaluate_worlds(solver, specs, *, seed, samples=128, length=12, mask_rate=0.4, work=None,
+                    separate_retention=False):
     """Each bounded paired score represents an independent sampled trajectory/problem."""
-    results, scores, identifiers = {}, {}, []
+    results, scores, identifiers, capabilities, capability_ids = {}, {}, [], {}, {}
     for spec in specs:
         records, truth = collect(spec, seed=seed, count=samples, length=length,
                                  mask_rate=mask_rate, split="promotion-world", work=work)
@@ -170,6 +178,15 @@ def evaluate_worlds(solver, specs, *, seed, samples=128, length=12, mask_rate=0.
                                    "score": float(scores[spec.identifier].mean()), "control_cases": controls}
         identifiers.extend(r.identifier for r in records)
         identifiers.append(digest([spec.identifier, selected.tolist()]))
+        if separate_retention:
+            identity = digest([[r.identifier for r in records], selected.tolist()])
+            for facet, values in (("prediction", prediction_scores), ("control", control_scores)):
+                name = f"world/{spec.identifier}/{facet}"
+                capabilities[name] = values
+                capability_ids[name] = identity
+    if separate_retention:
+        from sera.evaluation import CapabilityScores
+        scores = CapabilityScores(scores, capabilities, capability_ids)
     return {"tasks": results, "macro_score": float(np.mean([x.mean() for x in scores.values()])),
             "dataset_id": digest(identifiers),
             "scoring": "Equal prediction-accuracy and goal-success weights per sampled episode; equal world weights",

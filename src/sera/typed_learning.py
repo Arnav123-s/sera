@@ -239,11 +239,11 @@ def typed_examples(*, seed, count=64, split="support", family="ordinary"):
 
 
 @torch.no_grad()
-def score_typed(model, records, *, work=None, use_programs=False):
+def score_typed(model, records, *, work=None, use_programs=False, return_scores=False):
     if not records:
         raise ValueError("Typed evaluation requires examples")
     model.eval()
-    results = {}
+    results, all_scores = {}, {}
     for task in TASKS:
         selected = [row for row in records if row.task == task]
         if not selected:
@@ -277,7 +277,9 @@ def score_typed(model, records, *, work=None, use_programs=False):
         results[task] = {"score": float(np.mean(scores)), "loss": float(np.mean(losses)),
                           "loss_units": "mean squared meters" if task == "motion" else "negative log likelihood",
                           "brier": float(np.mean(briers)) if briers else None, "examples": len(selected)}
-    return {"tasks": results, "macro_score": float(np.mean([row["score"] for row in results.values()]))}
+        all_scores[task] = np.asarray(scores)
+    report = {"tasks": results, "macro_score": float(np.mean([row["score"] for row in results.values()]))}
+    return (report, all_scores) if return_scores else report
 
 
 def fit_typed(model, evidence, *, validation, steps=1000, seed=0, work=None):

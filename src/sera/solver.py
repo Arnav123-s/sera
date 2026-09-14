@@ -220,7 +220,8 @@ class SolverStore:
         solver.validate()
         return solver
 
-    def consider(self, candidate, evaluator, *, work=None, policy=None, description=None):
+    def consider(self, candidate, evaluator, *, work=None, policy=None, description=None,
+                 required_capabilities=None):
         """Freeze before drawing fresh evaluation randomness; every attempt consumes a round."""
         work = Work() if work is None else work
         policy = AdmissionPolicy() if policy is None else policy
@@ -246,6 +247,13 @@ class SolverStore:
                 canonical(after_report)
                 if baseline["dataset_id"] != after_report["dataset_id"]:
                     raise ValueError("Candidate and incumbent received different evidence")
+                if required_capabilities is not None:
+                    from sera.evaluation import CapabilityScores
+                    if (not required_capabilities or not isinstance(before, CapabilityScores)
+                            or not isinstance(after, CapabilityScores)
+                            or set(before.capabilities) != set(required_capabilities)
+                            or set(after.capabilities) != set(required_capabilities)):
+                        raise ValueError("An evaluator omitted a required retention capability")
                 count = sum(len(values) for values in before.values())
                 work.add("evaluation_examples", count * 2)
                 decision = assess(after, before, round_index=round_index,

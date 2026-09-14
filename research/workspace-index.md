@@ -1,5 +1,7 @@
 # SERA workspace index
 
+This is the frozen source-packet audit snapshot at commit `9072d3a`. Its counts and roles describe that point in history. Subsequent work is labeled in the [variant registry](variants.md) and [0.4 report](../reports/evaluation-v2-study.md); the newer preservation check allows tracked revisions only when their exact prior bytes remain in Git.
+
 I preserve earlier work and give each location one explicit role. This index is the navigation layer; existing evidence paths stay stable so old scripts, journals and source references remain usable.
 
 - **Current source:** [src/sera](../src/sera).

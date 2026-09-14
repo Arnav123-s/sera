@@ -1,17 +1,17 @@
 # SERA research roadmap
 
-The [full source-packet comparison](../reports/source-packet-comparison.md) is the current architecture judgment. SERA 0.3 is partial: typed/world learning and solver/improver evolution are separate, some evaluation labels overstate structure transfer, and the retention/growth contracts need further work. The [workspace index](workspace-index.md) preserves existing alternatives and experiments under explicit roles.
+The [full source-packet comparison](../reports/source-packet-comparison.md) records the 0.3 judgment. The [0.4 repair report](../reports/evaluation-v2-study.md) closes the bounded evaluation/retention work below while preserving its limits. Typed/world learning and solver/improver evolution remain separate. The [variant registry](variants.md) keeps useful alternative architectures and controls; the earlier [workspace index](workspace-index.md) remains a frozen snapshot.
 
 ## Current implementation sequence
 
-1. Repair semantic evaluation partitions and add separate critical-capability retention gates. Preserve the original 0.3 results with an interpretation correction; new evaluation data receives a new identity.
-2. Connect one minimal typed task stream to ordinary failure-driven learning. Demonstrate acquisition, new-case transfer and retention in the same persistent learner, with a separate-component control.
+1. **Completed in 0.4, within the declared output scope:** semantic case identities, withheld composition partitions, separate world prediction/control and legacy/typed retention gates. Three new typed seeds and all 15 historical proposals were checked; the original three promotions still pass. The old 0.3 data and v1 generator remain unchanged. Calibration and improver-quality gates remain open.
+2. **Next: shared binding acquisition.** Connect one minimal typed task stream to ordinary failure-driven learning. Demonstrate acquisition, new-case transfer and retention in the same persistent learner, with a separate-component control. Binding is weak and variable in both retained typed cohorts; use that failure as an acceptance target, with replay and a no-update control.
 3. Train the next improver from actual sequential learner histories. Use an independent fixed anchor, cumulative frontier, strong fixed procedure and comparable complete run budgets.
 4. Remove one supplied state/identity aid, then connect calibrated belief inference to planning and model-class selection. Keep HMM and recurrent controls.
 5. Implement one explicit compatible growth or program-abstraction mechanism, preserving its parent and validating transfer. Fresh random instrument replacement is not function-preserving growth.
 6. Revisit a preserved R3-R8 hypothesis only when it addresses an identified bottleneck and has a decisive conventional control.
 
-Each item remains open. Broader candidate-written host code requires independent evaluator/resource ownership first. New work uses fresh output names and source/parent/status records; no old experiment or package is discarded to simplify the tree.
+Items 2–6 remain open. Broader candidate-written host code requires independent evaluator/resource ownership first. New work uses fresh output names and source/parent/status records; no old experiment or package is discarded to simplify the tree. The current continuation is `runs/sera-0.4-current`; neither retained typed cohort is described as a demonstrated shared learner.
 
 ## Preserved earlier roadmap
 

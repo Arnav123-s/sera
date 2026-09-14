@@ -1,0 +1,1001 @@
+{
+  "schema_version": 1,
+  "purpose": "Stable research variants, not competing AGI claims or a leaderboard across different tasks.",
+  "preservation": "Artifacts stay at existing paths. Routes may reference the same bundle; these are not extra independent runs. Nothing is deleted, renamed or copied to make this catalog.",
+  "historical_commit": "9072d3a0cfae8ffbfefdadbd1f6cad41e85c56a7",
+  "variants": [
+    {
+      "id": "sequence-delta-v1",
+      "name": "SERA Sequence / delta",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "delta",
+        "seeds": 3,
+        "parameters": 3225,
+        "core_state_bytes": 512,
+        "id_mean": 0.7810872395833334,
+        "id_sample_std": 0.026064036615997377,
+        "ood_mean": 0.7294921875,
+        "ood_sample_std": 0.05567905157289963
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/delta-0/checkpoint.pt",
+          "sha256": "aca0bb12392ccab979f296617a1fd9d20a68461daaa2afeaa68310465dc43d55",
+          "bytes": 87926
+        },
+        {
+          "path": "runs/baseline-v1/delta-1/checkpoint.pt",
+          "sha256": "be3a361a0055e3681883d5b8280f2894b0430681219a08625952d1cc070b4c65",
+          "bytes": 87926
+        },
+        {
+          "path": "runs/baseline-v1/delta-2/checkpoint.pt",
+          "sha256": "24bdd29c9b6d9eec179ec33c96e69eca2a91934e066acdf4c80d3627a998aaaa",
+          "bytes": 87926
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-gru-v1",
+      "name": "SERA Sequence / gru",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "gru",
+        "seeds": 3,
+        "parameters": 7204,
+        "core_state_bytes": 128,
+        "id_mean": 0.6878255208333334,
+        "id_sample_std": 0.017688545690388188,
+        "ood_mean": 0.6531575520833334,
+        "ood_sample_std": 0.011772878463558024
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/gru-0/checkpoint.pt",
+          "sha256": "35102a346cd7128dc6d711de3a3b9c14bb827b78449e03e29c5d42c5d100f9ed",
+          "bytes": 137013
+        },
+        {
+          "path": "runs/baseline-v1/gru-1/checkpoint.pt",
+          "sha256": "666294e310457377b99b502227bc6ead14d2c2e8f298249081a61a437c50a4ca",
+          "bytes": 137013
+        },
+        {
+          "path": "runs/baseline-v1/gru-2/checkpoint.pt",
+          "sha256": "7931024067b2c32fe09f331d60a98752a677e05b6f02904d4709a6287652d515",
+          "bytes": 137013
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-rotor-v1",
+      "name": "SERA Sequence / rotor",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "rotor",
+        "seeds": 3,
+        "parameters": 7269,
+        "core_state_bytes": 256,
+        "id_mean": 0.67919921875,
+        "id_sample_std": 0.011850254979991794,
+        "ood_mean": 0.53369140625,
+        "ood_sample_std": 0.02333555301825883
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/rotor-0/checkpoint.pt",
+          "sha256": "eeef8e972e1c1385102dfd03e6c1d379ea407e5d4ac15e72cdbe479591031036",
+          "bytes": 144053
+        },
+        {
+          "path": "runs/baseline-v1/rotor-1/checkpoint.pt",
+          "sha256": "60d9611065eecf2a3d6c696f9f1fd5e8eba0b4ac89c9d9b0c4976bce37297b62",
+          "bytes": 144053
+        },
+        {
+          "path": "runs/baseline-v1/rotor-2/checkpoint.pt",
+          "sha256": "08ae3d197c22c4d9ac44dd4422dfe1ce2ffdf920735b24750f93dba0c0eb5b52",
+          "bytes": 144053
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-real-v1",
+      "name": "SERA Sequence / real",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "real",
+        "seeds": 3,
+        "parameters": 7269,
+        "core_state_bytes": 256,
+        "id_mean": 0.6710611979166666,
+        "id_sample_std": 0.008861105201052214,
+        "ood_mean": 0.6162109375,
+        "ood_sample_std": 0.005920095533682686
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/real-0/checkpoint.pt",
+          "sha256": "8ccb67019191c4a5e2282a2047c2d2b4ca8544e6209ae289dd8ee8b5b9c2021c",
+          "bytes": 144053
+        },
+        {
+          "path": "runs/baseline-v1/real-1/checkpoint.pt",
+          "sha256": "e715b45d7b144c9d2e2fe380343abbae677bc0f253e4e31b98047c8319aa720e",
+          "bytes": 144053
+        },
+        {
+          "path": "runs/baseline-v1/real-2/checkpoint.pt",
+          "sha256": "887bd13e31f3ae5a79740b3819de87a6f9f38a2268e67aed68c6a027c3bd6aac",
+          "bytes": 144053
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-hybrid-v1",
+      "name": "SERA Sequence / hybrid",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "hybrid",
+        "seeds": 3,
+        "parameters": 11208,
+        "core_state_bytes": 896,
+        "id_mean": 0.8221028645833334,
+        "id_sample_std": 0.009963011681512299,
+        "ood_mean": 0.7716471354166666,
+        "ood_sample_std": 0.019101306208871977
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/hybrid-0/checkpoint.pt",
+          "sha256": "4207f5842bac4e3b0d46402a1cc7cf91aaa833d2a20006934b027dada2778996",
+          "bytes": 239752
+        },
+        {
+          "path": "runs/baseline-v1/hybrid-1/checkpoint.pt",
+          "sha256": "1d196eca2654d8c129bdac150d0a174820c021f03ad42ea4e175a54f4f00b773",
+          "bytes": 239752
+        },
+        {
+          "path": "runs/baseline-v1/hybrid-2/checkpoint.pt",
+          "sha256": "079c9c8e4d17695989d07210ed8c8c4ca4300a7ee8eb0ff9e968996cc79a4712",
+          "bytes": 239752
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-collision-v1",
+      "name": "SERA Sequence / collision",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "collision",
+        "seeds": 3,
+        "parameters": 8293,
+        "core_state_bytes": 384,
+        "id_mean": 0.6907552083333334,
+        "id_sample_std": 0.022726506884994113,
+        "ood_mean": 0.6393229166666666,
+        "ood_sample_std": 0.01625568388300633
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/collision-0/checkpoint.pt",
+          "sha256": "b8e865f8850b69048382fcca2f5cf85991562d5d92871090d35f659c7bc94988",
+          "bytes": 163445
+        },
+        {
+          "path": "runs/baseline-v1/collision-1/checkpoint.pt",
+          "sha256": "94baf1968452b826aca8d4258f86126221998d412766115778ce77b1f366c1b3",
+          "bytes": 163445
+        },
+        {
+          "path": "runs/baseline-v1/collision-2/checkpoint.pt",
+          "sha256": "fe4a4e3a5a8553ba38cb80bc55808f511df57c031e79cecdf84476e91cc90f87",
+          "bytes": 163445
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-collision_no_cross-v1",
+      "name": "SERA Sequence / collision_no_cross",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "collision_no_cross",
+        "seeds": 3,
+        "parameters": 8293,
+        "core_state_bytes": 384,
+        "id_mean": 0.6993815104166666,
+        "id_sample_std": 0.026476972927778095,
+        "ood_mean": 0.6202799479166666,
+        "ood_sample_std": 0.0156884494610689
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/collision_no_cross-0/checkpoint.pt",
+          "sha256": "b1e6f6d84e837c3970ba82df7da3b82fe364ad5d455bda3946693f7c53bc7a90",
+          "bytes": 163445
+        },
+        {
+          "path": "runs/baseline-v1/collision_no_cross-1/checkpoint.pt",
+          "sha256": "5a4b9c2298c7bf333460d58269f7a69327d293877e856bc31345f7dac94ad0b7",
+          "bytes": 163445
+        },
+        {
+          "path": "runs/baseline-v1/collision_no_cross-2/checkpoint.pt",
+          "sha256": "943943a425013705365c7cb3d473e5fb39f2526ad3cbe95076085b67c7426c5d",
+          "bytes": 163445
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "sequence-density-v1",
+      "name": "SERA Sequence / density",
+      "role": "sequence-core alternative",
+      "status": "preserved-research-variant",
+      "source_sha256": "dc58ffdd910f212fb3ea8cdf187377385e8e9eaa12e4211cff64e898453f6a06",
+      "results": {
+        "kind": "density",
+        "seeds": 3,
+        "parameters": 2450,
+        "core_state_bytes": 128,
+        "id_mean": 0.6866861979166666,
+        "id_sample_std": 0.01161999951080829,
+        "ood_mean": 0.5846354166666666,
+        "ood_sample_std": 0.026427400383847388
+      },
+      "artifacts": [
+        {
+          "path": "runs/baseline-v1/density-0/checkpoint.pt",
+          "sha256": "fd55431f812d1fe12c6d5ec466d581daf641db327f1ecc4874e21d394d25657d",
+          "bytes": 73397
+        },
+        {
+          "path": "runs/baseline-v1/density-1/checkpoint.pt",
+          "sha256": "d8ba19c12c79ad83965bb460d35776cc5debc02a45f86c778df152b0cbab07dd",
+          "bytes": 73397
+        },
+        {
+          "path": "runs/baseline-v1/density-2/checkpoint.pt",
+          "sha256": "9e8858d6ac384bd93b06876de2d29492784c3c7234f2696397a062b61e5de92d",
+          "bytes": 73397
+        }
+      ],
+      "scope": "Historical four-task sequence benchmark. Parameter counts differ. The hybrid is a useful retained hypothesis; it is not the same model as the full R1 reference core."
+    },
+    {
+      "id": "delta-world-v1",
+      "name": "SERA Delta World",
+      "role": "compact R1 world model",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "long_masked_prediction_accuracy": {
+          "mean": 0.8680989569984376,
+          "sample_std": 0.012459243658324952,
+          "seeds": 3
+        },
+        "memory_reset_accuracy": {
+          "mean": 0.7860677093267441,
+          "sample_std": 0.014322325510021801,
+          "seeds": 3
+        },
+        "real_parameters": 17530
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/solver/versions/v0.pt",
+          "sha256": "f1631f35b9d8a9eb2fc71995952994728d4da368730644223045d06a86f7484a",
+          "bytes": 325373
+        },
+        {
+          "path": "runs/stage-three-complete/1/solver/versions/v0.pt",
+          "sha256": "b500ca7d3b2645560aa94964d8c23834a600913e102033d3d366993068361cd1",
+          "bytes": 315709
+        },
+        {
+          "path": "runs/stage-three-complete/2/solver/versions/v0.pt",
+          "sha256": "681e548cfc56a32169106c439d4a1c19edaaf3a12f0cfa987955a4ef3924b3c3",
+          "bytes": 319741
+        }
+      ],
+      "scope": "Select component r1 from the v0 solver bundle. Four identifying sensors and supplied world identity; deterministic control, not an aliased stochastic belief planner."
+    },
+    {
+      "id": "reference-world-all-v1",
+      "name": "SERA Reference / all",
+      "role": "handbook-size R1 experiment",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "rank4_accuracy": {
+          "mean": 0.38671875013581786,
+          "sample_std": 0.03039046852592505,
+          "seeds": 3
+        },
+        "core_state_bytes": 35840
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-audit/0/reference-all.pt",
+          "sha256": "f944a606d3b273de911f3d65652313b9ff574a59b6138959dcdb2942c9d860e9",
+          "bytes": 3453844
+        },
+        {
+          "path": "runs/stage-three-audit/1/reference-all.pt",
+          "sha256": "5d573bf7b740145cecb716b35a22deebd2d153e027211ca4d7941b45547292d1",
+          "bytes": 3453844
+        },
+        {
+          "path": "runs/stage-three-audit/2/reference-all.pt",
+          "sha256": "c6f02811d6f34e260debc257d022689ddf1ff217503114af8d83dd98eea52254",
+          "bytes": 3453844
+        }
+      ],
+      "scope": "Full rotor/delta/density state. All-routing checkpoint was independently reconstructed in the audit. Trained with fewer updates and smaller batches than Delta World; this is not a matched ranking."
+    },
+    {
+      "id": "reference-world-top1-v1",
+      "name": "SERA Reference / top1",
+      "role": "handbook-size R1 experiment",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "rank4_accuracy": {
+          "mean": 0.371961804999349,
+          "sample_std": 0.015133509641092533,
+          "seeds": 3
+        },
+        "core_state_bytes": 35840
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/reference-top1.pt",
+          "sha256": "d76af65debf5002cb50938dcce09a2110279a5a4ecb9079a637c316bc92451bd",
+          "bytes": 3453961
+        },
+        {
+          "path": "runs/stage-three-complete/1/reference-top1.pt",
+          "sha256": "3fbd61b9a70feeb6f778670ddc1637514e7a56f5627c4841ac40b88161f45d99",
+          "bytes": 3453961
+        },
+        {
+          "path": "runs/stage-three-complete/2/reference-top1.pt",
+          "sha256": "dc7cefbf2fbff0d0bb94bb40221dd738a6711537ac33320691b3dcf38c0a6180",
+          "bytes": 3453961
+        }
+      ],
+      "scope": "Full rotor/delta/density state. All-routing checkpoint was independently reconstructed in the audit. Trained with fewer updates and smaller batches than Delta World; this is not a matched ranking."
+    },
+    {
+      "id": "aliased-projective-v1",
+      "name": "SERA Control / Projective Instrument",
+      "role": "aliased-event predictor comparison",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "ordinary": {
+          "mean": 0.764431423611111,
+          "sample_std": 0.004371362213212619,
+          "seeds": 3
+        },
+        "repeated": {
+          "mean": 0.6821831597222222,
+          "sample_std": 0.013015067625363629,
+          "seeds": 3
+        },
+        "long-random": {
+          "mean": 0.7559895833333333,
+          "sample_std": 0.002790190197148422,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/predictor-projective.pt",
+          "sha256": "c37bbf3003f31e6904418f207d3c94065ac4b63884d2e891fda0aacf82354c42",
+          "bytes": 13425
+        },
+        {
+          "path": "runs/stage-three-complete/1/predictor-projective.pt",
+          "sha256": "e9272bba0cbbdca5ec51c9ab1fe1cec58b21658724ae78a27212b109aa1cf168",
+          "bytes": 13425
+        },
+        {
+          "path": "runs/stage-three-complete/2/predictor-projective.pt",
+          "sha256": "dc18871f0f848a14e055114c4cb42028bedf0441e4f2da4676e45db52554bd15",
+          "bytes": 13425
+        }
+      ],
+      "scope": "Matched likelihood parameter counts and 24-second training budget in a bounded 8-state/4-event world. HMM is the strongest measured control. Proposal-head parameters are accounted separately; model tuning was limited."
+    },
+    {
+      "id": "aliased-complex-v1",
+      "name": "SERA Control / Complex Instrument",
+      "role": "aliased-event predictor comparison",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "ordinary": {
+          "mean": 0.9136284722222223,
+          "sample_std": 0.008975957837514582,
+          "seeds": 3
+        },
+        "repeated": {
+          "mean": 0.8817274305555557,
+          "sample_std": 0.012943632355967254,
+          "seeds": 3
+        },
+        "long-random": {
+          "mean": 0.9100911458333334,
+          "sample_std": 0.0045411031297572894,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/predictor-complex.pt",
+          "sha256": "2e5be439eb3395a016055510a9c38d1da9363a6210127047ec0162d2825a3ff5",
+          "bytes": 37901
+        },
+        {
+          "path": "runs/stage-three-complete/1/predictor-complex.pt",
+          "sha256": "63fcee21b9f582c49be29fbce4f92dc8d95f488f0dcaf3ab552ae83eb74446f8",
+          "bytes": 37901
+        },
+        {
+          "path": "runs/stage-three-complete/2/predictor-complex.pt",
+          "sha256": "272b6eb9edb0adf947af1130ba41e31c456dcd0256c099ebc2a07d4c97a228f8",
+          "bytes": 37901
+        }
+      ],
+      "scope": "Matched likelihood parameter counts and 24-second training budget in a bounded 8-state/4-event world. HMM is the strongest measured control. Proposal-head parameters are accounted separately; model tuning was limited."
+    },
+    {
+      "id": "aliased-real-v1",
+      "name": "SERA Control / Real Instrument",
+      "role": "aliased-event predictor comparison",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "ordinary": {
+          "mean": 0.8919270833333334,
+          "sample_std": 0.02580253159409938,
+          "seeds": 3
+        },
+        "repeated": {
+          "mean": 0.8712565104166666,
+          "sample_std": 0.006184895833333359,
+          "seeds": 3
+        },
+        "long-random": {
+          "mean": 0.8893229166666666,
+          "sample_std": 0.029845503244612135,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/predictor-real.pt",
+          "sha256": "5db048d55d354a8c880b36179614871171f90189e8983a7e6462bf9a06b75c81",
+          "bytes": 37865
+        },
+        {
+          "path": "runs/stage-three-complete/1/predictor-real.pt",
+          "sha256": "08344ff61dad14ee3d049a47f6670a5ada431c4dc58383cdf515567b0f7944a1",
+          "bytes": 37865
+        },
+        {
+          "path": "runs/stage-three-complete/2/predictor-real.pt",
+          "sha256": "10b8e660e7784159dc421a250d96f4a32ab069108e51b1405137de44d79df3c0",
+          "bytes": 37865
+        }
+      ],
+      "scope": "Matched likelihood parameter counts and 24-second training budget in a bounded 8-state/4-event world. HMM is the strongest measured control. Proposal-head parameters are accounted separately; model tuning was limited."
+    },
+    {
+      "id": "aliased-hmm-v1",
+      "name": "SERA Control / HMM-22",
+      "role": "aliased-event predictor comparison",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "ordinary": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "repeated": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "long-random": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/predictor-hmm.pt",
+          "sha256": "b221ef461751793cb729541036e301fba958ad0861be6033ac1882883e6cf86e",
+          "bytes": 17631
+        },
+        {
+          "path": "runs/stage-three-complete/1/predictor-hmm.pt",
+          "sha256": "f76e2ba24a2434dad60fffdd6f96eeedcd13887b63f16fd62a38ce877e21ddde",
+          "bytes": 17631
+        },
+        {
+          "path": "runs/stage-three-complete/2/predictor-hmm.pt",
+          "sha256": "4a3341ea9c72bcd7c25cb54830135736fcbe50d52f7e60cb104a9fef5de6b4ac",
+          "bytes": 17631
+        }
+      ],
+      "scope": "Matched likelihood parameter counts and 24-second training budget in a bounded 8-state/4-event world. HMM is the strongest measured control. Proposal-head parameters are accounted separately; model tuning was limited."
+    },
+    {
+      "id": "aliased-gru-v1",
+      "name": "SERA Control / GRU-21",
+      "role": "aliased-event predictor comparison",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "ordinary": {
+          "mean": 0.5328776041666666,
+          "sample_std": 0.0313768989221378,
+          "seeds": 3
+        },
+        "repeated": {
+          "mean": 0.4574110243055556,
+          "sample_std": 0.039525097399046555,
+          "seeds": 3
+        },
+        "long-random": {
+          "mean": 0.5128255208333333,
+          "sample_std": 0.041519107204043185,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/predictor-gru.pt",
+          "sha256": "bdae97b6d9eaf851c737ad43da9fa30dfc0bb3ba6369cbd204aaf01e9cb854cf",
+          "bytes": 18533
+        },
+        {
+          "path": "runs/stage-three-complete/1/predictor-gru.pt",
+          "sha256": "63d25b79eecf2a869a2cddad6c97e4dc00da0e3780321accdc49c15d7864afed",
+          "bytes": 18533
+        },
+        {
+          "path": "runs/stage-three-complete/2/predictor-gru.pt",
+          "sha256": "fba2462240062bfa8d1bc3a2401db5967ae2c2db905dd6dcc54862e59a42559e",
+          "bytes": 18533
+        }
+      ],
+      "scope": "Matched likelihood parameter counts and 24-second training budget in a bounded 8-state/4-event world. HMM is the strongest measured control. Proposal-head parameters are accounted separately; model tuning was limited."
+    },
+    {
+      "id": "typed-neural-v1",
+      "name": "SERA Typed / v1",
+      "role": "typed capability route",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "modular_sum": {
+          "mean": 0.2682291666666667,
+          "sample_std": 0.03157384284630766,
+          "seeds": 3
+        },
+        "spatial_relation": {
+          "mean": 0.9479166666666666,
+          "sample_std": 0.03157384284630766,
+          "seeds": 3
+        },
+        "byte_sum": {
+          "mean": 0.25,
+          "sample_std": 0.0078125,
+          "seeds": 3
+        },
+        "patch_quadrant": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "tone": {
+          "mean": 0.9921875,
+          "sample_std": 0.0078125,
+          "seeds": 3
+        },
+        "motion": {
+          "mean": 0.9880005850767096,
+          "sample_std": 0.0047255636624073255,
+          "seeds": 3
+        },
+        "binding": {
+          "mean": 0.421875,
+          "sample_std": 0.37961033166426067,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/solver/versions/v0.pt",
+          "sha256": "f1631f35b9d8a9eb2fc71995952994728d4da368730644223045d06a86f7484a",
+          "bytes": 325373
+        },
+        {
+          "path": "runs/stage-three-complete/1/solver/versions/v0.pt",
+          "sha256": "b500ca7d3b2645560aa94964d8c23834a600913e102033d3d366993068361cd1",
+          "bytes": 315709
+        },
+        {
+          "path": "runs/stage-three-complete/2/solver/versions/v0.pt",
+          "sha256": "681e548cfc56a32169106c439d4a1c19edaaf3a12f0cfa987955a4ef3924b3c3",
+          "bytes": 319741
+        }
+      ],
+      "scope": "Select component typed. Same neural weights with/without two selected arithmetic procedures. Original extended/structure sets duplicate three task families; use evaluation-v2 for corrected transfer evidence."
+    },
+    {
+      "id": "typed-procedural-v1",
+      "name": "SERA Typed + Rules / v1",
+      "role": "typed capability route",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "modular_sum": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "spatial_relation": {
+          "mean": 0.9479166666666666,
+          "sample_std": 0.03157384284630766,
+          "seeds": 3
+        },
+        "byte_sum": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "patch_quadrant": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "tone": {
+          "mean": 0.9921875,
+          "sample_std": 0.0078125,
+          "seeds": 3
+        },
+        "motion": {
+          "mean": 0.9880005850767096,
+          "sample_std": 0.0047255636624073255,
+          "seeds": 3
+        },
+        "binding": {
+          "mean": 0.421875,
+          "sample_std": 0.37961033166426067,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/solver/versions/v0.pt",
+          "sha256": "f1631f35b9d8a9eb2fc71995952994728d4da368730644223045d06a86f7484a",
+          "bytes": 325373
+        },
+        {
+          "path": "runs/stage-three-complete/1/solver/versions/v0.pt",
+          "sha256": "b500ca7d3b2645560aa94964d8c23834a600913e102033d3d366993068361cd1",
+          "bytes": 315709
+        },
+        {
+          "path": "runs/stage-three-complete/2/solver/versions/v0.pt",
+          "sha256": "681e548cfc56a32169106c439d4a1c19edaaf3a12f0cfa987955a4ef3924b3c3",
+          "bytes": 319741
+        }
+      ],
+      "scope": "Select component typed. Same neural weights with/without two selected arithmetic procedures. Original extended/structure sets duplicate three task families; use evaluation-v2 for corrected transfer evidence."
+    },
+    {
+      "id": "program-reuse-v1",
+      "name": "SERA Program Reuse",
+      "role": "world-specific guide and macro-library experiment",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "fixed/library=False": {
+          "solved": 0,
+          "cases": 22
+        },
+        "fixed/library=True": {
+          "solved": 0,
+          "cases": 22
+        },
+        "general/library=False": {
+          "solved": 21,
+          "cases": 22
+        },
+        "general/library=True": {
+          "solved": 22,
+          "cases": 22
+        },
+        "classical/library=False": {
+          "solved": 21,
+          "cases": 22
+        },
+        "classical/library=True": {
+          "solved": 22,
+          "cases": 22
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/acquired-programs.json",
+          "sha256": "690d80f886299f1a35af8248c9a440340a7ea3b471dc4cb92b140aab507c7c23",
+          "bytes": 104585
+        },
+        {
+          "path": "runs/stage-three-complete/1/acquired-programs.json",
+          "sha256": "68b79b18b4f75e77b6c8663194cd0ee03d4498cacb547ba6508ff3b88d7b3ae6",
+          "bytes": 62572
+        },
+        {
+          "path": "runs/stage-three-complete/2/acquired-programs.json",
+          "sha256": "d822da71fc45ef710277c662f2a63d4e6edcfdc15c2ea4bd2f03d75b5659e7a9",
+          "bytes": 79213
+        }
+      ],
+      "scope": "Verified finite transformations. Macro reuse expands primitive action length under the same token budget. The classical program-study guide was not saved as a standalone checkpoint; its results, seed and training recipe remain preserved."
+    },
+    {
+      "id": "intervention-selector-v1",
+      "name": "SERA Intervention Selector",
+      "role": "learned eight-method improvement selector",
+      "status": "preserved-research-variant",
+      "source_sha256": "0d28049174092ae48ff91af9ff37c2478eedf51c159c41e3ccdcec6f39ce72bd",
+      "results": {
+        "0": {
+          "anchor_utility": {
+            "mean": 0.1378145791100495,
+            "sample_std": 0.033181429874265186,
+            "seeds": 3
+          },
+          "frontier_utility": {
+            "mean": 0.149370283692115,
+            "sample_std": 0.07592824327800532,
+            "seeds": 3
+          }
+        },
+        "1": {
+          "anchor_utility": {
+            "mean": 0.17127261489644854,
+            "sample_std": 0.0023375780783189363,
+            "seeds": 3
+          },
+          "frontier_utility": {
+            "mean": 0.05120307198223819,
+            "sample_std": 0.1602509525916918,
+            "seeds": 3
+          }
+        },
+        "2": {
+          "anchor_utility": {
+            "mean": 0.15063367065343178,
+            "sample_std": 0.03761001801497264,
+            "seeds": 3
+          },
+          "frontier_utility": {
+            "mean": 0.13451792708430568,
+            "sample_std": 0.0709763102287985,
+            "seeds": 3
+          }
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/stage-three-complete/0/outer-policy-0.pt",
+          "sha256": "9775f6171bd388797713b59b756e20dd95906c965ee5adff941e776e7dda1cef",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/0/outer-policy-1.pt",
+          "sha256": "886f66774d71555ee56e8f25696b16fabe4551f55c0584df0d453e70e0d915d4",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/0/outer-policy-2.pt",
+          "sha256": "9de5e2695893a22171eb9080ce5bbbb01895b56134d440f0534ecba19d6db252",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/1/outer-policy-0.pt",
+          "sha256": "b3c3d6f044856353b27bfc2e6972d10ac8e0aed45535b122b094b6c74fee959f",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/1/outer-policy-1.pt",
+          "sha256": "e5314e600d7c7c17e3ac64af01731893681d0b0e2597d5de41b54d4f21c6eb6f",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/1/outer-policy-2.pt",
+          "sha256": "0965b708a02f3d896ffab8e456e653f4962117d49dc05c16fcec0e046ce33a2f",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/2/outer-policy-0.pt",
+          "sha256": "151210d7ccff676e3b4fa3261295bf863363113b47a120beabb788571ba598ee",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/2/outer-policy-1.pt",
+          "sha256": "5e719e5bcf18c1a3e69320a55c760e5d9f3a08cf6044d60319448ec7c75ae0fc",
+          "bytes": 6697
+        },
+        {
+          "path": "runs/stage-three-complete/2/outer-policy-2.pt",
+          "sha256": "604f62cacbb22d59045063896f28fe0a193b8f731da08173da75fec9e538d4dd",
+          "bytes": 6697
+        }
+      ],
+      "scope": "Nine saved policies, three seeds. No sustained advantage over the strongest fixed procedure. Policies trained against a fixed base; retained as a finite selector experiment, not evidence of recursive improvement."
+    },
+    {
+      "id": "typed-neural-v2",
+      "name": "SERA Typed / v2",
+      "role": "typed capability route",
+      "status": "preserved-research-variant",
+      "source_sha256": "ad86ff13b9c0f15a67661dee2a9807d9cadda43f3696f1078f525d5aa5cbbe1b",
+      "results": {
+        "modular_sum": {
+          "mean": 0.2265625,
+          "sample_std": 0.034053897996411515,
+          "seeds": 3
+        },
+        "spatial_relation": {
+          "mean": 0.9140625,
+          "sample_std": 0.09472152853892297,
+          "seeds": 3
+        },
+        "byte_sum": {
+          "mean": 0.2682291666666667,
+          "sample_std": 0.018042195912175804,
+          "seeds": 3
+        },
+        "patch_quadrant": {
+          "mean": 0.9921875,
+          "sample_std": 0.013531646934131853,
+          "seeds": 3
+        },
+        "tone": {
+          "mean": 0.9270833333333334,
+          "sample_std": 0.058637136714571374,
+          "seeds": 3
+        },
+        "motion": {
+          "mean": 0.9845037882526716,
+          "sample_std": 0.001928780117807736,
+          "seeds": 3
+        },
+        "binding": {
+          "mean": 0.3515625,
+          "sample_std": 0.23476530002057375,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/evaluation-v2-complete/0/typed-v2.pt",
+          "sha256": "83c2f1a2e180438dc280b4fea0a66c6ac610b151a0325e19a43d93d683dda8b8",
+          "bytes": 160859
+        },
+        {
+          "path": "runs/evaluation-v2-complete/1/typed-v2.pt",
+          "sha256": "acd01990e520b05add448f1c9aba8d765ce846f8f686ccb98f09681f288cb4d2",
+          "bytes": 160859
+        },
+        {
+          "path": "runs/evaluation-v2-complete/2/typed-v2.pt",
+          "sha256": "44230c91a0ff1976b9e8d10a9134b91b9f731bfcb851cb5c31729e2ac5ca5a09",
+          "bytes": 160859
+        }
+      ],
+      "scope": "Fresh training on semantic-v2 support/validation; withheld composition cases. Same architecture as v1. This cohort remains separate from the admitted world solver."
+    },
+    {
+      "id": "typed-procedural-v2",
+      "name": "SERA Typed + Rules / v2",
+      "role": "typed capability route",
+      "status": "preserved-research-variant",
+      "source_sha256": "ad86ff13b9c0f15a67661dee2a9807d9cadda43f3696f1078f525d5aa5cbbe1b",
+      "results": {
+        "modular_sum": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "spatial_relation": {
+          "mean": 0.9140625,
+          "sample_std": 0.09472152853892297,
+          "seeds": 3
+        },
+        "byte_sum": {
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "seeds": 3
+        },
+        "patch_quadrant": {
+          "mean": 0.9921875,
+          "sample_std": 0.013531646934131853,
+          "seeds": 3
+        },
+        "tone": {
+          "mean": 0.9270833333333334,
+          "sample_std": 0.058637136714571374,
+          "seeds": 3
+        },
+        "motion": {
+          "mean": 0.9845037882526716,
+          "sample_std": 0.001928780117807736,
+          "seeds": 3
+        },
+        "binding": {
+          "mean": 0.3515625,
+          "sample_std": 0.23476530002057375,
+          "seeds": 3
+        }
+      },
+      "artifacts": [
+        {
+          "path": "runs/evaluation-v2-complete/0/typed-v2.pt",
+          "sha256": "83c2f1a2e180438dc280b4fea0a66c6ac610b151a0325e19a43d93d683dda8b8",
+          "bytes": 160859
+        },
+        {
+          "path": "runs/evaluation-v2-complete/1/typed-v2.pt",
+          "sha256": "acd01990e520b05add448f1c9aba8d765ce846f8f686ccb98f09681f288cb4d2",
+          "bytes": 160859
+        },
+        {
+          "path": "runs/evaluation-v2-complete/2/typed-v2.pt",
+          "sha256": "44230c91a0ff1976b9e8d10a9134b91b9f731bfcb851cb5c31729e2ac5ca5a09",
+          "bytes": 160859
+        }
+      ],
+      "scope": "Fresh training on semantic-v2 support/validation; withheld composition cases. Same architecture as v1. This cohort remains separate from the admitted world solver."
+    }
+  ],
+  "new_workspaces": {
+    "runs/evaluation-v2-complete": "Canonical three-seed comparison, semantic datasets, checkpoints, score vectors and all 15 retrospective proposal checks.",
+    "runs/evaluation-v2-review": "Preservation baseline, independent replay verification and fresh live-continuation report.",
+    "runs/evaluation-v2-smoke": "Four-update development plumbing check with frozen variants; excluded from performance evidence.",
+    "runs/evaluation-v2-fresh-smoke": "Four-update from-scratch entry-point check; excluded from performance evidence.",
+    "runs/sera-0.4-current": "Active continuation fork with the prior ledger and one new rejected candidate; old 0.3 parent unchanged."
+  }
+}
