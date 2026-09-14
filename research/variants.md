@@ -2,7 +2,7 @@
 
 I retain useful alternatives as named research variants with their original checkpoints, results and limits. A variant can be a component or an evaluation route; it is not automatically a complete architecture. No experiment is discarded because it diverged from the handbook.
 
-The [machine-readable registry](variants.json) records source identities, exact artifact hashes and measured results. The [performance report](../reports/evaluation-v2-study.md) compares the corrected typed tests. The [earlier workspace index](workspace-index.md) remains the frozen catalog of the previous audit, including failed and interrupted trials.
+The [machine-readable registry](variants.json) records source identities, exact artifact hashes and measured results. The [shared-learner report](../reports/shared-learner-study.md) adds three named variants to the 22 preserved earlier variants. The [0.4 performance report](../reports/evaluation-v2-study.md) and [earlier workspace index](workspace-index.md) remain historical records. [New workspace roles](shared-workspace.md) identify both initial failures and the repaired shared runs.
 
 | Stable variant | Role | Preservation boundary |
 |---|---|---|
@@ -28,10 +28,13 @@ The [machine-readable registry](variants.json) records source identities, exact 
 | `intervention-selector-v1` — SERA Intervention Selector | learned eight-method improvement selector | Nine saved policies, three seeds. No sustained advantage over the strongest fixed procedure. Policies trained against a fixed base; retained as a finite selector experiment, not evidence of recursive improvement. |
 | `typed-neural-v2` — SERA Typed / v2 | typed capability route | Fresh training on semantic-v2 support/validation; withheld composition cases. Same architecture as v1. This cohort remains separate from the admitted world solver. |
 | `typed-procedural-v2` — SERA Typed + Rules / v2 | typed capability route | Fresh training on semantic-v2 support/validation; withheld composition cases. Same architecture as v1. This cohort remains separate from the admitted world solver. |
+| `shared-delta-v1` — SERA Shared Associative | common R1 owner | Three jointly trained seeds; world, typed and sequence routes share parameters. Simpler associative core, with full/replay/adapter/scratch/scoped and separate-model controls. |
+| `shared-reference-v1` — SERA Shared Reference | handbook-sized common R1 owner | Three trained seeds with the 35,840-byte core state and explicit frozen-projector gradient approximation. Earlier spectral-gradient failures remain preserved. Equal update/example budget to Shared Associative; different parameters and runtime. |
+| `shared-scoped-v1` — SERA Shared Adaptation | persistent shared R1/R2 solver | Preselected seed-0 delta owner, verified programs, freshly trained bounded controller and admitted first-binding weight residuals. Supplied applicability scope; all older solver lineages remain separate and intact. |
 
 The five aliased predictors share one comparison protocol. The eight early sequence cores share another. Reference-size versus compact R1 uses different training budgets. Neural and procedure-assisted results are separate routes. I do not pool these into an overall accuracy ranking.
 
-The next integration task uses the compact Delta World direction and one typed stream. The HMM and hybrid remain strong controls to revisit at the appropriate bottleneck. The standalone v2 typed checkpoint is a new research variant; it has not replaced an admitted solver.
+The new shared variants implement the next integration step. The HMM and hybrid remain strong controls to revisit at the appropriate bottleneck. The standalone v2 typed checkpoint remains a research variant; it has not replaced an admitted solver. The shared continuation starts its own declared lineage and keeps every older lineage available.
 
 ## New workspace roles
 

@@ -47,14 +47,15 @@ The repaired run is a follow-up after observing failures, not a preregistered cl
 
 ## Acceptance checklist
 
-- [ ] One registered learned core serves all three interfaces before and after serialization.
-- [ ] Reference state matches 35,840 core bytes with valid normalized workspaces.
-- [ ] All task gradients reach the shared memory; no target enters the input.
-- [ ] Support/validation/query cases and rule/composition boundaries are audited.
-- [ ] Models train from scratch with explicit complete budgets and saved checkpoints.
-- [ ] All adaptation controls run on paired data; retention and calibration are reported.
-- [ ] A failed query can trigger admitted corrective evidence and a persistent candidate through the ordinary interface.
-- [ ] Candidate evaluation remains independent; parents, rejected candidates and previous studies remain available.
-- [ ] Independent checkpoint replay, source comparison and Windows/Linux checks pass.
+- [x] One registered learned core serves all three interfaces before and after serialization.
+- [x] Reference state matches 35,840 core bytes with valid normalized workspaces.
+- [x] All task gradients reach the shared memory; no target enters the input.
+- [x] Support/validation/query cases and rule/composition boundaries are audited.
+- [x] Models train from scratch with explicit complete budgets and saved checkpoints.
+- [x] All adaptation controls run on paired data; retention and calibration are reported.
+- [x] A failed query can trigger admitted corrective evidence and a persistent candidate through the ordinary interface.
+- [x] Candidate evaluation remains independent; parents, rejected candidates and previous studies remain available.
+- [x] Independent checkpoint replay, source comparison and 71 local tests pass.
+- [ ] The published revision passes the Windows and Ubuntu CI jobs.
 
-The final report will record which behavioral criteria passed. Negative learning results are retained and do not become completion claims.
+The [completed study](../reports/shared-learner-study.md) records the behavioral outcomes and the [source audit](../reports/shared-source-audit.md) records remaining architecture work. Negative learning results are retained and do not become completion claims. This checklist closes the bounded shared-learner study, not the remaining recipes for sustained learner/improver evolution.

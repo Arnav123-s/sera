@@ -6,11 +6,11 @@
 
 I am building SERA to study how a learner maintains state, predicts action consequences, acquires executable skills, retains them and improves its learning procedure. The [project context](research/project-context.md) and [original research references](research/references.md) define that direction.
 
-Version 0.4 adds semantic evaluation partitions, separate capability retention checks and a registry of preserved research variants. The R1/R2 system remains partially integrated: world, typed and legacy sequence models have separate learned parameters. Controller training is a separate experiment; ordinary continued learning does not update that controller. Saving these components together does not make them one shared learner.
+Version 0.5 implements one shared R1 parameter owner behind world prediction, typed tasks and legacy sequence inference. I train both a simpler associative core and the handbook-sized rotor/associative/low-rank reference from scratch, then compare corrective learning with replay, full updating, adapters, scratch learning and a separate-model control. Shared views remain connected after checkpoint restoration. The controller still selects from a finite supplied method set; ordinary continued learning does not train a new improvement policy.
 
 **Research status:** a bounded research system trained locally from scratch. Task vocabularies, simulators, arithmetic grammar, action alphabet and feedback access are supplied. Classical controls, failed learning, retention losses and rejected candidates are part of the evidence. General intelligence, broad language/perception and sustained research acceleration have not been established. R3–R8 remain separate architecture hypotheses under the handbook's narrow-first recommendation.
 
-Start with the [0.4 performance and repair report](reports/evaluation-v2-study.md) and [22 preserved variants](research/variants.md). The [full source-packet comparison](reports/source-packet-comparison.md) records the preceding audit: duplicated typed tests and composite retention are addressed in the new protocol, while shared learning, sequential improvement and compatible growth remain open. The [0.3 study](reports/stage-three-study.md), [bounded checklist](research/stage-three-checklist.md), [0.2 results](reports/connected-study.md) and [earlier workspace snapshot](research/workspace-index.md) remain historical evidence.
+Start with the [shared-learner results](reports/shared-learner-study.md), [source comparison](reports/shared-source-audit.md), [training protocol and checklist](research/shared-learner-protocol.md), and [preserved variants](research/variants.md). The [0.4 report](reports/evaluation-v2-study.md), [full 0.3 source-packet comparison](reports/source-packet-comparison.md), [0.3 study](reports/stage-three-study.md), [0.2 results](reports/connected-study.md) and [earlier workspace snapshot](research/workspace-index.md) remain historical evidence.
 
 ## Run
 
@@ -21,10 +21,24 @@ python -m venv .venv
 .venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
 .venv/Scripts/python.exe -m pip install -e ".[dev,reports,reference]"
 .venv/Scripts/python.exe -m pytest
-.venv/Scripts/python.exe scripts/evaluate_variants.py --fresh-only --output runs/my-typed-v2 --seeds 0 1 2
+.venv/Scripts/python.exe -m sera shared-study --output runs/my-shared-study --seeds 0 1 2
 ```
 
-This trains the new typed protocol from scratch without historical checkpoints. It writes semantic partitions, training/validation evidence, neural weights, selected arithmetic procedures, scores and cost records. Use `--steps 4 --test-count 16 --seeds 19` only for a plumbing check. To compare preserved v1 models and reassess old proposals, omit `--fresh-only` and provide `--study runs/stage-three-complete`; those ignored checkpoints must exist locally. A fresh output directory is required.
+This trains both shared cores from scratch: 1,600 joint updates, then 192 updates per adaptation control at 32, 128 and 512 support cases. It writes evidence, checkpoints, raw paired scores, validation histories and costs. Each seed uses one CPU thread. All candidate weights freeze before final scoring. Use `--pretrain-steps 2 --adapt-steps 2 --support-sizes 8 --samples 8 --seeds 19 --kinds delta` only for a plumbing check. A fresh output directory is required. The earlier standalone typed protocol remains available through `scripts/evaluate_variants.py`.
+
+Assemble the first delta seed into a persistent solver, train its bounded R2/controller, and attempt corrective learning:
+
+```text
+python scripts/start_shared.py --study runs/my-shared-study/0/delta --output runs/my-shared-solver --review runs/my-shared-assembly
+python -m sera status runs/my-shared-solver
+python -m sera typed-solve runs/my-shared-solver examples/typed-addition.json
+python -m sera typed-solve runs/my-shared-solver examples/typed-binding-first.json
+python -m sera typed-solve runs/my-shared-solver examples/typed-binding-latest.json
+python -m sera learn-binding runs/my-shared-solver --seed 1200001 --support 128 --steps 192
+python scripts/audit_shared.py --root runs/my-shared-study --seed 0 --output runs/my-shared-audit-0.json
+```
+
+`learn-binding` teaches the explicitly instructed first-binding rule from simulator corrections. Its default trains scoped low-rank residuals while freezing the shared base; full/replay/global-adapter controls remain available. It freezes the candidate, checks fresh gain and 34 retained capabilities, and keeps rejected proposals. The supplied first/latest example pair has the same writes and query but different explicit instructions. Continued world learning on a shared solver also checks both instructed binding rules, for 40 retained capabilities with one world. These retention checks are empirical; the objective gain uses a separate conservative bound. Bounded Brier calibration is gated for instructed binding only.
 
 The earlier R1/R2 experiment driver `scripts/study_stage_three.py` remains available and retains the v1 typed generator for historical work. Exact 0.3 reproduction uses the pinned source commit in [release source identities](research/release-sources.json). For an existing full solver, the ordinary commands are:
 
@@ -37,7 +51,7 @@ python -m sera evaluate runs/sera-0.4-current --output runs/current-evaluation
 
 `typed-solve` routes a declared typed request to its trained component and applicable verified procedure. The example adds a sequence of integers modulo four. Returned values are labeled predictions. `solve` executes a saved skill or plans through the learned world model. The legacy sequence decoder is also trained and stored, so ordinary symbolic evaluation uses learned weights.
 
-The designated local continuation is `runs/sera-0.4-current`, forked with the entire existing ledger, versions and replay. The 0.3 and 0.2 workspaces remain preserved. `sera learn` collects simulator feedback, reads attempt history and remaining budget, follows the saved policy, freezes a candidate and checks fresh paired world gain. It now gates prediction/control separately and retains installed legacy/typed outputs. These are empirical output checks; improver quality and calibration remain outside the separate gates. Rejection preserves the incumbent, candidate and actual evidence. `sera rollback` keeps cumulative history. The newly trained v2 typed cohort remains separate because it does not improve every capability.
+The active local shared solver is `runs/sera-0.5-current`. The earlier `runs/sera-0.4-current` retains its entire ledger, versions and replay. The new shared solver has its own explicit initial version; it does not rewrite that history or imply a promotion across different solver architectures. `sera learn` collects simulator feedback, reads attempt history and remaining budget, follows the saved controller and checks fresh paired world gain. Binding correction currently uses the explicitly selected CLI method. `sera rollback` preserves cumulative history. The standalone v1/v2 typed cohorts and useful older sequence, HMM and instrument variants remain available. [Workspace roles](research/shared-workspace.md) identify every new attempt and artifact family.
 
 ## Implemented paths
 
@@ -45,11 +59,11 @@ The designated local continuation is `runs/sera-0.4-current`, forked with the en
 |---|---|---|
 | R1 | Learned recurrent state, action prediction, reward prediction and planning | Supplied symbolic worlds; heuristic imagined observations |
 | R2 | General multi-Kraus events, shared likelihood/conditioning and execution-guided programs | Finite state and action grammar; matched classical controls |
-| Typed tasks | Separate numeric, symbolic, byte, patch and audio model; categorical/numeric outputs | Small synthetic representations; supplied arithmetic grammar; outside automatic world learning |
+| Typed tasks | Modality adapters and categorical/numeric heads using the same R1 core as world and sequence tasks | Small synthetic representations; supplied arithmetic grammar; explicit task instructions |
 | Learning loop | Failure categories, targeted evidence, full/adapter/replay updates, saved attempt budgets | Learned selection among finite supplied methods |
 | Library | Domain/version-checked calls, verification traces and future composition | Explicit domain applicability and bounded expansion |
 | Persistence | Owned live sessions, immutable solver versions, cumulative replay and useful archive retrieval | Local ownership and integrity checks; no hostile-process isolation |
-| Reference memory | Separately trained full-size rotor/delta/density preset and rank diagnostics | Not the admitted solver's core; core bytes exclude parameters, activations and optimizer state |
+| Reference memory | Full-size rotor/delta/density shared learner, compared with equal update/example budgets | Unequal parameter/runtime costs; core bytes exclude weights, activations and optimizer state |
 
 ## Reproduce and inspect
 

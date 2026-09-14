@@ -17,12 +17,25 @@ stage_three = root / "reports/stage-three-evidence-manifest.json"
 if stage_three.exists():
     manifest += json.loads(stage_three.read_text(encoding="utf-8"))
 evaluation_v2 = root / "reports/evaluation-v2-evidence-manifest.json"
+historical_registries = {}
 if evaluation_v2.exists():
-    manifest += json.loads(evaluation_v2.read_text(encoding="utf-8"))
+    entries = json.loads(evaluation_v2.read_text(encoding="utf-8"))
+    manifest += entries
+    historical_registries = {(entry["file"], entry["sha256"]): "f9529cd8cb1351df121936917f0e9ee13bfcd8ea"
+                             for entry in entries if entry["file"] in {"../research/variants.json", "../research/variants.md"}}
+shared = root / "reports/shared-learner-evidence-manifest.json"
+if shared.exists():
+    manifest += json.loads(shared.read_text(encoding="utf-8"))
 for entry in manifest:
     path = root / "reports" / entry["file"]
     if hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
-        raise ValueError(f"Evidence changed: {entry['file']}")
+        historical = historical_registries.get((entry["file"], entry["sha256"]))
+        if historical is None:
+            raise ValueError(f"Evidence changed: {entry['file']}")
+        name = path.resolve().relative_to(root).as_posix()
+        preserved = subprocess.check_output(["git", "-c", f"safe.directory={root.as_posix()}", "show", f"{historical}:{name}"], cwd=root)
+        if hashlib.sha256(preserved).hexdigest() != entry["sha256"]:
+            raise ValueError(f"Historical registry changed: {entry['file']}")
 concepts = json.loads((root / "research/physics_component_map.json").read_text(encoding="utf-8"))
 if len(concepts) != 154 or len({c["id"] for c in concepts}) != 154:
     raise ValueError("Source concept coverage mismatch")
@@ -130,4 +143,24 @@ if evaluation_v2.exists():
         raise ValueError("Preservation check failed")
     if data["live_continuation"]["result"]["decision"]["capability_contract"] != "separate-retention-v2":
         raise ValueError("Ordinary continuation did not use the current retention contract")
+if shared.exists():
+    from sera.training import source_hash
+    data = json.loads((root / "reports/shared-learner-data.json").read_text(encoding="utf-8"))
+    verified = json.loads((root / "reports/shared-learner-verification.json").read_text(encoding="utf-8"))
+    if data["source_sha256"] != source_hash() or verified["source_sha256"] != source_hash():
+        raise ValueError("Shared study source identity differs from the executable package")
+    if data["status"] != "completed" or not verified["passed"]:
+        raise ValueError("Shared study is incomplete")
+    if {(r["seed"], r["kind"]) for r in data["trials"]} != {(s, k) for s in range(3) for k in ("delta", "reference")}:
+        raise ValueError("Shared study seed/core coverage differs")
+    if verified["checkpoint_replays"] != 114 or verified["decision_arithmetic_checks"] != 108:
+        raise ValueError("Shared candidate replay or decision coverage is incomplete")
+    for audit in verified["audits"]:
+        for trial in audit["trials"]:
+            if trial["partitions"]["cross_partition_overlap"] or not all(r["passed"] and r["maximum_score_difference"] <= 1e-7 for r in trial["replay_checks"]):
+                raise ValueError("Shared evidence overlap or changed replay outputs")
+    if not verified["live"]["decision_reproduced"] or not verified["live"]["parameter_owner_shared_after_reload"]:
+        raise ValueError("Persistent shared learning did not reproduce")
+    if not data["preservation"]["passed"]:
+        raise ValueError("Earlier work was not preserved")
 print(f"Verified {len(manifest)} evidence artifacts and 154 unique source concepts.")

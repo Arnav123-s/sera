@@ -192,3 +192,33 @@ def test_deep_verified_program_cannot_generate_an_overdepth_candidate():
     candidates = list(enumerate_programs(library, 3, 16, work=work))
     assert candidates and work.counts["program_candidates_rejected_depth"] > 0
     assert all(flatten_program(body, library) == actions for actions, body in candidates)
+
+
+def test_approximate_gradient_keeps_the_spectral_forward_density():
+    from sera.lowrank import LowRankWorkspaces
+    torch.manual_seed(32)
+    spectral = LowRankWorkspaces(16)
+    projected = copy.deepcopy(spectral)
+    projected.truncation_gradient = "frozen-projector"
+    encoded = torch.randn(4, 16)
+    first, second = spectral.initial(encoded), projected.initial(encoded)
+    with torch.no_grad():
+        for _ in range(5):
+            before, first = spectral.step(encoded, first, torch.ones(4, 1))
+            after, second = projected.step(encoded, second, torch.ones(4, 1))
+            torch.testing.assert_close(first @ first.mH, second @ second.mH, atol=2e-6, rtol=2e-5)
+            torch.testing.assert_close(before, after, atol=2e-6, rtol=2e-5)
+
+
+def test_world_learning_keeps_binding_checks_out_of_the_objective_sample_count():
+    from sera.evaluation import assess
+    from sera.shared_evaluation import evaluate_shared
+    core = SharedR1(width=32, heads=2, memory_dim=4)
+    world = make_world(32)
+    _, scores = evaluate_shared(make_shared_solver(core), [world], seed=32, samples=8,
+                                retained_samples=8, typed_samples=8, world_learning=True)
+    assert set(scores) == {world.identifier}
+    assert len(scores.capabilities) == 40
+    assert all(f"instructed-{rule}/ordinary/accuracy" in scores.capabilities for rule in ("earliest", "latest"))
+    decision = assess(scores, scores, round_index=0, invariants_ok=True, candidate_cost=0)
+    assert decision["samples"] == 8

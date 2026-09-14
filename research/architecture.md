@@ -1,4 +1,43 @@
-# SERA architecture, version 0.3
+# SERA architecture, version 0.5
+
+I train one R1 parameter owner behind three task interfaces. World observations, typed observations and legacy sequence events have appropriate encoders and output heads, but share the associative memory and fusion parameters. The [source audit](../reports/shared-source-audit.md), [protocol](shared-learner-protocol.md) and [results](../reports/shared-learner-study.md) distinguish structural implementation from measured learning and remaining research.
+
+```mermaid
+flowchart TD
+    W[World sensors, actions and rewards] --> WE[World event encoder]
+    T[Typed observations and instructions] --> TE[Modality adapters]
+    Q[Legacy sequence events] --> QE[Sequence encoder]
+    WE --> K[Shared R1 memory and fusion]
+    TE --> K
+    QE --> K
+    S[Learned low-rank weight residuals] -->|Explicit first-binding scope| K
+    K --> WH[Action-conditioned sensor and reward heads]
+    K --> TH[Typed categorical and numerical heads]
+    K --> QH[Sequence decoder]
+    WH --> P[Bounded planner]
+    R[Controlled event instrument] --> L[Verified program library]
+    L --> P
+    L --> R
+    P --> X[Executed actions and observed consequences]
+    X --> E[Admitted evidence and replay]
+    E --> U[Bounded learning candidate]
+    C[Finite learned world-intervention selector] --> U
+    U --> G[Fresh objective gain and separate retention checks]
+    G --> V[Immutable accepted or rejected version]
+    V --> K
+```
+
+During joint pretraining, all three routes send gradients into the same memory weights. A solver registers the owner once; typed and sequence views own no duplicate tensors. Serialization, deep copy and adapter migration preserve that identity. Each independent episode starts a new working state.
+
+The reference core uses width 256, 128 complex rotor coordinates, eight 32×32 associative heads and four complex 16×4 factors, totaling 35,840 core-state bytes. The simpler associative condition uses 32,768 bytes. Model weights, activations, gradients, optimizers, evidence and planning branches are additional costs. The reference's spectral forward truncation uses a documented approximate backward pass; exact spectral-gradient attempts are preserved as failed runs.
+
+Scoped correction freezes the joint base and learns rank-limited residual matrices, `W + BA`, for explicitly instructed first-binding episodes. The same core computation executes with those contextual weights; other routes keep the original weights. The applicability rule is supplied. This is narrower than unrestricted shared updating, and its extra parameters and seed variability are measured. It does not establish learned task discovery. The other update controls remain executable and their retention failures remain in the evidence.
+
+The connected R2 instrument and finite controller are freshly trained when assembling the usable solver. R2 supports verified program acquisition; goals execute applicable programs or the R1 planner. The controller selects world interventions from its declared method vocabulary. Binding correction uses the method explicitly selected by its interface. The three time scales remain distinct: episode state changes, retained solver changes, and separately trained improvement-policy changes. A coupled sequence that improves the learning procedure remains open.
+
+## Preserved version 0.3 architecture
+
+The following is the earlier architecture snapshot. Its separate models and composite world gate describe historical 0.3 behavior. Version 0.4 revised evaluation; version 0.5 adds the shared path above. These paragraphs remain for comparison with the original models and their results.
 
 I implement part of the handbook's recommended R1/R2 starting direction. The [full source-packet comparison](../reports/source-packet-comparison.md) records the actual connections, changed models and open contracts; the [protocol](stage-three-protocol.md) and [results](../reports/stage-three-study.md) preserve the bounded experiments. The 154 source concepts constrain representations and claims; they are not 154 demonstrated cognitive abilities.
 

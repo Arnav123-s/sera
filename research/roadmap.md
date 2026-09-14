@@ -1,17 +1,17 @@
 # SERA research roadmap
 
-The [full source-packet comparison](../reports/source-packet-comparison.md) records the 0.3 judgment. The [0.4 repair report](../reports/evaluation-v2-study.md) closes the bounded evaluation/retention work below while preserving its limits. Typed/world learning and solver/improver evolution remain separate. The [variant registry](variants.md) keeps useful alternative architectures and controls; the earlier [workspace index](workspace-index.md) remains a frozen snapshot.
+The [full source-packet comparison](../reports/source-packet-comparison.md) records the 0.3 judgment. The [0.4 repair report](../reports/evaluation-v2-study.md) closes the bounded evaluation/retention work, and the [0.5 shared-learner report](../reports/shared-learner-study.md) implements joint world/typed/sequence learning and persistent scoped binding acquisition. Coupled solver/improver evolution remains open. The [variant registry](variants.md) keeps useful alternatives; [shared workspace roles](shared-workspace.md) extend the earlier frozen [workspace index](workspace-index.md).
 
 ## Current implementation sequence
 
 1. **Completed in 0.4, within the declared output scope:** semantic case identities, withheld composition partitions, separate world prediction/control and legacy/typed retention gates. Three new typed seeds and all 15 historical proposals were checked; the original three promotions still pass. The old 0.3 data and v1 generator remain unchanged. Calibration and improver-quality gates remain open.
-2. **Next: shared binding acquisition.** Connect one minimal typed task stream to ordinary failure-driven learning. Demonstrate acquisition, new-case transfer and retention in the same persistent learner, with a separate-component control. Binding is weak and variable in both retained typed cohorts; use that failure as an acceptance target, with replay and a no-update control.
+2. **Completed in 0.5 within a supplied task scope:** joint shared R1 pretraining, matched update/support comparisons, a separate-model control, and persistent first-binding acquisition. The preselected live update reached 100% ordinary, 91.02% long and 70.61% extra-overwrite accuracy with zero loss across 34 measured retained capabilities. Three-seed adaptation remains variable. The successful correction trains scoped low-rank residuals over frozen shared base weights; scope selection is supplied. Unrestricted updates and replay retain their negative results.
 3. Train the next improver from actual sequential learner histories. Use an independent fixed anchor, cumulative frontier, strong fixed procedure and comparable complete run budgets.
 4. Remove one supplied state/identity aid, then connect calibrated belief inference to planning and model-class selection. Keep HMM and recurrent controls.
 5. Implement one explicit compatible growth or program-abstraction mechanism, preserving its parent and validating transfer. Fresh random instrument replacement is not function-preserving growth.
 6. Revisit a preserved R3-R8 hypothesis only when it addresses an identified bottleneck and has a decisive conventional control.
 
-Items 2–6 remain open. Broader candidate-written host code requires independent evaluator/resource ownership first. New work uses fresh output names and source/parent/status records; no old experiment or package is discarded to simplify the tree. The current continuation is `runs/sera-0.4-current`; neither retained typed cohort is described as a demonstrated shared learner.
+Items 3–6 remain open. A newly fitted world-intervention selector did not beat fixed replay in the small 0.5 held-out comparison. The next experiment must use actual successive solver states and full sequential histories, rather than treating a fixed-base selector as recursive improvement. Broader candidate-written host code requires independent evaluator/resource ownership first. New work uses fresh output names and source/parent/status records. The active shared continuation is `runs/sera-0.5-current`; the separate 0.4 lineage and both older typed cohorts remain preserved.
 
 ## Preserved earlier roadmap
 

@@ -989,6 +989,88 @@
         }
       ],
       "scope": "Fresh training on semantic-v2 support/validation; withheld composition cases. Same architecture as v1. This cohort remains separate from the admitted world solver."
+    },
+    {
+      "id": "shared-delta-v1",
+      "name": "SERA Shared Associative",
+      "role": "jointly pretrained R1 owner for world, typed and sequence tasks",
+      "status": "preserved-research-variant",
+      "source_sha256": "a2e334bd8b13bf35754e51044da8d7e8988a91b46dcc6aa78e6310eb03e34853",
+      "results": {
+        "seeds": 3,
+        "parameters": 1003808,
+        "core_state_bytes": 32768,
+        "report": "reports/shared-learner-study.md"
+      },
+      "artifacts": [
+        {
+          "path": "runs/shared-learner-repaired/0/delta/base.pt",
+          "bytes": 4071617,
+          "sha256": "617429f084c3541a4af3b506050901fd6f5e943df05bf68b9f1ba4c1d6051b4a"
+        },
+        {
+          "path": "runs/shared-learner-repaired/1/delta/base.pt",
+          "bytes": 4071617,
+          "sha256": "3b6b6b491d2d44c0df65eb54b3fe582dbd19b494946abbc532db5f5b340c5b0b"
+        },
+        {
+          "path": "runs/shared-learner-repaired/2/delta/base.pt",
+          "bytes": 4071617,
+          "sha256": "aa763f3855b6bba233f36bba7967c760065b274b8d05fd1c5b58231d2f75902e"
+        }
+      ],
+      "scope": "Shared adapters and heads; same update/example budget across cores, unequal runtime and parameters. Earlier attempts and all adaptation controls remain in named study directories."
+    },
+    {
+      "id": "shared-reference-v1",
+      "name": "SERA Shared Reference",
+      "role": "jointly pretrained R1 owner for world, typed and sequence tasks",
+      "status": "preserved-research-variant",
+      "source_sha256": "a2e334bd8b13bf35754e51044da8d7e8988a91b46dcc6aa78e6310eb03e34853",
+      "results": {
+        "seeds": 3,
+        "parameters": 1253606,
+        "core_state_bytes": 35840,
+        "report": "reports/shared-learner-study.md"
+      },
+      "artifacts": [
+        {
+          "path": "runs/shared-learner-repaired/0/reference/base.pt",
+          "bytes": 5078019,
+          "sha256": "0c8559b615d9bccd5a7fa12f158895994762b5acfc5532b8323a2d0c5a1f9882"
+        },
+        {
+          "path": "runs/shared-learner-repaired/1/reference/base.pt",
+          "bytes": 5078019,
+          "sha256": "8f5b1a02b75dcb1e3a24f81646d9f59cfd436d3e22e04ea21808b806d1c5406d"
+        },
+        {
+          "path": "runs/shared-learner-repaired/2/reference/base.pt",
+          "bytes": 5078019,
+          "sha256": "f7e98a110e61b2f8c4956452238e126d7a535fd307bad53d5fc25755cf85b64b"
+        }
+      ],
+      "scope": "Shared adapters and heads; same update/example budget across cores, unequal runtime and parameters. Earlier attempts and all adaptation controls remain in named study directories."
+    },
+    {
+      "id": "shared-scoped-v1",
+      "name": "SERA Shared Adaptation",
+      "role": "persistent shared R1/R2 solver with scoped learned weight residuals",
+      "status": "active-bounded-learner",
+      "source_sha256": "a2e334bd8b13bf35754e51044da8d7e8988a91b46dcc6aa78e6310eb03e34853",
+      "results": {
+        "version": "v1",
+        "admission": "promoted",
+        "report": "reports/shared-learner-study.md"
+      },
+      "artifacts": [
+        {
+          "path": "runs/sera-0.5-current/versions/v1.pt",
+          "bytes": 4397861,
+          "sha256": "562061123e9a941bb1b8cbc02596b90c31d9a99b5e160186bd5a91b89d3dc20f"
+        }
+      ],
+      "scope": "Seed 0 was preselected. First-binding applicability is supplied; the rank-limited weight residuals are learned. Base outputs outside that scope remain unchanged. This is not a separate complete typed model or a learned task router."
     }
   ],
   "new_workspaces": {
@@ -997,5 +1079,10 @@
     "runs/evaluation-v2-smoke": "Four-update development plumbing check with frozen variants; excluded from performance evidence.",
     "runs/evaluation-v2-fresh-smoke": "Four-update from-scratch entry-point check; excluded from performance evidence.",
     "runs/sera-0.4-current": "Active continuation fork with the prior ledger and one new rejected candidate; old 0.3 parent unchanged."
+  },
+  "current_shared_solver": {
+    "path": "runs/sera-0.5-current",
+    "version": "v1",
+    "solver_sha256": "6e45a89679f0c2706b6af3561557b3e87226b577579894842159856e6f6b6289"
   }
 }
