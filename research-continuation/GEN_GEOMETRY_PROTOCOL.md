@@ -1,0 +1,19 @@
+# GG-P0-001: compact generative memory under partial observation
+
+This is a prospective exploratory component study. I will run all eight requested control families on four initial task families: circles, rotated ellipses, circles with a localized radial exception, and independent random values. The remaining six requested families and unordered geometry are separate, still-open stages.
+
+The learner receives a supplied scalar phase coordinate `t` and two numerical outputs. Phase uses `pi*t`. Support is restricted to `[-0.6,0.6]`. Success therefore establishes fitting or selection inside a supplied function language, not discovery of geometry from unordered points. Task identity, generator constants, test values and simulator seeds are not passed to the fitting API.
+
+The controls are A exact episodic lookup with an explicit unknown fallback; B linear interpolation with nearest-endpoint extrapolation; C a constrained circle; D a Bayesian mixture of circle, ellipse and line; E bounded symbolic expression search with fitted constants; F a trained 1–32–16–2 tanh predictor; G a finite program menu including rotation and linear radial growth; H generator plus local residual memory. E and G use supplied grammars. F is a small neural control, not the SERA shared model.
+
+Twenty paired instances per family and noise level use frozen seeds 6100–6119. Noise standard deviations are 0.02 and 0.10. Nested support sizes are 8, 16, 32 and 64. Every method receives the same support, 16 selection observations and 32 calibration observations. A fixed 160-step Adam budget trains F, with selection-only checkpoint choice. No evaluated family or method is dropped.
+
+Evaluation uses 128 fresh inputs in each of the observed phase region, withheld arc and extrapolated coordinate region, plus exact support recall. These banks are generated and scored only after the model artifacts are frozen. Random outputs are independently assigned to distinct input records; no compact generator seed is available to the learner. Their unseen risk cannot be interpreted as recoverable missing facts.
+
+Record coordinate MSE, marginal predictive NLL, Gaussian-moment 95% interval coverage and width, recall, prediction availability, class weights, inadequacy alarms, actual serialized bytes, numerical payload, decoder source bytes, dependency/runtime boundary, observations, candidate fits, gradient steps, CPU/wall time, peak process memory and raw per-query outputs. Calibration uses only the reserved observed calibration bank. Its guarantee does not extend to the withheld regions.
+
+Artifacts retain all parameters at explicit float32 precision, along with uncertainty, guards and provenance. Scoring uses decoded artifacts. Full JSON artifact bytes are the primary object cost; shared decoder bytes are reported both standalone and amortized across 100 objects. Python/NumPy/Torch runtime and training archives are separately disclosed rather than called free.
+
+The main comparisons are generator versus interpolation on structured families, fixed circle versus alternatives on misspecification, and residual memory versus its base generator on exceptions. Report paired instance-level bootstrap intervals, clustered over nested support/noise conditions when pooled. These exploratory intervals are not release certificates. No method is promoted based on an isolated favorable mean.
+
+Run locally with one Torch/BLAS thread and a 900-second cumulative fitting cap. An intentional early stop will test resume; completed records may be reused only under identical source/protocol hashes and unchanged artifact bytes. Preserve failed attempts. Reload every model in a new process, compare saved prediction vectors and recomputed scores, and check the linear-Gaussian posterior against an independent observation-space solution.

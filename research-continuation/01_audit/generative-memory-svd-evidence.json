@@ -1,0 +1,2391 @@
+{
+  "reference": "Thin SVD of A, spectrum of sigma^2 I + 4 A A^T; orthogonal residual quadratic",
+  "source_identity": {
+    "protocol_sha256": "dbbd8ef1d7d1bec79dd8727d89331377c08042779e08ef9d595b77e959006ffd",
+    "source_sha256": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590"
+  },
+  "linear_models": 4480,
+  "family_posteriors": 640,
+  "absolute_log_evidence_tolerance": 1e-07,
+  "failures": [],
+  "max_log_evidence_error": 7.101334631443024e-09,
+  "max_family_weight_error": 1.0416112417033219e-12,
+  "prior_observation_cholesky_failures": [
+    {
+      "identity": [
+        "6100-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -63620.92609261718,
+      "artifact_log_evidence": -63620.92609261717,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 485001.13461775496
+    },
+    {
+      "identity": [
+        "6100-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -63620.92609261718,
+      "artifact_log_evidence": -63620.92609261717,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 485001.13461775496
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -131688.4939460062,
+      "artifact_log_evidence": -131688.4939460062,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 963871.598938173
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -131688.4939460062,
+      "artifact_log_evidence": -131688.4939460062,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 963871.598938173
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -130903.5922411887,
+      "artifact_log_evidence": -130903.59224118867,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 831166.5553127761
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -133432.39835650206,
+      "artifact_log_evidence": -133432.39835650206,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640925.1249934422
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-1"
+      ],
+      "svd_reference": -133432.39835650206,
+      "artifact_log_evidence": -133432.39835650206,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640925.1249934422
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "svd_reference": -133432.39835650206,
+      "artifact_log_evidence": -133432.39835650206,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640925.1249934422
+    },
+    {
+      "identity": [
+        "6100-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "svd_reference": -133432.39835650206,
+      "artifact_log_evidence": -133432.39835650206,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640925.1249934422
+    },
+    {
+      "identity": [
+        "6101-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -64667.69270793064,
+      "artifact_log_evidence": -64667.692707930626,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 500111.62175660074
+    },
+    {
+      "identity": [
+        "6101-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -64667.69270793064,
+      "artifact_log_evidence": -64667.692707930626,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 500111.62175660074
+    },
+    {
+      "identity": [
+        "6101-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -62182.11643106339,
+      "artifact_log_evidence": -62182.11643106338,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 442621.777352619
+    },
+    {
+      "identity": [
+        "6101-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -64667.69270793064,
+      "artifact_log_evidence": -64667.692707930626,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 500111.62175660074
+    },
+    {
+      "identity": [
+        "6101-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -64667.69270793064,
+      "artifact_log_evidence": -64667.692707930626,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 500111.62175660074
+    },
+    {
+      "identity": [
+        "6101-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -137546.59199225475,
+      "artifact_log_evidence": -137546.59199225475,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 972689.7494367858
+    },
+    {
+      "identity": [
+        "6101-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -137546.59199225475,
+      "artifact_log_evidence": -137546.59199225475,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 972689.7494367858
+    },
+    {
+      "identity": [
+        "6101-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -137142.52293690995,
+      "artifact_log_evidence": -137142.52293690995,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 843718.8062329369
+    },
+    {
+      "identity": [
+        "6101-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -138964.07172508378,
+      "artifact_log_evidence": -138964.07172508378,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640298.441885673
+    },
+    {
+      "identity": [
+        "6101-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-40"
+      ],
+      "svd_reference": -136002.80126369288,
+      "artifact_log_evidence": -136002.80126369288,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 684550.5177029113
+    },
+    {
+      "identity": [
+        "6102-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -64582.14594477634,
+      "artifact_log_evidence": -64582.14594477633,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 238533.60981979995
+    },
+    {
+      "identity": [
+        "6102-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -64582.14594477634,
+      "artifact_log_evidence": -64582.14594477633,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 238533.60981979995
+    },
+    {
+      "identity": [
+        "6102-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -102527.32603421411,
+      "artifact_log_evidence": -102527.3260342141,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 468268.12479363295
+    },
+    {
+      "identity": [
+        "6102-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -102527.32603421411,
+      "artifact_log_evidence": -102527.3260342141,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 468268.12479363295
+    },
+    {
+      "identity": [
+        "6102-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -99731.85633437826,
+      "artifact_log_evidence": -99731.85633437824,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 416090.78266810765
+    },
+    {
+      "identity": [
+        "6102-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-8"
+      ],
+      "svd_reference": -106949.58705708003,
+      "artifact_log_evidence": -106949.58705708,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 356024.4237236469
+    },
+    {
+      "identity": [
+        "6102-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -102527.32603421411,
+      "artifact_log_evidence": -102527.3260342141,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 468268.12479363295
+    },
+    {
+      "identity": [
+        "6102-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -102527.32603421411,
+      "artifact_log_evidence": -102527.3260342141,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 468268.12479363295
+    },
+    {
+      "identity": [
+        "6102-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -178692.0865951717,
+      "artifact_log_evidence": -178692.08659517174,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 872011.6985642309
+    },
+    {
+      "identity": [
+        "6102-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -178692.0865951717,
+      "artifact_log_evidence": -178692.08659517174,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 872011.6985642309
+    },
+    {
+      "identity": [
+        "6102-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -178415.50660534197,
+      "artifact_log_evidence": -178415.50660534194,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 738189.0050160089
+    },
+    {
+      "identity": [
+        "6102-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -178742.96456746492,
+      "artifact_log_evidence": -178742.96456746495,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 640088.9499813918
+    },
+    {
+      "identity": [
+        "6102-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "svd_reference": -178742.96456746492,
+      "artifact_log_evidence": -178742.96456746495,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 640088.9499813918
+    },
+    {
+      "identity": [
+        "6102-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "svd_reference": -178742.96456746492,
+      "artifact_log_evidence": -178742.96456746495,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 640088.9499813918
+    },
+    {
+      "identity": [
+        "6103-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -140349.0800646599,
+      "artifact_log_evidence": -140349.0800646599,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 957732.4014121015
+    },
+    {
+      "identity": [
+        "6103-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -140349.0800646599,
+      "artifact_log_evidence": -140349.0800646599,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 957732.4014121015
+    },
+    {
+      "identity": [
+        "6103-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -135207.47078044046,
+      "artifact_log_evidence": -135207.4707804405,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 820241.1396887896
+    },
+    {
+      "identity": [
+        "6103-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-92"
+      ],
+      "svd_reference": -133149.7748455978,
+      "artifact_log_evidence": -133149.77484560126,
+      "artifact_vs_svd_error": 3.4633558243513107e-09,
+      "observation_covariance_condition": 752978.4827839694
+    },
+    {
+      "identity": [
+        "6103-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -140349.0800646599,
+      "artifact_log_evidence": -140349.0800646599,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 957732.4014121015
+    },
+    {
+      "identity": [
+        "6103-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -140349.0800646599,
+      "artifact_log_evidence": -140349.0800646599,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 957732.4014121015
+    },
+    {
+      "identity": [
+        "6104-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -137589.6415049742,
+      "artifact_log_evidence": -137589.64150497422,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 937753.7874227518
+    },
+    {
+      "identity": [
+        "6104-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -137589.6415049742,
+      "artifact_log_evidence": -137589.64150497422,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 937753.7874227518
+    },
+    {
+      "identity": [
+        "6104-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -137178.51847951784,
+      "artifact_log_evidence": -137178.51847951784,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640379.719858269
+    },
+    {
+      "identity": [
+        "6105-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -67955.80888751961,
+      "artifact_log_evidence": -67955.8088875196,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 492418.13474680064
+    },
+    {
+      "identity": [
+        "6105-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -67955.80888751961,
+      "artifact_log_evidence": -67955.8088875196,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 492418.13474680064
+    },
+    {
+      "identity": [
+        "6105-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-85"
+      ],
+      "svd_reference": -65371.10750655784,
+      "artifact_log_evidence": -65371.10750655772,
+      "artifact_vs_svd_error": 1.2369127944111824e-10,
+      "observation_covariance_condition": 430427.4955504214
+    },
+    {
+      "identity": [
+        "6105-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -140304.13305266266,
+      "artifact_log_evidence": -140304.13305266266,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 985286.6323276327
+    },
+    {
+      "identity": [
+        "6105-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -140304.13305266266,
+      "artifact_log_evidence": -140304.13305266266,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 985286.6323276327
+    },
+    {
+      "identity": [
+        "6105-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -138196.70079840007,
+      "artifact_log_evidence": -138196.70079840007,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 853680.2787658396
+    },
+    {
+      "identity": [
+        "6105-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -140508.2445313944,
+      "artifact_log_evidence": -140508.2445313944,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640344.5195341394
+    },
+    {
+      "identity": [
+        "6105-random-0.02-64",
+        "G_program",
+        0,
+        "piecewise-line"
+      ],
+      "svd_reference": -137608.74316227195,
+      "artifact_log_evidence": -137608.743162272,
+      "artifact_vs_svd_error": 5.820766091346741e-11,
+      "observation_covariance_condition": 711922.7378678834
+    },
+    {
+      "identity": [
+        "6105-random-0.02-64",
+        "H_residual",
+        0,
+        "piecewise-line"
+      ],
+      "svd_reference": -137608.74316227195,
+      "artifact_log_evidence": -137608.743162272,
+      "artifact_vs_svd_error": 5.820766091346741e-11,
+      "observation_covariance_condition": 711922.7378678834
+    },
+    {
+      "identity": [
+        "6106-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -168341.38095725444,
+      "artifact_log_evidence": -168341.38095725447,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 971334.917350327
+    },
+    {
+      "identity": [
+        "6106-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -168341.38095725444,
+      "artifact_log_evidence": -168341.38095725447,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 971334.917350327
+    },
+    {
+      "identity": [
+        "6106-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -165136.48316685355,
+      "artifact_log_evidence": -165136.4831668536,
+      "artifact_vs_svd_error": 5.820766091346741e-11,
+      "observation_covariance_condition": 834347.4697395851
+    },
+    {
+      "identity": [
+        "6106-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -167833.4257880553,
+      "artifact_log_evidence": -167833.42578805532,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 644641.8982825126
+    },
+    {
+      "identity": [
+        "6106-random-0.02-64",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -163490.8707283359,
+      "artifact_log_evidence": -163490.87072833598,
+      "artifact_vs_svd_error": 8.731149137020111e-11,
+      "observation_covariance_condition": 843028.7776174716
+    },
+    {
+      "identity": [
+        "6106-random-0.02-64",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -163490.8707283359,
+      "artifact_log_evidence": -163490.87072833598,
+      "artifact_vs_svd_error": 8.731149137020111e-11,
+      "observation_covariance_condition": 843028.7776174716
+    },
+    {
+      "identity": [
+        "6107-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -66462.22673184669,
+      "artifact_log_evidence": -66462.22673184669,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 513297.216714919
+    },
+    {
+      "identity": [
+        "6107-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -66462.22673184669,
+      "artifact_log_evidence": -66462.22673184669,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 513297.216714919
+    },
+    {
+      "identity": [
+        "6107-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -66134.1270291947,
+      "artifact_log_evidence": -66134.1270291947,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 449013.97804551007
+    },
+    {
+      "identity": [
+        "6107-random-0.02-32",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -66824.74965675718,
+      "artifact_log_evidence": -66824.7496567572,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 323568.5582844215
+    },
+    {
+      "identity": [
+        "6107-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -66462.22673184669,
+      "artifact_log_evidence": -66462.22673184669,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 513297.216714919
+    },
+    {
+      "identity": [
+        "6107-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -66462.22673184669,
+      "artifact_log_evidence": -66462.22673184669,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 513297.216714919
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -143250.75628247566,
+      "artifact_log_evidence": -143250.7562824757,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 922572.2599822636
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -143250.75628247566,
+      "artifact_log_evidence": -143250.7562824757,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 922572.2599822636
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -142446.83618823116,
+      "artifact_log_evidence": -142446.8361882312,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 793031.3719930045
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -143554.36620508027,
+      "artifact_log_evidence": -143554.36620508027,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640636.5598644811
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-42"
+      ],
+      "svd_reference": -141049.64969486676,
+      "artifact_log_evidence": -141049.64969486668,
+      "artifact_vs_svd_error": 8.731149137020111e-11,
+      "observation_covariance_condition": 654073.728973163
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "G_program",
+        0,
+        "linear-radius-orbit"
+      ],
+      "svd_reference": -141505.52513370474,
+      "artifact_log_evidence": -141505.52513370474,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 944969.8539904116
+    },
+    {
+      "identity": [
+        "6107-random-0.02-64",
+        "H_residual",
+        0,
+        "linear-radius-orbit"
+      ],
+      "svd_reference": -141505.52513370474,
+      "artifact_log_evidence": -141505.52513370474,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 944969.8539904116
+    },
+    {
+      "identity": [
+        "6108-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -51789.40739078353,
+      "artifact_log_evidence": -51789.40739078354,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 212836.0168808363
+    },
+    {
+      "identity": [
+        "6108-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -51789.40739078353,
+      "artifact_log_evidence": -51789.40739078354,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 212836.0168808363
+    },
+    {
+      "identity": [
+        "6108-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -78631.80025472153,
+      "artifact_log_evidence": -78631.80025472153,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 438382.3034080968
+    },
+    {
+      "identity": [
+        "6108-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -78631.80025472153,
+      "artifact_log_evidence": -78631.80025472153,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 438382.3034080968
+    },
+    {
+      "identity": [
+        "6108-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -77852.0855111986,
+      "artifact_log_evidence": -77852.08551119862,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 373696.4584054353
+    },
+    {
+      "identity": [
+        "6108-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -157840.98225449809,
+      "artifact_log_evidence": -157840.9822544981,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 917777.3738209413
+    },
+    {
+      "identity": [
+        "6108-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -157840.98225449809,
+      "artifact_log_evidence": -157840.9822544981,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 917777.3738209413
+    },
+    {
+      "identity": [
+        "6108-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -155288.67122416353,
+      "artifact_log_evidence": -155288.67122416355,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 785221.3571372454
+    },
+    {
+      "identity": [
+        "6108-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -158343.65835192782,
+      "artifact_log_evidence": -158343.65835192782,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 641677.9424534449
+    },
+    {
+      "identity": [
+        "6108-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "svd_reference": -158343.65835192782,
+      "artifact_log_evidence": -158343.65835192782,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 641677.9424534449
+    },
+    {
+      "identity": [
+        "6108-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "svd_reference": -158343.65835192782,
+      "artifact_log_evidence": -158343.65835192782,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 641677.9424534449
+    },
+    {
+      "identity": [
+        "6109-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -53630.87913129459,
+      "artifact_log_evidence": -53630.879131294605,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 262224.090477395
+    },
+    {
+      "identity": [
+        "6109-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -53630.87913129459,
+      "artifact_log_evidence": -53630.879131294605,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 262224.090477395
+    },
+    {
+      "identity": [
+        "6109-random-0.02-16",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -53630.87913129459,
+      "artifact_log_evidence": -53630.879131294605,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 262224.090477395
+    },
+    {
+      "identity": [
+        "6109-random-0.02-16",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -53630.87913129459,
+      "artifact_log_evidence": -53630.879131294605,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 262224.090477395
+    },
+    {
+      "identity": [
+        "6109-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -100153.30349602824,
+      "artifact_log_evidence": -100153.30349602827,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 503233.5474603775
+    },
+    {
+      "identity": [
+        "6109-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -100153.30349602824,
+      "artifact_log_evidence": -100153.30349602827,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 503233.5474603775
+    },
+    {
+      "identity": [
+        "6109-random-0.02-32",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -95265.35371859398,
+      "artifact_log_evidence": -95265.35371859401,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 321971.357620039
+    },
+    {
+      "identity": [
+        "6109-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -100153.30349602824,
+      "artifact_log_evidence": -100153.30349602827,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 503233.5474603775
+    },
+    {
+      "identity": [
+        "6109-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -100153.30349602824,
+      "artifact_log_evidence": -100153.30349602827,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 503233.5474603775
+    },
+    {
+      "identity": [
+        "6109-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167522.50089268584,
+      "artifact_log_evidence": -167522.5008926858,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 994312.1791008986
+    },
+    {
+      "identity": [
+        "6109-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167522.50089268584,
+      "artifact_log_evidence": -167522.5008926858,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 994312.1791008986
+    },
+    {
+      "identity": [
+        "6109-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -156262.67560783954,
+      "artifact_log_evidence": -156262.67560783948,
+      "artifact_vs_svd_error": 5.820766091346741e-11,
+      "observation_covariance_condition": 869012.9874090923
+    },
+    {
+      "identity": [
+        "6109-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -162120.88997488885,
+      "artifact_log_evidence": -162120.88997488885,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 641129.3266340854
+    },
+    {
+      "identity": [
+        "6109-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167522.50089268584,
+      "artifact_log_evidence": -167522.5008926858,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 994312.1791008986
+    },
+    {
+      "identity": [
+        "6109-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167522.50089268584,
+      "artifact_log_evidence": -167522.5008926858,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 994312.1791008986
+    },
+    {
+      "identity": [
+        "6110-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -32063.858653882355,
+      "artifact_log_evidence": -32063.858653882355,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 265254.01031414524
+    },
+    {
+      "identity": [
+        "6110-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -32063.858653882355,
+      "artifact_log_evidence": -32063.858653882355,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 265254.01031414524
+    },
+    {
+      "identity": [
+        "6110-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -96439.91123309631,
+      "artifact_log_evidence": -96439.91123309633,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 510616.12302786653
+    },
+    {
+      "identity": [
+        "6110-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -96439.91123309631,
+      "artifact_log_evidence": -96439.91123309633,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 510616.12302786653
+    },
+    {
+      "identity": [
+        "6110-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -95005.34879211003,
+      "artifact_log_evidence": -95005.34879211003,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 449564.73100743315
+    },
+    {
+      "identity": [
+        "6110-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-114"
+      ],
+      "svd_reference": -94119.21194150939,
+      "artifact_log_evidence": -94119.21194150939,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 350265.42525790073
+    },
+    {
+      "identity": [
+        "6110-random-0.02-32",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -93054.52598009518,
+      "artifact_log_evidence": -93054.52598009519,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 465887.6503356216
+    },
+    {
+      "identity": [
+        "6110-random-0.02-32",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -93054.52598009518,
+      "artifact_log_evidence": -93054.52598009519,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 465887.6503356216
+    },
+    {
+      "identity": [
+        "6110-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -180541.79080537843,
+      "artifact_log_evidence": -180541.79080537843,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 994348.9970522226
+    },
+    {
+      "identity": [
+        "6110-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -180541.79080537843,
+      "artifact_log_evidence": -180541.79080537843,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 994348.9970522226
+    },
+    {
+      "identity": [
+        "6110-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -179377.04538930522,
+      "artifact_log_evidence": -179377.04538930522,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 868157.0238261122
+    },
+    {
+      "identity": [
+        "6110-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -179950.4655380697,
+      "artifact_log_evidence": -179950.46553806966,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 640392.0307652821
+    },
+    {
+      "identity": [
+        "6110-random-0.02-64",
+        "G_program",
+        0,
+        "ellipse"
+      ],
+      "svd_reference": -179377.04538930522,
+      "artifact_log_evidence": -179377.04538930522,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 868157.0238261122
+    },
+    {
+      "identity": [
+        "6110-random-0.02-64",
+        "H_residual",
+        0,
+        "ellipse"
+      ],
+      "svd_reference": -179377.04538930522,
+      "artifact_log_evidence": -179377.04538930522,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 868157.0238261122
+    },
+    {
+      "identity": [
+        "6111-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -76709.90702590215,
+      "artifact_log_evidence": -76709.90702590215,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 506633.91139801487
+    },
+    {
+      "identity": [
+        "6111-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -76709.90702590215,
+      "artifact_log_evidence": -76709.90702590215,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 506633.91139801487
+    },
+    {
+      "identity": [
+        "6111-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -76667.29620616652,
+      "artifact_log_evidence": -76667.29620616652,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 447416.0220352758
+    },
+    {
+      "identity": [
+        "6111-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-21"
+      ],
+      "svd_reference": -78108.03545409719,
+      "artifact_log_evidence": -78108.03545409719,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 340098.2621299361
+    },
+    {
+      "identity": [
+        "6111-random-0.02-32",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -73372.36300822125,
+      "artifact_log_evidence": -73372.36300822126,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 482408.848050337
+    },
+    {
+      "identity": [
+        "6111-random-0.02-32",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -73372.36300822125,
+      "artifact_log_evidence": -73372.36300822126,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 482408.848050337
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167881.9290417639,
+      "artifact_log_evidence": -167881.92904176388,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 1025941.1599909524
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167881.9290417639,
+      "artifact_log_evidence": -167881.92904176388,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 1025941.1599909524
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -166859.78387070302,
+      "artifact_log_evidence": -166859.783870703,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 900565.6026542239
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -166482.01633011005,
+      "artifact_log_evidence": -166482.01633011008,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 641227.3055930005
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-2"
+      ],
+      "svd_reference": -172504.423660511,
+      "artifact_log_evidence": -172504.42366051103,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 646033.3744120337
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167881.9290417639,
+      "artifact_log_evidence": -167881.92904176388,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 1025941.1599909524
+    },
+    {
+      "identity": [
+        "6111-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -167881.9290417639,
+      "artifact_log_evidence": -167881.92904176388,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 1025941.1599909524
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -121486.43046924274,
+      "artifact_log_evidence": -121486.43046924275,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 991557.62956994
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -121486.43046924274,
+      "artifact_log_evidence": -121486.43046924275,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 991557.62956994
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -120087.94977758126,
+      "artifact_log_evidence": -120087.94977758128,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 853034.5193394851
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -123766.09991726691,
+      "artifact_log_evidence": -123766.0999172669,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 641803.7621989446
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-27"
+      ],
+      "svd_reference": -121161.59242985024,
+      "artifact_log_evidence": -121161.59242985024,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640791.5811928129
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -116351.65870190867,
+      "artifact_log_evidence": -116351.65870190867,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 855667.7535517167
+    },
+    {
+      "identity": [
+        "6112-random-0.02-64",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "svd_reference": -116351.65870190867,
+      "artifact_log_evidence": -116351.65870190867,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 855667.7535517167
+    },
+    {
+      "identity": [
+        "6113-random-0.02-8",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -30430.579003405106,
+      "artifact_log_evidence": -30430.579003405095,
+      "artifact_vs_svd_error": 1.0913936421275139e-11,
+      "observation_covariance_condition": 149581.8667727822
+    },
+    {
+      "identity": [
+        "6113-random-0.02-8",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -30430.579003405106,
+      "artifact_log_evidence": -30430.579003405095,
+      "artifact_vs_svd_error": 1.0913936421275139e-11,
+      "observation_covariance_condition": 149581.8667727822
+    },
+    {
+      "identity": [
+        "6113-random-0.02-8",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -30430.579003405106,
+      "artifact_log_evidence": -30430.579003405095,
+      "artifact_vs_svd_error": 1.0913936421275139e-11,
+      "observation_covariance_condition": 149581.8667727822
+    },
+    {
+      "identity": [
+        "6113-random-0.02-8",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -30430.579003405106,
+      "artifact_log_evidence": -30430.579003405095,
+      "artifact_vs_svd_error": 1.0913936421275139e-11,
+      "observation_covariance_condition": 149581.8667727822
+    },
+    {
+      "identity": [
+        "6113-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -52874.72026076281,
+      "artifact_log_evidence": -52874.72026076282,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 250601.30785867773
+    },
+    {
+      "identity": [
+        "6113-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -52874.72026076281,
+      "artifact_log_evidence": -52874.72026076282,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 250601.30785867773
+    },
+    {
+      "identity": [
+        "6113-random-0.02-16",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -52874.72026076281,
+      "artifact_log_evidence": -52874.72026076282,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 250601.30785867773
+    },
+    {
+      "identity": [
+        "6113-random-0.02-16",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -52874.72026076281,
+      "artifact_log_evidence": -52874.72026076282,
+      "artifact_vs_svd_error": 7.275957614183426e-12,
+      "observation_covariance_condition": 250601.30785867773
+    },
+    {
+      "identity": [
+        "6113-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -105258.3504525908,
+      "artifact_log_evidence": -105258.35045259082,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 476429.22014867596
+    },
+    {
+      "identity": [
+        "6113-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -105258.3504525908,
+      "artifact_log_evidence": -105258.35045259082,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 476429.22014867596
+    },
+    {
+      "identity": [
+        "6113-random-0.02-32",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -108555.00404946732,
+      "artifact_log_evidence": -108555.00404946732,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 321390.20942867943
+    },
+    {
+      "identity": [
+        "6113-random-0.02-32",
+        "G_program",
+        0,
+        "line"
+      ],
+      "svd_reference": -108555.00404946732,
+      "artifact_log_evidence": -108555.00404946732,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 321390.20942867943
+    },
+    {
+      "identity": [
+        "6113-random-0.02-32",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "svd_reference": -108555.00404946732,
+      "artifact_log_evidence": -108555.00404946732,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 321390.20942867943
+    },
+    {
+      "identity": [
+        "6113-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -189087.2134715165,
+      "artifact_log_evidence": -189087.21347151653,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 990604.0403485218
+    },
+    {
+      "identity": [
+        "6113-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -189087.2134715165,
+      "artifact_log_evidence": -189087.21347151653,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 990604.0403485218
+    },
+    {
+      "identity": [
+        "6113-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -191436.26639256297,
+      "artifact_log_evidence": -191436.266392563,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 641662.1545942405
+    },
+    {
+      "identity": [
+        "6113-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-92"
+      ],
+      "svd_reference": -177720.37441884348,
+      "artifact_log_evidence": -177720.37441883638,
+      "artifact_vs_svd_error": 7.101334631443024e-09,
+      "observation_covariance_condition": 701343.8448957127
+    },
+    {
+      "identity": [
+        "6113-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "svd_reference": -191436.26639256297,
+      "artifact_log_evidence": -191436.266392563,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 641662.1545942405
+    },
+    {
+      "identity": [
+        "6113-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "svd_reference": -191436.26639256297,
+      "artifact_log_evidence": -191436.266392563,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 641662.1545942405
+    },
+    {
+      "identity": [
+        "6114-random-0.02-16",
+        "E_symbolic",
+        0,
+        "expression-123"
+      ],
+      "svd_reference": -22278.744186550182,
+      "artifact_log_evidence": -22278.744186548567,
+      "artifact_vs_svd_error": 1.6152625903487206e-09,
+      "observation_covariance_condition": 217549.130589421
+    },
+    {
+      "identity": [
+        "6114-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -137691.1199642835,
+      "artifact_log_evidence": -137691.11996428348,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 903283.6575421981
+    },
+    {
+      "identity": [
+        "6114-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -137691.1199642835,
+      "artifact_log_evidence": -137691.11996428348,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 903283.6575421981
+    },
+    {
+      "identity": [
+        "6114-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -137521.70100337584,
+      "artifact_log_evidence": -137521.70100337584,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 776751.3076665895
+    },
+    {
+      "identity": [
+        "6114-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-19"
+      ],
+      "svd_reference": -137564.5131968809,
+      "artifact_log_evidence": -137564.5131968809,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 681463.0104992302
+    },
+    {
+      "identity": [
+        "6115-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -74438.40114849934,
+      "artifact_log_evidence": -74438.40114849932,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 459983.1213197578
+    },
+    {
+      "identity": [
+        "6115-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -74438.40114849934,
+      "artifact_log_evidence": -74438.40114849932,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 459983.1213197578
+    },
+    {
+      "identity": [
+        "6115-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-119"
+      ],
+      "svd_reference": -71487.90925158275,
+      "artifact_log_evidence": -71487.90925158274,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 355096.6113956313
+    },
+    {
+      "identity": [
+        "6115-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -145518.02778593122,
+      "artifact_log_evidence": -145518.02778593122,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 640010.8240244229
+    },
+    {
+      "identity": [
+        "6115-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-29"
+      ],
+      "svd_reference": -139493.73541202684,
+      "artifact_log_evidence": -139493.73541202678,
+      "artifact_vs_svd_error": 5.820766091346741e-11,
+      "observation_covariance_condition": 696131.2147070362
+    },
+    {
+      "identity": [
+        "6116-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -86869.17394832573,
+      "artifact_log_evidence": -86869.17394832574,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 478179.04009876243
+    },
+    {
+      "identity": [
+        "6116-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -86869.17394832573,
+      "artifact_log_evidence": -86869.17394832574,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 478179.04009876243
+    },
+    {
+      "identity": [
+        "6116-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -86469.24969794777,
+      "artifact_log_evidence": -86469.24969794779,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 407020.5606343284
+    },
+    {
+      "identity": [
+        "6116-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-19"
+      ],
+      "svd_reference": -86262.61206726913,
+      "artifact_log_evidence": -86262.61206726913,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 327258.9064572903
+    },
+    {
+      "identity": [
+        "6116-random-0.02-32",
+        "G_program",
+        0,
+        "ellipse"
+      ],
+      "svd_reference": -86469.24969794777,
+      "artifact_log_evidence": -86469.24969794779,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 407020.5606343284
+    },
+    {
+      "identity": [
+        "6116-random-0.02-32",
+        "H_residual",
+        0,
+        "ellipse"
+      ],
+      "svd_reference": -86469.24969794777,
+      "artifact_log_evidence": -86469.24969794779,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 407020.5606343284
+    },
+    {
+      "identity": [
+        "6116-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -190726.12662293555,
+      "artifact_log_evidence": -190726.12662293552,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 969009.9123473393
+    },
+    {
+      "identity": [
+        "6116-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -190726.12662293555,
+      "artifact_log_evidence": -190726.12662293552,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 969009.9123473393
+    },
+    {
+      "identity": [
+        "6116-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -189863.655400054,
+      "artifact_log_evidence": -189863.65540005398,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 829860.5710120174
+    },
+    {
+      "identity": [
+        "6116-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-9"
+      ],
+      "svd_reference": -188923.25991626093,
+      "artifact_log_evidence": -188923.2599162609,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 640063.8607855081
+    },
+    {
+      "identity": [
+        "6117-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -79295.81319415865,
+      "artifact_log_evidence": -79295.81319415866,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 505273.0748020767
+    },
+    {
+      "identity": [
+        "6117-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -79295.81319415865,
+      "artifact_log_evidence": -79295.81319415866,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 505273.0748020767
+    },
+    {
+      "identity": [
+        "6117-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -76770.95721082127,
+      "artifact_log_evidence": -76770.95721082129,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 443261.26000539016
+    },
+    {
+      "identity": [
+        "6117-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -79295.81319415865,
+      "artifact_log_evidence": -79295.81319415866,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 505273.0748020767
+    },
+    {
+      "identity": [
+        "6117-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -79295.81319415865,
+      "artifact_log_evidence": -79295.81319415866,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 505273.0748020767
+    },
+    {
+      "identity": [
+        "6117-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -180264.12272457112,
+      "artifact_log_evidence": -180264.12272457112,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 954035.4856063683
+    },
+    {
+      "identity": [
+        "6117-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -180264.12272457112,
+      "artifact_log_evidence": -180264.12272457112,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 954035.4856063683
+    },
+    {
+      "identity": [
+        "6117-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -180033.4022127583,
+      "artifact_log_evidence": -180033.4022127583,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 643225.0275030169
+    },
+    {
+      "identity": [
+        "6117-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-6"
+      ],
+      "svd_reference": -179746.5747332571,
+      "artifact_log_evidence": -179746.5747332571,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 645239.1497815929
+    },
+    {
+      "identity": [
+        "6117-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "svd_reference": -180264.12272457112,
+      "artifact_log_evidence": -180264.12272457112,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 954035.4856063683
+    },
+    {
+      "identity": [
+        "6117-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "svd_reference": -180264.12272457112,
+      "artifact_log_evidence": -180264.12272457112,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 954035.4856063683
+    },
+    {
+      "identity": [
+        "6118-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -77284.32798275488,
+      "artifact_log_evidence": -77284.32798275488,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 473124.4574677273
+    },
+    {
+      "identity": [
+        "6118-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -77284.32798275488,
+      "artifact_log_evidence": -77284.32798275488,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 473124.4574677273
+    },
+    {
+      "identity": [
+        "6118-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -74784.63804570929,
+      "artifact_log_evidence": -74784.63804570929,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 406325.80629049015
+    },
+    {
+      "identity": [
+        "6118-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-4"
+      ],
+      "svd_reference": -76233.0033189317,
+      "artifact_log_evidence": -76233.00331893172,
+      "artifact_vs_svd_error": 1.4551915228366852e-11,
+      "observation_covariance_condition": 323957.91980968014
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -149275.04724968027,
+      "artifact_log_evidence": -149275.04724968027,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 947795.6524249526
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -149275.04724968027,
+      "artifact_log_evidence": -149275.04724968027,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 947795.6524249526
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -143468.50798159887,
+      "artifact_log_evidence": -143468.50798159893,
+      "artifact_vs_svd_error": 5.820766091346741e-11,
+      "observation_covariance_condition": 811775.6605735965
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "svd_reference": -146412.52969377846,
+      "artifact_log_evidence": -146412.52969377846,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 642254.0151346504
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-4"
+      ],
+      "svd_reference": -146506.99472328313,
+      "artifact_log_evidence": -146506.99472328316,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 657784.4101935212
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "svd_reference": -146412.52969377846,
+      "artifact_log_evidence": -146412.52969377846,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 642254.0151346504
+    },
+    {
+      "identity": [
+        "6118-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "svd_reference": -146412.52969377846,
+      "artifact_log_evidence": -146412.52969377846,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 642254.0151346504
+    },
+    {
+      "identity": [
+        "6119-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -65614.52703555091,
+      "artifact_log_evidence": -65614.52703555091,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 475832.8320447201
+    },
+    {
+      "identity": [
+        "6119-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -65614.52703555091,
+      "artifact_log_evidence": -65614.52703555091,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 475832.8320447201
+    },
+    {
+      "identity": [
+        "6119-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "svd_reference": -141377.27377670724,
+      "artifact_log_evidence": -141377.27377670724,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 951821.1531924127
+    },
+    {
+      "identity": [
+        "6119-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "svd_reference": -141377.27377670724,
+      "artifact_log_evidence": -141377.27377670724,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 951821.1531924127
+    },
+    {
+      "identity": [
+        "6119-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "svd_reference": -139936.5681461359,
+      "artifact_log_evidence": -139936.5681461359,
+      "artifact_vs_svd_error": 0.0,
+      "observation_covariance_condition": 815973.8807844149
+    },
+    {
+      "identity": [
+        "6119-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-127"
+      ],
+      "svd_reference": -141471.81401257485,
+      "artifact_log_evidence": -141471.81401257482,
+      "artifact_vs_svd_error": 2.9103830456733704e-11,
+      "observation_covariance_condition": 686002.3704042328
+    }
+  ],
+  "previous_diagnostic_status_preserved": "FAIL",
+  "reviewer_source_sha256": "3018c16fde145662313d663ff994177af7a5976b11fbe96e516cd2672fecc408",
+  "max_log_evidence_identity": [
+    "6113-random-0.02-64",
+    "E_symbolic",
+    0,
+    "expression-92"
+  ],
+  "cpu_seconds": 2.296875,
+  "wall_seconds": 2.3115050999999767,
+  "status": "PASS",
+  "interpretation": "This follows up, rather than erases, the Cholesky diagnostic failure at the same1e-7 evidence threshold. The SVD formula avoids a dense ill-conditioned covariance factorization and cancellation in inverse-based quadratics. Shared frozen design matrices remain an explicit limitation of the independent reference."
+}

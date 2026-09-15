@@ -1,0 +1,610 @@
+{
+  "schema": "sera-continuation-release-v1",
+  "date": "2026-09-15",
+  "base_commit": "8dd87f9a02a3752c041f05a101fd250e73e82cd7",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 63,
+      "sha256": "1cd299d1d4b474a0d55dde48b1ded8074e956ad921c5469b3da3e25846bafe32"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 766,
+      "sha256": "b968b64246eecb11c8bc1e37199f2dfbf9fd3b9fa85e7fdc54383ea85dff7f5a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 323,
+      "sha256": "249b8a67e69c8761a44cad02fadcb550ffbb29807562b11cda63059813e5eb6e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10166,
+      "sha256": "13840df88782d532322dd6b3f0adc20f77e3f165f7043103d28c40947a4a655b"
+    },
+    {
+      "path": "experiments/generative_memory/__init__.py",
+      "bytes": 83,
+      "sha256": "a6e48552202287c585dac253bd08ae649fb59a8ea4dcc702ddd625cdf90a6385"
+    },
+    {
+      "path": "experiments/generative_memory/acquisition.py",
+      "bytes": 55441,
+      "sha256": "c97611781be40b297ba96b510ca5fc2b861b16c511417bc581cb93f04b1a3b56"
+    },
+    {
+      "path": "experiments/generative_memory/acquisition_audit.py",
+      "bytes": 7617,
+      "sha256": "b99c91edf700e5fbd6212097d542f2667b7a7dc0076071721750043c49153c83"
+    },
+    {
+      "path": "experiments/generative_memory/analyze.py",
+      "bytes": 10190,
+      "sha256": "10d8a07a850c4a6b1c91ba59e9087d8d4d5a775d7c08407f4fc618c8e652ac99"
+    },
+    {
+      "path": "experiments/generative_memory/audit.py",
+      "bytes": 8711,
+      "sha256": "c1955e084a632bca5c2c6ca70edb5de0502c8f3a38a7177b08a683612e2b72f7"
+    },
+    {
+      "path": "experiments/generative_memory/core.py",
+      "bytes": 14821,
+      "sha256": "7b927dc3ebff4777ac40974627812905c1fd59187cd6d78a0f49dbc2e99b8e9b"
+    },
+    {
+      "path": "experiments/generative_memory/data.py",
+      "bytes": 1892,
+      "sha256": "1013180ff168634e54dcf2d0903974a80e9e61897408a29ef64010c56e73d292"
+    },
+    {
+      "path": "experiments/generative_memory/integration.py",
+      "bytes": 11697,
+      "sha256": "6d84974ccd1a9d5c3aeb8bb370d3662e385771704ff899aed8d09e27c893859e"
+    },
+    {
+      "path": "experiments/generative_memory/refit.py",
+      "bytes": 4220,
+      "sha256": "be3d5dfef79414139c04bfd771c1d669ad773eac3c308ab32d9dc720025ffdf1"
+    },
+    {
+      "path": "experiments/generative_memory/study.py",
+      "bytes": 9921,
+      "sha256": "32be051d87f5f0bad70909eb361c8cbef9e575148444b219ce09dc303b2b1b27"
+    },
+    {
+      "path": "experiments/parameter_cloud/audit.py",
+      "bytes": 8789,
+      "sha256": "aa0a614469d6f953daffa4f2f21053ede2a59824e48f19ab3a412ecc9caefc33"
+    },
+    {
+      "path": "research-continuation/01_audit/GG-ACT-001-independent.json",
+      "bytes": 1132,
+      "sha256": "8ded81265333e7018a90e19c4658fce2b0647a30b0d13703593591843fb38d61"
+    },
+    {
+      "path": "research-continuation/01_audit/audit_bundle2_parity.py",
+      "bytes": 13134,
+      "sha256": "0105443402144f14d9a3f874879863eb1fae275c1b9f338e0199992a30999b03"
+    },
+    {
+      "path": "research-continuation/01_audit/bundle1-audit.md",
+      "bytes": 11341,
+      "sha256": "cc7f60966f6403465a0bda6eebbefe32e6a53a8ada6227e98dd37145a3abdedc"
+    },
+    {
+      "path": "research-continuation/01_audit/bundle1-evidence.json",
+      "bytes": 412773,
+      "sha256": "80c54d7769d3f98680a3e5d01692b1f72c5b2f56a20ec3f0ae87d8a3299583f1"
+    },
+    {
+      "path": "research-continuation/01_audit/bundle2-audit.md",
+      "bytes": 11022,
+      "sha256": "cad928bb9967ff719d769c33be35e0fb575b524396be630fc489d9ed09bdb69b"
+    },
+    {
+      "path": "research-continuation/01_audit/bundle2-evidence.json",
+      "bytes": 182250,
+      "sha256": "b905896d6fe9549500ea72075a6b1e9b07416a3685758e78d355b62e1928361b"
+    },
+    {
+      "path": "research-continuation/01_audit/diagnose_bundle2_parity.py",
+      "bytes": 1983,
+      "sha256": "fe081d4532576d5598259789bca285e7fdabc14ad91fc38183b2299bd3248c14"
+    },
+    {
+      "path": "research-continuation/01_audit/diagnose_generative_memory_evidence.py",
+      "bytes": 4623,
+      "sha256": "3018c16fde145662313d663ff994177af7a5976b11fbe96e516cd2672fecc408"
+    },
+    {
+      "path": "research-continuation/01_audit/final-architecture-comparison.md",
+      "bytes": 7875,
+      "sha256": "ad336e546101541fe127fe8222b52f22a8a10f51fc0a76216b3f53c6c46679d4"
+    },
+    {
+      "path": "research-continuation/01_audit/finalize_bundle2_evidence.py",
+      "bytes": 10857,
+      "sha256": "691dec801d06699b2a73fb33a4f888af555c5a937519df196a814deec291eaa6"
+    },
+    {
+      "path": "research-continuation/01_audit/generative-memory-code-review.md",
+      "bytes": 11479,
+      "sha256": "fe04e631b5c4d724d7b5e485b232a1d177dc7630e53af13cdd7f2228eda22ea3"
+    },
+    {
+      "path": "research-continuation/01_audit/generative-memory-math-evidence.json",
+      "bytes": 43628,
+      "sha256": "1b2327fdbcddc6b07da209467937f1a149e3f47304b0815eef34d59ef7a785e8"
+    },
+    {
+      "path": "research-continuation/01_audit/generative-memory-review-evidence.json",
+      "bytes": 6494,
+      "sha256": "0bff2c3d218ccb3485f14173911a0115d0c4f9a2bc8888300167b0b07643d427"
+    },
+    {
+      "path": "research-continuation/01_audit/generative-memory-svd-evidence.json",
+      "bytes": 67731,
+      "sha256": "49007d26e7bc9c52fce51eaa0419f7b057980e201b217b9c2e5b0968255aa3e1"
+    },
+    {
+      "path": "research-continuation/01_audit/kavi-source-audit.md",
+      "bytes": 15585,
+      "sha256": "17a85a5d325cbab6ad0b7971a96a956869f5510c6bf88585a3990320bcc14627"
+    },
+    {
+      "path": "research-continuation/01_audit/kavi-source-evidence.json",
+      "bytes": 49638,
+      "sha256": "a5154c35659fcb57df388e056cb63a3e86d5235d961a988eacca6bfe892224f0"
+    },
+    {
+      "path": "research-continuation/01_audit/pinned-sera-execution.md",
+      "bytes": 1299,
+      "sha256": "ed221bf7034538ff9f661ff370a9bb724b84610766567b8ef16c6e30583e31c9"
+    },
+    {
+      "path": "research-continuation/01_audit/preservation.json",
+      "bytes": 2382,
+      "sha256": "6034fb6665beff80c4d22aa9831a21edc07255952910d827968dfd29f9e61093"
+    },
+    {
+      "path": "research-continuation/01_audit/replay_bundle2_portable.py",
+      "bytes": 2369,
+      "sha256": "a5fac50ba063e9bac0faf8a73b2f889d688b8a832e490daa473fef25d23cee09"
+    },
+    {
+      "path": "research-continuation/01_audit/review_generative_memory.py",
+      "bytes": 5948,
+      "sha256": "e9f34192c247e811588828b275d1d709a22c77b249242943774b47b7aa44c004"
+    },
+    {
+      "path": "research-continuation/01_audit/verify_generative_memory_math.py",
+      "bytes": 5765,
+      "sha256": "e118fd32ced89024722aca5793b8188f8d670d643450714098d6ac032d7b3832"
+    },
+    {
+      "path": "research-continuation/01_audit/world-graph-contracts.md",
+      "bytes": 27422,
+      "sha256": "72d252f698108699d6d7ac6419f74d00699e8f5ee2146af53db8f49bfd3b0a46"
+    },
+    {
+      "path": "research-continuation/02_literature/GEN_GEOMETRY_PROTOCOL_RECOMMENDATION.md",
+      "bytes": 19045,
+      "sha256": "0f5d2983a1652076409caeb93371f07a866ac4bed6b9052d6ce958d582eb89d1"
+    },
+    {
+      "path": "research-continuation/02_literature/LITERATURE_LEDGER.jsonl",
+      "bytes": 70983,
+      "sha256": "234f0f54f81aa3e55d33d24484dacf755fde08935dec4dab7fe64aebb39441e8"
+    },
+    {
+      "path": "research-continuation/02_literature/LITERATURE_REVIEW.md",
+      "bytes": 33032,
+      "sha256": "d16c5c46b41f42e23fa84e791c55f5f40bac8827899986c71e76383e97634839"
+    },
+    {
+      "path": "research-continuation/02_literature/SEARCH_AND_FETCH_AUDIT.json",
+      "bytes": 50303,
+      "sha256": "de5065a0e62da8140d68f91ca53c329a36de20612ad2a2c35bc84f92de77b438"
+    },
+    {
+      "path": "research-continuation/02_literature/SUBTASK_STATE.json",
+      "bytes": 3101,
+      "sha256": "9bb045224d03d3bb4abdb9d8c6b3ada727935f4f7d30f7bf31a77bd62e6c95c6"
+    },
+    {
+      "path": "research-continuation/04_protocols/GG-ACT-001.json",
+      "bytes": 12592,
+      "sha256": "67763ebe19d084fd19d38101960a151fbc88c3fc60f679a0ae2b7ae1f7cdffcb"
+    },
+    {
+      "path": "research-continuation/04_protocols/GG-P0-001.json",
+      "bytes": 914,
+      "sha256": "b52a45756d6d3ffa47e19976ee1e3d348cdedd8de52b1f65997d45bbedf1c704"
+    },
+    {
+      "path": "research-continuation/04_protocols/GG-P0-smoke.json",
+      "bytes": 954,
+      "sha256": "1f84ac4044fe44a13e14f9004622bb62b57cfabb5896fcda5764660dc38eb4a7"
+    },
+    {
+      "path": "research-continuation/04_protocols/SHARED-GG-001.json",
+      "bytes": 7900,
+      "sha256": "2676a569b99404f6a565daf43819939309ce8c0181db0e5f80441633d2022e45"
+    },
+    {
+      "path": "research-continuation/05_experiments/shared-generative-integration.md",
+      "bytes": 7531,
+      "sha256": "c1557455308c1d4a80447612dbcdcd900ffd499b0b3bbe133b6f52d7602f539c"
+    },
+    {
+      "path": "research-continuation/08_analysis/GG-ACT-001/inquiry-results.png",
+      "bytes": 104197,
+      "sha256": "569ad309e20e39e058f05f235d54e60fcfd3cf305d26ad7dcdb147cf3e51919b"
+    },
+    {
+      "path": "research-continuation/08_analysis/GG-ACT-001/inquiry-results.svg",
+      "bytes": 71999,
+      "sha256": "89838ffe7e90890f09437e8be550217649e5d9167464b051c07624e220a68e79"
+    },
+    {
+      "path": "research-continuation/08_analysis/GG-ACT-001/report.md",
+      "bytes": 5721,
+      "sha256": "ff78e53fa55eeb45e5cbbe831121edd764d0aa4d82af7c8255d0682cad76c1c4"
+    },
+    {
+      "path": "research-continuation/08_analysis/GG-P0-001/audit-and-interpretation.md",
+      "bytes": 4360,
+      "sha256": "ad061d23a548693ab82427b981b14d182ac1c3a09099436d80eaf2eaad1db0b7"
+    },
+    {
+      "path": "research-continuation/08_analysis/GG-P0-001/report.md",
+      "bytes": 5600,
+      "sha256": "04b22b8b306caac8a6aa84ad4ed4a2d518d4025ec39c6e024c4ff613a4661f8b"
+    },
+    {
+      "path": "research-continuation/08_analysis/GG-P0-001/summary.json",
+      "bytes": 410800,
+      "sha256": "4c9f9cabea0649fb2697ac1d95d1baea970f0a9daa5a3232dba475b7c816a045"
+    },
+    {
+      "path": "research-continuation/08_analysis/R7/report.md",
+      "bytes": 2485,
+      "sha256": "0ea2a056d8f0dc3550283071f88d03c8f4daa2a3aa0384cb8e004d41f75d6b83"
+    },
+    {
+      "path": "research-continuation/08_analysis/R7/summary.json",
+      "bytes": 36372,
+      "sha256": "d94f923c030f3825020fdaa4f3ba9cb69df24a8a5303d4eb36f4bc76f5a4dbe6"
+    },
+    {
+      "path": "research-continuation/09_failures/launcher-telemetry-v1/README.md",
+      "bytes": 1576,
+      "sha256": "e83bcb1b48723a5380c47bddc1d87d6dba54d76d9e75d2cc6cccc33321fddb87"
+    },
+    {
+      "path": "research-continuation/09_failures/launcher-telemetry-v1/run_bounded.py",
+      "bytes": 5918,
+      "sha256": "f6c16f7397ee642e3a54b4789268b1e7b06f99ca652bf5465554e12f821c8df2"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt1-process.log",
+      "bytes": 6505,
+      "sha256": "06ac03c8b2eae84b908fb2f91cce3981239321c547c8fb38858a9cae187e5866"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt1-pytest.xml",
+      "bytes": 8370,
+      "sha256": "19c2236c75012de886e090b8845514ab80b3b06005aac49b01e9fe6b5b5cf132"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt1-state.json",
+      "bytes": 1131,
+      "sha256": "faf81b2673bd778b4968b0ea2cfdb88a12f63a731aa274499f44d556400193a5"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt2-process.log",
+      "bytes": 3016,
+      "sha256": "f421147e5c7e7df6f85e058470f490eaf14a259a69b89d89fdb7f8d5e520fc1d"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt2-pytest.xml",
+      "bytes": 5374,
+      "sha256": "9a9d4ac4d1e21253da31f9c4ae1b3657d57f8845eccd155fd9269742593ac2d9"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt2-state.json",
+      "bytes": 1132,
+      "sha256": "6981dc3208aaae26770d1b04bf065d5433312424242aa7f25bd95899c3368e6e"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt3-process.log",
+      "bytes": 62,
+      "sha256": "fa57e8231301d2221868a8e18adb2acfd3c549f7d70919b2cdf893e386e86da1"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt3-pytest.xml",
+      "bytes": 230,
+      "sha256": "67787b54be66dd84be548db50ef6181284f444dd23155b96dc4e4767426f3510"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt3-state.json",
+      "bytes": 1191,
+      "sha256": "d5f5004ac11f44339a194909a5793669a95a3e736b019c21e4a757e7cfc4f799"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt4-process.log",
+      "bytes": 81,
+      "sha256": "0f92049207f024dfd3bccb130b6ebe2022b56ca1df294b3d93f4e7edb0c231b1"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt4-pytest.xml",
+      "bytes": 6404,
+      "sha256": "145bdde259d3530b5b902af2362911b57dfc89cad74aee0e98cf2533d467bd31"
+    },
+    {
+      "path": "research-continuation/09_failures/shared-generative/attempt4-state.json",
+      "bytes": 1195,
+      "sha256": "29f8548c8f7e8f456cc7c73df7a84ee3587d01496eab1c7ef5fb26a9ab68774f"
+    },
+    {
+      "path": "research-continuation/09_failures/supervisor-timeout-verification.json",
+      "bytes": 722,
+      "sha256": "17883c8fbf7530d096a01d266f7234fdea3087e41d1c548446196bfb5e59b119"
+    },
+    {
+      "path": "research-continuation/14_release/GG-ACT-001-manifest.json",
+      "bytes": 103291,
+      "sha256": "cf5ffa9a4f1b7aacb96b0287dfc7104e4957aa169b43dfbc0a2c6141300d71db"
+    },
+    {
+      "path": "research-continuation/14_release/GG-ACT-001-replay-resources.json",
+      "bytes": 1109,
+      "sha256": "18431ef4d898595c81d2d0a6e9cf8da783e9015f39b6d8de7e13061fc6827212"
+    },
+    {
+      "path": "research-continuation/14_release/GG-ACT-001-replay.json",
+      "bytes": 682,
+      "sha256": "71a119cbaa698906a94f478ad98256b5c850dea74ec0bb0d4c54c1d43674663d"
+    },
+    {
+      "path": "research-continuation/14_release/GG-ACT-001-resources.json",
+      "bytes": 1200,
+      "sha256": "7065a210bc1cefebb2db269b5b26a5169235ad47bc85cb165919c60ace753605"
+    },
+    {
+      "path": "research-continuation/14_release/GG-ACT-001-summary.json",
+      "bytes": 545158,
+      "sha256": "199052b9bd919b5949ed072cb21a9a0eacb69dd73fc6150b3e5bbd32f20e75b7"
+    },
+    {
+      "path": "research-continuation/14_release/GG-P0-001-refit-resources.json",
+      "bytes": 1180,
+      "sha256": "8b14a83da2eb6b4fcf790333d1d2b776673da8380b072d6d9efb12bca87bcf7e"
+    },
+    {
+      "path": "research-continuation/14_release/GG-P0-001-refit.json",
+      "bytes": 708,
+      "sha256": "0441553f3c160c2c2505294b8a6798789661c6ca29f50b0289be1e9f35f66a47"
+    },
+    {
+      "path": "research-continuation/14_release/GG-P0-001-replay.json",
+      "bytes": 990,
+      "sha256": "8444d3df524aaf455ef926bc5b49aea79ae32bf177e2fa2dc44c65a4ad58f38b"
+    },
+    {
+      "path": "research-continuation/14_release/R7-replay.json",
+      "bytes": 287497,
+      "sha256": "1f01954d1b67acdddb00b7559a69b2aef096cdf06c794650742762a2cb2bdec5"
+    },
+    {
+      "path": "research-continuation/14_release/README.md",
+      "bytes": 4439,
+      "sha256": "ee812a00c2e7cb3c456e46ba797105b1b7edf1e30b1b414b5b31e8d990f4bf91"
+    },
+    {
+      "path": "research-continuation/14_release/SHARED-GG-001-resources.json",
+      "bytes": 1143,
+      "sha256": "49d063782c8b4e4967fcb176ca61ee44b3d49b5c98a0013555d66a97567e98e7"
+    },
+    {
+      "path": "research-continuation/14_release/SHARED-GG-001-result.json",
+      "bytes": 17903,
+      "sha256": "ad59ce5071a6e5985af4ccd9279a615f9c6f4e199c09a0bd85f51d1fb2a905d0"
+    },
+    {
+      "path": "research-continuation/14_release/current-tests-resources.json",
+      "bytes": 1111,
+      "sha256": "766da4864681fa45115c32cc3d73b1ece6ba4a1b57a6de17062ac4a3f92de927"
+    },
+    {
+      "path": "research-continuation/14_release/current-tests.xml",
+      "bytes": 21046,
+      "sha256": "80cce3eb1df4d3a58af230a0800114cc035b0851fde638d83c6d8ac301981ebe"
+    },
+    {
+      "path": "research-continuation/14_release/frozen-protocol-sources.zip",
+      "bytes": 322570,
+      "sha256": "8762748253d256e41a70810c5ebadc1b3ac4d092e418f8d4e3d7ef2bd4f1c1c5"
+    },
+    {
+      "path": "research-continuation/14_release/frozen-source-members.json",
+      "bytes": 16382,
+      "sha256": "e9be78f58beac97e21264c47507fe4c40980d1f042094286b64e376890ccd9be"
+    },
+    {
+      "path": "research-continuation/14_release/pinned-SERA-plumbing-resources.json",
+      "bytes": 1317,
+      "sha256": "610faaf218d102de36a6b619fb91f81f9f2d0dfd39be17ce6a49ee9f87f2f5fc"
+    },
+    {
+      "path": "research-continuation/14_release/pinned-SERA-tests.xml",
+      "bytes": 9625,
+      "sha256": "1e3d8cd228b54dc47df94abce8b33d4384f775d5e5ab950e5c918f3643e22334"
+    },
+    {
+      "path": "research-continuation/ARCHITECTURE_REGISTRY.jsonl",
+      "bytes": 1256,
+      "sha256": "4220b58a9fd441d19fd2718f9af283ef48f3c74a974cb6fe2f7f869f8491f59b"
+    },
+    {
+      "path": "research-continuation/DECISION_LOG.md",
+      "bytes": 2815,
+      "sha256": "0310c6c0d00e3423c9a86d4bfefdd4890189f64d5a8c74ca0ebab81457222981"
+    },
+    {
+      "path": "research-continuation/EVIDENCE_LEDGER.jsonl",
+      "bytes": 3042,
+      "sha256": "649bd5edb8c140cc0b2445938cf7d3e4f17708c2ef7fb8ef236450586406fa78"
+    },
+    {
+      "path": "research-continuation/EVIDENCE_MAP.json",
+      "bytes": 2522,
+      "sha256": "a8d57f1bc6b8d2a5f6938d977ebc93502ba794e7de2ccfbc28412c5ff3817d60"
+    },
+    {
+      "path": "research-continuation/EXPERIMENT_REGISTRY.jsonl",
+      "bytes": 2038,
+      "sha256": "c4c87b6a9b48688dbe3e0a710491480c9c400309446518d72d7c1fe5839d33df"
+    },
+    {
+      "path": "research-continuation/FAILURE_LEDGER.jsonl",
+      "bytes": 2310,
+      "sha256": "b0a648361c33398e7b8277c3b3c08616d8c97f943bcad453bb9bcc0ae766bf4b"
+    },
+    {
+      "path": "research-continuation/GEN_GEOMETRY_PROTOCOL.md",
+      "bytes": 3827,
+      "sha256": "3bee246425bb3a2b642c29f832b64e66fb669b511c2a5ac61244c87c657ae16a"
+    },
+    {
+      "path": "research-continuation/LITERATURE_LEDGER.jsonl",
+      "bytes": 5241,
+      "sha256": "2620ab12f3f9d842ee378c9e0de9e801f5dfd16cba6e057cc29dbf38b544549f"
+    },
+    {
+      "path": "research-continuation/LITERATURE_REVIEW.md",
+      "bytes": 503,
+      "sha256": "71d033e109d40bf8126fca60c3920df1d7aeab6ef854dc579868cc6cda3b9f2a"
+    },
+    {
+      "path": "research-continuation/MASTER_AUDIT.md",
+      "bytes": 4674,
+      "sha256": "d7bbe43770c32776a467197a7830307febac6dd7ed788d3d33396c0a461654d6"
+    },
+    {
+      "path": "research-continuation/NEXT_ACTIONS.md",
+      "bytes": 2313,
+      "sha256": "358b1f546c07af65a6471a1aab0a3b5f1ce72e2733b167e8f0afc636d1402fee"
+    },
+    {
+      "path": "research-continuation/NEXT_EXPERIMENT_PROTOCOL.md",
+      "bytes": 5004,
+      "sha256": "0bcc16dd9ddbda02e3b8629dad9d5c42ff7f4ee2487d27ab44b8b1f4a2fb12c8"
+    },
+    {
+      "path": "research-continuation/RESEARCH_GAPS.md",
+      "bytes": 2049,
+      "sha256": "c7d1a01366eaee630f26848643799d3f07f8229d2be43e830e6b4f97ce5f7497"
+    },
+    {
+      "path": "research-continuation/RESEARCH_STATE.json",
+      "bytes": 5591,
+      "sha256": "b03a2389660717f53336ada58e8930b3cd90e0c430d5282e854ffd9343606145"
+    },
+    {
+      "path": "research-continuation/RESULTS_2026-09-15.md",
+      "bytes": 5958,
+      "sha256": "c0a2759356de7378cb02c2014334c19f5d719d9ac07649b70ff86d1178112f76"
+    },
+    {
+      "path": "research-continuation/UNIFIED_ARCHITECTURE_v0.md",
+      "bytes": 2643,
+      "sha256": "0488033bff3a28a43bcbe9e9a991684b021100678c0bb4a77fc24d67a0622efe"
+    },
+    {
+      "path": "scripts/audit_continuation_preservation.py",
+      "bytes": 2453,
+      "sha256": "90f8a3af755310fd15543109021d1d628396b1c3e7f46ae0e1d1d5d25482c6b5"
+    },
+    {
+      "path": "scripts/build_continuation_report.py",
+      "bytes": 12978,
+      "sha256": "21ea2efc849423c916fa20554fb08015223bca471d8ca4702aef33d064661f80"
+    },
+    {
+      "path": "scripts/record_continuation.py",
+      "bytes": 13131,
+      "sha256": "61bd1de139b5979e774ad86132b1438534c7c0ae143174c46057c2fc4f0af915"
+    },
+    {
+      "path": "scripts/run_bounded.py",
+      "bytes": 7769,
+      "sha256": "0a3f95dafb9e0e37574c07bd40b5b32f2653e1f6701cc924a5084b7e5c5021c9"
+    },
+    {
+      "path": "scripts/verify_continuation.py",
+      "bytes": 3044,
+      "sha256": "28c7ba55f5958a720df657affc063e3b19b4eede5f6c987a8e3147df557b8cf8"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 12934,
+      "sha256": "5599ff5ce6bf958b9093079a4d05612b99c35e7bce64b9ff2d5e58fe3440fa25"
+    },
+    {
+      "path": "scripts/windows_job.py",
+      "bytes": 6373,
+      "sha256": "67256457c80cfdb6c40383f69b18ecf70013d2b26d2fea541ceb18bc2b408b44"
+    },
+    {
+      "path": "src/sera/connected.py",
+      "bytes": 21595,
+      "sha256": "1ac0345e923e32e999ed1508ebeb471e02729bdf5e77f035956c4dc05c958fc3"
+    },
+    {
+      "path": "src/sera/event_ir.py",
+      "bytes": 6969,
+      "sha256": "0f063030fec0b52fd89964ec94a82342a0aa032814b7d79adda128f302615afa"
+    },
+    {
+      "path": "src/sera/generative.py",
+      "bytes": 28857,
+      "sha256": "db978cfb6bb41709c98fd50f7dfab9e27356ed1dc0c75f2b30144b1d695b66a2"
+    },
+    {
+      "path": "src/sera/world_graph.py",
+      "bytes": 23640,
+      "sha256": "5bb5d9a0955f7b16cb60b2db5fc6494cb00a1e07438018225fed7931487e6a19"
+    },
+    {
+      "path": "tests/test_generative_memory.py",
+      "bytes": 5003,
+      "sha256": "79412b02a4e19ce5b8c16b91b97284bbb2ae4a760455dc61050b4061752dced6"
+    },
+    {
+      "path": "tests/test_generator_acquisition.py",
+      "bytes": 15358,
+      "sha256": "441efb9192f236f93fdf1df1d218a72b27f365bc06240c8dc807621b46db1dc6"
+    },
+    {
+      "path": "tests/test_shared_generative.py",
+      "bytes": 11957,
+      "sha256": "3b066d6322ce608c8ed8e36a62ea1e11de04f92ba1f6a3c914015a25d1826dc7"
+    },
+    {
+      "path": "tests/test_world_graph.py",
+      "bytes": 18609,
+      "sha256": "a177ae4707632657e9ed930f002be8536c08a22a5e01313526e2ac4a9b5b84b3"
+    }
+  ],
+  "preservation": "research-continuation/01_audit/preservation.json",
+  "large_local_archives": {
+    "GG-P0-001": "runs/generative-memory-GG-P0-001",
+    "GG-ACT-001": "runs/GG-ACT-001-final",
+    "SHARED-GG-001": "runs/SHARED-GG-001",
+    "R7": "runs/parameter-cloud-main"
+  },
+  "boundary": "Compact public records plus exact frozen source. Large local archives retain full weights, observations and query vectors; listed hashes do not supply missing local bytes."
+}

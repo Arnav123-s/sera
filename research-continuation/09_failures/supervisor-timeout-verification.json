@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "purpose": "Verify actual process-tree timeout after the launcher-only supervision defect",
+  "source": "../../scripts/run_bounded.py",
+  "evidence": "../../runs/GG-P0-timeout-supervisor-v2/state.json",
+  "declared_seconds": 3.0,
+  "measured_seconds": 3.013053000000127,
+  "worker_result": "TIMEOUT",
+  "observed_process_ids": [8048, 14560, 17072],
+  "surviving_recorded_processes_after_termination": 0,
+  "check": "PowerShell Get-Process -Id over recorded process IDs immediately after supervisor exit",
+  "boundary": "Expected forced interruption; partial refit preserved and not counted as completed or independent data. Termination/cleanup adds approximately 13 ms beyond the wall deadline."
+}

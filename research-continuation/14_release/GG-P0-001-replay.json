@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "cases": 640,
+  "models": 5120,
+  "query_partitions": 20480,
+  "independent_augmented_least_squares_checks": 4480,
+  "maximum_prediction_difference": 0.0,
+  "maximum_metric_difference": 0.0,
+  "source_sha256": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590",
+  "audit_sha256": "713a4ee8a55025c7ced71b09ab90415e3c90872c42119355a97bcb6c64a3981a",
+  "numeric_atol": 1e-12,
+  "numeric_rtol": 1e-12,
+  "cpu_seconds": 56.90625,
+  "wall_seconds": 57.11358800000016,
+  "checks": [
+    "complete frozen case/method coverage",
+    "all source/artifact/raw hashes",
+    "all split banks regenerated",
+    "role separation and nested support",
+    "fresh decoded prediction vectors",
+    "independent MSE and coverage",
+    "independent least-squares posterior means",
+    "no artifact mutation"
+  ],
+  "boundary": "Same-source prediction replay with independent algebraic/metric checks, not an independent implementation of every generator and simulator."
+}

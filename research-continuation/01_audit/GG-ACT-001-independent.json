@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "complete_policy_records": 300,
+  "observation_steps": 3000,
+  "independent_batch_gaussians": 12000,
+  "artifact_files_verified": 365,
+  "max_absolute_differences": {
+    "mean": 1.13420384195706e-12,
+    "covariance": 4.1655567883935873e-13,
+    "log_class_weight": 3.2159732654690742e-09
+  },
+  "tolerances": {
+    "mean_atol": 1e-08,
+    "covariance_atol": 1e-09,
+    "log_class_weight_atol": 1e-07,
+    "rtol": 1e-09
+  },
+  "protocol_sha256": "250b4cfcf5273635af513b7d4b777def1d69353c6f3a255350fff2ed28b508fa",
+  "manifest_sha256": "cf5ffa9a4f1b7aacb96b0287dfc7104e4957aa169b43dfbc0a2c6141300d71db",
+  "audit_source_sha256": "b99c91edf700e5fbd6212097d542f2667b7a7dc0076071721750043c49153c83",
+  "wall_seconds": 7.9170959999974,
+  "cpu_seconds": 7.84375,
+  "boundary": "Independent expected cohort coverage, archived file bytes/hashes, event ordering/budgets, augmented least squares coefficient means, posterior covariances and SVD class evidence. Exact procedural replay separately verifies EIG scores and query metrics. This audit does not establish an empirical advantage or learned applicability."
+}

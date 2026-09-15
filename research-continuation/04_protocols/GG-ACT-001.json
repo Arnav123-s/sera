@@ -1,0 +1,285 @@
+{
+  "alarm_alpha": 0.001,
+  "approximation": "Order 9 in final panel, K=4, order^2 bivariate nodes per component and K^2*order^2 density evaluations per target action. This is not exact mixture entropy/EIG. Negative approximation values are preserved. Nuisance zero-information score is analytic.",
+  "assessment": {
+    "comparison_unit": "Paired latent world; final IG-minus-control raw differences and 1000 fixed-seed percentile bootstrap draws. No multiplicity correction; exploratory only.",
+    "curve": "After every paid observation including both common-prefix observations; never used to choose actions.",
+    "falsification": [
+      "No broad advantage if the fixed space-filling control matches or beats IG on external queries.",
+      "No adequacy claim when normalized class confidence is high but query error or coverage is poor.",
+      "No query-efficiency claim based only on acquisition surrogate values.",
+      "No compression claim without the full packaged decoder/runtime boundary."
+    ],
+    "interval_method": "SciPy normal CDF with 48 bisections of marginal mixture CDF, component brackets +/-12 sigma. Finite numerical equal-tail quantiles, without post-hoc calibration.",
+    "metrics": [
+      "Clean mean squared error per coordinate",
+      "Full joint mixture negative log likelihood on independent noisy query pairs",
+      "Marginal equal-tail 95% mixture interval coverage and width on independent noisy queries",
+      "All-component inadequacy alarm rate and false reassurance",
+      "Nuisance observations",
+      "Density evaluations and wall/CPU time",
+      "Retained analytic posterior bytes and audit bytes"
+    ],
+    "omitted_class": "Circle plus compact sin^2 window on t in (0.35,0.95), multiplied by (1.5 sin(7 pi t), 0.7 cos(5 pi t)). The menu has no such exception term. Common prefix lies outside this window.",
+    "query_domain": [
+      -1.8,
+      1.8
+    ],
+    "regions": [
+      "all",
+      "prefix_window",
+      "outside_prefix_within_grid",
+      "outside_grid",
+      "assessment_exception_window"
+    ]
+  },
+  "common_owner_seam": "OwnerBoundAcquisition accepts the actual existing LiveSituation/SharedOwnerRef, pins owner object and complete mechanism hashes, shares execution accounting, replays factual Events, and retains the analytic parameter posterior as explicit side state. The standalone numerical panel sets shared_owner_bound=false; owner integration is contract-tested without claiming neural transfer.",
+  "cost_boundary": "All selection, analytic update, hypothetical prediction, external evaluation and checkpoint writing occurs inside the charged child process. Full source decoder bytes, retained side-state bytes and raw audit artifact bytes are distinct. Python/NumPy/SciPy/Torch shared runtime installation bytes are not counted as a self-contained packaged decoder.",
+  "date_frozen": "2026-09-14",
+  "development": {
+    "environment_seeds": [
+      8200,
+      8201,
+      8202,
+      8203
+    ],
+    "families": [
+      "circle",
+      "ellipse",
+      "line",
+      "radial_orbit",
+      "menu_exception"
+    ],
+    "grid": {
+      "high": 1.5,
+      "low": -1.5,
+      "noise": 0.05,
+      "nuisance_noise": 20.0,
+      "points": 15
+    },
+    "initial_indices": [
+      5,
+      6
+    ],
+    "observation_budget": 10,
+    "policy_seeds": [
+      320101,
+      320103,
+      320107,
+      320109
+    ],
+    "quadrature_order": 9,
+    "query_count": 41
+  },
+  "diagnostic": "Before each target update compute each component residual chi-square(df=2) survival probability using full predictive covariance. Alarm iff all are below 0.001. Nuisance does not trigger target inadequacy. This is a prequential, uncorrected repeated-test diagnostic, not P(outside-menu) and not an extrapolation guarantee.",
+  "durability": "Atomic per-step policy checkpoint, assessor-only potential outcomes before policy execution, source copies, frozen protocol, full candidate score vectors, before-observation hypothetical branch, every joint parameter posterior/covariance and independent raw prediction/evaluation vector. Partial checkpoints remain if hard timeout prevents manifest completion.",
+  "execution_caps": {
+    "development_runs_authorized_by_this_protocol": 0,
+    "final_replay_supervisor_seconds": 180,
+    "final_supervisor_seconds": 180,
+    "max_final_paid_observations": 3000,
+    "max_final_policy_records": 300,
+    "memory_limit_enforced": false,
+    "memory_metric": "Windows Job Object peak committed bytes, not RSS; root launcher working set reported separately",
+    "plumbing_supervisor_seconds": 45
+  },
+  "experiment_id": "GG-ACT-001",
+  "final": {
+    "environment_seeds": [
+      9200,
+      9201,
+      9202,
+      9203,
+      9204,
+      9205,
+      9206,
+      9207,
+      9208,
+      9209,
+      9210,
+      9211
+    ],
+    "families": [
+      "circle",
+      "ellipse",
+      "line",
+      "radial_orbit",
+      "menu_exception"
+    ],
+    "grid": {
+      "high": 1.5,
+      "low": -1.5,
+      "noise": 0.05,
+      "nuisance_noise": 20.0,
+      "points": 15
+    },
+    "initial_indices": [
+      5,
+      6
+    ],
+    "observation_budget": 10,
+    "policy_seeds": [
+      330001,
+      330013,
+      330029,
+      330037,
+      330043,
+      330059,
+      330071,
+      330083,
+      330091,
+      330103,
+      330127,
+      330139
+    ],
+    "quadrature_order": 9,
+    "query_count": 41
+  },
+  "frozen_input_hashes": {
+    "scripts/run_bounded.py": "0a3f95dafb9e0e37574c07bd40b5b32f2653e1f6701cc924a5084b7e5c5021c9",
+    "scripts/windows_job.py": "67256457c80cfdb6c40383f69b18ecf70013d2b26d2fea541ceb18bc2b408b44",
+    "src/sera/contracts.py": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+    "src/sera/event_ir.py": "0f063030fec0b52fd89964ec94a82342a0aa032814b7d79adda128f302615afa",
+    "src/sera/session_state.py": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+    "src/sera/shared.py": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+    "src/sera/storage.py": "f3634fc833a7f237c327bd844196765eec13121effa8276ff780906690c852fc",
+    "src/sera/world_graph.py": "5bb5d9a0955f7b16cb60b2db5fc6494cb00a1e07438018225fed7931487e6a19",
+    "tests/test_generator_acquisition.py": "441efb9192f236f93fdf1df1d218a72b27f365bc06240c8dc807621b46db1dc6"
+  },
+  "hypothesis_menu": [
+    {
+      "kind": "circle",
+      "name": "circle"
+    },
+    {
+      "kind": "expression",
+      "name": "ellipse",
+      "terms": [
+        [
+          "one"
+        ],
+        [
+          "sin",
+          1
+        ],
+        [
+          "cos",
+          1
+        ]
+      ]
+    },
+    {
+      "kind": "expression",
+      "name": "line",
+      "terms": [
+        [
+          "one"
+        ],
+        [
+          "t"
+        ]
+      ]
+    },
+    {
+      "frequency": 1,
+      "kind": "radial_orbit",
+      "name": "linear-radius-orbit"
+    }
+  ],
+  "local_cap_seconds": 150,
+  "model": {
+    "assumptions": [
+      "Supplied phase t and permitted grid.",
+      "Known Gaussian observation variances and known nuisance-channel zero design.",
+      "Finite fixed generator menu with isotropic coefficient priors.",
+      "Independent observation noise conditional on the latent world."
+    ],
+    "class_prior_masses": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "joint_likelihood_status": "Enhanced acquisition implementation; GG-P0 core marginal predictive metrics are not retroactively relabeled joint likelihood.",
+    "mathematical_object": "M in {circle, ellipse, line, radial_orbit}; theta_M ~ N(0, 4 I); y_a | M,theta ~ N(A_M(a) theta, variance(a) I_2). Full joint two-coordinate class likelihood and coefficient covariance are retained.",
+    "not_claimed": [
+      "Learned representation class discovery",
+      "Unordered-point geometry recovery",
+      "Learned investigator or applicability",
+      "Shared neural transfer",
+      "Posterior probability that the menu is adequate"
+    ]
+  },
+  "observation_contract": "Every policy receives the same permitted finite action grid, known likelihood metadata, and total unit-cost observation budget including the common prefix. Each chosen nuisance pair consumes one observation. No action repeats. Hypothetical branches use predictive means for illustration only and contribute zero factual observations.",
+  "plumbing": {
+    "environment_seeds": [
+      710001
+    ],
+    "families": [
+      "circle",
+      "menu_exception"
+    ],
+    "grid": {
+      "high": 1.5,
+      "low": -1.5,
+      "noise": 0.05,
+      "nuisance_noise": 20.0,
+      "points": 7
+    },
+    "initial_indices": [
+      1,
+      2
+    ],
+    "observation_budget": 4,
+    "policy_seeds": [
+      310001
+    ],
+    "quadrature_order": 5,
+    "query_count": 13
+  },
+  "policies": [
+    "random",
+    "space_filling",
+    "predictive_entropy",
+    "disagreement",
+    "information_gain"
+  ],
+  "policy_definitions": {
+    "disagreement": "Maximize posterior-weighted squared distance of class predictive means from mixture mean divided by unit cost. Analytic; no entropy quadrature charged.",
+    "information_gain": "Maximize approximate I(Y_a;(M,theta_M)|observed events) = H(mixture predictive)-H(observation noise), using deterministic tensor Gauss-Hermite quadrature; retains raw class and within-class parameter contributions.",
+    "predictive_entropy": "Maximize raw full predictive Gaussian-mixture differential entropy divided by unit cost; includes aleatoric nuisance entropy.",
+    "random": "Uniform over the entire remaining target+nuisance grid without replacement, independent RNG seed assigned by replicate before execution.",
+    "space_filling": "Maximize distance from already observed target coordinates among remaining target actions, using public zero-design channel metadata; deterministic lowest-index tie break."
+  },
+  "prior_variance": 4.0,
+  "private_boundary": "Assessor seeds, true family, true coefficients, unchosen potential observations and independent queries remain evaluator-only. Observed Event provenance record IDs contain only the public action index. choose() receives Posterior, policy name, independent policy RNG, quadrature order and resource deadline only.",
+  "process_boundary": "Trusted research subprocess supervision. Child starts suspended and joins a kill-on-close Windows Job Object before running. Running supervisor enforces process-tree wall deadline; full reservation remains charged if its parent is externally interrupted. This is not a hostile-code sandbox. Supervisor startup, research labor and energy are excluded from measured child runtime.",
+  "question": "Under a supplied-phase finite linear-Gaussian generator menu, do fixed information-gain acquisitions improve independent target prediction at the same paid observation budget, and where does the menu-inadequacy diagnostic fail?",
+  "replay": "Fresh process replays every selected action and candidate score, branch factual-parent hash, observed event update, posterior, independent prediction vector, interval/NLL vector and summary exactly; all recorded artifact hashes verified. Wall-time fields are measured artifacts rather than recomputed equality targets.",
+  "result_driven_motivation": "GG-P0 exception predictions failed on an unseen arc while the local residual guard did not fire. ACT therefore preserves the shared short-prefix condition, a localized omitted generator, and independent error/coverage curves; within-menu confidence and acquisition scores are not adequacy evidence.",
+  "revision": 1,
+  "runtime_frozen": {
+    "OMP_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1,
+    "numpy": "2.5.3",
+    "python": "3.12.14",
+    "scipy": "1.18.1",
+    "torch": "2.10.0+cpu",
+    "torch_threads": 1
+  },
+  "schema": {
+    "encoding": "typed-values-v1",
+    "entity_slots": 0,
+    "modality": "numeric",
+    "name": "gg-act-observed-action-and-pair",
+    "units": "dimensionless",
+    "version": 1,
+    "width": 5
+  },
+  "seed_rule": "Environment seeds and policy seeds are independently enumerated in disjoint phase namespaces. Policy RNG is keyed by phase/fixed-policy/policy and the independent replicate policy seed; family and environment seed are absent. Paired policies observe identical potential outcomes for each common selected action.",
+  "source_hashes": {
+    "experiments/generative_memory/acquisition.py": "c97611781be40b297ba96b510ca5fc2b861b16c511417bc581cb93f04b1a3b56",
+    "experiments/generative_memory/core.py": "7b927dc3ebff4777ac40974627812905c1fd59187cd6d78a0f49dbc2e99b8e9b"
+  },
+  "status": "frozen-exploratory-before-final-observations"
+}

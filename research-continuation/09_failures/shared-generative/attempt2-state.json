@@ -1,0 +1,26 @@
+{
+  "status": "FAILED",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_shared_generative.py",
+    "--junitxml=runs/shared-generative-tests-attempt2/pytest.xml"
+  ],
+  "reserved_seconds": 60.0,
+  "charged_seconds": 3.886908600001334,
+  "root_process_peak_working_set_bytes": 4550656,
+  "peak_job_committed_bytes": 262479872,
+  "peak_process_committed_bytes": 261664768,
+  "observed_process_ids": [
+    17500,
+    18284
+  ],
+  "supervisor_sha256": "0a3f95dafb9e0e37574c07bd40b5b32f2653e1f6701cc924a5084b7e5c5021c9",
+  "job_helper_sha256": "67256457c80cfdb6c40383f69b18ecf70013d2b26d2fea541ceb18bc2b408b44",
+  "boundary": "Process-tree wall deadline and Windows Job Object peak COMMITTED memory (not RSS); direct launcher working set is separate. Child starts suspended and joins a kill-on-close job before execution. Full reserved time stays charged on external parent interruption. Research, energy and supervisor startup excluded.",
+  "child_pid": 17500,
+  "returncode": 1,
+  "log_sha256": "f421147e5c7e7df6f85e058470f490eaf14a259a69b89d89fdb7f8d5e520fc1d"
+}

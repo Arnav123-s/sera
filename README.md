@@ -12,6 +12,8 @@ Version 0.5 implements one shared R1 parameter owner behind world prediction, ty
 
 Start with the [shared-learner results](reports/shared-learner-study.md), [source comparison](reports/shared-source-audit.md), [training protocol and checklist](research/shared-learner-protocol.md), and [preserved variants](research/variants.md). The [0.4 report](reports/evaluation-v2-study.md), [full 0.3 source-packet comparison](reports/source-packet-comparison.md), [0.3 study](reports/stage-three-study.md), [0.2 results](reports/connected-study.md) and [earlier workspace snapshot](research/workspace-index.md) remain historical evidence.
 
+The [15 September continuation](research-continuation/RESULTS_2026-09-15.md) adds 5,120 geometric-memory artifacts, 300 fixed-inquiry runs and generator acquisition inside the actual trained R1 parent. All 156 current tests pass; the trained-parent integration preserves 40 checked capability groups exactly. The strongest unresolved failure is confident prediction outside the supplied model class. The [packet comparison](research-continuation/01_audit/final-architecture-comparison.md) and [execution checklist](research-continuation/NEXT_ACTIONS.md) identify what is implemented and what remains open. Learned applicability, neural transfer and sustained investigator improvement are not established.
+
 ## Run
 
 Use Python 3.12 and CPU PyTorch 2.10. On Linux/macOS replace `.venv/Scripts/python.exe` with `.venv/bin/python`.

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "baseline_files": 2404,
+  "baseline_bytes": 667389601,
+  "unchanged_files": 2398,
+  "edited_files_preserved_in_git": [
+    {
+      "path": ".gitattributes",
+      "original_sha256": "23302dd90b8bb74b44d365fafef8df20f809b61cb347023951ecf60a88a29651",
+      "current_sha256": "1cd299d1d4b474a0d55dde48b1ded8074e956ad921c5469b3da3e25846bafe32",
+      "preserved_git_commit": "a4047173fd33d27d33d8a151f32613eae343df56"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "original_sha256": "d52af90a3964d7639500029138fbe667f49813d2f712c7adb00971ce0731c590",
+      "current_sha256": "b968b64246eecb11c8bc1e37199f2dfbf9fd3b9fa85e7fdc54383ea85dff7f5a",
+      "preserved_git_commit": "a4047173fd33d27d33d8a151f32613eae343df56"
+    },
+    {
+      "path": ".gitignore",
+      "original_sha256": "ba30fbfc551d3a30ce900f3d0b3b89cec5361f34da429b3f23bb0e974e6b097f",
+      "current_sha256": "249b8a67e69c8761a44cad02fadcb550ffbb29807562b11cda63059813e5eb6e",
+      "preserved_git_commit": "a4047173fd33d27d33d8a151f32613eae343df56"
+    },
+    {
+      "path": "README.md",
+      "original_sha256": "fe24eee642f249e2a1213fbb6d8f3b27aa52290bf38de0fd553a57eba0d7cf6d",
+      "current_sha256": "13840df88782d532322dd6b3f0adc20f77e3f165f7043103d28c40947a4a655b",
+      "preserved_git_commit": "a4047173fd33d27d33d8a151f32613eae343df56"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "original_sha256": "5c76dfae135552e6d52acb4012f9490885c949823b093be5b3e626d7c23ddf61",
+      "current_sha256": "5599ff5ce6bf958b9093079a4d05612b99c35e7bce64b9ff2d5e58fe3440fa25",
+      "preserved_git_commit": "a4047173fd33d27d33d8a151f32613eae343df56"
+    },
+    {
+      "path": "src/sera/connected.py",
+      "original_sha256": "6b61f46c6639a832156f891d1dd29222f7503832e9111d77f9f64638d5610e94",
+      "current_sha256": "1ac0345e923e32e999ed1508ebeb471e02729bdf5e77f035956c4dc05c958fc3",
+      "preserved_git_commit": "a4047173fd33d27d33d8a151f32613eae343df56"
+    }
+  ],
+  "unresolved_preservation_failures": [],
+  "baseline_sha256": "ba0f73d9ad9fb88c90f3a662e0c15a0b8d2196195fe08ad1040f67d4d4635038",
+  "scope": "All files in the pre-continuation inventory. Every changed file has its original bytes in the pinned Git commit; untracked raw evidence must remain byte-identical. This does not classify every transient editing buffer as a published research artifact."
+}

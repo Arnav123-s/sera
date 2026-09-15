@@ -1,0 +1,54 @@
+.F...........                                                            [100%]
+================================== FAILURES ===================================
+____ test_online_posterior_matches_independent_observation_space_gaussian _____
+
+solver = Solver(
+  (neural): SharedSequenceView()
+  (components): ModuleDict(
+    (r1): GenerativeSharedR1(
+      (memory): Sta...)
+      (sequence_decoder): Linear(in_features=8, out_features=4, bias=True)
+    )
+    (typed): SharedTypedView()
+  )
+)
+
+    def test_online_posterior_matches_independent_observation_space_gaussian(solver):
+        session = SharedGenerativeSession(solver)
+        phases = [-.7, -.2, .15, .55, .9]
+        ys = np.array([[.2, -.7], [1.1, .3], [.7, 1.2], [-.4, .5], [-.8, -.2]])
+        for i, (phase, xy) in enumerate(zip(phases, ys)):
+            session.observe(event(i, phase, xy))
+        owner = solver.components["r1"]
+        evidence = []
+        y = ys.ravel()
+        for k, (kind, dimension) in enumerate(zip(CLASSES, DIMENSIONS)):
+            a = independent_design(kind, phases)
+            np.testing.assert_allclose(owner._design(phases)[k, :, :, :dimension].reshape(-1, dimension), a,
+                                       rtol=1e-14, atol=1e-14)
+            marginal = owner.generator_noise**2 * np.eye(len(y)) + 4*a @ a.T
+            mean = 4*a.T @ np.linalg.solve(marginal, y)
+            covariance = 4*np.eye(dimension) - 16*a.T @ np.linalg.solve(marginal, a)
+            np.testing.assert_allclose(owner.generator_mean[k, :dimension], mean, rtol=1e-8, atol=1e-9)
+            np.testing.assert_allclose(owner.generator_covariance[k, :dimension, :dimension], covariance,
+                                       rtol=1e-8, atol=1e-10)
+            evidence.append(-.5*(len(y)*math.log(2*math.pi) + np.linalg.slogdet(marginal)[1]
+                                  + y @ np.linalg.solve(marginal, y)))
+>       np.testing.assert_allclose(owner.generator_log_evidence, evidence, rtol=1e-9, atol=1e-8)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-09, atol=1e-08
+E       
+E       Mismatched elements: 4 / 4 (100%)
+E       Mismatch at indices:
+E        [0]: -31.113133893610097 (ACTUAL), -31.113133196659582 (DESIRED)
+E        [1]: -19.601853493326985 (ACTUAL), -19.6018527963763 (DESIRED)
+E        [2]: -635.3850237757252 (ACTUAL), -635.3850230785562 (DESIRED)
+E        [3]: -36.98940596997454 (ACTUAL), -36.9894052730342 (DESIRED)
+E       Max absolute difference among violations: 6.97169071e-07
+E       Max relative difference among violations: 3.55553474e-08
+E        ACTUAL: array([ -31.113134,  -19.601853, -635.385024,  -36.989406])
+E        DESIRED: array([ -31.113133,  -19.601853, -635.385023,  -36.989405])
+
+tests\test_shared_generative.py:100: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_shared_generative.py::test_online_posterior_matches_independent_observation_space_gaussian

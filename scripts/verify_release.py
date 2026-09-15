@@ -144,11 +144,22 @@ if evaluation_v2.exists():
     if data["live_continuation"]["result"]["decision"]["capability_contract"] != "separate-retention-v2":
         raise ValueError("Ordinary continuation did not use the current retention contract")
 if shared.exists():
-    from sera.training import source_hash
     data = json.loads((root / "reports/shared-learner-data.json").read_text(encoding="utf-8"))
     verified = json.loads((root / "reports/shared-learner-verification.json").read_text(encoding="utf-8"))
-    if data["source_sha256"] != source_hash() or verified["source_sha256"] != source_hash():
-        raise ValueError("Shared study source identity differs from the executable package")
+    release = json.loads((root / "research/release-sources.json").read_text(encoding="utf-8"))["0.5.0"]
+    paths = subprocess.check_output(["git", "-c", f"safe.directory={root.as_posix()}",
+                                    "ls-tree", "-r", "--name-only", release["git_commit"],
+                                    "src/sera"], cwd=root).decode().splitlines()
+    historical = hashlib.sha256()
+    for filename in sorted(p for p in paths if p.endswith(".py") and p.count("/") == 2):
+        historical.update(Path(filename).name.encode())
+        historical.update(subprocess.check_output(
+            ["git", "-c", f"safe.directory={root.as_posix()}", "show",
+             f"{release['git_commit']}:{filename}"], cwd=root).replace(b"\r\n", b"\n"))
+    if (historical.hexdigest() != release["source_sha256"]
+            or data["source_sha256"] != release["source_sha256"]
+            or verified["source_sha256"] != release["source_sha256"]):
+        raise ValueError("Historical shared study and pinned executable source identities differ")
     if data["status"] != "completed" or not verified["passed"]:
         raise ValueError("Shared study is incomplete")
     if {(r["seed"], r["kind"]) for r in data["trials"]} != {(s, k) for s in range(3) for k in ("delta", "reference")}:

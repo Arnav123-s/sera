@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "--junitxml=runs/continuation-full-tests/pytest.xml"
+  ],
+  "reserved_seconds": 120.0,
+  "charged_seconds": 31.18229860000065,
+  "root_process_peak_working_set_bytes": 4530176,
+  "peak_job_committed_bytes": 548360192,
+  "peak_process_committed_bytes": 346136576,
+  "observed_process_ids": [
+    2724,
+    2948,
+    3400,
+    5420,
+    7716,
+    12160
+  ],
+  "supervisor_sha256": "0a3f95dafb9e0e37574c07bd40b5b32f2653e1f6701cc924a5084b7e5c5021c9",
+  "job_helper_sha256": "67256457c80cfdb6c40383f69b18ecf70013d2b26d2fea541ceb18bc2b408b44",
+  "boundary": "Process-tree wall deadline and Windows Job Object peak COMMITTED memory (not RSS); direct launcher working set is separate. Child starts suspended and joins a kill-on-close job before execution. Full reserved time stays charged on external parent interruption. Research, energy and supervisor startup excluded.",
+  "child_pid": 3400,
+  "returncode": 0,
+  "log_sha256": "e0c75bb1b76164559209a3e53595d1bc88e407ef4b357175a9d1736ca39e3fbd"
+}

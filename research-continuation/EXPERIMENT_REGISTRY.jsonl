@@ -1,0 +1,10 @@
+{"id":"R7-main","status":"completed_optional","source":"../experiments/parameter_cloud","protocol":"../research/parameter-cloud-protocol.md","raw":"../runs/parameter-cloud-main","verification":"../runs/parameter-cloud-verification/verification.json","independent_cases":120,"fitted_models":1260}
+{"id":"B2-verify-001","status":"failed_source_identity","raw":"12_reproductions/bundle2/verification","tests_passed":55,"diagnosis":"Native Windows path strings differ from POSIX source-identity keys; numerical replay has not yet run."}
+{"id": "B2-fresh-reproduction", "independent_seeds_added": 0, "purpose": "Same frozen-seed reproduction of supplied packet", "raw": "12_reproductions/bundle2/reproduction", "status": "completed"}
+{"id": "GG-P0-smoke-excluded", "models": 32, "raw": "../runs/generative-memory-smoke", "status": "completed_plumbing_only"}
+{"cases": 640, "id": "GG-P0-001", "models": 5120, "raw": "../runs/generative-memory-GG-P0-001", "report": "08_analysis/GG-P0-001/report.md", "source_sha256": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590", "status": "completed_exploratory"}
+{"id": "GG-P0-001-refit", "independent_seeds_added": 0, "models": 5120, "raw": "../runs/generative-memory-GG-P0-001-refit", "status": "completed_exact_hash_parity"}
+{"id": "GG-P0-001-resource-refit-v2", "independent_seeds_added": 0, "models": 5120, "raw": "../runs/generative-memory-GG-P0-001-refit-resource-v2", "status": "completed_exact_hash_parity", "supervisor": "../runs/GG-P0-resource-supervisor-v2"}
+{"id": "GG-ACT-001-plumbing", "raw": "../runs/GG-ACT-001-plumbing", "status": "completed_plumbing_only"}
+{"id": "GG-ACT-001-final", "observations": 3000, "policy_runs": 300, "raw": "../runs/GG-ACT-001-final", "report": "08_analysis/GG-ACT-001/report.md", "status": "completed_exploratory_not_promoted"}
+{"corrections": 4, "fixtures": 4, "id": "SHARED-GG-001", "observations": 64, "raw": "../runs/SHARED-GG-001", "report": "05_experiments/shared-generative-integration.md", "status": "completed_integration_control"}

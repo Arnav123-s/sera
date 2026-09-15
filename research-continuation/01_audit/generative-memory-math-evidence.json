@@ -1,0 +1,2011 @@
+{
+  "run": "D:\\ai\\projects\\sera\\runs\\generative-memory-GG-P0-001",
+  "source_identity": {
+    "protocol_sha256": "dbbd8ef1d7d1bec79dd8727d89331377c08042779e08ef9d595b77e959006ffd",
+    "source_sha256": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590"
+  },
+  "linear_models": 4480,
+  "score_partitions": 20480,
+  "expected_score_partitions": 20480,
+  "tolerances": {
+    "mean": {
+      "rtol": 3e-06,
+      "atol": 2e-07
+    },
+    "covariance": {
+      "rtol": 3e-06,
+      "atol": 2e-07
+    },
+    "log_evidence": {
+      "rtol": 0,
+      "atol": 1e-07
+    },
+    "marginal_nll": {
+      "rtol": 1e-12,
+      "atol": 1e-12
+    }
+  },
+  "max_absolute_error": {
+    "mean": 1.6990410784956111e-06,
+    "covariance": 1.1734262539420115e-07,
+    "log_evidence": 1.2205855455249548e-06,
+    "marginal_nll": 9.094947017729282e-13
+  },
+  "failures": [
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.731103450059891e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.731103450059891e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.475587047636509e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.475587047636509e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 3.0183582566678524e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.1015799827873707e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-1"
+      ],
+      "max_absolute_error": 1.1015799827873707e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 1.1015799827873707e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6100-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 1.1015799827873707e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3928365660831332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3928365660831332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 2.2979656932875514e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3928365660831332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3928365660831332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 6.170885171741247e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 6.170885171741247e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 4.3181353248655796e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.1152587831020355e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6101-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-40"
+      ],
+      "max_absolute_error": 4.0122540667653084e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.4247780200093985e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.4247780200093985e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.042652340605855e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.042652340605855e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.9656727090477943e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-8"
+      ],
+      "max_absolute_error": 2.9067450668662786e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.042652340605855e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.042652340605855e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.922039806842804e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.922039806842804e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.30385160446167e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 2.6996713131666183e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 2.6996713131666183e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6102-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 2.6996713131666183e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6103-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.907778929919004e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6103-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.907778929919004e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6103-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.078587956726551e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6103-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-92"
+      ],
+      "max_absolute_error": 6.433110684156418e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6103-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.907778929919004e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6103-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.907778929919004e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6104-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.190645318478346e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6104-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.190645318478346e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6104-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 6.131595000624657e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.556189429014921e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.556189429014921e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-85"
+      ],
+      "max_absolute_error": 1.3629323802888393e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.88536898046732e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.88536898046732e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.4927354641258717e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.0168878361582756e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-64",
+        "G_program",
+        0,
+        "piecewise-line"
+      ],
+      "max_absolute_error": 3.5364064387977123e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6105-random-0.02-64",
+        "H_residual",
+        0,
+        "piecewise-line"
+      ],
+      "max_absolute_error": 3.5364064387977123e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6106-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.1980882845818996e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6106-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.1980882845818996e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6106-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 3.9156293496489525e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6106-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 7.909839041531086e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6106-random-0.02-64",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 5.327165126800537e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6106-random-0.02-64",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 5.327165126800537e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.681772457435727e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.681772457435727e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 2.6974885258823633e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-32",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.0886287782341242e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.681772457435727e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.681772457435727e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.785527613013983e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.785527613013983e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.5192199498414993e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.7514685168862343e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-42"
+      ],
+      "max_absolute_error": 1.8594437278807163e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "G_program",
+        0,
+        "linear-radius-orbit"
+      ],
+      "max_absolute_error": 4.128669388592243e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6107-random-0.02-64",
+        "H_residual",
+        0,
+        "linear-radius-orbit"
+      ],
+      "max_absolute_error": 4.128669388592243e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.4962279237806797e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.4962279237806797e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.6469933800399303e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.6469933800399303e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 3.030436346307397e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.136417267844081e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.136417267844081e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.704611349850893e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 5.379843059927225e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 5.379843059927225e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6108-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 5.379843059927225e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.5798286767676473e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.5798286767676473e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-16",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.5798286767676473e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-16",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.5798286767676473e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.5508204493671656e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.5508204493671656e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-32",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 2.25467374548316e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.5508204493671656e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 4.5508204493671656e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 5.010515451431274e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 5.010515451431274e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 3.942695911973715e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.3966928236186504e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 5.010515451431274e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6109-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 5.010515451431274e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.4852776075713336e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.4852776075713336e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 3.5653647501021624e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 3.5653647501021624e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.644948497414589e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-114"
+      ],
+      "max_absolute_error": 2.57437932305038e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-32",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 3.6838173400610685e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-32",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 3.6838173400610685e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 3.5323319025337696e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 3.5323319025337696e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 2.0838342607021332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 3.367604222148657e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-64",
+        "G_program",
+        0,
+        "ellipse"
+      ],
+      "max_absolute_error": 2.0838342607021332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6110-random-0.02-64",
+        "H_residual",
+        0,
+        "ellipse"
+      ],
+      "max_absolute_error": 2.0838342607021332e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 3.20826075039804e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 3.20826075039804e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.7449201550334692e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-21"
+      ],
+      "max_absolute_error": 1.261214492842555e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-32",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 4.3220643419772387e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-32",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 4.3220643419772387e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 8.694769348949194e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 8.694769348949194e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 4.4336775317788124e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 3.158056642860174e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-2"
+      ],
+      "max_absolute_error": 5.338224582374096e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 8.694769348949194e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6111-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 8.694769348949194e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.724838512018323e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.724838512018323e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.574662746861577e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 3.131426637992263e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-27"
+      ],
+      "max_absolute_error": 2.9125658329576254e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "G_program",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 4.2645842768251896e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6112-random-0.02-64",
+        "H_residual",
+        0,
+        "second-harmonic"
+      ],
+      "max_absolute_error": 4.2645842768251896e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-8",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3812314136885107e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-8",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3812314136885107e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-8",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3812314136885107e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-8",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.3812314136885107e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-16",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.7495040083304048e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-16",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.7495040083304048e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-16",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.7495040083304048e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-16",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.7495040083304048e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.69457814283669e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.69457814283669e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-32",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 2.0052539184689522e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-32",
+        "G_program",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 2.0052539184689522e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-32",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 2.0052539184689522e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.8629438020288944e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.8629438020288944e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.3399403542280197e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-92"
+      ],
+      "max_absolute_error": 1.1178781278431416e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 1.3399403542280197e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6113-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 1.3399403542280197e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6114-random-0.02-16",
+        "E_symbolic",
+        0,
+        "expression-123"
+      ],
+      "max_absolute_error": 1.0610165190882981e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6114-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.589651219546795e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6114-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.589651219546795e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6114-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.8312130123376846e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6114-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-19"
+      ],
+      "max_absolute_error": 2.3201573640108109e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6115-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.5686964616179466e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6115-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.5686964616179466e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6115-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-119"
+      ],
+      "max_absolute_error": 2.3175380192697048e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6115-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 2.3210304789245129e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6115-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-29"
+      ],
+      "max_absolute_error": 2.3329630494117737e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.072920324280858e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.072920324280858e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.4531542547047138e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-19"
+      ],
+      "max_absolute_error": 1.2422970030456781e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-32",
+        "G_program",
+        0,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.4531542547047138e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-32",
+        "H_residual",
+        0,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.4531542547047138e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.2205855455249548e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.2205855455249548e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 3.9328006096184254e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6116-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-9"
+      ],
+      "max_absolute_error": 1.463631633669138e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.9629078451544046e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.9629078451544046e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 2.146698534488678e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-32",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.9629078451544046e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-32",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.9629078451544046e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 9.77714080363512e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 9.77714080363512e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 5.180481821298599e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-6"
+      ],
+      "max_absolute_error": 3.1842500902712345e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-64",
+        "G_program",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 9.77714080363512e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6117-random-0.02-64",
+        "H_residual",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 9.77714080363512e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.6904959920793772e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.6904959920793772e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-32",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.2718373909592628e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-32",
+        "E_symbolic",
+        0,
+        "expression-4"
+      ],
+      "max_absolute_error": 1.6934063751250505e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 5.754700396209955e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 5.754700396209955e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 1.5454133972525597e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "D_family",
+        2,
+        "line"
+      ],
+      "max_absolute_error": 1.1356314644217491e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-4"
+      ],
+      "max_absolute_error": 5.765177775174379e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "G_program",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 1.1356314644217491e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6118-random-0.02-64",
+        "H_residual",
+        0,
+        "line"
+      ],
+      "max_absolute_error": 1.1356314644217491e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6119-random-0.02-32",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.6977795641869307e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6119-random-0.02-32",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 2.6977795641869307e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6119-random-0.02-64",
+        "C_circle",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.000444171950221e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6119-random-0.02-64",
+        "D_family",
+        0,
+        "circle"
+      ],
+      "max_absolute_error": 1.000444171950221e-06
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6119-random-0.02-64",
+        "D_family",
+        1,
+        "ellipse"
+      ],
+      "max_absolute_error": 3.858294803649187e-07
+    },
+    {
+      "field": "log_evidence",
+      "identity": [
+        "6119-random-0.02-64",
+        "E_symbolic",
+        0,
+        "expression-127"
+      ],
+      "max_absolute_error": 5.600159056484699e-07
+    }
+  ],
+  "reviewer_source_sha256": "e118fd32ced89024722aca5793b8188f8d670d643450714098d6ac032d7b3832",
+  "boundary": "Observation-space Gaussian formula uses the frozen design matrix; not independent feature interpretation. Covariance tolerances allow serialized float32. Evidence tolerance1e-7 is fixed from the existing reference test; NLL uses original replay tolerance. No coefficients or artifacts are written or selected.",
+  "cpu_seconds": 13.859375,
+  "wall_seconds": 13.882982500000253,
+  "status": "FAIL"
+}

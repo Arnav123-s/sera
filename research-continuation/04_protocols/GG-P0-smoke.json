@@ -1,0 +1,47 @@
+{
+  "experiment_id": "GG-P0-smoke-excluded",
+  "scope": "Exploratory supplied-phase component comparison; no architecture promotion",
+  "seeds": [
+    6000
+  ],
+  "families": [
+    "circle",
+    "ellipse",
+    "exception",
+    "random"
+  ],
+  "noise": [
+    0.02
+  ],
+  "support": [
+    16
+  ],
+  "selection": 16,
+  "calibration": 32,
+  "query_count": 128,
+  "methods": [
+    "A_episodic",
+    "B_interpolation",
+    "C_circle",
+    "D_family",
+    "E_symbolic",
+    "F_neural",
+    "G_program",
+    "H_residual"
+  ],
+  "neural_steps": 160,
+  "precision": "float32 numerical payload",
+  "fit_budget_seconds": 120,
+  "threads": 1,
+  "decoder_amortization_objects": 100,
+  "intervals": "Descriptive paired instance bootstrap; no confirmatory promotion",
+  "open_families": [
+    "periodic",
+    "spiral",
+    "piecewise",
+    "hierarchy",
+    "order-sensitive",
+    "dynamics",
+    "unordered-geometry"
+  ]
+}

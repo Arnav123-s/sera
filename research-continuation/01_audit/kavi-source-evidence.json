@@ -1,0 +1,981 @@
+{
+  "schema_version": 1,
+  "kind": "kavi-pinned-source-audit",
+  "status": "complete_with_declared_coverage_limits",
+  "recorded_utc": "2026-09-15T05:46:25.797528+00:00",
+  "scope": "Actual pinned Kavi code audit, upstream regression execution, bounded ownership probes, and read-only comparison to SERA. No architecture merge or curriculum reproduction is claimed.",
+  "sources": {
+    "kavi_repository": "https://github.com/Arnav123-s/Kavi",
+    "kavi_pin": "50f743cc44794b67bc1d30b927e25991197edce2",
+    "kavi_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned",
+    "remote_main_and_head": "50f743cc44794b67bc1d30b927e25991197edce2",
+    "sera_head": "8dd87f9a02a3752c041f05a101fd250e73e82cd7",
+    "sera_packet_pin": "a4047173fd33d27d33d8a151f32613eae343df56",
+    "sera_audited_core_diff_since_packet": "",
+    "files": [
+      {
+        "project": "kavi",
+        "path": "README.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\README.md",
+        "raw_sha256": "dbd74e371e5fc9a187e943bc7523f51bf17ed5d6aae9ee24def62e491474ff6a",
+        "normalized_lf_sha256": "dbd74e371e5fc9a187e943bc7523f51bf17ed5d6aae9ee24def62e491474ff6a",
+        "bytes": 20794,
+        "lines": 166
+      },
+      {
+        "project": "kavi",
+        "path": "CONTRIBUTING.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\CONTRIBUTING.md",
+        "raw_sha256": "e56ff4bcbf17ae823461fb402579136c7ad782fea6da63f720c66fb58898d993",
+        "normalized_lf_sha256": "e56ff4bcbf17ae823461fb402579136c7ad782fea6da63f720c66fb58898d993",
+        "bytes": 1677,
+        "lines": 24
+      },
+      {
+        "project": "kavi",
+        "path": "pyproject.toml",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\pyproject.toml",
+        "raw_sha256": "d61f7b2a698de97d2e7acd4847393f21746ae9b9f00040fbfab26d761ee50401",
+        "normalized_lf_sha256": "fe5004e290e53fc12f9de44b0fee29b275594aa5c1b9c1ef6385e9d2a49e6405",
+        "bytes": 588,
+        "lines": 21
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/cli.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\cli.py",
+        "raw_sha256": "3429549a6a16cc1b1c7c6ddd3852a193a66e2548f7eda8dc3b553676d995e61f",
+        "normalized_lf_sha256": "40419f46e2063bc5e9262f40c850fef5c41be813a638a5fa423ffbd4a04ebc75",
+        "bytes": 5940,
+        "lines": 162
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase_configuration.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase_configuration.py",
+        "raw_sha256": "696d2d29434ec07aa9a3ce266cade518f18bda90781010fc68a8d1d7848062c1",
+        "normalized_lf_sha256": "9c3dfdddd10e7a8aa17693407471a8dc319511bfa2a3fb7bf07545f500fb375b",
+        "bytes": 209,
+        "lines": 5
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/composable_configurations.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\composable_configurations.py",
+        "raw_sha256": "7ececf16f2cbb4a778e2e7a6d7313611db72ab05c403175422c3fa136a49c0db",
+        "normalized_lf_sha256": "6ff795e8a0bd6bc9ac02ac1346bfca4872de90f24ae6d08167c8722eb8d38bbb",
+        "bytes": 11980,
+        "lines": 283
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/configuration_composition.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\configuration_composition.py",
+        "raw_sha256": "a6e6ac1902a65c2f5eb7eeca0b27edff182b28e652e0b9b8c0ce243a6ac07693",
+        "normalized_lf_sha256": "46c11ea9a6089f55e8525632c6b2f7e8911e968f2259e025c05cdcba39ab749a",
+        "bytes": 10968,
+        "lines": 243
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/configuration_repair.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\configuration_repair.py",
+        "raw_sha256": "35bab26ade162a8d0d2b8b9eb9187a9690f8d94b79cb861ae81598f04d95dbce",
+        "normalized_lf_sha256": "9ab3813ec4f6541c18e0948ddc375622da72bc6ef0cf43d1e5a720ec29354b48",
+        "bytes": 5954,
+        "lines": 127
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/recurrent_configuration.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\recurrent_configuration.py",
+        "raw_sha256": "f160bd487ab5313f759d2c8d754ec2b8ee7cb6128ae20ec2feb2d2c69ff3a199",
+        "normalized_lf_sha256": "3899a1ae5e44d083273f3bc00a17895411082a32f0a953de4d08e31502802851",
+        "bytes": 8558,
+        "lines": 210
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/signal_configurations.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\signal_configurations.py",
+        "raw_sha256": "a52f969704afd6c7f1b9a23c7accf64ea1664952bda4e73188d1a0fbce7f1bd2",
+        "normalized_lf_sha256": "d73f9e421021ee2485b0c72a1457874f43aa4dbe91da3b4fc5d54d5e964aab11",
+        "bytes": 8550,
+        "lines": 205
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/procedure_core.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\procedure_core.py",
+        "raw_sha256": "1b45b4dccebc752f5ff21d1b1954d94a66c7de878c84a353bd9c08389efacf04",
+        "normalized_lf_sha256": "b62659f8b6a7f97f2111ea0a48d2a7592e7256accb52a7f945f4177c232856d2",
+        "bytes": 15781,
+        "lines": 339
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/equation_kernels.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\equation_kernels.py",
+        "raw_sha256": "32a7e35758fbef310c1452ad0a97a67a249f3c46317df80deca0eef6151830ef",
+        "normalized_lf_sha256": "dfc0d5b69ccf2aed0f976cd87af7d8690bc37d2d4bd3e3fd00e98367798cb79c",
+        "bytes": 3390,
+        "lines": 79
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/finite_state_audit.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\finite_state_audit.py",
+        "raw_sha256": "449901200b89071ebfcde5429c09c2601844fc0dce2797439920e34c1bda9ae1",
+        "normalized_lf_sha256": "8402cec1fe48b518f8024c3a58c2476b6e3d941d2a3fbfdcffa5ca88662a6255",
+        "bytes": 1651,
+        "lines": 35
+      },
+      {
+        "project": "kavi",
+        "path": "docs/REUSABLE_RELATIONAL_CONFIGURATIONS.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\docs\\REUSABLE_RELATIONAL_CONFIGURATIONS.md",
+        "raw_sha256": "614d243d097b8539c519874d4611d38b1d8b91c30cf13a257b6d0b057e3e6f3f",
+        "normalized_lf_sha256": "614d243d097b8539c519874d4611d38b1d8b91c30cf13a257b6d0b057e3e6f3f",
+        "bytes": 20019,
+        "lines": 170
+      },
+      {
+        "project": "kavi",
+        "path": "docs/DESIGN_ALIGNMENT_AUDIT.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\docs\\DESIGN_ALIGNMENT_AUDIT.md",
+        "raw_sha256": "7981969621d7ae4942f2278f9d4651f6ba2f8b8cab90fdec474485ad4c734d6c",
+        "normalized_lf_sha256": "7981969621d7ae4942f2278f9d4651f6ba2f8b8cab90fdec474485ad4c734d6c",
+        "bytes": 26497,
+        "lines": 223
+      },
+      {
+        "project": "kavi",
+        "path": "docs/PCL_DESIGN.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\docs\\PCL_DESIGN.md",
+        "raw_sha256": "e4c8b1a51fc370dc2b6406a3d5f16f0aa9b3bdc2e05c6d675cda33ac24dc1820",
+        "normalized_lf_sha256": "e4c8b1a51fc370dc2b6406a3d5f16f0aa9b3bdc2e05c6d675cda33ac24dc1820",
+        "bytes": 29529,
+        "lines": 186
+      },
+      {
+        "project": "kavi",
+        "path": "docs/PCL_LEARNED_HABITAT_PROTOCOL.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\docs\\PCL_LEARNED_HABITAT_PROTOCOL.md",
+        "raw_sha256": "54da7fb95ddbe3e9573be7d5fdb8ba30226a4a4dd3d849803c70c2ca666eb990",
+        "normalized_lf_sha256": "54da7fb95ddbe3e9573be7d5fdb8ba30226a4a4dd3d849803c70c2ca666eb990",
+        "bytes": 4085,
+        "lines": 31
+      },
+      {
+        "project": "kavi",
+        "path": "experiments/2026-09-08-pcl-habitat.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\experiments\\2026-09-08-pcl-habitat.md",
+        "raw_sha256": "1a78e28bca101185685c65dcc799aaa0c195862c1807327458dcc621c902fc5f",
+        "normalized_lf_sha256": "1a78e28bca101185685c65dcc799aaa0c195862c1807327458dcc621c902fc5f",
+        "bytes": 9099,
+        "lines": 88
+      },
+      {
+        "project": "kavi",
+        "path": "experiments/2026-09-08-pcl-habitat.json",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\experiments\\2026-09-08-pcl-habitat.json",
+        "raw_sha256": "29747124e4be8d6d3af4251d9b0f2b230dc313491c0cc0f73d0c555f996ef8ca",
+        "normalized_lf_sha256": "29747124e4be8d6d3af4251d9b0f2b230dc313491c0cc0f73d0c555f996ef8ca",
+        "bytes": 22735,
+        "lines": 696
+      },
+      {
+        "project": "kavi",
+        "path": "experiments/2026-09-08-pcl-situations.md",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\experiments\\2026-09-08-pcl-situations.md",
+        "raw_sha256": "90a59de77a20355c6489f77c36694fa1022f56f13a2168a0a869edd30898f3b7",
+        "normalized_lf_sha256": "90a59de77a20355c6489f77c36694fa1022f56f13a2168a0a869edd30898f3b7",
+        "bytes": 6614,
+        "lines": 82
+      },
+      {
+        "project": "kavi",
+        "path": "scripts/run_pcl_habitat.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\scripts\\run_pcl_habitat.py",
+        "raw_sha256": "de034b4cd222f232b8939e60cbaa58c36cd0e0d25d04638d3457ae7ec814a3e0",
+        "normalized_lf_sha256": "bbd9d778aa15fbe275b14a29bec9c680b5922897f21c3c6caec98db267083bb5",
+        "bytes": 5689,
+        "lines": 86
+      },
+      {
+        "project": "kavi",
+        "path": "scripts/check_pcl_state_branching.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\scripts\\check_pcl_state_branching.py",
+        "raw_sha256": "6ac15c6955e83b51e7802a980c064b83634b2d58532f75bb541afc2740c40928",
+        "normalized_lf_sha256": "9b75f0ee0b47f930d5deb852ec035b1b10b199da4c855a45eed653e757b42e15",
+        "bytes": 1867,
+        "lines": 49
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/__init__.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\__init__.py",
+        "raw_sha256": "6403045df965f4f854a0923312b27b3f239e54abd34df77c627564a11bf25916",
+        "normalized_lf_sha256": "e0252be69e755165a5aef9fa3ce09b61696c18d896a44344c6677f9f1464816f",
+        "bytes": 402,
+        "lines": 9
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/encoding.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\encoding.py",
+        "raw_sha256": "8b3297f96ae9e771d6437363084fef84db14c044ac452a2bec7064c6de5b6f68",
+        "normalized_lf_sha256": "2f383d137888f0050adf54d6b99d2902ce99b976d179ac658c51bad81dc7b4fa",
+        "bytes": 1456,
+        "lines": 36
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/english_logic.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\english_logic.py",
+        "raw_sha256": "b26985ef7ba78fe081870da0422e05e282161b1c2125d77743b800fc5105f9f2",
+        "normalized_lf_sha256": "8f7ccf926c0a9254d5e6a4fdb61f3d427b289638e28fbd2a5a489e3f81323d0a",
+        "bytes": 1601,
+        "lines": 42
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/evaluation.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\evaluation.py",
+        "raw_sha256": "5b5fa29309d8b138793e2192731d7a5cadac5a161a76385b6f9132038042a492",
+        "normalized_lf_sha256": "865076a99f9390e8578115391b5d7ce94c4aac71d0a4c051583a910ea27e41e6",
+        "bytes": 1055,
+        "lines": 23
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/habitat.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\habitat.py",
+        "raw_sha256": "05cff8ce2bfce83815051b1fb6d1fcb5dd680327c50ba0eebfa6b2a11a6b0c34",
+        "normalized_lf_sha256": "93867dcd478f949ea1b6e9c116373f5b795c77935a5f98e03f8f260b11041c1e",
+        "bytes": 7485,
+        "lines": 163
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/layers.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\layers.py",
+        "raw_sha256": "e4d040d3cf3c1bec937bc66c4b1d94d8ba76b7b44c1ffec869c28341758ae4d6",
+        "normalized_lf_sha256": "7ef57720a2121fc0b94b6395c7dbb658e1c32af550008861947422389390f818",
+        "bytes": 6191,
+        "lines": 127
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/learning.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\learning.py",
+        "raw_sha256": "239083611ab68af9d429632428b6a00f64bf1faace37b4950446246ccc348827",
+        "normalized_lf_sha256": "8c94b359e4ab4d4682a9ad0cc082e67c5588ab2364ef79bf7cb2f4f1e6a77f22",
+        "bytes": 3739,
+        "lines": 85
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/logic.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\logic.py",
+        "raw_sha256": "38d85c9662c88337b36b7501008dddb9e66abc9369b7741e21aacf75b801dbb5",
+        "normalized_lf_sha256": "393bfcca3f9e3db360106c11c0f67d727f0188eab98245f8c3fb9b81e231b35a",
+        "bytes": 2988,
+        "lines": 68
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/model.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\model.py",
+        "raw_sha256": "f6f93f88c1be868ba14999d102963fc4cdb9d0305110caaa29e447aa2fd9a77e",
+        "normalized_lf_sha256": "4662e5529730bc690aa5368715e59d05293cac9724d8befe97912cc07d618827",
+        "bytes": 3811,
+        "lines": 77
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/reasoning.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\reasoning.py",
+        "raw_sha256": "103934d9227601735fe22085655131008a9b456e8a5d08f25f54baccf4a953ab",
+        "normalized_lf_sha256": "816afb5502b1a637cae76833c8fd3c932c6155e1e5c92551d19c30f93d1bc472",
+        "bytes": 1003,
+        "lines": 25
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/regions.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\regions.py",
+        "raw_sha256": "cbcf552ee72034f83a8358c19be1a2d1878fe934f89947e72f151cf0fb1c98ed",
+        "normalized_lf_sha256": "c6240ab59a7fa667347827ae6071553e713bc8193a4fbee944714c07bb189718",
+        "bytes": 1909,
+        "lines": 47
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/runtime.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\runtime.py",
+        "raw_sha256": "0157f9e8cf4dfd8cff9ce21ad1132749192362d0faa667bf0b2d10ee5b39065b",
+        "normalized_lf_sha256": "e2ea44b35952af872ec6e637451d9095f5a208a087d4f43570f2180fb5294002",
+        "bytes": 3047,
+        "lines": 71
+      },
+      {
+        "project": "kavi",
+        "path": "kavi/phase/selection.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\kavi\\phase\\selection.py",
+        "raw_sha256": "3255d0c5fe4711feda58c7d1c9838add75e4ede080c825609b2aa36c4d360d28",
+        "normalized_lf_sha256": "8a41129e677f194f1082283ec77508730c0fa4af4641cf2f4072408278ce0eb1",
+        "bytes": 1861,
+        "lines": 39
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_phase_configuration.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_phase_configuration.py",
+        "raw_sha256": "28c7291a2d6fa1ba3de690efb1578df8de331eb5d3d1b360d6a9230acf74ff58",
+        "normalized_lf_sha256": "c0cd6330c31f5e2e269f2394339c0bc54243b2e10732d0ebe64e7abd1b4ed650",
+        "bytes": 3222,
+        "lines": 72
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_phase_layers.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_phase_layers.py",
+        "raw_sha256": "95e1801d9f09ed228fcee2a7703c986d0398b4e5619cbf5f699769af84b3368e",
+        "normalized_lf_sha256": "8d7d831f27cfc92b0a282b85c0ee49bc236b27d7f35966299cb02434cf39f3ee",
+        "bytes": 2552,
+        "lines": 49
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_phase_habitat.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_phase_habitat.py",
+        "raw_sha256": "8db43dbfaaa35254bdff284412d62e5f79abcbe232d3beb94c48bcd156b03094",
+        "normalized_lf_sha256": "74a78f144b332330074738f5d19173f70236b44df0cc9f4199a3ed9fcae4e66a",
+        "bytes": 3880,
+        "lines": 78
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_phase_branching.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_phase_branching.py",
+        "raw_sha256": "69d887ce4e1b993ed83f7f72a58584b8f42da1f8b4178b170453b2127e8d6fb9",
+        "normalized_lf_sha256": "542ab4296793c4a14f1368113375700c6b73e6683f50a549ccc7645a7e4d1584",
+        "bytes": 2821,
+        "lines": 72
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_composable_configurations.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_composable_configurations.py",
+        "raw_sha256": "6a11ac1f4459e8be26a11a1ad47180e00de7f60bff9175dfb64dc3954f151eb3",
+        "normalized_lf_sha256": "599c49c505d910fb55d932e27c3b743b2ae3f1387a040e930910a4dbb502105a",
+        "bytes": 5071,
+        "lines": 98
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_recurrent_configuration.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_recurrent_configuration.py",
+        "raw_sha256": "0429031bc6c9740b907ba4b0b527bce388e23bea22c1ee5a3af554e6e5040e5c",
+        "normalized_lf_sha256": "96d9ea1957fc815920f7f27539654101f8a79db0fa3bcabf1009508c874717fc",
+        "bytes": 5505,
+        "lines": 108
+      },
+      {
+        "project": "kavi",
+        "path": "tests/test_configuration_composition.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_configuration_composition.py",
+        "raw_sha256": "b0289ed38a4585a4792f101d4f4100d3a6a97ac479713d23932130b9e258c754",
+        "normalized_lf_sha256": "f114d91e8577c214083f574fc97e843c72c194ca9bb5e38da85ef265f769da84",
+        "bytes": 3699,
+        "lines": 70
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/shared.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\shared.py",
+        "raw_sha256": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+        "normalized_lf_sha256": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+        "bytes": 14984,
+        "lines": 314
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/solver.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\solver.py",
+        "raw_sha256": "646b7db864c5844e6fba748f438f7a5588a38be80a9a55cef44c0b8b4ca314ae",
+        "normalized_lf_sha256": "646b7db864c5844e6fba748f438f7a5588a38be80a9a55cef44c0b8b4ca314ae",
+        "bytes": 15528,
+        "lines": 319
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/contracts.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\contracts.py",
+        "raw_sha256": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+        "normalized_lf_sha256": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+        "bytes": 2917,
+        "lines": 80
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/r1.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\r1.py",
+        "raw_sha256": "5c1ab6c7cfcdc7b9c2ba3b2b5d529c42b71af2a6322d3cf7db70f445a4979bf7",
+        "normalized_lf_sha256": "5c1ab6c7cfcdc7b9c2ba3b2b5d529c42b71af2a6322d3cf7db70f445a4979bf7",
+        "bytes": 18410,
+        "lines": 334
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/session_state.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\session_state.py",
+        "raw_sha256": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+        "normalized_lf_sha256": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+        "bytes": 2853,
+        "lines": 64
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/models.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\models.py",
+        "raw_sha256": "2ff87f7a4c03353332a1ae31b4f704a6ae0ac5138e3e2d245f20c32aa4cb70b2",
+        "normalized_lf_sha256": "2ff87f7a4c03353332a1ae31b4f704a6ae0ac5138e3e2d245f20c32aa4cb70b2",
+        "bytes": 11308,
+        "lines": 266
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/typed_programs.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\typed_programs.py",
+        "raw_sha256": "280e732ec48d3d5b6988b5483cfbbf3957bfa7768f1fa392d55293ad3eb40948",
+        "normalized_lf_sha256": "280e732ec48d3d5b6988b5483cfbbf3957bfa7768f1fa392d55293ad3eb40948",
+        "bytes": 5650,
+        "lines": 94
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/r2.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\r2.py",
+        "raw_sha256": "88337fccae017da88fd4e4761374faba333719948acd210ec4bdedcf5ebad24e",
+        "normalized_lf_sha256": "88337fccae017da88fd4e4761374faba333719948acd210ec4bdedcf5ebad24e",
+        "bytes": 24384,
+        "lines": 447
+      },
+      {
+        "project": "sera",
+        "path": "src/sera/programs.py",
+        "absolute_path": "D:\\ai\\projects\\sera\\src\\sera\\programs.py",
+        "raw_sha256": "ca9b5382b8c62505e2d1fc37023a81b8e364bbfe8bb2b67f2b281e1e73e6d275",
+        "normalized_lf_sha256": "ca9b5382b8c62505e2d1fc37023a81b8e364bbfe8bb2b67f2b281e1e73e6d275",
+        "bytes": 7616,
+        "lines": 195
+      }
+    ]
+  },
+  "environment": {
+    "python_executable": "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 16,
+    "dependencies": {
+      "torch": "2.10.0+cpu",
+      "numpy": "2.5.3",
+      "pytest": "9.1.1"
+    },
+    "installed_packages": 0,
+    "hardware_model": null,
+    "hardware_query": "Win32_Processor and Win32_ComputerSystem CIM queries returned Access denied; no escalation requested."
+  },
+  "git": {
+    "kavi_head": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "50f743cc44794b67bc1d30b927e25991197edce2\n",
+      "stderr": ""
+    },
+    "kavi_status": {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "kavi_log": {
+      "command": [
+        "git",
+        "log",
+        "-15",
+        "--format=%H %ad %s",
+        "--date=iso-strict"
+      ],
+      "exit_code": 0,
+      "stdout": "50f743cc44794b67bc1d30b927e25991197edce2 2026-09-08T16:29:56-07:00 Infer a learned role boundary and replace it with the circuit\nfee6b2f81040f686a897db152db16cbff64bc8b7 2026-09-08T16:03:56-07:00 Test harder logical constraints and teach an English-to-logic bridge\n11d8d87105dbeec0c0db1af20f89f60d456a94d2 2026-09-08T15:48:06-07:00 Teach phase circuits propositional logic from original textbook tables\nb371b326742a1d2d3d53566b41f202a218cbe564 2026-09-08T15:28:19-07:00 Measure phase-circuit learning of ordered grammatical relations\n88b871666cdffd6ea6a04e9507afcf450a75e7b7 2026-09-08T14:12:31-07:00 Support independent continuations of phase states\n8f07b7b11e7979c687b277692b5beae5f06f1b36 2026-09-08T14:03:08-07:00 Record the first source-based PCL classification course\n1b7a213a8365f92a7dc17fde0b79f4b217b63d55 2026-09-08T14:01:23-07:00 Learn interval readout rules over phase configurations\n3e4e5f750ec9ee8157284ddebcc2f06e0f1cb003 2026-09-08T13:34:35-07:00 Clarify the learned internal world as PCL's central target\n5186345ca44ef3ff92038b6e0283ac9341aae033 2026-09-08T13:26:45-07:00 Add static fallbacks for configuration diagrams\n04eb8e3936849acc881b5e5a1b6602b9dd73eefb 2026-09-08T13:26:21-07:00 Add two-layer phase circuit reconstruction and development plan\n3b1e5a29a0920817807ffec47a4e8a13c627bc87 2026-09-08T13:24:31-07:00 Record psychology transfer results and failed generalization\n9347584570247884e6603091acc1158f92c04c34 2026-09-07T21:35:05-07:00 Document controlled learning results and original notebook sources\nef89aceb499ac9b02a6a4674852557d7c6bccdd3 2026-09-07T21:32:09-07:00 Teach recurrent English connections and supervised input-time extensions\n42d6b12bd3ba46724880b70a8ba4b8f8113101fd 2026-09-07T21:31:02-07:00 Add interacting signal execution and exact English structure sharing\n28f1bb3699c45f24d9dd6ea52e1eb216100b0e30 2026-09-07T21:30:05-07:00 Add attributable source access and isolated conversation interface\n",
+      "stderr": ""
+    },
+    "kavi_remote": {
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "origin\thttps://github.com/Arnav123-s/Kavi.git (fetch)\norigin\thttps://github.com/Arnav123-s/Kavi.git (push)\n",
+      "stderr": ""
+    },
+    "kavi_eol": {
+      "command": [
+        "git",
+        "ls-files",
+        "--eol",
+        "kavi/phase/model.py",
+        "kavi/phase/habitat.py"
+      ],
+      "exit_code": 0,
+      "stdout": "i/lf    w/crlf  attr/text=auto        \tkavi/phase/habitat.py\ni/lf    w/crlf  attr/text=auto        \tkavi/phase/model.py\n",
+      "stderr": ""
+    },
+    "sera_head": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "8dd87f9a02a3752c041f05a101fd250e73e82cd7\n",
+      "stderr": ""
+    },
+    "sera_status": {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": " M .gitignore\n?? experiments/parameter_cloud/audit.py\n?? research-continuation/\n",
+      "stderr": ""
+    },
+    "sera_core_change_since_packet": {
+      "command": [
+        "git",
+        "diff",
+        "a4047173fd33d27d33d8a151f32613eae343df56",
+        "HEAD",
+        "--",
+        "src/sera/shared.py",
+        "src/sera/solver.py",
+        "src/sera/contracts.py",
+        "src/sera/r1.py",
+        "src/sera/session_state.py",
+        "src/sera/models.py",
+        "src/sera/typed_programs.py",
+        "src/sera/r2.py",
+        "src/sera/programs.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "commands": [
+    {
+      "command": "git ls-remote https://github.com/Arnav123-s/Kavi.git HEAD refs/heads/main refs/heads/master",
+      "exit_code": 1,
+      "stderr": "schannel: AcquireCredentialsHandle failed: SEC_E_NO_CREDENTIALS (0x8009030e) - No credentials are available in the security package",
+      "status": "resolved"
+    },
+    {
+      "command": "git -c http.sslBackend=openssl ls-remote https://github.com/Arnav123-s/Kavi.git HEAD refs/heads/main refs/heads/master",
+      "exit_code": 0,
+      "stdout": "50f743cc44794b67bc1d30b927e25991197edce2 HEAD\n50f743cc44794b67bc1d30b927e25991197edce2 refs/heads/main",
+      "status": "passed"
+    },
+    {
+      "command": "git -c http.sslBackend=openssl clone --no-checkout https://github.com/Arnav123-s/Kavi.git D:/ai/projects/sera/research-continuation/00_sources/kavi-pinned",
+      "exit_code": 0,
+      "wall_seconds": 3.2620675,
+      "status": "passed"
+    },
+    {
+      "command": "git checkout --detach 50f743cc44794b67bc1d30b927e25991197edce2",
+      "cwd": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "command": "git log -15 --format='%H %ad %s' --date=iso-strict",
+      "status": "read",
+      "result": "50f743cc44794b67bc1d30b927e25991197edce2 2026-09-08T16:29:56-07:00 Infer a learned role boundary and replace it with the circuit\nfee6b2f81040f686a897db152db16cbff64bc8b7 2026-09-08T16:03:56-07:00 Test harder logical constraints and teach an English-to-logic bridge\n11d8d87105dbeec0c0db1af20f89f60d456a94d2 2026-09-08T15:48:06-07:00 Teach phase circuits propositional logic from original textbook tables\nb371b326742a1d2d3d53566b41f202a218cbe564 2026-09-08T15:28:19-07:00 Measure phase-circuit learning of ordered grammatical relations\n88b871666cdffd6ea6a04e9507afcf450a75e7b7 2026-09-08T14:12:31-07:00 Support independent continuations of phase states\n8f07b7b11e7979c687b277692b5beae5f06f1b36 2026-09-08T14:03:08-07:00 Record the first source-based PCL classification course\n1b7a213a8365f92a7dc17fde0b79f4b217b63d55 2026-09-08T14:01:23-07:00 Learn interval readout rules over phase configurations\n3e4e5f750ec9ee8157284ddebcc2f06e0f1cb003 2026-09-08T13:34:35-07:00 Clarify the learned internal world as PCL's central target\n5186345ca44ef3ff92038b6e0283ac9341aae033 2026-09-08T13:26:45-07:00 Add static fallbacks for configuration diagrams\n04eb8e3936849acc881b5e5a1b6602b9dd73eefb 2026-09-08T13:26:21-07:00 Add two-layer phase circuit reconstruction and development plan\n3b1e5a29a0920817807ffec47a4e8a13c627bc87 2026-09-08T13:24:31-07:00 Record psychology transfer results and failed generalization\n9347584570247884e6603091acc1158f92c04c34 2026-09-07T21:35:05-07:00 Document controlled learning results and original notebook sources\nef89aceb499ac9b02a6a4674852557d7c6bccdd3 2026-09-07T21:32:09-07:00 Teach recurrent English connections and supervised input-time extensions\n42d6b12bd3ba46724880b70a8ba4b8f8113101fd 2026-09-07T21:31:02-07:00 Add interacting signal execution and exact English structure sharing\n28f1bb3699c45f24d9dd6ea52e1eb216100b0e30 2026-09-07T21:30:05-07:00 Add attributable source access and isolated conversation interface\n"
+    },
+    {
+      "command": "rg --files --hidden --no-ignore -g AGENTS.md -g '!.git' <isolated-kavi>",
+      "exit_code": 1,
+      "status": "no_matching_files"
+    },
+    {
+      "command": "Get-Content <sera>/src/sera/session.py",
+      "exit_code": 1,
+      "status": "suggested_path_absent; actual models.py Session, r1.py WorldSession and session_state.py inspected"
+    },
+    {
+      "command": "rg ... tests/test_phase_*.py ...",
+      "exit_code": 1,
+      "status": "Windows wildcard path syntax rejected; corrected by rg tests -g test_phase_*.py"
+    },
+    {
+      "command": "web.open https://github.com/Arnav123-s/Kavi/tree/50f743cc44794b67bc1d30b927e25991197edce2",
+      "status": "tool cache miss; complete Git checkout supplied source access"
+    },
+    {
+      "command": "Get-CimInstance Win32_Processor / Win32_ComputerSystem",
+      "exit_code": 1,
+      "status": "read access denied; environment CPU count and platform available"
+    }
+  ],
+  "tests": {
+    "upstream": {
+      "evidence_class": "executed_here",
+      "command": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "cwd": "D:/ai/projects/sera/research-continuation/00_sources/kavi-pinned",
+      "timeout_seconds": 60,
+      "exit_code": 0,
+      "wall_seconds": 13.844143799999983,
+      "stdout": "",
+      "stderr": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned\\tests\\test_forward_repair.py:40: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\nConsider using tensor.detach() first. (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\torch\\csrc\\autograd\\generated\\python_variable_methods.cpp:837.)\n  self.assertEqual(float(child.network.repair_gain[-1]), 0)\n----------------------------------------------------------------------\nRan 321 tests in 10.480s\n\nOK\n",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "tests_run": 321,
+      "tests_passed": 321,
+      "reported_test_seconds": 10.48,
+      "cpu_seconds": null,
+      "peak_rss_bytes": null,
+      "measurement_limits": "Wrapper records process wall time only; child CPU and peak RSS were not captured. Warning in test_forward_repair.py was non-fatal."
+    },
+    "contract_probes": {
+      "evidence_class": "executed_here",
+      "kind": "bounded_software_contract_probes_not_curriculum",
+      "wall_seconds": 0.0013632000000143307,
+      "checks": [
+        {
+          "name": "habitat_only_identity_change",
+          "passed": true,
+          "inner_generation_before": 0,
+          "inner_generation_after": 0,
+          "full_record_digest_before": "e7d55f3a4d65c67729fe11b88132796662dda49eacf13b4f3b8b61c72623e84f",
+          "full_record_digest_after": "d8e1f8c70c336f1ed17b9fc3c5d74e34be267f5b2e01cdcc7961969942957884",
+          "report": {
+            "accepted": true,
+            "inner_selection": {
+              "candidates": 1,
+              "accepted": false,
+              "errors": 0,
+              "finite_retention_passed": true,
+              "whole_candidates": 1,
+              "compatible_candidates": 1,
+              "seed": 7,
+              "readout": "exact",
+              "template_unchanged": true,
+              "previous_sha256": "f7994f1b9dfff21089b3edba270a1b49a753ff04e651c5d6af6712e087d6915d",
+              "successor_sha256": "f7994f1b9dfff21089b3edba270a1b49a753ff04e651c5d6af6712e087d6915d"
+            },
+            "old_boundary_cases": 0,
+            "protected_cases": 0,
+            "explicit_corrections": 0,
+            "boundary_preserved": true,
+            "habitat_changed": true,
+            "roles": 1,
+            "patterns": 1
+          }
+        },
+        {
+          "name": "phase_mutable_collection_rejected",
+          "passed": true
+        },
+        {
+          "name": "hierarchical_nested_alias_counterexample",
+          "passed": true,
+          "before": 5,
+          "after_through_copied_registry": 6,
+          "configuration_object_shared": true,
+          "interpretation": "Frozen dataclass fields do not reject a mutable calls list; Registry.copy shares configuration objects."
+        },
+        {
+          "name": "kernel_mapping_alias_counterexample",
+          "passed": true,
+          "before": 5,
+          "after": 6,
+          "verify_enabled": true,
+          "kernel_mapping_shared": true,
+          "substrate_unchanged": true,
+          "interpretation": "Dependency guard pins configuration records and substrate string; caller must freeze kernel implementation ownership or update identity."
+        },
+        {
+          "name": "work_negative_amount_counterexample",
+          "passed": true,
+          "limit": 1,
+          "counts": {
+            "negative_fixture": -100,
+            "test_operations": 50
+          },
+          "interpretation": "Kavi Work.add accepts negative amounts. Do not expose unvalidated external accounting through this API."
+        }
+      ],
+      "exit_code": 0,
+      "tool_wall_seconds": 0.2861176,
+      "cpu_seconds": null,
+      "peak_rss_bytes": null,
+      "reproduction_python": "import hashlib, json\nfrom kavi.composable_configurations import Configuration, Registry, Work, encoded\nfrom kavi.phase.model import PhaseConfiguration\nfrom kavi.phase.layers import CircuitTemplate, CircuitGeneration\nfrom kavi.phase.habitat import Habitat, WorldGeneration, teach_world\ndef sha(value): return hashlib.sha256(encoded(value)).hexdigest()\ncircuit = PhaseConfiguration((2,), (('x',0,1),), outputs=(((1,),1),))\nold = WorldGeneration(Habitat(), CircuitGeneration(CircuitTemplate((2,), max_couplings=0), circuit))\nnew, report = teach_world(old, [(('x',),1)], Work(limit=10000), candidates=1)\nassert report['accepted'] and new.inner is old.inner and new.inner.generation == 0\nassert sha(old.record()) != sha(new.record())\ntry:\n    PhaseConfiguration((2,), [('x',0,1)])\nexcept ValueError:\n    pass\nelse:\n    raise AssertionError('Mutable phase collection accepted')\ncalls = [('add', (0,1))]\nregistry = Registry({'plus':lambda a,w:a[0]+a[1], 'times':lambda a,w:a[0]*a[1]}, 'audit-substrate-v1')\nregistry.install('add', Configuration(2, kernel='plus'))\nregistry.install('multiply', Configuration(2, kernel='times'))\nregistry.install('combined', Configuration(2, calls, 2))\ncopied = registry.copy()\nbefore_digest = sha(registry.record())\nassert registry.execute('combined', (2,3), Work(limit=1000)) == 5\ncalls[0] = ('multiply',(0,1))\nassert copied.execute('combined', (2,3), Work(limit=1000)) == 6\nassert sha(registry.record()) != before_digest\nplan = registry.expand('add', Work(limit=1000))\nassert plan.execute((2,3), registry, Work(limit=1000)) == 5\ncopied.kernels['plus'] = lambda a,w:a[0]*a[1]\nassert plan.execute((2,3), registry, Work(limit=1000)) == 6\nwork = Work(limit=1)\nwork.add('negative_fixture', -100)\nwork.add('test_operations', 50)\nassert sum(work.counts.values()) == -50\nprint('Five bounded contract probes reproduced')\n",
+      "reproduction_command": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-c",
+        "<reproduction_python>"
+      ],
+      "cwd": "D:\\ai\\projects\\sera\\research-continuation\\00_sources\\kavi-pinned"
+    }
+  },
+  "published_artifact_audit": {
+    "evidence_class": "source_observed",
+    "fingerprints": [
+      {
+        "path": "docs/PCL_LEARNED_HABITAT_PROTOCOL.md",
+        "published_sha256": "54da7fb95ddbe3e9573be7d5fdb8ba30226a4a4dd3d849803c70c2ca666eb990",
+        "raw_sha256": "54da7fb95ddbe3e9573be7d5fdb8ba30226a4a4dd3d849803c70c2ca666eb990",
+        "normalized_lf_sha256": "54da7fb95ddbe3e9573be7d5fdb8ba30226a4a4dd3d849803c70c2ca666eb990",
+        "normalized_matches": true,
+        "raw_matches": true
+      },
+      {
+        "path": "scripts/run_pcl_habitat.py",
+        "published_sha256": "bbd9d778aa15fbe275b14a29bec9c680b5922897f21c3c6caec98db267083bb5",
+        "raw_sha256": "de034b4cd222f232b8939e60cbaa58c36cd0e0d25d04638d3457ae7ec814a3e0",
+        "normalized_lf_sha256": "bbd9d778aa15fbe275b14a29bec9c680b5922897f21c3c6caec98db267083bb5",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/habitat.py",
+        "published_sha256": "93867dcd478f949ea1b6e9c116373f5b795c77935a5f98e03f8f260b11041c1e",
+        "raw_sha256": "05cff8ce2bfce83815051b1fb6d1fcb5dd680327c50ba0eebfa6b2a11a6b0c34",
+        "normalized_lf_sha256": "93867dcd478f949ea1b6e9c116373f5b795c77935a5f98e03f8f260b11041c1e",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/model.py",
+        "published_sha256": "4662e5529730bc690aa5368715e59d05293cac9724d8befe97912cc07d618827",
+        "raw_sha256": "f6f93f88c1be868ba14999d102963fc4cdb9d0305110caaa29e447aa2fd9a77e",
+        "normalized_lf_sha256": "4662e5529730bc690aa5368715e59d05293cac9724d8befe97912cc07d618827",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/layers.py",
+        "published_sha256": "7ef57720a2121fc0b94b6395c7dbb658e1c32af550008861947422389390f818",
+        "raw_sha256": "e4d040d3cf3c1bec937bc66c4b1d94d8ba76b7b44c1ffec869c28341758ae4d6",
+        "normalized_lf_sha256": "7ef57720a2121fc0b94b6395c7dbb658e1c32af550008861947422389390f818",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/runtime.py",
+        "published_sha256": "e2ea44b35952af872ec6e637451d9095f5a208a087d4f43570f2180fb5294002",
+        "raw_sha256": "0157f9e8cf4dfd8cff9ce21ad1132749192362d0faa667bf0b2d10ee5b39065b",
+        "normalized_lf_sha256": "e2ea44b35952af872ec6e637451d9095f5a208a087d4f43570f2180fb5294002",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/learning.py",
+        "published_sha256": "8c94b359e4ab4d4682a9ad0cc082e67c5588ab2364ef79bf7cb2f4f1e6a77f22",
+        "raw_sha256": "239083611ab68af9d429632428b6a00f64bf1faace37b4950446246ccc348827",
+        "normalized_lf_sha256": "8c94b359e4ab4d4682a9ad0cc082e67c5588ab2364ef79bf7cb2f4f1e6a77f22",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/selection.py",
+        "published_sha256": "8a41129e677f194f1082283ec77508730c0fa4af4641cf2f4072408278ce0eb1",
+        "raw_sha256": "3255d0c5fe4711feda58c7d1c9838add75e4ede080c825609b2aa36c4d360d28",
+        "normalized_lf_sha256": "8a41129e677f194f1082283ec77508730c0fa4af4641cf2f4072408278ce0eb1",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "kavi/phase/logic.py",
+        "published_sha256": "393bfcca3f9e3db360106c11c0f67d727f0188eab98245f8c3fb9b81e231b35a",
+        "raw_sha256": "38d85c9662c88337b36b7501008dddb9e66abc9369b7741e21aacf75b801dbb5",
+        "normalized_lf_sha256": "393bfcca3f9e3db360106c11c0f67d727f0188eab98245f8c3fb9b81e231b35a",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "scripts/pcl_discrete_source.py",
+        "published_sha256": "9565905e6c86d8b3b4e8e19ba4a681dcac33234bfe893af30ae64fb0bc4772fc",
+        "raw_sha256": "9bc2f7767675807fcb5391f305c6052bdb025520352a1b00487cb5ff7658dcd6",
+        "normalized_lf_sha256": "9565905e6c86d8b3b4e8e19ba4a681dcac33234bfe893af30ae64fb0bc4772fc",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "scripts/run_pcl_discrete.py",
+        "published_sha256": "e53994335e6fe3c239dda7030793275cadbae0f317ee69ddea37036a75eab628",
+        "raw_sha256": "922a024d869d4992dae66c6ea61831ac59a26b63c2f9d5e4904fb569b225ce1e",
+        "normalized_lf_sha256": "e53994335e6fe3c239dda7030793275cadbae0f317ee69ddea37036a75eab628",
+        "normalized_matches": true,
+        "raw_matches": false
+      },
+      {
+        "path": "scripts/configuration_run_support.py",
+        "published_sha256": "df2e6281dd853361faffc57f763468983002da582f66d40c96fe22f0ddd1452c",
+        "raw_sha256": "0b0a6993bdccd5f8018e79cd665c1e8d9adc57753567ef9569346782325d241e",
+        "normalized_lf_sha256": "df2e6281dd853361faffc57f763468983002da582f66d40c96fe22f0ddd1452c",
+        "normalized_matches": true,
+        "raw_matches": false
+      }
+    ],
+    "checkpoint_presence": [
+      {
+        "seed": "7",
+        "file": "world-7.json",
+        "bytes": 619,
+        "sha256": "6ef895a017183a32e586d93354489cd193ae7bbd034bba033763e0fc957c355e",
+        "present_in_checkout": false
+      },
+      {
+        "seed": "19",
+        "file": "world-19.json",
+        "bytes": 588,
+        "sha256": "103133bc101d886b006e7c56399f465db3c9d5cec8c5141940bc36e7b8965845",
+        "present_in_checkout": false
+      },
+      {
+        "seed": "41",
+        "file": "world-41.json",
+        "bytes": 639,
+        "sha256": "ad6c29bd4d77ddfed406caef22ed1b3b2be2824bb898e5a3c0f6ead53e2e52f0",
+        "present_in_checkout": false
+      }
+    ],
+    "line_endings": "Git blobs LF; several Windows checkout source files CRLF. All 12 published source fingerprints match LF-normalized UTF-8, consistent with the source text hashing procedure.",
+    "historical_course_rerun": false
+  },
+  "findings": [
+    {
+      "id": "K01",
+      "evidence_class": "source_observed",
+      "claim": "Kavi contains separate experimental cores; the main CLI dispatches circuit/library or the older LiveRuntime. PCL is a package and course runner, not the unified application.",
+      "sources": [
+        "kavi/cli.py:110",
+        "kavi/phase/__init__.py",
+        "README.md"
+      ]
+    },
+    {
+      "id": "K02",
+      "evidence_class": "source_observed_and_executed",
+      "claim": "PhaseActivity retains exactly configuration/work/phases/closed/failed. Forks reuse the immutable configuration, current tuple and shared Work; input is synchronous finite modular dynamics and finish alone releases output.",
+      "sources": [
+        "kavi/phase/model.py:17",
+        "kavi/phase/runtime.py:5",
+        "tests/test_phase_branching.py"
+      ]
+    },
+    {
+      "id": "K03",
+      "evidence_class": "source_observed_and_executed",
+      "claim": "reconstruct builds complete candidates inside a supplied fixed template; teach_world jointly replaces finite input habitat and inner circuit, protecting old-model output obligations except explicit input-specific corrections.",
+      "sources": [
+        "kavi/phase/layers.py:55",
+        "kavi/phase/habitat.py:122",
+        "kavi/phase/selection.py:5"
+      ]
+    },
+    {
+      "id": "K04",
+      "evidence_class": "source_observed",
+      "claim": "Habitat role equality exactly factors the confirmed finite language and admits no unseen arrangements; its language is monotonically retained and bounded at 4096 replay inputs. Negative boundary retraction and cross-version live-state migration are absent.",
+      "sources": [
+        "kavi/phase/habitat.py:57",
+        "kavi/phase/habitat.py:75",
+        "experiments/2026-09-08-pcl-habitat.md"
+      ]
+    },
+    {
+      "id": "K05",
+      "evidence_class": "source_observed_and_executed",
+      "claim": "Expansion records hashes of transitive configuration dependencies and a substrate string; stale guarded expansion fails for changed definitions. Registry configuration/kernel sharing and mutable constructor inputs need caller-side ownership protection.",
+      "sources": [
+        "kavi/composable_configurations.py:23",
+        "kavi/composable_configurations.py:80",
+        "kavi/composable_configurations.py:101",
+        "kavi/equation_kernels.py:47",
+        "tests/test_composable_configurations.py"
+      ]
+    },
+    {
+      "id": "K06",
+      "evidence_class": "source_observed",
+      "claim": "Kavi learning calls take untyped event/port pairs. Teacher owns provenance; old-model replay is a behavioral regularizer rather than newly verified truth. Whole-world content identity and evidence provenance must be supplied by the integration layer.",
+      "sources": [
+        "kavi/phase/selection.py:5",
+        "kavi/phase/habitat.py:122"
+      ]
+    },
+    {
+      "id": "S01",
+      "evidence_class": "source_observed",
+      "claim": "SERA SharedR1 is one parameter owner behind parameter-free sequence/typed views; typed and sequence batch routes initialize their own state. Common parameters do not imply a common live situation.",
+      "sources": [
+        "src/sera/shared.py:43",
+        "src/sera/shared.py:134",
+        "src/sera/shared.py:165",
+        "src/sera/shared.py:217",
+        "src/sera/shared.py:304"
+      ]
+    },
+    {
+      "id": "S02",
+      "evidence_class": "source_observed",
+      "claim": "SERA WorldSession validates model and encoder identity, persists admitted provenance and state; SolverStore validates/freeze-checks candidates before fresh admission evaluation. No automatic Kavi state migration exists.",
+      "sources": [
+        "src/sera/r1.py:182",
+        "src/sera/session_state.py:12",
+        "src/sera/solver.py:237"
+      ]
+    },
+    {
+      "id": "P01",
+      "evidence_class": "proposed",
+      "claim": "First integration seam: immutable Event/MechanismRef and content-addressed executable definition ownership, a parameter-free reference to SharedR1, transitive invalidation, explicit factual versus hypothetical state, and validated replay/migration at version changes. Do not insert arbitrary Kavi records into the existing restricted typed-program grammar.",
+      "sources": [
+        "src/sera/typed_programs.py:44",
+        "src/sera/shared.py:83",
+        "src/sera/r2.py:257"
+      ]
+    }
+  ],
+  "limits": [
+    "No full Kavi source curriculum run or ignored world checkpoint replay.",
+    "No SERA suite or shared training executed by this source-audit subtask.",
+    "No source changes, upstream commits, global Git configuration changes or package installations.",
+    "No learned semantic grounding, latent migration, learned investigator gain, hybrid predictive gain, or merged architecture established."
+  ]
+}

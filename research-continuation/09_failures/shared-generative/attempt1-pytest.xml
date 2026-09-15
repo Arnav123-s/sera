@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="13" time="1.693" timestamp="2026-09-15T07:27:11.052990-07:00" hostname="ashp"><testcase classname="tests.test_shared_generative" name="test_conversion_owns_all_old_bytes_flags_and_views_without_extra_parameters" time="0.287" /><testcase classname="tests.test_shared_generative" name="test_online_posterior_matches_independent_observation_space_gaussian" time="0.038"><failure message="ValueError: Available event values must be finite real numbers">solver = Solver(
+  (neural): SharedSequenceView()
+  (components): ModuleDict(
+    (r1): GenerativeSharedR1(
+      (memory): Sta...)
+      (sequence_decoder): Linear(in_features=8, out_features=4, bias=True)
+    )
+    (typed): SharedTypedView()
+  )
+)
+
+    def test_online_posterior_matches_independent_observation_space_gaussian(solver):
+        session = SharedGenerativeSession(solver)
+        phases = [-.7, -.2, .15, .55, .9]
+        ys = np.array([[.2, -.7], [1.1, .3], [.7, 1.2], [-.4, .5], [-.8, -.2]])
+        for i, (phase, xy) in enumerate(zip(phases, ys)):
+&gt;           session.observe(event(i, phase, xy))
+                            ^^^^^^^^^^^^^^^^^^^
+
+tests\test_shared_generative.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_shared_generative.py:28: in event
+    return Event(SCHEMA, position, (phase, *xy),
+&lt;string&gt;:10: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Event(schema=EventSchema(name='phase-world', version=1, modality='numeric', width=3, units='dimensionless', entity_slo...: 'simulator_ground_truth'&gt;), available=None, entity_refs=('trajectory',), role=&lt;EventRole.OBSERVATION: 'observation'&gt;)
+
+    def __post_init__(self):
+        if type(self.schema) is not EventSchema or type(self.provenance) is not Provenance:
+            raise ValueError("Events require validated schema and provenance objects")
+        if any(type(value) is not str or not value
+               for value in (self.provenance.source, self.provenance.record_id)):
+            raise ValueError("Event provenance needs stable string identifiers")
+        if not isinstance(self.role, EventRole):
+            raise ValueError("An explicit event role is required")
+        if type(self.sequence) is not int or self.sequence &lt; 0:
+            raise ValueError("Event sequence must be a nonnegative integer")
+        values = tuple(self.values)
+        mask = (True,) * len(values) if self.available is None else tuple(self.available)
+        if len(values) != self.schema.width or len(mask) != len(values):
+            raise ValueError("Event values and availability must match the schema width")
+        if any(type(value) is not bool for value in mask):
+            raise ValueError("Availability entries must be booleans")
+        normalized = []
+        for value, visible in zip(values, mask):
+            if not visible:
+                # Unavailable content has no feature or identity channel.
+                normalized.append(0.0)
+            elif type(value) not in (int, float) or not math.isfinite(value):
+&gt;               raise ValueError("Available event values must be finite real numbers")
+E               ValueError: Available event values must be finite real numbers
+
+src\sera\event_ir.py:95: ValueError</failure></testcase><testcase classname="tests.test_shared_generative" name="test_predictions_branches_and_old_routes_retain_the_same_owner" time="0.163"><failure message="assert False&#10; +  where False = &lt;built-in method equal of type object at 0x00007FFEF161EA70&gt;(tensor([[ 0.8089,  0.5876],\n        [-0.5876,  0.8088]], dtype=torch.float64), tensor([[ 0.8089,  0.5876],\n        [-0.5876,  0.8088]], dtype=torch.float64))&#10; +    where &lt;built-in method equal of type object at 0x00007FFEF161EA70&gt; = torch.equal">solver = Solver(
+  (neural): SharedSequenceView()
+  (components): ModuleDict(
+    (r1): GenerativeSharedR1(
+      (memory): Sta...)
+      (sequence_decoder): Linear(in_features=8, out_features=4, bias=True)
+    )
+    (typed): SharedTypedView()
+  )
+)
+
+    def test_predictions_branches_and_old_routes_retain_the_same_owner(solver):
+        session = SharedGenerativeSession(solver)
+        inputs = torch.randn(3, 4, 20)
+        before = solver.neural(inputs).detach().clone()
+        old_bytes = {k: v.clone() for k, v in solver.components["r1"].state_dict().items()
+                     if not k.startswith("generator_")}
+        for i, t in enumerate([-.5, 0., .5]):
+            session.observe(event(i, t, [math.cos(math.pi*t), math.sin(math.pi*t)]))
+        assert torch.equal(before, solver.neural(inputs))
+        for key, value in old_bytes.items():
+            assert torch.equal(value, solver.components["r1"].state_dict()[key])
+        identity, factual = solver.identity(), session.snapshot()["sha256"]
+        direct = session.predict([.2, .7])
+        branch = session.fork()
+        predicted = branch.predict([.2, .7])
+        for key in direct:
+&gt;           assert torch.equal(direct[key], predicted[key])
+E           assert False
+E            +  where False = &lt;built-in method equal of type object at 0x00007FFEF161EA70&gt;(tensor([[ 0.8089,  0.5876],\n        [-0.5876,  0.8088]], dtype=torch.float64), tensor([[ 0.8089,  0.5876],\n        [-0.5876,  0.8088]], dtype=torch.float64))
+E            +    where &lt;built-in method equal of type object at 0x00007FFEF161EA70&gt; = torch.equal
+
+tests\test_shared_generative.py:122: AssertionError</failure></testcase><testcase classname="tests.test_shared_generative" name="test_correction_preserves_facts_rebuilds_posterior_and_restores_predecessor" time="0.239" /><testcase classname="tests.test_shared_generative" name="test_full_store_restore_reconnects_and_resumes_acquired_state" time="0.260" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[prediction]" time="0.063" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[entity]" time="0.064" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[mask]" time="0.062" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[phase]" time="0.063" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[duplicate]" time="0.066" /><testcase classname="tests.test_shared_generative" name="test_rejection_budget_exhaustion_and_stale_references_are_transactional" time="0.127" /><testcase classname="tests.test_shared_generative" name="test_validator_mutation_is_rejected_before_commit" time="0.053" /><testcase classname="tests.test_shared_generative" name="test_restore_checks_numerical_evidence_not_only_self_consistent_hashes" time="0.076"><failure message="Failed: DID NOT RAISE ValueError">solver = Solver(
+  (neural): SharedSequenceView()
+  (components): ModuleDict(
+    (r1): GenerativeSharedR1(
+      (memory): Sta...)
+      (sequence_decoder): Linear(in_features=8, out_features=4, bias=True)
+    )
+    (typed): SharedTypedView()
+  )
+)
+
+    def test_restore_checks_numerical_evidence_not_only_self_consistent_hashes(solver):
+        session = SharedGenerativeSession(solver)
+        session.observe(event(0, 0., [1., 0.]))
+        record = session.snapshot()
+        owner = solver.components["r1"]
+        owner.generator_rhs.mul_(2)
+        owner._refresh_posterior()  # internally self-consistent, but no longer explains recorded evidence
+        record["payload"]["mechanism"] = session.situation.mechanism.bind(
+            owner.generator_graph(), SharedOwnerRef.from_solver(solver)).record()
+        record["sha256"] = digest(record["payload"])
+&gt;       with pytest.raises(ValueError, match="sufficient statistics"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests\test_shared_generative.py:245: Failed</failure></testcase></testsuite></testsuites>

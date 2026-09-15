@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-m",
+    "experiments.generative_memory.refit",
+    "--run",
+    "runs/generative-memory-GG-P0-001",
+    "--output",
+    "runs/generative-memory-GG-P0-001-refit-resource-v2"
+  ],
+  "reserved_seconds": 300.0,
+  "charged_seconds": 101.05617499999971,
+  "root_process_peak_working_set_bytes": 4349952,
+  "peak_job_committed_bytes": 308879360,
+  "peak_process_committed_bytes": 308043776,
+  "observed_process_ids": [
+    8748,
+    9688,
+    16828
+  ],
+  "supervisor_sha256": "1c3f44b927b6fba867bc44ebd77e028ca5ba7d7d58062514a83dd208e97c8d2d",
+  "job_helper_sha256": "67256457c80cfdb6c40383f69b18ecf70013d2b26d2fea541ceb18bc2b408b44",
+  "boundary": "Process-tree wall deadline and Windows Job Object peak COMMITTED memory (not RSS); direct launcher working set is separate. Child starts suspended and joins a kill-on-close job before execution. Full reserved time stays charged on external parent interruption. Research, energy and supervisor startup excluded.",
+  "child_pid": 8748,
+  "returncode": 0,
+  "log_sha256": "5ef3062fba7d6452ced329ddcca676044cef6af4d418c4d11c88625fa2622fac"
+}

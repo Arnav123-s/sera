@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="13" time="1.644" timestamp="2026-09-15T07:29:18.183452-07:00" hostname="ashp"><testcase classname="tests.test_shared_generative" name="test_conversion_owns_all_old_bytes_flags_and_views_without_extra_parameters" time="0.056" /><testcase classname="tests.test_shared_generative" name="test_online_posterior_matches_independent_observation_space_gaussian" time="0.198"><failure message="AssertionError: &#10;Not equal to tolerance rtol=1e-09, atol=1e-08&#10;&#10;Mismatched elements: 4 / 4 (100%)&#10;Mismatch at indices:&#10; [0]: -31.113133893610097 (ACTUAL), -31.113133196659582 (DESIRED)&#10; [1]: -19.601853493326985 (ACTUAL), -19.6018527963763 (DESIRED)&#10; [2]: -635.3850237757252 (ACTUAL), -635.3850230785562 (DESIRED)&#10; [3]: -36.98940596997454 (ACTUAL), -36.9894052730342 (DESIRED)&#10;Max absolute difference among violations: 6.97169071e-07&#10;Max relative difference among violations: 3.55553474e-08&#10; ACTUAL: array([ -31.113134,  -19.601853, -635.385024,  -36.989406])&#10; DESIRED: array([ -31.113133,  -19.601853, -635.385023,  -36.989405])">solver = Solver(
+  (neural): SharedSequenceView()
+  (components): ModuleDict(
+    (r1): GenerativeSharedR1(
+      (memory): Sta...)
+      (sequence_decoder): Linear(in_features=8, out_features=4, bias=True)
+    )
+    (typed): SharedTypedView()
+  )
+)
+
+    def test_online_posterior_matches_independent_observation_space_gaussian(solver):
+        session = SharedGenerativeSession(solver)
+        phases = [-.7, -.2, .15, .55, .9]
+        ys = np.array([[.2, -.7], [1.1, .3], [.7, 1.2], [-.4, .5], [-.8, -.2]])
+        for i, (phase, xy) in enumerate(zip(phases, ys)):
+            session.observe(event(i, phase, xy))
+        owner = solver.components["r1"]
+        evidence = []
+        y = ys.ravel()
+        for k, (kind, dimension) in enumerate(zip(CLASSES, DIMENSIONS)):
+            a = independent_design(kind, phases)
+            np.testing.assert_allclose(owner._design(phases)[k, :, :, :dimension].reshape(-1, dimension), a,
+                                       rtol=1e-14, atol=1e-14)
+            marginal = owner.generator_noise**2 * np.eye(len(y)) + 4*a @ a.T
+            mean = 4*a.T @ np.linalg.solve(marginal, y)
+            covariance = 4*np.eye(dimension) - 16*a.T @ np.linalg.solve(marginal, a)
+            np.testing.assert_allclose(owner.generator_mean[k, :dimension], mean, rtol=1e-8, atol=1e-9)
+            np.testing.assert_allclose(owner.generator_covariance[k, :dimension, :dimension], covariance,
+                                       rtol=1e-8, atol=1e-10)
+            evidence.append(-.5*(len(y)*math.log(2*math.pi) + np.linalg.slogdet(marginal)[1]
+                                  + y @ np.linalg.solve(marginal, y)))
+&gt;       np.testing.assert_allclose(owner.generator_log_evidence, evidence, rtol=1e-9, atol=1e-8)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-09, atol=1e-08
+E       
+E       Mismatched elements: 4 / 4 (100%)
+E       Mismatch at indices:
+E        [0]: -31.113133893610097 (ACTUAL), -31.113133196659582 (DESIRED)
+E        [1]: -19.601853493326985 (ACTUAL), -19.6018527963763 (DESIRED)
+E        [2]: -635.3850237757252 (ACTUAL), -635.3850230785562 (DESIRED)
+E        [3]: -36.98940596997454 (ACTUAL), -36.9894052730342 (DESIRED)
+E       Max absolute difference among violations: 6.97169071e-07
+E       Max relative difference among violations: 3.55553474e-08
+E        ACTUAL: array([ -31.113134,  -19.601853, -635.385024,  -36.989406])
+E        DESIRED: array([ -31.113133,  -19.601853, -635.385023,  -36.989405])
+
+tests\test_shared_generative.py:100: AssertionError</failure></testcase><testcase classname="tests.test_shared_generative" name="test_predictions_branches_and_old_routes_retain_the_same_owner" time="0.168" /><testcase classname="tests.test_shared_generative" name="test_correction_preserves_facts_rebuilds_posterior_and_restores_predecessor" time="0.277" /><testcase classname="tests.test_shared_generative" name="test_full_store_restore_reconnects_and_resumes_acquired_state" time="0.226" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[prediction]" time="0.068" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[entity]" time="0.066" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[mask]" time="0.064" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[phase]" time="0.065" /><testcase classname="tests.test_shared_generative" name="test_ineligible_or_inconsistent_evidence_never_changes_owner[duplicate]" time="0.065" /><testcase classname="tests.test_shared_generative" name="test_rejection_budget_exhaustion_and_stale_references_are_transactional" time="0.134" /><testcase classname="tests.test_shared_generative" name="test_validator_mutation_is_rejected_before_commit" time="0.058" /><testcase classname="tests.test_shared_generative" name="test_restore_checks_numerical_evidence_not_only_self_consistent_hashes" time="0.080" /></testsuite></testsuites>

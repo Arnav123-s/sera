@@ -1,0 +1,1281 @@
+{
+  "source_sha256": "bec9ffcec68f35ffb15dbc46fa84455e07d0d8137d2aa38768fc003d698ab47b",
+  "cohort_models": 1260,
+  "costs": {
+    "wall_seconds": 146.1535169000001,
+    "process_cpu_seconds": 127.921875,
+    "process_peak_rss_bytes": 228806656,
+    "phases": [],
+    "hardware": {
+      "system": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+      "logical_cpus": 16,
+      "torch": "2.10.0+cpu",
+      "torch_threads": 1,
+      "device": "cpu"
+    },
+    "scope": "Whole invocation including acquisition, updates, validation, search, evaluation and failures. RSS is the cumulative process high-water mark. Phase costs may overlap if nested. Counts are not FLOPs; design and implementation labor, prior development, energy and external service costs are not measured here."
+  },
+  "aggregates": [
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.07017874527523084,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.119208510946435,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.08054874927771512,
+      "mean_retained_numeric_state_bytes": 13000.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.06901041802100603,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.10298836946551145,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.10298836946551145,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.10068311266692671,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.11836633256676381,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.7161248357388451,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 8,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.46238894685469606,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.23221750759602786,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.32459486707898455,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.2527957738486838,
+      "mean_retained_numeric_state_bytes": 13000.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.2117033290483547,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.23779755019119247,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.23779755019119247,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.09924854582184088,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.3465319446539577,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.9829481385267436,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "correlated",
+      "support": 32,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.7641751168959001,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.29714561267485134,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.2978313622499853,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.29636205166542107,
+      "mean_retained_numeric_state_bytes": 13000.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.2981842351676042,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.22012703041563703,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.22012703041563703,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.2536658841546181,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.2977910460050909,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.2921397186598463,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 8,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.7717245946083102,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.11749574822252476,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.12255296025470382,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.11762420760271404,
+      "mean_retained_numeric_state_bytes": 13000.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.1165599961665564,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.03203862267571668,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.03203862267571668,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.03414336016633086,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.1208471302183067,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.12402601246340343,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "misspecified",
+      "support": 32,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.9350189355024469,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.05947425102554704,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.06364119960395323,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.060452227140921945,
+      "mean_retained_numeric_state_bytes": 13000.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.05932500795869157,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.06288175117322191,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.06288175117322191,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.0593189066409305,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.061868923627189286,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.11717119674659689,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 8,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.48849600932166987,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.006583194305891898,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.006761789708661585,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.007023027117171876,
+      "mean_retained_numeric_state_bytes": 13000.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.0065192860899574295,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.006540054499381651,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.006540054499381651,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.006263645616476157,
+      "mean_retained_numeric_state_bytes": 336.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.0066964468660502515,
+      "mean_retained_numeric_state_bytes": 3640.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.00779288878656986,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "factor_six",
+      "family": "well_specified",
+      "support": 32,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.7551727609722858,
+      "mean_retained_numeric_state_bytes": 6760.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.08429990301419515,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.0844582373644405,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.08444772668722231,
+      "mean_retained_numeric_state_bytes": 270920.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.08429690623901256,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.08673957541930863,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.08673957541930863,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.08455402678966589,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.08460824706765632,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "marginal_product",
+      "models": 10,
+      "independent_query_mse": 0.08429690623901252,
+      "mean_retained_numeric_state_bytes": 1560.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.0849867878375889,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 8,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.20323207473736643,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.11456989417119134,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.11788221489249202,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.11916507524809603,
+      "mean_retained_numeric_state_bytes": 270920.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.11436274057233445,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.13800297924620214,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.13800297924620214,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.09508375283978855,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.12023246475621145,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "marginal_product",
+      "models": 10,
+      "independent_query_mse": 0.11436274057233468,
+      "mean_retained_numeric_state_bytes": 1560.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.11785500137773504,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "correlated",
+      "support": 32,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.3119009462715844,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.3997493306388872,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.40111013038107074,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.42063609629714166,
+      "mean_retained_numeric_state_bytes": 270920.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.3996934240811729,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.3997088763620106,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.3997088763620106,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.3997088763620106,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.40057526901299845,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "marginal_product",
+      "models": 10,
+      "independent_query_mse": 0.39969342408117303,
+      "mean_retained_numeric_state_bytes": 1560.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.403876297684556,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 8,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.39552198930279747,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.2770109514630224,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.27707365636793874,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.2772749292445593,
+      "mean_retained_numeric_state_bytes": 270920.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.27698449584345114,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.2769844955866111,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.2769844955866111,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.2769844955866111,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.2770539134427056,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "marginal_product",
+      "models": 10,
+      "independent_query_mse": 0.27698449584345114,
+      "mean_retained_numeric_state_bytes": 1560.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.27721229252243595,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "misspecified",
+      "support": 32,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.41535277924908726,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.021163369529790733,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.021393627343498537,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.028396212482616652,
+      "mean_retained_numeric_state_bytes": 270920.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.021155818807328506,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.0211560653543655,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.0211560653543655,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.02115606535436549,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.02128280314274056,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "marginal_product",
+      "models": 10,
+      "independent_query_mse": 0.021155818807328596,
+      "mean_retained_numeric_state_bytes": 1560.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.021752502467185898,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 8,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.19449554963435575,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "dephased",
+      "models": 10,
+      "independent_query_mse": 0.003233921522444208,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "diffusion",
+      "models": 10,
+      "independent_query_mse": 0.00328572186911575,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "dirac",
+      "models": 10,
+      "independent_query_mse": 0.003920336165283346,
+      "mean_retained_numeric_state_bytes": 270920.0,
+      "mean_operator_bytes": 270400.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "filter",
+      "models": 10,
+      "independent_query_mse": 0.0032219625024935278,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "gaussian",
+      "models": 10,
+      "independent_query_mse": 0.0032219623872261475,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "gaussian_diagonal",
+      "models": 10,
+      "independent_query_mse": 0.0032219623872261475,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "gradient_map",
+      "models": 10,
+      "independent_query_mse": 0.003221962387226149,
+      "mean_retained_numeric_state_bytes": 48.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "imaginary",
+      "models": 10,
+      "independent_query_mse": 0.003267795930193227,
+      "mean_retained_numeric_state_bytes": 34320.0,
+      "mean_operator_bytes": 33800.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "marginal_product",
+      "models": 10,
+      "independent_query_mse": 0.0032219625024935195,
+      "mean_retained_numeric_state_bytes": 1560.0,
+      "mean_operator_bytes": 0.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "schrodinger",
+      "models": 10,
+      "independent_query_mse": 0.0034820801083731297,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    },
+    {
+      "suite": "joint_two",
+      "family": "well_specified",
+      "support": 32,
+      "method": "unitary",
+      "models": 10,
+      "independent_query_mse": 0.3009022482322806,
+      "mean_retained_numeric_state_bytes": 68120.0,
+      "mean_operator_bytes": 67600.0
+    }
+  ]
+}

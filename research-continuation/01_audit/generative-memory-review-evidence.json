@@ -1,0 +1,214 @@
+{
+  "run": "D:\\ai\\projects\\sera\\runs\\generative-memory-GG-P0-001",
+  "source_identity": {
+    "protocol_sha256": "dbbd8ef1d7d1bec79dd8727d89331377c08042779e08ef9d595b77e959006ffd",
+    "source_sha256": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590"
+  },
+  "status": "COMPLETED",
+  "cases": 640,
+  "charged_seconds": 207.26949750000267,
+  "memory": {
+    "boundary": "psutil unavailable",
+    "peak_working_set_bytes": null
+  },
+  "quantized_coordinate_collisions": [],
+  "nested_bank_failures": [],
+  "artifact_float32_parameter_failures": [],
+  "mixed_precision_examples": [
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "A_episodic",
+      "path": [
+        "calibration",
+        "mse"
+      ],
+      "stored": 0.11861199205271793,
+      "rounded_float32": 0.11861199140548706
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "A_episodic",
+      "path": [
+        "guard",
+        "high"
+      ],
+      "stored": 0.4657180444880221,
+      "rounded_float32": 0.46571803092956543
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "A_episodic",
+      "path": [
+        "guard",
+        "low"
+      ],
+      "stored": -0.39841068414115294,
+      "rounded_float32": -0.3984106779098511
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "A_episodic",
+      "path": [
+        "noise_variance"
+      ],
+      "stored": 0.0004,
+      "rounded_float32": 0.00039999998989515007
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "B_interpolation",
+      "path": [
+        "calibration",
+        "mse"
+      ],
+      "stored": 0.0020986207447679026,
+      "rounded_float32": 0.0020986206363886595
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "B_interpolation",
+      "path": [
+        "guard",
+        "high"
+      ],
+      "stored": 0.4657180444880221,
+      "rounded_float32": 0.46571803092956543
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "B_interpolation",
+      "path": [
+        "guard",
+        "low"
+      ],
+      "stored": -0.39841068414115294,
+      "rounded_float32": -0.3984106779098511
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "B_interpolation",
+      "path": [
+        "noise_variance"
+      ],
+      "stored": 0.0004,
+      "rounded_float32": 0.00039999998989515007
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "B_interpolation",
+      "path": [
+        "variance_inflation"
+      ],
+      "stored": 0.0016986207447679004,
+      "rounded_float32": 0.0016986207338050008
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "C_circle",
+      "path": [
+        "calibration",
+        "mse"
+      ],
+      "stored": 0.00046642565075336723,
+      "rounded_float32": 0.00046642564120702446
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "C_circle",
+      "path": [
+        "guard",
+        "high"
+      ],
+      "stored": 0.4657180444880221,
+      "rounded_float32": 0.46571803092956543
+    },
+    {
+      "case": "6100-circle-0.02-8",
+      "method": "C_circle",
+      "path": [
+        "guard",
+        "low"
+      ],
+      "stored": -0.39841068414115294,
+      "rounded_float32": -0.3984106779098511
+    }
+  ],
+  "artifact_counts": {
+    "A_episodic": 640,
+    "B_interpolation": 640,
+    "C_circle": 640,
+    "D_family": 640,
+    "E_symbolic": 640,
+    "F_neural": 640,
+    "G_program": 640,
+    "H_residual": 640
+  },
+  "numeric_payload": {
+    "A_episodic": {
+      "float64_scalars": 3200,
+      "JSON_number_lexeme_bytes": 1130923,
+      "integer_scalars": 640,
+      "float32_parameter_scalars": 57600,
+      "actual_JSON_artifact_bytes": 1692203,
+      "counterfactual_typed_floating_payload_bytes": 256000
+    },
+    "B_interpolation": {
+      "float64_scalars": 3200,
+      "JSON_number_lexeme_bytes": 1142452,
+      "integer_scalars": 640,
+      "float32_parameter_scalars": 57600,
+      "actual_JSON_artifact_bytes": 1707350,
+      "counterfactual_typed_floating_payload_bytes": 256000
+    },
+    "C_circle": {
+      "float64_scalars": 5120,
+      "JSON_number_lexeme_bytes": 341669,
+      "integer_scalars": 640,
+      "float32_parameter_scalars": 12800,
+      "actual_JSON_artifact_bytes": 932765,
+      "counterfactual_typed_floating_payload_bytes": 92160
+    },
+    "D_family": {
+      "float64_scalars": 8960,
+      "JSON_number_lexeme_bytes": 937481,
+      "integer_scalars": 1920,
+      "float32_parameter_scalars": 52480,
+      "actual_JSON_artifact_bytes": 1754561,
+      "counterfactual_typed_floating_payload_bytes": 281600
+    },
+    "E_symbolic": {
+      "float64_scalars": 5120,
+      "JSON_number_lexeme_bytes": 474754,
+      "integer_scalars": 1924,
+      "float32_parameter_scalars": 30396,
+      "actual_JSON_artifact_bytes": 1111493,
+      "counterfactual_typed_floating_payload_bytes": 162544
+    },
+    "F_neural": {
+      "float64_scalars": 3200,
+      "JSON_number_lexeme_bytes": 7827999,
+      "integer_scalars": 640,
+      "float32_parameter_scalars": 400640,
+      "actual_JSON_artifact_bytes": 8792874,
+      "counterfactual_typed_floating_payload_bytes": 1628160
+    },
+    "G_program": {
+      "float64_scalars": 5198,
+      "JSON_number_lexeme_bytes": 472234,
+      "integer_scalars": 1346,
+      "float32_parameter_scalars": 26228,
+      "actual_JSON_artifact_bytes": 1087578,
+      "counterfactual_typed_floating_payload_bytes": 146496
+    },
+    "H_residual": {
+      "float64_scalars": 5198,
+      "JSON_number_lexeme_bytes": 1591006,
+      "integer_scalars": 1346,
+      "float32_parameter_scalars": 83828,
+      "actual_JSON_artifact_bytes": 2322213,
+      "counterfactual_typed_floating_payload_bytes": 376896
+    }
+  },
+  "reviewer_source_sha256": "e9f34192c247e811588828b275d1d709a22c77b249242943774b47b7aa44c004",
+  "numeric_payload_boundary": "The floating binary-equivalent count is counterfactual: no packed binary artifact was deployed. All listed float32 arrays contain exactly float32-representable values, but decoding and arithmetic use NumPy float64. Other continuous fields are stored from float64; integer AST/schema values are counted separately without inventing an integer codec. JSON number lexeme bytes exclude keys and container punctuation. Actual full JSON bytes remain the deployed cost."
+}

@@ -27,6 +27,9 @@ def restore_component(config, components=None):
     kind = settings.pop("type")
     if kind == "r1":
         return RecurrentWorldModel(**settings)
+    if kind == "generative_shared_r1":
+        from sera.generative import GenerativeSharedR1
+        return GenerativeSharedR1(**settings)
     if kind == "shared_r1":
         from sera.shared import SharedR1
         settings.setdefault("encoding", "legacy-v1")
