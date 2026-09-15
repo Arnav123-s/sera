@@ -1,0 +1,641 @@
+{
+  "panels": {
+    "matched": {
+      "always": {
+        "worlds": 1000,
+        "accepted": 1000,
+        "errors": 242,
+        "coverage": 1.0,
+        "selective_risk": 0.242,
+        "risk_upper_95": 0.26532645358091034,
+        "accepted_clean_mse": 0.17052600801833323,
+        "utility": -0.21
+      },
+      "abstain": {
+        "worlds": 1000,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "old_empirical": {
+        "worlds": 1000,
+        "accepted": 840,
+        "errors": 85,
+        "coverage": 0.84,
+        "selective_risk": 0.10119047619047619,
+        "risk_upper_95": 0.11995682414259451,
+        "accepted_clean_mse": 0.021545319639925117,
+        "utility": 0.415
+      },
+      "minimum_90": {
+        "worlds": 1000,
+        "accepted": 682,
+        "errors": 1,
+        "coverage": 0.682,
+        "selective_risk": 0.001466275659824047,
+        "risk_upper_95": 0.006936750128638814,
+        "accepted_clean_mse": 0.0007155870188524874,
+        "utility": 0.677
+      },
+      "fixed_residual": {
+        "worlds": 1000,
+        "accepted": 635,
+        "errors": 2,
+        "coverage": 0.635,
+        "selective_risk": 0.0031496062992125984,
+        "risk_upper_95": 0.009881152469372403,
+        "accepted_clean_mse": 0.0012737419830970568,
+        "utility": 0.625
+      },
+      "global_certificate": {
+        "worlds": 1000,
+        "accepted": 682,
+        "errors": 1,
+        "coverage": 0.682,
+        "selective_risk": 0.001466275659824047,
+        "risk_upper_95": 0.006936750128638814,
+        "accepted_clean_mse": 0.0007155870188524874,
+        "utility": 0.677
+      },
+      "group_certificate": {
+        "worlds": 1000,
+        "accepted": 664,
+        "errors": 0,
+        "coverage": 0.664,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.004501482808495924,
+        "accepted_clean_mse": 0.0006525468041859257,
+        "utility": 0.664
+      }
+    },
+    "mechanism_mixture_shift": {
+      "always": {
+        "worlds": 500,
+        "accepted": 500,
+        "errors": 245,
+        "coverage": 1.0,
+        "selective_risk": 0.49,
+        "risk_upper_95": 0.5277444625749312,
+        "accepted_clean_mse": 0.2563974597789197,
+        "utility": -1.45
+      },
+      "abstain": {
+        "worlds": 500,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "old_empirical": {
+        "worlds": 500,
+        "accepted": 364,
+        "errors": 110,
+        "coverage": 0.728,
+        "selective_risk": 0.3021978021978022,
+        "risk_upper_95": 0.34427145664513453,
+        "accepted_clean_mse": 0.03988682647367349,
+        "utility": -0.372
+      },
+      "minimum_90": {
+        "worlds": 500,
+        "accepted": 146,
+        "errors": 3,
+        "coverage": 0.292,
+        "selective_risk": 0.02054794520547945,
+        "risk_upper_95": 0.052248194896244084,
+        "accepted_clean_mse": 0.0019726909077568233,
+        "utility": 0.262
+      },
+      "fixed_residual": {
+        "worlds": 500,
+        "accepted": 116,
+        "errors": 0,
+        "coverage": 0.232,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.025494657957392263,
+        "accepted_clean_mse": 0.0006691342334905737,
+        "utility": 0.232
+      },
+      "global_certificate": {
+        "worlds": 500,
+        "accepted": 146,
+        "errors": 3,
+        "coverage": 0.292,
+        "selective_risk": 0.02054794520547945,
+        "risk_upper_95": 0.052248194896244084,
+        "accepted_clean_mse": 0.0019726909077568233,
+        "utility": 0.262
+      },
+      "group_certificate": {
+        "worlds": 500,
+        "accepted": 119,
+        "errors": 1,
+        "coverage": 0.238,
+        "selective_risk": 0.008403361344537815,
+        "risk_upper_95": 0.03924277735630701,
+        "accepted_clean_mse": 0.0010842378417925684,
+        "utility": 0.228
+      }
+    },
+    "abrupt_jump": {
+      "always": {
+        "worlds": 256,
+        "accepted": 256,
+        "errors": 226,
+        "coverage": 1.0,
+        "selective_risk": 0.8828125,
+        "risk_upper_95": 0.9143757430265075,
+        "accepted_clean_mse": 0.12183783427889974,
+        "utility": -3.4140625
+      },
+      "abstain": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "old_empirical": {
+        "worlds": 256,
+        "accepted": 160,
+        "errors": 130,
+        "coverage": 0.625,
+        "selective_risk": 0.8125,
+        "risk_upper_95": 0.8616895142902958,
+        "accepted_clean_mse": 0.0814140837540984,
+        "utility": -1.9140625
+      },
+      "minimum_90": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "fixed_residual": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "global_certificate": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "group_certificate": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "decaying_spiral": {
+      "always": {
+        "worlds": 256,
+        "accepted": 256,
+        "errors": 10,
+        "coverage": 1.0,
+        "selective_risk": 0.0390625,
+        "risk_upper_95": 0.06535781354166167,
+        "accepted_clean_mse": 0.004291722282131453,
+        "utility": 0.8046875
+      },
+      "abstain": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "old_empirical": {
+        "worlds": 256,
+        "accepted": 256,
+        "errors": 10,
+        "coverage": 1.0,
+        "selective_risk": 0.0390625,
+        "risk_upper_95": 0.06535781354166167,
+        "accepted_clean_mse": 0.004291722282131453,
+        "utility": 0.8046875
+      },
+      "minimum_90": {
+        "worlds": 256,
+        "accepted": 251,
+        "errors": 9,
+        "coverage": 0.98046875,
+        "selective_risk": 0.035856573705179286,
+        "risk_upper_95": 0.061735464679342406,
+        "accepted_clean_mse": 0.003584456747390966,
+        "utility": 0.8046875
+      },
+      "fixed_residual": {
+        "worlds": 256,
+        "accepted": 201,
+        "errors": 6,
+        "coverage": 0.78515625,
+        "selective_risk": 0.029850746268656716,
+        "risk_upper_95": 0.05806371861310563,
+        "accepted_clean_mse": 0.0035234377919805726,
+        "utility": 0.66796875
+      },
+      "global_certificate": {
+        "worlds": 256,
+        "accepted": 251,
+        "errors": 9,
+        "coverage": 0.98046875,
+        "selective_risk": 0.035856573705179286,
+        "risk_upper_95": 0.061735464679342406,
+        "accepted_clean_mse": 0.003584456747390966,
+        "utility": 0.8046875
+      },
+      "group_certificate": {
+        "worlds": 256,
+        "accepted": 212,
+        "errors": 8,
+        "coverage": 0.828125,
+        "selective_risk": 0.03773584905660377,
+        "risk_upper_95": 0.06705630022893079,
+        "accepted_clean_mse": 0.0035615968788549396,
+        "utility": 0.671875
+      }
+    }
+  },
+  "groups": {
+    "matched": {
+      "consistent_near": {
+        "worlds": 510,
+        "accepted": 507,
+        "errors": 0,
+        "coverage": 0.9941176470588236,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.005891319871459981,
+        "accepted_clean_mse": 0.0006074783069480525,
+        "utility": 0.9941176470588236
+      },
+      "consistent_edge": {
+        "worlds": 158,
+        "accepted": 157,
+        "errors": 0,
+        "coverage": 0.9936708860759493,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.01890020551196819,
+        "accepted_clean_mse": 0.0007980864736101402,
+        "utility": 0.9936708860759493
+      },
+      "contradicted_near": {
+        "worlds": 250,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "contradicted_edge": {
+        "worlds": 82,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "mechanism_mixture_shift": {
+      "consistent_near": {
+        "worlds": 87,
+        "accepted": 86,
+        "errors": 0,
+        "coverage": 0.9885057471264368,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.0342343728491202,
+        "accepted_clean_mse": 0.0007159309025235326,
+        "utility": 0.9885057471264368
+      },
+      "consistent_edge": {
+        "worlds": 33,
+        "accepted": 33,
+        "errors": 1,
+        "coverage": 1.0,
+        "selective_risk": 0.030303030303030304,
+        "risk_upper_95": 0.13585064679854747,
+        "accepted_clean_mse": 0.0020440680471603594,
+        "utility": 0.8484848484848485
+      },
+      "contradicted_near": {
+        "worlds": 301,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "contradicted_edge": {
+        "worlds": 79,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "abrupt_jump": {
+      "consistent_near": {
+        "worlds": 0,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": null,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": null
+      },
+      "consistent_edge": {
+        "worlds": 0,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": null,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": null
+      },
+      "contradicted_near": {
+        "worlds": 199,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "contradicted_edge": {
+        "worlds": 57,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "decaying_spiral": {
+      "consistent_near": {
+        "worlds": 161,
+        "accepted": 161,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.018434990637976174,
+        "accepted_clean_mse": 0.0017898346343543066,
+        "utility": 1.0
+      },
+      "consistent_edge": {
+        "worlds": 53,
+        "accepted": 51,
+        "errors": 8,
+        "coverage": 0.9622641509433962,
+        "selective_risk": 0.1568627450980392,
+        "risk_upper_95": 0.2652753583197372,
+        "accepted_clean_mse": 0.009154807101690272,
+        "utility": 0.20754716981132076
+      },
+      "contradicted_near": {
+        "worlds": 37,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      },
+      "contradicted_edge": {
+        "worlds": 5,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    }
+  },
+  "families": {
+    "matched": {
+      "circle": {
+        "worlds": 167,
+        "accepted": 167,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.01777857919362119,
+        "accepted_clean_mse": 0.0004990896819755563,
+        "utility": 1.0
+      },
+      "ellipse": {
+        "worlds": 147,
+        "accepted": 144,
+        "errors": 0,
+        "coverage": 0.9795918367346939,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.02058879229949585,
+        "accepted_clean_mse": 0.0007960936442357393,
+        "utility": 0.9795918367346939
+      },
+      "line": {
+        "worlds": 182,
+        "accepted": 178,
+        "errors": 0,
+        "coverage": 0.978021978021978,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.016689124048896803,
+        "accepted_clean_mse": 0.0005114528335125049,
+        "utility": 0.978021978021978
+      },
+      "local_exception": {
+        "worlds": 169,
+        "accepted": 3,
+        "errors": 0,
+        "coverage": 0.01775147928994083,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.6315968501359612,
+        "accepted_clean_mse": 0.0017485000784400568,
+        "utility": 0.01775147928994083
+      },
+      "radial_orbit": {
+        "worlds": 175,
+        "accepted": 172,
+        "errors": 0,
+        "coverage": 0.9828571428571429,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.017266248086044517,
+        "accepted_clean_mse": 0.0008082646030176992,
+        "utility": 0.9828571428571429
+      },
+      "random_values": {
+        "worlds": 160,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "mechanism_mixture_shift": {
+      "circle": {
+        "worlds": 38,
+        "accepted": 38,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.07580765168296454,
+        "accepted_clean_mse": 0.0005193497132712611,
+        "utility": 1.0
+      },
+      "ellipse": {
+        "worlds": 26,
+        "accepted": 25,
+        "errors": 0,
+        "coverage": 0.9615384615384616,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.11292814500684321,
+        "accepted_clean_mse": 0.0009516633396893594,
+        "utility": 0.9615384615384616
+      },
+      "line": {
+        "worlds": 25,
+        "accepted": 25,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.11292814500684321,
+        "accepted_clean_mse": 0.0004595623070557957,
+        "utility": 1.0
+      },
+      "local_exception": {
+        "worlds": 250,
+        "accepted": 5,
+        "errors": 1,
+        "coverage": 0.02,
+        "selective_risk": 0.2,
+        "risk_upper_95": 0.6574083180011386,
+        "accepted_clean_mse": 0.010564635855839104,
+        "utility": 0.0
+      },
+      "radial_orbit": {
+        "worlds": 26,
+        "accepted": 26,
+        "errors": 0,
+        "coverage": 1.0,
+        "selective_risk": 0.0,
+        "risk_upper_95": 0.10883035576078481,
+        "accepted_clean_mse": 0.0008148151392762822,
+        "utility": 1.0
+      },
+      "random_values": {
+        "worlds": 135,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "abrupt_jump": {
+      "abrupt_jump": {
+        "worlds": 256,
+        "accepted": 0,
+        "errors": 0,
+        "coverage": 0.0,
+        "selective_risk": null,
+        "risk_upper_95": 1.0,
+        "accepted_clean_mse": null,
+        "utility": 0.0
+      }
+    },
+    "decaying_spiral": {
+      "decaying_spiral": {
+        "worlds": 256,
+        "accepted": 212,
+        "errors": 8,
+        "coverage": 0.828125,
+        "selective_risk": 0.03773584905660377,
+        "risk_upper_95": 0.06705630022893079,
+        "accepted_clean_mse": 0.0035615968788549396,
+        "utility": 0.671875
+      }
+    }
+  },
+  "paired_utility_vs_minimum90": {
+    "difference": -0.013,
+    "bootstrap_95": [
+      -0.023,
+      -0.001
+    ]
+  },
+  "gate": {
+    "matched_active_group_risk_upper_at_most_10pct": true,
+    "in_menu_coverage_at_least_50pct": true,
+    "matched_utility_noninferiority_margin_005": true,
+    "new_family_accepted_risk_bounds_at_most_10pct": true,
+    "prospectively_qualified": true,
+    "scope": "A rejected new-family bound prevents operational promotion. No-answer families do not establish knowledge."
+  },
+  "protocol_sha256": "fac136ba6d6f25bb3073c1d2fc249dbd26c3fd662e1bf8de33791f9402d98602",
+  "cost": {
+    "worlds": 3812,
+    "calibration_worlds": 1800,
+    "assessment_worlds": 2012,
+    "acquired_prefix_observations": 38120,
+    "observed_query_outcomes": 3812,
+    "new_neural_training_steps": 0,
+    "extra_inquiries": 0,
+    "wall_seconds": 129.32606910000322,
+    "cpu_seconds": 129.015625,
+    "boundary": "Includes actual guard inference, all prefix replays, certificate fitting and scoring; archive serialization/startup are in supervisor time. Predecessor training is inherited cost, not rerun."
+  },
+  "worlds_sha256": "3f8c50f6cf6e5400960544ca7f644626565870e3a509b3e9ae59a91de0a1c75c"
+}

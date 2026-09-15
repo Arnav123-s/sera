@@ -1,0 +1,168 @@
+{
+  "owner_sha256": "d6285a3764ac1287ea42beb60f14ed32c8194126d1b849bd110871c58879faf4",
+  "graph": {
+    "format": "sera-executable-graph-v1",
+    "schema": {
+      "name": "finite-equation",
+      "version": 1,
+      "modality": "symbolic",
+      "width": 3,
+      "units": "F11",
+      "entity_slots": 0,
+      "encoding": "formal-roles-v1"
+    },
+    "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+    "definitions": [
+      {
+        "name": "affine",
+        "body": {
+          "field": 11,
+          "kind": "supplied_finite_relation",
+          "left": [
+            "sub",
+            [
+              "mul",
+              "x",
+              "a"
+            ],
+            "b"
+          ],
+          "state": "current equation; supplied semantics"
+        },
+        "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963",
+        "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+        "dependencies": []
+      },
+      {
+        "name": "compiled/affine",
+        "body": {
+          "evidence_status": "exhaustively_verified_finite_domain",
+          "input_types": {
+            "a": "F11",
+            "b": "F11",
+            "c": "F11"
+          },
+          "kind": "guarded_program",
+          "nonzero_conditions": [
+            [
+              "input",
+              "a"
+            ]
+          ],
+          "output_type": "unique F11 solution or unsupported",
+          "program": [
+            "mul",
+            [
+              "add",
+              [
+                "input",
+                "c"
+              ],
+              [
+                "input",
+                "b"
+              ]
+            ],
+            [
+              "inv",
+              [
+                "input",
+                "a"
+              ]
+            ]
+          ],
+          "proof": {
+            "accepted_inputs": 1210,
+            "checked_inputs": 1331,
+            "domain": "F11^3",
+            "scope": "Exhaustive correctness inside supplied finite semantics and preconditions only"
+          },
+          "semantics": "6a387b529d2386e8200e4f937c5e3e81df37daaf32f133a0a14486dfc117d1b1",
+          "teaching_sha256": "309b665e7d64ab785d88fb1b5ce4469ae78d294f33995b90543c0eb903e1d06b"
+        },
+        "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963",
+        "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+        "dependencies": [
+          {
+            "name": "affine",
+            "sha256": "6a387b529d2386e8200e4f937c5e3e81df37daaf32f133a0a14486dfc117d1b1"
+          }
+        ]
+      },
+      {
+        "name": "compiled/affine_chain",
+        "body": {
+          "callee": "compiled/affine",
+          "kind": "composition",
+          "state": "previous conditional solution feeds the next c"
+        },
+        "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963",
+        "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+        "dependencies": [
+          {
+            "name": "compiled/affine",
+            "sha256": "cad4dc34e852acb9fdc2603cd46d78b09cfdaf62e709c4fb180653b881215d25"
+          }
+        ]
+      },
+      {
+        "name": "compiled/offset",
+        "body": {
+          "evidence_status": "exhaustively_verified_finite_domain",
+          "input_types": {
+            "a": "F11",
+            "b": "F11",
+            "c": "F11"
+          },
+          "kind": "guarded_program",
+          "nonzero_conditions": [],
+          "output_type": "unique F11 solution or unsupported",
+          "program": [
+            "sub",
+            [
+              "input",
+              "c"
+            ],
+            [
+              "input",
+              "b"
+            ]
+          ],
+          "proof": {
+            "accepted_inputs": 1331,
+            "checked_inputs": 1331,
+            "domain": "F11^3",
+            "scope": "Exhaustive correctness inside supplied finite semantics and preconditions only"
+          },
+          "semantics": "f53ad03ee78228b75fb2c6783d7a248b213653f7349c8afb86ac84dd17bc2dcd",
+          "teaching_sha256": "0d1e62452780137cd2edd8481f7f74232ff81e299921e17d02d4da1108494cc4"
+        },
+        "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963",
+        "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+        "dependencies": [
+          {
+            "name": "offset",
+            "sha256": "f53ad03ee78228b75fb2c6783d7a248b213653f7349c8afb86ac84dd17bc2dcd"
+          }
+        ]
+      },
+      {
+        "name": "offset",
+        "body": {
+          "field": 11,
+          "kind": "supplied_finite_relation",
+          "left": [
+            "add",
+            "x",
+            "b"
+          ],
+          "state": "current equation; supplied semantics"
+        },
+        "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963",
+        "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+        "dependencies": []
+      }
+    ]
+  },
+  "graph_sha256": "f8054d3d2af9f680e176991016d361d1f6bd3c227b6fcc462f1720d99283caac"
+}

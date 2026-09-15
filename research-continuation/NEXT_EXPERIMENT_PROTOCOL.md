@@ -1,4 +1,21 @@
-# Next experiment: GG-GUARD-002
+# Next uncompleted cycle: shared positive transfer
+
+Status: **A06-TRANSFER-001 is proposed, not executed or source-frozen**. [GG-GUARD-002, GC-001, GC-002 and their repairs](16_v3/README.md) are complete. Their sealed evaluation cohorts must not be restarted or repeatedly used for tuning. The preceding plan is preserved below as history.
+
+Independent-world calibration passes its conditional gate; broad applicability does not follow. The grouped guard refuses abrupt jumps and almost all local exceptions, and has lower utility than the simpler global certificate. Finite trace consolidation can reduce its per-candidate work proxy, but it has not improved the numerical learner. The compiler/proof changes were externally engineered; eta did not learn them.
+
+Choose a different existing learned route and inspect its real shared R1 input/output and gradient path. Compare no acquired program, a detached program, an integrated shared update and a matched extra-capacity/exposure control. Directly executing the same acquired finite program is insufficient. Preserve the existing exact trained parent, match additional supervision, optimizer starts, replay access, update counts and total compute, and evaluate old-capability retention. Conditional synthetic labels remain conditional.
+
+Freeze the causal question, route, architecture, costs and newly generated evaluation partition before collecting final outcomes. Separate fit failure, no transfer and forgetting. The current guard certificate covers only its fixed ten-observation feature/prediction/query policy; altered acquisition or observation counts need fresh calibration. The repaired finite library requires its actual source/runtime fingerprint and explicit migration from old graph identities.
+
+After a positive-transfer component passes, A08 removes privileged phase/reset access in a continuing hidden-state situation and compares decisions with and without imagination at matched cost. A09 then separates K and eta and tests independently improved acquisition procedures over actual future successor lifetimes.
+
+Resume from [current state](16_v3/state.json), [resource ledger](16_v3/worker-budget.json), [architecture audit](16_v3/architecture-audit.md) and [repair record](16_v3/GC-002/repair/result.json). Reconcile local HEAD, dirty files and the live `runs/v3-batch-001/budget.json` before another job. The allowance was not exhausted. No background experiment is promised or running on these completed cohorts' behalf.
+
+<details>
+<summary>Preserved earlier GG-GUARD-002 plan — historical, now completed in part</summary>
+
+## Original prospective plan
 
 Status: **prospective design, not implemented or source-frozen**. GG-GUARD-001 is completed and preserved in [its release directory](15_applicability/). Its learned ranking improved utility, but the pooled calibration threshold admitted unacceptable error on local exceptions and changing mechanisms. No shared-owner guard was promoted.
 
@@ -39,3 +56,5 @@ Investigator eta training, old/new K × old/new eta, successive generations and 
 ```
 
 Use a fresh output directory. The replay helper restores the original frozen source; the current independent auditor includes the explicitly documented repairs. Exact replay requires the recorded numerical runtime.
+
+</details>

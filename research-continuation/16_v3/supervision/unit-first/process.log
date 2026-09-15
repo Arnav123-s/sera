@@ -1,0 +1,21 @@
+...........F                                                             [100%]
+================================== FAILURES ===================================
+_______________ test_native_job_memory_ceiling_precedes_resume ________________
+
+    @pytest.mark.skipif(os.name != "nt", reason="Windows native resource contract")
+    def test_native_job_memory_ceiling_precedes_resume():
+        code = "try:\n a=bytearray(512*1024**2)\nexcept MemoryError:\n print('CAP_ENFORCED',flush=True)\nelse:\n raise SystemExit(3)"
+        child = subprocess.Popen([sys.executable, "-c", code], stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT, creationflags=0x00000004)
+        job = None
+        try:
+            job = WindowsJob(child, memory_bytes=256*1024**2)
+            output, _ = child.communicate(timeout=15)
+            assert child.returncode == 0 and b"CAP_ENFORCED" in output
+>           assert job.sample()["peak_job_committed_bytes"] <= 256*1024**2
+E           assert 544559104 <= (256 * (1024 ** 2))
+
+tests\test_v3_resources.py:24: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_v3_resources.py::test_native_job_memory_ceiling_precedes_resume
+1 failed, 11 passed in 1.16s

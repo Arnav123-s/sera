@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "experiments.guarded_consolidation.study",
+    "--variant",
+    "indexed",
+    "--output",
+    "runs/v3-batch-001/GC-002-final/data"
+  ],
+  "reserved_seconds": 600.0,
+  "charged_seconds": 5.185481900000013,
+  "memory_limit_bytes": 2147483648,
+  "peak_job_committed_bytes": 260460544,
+  "peak_process_committed_bytes": 259629056,
+  "observed_process_ids": [
+    15460,
+    17456
+  ],
+  "worker_threads": 1,
+  "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+  "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+  "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+  "child_pid": 17456,
+  "returncode": 0,
+  "log_sha256": "a73e6c4be07a25b9384b2fdbcd17ff0455d7e5067a82d1dfc976447145558088"
+}

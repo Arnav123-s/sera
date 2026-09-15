@@ -1,0 +1,112 @@
+{
+  "calibration_original_strict": "FAIL: certificate canonical serialization; preserved",
+  "calibration_compatibility": {
+    "status": "PASS",
+    "calibration_worlds": 60000,
+    "assessment_worlds": 150000,
+    "paired_arm_condition_records": 150,
+    "replayed_decisions": 750000,
+    "retrained_neural_models": 0
+  },
+  "bound_differences": [
+    {
+      "old_certificate": "1da8b00e08c191676bc60d52fe4683616d186442f3adf6bbfbe7075d70810717",
+      "row": 11,
+      "old": 0.5962153062193992,
+      "new": 0.5962153062193993,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "1da8b00e08c191676bc60d52fe4683616d186442f3adf6bbfbe7075d70810717",
+      "row": 13,
+      "old": 0.6990161791006977,
+      "new": 0.6990161791006979,
+      "difference": 2.220446049250313e-16
+    },
+    {
+      "old_certificate": "b84b3b6a1819a7ec1f6b8edd0371778bada0da53881273551d046b0662edf0fd",
+      "row": 6,
+      "old": 0.021532052096521998,
+      "new": 0.021532052096522,
+      "difference": 3.469446951953614e-18
+    },
+    {
+      "old_certificate": "b84b3b6a1819a7ec1f6b8edd0371778bada0da53881273551d046b0662edf0fd",
+      "row": 12,
+      "old": 0.6000249122583318,
+      "new": 0.6000249122583317,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "b84b3b6a1819a7ec1f6b8edd0371778bada0da53881273551d046b0662edf0fd",
+      "row": 14,
+      "old": 0.7463121936537842,
+      "new": 0.746312193653784,
+      "difference": 2.220446049250313e-16
+    },
+    {
+      "old_certificate": "ffca2b0216dd68dc172c341e9c44d784a952bc7ed6ec4724e13d5380e36e89e4",
+      "row": 11,
+      "old": 0.5991587436558563,
+      "new": 0.5991587436558562,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "ffca2b0216dd68dc172c341e9c44d784a952bc7ed6ec4724e13d5380e36e89e4",
+      "row": 13,
+      "old": 0.7017782139585348,
+      "new": 0.7017782139585349,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "1aa5eac73c2b41b07743947b8a51401cef1211aed9585d6336adb9a53615527a",
+      "row": 12,
+      "old": 0.6407402067941086,
+      "new": 0.6407402067941085,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "01cea54afa444f8b43f5f9b7642511fd6f180793a4d4eb0ebeebcf1735eb16c9",
+      "row": 13,
+      "old": 0.6907930518445755,
+      "new": 0.6907930518445754,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "71464553b02c9c1f909420de7ce26fd2464ed8d10bcc8fc23c576ab5968c9cfb",
+      "row": 12,
+      "old": 0.6261809574326286,
+      "new": 0.6261809574326285,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "e9086da7aadbc20a1b402c55af0f7ce64b536abc00ac2b87da8836ee8b693d91",
+      "row": 12,
+      "old": 0.6372141153746937,
+      "new": 0.6372141153746936,
+      "difference": 1.1102230246251565e-16
+    },
+    {
+      "old_certificate": "1b818391daf3cebe89b3e9b17bc6657300f8893d96d5cbf0afb02b594e6ced18",
+      "row": 12,
+      "old": 0.5859785421650476,
+      "new": 0.5859785421650474,
+      "difference": 2.220446049250313e-16
+    }
+  ],
+  "alias_original_strict": {
+    "status": "FAIL",
+    "error": "Saved parameter mismatch"
+  },
+  "alias_compatibility": {
+    "status": "PASS",
+    "paired_policy_world_records": 2400,
+    "world_instances": 600,
+    "paired_seed_blocks": 200,
+    "max_independent_parameter_difference": 2.220446049250313e-15,
+    "extra_observations": 1200
+  },
+  "source_sha256": "86be4dcd5c9a9f1ce910e5b1317a02ab5d222b509cc340eee025a33d1ae14eb6",
+  "wall_seconds": 1.3869047000043793,
+  "scope": "Saved-data diagnosis, no regeneration or training; compatibility does not replace strict provenance."
+}

@@ -27,3 +27,11 @@ The primary cohort's codec is mixed precision, its initializer had an affine see
 ## GG-GUARD-001: retain the candidate; do not promote it
 
 I trained a validity guard and verified exact replay, independent algebra and predecessor preservation. The frozen conditional-risk gate failed despite improved utility. I retain its full weights, witnesses, raw cohort and failed checker attempts in `15_applicability/`. No shared-owner source or checkpoint was changed. The next protocol tests observed-feature calibration and additional paid evidence on new prospective mechanisms.
+
+## V3 continuation: separate calibrated scope, executable reuse and neural transfer
+
+GG-GUARD-002 passes its predefined conditional-risk gate using independent worlds and unchanged learned weights. Group calibration has lower matched utility than the global 0.90 policy, and zero abrupt-jump coverage. I retain both conditional results without claiming arbitrary validity.
+
+GC-001 produces correct guarded abstractions but loses after full proof/restore cost. GC-002 shares forward proof work and improves the per-candidate work proxy on a fresh stream. Review then exposes a missing proof-domain restriction and missing actual-interpreter enforcement. I preserve original sources and graphs, repair both contracts, migrate explicitly and reprove the saved programs. No numerical owner parameters or old abilities were changed.
+
+The next unresolved integration claim is positive transfer into another learned route under matched controls. Conditional code reuse, common ownership and accumulated K do not establish an improved investigator eta.

@@ -1,0 +1,86 @@
+{
+  "schema": "sera.v3.local-resource-budget.1",
+  "initial_seconds": 3600,
+  "remaining_seconds": 3369.087687600004,
+  "maximum_job_seconds": 900,
+  "memory_limit_bytes": 2147483648,
+  "measured_total_physical_bytes": 34123927552,
+  "measured_available_physical_bytes": 23153029120,
+  "cpu_workers": 1,
+  "threads_per_worker": 1,
+  "authority": "User-adopted v3 conservative initial batch; local CPU only. Jobs are sequential. Pack intake verification before this reserve is recorded separately.",
+  "jobs": {
+    "runs/v3-batch-001/unit-first": {
+      "status": "FAILED",
+      "charged_seconds": 4.40027160000318
+    },
+    "runs/v3-batch-001/unit-corrected": {
+      "status": "PASS",
+      "charged_seconds": 3.2188916000013705
+    },
+    "runs/v3-batch-001/timing": {
+      "status": "PASS",
+      "charged_seconds": 3.2325442000001203
+    },
+    "runs/v3-batch-001/deadline-control": {
+      "status": "TIMEOUT",
+      "charged_seconds": 0.22923240000091027
+    },
+    "runs/v3-batch-001/GG-GUARD-002-final": {
+      "status": "FAILED",
+      "charged_seconds": 2.729249500000151
+    },
+    "runs/v3-batch-001/GG-GUARD-002-final-v2": {
+      "status": "PASS",
+      "charged_seconds": 134.37445409999782
+    },
+    "runs/v3-batch-001/GG-GUARD-002-audit": {
+      "status": "PASS",
+      "charged_seconds": 22.72744760000205
+    },
+    "runs/v3-batch-001/GC-001-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.4729354999944917
+    },
+    "runs/v3-batch-001/GC-001-owner-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.4669113000054494
+    },
+    "runs/v3-batch-001/GC-001-final": {
+      "status": "PASS",
+      "charged_seconds": 5.218895899997733
+    },
+    "runs/v3-batch-001/GC-002-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.58389399999578
+    },
+    "runs/v3-batch-001/GC-002-final": {
+      "status": "PASS",
+      "charged_seconds": 5.185481900000013
+    },
+    "runs/v3-batch-001/GC-001-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.5874817000003532
+    },
+    "runs/v3-batch-001/GC-002-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.5773969000001671
+    },
+    "runs/v3-batch-001/GC-002-proof-domain-counterexample": {
+      "status": "FAILED",
+      "charged_seconds": 2.333837099999073
+    },
+    "runs/v3-batch-001/GC-002-repaired-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.981681099998241
+    },
+    "runs/v3-batch-001/GC-002-migration": {
+      "status": "PASS",
+      "charged_seconds": 2.728025600001274
+    },
+    "runs/v3-batch-001/full-regression": {
+      "status": "PASS",
+      "charged_seconds": 32.863680399997975
+    }
+  }
+}

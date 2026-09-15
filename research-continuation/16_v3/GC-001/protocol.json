@@ -1,0 +1,154 @@
+{
+  "payload": {
+    "experiment": "GC-001",
+    "sources": {
+      "experiments/guarded_consolidation/__init__.py": "2b1c389d096002b47a238b277759c0b2d2654be46815d28c177684d4506dd0a4",
+      "experiments/guarded_consolidation/core.py": "5b86a7e5fd0a89f4d07c8658b84380b71963842638a347b9b4d0366a66221f0c",
+      "experiments/guarded_consolidation/study.py": "551f20595bae76c59ad9dd43c773f55c7b1045aadf1e58ed09117c79afa83f70",
+      "src/sera/__init__.py": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2",
+      "src/sera/__main__.py": "54e692fc158d98ca334c5680797708c3c9950a098df71cb42ba92d4ffb7d571f",
+      "src/sera/accounting.py": "440315cb202cfa7617338aedce80b9744512d66cd97cc894ffea2d578b1f4bc0",
+      "src/sera/archive.py": "46a89ef976689b43f84640e6b4cd4ed3576d86581d85a897fd0b0c3eec2a5158",
+      "src/sera/belief.py": "9300021f9fc4af77cf6a49ac84edf5b5d74198acef732241fba344e1b2313a1a",
+      "src/sera/binding.py": "6323b29945af59c296f948eebc6930eb3ee4dfd6726b38ed2dbef210c872e522",
+      "src/sera/capability_evaluation.py": "70c0eb1c4674fa9caa3142353c68d8a91abfad9825553217821829bc504f7bf9",
+      "src/sera/cli.py": "4ba26a1761991184a81cc70a86aa2fd37e341888970f239c973826cd764e5a96",
+      "src/sera/connected.py": "1ac0345e923e32e999ed1508ebeb471e02729bdf5e77f035956c4dc05c958fc3",
+      "src/sera/contracts.py": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+      "src/sera/curriculum.py": "3b88ec52615dc5202967a8e30a580da5e4339102e259624ecdd26f793c57b3b8",
+      "src/sera/data.py": "13e505215d17bf8ccc61642ecdfa6cdb8ff03ead4a587f21065a72c5f95b3b64",
+      "src/sera/diagnostics.py": "ad632953f5575b1324b12415cd61027cc29bddc87180a98703ac29afbdb317c4",
+      "src/sera/engine.py": "23bfc648eea6f9403c79c0349cf7657f9b59697272732148227c5e7c964f9e54",
+      "src/sera/environments.py": "fa76a5181b7707d2eee4262d5cb3203523ead0bfea21680c7da48cb6c1ef2aee",
+      "src/sera/evaluation.py": "cc0660f798dd5104713a34cb42a2bc98ab9be37a359b6640a4d583618d38dd46",
+      "src/sera/event_ir.py": "0f063030fec0b52fd89964ec94a82342a0aa032814b7d79adda128f302615afa",
+      "src/sera/experience.py": "1859065a6f48ac08efb4d5f9043b9656a2392472ee8bec191face484a82eacdc",
+      "src/sera/experiments.py": "e59ca56af6da5275c5b1a319edf8280619617c28ff4201a5c149cde798cf93c4",
+      "src/sera/generative.py": "db978cfb6bb41709c98fd50f7dfab9e27356ed1dc0c75f2b30144b1d695b66a2",
+      "src/sera/lowrank.py": "4c24544d62e002496519ba5ac4032f755d4849fe966223e17e6c87f2bb31dbfe",
+      "src/sera/models.py": "2ff87f7a4c03353332a1ae31b4f704a6ae0ac5138e3e2d245f20c32aa4cb70b2",
+      "src/sera/mutations.py": "1b4d67f757be302be7d8b28481f8a5efd35e0cf4a82c2de313654e3e7ba0e179",
+      "src/sera/programs.py": "ca9b5382b8c62505e2d1fc37023a81b8e364bbfe8bb2b67f2b281e1e73e6d275",
+      "src/sera/quantum.py": "ab97561415a5cca8715cfe86074e1a4e7ffbb1183d4b089b654efb0ca96f5a8a",
+      "src/sera/r1.py": "5c1ab6c7cfcdc7b9c2ba3b2b5d529c42b71af2a6322d3cf7db70f445a4979bf7",
+      "src/sera/r2.py": "88337fccae017da88fd4e4761374faba333719948acd210ec4bdedcf5ebad24e",
+      "src/sera/session_state.py": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+      "src/sera/shared.py": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+      "src/sera/shared_archive.py": "da42434e556ab646e91f986cfd8eef780dc985354cad50628b5b80708ff9f491",
+      "src/sera/shared_continual.py": "0d1429e9aa453cfaedd745c3acb0bb66a87cf26aa9753b229734c745c2f7d9d3",
+      "src/sera/shared_evaluation.py": "b57cd53ccf6da7bdfa2509d50ead282b5adca551cb53db440b19779332773207",
+      "src/sera/shared_learning.py": "598e0df3cb131f2cd3248ee4da53e35b70a70b619dcee52032f0d49358b9abe3",
+      "src/sera/shared_study.py": "fdc2d324f483586d28e6da4261fa3e5179bc84f37d6b6c7c582f290e0654fe28",
+      "src/sera/skills.py": "babb6d13ad54fdf133cd63cd4540d01881a6e1bafbae6e1cc667ead47caa5d2c",
+      "src/sera/solver.py": "646b7db864c5844e6fba748f438f7a5588a38be80a9a55cef44c0b8b4ca314ae",
+      "src/sera/stage_three.py": "f15174cefb96a5b41524327b99aa446b1d0176867198d2ca4c0f601c524daf01",
+      "src/sera/storage.py": "f3634fc833a7f237c327bd844196765eec13121effa8276ff780906690c852fc",
+      "src/sera/study.py": "ee810cdf172dc830fa705839ab44e010592a4a5e9506125a8265d8beab2176f0",
+      "src/sera/training.py": "55424c222b10e9b68cd195fd4864a38c55eaaa07d11cfba629a924292fd32d22",
+      "src/sera/typed_learning.py": "58db7874dc41dc657f7fbd2c9bc8d9e4d5994c57b77db2d18d78833480edab3d",
+      "src/sera/typed_programs.py": "280e732ec48d3d5b6988b5483cfbbf3957bfa7768f1fa392d55293ad3eb40948",
+      "src/sera/typed_protocol.py": "ed3b6bc7d9bd6f7f84bafa6397343c09e18ac0c50a0b60c266bebc5ae93d1c41",
+      "src/sera/world.py": "4027429b560095c0c34b3fec876fdbb07abb43c9469edc1d9674e6f4ee6f2b1f",
+      "src/sera/world_graph.py": "5bb5d9a0955f7b16cb60b2db5fc6494cb00a1e07438018225fed7931487e6a19",
+      "tests/test_guarded_consolidation.py": "8a0bb4ef001b4ad6453b0a53c6f845618684d0f14c30dd75dbfd64dd2dd88e49"
+    },
+    "field": 11,
+    "parent": "runs/SHARED-GG-001/circle/corrected",
+    "parent_manifest": {
+      "schema_version": 3,
+      "version": "v0",
+      "parent": null,
+      "checkpoint_sha256": "eaf0b8fc315c943f4408f921f16ecfe8582bf2f675977c166f53e8242cbc4f37",
+      "solver_sha256": "f5f68a475c18e59fa85ee96aa3669fcfe78ac29b609f52e238a2f6413a5a85c1",
+      "skills": [
+        "36d1e819062bbff47ee9a462c55f6836eac8d33091329e498704ea8b0ee5e751",
+        "4d5efee93defd31e454f917982ef4d53c19a695a86ec33801b655d16fe2c4caf",
+        "52af0871b1797462422758e06802b8362f527526a984309cf420c6bc18830387",
+        "5837781d5c9121c251d2dc321269bd0295fc8bb8cc1d6aeea3779d8a69296592",
+        "8fdb8e6ecf429f6185e4c9ca8600a52aa9abf8026442a8f72cd8ffe568574702",
+        "90af47821951d3c07f59457bd32f81e3a48f2cf40bdf5b103678a3e074ad2a99",
+        "9a0abda825ccbb940a66ce8e3c100ec741a06c9ccf234a92c571d46f56a9299b",
+        "9b7d43f96cb57053deade688de99c654ff735294afe7c2847f3a6cccf37f1d96",
+        "a5accb9dbfefd9eb96e5ae4df5dd9030722c5cfc556ef8d9c441fe7cbf067fed",
+        "aa64a960863dcb6e5abd61abea62c9787792479949916d1f3f49c707b47651ce",
+        "c3f60e38270423fa3cb306bf36ebdc55395549fd6800111a0c6f30639ba172a8",
+        "da6924a7a02440d62ebf1977ec32426f42bce2d753f1bf8465c4a88dc027ee71",
+        "efd2c9c290a32a559b2d7a4a8932c55b27da90d65ce41ae1400b747ce87677fd",
+        "f0d4a531147847be2532a67fe3204762a5c026ad9b800448f9a668fe3a7f10c6",
+        "f2f0c3372cdf8da7b2a55dafb8b0d3040703f419bae07bfe4ad7e4d91a42e98a"
+      ],
+      "components": [
+        "controller",
+        "r1",
+        "r2:permutation-940000",
+        "typed"
+      ]
+    },
+    "training_inputs": [
+      {
+        "a": 1,
+        "b": 2,
+        "c": 3
+      },
+      {
+        "a": 2,
+        "b": 3,
+        "c": 1
+      },
+      {
+        "a": 3,
+        "b": 1,
+        "c": 2
+      },
+      {
+        "a": 1,
+        "b": 3,
+        "c": 2
+      },
+      {
+        "a": 2,
+        "b": 1,
+        "c": 3
+      },
+      {
+        "a": 3,
+        "b": 2,
+        "c": 1
+      }
+    ],
+    "assessment_seed": 90139001,
+    "counts": {
+      "renamed_new_values": 1024,
+      "withheld_compositions": 8192,
+      "violated_assumptions": 512,
+      "after_correction": 1024,
+      "library_growth": 512
+    },
+    "library_sizes": [
+      0,
+      32,
+      128
+    ],
+    "methods": [
+      "repeated_search",
+      "local_reasoning",
+      "compiled_linear",
+      "compiled_indexed",
+      "omit_guard"
+    ],
+    "hypotheses": [
+      "Trace abstraction saves repeated reasoning on fresh bindings/compositions after full cost",
+      "Lookup/proof/correction overhead can erase nominal shortcut savings"
+    ],
+    "guards": "Finite F11 values, inverse operands nonzero, complete interpreter and transitive semantic dependencies",
+    "gate": "Zero guarded false answers; all unique in-domain evaluations answered; correct transitive invalidation with unrelated retention; indexed full-cost operation proxy < local reasoning and repeated search over the predefined stream. Wall times reported separately; a proxy win is not a hardware or neural-transfer claim.",
+    "scope": "Supplied formal language, finite field and algebra rules. Acquired generalized trace program. Exact proof includes all finite atomic inputs, so this is not unseen-world empirical generalization; unseen compositions/bindings were absent from teaching.",
+    "budget": {
+      "job_seconds": 600,
+      "memory_bytes": 2147483648,
+      "threads": 1
+    },
+    "knowledge_vs_eta": "K changes through trace consolidation and correction. eta is fixed externally engineered code."
+  },
+  "sha256": "0b9315ac61454e13b2ffea6dac95352c07591e2c8d0c04be3c029f2d575e386a"
+}

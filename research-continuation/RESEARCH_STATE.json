@@ -2,7 +2,7 @@
   "schema": "sera.research-state.v1",
   "date": "2026-09-15",
   "objective": "A persistent shared learner that acquires compact executable knowledge, investigates uncertainty, corrects itself, retains valid capabilities, and measurably improves its learning procedure.",
-  "active_direction": "V2-B executable world with generative geometric memory; V2-C investigator is a challenger, not a promoted default.",
+  "active_direction": "V2-B conditional executable knowledge: independent-world guard calibration and finite trace consolidation; common-owner positive neural transfer remains open.",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -55,13 +55,15 @@
     },
     {
       "id": "08-guarded-consolidation",
-      "status": "pending"
+      "status": "finite_component_acquired_proved_corrected_and_migrated",
+      "evidence": "16_v3/GC-002/report.md",
+      "detail": "GC-001 fails full-cost proxy; GC-002 reduces per-candidate proxy 15.1% vs local reasoning, with 18 observations and no new neural parameters. Failed proof-domain contract fixed; original and repaired graphs retained. No learned eta or neural transfer."
     },
     {
       "id": "09-learned-applicability",
-      "status": "component_trained_and_audited_risk_gate_failed",
-      "detail": "GG-GUARD-001: 1,344 distinct worlds, 291 learned scalars, exact refit and independent audit. Utility improves over fixed guards; local-exception and changing-mechanism risk remains unacceptable. Candidate preserved outside the operational shared owner.",
-      "evidence": "15_applicability/report.md"
+      "status": "prospective_conditional_calibration_passes_shared_integration_open",
+      "detail": "Frozen GG-GUARD-001 weights, 1800 new calibration worlds and 2012 final worlds. Matched grouped policy accepts 664/1000 with zero errors; abrupt-jump coverage zero; global policy has higher utility. Only declared IID world/query risk is certified.",
+      "evidence": "16_v3/GG-GUARD-002/report.md"
     },
     {
       "id": "10-continual-revision",
@@ -103,7 +105,7 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "Implement and freeze GG-GUARD-002: observed-feature calibration strata, a minimum validity probability, and matched-cost additional evidence. Reserve new mechanisms; do not reuse GG-GUARD-001 final families as unseen. Integrate only after prospective reliability and useful-acceptance gates, then test shared positive transfer.",
+  "next_action": "A06: connect qualified conditional policy/guarded programs to actual shared learning and compare no-program, detached, integrated, extra-capacity arms on a different route at matched full cost; then A08 hidden-state continuing interaction. Do not rerun completed v3 cohorts.",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -120,6 +122,15 @@
       "independent": "15_applicability/independent.json",
       "preservation": "15_applicability/preservation.json",
       "candidate_promoted": false
+    },
+    "v3": {
+      "report": "16_v3/README.md",
+      "current_guard_model": "15_applicability/guard-model.json",
+      "group_certificate": "16_v3/GG-GUARD-002/certificates.json",
+      "current_library": "16_v3/GC-002/repair/corrected-library.json",
+      "library_parent": "../runs/SHARED-GG-001/circle/corrected",
+      "scope": "Research components; operational solver/parameters unchanged"
     }
-  }
+  },
+  "latest_continuation": "16_v3/README.md"
 }

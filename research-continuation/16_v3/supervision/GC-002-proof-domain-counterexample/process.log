@@ -1,0 +1,16 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+______ test_indexed_proof_rejects_a_forward_relation_that_depends_on_rhs ______
+
+    def test_indexed_proof_rejects_a_forward_relation_that_depends_on_rhs():
+        from experiments.guarded_consolidation.indexed_proof import prove_indexed
+        # Reusing a table built at c=0 is unsound for x+c=c. That equation's
+        # solution is zero, whereas a forged answer of c passes the stale table.
+>       with pytest.raises(ValueError, match="right-hand side"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests\test_guarded_consolidation.py:116: Failed
+=========================== short test summary info ===========================
+FAILED tests/test_guarded_consolidation.py::test_indexed_proof_rejects_a_forward_relation_that_depends_on_rhs
+1 failed in 0.09s

@@ -20,10 +20,14 @@
 - [x] Train GG-GUARD-001 with episode-disjoint teaching/calibration and two protected final mechanism families.
 - [x] Replay all 1,344 worlds, refit the model exactly, independently audit its mathematics and preserve failed checkers.
 - [x] Verify 174 tests and byte preservation of 16,556 older model/result files.
-- [ ] Pass prospective applicability and useful-acceptance gates under GG-GUARD-002; the first candidate failed conditional risk.
+- [x] Reconcile the v3 pack with current HEADs, dirty files, checkpoints and owned jobs; preserve strict replay differences.
+- [x] Pass the predefined GG-GUARD-002 conditional calibration/coverage gate on 3,812 new independent worlds; record zero abrupt-jump coverage.
+- [x] Acquire finite guarded trace programs, retain the failed GC-001 full-cost result and evaluate GC-002 on a fresh stream.
+- [x] Repair indexed-proof domain and actual-interpreter checks; explicitly migrate and reprove saved graphs; check 1,024 fresh cases.
+- [x] Run 199 current regressions and independently audit complete saved cohorts.
 - [ ] Test shared positive transfer from consolidated generators.
 - [ ] Train eta, run old/new K × old/new eta, and test successive generations.
 
 Completion means executable evidence at the stated scope. M2–M4 remain open until their capability tests pass.
 
-The completed geometric cohort covers four of ten requested task families. Its strongest unresolved failure is that local residual correction can reduce in-region error while worsening uncertainty on unseen arcs. GG-GUARD-001 now tests learned applicability and finds that pooled calibration still permits unacceptable conditional risk. The candidate remains experimental; the next study must correct that boundary with new prospective evidence.
+The completed geometric cohort covers four of ten requested task families. GG-GUARD-002 improves the policy's tested reliability through conditional calibration and abstention; it does not learn the omitted mechanisms. Finite guarded consolidation now has a tested implementation and preserved cost failure, but shared positive neural transfer and learned eta remain open. See the [v3 evidence](16_v3/README.md) and [next uncompleted experiment](NEXT_EXPERIMENT_PROTOCOL.md).

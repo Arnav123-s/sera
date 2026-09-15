@@ -1,0 +1,20 @@
+{
+  "payload": {
+    "kind": "GC-002 affected-implementation repair",
+    "source": "runs/v3-batch-001/GC-002-final/data",
+    "seed": 90339001,
+    "new_cases_per_snapshot": 512,
+    "current_interpreter": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+    "source_graph_files": {
+      "initial": "35b5152dc2e2189bf8f5a6e5bc4072ea62246aaaf82980108b0e600bb35d5dcc",
+      "corrected": "63117cd1357f9322347d3dd86a1d3c797148f3ff35848c87b3b03f3ffe7673d0"
+    },
+    "changes": [
+      "reject RHS-dependent forward relations before indexing",
+      "enforce actual interpreter identity",
+      "explicit finite-proof migration"
+    ],
+    "scope": "No refitting, no old final tasks regenerated, no threshold changes; reprove saved programs and check fresh mathematical cases"
+  },
+  "sha256": "4b35b259f69b1b3739c641d141ad468c8e732be699a9c6008534fcd96e6ab26e"
+}

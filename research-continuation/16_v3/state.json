@@ -1,0 +1,48 @@
+{
+  "schema": "sera.v3.continuation-state.1",
+  "date": "2026-09-15",
+  "status": "three_candidate_cycles_and_affected_repairs_complete",
+  "parent_head": "9104839400d5053152ca423be6da1efe355aa71a",
+  "work_branch": "research/v3-calibration-consolidation",
+  "completed": [
+    "local_reconciliation",
+    "one_time_packet_verification_and_portability_diagnosis",
+    "GG-GUARD-002",
+    "GC-001",
+    "GC-002",
+    "affected_contract_repairs_and_explicit_migration",
+    "199_regressions"
+  ],
+  "report": "README.md",
+  "current_guard_weights": "../15_applicability/guard-model.json",
+  "certificates": "GG-GUARD-002/certificates.json",
+  "current_finite_library": "GC-002/repair/corrected-library.json",
+  "exact_local_parent": "../../runs/SHARED-GG-001/circle/corrected/versions/v0.pt",
+  "parent_checkpoint_sha256": "eaf0b8fc315c943f4408f921f16ecfe8582bf2f675977c166f53e8242cbc4f37",
+  "parent_solver_sha256": "f5f68a475c18e59fa85ee96aa3669fcfe78ac29b609f52e238a2f6413a5a85c1",
+  "approved_resources": {
+    "worker_seconds_remaining_before_release_checks": 3369.087687600004,
+    "authority": "Live local runs/v3-batch-001/budget.json supersedes this snapshot",
+    "memory_limit_bytes": 2147483648,
+    "active_experiments": [],
+    "no_automatic_background_work": true
+  },
+  "do_not_restart": [
+    "GG-GUARD-001",
+    "GG-GUARD-002",
+    "GC-001",
+    "GC-002",
+    "prior geometry/cloud/Kavi/bundle experiments"
+  ],
+  "next_uncompleted": "A06 shared positive transfer, then A08 hidden-state interaction and A09 independently improved investigator",
+  "scope_limits": [
+    "conditional IID risk only",
+    "supplied finite algebra and role bindings",
+    "no positive neural transfer",
+    "no learned eta improvement",
+    "no M2-M4 claim"
+  ],
+  "resume_command": ".venv/Scripts/python.exe -X utf8 -m scripts.resume_v3_library --a 4 --b 5 --c 6",
+  "release_receipt": "release-verification/result.json",
+  "remote_publication": "not performed by this continuation"
+}

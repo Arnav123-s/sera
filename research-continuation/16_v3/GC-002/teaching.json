@@ -1,0 +1,368 @@
+[
+  {
+    "inputs": {
+      "a": 1,
+      "b": 2,
+      "c": 3
+    },
+    "trace": [
+      "mul",
+      [
+        "sub",
+        [
+          "value",
+          3,
+          "c"
+        ],
+        [
+          "value",
+          2,
+          "b"
+        ]
+      ],
+      [
+        "inv",
+        [
+          "value",
+          1,
+          "a"
+        ]
+      ]
+    ],
+    "observed_solutions": [
+      1
+    ],
+    "record_id": "initial/affine/0",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "trace": [
+      "mul",
+      [
+        "sub",
+        [
+          "value",
+          1,
+          "c"
+        ],
+        [
+          "value",
+          3,
+          "b"
+        ]
+      ],
+      [
+        "inv",
+        [
+          "value",
+          2,
+          "a"
+        ]
+      ]
+    ],
+    "observed_solutions": [
+      10
+    ],
+    "record_id": "initial/affine/1",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 3,
+      "b": 1,
+      "c": 2
+    },
+    "trace": [
+      "mul",
+      [
+        "sub",
+        [
+          "value",
+          2,
+          "c"
+        ],
+        [
+          "value",
+          1,
+          "b"
+        ]
+      ],
+      [
+        "inv",
+        [
+          "value",
+          3,
+          "a"
+        ]
+      ]
+    ],
+    "observed_solutions": [
+      4
+    ],
+    "record_id": "initial/affine/2",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 1,
+      "b": 3,
+      "c": 2
+    },
+    "trace": [
+      "mul",
+      [
+        "sub",
+        [
+          "value",
+          2,
+          "c"
+        ],
+        [
+          "value",
+          3,
+          "b"
+        ]
+      ],
+      [
+        "inv",
+        [
+          "value",
+          1,
+          "a"
+        ]
+      ]
+    ],
+    "observed_solutions": [
+      10
+    ],
+    "record_id": "initial/affine/3",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 2,
+      "b": 1,
+      "c": 3
+    },
+    "trace": [
+      "mul",
+      [
+        "sub",
+        [
+          "value",
+          3,
+          "c"
+        ],
+        [
+          "value",
+          1,
+          "b"
+        ]
+      ],
+      [
+        "inv",
+        [
+          "value",
+          2,
+          "a"
+        ]
+      ]
+    ],
+    "observed_solutions": [
+      1
+    ],
+    "record_id": "initial/affine/4",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 3,
+      "b": 2,
+      "c": 1
+    },
+    "trace": [
+      "mul",
+      [
+        "sub",
+        [
+          "value",
+          1,
+          "c"
+        ],
+        [
+          "value",
+          2,
+          "b"
+        ]
+      ],
+      [
+        "inv",
+        [
+          "value",
+          3,
+          "a"
+        ]
+      ]
+    ],
+    "observed_solutions": [
+      7
+    ],
+    "record_id": "initial/affine/5",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 1,
+      "b": 2,
+      "c": 3
+    },
+    "trace": [
+      "sub",
+      [
+        "value",
+        3,
+        "c"
+      ],
+      [
+        "value",
+        2,
+        "b"
+      ]
+    ],
+    "observed_solutions": [
+      1
+    ],
+    "record_id": "initial/offset/0",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 2,
+      "b": 3,
+      "c": 1
+    },
+    "trace": [
+      "sub",
+      [
+        "value",
+        1,
+        "c"
+      ],
+      [
+        "value",
+        3,
+        "b"
+      ]
+    ],
+    "observed_solutions": [
+      9
+    ],
+    "record_id": "initial/offset/1",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 3,
+      "b": 1,
+      "c": 2
+    },
+    "trace": [
+      "sub",
+      [
+        "value",
+        2,
+        "c"
+      ],
+      [
+        "value",
+        1,
+        "b"
+      ]
+    ],
+    "observed_solutions": [
+      1
+    ],
+    "record_id": "initial/offset/2",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 1,
+      "b": 3,
+      "c": 2
+    },
+    "trace": [
+      "sub",
+      [
+        "value",
+        2,
+        "c"
+      ],
+      [
+        "value",
+        3,
+        "b"
+      ]
+    ],
+    "observed_solutions": [
+      10
+    ],
+    "record_id": "initial/offset/3",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 2,
+      "b": 1,
+      "c": 3
+    },
+    "trace": [
+      "sub",
+      [
+        "value",
+        3,
+        "c"
+      ],
+      [
+        "value",
+        1,
+        "b"
+      ]
+    ],
+    "observed_solutions": [
+      2
+    ],
+    "record_id": "initial/offset/4",
+    "evidence": "finite_simulator_observation"
+  },
+  {
+    "inputs": {
+      "a": 3,
+      "b": 2,
+      "c": 1
+    },
+    "trace": [
+      "sub",
+      [
+        "value",
+        1,
+        "c"
+      ],
+      [
+        "value",
+        2,
+        "b"
+      ]
+    ],
+    "observed_solutions": [
+      10
+    ],
+    "record_id": "initial/offset/5",
+    "evidence": "finite_simulator_observation"
+  }
+]

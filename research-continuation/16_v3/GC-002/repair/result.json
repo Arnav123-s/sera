@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "migrations": [
+    {
+      "parent_graph": "9efc67e17a2d2f6cfbf5afa503e3d54f5bb0921616fbbd35a7db51748505b987",
+      "successor_graph": "741e4efab733954927ad20a537913fd96890b7f13cae616e55c360e85b12a488",
+      "old_interpreter": "3a858528156f3e791a897bd35742f5a7cf77bee8947da8c628e6304be6b3f11b",
+      "new_interpreter": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+      "parameter_owner_unchanged": true,
+      "method": "same-schema dependency rebinding plus exhaustive finite reproof; original graph retained"
+    },
+    {
+      "parent_graph": "0bfc1dae478043890eae8b8010d6d7b42894046d40f71b6a2d82294a41773887",
+      "successor_graph": "f8054d3d2af9f680e176991016d361d1f6bd3c227b6fcc462f1720d99283caac",
+      "old_interpreter": "3a858528156f3e791a897bd35742f5a7cf77bee8947da8c628e6304be6b3f11b",
+      "new_interpreter": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+      "parameter_owner_unchanged": true,
+      "method": "same-schema dependency rebinding plus exhaustive finite reproof; original graph retained"
+    }
+  ],
+  "fresh_cases_checked": 1024,
+  "work": {
+    "migrated_definitions": 10,
+    "proof_dependency_nodes": 20,
+    "forward_nodes": 26620,
+    "proof_index_insertions": 10648,
+    "domain_checks": 35016,
+    "nonzero_checks": 6348,
+    "expression_nodes": 56946,
+    "proof_index_lookups": 10164,
+    "graph_validation_bytes": 12872,
+    "library_index_entries": 20,
+    "owner_identity_checks": 4,
+    "interpreter_identity_checks": 4,
+    "indexed_lookup": 1024,
+    "lookup_key_bytes": 65536
+  },
+  "operations": 146824,
+  "parent_solver_sha256": "f5f68a475c18e59fa85ee96aa3669fcfe78ac29b609f52e238a2f6413a5a85c1",
+  "parent_unchanged": true,
+  "wall_seconds": 0.44145449999632547,
+  "cost_scope": "Additional repair/migration validation cost, retained separately from both frozen candidate studies."
+}

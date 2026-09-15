@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\world_calibration\study.py", line 278, in <module>
+    run(args.output, args.timing)
+  File "D:\ai\projects\sera\experiments\world_calibration\study.py", line 233, in run
+    protocol = load_protocol()
+               ^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\world_calibration\study.py", line 212, in load_protocol
+    record = json.loads((RELEASE/"GG-GUARD-002/protocol.json").read_text())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\ai\\projects\\sera\\research-continuation\\16_v3\\GG-GUARD-002\\protocol.json'

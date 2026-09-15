@@ -3,12 +3,22 @@
 import gzip
 import hashlib
 import json
+import subprocess
 import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = ROOT/"research-continuation/15_applicability"
+HISTORICAL_COMMIT = "9104839400d5053152ca423be6da1efe355aa71a"
+MANIFEST_SHA256 = "26efe2ff94833bc92d63d9ff09dbd571065f8e0964a97dcdb8f2079d18e83a7e"
+EVOLVING_FILES = {
+    "README.md", "scripts/verify_applicability.py",
+    "research-continuation/DECISION_LOG.md", "research-continuation/EVIDENCE_LEDGER.jsonl",
+    "research-continuation/EVIDENCE_MAP.json", "research-continuation/EXPERIMENT_REGISTRY.jsonl",
+    "research-continuation/FAILURE_LEDGER.jsonl", "research-continuation/NEXT_ACTIONS.md",
+    "research-continuation/NEXT_EXPERIMENT_PROTOCOL.md", "research-continuation/RESEARCH_STATE.json",
+}
 
 
 def read(name):
@@ -16,6 +26,8 @@ def read(name):
 
 
 def main():
+    if hashlib.sha256((RELEASE/"release-manifest.json").read_bytes()).hexdigest() != MANIFEST_SHA256:
+        raise ValueError("Historical applicability manifest changed")
     manifest = read("release-manifest.json")
     entries = manifest["files"]
     if not entries or len(entries) != len({r["path"] for r in entries}):
@@ -26,7 +38,12 @@ def main():
             raise ValueError("Invalid evidence path")
         raw = path.read_bytes()
         if len(raw) != row["bytes"] or hashlib.sha256(raw).hexdigest() != row["sha256"]:
-            raise ValueError(f"Applicability evidence changed: {row['path']}")
+            if row["path"] not in EVOLVING_FILES:
+                raise ValueError(f"Applicability evidence changed: {row['path']}")
+            historical = subprocess.check_output(["git", "-c", f"safe.directory={ROOT.as_posix()}",
+                                                   "show", f"{HISTORICAL_COMMIT}:{row['path']}"], cwd=ROOT)
+            if len(historical) != row["bytes"] or hashlib.sha256(historical).hexdigest() != row["sha256"]:
+                raise ValueError(f"Historical applicability source changed: {row['path']}")
     protocol = read("protocol.json")
     canonical = json.dumps(protocol["payload"], sort_keys=True, separators=(",", ":"), allow_nan=False)
     if hashlib.sha256(canonical.encode()).hexdigest() != protocol["sha256"]:

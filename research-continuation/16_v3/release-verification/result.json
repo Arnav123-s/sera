@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": {
+    "verify_release.py": "Verified 33 evidence artifacts and 154 unique source concepts.",
+    "verify_continuation.py": "Verified 119 continuation files (11 evolving files preserved in 71512a6), 110 frozen source members, 300 inquiry runs and trained-parent retention evidence.",
+    "verify_applicability.py": "Verified 61 applicability files, 1344 worlds, 44352 query predictions, 53 frozen sources, corrected independent audit and withheld promotion.",
+    "verify_v3_release.py": "{\"status\": \"PASS\", \"release_files\": 165, \"bytes\": 11907136, \"guard_worlds\": 3812, \"current_tests\": 199, \"strict_intake_failures_preserved\": true, \"completed_cohorts_restarted\": 0}"
+  },
+  "resumed_example": {
+    "answer": 0,
+    "status": "CONDITIONAL_FINITE_PROOF",
+    "relation": "a*x-b=c modulo 11",
+    "assumptions": "integer field values in [0,10], a nonzero",
+    "owner_sha256": "d6285a3764ac1287ea42beb60f14ed32c8194126d1b849bd110871c58879faf4",
+    "library_sha256": "f8054d3d2af9f680e176991016d361d1f6bd3c227b6fcc462f1720d99283caac",
+    "restore_and_execution_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7989,
+      "nonzero_checks": 1332,
+      "expression_nodes": 12591,
+      "proof_index_lookups": 2541,
+      "owner_identity_checks": 1,
+      "interpreter_identity_checks": 1,
+      "indexed_lookup": 1,
+      "lookup_key_bytes": 64
+    }
+  },
+  "scope": "Historical/current manifests, frozen sources and read-only repaired checkpoint; no training or cohort restart"
+}

@@ -1,0 +1,59 @@
+test_cli_rejects_output_in_source (test_handoff_tools.CollectorTests.test_cli_rejects_output_in_source) ... ok
+test_cli_writes_outside_and_does_not_overwrite (test_handoff_tools.CollectorTests.test_cli_writes_outside_and_does_not_overwrite) ... ok
+test_file_limit_reported (test_handoff_tools.CollectorTests.test_file_limit_reported) ... ok
+test_fresh_files_hashed (test_handoff_tools.CollectorTests.test_fresh_files_hashed) ... ok
+test_large_files_not_silently_omitted (test_handoff_tools.CollectorTests.test_large_files_not_silently_omitted) ... ok
+test_secret_paths_excluded (test_handoff_tools.CollectorTests.test_secret_paths_excluded) ... ok
+test_symlinks_not_followed (test_handoff_tools.CollectorTests.test_symlinks_not_followed) ... ok
+test_fits_circle_without_target (test_handoff_tools.GeometryTests.test_fits_circle_without_target) ... ok
+test_no_query_leak (test_handoff_tools.GeometryTests.test_no_query_leak) ... ok
+test_omitted_mechanism_survives_probes (test_handoff_tools.GeometryTests.test_omitted_mechanism_survives_probes) ... ok
+test_prefix_is_exactly_aliased (test_handoff_tools.GeometryTests.test_prefix_is_exactly_aliased) ... ok
+test_probe_can_distinguish_known_models (test_handoff_tools.GeometryTests.test_probe_can_distinguish_known_models) ... ok
+test_changed_certificate_still_detected (test_replay_checks.CheckerContracts.test_changed_certificate_still_detected) ... ok
+test_replay_check_is_not_assert_optimization_dependent (test_replay_checks.CheckerContracts.test_replay_check_is_not_assert_optimization_dependent) ... ok
+test_tuple_and_json_list_have_same_certificate_identity (test_replay_checks.CheckerContracts.test_tuple_and_json_list_have_same_certificate_identity) ... ok
+test_agreement_is_not_certainty (test_risk_gate.AmbiguityTests.test_agreement_is_not_certainty) ... ok
+test_invalid_candidates (test_risk_gate.AmbiguityTests.test_invalid_candidates) ... ok
+test_new_probe_needed (test_risk_gate.AmbiguityTests.test_new_probe_needed) ... ok
+test_no_budget_abstain (test_risk_gate.AmbiguityTests.test_no_budget_abstain) ... ok
+test_all_wrong (test_risk_gate.BoundsTests.test_all_wrong) ... ok
+test_bad_alpha (test_risk_gate.BoundsTests.test_bad_alpha) ... ok
+test_bad_counts (test_risk_gate.BoundsTests.test_bad_counts) ... ok
+test_binomial_tail_identity (test_risk_gate.BoundsTests.test_binomial_tail_identity) ... ok
+test_cluster_bound_does_not_count_queries (test_risk_gate.BoundsTests.test_cluster_bound_does_not_count_queries) ... ok
+test_cluster_empty_acceptance (test_risk_gate.BoundsTests.test_cluster_empty_acceptance) ... ok
+test_cluster_invalid_fraction (test_risk_gate.BoundsTests.test_cluster_invalid_fraction) ... ok
+test_empty_is_not_zero_risk (test_risk_gate.BoundsTests.test_empty_is_not_zero_risk) ... ok
+test_larger_sample_tighter (test_risk_gate.BoundsTests.test_larger_sample_tighter) ... ok
+test_stricter_confidence_wider (test_risk_gate.BoundsTests.test_stricter_confidence_wider) ... ok
+test_zero_errors_closed_form (test_risk_gate.BoundsTests.test_zero_errors_closed_form) ... ok
+test_alpha_budget (test_risk_gate.CertificateTests.test_alpha_budget) ... ok
+test_bad_contract (test_risk_gate.CertificateTests.test_bad_contract) ... ok
+test_calibration_input_not_mutated (test_risk_gate.CertificateTests.test_calibration_input_not_mutated) ... ok
+test_imagined_rejected (test_risk_gate.CertificateTests.test_imagined_rejected) ... ok
+test_insufficient_support_no_certificate (test_risk_gate.CertificateTests.test_insufficient_support_no_certificate) ... ok
+test_model_change_invalidates (test_risk_gate.CertificateTests.test_model_change_invalidates) ... ok
+test_no_double_counted_worlds (test_risk_gate.CertificateTests.test_no_double_counted_worlds) ... ok
+test_nonfinite_input (test_risk_gate.CertificateTests.test_nonfinite_input) ... ok
+test_query_policy_change_invalidates (test_risk_gate.CertificateTests.test_query_policy_change_invalidates) ... ok
+test_separate_group_gate (test_risk_gate.CertificateTests.test_separate_group_gate) ... ok
+test_tamper_detected (test_risk_gate.CertificateTests.test_tamper_detected) ... ok
+test_test_labels_rejected (test_risk_gate.CertificateTests.test_test_labels_rejected) ... ok
+test_training_overlap (test_risk_gate.CertificateTests.test_training_overlap) ... ok
+test_unknown_group_abstains (test_risk_gate.CertificateTests.test_unknown_group_abstains) ... ok
+test_boolean_count_rejected (test_v2_session_regressions.V2NumericContracts.test_boolean_count_rejected) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_finite_noise_required (test_v2_session_regressions.V2NumericContracts.test_finite_noise_required) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_finite_prior_scale_required (test_v2_session_regressions.V2NumericContracts.test_finite_prior_scale_required) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_fractional_count_rejected (test_v2_session_regressions.V2NumericContracts.test_fractional_count_rejected) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_invalid_event_count_rejected (test_v2_session_regressions.V2NumericContracts.test_invalid_event_count_rejected) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_negative_square_sum_rejected (test_v2_session_regressions.V2NumericContracts.test_negative_square_sum_rejected) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_nonfinite_square_sum_rejected (test_v2_session_regressions.V2NumericContracts.test_nonfinite_square_sum_rejected) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_nonfinite_step_rejected (test_v2_session_regressions.V2NumericContracts.test_nonfinite_step_rejected) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_normal_session_roundtrip (test_v2_session_regressions.V2NumericContracts.test_normal_session_roundtrip) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+test_wrong_origin_does_not_modify (test_v2_session_regressions.V2NumericContracts.test_wrong_origin_does_not_modify) ... skipped 'requires explicit original/isolated-patched v2 code tree'
+
+----------------------------------------------------------------------
+Ran 54 tests in 0.579s
+
+OK (skipped=10)

@@ -1,0 +1,594 @@
+{
+  "status": "PASS",
+  "source_anchor": "9104839400d5053152ca423be6da1efe355aa71a",
+  "unchanged_shared_sources": {
+    "src/sera/accounting.py": "440315cb202cfa7617338aedce80b9744512d66cd97cc894ffea2d578b1f4bc0",
+    "src/sera/archive.py": "46a89ef976689b43f84640e6b4cd4ed3576d86581d85a897fd0b0c3eec2a5158",
+    "src/sera/belief.py": "9300021f9fc4af77cf6a49ac84edf5b5d74198acef732241fba344e1b2313a1a",
+    "src/sera/binding.py": "6323b29945af59c296f948eebc6930eb3ee4dfd6726b38ed2dbef210c872e522",
+    "src/sera/capability_evaluation.py": "70c0eb1c4674fa9caa3142353c68d8a91abfad9825553217821829bc504f7bf9",
+    "src/sera/cli.py": "4ba26a1761991184a81cc70a86aa2fd37e341888970f239c973826cd764e5a96",
+    "src/sera/connected.py": "1ac0345e923e32e999ed1508ebeb471e02729bdf5e77f035956c4dc05c958fc3",
+    "src/sera/contracts.py": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+    "src/sera/curriculum.py": "3b88ec52615dc5202967a8e30a580da5e4339102e259624ecdd26f793c57b3b8",
+    "src/sera/data.py": "13e505215d17bf8ccc61642ecdfa6cdb8ff03ead4a587f21065a72c5f95b3b64",
+    "src/sera/diagnostics.py": "ad632953f5575b1324b12415cd61027cc29bddc87180a98703ac29afbdb317c4",
+    "src/sera/engine.py": "23bfc648eea6f9403c79c0349cf7657f9b59697272732148227c5e7c964f9e54",
+    "src/sera/environments.py": "fa76a5181b7707d2eee4262d5cb3203523ead0bfea21680c7da48cb6c1ef2aee",
+    "src/sera/evaluation.py": "cc0660f798dd5104713a34cb42a2bc98ab9be37a359b6640a4d583618d38dd46",
+    "src/sera/event_ir.py": "0f063030fec0b52fd89964ec94a82342a0aa032814b7d79adda128f302615afa",
+    "src/sera/experience.py": "1859065a6f48ac08efb4d5f9043b9656a2392472ee8bec191face484a82eacdc",
+    "src/sera/experiments.py": "e59ca56af6da5275c5b1a319edf8280619617c28ff4201a5c149cde798cf93c4",
+    "src/sera/generative.py": "db978cfb6bb41709c98fd50f7dfab9e27356ed1dc0c75f2b30144b1d695b66a2",
+    "src/sera/lowrank.py": "4c24544d62e002496519ba5ac4032f755d4849fe966223e17e6c87f2bb31dbfe",
+    "src/sera/models.py": "2ff87f7a4c03353332a1ae31b4f704a6ae0ac5138e3e2d245f20c32aa4cb70b2",
+    "src/sera/mutations.py": "1b4d67f757be302be7d8b28481f8a5efd35e0cf4a82c2de313654e3e7ba0e179",
+    "src/sera/programs.py": "ca9b5382b8c62505e2d1fc37023a81b8e364bbfe8bb2b67f2b281e1e73e6d275",
+    "src/sera/quantum.py": "ab97561415a5cca8715cfe86074e1a4e7ffbb1183d4b089b654efb0ca96f5a8a",
+    "src/sera/r1.py": "5c1ab6c7cfcdc7b9c2ba3b2b5d529c42b71af2a6322d3cf7db70f445a4979bf7",
+    "src/sera/r2.py": "88337fccae017da88fd4e4761374faba333719948acd210ec4bdedcf5ebad24e",
+    "src/sera/session_state.py": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+    "src/sera/shared.py": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+    "src/sera/shared_archive.py": "da42434e556ab646e91f986cfd8eef780dc985354cad50628b5b80708ff9f491",
+    "src/sera/shared_continual.py": "0d1429e9aa453cfaedd745c3acb0bb66a87cf26aa9753b229734c745c2f7d9d3",
+    "src/sera/shared_evaluation.py": "b57cd53ccf6da7bdfa2509d50ead282b5adca551cb53db440b19779332773207",
+    "src/sera/shared_learning.py": "598e0df3cb131f2cd3248ee4da53e35b70a70b619dcee52032f0d49358b9abe3",
+    "src/sera/shared_study.py": "fdc2d324f483586d28e6da4261fa3e5179bc84f37d6b6c7c582f290e0654fe28",
+    "src/sera/skills.py": "babb6d13ad54fdf133cd63cd4540d01881a6e1bafbae6e1cc667ead47caa5d2c",
+    "src/sera/solver.py": "646b7db864c5844e6fba748f438f7a5588a38be80a9a55cef44c0b8b4ca314ae",
+    "src/sera/stage_three.py": "f15174cefb96a5b41524327b99aa446b1d0176867198d2ca4c0f601c524daf01",
+    "src/sera/storage.py": "f3634fc833a7f237c327bd844196765eec13121effa8276ff780906690c852fc",
+    "src/sera/study.py": "ee810cdf172dc830fa705839ab44e010592a4a5e9506125a8265d8beab2176f0",
+    "src/sera/training.py": "55424c222b10e9b68cd195fd4864a38c55eaaa07d11cfba629a924292fd32d22",
+    "src/sera/typed_learning.py": "58db7874dc41dc657f7fbd2c9bc8d9e4d5994c57b77db2d18d78833480edab3d",
+    "src/sera/typed_programs.py": "280e732ec48d3d5b6988b5483cfbbf3957bfa7768f1fa392d55293ad3eb40948",
+    "src/sera/typed_protocol.py": "ed3b6bc7d9bd6f7f84bafa6397343c09e18ac0c50a0b60c266bebc5ae93d1c41",
+    "src/sera/world.py": "4027429b560095c0c34b3fec876fdbb07abb43c9469edc1d9674e6f4ee6f2b1f",
+    "src/sera/world_graph.py": "5bb5d9a0955f7b16cb60b2db5fc6494cb00a1e07438018225fed7931487e6a19",
+    "src/sera/__init__.py": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2",
+    "src/sera/__main__.py": "54e692fc158d98ca334c5680797708c3c9950a098df71cb42ba92d4ffb7d571f"
+  },
+  "predecessor_files": [
+    {
+      "path": "runs/GG-GUARD-001-final/before-final.json",
+      "sha256": "6a1aa403759f891bca29e39040f8f6bb7b87c5aec8f4d59664647b0b72ac2445",
+      "bytes": 180
+    },
+    {
+      "path": "runs/GG-GUARD-001-final/guard-model.json",
+      "sha256": "f986e8a86ae4912de4d033549992037c7d34c606e0d8fc9a2091e31ed112ba72",
+      "bytes": 71957
+    },
+    {
+      "path": "runs/GG-GUARD-001-final/protocol.json",
+      "sha256": "938ade356aeb69811dd2b86e9d52cbfb820ff47590606558a7582080af5271b5",
+      "bytes": 13553
+    },
+    {
+      "path": "runs/GG-GUARD-001-final/records.json.gz",
+      "sha256": "1a9c6daf06e1e0f645f6beac9fbd9a431ecdb00212814d0f38a9bd356bc336d7",
+      "bytes": 11102953
+    },
+    {
+      "path": "runs/GG-GUARD-001-final/summary.json",
+      "sha256": "24b898b5309c476032bdbb34b573a9ed896fe71812791a9cfd28af3a375c60ae",
+      "bytes": 213472
+    },
+    {
+      "path": "runs/GG-GUARD-001-final/thresholds.json",
+      "sha256": "534387d8a1e333320ee7f7ecc0f9dbbd684a2171879c4f57a4918338508cdb6a",
+      "bytes": 53680
+    },
+    {
+      "path": "runs/SHARED-GG-001/protocol.json",
+      "sha256": "2676a569b99404f6a565daf43819939309ce8c0181db0e5f80441633d2022e45",
+      "bytes": 7900
+    },
+    {
+      "path": "runs/SHARED-GG-001/result.json",
+      "sha256": "ad59ce5071a6e5985af4ccd9279a615f9c6f4e199c09a0bd85f51d1fb2a905d0",
+      "bytes": 17903
+    },
+    {
+      "path": "runs/SHARED-GG-001/retention-after.json",
+      "sha256": "a0079b1f5e71bcbc5f1b090a7e2171e072b041bea24ead1bedfc4b6f421acc01",
+      "bytes": 47094
+    },
+    {
+      "path": "runs/SHARED-GG-001/retention-before.json",
+      "sha256": "a0079b1f5e71bcbc5f1b090a7e2171e072b041bea24ead1bedfc4b6f421acc01",
+      "bytes": 47094
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/pre-correction-situation.json",
+      "sha256": "0af6df4bf320f92dd26dccddd96f0e9e2bbb7230faccb9a9c00426dfcb468c8c",
+      "bytes": 14019
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/pre-correction.pt",
+      "sha256": "779288eea02b514c72edbf2ebcc2aa2037ef9582b4c844d75e611682c5cbd841",
+      "bytes": 4413677
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/progress.json",
+      "sha256": "d7bd46dee7ad6a66dfe66cfdcb661942e45f044c1bf5c5733dca4065a898d288",
+      "bytes": 487
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/result.json",
+      "sha256": "5b899a5bbb7a9761f050c630fbb1d86cc3bb972fe41d10f15c7c1e4225648586",
+      "bytes": 68719
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/situation.json",
+      "sha256": "c2ca757611fe42e99ef42a0b6c7d6ec7ff193cf22e3518d3dec20a77f9540c37",
+      "bytes": 14848
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/corrected/current.json",
+      "sha256": "7c23a544d4999cbbb3eb2a2bbc9f876e872b9138428efe9ca3d24506684bed48",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/corrected/journal.sqlite",
+      "sha256": "c6a9e39fad388797db7dead3f5b589c8e51e5dcb1a0dc1eb15cd0916bdaba70e",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/corrected/versions/v0.json",
+      "sha256": "7c23a544d4999cbbb3eb2a2bbc9f876e872b9138428efe9ca3d24506684bed48",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/corrected/versions/v0.pt",
+      "sha256": "eaf0b8fc315c943f4408f921f16ecfe8582bf2f675977c166f53e8242cbc4f37",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/initial/current.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/initial/journal.sqlite",
+      "sha256": "885e1c8cc475f2ffbd7dc434ca6037f45b2728a9577e4de5b41404fd29ed733f",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/initial/versions/v0.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/circle/initial/versions/v0.pt",
+      "sha256": "dfd90c8303322329feccb7708000d602ce80915c71f91f883e7ef7751d416c1e",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/pre-correction-situation.json",
+      "sha256": "6d49e816352099d877627530316b0063ab18f6a7c08aff31488a53222fc77d15",
+      "bytes": 14029
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/pre-correction.pt",
+      "sha256": "221f6e0fce9438d71a1ed9e63a65c85629aa0e76f766fd9594b449ca90d2b418",
+      "bytes": 4413677
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/progress.json",
+      "sha256": "aa9520ac8aaafda8b6198cac3b4adbc834ebd471b3ab47476ebc68c17373eee1",
+      "bytes": 487
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/result.json",
+      "sha256": "81971c16f9e7eb6083efcbac03b9d3522893c2815b3e5bbe3712ac3d9a9e68e6",
+      "bytes": 68730
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/situation.json",
+      "sha256": "d5d016d3cd45ae0ec0d88caa7566ad23908ea38aa9311535e24bcbaa97280c78",
+      "bytes": 14859
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/corrected/current.json",
+      "sha256": "a4521f8107a96209ea6bee3cccc973f0c33019d1d50a73af83d2154e664ac7d8",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/corrected/journal.sqlite",
+      "sha256": "dfe4d8cce5007e866839878038aa6214dbe5ae3a027b99c715c8e0cc26599954",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/corrected/versions/v0.json",
+      "sha256": "a4521f8107a96209ea6bee3cccc973f0c33019d1d50a73af83d2154e664ac7d8",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/corrected/versions/v0.pt",
+      "sha256": "5d1c966ea27d41aacea03b94be7e08ad161e3f25593c7c99599cb88b647cec0a",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/initial/current.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/initial/journal.sqlite",
+      "sha256": "30d6ee3f8585d3c8a2217ed815e2a0936fb5f975ce79df27eb186fabdf39920f",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/initial/versions/v0.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/ellipse/initial/versions/v0.pt",
+      "sha256": "dfd90c8303322329feccb7708000d602ce80915c71f91f883e7ef7751d416c1e",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/pre-correction-situation.json",
+      "sha256": "e34d94625b318f79f74dcaca44bf96c04c0ebba3296baeb087b452e8fb04e92b",
+      "bytes": 14027
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/pre-correction.pt",
+      "sha256": "8641d9209f4245c2b571f69beeafd0301b02bacffbe409a4e90920b514916a5f",
+      "bytes": 4413677
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/progress.json",
+      "sha256": "43972f5a044bd76f52e54954a9fb8e66c923f2236ea7ef5a0495749983e5beb4",
+      "bytes": 487
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/result.json",
+      "sha256": "086222ed503b20573294faf5bd90501c18c1db7a539842c6764cd56b21043e80",
+      "bytes": 68082
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/situation.json",
+      "sha256": "4d629584819e6e309f728c4caf6f6fd8a93686ebd7aa2f8a42651df9a8060c80",
+      "bytes": 14859
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/corrected/current.json",
+      "sha256": "b5f2cf1476fde7dfb5ea5184a53eba586e36c49c74f32803655966e01cfb92ae",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/corrected/journal.sqlite",
+      "sha256": "b27f14243cad3fb8108aa293249c2342bbe3e100b12a6e6486933826834bf281",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/corrected/versions/v0.json",
+      "sha256": "b5f2cf1476fde7dfb5ea5184a53eba586e36c49c74f32803655966e01cfb92ae",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/corrected/versions/v0.pt",
+      "sha256": "7c77a527f8898332a70e0c486217f20bfc41bf473decc7d87ae33efca22b75f6",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/initial/current.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/initial/journal.sqlite",
+      "sha256": "963e01225c8bb9a2fbe7ff65251174deb4fc50ce4e6fc0147e8b95b8a1b46c9a",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/initial/versions/v0.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/line/initial/versions/v0.pt",
+      "sha256": "dfd90c8303322329feccb7708000d602ce80915c71f91f883e7ef7751d416c1e",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/pre-correction-situation.json",
+      "sha256": "3dcaba618bb920eb293ce13d0149727d9ac2a5a8d6bdf9de50f16506bdc4071c",
+      "bytes": 14015
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/pre-correction.pt",
+      "sha256": "9f519c9d3d4eab6c4eec8155f166ed1bfa7f2f400c03189b564502aacc974e27",
+      "bytes": 4413677
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/progress.json",
+      "sha256": "a3bd61e8a6d15321cda262412cf31b0b8ebf4f1545824fbc45739476257d6d44",
+      "bytes": 487
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/result.json",
+      "sha256": "7ee7bcb3ed2fe1ceb970b875e6a2c51130cf2a91e6a72191c78d4b02b2f2ba9a",
+      "bytes": 68733
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/situation.json",
+      "sha256": "a8cb2055a7d29eb0c724e51332aa96eab1bf1ca26ef08080f7410cba8be803ba",
+      "bytes": 14844
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/corrected/current.json",
+      "sha256": "4a172e569f3bc3edd4176b817b7b07664f5e0aaecb39a0eb1cf6b73f47897b2f",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/corrected/journal.sqlite",
+      "sha256": "a500623e203f7c6bf987d70d715f85b9048992512dae81f25c129d50fead361b",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/corrected/versions/v0.json",
+      "sha256": "4a172e569f3bc3edd4176b817b7b07664f5e0aaecb39a0eb1cf6b73f47897b2f",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/corrected/versions/v0.pt",
+      "sha256": "7c5fa330cea4fb9b7d75d5a5f03978f40a23265583286e0bb8935013467e6df2",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/initial/current.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/initial/journal.sqlite",
+      "sha256": "2f073c092e3b5911c24e00fa1890778bb74c016337890080685b1418ce440b11",
+      "bytes": 24576
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/initial/versions/v0.json",
+      "sha256": "a2a459409d625ccd32c5f4073f296c8945b7a6bdd20486541ee6485fa7b92ad1",
+      "bytes": 1431
+    },
+    {
+      "path": "runs/SHARED-GG-001/radial_growth/initial/versions/v0.pt",
+      "sha256": "dfd90c8303322329feccb7708000d602ce80915c71f91f883e7ef7751d416c1e",
+      "bytes": 4407554
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/runtime",
+      "sha256": "eb96a90a7c8432832cc990613ec290f7cb0c6b8f48d861979c5b0eed26c1df26",
+      "bytes": 68
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/__init__.py",
+      "sha256": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2",
+      "bytes": 96
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/__main__.py",
+      "sha256": "54e692fc158d98ca334c5680797708c3c9950a098df71cb42ba92d4ffb7d571f",
+      "bytes": 52
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/accounting.py",
+      "sha256": "440315cb202cfa7617338aedce80b9744512d66cd97cc894ffea2d578b1f4bc0",
+      "bytes": 3485
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/archive.py",
+      "sha256": "46a89ef976689b43f84640e6b4cd4ed3576d86581d85a897fd0b0c3eec2a5158",
+      "bytes": 2921
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/belief.py",
+      "sha256": "9300021f9fc4af77cf6a49ac84edf5b5d74198acef732241fba344e1b2313a1a",
+      "bytes": 7986
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/binding.py",
+      "sha256": "6323b29945af59c296f948eebc6930eb3ee4dfd6726b38ed2dbef210c872e522",
+      "bytes": 3183
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/capability_evaluation.py",
+      "sha256": "70c0eb1c4674fa9caa3142353c68d8a91abfad9825553217821829bc504f7bf9",
+      "bytes": 3060
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/cli.py",
+      "sha256": "4ba26a1761991184a81cc70a86aa2fd37e341888970f239c973826cd764e5a96",
+      "bytes": 13130
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/connected.py",
+      "sha256": "1ac0345e923e32e999ed1508ebeb471e02729bdf5e77f035956c4dc05c958fc3",
+      "bytes": 21595
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/contracts.py",
+      "sha256": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+      "bytes": 2917
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/curriculum.py",
+      "sha256": "3b88ec52615dc5202967a8e30a580da5e4339102e259624ecdd26f793c57b3b8",
+      "bytes": 5949
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/data.py",
+      "sha256": "13e505215d17bf8ccc61642ecdfa6cdb8ff03ead4a587f21065a72c5f95b3b64",
+      "bytes": 3419
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/diagnostics.py",
+      "sha256": "ad632953f5575b1324b12415cd61027cc29bddc87180a98703ac29afbdb317c4",
+      "bytes": 6307
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/engine.py",
+      "sha256": "23bfc648eea6f9403c79c0349cf7657f9b59697272732148227c5e7c964f9e54",
+      "bytes": 5896
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/environments.py",
+      "sha256": "fa76a5181b7707d2eee4262d5cb3203523ead0bfea21680c7da48cb6c1ef2aee",
+      "bytes": 3824
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/evaluation.py",
+      "sha256": "cc0660f798dd5104713a34cb42a2bc98ab9be37a359b6640a4d583618d38dd46",
+      "bytes": 8337
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/event_ir.py",
+      "sha256": "0f063030fec0b52fd89964ec94a82342a0aa032814b7d79adda128f302615afa",
+      "bytes": 6969
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/experience.py",
+      "sha256": "1859065a6f48ac08efb4d5f9043b9656a2392472ee8bec191face484a82eacdc",
+      "bytes": 3227
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/experiments.py",
+      "sha256": "e59ca56af6da5275c5b1a319edf8280619617c28ff4201a5c149cde798cf93c4",
+      "bytes": 7547
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/generative.py",
+      "sha256": "db978cfb6bb41709c98fd50f7dfab9e27356ed1dc0c75f2b30144b1d695b66a2",
+      "bytes": 28857
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/lowrank.py",
+      "sha256": "4c24544d62e002496519ba5ac4032f755d4849fe966223e17e6c87f2bb31dbfe",
+      "bytes": 7965
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/models.py",
+      "sha256": "2ff87f7a4c03353332a1ae31b4f704a6ae0ac5138e3e2d245f20c32aa4cb70b2",
+      "bytes": 11308
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/mutations.py",
+      "sha256": "1b4d67f757be302be7d8b28481f8a5efd35e0cf4a82c2de313654e3e7ba0e179",
+      "bytes": 3739
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/programs.py",
+      "sha256": "ca9b5382b8c62505e2d1fc37023a81b8e364bbfe8bb2b67f2b281e1e73e6d275",
+      "bytes": 7616
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/quantum.py",
+      "sha256": "ab97561415a5cca8715cfe86074e1a4e7ffbb1183d4b089b654efb0ca96f5a8a",
+      "bytes": 5318
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/r1.py",
+      "sha256": "5c1ab6c7cfcdc7b9c2ba3b2b5d529c42b71af2a6322d3cf7db70f445a4979bf7",
+      "bytes": 18410
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/r2.py",
+      "sha256": "88337fccae017da88fd4e4761374faba333719948acd210ec4bdedcf5ebad24e",
+      "bytes": 24384
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/session_state.py",
+      "sha256": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+      "bytes": 2853
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/shared.py",
+      "sha256": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+      "bytes": 14984
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/shared_archive.py",
+      "sha256": "da42434e556ab646e91f986cfd8eef780dc985354cad50628b5b80708ff9f491",
+      "bytes": 2320
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/shared_continual.py",
+      "sha256": "0d1429e9aa453cfaedd745c3acb0bb66a87cf26aa9753b229734c745c2f7d9d3",
+      "bytes": 5515
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/shared_evaluation.py",
+      "sha256": "b57cd53ccf6da7bdfa2509d50ead282b5adca551cb53db440b19779332773207",
+      "bytes": 4704
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/shared_learning.py",
+      "sha256": "598e0df3cb131f2cd3248ee4da53e35b70a70b619dcee52032f0d49358b9abe3",
+      "bytes": 14179
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/shared_study.py",
+      "sha256": "fdc2d324f483586d28e6da4261fa3e5179bc84f37d6b6c7c582f290e0654fe28",
+      "bytes": 7648
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/skills.py",
+      "sha256": "babb6d13ad54fdf133cd63cd4540d01881a6e1bafbae6e1cc667ead47caa5d2c",
+      "bytes": 2109
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/solver.py",
+      "sha256": "646b7db864c5844e6fba748f438f7a5588a38be80a9a55cef44c0b8b4ca314ae",
+      "bytes": 15528
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/stage_three.py",
+      "sha256": "f15174cefb96a5b41524327b99aa446b1d0176867198d2ca4c0f601c524daf01",
+      "bytes": 31148
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/storage.py",
+      "sha256": "f3634fc833a7f237c327bd844196765eec13121effa8276ff780906690c852fc",
+      "bytes": 3520
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/study.py",
+      "sha256": "ee810cdf172dc830fa705839ab44e010592a4a5e9506125a8265d8beab2176f0",
+      "bytes": 18458
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/training.py",
+      "sha256": "55424c222b10e9b68cd195fd4864a38c55eaaa07d11cfba629a924292fd32d22",
+      "bytes": 9284
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/typed_learning.py",
+      "sha256": "58db7874dc41dc657f7fbd2c9bc8d9e4d5994c57b77db2d18d78833480edab3d",
+      "bytes": 18074
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/typed_programs.py",
+      "sha256": "280e732ec48d3d5b6988b5483cfbbf3957bfa7768f1fa392d55293ad3eb40948",
+      "bytes": 5650
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/typed_protocol.py",
+      "sha256": "ed3b6bc7d9bd6f7f84bafa6397343c09e18ac0c50a0b60c266bebc5ae93d1c41",
+      "bytes": 9699
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/world.py",
+      "sha256": "4027429b560095c0c34b3fec876fdbb07abb43c9469edc1d9674e6f4ee6f2b1f",
+      "bytes": 6961
+    },
+    {
+      "path": "runs/SHARED-GG-001/source/sera/world_graph.py",
+      "sha256": "5bb5d9a0955f7b16cb60b2db5fc6494cb00a1e07438018225fed7931487e6a19",
+      "bytes": 23640
+    }
+  ],
+  "scope": "All 45 shared-owner sources and all 108 explicitly collected GG-GUARD-001/SHARED-GG-001 files. The initial broader 3000-file repository scan was partial, not a full device inventory."
+}
