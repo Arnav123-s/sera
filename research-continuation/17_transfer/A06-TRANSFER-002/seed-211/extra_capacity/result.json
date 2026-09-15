@@ -1,0 +1,244 @@
+{
+  "status": "COMPLETE",
+  "pilot": false,
+  "arm": "extra_capacity",
+  "seed": 211,
+  "config": {
+    "steps": 256,
+    "batch_size": 32,
+    "replay_batch": 32,
+    "learning_rate": 0.0003,
+    "replay_weight": 1.0,
+    "anchor_weight": 4.0,
+    "anchor_batch": 32,
+    "scope": "readout",
+    "select_every": 64,
+    "observed": 32,
+    "dreams": 512,
+    "development": 128,
+    "final": 256,
+    "extent": 128,
+    "retention_samples": 128,
+    "typed_samples": 128
+  },
+  "protocol_sha256": "f82cbabda8663aa2b731f382dc1a62daae0842151824b7566b7b1599ab1590c5",
+  "training": {
+    "arm": "extra_capacity",
+    "initial_state_sha256": "90d4f3ea3a8b58f254a1b0762f56f5b8dfb70832f654bd0a6c7c0085d7673c52",
+    "state_sha256": "aecb5537226de13db611ca31b1edbc18f6a5ad67b74754197f4fddf4f6481017",
+    "history": [
+      {
+        "step": 64,
+        "training_mse": 0.0211056899279356,
+        "replay_loss": 0.5793911218643188,
+        "anchor_loss": -3.485183697193861e-09,
+        "development": {
+          "mse": 0.0497329951011239,
+          "rmse": 0.22300895744593738,
+          "within_0_1": 0.1953125,
+          "count": 128
+        }
+      },
+      {
+        "step": 128,
+        "training_mse": 0.020811591297388077,
+        "replay_loss": 0.0981912836432457,
+        "anchor_loss": 7.53789208829403e-09,
+        "development": {
+          "mse": 0.04998224806716153,
+          "rmse": 0.22356709969752153,
+          "within_0_1": 0.234375,
+          "count": 128
+        }
+      },
+      {
+        "step": 192,
+        "training_mse": 0.010297616943717003,
+        "replay_loss": 0.5796874761581421,
+        "anchor_loss": 3.6961864680051804e-09,
+        "development": {
+          "mse": 0.04869040523612629,
+          "rmse": 0.22065902482365476,
+          "within_0_1": 0.1875,
+          "count": 128
+        }
+      },
+      {
+        "step": 256,
+        "training_mse": 0.009242958389222622,
+        "replay_loss": 0.5112528800964355,
+        "anchor_loss": -5.587935447692871e-09,
+        "development": {
+          "mse": 0.04398288144795778,
+          "rmse": 0.20972096091701894,
+          "within_0_1": 0.2734375,
+          "count": 128
+        }
+      }
+    ],
+    "best_development_mse": 0.04398288144795778,
+    "training_seconds": 17.538968300003035,
+    "trainable_parameters": 514,
+    "owner_parameters": 1070354,
+    "extra_owner_parameters": 1070354,
+    "changed_tensors": [
+      "typed_numeric.weight",
+      "typed_numeric.bias"
+    ],
+    "work": {
+      "conditional_anchor_teacher_typed_examples": 1008,
+      "conditional_anchor_teacher_typed_events": 3448,
+      "shared_typed_example_draws": 2752,
+      "shared_typed_event_evaluations": 7501,
+      "conditional_anchor_typed_draws": 4096,
+      "conditional_anchor_typed_events": 14218,
+      "motion_example_draws": 8192,
+      "motion_event_evaluations": 24576,
+      "optimizer_updates": 256,
+      "shared_world_trajectory_draws": 2720,
+      "shared_world_event_evaluations": 19076,
+      "conditional_anchor_sequence_draws": 4096,
+      "conditional_anchor_sequence_events": 73728,
+      "conditional_anchor_teacher_sequence_events": 73728,
+      "shared_sequence_draws": 2720,
+      "shared_sequence_event_evaluations": 32640
+    },
+    "new_observed_worlds": 32,
+    "conditional_teacher_worlds": 0,
+    "unique_supervision_worlds": 32,
+    "parameter_scope": "readout",
+    "optimizer_starts": 1,
+    "claim_boundary": "Update counts/event shapes matched; measured wall time and unique exposure are separate, not assumed equal."
+  },
+  "metrics": {
+    "final": {
+      "mse": 0.045838750299836424,
+      "rmse": 0.2140998605787412,
+      "within_0_1": 0.265625,
+      "count": 256
+    },
+    "final_parent": {
+      "mse": 0.07611266448361115,
+      "rmse": 0.2758852378863558,
+      "within_0_1": 0.17578125,
+      "count": 256
+    },
+    "extent": {
+      "mse": 0.17924402557874242,
+      "rmse": 0.42337220690397526,
+      "within_0_1": 0.0078125,
+      "count": 128
+    },
+    "extent_parent": {
+      "mse": 0.21582155689326393,
+      "rmse": 0.46456598766296264,
+      "within_0_1": 0.046875,
+      "count": 128
+    }
+  },
+  "retention_drops": {
+    "world/permutation-940000/prediction": 0.0,
+    "world/permutation-940000/control": 0.0,
+    "legacy/marked_retrieval": 0.0,
+    "legacy/latest_binding": 0.0,
+    "legacy/ordered_control": 0.0,
+    "legacy/majority": 0.0,
+    "legacy/earliest_binding": 0.0,
+    "typed/test-id/modular_sum": 0.0,
+    "typed/test-id/spatial_relation": 0.0,
+    "typed/test-id/byte_sum": 0.0,
+    "typed/test-id/patch_quadrant": 0.0,
+    "typed/test-id/tone": 0.0,
+    "typed/test-id/motion": -0.021399333607405424,
+    "typed/test-id/binding": 0.0,
+    "typed/test-extent/modular_sum": 0.0,
+    "typed/test-extent/spatial_relation": 0.0,
+    "typed/test-extent/byte_sum": 0.0,
+    "typed/test-extent/patch_quadrant": 0.0,
+    "typed/test-extent/tone": 0.0,
+    "typed/test-extent/motion": -0.017352377995848656,
+    "typed/test-extent/binding": 0.0,
+    "typed/test-composition/modular_sum": 0.0,
+    "typed/test-composition/spatial_relation": 0.0,
+    "typed/test-composition/byte_sum": 0.0,
+    "typed/test-composition/patch_quadrant": 0.0,
+    "typed/test-composition/tone": 0.0,
+    "typed/test-composition/motion": -0.01579621620476246,
+    "typed/test-composition/binding": 0.0,
+    "instructed-earliest/ordinary/accuracy": 0.0,
+    "instructed-earliest/ordinary/calibration": 0.0,
+    "instructed-earliest/long/accuracy": 0.0,
+    "instructed-earliest/long/calibration": 0.0,
+    "instructed-earliest/composition/accuracy": 0.0,
+    "instructed-earliest/composition/calibration": 0.0,
+    "instructed-latest/ordinary/accuracy": 0.0,
+    "instructed-latest/ordinary/calibration": 0.0,
+    "instructed-latest/long/accuracy": 0.0,
+    "instructed-latest/long/calibration": 0.0,
+    "instructed-latest/composition/accuracy": 0.0,
+    "instructed-latest/composition/calibration": 0.0,
+    "neural/test-id/modular_sum": 0.0,
+    "neural/test-id/spatial_relation": 0.0,
+    "neural/test-id/byte_sum": 0.0,
+    "neural/test-id/patch_quadrant": 0.0,
+    "neural/test-id/tone": 0.0,
+    "neural/test-id/motion": -0.021399333607405424,
+    "neural/test-id/binding": 0.0,
+    "neural/test-extent/modular_sum": 0.0,
+    "neural/test-extent/spatial_relation": 0.0,
+    "neural/test-extent/byte_sum": 0.0,
+    "neural/test-extent/patch_quadrant": 0.0,
+    "neural/test-extent/tone": 0.0,
+    "neural/test-extent/motion": -0.017352377995848656,
+    "neural/test-extent/binding": 0.0,
+    "neural/test-composition/modular_sum": 0.0,
+    "neural/test-composition/spatial_relation": 0.0,
+    "neural/test-composition/byte_sum": 0.0,
+    "neural/test-composition/patch_quadrant": 0.0,
+    "neural/test-composition/tone": 0.0,
+    "neural/test-composition/motion": -0.01579621620476246,
+    "neural/test-composition/binding": 0.0
+  },
+  "maximum_retention_drop": 0.0,
+  "retention_groups": 61,
+  "teacher_sha256": "f0f47f399794fb60680da94edfeef6bb9f7434e9af470a175ce73aa3725570c5",
+  "conditional_vs_simulator_max_target_difference": 7.216449660063518e-16,
+  "original_solver_unchanged": true,
+  "original_owner_sha256": "d6285a3764ac1287ea42beb60f14ed32c8194126d1b849bd110871c58879faf4",
+  "evaluated_owner_sha256": "d6285a3764ac1287ea42beb60f14ed32c8194126d1b849bd110871c58879faf4",
+  "shared_owner_was_updated": false,
+  "selected_checkpoint": {
+    "path": "runs/A06-transfer/A06-TRANSFER-002/seed-211/extra_capacity/selected.pt",
+    "sha256": "ea240e7b62cc3634ac608753671c3cfe631b2d945f1e2d5bf8832d8a877691e7",
+    "bytes": 48365
+  },
+  "resumable_checkpoints": [
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-002/seed-211/extra_capacity/step-64.pt",
+      "sha256": "0436ec25effaadd90a7d578f138dd39fdfac8d5c0952ee7bce21ff487a801915",
+      "bytes": 64130
+    },
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-002/seed-211/extra_capacity/step-128.pt",
+      "sha256": "11bb7aa39a7dab80b61bf33aef6c5bdfb96dc0f00a4a72491d83ebfc9f5f45e8",
+      "bytes": 64467
+    },
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-002/seed-211/extra_capacity/step-192.pt",
+      "sha256": "a0f3d12ef21f1a0123c5a47826cc29d26d1971a0c70a61f2cd19d578144459a6",
+      "bytes": 64595
+    },
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-002/seed-211/extra_capacity/step-256.pt",
+      "sha256": "0e5d31840d53ad23d325036ecd8a90c64f34bbd1da6a60277a6d7ab83acecc62",
+      "bytes": 64723
+    }
+  ],
+  "total_worker_seconds": 24.410922100003518,
+  "checkpoint_bytes": 306280,
+  "raw_sha256": "4c3f7ede2029295477e66c4e4a363a36f8ad8d3495f9ad015676a9d9b05071c7",
+  "bank_sha256": "ae126d014be384b94fd598f894cd0f153445bbf85e523ef45c73f7e7d90e24dc",
+  "source_sha256": "91b0f87d27755f66499cc327af59410b4556d4082006edb82d5db357623eee87",
+  "supported_answer_certificate": null,
+  "stale_dependencies": "Original live situations/libraries stay bound to the immutable parent; none rebound to updated weights."
+}

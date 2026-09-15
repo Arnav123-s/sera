@@ -1,0 +1,263 @@
+{
+  "status": "COMPLETE",
+  "pilot": false,
+  "arm": "integrated",
+  "seed": 227,
+  "config": {
+    "steps": 256,
+    "batch_size": 32,
+    "replay_batch": 32,
+    "learning_rate": 0.0003,
+    "replay_weight": 1.0,
+    "anchor_weight": 4.0,
+    "anchor_batch": 32,
+    "scope": "shared",
+    "select_every": 64,
+    "observed": 32,
+    "dreams": 512,
+    "development": 128,
+    "final": 256,
+    "extent": 128,
+    "retention_samples": 128,
+    "typed_samples": 128
+  },
+  "protocol_sha256": "093da0b132c5741ea0502a8242ac47fd1f3cd58fbfa946f6b4eb79b1669abd8f",
+  "training": {
+    "arm": "integrated",
+    "initial_state_sha256": "90d4f3ea3a8b58f254a1b0762f56f5b8dfb70832f654bd0a6c7c0085d7673c52",
+    "state_sha256": "27d104bf76b24101fe019322a694757a60ac0a4e3817c511dae1e22cae072a06",
+    "history": [
+      {
+        "step": 64,
+        "training_mse": 0.024025071412324905,
+        "replay_loss": 0.559308648109436,
+        "anchor_loss": 7.238339458126575e-05,
+        "development": {
+          "mse": 0.041946620184541844,
+          "rmse": 0.20480874049840217,
+          "within_0_1": 0.2890625,
+          "count": 128
+        }
+      },
+      {
+        "step": 128,
+        "training_mse": 0.02640540525317192,
+        "replay_loss": 0.07503616064786911,
+        "anchor_loss": 0.005806030239909887,
+        "development": {
+          "mse": 0.03668829624278759,
+          "rmse": 0.19154189161326457,
+          "within_0_1": 0.328125,
+          "count": 128
+        }
+      },
+      {
+        "step": 192,
+        "training_mse": 0.019122058525681496,
+        "replay_loss": 0.5708047747612,
+        "anchor_loss": 3.450621443334967e-05,
+        "development": {
+          "mse": 0.03782234229062212,
+          "rmse": 0.19447967063583307,
+          "within_0_1": 0.328125,
+          "count": 128
+        }
+      },
+      {
+        "step": 256,
+        "training_mse": 0.012290813028812408,
+        "replay_loss": 0.23048394918441772,
+        "anchor_loss": 0.0008055877406150103,
+        "development": {
+          "mse": 0.034588764086488574,
+          "rmse": 0.18598054760240001,
+          "within_0_1": 0.328125,
+          "count": 128
+        }
+      }
+    ],
+    "best_development_mse": 0.034588764086488574,
+    "training_seconds": 37.310855299998366,
+    "trainable_parameters": 478483,
+    "owner_parameters": 1070354,
+    "extra_owner_parameters": 0,
+    "changed_tensors": [
+      "memory.cores.delta.key.weight",
+      "memory.cores.delta.key.bias",
+      "memory.cores.delta.query.weight",
+      "memory.cores.delta.query.bias",
+      "memory.cores.delta.value.weight",
+      "memory.cores.delta.value.bias",
+      "memory.cores.delta.gates.weight",
+      "memory.cores.delta.gates.bias",
+      "memory.cores.delta.output.weight",
+      "memory.cores.delta.output.bias",
+      "memory.norms.delta.weight",
+      "memory.norms.delta.bias",
+      "fusion.0.weight",
+      "fusion.0.bias",
+      "typed_encoder.adapters.numeric.0.weight",
+      "typed_encoder.adapters.numeric.0.bias",
+      "typed_encoder.adapters.numeric.2.weight",
+      "typed_encoder.adapters.numeric.2.bias",
+      "typed_instruction.weight",
+      "typed_numeric.weight",
+      "typed_numeric.bias"
+    ],
+    "work": {
+      "conditional_anchor_teacher_typed_examples": 1008,
+      "conditional_anchor_teacher_typed_events": 3461,
+      "shared_typed_example_draws": 2752,
+      "shared_typed_event_evaluations": 7701,
+      "conditional_anchor_typed_draws": 4096,
+      "conditional_anchor_typed_events": 13801,
+      "motion_example_draws": 8192,
+      "motion_event_evaluations": 24576,
+      "optimizer_updates": 256,
+      "shared_world_trajectory_draws": 2720,
+      "shared_world_event_evaluations": 18907,
+      "conditional_anchor_sequence_draws": 4096,
+      "conditional_anchor_sequence_events": 73728,
+      "conditional_anchor_teacher_sequence_events": 73728,
+      "shared_sequence_draws": 2720,
+      "shared_sequence_event_evaluations": 32640
+    },
+    "new_observed_worlds": 32,
+    "conditional_teacher_worlds": 512,
+    "unique_supervision_worlds": 544,
+    "parameter_scope": "shared",
+    "optimizer_starts": 1,
+    "claim_boundary": "Update counts/event shapes matched; measured wall time and unique exposure are separate, not assumed equal."
+  },
+  "metrics": {
+    "final": {
+      "mse": 0.034398412736960385,
+      "rmse": 0.1854680908861694,
+      "within_0_1": 0.32421875,
+      "count": 256
+    },
+    "final_parent": {
+      "mse": 0.07846340292993358,
+      "rmse": 0.2801131966365269,
+      "within_0_1": 0.16796875,
+      "count": 256
+    },
+    "extent": {
+      "mse": 0.1388794946991549,
+      "rmse": 0.3726653924087329,
+      "within_0_1": 0.0078125,
+      "count": 128
+    },
+    "extent_parent": {
+      "mse": 0.1903119232890059,
+      "rmse": 0.43624754817535183,
+      "within_0_1": 0.0390625,
+      "count": 128
+    }
+  },
+  "retention_drops": {
+    "world/permutation-940000/prediction": -0.007812500465661287,
+    "world/permutation-940000/control": 0.0,
+    "legacy/marked_retrieval": 0.0,
+    "legacy/latest_binding": 0.0,
+    "legacy/ordered_control": -0.0078125,
+    "legacy/majority": -0.015625,
+    "legacy/earliest_binding": 0.03125,
+    "typed/test-id/modular_sum": 0.0,
+    "typed/test-id/spatial_relation": -0.0234375,
+    "typed/test-id/byte_sum": 0.0,
+    "typed/test-id/patch_quadrant": 0.0,
+    "typed/test-id/tone": 0.0,
+    "typed/test-id/motion": -0.024857450742274523,
+    "typed/test-id/binding": 0.0,
+    "typed/test-extent/modular_sum": 0.0,
+    "typed/test-extent/spatial_relation": -0.0234375,
+    "typed/test-extent/byte_sum": 0.0,
+    "typed/test-extent/patch_quadrant": 0.0,
+    "typed/test-extent/tone": 0.0078125,
+    "typed/test-extent/motion": -0.025515593122690916,
+    "typed/test-extent/binding": 0.0,
+    "typed/test-composition/modular_sum": 0.0,
+    "typed/test-composition/spatial_relation": 0.015625,
+    "typed/test-composition/byte_sum": 0.0,
+    "typed/test-composition/patch_quadrant": 0.0,
+    "typed/test-composition/tone": 0.0,
+    "typed/test-composition/motion": -0.020870526786893606,
+    "typed/test-composition/binding": 0.0,
+    "instructed-earliest/ordinary/accuracy": 0.0078125,
+    "instructed-earliest/ordinary/calibration": 0.001303272057312066,
+    "instructed-earliest/long/accuracy": 0.015625,
+    "instructed-earliest/long/calibration": 0.0043629846481163526,
+    "instructed-earliest/composition/accuracy": 0.0,
+    "instructed-earliest/composition/calibration": -0.0007603069407946528,
+    "instructed-latest/ordinary/accuracy": 0.0,
+    "instructed-latest/ordinary/calibration": -1.6698908189560768e-07,
+    "instructed-latest/long/accuracy": 0.0,
+    "instructed-latest/long/calibration": -4.7068356545665324e-07,
+    "instructed-latest/composition/accuracy": 0.0,
+    "instructed-latest/composition/calibration": -3.335709772844808e-07,
+    "neural/test-id/modular_sum": 0.0,
+    "neural/test-id/spatial_relation": -0.0234375,
+    "neural/test-id/byte_sum": 0.0,
+    "neural/test-id/patch_quadrant": 0.0,
+    "neural/test-id/tone": 0.0,
+    "neural/test-id/motion": -0.024857450742274523,
+    "neural/test-id/binding": 0.0,
+    "neural/test-extent/modular_sum": -0.0078125,
+    "neural/test-extent/spatial_relation": -0.0234375,
+    "neural/test-extent/byte_sum": 0.0,
+    "neural/test-extent/patch_quadrant": 0.0,
+    "neural/test-extent/tone": 0.0078125,
+    "neural/test-extent/motion": -0.025515593122690916,
+    "neural/test-extent/binding": 0.0,
+    "neural/test-composition/modular_sum": -0.03125,
+    "neural/test-composition/spatial_relation": 0.015625,
+    "neural/test-composition/byte_sum": 0.0,
+    "neural/test-composition/patch_quadrant": 0.0,
+    "neural/test-composition/tone": 0.0,
+    "neural/test-composition/motion": -0.020870526786893606,
+    "neural/test-composition/binding": 0.0
+  },
+  "maximum_retention_drop": 0.03125,
+  "retention_groups": 61,
+  "teacher_sha256": "f0f47f399794fb60680da94edfeef6bb9f7434e9af470a175ce73aa3725570c5",
+  "conditional_vs_simulator_max_target_difference": 6.106226635438361e-16,
+  "original_solver_unchanged": true,
+  "original_owner_sha256": "d6285a3764ac1287ea42beb60f14ed32c8194126d1b849bd110871c58879faf4",
+  "evaluated_owner_sha256": "1a888368a121fb4fdcb2d79002768182fbeef10f7bcd859e5bf92df857ea5758",
+  "shared_owner_was_updated": true,
+  "selected_checkpoint": {
+    "path": "runs/A06-transfer/A06-TRANSFER-001/seed-227/integrated/selected.pt",
+    "sha256": "b7e2f2af5d76af14222964d02cd7894b14cc221d132b85076f61564d5d8e1f98",
+    "bytes": 1965247
+  },
+  "resumable_checkpoints": [
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-001/seed-227/integrated/step-64.pt",
+      "sha256": "3125ea6047a350c55c5616304a3a49219e587342231afd5a1d6d9ea045646f54",
+      "bytes": 7737695
+    },
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-001/seed-227/integrated/step-128.pt",
+      "sha256": "d21b951bb4e83b59be1a98db1327fc91c1de8f07a150cb9f1e81ab821ff165d4",
+      "bytes": 7738517
+    },
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-001/seed-227/integrated/step-192.pt",
+      "sha256": "7f207405d717110529e09fad9bfd899754ec66609cbe640413dbeec7ab84ad02",
+      "bytes": 7738581
+    },
+    {
+      "path": "runs/A06-transfer/A06-TRANSFER-001/seed-227/integrated/step-256.pt",
+      "sha256": "664c37d5ea717e275cb98ae012080faf71bd3534da6797137d68fb4e3742cd29",
+      "bytes": 7738709
+    }
+  ],
+  "total_worker_seconds": 44.06321400000161,
+  "checkpoint_bytes": 32918749,
+  "raw_sha256": "f45e318642bba0c575d6d86cffe1c655a865e79fef8ddf6488611f7d0bd89c70",
+  "bank_sha256": "c68e5da3c5ffbfce863129f9930682922c89c9bd68bd430ba6e64019d84f7a98",
+  "source_sha256": "91b0f87d27755f66499cc327af59410b4556d4082006edb82d5db357623eee87",
+  "supported_answer_certificate": null,
+  "stale_dependencies": "Original live situations/libraries stay bound to the immutable parent; none rebound to updated weights."
+}

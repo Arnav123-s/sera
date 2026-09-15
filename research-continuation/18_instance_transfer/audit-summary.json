@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "experiment": "A06-INSTANCE-001",
+  "aggregate": {
+    "observed_only": {
+      "per_stream_mse": [
+        0.02686801662801805,
+        0.027481454716551723,
+        0.03739430063928449,
+        0.02023435837993891,
+        0.029735139698685034
+      ],
+      "mse": 0.02834265401249564,
+      "rmse": 0.16835276657214648,
+      "extent_mse": 0.18944780702746894,
+      "maximum_retention_drop": 0.0,
+      "training_seconds": 85.77079950000916,
+      "worker_seconds": 144.82539149998775,
+      "checkpoint_bytes": 635400
+    },
+    "corrected_teacher": {
+      "per_stream_mse": [
+        0.022855123821513654,
+        0.02288276466016742,
+        0.03122721470094232,
+        0.017774871595641922,
+        0.025754797144998922
+      ],
+      "mse": 0.02409895438465285,
+      "rmse": 0.15523837922579858,
+      "extent_mse": 0.17969227016980494,
+      "maximum_retention_drop": 0.0,
+      "training_seconds": 87.09550589999708,
+      "worker_seconds": 122.34715709999,
+      "checkpoint_bytes": 636040
+    },
+    "uncorrected_teacher": {
+      "per_stream_mse": [
+        0.02569552543650465,
+        0.029115165749596345,
+        0.04257270234490132,
+        0.025136309774731937,
+        0.034495582316305146
+      ],
+      "mse": 0.03140305712440788,
+      "rmse": 0.17720907743230277,
+      "extent_mse": 0.18985702374481686,
+      "maximum_retention_drop": 0.0,
+      "training_seconds": 89.04956690000836,
+      "worker_seconds": 124.83190120000654,
+      "checkpoint_bytes": 650000
+    },
+    "oracle_exposure": {
+      "per_stream_mse": [
+        0.022790234482683448,
+        0.022853447618958245,
+        0.03120429810825707,
+        0.01773240947498539,
+        0.025728672096372692
+      ],
+      "mse": 0.02406181235625137,
+      "rmse": 0.15511870408255535,
+      "extent_mse": 0.1793806076849594,
+      "maximum_retention_drop": 0.0,
+      "training_seconds": 88.58917250000377,
+      "worker_seconds": 124.30487330000324,
+      "checkpoint_bytes": 635656
+    }
+  },
+  "contrasts": {
+    "observed_only": {
+      "relative_mse_gain": 0.1497283785058323,
+      "per_stream_mse_gain": [
+        0.004012892806504395,
+        0.0045986900563843025,
+        0.0061670859383421706,
+        0.0024594867842969888,
+        0.003980342553686112
+      ],
+      "paired_bootstrap_97_5_percent": [
+        0.003074339142616295,
+        0.005422568135583042
+      ],
+      "passes": true
+    },
+    "uncorrected_teacher": {
+      "relative_mse_gain": 0.23259209161766456,
+      "per_stream_mse_gain": [
+        0.002840401614990995,
+        0.006232401089428925,
+        0.011345487643958999,
+        0.007361438179090015,
+        0.008740785171306224
+      ],
+      "paired_bootstrap_97_5_percent": [
+        0.004423008822698385,
+        0.010027737256454648
+      ],
+      "passes": true
+    }
+  },
+  "gate": {
+    "causal_component_pass": true,
+    "retention": true
+  },
+  "checkpoint_predictions_checked": 7680,
+  "maximum_independent_geometric_target_error": 1.7763568394002505e-15,
+  "source_intervention_preserved": true,
+  "scope": "One acquired physical instance; five new trajectory/optimizer streams; existing readout only. Shared representations and eta are unchanged.",
+  "operational_promotion": false
+}

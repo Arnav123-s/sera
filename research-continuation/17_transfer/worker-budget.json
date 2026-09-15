@@ -1,0 +1,446 @@
+{
+  "schema": "sera.v3.local-resource-budget.1",
+  "initial_seconds": 3600,
+  "remaining_seconds": 651.5163208000085,
+  "maximum_job_seconds": 900,
+  "memory_limit_bytes": 2147483648,
+  "measured_total_physical_bytes": 34123927552,
+  "measured_available_physical_bytes": 23153029120,
+  "cpu_workers": 1,
+  "threads_per_worker": 1,
+  "authority": "User-adopted v3 conservative initial batch; local CPU only. Jobs are sequential. Pack intake verification before this reserve is recorded separately.",
+  "jobs": {
+    "runs/v3-batch-001/unit-first": {
+      "status": "FAILED",
+      "charged_seconds": 4.40027160000318
+    },
+    "runs/v3-batch-001/unit-corrected": {
+      "status": "PASS",
+      "charged_seconds": 3.2188916000013705
+    },
+    "runs/v3-batch-001/timing": {
+      "status": "PASS",
+      "charged_seconds": 3.2325442000001203
+    },
+    "runs/v3-batch-001/deadline-control": {
+      "status": "TIMEOUT",
+      "charged_seconds": 0.22923240000091027
+    },
+    "runs/v3-batch-001/GG-GUARD-002-final": {
+      "status": "FAILED",
+      "charged_seconds": 2.729249500000151
+    },
+    "runs/v3-batch-001/GG-GUARD-002-final-v2": {
+      "status": "PASS",
+      "charged_seconds": 134.37445409999782
+    },
+    "runs/v3-batch-001/GG-GUARD-002-audit": {
+      "status": "PASS",
+      "charged_seconds": 22.72744760000205
+    },
+    "runs/v3-batch-001/GC-001-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.4729354999944917
+    },
+    "runs/v3-batch-001/GC-001-owner-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.4669113000054494
+    },
+    "runs/v3-batch-001/GC-001-final": {
+      "status": "PASS",
+      "charged_seconds": 5.218895899997733
+    },
+    "runs/v3-batch-001/GC-002-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.58389399999578
+    },
+    "runs/v3-batch-001/GC-002-final": {
+      "status": "PASS",
+      "charged_seconds": 5.185481900000013
+    },
+    "runs/v3-batch-001/GC-001-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.5874817000003532
+    },
+    "runs/v3-batch-001/GC-002-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.5773969000001671
+    },
+    "runs/v3-batch-001/GC-002-proof-domain-counterexample": {
+      "status": "FAILED",
+      "charged_seconds": 2.333837099999073
+    },
+    "runs/v3-batch-001/GC-002-repaired-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.981681099998241
+    },
+    "runs/v3-batch-001/GC-002-migration": {
+      "status": "PASS",
+      "charged_seconds": 2.728025600001274
+    },
+    "runs/v3-batch-001/full-regression": {
+      "status": "PASS",
+      "charged_seconds": 32.863680399997975
+    },
+    "runs/v3-batch-001/release-check": {
+      "status": "PASS",
+      "charged_seconds": 9.337489300000016
+    },
+    "runs/v3-batch-001/A06-mechanism-tests": {
+      "status": "FAILED",
+      "charged_seconds": 3.724886299998616
+    },
+    "runs/v3-batch-001/A06-mechanism-tests-fixed": {
+      "status": "PASS",
+      "charged_seconds": 3.716582599998219
+    },
+    "runs/v3-batch-001/A06-pilot-integrated": {
+      "status": "PASS",
+      "charged_seconds": 20.110056900004565
+    },
+    "runs/v3-batch-001/A06-pilot-anchored": {
+      "status": "PASS",
+      "charged_seconds": 44.73225639999873
+    },
+    "runs/v3-batch-001/A06-pilot-readout": {
+      "status": "PASS",
+      "charged_seconds": 27.124454400000104
+    },
+    "runs/v3-batch-001/A06-resume-tests": {
+      "status": "PASS",
+      "charged_seconds": 5.311746100000164
+    },
+    "runs/v3-batch-001/A06-freeze-shared": {
+      "status": "PASS",
+      "charged_seconds": 3.1162914000015007
+    },
+    "runs/v3-batch-001/A06-freeze-readout": {
+      "status": "PASS",
+      "charged_seconds": 3.0327044000005117
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 45.59510810000211
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-detached": {
+      "status": "PASS",
+      "charged_seconds": 41.81482420000248
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-integrated": {
+      "status": "PASS",
+      "charged_seconds": 43.14345509999839
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 45.54890890000388
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 49.976530800006
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 51.36119509999844
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-detached": {
+      "status": "PASS",
+      "charged_seconds": 46.58784040000319
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-integrated": {
+      "status": "PASS",
+      "charged_seconds": 47.18513820000226
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 47.21472760000324
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 46.492340999997396
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 55.80965380000271
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-detached": {
+      "status": "PASS",
+      "charged_seconds": 47.74966139999742
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-integrated": {
+      "status": "PASS",
+      "charged_seconds": 46.66467499999999
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 46.67436650000309
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 49.30540689999907
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 53.024548100001994
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-detached": {
+      "status": "PASS",
+      "charged_seconds": 47.594703499999014
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-integrated": {
+      "status": "PASS",
+      "charged_seconds": 49.67661670000234
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 48.134598099997675
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 47.38881499999843
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 52.63279359999433
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-detached": {
+      "status": "PASS",
+      "charged_seconds": 48.53879519999464
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-integrated": {
+      "status": "PASS",
+      "charged_seconds": 47.365587499996764
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 47.68841999999859
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 49.456093200002215
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.65016960000503
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-detached": {
+      "status": "PASS",
+      "charged_seconds": 28.268254700000398
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.93310349999956
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 28.237150799999654
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 29.012191499998153
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.553387400002975
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.448514600000635
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-integrated": {
+      "status": "PASS",
+      "charged_seconds": 29.0098913000038
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 27.841879899999185
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.59508540000388
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 33.64350249999552
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.909871099996963
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.98518939999485
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 27.72935719999805
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 28.71870630000194
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.69501019999734
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.774361700001464
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.71489940000174
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 28.89741459999641
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.977685799996834
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 33.04912850000255
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.881057899998268
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.89113240000006
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 27.995855200002552
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.80978199999663
+    },
+    "runs/v3-batch-001/A06-followup-tests": {
+      "status": "PASS",
+      "charged_seconds": 3.7258509999956004
+    },
+    "runs/v3-batch-001/A06-acquisition-audit": {
+      "status": "PASS",
+      "charged_seconds": 3.2277893999998923
+    },
+    "runs/v3-batch-001/A06-INSTANCE-freeze": {
+      "status": "PASS",
+      "charged_seconds": 4.109835399998701
+    },
+    "runs/v3-batch-001/A06-shared-audit": {
+      "status": "FAILED",
+      "charged_seconds": 8.29686390000279
+    },
+    "runs/v3-batch-001/A06-shared-audit-compatible": {
+      "status": "FAILED",
+      "charged_seconds": 2.235202299998491
+    },
+    "runs/v3-batch-001/A06-shared-audit-compatible-v2": {
+      "status": "PASS",
+      "charged_seconds": 8.136304200001177
+    },
+    "runs/v3-batch-001/A06-readout-audit-compatible-v2": {
+      "status": "PASS",
+      "charged_seconds": 6.195093399997859
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 30.429076200001873
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 26.52999550000095
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.128312399996503
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 29.096983800001908
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.140709599996626
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.125785799995356
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 27.502873500001442
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.98524550000002
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.987597899998946
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.320162199997867
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.052023000003828
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.830332700003055
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.88488399999915
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.044520700001158
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 27.822991799999727
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.873766700002307
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.90027330000157
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 27.969387299999653
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 30.05232199999591
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 28.499212200003967
+    },
+    "runs/v3-batch-001/A06-INSTANCE-audit": {
+      "status": "PASS",
+      "charged_seconds": 5.504120499994315
+    },
+    "runs/v3-batch-001/A06-parameter-preservation": {
+      "status": "PASS",
+      "charged_seconds": 3.600745099996857
+    },
+    "runs/v3-batch-001/A06-supported-integration": {
+      "status": "PASS",
+      "charged_seconds": 3.71102900000551
+    },
+    "runs/v3-batch-001/A06-full-regression": {
+      "status": "PASS",
+      "charged_seconds": 36.59822189999977
+    }
+  }
+}

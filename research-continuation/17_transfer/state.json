@@ -1,0 +1,35 @@
+{
+  "schema": "sera.transfer-continuation.v1",
+  "status": "complete; attribution diagnosed; raw-coordinate follow-up qualified",
+  "starting_head": "0c5d018f46225d3261c6f6b35c53c014014edeae",
+  "preserved_operational_parent": "runs/sera-0.5-current",
+  "preserved_generator_parent": "runs/SHARED-GG-001/circle/corrected",
+  "owned_batch": null,
+  "exclusive_worker_lock": "runs/v3-batch-001/active.lock",
+  "authoritative_budget": "runs/v3-batch-001/budget.json",
+  "completed_development": [
+    "A06-PILOT-001",
+    "A06-PILOT-002",
+    "A06-PILOT-003"
+  ],
+  "frozen_cohorts": [
+    "A06-TRANSFER-001",
+    "A06-TRANSFER-002"
+  ],
+  "independent_next_cycle": "18_instance_transfer: preserve actual K intervention rather than canceling it through normalization",
+  "pending": [],
+  "checkpoint_policy": "Immutable parent-referenced selected models plus optimizer/RNG/best-state deltas at every selection step; completed jobs are not restart points",
+  "remote_publication": "not performed",
+  "claim_limits": [
+    "one pretrained parent",
+    "supplied circle law",
+    "conditional model targets",
+    "no learned eta",
+    "no M2-M4 completion"
+  ],
+  "latest_state": "../18_instance_transfer/state.json",
+  "completed_models": 50,
+  "completed_pilots": 3,
+  "restored_final_predictions": 19200,
+  "next_research_protocol": "../NEXT_EXPERIMENT_PROTOCOL.md"
+}

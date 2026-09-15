@@ -1,0 +1,44 @@
+{
+  "schema": "sera.instance-transfer-continuation.v1",
+  "status": "completed_qualified_component",
+  "starting_head": "0c5d018f46225d3261c6f6b35c53c014014edeae",
+  "branch": "research/v3-calibration-consolidation",
+  "kavi_head": "50f743cc44794b67bc1d30b927e25991197edce2",
+  "completed": {
+    "development_models": 3,
+    "normalized_confirmatory_models": 50,
+    "instance_confirmatory_models": 20,
+    "independently_restored_final_predictions": 26880,
+    "regression_tests": 210
+  },
+  "experimental_solver": {
+    "store": "runs/A06-integrated-001/solver",
+    "solver_sha256": "d774aa5175488634043f75711ffee4f943313aa92a396351dcdcb57690ba8285",
+    "owner_sha256": "37a025461acdfb077580e9d97aba857e80b8dbde968193c6b91b787b28bf7e25",
+    "checkpoint_sha256": "99b7c70ff22a151fad313a0e0331d87b47aa4c454f0da32a14a6ce005fec80f2",
+    "selection_rule": "../17_transfer/integration-rule.json",
+    "integration": "../17_transfer/integration/result.json"
+  },
+  "preserved_operational_parent": "runs/sera-0.5-current",
+  "preserved_generator_parent": "runs/SHARED-GG-001/circle/corrected",
+  "owned_jobs": [],
+  "active_owned_lock_at_completion": false,
+  "live_budget": "runs/v3-batch-001/budget.json",
+  "remaining_worker_seconds_at_completion": 644.4089235000138,
+  "worker_cap": {
+    "threads": 1,
+    "committed_memory_bytes": 2147483648,
+    "maximum_job_seconds": 900
+  },
+  "current_read_only_command": ".venv/Scripts/python.exe -X utf8 -m scripts.resume_transfer status",
+  "checkpoint_contract": "Immutable selected and per-step deltas, parent references, optimizer/RNG/best state; completed jobs may not be restarted. New work needs new protocols and output paths.",
+  "next_action": "A08 development/timing from the exact descendant with continuing hidden-state interaction; quantify a prospective design before spending the remaining allowance. Shared-representation adaptation and eta are still open.",
+  "next_protocol": "../NEXT_EXPERIMENT_PROTOCOL.md",
+  "remote_publication": false,
+  "claim_limits": [
+    "One simulated physical instance and supplied circle law",
+    "Only 514 readout parameters adapted in qualified candidate",
+    "No unique ownership benefit or shared-representation improvement",
+    "No independently improved eta or broad milestone completion"
+  ]
+}

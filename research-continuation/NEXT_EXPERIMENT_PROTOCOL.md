@@ -1,3 +1,34 @@
+# Next uncompleted cycle: continuing hidden-state interaction
+
+Status: **A08 is proposed, not executed or source-frozen**. The two normalized transfer scopes, the actual-K intervention and the fresh acquisition-dependent follow-up are complete. Their immutable outcomes and final banks must not be reused for tuning. The broader shared-representation retention gate remains unresolved; readout qualification does not erase that failure.
+
+## Starting state and discriminating question
+
+Start from the exact qualified experimental descendant in [the resumption record](18_instance_transfer/resume.md), after reconciling current HEADs, dirty work, checkpoint hashes, owned jobs and the live resource ledger. Preserve the old operational owner, original generator acquisition and all rejected candidates. Maintain one continuing factual situation rather than resetting to the same parent between questions.
+
+The next question is whether conditional imagination improves intervention-sensitive decisions and online correction under observation/action limits. Hidden phase and velocity must stay out of learner features. Begin with ordered sensor observations, elapsed time and explicit actions; disclose supplied coordinate units and any externally supplied dynamics. Resetting the simulated environment is not a free learner action. A new observation contract requires a new protocol.
+
+## Required development and prospective controls
+
+Build a small interaction fixture that requires an acquired mechanism to select an intervention, not merely predict another familiar circle point. Record every paid measurement, action, prediction made before its outcome, imagined branch, factual correction and state revision. Keep imagined outcomes ineligible as independently observed labels. Use real old/new K interventions and verify their effect on the decision channel before committing evaluation resources.
+
+Compare imagination with no imagination, a strong reactive controller and a supplied analytic planning control. An analytic control diagnoses whether the task requires learned dynamics; it is not evidence of model discovery. Match interaction access and observation budgets, and report total computation including search, rollout, fitting, corrections and evidence checks. An extra-observation control must pay for its information. A fixed controller is an engineered eta, not learned learning-to-learn.
+
+Use a disjoint timing/development fixture to establish the minimum informative design within the remaining local allowance. Freeze task families, source/runtime hashes, streams, splits, primary decision utility, correction delay, unsupported-answer loss, retention criteria and all promotion gates before final outcomes. If the remaining allowance cannot support that design, save the measured estimate and exact state; do not run an underpowered replacement and call it confirmation.
+
+## Persistence, uncertainty and integration
+
+Test factual continuity, stale dependency rejection, transitive correction and unaffected finite-program reuse. A structural owner change must use a validated map or explicit invalidation and charged factual reconstruction. The existing replay baseline preserves history; it does not learn a latent migration. The current guard certificate does not cover this new adaptive query/action policy and cannot be silently transferred.
+
+Report decision gains against all relevant controls, wrong imagined rollouts, compounding uncertainty, retained competence, memory and full rejected-work cost. Require prospective benefit and supported state handling before integration. Independently learned shared representations, sustained plasticity and old/new K crossed with old/new eta remain separate open gates; they need future unfamiliar tasks and actual successor lifetimes.
+
+## Current boundary
+
+Two complete transfer cycles have been executed, diagnosed and integrated only within their qualified scope. All 210 regressions passed. The latest release stores exact checkpoint/source hashes and costs; the live ledger is `runs/v3-batch-001/budget.json`. The allowance is not exhausted. There is no active owned worker or scheduled background continuation in this release.
+
+<details>
+<summary>Preserved A06 plan and earlier calibration plan — historical</summary>
+
 # Next uncompleted cycle: shared positive transfer
 
 Status: **A06-TRANSFER-001 is proposed, not executed or source-frozen**. [GG-GUARD-002, GC-001, GC-002 and their repairs](16_v3/README.md) are complete. Their sealed evaluation cohorts must not be restarted or repeatedly used for tuning. The preceding plan is preserved below as history.
@@ -56,5 +87,7 @@ Investigator eta training, old/new K × old/new eta, successive generations and 
 ```
 
 Use a fresh output directory. The replay helper restores the original frozen source; the current independent auditor includes the explicitly documented repairs. Exact replay requires the recorded numerical runtime.
+
+</details>
 
 </details>

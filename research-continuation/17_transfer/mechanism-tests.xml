@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="1.316" timestamp="2026-09-15T15:26:23.994942-07:00" hostname="ashp"><testcase classname="tests.test_cross_route_transfer" name="test_conditional_teaching_is_not_observed_evidence" time="0.120" /><testcase classname="tests.test_cross_route_transfer" name="test_teacher_execution_matches_independent_declared_circle" time="0.010" /><testcase classname="tests.test_cross_route_transfer" name="test_shared_gradient_and_parent_independence" time="1.089"><failure message="AssertionError: assert '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87' != '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87'&#10; +  where '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87' = SharedOwnerRef().identity&#10; +  and   '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87' = SharedOwnerRef().identity&#10; +    where SharedOwnerRef() = from_solver(Solver(\n  (neural): SharedSequenceView()\n  (components): ModuleDict(\n    (r1): GenerativeSharedR1(\n      (memory): Sta...anh()\n        (2): Linear(in_features=32, out_features=5, bias=True)\n      )\n    )\n    (typed): SharedTypedView()\n  )\n))&#10; +      where from_solver = SharedOwnerRef.from_solver">solver = Solver(
+  (neural): SharedSequenceView()
+  (components): ModuleDict(
+    (r1): GenerativeSharedR1(
+      (memory): Sta...anh()
+        (2): Linear(in_features=32, out_features=5, bias=True)
+      )
+    )
+    (typed): SharedTypedView()
+  )
+)
+
+    def test_shared_gradient_and_parent_independence(solver):
+        original = solver.identity()
+        descendant = copy.deepcopy(solver)
+        owner = descendant.components["r1"]
+        old_owner = SharedOwnerRef.from_solver(descendant)
+        configure(owner, "shared")
+        rows = circle_cases(owner, seed=823, count=8, split="support-gradients", conditional=True)
+        loss = motion_loss(owner, rows)
+        loss.backward()
+        active = {name for name, p in owner.named_parameters() if p.grad is not None and p.grad.abs().sum() &gt; 0}
+        for prefix in ("memory.", "fusion.", "typed_encoder.adapters.numeric.", "typed_numeric."):
+            assert any(n.startswith(prefix) for n in active), prefix
+        optimizer = torch.optim.SGD([p for p in owner.parameters() if p.requires_grad], lr=.001)
+        optimizer.step()
+        replace_shared_owner(descendant, owner)
+        assert descendant.neural.owner is descendant.components["typed"].owner is owner
+&gt;       assert old_owner.identity != SharedOwnerRef.from_solver(descendant).identity
+E       AssertionError: assert '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87' != '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87'
+E        +  where '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87' = SharedOwnerRef().identity
+E        +  and   '19632fd0c1890fcbe17939e8a5f1c7ec58ca8f9f59bcc916b1db082cb267ea87' = SharedOwnerRef().identity
+E        +    where SharedOwnerRef() = from_solver(Solver(\n  (neural): SharedSequenceView()\n  (components): ModuleDict(\n    (r1): GenerativeSharedR1(\n      (memory): Sta...anh()\n        (2): Linear(in_features=32, out_features=5, bias=True)\n      )\n    )\n    (typed): SharedTypedView()\n  )\n))
+E        +      where from_solver = SharedOwnerRef.from_solver
+
+tests\test_cross_route_transfer.py:73: AssertionError</failure></testcase><testcase classname="tests.test_cross_route_transfer" name="test_readout_scope_really_freezes_shared_memory" time="0.007" /></testsuite></testsuites>

@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "before_teacher": "1648d4ca9fe7107c6495ea61e5faa1bb5ab58407a5cdf804fb22c2a9233032a9",
+  "after_teacher": "f0f47f399794fb60680da94edfeef6bb9f7434e9af470a175ce73aa3725570c5",
+  "before_checkpoint_sha256": "779288eea02b514c72edbf2ebcc2aa2037ef9582b4c844d75e611682c5cbd841",
+  "after_checkpoint_sha256": "eaf0b8fc315c943f4408f921f16ecfe8582bf2f675977c166f53e8242cbc4f37",
+  "neural_parameters_bitwise_unchanged": true,
+  "source_knowledge_intervention": "Preserved original noisy circle before versus after the independent sensor correction",
+  "normalized_worlds": 1024,
+  "normalized_maximum_difference": 1.2212453270876722e-15,
+  "normalized_teaching_identifies_acquired_coefficients": false,
+  "raw_coordinate_queries": 257,
+  "raw_maximum_intervention_effect": 0.47900963920869977,
+  "before_raw_mse": 0.07032693104694189,
+  "after_raw_mse": 0.0001002276088675427,
+  "cohort": [
+    {
+      "seed": 17001,
+      "worlds": 128,
+      "maximum_coordinate_difference": 1.2212453270876722e-15,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17009,
+      "worlds": 128,
+      "maximum_coordinate_difference": 1.1657341758564144e-15,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17021,
+      "worlds": 128,
+      "maximum_coordinate_difference": 9.992007221626409e-16,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17027,
+      "worlds": 128,
+      "maximum_coordinate_difference": 1.0547118733938987e-15,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17033,
+      "worlds": 128,
+      "maximum_coordinate_difference": 1.1102230246251565e-15,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17041,
+      "worlds": 128,
+      "maximum_coordinate_difference": 1.0824674490095276e-15,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17047,
+      "worlds": 128,
+      "maximum_coordinate_difference": 7.216449660063518e-16,
+      "causal_acquisition_claim_rejected": true
+    },
+    {
+      "seed": 17053,
+      "worlds": 128,
+      "maximum_coordinate_difference": 1.0547118733938987e-15,
+      "causal_acquisition_claim_rejected": true
+    }
+  ],
+  "seconds": 1.1523165999969933,
+  "deduction": "Normalization cancels all fitted coefficients; raw-coordinate prediction preserves their effect.",
+  "next_contract": "Before training, require an acquired/unacquired or corrected/uncorrected K intervention to affect an otherwise matched teaching/task channel. Nonzero effect is necessary, not sufficient, for useful causal transfer.",
+  "scope": "This audit preserves useful original knowledge and rejects only the stronger attribution of the normalization-based teaching experiment."
+}

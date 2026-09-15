@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_release.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.005420599998615,
+      "stdout": "Verified 33 evidence artifacts and 154 unique source concepts.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_continuation.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.5469455000056769,
+      "stdout": "Verified 119 continuation files (11 evolving files preserved in 71512a6), 110 frozen source members, 300 inquiry runs and trained-parent retention evidence.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_applicability.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.6144863000008627,
+      "stdout": "Verified 61 applicability files, 1344 worlds, 44352 query predictions, 53 frozen sources, corrected independent audit and withheld promotion.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_v3_release.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.18097090000082972,
+      "stdout": "{\"status\": \"PASS\", \"release_files\": 165, \"bytes\": 11907136, \"guard_worlds\": 3812, \"current_tests\": 199, \"strict_intake_failures_preserved\": true, \"completed_cohorts_restarted\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_transfer_release.py",
+        "--local-checkpoints"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.007001300000411,
+      "stdout": "{\"status\": \"PASS\", \"release_files\": 451, \"prospective_models\": 70, \"development_models\": 3, \"independently_audited_predictions\": 26880, \"tests\": 210, \"local_artifacts_checked\": 370, \"shared_path_gate\": \"FAIL\", \"instance_readout_gate\": \"PASS\", \"new_training_or_evaluation_runs\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts",
+        "experiments"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.10163540000212379,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "safe.directory=D:/ai/projects/sera",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.04332730000169249,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "elapsed_seconds": 9.499787300010212,
+  "scope": "Read-only release/hash/lint checks; no experiment restarted or final bank resampled. This maintenance time is additional to supervised worker time.",
+  "staging_check": {
+    "argv": [
+      "git",
+      "-c",
+      "safe.directory=D:/ai/projects/sera",
+      "-c",
+      "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.07756359999621054,
+    "stdout": "",
+    "stderr": "",
+    "note": "Frozen Windows experiment logs and selected manifests retain CRLF bytes under research-continuation/** -text. A default Git whitespace check reports those carriage returns. This invocation recognizes CR as the recorded line ending without editing the sealed evidence.",
+    "sealed_files_matching_git_index": 451,
+    "index_byte_mismatches": []
+  }
+}

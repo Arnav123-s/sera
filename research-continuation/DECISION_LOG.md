@@ -35,3 +35,11 @@ GG-GUARD-002 passes its predefined conditional-risk gate using independent world
 GC-001 produces correct guarded abstractions but loses after full proof/restore cost. GC-002 shares forward proof work and improves the per-candidate work proxy on a fresh stream. Review then exposes a missing proof-domain restriction and missing actual-interpreter enforcement. I preserve original sources and graphs, repair both contracts, migrate explicitly and reprove the saved programs. No numerical owner parameters or old abilities were changed.
 
 The next unresolved integration claim is positive transfer into another learned route under matched controls. Conditional code reuse, common ownership and accumulated K do not establish an improved investigator eta.
+
+## A06 continuation: qualify the readout and preserve the attribution failure
+
+I completed 50 frozen normalized-teaching runs. Shared-path learning improves MSE but violates retention. Readout-only learning passes its narrower gate. A mathematical intervention audit shows that the normalization cancels fitted coefficients: this result supports conditional family teaching but cannot identify acquired-instance transfer.
+
+I then froze a different task channel before its final outcomes. Twenty raw-coordinate runs retain the actual before/after sensor-correction intervention. Corrected K reduces MSE 14.97% versus observed-only and 23.26% versus uncorrected K, improves both comparisons in all five streams, and loses no measured old score across 61 groups. The simulator-exposure control is slightly better, as expected from its independent targets.
+
+The predeclared integration rule selects corrected-K stream 307. The new experimental owner preserves its original facts, correction, cumulative costs and finite programs through explicit replay/reproof and exact reload. Only the existing numeric readout changes. The source architecture's stronger shared-representation, hidden-state continuing interaction and eta requirements remain open. No operational store or remote repository was replaced.

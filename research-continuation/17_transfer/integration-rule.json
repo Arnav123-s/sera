@@ -1,0 +1,12 @@
+{
+  "status": "declared before raw-instance final evidence",
+  "required_audits": ["A06-TRANSFER-001", "A06-TRANSFER-002", "A06-INSTANCE-001", "acquisition-intervention"],
+  "preference": [
+    {"candidate": "A06-INSTANCE-001", "arm": "corrected_teacher", "stream": 307, "requires": "causal_component_pass"},
+    {"candidate": "A06-TRANSFER-002", "arm": "integrated", "stream": 181, "requires": "conditional_component_pass"}
+  ],
+  "allowed_change": "Existing motion readout only; all generator state, shared representations and finite semantics unchanged",
+  "required_migration": "Validate predecessors; reject stale records; retain cumulative costs; replay factual events; independently verify registered statistics; reprove all finite programs; restore complete shared solver exactly",
+  "scope": "Experimental persistent descendant only; no automatic operational replacement or statistical certificate transfer",
+  "if_no_gate_passes": "Preserve every result and checkpoint; keep the original operational solver"
+}

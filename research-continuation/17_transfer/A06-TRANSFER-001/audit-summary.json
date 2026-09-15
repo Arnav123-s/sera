@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "experiment": "A06-TRANSFER-001",
+  "aggregate": {
+    "observed_only": {
+      "mean_mse": 0.04523402089758588,
+      "rmse": 0.21268291162570133,
+      "per_stream_mse": [
+        0.0482246757532543,
+        0.0486050752880312,
+        0.0489876229906463,
+        0.036080099623355025,
+        0.044272630832642615
+      ],
+      "extent_mean_mse": 0.17573369647499587,
+      "maximum_retention_drop": 0.0546875,
+      "training_seconds": 185.22295940000186,
+      "worker_seconds": 242.19933200001105,
+      "checkpoint_bytes": 164593745,
+      "trainable_parameters": 478483,
+      "extra_owner_parameters": 0
+    },
+    "detached": {
+      "mean_mse": 0.03315855283216764,
+      "rmse": 0.1820949006209884,
+      "per_stream_mse": [
+        0.03730618928024491,
+        0.0361722063326967,
+        0.02742698532688035,
+        0.030488970484055897,
+        0.034398412736960385
+      ],
+      "extent_mean_mse": 0.14980099981284858,
+      "maximum_retention_drop": 0.046875,
+      "training_seconds": 183.19998950000445,
+      "worker_seconds": 215.85518169999705,
+      "checkpoint_bytes": 164593489,
+      "trainable_parameters": 478483,
+      "extra_owner_parameters": 1070354
+    },
+    "integrated": {
+      "mean_mse": 0.03315855283216764,
+      "rmse": 0.1820949006209884,
+      "per_stream_mse": [
+        0.03730618928024491,
+        0.0361722063326967,
+        0.02742698532688035,
+        0.030488970484055897,
+        0.034398412736960385
+      ],
+      "extent_mean_mse": 0.14980099981284858,
+      "maximum_retention_drop": 0.046875,
+      "training_seconds": 184.67130620000535,
+      "worker_seconds": 217.6242707999918,
+      "checkpoint_bytes": 164593745,
+      "trainable_parameters": 478483,
+      "extra_owner_parameters": 0
+    },
+    "extra_capacity": {
+      "mean_mse": 0.04523402089758588,
+      "rmse": 0.21268291162570133,
+      "per_stream_mse": [
+        0.0482246757532543,
+        0.0486050752880312,
+        0.0489876229906463,
+        0.036080099623355025,
+        0.044272630832642615
+      ],
+      "extent_mean_mse": 0.17573369647499587,
+      "maximum_retention_drop": 0.0546875,
+      "training_seconds": 185.21992540000065,
+      "worker_seconds": 218.695687000014,
+      "checkpoint_bytes": 164593745,
+      "trainable_parameters": 478483,
+      "extra_owner_parameters": 1070354
+    },
+    "oracle_exposure": {
+      "mean_mse": 0.03315855283216764,
+      "rmse": 0.1820949006209884,
+      "per_stream_mse": [
+        0.03730618928024491,
+        0.0361722063326967,
+        0.02742698532688035,
+        0.030488970484055897,
+        0.034398412736960385
+      ],
+      "extent_mean_mse": 0.14980099981284858,
+      "maximum_retention_drop": 0.046875,
+      "training_seconds": 191.97909170001367,
+      "worker_seconds": 225.9786307999966,
+      "checkpoint_bytes": 164593809,
+      "trainable_parameters": 478483,
+      "extra_owner_parameters": 0
+    }
+  },
+  "relative_mse_gain_vs_observed": 0.2669554425143466,
+  "paired_stream_mse_gain": [
+    0.010918486473009394,
+    0.012432868955334499,
+    0.021560637663765952,
+    0.005591129139299128,
+    0.00987421809568223
+  ],
+  "paired_stream_bootstrap_97_5_percent": [
+    0.007513218397317801,
+    0.01760665368392835
+  ],
+  "gate": {
+    "all_streams_improve": true,
+    "relative_gain_at_least_10_percent": true,
+    "paired_stream_interval_positive": true,
+    "retention": false,
+    "matched_detached_prediction": true,
+    "conditional_component_pass": false
+  },
+  "differences": {
+    "prediction": 0.0,
+    "summary_mse": 0.0,
+    "circle_label": 1.3322676295501878e-15,
+    "retention": 0.0,
+    "paired_training_state": 0
+  },
+  "checkpoint_prediction_cases_checked": 9600,
+  "parent_unchanged": true,
+  "final_training_streams": 5,
+  "inference_limit": "Five independent teaching/optimizer streams from one pretrained parent. Bootstrap is descriptive, not a universal or finite-sample guarantee.",
+  "scope": "Conditional motion-route transfer only. Supplied grammar, no eta learning, no arbitrary applicability or project completion.",
+  "operational_promotion": false
+}

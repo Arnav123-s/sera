@@ -1,0 +1,47 @@
+"""Serialize a frozen checker's numpy Boolean without altering its calculation."""
+
+import argparse
+import json
+from types import SimpleNamespace
+
+import numpy as np
+import torch
+
+from experiments.cross_route_transfer import audit as frozen
+from experiments.cross_route_transfer.study import RELEASE, sha, write
+
+
+def native_booleans(value):
+    if isinstance(value, np.bool_):
+        return bool(value)
+    if isinstance(value, dict):
+        return {key: native_booleans(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [native_booleans(item) for item in value]
+    if isinstance(value, tuple):
+        return tuple(native_booleans(item) for item in value)
+    return value
+
+
+def run(name):
+    original_write, original_json = frozen.write, frozen.json
+    original_source = sha(frozen.__file__)
+    try:
+        frozen.write = lambda path, value: original_write(path, native_booleans(value))
+        frozen.json = SimpleNamespace(loads=json.loads,
+                                      dumps=lambda value, **options: json.dumps(native_booleans(value), **options))
+        frozen.audit(name)
+    finally:
+        frozen.write, frozen.json = original_write, original_json
+    write(RELEASE/name/"audit-compatibility.json", {
+        "status": "PASS", "frozen_checker_sha256": original_source,
+        "adapter_sha256": sha(__file__),
+        "change": "Output-only conversion of numpy.bool_ to Python bool. Numerical checks, gate logic and saved data unchanged.",
+        "original_failure": "runs/v3-batch-001/A06-shared-audit/process.log"})
+
+
+if __name__ == "__main__":
+    torch.set_num_threads(1)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("name")
+    run(parser.parse_args().name)
