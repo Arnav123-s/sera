@@ -24,4 +24,5 @@ jobs:
       - run: python -m pytest
       - run: python scripts/verify_release.py
       - run: python scripts/verify_continuation.py
+      - run: python scripts/verify_applicability.py
       - run: python -m sera --help

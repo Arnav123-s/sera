@@ -1,0 +1,63 @@
+F
+================================== FAILURES ===================================
+___________________________ test_independent_audit ____________________________
+
+    def test_independent_audit():
+        root = Path(__file__).resolve().parents[2]
+        run = Path(os.environ["SERA_GUARD_RUN"]).resolve()
+        output = Path(os.environ["SERA_GUARD_AUDIT_OUTPUT"]).resolve()
+        if not run.is_relative_to(root/"runs") or not output.is_relative_to(root/"runs"):
+            raise ValueError("Local audit paths must stay within runs")
+>       audit(run, output)
+
+experiments\generative_memory\applicability_check.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+run = WindowsPath('D:/ai/projects/sera/runs/GG-GUARD-001-final')
+output = WindowsPath('D:/ai/projects/sera/runs/GG-GUARD-001-audit/independent.json')
+
+    def audit(run, output):
+        if output.exists():
+            raise ValueError("Audit output must be fresh")
+        started = time.perf_counter()
+        protocol = json.loads((run/"protocol.json").read_text())
+        config = protocol["payload"]
+        if digest(config) != protocol["sha256"]:
+            raise ValueError("Protocol integrity failure")
+        model_record = json.loads((run/"guard-model.json").read_text())
+        if digest(model_record["payload"]) != model_record["sha256"]:
+            raise ValueError("Model integrity failure")
+        model = model_record["payload"]
+        summary = json.loads((run/"summary.json").read_text())
+        raw = (run/"records.json.gz").read_bytes()
+        if hashlib.sha256(raw).hexdigest() != summary["records_sha256"]:
+            raise ValueError("Evidence archive changed")
+        data = json.loads(gzip.decompress(raw))
+        expected = {(split, family, BASES[split]+1000*FAMILIES.index(family)+i)
+                    for split, n in config["worlds_per_family"].items()
+                    for family in (FAMILIES if split == "final" else FAMILIES[:6]) for i in range(n)}
+        actual = {(r["split"], r["assessor"]["family"], r["assessor"]["environment_seed"]) for r in data["records"]}
+        if actual != expected or len(actual) != len(data["records"]):
+            raise ValueError("Episode count, partition or future-family coverage mismatch")
+        if len({r["episode_id"] for r in data["records"]}) != len(actual):
+            raise ValueError("Episode identities repeat")
+        threshold_data = json.loads((run/"thresholds.json").read_text())
+        before = json.loads((run/"before-final.json").read_text())
+        if before != {"model_sha256": model_record["sha256"], "selections_sha256": digest(threshold_data["selections"])}:
+            raise ValueError("Pre-final model or thresholds differ")
+        max_error = {"features": 0., "prediction_means": 0., "guard_probability": 0., "coefficients": 0., "covariance": 0.}
+        teaching_by_id = {r["episode_id"]: r for rows in data["teaching"].values() for r in rows}
+        final_counts = {}
+        for row in data["records"]:
+            events = row["posterior"]["payload"]["observed_events"]
+            if len(events) != 10 or [r["values"][0] for r in events] != config["support_indices"]:
+                raise ValueError("Unequal or mismatched observation access")
+            for index, event in enumerate(events):
+                if (event["sequence"] != index or event["provenance"]["kind"] != "synthetic"
+                        or event["values"][3:] != row["assessor"]["support_observed"][int(event["values"][0])]):
+>                   raise ValueError("Features include nonfactual or inconsistent observations")
+E                   ValueError: Features include nonfactual or inconsistent observations
+
+experiments\generative_memory\applicability_audit.py:161: ValueError
+=========================== short test summary info ===========================
+FAILED experiments/generative_memory/applicability_check.py::test_independent_audit

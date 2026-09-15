@@ -1,38 +1,41 @@
-# Next experiment: GG-GUARD-001
+# Next experiment: GG-GUARD-002
 
-Status: **designed, not executed and not yet source-frozen**. This replaces the completed GG-P0 and GG-ACT execution queue; their frozen protocols and original outcomes remain preserved. No future-family data have been drawn for this experiment.
+Status: **prospective design, not implemented or source-frozen**. GG-GUARD-001 is completed and preserved in [its release directory](15_applicability/). Its learned ranking improved utility, but the pooled calibration threshold admitted unacceptable error on local exceptions and changing mechanisms. No shared-owner guard was promoted.
 
-The target is the demonstrated applicability failure: a model can assign almost all probability to an inadequate explanation. The guard must estimate whether a proposed prediction is supported by actual evidence. It must preserve useful acceptance on valid models, rather than improving error merely by rejecting everything.
+## Diagnose calibration and information separately
 
-## Implementation and frozen comparison
+The next component must separate two problems. First, a pooled calibration target let easy worlds subsidize poor predictions: the selected minimum validity probability was 0.084. Second, an unobserved exception can be compatible with every acquired observation. More conservative calibration addresses the first issue; a guarantee about arbitrary unobserved exceptions requires additional evidence or explicit assumptions.
 
-Use a single supplied-phase Gaussian generator with the current four-class menu. Train a small calibrated guard from prior teaching episodes with actual observed prediction outcomes. Allowed inputs are public query coordinates, distance to observed support, coefficient uncertainty, class disagreement and prequential residual summaries. True family IDs, simulator parameters, future measurements and query answers remain evaluator-only. Freeze the feature extractor, learner, calibration procedure, action policy, labels, budgets and family partitions before final execution.
+Before final data, freeze a minimum validity-probability rule and calibration strata defined only by observed features, such as prequential residual severity, within/outside observed support and effective local evidence count. Include sufficient calibration worlds per stratum; otherwise return unresolved. Compare a globally calibrated guard, a probability-floor guard, stratified calibration, a fixed residual guard and always-abstain. Do not use mechanism names as runtime scope labels.
 
-Compare always-predict, fixed residual/uncertainty threshold, distance-to-support guard and learned guard. Include always-abstain only as a coverage-zero reference. All controls receive identical observations; any distinguishing inquiry paid for by one method must be charged and included in matched controls. Labels used to teach the guard are actual observed outcomes from separate teaching episodes; imagined outputs cannot supply factual labels.
+Retain the four-class generator and the first trained guard as versioned predecessors. Training, probability calibration, threshold selection and final assessment must remain episode-disjoint. Use new environment and optimizer seeds. Both formerly protected families—piecewise drift and chirp—have now been evaluated and cannot be described as unseen research material again. Reserve at least two new mechanisms, for example an abrupt jump and a decaying spiral, exclusively for a new final bank. Fix their definitions before collecting data. No such bank has been drawn yet.
 
-Use separate environment and optimizer seeds. Split episodes by underlying mechanism instance, not by query rows. Keep all final instances and at least two mechanism families excluded from guard training and threshold selection. Include in-menu mechanisms, localized exceptions, nonstationary or piecewise mechanisms, and random-value negatives. Disjoint noise draws from the same mechanism are not independent knowledge-discovery tasks.
+Use actual outcomes for correctness labels. Do not label a model-supported answer correct merely because its own generator agrees with it. Report the calibrated probability and the acceptance decision separately. If a model rejects almost everything, report that coverage collapse explicitly. Keep false acceptance, false rejection, accepted error, proper scores and uncertainty by world and declared observed-feature stratum.
 
-Measure false acceptance on wrong predictions, false rejection on valid predictions, accepted-set MSE, acceptance fraction, coverage-versus-risk curves, proper scores and calibration by family. Report paired instance differences and uncertainty; the outcome unit is a world, not thousands of correlated query points. Compare costs for observation acquisition, guard fitting/calibration, inference, added parameters, retained witnesses and the full decoder.
+## Paid evidence when the initial prefix is inadequate
 
-Before selecting final counts, run a disjoint timing fixture and freeze a bounded local CPU allowance. Preserve capped or failed cohorts in fresh named directories. Do not retrospectively widen a cap and call it the original run. Publish no learned-applicability claim until fixed controls, future-family leakage checks and independent replay pass.
+Then compare zero, one and two additional observations at fixed costs. Use the same additional observation allocation for learned and fixed calibration controls when attributing gains to calibration. For policy comparisons, hold total observation counts fixed and compare a local counterexample probe with random, space-filling and information-gain controls.
 
-## Connect to the requested architecture
+Commit each query's prediction before acquiring its assessment outcome. Acquiring the query itself can supply a verified measurement at that point, but it does not establish a reusable mechanism or count as unobserved prediction. Include a matched observation-only control. Preserve all action histories and costs, and keep imagined continuations ineligible as labels.
 
-After the component gate succeeds, place the accepted guard and generator references in a versioned executable definition inside the declared shared-owner path. Preserve the current generator implementation as a source-pinned predecessor. Reject stale learned guards when their feature schema, generator, dependencies or interpreter changes. Explicitly distinguish supported, conditional, ambiguous and unsupported answers.
+A finite prefix cannot certify all possible local exceptions. Explicit outputs should distinguish conditional prediction, ambiguity, unsupported prediction and a claim supported by the declared evidence/assumptions. A guard must not upgrade a restricted model-class posterior into global correctness.
 
-Then test guarded consolidation: remove incidental episode constants from reusable definitions, retain necessary exceptions/witnesses, invalidate affected shortcuts after a correction and migrate the active state under an explicit mapping. Recheck all old capabilities and whether the acquired representation benefits another neural route under matched exposure. Equal old outputs alone establish retention, not transfer.
+## Gate and subsequent architecture work
 
-Only after these gates train an investigator eta. Keep K fixed for the first investigator comparison, then cross old/new K with old/new eta and test protected future families. Reproduce the packet's null-policy result as a control. Continue to actual generations only if policy effects survive that separation. Do not promote M2–M4 from the guard or the fixed inquiry panel.
+Run a disjoint timing fixture, choose cohort sizes and hard caps from that fixture, then freeze code, runtime, split definitions, primary scores, thresholds and promotion criteria. Do not retrofit the GG-GUARD-001 protocol or tune on its final outcomes and call them a fresh test. Preserve failed attempts, resource records and both versions of every changed interpreter.
 
-## Exact current verification commands
+Only after prospective reliability and useful-acceptance gates pass, integrate the accepted guard through a versioned executable definition and the declared common owner. Test stale feature/generator/schema/dependency rejection, corrections, transitive invalidation, active-state replay and old-capability retention. Then measure shared positive transfer under matched exposure. The packet's W08 is not completed by attaching a guard or preserving old outputs alone.
 
-The completed work can be checked without starting this proposed experiment:
+Investigator eta training, old/new K × old/new eta, successive generations and language acquisition remain later work. M2 is open; M3 and M4 are not established.
+
+## Verify the completed predecessor
 
 ```powershell
 .venv/Scripts/python.exe -m pytest
-.venv/Scripts/python.exe -m experiments.generative_memory.acquisition --output runs/GG-ACT-001-final --replay
-.venv/Scripts/python.exe -m experiments.generative_memory.acquisition_audit --run runs/GG-ACT-001-final --output runs/GG-ACT-001-independent-recheck.json
 .venv/Scripts/python.exe scripts/verify_release.py
+.venv/Scripts/python.exe scripts/verify_continuation.py
+.venv/Scripts/python.exe scripts/verify_applicability.py
+.venv/Scripts/python.exe scripts/replay_guard_release.py --output runs/my-guard-replay
 ```
 
-Use fresh output paths. For future code revisions, use the [frozen protocol sources](14_release/README.md) to reproduce old cohorts. The next executable development task is to implement the guard and its episode-level separation tests, then freeze the machine-readable GG-GUARD-001 protocol before drawing final observations.
+Use a fresh output directory. The replay helper restores the original frozen source; the current independent auditor includes the explicitly documented repairs. Exact replay requires the recorded numerical runtime.

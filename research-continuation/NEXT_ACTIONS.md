@@ -17,10 +17,13 @@
 - [ ] Integrate evidence-safe imagination, guarded consolidation and dependency invalidation through one declared owner.
 - [ ] Measure learned applicability, revision, retention and acquisition-policy effects under separate gates.
 - [x] Update the architecture audit, costs, failure ledger and next experiment specification.
-- [ ] Train a learned applicability guard under GG-GUARD-001 and evaluate unseen mechanism families.
+- [x] Train GG-GUARD-001 with episode-disjoint teaching/calibration and two protected final mechanism families.
+- [x] Replay all 1,344 worlds, refit the model exactly, independently audit its mathematics and preserve failed checkers.
+- [x] Verify 174 tests and byte preservation of 16,556 older model/result files.
+- [ ] Pass prospective applicability and useful-acceptance gates under GG-GUARD-002; the first candidate failed conditional risk.
 - [ ] Test shared positive transfer from consolidated generators.
 - [ ] Train eta, run old/new K × old/new eta, and test successive generations.
 
 Completion means executable evidence at the stated scope. M2–M4 remain open until their capability tests pass.
 
-The completed geometric cohort covers four of ten requested task families. Its strongest unresolved failure is that local residual correction can reduce in-region error while worsening uncertainty on unseen arcs. Learned applicability must be tested before treating those predictions as supported knowledge.
+The completed geometric cohort covers four of ten requested task families. Its strongest unresolved failure is that local residual correction can reduce in-region error while worsening uncertainty on unseen arcs. GG-GUARD-001 now tests learned applicability and finds that pooled calibration still permits unacceptable conditional risk. The candidate remains experimental; the next study must correct that boundary with new prospective evidence.

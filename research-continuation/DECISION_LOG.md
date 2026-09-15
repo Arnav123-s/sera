@@ -23,3 +23,7 @@ GG-P0-001 fits all 5,120 controls, and replay plus full refitting reproduce them
 ## 2026-09-14 — Correct measurement boundaries
 
 The primary cohort's codec is mixed precision, its initializer had an affine seed coupling, and its admission budget was soft. Original raw artifacts stay unchanged; current-source metadata and initialization are corrected for future cohorts. A supervised same-seed refit adds exact training parity. Windows launcher-only telemetry was insufficient; a suspended-start Job Object supervisor now tracks descendants, with committed memory explicitly distinguished from RSS. A forced timeout verifies termination and preserved partial work.
+
+## GG-GUARD-001: retain the candidate; do not promote it
+
+I trained a validity guard and verified exact replay, independent algebra and predecessor preservation. The frozen conditional-risk gate failed despite improved utility. I retain its full weights, witnesses, raw cohort and failed checker attempts in `15_applicability/`. No shared-owner source or checkpoint was changed. The next protocol tests observed-feature calibration and additional paid evidence on new prospective mechanisms.

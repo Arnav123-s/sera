@@ -1,0 +1,24 @@
+{
+  "path": "experiments/generative_memory/applicability_audit.py",
+  "original_sha256": "6a66c19b80e5988974f8ddc8383448e4103e2ac29ace27c7a80fdadc587a3ba4",
+  "corrected_sha256": "e66f662b45720bf3f4830893e7e838611e57cef7233d8bf1c390410c948c90df",
+  "intermediate_sha256": "bdf45bc7d5082fa207e0e377a3ef69fa1a93305e4b05a82a53b430b025b6ed06",
+  "attempts": [
+    {
+      "revision": "v1",
+      "result": "FAILED",
+      "reason": "Checker expected synthetic instead of the serialized simulator_ground_truth evidence kind; stopped on first event."
+    },
+    {
+      "revision": "v2",
+      "result": "FAILED",
+      "reason": "Independent predictions/features matched, but coefficient comparisons used axis-grouped rather than interleaved storage for ellipse/line."
+    },
+    {
+      "revision": "v3",
+      "result": "PASS",
+      "reason": "Correct evidence enum and coefficient layout; seven new regression cases. The 2e-8 algebra tolerance is unchanged."
+    }
+  ],
+  "scope": "Auditor repair after final collection. Model, learner, feature extractor, thresholds, evaluator results and original protocol remain byte-identical. Original auditor is in frozen-sources.zip; v2 is in failures/audit-v2.py."
+}

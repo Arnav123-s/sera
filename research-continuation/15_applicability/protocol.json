@@ -1,0 +1,389 @@
+{
+  "payload": {
+    "id": "GG-GUARD-001",
+    "status": "frozen_before_final_observations",
+    "date": "2026-09-15",
+    "parent_commit": "71512a612961f3bd6d3e58a779e65dc8d2dec352",
+    "runtime": {
+      "python": "3.12.14",
+      "torch": "2.10.0+cpu",
+      "numpy": "2.5.3"
+    },
+    "sources": {
+      "experiments/generative_memory/acquisition.py": {
+        "sha256": "c97611781be40b297ba96b510ca5fc2b861b16c511417bc581cb93f04b1a3b56",
+        "bytes": 55441
+      },
+      "experiments/generative_memory/applicability.py": {
+        "sha256": "b6fe6609d6514b9a99d01cb676374511a4ed187c92d0a38bde5d2767ecf1e282",
+        "bytes": 14374
+      },
+      "experiments/generative_memory/applicability_audit.py": {
+        "sha256": "6a66c19b80e5988974f8ddc8383448e4103e2ac29ace27c7a80fdadc587a3ba4",
+        "bytes": 12917
+      },
+      "experiments/generative_memory/applicability_study.py": {
+        "sha256": "84ee0944be8eff49ed6fda6524ee194ce23e8300a508d1c7191016790225f688",
+        "bytes": 26033
+      },
+      "experiments/generative_memory/core.py": {
+        "sha256": "7b927dc3ebff4777ac40974627812905c1fd59187cd6d78a0f49dbc2e99b8e9b",
+        "bytes": 14821
+      },
+      "scripts/run_bounded.py": {
+        "sha256": "0a3f95dafb9e0e37574c07bd40b5b32f2653e1f6701cc924a5084b7e5c5021c9",
+        "bytes": 7769
+      },
+      "scripts/windows_job.py": {
+        "sha256": "67256457c80cfdb6c40383f69b18ecf70013d2b26d2fea541ceb18bc2b408b44",
+        "bytes": 6373
+      },
+      "src/sera/__init__.py": {
+        "sha256": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2",
+        "bytes": 96
+      },
+      "src/sera/__main__.py": {
+        "sha256": "54e692fc158d98ca334c5680797708c3c9950a098df71cb42ba92d4ffb7d571f",
+        "bytes": 52
+      },
+      "src/sera/accounting.py": {
+        "sha256": "440315cb202cfa7617338aedce80b9744512d66cd97cc894ffea2d578b1f4bc0",
+        "bytes": 3485
+      },
+      "src/sera/archive.py": {
+        "sha256": "46a89ef976689b43f84640e6b4cd4ed3576d86581d85a897fd0b0c3eec2a5158",
+        "bytes": 2921
+      },
+      "src/sera/belief.py": {
+        "sha256": "9300021f9fc4af77cf6a49ac84edf5b5d74198acef732241fba344e1b2313a1a",
+        "bytes": 7986
+      },
+      "src/sera/binding.py": {
+        "sha256": "6323b29945af59c296f948eebc6930eb3ee4dfd6726b38ed2dbef210c872e522",
+        "bytes": 3183
+      },
+      "src/sera/capability_evaluation.py": {
+        "sha256": "70c0eb1c4674fa9caa3142353c68d8a91abfad9825553217821829bc504f7bf9",
+        "bytes": 3060
+      },
+      "src/sera/cli.py": {
+        "sha256": "4ba26a1761991184a81cc70a86aa2fd37e341888970f239c973826cd764e5a96",
+        "bytes": 13130
+      },
+      "src/sera/connected.py": {
+        "sha256": "1ac0345e923e32e999ed1508ebeb471e02729bdf5e77f035956c4dc05c958fc3",
+        "bytes": 21595
+      },
+      "src/sera/contracts.py": {
+        "sha256": "2fafe283b77164660f5746aaec9e705d027b92abf78a074c94230db432887fbc",
+        "bytes": 2917
+      },
+      "src/sera/curriculum.py": {
+        "sha256": "3b88ec52615dc5202967a8e30a580da5e4339102e259624ecdd26f793c57b3b8",
+        "bytes": 5949
+      },
+      "src/sera/data.py": {
+        "sha256": "13e505215d17bf8ccc61642ecdfa6cdb8ff03ead4a587f21065a72c5f95b3b64",
+        "bytes": 3419
+      },
+      "src/sera/diagnostics.py": {
+        "sha256": "ad632953f5575b1324b12415cd61027cc29bddc87180a98703ac29afbdb317c4",
+        "bytes": 6307
+      },
+      "src/sera/engine.py": {
+        "sha256": "23bfc648eea6f9403c79c0349cf7657f9b59697272732148227c5e7c964f9e54",
+        "bytes": 5896
+      },
+      "src/sera/environments.py": {
+        "sha256": "fa76a5181b7707d2eee4262d5cb3203523ead0bfea21680c7da48cb6c1ef2aee",
+        "bytes": 3824
+      },
+      "src/sera/evaluation.py": {
+        "sha256": "cc0660f798dd5104713a34cb42a2bc98ab9be37a359b6640a4d583618d38dd46",
+        "bytes": 8337
+      },
+      "src/sera/event_ir.py": {
+        "sha256": "0f063030fec0b52fd89964ec94a82342a0aa032814b7d79adda128f302615afa",
+        "bytes": 6969
+      },
+      "src/sera/experience.py": {
+        "sha256": "1859065a6f48ac08efb4d5f9043b9656a2392472ee8bec191face484a82eacdc",
+        "bytes": 3227
+      },
+      "src/sera/experiments.py": {
+        "sha256": "e59ca56af6da5275c5b1a319edf8280619617c28ff4201a5c149cde798cf93c4",
+        "bytes": 7547
+      },
+      "src/sera/generative.py": {
+        "sha256": "db978cfb6bb41709c98fd50f7dfab9e27356ed1dc0c75f2b30144b1d695b66a2",
+        "bytes": 28857
+      },
+      "src/sera/lowrank.py": {
+        "sha256": "4c24544d62e002496519ba5ac4032f755d4849fe966223e17e6c87f2bb31dbfe",
+        "bytes": 7965
+      },
+      "src/sera/models.py": {
+        "sha256": "2ff87f7a4c03353332a1ae31b4f704a6ae0ac5138e3e2d245f20c32aa4cb70b2",
+        "bytes": 11308
+      },
+      "src/sera/mutations.py": {
+        "sha256": "1b4d67f757be302be7d8b28481f8a5efd35e0cf4a82c2de313654e3e7ba0e179",
+        "bytes": 3739
+      },
+      "src/sera/programs.py": {
+        "sha256": "ca9b5382b8c62505e2d1fc37023a81b8e364bbfe8bb2b67f2b281e1e73e6d275",
+        "bytes": 7616
+      },
+      "src/sera/quantum.py": {
+        "sha256": "ab97561415a5cca8715cfe86074e1a4e7ffbb1183d4b089b654efb0ca96f5a8a",
+        "bytes": 5318
+      },
+      "src/sera/r1.py": {
+        "sha256": "5c1ab6c7cfcdc7b9c2ba3b2b5d529c42b71af2a6322d3cf7db70f445a4979bf7",
+        "bytes": 18410
+      },
+      "src/sera/r2.py": {
+        "sha256": "88337fccae017da88fd4e4761374faba333719948acd210ec4bdedcf5ebad24e",
+        "bytes": 24384
+      },
+      "src/sera/session_state.py": {
+        "sha256": "caa4a8a40bf156df87645b0a2f87b5381a7c083f1dfd4d621889242ce4d0d5d3",
+        "bytes": 2853
+      },
+      "src/sera/shared.py": {
+        "sha256": "dfa1971b72f526d95ab38e09922e18d9f5ea1c4eaed20b1177e61fe7deedeb59",
+        "bytes": 14984
+      },
+      "src/sera/shared_archive.py": {
+        "sha256": "da42434e556ab646e91f986cfd8eef780dc985354cad50628b5b80708ff9f491",
+        "bytes": 2320
+      },
+      "src/sera/shared_continual.py": {
+        "sha256": "0d1429e9aa453cfaedd745c3acb0bb66a87cf26aa9753b229734c745c2f7d9d3",
+        "bytes": 5515
+      },
+      "src/sera/shared_evaluation.py": {
+        "sha256": "b57cd53ccf6da7bdfa2509d50ead282b5adca551cb53db440b19779332773207",
+        "bytes": 4704
+      },
+      "src/sera/shared_learning.py": {
+        "sha256": "598e0df3cb131f2cd3248ee4da53e35b70a70b619dcee52032f0d49358b9abe3",
+        "bytes": 14179
+      },
+      "src/sera/shared_study.py": {
+        "sha256": "fdc2d324f483586d28e6da4261fa3e5179bc84f37d6b6c7c582f290e0654fe28",
+        "bytes": 7648
+      },
+      "src/sera/skills.py": {
+        "sha256": "babb6d13ad54fdf133cd63cd4540d01881a6e1bafbae6e1cc667ead47caa5d2c",
+        "bytes": 2109
+      },
+      "src/sera/solver.py": {
+        "sha256": "646b7db864c5844e6fba748f438f7a5588a38be80a9a55cef44c0b8b4ca314ae",
+        "bytes": 15528
+      },
+      "src/sera/stage_three.py": {
+        "sha256": "f15174cefb96a5b41524327b99aa446b1d0176867198d2ca4c0f601c524daf01",
+        "bytes": 31148
+      },
+      "src/sera/storage.py": {
+        "sha256": "f3634fc833a7f237c327bd844196765eec13121effa8276ff780906690c852fc",
+        "bytes": 3520
+      },
+      "src/sera/study.py": {
+        "sha256": "ee810cdf172dc830fa705839ab44e010592a4a5e9506125a8265d8beab2176f0",
+        "bytes": 18458
+      },
+      "src/sera/training.py": {
+        "sha256": "55424c222b10e9b68cd195fd4864a38c55eaaa07d11cfba629a924292fd32d22",
+        "bytes": 9284
+      },
+      "src/sera/typed_learning.py": {
+        "sha256": "58db7874dc41dc657f7fbd2c9bc8d9e4d5994c57b77db2d18d78833480edab3d",
+        "bytes": 18074
+      },
+      "src/sera/typed_programs.py": {
+        "sha256": "280e732ec48d3d5b6988b5483cfbbf3957bfa7768f1fa392d55293ad3eb40948",
+        "bytes": 5650
+      },
+      "src/sera/typed_protocol.py": {
+        "sha256": "ed3b6bc7d9bd6f7f84bafa6397343c09e18ac0c50a0b60c266bebc5ae93d1c41",
+        "bytes": 9699
+      },
+      "src/sera/world.py": {
+        "sha256": "4027429b560095c0c34b3fec876fdbb07abb43c9469edc1d9674e6f4ee6f2b1f",
+        "bytes": 6961
+      },
+      "src/sera/world_graph.py": {
+        "sha256": "5bb5d9a0955f7b16cb60b2db5fc6494cb00a1e07438018225fed7931487e6a19",
+        "bytes": 23640
+      },
+      "tests/test_applicability.py": {
+        "sha256": "9bd570837f5851d857ceb6785e05e6cc7372ea86bf5d768283fe324e23e87bfd",
+        "bytes": 5106
+      }
+    },
+    "train_families": [
+      "circle",
+      "ellipse",
+      "line",
+      "radial_orbit",
+      "local_exception",
+      "random_values"
+    ],
+    "future_families": [
+      "piecewise_drift",
+      "chirp"
+    ],
+    "partition_seed_bases": {
+      "timing": 310000,
+      "teach": 410000,
+      "probability_calibration": 510000,
+      "threshold_selection": 610000,
+      "final": 710000,
+      "alias_audit": 810000
+    },
+    "worlds_per_family": {
+      "teach": 96,
+      "probability_calibration": 32,
+      "threshold_selection": 32,
+      "final": 48
+    },
+    "mechanism_instance_unit": "One distinct environment seed per episode; all its queries stay in the same partition.",
+    "features": [
+      "query_t",
+      "abs_query_t",
+      "nearest_support_distance",
+      "outside_support_distance",
+      "log_predictive_trace",
+      "log_within_class_trace",
+      "log_between_class_trace",
+      "class_entropy",
+      "largest_class_mass",
+      "log_late_mean_min_component_q",
+      "log_late_max_min_component_q",
+      "log_late_mean_mixture_q",
+      "log_local_prequential_q",
+      "local_prequential_distance",
+      "support_span",
+      "log_observation_count"
+    ],
+    "support_grid": [
+      -1.5,
+      -1.375,
+      -1.25,
+      -1.125,
+      -1.0,
+      -0.875,
+      -0.75,
+      -0.625,
+      -0.5,
+      -0.375,
+      -0.25,
+      -0.125,
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875,
+      1.0,
+      1.125,
+      1.25,
+      1.375,
+      1.5
+    ],
+    "support_indices": [
+      12,
+      0,
+      24,
+      6,
+      18,
+      3,
+      9,
+      15,
+      21,
+      1
+    ],
+    "query_t": [
+      -1.8,
+      -1.6875,
+      -1.575,
+      -1.4625,
+      -1.35,
+      -1.2375,
+      -1.125,
+      -1.0125000000000002,
+      -0.9,
+      -0.7875000000000001,
+      -0.675,
+      -0.5625,
+      -0.44999999999999996,
+      -0.3374999999999999,
+      -0.2250000000000001,
+      -0.11250000000000004,
+      0.0,
+      0.11250000000000004,
+      0.22499999999999987,
+      0.33750000000000013,
+      0.44999999999999996,
+      0.5625000000000002,
+      0.675,
+      0.7874999999999999,
+      0.9000000000000001,
+      1.0125,
+      1.1250000000000002,
+      1.2375,
+      1.3499999999999999,
+      1.4625000000000001,
+      1.575,
+      1.6875000000000002,
+      1.8
+    ],
+    "noise_std": 0.05,
+    "correctness": "Euclidean distance of prediction to separately observed noisy outcome <= 0.2.",
+    "clean_mse": "Secondary assessor-only squared coordinate error to latent mechanism; never a guard label or input.",
+    "optimizer_seed": 920001,
+    "training_steps": 500,
+    "hidden_units": 16,
+    "training": "Float64 full-batch Adam, lr 0.01, weight decay 0.001, BCE; equal queries per world.",
+    "probability_calibration": "Positive-slope Platt scaling; separate worlds; 250 Adam steps, lr 0.02, penalty 0.001.",
+    "threshold_selection": "Separate worlds, 101 empirical score quantiles plus reject-all; greatest coverage with <= 10% observed selective risk.",
+    "controls": [
+      "always_predict",
+      "residual_uncertainty",
+      "support_distance",
+      "learned",
+      "always_abstain"
+    ],
+    "fairness": "Identical ten factual observations per world for all controls. Fixed controls see the same threshold outcomes. Extra learned-guard teaching/calibration is separately charged.",
+    "primary_score": "Per-world mean(correct accepted - 4 * wrong accepted); abstentions score zero.",
+    "uncertainty": "2000 world-stratified paired bootstrap replicates, seed 990001; fixed family mixture, not uncertainty over all possible families.",
+    "gate": [
+      "Each in-menu family coverage >= 0.8",
+      "Each family with coverage >= 0.05 has observed selective risk <= 0.1",
+      "Pooled protected-family coverage >= 0.1",
+      "Paired utility lower 95% bootstrap bound > 0 against both fixed guards"
+    ],
+    "guarantees": "No conformal selective-risk guarantee; no exchangeability claim between teaching and protected families. No M2 or common-owner integration from this component alone.",
+    "alias_audit": "One separate circle prefix paired with a local bump wholly outside observed support; no labels or tuning from this diagnostic.",
+    "bounded_wall_allowances_seconds": {
+      "final": 300,
+      "replay_and_refit": 300,
+      "independent_audit": 180
+    },
+    "timing_fixture": {
+      "worlds": 12,
+      "wall_seconds": 1.7657439000031445,
+      "supervised_wall_seconds": 4.165041200001724,
+      "peak_job_committed_bytes": 318644224,
+      "source_sha256": "ac81d998418660907c0c6ae95e14f6015f6799d9937b9f08e6d161797ac4c5e3",
+      "selection_reason": "1344 worlds is 112 times the 12-world fixture. A 300s wall cap exceeds conservative linear scaling of the 1.77s fixture; includes startup and reporting margin."
+    },
+    "independent_algebra_absolute_tolerance": 2e-08,
+    "same_interpreter_replay": "Exact features, means, learned probabilities, refitted model bytes, thresholds and result summaries."
+  },
+  "sha256": "cd8315d32e49bf068a2f348f1b9cd76a70dcf92cd78495abc416d5da74829245"
+}

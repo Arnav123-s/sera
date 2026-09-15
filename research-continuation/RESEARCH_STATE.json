@@ -59,8 +59,9 @@
     },
     {
       "id": "09-learned-applicability",
-      "status": "dependency_contracts_complete_learned_guard_pending",
-      "detail": "Transitive stale-definition invalidation passes; observed overconfidence blocks general applicability claims."
+      "status": "component_trained_and_audited_risk_gate_failed",
+      "detail": "GG-GUARD-001: 1,344 distinct worlds, 291 learned scalars, exact refit and independent audit. Utility improves over fixed guards; local-exception and changing-mechanism risk remains unacceptable. Candidate preserved outside the operational shared owner.",
+      "evidence": "15_applicability/report.md"
     },
     {
       "id": "10-continual-revision",
@@ -102,13 +103,23 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "Implement and freeze GG-GUARD-001 learned applicability with strong fixed controls and protected future families; then consolidate validated generators and integrate inquiry through the shared owner.",
+  "next_action": "Implement and freeze GG-GUARD-002: observed-feature calibration strata, a minimum validity probability, and matched-cost additional evidence. Reserve new mechanisms; do not reuse GG-GUARD-001 final families as unseen. Integrate only after prospective reliability and useful-acceptance gates, then test shared positive transfer.",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
     "geometry_source": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590",
     "geometry_protocol": "dbbd8ef1d7d1bec79dd8727d89331377c08042779e08ef9d595b77e959006ffd",
     "resource_supervisor": "../runs/GG-P0-resource-supervisor-v2/state.json",
-    "peak_memory_boundary": "Corrected refit job peak committed memory308879360bytes; original peakRSS unavailable."
+    "peak_memory_boundary": "Corrected refit job peak committed memory308879360bytes; original peakRSS unavailable.",
+    "applicability": {
+      "protocol": "15_applicability/protocol.json",
+      "report": "15_applicability/report.md",
+      "raw_complete": "15_applicability/records.json.gz",
+      "model": "15_applicability/guard-model.json",
+      "replay": "15_applicability/replay.json",
+      "independent": "15_applicability/independent.json",
+      "preservation": "15_applicability/preservation.json",
+      "candidate_promoted": false
+    }
   }
 }
