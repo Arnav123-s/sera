@@ -14,7 +14,7 @@
 - [x] Test competing explanations and five fixed active-inquiry policies with complete replay and independent mathematics.
 - [x] Verify corrections, predecessor restoration, conditional branches and all 40 retained capability groups.
 - [x] Repair numerical and evidence-reconciliation defects exposed by independent tests.
-- [ ] Integrate evidence-safe imagination, guarded consolidation and dependency invalidation through one declared owner.
+- [x] Integrate conditional imagination, finite guarded consolidation and dependency invalidation through one experimental owner, within their separately qualified scopes.
 - [ ] Measure learned applicability, revision, retention and acquisition-policy effects under separate gates.
 - [x] Update the architecture audit, costs, failure ledger and next experiment specification.
 - [x] Train GG-GUARD-001 with episode-disjoint teaching/calibration and two protected final mechanism families.
@@ -30,9 +30,12 @@
 - [x] Integrate the qualified 514-parameter readout, replay original facts without resetting costs, reprove the finite library and restore the whole experimental owner.
 - [x] Complete 210 regressions and provide a read-only resumption command.
 - [ ] Establish retained shared-representation adaptation beyond a protected output head.
-- [ ] A08: continuing hidden-state observation/action tasks with useful imagination and online correction at matched cost.
+- [x] A08 component: continuing hidden-phase action tasks, useful imagination, observed correction and exact restore, with common access/caps and separately reported actual/priced costs.
+- [x] Preserve 42 development lifetimes; freeze 168 prospective lifetimes and independently reconstruct 12,096 decisions.
+- [x] Restore the qualifying owner, acquire four further observations, reprove old finite dependencies, and pass 219 regressions plus a fresh exact 61-group retention check.
+- [ ] Qualify uncertainty under the complete adaptive policy; current conditional rectangles under-cover and no earlier certificate transfers.
 - [ ] Train eta, run old/new K × old/new eta, and test successive generations.
 
 Completion means executable evidence at the stated scope. M2–M4 remain open until their capability tests pass.
 
-The completed geometric cohort covers four of ten requested task families. GG-GUARD-002 improves the policy's tested reliability through conditional calibration and abstention; it does not learn the omitted mechanisms. Finite guarded consolidation and a narrow acquired-K-to-neural-readout transfer now have executed evidence. Shared-representation learning and independently improved eta remain open. See the [latest transfer evidence](18_instance_transfer/report.md) and [next uncompleted experiment](NEXT_EXPERIMENT_PROTOCOL.md).
+The completed geometric cohort covers four of ten requested task families. GG-GUARD-002 improves its tested reliability through conditional calibration and abstention; it does not learn the omitted mechanisms. Finite guarded consolidation, acquired-K-to-neural-readout transfer and a continuing adaptive-control component now have executed evidence. Shared-representation learning and independently improved eta remain open. See the [latest continuing-control evidence](19_continuing/report.md) and [next uncompleted experiment](NEXT_EXPERIMENT_PROTOCOL.md).

@@ -1,0 +1,402 @@
+{
+  "schema": "sera.continuing-full-worker-costs.1",
+  "jobs": {
+    "runs/v3-batch-001/A08-mechanism-tests": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/test_continuing_control.py",
+        "--junitxml=research-continuation/19_continuing/mechanism-tests.xml"
+      ],
+      "reserved_seconds": 40.0,
+      "charged_seconds": 2.363025899991044,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 260157440,
+      "peak_process_committed_bytes": 259325952,
+      "observed_process_ids": [
+        6672,
+        8876
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 6672,
+      "returncode": 0,
+      "log_sha256": "a63ea0fadf7272aa2b837a64326a182cd8e45fe13dc1ffa16eb297dd8d5638e9"
+    },
+    "runs/v3-batch-001/A08-development-001": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.study",
+        "pilot",
+        "--name",
+        "A08-PILOT-001",
+        "--window",
+        "12"
+      ],
+      "reserved_seconds": 150.0,
+      "charged_seconds": 29.351867600009427,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 296632320,
+      "peak_process_committed_bytes": 295800832,
+      "observed_process_ids": [
+        1104,
+        4500
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 1104,
+      "returncode": 0,
+      "log_sha256": "d81f3c13bad00832420f5b2a9616d1f49a943d46a524f267c7e3129d4e4d8d78"
+    },
+    "runs/v3-batch-001/A08-correction-tests": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/test_continuing_control.py",
+        "--junitxml=research-continuation/19_continuing/correction-tests.xml"
+      ],
+      "reserved_seconds": 40.0,
+      "charged_seconds": 2.423441399994772,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 260714496,
+      "peak_process_committed_bytes": 259883008,
+      "observed_process_ids": [
+        12172,
+        15868
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 12172,
+      "returncode": 0,
+      "log_sha256": "32612694a0ec4989aac5b372e3e5cdeedd051e5b825283e86e07d34d6b96638a"
+    },
+    "runs/v3-batch-001/A08-development-002": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.study",
+        "pilot",
+        "--name",
+        "A08-PILOT-002",
+        "--window",
+        "12",
+        "--pilot-generation",
+        "2"
+      ],
+      "reserved_seconds": 100.0,
+      "charged_seconds": 24.323142299996107,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 295559168,
+      "peak_process_committed_bytes": 294731776,
+      "observed_process_ids": [
+        7460,
+        15408
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 15408,
+      "returncode": 0,
+      "log_sha256": "c336f628afcc143c7e3b783ecb63a09353843bcb41d210b2ddb616ff87c86104"
+    },
+    "runs/v3-batch-001/A08-independent-contract-tests": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/test_continuing_control.py",
+        "--junitxml=research-continuation/19_continuing/independent-contract-tests.xml"
+      ],
+      "reserved_seconds": 40.0,
+      "charged_seconds": 2.491112699994119,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 261902336,
+      "peak_process_committed_bytes": 261066752,
+      "observed_process_ids": [
+        7692,
+        13408
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 13408,
+      "returncode": 0,
+      "log_sha256": "ce88aff1bdbc2308a941a2833b3bfc0daed70f51e4a4e4c8d9c78d61ea1a2fee"
+    },
+    "runs/v3-batch-001/A08-prospective-freeze": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.study",
+        "freeze",
+        "--name",
+        "A08-FINAL-001",
+        "--window",
+        "12"
+      ],
+      "reserved_seconds": 20.0,
+      "charged_seconds": 1.9898787999991328,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 183558144,
+      "peak_process_committed_bytes": 182730752,
+      "observed_process_ids": [
+        10964,
+        11896
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 11896,
+      "returncode": 0,
+      "log_sha256": "68b3770f20fc2c732fbdc095c29a0e04de0533685011f1a1e1fa85f55d4c3660"
+    },
+    "runs/v3-batch-001/A08-prospective-final": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.study",
+        "run",
+        "--name",
+        "A08-FINAL-001"
+      ],
+      "reserved_seconds": 330.0,
+      "charged_seconds": 221.13885940000182,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 295608320,
+      "peak_process_committed_bytes": 294838272,
+      "observed_process_ids": [
+        7608,
+        15532
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 15532,
+      "returncode": 0,
+      "log_sha256": "cbd2cbaed9216f052b243ef7d3c567ca142ceb94a82bb4949f871bfc435a2efc"
+    },
+    "runs/v3-batch-001/A08-independent-audit": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.audit",
+        "--name",
+        "A08-FINAL-001"
+      ],
+      "reserved_seconds": 110.0,
+      "charged_seconds": 26.623619200006942,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 294899712,
+      "peak_process_committed_bytes": 294076416,
+      "observed_process_ids": [
+        4644,
+        15948
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 4644,
+      "returncode": 0,
+      "log_sha256": "eadbdc7e498e96ba5080da7bea5bf324fcc1caa0e146e67222f6fc0be761cc26"
+    },
+    "runs/v3-batch-001/A08-extension-scope-tests": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "tests/test_continuing_integration.py",
+        "--junitxml=research-continuation/19_continuing/extension-scope-tests.xml"
+      ],
+      "reserved_seconds": 35.0,
+      "charged_seconds": 2.386557499994524,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 259620864,
+      "peak_process_committed_bytes": 258789376,
+      "observed_process_ids": [
+        6496,
+        8824,
+        12032
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 6496,
+      "returncode": 0,
+      "log_sha256": "f5c5d1fc97bcd49a91185b3fb7c583b67391840178d834289230108fbdb15644"
+    },
+    "runs/v3-batch-001/A08-qualified-integration": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.integration",
+        "integrate"
+      ],
+      "reserved_seconds": 40.0,
+      "charged_seconds": 3.5264741999999387,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 259162112,
+      "peak_process_committed_bytes": 258330624,
+      "observed_process_ids": [
+        4756,
+        6672
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 4756,
+      "returncode": 0,
+      "log_sha256": "b02bde52de5162d4fc3ad13c21d56818979378425a47f1b8fd83690e60cd76b3"
+    },
+    "runs/v3-batch-001/A08-integrated-status": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_control.integration",
+        "status"
+      ],
+      "reserved_seconds": 25.0,
+      "charged_seconds": 2.429437600003439,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 256761856,
+      "peak_process_committed_bytes": 255942656,
+      "observed_process_ids": [
+        5316,
+        6868
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 5316,
+      "returncode": 0,
+      "log_sha256": "824db36ac3cd74c5e91903d8135b162809a915e0d810055b3154ed2486adcead"
+    },
+    "runs/v3-batch-001/A08-full-regression": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "--junitxml=research-continuation/19_continuing/tests.xml"
+      ],
+      "reserved_seconds": 100.0,
+      "charged_seconds": 35.95541089998733,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 1270173696,
+      "peak_process_committed_bytes": 801218560,
+      "observed_process_ids": [
+        4000,
+        5328,
+        6716,
+        7036,
+        9108,
+        12768,
+        13468,
+        15920
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 13468,
+      "returncode": 0,
+      "log_sha256": "12db24f13f01268295de289d151cfbedd606d9a471c01d73e6f1f0bed4d91ecc"
+    },
+    "runs/v3-batch-001/A08-fresh-retention": {
+      "status": "PASS",
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "experiments.continuing_postflight"
+      ],
+      "reserved_seconds": 35.0,
+      "charged_seconds": 10.532853800003068,
+      "memory_limit_bytes": 2147483648,
+      "peak_job_committed_bytes": 313982976,
+      "peak_process_committed_bytes": 313159680,
+      "observed_process_ids": [
+        11460,
+        13532
+      ],
+      "worker_threads": 1,
+      "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+      "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+      "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+      "child_pid": 13532,
+      "returncode": 0,
+      "log_sha256": "6634729a09a34a5b632390e6990b04bb32bed3c9d3d7442b07d947c59781a27e"
+    }
+  },
+  "charged_worker_seconds": 365.53568129998166,
+  "remaining_worker_seconds": 278.8732422000321,
+  "peak_job_committed_bytes": 1270173696,
+  "development_lifetimes": 42,
+  "prospective_lifetimes": 168,
+  "development_observations": 2646,
+  "prospective_observations": 12600,
+  "post_restore_observations": 4,
+  "all_new_observations": 15250,
+  "development_actions": 2604,
+  "prospective_actions": 12432,
+  "post_restore_actions": 4,
+  "original_acquisition_cost": "16 geometric observations plus one correction and previous project costs remain in their preserved cumulative lineage; they are not free or charged again as newly acquired data.",
+  "boundary": "Includes every supervised test, failed development candidate, pilot, freeze, prospective execution, independent audit, integration, status, regression and fresh retention job. Interactive research/engineering/file operations are outside measured worker time; subsequent release verification records its own elapsed time. No exact FLOPs or total human/interactive-time estimate. No compute purchased.",
+  "logs": {
+    "path": "research-continuation/19_continuing/worker-logs.zip",
+    "bytes": 17593,
+    "sha256": "f7444ac53754a73146452ba9ffa801eb7c31238b91c27a0a8e49193454c39c8e"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "base_solver": "d774aa5175488634043f75711ffee4f943313aa92a396351dcdcb57690ba8285",
+  "solver_sha256": "e90f53cfde2f6c588a41aae69103daf53d8776d76f5f4b59c5a8242a76dbf48b",
+  "owner_sha256": "e7df91070866b346edc5379d9dbb8c1d4b887070dcd87894bac283c957d78b43",
+  "chosen": "gain_reversal-7001-adaptive_mpc",
+  "files": {
+    "factual-situation.json": "f2ce253a7e2afd0f5dc48be5e6ad38e322c63ef7855136807b25880f06de4df6",
+    "finite-library.json": "430149a5c4d3d8b766f900fe543a43008fe2e739d2ace4aacd2a1cd9a71df90a",
+    "four-new-interactions.json": "8365779605a3ed74de0b42553e056620106235cd1a45135c7d6cb802194cf817",
+    "interaction-session.json": "097270a316205249b5910d260479db11005d0cf7e66b529663de0e849c541cf1",
+    "selected-session.json": "1c8b1c7f1840eaeace55e8b226c7e5e995788573bf49ec77a290aa300fe7177f"
+  },
+  "source": {
+    "audit.py": "f7e7b11036d2eda6386c08dac7f4d7d90b5dd9187c3e59abed3926709023d958",
+    "control.py": "a5acc854cfd4fd32e34278f5ab63b8f9f2ebe740e59f683e0e638e1254198a90",
+    "core.py": "19cd92ae73fd40758a1891f5e4a68360fb1db8135abb89fd6d3b86bebafdb0cc",
+    "environment.py": "5395727b7be3f6539117f4a43fea426c84c6eb10a7f87263ad8112ff96c0c672",
+    "integration.py": "196a279ca912aea1c2e59ddbac54dac3f2dafd61c3d7bb37f807d140df32b9aa",
+    "study.py": "ca03bec54f0ac6eee212af3a4f77daf0a0207784286efd30fe7e2f010ceeddb0",
+    "__init__.py": "c3a7dd70b65bb06e354ae9bdc1e52e9c94f43a0ed791902af9cd36e2f0213900"
+  },
+  "report": {
+    "status": "PASS",
+    "stale_bindings_rejected": {
+      "factual_state": "Snapshot situation or complete mechanism identity differs",
+      "finite_library": "Stale persisted library"
+    },
+    "old_factual_observations": 16,
+    "old_corrections": 1,
+    "prior_cumulative_budget": {
+      "limit": 100000,
+      "counts": {
+        "generator_predictions": 5,
+        "solver_copies": 17,
+        "generator_observation_visits": 32,
+        "generator_posterior_solves": 68,
+        "proposed_admissions": 17,
+        "candidate_validations": 17,
+        "predecessor_serializations": 17,
+        "factual_observations": 16,
+        "replayed_observations": 168,
+        "verified_labels": 1,
+        "hypothetical_branches": 1,
+        "hypothetical_assumptions": 81,
+        "replayed_labels": 2,
+        "generator_statistics_replay_visits": 16
+      }
+    },
+    "restored_cumulative_budget": {
+      "limit": 100000,
+      "counts": {
+        "generator_predictions": 6,
+        "solver_copies": 17,
+        "generator_observation_visits": 32,
+        "generator_posterior_solves": 68,
+        "proposed_admissions": 17,
+        "candidate_validations": 17,
+        "predecessor_serializations": 17,
+        "factual_observations": 16,
+        "replayed_observations": 200,
+        "verified_labels": 1,
+        "hypothetical_branches": 1,
+        "hypothetical_assumptions": 81,
+        "replayed_labels": 4,
+        "generator_statistics_replay_visits": 32
+      }
+    },
+    "predecessor_proof_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7986,
+      "nonzero_checks": 1331,
+      "expression_nodes": 12584,
+      "proof_index_lookups": 2541
+    },
+    "new_proof_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7986,
+      "nonzero_checks": 1331,
+      "expression_nodes": 12584,
+      "proof_index_lookups": 2541
+    },
+    "original_tensors_bitwise_equal": true,
+    "original_generator_outputs_bitwise_equal": true,
+    "parent_unchanged": true,
+    "statistical_certificates_transferred": 0,
+    "learned_latent_migration": false
+  },
+  "new_observation_count": 79,
+  "new_action_count": 78,
+  "interaction_work": {
+    "conditional_transition_particles": 172368,
+    "controller_decisions": 76,
+    "executed_actions": 78,
+    "factual_replay_events": 75,
+    "paid_sensor_measurements": 79,
+    "posterior_fits": 77
+  },
+  "status": "QUALIFIED_EXPERIMENTAL_COMPONENT",
+  "operational_replacement": false
+}

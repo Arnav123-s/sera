@@ -43,3 +43,11 @@ I completed 50 frozen normalized-teaching runs. Shared-path learning improves MS
 I then froze a different task channel before its final outcomes. Twenty raw-coordinate runs retain the actual before/after sensor-correction intervention. Corrected K reduces MSE 14.97% versus observed-only and 23.26% versus uncorrected K, improves both comparisons in all five streams, and loses no measured old score across 61 groups. The simulator-exposure control is slightly better, as expected from its independent targets.
 
 The predeclared integration rule selects corrected-K stream 307. The new experimental owner preserves its original facts, correction, cumulative costs and finite programs through explicit replay/reproof and exact reload. Only the existing numeric readout changes. The source architecture's stronger shared-representation, hidden-state continuing interaction and eta requirements remain open. No operational store or remote repository was replaced.
+
+## A08 continuation: useful action imagination with an uncertainty limitation
+
+I completed two 21-lifetime development candidates. The first barely improves on one-step prediction; mixing incompatible pre/post-change transitions impairs correction. The revised observed-innovation detector preserves history while starting new sufficient statistics. It is an engineered procedure, not learned eta.
+
+A separate frozen 168-lifetime study in 24 worlds passes the control gate. In 12 nominal paired worlds, four-step imagination reduces physical cost by 43.2% versus reactive and 44.4% versus one-step control; every nominal pair improves. The declared priced-work proxy also improves, while actual runtime remains higher. Twelve omitted-torque worlds expose increased rollout error and uncertainty undercoverage. No answer-risk certificate is promoted.
+
+The first nominal seed was selected before outcomes. The actual shared owner gains 248 registered bytes, retains all old tensors, and continues from 75 to 79 new observations after restore. Original facts/correction and guarded programs survive explicit replay/reproof; all fresh 61-group scores remain exact. All 219 regressions pass. This establishes a bounded continuing-control component, with calibrated uncertainty, shared-representation plasticity and independently improved eta still open.

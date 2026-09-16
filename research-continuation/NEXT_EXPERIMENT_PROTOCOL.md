@@ -1,3 +1,34 @@
+# Next uncompleted cycle: independently improved learning procedure
+
+Status: **A09 design is proposed, not executed or frozen**. The A08 control component has completed two development candidates, a prospective study, independent audit and persistent integration. Its uncertainty remains incomplete; no completed A06/A08 bank is a new final holdout.
+
+## Start from current evidence
+
+Reconcile current HEADs, dirty files, the [79-observation continuing owner](19_continuing/resume.md), owned jobs and the live `runs/v3-batch-001/budget.json` before work. The original aggregate allowance has about 279 seconds left at this release. It is not exhausted, and no later numerical work is implicitly scheduled. Use a measured development fixture to determine whether a meaningful next design fits; do not silently expand the allowance or shrink a confirmatory design after observing its results.
+
+## Discriminating question
+
+Can a procedure trained from measured learning outcomes improve subsequent acquisition or updating when starting knowledge is held fixed? Current eta is externally engineered source code: linear fitting, window length, the change detector, action search and cost weights. Better K and a good controller score are not evidence that eta learned.
+
+Preserve the whole current K: original neural routes, acquired geometry, action-response statistics, factual histories and guarded knowledge. Represent any new eta separately with explicit inputs, update choices, training data and costs. Train it from independently observed outcomes of candidate learning decisions; imagined outcomes remain conditional. A learned update-selection procedure is an acceptable first bounded target. General inquiry or scientific-method improvement requires further evidence.
+
+## Required controls and continuity
+
+Use fresh unfamiliar action/relational mechanisms and new seed streams. Compare the strongest existing fixed procedure with learned eta, including a strong fixed recency/change-detection or information-gain alternative relevant to the action space. Cross old/new K with old/new eta on future tasks at paired access, total observation budgets and fully reported computation. Include controller-training and rejected-candidate costs.
+
+Maintain actual successor continuity: a later generation inherits its earlier learner's state, acquired facts, costs and learned eta. A new random fixture restored from the same original model is an independent evaluation replicate, not a successor. The cookbook's initial target is at least ten independent lifetimes and three prospective successive generations; first measure development cost/power and save a concrete resource estimate before committing that design.
+
+Freeze policies, splits, primary acquisition/adaptation score, old-skill retention, uncertainty/unsupported-answer criteria, selection correction and promotion gates before final outcomes. Make claims over independent lifetimes, not the repeated decisions within them. Test late-life plasticity and failed-old-belief correction, not just fast early fitting.
+
+## Uncertainty and architecture boundaries
+
+A08 diagnostic rectangles omitted important geometry/state/dynamics uncertainty. They are not calibrated risk bounds. Any supported-answer policy needs new independent-world evidence for the complete frozen adaptive procedure; the earlier certificate cannot transfer. Disclose uncertainty failures even if decision utility improves. A bounded uncertainty repair may be a necessary subexperiment, but it must not replace the independent-eta question with indefinite threshold tuning.
+
+Shared neural representation learning, general interpretation and learned latent migration are still open. Preserve all positive and negative predecessors. The next deliverable is an implemented, tested and prospectively evaluated discriminating cycle or exact resumable state at a demonstrated resource boundary, not a claim that the broad learner is complete.
+
+<details>
+<summary>Preserved A08 specification and earlier A06/calibration history</summary>
+
 # Next uncompleted cycle: continuing hidden-state interaction
 
 Status: **A08 is proposed, not executed or source-frozen**. The two normalized transfer scopes, the actual-K intervention and the fresh acquisition-dependent follow-up are complete. Their immutable outcomes and final banks must not be reused for tuning. The broader shared-representation retention gate remains unresolved; readout qualification does not erase that failure.
@@ -87,6 +118,8 @@ Investigator eta training, old/new K × old/new eta, successive generations and 
 ```
 
 Use a fresh output directory. The replay helper restores the original frozen source; the current independent auditor includes the explicitly documented repairs. Exact replay requires the recorded numerical runtime.
+
+</details>
 
 </details>
 

@@ -1,0 +1,43 @@
+{
+  "status": "FAIL",
+  "records": [
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_release.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.1733156999980565,
+      "stdout": "Verified 33 evidence artifacts and 154 unique source concepts.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_continuation.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.5613343999866629,
+      "stdout": "Verified 119 continuation files (11 evolving files preserved in 71512a6), 110 frozen source members, 300 inquiry runs and trained-parent retention evidence.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_applicability.py"
+      ],
+      "returncode": 1,
+      "elapsed_seconds": 0.09578160000091884,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"D:\\ai\\projects\\sera\\scripts\\verify_applicability.py\", line 94, in <module>\n    main()\n  File \"D:\\ai\\projects\\sera\\scripts\\verify_applicability.py\", line 42, in main\n    raise ValueError(f\"Applicability evidence changed: {row['path']}\")\nValueError: Applicability evidence changed: .github/workflows/ci.yml\n"
+    }
+  ],
+  "elapsed_seconds": 4.830431699985638,
+  "boundary": "Read-only source, frozen-archive, release and local-checkpoint checks; no numerical experiment restarted. Maintenance time is additional to supervised worker time."
+}

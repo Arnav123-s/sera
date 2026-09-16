@@ -1,0 +1,589 @@
+{
+  "payload": {
+    "format": "sera-factual-situation-v1",
+    "labels": [
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "correction-1",
+          "source": "verified-sensor-recheck"
+        },
+        "role": "target",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 3,
+        "values": [
+          -0.36,
+          0.8635982534427946,
+          -1.007523981989153
+        ]
+      }
+    ],
+    "max_events": 4096,
+    "mechanism": {
+      "dependencies": [
+        {
+          "name": "circle",
+          "sha256": "0be640d3b2d723bf2005788b8e58519c488974246bacb2388eaa0bdf007b3fba"
+        },
+        {
+          "name": "ellipse",
+          "sha256": "e6a0546d63febd0e83e16795554af0adbf1bb3e21054f80a2a559f827ef8f55e"
+        },
+        {
+          "name": "generator",
+          "sha256": "4954bd64a3995b05baea01d3640e4d56888d9fe1b7cab1f20049d24cb313454a"
+        },
+        {
+          "name": "line",
+          "sha256": "8d1e37c5a04e516d2b4de83439b72a77516056a79b656fc4f36de5553a163ec2"
+        },
+        {
+          "name": "radial_growth",
+          "sha256": "d16aff05e6bbbee73d12c9f87759244c85243a1ab2315b796712ba0d7ba80f30"
+        }
+      ],
+      "graph_sha256": "c943090272541cb68d63e79e940eae540d6d12d074584312ef7c0a36dba59352",
+      "interpreter_sha256": "14ddbf38e96648c4bdf1da5fb073853333865be181d03b43f756c289e3dd9d8c",
+      "owner_name": "r1",
+      "parameter_sha256": "e7df91070866b346edc5379d9dbb8c1d4b887070dcd87894bac283c957d78b43",
+      "schema_sha256": "e1c6f490e1407159333b65f1ddba690ed235bbde754c2c940c846f4e12b39421"
+    },
+    "migration": null,
+    "observations": [
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-0",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 0,
+        "values": [
+          -0.6,
+          0.2874617279858361,
+          -1.2154816353795295
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-1",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 1,
+        "values": [
+          -0.52,
+          0.47574538255294324,
+          -1.233087783037286
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-2",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 2,
+        "values": [
+          -0.43999999999999995,
+          0.7487792161592614,
+          -1.1483926933293622
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-3",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 3,
+        "values": [
+          -0.36,
+          3.8635982534427944,
+          -3.007523981989153
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-4",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 4,
+        "values": [
+          -0.27999999999999997,
+          0.9672973987058362,
+          -0.768821450349194
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-5",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 5,
+        "values": [
+          -0.19999999999999996,
+          1.011672068421768,
+          -0.654582454431886
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-6",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 6,
+        "values": [
+          -0.12,
+          1.1474870654108131,
+          -0.45934995498633097
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-7",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 7,
+        "values": [
+          -0.039999999999999925,
+          1.0403787225725363,
+          -0.19711002530996063
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-8",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 8,
+        "values": [
+          0.040000000000000036,
+          1.0625602994490393,
+          -0.005059620494307885
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-9",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 9,
+        "values": [
+          0.12,
+          0.899242177622884,
+          0.18058323955448013
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-10",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 10,
+        "values": [
+          0.20000000000000007,
+          0.719738299587705,
+          0.2999036645552005
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-11",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 11,
+        "values": [
+          0.28,
+          0.4986469924492501,
+          0.36919897126522294
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-12",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 12,
+        "values": [
+          0.36,
+          0.34813052500254316,
+          0.5230081565908157
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-13",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 13,
+        "values": [
+          0.44000000000000006,
+          0.06080785900981758,
+          0.404727144412186
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-14",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 14,
+        "values": [
+          0.5200000000000001,
+          -0.09244887059511177,
+          0.2957431872442775
+        ]
+      },
+      {
+        "available": [
+          true,
+          true,
+          true
+        ],
+        "entity_refs": [
+          "trajectory"
+        ],
+        "provenance": {
+          "kind": "simulator_ground_truth",
+          "record_id": "observation-15",
+          "source": "observed-simulator"
+        },
+        "role": "observation",
+        "schema": {
+          "encoding": "phase-pi-t-xy-v1",
+          "entity_slots": 1,
+          "modality": "numeric",
+          "name": "phase-world",
+          "units": "dimensionless",
+          "version": 1,
+          "width": 3
+        },
+        "sequence": 15,
+        "values": [
+          0.6,
+          -0.27031807586226714,
+          0.24780533432759244
+        ]
+      }
+    ],
+    "situation_id": "observed-trajectory"
+  },
+  "sha256": "27ced84c34ba82e07d9c8866e2bc36720abbcb61cbc2889a780a8defab59e9f0",
+  "budget": {
+    "limit": 100000,
+    "counts": {
+      "generator_predictions": 6,
+      "solver_copies": 17,
+      "generator_observation_visits": 32,
+      "generator_posterior_solves": 68,
+      "proposed_admissions": 17,
+      "candidate_validations": 17,
+      "predecessor_serializations": 17,
+      "factual_observations": 16,
+      "replayed_observations": 200,
+      "verified_labels": 1,
+      "hypothetical_branches": 1,
+      "hypothetical_assumptions": 81,
+      "replayed_labels": 4,
+      "generator_statistics_replay_visits": 32
+    }
+  },
+  "budget_sha256": "3612db0c8b6d300a4ddd4b1f4e7531df1e5848a42b3a29fc3c2f0858c937ed38"
+}
