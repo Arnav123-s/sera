@@ -1,0 +1,11 @@
+# Primary reading and operational consequences
+
+I reread [Tao's 2008 compressed-sensing discussion](https://terrytao.wordpress.com/2008/02/06/compressed-sensing/). In his own main post he identifies prior support information and adaptive measurements as questions; he does not promise arbitrary reconstruction from a few observations. The new test therefore measures the usefulness and failure of acquired prior structure.
+
+[Modified-CS, Vaswani and Lu](https://arxiv.org/abs/0903.5066) motivates separating a known part from a sparse unknown part. Here the known part is a subspace estimated from earlier observed tasks. Its correctness is tested, not supplied to the estimator by the evaluator. This is a related construction, not a reproduction of that paper's support theorem.
+
+[ELLA, Ruvolo and Eaton, ICML 2013](https://proceedings.mlr.press/v28/ruvolo13.pdf), especially sections 3.1–3.4, models task weights through shared latent components and sparse combinations. It distinguishes learning a new task, updating earlier tasks and refining the shared basis. This cycle uses a simpler SVD basis from acquired readouts, plus sparse innovations; it does not implement ELLA's Hessian-weighted online basis update, reproduce its datasets or inherit its theoretical guarantees. It tests whether observed task structure transfers, including when a new task violates that structure.
+
+Formal model: y = Phi(x) w + e, w = B z + delta. Phi is supplied; B is learned from previously admitted coefficients. Basis pursuit minimizes the L1 norm of delta subject to the declared residual bound; z is unpenalized. Dense and unrelated targets may violate the sparse-innovation assumption. A separate selection batch chooses among learned-basis and scratch candidates; untouched calibration evaluates that fixed choice.
+
+The calibration rule is the one-sided exact binomial upper limit Beta^{-1}(0.95; k+1, n-k), with upper bound one when k=n. Zero tolerance violations in 64 iid cases yields an upper limit below 0.05. This is a per-model distributional statement under explicit assumptions, not a universal or simultaneous correctness certificate. Shift revokes applicability; fresh observations may trigger withdrawal, but undetected shift remains possible.

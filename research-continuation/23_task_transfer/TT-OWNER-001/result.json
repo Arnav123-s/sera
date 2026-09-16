@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "parent_owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+  "initial_descendant": "627cf4624ca58a63d120e1adc34043a13513fa53d4c73fbaeaae57c91f42b908",
+  "final_owner": "45cef05a091d8952d3a6fbf6e985233cc1afad68a4645e697f945c5cf90d8a03",
+  "steps": [
+    {
+      "task": "calibration_source_1",
+      "status": "ACCEPTED_EMPIRICAL",
+      "generation": 1,
+      "selected_method": "sparse",
+      "source_tasks": [],
+      "paid_labels": 128,
+      "gate": {
+        "accepted": true,
+        "n": 64,
+        "failures": 0,
+        "max_error": 1.7763568394002505e-15,
+        "mean_error": 5.145623510616204e-16,
+        "risk_upper_95": 0.04572970233076244,
+        "tolerance": 0.05,
+        "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+      },
+      "owner": "a9e500c6cdbb5c9c0c7cddb019c5eb9f53b53ae9c034ad0298dd4cc2da0722af",
+      "reproof_work": {
+        "graph_validation_bytes": 3218,
+        "library_index_entries": 5,
+        "proof_dependency_nodes": 5,
+        "forward_nodes": 6655,
+        "proof_index_insertions": 2662,
+        "domain_checks": 7986,
+        "nonzero_checks": 1331,
+        "expression_nodes": 12584,
+        "proof_index_lookups": 2541
+      }
+    },
+    {
+      "task": "calibration_source_2",
+      "status": "ACCEPTED_EMPIRICAL",
+      "generation": 1,
+      "selected_method": "omp",
+      "source_tasks": [
+        "calibration_source_1"
+      ],
+      "paid_labels": 128,
+      "gate": {
+        "accepted": true,
+        "n": 64,
+        "failures": 0,
+        "max_error": 5.551115123125783e-16,
+        "mean_error": 2.5305278705811673e-16,
+        "risk_upper_95": 0.04572970233076244,
+        "tolerance": 0.05,
+        "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+      },
+      "owner": "7ba0a86747341271347c2b0ba3168bef0337cc4efad958040275be88bc36d4cb",
+      "reproof_work": {
+        "graph_validation_bytes": 3218,
+        "library_index_entries": 5,
+        "proof_dependency_nodes": 5,
+        "forward_nodes": 6655,
+        "proof_index_insertions": 2662,
+        "domain_checks": 7986,
+        "nonzero_checks": 1331,
+        "expression_nodes": 12584,
+        "proof_index_lookups": 2541
+      }
+    },
+    {
+      "task": "calibration_source_3",
+      "status": "ACCEPTED_EMPIRICAL",
+      "generation": 1,
+      "selected_method": "omp",
+      "source_tasks": [
+        "calibration_source_1",
+        "calibration_source_2"
+      ],
+      "paid_labels": 128,
+      "gate": {
+        "accepted": true,
+        "n": 64,
+        "failures": 0,
+        "max_error": 1.6653345369377348e-16,
+        "mean_error": 2.4760467114137708e-17,
+        "risk_upper_95": 0.04572970233076244,
+        "tolerance": 0.05,
+        "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+      },
+      "owner": "befa440d8ca9a38ddfa805eb5717f4e9c15a921853f2aa03872faeee798a2108",
+      "reproof_work": {
+        "graph_validation_bytes": 3218,
+        "library_index_entries": 5,
+        "proof_dependency_nodes": 5,
+        "forward_nodes": 6655,
+        "proof_index_insertions": 2662,
+        "domain_checks": 7986,
+        "nonzero_checks": 1331,
+        "expression_nodes": 12584,
+        "proof_index_lookups": 2541
+      }
+    },
+    {
+      "task": "calibration_source_4",
+      "status": "ACCEPTED_EMPIRICAL",
+      "generation": 1,
+      "selected_method": "sparse",
+      "source_tasks": [
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3"
+      ],
+      "paid_labels": 128,
+      "gate": {
+        "accepted": true,
+        "n": 64,
+        "failures": 0,
+        "max_error": 1.4432899320127035e-15,
+        "mean_error": 5.376558573355616e-16,
+        "risk_upper_95": 0.04572970233076244,
+        "tolerance": 0.05,
+        "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+      },
+      "owner": "d5142c58cff05bbb87d77b4b0000d808c885ebc93643dce459205b5119f3a97e",
+      "reproof_work": {
+        "graph_validation_bytes": 3218,
+        "library_index_entries": 5,
+        "proof_dependency_nodes": 5,
+        "forward_nodes": 6655,
+        "proof_index_insertions": 2662,
+        "domain_checks": 7986,
+        "nonzero_checks": 1331,
+        "expression_nodes": 12584,
+        "proof_index_lookups": 2541
+      }
+    },
+    {
+      "task": "calibration_estimator",
+      "status": "ACCEPTED_EMPIRICAL",
+      "generation": 1,
+      "selected_method": "subspace",
+      "source_tasks": [
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4"
+      ],
+      "paid_labels": 92,
+      "gate": {
+        "accepted": true,
+        "n": 64,
+        "failures": 0,
+        "max_error": 9.992007221626409e-16,
+        "mean_error": 3.1289397071573855e-16,
+        "risk_upper_95": 0.04572970233076244,
+        "tolerance": 0.05,
+        "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+      },
+      "owner": "16fcb7d7219899e38add56d2f628120c3f91eef40917a8de14c8f6556689ea03",
+      "reproof_work": {
+        "graph_validation_bytes": 3218,
+        "library_index_entries": 5,
+        "proof_dependency_nodes": 5,
+        "forward_nodes": 6655,
+        "proof_index_insertions": 2662,
+        "domain_checks": 7986,
+        "nonzero_checks": 1331,
+        "expression_nodes": 12584,
+        "proof_index_lookups": 2541
+      }
+    },
+    {
+      "task": "calibration_estimator",
+      "status": "ACCEPTED_EMPIRICAL",
+      "generation": 2,
+      "selected_method": "innovation",
+      "source_tasks": [
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4"
+      ],
+      "paid_labels": 100,
+      "gate": {
+        "accepted": true,
+        "n": 64,
+        "failures": 0,
+        "max_error": 2.4424906541753444e-15,
+        "mean_error": 8.743006318923108e-16,
+        "risk_upper_95": 0.04572970233076244,
+        "tolerance": 0.05,
+        "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+      },
+      "owner": "7b656538389f2683e555406fefe1a5386e90d7e3a9986a97b7cefcc0a8950d8c",
+      "reproof_work": {
+        "graph_validation_bytes": 3218,
+        "library_index_entries": 5,
+        "proof_dependency_nodes": 5,
+        "forward_nodes": 6655,
+        "proof_index_insertions": 2662,
+        "domain_checks": 7986,
+        "nonzero_checks": 1331,
+        "expression_nodes": 12584,
+        "proof_index_lookups": 2541
+      }
+    }
+  ],
+  "drift": {
+    "task": "calibration_estimator",
+    "status": "WITHDRAWN",
+    "new_observations": 1,
+    "failures": 1,
+    "max_error": 0.48599999999999954
+  },
+  "off_family": {
+    "task": "outside_family",
+    "status": "WITHHELD",
+    "generation": 1,
+    "selected_method": "omp",
+    "source_tasks": [
+      "calibration_source_1",
+      "calibration_source_2",
+      "calibration_source_3",
+      "calibration_source_4",
+      "calibration_estimator"
+    ],
+    "paid_labels": 128,
+    "gate": {
+      "accepted": false,
+      "n": 64,
+      "failures": 61,
+      "max_error": 0.9006194885357476,
+      "mean_error": 0.48848022047228334,
+      "risk_upper_95": 0.9871033414500644,
+      "tolerance": 0.05,
+      "claim": "Per fixed model, 95% one-sided binomial upper bound on the probability of absolute error exceeding tolerance; conditional on fresh iid calibration and the same stationary deployment distribution. Not a per-query proof, simultaneous guarantee, or guarantee under shift."
+    },
+    "owner": "45cef05a091d8952d3a6fbf6e985233cc1afad68a4645e697f945c5cf90d8a03",
+    "reproof_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7986,
+      "nonzero_checks": 1331,
+      "expression_nodes": 12584,
+      "proof_index_lookups": 2541
+    }
+  },
+  "new_task_max_error": 3.3306690738754696e-16,
+  "corrected_max_error": 1.1102230246251565e-15,
+  "old_task_max_error": 8.881784197001252e-16,
+  "parent_tensors_unchanged": true,
+  "old_language_logits_bitwise_equal": true,
+  "shared_owner_aliases": true,
+  "formal_route": {
+    "inputs": {
+      "a": 3,
+      "b": 2,
+      "c": 4
+    },
+    "original_inputs": {
+      "a": 3,
+      "b": 2,
+      "c": 4
+    },
+    "answer": 2,
+    "solutions": [
+      2
+    ],
+    "status": "verified_unique",
+    "modulus": 11,
+    "equation": "3 \u00d7 x \u2212 2 \u2261 4 (mod 11)",
+    "work": {
+      "owner_identity_checks": 1,
+      "interpreter_identity_checks": 1,
+      "indexed_lookup": 1,
+      "lookup_key_bytes": 64,
+      "domain_checks": 3,
+      "nonzero_checks": 1,
+      "expression_nodes": 7,
+      "forward_nodes": 33
+    },
+    "method": "preserved guarded program + independent forward substitution",
+    "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied."
+  },
+  "repeat_calibration_rejected": true,
+  "duplicate_observations_rejected": true,
+  "outside_domain_withheld": true,
+  "withdrawn_task_returns_no_output": true,
+  "saved_owner_identity_exact": true,
+  "live_pointer_unchanged": true,
+  "revisions": 9,
+  "queries": [
+    [
+      -0.5,
+      0.2,
+      0.8
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.8,
+      -0.3,
+      0.1
+    ],
+    [
+      -0.2,
+      -0.4,
+      -0.7
+    ]
+  ],
+  "before_change": [
+    0.19119999999999968,
+    0.35,
+    0.86524,
+    -0.32635999999999965
+  ],
+  "after_change": [
+    0.34120000000000106,
+    0.350000000000001,
+    1.249240000000001,
+    -0.30235999999999974
+  ],
+  "current_pointer_sha256": "19098377ab306f3321ebafeb2215416f244b8e50b2244e98977a2f1942454b2c",
+  "directory": "D:\\ai\\projects\\sera\\runs\\sera-task-transfer"
+}

@@ -1,0 +1,43 @@
+{
+  "final_records": 3888,
+  "independent_task_families": 24,
+  "development_records": 648,
+  "count_12_totals": {
+    "scratch": {
+      "accepted": 0,
+      "fully_accurate": 0,
+      "accepted_over_5_percent_future_risk": 0,
+      "accepted_wrong_targeted_probe": 0
+    },
+    "transfer": {
+      "accepted": 61,
+      "fully_accurate": 50,
+      "accepted_over_5_percent_future_risk": 0,
+      "accepted_wrong_targeted_probe": 8
+    },
+    "wrong_transfer": {
+      "accepted": 0,
+      "fully_accurate": 0,
+      "accepted_over_5_percent_future_risk": 0,
+      "accepted_wrong_targeted_probe": 0
+    },
+    "matched_label_scratch": {
+      "accepted": 101,
+      "fully_accurate": 96,
+      "accepted_over_5_percent_future_risk": 0,
+      "accepted_wrong_targeted_probe": 5
+    }
+  },
+  "fresh_labels_at_12_fit": 92,
+  "prior_acquisition_labels": 512,
+  "matched_label_control_fresh_labels": 124,
+  "amortization_horizon_for_control": 16,
+  "note": "The 16-task horizon is an explicit amortization assumption for a strong label-cost control, not a measured sixteen-task deployment lifetime.",
+  "pairwise_improvement": 0.8273518880208334,
+  "normal_lower": 0.7488132750256782,
+  "physical_research_labels_final": 43584,
+  "physical_future_evaluations_final": 73728,
+  "physical_targeted_evaluations_final": 2304,
+  "readout_tensor_bytes_each": 160,
+  "figure": "performance.png"
+}

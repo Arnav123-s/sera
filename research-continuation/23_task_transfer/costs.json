@@ -1,0 +1,111 @@
+{
+  "status": "RECONCILED",
+  "opening_remaining_seconds": 1081.3439659000142,
+  "cycle_charged_seconds": 118.43648660001054,
+  "cycle_charged_minutes": 1.973941443333509,
+  "closing_remaining_seconds": 962.9074793000036,
+  "closing_remaining_minutes": 16.048457988333393,
+  "other_concurrent_job_seconds": 0,
+  "owned_jobs": [
+    {
+      "job": "runs/TT-calibration-migration-001",
+      "status": "PASS",
+      "charged_seconds": 5.797381799988216,
+      "state_sha256": "8a87729a18182d0315cef14a74d5b1d16f85a6b6e8b103ab53732951e2ed963f",
+      "peak_committed_bytes": 339374080
+    },
+    {
+      "job": "runs/TT-calibration-scope-tests-001",
+      "status": "PASS",
+      "charged_seconds": 3.2358053000061773,
+      "state_sha256": "2db787080aa667d1749ec4051f0cbcba76ebb3563ba8e53e1540e81426ed8598",
+      "peak_committed_bytes": 269037568
+    },
+    {
+      "job": "runs/TT-contract-tests-001",
+      "status": "PASS",
+      "charged_seconds": 4.128284700011136,
+      "state_sha256": "c61e3de39c70a1fae00a31c17ad65373592856ba49222e7e0792fb607b2d7b18",
+      "peak_committed_bytes": 271077376
+    },
+    {
+      "job": "runs/TT-final-001",
+      "status": "PASS",
+      "charged_seconds": 20.157052499998827,
+      "state_sha256": "847fa084fe67ef5b8fc0db2fec92ad123bf218c30c8e08cb3416f5ae9439caf0",
+      "peak_committed_bytes": 315834368
+    },
+    {
+      "job": "runs/TT-final-audit-001",
+      "status": "PASS",
+      "charged_seconds": 19.532147700010682,
+      "state_sha256": "d0dd1fe224db4a2feaf75b0ec02dd58c1cdb21c6db28cee13c052620140d6e8f",
+      "peak_committed_bytes": 304390144
+    },
+    {
+      "job": "runs/TT-final-math-audit-001",
+      "status": "PASS",
+      "charged_seconds": 6.732842299999902,
+      "state_sha256": "02da4cc4b5d33821083b1b3a427398686fa5ab0d33a72a6984720b2cd1287a59",
+      "peak_committed_bytes": 278450176
+    },
+    {
+      "job": "runs/TT-owner-integration-001",
+      "status": "PASS",
+      "charged_seconds": 10.502989500004333,
+      "state_sha256": "6f238b11aab62218b048999511f03dcc132acc26ea69dc6a15c56582262ff846",
+      "peak_committed_bytes": 308699136
+    },
+    {
+      "job": "runs/TT-pilot-001",
+      "status": "PASS",
+      "charged_seconds": 5.818655700000818,
+      "state_sha256": "e26ff544eefdebc1d8f0324b5b5e8a9c8f40b9b6a276ecfea2c4289e9b603b63",
+      "peak_committed_bytes": 275009536
+    },
+    {
+      "job": "runs/TT-pilot-audit-001",
+      "status": "PASS",
+      "charged_seconds": 5.515337900011218,
+      "state_sha256": "1bdcd8fee1e7a6883e5244357fba2e3b1ea91825176a4742937d70d3006b5c99",
+      "peak_committed_bytes": 267800576
+    },
+    {
+      "job": "runs/TT-report-001",
+      "status": "PASS",
+      "charged_seconds": 3.4027732999966247,
+      "state_sha256": "ec871c7d153ac8982db601393d7c6c59bf4fde834aa68d200ddee0749bfd09de",
+      "peak_committed_bytes": 295264256
+    },
+    {
+      "job": "runs/TT-retention-regression-001",
+      "status": "PASS",
+      "charged_seconds": 22.93876169998839,
+      "state_sha256": "75401fea6e37575d7a88056e480e1a69903c78860701363f90a70ba34bbdee34",
+      "peak_committed_bytes": 402141184
+    },
+    {
+      "job": "runs/TT-runtime-contracts-001",
+      "status": "PASS",
+      "charged_seconds": 3.3329713999992236,
+      "state_sha256": "a6e0ebd697c65dd3d24275adbff9451ed7a9303281d56af4b63088741513e317",
+      "peak_committed_bytes": 268574720
+    },
+    {
+      "job": "runs/task-command-237a6db5-8486-4ae0-a25d-371015712b24",
+      "status": "PASS",
+      "charged_seconds": 3.646202899995842,
+      "state_sha256": "466d706ea06d5bb7eeb349b70bafcfd63240b53e3bbf07066a9865e8ab043603",
+      "peak_committed_bytes": 301658112
+    },
+    {
+      "job": "runs/task-command-f02cd68f-3337-4497-8226-afadd13b5291",
+      "status": "PASS",
+      "charged_seconds": 3.69527989999915,
+      "state_sha256": "bbb09bb7ee3f607fabf02af013b94bfb2283fadbb54605a57207c1b8d9a0d810",
+      "peak_committed_bytes": 302112768
+    }
+  ],
+  "maximum_job_committed_bytes": 402141184,
+  "scope": "Every numerical study, failed candidate inside a study, audit, test, migration, figure render and actual task command is included. Literature reading, implementation, static inspection and hashing require additional elapsed work outside this worker allowance. No new grant, paid compute or remote operation."
+}
