@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "command": "python scripts/verify_workbench_release.py",
+      "artifacts": 54,
+      "frozen_sources": 23,
+      "tests_across_preserved_runs": 233
+    },
+    {
+      "command": "python scripts/verify_continuing_release.py --local-checkpoints",
+      "files": 356,
+      "local_checkpoints": 210,
+      "status": "PASS"
+    },
+    {
+      "command": "python -m ruff check src tests scripts experiments workbench",
+      "status": "PASS"
+    },
+    {
+      "command": "git diff --check",
+      "status": "PASS"
+    }
+  ],
+  "numerical_experiments_repeated": 0,
+  "earlier_release_checks": "Matching previous successful receipts reused; all A08 predecessor files verified unchanged."
+}

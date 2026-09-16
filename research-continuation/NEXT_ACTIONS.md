@@ -39,3 +39,8 @@
 Completion means executable evidence at the stated scope. M2–M4 remain open until their capability tests pass.
 
 The completed geometric cohort covers four of ten requested task families. GG-GUARD-002 improves its tested reliability through conditional calibration and abstention; it does not learn the omitted mechanisms. Finite guarded consolidation, acquired-K-to-neural-readout transfer and a continuing adaptive-control component now have executed evidence. Shared-representation learning and independently improved eta remain open. See the [latest continuing-control evidence](19_continuing/report.md) and [next uncompleted experiment](NEXT_EXPERIMENT_PROTOCOL.md).
+
+- [x] Deliver a usable local workbench with live numerical tasks, on-request learning, controlled action and verified equations.
+- [x] Evaluate A09 K × eta over ten independent continuing lifetimes and three successor generations; preserve failed strongest-baseline gate.
+- [x] Verify 90 fresh numerical tasks, 540 accepted query values, 233 completed tests across preserved runs, and 61 exact retention groups.
+- [ ] Build a grounded language/formal reasoning acquisition route and test unfamiliar compositions before claiming language understanding.

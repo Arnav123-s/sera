@@ -24,6 +24,8 @@ The latest [continuing-control study](research-continuation/19_continuing/report
 
 ## Run
 
+The [local live workbench](research-continuation/20_live_workbench/README.md) performs numerical tasks now: it learns a transformation from retrieved/provided examples on request, validates held-out cases, processes changing CSV data, continues adaptive control, and checks finite equations. Run `.venv/Scripts/python.exe -X utf8 -m workbench` and open `http://127.0.0.1:8765`. The preserved local trained checkpoint is required. [Results and limitations](research-continuation/20_live_workbench/report.md) include the rejected learned procedure and the [larger task-driven research target](research-continuation/20_live_workbench/RESEARCH_LEARNER_TARGET.md).
+
 Use Python 3.12 and CPU PyTorch 2.10. On Linux/macOS replace `.venv/Scripts/python.exe` with `.venv/bin/python`.
 
 ```powershell
