@@ -1,0 +1,287 @@
+{
+  "schema": "sera.sparse-study.1",
+  "config": {
+    "name": "CS-PILOT-001",
+    "seeds": 1,
+    "start_seed": 310001,
+    "pilot": true
+  },
+  "sources": {
+    "experiments/generative_memory/core.py": "7b927dc3ebff4777ac40974627812905c1fd59187cd6d78a0f49dbc2e99b8e9b",
+    "experiments/sparse_mechanisms/__init__.py": "c8e6ba412dbd4cbbbf894a6fe1c7d3f3a723eba7146469c427724447efe7b8cf",
+    "experiments/sparse_mechanisms/core.py": "8232a281be46c4b5177246e273522f53d306eba1b39b5dd126ca709c9aca64c0",
+    "experiments/sparse_mechanisms/packet_verify.py": "2322e004ba4003b0a2fd480efa2c154ce47ce33ffb871904a013c3d4198ea6df",
+    "experiments/sparse_mechanisms/study.py": "fcf2f8377ddb0b510395c1b8a05580a61ea218ab192a0ef469a792941897dc56",
+    "scripts/run_sparse_bounded.py": "f1adbba958ac6ce207790d8c67e02dfa15ddd78da3a3679779657085d12a5b7f",
+    "scripts/run_v3_bounded.py": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+    "scripts/windows_job_v3.py": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "observation_contract": "Existing immutable Observations: two supplied coordinate values per phase, separate factual support/selection/calibration roles. Each phase costs two scalar values. No projected hidden trajectory.",
+  "dictionaries": {
+    "7": [
+      [
+        "one"
+      ],
+      [
+        "cos",
+        2
+      ],
+      [
+        "sin",
+        2
+      ],
+      [
+        "cos",
+        4
+      ],
+      [
+        "sin",
+        4
+      ],
+      [
+        "cos",
+        6
+      ],
+      [
+        "sin",
+        6
+      ]
+    ],
+    "17": [
+      [
+        "one"
+      ],
+      [
+        "cos",
+        2
+      ],
+      [
+        "sin",
+        2
+      ],
+      [
+        "cos",
+        4
+      ],
+      [
+        "sin",
+        4
+      ],
+      [
+        "cos",
+        6
+      ],
+      [
+        "sin",
+        6
+      ],
+      [
+        "cos",
+        8
+      ],
+      [
+        "sin",
+        8
+      ],
+      [
+        "cos",
+        10
+      ],
+      [
+        "sin",
+        10
+      ],
+      [
+        "cos",
+        12
+      ],
+      [
+        "sin",
+        12
+      ],
+      [
+        "cos",
+        14
+      ],
+      [
+        "sin",
+        14
+      ],
+      [
+        "cos",
+        16
+      ],
+      [
+        "sin",
+        16
+      ]
+    ],
+    "33": [
+      [
+        "one"
+      ],
+      [
+        "cos",
+        2
+      ],
+      [
+        "sin",
+        2
+      ],
+      [
+        "cos",
+        4
+      ],
+      [
+        "sin",
+        4
+      ],
+      [
+        "cos",
+        6
+      ],
+      [
+        "sin",
+        6
+      ],
+      [
+        "cos",
+        8
+      ],
+      [
+        "sin",
+        8
+      ],
+      [
+        "cos",
+        10
+      ],
+      [
+        "sin",
+        10
+      ],
+      [
+        "cos",
+        12
+      ],
+      [
+        "sin",
+        12
+      ],
+      [
+        "cos",
+        14
+      ],
+      [
+        "sin",
+        14
+      ],
+      [
+        "cos",
+        16
+      ],
+      [
+        "sin",
+        16
+      ],
+      [
+        "cos",
+        18
+      ],
+      [
+        "sin",
+        18
+      ],
+      [
+        "cos",
+        20
+      ],
+      [
+        "sin",
+        20
+      ],
+      [
+        "cos",
+        22
+      ],
+      [
+        "sin",
+        22
+      ],
+      [
+        "cos",
+        24
+      ],
+      [
+        "sin",
+        24
+      ],
+      [
+        "cos",
+        26
+      ],
+      [
+        "sin",
+        26
+      ],
+      [
+        "cos",
+        28
+      ],
+      [
+        "sin",
+        28
+      ],
+      [
+        "cos",
+        30
+      ],
+      [
+        "sin",
+        30
+      ],
+      [
+        "cos",
+        32
+      ],
+      [
+        "sin",
+        32
+      ]
+    ]
+  },
+  "support_counts": {
+    "7": [
+      4,
+      6
+    ],
+    "17": [
+      8,
+      12
+    ],
+    "33": [
+      12,
+      20
+    ]
+  },
+  "selection_phases": 8,
+  "calibration_phases": 12,
+  "final_phases": 128,
+  "methods": "Same normalized dictionary and observation arrays: ridge grid, OMP count grid, basis pursuit or bounded-infinity-noise LP. Existing fit_linear/subset criterion on seven terms only; no true support passed.",
+  "precision": "Both float64 and float32 stored coefficients/solver inputs. Existing subset fitting uses its original float32 posterior means in both conditions; all such differences are disclosed.",
+  "primary": "World-level relative future-curve error <=.05; coefficient recovery is a separate score. All paid selection/calibration observations and solver work count.",
+  "gate": {
+    "restricted_sparse_success": 0.9,
+    "relative_error_improvement_over_strongest_peer": 0.1,
+    "accepted_error_rate_all_families_max": 0.05,
+    "adequate_family_coverage_min": 0.5
+  },
+  "integration_rule": "All four empirical gates must pass on float64/random/33-term strata before shared-owner integration. No calibrated risk or learned eta claim even on a pass. If not, preserve/reject and diagnose with separate fresh measurement-policy study.",
+  "no_novel_family_claim": "Fourier sparsity, dense controls and several adequacy challenges are known development concepts. Final seeds/mixtures are fresh, not new mathematical task families.",
+  "scope": "Supplied phase, fixed dictionary and nominal sensor bound. Engineering algorithms and policies, not learned language, representations or learning procedures."
+}

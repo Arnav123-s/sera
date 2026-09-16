@@ -1,0 +1,60 @@
+{
+  "id": "CS-IMAGING-PILOT-002",
+  "config": {
+    "name": "CS-IMAGING-PILOT-002",
+    "seeds": 2,
+    "start_seed": 820019
+  },
+  "sources": {
+    "experiments/generative_memory/core.py": "7b927dc3ebff4777ac40974627812905c1fd59187cd6d78a0f49dbc2e99b8e9b",
+    "experiments/sparse_mechanisms/__init__.py": "c8e6ba412dbd4cbbbf894a6fe1c7d3f3a723eba7146469c427724447efe7b8cf",
+    "experiments/sparse_mechanisms/arrays.py": "538083de385546e6b76744fc6dc92dba17c1e18c30fd4cbb1a9479a50cbfe26b",
+    "experiments/sparse_mechanisms/audit.py": "19bbb6e51ea5c7cf336987a959e02258740923b1c45f55349fb0fe901e9f4954",
+    "experiments/sparse_mechanisms/audit_variants.py": "a0c9808365a0f7e0d5a3b844286f70a50200a7869b906af670acc3f998f39cc5",
+    "experiments/sparse_mechanisms/core.py": "8232a281be46c4b5177246e273522f53d306eba1b39b5dd126ca709c9aca64c0",
+    "experiments/sparse_mechanisms/imaging.py": "24f61bf23ea0b8b3ed148a6e3cd92e117cd9f609a0948bb543a37f0c10374931",
+    "experiments/sparse_mechanisms/investigate.py": "8b6d4c7145a3fcfae3ce46fe208ece750f57a10747e3240006c7227e94bbdb8d",
+    "experiments/sparse_mechanisms/packet_verify.py": "2322e004ba4003b0a2fd480efa2c154ce47ce33ffb871904a013c3d4198ea6df",
+    "experiments/sparse_mechanisms/study.py": "fcf2f8377ddb0b510395c1b8a05580a61ea218ab192a0ef469a792941897dc56",
+    "experiments/sparse_mechanisms/variants.py": "197135ecc350df270d2098f1667d0a2dceb8372e42dd6e3a901ad57cc4eb19a4",
+    "scripts/run_sparse_bounded.py": "ee8d8591e24f79293f990d65d9e63b0bd65d9675ce7e4a55f9c3098652490098",
+    "scripts/run_v3_bounded.py": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+    "scripts/windows_job_v3.py": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2"
+  },
+  "families": [
+    "sparse_pixels",
+    "sparse_haar",
+    "phantom_faint",
+    "dense_texture"
+  ],
+  "geometry": [
+    "points_uniform",
+    "points_variable",
+    "cartesian_variable",
+    "cartesian_regular"
+  ],
+  "complex_measurements": [
+    128,
+    256
+  ],
+  "image_shape": [
+    32,
+    32
+  ],
+  "noise_sigma_per_real_component": [
+    0.0,
+    0.001
+  ],
+  "methods": [
+    "zero_filled",
+    "pixel",
+    "haar"
+  ],
+  "iterations": 400,
+  "regularizer": "Final max(1e-4*||measured||2/32, sigma*sqrt(2*log(1024))). Five equal-length continuation stages from .1*max|W F* y|, divided by 10 each stage, floored at final lambda; final stage uses final lambda. Restart acceleration at each transition. Changed after underconverged first pilot, before final evaluation.",
+  "primary": "Global NRMSE plus error within the known 2x2 faint-feature ROI, separately reported. Every method gets identical k-space values and mask.",
+  "basis": "Pixel or separable orthonormal one-dimensional Haar product basis; not a reproduction of wavelet+TV SparseMRI implementation.",
+  "cost": "Each complex observation costs two real scalars; a synthetic Fourier oracle constructs full k-space once, counted separately. No assumption that arbitrary SERA trajectories can be projected for free.",
+  "boundary": "Synthetic, single-coil, real image, ideal Fourier model only. No patient data, clinical evaluation, coil sensitivity, phase/motion/trajectory timing or gradient/slew constraints. Random points are idealized; Cartesian lines are a limited acquisition proxy.",
+  "decision": "Report matched and mismatched bases, geometry, residuals and stationarity. No live-owner or medical deployment from this screening study."
+}

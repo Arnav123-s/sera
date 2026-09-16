@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "records": 30,
+  "lp_certificates": 6,
+  "paired_settings": 6,
+  "geometry": {
+    "32": {
+      "rank": 32,
+      "maximum_column_correlation": 0.9988633809301262,
+      "zero_columns": 0,
+      "rip_certificate": false
+    },
+    "64": {
+      "rank": 64,
+      "maximum_column_correlation": 0.9965987220119127,
+      "zero_columns": 0,
+      "rip_certificate": false
+    },
+    "96": {
+      "rank": 96,
+      "maximum_column_correlation": 0.9966230531703326,
+      "zero_columns": 0,
+      "rip_certificate": false
+    }
+  },
+  "table": {
+    "dense/32/damaged": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000080734524,
+      "mean_coefficient_error": 4.4721291791087775e-08,
+      "mean_parent_agreement": 0.9921875,
+      "mean_exact_slot_accuracy": 0.98828125,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 2.6000052457675338e-06
+    },
+    "dense/32/minimum_norm_relearn": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.3975838766848597,
+      "mean_coefficient_error": 1.1344769111713005,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0003073999978369102
+    },
+    "dense/32/omp_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.4231798877659334,
+      "mean_coefficient_error": 0.7450924715480395,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0022247000015340745
+    },
+    "dense/32/ridge_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.28260643439630356,
+      "mean_coefficient_error": 0.3823335730261218,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.000566999995498918
+    },
+    "dense/32/sparse_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.3813357872322007,
+      "mean_coefficient_error": 0.7058608601864119,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.019700999997439794
+    },
+    "dense/64/damaged": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000080734524,
+      "mean_coefficient_error": 4.4721291791087775e-08,
+      "mean_parent_agreement": 0.9921875,
+      "mean_exact_slot_accuracy": 0.98828125,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 2.800006768666208e-06
+    },
+    "dense/64/minimum_norm_relearn": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.18648138022931082,
+      "mean_coefficient_error": 1.0960637038458112,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0007962000090628862
+    },
+    "dense/64/omp_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.4365258683169346,
+      "mean_coefficient_error": 0.8921079250799673,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0022563000093214214
+    },
+    "dense/64/ridge_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.21147062889494803,
+      "mean_coefficient_error": 0.523260011746855,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0013082000077702105
+    },
+    "dense/64/sparse_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.2757970778361665,
+      "mean_coefficient_error": 0.7809949752398895,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.04090680000081193
+    },
+    "dense/96/damaged": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000080734524,
+      "mean_coefficient_error": 4.4721291791087775e-08,
+      "mean_parent_agreement": 0.9921875,
+      "mean_exact_slot_accuracy": 0.98828125,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 2.7000060072168708e-06
+    },
+    "dense/96/minimum_norm_relearn": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.10406161856098275,
+      "mean_coefficient_error": 1.0325413306717697,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0014293999993242323
+    },
+    "dense/96/omp_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.44112869273867605,
+      "mean_coefficient_error": 0.778475761076739,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.00240690000646282
+    },
+    "dense/96/ridge_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.19053291948086967,
+      "mean_coefficient_error": 0.5930178264137869,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0022098999907029793
+    },
+    "dense/96/sparse_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.20182287094415205,
+      "mean_coefficient_error": 0.7782342316801614,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.06875190000573639
+    },
+    "sparse4/32/damaged": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000079486,
+      "mean_coefficient_error": 2.0638372045823363e-08,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 2.9999937396496534e-06
+    },
+    "sparse4/32/minimum_norm_relearn": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.3480908762328449,
+      "mean_coefficient_error": 1.192829022969605,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.00029779999749735
+    },
+    "sparse4/32/omp_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.35301504897941244,
+      "mean_coefficient_error": 0.8487572218770809,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.002295899990713224
+    },
+    "sparse4/32/ridge_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.24295585894772614,
+      "mean_coefficient_error": 0.377174681747418,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0006376999954227358
+    },
+    "sparse4/32/sparse_delta": {
+      "trials": 1,
+      "within_5_percent": 1,
+      "mean_prediction_error": 2.39293831874572e-07,
+      "mean_coefficient_error": 0.9999994341429232,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.02205590000085067
+    },
+    "sparse4/64/damaged": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000079486,
+      "mean_coefficient_error": 2.0638372045823363e-08,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.0999945010989904e-06
+    },
+    "sparse4/64/minimum_norm_relearn": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.16326735275682025,
+      "mean_coefficient_error": 1.1396343908129125,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0008572999940952286
+    },
+    "sparse4/64/omp_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.18383993153897638,
+      "mean_coefficient_error": 0.8111816151350916,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0032399000047007576
+    },
+    "sparse4/64/ridge_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.19658259751119392,
+      "mean_coefficient_error": 0.4553559180795424,
+      "mean_parent_agreement": 0.99609375,
+      "mean_exact_slot_accuracy": 1.0,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0014195999974617735
+    },
+    "sparse4/64/sparse_delta": {
+      "trials": 1,
+      "within_5_percent": 1,
+      "mean_prediction_error": 4.6309676949311724e-08,
+      "mean_coefficient_error": 0.9999998788966264,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.03640420000010636
+    },
+    "sparse4/96/damaged": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000079486,
+      "mean_coefficient_error": 2.0638372045823363e-08,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 2.6999914553016424e-06
+    },
+    "sparse4/96/minimum_norm_relearn": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.09110756776440465,
+      "mean_coefficient_error": 1.1000238449548414,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0014896999928168952
+    },
+    "sparse4/96/omp_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.12363745130299968,
+      "mean_coefficient_error": 0.9128708261007032,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0026360000047134236
+    },
+    "sparse4/96/ridge_delta": {
+      "trials": 1,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.1979019346824713,
+      "mean_coefficient_error": 0.5621670664174686,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.002346000008401461
+    },
+    "sparse4/96/sparse_delta": {
+      "trials": 1,
+      "within_5_percent": 1,
+      "mean_prediction_error": 4.6309676949311724e-08,
+      "mean_coefficient_error": 0.9999998788966264,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.053776400003698654
+    }
+  },
+  "parent_owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+  "boundary": "Checks actual stored network-layer outputs and known fault ground truth independently. Trusted pre-fault logits are maintenance evidence, not new factual learning or a new language benchmark. Full recurrent execution checks are in the study receipt."
+}

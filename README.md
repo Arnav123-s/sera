@@ -30,6 +30,8 @@ The [local live workbench](research-continuation/20_live_workbench/README.md) pe
 
 Open [Verified reasoning](http://127.0.0.1:8765/?panel=reason) for the new task-time language lessons. Try `subtract three from x then multiply by two to get four modulo eleven`; the checked solution is `x = 5`. The [usage and results](research-continuation/21_grounded_language/README.md) specify supported wording, forgetting, checks and saved state. Run `python scripts/verify_grounded_release.py --local-checkpoints` to inspect the frozen evidence without training or repeating a completed experiment.
 
+The [sparse-mechanism and memory study](research-continuation/22_sparse_mechanisms/README.md) adds 23,096 final records across mechanism recovery, paid investigation, memory sketches, corruption repair, neural weight updates and synthetic Fourier imaging. Sparse corrections also repair a copy of the actual trained SERA readout, but this does not establish a new language capability. Failed adequacy and cost gates prevent live predictor/investigator promotion. A small-artifact recovery command returns bytes only after independent digest verification; direct sparse storage and ordinary replication remain strong controls. [Results and limitations](research-continuation/22_sparse_mechanisms/report.md), [Tao/MRI source notes](research-continuation/22_sparse_mechanisms/literature.md), [architecture audit](research-continuation/22_sparse_mechanisms/architecture-audit.md), and `python scripts/verify_sparse_release.py` preserve a reviewable record.
+
 Use Python 3.12 and CPU PyTorch 2.10. On Linux/macOS replace `.venv/Scripts/python.exe` with `.venv/bin/python`.
 
 ```powershell

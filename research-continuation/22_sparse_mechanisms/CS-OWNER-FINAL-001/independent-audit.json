@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "records": 360,
+  "lp_certificates": 72,
+  "paired_settings": 72,
+  "geometry": {
+    "32": {
+      "rank": 32,
+      "maximum_column_correlation": 0.9971358561463735,
+      "zero_columns": 0,
+      "rip_certificate": false
+    },
+    "64": {
+      "rank": 64,
+      "maximum_column_correlation": 0.9942630958676547,
+      "zero_columns": 0,
+      "rip_certificate": false
+    },
+    "96": {
+      "rank": 96,
+      "maximum_column_correlation": 0.9923958086290847,
+      "zero_columns": 0,
+      "rip_certificate": false
+    }
+  },
+  "table": {
+    "dense/32/damaged": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.9999999872773314,
+      "mean_coefficient_error": 1.0000000001688651,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.4800017601810396e-05
+    },
+    "dense/32/minimum_norm_relearn": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.7298865197130224,
+      "mean_coefficient_error": 0.6537400586674299,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.003623399999924004
+    },
+    "dense/32/omp_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.4649681129346202,
+      "mean_coefficient_error": 1.3436387126365374,
+      "mean_parent_agreement": 0.9993489583333334,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.024730700024520047
+    },
+    "dense/32/ridge_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.30552241764820764,
+      "mean_coefficient_error": 0.9374987084689906,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.0072216999978991225
+    },
+    "dense/32/sparse_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.35178960697848155,
+      "mean_coefficient_error": 1.0830276190364518,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.21970579997287132
+    },
+    "dense/64/damaged": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.9999999872773314,
+      "mean_coefficient_error": 1.0000000001688651,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.4299984690733254e-05
+    },
+    "dense/64/minimum_norm_relearn": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.16144327775446202,
+      "mean_coefficient_error": 0.46768285757445227,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.00995260001218412
+    },
+    "dense/64/omp_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.39711830409859417,
+      "mean_coefficient_error": 1.273672454493343,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.02709950001735706
+    },
+    "dense/64/ridge_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.204112947201632,
+      "mean_coefficient_error": 0.8680218562330535,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.01571469996997621
+    },
+    "dense/64/sparse_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.24732641083071286,
+      "mean_coefficient_error": 1.0369957450422842,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.49247350000950973
+    },
+    "dense/96/damaged": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.9999999872773314,
+      "mean_coefficient_error": 1.0000000001688651,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.9399994420818985e-05
+    },
+    "dense/96/minimum_norm_relearn": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.08977083160261164,
+      "mean_coefficient_error": 0.39899192176368564,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.01744429999962449
+    },
+    "dense/96/omp_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.37815238897900877,
+      "mean_coefficient_error": 1.2422176008675434,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.029023099996265955
+    },
+    "dense/96/ridge_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.15648431146425446,
+      "mean_coefficient_error": 0.7966849410636807,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.027267800003755838
+    },
+    "dense/96/sparse_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.19292808706573708,
+      "mean_coefficient_error": 0.9418124655579754,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.8202353999804473
+    },
+    "sparse4/32/damaged": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000012210846,
+      "mean_coefficient_error": 1.000000000649183,
+      "mean_parent_agreement": 0.9990234375,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.460000152699649e-05
+    },
+    "sparse4/32/minimum_norm_relearn": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.654612512791642,
+      "mean_coefficient_error": 0.6492536107906536,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.004082999992533587
+    },
+    "sparse4/32/omp_delta": {
+      "trials": 12,
+      "within_5_percent": 2,
+      "mean_prediction_error": 0.37426118237514344,
+      "mean_coefficient_error": 0.9588838432017249,
+      "mean_parent_agreement": 0.9996744791666666,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.024910399995860644
+    },
+    "sparse4/32/ridge_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.30194337239090313,
+      "mean_coefficient_error": 0.9430373476266608,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.007329699947149493
+    },
+    "sparse4/32/sparse_delta": {
+      "trials": 12,
+      "within_5_percent": 11,
+      "mean_prediction_error": 0.03354410675605186,
+      "mean_coefficient_error": 0.0707283325096136,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.21486710003227927
+    },
+    "sparse4/64/damaged": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000012210846,
+      "mean_coefficient_error": 1.000000000649183,
+      "mean_parent_agreement": 0.9990234375,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.44999716617167e-05
+    },
+    "sparse4/64/minimum_norm_relearn": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.15077020315600007,
+      "mean_coefficient_error": 0.4605279139102396,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.010479300035513006
+    },
+    "sparse4/64/omp_delta": {
+      "trials": 12,
+      "within_5_percent": 2,
+      "mean_prediction_error": 0.17679460153415158,
+      "mean_coefficient_error": 0.7375241946847394,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.026998700050171465
+    },
+    "sparse4/64/ridge_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.19319294201053205,
+      "mean_coefficient_error": 0.8713486340855533,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.015785900002811104
+    },
+    "sparse4/64/sparse_delta": {
+      "trials": 12,
+      "within_5_percent": 12,
+      "mean_prediction_error": 5.805004420473384e-08,
+      "mean_coefficient_error": 1.8949245506497926e-07,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.4075158000050578
+    },
+    "sparse4/96/damaged": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 1.0000000012210846,
+      "mean_coefficient_error": 1.000000000649183,
+      "mean_parent_agreement": 0.9990234375,
+      "mean_exact_slot_accuracy": 0.9964192708333334,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 3.440000000409782e-05
+    },
+    "sparse4/96/minimum_norm_relearn": {
+      "trials": 12,
+      "within_5_percent": 1,
+      "mean_prediction_error": 0.0872840923022173,
+      "mean_coefficient_error": 0.3921507029396238,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.017950000008568168
+    },
+    "sparse4/96/omp_delta": {
+      "trials": 12,
+      "within_5_percent": 5,
+      "mean_prediction_error": 0.13311861941424952,
+      "mean_coefficient_error": 0.5377713464869669,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.02840009996725712
+    },
+    "sparse4/96/ridge_delta": {
+      "trials": 12,
+      "within_5_percent": 0,
+      "mean_prediction_error": 0.14525664691496853,
+      "mean_coefficient_error": 0.8066366718626846,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.030202699985238723
+    },
+    "sparse4/96/sparse_delta": {
+      "trials": 12,
+      "within_5_percent": 12,
+      "mean_prediction_error": 5.0701815349505895e-08,
+      "mean_coefficient_error": 1.517717302020037e-07,
+      "mean_parent_agreement": 1.0,
+      "mean_exact_slot_accuracy": 0.99609375,
+      "parent_exact_slot_accuracy": 0.99609375,
+      "decoder_seconds": 0.6058264000021154
+    }
+  },
+  "parent_owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+  "boundary": "Checks actual stored network-layer outputs and known fault ground truth independently. Trusted pre-fault logits are maintenance evidence, not new factual learning or a new language benchmark. Full recurrent execution checks are in the study receipt."
+}

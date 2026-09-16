@@ -1,0 +1,46 @@
+{
+  "id": "CS-QUERY-FINAL-001",
+  "config": {
+    "name": "CS-QUERY-FINAL-001",
+    "seeds": 24,
+    "start_seed": 610009
+  },
+  "sources": {
+    "experiments/generative_memory/core.py": "7b927dc3ebff4777ac40974627812905c1fd59187cd6d78a0f49dbc2e99b8e9b",
+    "experiments/sparse_mechanisms/__init__.py": "c8e6ba412dbd4cbbbf894a6fe1c7d3f3a723eba7146469c427724447efe7b8cf",
+    "experiments/sparse_mechanisms/audit.py": "19bbb6e51ea5c7cf336987a959e02258740923b1c45f55349fb0fe901e9f4954",
+    "experiments/sparse_mechanisms/core.py": "8232a281be46c4b5177246e273522f53d306eba1b39b5dd126ca709c9aca64c0",
+    "experiments/sparse_mechanisms/investigate.py": "8b6d4c7145a3fcfae3ce46fe208ece750f57a10747e3240006c7227e94bbdb8d",
+    "experiments/sparse_mechanisms/packet_verify.py": "2322e004ba4003b0a2fd480efa2c154ce47ce33ffb871904a013c3d4198ea6df",
+    "experiments/sparse_mechanisms/study.py": "fcf2f8377ddb0b510395c1b8a05580a61ea218ab192a0ef469a792941897dc56",
+    "scripts/run_sparse_bounded.py": "f1adbba958ac6ce207790d8c67e02dfa15ddd78da3a3679779657085d12a5b7f",
+    "scripts/run_v3_bounded.py": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+    "scripts/windows_job_v3.py": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2"
+  },
+  "policies": [
+    "random",
+    "space_filling",
+    "disagreement"
+  ],
+  "families": [
+    "sparse",
+    "noisy",
+    "local_exception",
+    "off_grid"
+  ],
+  "regimes": [
+    "equal_observations",
+    "equal_work_proxy",
+    "extended_challenge"
+  ],
+  "initial_phases": 12,
+  "maximum_new_queries": 8,
+  "selection_phases": 8,
+  "ordinary_challenges": 12,
+  "extended_challenges": 32,
+  "work_proxy": "One scalar value costs 1; each LP or least-squares solve costs .25. Equal-work arm cap=84, reserved validation included; runtime reported separately.",
+  "primary": "Prediction capability at relative error<=.05 and accepted error/coverage, paired by underlying world. No final-dependent thresholds or query changes.",
+  "investigator_gate": "Disagreement must reduce mean relative error at least 10% versus BOTH random and space filling in sparse/noisy lifetimes under BOTH equal-observation and equal-work regimes; accepted error <=5% in each regime across all four families. Otherwise reject investigator promotion.",
+  "prior_reuse": "Each prior comes from 24 observed phases of an actual earlier sparse situation. Change one active component; compare scratch, acquired support and an index-shifted wrong prior at 8/12 new phases. Equal old acquisition cost charged to all arms. No free true support.",
+  "boundary": "Fresh instances, supplied coordinates/dictionaries/sensor bound and fixed policies. Alternative compatibility does not establish whole-dictionary adequacy. No learned eta, causal-control or shared-core benefit claim."
+}

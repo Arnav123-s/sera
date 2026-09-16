@@ -1,0 +1,18 @@
+# Failures, corrections and rejected conclusions
+
+| Record | Finding | Action and preserved evidence |
+|---|---|---|
+| Original packet verification | All 400 solutions passed its declared tolerances. Re-solved coefficient discrepancy was 2.15e-13 rather than exactly zero in the delivered environment | Preserved both reports and original archive; no relaxed tolerance or fresh claim of exact bitwise solver reproduction |
+| Initial recovery auditor draft | One extra closing bracket was found by the static checker before numerical execution | Draft retained in `audit-draft-syntax.zip`; repaired auditor passed the saved final records |
+| CS-FINAL-001 | Sparse recovery improves mean error but falls below 90% capability and exceeds 5% accepted-risk gates | 13,440 fits, sources, LP certificates, challenge failures and final refusal preserved; no live integration |
+| CS-QUERY-FINAL-001 | Disagreement reduces average error at equal observations but loses under its work cap; accepted-risk gate also fails there | Retained all 864 lifetimes, wrong-prior controls and costs; no investigator promotion |
+| CS-APPLICATION-FINAL-001 memory | Known sparse entries are cheaper to store directly. Support growth and dense vectors defeat a fixed sketch | Kept storage baselines and negative cases; no arbitrary-memory compression claim |
+| CS-IMAGING-PILOT-001 | Tiny regularization with a short FISTA budget made insufficient recovery progress; sparse-pixel NRMSE 0.802 in one matched development case | Frozen original source/output; added continuation and restarts, tested fresh pilot 002, then froze final without tuning its outcomes |
+| CS-IMAGING-FINAL-001 | Regular Cartesian aliases and dense texture fail. Haar's global phantom error improves while faint-feature contrast error worsens | Preserved global and local metrics and first-seed visual examples; no clinical or fine-detail reliability claim |
+| Cost-counter audit | Imaging counter omitted the final stationarity inverse FFT; OMP's solve counter is a conservative maximum under early stopping | New FFT instrumentation test; fixed code, explicit `cost-counter-corrections.json`. Historical counts stay intact and full wall time was already charged |
+| CS-OWNER-PILOT-001 secondary score | Generic relative-error helper subtracted the fault twice; an exact correction was reported near 1 instead of 0 | Both reporters frozen in `owner-pilot-metric-draft.zip`; dedicated zero/half/full-error test added; final uses corrected independent formula; pilot has a saved-coefficient correction overlay |
+| CS-OWNER-FINAL-001 | Dense weight faults fail, and classification accuracy is mostly insensitive to these local faults even before correction | Report numerical restoration separately from semantic task accuracy. No claim of new language learning |
+| CS-REAL-MEMORY-001 | Exact-byte sparse-error repair succeeds for four faults per block but rejects all twelve/twenty-four-fault trials in this cohort; simple repetition is competitive | Every rejection retained. Expansion and intact-metadata assumption documented; no storage superiority claim |
+| CS-repair-cli-expected-reject-001 | Deliberately damaged input exits nonzero after integrity failure | Supervisor records `FAILED`, interpreted as expected refusal, not hidden as a successful job. No output file was created; its full charge remains in the ledger |
+
+The independent audits share the project and numerical libraries, so they are independent equation checks, not an external laboratory replication or hostile-process isolation. Earlier experimental failures and claims remain in their own numbered releases.

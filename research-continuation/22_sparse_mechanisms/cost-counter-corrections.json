@@ -1,0 +1,24 @@
+{
+  "imaging": {
+    "CS-IMAGING-PILOT-001": {
+      "reported_reconstruction_fft_calls": 65728,
+      "omitted_final_stationarity_ifft_calls": 128,
+      "corrected_reconstruction_fft_calls": 65856,
+      "oracle_ffts_separately": 4
+    },
+    "CS-IMAGING-PILOT-002": {
+      "reported_reconstruction_fft_calls": 209792,
+      "omitted_final_stationarity_ifft_calls": 256,
+      "corrected_reconstruction_fft_calls": 210048,
+      "oracle_ffts_separately": 8
+    },
+    "CS-IMAGING-FINAL-001": {
+      "reported_reconstruction_fft_calls": 1258752,
+      "omitted_final_stationarity_ifft_calls": 1536,
+      "corrected_reconstruction_fft_calls": 1260288,
+      "oracle_ffts_separately": 48
+    }
+  },
+  "reason": "One final stationarity inverse FFT was omitted per nonzero-filled reconstruction. Actual wall time always included it; fixed source has a counter-instrumentation test. Historical outputs remain unchanged.",
+  "omp": "The synthetic weight study's linear_solves field=36 is a conservative maximum over the 1..8 grid. Early residual convergence can execute fewer solves. Use measured wall time for comparisons; do not interpret that field as an exact count."
+}
