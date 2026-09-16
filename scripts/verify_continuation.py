@@ -14,6 +14,7 @@ MANIFEST_SHA256 = "7c3c1942cd0315f6aa3a29626490c4d6eeb8cfb422ea1861f1ce4c7d974c2
 # These navigation/maintenance files may evolve. Frozen results, protocols and
 # source archives must still match their published bytes in the working tree.
 EVOLVING_FILES = {
+    ".gitattributes", ".gitignore",
     "README.md", ".github/workflows/ci.yml", "scripts/verify_continuation.py",
     "research-continuation/NEXT_ACTIONS.md", "research-continuation/NEXT_EXPERIMENT_PROTOCOL.md",
     "research-continuation/RESEARCH_STATE.json", "research-continuation/EVIDENCE_LEDGER.jsonl",

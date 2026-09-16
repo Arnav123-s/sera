@@ -1,0 +1,60 @@
+{
+  "code_sha256": "76dfb08472498bfa4ccf8325e0e4b7112ddacf8cc9363c5255795d4cca02a25f",
+  "jobs": {
+    "dynamics": {
+      "command": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "code/dynamics_study.py",
+        "--verify",
+        "D:\\ai\\projects\\sera\\research\\intake\\v5-compact-20260916\\expanded\\SERA_Research_v5\\results\\dynamics",
+        "--report",
+        "D:\\ai\\projects\\sera\\research-continuation\\24_language_inquiry\\packet-verification\\dynamics.json"
+      ],
+      "outputs": {
+        "dynamics.log": "d4e804ae00163acdb4da1a6f2877ba5925d0a8f27d3cca8f3b264589c46486ad"
+      },
+      "returncode": 1,
+      "status": "failed",
+      "timeout_seconds": 600,
+      "wall_seconds": 0.5531752999813762
+    },
+    "language": {
+      "command": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "code/language_study.py",
+        "--verify",
+        "D:\\ai\\projects\\sera\\research\\intake\\v5-compact-20260916\\expanded\\SERA_Research_v5\\results\\language",
+        "--report",
+        "D:\\ai\\projects\\sera\\research-continuation\\24_language_inquiry\\packet-verification\\language.json"
+      ],
+      "outputs": {
+        "language.json": "e561ea9fbc9b51d05d9e11e8dfe8c20989958461d3db34a74529bec9658bc991",
+        "language.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "returncode": 0,
+      "status": "passed",
+      "timeout_seconds": 600,
+      "wall_seconds": 3.6173549000232015
+    },
+    "tests": {
+      "command": [
+        "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "outputs": {
+        "tests.log": "b225e23c1439a826a46609e5247464964ec242639f81a21777fbf2ca5ca3b014"
+      },
+      "returncode": 0,
+      "status": "passed",
+      "timeout_seconds": 120,
+      "wall_seconds": 6.302533599984599
+    }
+  },
+  "reserved_seconds": 1320,
+  "schema": "v5-check-ledger"
+}

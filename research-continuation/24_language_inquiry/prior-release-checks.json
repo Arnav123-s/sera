@@ -1,0 +1,50 @@
+[
+  {
+    "script": "verify_release",
+    "returncode": 0,
+    "stdout": "Verified 33 evidence artifacts and 154 unique source concepts.\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_continuation",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"D:\\ai\\projects\\sera\\scripts\\verify_continuation.py\", line 84, in <module>\n    main()\n  File \"D:\\ai\\projects\\sera\\scripts\\verify_continuation.py\", line 46, in main\n    raise ValueError(f\"Continuation evidence changed: {row['path']}\")\nValueError: Continuation evidence changed: .gitattributes\n"
+  },
+  {
+    "script": "verify_applicability",
+    "returncode": 0,
+    "stdout": "Verified 61 applicability files, 1344 worlds, 44352 query predictions, 53 frozen sources, corrected independent audit and withheld promotion.\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_v3_release",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"release_files\": 165, \"bytes\": 11907136, \"guard_worlds\": 3812, \"current_tests\": 199, \"strict_intake_failures_preserved\": true, \"completed_cohorts_restarted\": 0}\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_transfer_release",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"release_files\": 451, \"prospective_models\": 70, \"development_models\": 3, \"independently_audited_predictions\": 26880, \"tests\": 210, \"local_artifacts_checked\": 0, \"shared_path_gate\": \"FAIL\", \"instance_readout_gate\": \"PASS\", \"new_training_or_evaluation_runs\": 0}\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_continuing_release",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"release_files\": 356, \"prospective_lifetimes\": 168, \"development_lifetimes\": 42, \"independent_worlds\": 24, \"audited_decisions\": 12096, \"tests\": 219, \"retention_groups\": 61, \"resumed_observations\": 79, \"local_checkpoints_checked\": 0, \"new_experiments_run\": 0, \"uncertainty_certificate\": false}\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_sparse_release",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"artifact_files\": 124, \"frozen_source_files\": 255, \"cohort_source_archives\": 12, \"numerical_jobs\": 31, \"distinct_targeted_tests\": 13, \"new_final_records\": 23096, \"charged_seconds\": 393.43767540001136, \"new_experiments\": 0, \"scope\": \"Frozen bytes, source/receipt integrity and declared gate consistency. Independent numerical checks are preserved; no repeated fitting.\"}\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_task_transfer_release",
+    "returncode": 0,
+    "stdout": "{\"status\": \"PASS\", \"artifact_files\": 60, \"source_files\": 272, \"cohort_archives\": 4, \"owned_jobs\": 14, \"distinct_tests\": 22, \"test_executions\": 26, \"final_outcomes\": 3888, \"charged_seconds\": 118.43648660001054, \"remaining_at_release\": 962.9074793000036, \"new_experiments\": 0, \"local_state_checked\": false}\n",
+    "stderr": ""
+  }
+]

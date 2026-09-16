@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\ai\projects\sera\research\intake\v5-compact-20260916\expanded\SERA_Research_v5\code\dynamics_study.py", line 4, in <module>
+    if a.verify:dynamics_replay(a.verify,a.report)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\research\intake\v5-compact-20260916\expanded\SERA_Research_v5\code\s5\experiments.py", line 73, in dynamics_replay
+    stem=f"{r['family']}-{r['seed']}-{r['method']}";old=json.loads((root/(stem+'.json')).read_text());m=WorldLearner.restore(old['world'])
+                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\research\intake\v5-compact-20260916\expanded\SERA_Research_v5\code\s5\dynamics.py", line 113, in restore
+    if canonical(actual)!=canonical(p):raise ValueError('World disagrees with replayed evidence')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: World disagrees with replayed evidence

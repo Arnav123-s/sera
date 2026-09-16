@@ -36,6 +36,8 @@ The [task-transfer continuation](research-continuation/23_task_transfer/README.m
 
 Use Python 3.12 and CPU PyTorch 2.10. On Linux/macOS replace `.venv/Scripts/python.exe` with `.venv/bin/python`.
 
+The [v5 language/investigation integration](research-continuation/24_language_inquiry/README.md) connects learned action phrases to the actual continuing owner and a persistent inquiry graph. It can pause, restore, clarify, predict, execute a local simulator control and correct itself from the observation. Three shared-path interfaces interpret all supported finite queries correctly; their grammar is supplied. New evidence sharply reduces forecast error after hidden response changes, while omitted-mechanism errors remain. [Results](research-continuation/24_language_inquiry/report.md) and the [architecture audit](research-continuation/24_language_inquiry/architecture-audit.md) distinguish this connection from learned abstraction or an improved investigator. Start with `.venv/Scripts/python.exe scripts/sera_inquiry.py result --id ready`.
+
 ```powershell
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu

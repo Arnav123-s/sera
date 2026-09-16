@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "workspace": "runs/sera-inquiry",
+  "revisions": 11,
+  "owner": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+  "parent_stores_unchanged": {
+    "runs/sera-workbench": "bc5ed822433aa422519a16cf9961af739c438d5930be648908e5a0582858abab",
+    "runs/sera-task-transfer": "5810706ef57fc450d512d7088ba73238e2aea46fa2db46bc3c44d46974d682b1"
+  },
+  "parent_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+  "shared_owner": true,
+  "status": {
+    "owner": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+    "parent_task_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+    "same_owner": true,
+    "preserved_numerical_tasks": [
+      "calibration_estimator",
+      "calibration_source_1",
+      "calibration_source_2",
+      "calibration_source_3",
+      "calibration_source_4",
+      "outside_family"
+    ],
+    "paid_new_observations": 1,
+    "restore_observations": 1,
+    "parser": "6d091e9d0250e0ee77a9e02b735a1be01e4a8172ac88f932f2dd977b273d0f20",
+    "lessons": [
+      {
+        "phrase": "coast",
+        "action": 0,
+        "admitted": true,
+        "steps": 80,
+        "new_labels": 1,
+        "replayed_labels": 13,
+        "presentations": 1120,
+        "old_correct": 13,
+        "old_count": 13,
+        "new_correct": true,
+        "parent_parser": "a1f8910f31e130f48f0054bc4f06b97a5f65bdca93e819d894e8494325f011b8",
+        "scope": "One supplied supervised correction with replay; no lifelong or learning-to-learn claim"
+      }
+    ],
+    "situation": "f55a697cb264462e9bc13d7804908af52b34d125b7533681a5e9427f7848c437",
+    "work": {
+      "ticks": 13,
+      "particle_transitions": 56,
+      "cache_hits": 5,
+      "candidate_inspections": 20,
+      "restore_transitions": 511,
+      "interpretations": 7
+    },
+    "investigations": {
+      "historical": {
+        "status": "complete",
+        "progress": 3,
+        "text": "predict the position of orbit after push right then wait then push left",
+        "result": {
+          "kind": "conditional_prediction",
+          "status": "CONDITIONAL_UNCALIBRATED",
+          "field": "position",
+          "value": [
+            0.1063453600009463,
+            0.4235416895167666
+          ],
+          "parameter_variance": [
+            0.0017146774162444102,
+            5.4421210757808435e-05
+          ],
+          "units": "m",
+          "actions": [
+            1,
+            0,
+            -1
+          ],
+          "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+          "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+        }
+      },
+      "choice": {
+        "status": "stale",
+        "progress": 1,
+        "text": "predict the velocity of orbit after do not wait",
+        "result": {
+          "kind": "conditional_prediction",
+          "status": "CONDITIONAL_UNCALIBRATED",
+          "field": "velocity",
+          "value": [
+            -0.3517359475068976
+          ],
+          "parameter_variance": [
+            5.303803933037142e-05
+          ],
+          "units": "rad/tick",
+          "actions": [
+            1
+          ],
+          "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+          "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+        }
+      },
+      "compare": {
+        "status": "stale",
+        "progress": 3,
+        "text": "predict the position of orbit after push right then wait then push left",
+        "result": {
+          "kind": "conditional_prediction",
+          "status": "CONDITIONAL_UNCALIBRATED",
+          "field": "position",
+          "value": [
+            0.4542577148507031,
+            0.4123161042699011
+          ],
+          "parameter_variance": [
+            0.0016582262484577948,
+            0.00010207399597894241
+          ],
+          "units": "m",
+          "actions": [
+            1,
+            0,
+            -1
+          ],
+          "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+          "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+        }
+      },
+      "before_lesson": {
+        "status": "rejected",
+        "progress": 0,
+        "text": "predict the position of orbit after coast",
+        "result": null
+      },
+      "unfinished": {
+        "status": "paused",
+        "progress": 1,
+        "text": "predict the position of orbit after coast then push right then wait",
+        "result": null
+      },
+      "ready": {
+        "status": "complete",
+        "progress": 2,
+        "text": "predict the velocity of orbit after coast then push left",
+        "result": {
+          "kind": "conditional_prediction",
+          "status": "CONDITIONAL_UNCALIBRATED",
+          "field": "velocity",
+          "value": [
+            -0.16938115412181845
+          ],
+          "parameter_variance": [
+            0.0005781447376631318
+          ],
+          "units": "rad/tick",
+          "actions": [
+            0,
+            -1
+          ],
+          "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+          "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+        }
+      }
+    },
+    "scope": "Supplied grammar, learned span meanings, learned continuing dynamics; conditional forecasts are uncalibrated"
+  },
+  "boundary": "One supervised correction, one new paid simulator action and reusable exact computation; no learned investigator claim"
+}

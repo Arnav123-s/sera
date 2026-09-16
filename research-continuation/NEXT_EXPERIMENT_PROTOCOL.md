@@ -1,5 +1,7 @@
 # Next uncompleted cycle: acquisition from grounded material
 
+V5 continuation update: the latest executed integration is [release 24](24_language_inquiry/report.md). Its [current checklist](24_language_inquiry/checklist.md) prioritizes world-disjoint applicability and informative probing through the actual language/inquiry owner. The broader grounded-material direction below remains open; its older execution priorities must be reconciled with this newer evidence before use.
+
 Status: **future design, not executed or source-frozen**. L10's finite language interface and L11's continuing acquisition/reacquisition cycle are complete. The application is usable for its qualified numerical and sentence families. A09 was executed and rejected against persistence; its older design below is historical.
 
 Start with [the latest release](21_grounded_language/README.md), [source comparison](21_grounded_language/architecture-audit.md), current local HEAD, dirty files, owned jobs and the live resource ledger. The frozen release records the approved extension and its remaining balance; the live ledger takes precedence after subsequent application use. Keep the existing service and all completed cohorts intact.

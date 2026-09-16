@@ -1,0 +1,1018 @@
+[
+  {
+    "operation": "initialize_actual_owner",
+    "response": {
+      "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+      "parent_task_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+      "same_owner": true,
+      "preserved_numerical_tasks": [
+        "calibration_estimator",
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4",
+        "outside_family"
+      ],
+      "paid_new_observations": 0,
+      "restore_observations": 0,
+      "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+      "lessons": [],
+      "situation": "f3f56845eb1753f895ef0c34a8f796395656f15da466c5227aad8db4c1dce3c6",
+      "work": {
+        "ticks": 0,
+        "particle_transitions": 0,
+        "cache_hits": 0,
+        "candidate_inspections": 0,
+        "restore_transitions": 0,
+        "interpretations": 0
+      },
+      "investigations": {},
+      "scope": "Supplied grammar, learned span meanings, learned continuing dynamics; conditional forecasts are uncalibrated"
+    },
+    "revision": 0,
+    "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+    "pointer": {
+      "revision": "000000-b6a7591b9f22.json",
+      "sha256": "b6a7591b9f2256c5d5bed6e29aead3dabd71a6c2dfcb72808fa750d969715d9a"
+    }
+  },
+  {
+    "operation": "ask_compare",
+    "response": {
+      "id": "compare",
+      "text": "predict the position of orbit after push right then wait then push left",
+      "entity": "orbit",
+      "anchor": "current",
+      "interpretation": {
+        "status": "queued",
+        "support": {
+          "entity": "orbit",
+          "field_span": "position",
+          "clauses": [
+            "push right",
+            "wait",
+            "push left"
+          ],
+          "spans": [
+            [
+              36,
+              46
+            ],
+            [
+              52,
+              56
+            ],
+            [
+              62,
+              71
+            ]
+          ],
+          "field_support": [
+            12,
+            20
+          ],
+          "ambiguities": {}
+        },
+        "frame": {
+          "entity": "orbit",
+          "field": "position",
+          "actions": [
+            1,
+            0,
+            -1
+          ]
+        },
+        "alternatives": [
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1,
+                0,
+                -1
+              ]
+            },
+            "proposal_score": 0.9996169587844735
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "velocity",
+              "actions": [
+                1,
+                0,
+                -1
+              ]
+            },
+            "proposal_score": 0.00015653550054280465
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1,
+                0,
+                0
+              ]
+            },
+            "proposal_score": 1.8805956717477668e-05
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            "proposal_score": 1.554965838317267e-05
+          }
+        ],
+        "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+        "confidence_scope": "Uncalibrated interpretation proposal scores",
+        "assumptions": [
+          "supplied surface grammar and entity binding",
+          "control signs act on angular acceleration",
+          "velocity denotes angular displacement per simulator tick"
+        ]
+      },
+      "model": "f3f56845eb1753f895ef0c34a8f796395656f15da466c5227aad8db4c1dce3c6",
+      "status": "queued",
+      "cursor": 0,
+      "states": [
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ]
+      ],
+      "result": null,
+      "last_served": -1,
+      "reason": null,
+      "clarification": null
+    },
+    "revision": 1,
+    "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+    "pointer": {
+      "revision": "000001-6f2b68424668.json",
+      "sha256": "6f2b68424668ce57d5016a25b1d09ad5199562c76b8e459e0fd4f59bc516a3ee"
+    }
+  },
+  {
+    "operation": "ask_historical",
+    "response": {
+      "id": "historical",
+      "text": "predict the position of orbit after push right then wait then push left",
+      "entity": "orbit",
+      "anchor": "historical",
+      "interpretation": {
+        "status": "queued",
+        "support": {
+          "entity": "orbit",
+          "field_span": "position",
+          "clauses": [
+            "push right",
+            "wait",
+            "push left"
+          ],
+          "spans": [
+            [
+              36,
+              46
+            ],
+            [
+              52,
+              56
+            ],
+            [
+              62,
+              71
+            ]
+          ],
+          "field_support": [
+            12,
+            20
+          ],
+          "ambiguities": {}
+        },
+        "frame": {
+          "entity": "orbit",
+          "field": "position",
+          "actions": [
+            1,
+            0,
+            -1
+          ]
+        },
+        "alternatives": [
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1,
+                0,
+                -1
+              ]
+            },
+            "proposal_score": 0.9996169587844735
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "velocity",
+              "actions": [
+                1,
+                0,
+                -1
+              ]
+            },
+            "proposal_score": 0.00015653550054280465
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1,
+                0,
+                0
+              ]
+            },
+            "proposal_score": 1.8805956717477668e-05
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1,
+                -1,
+                -1
+              ]
+            },
+            "proposal_score": 1.554965838317267e-05
+          }
+        ],
+        "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+        "confidence_scope": "Uncalibrated interpretation proposal scores",
+        "assumptions": [
+          "supplied surface grammar and entity binding",
+          "control signs act on angular acceleration",
+          "velocity denotes angular displacement per simulator tick"
+        ]
+      },
+      "model": "f3f56845eb1753f895ef0c34a8f796395656f15da466c5227aad8db4c1dce3c6",
+      "status": "queued",
+      "cursor": 0,
+      "states": [
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ]
+      ],
+      "result": null,
+      "last_served": -1,
+      "reason": null,
+      "clarification": null
+    },
+    "revision": 2,
+    "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+    "pointer": {
+      "revision": "000002-0924694c98dc.json",
+      "sha256": "0924694c98dc69730138cd1c0a2afe36b26d9cff3d2a459086ba0bd2895b3240"
+    }
+  },
+  {
+    "operation": "ask_ambiguous",
+    "response": {
+      "id": "choice",
+      "text": "predict the velocity of orbit after do not wait",
+      "entity": "orbit",
+      "anchor": "current",
+      "interpretation": {
+        "status": "clarification",
+        "support": {
+          "entity": "orbit",
+          "field_span": "velocity",
+          "clauses": [
+            "do not wait"
+          ],
+          "spans": [
+            [
+              36,
+              47
+            ]
+          ],
+          "field_support": [
+            12,
+            20
+          ],
+          "ambiguities": {
+            "0": [
+              -1,
+              1
+            ]
+          }
+        },
+        "frame": {
+          "entity": "orbit",
+          "field": "velocity",
+          "actions": [
+            -1
+          ]
+        },
+        "alternatives": [
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "velocity",
+              "actions": [
+                -1
+              ]
+            },
+            "proposal_score": 0.49993622303009033
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "velocity",
+              "actions": [
+                1
+              ]
+            },
+            "proposal_score": 0.49993622303009033
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                -1
+              ]
+            },
+            "proposal_score": 5.0750881200656295e-05
+          },
+          {
+            "frame": {
+              "entity": "orbit",
+              "field": "position",
+              "actions": [
+                1
+              ]
+            },
+            "proposal_score": 5.0750881200656295e-05
+          }
+        ],
+        "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+        "confidence_scope": "Uncalibrated interpretation proposal scores",
+        "assumptions": [
+          "supplied surface grammar and entity binding",
+          "control signs act on angular acceleration",
+          "velocity denotes angular displacement per simulator tick"
+        ]
+      },
+      "model": "f3f56845eb1753f895ef0c34a8f796395656f15da466c5227aad8db4c1dce3c6",
+      "status": "clarification",
+      "cursor": 0,
+      "states": [
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ],
+        [
+          2.5659967433885265,
+          -0.31746406199930277
+        ]
+      ],
+      "result": null,
+      "last_served": -1,
+      "reason": null,
+      "clarification": null
+    },
+    "revision": 3,
+    "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+    "pointer": {
+      "revision": "000003-bc767d5dd523.json",
+      "sha256": "bc767d5dd5239c25d2813f5c07db2ffe4e5b9a1b28dbef9134dbf7a1a37a44dd"
+    }
+  },
+  {
+    "operation": "pause_after_partial_work",
+    "response": {
+      "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+      "parent_task_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+      "same_owner": true,
+      "preserved_numerical_tasks": [
+        "calibration_estimator",
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4",
+        "outside_family"
+      ],
+      "paid_new_observations": 0,
+      "restore_observations": 0,
+      "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+      "lessons": [],
+      "situation": "f3f56845eb1753f895ef0c34a8f796395656f15da466c5227aad8db4c1dce3c6",
+      "work": {
+        "ticks": 2,
+        "particle_transitions": 7,
+        "cache_hits": 1,
+        "candidate_inspections": 4,
+        "restore_transitions": 0,
+        "interpretations": 3
+      },
+      "investigations": {
+        "compare": {
+          "status": "paused",
+          "progress": 1,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": null
+        },
+        "historical": {
+          "status": "running",
+          "progress": 1,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": null
+        },
+        "choice": {
+          "status": "clarification",
+          "progress": 0,
+          "text": "predict the velocity of orbit after do not wait",
+          "result": null
+        }
+      },
+      "scope": "Supplied grammar, learned span meanings, learned continuing dynamics; conditional forecasts are uncalibrated"
+    },
+    "revision": 4,
+    "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+    "pointer": {
+      "revision": "000004-975a57623dde.json",
+      "sha256": "975a57623dde29f8a919475d8125ef369d0844af4603aad24640d64903e0800a"
+    }
+  },
+  {
+    "operation": "restored_and_completed",
+    "response": {
+      "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+      "parent_task_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+      "same_owner": true,
+      "preserved_numerical_tasks": [
+        "calibration_estimator",
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4",
+        "outside_family"
+      ],
+      "paid_new_observations": 0,
+      "restore_observations": 0,
+      "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+      "lessons": [],
+      "situation": "f3f56845eb1753f895ef0c34a8f796395656f15da466c5227aad8db4c1dce3c6",
+      "work": {
+        "ticks": 7,
+        "particle_transitions": 21,
+        "cache_hits": 4,
+        "candidate_inspections": 14,
+        "restore_transitions": 21,
+        "interpretations": 3
+      },
+      "investigations": {
+        "compare": {
+          "status": "complete",
+          "progress": 3,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "position",
+            "value": [
+              0.1063453600009463,
+              0.4235416895167666
+            ],
+            "parameter_variance": [
+              0.0017146774162444102,
+              5.4421210757808435e-05
+            ],
+            "units": "m",
+            "actions": [
+              1,
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "historical": {
+          "status": "complete",
+          "progress": 3,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "position",
+            "value": [
+              0.1063453600009463,
+              0.4235416895167666
+            ],
+            "parameter_variance": [
+              0.0017146774162444102,
+              5.4421210757808435e-05
+            ],
+            "units": "m",
+            "actions": [
+              1,
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "choice": {
+          "status": "complete",
+          "progress": 1,
+          "text": "predict the velocity of orbit after do not wait",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "velocity",
+            "value": [
+              -0.3517359475068976
+            ],
+            "parameter_variance": [
+              5.303803933037142e-05
+            ],
+            "units": "rad/tick",
+            "actions": [
+              1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        }
+      },
+      "scope": "Supplied grammar, learned span meanings, learned continuing dynamics; conditional forecasts are uncalibrated"
+    },
+    "revision": 5,
+    "owner": "ea914148e630ffd8a21b20b9474361333ed1fe194ae72f613dde1328d9e132f2",
+    "pointer": {
+      "revision": "000005-ed6e7ad6c214.json",
+      "sha256": "ed6e7ad6c214c300b93f5a8d87f294f2dca0b1fd95633d57d77d59faca1a0ed7"
+    }
+  },
+  {
+    "operation": "execute_one_local_simulator_action",
+    "response": {
+      "executed_first_control": 1,
+      "observation": {
+        "action": 1,
+        "position": [
+          -0.26714019409785056,
+          0.2788575229932525
+        ],
+        "time": 85,
+        "origin": "paid_local_simulator_sensor",
+        "owner": "8caf4c634750954200c3f107913ed590e2cedb087bc359cb302c7af22171eb45",
+        "changed_situation": "f55a697cb264462e9bc13d7804908af52b34d125b7533681a5e9427f7848c437"
+      },
+      "scope": "One authorized local simulator action; remaining plan needs a new current-state investigation"
+    },
+    "revision": 6,
+    "owner": "8caf4c634750954200c3f107913ed590e2cedb087bc359cb302c7af22171eb45",
+    "pointer": {
+      "revision": "000006-d83b11d6e29f.json",
+      "sha256": "d83b11d6e29f9f49b13528063eb0f89f1e02baa5b60fc21afebfe2df9cc1b529"
+    }
+  },
+  {
+    "operation": "explicit_rebase_after_real_observation",
+    "response": {
+      "owner": "8caf4c634750954200c3f107913ed590e2cedb087bc359cb302c7af22171eb45",
+      "parent_task_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+      "same_owner": true,
+      "preserved_numerical_tasks": [
+        "calibration_estimator",
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4",
+        "outside_family"
+      ],
+      "paid_new_observations": 1,
+      "restore_observations": 1,
+      "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+      "lessons": [],
+      "situation": "f55a697cb264462e9bc13d7804908af52b34d125b7533681a5e9427f7848c437",
+      "work": {
+        "ticks": 10,
+        "particle_transitions": 42,
+        "cache_hits": 4,
+        "candidate_inspections": 17,
+        "restore_transitions": 203,
+        "interpretations": 4
+      },
+      "investigations": {
+        "historical": {
+          "status": "complete",
+          "progress": 3,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "position",
+            "value": [
+              0.1063453600009463,
+              0.4235416895167666
+            ],
+            "parameter_variance": [
+              0.0017146774162444102,
+              5.4421210757808435e-05
+            ],
+            "units": "m",
+            "actions": [
+              1,
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "choice": {
+          "status": "stale",
+          "progress": 1,
+          "text": "predict the velocity of orbit after do not wait",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "velocity",
+            "value": [
+              -0.3517359475068976
+            ],
+            "parameter_variance": [
+              5.303803933037142e-05
+            ],
+            "units": "rad/tick",
+            "actions": [
+              1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "compare": {
+          "status": "complete",
+          "progress": 3,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "position",
+            "value": [
+              0.4542577148507031,
+              0.4123161042699011
+            ],
+            "parameter_variance": [
+              0.0016582262484577948,
+              0.00010207399597894241
+            ],
+            "units": "m",
+            "actions": [
+              1,
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        }
+      },
+      "scope": "Supplied grammar, learned span meanings, learned continuing dynamics; conditional forecasts are uncalibrated"
+    },
+    "revision": 7,
+    "owner": "8caf4c634750954200c3f107913ed590e2cedb087bc359cb302c7af22171eb45",
+    "pointer": {
+      "revision": "000007-71370cab7222.json",
+      "sha256": "71370cab72227823dc4e664dcdde3dcc7fa3463b0ad2638b71c5b6e89de1f213"
+    }
+  },
+  {
+    "operation": "unknown_phrase_withheld",
+    "response": {
+      "id": "before_lesson",
+      "text": "predict the position of orbit after coast",
+      "entity": "orbit",
+      "anchor": "current",
+      "interpretation": {
+        "status": "rejected",
+        "reason": "Unsupported span meaning; a labeled lesson or clarification is required",
+        "parser": "e20b5827d80cccf966f75b8d50c81d2988953ca3a95d5505a535c274420e2846",
+        "alternatives": []
+      },
+      "model": "f55a697cb264462e9bc13d7804908af52b34d125b7533681a5e9427f7848c437",
+      "status": "rejected",
+      "cursor": 0,
+      "states": [
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ],
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ],
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ],
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ],
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ],
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ],
+        [
+          2.2187418821562006,
+          -0.34725486123232585
+        ]
+      ],
+      "result": null,
+      "last_served": -1,
+      "reason": "Unsupported span meaning; a labeled lesson or clarification is required",
+      "clarification": null
+    },
+    "revision": 8,
+    "owner": "8caf4c634750954200c3f107913ed590e2cedb087bc359cb302c7af22171eb45",
+    "pointer": {
+      "revision": "000008-704e7a22db0e.json",
+      "sha256": "704e7a22db0e83dd5ad930f76b0ca6674552cc26da06619778df8318924d8996"
+    }
+  },
+  {
+    "operation": "supervised_correction",
+    "response": {
+      "phrase": "coast",
+      "action": 0,
+      "admitted": true,
+      "steps": 80,
+      "new_labels": 1,
+      "replayed_labels": 13,
+      "presentations": 1120,
+      "old_correct": 13,
+      "old_count": 13,
+      "new_correct": true,
+      "parent_parser": "a1f8910f31e130f48f0054bc4f06b97a5f65bdca93e819d894e8494325f011b8",
+      "scope": "One supplied supervised correction with replay; no lifelong or learning-to-learn claim"
+    },
+    "revision": 9,
+    "owner": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+    "pointer": {
+      "revision": "000009-47914b9a14da.json",
+      "sha256": "47914b9a14dab10e57dd26a6457c70edeb834752f7a8c4ee1892a9fe89439bf1"
+    }
+  },
+  {
+    "operation": "new_word_used_and_unfinished_work_preserved",
+    "response": {
+      "owner": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+      "parent_task_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+      "same_owner": true,
+      "preserved_numerical_tasks": [
+        "calibration_estimator",
+        "calibration_source_1",
+        "calibration_source_2",
+        "calibration_source_3",
+        "calibration_source_4",
+        "outside_family"
+      ],
+      "paid_new_observations": 1,
+      "restore_observations": 1,
+      "parser": "6d091e9d0250e0ee77a9e02b735a1be01e4a8172ac88f932f2dd977b273d0f20",
+      "lessons": [
+        {
+          "phrase": "coast",
+          "action": 0,
+          "admitted": true,
+          "steps": 80,
+          "new_labels": 1,
+          "replayed_labels": 13,
+          "presentations": 1120,
+          "old_correct": 13,
+          "old_count": 13,
+          "new_correct": true,
+          "parent_parser": "a1f8910f31e130f48f0054bc4f06b97a5f65bdca93e819d894e8494325f011b8",
+          "scope": "One supplied supervised correction with replay; no lifelong or learning-to-learn claim"
+        }
+      ],
+      "situation": "f55a697cb264462e9bc13d7804908af52b34d125b7533681a5e9427f7848c437",
+      "work": {
+        "ticks": 13,
+        "particle_transitions": 56,
+        "cache_hits": 5,
+        "candidate_inspections": 20,
+        "restore_transitions": 511,
+        "interpretations": 7
+      },
+      "investigations": {
+        "historical": {
+          "status": "complete",
+          "progress": 3,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "position",
+            "value": [
+              0.1063453600009463,
+              0.4235416895167666
+            ],
+            "parameter_variance": [
+              0.0017146774162444102,
+              5.4421210757808435e-05
+            ],
+            "units": "m",
+            "actions": [
+              1,
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "choice": {
+          "status": "stale",
+          "progress": 1,
+          "text": "predict the velocity of orbit after do not wait",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "velocity",
+            "value": [
+              -0.3517359475068976
+            ],
+            "parameter_variance": [
+              5.303803933037142e-05
+            ],
+            "units": "rad/tick",
+            "actions": [
+              1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "compare": {
+          "status": "stale",
+          "progress": 3,
+          "text": "predict the position of orbit after push right then wait then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "position",
+            "value": [
+              0.4542577148507031,
+              0.4123161042699011
+            ],
+            "parameter_variance": [
+              0.0016582262484577948,
+              0.00010207399597894241
+            ],
+            "units": "m",
+            "actions": [
+              1,
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        },
+        "before_lesson": {
+          "status": "rejected",
+          "progress": 0,
+          "text": "predict the position of orbit after coast",
+          "result": null
+        },
+        "unfinished": {
+          "status": "paused",
+          "progress": 1,
+          "text": "predict the position of orbit after coast then push right then wait",
+          "result": null
+        },
+        "ready": {
+          "status": "complete",
+          "progress": 2,
+          "text": "predict the velocity of orbit after coast then push left",
+          "result": {
+            "kind": "conditional_prediction",
+            "status": "CONDITIONAL_UNCALIBRATED",
+            "field": "velocity",
+            "value": [
+              -0.16938115412181845
+            ],
+            "parameter_variance": [
+              0.0005781447376631318
+            ],
+            "units": "rad/tick",
+            "actions": [
+              0,
+              -1
+            ],
+            "uncertainty_scope": "Parameter quadrature only; process noise, parser mistakes and omitted mechanisms are not calibrated",
+            "applicability": "No GG-GUARD-002 threshold or physical validity guarantee inherited"
+          }
+        }
+      },
+      "scope": "Supplied grammar, learned span meanings, learned continuing dynamics; conditional forecasts are uncalibrated"
+    },
+    "revision": 10,
+    "owner": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+    "pointer": {
+      "revision": "000010-d34d7d191a24.json",
+      "sha256": "d34d7d191a24f11aeed78e0d37ec78ade2482dae9fd0735f4e5391e0ec21c4e4"
+    }
+  }
+]

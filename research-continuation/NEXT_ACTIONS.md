@@ -1,5 +1,15 @@
 # Execution checklist
 
+Current continuation: [v5 shared-owner language and inquiry](24_language_inquiry/report.md). The [usable runner and exact commands](24_language_inquiry/README.md) restore `runs/sera-inquiry`; its `unfinished` node is paused after one of three steps. Older completed cohorts below remain historical evidence.
+
+- [x] Reconcile and unpack v5, verify relevant evidence once, preserve the strict portability failure.
+- [x] Connect learned span semantics, the existing shared owner and continuing situation to persistent conditional investigations.
+- [x] Complete six prospective interface fits, twelve new world lifetimes, independent consequence checks and 283 passing local tests.
+- [x] Preserve unfinished work, observe one executed simulator control, acquire one supplied word correction and explicitly migrate unchanged learned state.
+- [ ] Freeze fresh world-disjoint applicability and informative-probing comparisons; retain GG-GUARD-002's separate contract and the exposed final-bank boundary.
+
+The release records 400.102 seconds of supervised work, including failures, and 562.806 seconds remaining in the existing local allowance. Read the live ledger before reserving another job; this is a recorded balance, not a new grant.
+
 - [x] Read the full user-adopted handoff and preserve both source archives.
 - [x] Verify both archive manifests and detect the duplicated baseline.
 - [x] Inspect Kavi at its pinned commit; execute its 321 tests.

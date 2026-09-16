@@ -1,5 +1,11 @@
 # Research decisions
 
+## 2026-09-16 — V5 actual-owner language and investigation
+
+I keep the finite shared-owner language/investigation route usable after prospective interpretation/consequence evaluation, independent arithmetic checks, persistent execution and 283 passing tests. Sentence structure, entity binding and scheduling are supplied. The inherited owner gains a learned span interface; one later word correction and one paid simulator action are preserved without replacing earlier stores. See [release 24](24_language_inquiry/report.md).
+
+Correct interpretation does not rescue an outdated world model at a hidden response change. New observations improve the forecasts; omitted-torque errors remain. The next research gate is fresh applicability and informative investigation, not another exposed-bank parser adjustment or a claim of learned eta. Exact prefix reuse stays classified as engineering. The packet's strict floating-point replay failure, all implementation failures and their costs remain recorded.
+
 ## 2026-09-14 — Resume the full research handoff
 
 I am continuing the main SERA/Kavi program in the order specified in the full handoff. The earlier parameter-cloud study is retained as an optional R7 branch, with its source, checkpoints, negative results and replay records. Its nonlinear follow-up has not been started.

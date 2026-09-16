@@ -1,0 +1,87 @@
+{
+  "first_failed_model": "drag-0-frozen_linear",
+  "float_differences": 47,
+  "largest_differences": [
+    {
+      "path": "/alarms/10",
+      "expected": 1.6867300861318877,
+      "actual": 1.6867300861329126,
+      "absolute_difference": 1.0249578963339445e-12
+    },
+    {
+      "path": "/alarms/24",
+      "expected": 1.5536991472975956,
+      "actual": 1.553699147298582,
+      "absolute_difference": 9.86322135076989e-13
+    },
+    {
+      "path": "/models/1/log_weight",
+      "expected": -1.1059675487357254,
+      "actual": -1.105967548734759,
+      "absolute_difference": 9.663381206337363e-13
+    },
+    {
+      "path": "/alarms/11",
+      "expected": 1.18606485268014,
+      "actual": 1.1860648526809927,
+      "absolute_difference": 8.526512829121202e-13
+    },
+    {
+      "path": "/alarms/16",
+      "expected": 1.0289428697835385,
+      "actual": 1.028942869784329,
+      "absolute_difference": 7.904787935331115e-13
+    },
+    {
+      "path": "/alarms/28",
+      "expected": 1.0279877939907902,
+      "actual": 1.0279877939915798,
+      "absolute_difference": 7.895906151134113e-13
+    },
+    {
+      "path": "/alarms/23",
+      "expected": 0.9849398745734241,
+      "actual": 0.9849398745742044,
+      "absolute_difference": 7.8026474170656e-13
+    },
+    {
+      "path": "/alarms/27",
+      "expected": 0.969164126750966,
+      "actual": 0.9691641267517275,
+      "absolute_difference": 7.615019725903949e-13
+    },
+    {
+      "path": "/alarms/13",
+      "expected": 0.962759095177271,
+      "actual": 0.9627590951780278,
+      "absolute_difference": 7.568390358869692e-13
+    },
+    {
+      "path": "/alarms/14",
+      "expected": 0.9439466394513274,
+      "actual": 0.9439466394520825,
+      "absolute_difference": 7.55062679047569e-13
+    },
+    {
+      "path": "/alarms/26",
+      "expected": 0.911591167863106,
+      "actual": 0.911591167863849,
+      "absolute_difference": 7.429612480791548e-13
+    },
+    {
+      "path": "/alarms/25",
+      "expected": 0.8842744399675252,
+      "actual": 0.8842744399682674,
+      "absolute_difference": 7.421840919619171e-13
+    }
+  ],
+  "maximum_absolute_difference": 1.0249578963339445e-12,
+  "discrete_differences": [],
+  "original_strict_replay": "FAILED_PRESERVED",
+  "interpretation": "Diagnostic reconstruction only. The exact checker is unchanged; no broader v5 replay pass is claimed.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "torch": "2.10.0+cpu"
+  }
+}
