@@ -1,0 +1,142 @@
+{
+  "status": "COMPLETE",
+  "config": {
+    "seed": 151027,
+    "scope": "shared",
+    "scratch": false,
+    "steps": 600,
+    "batch": 32,
+    "train": 4096,
+    "development": 256,
+    "learning_rate": 0.003,
+    "checkpoint_every": 100,
+    "pilot": false
+  },
+  "protocol_sha256": "384e389c549a38c5e7a622cf78ebd67f56ba4eab5b383832782ba2514888b531",
+  "initial_owner": "c0e18378fc20d96f0ce51cdef0e07b7aa0fe0652ab81fbc240af5f2f8c7d7887",
+  "selected_owner": "ecf9532a2f6fca9519c5ec1f61245a5a3b5397359af69d96e2005c14591fe0c5",
+  "shared_owner_aliases": true,
+  "owner_settings": {
+    "width": 256,
+    "heads": 8,
+    "memory_dim": 32,
+    "kind": "delta"
+  },
+  "metrics": {
+    "known": {
+      "examples": 512,
+      "joint_cross_entropy": 0.0002735486530127673,
+      "exact_translation": 1.0,
+      "answer_accuracy": 1.0,
+      "slot_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 1.0,
+      "accepted_answer_accuracy": 1.0,
+      "threshold": 0.0,
+      "unique_texts": 501,
+      "unique_semantic_triples": 235
+    },
+    "novel": {
+      "examples": 512,
+      "joint_cross_entropy": 12.28603594807646,
+      "exact_translation": 0.03125,
+      "answer_accuracy": 0.091796875,
+      "slot_accuracy": [
+        0.51953125,
+        0.2109375,
+        0.45703125,
+        1.0
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 0.03125,
+      "accepted_answer_accuracy": 0.091796875,
+      "threshold": 0.0,
+      "unique_texts": 480,
+      "unique_semantic_triples": 231
+    },
+    "memory_reset": {
+      "examples": 512,
+      "joint_cross_entropy": 14.184889480471611,
+      "exact_translation": 0.00390625,
+      "answer_accuracy": 0.099609375,
+      "slot_accuracy": [
+        0.6796875,
+        0.2109375,
+        0.10546875,
+        0.1953125
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 0.00390625,
+      "accepted_answer_accuracy": 0.099609375,
+      "threshold": 0.0,
+      "unique_texts": 501,
+      "unique_semantic_triples": 235
+    }
+  },
+  "calibration": {
+    "threshold": 0.0,
+    "accepted": 512,
+    "calibration_examples": 512,
+    "empirical_accuracy": 1.0
+  },
+  "trainable_parameters": 435508,
+  "training_draws": 19200,
+  "checkpoints": [
+    {
+      "path": "runs/grounded-language/L10-FINAL-151027-shared/step-00100.pt",
+      "sha256": "9957fbd9e96fa5378a07e9652d63178c632014e61144742bf38404ab851aa133",
+      "bytes": 6972387,
+      "step": 100
+    },
+    {
+      "path": "runs/grounded-language/L10-FINAL-151027-shared/step-00200.pt",
+      "sha256": "45d2dfc949475b388b21bac4e9a836c413b179c5a69f8704eb1a2d3b2cb93596",
+      "bytes": 6975523,
+      "step": 200
+    },
+    {
+      "path": "runs/grounded-language/L10-FINAL-151027-shared/step-00300.pt",
+      "sha256": "058d0f97ccef17ea7ef3084494b68ff5eafff0d71d1d7bd7ba9fa6bad07602ab",
+      "bytes": 6978659,
+      "step": 300
+    },
+    {
+      "path": "runs/grounded-language/L10-FINAL-151027-shared/step-00400.pt",
+      "sha256": "05e37837b5ae7369ce2bf91f585ff1a10faa4932aa025e3ca24c0c0abf043aaf",
+      "bytes": 6981859,
+      "step": 400
+    },
+    {
+      "path": "runs/grounded-language/L10-FINAL-151027-shared/step-00500.pt",
+      "sha256": "cb45dd557ced21f4838c47e06701d1644aa4b5b35707aff3be1d0e7c0de74f0c",
+      "bytes": 6985059,
+      "step": 500
+    },
+    {
+      "path": "runs/grounded-language/L10-FINAL-151027-shared/step-00600.pt",
+      "sha256": "933d4d8b9a759295a523c21d3fe7f129c45edf3959c380478f8c361ad98c914b",
+      "bytes": 6988259,
+      "step": 600
+    }
+  ],
+  "selected_checkpoint": {
+    "path": "runs/grounded-language/L10-FINAL-151027-shared/selected.pt",
+    "sha256": "11da11e1214006ccd4d277ec3c871913325c53e41b1e52a0d9f6228ae004ed8d"
+  },
+  "worker_seconds_this_invocation": 91.56955319999543,
+  "language_source": "0d2d38983e8ae6e2cc9f8f2e5e0d6fb6d677c02d436a2d6ef2493e5e36228287",
+  "vocabulary_size": 45,
+  "qualified": null,
+  "qualification_boundary": "Retention and independent audit are still required; final metrics are not a deployment decision."
+}

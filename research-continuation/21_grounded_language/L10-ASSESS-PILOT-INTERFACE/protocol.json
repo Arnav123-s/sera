@@ -1,0 +1,17 @@
+{
+  "source": "L10-PILOT-INTERFACE",
+  "source_result_sha256": "2b71fb55ddeaf3a5765d6573aee693200ec06bea0e9c1e30c2ab5512312bfc9e",
+  "final": false,
+  "seed": 160001,
+  "lesson_steps": 120,
+  "retention_samples": 128,
+  "novel_word_examples": 48,
+  "novel_wording_examples": 192,
+  "lesson_selection": "Lowest development cross-entropy; gate at .99 development exact translation; final is read only after learning.",
+  "guard": "Supplied sentence shape support + explicit vocabulary admission + previously selected confidence filter.",
+  "sources": {
+    "assessment.py": "eab15c6ac7445f2689865936548094b34692241b26cc7c092cae62f76bf17523",
+    "acquisition.py": "d258ca2131377e99191695c32a3a5f7537643033a43dd65e43c085cec34e917a"
+  },
+  "claims": "Neither lexical admission nor the supplied curriculum demonstrates general English or learned eta."
+}

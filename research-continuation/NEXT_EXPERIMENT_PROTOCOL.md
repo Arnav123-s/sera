@@ -1,3 +1,18 @@
+# Next uncompleted cycle: acquisition from grounded material
+
+Status: **future design, not executed or source-frozen**. L10's finite language interface and L11's continuing acquisition/reacquisition cycle are complete. The application is usable for its qualified numerical and sentence families. A09 was executed and rejected against persistence; its older design below is historical.
+
+Start with [the latest release](21_grounded_language/README.md), [source comparison](21_grounded_language/architecture-audit.md), current local HEAD, dirty files, owned jobs and the live resource ledger. The frozen release records the approved extension and its remaining balance; the live ledger takes precedence after subsequent application use. Keep the existing service and all completed cohorts intact.
+
+The next question is whether the persistent learner can acquire a new executable transformation or instruction form from external grounded material with recorded provenance, rather than exclusively from the supplied sentence generator. Distinguish finding a relevant source from learning its contents. A retrieved rule executed directly is an explicit symbolic control, not learned language comprehension. Keep source-provided examples, learned representations and independent tests distinct.
+
+Before final cases, measure development cost, define genuinely new supported and omitted mechanisms, freeze source versions, candidate choices, access limits, primary success/coverage/error criteria and independent semantic partitions. Compare no new evidence, supplied examples, retrieved examples, strongest direct symbolic execution and a matched fresh learner. Include retrieval, supervision, fitting, proof/verification, failed attempts and reacquisition costs. Do not tune on L10/L11 final data.
+
+Use one actual continuing owner through success, correction, forgetting and later reacquisition; independent lifetime replicates remain separate. Changing a shared representation needs a retained-behavior gate or explicitly accepted/quantified forgetting. Protect the useful application until the new route earns integration. General paper understanding, prerequisite planning, mathematical proof discovery and independently improved eta remain open; a narrow task does not complete those requirements.
+
+<details>
+<summary>Preserved earlier A09 proposal and preceding protocols — historical</summary>
+
 # Next uncompleted cycle: independently improved learning procedure
 
 Status: **A09 design is proposed, not executed or frozen**. The A08 control component has completed two development candidates, a prospective study, independent audit and persistent integration. Its uncertainty remains incomplete; no completed A06/A08 bank is a new final holdout.
@@ -118,6 +133,8 @@ Investigator eta training, old/new K × old/new eta, successive generations and 
 ```
 
 Use a fresh output directory. The replay helper restores the original frozen source; the current independent auditor includes the explicitly documented repairs. Exact replay requires the recorded numerical runtime.
+
+</details>
 
 </details>
 

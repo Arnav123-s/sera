@@ -1,0 +1,2920 @@
+{
+  "retention": {
+    "groups": 61,
+    "drops": {
+      "world/permutation-940000/prediction": 0.0,
+      "world/permutation-940000/control": 0.0,
+      "legacy/marked_retrieval": 0.0,
+      "legacy/latest_binding": 0.0,
+      "legacy/ordered_control": 0.0,
+      "legacy/majority": 0.0,
+      "legacy/earliest_binding": 0.0,
+      "typed/test-id/modular_sum": 0.0,
+      "typed/test-id/spatial_relation": 0.0,
+      "typed/test-id/byte_sum": 0.0,
+      "typed/test-id/patch_quadrant": 0.0,
+      "typed/test-id/tone": 0.0,
+      "typed/test-id/motion": 0.0,
+      "typed/test-id/binding": 0.0,
+      "typed/test-extent/modular_sum": 0.0,
+      "typed/test-extent/spatial_relation": 0.0,
+      "typed/test-extent/byte_sum": 0.0,
+      "typed/test-extent/patch_quadrant": 0.0,
+      "typed/test-extent/tone": 0.0,
+      "typed/test-extent/motion": 0.0,
+      "typed/test-extent/binding": 0.0,
+      "typed/test-composition/modular_sum": 0.0,
+      "typed/test-composition/spatial_relation": 0.0,
+      "typed/test-composition/byte_sum": 0.0,
+      "typed/test-composition/patch_quadrant": 0.0,
+      "typed/test-composition/tone": 0.0,
+      "typed/test-composition/motion": 0.0,
+      "typed/test-composition/binding": 0.0,
+      "instructed-earliest/ordinary/accuracy": 0.0,
+      "instructed-earliest/ordinary/calibration": 0.0,
+      "instructed-earliest/long/accuracy": 0.0,
+      "instructed-earliest/long/calibration": 0.0,
+      "instructed-earliest/composition/accuracy": 0.0,
+      "instructed-earliest/composition/calibration": 0.0,
+      "instructed-latest/ordinary/accuracy": 0.0,
+      "instructed-latest/ordinary/calibration": 0.0,
+      "instructed-latest/long/accuracy": 0.0,
+      "instructed-latest/long/calibration": 0.0,
+      "instructed-latest/composition/accuracy": 0.0,
+      "instructed-latest/composition/calibration": 0.0,
+      "neural/test-id/modular_sum": 0.0,
+      "neural/test-id/spatial_relation": 0.0,
+      "neural/test-id/byte_sum": 0.0,
+      "neural/test-id/patch_quadrant": 0.0,
+      "neural/test-id/tone": 0.0,
+      "neural/test-id/motion": 0.0,
+      "neural/test-id/binding": 0.0,
+      "neural/test-extent/modular_sum": 0.0,
+      "neural/test-extent/spatial_relation": 0.0,
+      "neural/test-extent/byte_sum": 0.0,
+      "neural/test-extent/patch_quadrant": 0.0,
+      "neural/test-extent/tone": 0.0,
+      "neural/test-extent/motion": 0.0,
+      "neural/test-extent/binding": 0.0,
+      "neural/test-composition/modular_sum": 0.0,
+      "neural/test-composition/spatial_relation": 0.0,
+      "neural/test-composition/byte_sum": 0.0,
+      "neural/test-composition/patch_quadrant": 0.0,
+      "neural/test-composition/tone": 0.0,
+      "neural/test-composition/motion": 0.0,
+      "neural/test-composition/binding": 0.0
+    },
+    "maximum_drop": 0.0,
+    "exact_scores_equal": true,
+    "seed": 161028
+  },
+  "word": {
+    "before": {
+      "examples": 512,
+      "joint_cross_entropy": 0.5230083005517372,
+      "exact_translation": 0.830078125,
+      "answer_accuracy": 0.845703125,
+      "slot_accuracy": [
+        0.8828125,
+        0.98046875,
+        0.96484375,
+        0.998046875
+      ],
+      "formal_checks": 512,
+      "accepted": 0,
+      "coverage": 0.0,
+      "accepted_translation_accuracy": null,
+      "accepted_answer_accuracy": null,
+      "threshold": 0.0,
+      "unique_texts": 488,
+      "unique_semantic_triples": 228
+    },
+    "after": {
+      "examples": 512,
+      "joint_cross_entropy": 0.002458547137393907,
+      "exact_translation": 1.0,
+      "answer_accuracy": 1.0,
+      "slot_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 1.0,
+      "accepted_answer_accuracy": 1.0,
+      "threshold": 0.0,
+      "unique_texts": 488,
+      "unique_semantic_triples": 228
+    },
+    "known_retention": {
+      "examples": 512,
+      "joint_cross_entropy": 0.0005329654803745143,
+      "exact_translation": 1.0,
+      "answer_accuracy": 1.0,
+      "slot_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 1.0,
+      "accepted_answer_accuracy": 1.0,
+      "threshold": 0.0,
+      "unique_texts": 502,
+      "unique_semantic_triples": 231
+    },
+    "acquisition": {
+      "kind": "word",
+      "steps": 240,
+      "teaching_examples": 48,
+      "teaching_draws": 3840,
+      "new_steps": 240,
+      "development": {
+        "examples": 128,
+        "joint_cross_entropy": 0.0011571434479265008,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 128,
+        "accepted": 0,
+        "coverage": 0.0,
+        "accepted_translation_accuracy": null,
+        "accepted_answer_accuracy": null,
+        "threshold": 0.0,
+        "unique_texts": 127,
+        "unique_semantic_triples": 96
+      },
+      "admitted": true,
+      "changed_tensors": {
+        "language_embedding.weight": 256
+      },
+      "changed_scalars": 256,
+      "history": [
+        {
+          "step": 1,
+          "loss": 0.4332787096500397
+        },
+        {
+          "step": 2,
+          "loss": 0.006179440766572952
+        },
+        {
+          "step": 3,
+          "loss": 0.015368695370852947
+        },
+        {
+          "step": 4,
+          "loss": 0.001637288136407733
+        },
+        {
+          "step": 5,
+          "loss": 0.001148669165559113
+        },
+        {
+          "step": 6,
+          "loss": 0.0037761260755360126
+        },
+        {
+          "step": 7,
+          "loss": 0.002331688767299056
+        },
+        {
+          "step": 8,
+          "loss": 0.0035140893887728453
+        },
+        {
+          "step": 9,
+          "loss": 0.0772862508893013
+        },
+        {
+          "step": 10,
+          "loss": 0.0011761767091229558
+        },
+        {
+          "step": 11,
+          "loss": 0.002709926338866353
+        },
+        {
+          "step": 12,
+          "loss": 0.06962943077087402
+        },
+        {
+          "step": 13,
+          "loss": 0.01708907261490822
+        },
+        {
+          "step": 14,
+          "loss": 0.006115513388067484
+        },
+        {
+          "step": 15,
+          "loss": 0.007929449900984764
+        },
+        {
+          "step": 16,
+          "loss": 0.001964965835213661
+        },
+        {
+          "step": 17,
+          "loss": 0.014186713844537735
+        },
+        {
+          "step": 18,
+          "loss": 0.04045720398426056
+        },
+        {
+          "step": 19,
+          "loss": 0.009978207759559155
+        },
+        {
+          "step": 20,
+          "loss": 0.032014112919569016,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0189995506334526,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 21,
+          "loss": 0.0037621017545461655
+        },
+        {
+          "step": 22,
+          "loss": 0.004284298978745937
+        },
+        {
+          "step": 23,
+          "loss": 0.003593430621549487
+        },
+        {
+          "step": 24,
+          "loss": 0.0036056407261639833
+        },
+        {
+          "step": 25,
+          "loss": 0.0016968660056591034
+        },
+        {
+          "step": 26,
+          "loss": 0.005788728594779968
+        },
+        {
+          "step": 27,
+          "loss": 0.0035268773790448904
+        },
+        {
+          "step": 28,
+          "loss": 0.011184480041265488
+        },
+        {
+          "step": 29,
+          "loss": 0.010563078336417675
+        },
+        {
+          "step": 30,
+          "loss": 0.0015742627438157797
+        },
+        {
+          "step": 31,
+          "loss": 0.004136739764362574
+        },
+        {
+          "step": 32,
+          "loss": 0.03434956073760986
+        },
+        {
+          "step": 33,
+          "loss": 0.003686170093715191
+        },
+        {
+          "step": 34,
+          "loss": 0.003308749757707119
+        },
+        {
+          "step": 35,
+          "loss": 0.002245720010250807
+        },
+        {
+          "step": 36,
+          "loss": 0.002648815978318453
+        },
+        {
+          "step": 37,
+          "loss": 0.0018428948242217302
+        },
+        {
+          "step": 38,
+          "loss": 0.0012619500048458576
+        },
+        {
+          "step": 39,
+          "loss": 0.013460944406688213
+        },
+        {
+          "step": 40,
+          "loss": 0.0022127307020127773,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.005741826269513695,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 41,
+          "loss": 0.0022777696140110493
+        },
+        {
+          "step": 42,
+          "loss": 0.0060966648161411285
+        },
+        {
+          "step": 43,
+          "loss": 0.0042787278071045876
+        },
+        {
+          "step": 44,
+          "loss": 0.004862133413553238
+        },
+        {
+          "step": 45,
+          "loss": 0.0026233233511447906
+        },
+        {
+          "step": 46,
+          "loss": 0.004013686440885067
+        },
+        {
+          "step": 47,
+          "loss": 0.0031456693541258574
+        },
+        {
+          "step": 48,
+          "loss": 0.0018898637499660254
+        },
+        {
+          "step": 49,
+          "loss": 0.006687506102025509
+        },
+        {
+          "step": 50,
+          "loss": 0.002595516387373209
+        },
+        {
+          "step": 51,
+          "loss": 0.002273913938552141
+        },
+        {
+          "step": 52,
+          "loss": 0.001294803456403315
+        },
+        {
+          "step": 53,
+          "loss": 0.00639745406806469
+        },
+        {
+          "step": 54,
+          "loss": 0.002890730509534478
+        },
+        {
+          "step": 55,
+          "loss": 0.002559754066169262
+        },
+        {
+          "step": 56,
+          "loss": 0.002980474615469575
+        },
+        {
+          "step": 57,
+          "loss": 0.003328152233734727
+        },
+        {
+          "step": 58,
+          "loss": 0.0033229594118893147
+        },
+        {
+          "step": 59,
+          "loss": 0.001707086805254221
+        },
+        {
+          "step": 60,
+          "loss": 0.0027644166257232428,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0055524775525555015,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 61,
+          "loss": 0.0023901299573481083
+        },
+        {
+          "step": 62,
+          "loss": 0.0012245781254023314
+        },
+        {
+          "step": 63,
+          "loss": 0.0014585251919925213
+        },
+        {
+          "step": 64,
+          "loss": 0.0018965131603181362
+        },
+        {
+          "step": 65,
+          "loss": 0.0024228098336607218
+        },
+        {
+          "step": 66,
+          "loss": 0.0018620919436216354
+        },
+        {
+          "step": 67,
+          "loss": 0.0018646854441612959
+        },
+        {
+          "step": 68,
+          "loss": 0.001836343901231885
+        },
+        {
+          "step": 69,
+          "loss": 0.0010867868550121784
+        },
+        {
+          "step": 70,
+          "loss": 0.0020650774240493774
+        },
+        {
+          "step": 71,
+          "loss": 0.0015608728863298893
+        },
+        {
+          "step": 72,
+          "loss": 0.0027782388497143984
+        },
+        {
+          "step": 73,
+          "loss": 0.0016115665202960372
+        },
+        {
+          "step": 74,
+          "loss": 0.001406775671057403
+        },
+        {
+          "step": 75,
+          "loss": 0.0008923924760892987
+        },
+        {
+          "step": 76,
+          "loss": 0.00305474316701293
+        },
+        {
+          "step": 77,
+          "loss": 0.0009263981482945383
+        },
+        {
+          "step": 78,
+          "loss": 0.001241475809365511
+        },
+        {
+          "step": 79,
+          "loss": 0.0012393491342663765
+        },
+        {
+          "step": 80,
+          "loss": 0.001967028947547078,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.005557057709665969,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 81,
+          "loss": 0.0008287716191262007
+        },
+        {
+          "step": 82,
+          "loss": 0.0016094146994873881
+        },
+        {
+          "step": 83,
+          "loss": 0.000920795660931617
+        },
+        {
+          "step": 84,
+          "loss": 0.0013254070654511452
+        },
+        {
+          "step": 85,
+          "loss": 0.0016712012002244592
+        },
+        {
+          "step": 86,
+          "loss": 0.0017131860367953777
+        },
+        {
+          "step": 87,
+          "loss": 0.001249633263796568
+        },
+        {
+          "step": 88,
+          "loss": 0.0016137809725478292
+        },
+        {
+          "step": 89,
+          "loss": 0.0010669551556929946
+        },
+        {
+          "step": 90,
+          "loss": 0.0023812097497284412
+        },
+        {
+          "step": 91,
+          "loss": 0.0012882525334134698
+        },
+        {
+          "step": 92,
+          "loss": 0.0010474884184077382
+        },
+        {
+          "step": 93,
+          "loss": 0.0016940035857260227
+        },
+        {
+          "step": 94,
+          "loss": 0.0008215433917939663
+        },
+        {
+          "step": 95,
+          "loss": 0.0007816127617843449
+        },
+        {
+          "step": 96,
+          "loss": 0.0009654755122028291
+        },
+        {
+          "step": 97,
+          "loss": 0.000976613606326282
+        },
+        {
+          "step": 98,
+          "loss": 0.0007809672970324755
+        },
+        {
+          "step": 99,
+          "loss": 0.0010678423568606377
+        },
+        {
+          "step": 100,
+          "loss": 0.0015884118620306253,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.003322531261801487,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 101,
+          "loss": 0.0011768986005336046
+        },
+        {
+          "step": 102,
+          "loss": 0.001633238047361374
+        },
+        {
+          "step": 103,
+          "loss": 0.0013673393987119198
+        },
+        {
+          "step": 104,
+          "loss": 0.0008829516591504216
+        },
+        {
+          "step": 105,
+          "loss": 0.0008185462793335319
+        },
+        {
+          "step": 106,
+          "loss": 0.000643051927909255
+        },
+        {
+          "step": 107,
+          "loss": 0.000990087166428566
+        },
+        {
+          "step": 108,
+          "loss": 0.0007830209797248244
+        },
+        {
+          "step": 109,
+          "loss": 0.001728694187477231
+        },
+        {
+          "step": 110,
+          "loss": 0.0006832439685240388
+        },
+        {
+          "step": 111,
+          "loss": 0.0009715582709759474
+        },
+        {
+          "step": 112,
+          "loss": 0.0012301169335842133
+        },
+        {
+          "step": 113,
+          "loss": 0.0011890099849551916
+        },
+        {
+          "step": 114,
+          "loss": 0.0011308337561786175
+        },
+        {
+          "step": 115,
+          "loss": 0.0006581280613318086
+        },
+        {
+          "step": 116,
+          "loss": 0.0011421269737184048
+        },
+        {
+          "step": 117,
+          "loss": 0.0005943995201960206
+        },
+        {
+          "step": 118,
+          "loss": 0.0008256838191300631
+        },
+        {
+          "step": 119,
+          "loss": 0.0012612129794433713
+        },
+        {
+          "step": 120,
+          "loss": 0.0005977055407129228,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0029539622846641578,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 121,
+          "loss": 0.0011135732056573033
+        },
+        {
+          "step": 122,
+          "loss": 0.0013891926500946283
+        },
+        {
+          "step": 123,
+          "loss": 0.0012297871289774776
+        },
+        {
+          "step": 124,
+          "loss": 0.0009634416783228517
+        },
+        {
+          "step": 125,
+          "loss": 0.0006869076751172543
+        },
+        {
+          "step": 126,
+          "loss": 0.0020746600348502398
+        },
+        {
+          "step": 127,
+          "loss": 0.0007185820722952485
+        },
+        {
+          "step": 128,
+          "loss": 0.0013147363206371665
+        },
+        {
+          "step": 129,
+          "loss": 0.0005766997928731143
+        },
+        {
+          "step": 130,
+          "loss": 0.0006933729164302349
+        },
+        {
+          "step": 131,
+          "loss": 0.0011075310176238418
+        },
+        {
+          "step": 132,
+          "loss": 0.0009645043173804879
+        },
+        {
+          "step": 133,
+          "loss": 0.001031824154779315
+        },
+        {
+          "step": 134,
+          "loss": 0.001011403976008296
+        },
+        {
+          "step": 135,
+          "loss": 0.0013464861549437046
+        },
+        {
+          "step": 136,
+          "loss": 0.0009744567796587944
+        },
+        {
+          "step": 137,
+          "loss": 0.001107534277252853
+        },
+        {
+          "step": 138,
+          "loss": 0.0008915620855987072
+        },
+        {
+          "step": 139,
+          "loss": 0.0009233159944415092
+        },
+        {
+          "step": 140,
+          "loss": 0.0009094378328882158,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.002226612412414397,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 141,
+          "loss": 0.0005989013006910682
+        },
+        {
+          "step": 142,
+          "loss": 0.0010152306640520692
+        },
+        {
+          "step": 143,
+          "loss": 0.0016623210394755006
+        },
+        {
+          "step": 144,
+          "loss": 0.0007163614500313997
+        },
+        {
+          "step": 145,
+          "loss": 0.0008428078144788742
+        },
+        {
+          "step": 146,
+          "loss": 0.000711049884557724
+        },
+        {
+          "step": 147,
+          "loss": 0.0007321040611714125
+        },
+        {
+          "step": 148,
+          "loss": 0.0006892922101542354
+        },
+        {
+          "step": 149,
+          "loss": 0.0005865533021278679
+        },
+        {
+          "step": 150,
+          "loss": 0.0007796342833898962
+        },
+        {
+          "step": 151,
+          "loss": 0.0007209102623164654
+        },
+        {
+          "step": 152,
+          "loss": 0.0006147159729152918
+        },
+        {
+          "step": 153,
+          "loss": 0.0009526071953587234
+        },
+        {
+          "step": 154,
+          "loss": 0.0004479648487176746
+        },
+        {
+          "step": 155,
+          "loss": 0.000833358324598521
+        },
+        {
+          "step": 156,
+          "loss": 0.0010808047372847795
+        },
+        {
+          "step": 157,
+          "loss": 0.0006983447819948196
+        },
+        {
+          "step": 158,
+          "loss": 0.0007174017373472452
+        },
+        {
+          "step": 159,
+          "loss": 0.0009952479740604758
+        },
+        {
+          "step": 160,
+          "loss": 0.0005319743067957461,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0016794432940514525,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 161,
+          "loss": 0.0007075219182297587
+        },
+        {
+          "step": 162,
+          "loss": 0.0005803629755973816
+        },
+        {
+          "step": 163,
+          "loss": 0.0005391841987147927
+        },
+        {
+          "step": 164,
+          "loss": 0.0006898571737110615
+        },
+        {
+          "step": 165,
+          "loss": 0.0010785209015011787
+        },
+        {
+          "step": 166,
+          "loss": 0.001082128961570561
+        },
+        {
+          "step": 167,
+          "loss": 0.000641823629848659
+        },
+        {
+          "step": 168,
+          "loss": 0.0006370627088472247
+        },
+        {
+          "step": 169,
+          "loss": 0.0005402398528531194
+        },
+        {
+          "step": 170,
+          "loss": 0.0007068385602906346
+        },
+        {
+          "step": 171,
+          "loss": 0.0008210282539948821
+        },
+        {
+          "step": 172,
+          "loss": 0.0009220694191753864
+        },
+        {
+          "step": 173,
+          "loss": 0.0010360648157075047
+        },
+        {
+          "step": 174,
+          "loss": 0.0007289017084985971
+        },
+        {
+          "step": 175,
+          "loss": 0.0005139269633218646
+        },
+        {
+          "step": 176,
+          "loss": 0.0008988977060653269
+        },
+        {
+          "step": 177,
+          "loss": 0.0007779443403705955
+        },
+        {
+          "step": 178,
+          "loss": 0.0004934442113153636
+        },
+        {
+          "step": 179,
+          "loss": 0.0006768646417185664
+        },
+        {
+          "step": 180,
+          "loss": 0.0010530877625569701,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0014707597583765164,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 181,
+          "loss": 0.0006907677743583918
+        },
+        {
+          "step": 182,
+          "loss": 0.0005126296309754252
+        },
+        {
+          "step": 183,
+          "loss": 0.0005656639114022255
+        },
+        {
+          "step": 184,
+          "loss": 0.0006819468690082431
+        },
+        {
+          "step": 185,
+          "loss": 0.0005207278882153332
+        },
+        {
+          "step": 186,
+          "loss": 0.0005018383380956948
+        },
+        {
+          "step": 187,
+          "loss": 0.0005247973604127765
+        },
+        {
+          "step": 188,
+          "loss": 0.000974569353275001
+        },
+        {
+          "step": 189,
+          "loss": 0.0011386610567569733
+        },
+        {
+          "step": 190,
+          "loss": 0.0005321427015587687
+        },
+        {
+          "step": 191,
+          "loss": 0.0005543475272133946
+        },
+        {
+          "step": 192,
+          "loss": 0.0009473960381001234
+        },
+        {
+          "step": 193,
+          "loss": 0.0006426221807487309
+        },
+        {
+          "step": 194,
+          "loss": 0.0007406462682411075
+        },
+        {
+          "step": 195,
+          "loss": 0.0007198202656581998
+        },
+        {
+          "step": 196,
+          "loss": 0.0009650755091570318
+        },
+        {
+          "step": 197,
+          "loss": 0.0005484400317072868
+        },
+        {
+          "step": 198,
+          "loss": 0.0006641667569056153
+        },
+        {
+          "step": 199,
+          "loss": 0.000700867036357522
+        },
+        {
+          "step": 200,
+          "loss": 0.0005276711308397353,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.001363299763397663,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 201,
+          "loss": 0.000516594504006207
+        },
+        {
+          "step": 202,
+          "loss": 0.0006412974325940013
+        },
+        {
+          "step": 203,
+          "loss": 0.0011283669155091047
+        },
+        {
+          "step": 204,
+          "loss": 0.0005118081462569535
+        },
+        {
+          "step": 205,
+          "loss": 0.0006192181608639657
+        },
+        {
+          "step": 206,
+          "loss": 0.0006097518489696085
+        },
+        {
+          "step": 207,
+          "loss": 0.0007566733984276652
+        },
+        {
+          "step": 208,
+          "loss": 0.0003830994828604162
+        },
+        {
+          "step": 209,
+          "loss": 0.0007391695980913937
+        },
+        {
+          "step": 210,
+          "loss": 0.0005969955236651003
+        },
+        {
+          "step": 211,
+          "loss": 0.0005678253946825862
+        },
+        {
+          "step": 212,
+          "loss": 0.0008709488902240992
+        },
+        {
+          "step": 213,
+          "loss": 0.0006341091357171535
+        },
+        {
+          "step": 214,
+          "loss": 0.0009048942010849714
+        },
+        {
+          "step": 215,
+          "loss": 0.0006945143104530871
+        },
+        {
+          "step": 216,
+          "loss": 0.0007468123803846538
+        },
+        {
+          "step": 217,
+          "loss": 0.0005718150059692562
+        },
+        {
+          "step": 218,
+          "loss": 0.000577904749661684
+        },
+        {
+          "step": 219,
+          "loss": 0.0007239492842927575
+        },
+        {
+          "step": 220,
+          "loss": 0.0005162327433936298,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0012113155171391554,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        },
+        {
+          "step": 221,
+          "loss": 0.0005743991350755095
+        },
+        {
+          "step": 222,
+          "loss": 0.000657895696349442
+        },
+        {
+          "step": 223,
+          "loss": 0.00045455587678588927
+        },
+        {
+          "step": 224,
+          "loss": 0.0005422665271908045
+        },
+        {
+          "step": 225,
+          "loss": 0.0004016388556919992
+        },
+        {
+          "step": 226,
+          "loss": 0.0005472206976264715
+        },
+        {
+          "step": 227,
+          "loss": 0.00037418684223666787
+        },
+        {
+          "step": 228,
+          "loss": 0.0005899209063500166
+        },
+        {
+          "step": 229,
+          "loss": 0.0012663884554058313
+        },
+        {
+          "step": 230,
+          "loss": 0.00044061150401830673
+        },
+        {
+          "step": 231,
+          "loss": 0.0004402341728564352
+        },
+        {
+          "step": 232,
+          "loss": 0.0006306635914370418
+        },
+        {
+          "step": 233,
+          "loss": 0.0006201961077749729
+        },
+        {
+          "step": 234,
+          "loss": 0.0006601227796636522
+        },
+        {
+          "step": 235,
+          "loss": 0.0007300671422854066
+        },
+        {
+          "step": 236,
+          "loss": 0.0005745053640566766
+        },
+        {
+          "step": 237,
+          "loss": 0.0004463472287170589
+        },
+        {
+          "step": 238,
+          "loss": 0.0004777203721459955
+        },
+        {
+          "step": 239,
+          "loss": 0.0005317630711942911
+        },
+        {
+          "step": 240,
+          "loss": 0.00036939166602678597,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0011571434479265008,
+            "exact_translation": 1.0,
+            "answer_accuracy": 1.0,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 0,
+            "coverage": 0.0,
+            "accepted_translation_accuracy": null,
+            "accepted_answer_accuracy": null,
+            "threshold": 0.0,
+            "unique_texts": 127,
+            "unique_semantic_triples": 96
+          }
+        }
+      ],
+      "scope": "one vocabulary embedding",
+      "rule": "supplied AdamW + separate labeled development check"
+    },
+    "shape_validation": {
+      "shapes": [
+        "multiply x by # then subtract # to get # modulo eleven",
+        "scale x by # then subtract # to get # modulo eleven",
+        "subtract # from the product of # and x equals # modulo eleven",
+        "subtract # from x then multiply by # to get # modulo eleven",
+        "subtract # from x then scale by # to get # modulo eleven",
+        "take # times x subtract # and obtain # modulo eleven",
+        "take x minus # multiply by # and obtain # modulo eleven",
+        "take x minus # scale by # and obtain # modulo eleven",
+        "the product of # and the difference of x and # equals # modulo eleven"
+      ],
+      "metrics": {
+        "take x minus # scale by # and obtain # modulo eleven": {
+          "examples": 40,
+          "accuracy": 1.0
+        },
+        "scale x by # then subtract # to get # modulo eleven": {
+          "examples": 34,
+          "accuracy": 1.0
+        },
+        "subtract # from x then scale by # to get # modulo eleven": {
+          "examples": 54,
+          "accuracy": 1.0
+        },
+        "multiply x by # then subtract # to get # modulo eleven": {
+          "examples": 63,
+          "accuracy": 1.0
+        },
+        "subtract # from the product of # and x equals # modulo eleven": {
+          "examples": 77,
+          "accuracy": 1.0
+        },
+        "the product of # and the difference of x and # equals # modulo eleven": {
+          "examples": 59,
+          "accuracy": 1.0
+        },
+        "subtract # from x then multiply by # to get # modulo eleven": {
+          "examples": 54,
+          "accuracy": 1.0
+        },
+        "take x minus # multiply by # and obtain # modulo eleven": {
+          "examples": 61,
+          "accuracy": 1.0
+        },
+        "take # times x subtract # and obtain # modulo eleven": {
+          "examples": 70,
+          "accuracy": 1.0
+        }
+      },
+      "scope": "Empirical supplied-shape admission. No distribution-free semantic correctness guarantee."
+    },
+    "guarded": {
+      "accepted": 512,
+      "coverage": 1.0,
+      "translation_accuracy": 1.0
+    },
+    "checkpoints": [
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00020.pt",
+        "sha256": "a8cd454b388673f7fbafee566ca223e88571637ebbfb570946f736fde3e0718b",
+        "bytes": 9015963
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00040.pt",
+        "sha256": "86466bd9136126f8ae22983b0d94b5701cef362553ec5dc159779d1285da2851",
+        "bytes": 9016667
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00060.pt",
+        "sha256": "8a841b5f484be7fc98315483233d745b8d29a377d1ca9d776af9c1bd4c021d23",
+        "bytes": 9017371
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00080.pt",
+        "sha256": "85f1047d8a86738e86d0a98f5efb8c6e8e3543c70bc664c0cf00e7747a858573",
+        "bytes": 9018075
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00100.pt",
+        "sha256": "2487e2f214c4788ed19a0a3e7877cf760a899fe1daa1f6948047d842d1a6dcfa",
+        "bytes": 9018779
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00120.pt",
+        "sha256": "014e6369ee80693424c8af398d6abc1a0e2704055990f431b0a4972d8e836296",
+        "bytes": 9019483
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00140.pt",
+        "sha256": "60a90a5e2edd3375227ac44b47f513689f091f76a8156486263666d09d0f71f8",
+        "bytes": 9020187
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00160.pt",
+        "sha256": "5febb1b5d4c603074b2677eb18e15d48d5d183ac722ea9338b458294d5119a88",
+        "bytes": 9020891
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00180.pt",
+        "sha256": "8ac193cf8014146d2dfe6201e9a40341eb50d68b5a163ed3f3673d9a0df7f682",
+        "bytes": 9021595
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00200.pt",
+        "sha256": "6605390c4ee68355e7fad8f6ffe1221834d3ad23540bff8377c1d42dfa0911ee",
+        "bytes": 9022299
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00220.pt",
+        "sha256": "ac41232ce1e980b0e0cb17c71f0145b3209691ef804cc64a2366830f5f2d76ef",
+        "bytes": 9023003
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-step-00240.pt",
+        "sha256": "98bc4bdf6925fa4d4014152399d0775e4bae316d143e0867fd9df1237fd8a9a2",
+        "bytes": 9023707
+      }
+    ],
+    "selected_checkpoint": {
+      "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/word-selected.pt",
+      "sha256": "0681691608df924551800f40ea8e103e0ee92d783c4a3174e8a29b29f4b0e4be"
+    },
+    "selected_owner": "f082312a1d58afcd2fe6347fa3b92fbc25d02f2d7cc51fb3d229fdf6681bb1a5"
+  },
+  "wording": {
+    "before": {
+      "examples": 512,
+      "joint_cross_entropy": 31.162892997264862,
+      "exact_translation": 0.0,
+      "answer_accuracy": 0.046875,
+      "slot_accuracy": [
+        0.0,
+        0.154296875,
+        0.4453125,
+        0.87890625
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 0.0,
+      "accepted_answer_accuracy": 0.046875,
+      "threshold": 0.0,
+      "unique_texts": 491,
+      "unique_semantic_triples": 225
+    },
+    "after": {
+      "examples": 512,
+      "joint_cross_entropy": 0.04672144110691079,
+      "exact_translation": 0.984375,
+      "answer_accuracy": 0.986328125,
+      "slot_accuracy": [
+        1.0,
+        0.990234375,
+        0.9921875,
+        1.0
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 0.984375,
+      "accepted_answer_accuracy": 0.986328125,
+      "threshold": 0.0,
+      "unique_texts": 491,
+      "unique_semantic_triples": 225
+    },
+    "known_retention": {
+      "examples": 512,
+      "joint_cross_entropy": 9.19667929597199,
+      "exact_translation": 0.23046875,
+      "answer_accuracy": 0.326171875,
+      "slot_accuracy": [
+        0.62890625,
+        0.55859375,
+        0.693359375,
+        0.951171875
+      ],
+      "formal_checks": 512,
+      "accepted": 512,
+      "coverage": 1.0,
+      "accepted_translation_accuracy": 0.23046875,
+      "accepted_answer_accuracy": 0.326171875,
+      "threshold": 0.0,
+      "unique_texts": 502,
+      "unique_semantic_triples": 231
+    },
+    "acquisition": {
+      "kind": "wording",
+      "steps": 240,
+      "teaching_examples": 192,
+      "teaching_draws": 3840,
+      "new_steps": 240,
+      "development": {
+        "examples": 128,
+        "joint_cross_entropy": 0.020106414120618865,
+        "exact_translation": 0.9921875,
+        "answer_accuracy": 0.9921875,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          0.9921875,
+          1.0
+        ],
+        "formal_checks": 128,
+        "accepted": 128,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.9921875,
+        "accepted_answer_accuracy": 0.9921875,
+        "threshold": 0.0,
+        "unique_texts": 126,
+        "unique_semantic_triples": 103
+      },
+      "admitted": true,
+      "changed_tensors": {
+        "language_queries": 1024,
+        "language_embedding.weight": 8704,
+        "language_position.weight": 3328,
+        "language_norm.weight": 256,
+        "language_norm.bias": 256,
+        "language_readout.0.weight": 512,
+        "language_readout.0.bias": 2,
+        "language_readout.1.weight": 2816,
+        "language_readout.1.bias": 11,
+        "language_readout.2.weight": 2816,
+        "language_readout.2.bias": 11,
+        "language_readout.3.weight": 2816,
+        "language_readout.3.bias": 11
+      },
+      "changed_scalars": 22563,
+      "history": [
+        {
+          "step": 1,
+          "loss": 25.652910232543945
+        },
+        {
+          "step": 2,
+          "loss": 21.726037979125977
+        },
+        {
+          "step": 3,
+          "loss": 12.043039321899414
+        },
+        {
+          "step": 4,
+          "loss": 10.235474586486816
+        },
+        {
+          "step": 5,
+          "loss": 6.2164692878723145
+        },
+        {
+          "step": 6,
+          "loss": 5.504512310028076
+        },
+        {
+          "step": 7,
+          "loss": 5.070418834686279
+        },
+        {
+          "step": 8,
+          "loss": 2.7599730491638184
+        },
+        {
+          "step": 9,
+          "loss": 2.445281744003296
+        },
+        {
+          "step": 10,
+          "loss": 2.587153911590576
+        },
+        {
+          "step": 11,
+          "loss": 2.8262410163879395
+        },
+        {
+          "step": 12,
+          "loss": 1.7336901426315308
+        },
+        {
+          "step": 13,
+          "loss": 1.987447738647461
+        },
+        {
+          "step": 14,
+          "loss": 1.3198908567428589
+        },
+        {
+          "step": 15,
+          "loss": 1.225791573524475
+        },
+        {
+          "step": 16,
+          "loss": 1.0643270015716553
+        },
+        {
+          "step": 17,
+          "loss": 0.9557133316993713
+        },
+        {
+          "step": 18,
+          "loss": 0.2059563845396042
+        },
+        {
+          "step": 19,
+          "loss": 0.532842218875885
+        },
+        {
+          "step": 20,
+          "loss": 1.638068437576294,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 1.0394529432523996,
+            "exact_translation": 0.796875,
+            "answer_accuracy": 0.828125,
+            "slot_accuracy": [
+              1.0,
+              0.9296875,
+              0.8671875,
+              0.96875
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.796875,
+            "accepted_answer_accuracy": 0.828125,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 21,
+          "loss": 1.1672700643539429
+        },
+        {
+          "step": 22,
+          "loss": 0.9372997283935547
+        },
+        {
+          "step": 23,
+          "loss": 0.8919443488121033
+        },
+        {
+          "step": 24,
+          "loss": 0.5440552830696106
+        },
+        {
+          "step": 25,
+          "loss": 0.9000046253204346
+        },
+        {
+          "step": 26,
+          "loss": 1.1282618045806885
+        },
+        {
+          "step": 27,
+          "loss": 0.3941531181335449
+        },
+        {
+          "step": 28,
+          "loss": 0.38987651467323303
+        },
+        {
+          "step": 29,
+          "loss": 0.14714008569717407
+        },
+        {
+          "step": 30,
+          "loss": 0.18851003050804138
+        },
+        {
+          "step": 31,
+          "loss": 0.11839894205331802
+        },
+        {
+          "step": 32,
+          "loss": 0.6118215918540955
+        },
+        {
+          "step": 33,
+          "loss": 0.7596570253372192
+        },
+        {
+          "step": 34,
+          "loss": 0.17605970799922943
+        },
+        {
+          "step": 35,
+          "loss": 0.22420144081115723
+        },
+        {
+          "step": 36,
+          "loss": 0.1244429498910904
+        },
+        {
+          "step": 37,
+          "loss": 0.44607874751091003
+        },
+        {
+          "step": 38,
+          "loss": 0.05717594921588898
+        },
+        {
+          "step": 39,
+          "loss": 0.06149488314986229
+        },
+        {
+          "step": 40,
+          "loss": 0.10544605553150177,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.32211261260090396,
+            "exact_translation": 0.890625,
+            "answer_accuracy": 0.9140625,
+            "slot_accuracy": [
+              1.0,
+              0.96875,
+              0.921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.890625,
+            "accepted_answer_accuracy": 0.9140625,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 41,
+          "loss": 0.03556033968925476
+        },
+        {
+          "step": 42,
+          "loss": 0.09046564996242523
+        },
+        {
+          "step": 43,
+          "loss": 0.08466333150863647
+        },
+        {
+          "step": 44,
+          "loss": 0.30998629331588745
+        },
+        {
+          "step": 45,
+          "loss": 0.034776173532009125
+        },
+        {
+          "step": 46,
+          "loss": 0.02140745148062706
+        },
+        {
+          "step": 47,
+          "loss": 0.021097982302308083
+        },
+        {
+          "step": 48,
+          "loss": 0.02070300653576851
+        },
+        {
+          "step": 49,
+          "loss": 0.06077155843377113
+        },
+        {
+          "step": 50,
+          "loss": 0.013707106932997704
+        },
+        {
+          "step": 51,
+          "loss": 0.04939378425478935
+        },
+        {
+          "step": 52,
+          "loss": 0.10632695257663727
+        },
+        {
+          "step": 53,
+          "loss": 0.04363449662923813
+        },
+        {
+          "step": 54,
+          "loss": 0.03925305977463722
+        },
+        {
+          "step": 55,
+          "loss": 0.05108167231082916
+        },
+        {
+          "step": 56,
+          "loss": 0.09262114763259888
+        },
+        {
+          "step": 57,
+          "loss": 0.6020251512527466
+        },
+        {
+          "step": 58,
+          "loss": 0.009954532608389854
+        },
+        {
+          "step": 59,
+          "loss": 0.017456788569688797
+        },
+        {
+          "step": 60,
+          "loss": 0.014470712281763554,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.07712759877904318,
+            "exact_translation": 0.9765625,
+            "answer_accuracy": 0.984375,
+            "slot_accuracy": [
+              1.0,
+              0.9921875,
+              1.0,
+              0.984375
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9765625,
+            "accepted_answer_accuracy": 0.984375,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 61,
+          "loss": 0.008163589984178543
+        },
+        {
+          "step": 62,
+          "loss": 0.02129964716732502
+        },
+        {
+          "step": 63,
+          "loss": 0.0030088871717453003
+        },
+        {
+          "step": 64,
+          "loss": 0.0190904401242733
+        },
+        {
+          "step": 65,
+          "loss": 0.007090668193995953
+        },
+        {
+          "step": 66,
+          "loss": 0.035726673901081085
+        },
+        {
+          "step": 67,
+          "loss": 0.023041890934109688
+        },
+        {
+          "step": 68,
+          "loss": 0.02458680048584938
+        },
+        {
+          "step": 69,
+          "loss": 0.010935493744909763
+        },
+        {
+          "step": 70,
+          "loss": 0.01482927706092596
+        },
+        {
+          "step": 71,
+          "loss": 0.007460961118340492
+        },
+        {
+          "step": 72,
+          "loss": 0.08088230341672897
+        },
+        {
+          "step": 73,
+          "loss": 0.1325039118528366
+        },
+        {
+          "step": 74,
+          "loss": 0.006659060716629028
+        },
+        {
+          "step": 75,
+          "loss": 0.06029307842254639
+        },
+        {
+          "step": 76,
+          "loss": 0.0027543767355382442
+        },
+        {
+          "step": 77,
+          "loss": 0.007393898442387581
+        },
+        {
+          "step": 78,
+          "loss": 0.035242728888988495
+        },
+        {
+          "step": 79,
+          "loss": 0.024701349437236786
+        },
+        {
+          "step": 80,
+          "loss": 0.006135866977274418,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.08579922710123356,
+            "exact_translation": 0.984375,
+            "answer_accuracy": 0.984375,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              0.9921875
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.984375,
+            "accepted_answer_accuracy": 0.984375,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 81,
+          "loss": 0.22636452317237854
+        },
+        {
+          "step": 82,
+          "loss": 0.004850602708756924
+        },
+        {
+          "step": 83,
+          "loss": 0.004665746353566647
+        },
+        {
+          "step": 84,
+          "loss": 0.016714803874492645
+        },
+        {
+          "step": 85,
+          "loss": 0.0010894940933212638
+        },
+        {
+          "step": 86,
+          "loss": 0.004464221186935902
+        },
+        {
+          "step": 87,
+          "loss": 0.006317181512713432
+        },
+        {
+          "step": 88,
+          "loss": 0.005618342664092779
+        },
+        {
+          "step": 89,
+          "loss": 0.01338175218552351
+        },
+        {
+          "step": 90,
+          "loss": 0.01992874965071678
+        },
+        {
+          "step": 91,
+          "loss": 0.0008577429689466953
+        },
+        {
+          "step": 92,
+          "loss": 0.006995760835707188
+        },
+        {
+          "step": 93,
+          "loss": 0.002149749081581831
+        },
+        {
+          "step": 94,
+          "loss": 0.0022843871265649796
+        },
+        {
+          "step": 95,
+          "loss": 0.0014605188043788075
+        },
+        {
+          "step": 96,
+          "loss": 0.015234898775815964
+        },
+        {
+          "step": 97,
+          "loss": 0.0010952485026791692
+        },
+        {
+          "step": 98,
+          "loss": 0.01047847606241703
+        },
+        {
+          "step": 99,
+          "loss": 0.011370433494448662
+        },
+        {
+          "step": 100,
+          "loss": 0.0017272477271035314,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.10241009316769123,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 101,
+          "loss": 0.0007020593620836735
+        },
+        {
+          "step": 102,
+          "loss": 0.007390477228909731
+        },
+        {
+          "step": 103,
+          "loss": 0.003344855038449168
+        },
+        {
+          "step": 104,
+          "loss": 0.004905066452920437
+        },
+        {
+          "step": 105,
+          "loss": 0.002085713902488351
+        },
+        {
+          "step": 106,
+          "loss": 0.0006622588261961937
+        },
+        {
+          "step": 107,
+          "loss": 0.06722815334796906
+        },
+        {
+          "step": 108,
+          "loss": 0.004553046077489853
+        },
+        {
+          "step": 109,
+          "loss": 0.0014992242213338614
+        },
+        {
+          "step": 110,
+          "loss": 0.0018078074790537357
+        },
+        {
+          "step": 111,
+          "loss": 0.002769226673990488
+        },
+        {
+          "step": 112,
+          "loss": 0.005467471666634083
+        },
+        {
+          "step": 113,
+          "loss": 0.00883853156119585
+        },
+        {
+          "step": 114,
+          "loss": 0.037953540682792664
+        },
+        {
+          "step": 115,
+          "loss": 0.0036095702089369297
+        },
+        {
+          "step": 116,
+          "loss": 0.0018906318582594395
+        },
+        {
+          "step": 117,
+          "loss": 0.0029289964586496353
+        },
+        {
+          "step": 118,
+          "loss": 0.001549402019008994
+        },
+        {
+          "step": 119,
+          "loss": 0.0014414303004741669
+        },
+        {
+          "step": 120,
+          "loss": 0.001424524001777172,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.02545582024868054,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 121,
+          "loss": 0.0014787958934903145
+        },
+        {
+          "step": 122,
+          "loss": 0.002290107309818268
+        },
+        {
+          "step": 123,
+          "loss": 0.0016211390029639006
+        },
+        {
+          "step": 124,
+          "loss": 0.0032908639404922724
+        },
+        {
+          "step": 125,
+          "loss": 0.001189895672723651
+        },
+        {
+          "step": 126,
+          "loss": 0.0015167484525591135
+        },
+        {
+          "step": 127,
+          "loss": 0.0013491128338500857
+        },
+        {
+          "step": 128,
+          "loss": 0.0018538546282798052
+        },
+        {
+          "step": 129,
+          "loss": 0.0015105782076716423
+        },
+        {
+          "step": 130,
+          "loss": 0.0024574953131377697
+        },
+        {
+          "step": 131,
+          "loss": 0.001875316840596497
+        },
+        {
+          "step": 132,
+          "loss": 0.0011768541298806667
+        },
+        {
+          "step": 133,
+          "loss": 0.000999670708552003
+        },
+        {
+          "step": 134,
+          "loss": 0.000783344847150147
+        },
+        {
+          "step": 135,
+          "loss": 0.001158172613941133
+        },
+        {
+          "step": 136,
+          "loss": 0.0004863693320658058
+        },
+        {
+          "step": 137,
+          "loss": 0.0007294953102245927
+        },
+        {
+          "step": 138,
+          "loss": 0.0004450609558261931
+        },
+        {
+          "step": 139,
+          "loss": 0.0005177720449864864
+        },
+        {
+          "step": 140,
+          "loss": 0.0008392760064452887,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.020106414120618865,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 141,
+          "loss": 0.00047702607116661966
+        },
+        {
+          "step": 142,
+          "loss": 0.0010231271153315902
+        },
+        {
+          "step": 143,
+          "loss": 0.00039763899985700846
+        },
+        {
+          "step": 144,
+          "loss": 0.0007123969262465835
+        },
+        {
+          "step": 145,
+          "loss": 0.000293109129415825
+        },
+        {
+          "step": 146,
+          "loss": 0.000524781527929008
+        },
+        {
+          "step": 147,
+          "loss": 0.0007399144233204424
+        },
+        {
+          "step": 148,
+          "loss": 0.00047412634012289345
+        },
+        {
+          "step": 149,
+          "loss": 0.00040693877963349223
+        },
+        {
+          "step": 150,
+          "loss": 0.0009167275275103748
+        },
+        {
+          "step": 151,
+          "loss": 0.00046126527013257146
+        },
+        {
+          "step": 152,
+          "loss": 0.0006090245442464948
+        },
+        {
+          "step": 153,
+          "loss": 0.00040496018482372165
+        },
+        {
+          "step": 154,
+          "loss": 0.00047943435492925346
+        },
+        {
+          "step": 155,
+          "loss": 0.00047111170715652406
+        },
+        {
+          "step": 156,
+          "loss": 0.00019441403856035322
+        },
+        {
+          "step": 157,
+          "loss": 0.0003369043115526438
+        },
+        {
+          "step": 158,
+          "loss": 0.00046201562508940697
+        },
+        {
+          "step": 159,
+          "loss": 0.00019138833158649504
+        },
+        {
+          "step": 160,
+          "loss": 0.00040958920726552606,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.02913774226726673,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 161,
+          "loss": 0.00027039708220399916
+        },
+        {
+          "step": 162,
+          "loss": 0.00028875129646621644
+        },
+        {
+          "step": 163,
+          "loss": 0.00017441007366869599
+        },
+        {
+          "step": 164,
+          "loss": 0.00042232341365888715
+        },
+        {
+          "step": 165,
+          "loss": 0.0003581470809876919
+        },
+        {
+          "step": 166,
+          "loss": 0.00021442768047563732
+        },
+        {
+          "step": 167,
+          "loss": 0.0003028365026693791
+        },
+        {
+          "step": 168,
+          "loss": 0.00039737753104418516
+        },
+        {
+          "step": 169,
+          "loss": 0.0003873158129863441
+        },
+        {
+          "step": 170,
+          "loss": 0.0002749249688349664
+        },
+        {
+          "step": 171,
+          "loss": 0.0002549716446083039
+        },
+        {
+          "step": 172,
+          "loss": 0.00036355701740831137
+        },
+        {
+          "step": 173,
+          "loss": 0.00037685767165385187
+        },
+        {
+          "step": 174,
+          "loss": 0.00012987683294340968
+        },
+        {
+          "step": 175,
+          "loss": 0.00011424822150729597
+        },
+        {
+          "step": 176,
+          "loss": 0.00020732807752210647
+        },
+        {
+          "step": 177,
+          "loss": 0.00027586097712628543
+        },
+        {
+          "step": 178,
+          "loss": 0.0003528211382217705
+        },
+        {
+          "step": 179,
+          "loss": 0.0002611929376143962
+        },
+        {
+          "step": 180,
+          "loss": 0.00019122354569844902,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.032257537939131,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 181,
+          "loss": 0.000416695635067299
+        },
+        {
+          "step": 182,
+          "loss": 0.0002457600203342736
+        },
+        {
+          "step": 183,
+          "loss": 0.00024025542370509356
+        },
+        {
+          "step": 184,
+          "loss": 0.00019904460350517184
+        },
+        {
+          "step": 185,
+          "loss": 0.00019454876019153744
+        },
+        {
+          "step": 186,
+          "loss": 0.0002966301399283111
+        },
+        {
+          "step": 187,
+          "loss": 0.0001565292477607727
+        },
+        {
+          "step": 188,
+          "loss": 0.0002538238768465817
+        },
+        {
+          "step": 189,
+          "loss": 0.00017893905169330537
+        },
+        {
+          "step": 190,
+          "loss": 0.00039849604945629835
+        },
+        {
+          "step": 191,
+          "loss": 0.0001427914685336873
+        },
+        {
+          "step": 192,
+          "loss": 0.00022694141080137342
+        },
+        {
+          "step": 193,
+          "loss": 0.0002559602144174278
+        },
+        {
+          "step": 194,
+          "loss": 0.00014782609650865197
+        },
+        {
+          "step": 195,
+          "loss": 0.0002972834918182343
+        },
+        {
+          "step": 196,
+          "loss": 0.00017071014735847712
+        },
+        {
+          "step": 197,
+          "loss": 0.0003728951560333371
+        },
+        {
+          "step": 198,
+          "loss": 0.0003500182065181434
+        },
+        {
+          "step": 199,
+          "loss": 0.00031450565438717604
+        },
+        {
+          "step": 200,
+          "loss": 0.00018949262448586524,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.03131822669661233,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 201,
+          "loss": 0.00014972963253967464
+        },
+        {
+          "step": 202,
+          "loss": 0.00018247634579893202
+        },
+        {
+          "step": 203,
+          "loss": 0.00013592162576969713
+        },
+        {
+          "step": 204,
+          "loss": 0.0003060557646676898
+        },
+        {
+          "step": 205,
+          "loss": 0.0002642643521539867
+        },
+        {
+          "step": 206,
+          "loss": 0.0002509822079446167
+        },
+        {
+          "step": 207,
+          "loss": 0.00010795937851071358
+        },
+        {
+          "step": 208,
+          "loss": 0.00026810471899807453
+        },
+        {
+          "step": 209,
+          "loss": 0.000156142094056122
+        },
+        {
+          "step": 210,
+          "loss": 0.00019267585594207048
+        },
+        {
+          "step": 211,
+          "loss": 0.00020923829288221896
+        },
+        {
+          "step": 212,
+          "loss": 0.00014509627362713218
+        },
+        {
+          "step": 213,
+          "loss": 0.00022690898913424462
+        },
+        {
+          "step": 214,
+          "loss": 0.00012801482807844877
+        },
+        {
+          "step": 215,
+          "loss": 0.00016801024321466684
+        },
+        {
+          "step": 216,
+          "loss": 0.00023809177218936384
+        },
+        {
+          "step": 217,
+          "loss": 0.00014531923807226121
+        },
+        {
+          "step": 218,
+          "loss": 0.00013560778461396694
+        },
+        {
+          "step": 219,
+          "loss": 0.00022523882216773927
+        },
+        {
+          "step": 220,
+          "loss": 0.00017652947281021625,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.03178156453395786,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        },
+        {
+          "step": 221,
+          "loss": 0.0001475768513046205
+        },
+        {
+          "step": 222,
+          "loss": 0.00015795216313563287
+        },
+        {
+          "step": 223,
+          "loss": 0.00014133307558950037
+        },
+        {
+          "step": 224,
+          "loss": 0.00015954990522004664
+        },
+        {
+          "step": 225,
+          "loss": 0.00015855552919674665
+        },
+        {
+          "step": 226,
+          "loss": 0.0001802098413463682
+        },
+        {
+          "step": 227,
+          "loss": 0.00025304441805928946
+        },
+        {
+          "step": 228,
+          "loss": 0.0001920053909998387
+        },
+        {
+          "step": 229,
+          "loss": 0.0001458563783671707
+        },
+        {
+          "step": 230,
+          "loss": 0.00012139185128035024
+        },
+        {
+          "step": 231,
+          "loss": 0.00011896961950697005
+        },
+        {
+          "step": 232,
+          "loss": 0.00019756816618610173
+        },
+        {
+          "step": 233,
+          "loss": 0.00011292948329355568
+        },
+        {
+          "step": 234,
+          "loss": 0.0002231637336080894
+        },
+        {
+          "step": 235,
+          "loss": 0.00011104664008598775
+        },
+        {
+          "step": 236,
+          "loss": 0.0001086446427507326
+        },
+        {
+          "step": 237,
+          "loss": 0.0001846833765739575
+        },
+        {
+          "step": 238,
+          "loss": 0.00017799476336222142
+        },
+        {
+          "step": 239,
+          "loss": 0.00015429206541739404
+        },
+        {
+          "step": 240,
+          "loss": 0.00011555101082194597,
+          "development": {
+            "examples": 128,
+            "joint_cross_entropy": 0.0335198468346789,
+            "exact_translation": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              0.9921875,
+              1.0
+            ],
+            "formal_checks": 128,
+            "accepted": 128,
+            "coverage": 1.0,
+            "accepted_translation_accuracy": 0.9921875,
+            "accepted_answer_accuracy": 0.9921875,
+            "threshold": 0.0,
+            "unique_texts": 126,
+            "unique_semantic_triples": 103
+          }
+        }
+      ],
+      "scope": "learned language interface; same recurrent core held fixed",
+      "rule": "supplied AdamW + separate labeled development check"
+    },
+    "shape_validation": {
+      "shapes": [
+        "multiply the difference of x and # by # equals # modulo eleven"
+      ],
+      "metrics": {
+        "multiply the difference of x and # by # equals # modulo eleven": {
+          "examples": 74,
+          "accuracy": 1.0
+        },
+        "the product of x and # minus # equals # modulo eleven": {
+          "examples": 54,
+          "accuracy": 0.9814814814814815
+        },
+        "multiply x by # then subtract # to get # modulo eleven": {
+          "examples": 63,
+          "accuracy": 0.0
+        },
+        "subtract # from the product of # and x equals # modulo eleven": {
+          "examples": 77,
+          "accuracy": 0.1038961038961039
+        },
+        "the product of # and the difference of x and # equals # modulo eleven": {
+          "examples": 59,
+          "accuracy": 0.0
+        },
+        "subtract # from x then multiply by # to get # modulo eleven": {
+          "examples": 54,
+          "accuracy": 0.5740740740740741
+        },
+        "take x minus # multiply by # and obtain # modulo eleven": {
+          "examples": 61,
+          "accuracy": 0.4098360655737705
+        },
+        "take # times x subtract # and obtain # modulo eleven": {
+          "examples": 70,
+          "accuracy": 0.2
+        }
+      },
+      "scope": "Empirical supplied-shape admission. No distribution-free semantic correctness guarantee."
+    },
+    "guarded": {
+      "accepted": 251,
+      "coverage": 0.490234375,
+      "translation_accuracy": 0.9840637450199203
+    },
+    "checkpoints": [
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00020.pt",
+        "sha256": "7c3d30cf5aca8e37c965334284a9bf78a0cf477d49bf3fdb42eefcef0dd0baac",
+        "bytes": 9195911
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00040.pt",
+        "sha256": "b4d28b22dd691bc13ad01873e3a20ce996bb243011e015fd725caf5564e8c916",
+        "bytes": 9196615
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00060.pt",
+        "sha256": "683f040c8a2de18951cc569873fcb17b6c5a82b4cc501d17a7f8be6fb6c6dc0e",
+        "bytes": 9197319
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00080.pt",
+        "sha256": "124ce084a0a3c7850a6dba1a333f1afb50ea61709d2a4e9c885ca026183a61e1",
+        "bytes": 9198087
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00100.pt",
+        "sha256": "4bbd78f5f9e34c62e1a2cb19e728855339b286a83b5410773185af977c46783b",
+        "bytes": 9198791
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00120.pt",
+        "sha256": "1e1eff7d021ea0c3ea78368014a8864424f478c263b938177908976695009cfc",
+        "bytes": 9199495
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00140.pt",
+        "sha256": "e4083556a59085b19bc5c6823557031dd0973858ed59cda41cb8845c57b0a0e9",
+        "bytes": 9200199
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00160.pt",
+        "sha256": "ae50009c87cc5e3b7c8b3f62c86645eb1cfc41a487d766768c1d811bc03e9b1e",
+        "bytes": 9200903
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00180.pt",
+        "sha256": "798ebb66a69d1b3dbff05c1e1019fd5f175a0915c646ce3f840ef7b9f47c2d9f",
+        "bytes": 9201607
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00200.pt",
+        "sha256": "75f80c43bd3a3e2fcf4ebb1e4a58e6f91f7bed0c0ccc190bc0fb80123469175a",
+        "bytes": 9202375
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00220.pt",
+        "sha256": "68a9017a7e9d73946fb4bd0f9e9a5ec1aaf8bc2baf2b2ba84bdc28c88b2cea4e",
+        "bytes": 9203079
+      },
+      {
+        "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-step-00240.pt",
+        "sha256": "1b61dd40cb5d952ec6359e5d5d373371f7dd968c0f4277f13dcf211fa38fdfd9",
+        "bytes": 9203783
+      }
+    ],
+    "selected_checkpoint": {
+      "path": "runs/grounded-language/L10-FINAL-151027-interface-assessment/wording-selected.pt",
+      "sha256": "d00c2aee3602fd01d1962b91bf9c464d777e74c30d13816221995a838aeaf4ad"
+    },
+    "selected_owner": "282a5409a4e9e95ab113465c6c6e333f8e4287cb43d5c9c6afc3d781166a5ae6"
+  },
+  "status": "COMPLETE",
+  "source": "L10-FINAL-151027-interface",
+  "protocol_sha256": "7e9b39a14ce5260cf411f7d458bdb81f7d6b1e8d25ef0e32d29181c9c3d898b0",
+  "worker_seconds": 65.29269839999324,
+  "selected_predecessor_unchanged": true
+}

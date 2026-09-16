@@ -1,0 +1,17 @@
+{
+  "source": "L10-FINAL-151001-shared",
+  "source_result_sha256": "cba1e9b931f7f073485907607792c7c144f11622c328968d901fddc60e3301e4",
+  "final": true,
+  "seed": 161001,
+  "lesson_steps": 240,
+  "retention_samples": 128,
+  "novel_word_examples": 48,
+  "novel_wording_examples": 192,
+  "lesson_selection": "Lowest development cross-entropy; gate at .99 development exact translation; final is read only after learning.",
+  "guard": "Supplied sentence shape support + explicit vocabulary admission + previously selected confidence filter.",
+  "sources": {
+    "assessment.py": "08adbabdaaf5510830d47135ac4ce7c964d42d10e91cb97774a28294e26cae02",
+    "acquisition.py": "a203a02e81f0b4ce984156c6f8e150c6a64b2e6a0c1cd2eec4ab66ddd473b0ef"
+  },
+  "claims": "Neither lexical admission nor the supplied curriculum demonstrates general English or learned eta."
+}

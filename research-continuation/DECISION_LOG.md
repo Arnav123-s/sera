@@ -55,3 +55,11 @@ The first nominal seed was selected before outcomes. The actual shared owner gai
 ## Live workbench and task-driven research target
 
 I delivered a local task application using the real owner, added task-time numerical acquisition, and rejected the separately trained eta against persistence. The user now permits task-focused forgetting when reacquisition is possible, while requiring all predecessors to remain preserved. A further 60 local CPU minutes were explicitly approved. The next discriminating step is bounded grounded language and formal verification, not a claim of general paper-reading or a solution of an open problem.
+
+## 2026-09-16 UTC — Grounded language with explicit limits and reacquisition
+
+I completed three development models, two development acquisition assessments, nine prospective models, eighteen targeted final lessons, a continuing six-request learner and independent prediction/source/checkpoint audits. The retained-core interface passes its restricted familiar-form and old-behavior gates. Shared-core adaptation loses old capability; neither shared ownership nor recurrent-state dependence establishes positive pretrained-core transfer.
+
+I preserve the empirical guard's five incorrect admissions and add a supplied finite-language contract. This is a corrective execution restriction, checked against archived failures and exhaustive finite productions. It does not retroactively improve final neural scores. Accepted interpretations now execute the previously acquired guarded program and must agree with independent arithmetic. An explicit migration preserves the live owner's identity and tensors; all older interpreter versions remain available.
+
+The real browser completed three language lessons, kept the existing numerical contexts and motion history, restored the result after reload and reused the learned interpretation without another lesson. The full 241-test regression and later contract/integration checks pass. The user-approved local extension covers all numerical costs; unused allowance stays available to the live application. General document learning and independently improved eta remain unqualified.

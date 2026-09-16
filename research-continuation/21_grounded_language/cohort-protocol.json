@@ -1,0 +1,42 @@
+{
+  "schema": "sera.language-cohort.1",
+  "seeds": [
+    151001,
+    151009,
+    151027
+  ],
+  "arms": [
+    "interface",
+    "shared",
+    "scratch"
+  ],
+  "steps": 600,
+  "batch": 32,
+  "teaching": 4096,
+  "development": 256,
+  "checkpoint_every": 100,
+  "lessons": {
+    "steps": 240,
+    "new_word_examples": 48,
+    "new_wording_examples": 192
+  },
+  "primary": "Exact translation and answer correctness on held semantic triples; novel sentence structure is a separate challenge.",
+  "intended_release_candidate": "L10-FINAL-151001-interface",
+  "candidate_rule": "Fix the first unchanged-core candidate before final outcomes. Require >=.95 known exact translation, >=.99 accepted exact translation, >=.5 coverage, and <=.02 maximum old-skill drop. Reject unrestricted English regardless of these scores.",
+  "controls": "Shared-core fine-tuning measures interference; reset shared parameters measure pretrained initialization effects at equal update counts. Reset-history inference probes recurrent-state dependence. Actual time and parameter counts are unequal and reported.",
+  "eta": "Fixed supplied update/curriculum. No learning-to-learn improvement claim.",
+  "sources": {
+    "experiments/grounded_language/__init__.py": "50c361359f41fb8448143f75435a92f5e7459791ae1e8b4873c79a2b95836edd",
+    "experiments/grounded_language/acquisition.py": "a203a02e81f0b4ce984156c6f8e150c6a64b2e6a0c1cd2eec4ab66ddd473b0ef",
+    "experiments/grounded_language/assessment.py": "08adbabdaaf5510830d47135ac4ce7c964d42d10e91cb97774a28294e26cae02",
+    "experiments/grounded_language/data.py": "14e25a71c713bbc0f2da5b3706223c5e11bb95bfc27f64a37c69caeccb4497a3",
+    "experiments/grounded_language/model.py": "f82cfb242f563ce593b36b6f9120d98188038ba766934245ba0cb97655b98f70",
+    "experiments/grounded_language/study.py": "544b1c5942681bd6791ebd24348cd13b0b6aadb5e0d8d57933abe205510eb56d",
+    "scripts/run_language_assessment_bounded.py": "02293e97a820a5a763d36868c2e203fba7c853f4d6879f4728c23a898f401088",
+    "scripts/run_language_bounded.py": "48109eb6a13743ab98e4f3b36d32b9848768928e9bc371673d4634a349fb3250",
+    "scripts/run_language_cohort.py": "a5938bb57c35eb4674a445d4a9e3436dedcd61b32fadeab399b9132f891ef561",
+    "tests/test_grounded_language.py": "49fba121f011e7dadff12a822f92fbe4415290744cd35c9ad52f149d86314d41",
+    "tests/test_language_guard.py": "50ced89117a60e2874c775c01d61c9d545a2b284ff8007f8e468824bf2603108",
+    "tests/test_language_resume.py": "3716c95b8c3fd286c449d924c29fb22476a36f18fb0920f3028c4f8033d031b6"
+  }
+}

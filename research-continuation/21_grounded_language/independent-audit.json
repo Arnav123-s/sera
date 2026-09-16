@@ -1,0 +1,1053 @@
+{
+  "status": "PASS",
+  "independently_parsed_and_checked_predictions": 41472,
+  "checkpoint_hashes_verified": 297,
+  "models": 9,
+  "comparisons": [
+    {
+      "seed": 151001,
+      "arm": "interface",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0035367983832657046,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 499,
+        "unique_semantic_triples": 226
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 13.766006327234209,
+        "exact_translation": 0.083984375,
+        "answer_accuracy": 0.142578125,
+        "slot_accuracy": [
+          0.482421875,
+          0.2890625,
+          0.548828125,
+          0.94921875
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.083984375,
+        "accepted_answer_accuracy": 0.142578125,
+        "threshold": 0.0,
+        "unique_texts": 485,
+        "unique_semantic_triples": 227
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 14.001426578499377,
+        "exact_translation": 0.0,
+        "answer_accuracy": 0.0625,
+        "slot_accuracy": [
+          0.990234375,
+          0.119140625,
+          0.171875,
+          0.15625
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.0,
+        "accepted_answer_accuracy": 0.0625,
+        "threshold": 0.0,
+        "unique_texts": 499,
+        "unique_semantic_triples": 226
+      },
+      "training_parameters": 30243,
+      "train_worker_seconds": 78.22988799998711,
+      "old_skill_maximum_drop": 0.0,
+      "old_skill_exact_scores": true,
+      "word_before": 0.6953125,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.014400847809156403,
+        "exact_translation": 0.998046875,
+        "answer_accuracy": 0.998046875,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          0.998046875,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.998046875,
+        "accepted_answer_accuracy": 0.998046875,
+        "threshold": 0.0,
+        "unique_texts": 491,
+        "unique_semantic_triples": 223
+      },
+      "wording_before": 0.111328125,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.006695451012262765,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 234
+      },
+      "wording_old_language": 0.4921875,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    },
+    {
+      "seed": 151001,
+      "arm": "shared",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00025050937620108016,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 499,
+        "unique_semantic_triples": 226
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 11.03370105875365,
+        "exact_translation": 0.021484375,
+        "answer_accuracy": 0.09765625,
+        "slot_accuracy": [
+          0.482421875,
+          0.22265625,
+          0.677734375,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.021484375,
+        "accepted_answer_accuracy": 0.09765625,
+        "threshold": 0.0,
+        "unique_texts": 485,
+        "unique_semantic_triples": 227
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 12.740633837878704,
+        "exact_translation": 0.0,
+        "answer_accuracy": 0.072265625,
+        "slot_accuracy": [
+          0.666015625,
+          0.10546875,
+          0.181640625,
+          0.15625
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.0,
+        "accepted_answer_accuracy": 0.072265625,
+        "threshold": 0.0,
+        "unique_texts": 499,
+        "unique_semantic_triples": 226
+      },
+      "training_parameters": 435508,
+      "train_worker_seconds": 91.4099256000045,
+      "old_skill_maximum_drop": 0.359375,
+      "old_skill_exact_scores": false,
+      "word_before": 0.634765625,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0014118158078417764,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 491,
+        "unique_semantic_triples": 223
+      },
+      "wording_before": 0.025390625,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0004175644733095396,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 234
+      },
+      "wording_old_language": 0.84765625,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    },
+    {
+      "seed": 151001,
+      "arm": "scratch",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00019517418786563212,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 499,
+        "unique_semantic_triples": 226
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 9.351286796501881,
+        "exact_translation": 0.02734375,
+        "answer_accuracy": 0.15625,
+        "slot_accuracy": [
+          0.482421875,
+          0.388671875,
+          0.6171875,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.02734375,
+        "accepted_answer_accuracy": 0.15625,
+        "threshold": 0.0,
+        "unique_texts": 485,
+        "unique_semantic_triples": 227
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 8.465232204645872,
+        "exact_translation": 0.015625,
+        "answer_accuracy": 0.12109375,
+        "slot_accuracy": [
+          0.828125,
+          0.353515625,
+          0.17578125,
+          0.5234375
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.015625,
+        "accepted_answer_accuracy": 0.12109375,
+        "threshold": 0.0,
+        "unique_texts": 499,
+        "unique_semantic_triples": 226
+      },
+      "training_parameters": 435508,
+      "train_worker_seconds": 91.29177560000971,
+      "old_skill_maximum_drop": 0.8203125,
+      "old_skill_exact_scores": false,
+      "word_before": 1.0,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0001980506010568206,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 491,
+        "unique_semantic_triples": 223
+      },
+      "wording_before": 0.03125,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 9.767708536401187e-05,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 234
+      },
+      "wording_old_language": 0.806640625,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    },
+    {
+      "seed": 151009,
+      "arm": "interface",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00040499512937230975,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 502,
+        "unique_semantic_triples": 232
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 24.18776185810566,
+        "exact_translation": 0.0,
+        "answer_accuracy": 0.107421875,
+        "slot_accuracy": [
+          0.00390625,
+          0.185546875,
+          0.314453125,
+          0.908203125
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.0,
+        "accepted_answer_accuracy": 0.107421875,
+        "threshold": 0.0,
+        "unique_texts": 482,
+        "unique_semantic_triples": 232
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 21.002385588362813,
+        "exact_translation": 0.005859375,
+        "answer_accuracy": 0.083984375,
+        "slot_accuracy": [
+          0.841796875,
+          0.099609375,
+          0.099609375,
+          0.087890625
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.005859375,
+        "accepted_answer_accuracy": 0.083984375,
+        "threshold": 0.0,
+        "unique_texts": 502,
+        "unique_semantic_triples": 232
+      },
+      "training_parameters": 30243,
+      "train_worker_seconds": 78.21247940001194,
+      "old_skill_maximum_drop": 0.0,
+      "old_skill_exact_scores": true,
+      "word_before": 0.818359375,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0015435245495609706,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 231
+      },
+      "wording_before": 0.0,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.006408268316931753,
+        "exact_translation": 0.998046875,
+        "answer_accuracy": 0.998046875,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          0.998046875,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.998046875,
+        "accepted_answer_accuracy": 0.998046875,
+        "threshold": 0.0,
+        "unique_texts": 479,
+        "unique_semantic_triples": 227
+      },
+      "wording_old_language": 0.396484375,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 0.998046875
+      }
+    },
+    {
+      "seed": 151009,
+      "arm": "shared",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00025979074962378945,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 502,
+        "unique_semantic_triples": 232
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 12.661573524877895,
+        "exact_translation": 0.0,
+        "answer_accuracy": 0.0703125,
+        "slot_accuracy": [
+          0.0234375,
+          0.197265625,
+          0.482421875,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.0,
+        "accepted_answer_accuracy": 0.0703125,
+        "threshold": 0.0,
+        "unique_texts": 482,
+        "unique_semantic_triples": 232
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 12.492416616529226,
+        "exact_translation": 0.005859375,
+        "answer_accuracy": 0.078125,
+        "slot_accuracy": [
+          1.0,
+          0.173828125,
+          0.169921875,
+          0.111328125
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.005859375,
+        "accepted_answer_accuracy": 0.078125,
+        "threshold": 0.0,
+        "unique_texts": 502,
+        "unique_semantic_triples": 232
+      },
+      "training_parameters": 435508,
+      "train_worker_seconds": 88.98054809999303,
+      "old_skill_maximum_drop": 0.328125,
+      "old_skill_exact_scores": false,
+      "word_before": 1.0,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00026378897632639564,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 231
+      },
+      "wording_before": 0.0,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00029991528094797104,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 479,
+        "unique_semantic_triples": 227
+      },
+      "wording_old_language": 0.783203125,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    },
+    {
+      "seed": 151009,
+      "arm": "scratch",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00017424109091734863,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 502,
+        "unique_semantic_triples": 232
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 4.791606350077927,
+        "exact_translation": 0.158203125,
+        "answer_accuracy": 0.240234375,
+        "slot_accuracy": [
+          0.47265625,
+          0.66015625,
+          0.7265625,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.158203125,
+        "accepted_answer_accuracy": 0.240234375,
+        "threshold": 0.0,
+        "unique_texts": 482,
+        "unique_semantic_triples": 232
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 7.724091932177544,
+        "exact_translation": 0.00390625,
+        "answer_accuracy": 0.09375,
+        "slot_accuracy": [
+          0.65234375,
+          0.494140625,
+          0.1875,
+          0.107421875
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.00390625,
+        "accepted_answer_accuracy": 0.09375,
+        "threshold": 0.0,
+        "unique_texts": 502,
+        "unique_semantic_triples": 232
+      },
+      "training_parameters": 435508,
+      "train_worker_seconds": 89.75313070000266,
+      "old_skill_maximum_drop": 0.9453125,
+      "old_skill_exact_scores": false,
+      "word_before": 1.0,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0001962362971426046,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 231
+      },
+      "wording_before": 0.150390625,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 9.693177784697582e-05,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 479,
+        "unique_semantic_triples": 227
+      },
+      "wording_old_language": 0.89453125,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    },
+    {
+      "seed": 151027,
+      "arm": "interface",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0004459213670315876,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 501,
+        "unique_semantic_triples": 235
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 31.875055128708482,
+        "exact_translation": 0.0,
+        "answer_accuracy": 0.072265625,
+        "slot_accuracy": [
+          0.0,
+          0.1484375,
+          0.423828125,
+          0.8984375
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.0,
+        "accepted_answer_accuracy": 0.072265625,
+        "threshold": 0.0,
+        "unique_texts": 480,
+        "unique_semantic_triples": 231
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 15.18809288740158,
+        "exact_translation": 0.0078125,
+        "answer_accuracy": 0.09375,
+        "slot_accuracy": [
+          0.80078125,
+          0.1015625,
+          0.1640625,
+          0.712890625
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.0078125,
+        "accepted_answer_accuracy": 0.09375,
+        "threshold": 0.0,
+        "unique_texts": 501,
+        "unique_semantic_triples": 235
+      },
+      "training_parameters": 30243,
+      "train_worker_seconds": 79.32537910000246,
+      "old_skill_maximum_drop": 0.0,
+      "old_skill_exact_scores": true,
+      "word_before": 0.830078125,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.002458547137393907,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 228
+      },
+      "wording_before": 0.0,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.04672144110691079,
+        "exact_translation": 0.984375,
+        "answer_accuracy": 0.986328125,
+        "slot_accuracy": [
+          1.0,
+          0.990234375,
+          0.9921875,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.984375,
+        "accepted_answer_accuracy": 0.986328125,
+        "threshold": 0.0,
+        "unique_texts": 491,
+        "unique_semantic_triples": 225
+      },
+      "wording_old_language": 0.23046875,
+      "wording_guard": {
+        "accepted": 251,
+        "coverage": 0.490234375,
+        "translation_accuracy": 0.9840637450199203
+      }
+    },
+    {
+      "seed": 151027,
+      "arm": "shared",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.0002735486530127673,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 501,
+        "unique_semantic_triples": 235
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 12.28603594807646,
+        "exact_translation": 0.03125,
+        "answer_accuracy": 0.091796875,
+        "slot_accuracy": [
+          0.51953125,
+          0.2109375,
+          0.45703125,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.03125,
+        "accepted_answer_accuracy": 0.091796875,
+        "threshold": 0.0,
+        "unique_texts": 480,
+        "unique_semantic_triples": 231
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 14.184889480471611,
+        "exact_translation": 0.00390625,
+        "answer_accuracy": 0.099609375,
+        "slot_accuracy": [
+          0.6796875,
+          0.2109375,
+          0.10546875,
+          0.1953125
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.00390625,
+        "accepted_answer_accuracy": 0.099609375,
+        "threshold": 0.0,
+        "unique_texts": 501,
+        "unique_semantic_triples": 235
+      },
+      "training_parameters": 435508,
+      "train_worker_seconds": 91.56955319999543,
+      "old_skill_maximum_drop": 0.125,
+      "old_skill_exact_scores": false,
+      "word_before": 0.994140625,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00041878730598909897,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 228
+      },
+      "wording_before": 0.033203125,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00045747502679205354,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 491,
+        "unique_semantic_triples": 225
+      },
+      "wording_old_language": 0.802734375,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    },
+    {
+      "seed": 151027,
+      "arm": "scratch",
+      "known": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00017267837745293946,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 501,
+        "unique_semantic_triples": 235
+      },
+      "novel": {
+        "examples": 512,
+        "joint_cross_entropy": 8.758328572068422,
+        "exact_translation": 0.267578125,
+        "answer_accuracy": 0.365234375,
+        "slot_accuracy": [
+          0.51953125,
+          0.376953125,
+          0.888671875,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.267578125,
+        "accepted_answer_accuracy": 0.365234375,
+        "threshold": 0.0,
+        "unique_texts": 480,
+        "unique_semantic_triples": 231
+      },
+      "memory_reset": {
+        "examples": 512,
+        "joint_cross_entropy": 9.980387228068139,
+        "exact_translation": 0.00390625,
+        "answer_accuracy": 0.09765625,
+        "slot_accuracy": [
+          1.0,
+          0.13671875,
+          0.15234375,
+          0.234375
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 0.00390625,
+        "accepted_answer_accuracy": 0.09765625,
+        "threshold": 0.0,
+        "unique_texts": 501,
+        "unique_semantic_triples": 235
+      },
+      "training_parameters": 435508,
+      "train_worker_seconds": 91.43656550000014,
+      "old_skill_maximum_drop": 0.765625,
+      "old_skill_exact_scores": false,
+      "word_before": 0.658203125,
+      "word_after": {
+        "examples": 512,
+        "joint_cross_entropy": 0.00019158145835262985,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 488,
+        "unique_semantic_triples": 228
+      },
+      "wording_before": 0.220703125,
+      "wording_after": {
+        "examples": 512,
+        "joint_cross_entropy": 8.164176419356295e-05,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 512,
+        "accepted": 512,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 491,
+        "unique_semantic_triples": 225
+      },
+      "wording_old_language": 0.787109375,
+      "wording_guard": {
+        "accepted": 512,
+        "coverage": 1.0,
+        "translation_accuracy": 1.0
+      }
+    }
+  ],
+  "boundary": "Independent grammar/arithmetic/metric audit of every saved case; hash audit of saved neural checkpoints. This does not retrain models or independently reproduce logits/cross-entropy."
+}

@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-15",
+  "date": "2026-09-16 UTC",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Usable real-time numerical workbench plus task-time fitting. A09 learned procedure rejected against persistence. Next: grounded mathematical language and independently checked proof/answer acquisition.",
+  "active_direction": "Usable persistent numerical and finite-language workbench. L10 retains the core while learning an interface; L11 demonstrates task-triggered acquisition/reacquisition. Shared-core adaptation and A09 eta promotion remain rejected.",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -89,7 +89,9 @@
     },
     {
       "id": "14-language-acquisition",
-      "status": "pending"
+      "status": "finite_grounded_interface_qualified_and_integrated_general_language_open",
+      "evidence": "21_grounded_language/report.md",
+      "detail": "Nine prospective models; retained-core condition translates 1536/1536 familiar-form cases and preserves 61 older groups exactly. Unseen wording fails without lessons. One continuing learner answers six requests with five lessons/816 examples. Finite supplied-language contract and acquired-program execution are explicit; no general English or learned eta claim."
     },
     {
       "id": "15-cross-route-transfer",
@@ -116,7 +118,7 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "Train and test a bounded grounded-language route through the actual shared owner, with unfamiliar wording/role assignments, independent formal checks, calibration and explicit general-language limits. Preserve the usable workbench.",
+  "next_action": "Develop and freeze an acquisition-from-external-material experiment beyond the supplied sentence generator, separating retrieval provenance, learned interpretation, independent verification and reacquisition cost. Reconcile the current live state and resource ledger first; do not rerun L10/L11 or tune on their final banks.",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -168,10 +170,22 @@
       "tests_across_preserved_runs": 233,
       "full_suite_timeout_preserved": true,
       "local_url": "http://127.0.0.1:8765"
+    },
+    "grounded_language": {
+      "report": "21_grounded_language/report.md",
+      "manifest": "21_grounded_language/release-manifest.json",
+      "qualification": "21_grounded_language/qualification.json",
+      "independent_audit": "21_grounded_language/independent-audit.json",
+      "continuing": "21_grounded_language/L11-ONREQUEST-001/result.json",
+      "migration": "21_grounded_language/program-reuse-migration.json",
+      "full_regression_tests": 241,
+      "distinct_tests_across_runs": 243,
+      "local_url": "http://127.0.0.1:8765/?panel=reason",
+      "scope": "Finite English arithmetic productions, supplied teacher/checker/update rule; protected plastic language interface on unchanged R1 core. General language, current-paper understanding and improved eta remain open."
     }
   },
-  "latest_continuation": "20_live_workbench/report.md",
-  "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json.",
+  "latest_continuation": "21_grounded_language/report.md",
+  "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors.",
   "latest_user_steering": {
     "task_time_learning": true,
     "real_time_new_observations": true,

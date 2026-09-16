@@ -39,12 +39,15 @@ class Application:
         record = Store(self.workspace).read()
         ledger = json.loads((ROOT/"runs/v3-batch-001/budget.json").read_text())
         return {"state": None if record is None else record["view"], "watch": self.watch,
+                "language_ready": (ROOT/"research-continuation/21_grounded_language/qualification.json").exists(),
                 "inbox": str(self.workspace/"inbox"), "outputs": str(self.workspace/"outputs"),
                 "remaining_seconds": ledger["remaining_seconds"], "busy": self.busy,
                 "last_activity": self.last_activity, "errors": dict(self.task_errors),
                 "session_token": self.token, "server_time": datetime.now(timezone.utc).isoformat()}
 
     def execute(self, payload):
+        if (ROOT/"runs/v3-batch-001/active.lock").exists():
+            raise ValueError("Another bounded local job is using the worker. This task can run when it finishes.")
         if not self.lock.acquire(blocking=False):
             raise ValueError("A task is running. Please wait for it to finish.")
         self.busy = True
@@ -55,10 +58,11 @@ class Application:
             payload = {**payload, "request_id": payload.get("request_id", identity)}
             request, response = directory/"request.json", directory/"response.json"
             request.write_bytes(encoded(payload))
+            seconds = 90 if payload.get("operation") == "learn_language" else 20
             command = [sys.executable, "-X", "utf8", str(ROOT/"scripts/run_workbench_bounded.py"),
-                       "--seconds", "20", "--output", str(directory/"worker"), "--module", "workbench.worker", "--",
+                       "--seconds", str(seconds), "--output", str(directory/"worker"), "--module", "workbench.worker", "--",
                        str(request), str(response), "--workspace", str(self.workspace)]
-            result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding="utf-8", timeout=40)
+            result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding="utf-8", timeout=seconds+20)
             (directory/"supervisor.log").write_text(result.stdout+result.stderr, encoding="utf-8")
             if result.returncode or not response.exists():
                 log = directory/"worker/process.log"
@@ -95,7 +99,7 @@ class Application:
         (folder/(identity+".csv")).write_text(buffer.getvalue(), encoding="utf-8")
 
     def watch_once(self):
-        if not self.watch or self.busy:
+        if not self.watch or self.busy or (ROOT/"runs/v3-batch-001/active.lock").exists():
             return
         for path in sorted((self.workspace/"inbox").glob("*.csv"))[:8]:
             if not path.resolve().is_relative_to(self.workspace/"inbox") or path.stat().st_size > 250_000:

@@ -1,0 +1,6222 @@
+{
+  "answers": [
+    {
+      "answer": 0,
+      "equation": "4 \u00d7 x \u2212 5 \u2261 6 (mod 11)",
+      "inputs": {
+        "a": 4,
+        "b": 5,
+        "c": 6
+      },
+      "method": "preserved guarded program + independent forward substitution",
+      "modulus": 11,
+      "original_inputs": {
+        "a": 4,
+        "b": 5,
+        "c": 6
+      },
+      "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+      "solutions": [
+        0
+      ],
+      "status": "verified_unique",
+      "work": {
+        "domain_checks": 3,
+        "expression_nodes": 7,
+        "forward_nodes": 33,
+        "indexed_lookup": 1,
+        "interpreter_identity_checks": 1,
+        "lookup_key_bytes": 64,
+        "nonzero_checks": 1,
+        "owner_identity_checks": 1
+      }
+    },
+    {
+      "answer": 0,
+      "equation": "4 \u00d7 x \u2212 5 \u2261 6 (mod 11)",
+      "inputs": {
+        "a": 4,
+        "b": 5,
+        "c": 6
+      },
+      "method": "preserved guarded program + independent forward substitution",
+      "modulus": 11,
+      "original_inputs": {
+        "a": 4,
+        "b": 5,
+        "c": 6
+      },
+      "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+      "solutions": [
+        0
+      ],
+      "status": "verified_unique",
+      "work": {
+        "domain_checks": 3,
+        "expression_nodes": 7,
+        "forward_nodes": 33,
+        "indexed_lookup": 1,
+        "interpreter_identity_checks": 1,
+        "lookup_key_bytes": 64,
+        "nonzero_checks": 1,
+        "owner_identity_checks": 1
+      }
+    },
+    {
+      "answer": 5,
+      "equation": "2 \u00d7 x \u2212 6 \u2261 4 (mod 11)",
+      "inputs": {
+        "a": 2,
+        "b": 6,
+        "c": 4
+      },
+      "method": "preserved guarded program + independent forward substitution",
+      "modulus": 11,
+      "original_inputs": {
+        "a": 2,
+        "b": 6,
+        "c": 4
+      },
+      "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+      "solutions": [
+        5
+      ],
+      "status": "verified_unique",
+      "work": {
+        "domain_checks": 3,
+        "expression_nodes": 7,
+        "forward_nodes": 33,
+        "indexed_lookup": 1,
+        "interpreter_identity_checks": 1,
+        "lookup_key_bytes": 64,
+        "nonzero_checks": 1,
+        "owner_identity_checks": 1
+      }
+    }
+  ],
+  "contexts": {
+    "2d6b51ad00d0b05e": [
+      0.9277473734117565,
+      0.3634949694694995,
+      -6.689317951303226,
+      48.0,
+      22.3973
+    ],
+    "868632f68ff5fd4d": [
+      0.0,
+      1.8000000000000005,
+      32.0,
+      21.0,
+      100.0
+    ],
+    "ffafd6e9d810d6e3": [
+      0.42441691091952544,
+      0.41681001098014536,
+      5.153071004034802,
+      32.0,
+      31.848379633733355
+    ]
+  },
+  "goal_degrees": 135.0,
+  "interaction": {
+    "adapt": true,
+    "buffers": {
+      "interaction_angle": 2.5659967433885265,
+      "interaction_changes": 1,
+      "interaction_covariance": [
+        [
+          0.00047800219400808927,
+          6.787984549446501e-05,
+          -4.720100217423134e-05
+        ],
+        [
+          6.787984549446501e-05,
+          3.0074558517836543e-05,
+          -1.6859510861267066e-05
+        ],
+        [
+          -4.720100217423128e-05,
+          -1.685951086126706e-05,
+          2.163738075307882e-05
+        ]
+      ],
+      "interaction_gram": [
+        [
+          0.45005529045177983,
+          -0.8316852651156981,
+          0.34002234156644784
+        ],
+        [
+          -0.8316852651156981,
+          10.0,
+          6.0
+        ],
+        [
+          0.34002234156644784,
+          6.0,
+          12.0
+        ]
+      ],
+      "interaction_mean": [
+        0.8603087604988294,
+        -0.08288583256700077,
+        0.004266998741646945
+      ],
+      "interaction_position": [
+        -0.4684330808194784,
+        0.05944642039042551
+      ],
+      "interaction_revision": 85,
+      "interaction_rhs": [
+        0.4576019988511653,
+        -1.5228775647548822,
+        -0.15327958737790226
+      ],
+      "interaction_segment_start": 35,
+      "interaction_velocity": -0.31746406199930277
+    },
+    "detect_change": true,
+    "events": [
+      {
+        "action": null,
+        "kind": "observation",
+        "position": 0,
+        "record_id": "7001:0",
+        "sensor_count": 1,
+        "values": [
+          0.742021145373402,
+          -1.097573968614306
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 1,
+        "record_id": "7001:1",
+        "sensor_count": 1,
+        "values": [
+          0.7677926475180102,
+          -1.0818760662955067
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 2,
+        "record_id": "7001:2",
+        "sensor_count": 1,
+        "values": [
+          0.7892571860146652,
+          -1.062169668017238
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 3,
+        "record_id": "7001:3",
+        "sensor_count": 1,
+        "values": [
+          0.8648925387934707,
+          -0.9889097655266649
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 4,
+        "record_id": "7001:4",
+        "sensor_count": 1,
+        "values": [
+          0.9667897779823811,
+          -0.8640319441951828
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 5,
+        "record_id": "7001:5",
+        "sensor_count": 1,
+        "values": [
+          1.0631391563838426,
+          -0.6699787813419942
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 6,
+        "record_id": "7001:6",
+        "sensor_count": 1,
+        "values": [
+          1.103593575855848,
+          -0.4123310825710844
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 7,
+        "record_id": "7001:7",
+        "sensor_count": 1,
+        "values": [
+          1.0742574625807169,
+          -0.18870009418253744
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 8,
+        "record_id": "7001:8",
+        "sensor_count": 1,
+        "values": [
+          1.0372650619707984,
+          -0.059929378458914065
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 9,
+        "record_id": "7001:9",
+        "sensor_count": 1,
+        "values": [
+          1.0158496772213648,
+          -0.024150819765493884
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 10,
+        "record_id": "7001:10",
+        "sensor_count": 1,
+        "values": [
+          1.0297599308980618,
+          -0.051299777721382146
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 11,
+        "record_id": "7001:11",
+        "sensor_count": 1,
+        "values": [
+          1.0663484024175305,
+          -0.14092486674051588
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 12,
+        "record_id": "7001:12",
+        "sensor_count": 1,
+        "values": [
+          1.0961717028396396,
+          -0.28958383654545206
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 13,
+        "record_id": "7001:13",
+        "sensor_count": 1,
+        "values": [
+          1.1004571913111194,
+          -0.48287631548280474
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 14,
+        "record_id": "7001:14",
+        "sensor_count": 1,
+        "values": [
+          1.0431721489013452,
+          -0.709980428889642
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 15,
+        "record_id": "7001:15",
+        "sensor_count": 1,
+        "values": [
+          0.9065215006798999,
+          -0.9439161876053405
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 16,
+        "record_id": "7001:16",
+        "sensor_count": 1,
+        "values": [
+          0.6805978838862909,
+          -1.1364829630247921
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 17,
+        "record_id": "7001:17",
+        "sensor_count": 1,
+        "values": [
+          0.36836690161155616,
+          -1.2454775132116558
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 18,
+        "record_id": "7001:18",
+        "sensor_count": 1,
+        "values": [
+          0.09617624862277958,
+          -1.2406842520326151
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 19,
+        "record_id": "7001:19",
+        "sensor_count": 1,
+        "values": [
+          -0.06015202389370051,
+          -1.1942132089463289
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 20,
+        "record_id": "7001:20",
+        "sensor_count": 1,
+        "values": [
+          -0.11449338728430178,
+          -1.1712380785812346
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 21,
+        "record_id": "7001:21",
+        "sensor_count": 1,
+        "values": [
+          -0.09543543376754089,
+          -1.1831481711933771
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 22,
+        "record_id": "7001:22",
+        "sensor_count": 1,
+        "values": [
+          -0.07890306332089679,
+          -1.1917937751845766
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 23,
+        "record_id": "7001:23",
+        "sensor_count": 1,
+        "values": [
+          0.018470611614321775,
+          -1.2164711311739898
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 24,
+        "record_id": "7001:24",
+        "sensor_count": 1,
+        "values": [
+          0.17444675910940302,
+          -1.251605209883601
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 25,
+        "record_id": "7001:25",
+        "sensor_count": 1,
+        "values": [
+          0.3843851931684388,
+          -1.2433000075476164
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 26,
+        "record_id": "7001:26",
+        "sensor_count": 1,
+        "values": [
+          0.6350243067716016,
+          -1.162799543353338
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 27,
+        "record_id": "7001:27",
+        "sensor_count": 1,
+        "values": [
+          0.7626220771380904,
+          -1.0850743811646377
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 28,
+        "record_id": "7001:28",
+        "sensor_count": 1,
+        "values": [
+          0.8146124672867168,
+          -1.0413973213224428
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 29,
+        "record_id": "7001:29",
+        "sensor_count": 1,
+        "values": [
+          0.8033966325600185,
+          -1.0487565691128333
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 30,
+        "record_id": "7001:30",
+        "sensor_count": 1,
+        "values": [
+          0.7966961827981106,
+          -1.0537267954391227
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 31,
+        "record_id": "7001:31",
+        "sensor_count": 1,
+        "values": [
+          0.7995191804797256,
+          -1.0536202616643737
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 32,
+        "record_id": "7001:32",
+        "sensor_count": 1,
+        "values": [
+          0.7997555025642876,
+          -1.0553012185187673
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 33,
+        "record_id": "7001:33",
+        "sensor_count": 1,
+        "values": [
+          0.8066370747684257,
+          -1.04865891273789
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 34,
+        "record_id": "7001:34",
+        "sensor_count": 1,
+        "values": [
+          0.7557995406387502,
+          -1.085753593223259
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 35,
+        "record_id": "7001:35",
+        "sensor_count": 1,
+        "values": [
+          0.6531069927455952,
+          -1.153047426835271
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 36,
+        "record_id": "7001:36",
+        "sensor_count": 1,
+        "values": [
+          0.49075177485652977,
+          -1.214140554186348
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 37,
+        "record_id": "7001:37",
+        "sensor_count": 1,
+        "values": [
+          0.42246273036349924,
+          -1.2354344678770066
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 38,
+        "record_id": "7001:38",
+        "sensor_count": 1,
+        "values": [
+          0.2951647867539231,
+          -1.2526554237664649
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 39,
+        "record_id": "7001:39",
+        "sensor_count": 1,
+        "values": [
+          0.1155800757317587,
+          -1.2444088041988286
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 40,
+        "record_id": "7001:40",
+        "sensor_count": 1,
+        "values": [
+          -0.030242511215334805,
+          -1.2127150011665628
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 41,
+        "record_id": "7001:41",
+        "sensor_count": 1,
+        "values": [
+          -0.1431331640377677,
+          -1.156589164614323
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 42,
+        "record_id": "7001:42",
+        "sensor_count": 1,
+        "values": [
+          -0.16881789081834805,
+          -1.1417248172369172
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 43,
+        "record_id": "7001:43",
+        "sensor_count": 1,
+        "values": [
+          -0.19225662745658156,
+          -1.1299783363973517
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 44,
+        "record_id": "7001:44",
+        "sensor_count": 1,
+        "values": [
+          -0.20354181976017852,
+          -1.122818105638213
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 45,
+        "record_id": "7001:45",
+        "sensor_count": 1,
+        "values": [
+          -0.14850472716560473,
+          -1.1556724412763764
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 46,
+        "record_id": "7001:46",
+        "sensor_count": 1,
+        "values": [
+          -0.16031908377630683,
+          -1.1510960193380488
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 47,
+        "record_id": "7001:47",
+        "sensor_count": 1,
+        "values": [
+          -0.16816127535569944,
+          -1.143230694621846
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 48,
+        "record_id": "7001:48",
+        "sensor_count": 1,
+        "values": [
+          -0.1711665621230285,
+          -1.145547652685286
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 49,
+        "record_id": "7001:49",
+        "sensor_count": 1,
+        "values": [
+          -0.22986056376275898,
+          -1.1058053772813732
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 50,
+        "record_id": "7001:50",
+        "sensor_count": 1,
+        "values": [
+          -0.2767445237785686,
+          -1.077202297902089
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 51,
+        "record_id": "7001:51",
+        "sensor_count": 1,
+        "values": [
+          -0.30623474279285534,
+          -1.0481921349470957
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 52,
+        "record_id": "7001:52",
+        "sensor_count": 1,
+        "values": [
+          -0.3318040798992228,
+          -1.0224831649892188
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 53,
+        "record_id": "7001:53",
+        "sensor_count": 1,
+        "values": [
+          -0.2996085992983559,
+          -1.055980013482223
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 54,
+        "record_id": "7001:54",
+        "sensor_count": 1,
+        "values": [
+          -0.26208838073006896,
+          -1.0802041091862384
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 55,
+        "record_id": "7001:55",
+        "sensor_count": 1,
+        "values": [
+          -0.2849379242926203,
+          -1.0618675034611265
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 56,
+        "record_id": "7001:56",
+        "sensor_count": 1,
+        "values": [
+          -0.30340072202749147,
+          -1.053596523902768
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 57,
+        "record_id": "7001:57",
+        "sensor_count": 1,
+        "values": [
+          -0.31250711362739464,
+          -1.0403168305487807
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 58,
+        "record_id": "7001:58",
+        "sensor_count": 1,
+        "values": [
+          -0.3714283334076695,
+          -0.9881888724394159
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 59,
+        "record_id": "7001:59",
+        "sensor_count": 1,
+        "values": [
+          -0.4573224715625384,
+          -0.8802732042248028
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 60,
+        "record_id": "7001:60",
+        "sensor_count": 1,
+        "values": [
+          -0.5421767733710107,
+          -0.7145724044580277
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 61,
+        "record_id": "7001:61",
+        "sensor_count": 1,
+        "values": [
+          -0.5986072497160679,
+          -0.49420937993786096
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 62,
+        "record_id": "7001:62",
+        "sensor_count": 1,
+        "values": [
+          -0.5856463554822096,
+          -0.2347670152939192
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 63,
+        "record_id": "7001:63",
+        "sensor_count": 1,
+        "values": [
+          -0.4808350911675354,
+          0.0425639647814152
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 64,
+        "record_id": "7001:64",
+        "sensor_count": 1,
+        "values": [
+          -0.37539403253978715,
+          0.18144511123555213
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 65,
+        "record_id": "7001:65",
+        "sensor_count": 1,
+        "values": [
+          -0.32549665838678604,
+          0.2325599431498016
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 66,
+        "record_id": "7001:66",
+        "sensor_count": 1,
+        "values": [
+          -0.33216339085245095,
+          0.23046895818982785
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 67,
+        "record_id": "7001:67",
+        "sensor_count": 1,
+        "values": [
+          -0.3867938545008448,
+          0.16538647690670458
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 68,
+        "record_id": "7001:68",
+        "sensor_count": 1,
+        "values": [
+          -0.39522354303490215,
+          0.162522032318609
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 69,
+        "record_id": "7001:69",
+        "sensor_count": 1,
+        "values": [
+          -0.3979202953318581,
+          0.15097661189703965
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 70,
+        "record_id": "7001:70",
+        "sensor_count": 1,
+        "values": [
+          -0.40654071106722406,
+          0.14677595732993526
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 71,
+        "record_id": "7001:71",
+        "sensor_count": 1,
+        "values": [
+          -0.4600269461598035,
+          0.07721226266041058
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 72,
+        "record_id": "7001:72",
+        "sensor_count": 1,
+        "values": [
+          -0.5311238110960089,
+          -0.05645753164806469
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 73,
+        "record_id": "7001:73",
+        "sensor_count": 1,
+        "values": [
+          -0.5855769381169228,
+          -0.2570900037362935
+        ]
+      },
+      {
+        "action": -1,
+        "kind": "observation",
+        "position": 74,
+        "record_id": "7001:74",
+        "sensor_count": 1,
+        "values": [
+          -0.5991206007287059,
+          -0.5069457779177954
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 75,
+        "record_id": "7001:75",
+        "sensor_count": 1,
+        "values": [
+          -0.5431850614988535,
+          -0.7166522453914941
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 76,
+        "record_id": "7001:76",
+        "sensor_count": 1,
+        "values": [
+          -0.4907044164862324,
+          -0.8309055133630914
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 77,
+        "record_id": "7001:77",
+        "sensor_count": 1,
+        "values": [
+          -0.47034657803338836,
+          -0.8588385355624316
+        ]
+      },
+      {
+        "action": 0,
+        "kind": "observation",
+        "position": 78,
+        "record_id": "7001:78",
+        "sensor_count": 1,
+        "values": [
+          -0.45036995838222527,
+          -0.888840719205156
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 79,
+        "record_id": "workbench:7001:79",
+        "sensor_count": 1,
+        "values": [
+          -0.4672731988171713,
+          -0.860380341284448
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 80,
+        "record_id": "workbench:7001:80",
+        "sensor_count": 1,
+        "values": [
+          -0.520050190612329,
+          -0.7741357100659775
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 81,
+        "record_id": "workbench:7001:81",
+        "sensor_count": 1,
+        "values": [
+          -0.5761739321719287,
+          -0.6327434871076404
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 82,
+        "record_id": "workbench:7001:82",
+        "sensor_count": 1,
+        "values": [
+          -0.6056347593126971,
+          -0.4325416509684564
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 83,
+        "record_id": "workbench:7001:83",
+        "sensor_count": 1,
+        "values": [
+          -0.5797320961809268,
+          -0.18905885146123091
+        ]
+      },
+      {
+        "action": 1,
+        "kind": "observation",
+        "position": 84,
+        "record_id": "workbench:7001:84",
+        "sensor_count": 1,
+        "values": [
+          -0.4684330808194784,
+          0.05944642039042551
+        ]
+      }
+    ],
+    "owner_sha256": "31f992ddee8e8534f3708654179b4bc90e9b344336f0c824c8c1eefe4a2cd539",
+    "parent": "37a025461acdfb077580e9d97aba857e80b8dbde968193c6b91b787b28bf7e25",
+    "schema": 1,
+    "source": "13ee3eb010df3818770877c07312f5523bf5dab87e4f36fc563c51cd545b205a",
+    "window": 12,
+    "work": {
+      "conditional_transition_particles": 185976,
+      "controller_decisions": 82,
+      "executed_actions": 84,
+      "factual_replay_events": 1314,
+      "paid_sensor_measurements": 85,
+      "posterior_fits": 83
+    }
+  },
+  "language": {
+    "admitted_words": [
+      "0",
+      "1",
+      "10",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "and",
+      "by",
+      "difference",
+      "eight",
+      "eleven",
+      "equals",
+      "five",
+      "four",
+      "from",
+      "get",
+      "minus",
+      "modulo",
+      "multiply",
+      "nine",
+      "obtain",
+      "of",
+      "one",
+      "product",
+      "scale",
+      "seven",
+      "six",
+      "subtract",
+      "take",
+      "ten",
+      "the",
+      "then",
+      "three",
+      "times",
+      "to",
+      "two",
+      "x",
+      "zero"
+    ],
+    "attempts": [
+      {
+        "active_wording_shapes": 9,
+        "before_status": "NEEDS_LESSON",
+        "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+        "checked_domain": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "confidence": 0.9998412132263184,
+        "formal_statement": "3*x-2=4 (mod 11)",
+        "formal_verification": true,
+        "labels": [
+          0,
+          3,
+          2,
+          4
+        ],
+        "learned_on_request": true,
+        "lesson": {
+          "development": {
+            "accepted": 0,
+            "accepted_answer_accuracy": null,
+            "accepted_translation_accuracy": null,
+            "answer_accuracy": 1.0,
+            "coverage": 0.0,
+            "exact_translation": 1.0,
+            "examples": 128,
+            "formal_checks": 128,
+            "joint_cross_entropy": 0.004711531917564571,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "threshold": 0.0,
+            "unique_semantic_triples": 105,
+            "unique_texts": 127
+          },
+          "kind": "word",
+          "steps": 240,
+          "teaching_examples": 48,
+          "withdrawn_shapes": []
+        },
+        "missing_words": [],
+        "owner": "b29f11b0a20c9ab48c5bd12228a3356b0df46d5cb73a10d5de56dc343f139c6d",
+        "reproof_work": {
+          "domain_checks": 7986,
+          "expression_nodes": 12584,
+          "forward_nodes": 6655,
+          "graph_validation_bytes": 3218,
+          "library_index_entries": 5,
+          "nonzero_checks": 1331,
+          "proof_dependency_nodes": 5,
+          "proof_index_insertions": 2662,
+          "proof_index_lookups": 2541
+        },
+        "same_owner": true,
+        "solutions": [
+          2
+        ],
+        "status": "ACCEPTED",
+        "text": "scale x by three then subtract two to get four modulo eleven",
+        "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+        "translation_verification": true
+      },
+      {
+        "active_wording_shapes": 1,
+        "before_status": "NEEDS_LESSON",
+        "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+        "checked_domain": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "confidence": 0.9998741149902344,
+        "formal_statement": "3*x-2=4 (mod 11)",
+        "formal_verification": true,
+        "labels": [
+          0,
+          3,
+          2,
+          4
+        ],
+        "learned_on_request": true,
+        "lesson": {
+          "development": {
+            "accepted": 128,
+            "accepted_answer_accuracy": 1.0,
+            "accepted_translation_accuracy": 1.0,
+            "answer_accuracy": 1.0,
+            "coverage": 1.0,
+            "exact_translation": 1.0,
+            "examples": 128,
+            "formal_checks": 128,
+            "joint_cross_entropy": 0.004926661678837263,
+            "slot_accuracy": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "threshold": 0.0,
+            "unique_semantic_triples": 99,
+            "unique_texts": 127
+          },
+          "kind": "wording",
+          "steps": 240,
+          "teaching_examples": 192,
+          "withdrawn_shapes": [
+            "multiply x by # then subtract # to get # modulo eleven",
+            "scale x by # then subtract # to get # modulo eleven",
+            "subtract # from the product of # and x equals # modulo eleven",
+            "subtract # from x then multiply by # to get # modulo eleven",
+            "subtract # from x then scale by # to get # modulo eleven",
+            "take # times x subtract # and obtain # modulo eleven",
+            "take x minus # multiply by # and obtain # modulo eleven",
+            "take x minus # scale by # and obtain # modulo eleven",
+            "the product of # and the difference of x and # equals # modulo eleven"
+          ]
+        },
+        "missing_words": [],
+        "owner": "218e0d8736285e16c9b6dc7790990a48021e87b8fdac2e8b7abb4eb4715cd23e",
+        "reproof_work": {
+          "domain_checks": 7986,
+          "expression_nodes": 12584,
+          "forward_nodes": 6655,
+          "graph_validation_bytes": 3218,
+          "library_index_entries": 5,
+          "nonzero_checks": 1331,
+          "proof_dependency_nodes": 5,
+          "proof_index_insertions": 2662,
+          "proof_index_lookups": 2541
+        },
+        "same_owner": true,
+        "solutions": [
+          2
+        ],
+        "status": "ACCEPTED",
+        "text": "the product of x and three minus two equals four modulo eleven",
+        "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+        "translation_verification": true
+      },
+      {
+        "active_wording_shapes": 5,
+        "before_status": "NEEDS_LESSON",
+        "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+        "checked_domain": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "confidence": 0.9999974966049194,
+        "formal_statement": "2*(x-3)=4 (mod 11)",
+        "formal_verification": true,
+        "labels": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "learned_on_request": true,
+        "lesson": {
+          "development": {
+            "accepted": 128,
+            "accepted_answer_accuracy": 0.9921875,
+            "accepted_translation_accuracy": 0.9921875,
+            "answer_accuracy": 0.9921875,
+            "coverage": 1.0,
+            "exact_translation": 0.9921875,
+            "examples": 128,
+            "formal_checks": 128,
+            "joint_cross_entropy": 0.008383272811443021,
+            "slot_accuracy": [
+              1.0,
+              0.9921875,
+              1.0,
+              1.0
+            ],
+            "threshold": 0.0,
+            "unique_semantic_triples": 102,
+            "unique_texts": 126
+          },
+          "kind": "wording",
+          "steps": 240,
+          "teaching_examples": 192,
+          "withdrawn_shapes": [
+            "the product of x and # minus # equals # modulo eleven"
+          ]
+        },
+        "missing_words": [],
+        "owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+        "reproof_work": {
+          "domain_checks": 7986,
+          "expression_nodes": 12584,
+          "forward_nodes": 6655,
+          "graph_validation_bytes": 3218,
+          "library_index_entries": 5,
+          "nonzero_checks": 1331,
+          "proof_dependency_nodes": 5,
+          "proof_index_insertions": 2662,
+          "proof_index_lookups": 2541
+        },
+        "same_owner": true,
+        "solutions": [
+          5
+        ],
+        "status": "ACCEPTED",
+        "text": "subtract three from x then multiply by two to get four modulo eleven",
+        "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+        "translation_verification": true
+      },
+      {
+        "active_wording_shapes": 5,
+        "before_status": "ACCEPTED",
+        "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+        "checked_domain": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "confidence": 0.9999974966049194,
+        "execution": {
+          "equation": "2 \u00d7 x \u2212 6 \u2261 4 (mod 11)",
+          "method": "preserved guarded program + independent forward substitution",
+          "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+          "status": "verified_unique",
+          "work": {
+            "domain_checks": 3,
+            "expression_nodes": 7,
+            "forward_nodes": 33,
+            "indexed_lookup": 1,
+            "interpreter_identity_checks": 1,
+            "lookup_key_bytes": 64,
+            "nonzero_checks": 1,
+            "owner_identity_checks": 1
+          }
+        },
+        "formal_statement": "2*(x-3)=4 (mod 11)",
+        "formal_verification": true,
+        "labels": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "learned_on_request": false,
+        "lesson": null,
+        "missing_words": [],
+        "owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+        "reproof_work": {
+          "domain_checks": 7986,
+          "expression_nodes": 12584,
+          "forward_nodes": 6655,
+          "graph_validation_bytes": 3218,
+          "library_index_entries": 5,
+          "nonzero_checks": 1331,
+          "proof_dependency_nodes": 5,
+          "proof_index_insertions": 2662,
+          "proof_index_lookups": 2541
+        },
+        "same_owner": true,
+        "solutions": [
+          5
+        ],
+        "status": "ACCEPTED",
+        "text": "subtract three from x then multiply by two to get four modulo eleven",
+        "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+        "translation_verification": true
+      }
+    ],
+    "checkpoint": {
+      "bytes": 125903,
+      "path": "runs/sera-workbench/language/b43b147d1db4bfdb98e56760/language.pt",
+      "sha256": "6415e2b8dc05c7314ebf44e480e213c96845efad8f06ec68f36ae4b2f510ea19"
+    },
+    "initialization_seed": 151001,
+    "lessons": 3,
+    "optimizer_steps": 720,
+    "paid_teaching_examples": 432,
+    "qualification": "L10-FINAL-151001-interface",
+    "qualification_sha256": "ad01b10387e77945bdc1023f4dfa9ee40d58ec10a64659cd92c96966a75ddbb4",
+    "runtime_source": "2f4b2a7a4993d26a7f363aac0d7f439caff887b990805f84ebc99a968edeca8c",
+    "shapes": [
+      "multiply x by # then subtract # to get # modulo eleven",
+      "subtract # from x then multiply by # to get # modulo eleven",
+      "take # times x subtract # and obtain # modulo eleven",
+      "take x minus # multiply by # and obtain # modulo eleven",
+      "the product of # and the difference of x and # equals # modulo eleven"
+    ],
+    "threshold": 0.0
+  },
+  "legacy": {
+    "budget": {
+      "counts": {
+        "candidate_validations": 17,
+        "factual_observations": 16,
+        "generator_observation_visits": 32,
+        "generator_posterior_solves": 68,
+        "generator_predictions": 6,
+        "generator_statistics_replay_visits": 464,
+        "hypothetical_assumptions": 81,
+        "hypothetical_branches": 1,
+        "predecessor_serializations": 17,
+        "proposed_admissions": 17,
+        "replayed_labels": 43,
+        "replayed_observations": 824,
+        "solver_copies": 17,
+        "verified_labels": 1
+      },
+      "limit": 100000
+    },
+    "budget_sha256": "471221e03fb06420440b5a092524fc86af2690110448e588974edfe7c09476cb",
+    "payload": {
+      "format": "sera-factual-situation-v1",
+      "labels": [
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "correction-1",
+            "source": "verified-sensor-recheck"
+          },
+          "role": "target",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 3,
+          "values": [
+            -0.36,
+            0.8635982534427946,
+            -1.007523981989153
+          ]
+        }
+      ],
+      "max_events": 4096,
+      "mechanism": {
+        "dependencies": [
+          {
+            "name": "circle",
+            "sha256": "0be640d3b2d723bf2005788b8e58519c488974246bacb2388eaa0bdf007b3fba"
+          },
+          {
+            "name": "ellipse",
+            "sha256": "e6a0546d63febd0e83e16795554af0adbf1bb3e21054f80a2a559f827ef8f55e"
+          },
+          {
+            "name": "generator",
+            "sha256": "4954bd64a3995b05baea01d3640e4d56888d9fe1b7cab1f20049d24cb313454a"
+          },
+          {
+            "name": "line",
+            "sha256": "8d1e37c5a04e516d2b4de83439b72a77516056a79b656fc4f36de5553a163ec2"
+          },
+          {
+            "name": "radial_growth",
+            "sha256": "d16aff05e6bbbee73d12c9f87759244c85243a1ab2315b796712ba0d7ba80f30"
+          }
+        ],
+        "graph_sha256": "c943090272541cb68d63e79e940eae540d6d12d074584312ef7c0a36dba59352",
+        "interpreter_sha256": "14ddbf38e96648c4bdf1da5fb073853333865be181d03b43f756c289e3dd9d8c",
+        "owner_name": "r1",
+        "parameter_sha256": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+        "schema_sha256": "e1c6f490e1407159333b65f1ddba690ed235bbde754c2c940c846f4e12b39421"
+      },
+      "migration": null,
+      "observations": [
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-0",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 0,
+          "values": [
+            -0.6,
+            0.2874617279858361,
+            -1.2154816353795295
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-1",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 1,
+          "values": [
+            -0.52,
+            0.47574538255294324,
+            -1.233087783037286
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-2",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 2,
+          "values": [
+            -0.43999999999999995,
+            0.7487792161592614,
+            -1.1483926933293622
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-3",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 3,
+          "values": [
+            -0.36,
+            3.8635982534427944,
+            -3.007523981989153
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-4",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 4,
+          "values": [
+            -0.27999999999999997,
+            0.9672973987058362,
+            -0.768821450349194
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-5",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 5,
+          "values": [
+            -0.19999999999999996,
+            1.011672068421768,
+            -0.654582454431886
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-6",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 6,
+          "values": [
+            -0.12,
+            1.1474870654108131,
+            -0.45934995498633097
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-7",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 7,
+          "values": [
+            -0.039999999999999925,
+            1.0403787225725363,
+            -0.19711002530996063
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-8",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 8,
+          "values": [
+            0.040000000000000036,
+            1.0625602994490393,
+            -0.005059620494307885
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-9",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 9,
+          "values": [
+            0.12,
+            0.899242177622884,
+            0.18058323955448013
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-10",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 10,
+          "values": [
+            0.20000000000000007,
+            0.719738299587705,
+            0.2999036645552005
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-11",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 11,
+          "values": [
+            0.28,
+            0.4986469924492501,
+            0.36919897126522294
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-12",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 12,
+          "values": [
+            0.36,
+            0.34813052500254316,
+            0.5230081565908157
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-13",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 13,
+          "values": [
+            0.44000000000000006,
+            0.06080785900981758,
+            0.404727144412186
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-14",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 14,
+          "values": [
+            0.5200000000000001,
+            -0.09244887059511177,
+            0.2957431872442775
+          ]
+        },
+        {
+          "available": [
+            true,
+            true,
+            true
+          ],
+          "entity_refs": [
+            "trajectory"
+          ],
+          "provenance": {
+            "kind": "simulator_ground_truth",
+            "record_id": "observation-15",
+            "source": "observed-simulator"
+          },
+          "role": "observation",
+          "schema": {
+            "encoding": "phase-pi-t-xy-v1",
+            "entity_slots": 1,
+            "modality": "numeric",
+            "name": "phase-world",
+            "units": "dimensionless",
+            "version": 1,
+            "width": 3
+          },
+          "sequence": 15,
+          "values": [
+            0.6,
+            -0.27031807586226714,
+            0.24780533432759244
+          ]
+        }
+      ],
+      "situation_id": "observed-trajectory"
+    },
+    "sha256": "180d4aeec4d0cb9e2636b1f1eca0db2ed90376c0d29886b72b9bbe1f61ed94a5"
+  },
+  "library": {
+    "graph": {
+      "definitions": [
+        {
+          "body": {
+            "field": 11,
+            "kind": "supplied_finite_relation",
+            "left": [
+              "sub",
+              [
+                "mul",
+                "x",
+                "a"
+              ],
+              "b"
+            ],
+            "state": "current equation; supplied semantics"
+          },
+          "dependencies": [],
+          "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+          "name": "affine",
+          "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963"
+        },
+        {
+          "body": {
+            "evidence_status": "exhaustively_verified_finite_domain",
+            "input_types": {
+              "a": "F11",
+              "b": "F11",
+              "c": "F11"
+            },
+            "kind": "guarded_program",
+            "nonzero_conditions": [
+              [
+                "input",
+                "a"
+              ]
+            ],
+            "output_type": "unique F11 solution or unsupported",
+            "program": [
+              "mul",
+              [
+                "add",
+                [
+                  "input",
+                  "c"
+                ],
+                [
+                  "input",
+                  "b"
+                ]
+              ],
+              [
+                "inv",
+                [
+                  "input",
+                  "a"
+                ]
+              ]
+            ],
+            "proof": {
+              "accepted_inputs": 1210,
+              "checked_inputs": 1331,
+              "domain": "F11^3",
+              "scope": "Exhaustive correctness inside supplied finite semantics and preconditions only"
+            },
+            "semantics": "6a387b529d2386e8200e4f937c5e3e81df37daaf32f133a0a14486dfc117d1b1",
+            "teaching_sha256": "309b665e7d64ab785d88fb1b5ce4469ae78d294f33995b90543c0eb903e1d06b"
+          },
+          "dependencies": [
+            {
+              "name": "affine",
+              "sha256": "6a387b529d2386e8200e4f937c5e3e81df37daaf32f133a0a14486dfc117d1b1"
+            }
+          ],
+          "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+          "name": "compiled/affine",
+          "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963"
+        },
+        {
+          "body": {
+            "callee": "compiled/affine",
+            "kind": "composition",
+            "state": "previous conditional solution feeds the next c"
+          },
+          "dependencies": [
+            {
+              "name": "compiled/affine",
+              "sha256": "cad4dc34e852acb9fdc2603cd46d78b09cfdaf62e709c4fb180653b881215d25"
+            }
+          ],
+          "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+          "name": "compiled/affine_chain",
+          "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963"
+        },
+        {
+          "body": {
+            "evidence_status": "exhaustively_verified_finite_domain",
+            "input_types": {
+              "a": "F11",
+              "b": "F11",
+              "c": "F11"
+            },
+            "kind": "guarded_program",
+            "nonzero_conditions": [],
+            "output_type": "unique F11 solution or unsupported",
+            "program": [
+              "sub",
+              [
+                "input",
+                "c"
+              ],
+              [
+                "input",
+                "b"
+              ]
+            ],
+            "proof": {
+              "accepted_inputs": 1331,
+              "checked_inputs": 1331,
+              "domain": "F11^3",
+              "scope": "Exhaustive correctness inside supplied finite semantics and preconditions only"
+            },
+            "semantics": "f53ad03ee78228b75fb2c6783d7a248b213653f7349c8afb86ac84dd17bc2dcd",
+            "teaching_sha256": "0d1e62452780137cd2edd8481f7f74232ff81e299921e17d02d4da1108494cc4"
+          },
+          "dependencies": [
+            {
+              "name": "offset",
+              "sha256": "f53ad03ee78228b75fb2c6783d7a248b213653f7349c8afb86ac84dd17bc2dcd"
+            }
+          ],
+          "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+          "name": "compiled/offset",
+          "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963"
+        },
+        {
+          "body": {
+            "field": 11,
+            "kind": "supplied_finite_relation",
+            "left": [
+              "add",
+              "x",
+              "b"
+            ],
+            "state": "current equation; supplied semantics"
+          },
+          "dependencies": [],
+          "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+          "name": "offset",
+          "schema_sha256": "32b08e0e79cd720ba1bd79d90ff62e5f1cace52cb2747d8670285ba2e3a46963"
+        }
+      ],
+      "format": "sera-executable-graph-v1",
+      "interpreter_sha256": "2d9dbd3133f375a802ed4883d5071fe3b6b4230c0d1404bee62919f72c7e705a",
+      "schema": {
+        "encoding": "formal-roles-v1",
+        "entity_slots": 0,
+        "modality": "symbolic",
+        "name": "finite-equation",
+        "units": "F11",
+        "version": 1,
+        "width": 3
+      }
+    },
+    "graph_sha256": "f8054d3d2af9f680e176991016d361d1f6bd3c227b6fcc462f1720d99283caac",
+    "owner_sha256": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589"
+  },
+  "live_source": "ad126ecbb63481730835ca217b4039dde0c7d5384631a01850ba477911b5a785",
+  "owner_sha256": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+  "previous_sha256": "1d36706eca8ac49afd701f758ead1c1b219cecc7f13e1729ff042394678031bf",
+  "records": [
+    {
+      "action": 1,
+      "before_time": 78,
+      "changes_detected": 1,
+      "coefficients": [
+        0.855752204033099,
+        -0.08270621012470966,
+        0.0057134367146466645
+      ],
+      "goal": [
+        -0.3450228119446987,
+        0.18954951971039374
+      ],
+      "goal_error": 1.0570231171072453,
+      "observation": [
+        -0.4672731988171713,
+        -0.860380341284448
+      ],
+      "predicted_action": 1,
+      "prediction": [
+        [
+          -0.46506858113883104,
+          -0.8564967579651397
+        ],
+        [
+          -0.5107781406243705,
+          -0.7725224002718503
+        ],
+        [
+          -0.5616405021421191,
+          -0.6341504802623787
+        ],
+        [
+          -0.5897589489537539,
+          -0.44461083913481486
+        ]
+      ],
+      "prediction_applies_to_action": true,
+      "time": 79
+    },
+    {
+      "action": 1,
+      "before_time": 79,
+      "changes_detected": 1,
+      "coefficients": [
+        0.8632417179577991,
+        -0.0838663447434809,
+        0.004062981128767897
+      ],
+      "goal": [
+        -0.3450228119446987,
+        0.18954951971039374
+      ],
+      "goal_error": 0.9794507672019045,
+      "observation": [
+        -0.520050190612329,
+        -0.7741357100659775
+      ],
+      "predicted_action": 1,
+      "prediction": [
+        [
+          -0.5090078671627422,
+          -0.7766231707701089
+        ],
+        [
+          -0.5603423597233081,
+          -0.6410050561191344
+        ],
+        [
+          -0.5907577359194881,
+          -0.45418793244299704
+        ],
+        [
+          -0.5703819763409446,
+          -0.22810164698967353
+        ]
+      ],
+      "prediction_applies_to_action": true,
+      "time": 80
+    },
+    {
+      "action": 1,
+      "before_time": 80,
+      "changes_detected": 1,
+      "coefficients": [
+        0.8586857976438971,
+        -0.08357792569989893,
+        0.004819975048801233
+      ],
+      "goal": [
+        -0.3450228119446987,
+        0.18954951971039374
+      ],
+      "goal_error": 0.8541642871509829,
+      "observation": [
+        -0.5761739321719287,
+        -0.6327434871076404
+      ],
+      "predicted_action": 1,
+      "prediction": [
+        [
+          -0.5647554689855159,
+          -0.6257418957276197
+        ],
+        [
+          -0.592490346066476,
+          -0.42738089770265697
+        ],
+        [
+          -0.5626201191550184,
+          -0.1889823337019136
+        ],
+        [
+          -0.4470363849363224,
+          0.059990537912933795
+        ]
+      ],
+      "prediction_applies_to_action": true,
+      "time": 81
+    },
+    {
+      "action": 1,
+      "before_time": 81,
+      "changes_detected": 1,
+      "coefficients": [
+        0.8614527834533644,
+        -0.08390526677677798,
+        0.004677803096388844
+      ],
+      "goal": [
+        -0.3450228119446987,
+        0.18954951971039374
+      ],
+      "goal_error": 0.6744746190536176,
+      "observation": [
+        -0.6056347593126971,
+        -0.4325416509684564
+      ],
+      "predicted_action": 1,
+      "prediction": [
+        [
+          -0.5925169395170689,
+          -0.43619359747868947
+        ],
+        [
+          -0.5673238288519232,
+          -0.2033911423791744
+        ],
+        [
+          -0.46136257275558556,
+          0.04215859784358598
+        ],
+        [
+          -0.3147437200338924,
+          0.21417504845557392
+        ]
+      ],
+      "prediction_applies_to_action": true,
+      "time": 82
+    },
+    {
+      "action": 1,
+      "before_time": 82,
+      "changes_detected": 1,
+      "coefficients": [
+        0.8673824508482391,
+        -0.08286320315760677,
+        0.0033768315611988706
+      ],
+      "goal": [
+        -0.3450228119446987,
+        0.18954951971039374
+      ],
+      "goal_error": 0.4454579069091862,
+      "observation": [
+        -0.5797320961809268,
+        -0.18905885146123091
+      ],
+      "predicted_action": 1,
+      "prediction": [
+        [
+          -0.5655306049854084,
+          -0.19535655089422582
+        ],
+        [
+          -0.4552347240138263,
+          0.05331611176579531
+        ],
+        [
+          -0.35466115294502276,
+          0.1782138046052378
+        ],
+        [
+          -0.30741457761982954,
+          0.22116892329397128
+        ]
+      ],
+      "prediction_applies_to_action": true,
+      "time": 83
+    },
+    {
+      "action": 1,
+      "before_time": 83,
+      "changes_detected": 1,
+      "coefficients": [
+        0.8603087604988294,
+        -0.08288583256700077,
+        0.004266998741646945
+      ],
+      "goal": [
+        -0.3450228119446987,
+        0.18954951971039374
+      ],
+      "goal_error": 0.17932348121873756,
+      "observation": [
+        -0.4684330808194784,
+        0.05944642039042551
+      ],
+      "predicted_action": 1,
+      "prediction": [
+        [
+          -0.4520905407106416,
+          0.05853089545034185
+        ],
+        [
+          -0.34635178556231894,
+          0.18777976230775495
+        ],
+        [
+          -0.2925024736240861,
+          0.23616080502667766
+        ],
+        [
+          -0.29851139171449337,
+          0.22840336873088082
+        ]
+      ],
+      "prediction_applies_to_action": true,
+      "time": 84
+    }
+  ],
+  "revision": 14,
+  "schema": "sera.workbench.session.1",
+  "stream_costs": {
+    "fits": 356,
+    "new_observations": 80,
+    "replayed_observations": 24
+  },
+  "streams": {
+    "live_sensor_demo": {
+      "context": "ffafd6e9d810d6e3",
+      "horizon": 12,
+      "observations": [
+        {
+          "timestamp": "0",
+          "value": 30.0
+        },
+        {
+          "timestamp": "1",
+          "value": 30.124221187776357
+        },
+        {
+          "timestamp": "2",
+          "value": 30.243827661581264
+        },
+        {
+          "timestamp": "3",
+          "value": 30.354491628007
+        },
+        {
+          "timestamp": "4",
+          "value": 30.45244129544237
+        },
+        {
+          "timestamp": "5",
+          "value": 30.534695385806675
+        },
+        {
+          "timestamp": "6",
+          "value": 30.599248495981218
+        },
+        {
+          "timestamp": "7",
+          "value": 30.64519578406218
+        },
+        {
+          "timestamp": "8",
+          "value": 30.6727892280477
+        },
+        {
+          "timestamp": "9",
+          "value": 30.683421959066376
+        },
+        {
+          "timestamp": "10",
+          "value": 30.679541643231186
+        },
+        {
+          "timestamp": "11",
+          "value": 30.6644982976157
+        },
+        {
+          "timestamp": "12",
+          "value": 30.642336002417963
+        },
+        {
+          "timestamp": "13",
+          "value": 30.617541459640965
+        },
+        {
+          "timestamp": "14",
+          "value": 30.594765031693115
+        },
+        {
+          "timestamp": "15",
+          "value": 30.578531604377297
+        },
+        {
+          "timestamp": "16",
+          "value": 30.57295925140762
+        },
+        {
+          "timestamp": "17",
+          "value": 30.581503192531425
+        },
+        {
+          "timestamp": "18",
+          "value": 30.60674096470047
+        },
+        {
+          "timestamp": "19",
+          "value": 30.650212163307387
+        },
+        {
+          "timestamp": "20",
+          "value": 30.712322717601058
+        },
+        {
+          "timestamp": "21",
+          "value": 30.792319651972022
+        },
+        {
+          "timestamp": "22",
+          "value": 30.888337902328885
+        },
+        {
+          "timestamp": "23",
+          "value": 30.997516276750222
+        },
+        {
+          "timestamp": "24",
+          "value": 31.11617535054032
+        },
+        {
+          "timestamp": "25",
+          "value": 31.240046235035734
+        },
+        {
+          "timestamp": "26",
+          "value": 31.364535996426344
+        },
+        {
+          "timestamp": "27",
+          "value": 31.485013222134185
+        },
+        {
+          "timestamp": "28",
+          "value": 31.597095979615634
+        },
+        {
+          "timestamp": "29",
+          "value": 31.69692426370345
+        },
+        {
+          "timestamp": "30",
+          "value": 31.781399993032423
+        },
+        {
+          "timestamp": "31",
+          "value": 31.848379633733355
+        }
+      ],
+      "report": {
+        "assumptions": "Ordered scalar observations at a regular interval; forecasts are conditional estimates. Flags indicate surprise, not a diagnosed cause. No calibrated prediction interval.",
+        "coefficients": [
+          0.42441691091952544,
+          0.41681001098014536,
+          5.153071004034802
+        ],
+        "execution": "registered coefficients executed by the actual shared R1 owner",
+        "fits": 108,
+        "flags": 0,
+        "forecast": [
+          {
+            "step": 1,
+            "value": 31.916867586036474
+          },
+          {
+            "step": 2,
+            "value": 31.97385281596417
+          },
+          {
+            "step": 3,
+            "value": 32.02658477536959
+          },
+          {
+            "step": 4,
+            "value": 32.072717124999045
+          },
+          {
+            "step": 5,
+            "value": 32.11427568290102
+          },
+          {
+            "step": 6,
+            "value": 32.15114226282363
+          },
+          {
+            "step": 7,
+            "value": 32.184111085766
+          },
+          {
+            "step": 8,
+            "value": 32.21346997133819
+          },
+          {
+            "step": 9,
+            "value": 32.23967211431339
+          },
+          {
+            "step": 10,
+            "value": 32.26302982431211
+          },
+          {
+            "step": 11,
+            "value": 32.28386454693712
+          },
+          {
+            "step": 12,
+            "value": 32.30244288291453
+          }
+        ],
+        "last_timestamp": "31",
+        "last_value": 31.848379633733355,
+        "mae": 0.02321567628244818,
+        "method": "ar2_8",
+        "persistence_mae": 0.059023448586314996,
+        "prequential": [
+          {
+            "actual": 30.599248495981218,
+            "error": 0.06455311017454335,
+            "flagged": false,
+            "index": 6,
+            "method": "persistence",
+            "persistence": 30.534695385806675,
+            "prediction": 30.534695385806675,
+            "threshold": null,
+            "timestamp": "6"
+          },
+          {
+            "actual": 30.64519578406218,
+            "error": 0.04594728808096349,
+            "flagged": false,
+            "index": 7,
+            "method": "persistence",
+            "persistence": 30.599248495981218,
+            "prediction": 30.599248495981218,
+            "threshold": null,
+            "timestamp": "7"
+          },
+          {
+            "actual": 30.6727892280477,
+            "error": 0.027593443985519883,
+            "flagged": false,
+            "index": 8,
+            "method": "persistence",
+            "persistence": 30.64519578406218,
+            "prediction": 30.64519578406218,
+            "threshold": null,
+            "timestamp": "8"
+          },
+          {
+            "actual": 30.683421959066376,
+            "error": 0.010632731018674235,
+            "flagged": false,
+            "index": 9,
+            "method": "persistence",
+            "persistence": 30.6727892280477,
+            "prediction": 30.6727892280477,
+            "threshold": null,
+            "timestamp": "9"
+          },
+          {
+            "actual": 30.679541643231186,
+            "error": -0.026534121114028864,
+            "flagged": false,
+            "index": 10,
+            "method": "ar2_8",
+            "persistence": 30.683421959066376,
+            "prediction": 30.706075764345215,
+            "threshold": null,
+            "timestamp": "10"
+          },
+          {
+            "actual": 30.6644982976157,
+            "error": -0.029197458114648356,
+            "flagged": false,
+            "index": 11,
+            "method": "ar2_8",
+            "persistence": 30.679541643231186,
+            "prediction": 30.69369575573035,
+            "threshold": null,
+            "timestamp": "11"
+          },
+          {
+            "actual": 30.642336002417963,
+            "error": -0.03115965868692072,
+            "flagged": false,
+            "index": 12,
+            "method": "ar2_8",
+            "persistence": 30.6644982976157,
+            "prediction": 30.673495661104884,
+            "threshold": null,
+            "timestamp": "12"
+          },
+          {
+            "actual": 30.617541459640965,
+            "error": -0.02564880353682142,
+            "flagged": false,
+            "index": 13,
+            "method": "ar2_8",
+            "persistence": 30.642336002417963,
+            "prediction": 30.643190263177786,
+            "threshold": null,
+            "timestamp": "13"
+          },
+          {
+            "actual": 30.594765031693115,
+            "error": -0.00885308788413397,
+            "flagged": false,
+            "index": 14,
+            "method": "ar2_8",
+            "persistence": 30.617541459640965,
+            "prediction": 30.60361811957725,
+            "threshold": 0.1344452645092026,
+            "timestamp": "14"
+          },
+          {
+            "actual": 30.578531604377297,
+            "error": 0.0010472439725539573,
+            "flagged": false,
+            "index": 15,
+            "method": "ar2_8",
+            "persistence": 30.594765031693115,
+            "prediction": 30.577484360404743,
+            "threshold": 0.12065025321504251,
+            "timestamp": "15"
+          },
+          {
+            "actual": 30.57295925140762,
+            "error": 0.013300325332068041,
+            "flagged": false,
+            "index": 16,
+            "method": "ar2_8",
+            "persistence": 30.578531604377297,
+            "prediction": 30.559658926075553,
+            "threshold": 0.14210939036225662,
+            "timestamp": "16"
+          },
+          {
+            "actual": 30.581503192531425,
+            "error": 0.02086742279658793,
+            "flagged": false,
+            "index": 17,
+            "method": "ar2_8",
+            "persistence": 30.57295925140762,
+            "prediction": 30.560635769734837,
+            "threshold": 0.15831824014959972,
+            "timestamp": "17"
+          },
+          {
+            "actual": 30.60674096470047,
+            "error": 0.02523777216904577,
+            "flagged": false,
+            "index": 18,
+            "method": "persistence",
+            "persistence": 30.581503192531425,
+            "prediction": 30.581503192531425,
+            "threshold": 0.1578739123532464,
+            "timestamp": "18"
+          },
+          {
+            "actual": 30.650212163307387,
+            "error": 0.04347119860691606,
+            "flagged": false,
+            "index": 19,
+            "method": "persistence",
+            "persistence": 30.60674096470047,
+            "prediction": 30.60674096470047,
+            "threshold": 0.11555870042121377,
+            "timestamp": "19"
+          },
+          {
+            "actual": 30.712322717601058,
+            "error": 0.023585333106399986,
+            "flagged": false,
+            "index": 20,
+            "method": "ar2_8",
+            "persistence": 30.650212163307387,
+            "prediction": 30.688737384494658,
+            "threshold": 0.15515197430326155,
+            "timestamp": "20"
+          },
+          {
+            "actual": 30.792319651972022,
+            "error": 0.010638649994501037,
+            "flagged": false,
+            "index": 21,
+            "method": "ar2_8",
+            "persistence": 30.712322717601058,
+            "prediction": 30.78168100197752,
+            "threshold": 0.1313786017373644,
+            "timestamp": "21"
+          },
+          {
+            "actual": 30.888337902328885,
+            "error": -0.018729856618175944,
+            "flagged": false,
+            "index": 22,
+            "method": "ar2_8",
+            "persistence": 30.792319651972022,
+            "prediction": 30.90706775894706,
+            "threshold": 0.1080712562998976,
+            "timestamp": "22"
+          },
+          {
+            "actual": 30.997516276750222,
+            "error": -0.025553076652375495,
+            "flagged": false,
+            "index": 23,
+            "method": "ar2_8",
+            "persistence": 30.888337902328885,
+            "prediction": 31.023069353402597,
+            "threshold": 0.11559380231545704,
+            "timestamp": "23"
+          },
+          {
+            "actual": 31.11617535054032,
+            "error": -0.02365704871606411,
+            "flagged": false,
+            "index": 24,
+            "method": "ar2_8",
+            "persistence": 30.997516276750222,
+            "prediction": 31.139832399256385,
+            "threshold": 0.14486284601851668,
+            "timestamp": "24"
+          },
+          {
+            "actual": 31.240046235035734,
+            "error": -0.020955343975792573,
+            "flagged": false,
+            "index": 25,
+            "method": "ar2_8",
+            "persistence": 31.11617535054032,
+            "prediction": 31.261001579011527,
+            "threshold": 0.17413188972157628,
+            "timestamp": "25"
+          },
+          {
+            "actual": 31.364535996426344,
+            "error": -0.018852489390159377,
+            "flagged": false,
+            "index": 26,
+            "method": "ar2_8",
+            "persistence": 31.240046235035734,
+            "prediction": 31.383388485816504,
+            "threshold": 0.15230801864522528,
+            "timestamp": "26"
+          },
+          {
+            "actual": 31.485013222134185,
+            "error": -0.01752301130689915,
+            "flagged": false,
+            "index": 27,
+            "method": "ar2_8",
+            "persistence": 31.364535996426344,
+            "prediction": 31.502536233441084,
+            "threshold": 0.14345950841647503,
+            "timestamp": "27"
+          },
+          {
+            "actual": 31.597095979615634,
+            "error": -0.01692211282929179,
+            "flagged": false,
+            "index": 28,
+            "method": "ar2_8",
+            "persistence": 31.485013222134185,
+            "prediction": 31.614018092444926,
+            "threshold": 0.12867792677038964,
+            "timestamp": "28"
+          },
+          {
+            "actual": 31.69692426370345,
+            "error": -0.01696525740421606,
+            "flagged": false,
+            "index": 29,
+            "method": "ar2_8",
+            "persistence": 31.597095979615634,
+            "prediction": 31.713889521107667,
+            "threshold": 0.11555870042121377,
+            "timestamp": "29"
+          },
+          {
+            "actual": 31.781399993032423,
+            "error": -0.01756132902255203,
+            "flagged": false,
+            "index": 30,
+            "method": "ar2_8",
+            "persistence": 31.69692426370345,
+            "prediction": 31.798961322054975,
+            "threshold": 0.0896815906289723,
+            "timestamp": "30"
+          },
+          {
+            "actual": 31.848379633733355,
+            "error": -0.01862040885379912,
+            "flagged": false,
+            "index": 31,
+            "method": "ar2_8",
+            "persistence": 31.781399993032423,
+            "prediction": 31.867000042587154,
+            "threshold": 0.07279770768027857,
+            "timestamp": "31"
+          }
+        ],
+        "procedure": "observed_error_selection",
+        "rows": 32
+      },
+      "update_kind": "append",
+      "updated_at": "2026-09-16T02:07:33.042111+00:00",
+      "version": 2
+    },
+    "synthetic_temperature": {
+      "context": "2d6b51ad00d0b05e",
+      "horizon": 12,
+      "observations": [
+        {
+          "timestamp": "2026-09-15T08:00:00.000Z",
+          "value": 20.0
+        },
+        {
+          "timestamp": "2026-09-15T08:05:00.000Z",
+          "value": 20.1791
+        },
+        {
+          "timestamp": "2026-09-15T08:10:00.000Z",
+          "value": 20.3526
+        },
+        {
+          "timestamp": "2026-09-15T08:15:00.000Z",
+          "value": 20.5152
+        },
+        {
+          "timestamp": "2026-09-15T08:20:00.000Z",
+          "value": 20.6621
+        },
+        {
+          "timestamp": "2026-09-15T08:25:00.000Z",
+          "value": 20.789
+        },
+        {
+          "timestamp": "2026-09-15T08:30:00.000Z",
+          "value": 20.8924
+        },
+        {
+          "timestamp": "2026-09-15T08:35:00.000Z",
+          "value": 20.9698
+        },
+        {
+          "timestamp": "2026-09-15T08:40:00.000Z",
+          "value": 21.0197
+        },
+        {
+          "timestamp": "2026-09-15T08:45:00.000Z",
+          "value": 21.0417
+        },
+        {
+          "timestamp": "2026-09-15T08:50:00.000Z",
+          "value": 21.0365
+        },
+        {
+          "timestamp": "2026-09-15T08:55:00.000Z",
+          "value": 21.0059
+        },
+        {
+          "timestamp": "2026-09-15T09:00:00.000Z",
+          "value": 20.9528
+        },
+        {
+          "timestamp": "2026-09-15T09:05:00.000Z",
+          "value": 20.8809
+        },
+        {
+          "timestamp": "2026-09-15T09:10:00.000Z",
+          "value": 20.7945
+        },
+        {
+          "timestamp": "2026-09-15T09:15:00.000Z",
+          "value": 20.6988
+        },
+        {
+          "timestamp": "2026-09-15T09:20:00.000Z",
+          "value": 20.5991
+        },
+        {
+          "timestamp": "2026-09-15T09:25:00.000Z",
+          "value": 20.5011
+        },
+        {
+          "timestamp": "2026-09-15T09:30:00.000Z",
+          "value": 20.4102
+        },
+        {
+          "timestamp": "2026-09-15T09:35:00.000Z",
+          "value": 20.3317
+        },
+        {
+          "timestamp": "2026-09-15T09:40:00.000Z",
+          "value": 20.2702
+        },
+        {
+          "timestamp": "2026-09-15T09:45:00.000Z",
+          "value": 20.2299
+        },
+        {
+          "timestamp": "2026-09-15T09:50:00.000Z",
+          "value": 20.2139
+        },
+        {
+          "timestamp": "2026-09-15T09:55:00.000Z",
+          "value": 20.2244
+        },
+        {
+          "timestamp": "2026-09-15T10:00:00.000Z",
+          "value": 20.2627
+        },
+        {
+          "timestamp": "2026-09-15T10:05:00.000Z",
+          "value": 20.3288
+        },
+        {
+          "timestamp": "2026-09-15T10:10:00.000Z",
+          "value": 20.4216
+        },
+        {
+          "timestamp": "2026-09-15T10:15:00.000Z",
+          "value": 20.5391
+        },
+        {
+          "timestamp": "2026-09-15T10:20:00.000Z",
+          "value": 20.6781
+        },
+        {
+          "timestamp": "2026-09-15T10:25:00.000Z",
+          "value": 20.8348
+        },
+        {
+          "timestamp": "2026-09-15T10:30:00.000Z",
+          "value": 21.0044
+        },
+        {
+          "timestamp": "2026-09-15T10:35:00.000Z",
+          "value": 21.1818
+        },
+        {
+          "timestamp": "2026-09-15T10:40:00.000Z",
+          "value": 21.3616
+        },
+        {
+          "timestamp": "2026-09-15T10:45:00.000Z",
+          "value": 22.0381
+        },
+        {
+          "timestamp": "2026-09-15T10:50:00.000Z",
+          "value": 22.2059
+        },
+        {
+          "timestamp": "2026-09-15T10:55:00.000Z",
+          "value": 22.3599
+        },
+        {
+          "timestamp": "2026-09-15T11:00:00.000Z",
+          "value": 22.4956
+        },
+        {
+          "timestamp": "2026-09-15T11:05:00.000Z",
+          "value": 22.6091
+        },
+        {
+          "timestamp": "2026-09-15T11:10:00.000Z",
+          "value": 22.6975
+        },
+        {
+          "timestamp": "2026-09-15T11:15:00.000Z",
+          "value": 22.759
+        },
+        {
+          "timestamp": "2026-09-15T11:20:00.000Z",
+          "value": 22.7926
+        },
+        {
+          "timestamp": "2026-09-15T11:25:00.000Z",
+          "value": 22.7985
+        },
+        {
+          "timestamp": "2026-09-15T11:30:00.000Z",
+          "value": 22.7782
+        },
+        {
+          "timestamp": "2026-09-15T11:35:00.000Z",
+          "value": 22.7341
+        },
+        {
+          "timestamp": "2026-09-15T11:40:00.000Z",
+          "value": 22.6694
+        },
+        {
+          "timestamp": "2026-09-15T11:45:00.000Z",
+          "value": 22.5885
+        },
+        {
+          "timestamp": "2026-09-15T11:50:00.000Z",
+          "value": 22.496
+        },
+        {
+          "timestamp": "2026-09-15T11:55:00.000Z",
+          "value": 22.3973
+        }
+      ],
+      "report": {
+        "assumptions": "Ordered scalar observations at a regular interval; forecasts are conditional estimates. Flags indicate surprise, not a diagnosed cause. No calibrated prediction interval.",
+        "coefficients": [
+          0.9277473734117565,
+          0.3634949694694995,
+          -6.689317951303226
+        ],
+        "execution": "registered coefficients executed by the actual shared R1 owner",
+        "fits": 172,
+        "flags": 2,
+        "forecast": [
+          {
+            "step": 1,
+            "value": 22.26690112839777
+          },
+          {
+            "step": 2,
+            "value": 22.1100469642863
+          },
+          {
+            "step": 3,
+            "value": 21.91712659167128
+          },
+          {
+            "step": 4,
+            "value": 21.681129523105216
+          },
+          {
+            "step": 5,
+            "value": 21.392058277656435
+          },
+          {
+            "step": 6,
+            "value": 21.038089441729152
+          },
+          {
+            "step": 7,
+            "value": 20.60461984038908
+          },
+          {
+            "step": 8,
+            "value": 20.073803665083446
+          },
+          {
+            "step": 9,
+            "value": 19.423776333174104
+          },
+          {
+            "step": 10,
+            "value": 18.627766173912722
+          },
+          {
+            "step": 11,
+            "value": 18.221685513652663
+          },
+          {
+            "step": 12,
+            "value": 18.221685513652663
+          }
+        ],
+        "last_timestamp": "2026-09-15T11:55:00.000Z",
+        "last_value": 22.3973,
+        "mae": 0.07855763739822554,
+        "method": "ar2_8",
+        "persistence_mae": 0.09681666666666662,
+        "prequential": [
+          {
+            "actual": 20.8924,
+            "error": 0.10339999999999705,
+            "flagged": false,
+            "index": 6,
+            "method": "persistence",
+            "persistence": 20.789,
+            "prediction": 20.789,
+            "threshold": null,
+            "timestamp": "2026-09-15T08:30:00.000Z"
+          },
+          {
+            "actual": 20.9698,
+            "error": 0.0774000000000008,
+            "flagged": false,
+            "index": 7,
+            "method": "persistence",
+            "persistence": 20.8924,
+            "prediction": 20.8924,
+            "threshold": null,
+            "timestamp": "2026-09-15T08:35:00.000Z"
+          },
+          {
+            "actual": 21.0197,
+            "error": 0.049900000000000944,
+            "flagged": false,
+            "index": 8,
+            "method": "persistence",
+            "persistence": 20.9698,
+            "prediction": 20.9698,
+            "threshold": null,
+            "timestamp": "2026-09-15T08:40:00.000Z"
+          },
+          {
+            "actual": 21.0417,
+            "error": 0.021999999999998465,
+            "flagged": false,
+            "index": 9,
+            "method": "persistence",
+            "persistence": 21.0197,
+            "prediction": 21.0197,
+            "threshold": null,
+            "timestamp": "2026-09-15T08:45:00.000Z"
+          },
+          {
+            "actual": 21.0365,
+            "error": -0.0451265489678363,
+            "flagged": false,
+            "index": 10,
+            "method": "ar2_8",
+            "persistence": 21.0417,
+            "prediction": 21.081626548967836,
+            "threshold": null,
+            "timestamp": "2026-09-15T08:50:00.000Z"
+          },
+          {
+            "actual": 21.0059,
+            "error": -0.05619713863520204,
+            "flagged": false,
+            "index": 11,
+            "method": "ar2_8",
+            "persistence": 21.0365,
+            "prediction": 21.062097138635202,
+            "threshold": null,
+            "timestamp": "2026-09-15T08:55:00.000Z"
+          },
+          {
+            "actual": 20.9528,
+            "error": -0.06841588735084159,
+            "flagged": false,
+            "index": 12,
+            "method": "ar2_8",
+            "persistence": 21.0059,
+            "prediction": 21.02121588735084,
+            "threshold": null,
+            "timestamp": "2026-09-15T09:00:00.000Z"
+          },
+          {
+            "actual": 20.8809,
+            "error": -0.07189999999999941,
+            "flagged": false,
+            "index": 13,
+            "method": "persistence",
+            "persistence": 20.9528,
+            "prediction": 20.9528,
+            "threshold": null,
+            "timestamp": "2026-09-15T09:05:00.000Z"
+          },
+          {
+            "actual": 20.7945,
+            "error": -0.027826947606495622,
+            "flagged": false,
+            "index": 14,
+            "method": "ar2_8",
+            "persistence": 20.8809,
+            "prediction": 20.822326947606495,
+            "threshold": 0.34748982617328095,
+            "timestamp": "2026-09-15T09:10:00.000Z"
+          },
+          {
+            "actual": 20.6988,
+            "error": -0.001253978022553781,
+            "flagged": false,
+            "index": 15,
+            "method": "ar2_8",
+            "persistence": 20.7945,
+            "prediction": 20.700053978022552,
+            "threshold": 0.26137082991443483,
+            "timestamp": "2026-09-15T09:15:00.000Z"
+          },
+          {
+            "actual": 20.5991,
+            "error": 0.028214743582765323,
+            "flagged": false,
+            "index": 16,
+            "method": "ar2_8",
+            "persistence": 20.6988,
+            "prediction": 20.570885256417235,
+            "threshold": 0.28327178397855923,
+            "timestamp": "2026-09-15T09:20:00.000Z"
+          },
+          {
+            "actual": 20.5011,
+            "error": 0.030255455084724048,
+            "flagged": false,
+            "index": 17,
+            "method": "ar2_8",
+            "persistence": 20.5991,
+            "prediction": 20.470844544915277,
+            "threshold": 0.3033635512649585,
+            "timestamp": "2026-09-15T09:25:00.000Z"
+          },
+          {
+            "actual": 20.4102,
+            "error": 0.026994812559639314,
+            "flagged": false,
+            "index": 18,
+            "method": "ar2_8",
+            "persistence": 20.5011,
+            "prediction": 20.38320518744036,
+            "threshold": 0.28177272299943096,
+            "timestamp": "2026-09-15T09:30:00.000Z"
+          },
+          {
+            "actual": 20.3317,
+            "error": 0.025442670657518818,
+            "flagged": false,
+            "index": 19,
+            "method": "ar2_8",
+            "persistence": 20.4102,
+            "prediction": 20.306257329342483,
+            "threshold": 0.2954937300855525,
+            "timestamp": "2026-09-15T09:35:00.000Z"
+          },
+          {
+            "actual": 20.2702,
+            "error": 0.026150650622145832,
+            "flagged": false,
+            "index": 20,
+            "method": "ar2_8",
+            "persistence": 20.3317,
+            "prediction": 20.244049349377853,
+            "threshold": 0.2304759450427836,
+            "timestamp": "2026-09-15T09:40:00.000Z"
+          },
+          {
+            "actual": 20.2299,
+            "error": 0.029487823615102826,
+            "flagged": false,
+            "index": 21,
+            "method": "ar2_8",
+            "persistence": 20.2702,
+            "prediction": 20.200412176384898,
+            "threshold": 0.15832180533230253,
+            "timestamp": "2026-09-15T09:45:00.000Z"
+          },
+          {
+            "actual": 20.2139,
+            "error": 0.0355198089173534,
+            "flagged": false,
+            "index": 22,
+            "method": "ar2_8",
+            "persistence": 20.2299,
+            "prediction": 20.178380191082645,
+            "threshold": 0.15168177563247925,
+            "timestamp": "2026-09-15T09:50:00.000Z"
+          },
+          {
+            "actual": 20.2244,
+            "error": 0.044989755833309886,
+            "flagged": false,
+            "index": 23,
+            "method": "ar2_8",
+            "persistence": 20.2139,
+            "prediction": 20.17941024416669,
+            "threshold": 0.14084314155043196,
+            "timestamp": "2026-09-15T09:55:00.000Z"
+          },
+          {
+            "actual": 20.2627,
+            "error": 0.058980185184442036,
+            "flagged": false,
+            "index": 24,
+            "method": "ar2_8",
+            "persistence": 20.2244,
+            "prediction": 20.203719814815557,
+            "threshold": 0.12378017657030395,
+            "timestamp": "2026-09-15T10:00:00.000Z"
+          },
+          {
+            "actual": 20.3288,
+            "error": 0.07233190316679128,
+            "flagged": false,
+            "index": 25,
+            "method": "ar2_8",
+            "persistence": 20.2627,
+            "prediction": 20.25646809683321,
+            "threshold": 0.1358369235963206,
+            "timestamp": "2026-09-15T10:05:00.000Z"
+          },
+          {
+            "actual": 20.4216,
+            "error": 0.02752896063990562,
+            "flagged": false,
+            "index": 26,
+            "method": "ar2_32",
+            "persistence": 20.3288,
+            "prediction": 20.394071039360096,
+            "threshold": 0.15168177563247925,
+            "timestamp": "2026-09-15T10:10:00.000Z"
+          },
+          {
+            "actual": 20.5391,
+            "error": 0.038343174285252246,
+            "flagged": false,
+            "index": 27,
+            "method": "ar2_32",
+            "persistence": 20.4216,
+            "prediction": 20.50075682571475,
+            "threshold": 0.1326692118211093,
+            "timestamp": "2026-09-15T10:15:00.000Z"
+          },
+          {
+            "actual": 20.6781,
+            "error": 0.04830968225471821,
+            "flagged": false,
+            "index": 28,
+            "method": "ar2_32",
+            "persistence": 20.5391,
+            "prediction": 20.629790317745282,
+            "threshold": 0.11607587223586939,
+            "timestamp": "2026-09-15T10:20:00.000Z"
+          },
+          {
+            "actual": 20.8348,
+            "error": 0.05715930006559233,
+            "flagged": false,
+            "index": 29,
+            "method": "ar2_32",
+            "persistence": 20.6781,
+            "prediction": 20.77764069993441,
+            "threshold": 0.1191710243001494,
+            "timestamp": "2026-09-15T10:25:00.000Z"
+          },
+          {
+            "actual": 21.0044,
+            "error": 0.06348743458837802,
+            "flagged": false,
+            "index": 30,
+            "method": "ar2_32",
+            "persistence": 20.8348,
+            "prediction": 20.940912565411622,
+            "threshold": 0.1201116975665746,
+            "timestamp": "2026-09-15T10:30:00.000Z"
+          },
+          {
+            "actual": 21.1818,
+            "error": -0.026980928442622343,
+            "flagged": false,
+            "index": 31,
+            "method": "ar2_8",
+            "persistence": 21.0044,
+            "prediction": 21.20878092844262,
+            "threshold": 0.12105237083299979,
+            "timestamp": "2026-09-15T10:35:00.000Z"
+          },
+          {
+            "actual": 21.3616,
+            "error": -0.02230071094145103,
+            "flagged": false,
+            "index": 32,
+            "method": "ar2_8",
+            "persistence": 21.1818,
+            "prediction": 21.38390071094145,
+            "threshold": 0.14635258429937853,
+            "timestamp": "2026-09-15T10:40:00.000Z"
+          },
+          {
+            "actual": 22.0381,
+            "error": 0.4805478140004489,
+            "flagged": true,
+            "index": 33,
+            "method": "ar2_8",
+            "persistence": 21.3616,
+            "prediction": 21.55755218599955,
+            "threshold": 0.1716527977657573,
+            "timestamp": "2026-09-15T10:45:00.000Z"
+          },
+          {
+            "actual": 22.2059,
+            "error": -0.3548006884255628,
+            "flagged": true,
+            "index": 34,
+            "method": "ar2_16",
+            "persistence": 22.0381,
+            "prediction": 22.560700688425563,
+            "threshold": 0.17320705218697086,
+            "timestamp": "2026-09-15T10:50:00.000Z"
+          },
+          {
+            "actual": 22.3599,
+            "error": -0.12021999999999977,
+            "flagged": false,
+            "index": 35,
+            "method": "drift",
+            "persistence": 22.2059,
+            "prediction": 22.48012,
+            "threshold": 0.1747613066081844,
+            "timestamp": "2026-09-15T10:55:00.000Z"
+          },
+          {
+            "actual": 22.4956,
+            "error": -0.13540000000000063,
+            "flagged": false,
+            "index": 36,
+            "method": "drift",
+            "persistence": 22.3599,
+            "prediction": 22.631,
+            "threshold": 0.179085569902338,
+            "timestamp": "2026-09-15T11:00:00.000Z"
+          },
+          {
+            "actual": 22.6091,
+            "error": -0.14925999999999817,
+            "flagged": false,
+            "index": 37,
+            "method": "drift",
+            "persistence": 22.4956,
+            "prediction": 22.75836,
+            "threshold": 0.18651834203891876,
+            "timestamp": "2026-09-15T11:05:00.000Z"
+          },
+          {
+            "actual": 22.6975,
+            "error": -0.16110000000000113,
+            "flagged": false,
+            "index": 38,
+            "method": "drift",
+            "persistence": 22.6091,
+            "prediction": 22.858600000000003,
+            "threshold": 0.20146709385907538,
+            "timestamp": "2026-09-15T11:10:00.000Z"
+          },
+          {
+            "actual": 22.759,
+            "error": -0.07038000000000011,
+            "flagged": false,
+            "index": 39,
+            "method": "drift",
+            "persistence": 22.6975,
+            "prediction": 22.82938,
+            "threshold": 0.20555405872373672,
+            "timestamp": "2026-09-15T11:15:00.000Z"
+          },
+          {
+            "actual": 22.7926,
+            "error": -0.07702000000000098,
+            "flagged": false,
+            "index": 40,
+            "method": "drift",
+            "persistence": 22.759,
+            "prediction": 22.86962,
+            "threshold": 0.2101564698919044,
+            "timestamp": "2026-09-15T11:20:00.000Z"
+          },
+          {
+            "actual": 22.7985,
+            "error": -0.08063999999999893,
+            "flagged": false,
+            "index": 41,
+            "method": "drift",
+            "persistence": 22.7926,
+            "prediction": 22.87914,
+            "threshold": 0.25437900912504907,
+            "timestamp": "2026-09-15T11:25:00.000Z"
+          },
+          {
+            "actual": 22.7782,
+            "error": -0.08088000000000406,
+            "flagged": false,
+            "index": 42,
+            "method": "drift",
+            "persistence": 22.7985,
+            "prediction": 22.859080000000002,
+            "threshold": 0.27265249026220356,
+            "timestamp": "2026-09-15T11:30:00.000Z"
+          },
+          {
+            "actual": 22.7341,
+            "error": -0.07791999999999533,
+            "flagged": false,
+            "index": 43,
+            "method": "drift",
+            "persistence": 22.7782,
+            "prediction": 22.812019999999997,
+            "threshold": 0.27265249026220356,
+            "timestamp": "2026-09-15T11:35:00.000Z"
+          },
+          {
+            "actual": 22.6694,
+            "error": -0.07202000000000197,
+            "flagged": false,
+            "index": 44,
+            "method": "drift",
+            "persistence": 22.7341,
+            "prediction": 22.74142,
+            "threshold": 0.27265249026220356,
+            "timestamp": "2026-09-15T11:40:00.000Z"
+          },
+          {
+            "actual": 22.5885,
+            "error": -0.08089999999999975,
+            "flagged": false,
+            "index": 45,
+            "method": "persistence",
+            "persistence": 22.6694,
+            "prediction": 22.6694,
+            "threshold": 0.27265249026220356,
+            "timestamp": "2026-09-15T11:45:00.000Z"
+          },
+          {
+            "actual": 22.496,
+            "error": -0.09250000000000114,
+            "flagged": false,
+            "index": 46,
+            "method": "persistence",
+            "persistence": 22.5885,
+            "prediction": 22.5885,
+            "threshold": 0.27265249026220356,
+            "timestamp": "2026-09-15T11:50:00.000Z"
+          },
+          {
+            "actual": 22.3973,
+            "error": -0.07993376727482016,
+            "flagged": false,
+            "index": 47,
+            "method": "ar2_64",
+            "persistence": 22.496,
+            "prediction": 22.47723376727482,
+            "threshold": 0.2914166747491677,
+            "timestamp": "2026-09-15T11:55:00.000Z"
+          }
+        ],
+        "procedure": "observed_error_selection",
+        "rows": 48
+      },
+      "update_kind": "append",
+      "updated_at": "2026-09-16T02:04:15.315838+00:00",
+      "version": 1
+    }
+  },
+  "task_attempts": [
+    {
+      "coefficients": [
+        0.0,
+        1.8000000000000005,
+        32.0
+      ],
+      "context": "868632f68ff5fd4d",
+      "degree": 1,
+      "domain": [
+        -40.0,
+        160.0
+      ],
+      "examples": 21,
+      "held_out": [
+        {
+          "expected": -40.0,
+          "prediction": -40.00000000000004,
+          "x": -40.0
+        },
+        {
+          "expected": 230.0,
+          "prediction": 230.00000000000006,
+          "x": 110.0
+        },
+        {
+          "expected": -22.0,
+          "prediction": -22.000000000000014,
+          "x": -30.0
+        },
+        {
+          "expected": 302.0,
+          "prediction": 302.00000000000006,
+          "x": 150.0
+        }
+      ],
+      "held_out_max_error": 5.684341886080802e-14,
+      "material": {
+        "evidence": "Examples computed from the published unit-conversion rule. This is derived mathematical data, not independent physical measurements.",
+        "examples": "x,y\n-40,-40\n-30,-22\n-20,-4\n-10,14\n0,32\n10,50\n20,68\n30,86\n40,104\n50,122\n60,140\n70,158\n80,176\n90,194\n100,212\n110,230\n120,248\n130,266\n140,284\n150,302\n160,320",
+        "phrase": "celsius to fahrenheit",
+        "retrieved": "2026-09-15",
+        "source": "https://www.nist.gov/pml/owm/si-units-temperature",
+        "title": "Celsius to Fahrenheit"
+      },
+      "material_sha256": "7203ffc4aa8a23af67516d6d8cbb8aca871973bc0fd983ab390b9b4bfaf7cab6",
+      "outputs": [
+        32.0,
+        68.0,
+        98.60000000000002,
+        212.00000000000006
+      ],
+      "queries": [
+        0,
+        20,
+        37,
+        100
+      ],
+      "queries_in_example_domain": true,
+      "scope": "A supplied affine/quadratic family fitted on request. Held-out examples are finite checks, not a guarantee on arbitrary functions or new domains. Material retrieval is from a local, source-labeled library or provided examples; no autonomous web comprehension.",
+      "split": {
+        "selection": [
+          17,
+          18,
+          3,
+          5
+        ],
+        "test": [
+          0,
+          15,
+          1,
+          19
+        ],
+        "train": [
+          9,
+          8,
+          7,
+          6,
+          10,
+          11,
+          20,
+          4,
+          14,
+          2,
+          16,
+          12,
+          13
+        ]
+      },
+      "status": "ACCEPTED",
+      "task": "Convert Celsius to Fahrenheit",
+      "tolerance": 0.01,
+      "trained_parameters": 2,
+      "validation_mae": 3.68594044175552e-14
+    }
+  ],
+  "transactions": [
+    "5b94402a-2120-459c-8d1e-06cde96f9d22",
+    "explicit-owner-forecast-migration-001",
+    "explicit-task-learning-migration-001",
+    "bf6edf09-2a19-4dd2-b9a7-15201b6e4ede",
+    "6d3630c0-90a8-48e3-a383-9f838f7542f1",
+    "3141ea32-b32c-485e-abfa-11a9861908e6",
+    "b22b6498-aa54-48c2-94a3-f45fa83a117b",
+    "45bfab52-7d65-458e-bd4c-fc3f53dcb8b6",
+    "9c389a4d-e05f-4343-91a9-e18e92957186",
+    "5a74a62f-763e-45e9-bac7-648968c88f7e",
+    "708dad28-1c5e-4b59-8b37-ccefca583c1d",
+    "062310b1-68db-43da-a825-fd5a236edb4e",
+    "128d076e-ae6b-4bee-98b7-0ee9af81d59a",
+    "language-program-reuse-migration-001",
+    "468e3f5c-1a09-4fb2-8559-64e270e6c0bf"
+  ],
+  "view": {
+    "actions": 84,
+    "answers": [
+      {
+        "answer": 0,
+        "equation": "4 \u00d7 x \u2212 5 \u2261 6 (mod 11)",
+        "inputs": {
+          "a": 4,
+          "b": 5,
+          "c": 6
+        },
+        "method": "preserved guarded program + independent forward substitution",
+        "modulus": 11,
+        "original_inputs": {
+          "a": 4,
+          "b": 5,
+          "c": 6
+        },
+        "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+        "solutions": [
+          0
+        ],
+        "status": "verified_unique",
+        "work": {
+          "domain_checks": 3,
+          "expression_nodes": 7,
+          "forward_nodes": 33,
+          "indexed_lookup": 1,
+          "interpreter_identity_checks": 1,
+          "lookup_key_bytes": 64,
+          "nonzero_checks": 1,
+          "owner_identity_checks": 1
+        }
+      },
+      {
+        "answer": 0,
+        "equation": "4 \u00d7 x \u2212 5 \u2261 6 (mod 11)",
+        "inputs": {
+          "a": 4,
+          "b": 5,
+          "c": 6
+        },
+        "method": "preserved guarded program + independent forward substitution",
+        "modulus": 11,
+        "original_inputs": {
+          "a": 4,
+          "b": 5,
+          "c": 6
+        },
+        "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+        "solutions": [
+          0
+        ],
+        "status": "verified_unique",
+        "work": {
+          "domain_checks": 3,
+          "expression_nodes": 7,
+          "forward_nodes": 33,
+          "indexed_lookup": 1,
+          "interpreter_identity_checks": 1,
+          "lookup_key_bytes": 64,
+          "nonzero_checks": 1,
+          "owner_identity_checks": 1
+        }
+      },
+      {
+        "answer": 5,
+        "equation": "2 \u00d7 x \u2212 6 \u2261 4 (mod 11)",
+        "inputs": {
+          "a": 2,
+          "b": 6,
+          "c": 4
+        },
+        "method": "preserved guarded program + independent forward substitution",
+        "modulus": 11,
+        "original_inputs": {
+          "a": 2,
+          "b": 6,
+          "c": 4
+        },
+        "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+        "solutions": [
+          5
+        ],
+        "status": "verified_unique",
+        "work": {
+          "domain_checks": 3,
+          "expression_nodes": 7,
+          "forward_nodes": 33,
+          "indexed_lookup": 1,
+          "interpreter_identity_checks": 1,
+          "lookup_key_bytes": 64,
+          "nonzero_checks": 1,
+          "owner_identity_checks": 1
+        }
+      }
+    ],
+    "center": [
+      0.2536050454130459,
+      -0.40907833764735096
+    ],
+    "changes_detected": 1,
+    "clock": 84,
+    "coefficients": [
+      0.8603087604988294,
+      -0.08288583256700077,
+      0.004266998741646945
+    ],
+    "controller": "Qualified four-step adaptive controller",
+    "goal": [
+      -0.3450228119446987,
+      0.18954951971039374
+    ],
+    "goal_degrees": 135.0,
+    "language": {
+      "active_shapes": 5,
+      "attempts": [
+        {
+          "active_wording_shapes": 9,
+          "before_status": "NEEDS_LESSON",
+          "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+          "checked_domain": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "confidence": 0.9998412132263184,
+          "formal_statement": "3*x-2=4 (mod 11)",
+          "formal_verification": true,
+          "labels": [
+            0,
+            3,
+            2,
+            4
+          ],
+          "learned_on_request": true,
+          "lesson": {
+            "development": {
+              "accepted": 0,
+              "accepted_answer_accuracy": null,
+              "accepted_translation_accuracy": null,
+              "answer_accuracy": 1.0,
+              "coverage": 0.0,
+              "exact_translation": 1.0,
+              "examples": 128,
+              "formal_checks": 128,
+              "joint_cross_entropy": 0.004711531917564571,
+              "slot_accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "threshold": 0.0,
+              "unique_semantic_triples": 105,
+              "unique_texts": 127
+            },
+            "kind": "word",
+            "steps": 240,
+            "teaching_examples": 48,
+            "withdrawn_shapes": []
+          },
+          "missing_words": [],
+          "owner": "b29f11b0a20c9ab48c5bd12228a3356b0df46d5cb73a10d5de56dc343f139c6d",
+          "reproof_work": {
+            "domain_checks": 7986,
+            "expression_nodes": 12584,
+            "forward_nodes": 6655,
+            "graph_validation_bytes": 3218,
+            "library_index_entries": 5,
+            "nonzero_checks": 1331,
+            "proof_dependency_nodes": 5,
+            "proof_index_insertions": 2662,
+            "proof_index_lookups": 2541
+          },
+          "same_owner": true,
+          "solutions": [
+            2
+          ],
+          "status": "ACCEPTED",
+          "text": "scale x by three then subtract two to get four modulo eleven",
+          "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+          "translation_verification": true
+        },
+        {
+          "active_wording_shapes": 1,
+          "before_status": "NEEDS_LESSON",
+          "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+          "checked_domain": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "confidence": 0.9998741149902344,
+          "formal_statement": "3*x-2=4 (mod 11)",
+          "formal_verification": true,
+          "labels": [
+            0,
+            3,
+            2,
+            4
+          ],
+          "learned_on_request": true,
+          "lesson": {
+            "development": {
+              "accepted": 128,
+              "accepted_answer_accuracy": 1.0,
+              "accepted_translation_accuracy": 1.0,
+              "answer_accuracy": 1.0,
+              "coverage": 1.0,
+              "exact_translation": 1.0,
+              "examples": 128,
+              "formal_checks": 128,
+              "joint_cross_entropy": 0.004926661678837263,
+              "slot_accuracy": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "threshold": 0.0,
+              "unique_semantic_triples": 99,
+              "unique_texts": 127
+            },
+            "kind": "wording",
+            "steps": 240,
+            "teaching_examples": 192,
+            "withdrawn_shapes": [
+              "multiply x by # then subtract # to get # modulo eleven",
+              "scale x by # then subtract # to get # modulo eleven",
+              "subtract # from the product of # and x equals # modulo eleven",
+              "subtract # from x then multiply by # to get # modulo eleven",
+              "subtract # from x then scale by # to get # modulo eleven",
+              "take # times x subtract # and obtain # modulo eleven",
+              "take x minus # multiply by # and obtain # modulo eleven",
+              "take x minus # scale by # and obtain # modulo eleven",
+              "the product of # and the difference of x and # equals # modulo eleven"
+            ]
+          },
+          "missing_words": [],
+          "owner": "218e0d8736285e16c9b6dc7790990a48021e87b8fdac2e8b7abb4eb4715cd23e",
+          "reproof_work": {
+            "domain_checks": 7986,
+            "expression_nodes": 12584,
+            "forward_nodes": 6655,
+            "graph_validation_bytes": 3218,
+            "library_index_entries": 5,
+            "nonzero_checks": 1331,
+            "proof_dependency_nodes": 5,
+            "proof_index_insertions": 2662,
+            "proof_index_lookups": 2541
+          },
+          "same_owner": true,
+          "solutions": [
+            2
+          ],
+          "status": "ACCEPTED",
+          "text": "the product of x and three minus two equals four modulo eleven",
+          "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+          "translation_verification": true
+        },
+        {
+          "active_wording_shapes": 5,
+          "before_status": "NEEDS_LESSON",
+          "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+          "checked_domain": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "confidence": 0.9999974966049194,
+          "formal_statement": "2*(x-3)=4 (mod 11)",
+          "formal_verification": true,
+          "labels": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "learned_on_request": true,
+          "lesson": {
+            "development": {
+              "accepted": 128,
+              "accepted_answer_accuracy": 0.9921875,
+              "accepted_translation_accuracy": 0.9921875,
+              "answer_accuracy": 0.9921875,
+              "coverage": 1.0,
+              "exact_translation": 0.9921875,
+              "examples": 128,
+              "formal_checks": 128,
+              "joint_cross_entropy": 0.008383272811443021,
+              "slot_accuracy": [
+                1.0,
+                0.9921875,
+                1.0,
+                1.0
+              ],
+              "threshold": 0.0,
+              "unique_semantic_triples": 102,
+              "unique_texts": 126
+            },
+            "kind": "wording",
+            "steps": 240,
+            "teaching_examples": 192,
+            "withdrawn_shapes": [
+              "the product of x and # minus # equals # modulo eleven"
+            ]
+          },
+          "missing_words": [],
+          "owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+          "reproof_work": {
+            "domain_checks": 7986,
+            "expression_nodes": 12584,
+            "forward_nodes": 6655,
+            "graph_validation_bytes": 3218,
+            "library_index_entries": 5,
+            "nonzero_checks": 1331,
+            "proof_dependency_nodes": 5,
+            "proof_index_insertions": 2662,
+            "proof_index_lookups": 2541
+          },
+          "same_owner": true,
+          "solutions": [
+            5
+          ],
+          "status": "ACCEPTED",
+          "text": "subtract three from x then multiply by two to get four modulo eleven",
+          "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+          "translation_verification": true
+        },
+        {
+          "active_wording_shapes": 5,
+          "before_status": "ACCEPTED",
+          "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+          "checked_domain": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "confidence": 0.9999974966049194,
+          "execution": {
+            "equation": "2 \u00d7 x \u2212 6 \u2261 4 (mod 11)",
+            "method": "preserved guarded program + independent forward substitution",
+            "proof_scope": "All residues in the supplied field F11; arithmetic rules are supplied.",
+            "status": "verified_unique",
+            "work": {
+              "domain_checks": 3,
+              "expression_nodes": 7,
+              "forward_nodes": 33,
+              "indexed_lookup": 1,
+              "interpreter_identity_checks": 1,
+              "lookup_key_bytes": 64,
+              "nonzero_checks": 1,
+              "owner_identity_checks": 1
+            }
+          },
+          "formal_statement": "2*(x-3)=4 (mod 11)",
+          "formal_verification": true,
+          "labels": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "learned_on_request": false,
+          "lesson": null,
+          "missing_words": [],
+          "owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+          "reproof_work": {
+            "domain_checks": 7986,
+            "expression_nodes": 12584,
+            "forward_nodes": 6655,
+            "graph_validation_bytes": 3218,
+            "library_index_entries": 5,
+            "nonzero_checks": 1331,
+            "proof_dependency_nodes": 5,
+            "proof_index_insertions": 2662,
+            "proof_index_lookups": 2541
+          },
+          "same_owner": true,
+          "solutions": [
+            5
+          ],
+          "status": "ACCEPTED",
+          "text": "subtract three from x then multiply by two to get four modulo eleven",
+          "translation_check_scope": "Exact supplied sentence productions and number meanings; not unrestricted English semantics.",
+          "translation_verification": true
+        }
+      ],
+      "lessons": 3,
+      "optimizer_steps": 720,
+      "teaching_examples": 432
+    },
+    "model": "SERA",
+    "owner": "64b48d5f8192176ff6a4092b629822dfda6741d8f017b9cfbce295baf0eb7589",
+    "position": [
+      -0.4684330808194784,
+      0.05944642039042551
+    ],
+    "radius": 0.846587634689669,
+    "records": [
+      {
+        "action": 1,
+        "before_time": 78,
+        "changes_detected": 1,
+        "coefficients": [
+          0.855752204033099,
+          -0.08270621012470966,
+          0.0057134367146466645
+        ],
+        "goal": [
+          -0.3450228119446987,
+          0.18954951971039374
+        ],
+        "goal_error": 1.0570231171072453,
+        "observation": [
+          -0.4672731988171713,
+          -0.860380341284448
+        ],
+        "predicted_action": 1,
+        "prediction": [
+          [
+            -0.46506858113883104,
+            -0.8564967579651397
+          ],
+          [
+            -0.5107781406243705,
+            -0.7725224002718503
+          ],
+          [
+            -0.5616405021421191,
+            -0.6341504802623787
+          ],
+          [
+            -0.5897589489537539,
+            -0.44461083913481486
+          ]
+        ],
+        "prediction_applies_to_action": true,
+        "time": 79
+      },
+      {
+        "action": 1,
+        "before_time": 79,
+        "changes_detected": 1,
+        "coefficients": [
+          0.8632417179577991,
+          -0.0838663447434809,
+          0.004062981128767897
+        ],
+        "goal": [
+          -0.3450228119446987,
+          0.18954951971039374
+        ],
+        "goal_error": 0.9794507672019045,
+        "observation": [
+          -0.520050190612329,
+          -0.7741357100659775
+        ],
+        "predicted_action": 1,
+        "prediction": [
+          [
+            -0.5090078671627422,
+            -0.7766231707701089
+          ],
+          [
+            -0.5603423597233081,
+            -0.6410050561191344
+          ],
+          [
+            -0.5907577359194881,
+            -0.45418793244299704
+          ],
+          [
+            -0.5703819763409446,
+            -0.22810164698967353
+          ]
+        ],
+        "prediction_applies_to_action": true,
+        "time": 80
+      },
+      {
+        "action": 1,
+        "before_time": 80,
+        "changes_detected": 1,
+        "coefficients": [
+          0.8586857976438971,
+          -0.08357792569989893,
+          0.004819975048801233
+        ],
+        "goal": [
+          -0.3450228119446987,
+          0.18954951971039374
+        ],
+        "goal_error": 0.8541642871509829,
+        "observation": [
+          -0.5761739321719287,
+          -0.6327434871076404
+        ],
+        "predicted_action": 1,
+        "prediction": [
+          [
+            -0.5647554689855159,
+            -0.6257418957276197
+          ],
+          [
+            -0.592490346066476,
+            -0.42738089770265697
+          ],
+          [
+            -0.5626201191550184,
+            -0.1889823337019136
+          ],
+          [
+            -0.4470363849363224,
+            0.059990537912933795
+          ]
+        ],
+        "prediction_applies_to_action": true,
+        "time": 81
+      },
+      {
+        "action": 1,
+        "before_time": 81,
+        "changes_detected": 1,
+        "coefficients": [
+          0.8614527834533644,
+          -0.08390526677677798,
+          0.004677803096388844
+        ],
+        "goal": [
+          -0.3450228119446987,
+          0.18954951971039374
+        ],
+        "goal_error": 0.6744746190536176,
+        "observation": [
+          -0.6056347593126971,
+          -0.4325416509684564
+        ],
+        "predicted_action": 1,
+        "prediction": [
+          [
+            -0.5925169395170689,
+            -0.43619359747868947
+          ],
+          [
+            -0.5673238288519232,
+            -0.2033911423791744
+          ],
+          [
+            -0.46136257275558556,
+            0.04215859784358598
+          ],
+          [
+            -0.3147437200338924,
+            0.21417504845557392
+          ]
+        ],
+        "prediction_applies_to_action": true,
+        "time": 82
+      },
+      {
+        "action": 1,
+        "before_time": 82,
+        "changes_detected": 1,
+        "coefficients": [
+          0.8673824508482391,
+          -0.08286320315760677,
+          0.0033768315611988706
+        ],
+        "goal": [
+          -0.3450228119446987,
+          0.18954951971039374
+        ],
+        "goal_error": 0.4454579069091862,
+        "observation": [
+          -0.5797320961809268,
+          -0.18905885146123091
+        ],
+        "predicted_action": 1,
+        "prediction": [
+          [
+            -0.5655306049854084,
+            -0.19535655089422582
+          ],
+          [
+            -0.4552347240138263,
+            0.05331611176579531
+          ],
+          [
+            -0.35466115294502276,
+            0.1782138046052378
+          ],
+          [
+            -0.30741457761982954,
+            0.22116892329397128
+          ]
+        ],
+        "prediction_applies_to_action": true,
+        "time": 83
+      },
+      {
+        "action": 1,
+        "before_time": 83,
+        "changes_detected": 1,
+        "coefficients": [
+          0.8603087604988294,
+          -0.08288583256700077,
+          0.004266998741646945
+        ],
+        "goal": [
+          -0.3450228119446987,
+          0.18954951971039374
+        ],
+        "goal_error": 0.17932348121873756,
+        "observation": [
+          -0.4684330808194784,
+          0.05944642039042551
+        ],
+        "predicted_action": 1,
+        "prediction": [
+          [
+            -0.4520905407106416,
+            0.05853089545034185
+          ],
+          [
+            -0.34635178556231894,
+            0.18777976230775495
+          ],
+          [
+            -0.2925024736240861,
+            0.23616080502667766
+          ],
+          [
+            -0.29851139171449337,
+            0.22840336873088082
+          ]
+        ],
+        "prediction_applies_to_action": true,
+        "time": 84
+      }
+    ],
+    "saved": true,
+    "session_observations": 85,
+    "solver": "440340ab02f6b875e1210d3e6d0c9d30f1ccb99375d1505562ddba67bd1de350",
+    "stream_costs": {
+      "fits": 356,
+      "new_observations": 80,
+      "replayed_observations": 24
+    },
+    "streams": {
+      "live_sensor_demo": {
+        "observations": [
+          {
+            "timestamp": "0",
+            "value": 30.0
+          },
+          {
+            "timestamp": "1",
+            "value": 30.124221187776357
+          },
+          {
+            "timestamp": "2",
+            "value": 30.243827661581264
+          },
+          {
+            "timestamp": "3",
+            "value": 30.354491628007
+          },
+          {
+            "timestamp": "4",
+            "value": 30.45244129544237
+          },
+          {
+            "timestamp": "5",
+            "value": 30.534695385806675
+          },
+          {
+            "timestamp": "6",
+            "value": 30.599248495981218
+          },
+          {
+            "timestamp": "7",
+            "value": 30.64519578406218
+          },
+          {
+            "timestamp": "8",
+            "value": 30.6727892280477
+          },
+          {
+            "timestamp": "9",
+            "value": 30.683421959066376
+          },
+          {
+            "timestamp": "10",
+            "value": 30.679541643231186
+          },
+          {
+            "timestamp": "11",
+            "value": 30.6644982976157
+          },
+          {
+            "timestamp": "12",
+            "value": 30.642336002417963
+          },
+          {
+            "timestamp": "13",
+            "value": 30.617541459640965
+          },
+          {
+            "timestamp": "14",
+            "value": 30.594765031693115
+          },
+          {
+            "timestamp": "15",
+            "value": 30.578531604377297
+          },
+          {
+            "timestamp": "16",
+            "value": 30.57295925140762
+          },
+          {
+            "timestamp": "17",
+            "value": 30.581503192531425
+          },
+          {
+            "timestamp": "18",
+            "value": 30.60674096470047
+          },
+          {
+            "timestamp": "19",
+            "value": 30.650212163307387
+          },
+          {
+            "timestamp": "20",
+            "value": 30.712322717601058
+          },
+          {
+            "timestamp": "21",
+            "value": 30.792319651972022
+          },
+          {
+            "timestamp": "22",
+            "value": 30.888337902328885
+          },
+          {
+            "timestamp": "23",
+            "value": 30.997516276750222
+          },
+          {
+            "timestamp": "24",
+            "value": 31.11617535054032
+          },
+          {
+            "timestamp": "25",
+            "value": 31.240046235035734
+          },
+          {
+            "timestamp": "26",
+            "value": 31.364535996426344
+          },
+          {
+            "timestamp": "27",
+            "value": 31.485013222134185
+          },
+          {
+            "timestamp": "28",
+            "value": 31.597095979615634
+          },
+          {
+            "timestamp": "29",
+            "value": 31.69692426370345
+          },
+          {
+            "timestamp": "30",
+            "value": 31.781399993032423
+          },
+          {
+            "timestamp": "31",
+            "value": 31.848379633733355
+          }
+        ],
+        "report": {
+          "assumptions": "Ordered scalar observations at a regular interval; forecasts are conditional estimates. Flags indicate surprise, not a diagnosed cause. No calibrated prediction interval.",
+          "coefficients": [
+            0.42441691091952544,
+            0.41681001098014536,
+            5.153071004034802
+          ],
+          "execution": "registered coefficients executed by the actual shared R1 owner",
+          "fits": 108,
+          "flags": 0,
+          "forecast": [
+            {
+              "step": 1,
+              "value": 31.916867586036474
+            },
+            {
+              "step": 2,
+              "value": 31.97385281596417
+            },
+            {
+              "step": 3,
+              "value": 32.02658477536959
+            },
+            {
+              "step": 4,
+              "value": 32.072717124999045
+            },
+            {
+              "step": 5,
+              "value": 32.11427568290102
+            },
+            {
+              "step": 6,
+              "value": 32.15114226282363
+            },
+            {
+              "step": 7,
+              "value": 32.184111085766
+            },
+            {
+              "step": 8,
+              "value": 32.21346997133819
+            },
+            {
+              "step": 9,
+              "value": 32.23967211431339
+            },
+            {
+              "step": 10,
+              "value": 32.26302982431211
+            },
+            {
+              "step": 11,
+              "value": 32.28386454693712
+            },
+            {
+              "step": 12,
+              "value": 32.30244288291453
+            }
+          ],
+          "last_timestamp": "31",
+          "last_value": 31.848379633733355,
+          "mae": 0.02321567628244818,
+          "method": "ar2_8",
+          "persistence_mae": 0.059023448586314996,
+          "prequential": [
+            {
+              "actual": 30.599248495981218,
+              "error": 0.06455311017454335,
+              "flagged": false,
+              "index": 6,
+              "method": "persistence",
+              "persistence": 30.534695385806675,
+              "prediction": 30.534695385806675,
+              "threshold": null,
+              "timestamp": "6"
+            },
+            {
+              "actual": 30.64519578406218,
+              "error": 0.04594728808096349,
+              "flagged": false,
+              "index": 7,
+              "method": "persistence",
+              "persistence": 30.599248495981218,
+              "prediction": 30.599248495981218,
+              "threshold": null,
+              "timestamp": "7"
+            },
+            {
+              "actual": 30.6727892280477,
+              "error": 0.027593443985519883,
+              "flagged": false,
+              "index": 8,
+              "method": "persistence",
+              "persistence": 30.64519578406218,
+              "prediction": 30.64519578406218,
+              "threshold": null,
+              "timestamp": "8"
+            },
+            {
+              "actual": 30.683421959066376,
+              "error": 0.010632731018674235,
+              "flagged": false,
+              "index": 9,
+              "method": "persistence",
+              "persistence": 30.6727892280477,
+              "prediction": 30.6727892280477,
+              "threshold": null,
+              "timestamp": "9"
+            },
+            {
+              "actual": 30.679541643231186,
+              "error": -0.026534121114028864,
+              "flagged": false,
+              "index": 10,
+              "method": "ar2_8",
+              "persistence": 30.683421959066376,
+              "prediction": 30.706075764345215,
+              "threshold": null,
+              "timestamp": "10"
+            },
+            {
+              "actual": 30.6644982976157,
+              "error": -0.029197458114648356,
+              "flagged": false,
+              "index": 11,
+              "method": "ar2_8",
+              "persistence": 30.679541643231186,
+              "prediction": 30.69369575573035,
+              "threshold": null,
+              "timestamp": "11"
+            },
+            {
+              "actual": 30.642336002417963,
+              "error": -0.03115965868692072,
+              "flagged": false,
+              "index": 12,
+              "method": "ar2_8",
+              "persistence": 30.6644982976157,
+              "prediction": 30.673495661104884,
+              "threshold": null,
+              "timestamp": "12"
+            },
+            {
+              "actual": 30.617541459640965,
+              "error": -0.02564880353682142,
+              "flagged": false,
+              "index": 13,
+              "method": "ar2_8",
+              "persistence": 30.642336002417963,
+              "prediction": 30.643190263177786,
+              "threshold": null,
+              "timestamp": "13"
+            },
+            {
+              "actual": 30.594765031693115,
+              "error": -0.00885308788413397,
+              "flagged": false,
+              "index": 14,
+              "method": "ar2_8",
+              "persistence": 30.617541459640965,
+              "prediction": 30.60361811957725,
+              "threshold": 0.1344452645092026,
+              "timestamp": "14"
+            },
+            {
+              "actual": 30.578531604377297,
+              "error": 0.0010472439725539573,
+              "flagged": false,
+              "index": 15,
+              "method": "ar2_8",
+              "persistence": 30.594765031693115,
+              "prediction": 30.577484360404743,
+              "threshold": 0.12065025321504251,
+              "timestamp": "15"
+            },
+            {
+              "actual": 30.57295925140762,
+              "error": 0.013300325332068041,
+              "flagged": false,
+              "index": 16,
+              "method": "ar2_8",
+              "persistence": 30.578531604377297,
+              "prediction": 30.559658926075553,
+              "threshold": 0.14210939036225662,
+              "timestamp": "16"
+            },
+            {
+              "actual": 30.581503192531425,
+              "error": 0.02086742279658793,
+              "flagged": false,
+              "index": 17,
+              "method": "ar2_8",
+              "persistence": 30.57295925140762,
+              "prediction": 30.560635769734837,
+              "threshold": 0.15831824014959972,
+              "timestamp": "17"
+            },
+            {
+              "actual": 30.60674096470047,
+              "error": 0.02523777216904577,
+              "flagged": false,
+              "index": 18,
+              "method": "persistence",
+              "persistence": 30.581503192531425,
+              "prediction": 30.581503192531425,
+              "threshold": 0.1578739123532464,
+              "timestamp": "18"
+            },
+            {
+              "actual": 30.650212163307387,
+              "error": 0.04347119860691606,
+              "flagged": false,
+              "index": 19,
+              "method": "persistence",
+              "persistence": 30.60674096470047,
+              "prediction": 30.60674096470047,
+              "threshold": 0.11555870042121377,
+              "timestamp": "19"
+            },
+            {
+              "actual": 30.712322717601058,
+              "error": 0.023585333106399986,
+              "flagged": false,
+              "index": 20,
+              "method": "ar2_8",
+              "persistence": 30.650212163307387,
+              "prediction": 30.688737384494658,
+              "threshold": 0.15515197430326155,
+              "timestamp": "20"
+            },
+            {
+              "actual": 30.792319651972022,
+              "error": 0.010638649994501037,
+              "flagged": false,
+              "index": 21,
+              "method": "ar2_8",
+              "persistence": 30.712322717601058,
+              "prediction": 30.78168100197752,
+              "threshold": 0.1313786017373644,
+              "timestamp": "21"
+            },
+            {
+              "actual": 30.888337902328885,
+              "error": -0.018729856618175944,
+              "flagged": false,
+              "index": 22,
+              "method": "ar2_8",
+              "persistence": 30.792319651972022,
+              "prediction": 30.90706775894706,
+              "threshold": 0.1080712562998976,
+              "timestamp": "22"
+            },
+            {
+              "actual": 30.997516276750222,
+              "error": -0.025553076652375495,
+              "flagged": false,
+              "index": 23,
+              "method": "ar2_8",
+              "persistence": 30.888337902328885,
+              "prediction": 31.023069353402597,
+              "threshold": 0.11559380231545704,
+              "timestamp": "23"
+            },
+            {
+              "actual": 31.11617535054032,
+              "error": -0.02365704871606411,
+              "flagged": false,
+              "index": 24,
+              "method": "ar2_8",
+              "persistence": 30.997516276750222,
+              "prediction": 31.139832399256385,
+              "threshold": 0.14486284601851668,
+              "timestamp": "24"
+            },
+            {
+              "actual": 31.240046235035734,
+              "error": -0.020955343975792573,
+              "flagged": false,
+              "index": 25,
+              "method": "ar2_8",
+              "persistence": 31.11617535054032,
+              "prediction": 31.261001579011527,
+              "threshold": 0.17413188972157628,
+              "timestamp": "25"
+            },
+            {
+              "actual": 31.364535996426344,
+              "error": -0.018852489390159377,
+              "flagged": false,
+              "index": 26,
+              "method": "ar2_8",
+              "persistence": 31.240046235035734,
+              "prediction": 31.383388485816504,
+              "threshold": 0.15230801864522528,
+              "timestamp": "26"
+            },
+            {
+              "actual": 31.485013222134185,
+              "error": -0.01752301130689915,
+              "flagged": false,
+              "index": 27,
+              "method": "ar2_8",
+              "persistence": 31.364535996426344,
+              "prediction": 31.502536233441084,
+              "threshold": 0.14345950841647503,
+              "timestamp": "27"
+            },
+            {
+              "actual": 31.597095979615634,
+              "error": -0.01692211282929179,
+              "flagged": false,
+              "index": 28,
+              "method": "ar2_8",
+              "persistence": 31.485013222134185,
+              "prediction": 31.614018092444926,
+              "threshold": 0.12867792677038964,
+              "timestamp": "28"
+            },
+            {
+              "actual": 31.69692426370345,
+              "error": -0.01696525740421606,
+              "flagged": false,
+              "index": 29,
+              "method": "ar2_8",
+              "persistence": 31.597095979615634,
+              "prediction": 31.713889521107667,
+              "threshold": 0.11555870042121377,
+              "timestamp": "29"
+            },
+            {
+              "actual": 31.781399993032423,
+              "error": -0.01756132902255203,
+              "flagged": false,
+              "index": 30,
+              "method": "ar2_8",
+              "persistence": 31.69692426370345,
+              "prediction": 31.798961322054975,
+              "threshold": 0.0896815906289723,
+              "timestamp": "30"
+            },
+            {
+              "actual": 31.848379633733355,
+              "error": -0.01862040885379912,
+              "flagged": false,
+              "index": 31,
+              "method": "ar2_8",
+              "persistence": 31.781399993032423,
+              "prediction": 31.867000042587154,
+              "threshold": 0.07279770768027857,
+              "timestamp": "31"
+            }
+          ],
+          "procedure": "observed_error_selection",
+          "rows": 32
+        },
+        "update_kind": "append",
+        "updated_at": "2026-09-16T02:07:33.042111+00:00",
+        "version": 2
+      },
+      "synthetic_temperature": {
+        "observations": [
+          {
+            "timestamp": "2026-09-15T08:00:00.000Z",
+            "value": 20.0
+          },
+          {
+            "timestamp": "2026-09-15T08:05:00.000Z",
+            "value": 20.1791
+          },
+          {
+            "timestamp": "2026-09-15T08:10:00.000Z",
+            "value": 20.3526
+          },
+          {
+            "timestamp": "2026-09-15T08:15:00.000Z",
+            "value": 20.5152
+          },
+          {
+            "timestamp": "2026-09-15T08:20:00.000Z",
+            "value": 20.6621
+          },
+          {
+            "timestamp": "2026-09-15T08:25:00.000Z",
+            "value": 20.789
+          },
+          {
+            "timestamp": "2026-09-15T08:30:00.000Z",
+            "value": 20.8924
+          },
+          {
+            "timestamp": "2026-09-15T08:35:00.000Z",
+            "value": 20.9698
+          },
+          {
+            "timestamp": "2026-09-15T08:40:00.000Z",
+            "value": 21.0197
+          },
+          {
+            "timestamp": "2026-09-15T08:45:00.000Z",
+            "value": 21.0417
+          },
+          {
+            "timestamp": "2026-09-15T08:50:00.000Z",
+            "value": 21.0365
+          },
+          {
+            "timestamp": "2026-09-15T08:55:00.000Z",
+            "value": 21.0059
+          },
+          {
+            "timestamp": "2026-09-15T09:00:00.000Z",
+            "value": 20.9528
+          },
+          {
+            "timestamp": "2026-09-15T09:05:00.000Z",
+            "value": 20.8809
+          },
+          {
+            "timestamp": "2026-09-15T09:10:00.000Z",
+            "value": 20.7945
+          },
+          {
+            "timestamp": "2026-09-15T09:15:00.000Z",
+            "value": 20.6988
+          },
+          {
+            "timestamp": "2026-09-15T09:20:00.000Z",
+            "value": 20.5991
+          },
+          {
+            "timestamp": "2026-09-15T09:25:00.000Z",
+            "value": 20.5011
+          },
+          {
+            "timestamp": "2026-09-15T09:30:00.000Z",
+            "value": 20.4102
+          },
+          {
+            "timestamp": "2026-09-15T09:35:00.000Z",
+            "value": 20.3317
+          },
+          {
+            "timestamp": "2026-09-15T09:40:00.000Z",
+            "value": 20.2702
+          },
+          {
+            "timestamp": "2026-09-15T09:45:00.000Z",
+            "value": 20.2299
+          },
+          {
+            "timestamp": "2026-09-15T09:50:00.000Z",
+            "value": 20.2139
+          },
+          {
+            "timestamp": "2026-09-15T09:55:00.000Z",
+            "value": 20.2244
+          },
+          {
+            "timestamp": "2026-09-15T10:00:00.000Z",
+            "value": 20.2627
+          },
+          {
+            "timestamp": "2026-09-15T10:05:00.000Z",
+            "value": 20.3288
+          },
+          {
+            "timestamp": "2026-09-15T10:10:00.000Z",
+            "value": 20.4216
+          },
+          {
+            "timestamp": "2026-09-15T10:15:00.000Z",
+            "value": 20.5391
+          },
+          {
+            "timestamp": "2026-09-15T10:20:00.000Z",
+            "value": 20.6781
+          },
+          {
+            "timestamp": "2026-09-15T10:25:00.000Z",
+            "value": 20.8348
+          },
+          {
+            "timestamp": "2026-09-15T10:30:00.000Z",
+            "value": 21.0044
+          },
+          {
+            "timestamp": "2026-09-15T10:35:00.000Z",
+            "value": 21.1818
+          },
+          {
+            "timestamp": "2026-09-15T10:40:00.000Z",
+            "value": 21.3616
+          },
+          {
+            "timestamp": "2026-09-15T10:45:00.000Z",
+            "value": 22.0381
+          },
+          {
+            "timestamp": "2026-09-15T10:50:00.000Z",
+            "value": 22.2059
+          },
+          {
+            "timestamp": "2026-09-15T10:55:00.000Z",
+            "value": 22.3599
+          },
+          {
+            "timestamp": "2026-09-15T11:00:00.000Z",
+            "value": 22.4956
+          },
+          {
+            "timestamp": "2026-09-15T11:05:00.000Z",
+            "value": 22.6091
+          },
+          {
+            "timestamp": "2026-09-15T11:10:00.000Z",
+            "value": 22.6975
+          },
+          {
+            "timestamp": "2026-09-15T11:15:00.000Z",
+            "value": 22.759
+          },
+          {
+            "timestamp": "2026-09-15T11:20:00.000Z",
+            "value": 22.7926
+          },
+          {
+            "timestamp": "2026-09-15T11:25:00.000Z",
+            "value": 22.7985
+          },
+          {
+            "timestamp": "2026-09-15T11:30:00.000Z",
+            "value": 22.7782
+          },
+          {
+            "timestamp": "2026-09-15T11:35:00.000Z",
+            "value": 22.7341
+          },
+          {
+            "timestamp": "2026-09-15T11:40:00.000Z",
+            "value": 22.6694
+          },
+          {
+            "timestamp": "2026-09-15T11:45:00.000Z",
+            "value": 22.5885
+          },
+          {
+            "timestamp": "2026-09-15T11:50:00.000Z",
+            "value": 22.496
+          },
+          {
+            "timestamp": "2026-09-15T11:55:00.000Z",
+            "value": 22.3973
+          }
+        ],
+        "report": {
+          "assumptions": "Ordered scalar observations at a regular interval; forecasts are conditional estimates. Flags indicate surprise, not a diagnosed cause. No calibrated prediction interval.",
+          "coefficients": [
+            0.9277473734117565,
+            0.3634949694694995,
+            -6.689317951303226
+          ],
+          "execution": "registered coefficients executed by the actual shared R1 owner",
+          "fits": 172,
+          "flags": 2,
+          "forecast": [
+            {
+              "step": 1,
+              "value": 22.26690112839777
+            },
+            {
+              "step": 2,
+              "value": 22.1100469642863
+            },
+            {
+              "step": 3,
+              "value": 21.91712659167128
+            },
+            {
+              "step": 4,
+              "value": 21.681129523105216
+            },
+            {
+              "step": 5,
+              "value": 21.392058277656435
+            },
+            {
+              "step": 6,
+              "value": 21.038089441729152
+            },
+            {
+              "step": 7,
+              "value": 20.60461984038908
+            },
+            {
+              "step": 8,
+              "value": 20.073803665083446
+            },
+            {
+              "step": 9,
+              "value": 19.423776333174104
+            },
+            {
+              "step": 10,
+              "value": 18.627766173912722
+            },
+            {
+              "step": 11,
+              "value": 18.221685513652663
+            },
+            {
+              "step": 12,
+              "value": 18.221685513652663
+            }
+          ],
+          "last_timestamp": "2026-09-15T11:55:00.000Z",
+          "last_value": 22.3973,
+          "mae": 0.07855763739822554,
+          "method": "ar2_8",
+          "persistence_mae": 0.09681666666666662,
+          "prequential": [
+            {
+              "actual": 20.8924,
+              "error": 0.10339999999999705,
+              "flagged": false,
+              "index": 6,
+              "method": "persistence",
+              "persistence": 20.789,
+              "prediction": 20.789,
+              "threshold": null,
+              "timestamp": "2026-09-15T08:30:00.000Z"
+            },
+            {
+              "actual": 20.9698,
+              "error": 0.0774000000000008,
+              "flagged": false,
+              "index": 7,
+              "method": "persistence",
+              "persistence": 20.8924,
+              "prediction": 20.8924,
+              "threshold": null,
+              "timestamp": "2026-09-15T08:35:00.000Z"
+            },
+            {
+              "actual": 21.0197,
+              "error": 0.049900000000000944,
+              "flagged": false,
+              "index": 8,
+              "method": "persistence",
+              "persistence": 20.9698,
+              "prediction": 20.9698,
+              "threshold": null,
+              "timestamp": "2026-09-15T08:40:00.000Z"
+            },
+            {
+              "actual": 21.0417,
+              "error": 0.021999999999998465,
+              "flagged": false,
+              "index": 9,
+              "method": "persistence",
+              "persistence": 21.0197,
+              "prediction": 21.0197,
+              "threshold": null,
+              "timestamp": "2026-09-15T08:45:00.000Z"
+            },
+            {
+              "actual": 21.0365,
+              "error": -0.0451265489678363,
+              "flagged": false,
+              "index": 10,
+              "method": "ar2_8",
+              "persistence": 21.0417,
+              "prediction": 21.081626548967836,
+              "threshold": null,
+              "timestamp": "2026-09-15T08:50:00.000Z"
+            },
+            {
+              "actual": 21.0059,
+              "error": -0.05619713863520204,
+              "flagged": false,
+              "index": 11,
+              "method": "ar2_8",
+              "persistence": 21.0365,
+              "prediction": 21.062097138635202,
+              "threshold": null,
+              "timestamp": "2026-09-15T08:55:00.000Z"
+            },
+            {
+              "actual": 20.9528,
+              "error": -0.06841588735084159,
+              "flagged": false,
+              "index": 12,
+              "method": "ar2_8",
+              "persistence": 21.0059,
+              "prediction": 21.02121588735084,
+              "threshold": null,
+              "timestamp": "2026-09-15T09:00:00.000Z"
+            },
+            {
+              "actual": 20.8809,
+              "error": -0.07189999999999941,
+              "flagged": false,
+              "index": 13,
+              "method": "persistence",
+              "persistence": 20.9528,
+              "prediction": 20.9528,
+              "threshold": null,
+              "timestamp": "2026-09-15T09:05:00.000Z"
+            },
+            {
+              "actual": 20.7945,
+              "error": -0.027826947606495622,
+              "flagged": false,
+              "index": 14,
+              "method": "ar2_8",
+              "persistence": 20.8809,
+              "prediction": 20.822326947606495,
+              "threshold": 0.34748982617328095,
+              "timestamp": "2026-09-15T09:10:00.000Z"
+            },
+            {
+              "actual": 20.6988,
+              "error": -0.001253978022553781,
+              "flagged": false,
+              "index": 15,
+              "method": "ar2_8",
+              "persistence": 20.7945,
+              "prediction": 20.700053978022552,
+              "threshold": 0.26137082991443483,
+              "timestamp": "2026-09-15T09:15:00.000Z"
+            },
+            {
+              "actual": 20.5991,
+              "error": 0.028214743582765323,
+              "flagged": false,
+              "index": 16,
+              "method": "ar2_8",
+              "persistence": 20.6988,
+              "prediction": 20.570885256417235,
+              "threshold": 0.28327178397855923,
+              "timestamp": "2026-09-15T09:20:00.000Z"
+            },
+            {
+              "actual": 20.5011,
+              "error": 0.030255455084724048,
+              "flagged": false,
+              "index": 17,
+              "method": "ar2_8",
+              "persistence": 20.5991,
+              "prediction": 20.470844544915277,
+              "threshold": 0.3033635512649585,
+              "timestamp": "2026-09-15T09:25:00.000Z"
+            },
+            {
+              "actual": 20.4102,
+              "error": 0.026994812559639314,
+              "flagged": false,
+              "index": 18,
+              "method": "ar2_8",
+              "persistence": 20.5011,
+              "prediction": 20.38320518744036,
+              "threshold": 0.28177272299943096,
+              "timestamp": "2026-09-15T09:30:00.000Z"
+            },
+            {
+              "actual": 20.3317,
+              "error": 0.025442670657518818,
+              "flagged": false,
+              "index": 19,
+              "method": "ar2_8",
+              "persistence": 20.4102,
+              "prediction": 20.306257329342483,
+              "threshold": 0.2954937300855525,
+              "timestamp": "2026-09-15T09:35:00.000Z"
+            },
+            {
+              "actual": 20.2702,
+              "error": 0.026150650622145832,
+              "flagged": false,
+              "index": 20,
+              "method": "ar2_8",
+              "persistence": 20.3317,
+              "prediction": 20.244049349377853,
+              "threshold": 0.2304759450427836,
+              "timestamp": "2026-09-15T09:40:00.000Z"
+            },
+            {
+              "actual": 20.2299,
+              "error": 0.029487823615102826,
+              "flagged": false,
+              "index": 21,
+              "method": "ar2_8",
+              "persistence": 20.2702,
+              "prediction": 20.200412176384898,
+              "threshold": 0.15832180533230253,
+              "timestamp": "2026-09-15T09:45:00.000Z"
+            },
+            {
+              "actual": 20.2139,
+              "error": 0.0355198089173534,
+              "flagged": false,
+              "index": 22,
+              "method": "ar2_8",
+              "persistence": 20.2299,
+              "prediction": 20.178380191082645,
+              "threshold": 0.15168177563247925,
+              "timestamp": "2026-09-15T09:50:00.000Z"
+            },
+            {
+              "actual": 20.2244,
+              "error": 0.044989755833309886,
+              "flagged": false,
+              "index": 23,
+              "method": "ar2_8",
+              "persistence": 20.2139,
+              "prediction": 20.17941024416669,
+              "threshold": 0.14084314155043196,
+              "timestamp": "2026-09-15T09:55:00.000Z"
+            },
+            {
+              "actual": 20.2627,
+              "error": 0.058980185184442036,
+              "flagged": false,
+              "index": 24,
+              "method": "ar2_8",
+              "persistence": 20.2244,
+              "prediction": 20.203719814815557,
+              "threshold": 0.12378017657030395,
+              "timestamp": "2026-09-15T10:00:00.000Z"
+            },
+            {
+              "actual": 20.3288,
+              "error": 0.07233190316679128,
+              "flagged": false,
+              "index": 25,
+              "method": "ar2_8",
+              "persistence": 20.2627,
+              "prediction": 20.25646809683321,
+              "threshold": 0.1358369235963206,
+              "timestamp": "2026-09-15T10:05:00.000Z"
+            },
+            {
+              "actual": 20.4216,
+              "error": 0.02752896063990562,
+              "flagged": false,
+              "index": 26,
+              "method": "ar2_32",
+              "persistence": 20.3288,
+              "prediction": 20.394071039360096,
+              "threshold": 0.15168177563247925,
+              "timestamp": "2026-09-15T10:10:00.000Z"
+            },
+            {
+              "actual": 20.5391,
+              "error": 0.038343174285252246,
+              "flagged": false,
+              "index": 27,
+              "method": "ar2_32",
+              "persistence": 20.4216,
+              "prediction": 20.50075682571475,
+              "threshold": 0.1326692118211093,
+              "timestamp": "2026-09-15T10:15:00.000Z"
+            },
+            {
+              "actual": 20.6781,
+              "error": 0.04830968225471821,
+              "flagged": false,
+              "index": 28,
+              "method": "ar2_32",
+              "persistence": 20.5391,
+              "prediction": 20.629790317745282,
+              "threshold": 0.11607587223586939,
+              "timestamp": "2026-09-15T10:20:00.000Z"
+            },
+            {
+              "actual": 20.8348,
+              "error": 0.05715930006559233,
+              "flagged": false,
+              "index": 29,
+              "method": "ar2_32",
+              "persistence": 20.6781,
+              "prediction": 20.77764069993441,
+              "threshold": 0.1191710243001494,
+              "timestamp": "2026-09-15T10:25:00.000Z"
+            },
+            {
+              "actual": 21.0044,
+              "error": 0.06348743458837802,
+              "flagged": false,
+              "index": 30,
+              "method": "ar2_32",
+              "persistence": 20.8348,
+              "prediction": 20.940912565411622,
+              "threshold": 0.1201116975665746,
+              "timestamp": "2026-09-15T10:30:00.000Z"
+            },
+            {
+              "actual": 21.1818,
+              "error": -0.026980928442622343,
+              "flagged": false,
+              "index": 31,
+              "method": "ar2_8",
+              "persistence": 21.0044,
+              "prediction": 21.20878092844262,
+              "threshold": 0.12105237083299979,
+              "timestamp": "2026-09-15T10:35:00.000Z"
+            },
+            {
+              "actual": 21.3616,
+              "error": -0.02230071094145103,
+              "flagged": false,
+              "index": 32,
+              "method": "ar2_8",
+              "persistence": 21.1818,
+              "prediction": 21.38390071094145,
+              "threshold": 0.14635258429937853,
+              "timestamp": "2026-09-15T10:40:00.000Z"
+            },
+            {
+              "actual": 22.0381,
+              "error": 0.4805478140004489,
+              "flagged": true,
+              "index": 33,
+              "method": "ar2_8",
+              "persistence": 21.3616,
+              "prediction": 21.55755218599955,
+              "threshold": 0.1716527977657573,
+              "timestamp": "2026-09-15T10:45:00.000Z"
+            },
+            {
+              "actual": 22.2059,
+              "error": -0.3548006884255628,
+              "flagged": true,
+              "index": 34,
+              "method": "ar2_16",
+              "persistence": 22.0381,
+              "prediction": 22.560700688425563,
+              "threshold": 0.17320705218697086,
+              "timestamp": "2026-09-15T10:50:00.000Z"
+            },
+            {
+              "actual": 22.3599,
+              "error": -0.12021999999999977,
+              "flagged": false,
+              "index": 35,
+              "method": "drift",
+              "persistence": 22.2059,
+              "prediction": 22.48012,
+              "threshold": 0.1747613066081844,
+              "timestamp": "2026-09-15T10:55:00.000Z"
+            },
+            {
+              "actual": 22.4956,
+              "error": -0.13540000000000063,
+              "flagged": false,
+              "index": 36,
+              "method": "drift",
+              "persistence": 22.3599,
+              "prediction": 22.631,
+              "threshold": 0.179085569902338,
+              "timestamp": "2026-09-15T11:00:00.000Z"
+            },
+            {
+              "actual": 22.6091,
+              "error": -0.14925999999999817,
+              "flagged": false,
+              "index": 37,
+              "method": "drift",
+              "persistence": 22.4956,
+              "prediction": 22.75836,
+              "threshold": 0.18651834203891876,
+              "timestamp": "2026-09-15T11:05:00.000Z"
+            },
+            {
+              "actual": 22.6975,
+              "error": -0.16110000000000113,
+              "flagged": false,
+              "index": 38,
+              "method": "drift",
+              "persistence": 22.6091,
+              "prediction": 22.858600000000003,
+              "threshold": 0.20146709385907538,
+              "timestamp": "2026-09-15T11:10:00.000Z"
+            },
+            {
+              "actual": 22.759,
+              "error": -0.07038000000000011,
+              "flagged": false,
+              "index": 39,
+              "method": "drift",
+              "persistence": 22.6975,
+              "prediction": 22.82938,
+              "threshold": 0.20555405872373672,
+              "timestamp": "2026-09-15T11:15:00.000Z"
+            },
+            {
+              "actual": 22.7926,
+              "error": -0.07702000000000098,
+              "flagged": false,
+              "index": 40,
+              "method": "drift",
+              "persistence": 22.759,
+              "prediction": 22.86962,
+              "threshold": 0.2101564698919044,
+              "timestamp": "2026-09-15T11:20:00.000Z"
+            },
+            {
+              "actual": 22.7985,
+              "error": -0.08063999999999893,
+              "flagged": false,
+              "index": 41,
+              "method": "drift",
+              "persistence": 22.7926,
+              "prediction": 22.87914,
+              "threshold": 0.25437900912504907,
+              "timestamp": "2026-09-15T11:25:00.000Z"
+            },
+            {
+              "actual": 22.7782,
+              "error": -0.08088000000000406,
+              "flagged": false,
+              "index": 42,
+              "method": "drift",
+              "persistence": 22.7985,
+              "prediction": 22.859080000000002,
+              "threshold": 0.27265249026220356,
+              "timestamp": "2026-09-15T11:30:00.000Z"
+            },
+            {
+              "actual": 22.7341,
+              "error": -0.07791999999999533,
+              "flagged": false,
+              "index": 43,
+              "method": "drift",
+              "persistence": 22.7782,
+              "prediction": 22.812019999999997,
+              "threshold": 0.27265249026220356,
+              "timestamp": "2026-09-15T11:35:00.000Z"
+            },
+            {
+              "actual": 22.6694,
+              "error": -0.07202000000000197,
+              "flagged": false,
+              "index": 44,
+              "method": "drift",
+              "persistence": 22.7341,
+              "prediction": 22.74142,
+              "threshold": 0.27265249026220356,
+              "timestamp": "2026-09-15T11:40:00.000Z"
+            },
+            {
+              "actual": 22.5885,
+              "error": -0.08089999999999975,
+              "flagged": false,
+              "index": 45,
+              "method": "persistence",
+              "persistence": 22.6694,
+              "prediction": 22.6694,
+              "threshold": 0.27265249026220356,
+              "timestamp": "2026-09-15T11:45:00.000Z"
+            },
+            {
+              "actual": 22.496,
+              "error": -0.09250000000000114,
+              "flagged": false,
+              "index": 46,
+              "method": "persistence",
+              "persistence": 22.5885,
+              "prediction": 22.5885,
+              "threshold": 0.27265249026220356,
+              "timestamp": "2026-09-15T11:50:00.000Z"
+            },
+            {
+              "actual": 22.3973,
+              "error": -0.07993376727482016,
+              "flagged": false,
+              "index": 47,
+              "method": "ar2_64",
+              "persistence": 22.496,
+              "prediction": 22.47723376727482,
+              "threshold": 0.2914166747491677,
+              "timestamp": "2026-09-15T11:55:00.000Z"
+            }
+          ],
+          "procedure": "observed_error_selection",
+          "rows": 48
+        },
+        "update_kind": "append",
+        "updated_at": "2026-09-16T02:04:15.315838+00:00",
+        "version": 1
+      }
+    },
+    "task_attempts": [
+      {
+        "coefficients": [
+          0.0,
+          1.8000000000000005,
+          32.0
+        ],
+        "context": "868632f68ff5fd4d",
+        "degree": 1,
+        "domain": [
+          -40.0,
+          160.0
+        ],
+        "examples": 21,
+        "held_out": [
+          {
+            "expected": -40.0,
+            "prediction": -40.00000000000004,
+            "x": -40.0
+          },
+          {
+            "expected": 230.0,
+            "prediction": 230.00000000000006,
+            "x": 110.0
+          },
+          {
+            "expected": -22.0,
+            "prediction": -22.000000000000014,
+            "x": -30.0
+          },
+          {
+            "expected": 302.0,
+            "prediction": 302.00000000000006,
+            "x": 150.0
+          }
+        ],
+        "held_out_max_error": 5.684341886080802e-14,
+        "material": {
+          "evidence": "Examples computed from the published unit-conversion rule. This is derived mathematical data, not independent physical measurements.",
+          "examples": "x,y\n-40,-40\n-30,-22\n-20,-4\n-10,14\n0,32\n10,50\n20,68\n30,86\n40,104\n50,122\n60,140\n70,158\n80,176\n90,194\n100,212\n110,230\n120,248\n130,266\n140,284\n150,302\n160,320",
+          "phrase": "celsius to fahrenheit",
+          "retrieved": "2026-09-15",
+          "source": "https://www.nist.gov/pml/owm/si-units-temperature",
+          "title": "Celsius to Fahrenheit"
+        },
+        "material_sha256": "7203ffc4aa8a23af67516d6d8cbb8aca871973bc0fd983ab390b9b4bfaf7cab6",
+        "outputs": [
+          32.0,
+          68.0,
+          98.60000000000002,
+          212.00000000000006
+        ],
+        "queries": [
+          0,
+          20,
+          37,
+          100
+        ],
+        "queries_in_example_domain": true,
+        "scope": "A supplied affine/quadratic family fitted on request. Held-out examples are finite checks, not a guarantee on arbitrary functions or new domains. Material retrieval is from a local, source-labeled library or provided examples; no autonomous web comprehension.",
+        "split": {
+          "selection": [
+            17,
+            18,
+            3,
+            5
+          ],
+          "test": [
+            0,
+            15,
+            1,
+            19
+          ],
+          "train": [
+            9,
+            8,
+            7,
+            6,
+            10,
+            11,
+            20,
+            4,
+            14,
+            2,
+            16,
+            12,
+            13
+          ]
+        },
+        "status": "ACCEPTED",
+        "task": "Convert Celsius to Fahrenheit",
+        "tolerance": 0.01,
+        "trained_parameters": 2,
+        "validation_mae": 3.68594044175552e-14
+      }
+    ],
+    "transaction_count": 15,
+    "uncertainty": "Conditional forecasts; uncertainty is not calibrated.",
+    "work": {
+      "conditional_transition_particles": 185976,
+      "controller_decisions": 82,
+      "executed_actions": 84,
+      "factual_replay_events": 1314,
+      "paid_sensor_measurements": 85,
+      "posterior_fits": 83
+    }
+  },
+  "world": {
+    "spec": {
+      "angle": -0.9555582390729573,
+      "change_step": 36,
+      "drift": 0.004818389722948711,
+      "family": "gain_reversal",
+      "gain": 0.08455360053703301,
+      "goals": [
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          1.0078790868102785,
+          -0.005513891530235793
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          -0.08199003173005048,
+          -1.187262738119797
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          0.8018720514281839,
+          -1.0522555012052013
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.15594921526374067,
+          -1.1518013265662368
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3092192376085562,
+          -1.045967370916291
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.3901533641817613,
+          0.16586541715037983
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ],
+        [
+          -0.4776193762521874,
+          -0.8478504698025647
+        ]
+      ],
+      "rho": 0.8588569124575705,
+      "seed": 7001,
+      "sensor_noise": 0.002,
+      "steps": 72,
+      "velocity": 0.034665675467332346
+    },
+    "state": {
+      "angle": -3.7090748146027517,
+      "time": 84,
+      "velocity": -0.32140322815147876
+    }
+  }
+}

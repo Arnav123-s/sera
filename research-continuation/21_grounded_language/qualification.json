@@ -1,0 +1,27 @@
+{
+  "status": "QUALIFIED_RESTRICTED_INTERFACE",
+  "candidate": "L10-FINAL-151001-interface",
+  "gates": {
+    "known_translation": true,
+    "accepted_translation": true,
+    "coverage": true,
+    "old_skills": true,
+    "three_declared_seeds": true
+  },
+  "language_source": "0d2d38983e8ae6e2cc9f8f2e5e0d6fb6d677c02d436a2d6ef2493e5e36228287",
+  "checkpoint": {
+    "path": "runs/grounded-language/L10-FINAL-151001-interface/selected.pt",
+    "sha256": "f28af978fc82838b5e1c5b74d4fa33b792adda460ee3354f54fe35100c1e3938"
+  },
+  "threshold": 0.0,
+  "audit_sha256": "cdfa106356ec408b922305eb34e84a5c5b8a00698001b63da2a223443a8ad92d",
+  "cohort_protocol_sha256": "8df03a7549c6bd756a8e339f6fa3a31f316f8db32c99f4f8d69cb7f26fd19575",
+  "allowed": "Six supplied sentence shapes, coefficients zero to ten, two operation orders, modulus eleven. Additional wording must pass a new explicit lesson check; prior wording is retested and can be withdrawn.",
+  "not_qualified": [
+    "unrestricted English",
+    "new domains or general mathematical proofs",
+    "positive pretrained-core transfer",
+    "shared-core replacement",
+    "learned curriculum or optimizer"
+  ]
+}

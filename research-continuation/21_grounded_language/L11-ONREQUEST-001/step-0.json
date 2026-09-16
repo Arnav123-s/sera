@@ -1,0 +1,82 @@
+{
+  "index": 0,
+  "request": "subtract three from x then multiply by two to get four modulo eleven",
+  "answer": {
+    "status": "ACCEPTED",
+    "labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "confidence": 0.9997710585594177,
+    "missing_words": [],
+    "solutions": [
+      5
+    ],
+    "formal_statement": "2*(x-3)=4 (mod 11)",
+    "formal_verification": true,
+    "checked_domain": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+    "text": "subtract three from x then multiply by two to get four modulo eleven",
+    "before_status": "ACCEPTED",
+    "learned_on_request": false,
+    "lesson": null,
+    "active_wording_shapes": 6,
+    "reproof_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7986,
+      "nonzero_checks": 1331,
+      "expression_nodes": 12584,
+      "proof_index_lookups": 2541
+    },
+    "owner": "0e49e0f7d64ac5b54ce99eac23e47ecc0889f6822605a8ff53fd3e02c1ba0a0d",
+    "same_owner": true
+  },
+  "fresh_family": {
+    "examples": 512,
+    "joint_cross_entropy": 0.0020589925425156252,
+    "exact_translation": 1.0,
+    "answer_accuracy": 1.0,
+    "slot_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "formal_checks": 512,
+    "accepted": 512,
+    "coverage": 1.0,
+    "accepted_translation_accuracy": 1.0,
+    "accepted_answer_accuracy": 1.0,
+    "threshold": 0.0,
+    "unique_texts": 501,
+    "unique_semantic_triples": 229
+  },
+  "requested_shape_examples": 82,
+  "requested_shape_exact_translation": 1.0,
+  "independently_correct": true,
+  "revision": 1,
+  "owner_sha256": "0e49e0f7d64ac5b54ce99eac23e47ecc0889f6822605a8ff53fd3e02c1ba0a0d",
+  "lesson_count": 0,
+  "cumulative_optimizer_steps": 0,
+  "cumulative_teaching_examples": 0,
+  "original_contexts_preserved": true,
+  "exact_restored_owner": true
+}

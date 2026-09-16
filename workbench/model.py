@@ -5,6 +5,7 @@ import hashlib
 import math
 import re
 from datetime import datetime, timezone
+from pathlib import Path
 
 import numpy as np
 
@@ -41,6 +42,7 @@ def integer(value, name, low, high):
 
 class Learner:
     def __init__(self, record=None, *, migrate=False):
+        self.language = None if record is None else copy.deepcopy(record.get("language"))
         if record is None:
             self.solver, self.session, self.library = restore()
             self.legacy = SharedGenerativeSession.restore(self.solver, read(OUTPUT/"factual-situation.json"))
@@ -64,6 +66,9 @@ class Learner:
             if record["live_source"] != source_identity() and not migrating:
                 raise ValueError("Live task interpreter changed; preserve this session and migrate explicitly")
             LiveR1.attach(self.session.owner, record["contexts"])
+            if self.language is not None:
+                from .language_runtime import restore as restore_language
+                restore_language(self.session.owner, self.language, migrate=migrate)
             if migrating:
                 self.session.owner.live_source = record["live_source"]
             if model_identity(self.session.owner) != record["owner_sha256"]:
@@ -197,13 +202,22 @@ class Learner:
                 "uncertainty": "Conditional forecasts; uncertainty is not calibrated.",
                 "controller": "Qualified four-step adaptive controller",
                 "task_attempts": self.task_attempts[-10:],
+                "language": None if self.language is None else {
+                    "lessons": self.language["lessons"], "teaching_examples": self.language["paid_teaching_examples"],
+                    "optimizer_steps": self.language["optimizer_steps"], "active_shapes": len(self.language["shapes"]),
+                    "attempts": self.language["attempts"][-10:]},
                 "streams": {name: {"report": stream["report"], "observations": stream["observations"][-160:],
                                     "updated_at": stream["updated_at"], "version": stream["version"], "update_kind": stream["update_kind"]}
                             for name, stream in self.streams.items()}, "stream_costs": self.stream_costs,
                 "saved": True, "transaction_count": len(self.transactions)}
 
     def snapshot(self):
-        return {"schema": "sera.workbench.session.1", "interaction": base_snapshot(self.session),
+        if self.language is not None:
+            from .language_runtime import interaction_snapshot
+            interaction = interaction_snapshot(self.session)
+        else:
+            interaction = base_snapshot(self.session)
+        return {"schema": "sera.workbench.session.1", "interaction": interaction, "language": self.language,
                 "live_source": source_identity(), "contexts": self.session.owner.contexts(),
                 "owner_sha256": model_identity(self.session.owner), "streams": self.streams, "stream_costs": self.stream_costs,
                 "task_attempts": self.task_attempts,
@@ -222,7 +236,7 @@ def transact(directory, request):
     if old is not None and identity in old["transactions"]:
         return {"state": old["view"], "result": {"reused_transaction": True}}
     operation = request.get("operation")
-    learner = Learner(old, migrate=operation == "migrate")
+    learner = Learner(old, migrate=operation in ("migrate", "migrate_language"))
     if operation == "initialize":
         result = {"restored": old is not None}
     elif operation == "migrate":
@@ -231,6 +245,16 @@ def transact(directory, request):
         result = {"migration": "same tensors and acquired contexts; explicit additional task execution routes",
                   "old_source": old["live_source"], "new_source": source_identity(),
                   "old_owner": old["owner_sha256"], "new_owner": model_identity(learner.session.owner)}
+    elif operation == "migrate_language":
+        from .language_runtime import MIGRATABLE_RUNTIMES, runtime_source
+        if old is None or old.get("language") is None or old["language"]["runtime_source"] not in MIGRATABLE_RUNTIMES:
+            raise ValueError("No matching preserved language interpreter migration")
+        result = {"migration": "same trained state; verified language tasks now execute preserved guarded programs",
+                  "old_source": old["language"]["runtime_source"], "new_source": runtime_source(),
+                  "old_owner": old["owner_sha256"], "new_owner": model_identity(learner.session.owner),
+                  "checkpoint_preserved": old["language"]["checkpoint"] == learner.language["checkpoint"]}
+        if result["old_owner"] != result["new_owner"] or not result["checkpoint_preserved"]:
+            raise ValueError("Language execution migration unexpectedly changed trained state")
     elif operation == "advance":
         result = learner.advance(request.get("steps", 1), request.get("degrees", learner.goal_degrees), manual=request.get("manual"))
     elif operation == "reverse":
@@ -250,6 +274,10 @@ def transact(directory, request):
             result["context"] = context
             learner.rebind(factual, library)
         learner.task_attempts.append(result)
+    elif operation == "learn_language":
+        from .language_runtime import perform
+        folder = Path(directory).resolve()/"language"/hashlib.sha256(identity.encode()).hexdigest()[:24]
+        result = perform(learner, request.get("text"), folder)
     else:
         raise ValueError("Unknown workbench operation")
     learner.transactions.append(identity)

@@ -34,7 +34,8 @@
 - [x] Preserve 42 development lifetimes; freeze 168 prospective lifetimes and independently reconstruct 12,096 decisions.
 - [x] Restore the qualifying owner, acquire four further observations, reprove old finite dependencies, and pass 219 regressions plus a fresh exact 61-group retention check.
 - [ ] Qualify uncertainty under the complete adaptive policy; current conditional rectangles under-cover and no earlier certificate transfers.
-- [ ] Train eta, run old/new K × old/new eta, and test successive generations.
+- [x] Train the bounded A09 eta, run old/new K × old/new eta, and test successive generations; reject it against the strongest baseline.
+- [ ] Establish an independently improved learning procedure on unfamiliar future tasks.
 
 Completion means executable evidence at the stated scope. M2–M4 remain open until their capability tests pass.
 
@@ -43,4 +44,8 @@ The completed geometric cohort covers four of ten requested task families. GG-GU
 - [x] Deliver a usable local workbench with live numerical tasks, on-request learning, controlled action and verified equations.
 - [x] Evaluate A09 K × eta over ten independent continuing lifetimes and three successor generations; preserve failed strongest-baseline gate.
 - [x] Verify 90 fresh numerical tasks, 540 accepted query values, 233 completed tests across preserved runs, and 61 exact retention groups.
-- [ ] Build a grounded language/formal reasoning acquisition route and test unfamiliar compositions before claiming language understanding.
+- [x] Train the bounded L10 grounded-language route, compare three scopes and three seeds, and test unfamiliar compositions; qualify only familiar finite forms with the retained core.
+- [x] Demonstrate L11 acquisition and reacquisition in one continuing learner: six checked requests, five lessons, preserved histories and measured forgetting.
+- [x] Audit 41,472 predictions, preserve the empirical guard's five wrong admissions, add a supplied finite-language output contract, and integrate checked interpretations with acquired guarded programs.
+- [x] Complete the 241-test full regression and the two later contract tests, plus final integration/migration checks; preserve desktop/mobile verification and full costs.
+- [ ] Acquire prerequisites from external grounded material beyond the supplied sentence/lesson generators; evaluate retrieval, learning, application and reacquisition separately.

@@ -1,0 +1,130 @@
+{
+  "status": "COMPLETE",
+  "config": {
+    "seed": 150001,
+    "scope": "shared",
+    "scratch": false,
+    "steps": 80,
+    "batch": 16,
+    "train": 4096,
+    "development": 64,
+    "learning_rate": 0.003,
+    "checkpoint_every": 20,
+    "pilot": true
+  },
+  "protocol_sha256": "449708ad3b7bd3f24631b59ad351ddacf4fcb55b67b74a982dd5c58d1f550c09",
+  "initial_owner": "0ec873d35d7395734a11bc4f310ba3e48483ce9e83bbbad7f5ece2e6605852bc",
+  "selected_owner": "adacfbca47e32ff1e947083a7e08f2c08c9a8c1099307ac17d4330bad094aa25",
+  "shared_owner_aliases": true,
+  "owner_settings": {
+    "width": 256,
+    "heads": 8,
+    "memory_dim": 32,
+    "kind": "delta"
+  },
+  "metrics": {
+    "known": {
+      "examples": 512,
+      "joint_cross_entropy": 3.2065154088195413,
+      "exact_translation": 0.236328125,
+      "answer_accuracy": 0.27734375,
+      "slot_accuracy": [
+        0.994140625,
+        0.591796875,
+        0.64453125,
+        0.66796875
+      ],
+      "formal_checks": 512,
+      "accepted": 0,
+      "coverage": 0.0,
+      "accepted_translation_accuracy": null,
+      "accepted_answer_accuracy": null,
+      "threshold": 1.000001,
+      "unique_texts": 505,
+      "unique_semantic_triples": 236
+    },
+    "novel": {
+      "examples": 512,
+      "joint_cross_entropy": 6.798063769936562,
+      "exact_translation": 0.05859375,
+      "answer_accuracy": 0.158203125,
+      "slot_accuracy": [
+        0.529296875,
+        0.376953125,
+        0.5078125,
+        0.619140625
+      ],
+      "formal_checks": 512,
+      "accepted": 0,
+      "coverage": 0.0,
+      "accepted_translation_accuracy": null,
+      "accepted_answer_accuracy": null,
+      "threshold": 1.000001,
+      "unique_texts": 486,
+      "unique_semantic_triples": 225
+    },
+    "memory_reset": {
+      "examples": 512,
+      "joint_cross_entropy": 7.544796325266361,
+      "exact_translation": 0.00390625,
+      "answer_accuracy": 0.1015625,
+      "slot_accuracy": [
+        0.767578125,
+        0.232421875,
+        0.244140625,
+        0.232421875
+      ],
+      "formal_checks": 512,
+      "accepted": 0,
+      "coverage": 0.0,
+      "accepted_translation_accuracy": null,
+      "accepted_answer_accuracy": null,
+      "threshold": 1.000001,
+      "unique_texts": 505,
+      "unique_semantic_triples": 236
+    }
+  },
+  "calibration": {
+    "threshold": 1.000001,
+    "accepted": 0,
+    "calibration_examples": 512,
+    "empirical_accuracy": null
+  },
+  "trainable_parameters": 435508,
+  "training_draws": 1280,
+  "checkpoints": [
+    {
+      "path": "runs/grounded-language/L10-PILOT-001/step-00020.pt",
+      "sha256": "1643ddfadeafecd18a36e85fc55595aed8e00ff430c6ad471e9e4dae399629d1",
+      "bytes": 6970083,
+      "step": 20
+    },
+    {
+      "path": "runs/grounded-language/L10-PILOT-001/step-00040.pt",
+      "sha256": "cd3407c2f6883f4a8d4a00c418cf300375e7db9d772eeada92514ea0cce7b4cd",
+      "bytes": 6970851,
+      "step": 40
+    },
+    {
+      "path": "runs/grounded-language/L10-PILOT-001/step-00060.pt",
+      "sha256": "20ea2f319efebeeba7f182b83589834cd549c927090daaac45a1bbda6917efd7",
+      "bytes": 6971619,
+      "step": 60
+    },
+    {
+      "path": "runs/grounded-language/L10-PILOT-001/step-00080.pt",
+      "sha256": "2c6eae742b29451a21b9883f2620478fef3b3c93180b8c3a45b80e7d1b5958dc",
+      "bytes": 6972387,
+      "step": 80
+    }
+  ],
+  "selected_checkpoint": {
+    "path": "runs/grounded-language/L10-PILOT-001/selected.pt",
+    "sha256": "15aed3d4e3ae74a149c7e1101a410fba1e85775eebaa93098a7b24aa5d0bfc32"
+  },
+  "worker_seconds_this_invocation": 14.807849099990563,
+  "language_source": "0d2d38983e8ae6e2cc9f8f2e5e0d6fb6d677c02d436a2d6ef2493e5e36228287",
+  "vocabulary_size": 45,
+  "qualified": null,
+  "qualification_boundary": "Retention and independent audit are still required; final metrics are not a deployment decision."
+}

@@ -1,0 +1,27 @@
+{
+  "full_suite": {
+    "tests": 241,
+    "xml": "tests.xml",
+    "charged_seconds": 102.92580510000698
+  },
+  "new_contract_and_updated_integration": {
+    "tests": 3,
+    "xml": "program-reuse-tests.xml",
+    "charged_seconds": 14.521793199994136
+  },
+  "distinct_tests_across_runs": 243,
+  "lint": {
+    "command": "python -m ruff check src tests scripts experiments workbench",
+    "status": "PASS"
+  },
+  "javascript": {
+    "command": "node --check workbench/static/app.js",
+    "status": "PASS"
+  },
+  "changed_tracked_text": {
+    "command": "git -c core.whitespace=cr-at-eol diff --check",
+    "status": "PASS",
+    "note": "CRLF remains significant in preserved raw research artifacts; current metadata text normalized to LF after an initial working-document line-ending check."
+  },
+  "scope": "No completed experiment rerun. Full suite ran before the later finite-language contract and execution migration; focused contract/integration checks cover those later changes."
+}

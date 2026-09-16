@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "head_before_this_cycle": "01e622e",
+  "workbench_release": {
+    "command": "scripts/verify_workbench_release.py",
+    "artifact_files": 54,
+    "frozen_source_files": 23,
+    "new_experiments": 0
+  },
+  "continuing_release": {
+    "command": "scripts/verify_continuing_release.py --local-checkpoints",
+    "release_files": 356,
+    "local_checkpoints_checked": 210,
+    "new_experiments_run": 0
+  },
+  "boundary": "These are successful read-only verifier outputs captured in this continuation. Earlier full-suite timeout and its raw logs remain preserved. Current application edits are a new release; preceding source bytes remain in the verified frozen archives."
+}

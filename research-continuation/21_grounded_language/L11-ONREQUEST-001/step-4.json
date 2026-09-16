@@ -1,0 +1,112 @@
+{
+  "index": 4,
+  "request": "multiply the difference of x and two by three equals four modulo eleven",
+  "answer": {
+    "status": "ACCEPTED",
+    "labels": [
+      1,
+      3,
+      2,
+      4
+    ],
+    "confidence": 0.9998769760131836,
+    "missing_words": [],
+    "solutions": [
+      7
+    ],
+    "formal_statement": "3*(x-2)=4 (mod 11)",
+    "formal_verification": true,
+    "checked_domain": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+    "text": "multiply the difference of x and two by three equals four modulo eleven",
+    "before_status": "NEEDS_LESSON",
+    "learned_on_request": true,
+    "lesson": {
+      "kind": "wording",
+      "teaching_examples": 192,
+      "steps": 240,
+      "development": {
+        "examples": 128,
+        "joint_cross_entropy": 0.0003804989088393995,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 128,
+        "accepted": 128,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 127,
+        "unique_semantic_triples": 104
+      },
+      "withdrawn_shapes": [
+        "multiply x by # then subtract # to get # modulo eleven",
+        "take # times x subtract # and obtain # modulo eleven",
+        "take x minus # multiply by # and obtain # modulo eleven",
+        "the product of # and the difference of x and # equals # modulo eleven"
+      ]
+    },
+    "active_wording_shapes": 3,
+    "reproof_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7986,
+      "nonzero_checks": 1331,
+      "expression_nodes": 12584,
+      "proof_index_lookups": 2541
+    },
+    "owner": "2ed97cb4db04c5e292b74519ef3bd52c8fb3695615c2d6968ad15d3aa5246ccb",
+    "same_owner": true
+  },
+  "fresh_family": {
+    "examples": 512,
+    "joint_cross_entropy": 0.0005974967101849415,
+    "exact_translation": 1.0,
+    "answer_accuracy": 1.0,
+    "slot_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "formal_checks": 512,
+    "accepted": 512,
+    "coverage": 1.0,
+    "accepted_translation_accuracy": 1.0,
+    "accepted_answer_accuracy": 1.0,
+    "threshold": 0.0,
+    "unique_texts": 486,
+    "unique_semantic_triples": 233
+  },
+  "requested_shape_examples": 267,
+  "requested_shape_exact_translation": 1.0,
+  "independently_correct": true,
+  "revision": 5,
+  "owner_sha256": "2ed97cb4db04c5e292b74519ef3bd52c8fb3695615c2d6968ad15d3aa5246ccb",
+  "lesson_count": 4,
+  "cumulative_optimizer_steps": 960,
+  "cumulative_teaching_examples": 624,
+  "original_contexts_preserved": true,
+  "exact_restored_owner": true
+}

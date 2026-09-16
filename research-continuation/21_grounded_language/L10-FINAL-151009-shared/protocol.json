@@ -1,0 +1,42 @@
+{
+  "schema": "sera.grounded-language.protocol.1",
+  "config": {
+    "seed": 151009,
+    "scope": "shared",
+    "scratch": false,
+    "steps": 600,
+    "batch": 32,
+    "train": 4096,
+    "development": 256,
+    "learning_rate": 0.003,
+    "checkpoint_every": 100,
+    "pilot": false
+  },
+  "base_snapshot": "research-continuation/20_live_workbench/application-snapshot.json",
+  "base_sha256": "609c7e2035a7efb15225c53e803a11c8c465a1a3df3fa19fae5710818c30922e",
+  "predecessor_release_sha256": "b2dace1653a182bef7b50f1e5bed98de9e57d1cdf710d4ab8958bbd7c793edd6",
+  "language_source": "0d2d38983e8ae6e2cc9f8f2e5e0d6fb6d677c02d436a2d6ef2493e5e36228287",
+  "sources": {
+    "experiments/grounded_language/__init__.py": "50c361359f41fb8448143f75435a92f5e7459791ae1e8b4873c79a2b95836edd",
+    "experiments/grounded_language/acquisition.py": "a203a02e81f0b4ce984156c6f8e150c6a64b2e6a0c1cd2eec4ab66ddd473b0ef",
+    "experiments/grounded_language/assessment.py": "08adbabdaaf5510830d47135ac4ce7c964d42d10e91cb97774a28294e26cae02",
+    "experiments/grounded_language/data.py": "14e25a71c713bbc0f2da5b3706223c5e11bb95bfc27f64a37c69caeccb4497a3",
+    "experiments/grounded_language/model.py": "f82cfb242f563ce593b36b6f9120d98188038ba766934245ba0cb97655b98f70",
+    "experiments/grounded_language/study.py": "544b1c5942681bd6791ebd24348cd13b0b6aadb5e0d8d57933abe205510eb56d",
+    "scripts/run_language_bounded.py": "48109eb6a13743ab98e4f3b36d32b9848768928e9bc371673d4634a349fb3250",
+    "scripts/run_v3_bounded.py": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+    "scripts/windows_job_v3.py": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+    "tests/test_grounded_language.py": "49fba121f011e7dadff12a822f92fbe4415290744cd35c9ad52f149d86314d41"
+  },
+  "boundary": "Supplied finite sentence grammar and arithmetic. Formal checking certifies the decoded statement, not its translation. No raw-document or general English learning claim.",
+  "split": "Semantic triples hash to residues 2,3,4 for training; 1 for development/calibration; 0 for final. No final data are read in a pilot.",
+  "unit": "Fixed generated sentence bank; repeated semantic triples are not independent experiments.",
+  "selection": "Select lowest development joint cross-entropy at the declared checkpoint intervals, never by final evaluation.",
+  "promotion": {
+    "known_exact_translation": 0.95,
+    "accepted_translation_accuracy": 0.99,
+    "accepted_coverage": 0.5,
+    "maximum_qualified_retention_drop": 0.02
+  },
+  "retention_policy": "User permits forgetting for research. Automatic replacement of the working release still requires its measured tasks to remain usable; failed replacements remain separately callable research checkpoints."
+}

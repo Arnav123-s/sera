@@ -1,0 +1,117 @@
+{
+  "index": 2,
+  "request": "the product of x and three minus two equals four modulo eleven",
+  "answer": {
+    "status": "ACCEPTED",
+    "labels": [
+      0,
+      3,
+      2,
+      4
+    ],
+    "confidence": 0.9998741149902344,
+    "missing_words": [],
+    "solutions": [
+      2
+    ],
+    "formal_statement": "3*x-2=4 (mod 11)",
+    "formal_verification": true,
+    "checked_domain": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "boundary": "Learned translation in a supplied finite wording family; independent substitution checks its formal interpretation.",
+    "text": "the product of x and three minus two equals four modulo eleven",
+    "before_status": "NEEDS_LESSON",
+    "learned_on_request": true,
+    "lesson": {
+      "kind": "wording",
+      "teaching_examples": 192,
+      "steps": 240,
+      "development": {
+        "examples": 128,
+        "joint_cross_entropy": 0.004926661678837263,
+        "exact_translation": 1.0,
+        "answer_accuracy": 1.0,
+        "slot_accuracy": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "formal_checks": 128,
+        "accepted": 128,
+        "coverage": 1.0,
+        "accepted_translation_accuracy": 1.0,
+        "accepted_answer_accuracy": 1.0,
+        "threshold": 0.0,
+        "unique_texts": 127,
+        "unique_semantic_triples": 99
+      },
+      "withdrawn_shapes": [
+        "multiply x by # then subtract # to get # modulo eleven",
+        "scale x by # then subtract # to get # modulo eleven",
+        "subtract # from the product of # and x equals # modulo eleven",
+        "subtract # from x then multiply by # to get # modulo eleven",
+        "subtract # from x then scale by # to get # modulo eleven",
+        "take # times x subtract # and obtain # modulo eleven",
+        "take x minus # multiply by # and obtain # modulo eleven",
+        "take x minus # scale by # and obtain # modulo eleven",
+        "the product of # and the difference of x and # equals # modulo eleven"
+      ]
+    },
+    "active_wording_shapes": 1,
+    "reproof_work": {
+      "graph_validation_bytes": 3218,
+      "library_index_entries": 5,
+      "proof_dependency_nodes": 5,
+      "forward_nodes": 6655,
+      "proof_index_insertions": 2662,
+      "domain_checks": 7986,
+      "nonzero_checks": 1331,
+      "expression_nodes": 12584,
+      "proof_index_lookups": 2541
+    },
+    "owner": "218e0d8736285e16c9b6dc7790990a48021e87b8fdac2e8b7abb4eb4715cd23e",
+    "same_owner": true
+  },
+  "fresh_family": {
+    "examples": 512,
+    "joint_cross_entropy": 0.023341193122575987,
+    "exact_translation": 0.9921875,
+    "answer_accuracy": 0.9921875,
+    "slot_accuracy": [
+      1.0,
+      0.998046875,
+      0.99609375,
+      0.998046875
+    ],
+    "formal_checks": 512,
+    "accepted": 512,
+    "coverage": 1.0,
+    "accepted_translation_accuracy": 0.9921875,
+    "accepted_answer_accuracy": 0.9921875,
+    "threshold": 0.0,
+    "unique_texts": 479,
+    "unique_semantic_triples": 227
+  },
+  "requested_shape_examples": 257,
+  "requested_shape_exact_translation": 0.9922178988326849,
+  "independently_correct": true,
+  "revision": 3,
+  "owner_sha256": "218e0d8736285e16c9b6dc7790990a48021e87b8fdac2e8b7abb4eb4715cd23e",
+  "lesson_count": 2,
+  "cumulative_optimizer_steps": 480,
+  "cumulative_teaching_examples": 240,
+  "original_contexts_preserved": true,
+  "exact_restored_owner": true
+}

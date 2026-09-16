@@ -1,0 +1,47 @@
+{
+  "name": "L11-ONREQUEST-001",
+  "tasks": [
+    [
+      "subtract three from x then multiply by two to get four modulo eleven",
+      "known",
+      false
+    ],
+    [
+      "scale x by three then subtract two to get four modulo eleven",
+      "known",
+      true
+    ],
+    [
+      "the product of x and three minus two equals four modulo eleven",
+      "novel",
+      false
+    ],
+    [
+      "subtract three from x then multiply by two to get four modulo eleven",
+      "known",
+      false
+    ],
+    [
+      "multiply the difference of x and two by three equals four modulo eleven",
+      "novel",
+      false
+    ],
+    [
+      "take x minus two scale by three and obtain four modulo eleven",
+      "known",
+      true
+    ]
+  ],
+  "seed": 190001,
+  "qualification_sha256": "ad01b10387e77945bdc1023f4dfa9ee40d58ec10a64659cd92c96966a75ddbb4",
+  "base_sha256": "609c7e2035a7efb15225c53e803a11c8c465a1a3df3fa19fae5710818c30922e",
+  "evaluation_per_step": 512,
+  "policy": "The fixed runtime chooses a supplied lesson from missing wording, trains on partition 2/3/4, validates on 1, and updates the same owner. Test scores never enter the policy.",
+  "gate": "All six requested examples independently correct when accepted; fresh cases of the requested sentence shape have exact translation >=.95. Broader family scores separately expose forgetting of unrequested wording.",
+  "unit": "One continuing six-request learner, not six independent learners.",
+  "sources": {
+    "workbench/model.py": "fe8877ca42ddfb681e7f2f5172412198fa3d17c317fe7dc623338bfc06914272",
+    "workbench/language_runtime.py": "a99710c73e8305a2d1cf79d911e55e62a70315e0860dd4e442677205c32d5bb1",
+    "workbench/math_cycle.py": "d32b4dc8a604cbe581c0b76383d0af38c382c4225244f682aa8ead74329abcf3"
+  }
+}
