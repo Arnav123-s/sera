@@ -1,6 +1,6 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-17T22:28:04.756667+00:00",
+  "date": "2026-09-17T23:55:24.516548+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
   "active_direction": "Progressively refine grounded concepts through the actual learner, keeping valid simple operators and old abilities.",
   "source_pins": {
@@ -313,5 +313,11 @@
     "capability_reporting": "Teach and evaluate before conclusions; report demonstrated acquisition and investigate finite errors without universal inability or unmatched LLM ranking.",
     "v13": "Read v12/v13; complete C01/C02 on actual StudyR1; test existing memory, preserve exact algebra and old language weights, distinguish empirical predictions and supplied concepts."
   },
-  "publication_hardening": "28_concept_refinement/publication-hardening/local-verification.json"
+  "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
+  "latest_publication": "28_concept_refinement/publication.json",
+  "resource_balance_at_publication": {
+    "remaining_seconds": 512.0372116000653,
+    "new_grant_seconds": 0,
+    "live_ledger": "runs/v3-batch-001/budget.json"
+  }
 }

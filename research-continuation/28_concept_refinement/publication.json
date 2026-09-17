@@ -1,0 +1,93 @@
+{
+  "schema": "sera.concept-publication.1",
+  "recorded_at": "2026-09-17T23:55:24.516548+00:00",
+  "status": "PUBLISHED_AND_VERIFIED",
+  "repository": "https://github.com/Arnav123-s/sera",
+  "verified_code_commit": "3cdc37948f39745585cf7112fe8290f361784035",
+  "scientific_release_commit": "2c51d2338d6be5c6e0f560fb4cf5b261fd0429b2",
+  "prior_public_pin": "9da1b21b06da4504d7d2b83777d69e874d4caeff",
+  "publication_policy": "The following metadata-only receipt commit preserves results of verification at verified_code_commit. It changes no learner, test, source contract or workflow; its skip-ci marker avoids repeating completed checks.",
+  "qualification": {
+    "local": {
+      "passed": 436,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "publication-hardening/qualified-local-verification.json"
+    },
+    "research_branch_run": 35288190857,
+    "main_run": 35288526321,
+    "ubuntu": {
+      "passed": 390,
+      "skipped": 46,
+      "conclusion": "success"
+    },
+    "windows": {
+      "passed": 391,
+      "skipped": 45,
+      "conclusion": "success"
+    },
+    "skip_scope": "Existing optional local-archive fixtures; the complete local suite passes with no skips. C01/C02 retained-owner integration executes on both platforms.",
+    "scientific_manifest": {
+      "sha256": "1fbea7513f74aa12482b7885b2ce6277980a35dd641d24792be0464934ee186a",
+      "verified_artifacts": 188,
+      "verified_archive_members": 270
+    }
+  },
+  "protected_artifacts": {
+    "runs/sera-study-live/current.json": "a4c683c893216d81c49f716241d4c15662f71b8cbc96e954688a11567bb42633",
+    "runs/sera-study-live/revisions/000004-45d7df3f2f20.json": "45d7df3f2f209be870516fbc9dc5e0b897f9f4f47edeead2c02544ee7679c57e",
+    "runs/SS-rehearsal-2721/step-002000.pt": "39631cd5fbce7693684ef02fe90f3e2ba9dc09b033cba1679c4ea286d3b6fa24",
+    "research-continuation/27_self_study/release-manifest.json": "28d576dfb61ab39658919659bd18b53ea88c87cc47d2e6fa408f928a403d6082",
+    "runs/SC-exposure-shared-2642/step-005400.pt": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3",
+    "runs/sera-refinement-live/current.json": "bfa791056023b2d9b760ccb7006fd35db0166f2c2cf1b67496d44094a3f0df13"
+  },
+  "actual_owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+  "runtime_source": "bdd1d6215b78ea6fd0cd97d8e8bd0097ff9369863e2e7a90bc349c4bb9672279",
+  "live_store": "runs/sera-refinement-live",
+  "live_pointer_sha256": "bfa791056023b2d9b760ccb7006fd35db0166f2c2cf1b67496d44094a3f0df13",
+  "live_usage_check": "publication-hardening/jobs/CR-publication-forecast-001/process.log",
+  "local_resource_accounting": {
+    "scientific_charge_seconds": 1389.644382599974,
+    "publication_charge_seconds": 1212.0265979999385,
+    "total_local_charge_seconds": 2601.6709805999126,
+    "remaining_seconds": 512.0372116000653,
+    "remaining_minutes": 8.533953526667755,
+    "new_grant_seconds": 0,
+    "ledger_sha256": "ce429f11aa325624cd634c7796fb06690ebe41fbacef9e857b62186519becf11",
+    "cpu_threads": 1,
+    "memory_cap_bytes": 2147483648,
+    "owned_numerical_jobs": "all settled"
+  },
+  "remote_job_accounting": {
+    "elapsed_job_seconds": 2725.0,
+    "runs": 14,
+    "jobs": 28,
+    "receipt": "publication-hardening/remote-verification-manifest.json"
+  },
+  "source_packets": [
+    {
+      "version": 12,
+      "archive": "C:\\Users\\admin\\Downloads\\SERA_v12.zip",
+      "sha256": "0368a954f627651d7d019253f4edcdfb77be6b3d6887e604ed17fa32b5df1785",
+      "members": 290,
+      "expanded_bytes": 21646593
+    },
+    {
+      "version": 13,
+      "archive": "C:\\Users\\admin\\Downloads\\SERA_v13.zip",
+      "sha256": "f29dd81db45ff08b006fe0ed5d3bbb39e6c3b81f7115f6b652e7e0bd4ecdef52",
+      "members": 1837,
+      "expanded_bytes": 32208693
+    }
+  ],
+  "kavi": {
+    "head": "eb5139c2aa3bf6b4fcee39e585231e7b902e539e",
+    "note": "Newer local work preserved; no Kavi files edited",
+    "dirty": [],
+    "path": "D:/ai/PI&E"
+  },
+  "completed_final_cohorts": "Remain frozen; no tuning or new final evaluation in publication repairs.",
+  "next_executable_action": ".venv/Scripts/python.exe scripts/run_concept_bounded.py --seconds 60 --output runs/CR-next-use-001 --module experiments.concept_refinement.runtime -- predict --subject body-1 --commands 0.8,0.8,0.8,0.8",
+  "next_research_package": "C03: prospectively freeze new worlds to compare complexity/adequacy selection and output-error fitting; retain this runtime and both completed cohorts",
+  "resume": "All completed models retain their exact checkpoints. No incomplete fit or numerical worker remains; restore runs/sera-refinement-live for the next task. Read the live budget ledger before reserving more work."
+}

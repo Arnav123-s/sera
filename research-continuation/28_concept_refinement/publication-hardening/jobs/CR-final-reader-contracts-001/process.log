@@ -1,0 +1,15 @@
+................F.....................                                   [100%]
+================================== FAILURES ===================================
+________ test_measured_archived_energy_last_bit_preserves_full_result _________
+
+record = {'checkpoint': {'checkpoint': 'runs/CI-fits-final-001/selected.pt', 'language': {'checkpoint': 'runs/CI-fits-final-001...ity': 'beacon', 'kind': 'observation', 'record_id': 'beacon:25300:2', 'source': 'ci-landmark-simulator-v1', ...}], ...}
+
+    def test_measured_archived_energy_last_bit_preserves_full_result(record):
+>       original = next(row["result"] for row in record["history"] if row["id"] == "wording")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       StopIteration
+
+tests\test_constraint_rounding.py:110: StopIteration
+=========================== short test summary info ===========================
+FAILED tests/test_constraint_rounding.py::test_measured_archived_energy_last_bit_preserves_full_result
+1 failed, 37 passed in 14.36s

@@ -1,6 +1,6 @@
 # Execution checklist
 
-Latest: [v13 C01/C02 empirical refinement](28_concept_refinement/report.md). The saved successor learns subject-specific motion coefficients, preserves old operators and language weights, and returns to its original conditional forecasting task. [Use it](28_concept_refinement/README.md); [exact continuation and live allowance record](28_concept_refinement/continuation.json). New C03 evidence must use fresh worlds; all completed final cohorts remain sealed.
+Latest: [v13 C01/C02 empirical refinement](28_concept_refinement/report.md). The saved successor learns subject-specific motion coefficients, preserves old operators and language weights, and returns to its original conditional forecasting task. [Use it](28_concept_refinement/README.md); [exact scientific continuation](28_concept_refinement/continuation.json); [publication verification and updated allowance receipt](28_concept_refinement/publication.json). The scientific seal records a historical balance; the current local budget ledger governs every new reservation. New C03 evidence must use fresh worlds; all completed final cohorts remain sealed.
 
 Latest: [real-request acquisition and replay](26_stream_curriculum/report.md). The saved learner annotates local request files; [commands](26_stream_curriculum/README.md), [next research cycle](26_stream_curriculum/next-cycle.md). Earlier checklists below remain historical.
 

@@ -1,0 +1,320 @@
+{
+  "schema": "sera.concept-publication-local-verification.3",
+  "recorded_at": "2026-09-17T23:50:54.062725+00:00",
+  "code_commit": "3cdc37948f39745585cf7112fe8290f361784035",
+  "status": "PASS",
+  "full_suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "436",
+    "time": "274.276",
+    "timestamp": "2026-09-17T16:44:21.454664-07:00",
+    "hostname": "ashp"
+  },
+  "whole_tree_lint": "PASS",
+  "live_forecast": "jobs/CR-publication-forecast-001/process.log",
+  "protected_artifacts": {
+    "runs/sera-study-live/current.json": "a4c683c893216d81c49f716241d4c15662f71b8cbc96e954688a11567bb42633",
+    "runs/SS-rehearsal-2721/step-002000.pt": "39631cd5fbce7693684ef02fe90f3e2ba9dc09b033cba1679c4ea286d3b6fa24",
+    "runs/SC-exposure-shared-2642/step-005400.pt": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3",
+    "runs/sera-refinement-live/current.json": "bfa791056023b2d9b760ccb7006fd35db0166f2c2cf1b67496d44094a3f0df13"
+  },
+  "unchanged_owners_and_checkpoints": true,
+  "additional_jobs": [
+    {
+      "job": "runs/CR-ci-all-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.17259300002478994,
+      "files": {
+        "state.json": "cb3af01f9bf2f202c025bd5ea7c23ff1a119d347611972c633e93ef285aece99",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-ci-contracts-001",
+      "status": "PASS",
+      "charged_seconds": 2.776606500003254,
+      "files": {
+        "state.json": "b3ab3679a5a7540836d5e14f68f00fed0c550dbd0d1f4a803081a150f46faa93",
+        "process.log": "389527bdacc89c43279e3d43fb3fd6e00dbe0b4bf9f991963b64ee217a108e02"
+      }
+    },
+    {
+      "job": "runs/CR-ci-fixture-trace-001",
+      "status": "PASS",
+      "charged_seconds": 95.03564149999875,
+      "files": {
+        "state.json": "48d662c1db0349a268e0a9340f7942fbadcb765b0d030e8067d2812a742c143c",
+        "process.log": "7ada2977564f711f3ab31f07fc46f84cc34ab9513629976fd407e33f1631b88f"
+      }
+    },
+    {
+      "job": "runs/CR-ci-format-001",
+      "status": "PASS",
+      "charged_seconds": 0.17169930000090972,
+      "files": {
+        "state.json": "f2913ea37558b8255d2df70999b0dc019d1d4c2cc1937de6f752425023b7a953",
+        "process.log": "779cd08be038ac289c50927416d74769a286b3d89191260af669534feb28cf68"
+      }
+    },
+    {
+      "job": "runs/CR-ci-fresh-001",
+      "status": "PASS",
+      "charged_seconds": 91.41667109998525,
+      "files": {
+        "state.json": "3199065cbc3665a97b0f4fa5ade8a30446bf6e08eb14232389a1deedeb851323",
+        "process.log": "37e72b336b0e5e3436b48b85a771ddc513f3cfc0d73bce624e76093efa07b4ca"
+      }
+    },
+    {
+      "job": "runs/CR-ci-style-001",
+      "status": "PASS",
+      "charged_seconds": 0.17601999998441897,
+      "files": {
+        "state.json": "12706bbc99d10319ad6809da036e342c9752fe27661bf759ab95ead1128aecaa",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-constraint-diag-001",
+      "status": "FAILED",
+      "charged_seconds": 8.345110399997793,
+      "files": {
+        "state.json": "ad8944a703b680182a981f97e19e38596fa026a41a85be4f6fb0ea4c678c51d9",
+        "process.log": "8b7e65916683aa7d4be2af1dd87927aa93e3e6fd2d588771e7335fc8ad895d4e"
+      }
+    },
+    {
+      "job": "runs/CR-constraint-diag-002",
+      "status": "PASS",
+      "charged_seconds": 8.295527099980973,
+      "files": {
+        "state.json": "98310ac8c2840e2a7bac326c321e034c21528b42958478494712e1e3667fee55",
+        "process.log": "5c99c2e46ed03dc005bdee93d3996a2761b3c95950dfbc67fcbe894ded0c5d7a"
+      }
+    },
+    {
+      "job": "runs/CR-constraint-diag-style-001",
+      "status": "PASS",
+      "charged_seconds": 0.1671171000052709,
+      "files": {
+        "state.json": "1b6b06352956164e3981df298965663696f051d20c94852faad4c611535442da",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-constraint-repair-contracts-001",
+      "status": "PASS",
+      "charged_seconds": 8.994680100004189,
+      "files": {
+        "state.json": "0706ccfcd31b85a02ce5df33ef1979c29488591c1b183e4d9f848a1c44ba15f2",
+        "process.log": "3d9050fc2bc4e5b5977424579c1ff04991973c6a1755521d63c64e95cdd8b61f"
+      }
+    },
+    {
+      "job": "runs/CR-constraint-repair-full-001",
+      "status": "PASS",
+      "charged_seconds": 232.68081799999345,
+      "files": {
+        "state.json": "b4e9b95014159e0b1db9e79c12f8d91925127654084423b6197d672917eef8d7",
+        "process.log": "7a4a3ff77c9dcec30a8e7c2483aa53e3622b41b422481580a3be22d6b904529b",
+        "tests.xml": "8ddb0e88ba1931971b3436314733473cd9df2e5aa56a7cdb39cf8e56868aed46"
+      }
+    },
+    {
+      "job": "runs/CR-constraint-repair-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.1699257000000216,
+      "files": {
+        "state.json": "ba8a3e7cda5fb6208e06c303efbe211bfff4b81e07311ab723218f05d6af76bf",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-diag-format-001",
+      "status": "PASS",
+      "charged_seconds": 0.15990469997632317,
+      "files": {
+        "state.json": "05304a9b538a12fc9ab4483f3e90cb2bf4f49eb463db3248df41039264ee1f2b",
+        "process.log": "413a709001976657cb743636fd34e48fc41d8d302d665460d3f874b3313da127"
+      }
+    },
+    {
+      "job": "runs/CR-diag-replay-001",
+      "status": "PASS",
+      "charged_seconds": 5.3282797999854665,
+      "files": {
+        "state.json": "9e756bb4e573d896c15c61d1205fc7fb6855e2f9b79fbb44ed932463b9df3ad6",
+        "process.log": "a1892093bf98902242dfc08899457e57f9d7829410845e28674b940efaf8c932"
+      }
+    },
+    {
+      "job": "runs/CR-diag-style-001",
+      "status": "PASS",
+      "charged_seconds": 0.1580692999996245,
+      "files": {
+        "state.json": "ad8e09e4df9b3618474badd7a22d6cdac1973efa23ee7e6f34e933e878a054ba",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-final-reader-contracts-001",
+      "status": "FAILED",
+      "charged_seconds": 16.86945850000484,
+      "files": {
+        "state.json": "5c7aea689db4f7fc9adc3ebb38a3a5059379ff0b26136f4405ad48c72383d853",
+        "process.log": "f2efacd8167cefacbc70779ec720f92518d2f002ac35cfe2e0bdc05bbd6ee81d"
+      }
+    },
+    {
+      "job": "runs/CR-final-reader-contracts-002",
+      "status": "PASS",
+      "charged_seconds": 17.054563599987887,
+      "files": {
+        "state.json": "c2103dee2983f2ae101d0ad853eaac3446a35175d4a6edf498b614c591f8a1bd",
+        "process.log": "781ded76bc57c89bd1211380a0f2def89d387a5fb78a15c93cf6928b7e74942a"
+      }
+    },
+    {
+      "job": "runs/CR-final-reader-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.16935999999986961,
+      "files": {
+        "state.json": "82aa04a1f2cab78d4908e485c93773b4898ec253d74cb8a15f2893d800b122e4",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-isa-profile-001",
+      "status": "PASS",
+      "charged_seconds": 8.165693099988857,
+      "files": {
+        "state.json": "625f93a87b0b27425c112c33ae9605dbeb88bd1fa18d1b27bd6bed8ecd27849a",
+        "process.log": "c7cbd3aebecef479f9a626b95e897014a93481d3ea157edfde6f111e3dbb3d3c"
+      }
+    },
+    {
+      "job": "runs/CR-isa-profile-matched-001",
+      "status": "PASS",
+      "charged_seconds": 7.809928200003924,
+      "files": {
+        "state.json": "a0be07d60d419827d5169a5170d965d18f28cf4d691c85e8a243907b861b47b3",
+        "process.log": "c7cbd3aebecef479f9a626b95e897014a93481d3ea157edfde6f111e3dbb3d3c"
+      }
+    },
+    {
+      "job": "runs/CR-post-constraint-diag-001",
+      "status": "PASS",
+      "charged_seconds": 11.301861899992218,
+      "files": {
+        "state.json": "bbbfa79ab17a47d5e89ceef4751ea6eb97344e0c1258a5c16fbeadcddaeb8e98",
+        "process.log": "9caf968037eeb8713e7bca15ba8088cd64bd5530587dc99859af2e45a0f81273"
+      }
+    },
+    {
+      "job": "runs/CR-post-constraint-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.17049250000854954,
+      "files": {
+        "state.json": "434ac6151c58a4b85f3e32092afdd5f55f2ff38abe341170873394724cff0260",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-publication-forecast-001",
+      "status": "PASS",
+      "charged_seconds": 9.807747999991989,
+      "files": {
+        "state.json": "3393853d30841f070f26f1baf045f3519db046564f2ac13b830a15ae70d9f5cc",
+        "process.log": "38a3e763e662bc577140b3a943c1fd39b63ce6185b745b1cd1b5ff009a061ba7"
+      }
+    },
+    {
+      "job": "runs/CR-qualified-readers-full-001",
+      "status": "PASS",
+      "charged_seconds": 277.1409988999949,
+      "files": {
+        "state.json": "a6a1f8500e37f5091cb9be964a8c6d2069b1d2ee081464016e476787fed102a7",
+        "process.log": "837e29e178e1b30caa2295e477ddc4dc62b402f226c628c7b92b33dff3c7c009",
+        "tests.xml": "e800b9123038b0c6a22fc9e8b5a11f1b2ccb9616fc2df5eec595f5312806cd89"
+      }
+    },
+    {
+      "job": "runs/CR-release-forecast-001",
+      "status": "PASS",
+      "charged_seconds": 8.131088299996918,
+      "files": {
+        "state.json": "9a3e56bb203a26b424af51c09975bc00e9d99c44a0611904b03eb4b477316629",
+        "process.log": "38a3e763e662bc577140b3a943c1fd39b63ce6185b745b1cd1b5ff009a061ba7"
+      }
+    },
+    {
+      "job": "runs/CR-request-contracts-001",
+      "status": "PASS",
+      "charged_seconds": 11.014571599982446,
+      "files": {
+        "state.json": "76178f0a8ccfb08893eaf0b0e6457203dd4067e6c602eedd2ccfad8d03b1e629",
+        "process.log": "55de6a20d5c07127bb9cb5cc4136273a3da455a7d69cf9e9321095a5d6da1c7e"
+      }
+    },
+    {
+      "job": "runs/CR-request-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.16669460001867265,
+      "files": {
+        "state.json": "2b3ad2e640081a2cc74a122f16bfd8c6ccbeb9a2410aa361c13348934ebd48d6",
+        "process.log": "aac3a0503d8b95052cc85fb9f1717dc82b74aa55853a5aa9749b41e30275d472"
+      }
+    },
+    {
+      "job": "runs/CR-result-diag-001",
+      "status": "PASS",
+      "charged_seconds": 9.081508300005225,
+      "files": {
+        "state.json": "3130cde3cc652275233bd956247d34de083dde6881321cf8353e731d6764a08f",
+        "process.log": "9caf968037eeb8713e7bca15ba8088cd64bd5530587dc99859af2e45a0f81273"
+      }
+    },
+    {
+      "job": "runs/CR-rounding-full-001",
+      "status": "PASS",
+      "charged_seconds": 260.8849076000042,
+      "files": {
+        "state.json": "cbf838f4371abd734269eebd5a62c9a00dbbec9796e80f4df3e6b03e0f3788f8",
+        "process.log": "c660e56906c65ed8fdabab8c632ff4c09e0d8b3ac82c0e4f9924a4f81bb2d66c",
+        "tests.xml": "75c18d85da77ce2af2ef68e6d66a77fc1b776494cdc81fd906c1d4b976dbb0dc"
+      }
+    },
+    {
+      "job": "runs/CR-rounding-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.1822233000129927,
+      "files": {
+        "state.json": "bff623a6ae21d9b994b446ba6770050b7ac872759826756c2c21477db1ff811c",
+        "process.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "job": "runs/CR-rounding-targeted-001",
+      "status": "TIMEOUT",
+      "charged_seconds": 120.02683600000455,
+      "files": {
+        "state.json": "b0f3bdbce8113de09f1d69f14e8a08fa0e733a11e806574929ad63248c1004bd",
+        "process.log": "adc316d8e7a04acad74bbf546ff5e0e024b57cb24b1f2e4469e60f7e4d08d5c0"
+      }
+    }
+  ],
+  "scientific_charge_seconds": 1389.644382599974,
+  "publication_charge_seconds": 1212.0265979999385,
+  "total_local_charge_seconds": 2601.6709805999126,
+  "remaining_seconds": 512.0372116000653,
+  "remaining_minutes": 8.533953526667755,
+  "new_grant_seconds": 0,
+  "ledger_sha256": "ce429f11aa325624cd634c7796fb06690ebe41fbacef9e857b62186519becf11",
+  "cpu_threads": 1,
+  "memory_cap_bytes": 2147483648,
+  "owned_numerical_jobs": "all settled",
+  "historical_balance_warning": "Earlier seal/interim receipts remain unchanged; the live budget ledger governs the next reservation."
+}
