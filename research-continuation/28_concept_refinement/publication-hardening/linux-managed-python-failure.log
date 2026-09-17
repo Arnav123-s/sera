@@ -1,0 +1,315 @@
+﻿2026-09-17T23:05:44.3226119Z Current runner version: '2.337.0'
+2026-09-17T23:05:44.3249107Z ##[group]Runner Image Provisioner
+2026-09-17T23:05:44.3249900Z Hosted Compute Agent
+2026-09-17T23:05:44.3250364Z Version: 20260828.587
+2026-09-17T23:05:44.3250885Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-17T23:05:44.3251498Z Build Date: 2026-08-28T16:44:25Z
+2026-09-17T23:05:44.3252042Z Worker ID: {46832bd9-336e-43fc-9341-700e82615bc7}
+2026-09-17T23:05:44.3252595Z Azure Region: centralus
+2026-09-17T23:05:44.3253057Z ##[endgroup]
+2026-09-17T23:05:44.3254131Z ##[group]Operating System
+2026-09-17T23:05:44.3254613Z Ubuntu
+2026-09-17T23:05:44.3255029Z 24.04.5
+2026-09-17T23:05:44.3255408Z LTS
+2026-09-17T23:05:44.3255829Z ##[endgroup]
+2026-09-17T23:05:44.3256292Z ##[group]Runner Image
+2026-09-17T23:05:44.3256835Z Image: ubuntu-24.04
+2026-09-17T23:05:44.3257366Z Version: 20260907.300.1
+2026-09-17T23:05:44.3259053Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-17T23:05:44.3260305Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+2026-09-17T23:05:44.3261051Z ##[endgroup]
+2026-09-17T23:05:44.3261925Z ##[group]GITHUB_TOKEN Permissions
+2026-09-17T23:05:44.3264028Z Contents: read
+2026-09-17T23:05:44.3264483Z Metadata: read
+2026-09-17T23:05:44.3264898Z ##[endgroup]
+2026-09-17T23:05:44.3266678Z Secret source: Actions
+2026-09-17T23:05:44.3267445Z Cache mode: write
+2026-09-17T23:05:44.3268224Z Prepare workflow directory
+2026-09-17T23:05:44.3545913Z Prepare all required actions
+2026-09-17T23:05:44.3588088Z Getting action download info
+2026-09-17T23:05:44.6123179Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-17T23:05:44.7229720Z Download action repository 'astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9' (SHA:c771a70e6277c0a99b617c7a806ffedaca235ff9)
+2026-09-17T23:05:45.3579573Z Complete job name: test (ubuntu-latest)
+2026-09-17T23:05:45.4275472Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T23:05:45.4283445Z ##[group]Run actions/checkout@v4
+2026-09-17T23:05:45.4284140Z with:
+2026-09-17T23:05:45.4284574Z   fetch-depth: 0
+2026-09-17T23:05:45.4285051Z   repository: Arnav123-s/sera
+2026-09-17T23:05:45.4288900Z   token: ***
+2026-09-17T23:05:45.4289391Z   ssh-strict: true
+2026-09-17T23:05:45.4289873Z   ssh-user: git
+2026-09-17T23:05:45.4290330Z   persist-credentials: true
+2026-09-17T23:05:45.4290824Z   clean: true
+2026-09-17T23:05:45.4291271Z   sparse-checkout-cone-mode: true
+2026-09-17T23:05:45.4291770Z   fetch-tags: false
+2026-09-17T23:05:45.4292275Z   show-progress: true
+2026-09-17T23:05:45.4292722Z   lfs: false
+2026-09-17T23:05:45.4293284Z   submodules: false
+2026-09-17T23:05:45.4293744Z   set-safe-directory: true
+2026-09-17T23:05:45.4294242Z   allow-unsafe-pr-checkout: false
+2026-09-17T23:05:45.4294940Z ##[endgroup]
+2026-09-17T23:05:45.5138552Z Syncing repository: Arnav123-s/sera
+2026-09-17T23:05:45.5140831Z ##[group]Getting Git version info
+2026-09-17T23:05:45.5141487Z Working directory is '/home/runner/work/sera/sera'
+2026-09-17T23:05:45.5143009Z [command]/usr/bin/git version
+2026-09-17T23:05:45.5249439Z git version 2.55.0
+2026-09-17T23:05:45.5253515Z ##[endgroup]
+2026-09-17T23:05:45.5260489Z Temporarily overriding HOME='/home/runner/work/_temp/19682579-62d7-4473-92c7-42645bca1e69' before making global git config changes
+2026-09-17T23:05:45.5262130Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T23:05:45.5263802Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sera/sera
+2026-09-17T23:05:45.5443075Z Deleting the contents of '/home/runner/work/sera/sera'
+2026-09-17T23:05:45.5447103Z ##[group]Initializing the repository
+2026-09-17T23:05:45.5450763Z [command]/usr/bin/git init /home/runner/work/sera/sera
+2026-09-17T23:05:45.5652334Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-17T23:05:45.5653553Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-17T23:05:45.5654811Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-17T23:05:45.5655692Z hint: call:
+2026-09-17T23:05:45.5656261Z hint:
+2026-09-17T23:05:45.5656885Z hint: 	git config --global init.defaultBranch <name>
+2026-09-17T23:05:45.5657877Z hint:
+2026-09-17T23:05:45.5658550Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-17T23:05:45.5659435Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-17T23:05:45.5660132Z hint:
+2026-09-17T23:05:45.5660630Z hint: 	git branch -m <name>
+2026-09-17T23:05:45.5661099Z hint:
+2026-09-17T23:05:45.5661746Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-17T23:05:45.5663144Z Initialized empty Git repository in /home/runner/work/sera/sera/.git/
+2026-09-17T23:05:45.5668174Z [command]/usr/bin/git remote add origin https://github.com/Arnav123-s/sera
+2026-09-17T23:05:45.5713347Z ##[endgroup]
+2026-09-17T23:05:45.5714379Z ##[group]Disabling automatic garbage collection
+2026-09-17T23:05:45.5718122Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-17T23:05:45.5745874Z ##[endgroup]
+2026-09-17T23:05:45.5754546Z ##[group]Setting up auth
+2026-09-17T23:05:45.5755382Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T23:05:45.5783553Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T23:05:45.6073229Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T23:05:45.6100443Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T23:05:45.6259642Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T23:05:45.6285930Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T23:05:45.6447846Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-17T23:05:45.6477044Z ##[endgroup]
+2026-09-17T23:05:45.6478509Z ##[group]Fetching the repository
+2026-09-17T23:05:45.6486034Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-09-17T23:05:51.4624113Z From https://github.com/Arnav123-s/sera
+2026-09-17T23:05:51.4624989Z  * [new branch]      main       -> origin/main
+2026-09-17T23:05:51.4625775Z  * [new branch]      research/v3-calibration-consolidation -> origin/research/v3-calibration-consolidation
+2026-09-17T23:05:51.4635966Z [command]/usr/bin/git branch --list --remote origin/research/v3-calibration-consolidation
+2026-09-17T23:05:51.4658463Z   origin/research/v3-calibration-consolidation
+2026-09-17T23:05:51.4665036Z [command]/usr/bin/git rev-parse refs/remotes/origin/research/v3-calibration-consolidation
+2026-09-17T23:05:51.4685711Z 06c5f42e86fbeea10c74917e6c72aaef9c0531a0
+2026-09-17T23:05:51.4688142Z ##[endgroup]
+2026-09-17T23:05:51.4688859Z ##[group]Determining the checkout info
+2026-09-17T23:05:51.4689659Z ##[endgroup]
+2026-09-17T23:05:51.4693831Z [command]/usr/bin/git sparse-checkout disable
+2026-09-17T23:05:51.4748139Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-17T23:05:51.4771773Z ##[group]Checking out the ref
+2026-09-17T23:05:51.4774850Z [command]/usr/bin/git checkout --progress --force -B research/v3-calibration-consolidation refs/remotes/origin/research/v3-calibration-consolidation
+2026-09-17T23:05:52.5061874Z Updating files:  72% (1688/2315)
+2026-09-17T23:05:52.5351907Z Updating files:  73% (1690/2315)
+2026-09-17T23:05:52.5363698Z Updating files:  74% (1714/2315)
+2026-09-17T23:05:52.5384680Z Updating files:  75% (1737/2315)
+2026-09-17T23:05:52.5398371Z Updating files:  76% (1760/2315)
+2026-09-17T23:05:52.5428708Z Updating files:  77% (1783/2315)
+2026-09-17T23:05:52.5451172Z Updating files:  78% (1806/2315)
+2026-09-17T23:05:52.5785418Z Updating files:  79% (1829/2315)
+2026-09-17T23:05:52.5792146Z Updating files:  80% (1852/2315)
+2026-09-17T23:05:52.5797548Z Updating files:  81% (1876/2315)
+2026-09-17T23:05:52.5804685Z Updating files:  82% (1899/2315)
+2026-09-17T23:05:52.6112990Z Updating files:  83% (1922/2315)
+2026-09-17T23:05:52.6174712Z Updating files:  84% (1945/2315)
+2026-09-17T23:05:52.6191263Z Updating files:  85% (1968/2315)
+2026-09-17T23:05:52.6201995Z Updating files:  86% (1991/2315)
+2026-09-17T23:05:52.6229772Z Updating files:  87% (2015/2315)
+2026-09-17T23:05:52.6240166Z Updating files:  88% (2038/2315)
+2026-09-17T23:05:52.6257161Z Updating files:  89% (2061/2315)
+2026-09-17T23:05:52.6277589Z Updating files:  90% (2084/2315)
+2026-09-17T23:05:52.6288866Z Updating files:  91% (2107/2315)
+2026-09-17T23:05:52.6296387Z Updating files:  92% (2130/2315)
+2026-09-17T23:05:52.6309221Z Updating files:  93% (2153/2315)
+2026-09-17T23:05:52.6319162Z Updating files:  94% (2177/2315)
+2026-09-17T23:05:52.6335144Z Updating files:  95% (2200/2315)
+2026-09-17T23:05:52.6346881Z Updating files:  96% (2223/2315)
+2026-09-17T23:05:52.6354477Z Updating files:  97% (2246/2315)
+2026-09-17T23:05:52.6361654Z Updating files:  98% (2269/2315)
+2026-09-17T23:05:52.6371507Z Updating files:  99% (2292/2315)
+2026-09-17T23:05:52.6372255Z Updating files: 100% (2315/2315)
+2026-09-17T23:05:52.6372823Z Updating files: 100% (2315/2315), done.
+2026-09-17T23:05:52.6402857Z Switched to a new branch 'research/v3-calibration-consolidation'
+2026-09-17T23:05:52.6407060Z branch 'research/v3-calibration-consolidation' set up to track 'origin/research/v3-calibration-consolidation'.
+2026-09-17T23:05:52.6447549Z ##[endgroup]
+2026-09-17T23:05:52.6495190Z [command]/usr/bin/git log -1 --format=%H
+2026-09-17T23:05:52.6516653Z 06c5f42e86fbeea10c74917e6c72aaef9c0531a0
+2026-09-17T23:05:52.6737575Z ##[group]Run astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9
+2026-09-17T23:05:52.6738182Z with:
+2026-09-17T23:05:52.6738445Z   version: 0.12.15
+2026-09-17T23:05:52.6738687Z   python-version: 3.12.14
+2026-09-17T23:05:52.6738978Z   enable-cache: false
+2026-09-17T23:05:52.6739320Z   activate-environment: false
+2026-09-17T23:05:52.6739622Z   no-project: false
+2026-09-17T23:05:52.6739914Z   working-directory: /home/runner/work/sera/sera
+2026-09-17T23:05:52.6742041Z   github-token: ***
+2026-09-17T23:05:52.6742574Z   cache-dependency-glob: **/*requirements*.txt
+**/*requirements*.in
+**/*constraints*.txt
+**/*constraints*.in
+**/pyproject.toml
+**/uv.lock
+**/*.py.lock
+
+2026-09-17T23:05:52.6743116Z   restore-cache: true
+2026-09-17T23:05:52.6743373Z   save-cache: true
+2026-09-17T23:05:52.6743674Z   prune-cache: false
+2026-09-17T23:05:52.6743904Z   cache-python: false
+2026-09-17T23:05:52.6744188Z   ignore-nothing-to-cache: false
+2026-09-17T23:05:52.6744543Z   ignore-empty-workdir: false
+2026-09-17T23:05:52.6744854Z   download-from-astral-mirror: true
+2026-09-17T23:05:52.6745214Z   add-problem-matchers: true
+2026-09-17T23:05:52.6745483Z   quiet: false
+2026-09-17T23:05:52.6745743Z   resolution-strategy: highest
+2026-09-17T23:05:52.6746017Z ##[endgroup]
+2026-09-17T23:05:52.8154262Z Fetching manifest data from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson ...
+2026-09-17T23:05:52.8888440Z Downloading uv from "https://releases.astral.sh/github/uv/releases/download/0.12.15/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+2026-09-17T23:05:53.4410609Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/463da389-3c88-49e4-8a0c-374ffaadb467 -f /home/runner/work/_temp/f1b8e188-c855-4e66-bde8-9cc224e81a7f
+2026-09-17T23:05:53.9110625Z Added /home/runner/.local/bin to the path
+2026-09-17T23:05:53.9112860Z Added /opt/hostedtoolcache/uv/0.12.15/x86_64 to the path
+2026-09-17T23:05:53.9113835Z Set UV_PYTHON_INSTALL_DIR to /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:53.9114413Z Added /home/runner/work/_temp/uv-python-dir to the path
+2026-09-17T23:05:53.9114900Z Set UV_PYTHON to 3.12.14
+2026-09-17T23:05:53.9134602Z Successfully installed uv version 0.12.15
+2026-09-17T23:05:54.0226803Z ##[group]Run uv venv --python 3.12.14
+2026-09-17T23:05:54.0227309Z [36;1muv venv --python 3.12.14[0m
+2026-09-17T23:05:54.0256521Z shell: /usr/bin/bash -e {0}
+2026-09-17T23:05:54.0256828Z env:
+2026-09-17T23:05:54.0257318Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:54.0257964Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:54.0258261Z ##[endgroup]
+2026-09-17T23:05:54.2500152Z Downloading cpython-3.12.14-linux-x86_64-gnu (download) (32.6MiB)
+2026-09-17T23:05:55.1591049Z  Downloaded cpython-3.12.14-linux-x86_64-gnu (download)
+2026-09-17T23:05:55.2989269Z Using CPython 3.12.14
+2026-09-17T23:05:55.2989741Z Creating virtual environment at: .venv
+2026-09-17T23:05:55.2993624Z Activate with: .venv/bin/activate
+2026-09-17T23:05:55.3045941Z ##[group]Run uv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+2026-09-17T23:05:55.3046616Z [36;1muv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu[0m
+2026-09-17T23:05:55.3071360Z shell: /usr/bin/bash -e {0}
+2026-09-17T23:05:55.3071662Z env:
+2026-09-17T23:05:55.3072012Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:55.3072344Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:55.3072566Z ##[endgroup]
+2026-09-17T23:05:55.7269213Z Resolved 10 packages in 289ms
+2026-09-17T23:05:55.7396500Z Downloading setuptools (1.2MiB)
+2026-09-17T23:05:55.7425542Z Downloading sympy (6.0MiB)
+2026-09-17T23:05:55.7426344Z Downloading networkx (2.0MiB)
+2026-09-17T23:05:55.7472270Z Downloading torch (180.2MiB)
+2026-09-17T23:05:55.7796664Z  Downloaded setuptools
+2026-09-17T23:05:55.8846069Z  Downloaded networkx
+2026-09-17T23:05:55.9303045Z  Downloaded sympy
+2026-09-17T23:05:57.2195614Z  Downloaded torch
+2026-09-17T23:05:57.2196249Z Prepared 10 packages in 1.49s
+2026-09-17T23:05:57.3195062Z Installed 10 packages in 99ms
+2026-09-17T23:05:57.3195540Z  + filelock==3.32.3
+2026-09-17T23:05:57.3195905Z  + fsspec==2026.7.0
+2026-09-17T23:05:57.3196172Z  + jinja2==3.1.6
+2026-09-17T23:05:57.3196604Z  + markupsafe==3.0.3
+2026-09-17T23:05:57.3197058Z  + mpmath==1.3.0
+2026-09-17T23:05:57.3197349Z  + networkx==3.6.1
+2026-09-17T23:05:57.3197792Z  + setuptools==78.1.0
+2026-09-17T23:05:57.3198134Z  + sympy==1.14.0
+2026-09-17T23:05:57.3198416Z  + torch==2.10.0+cpu
+2026-09-17T23:05:57.3199010Z  + typing-extensions==4.16.0
+2026-09-17T23:05:57.3256263Z ##[group]Run uv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
+2026-09-17T23:05:57.3256875Z [36;1muv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1[0m
+2026-09-17T23:05:57.3277302Z shell: /usr/bin/bash -e {0}
+2026-09-17T23:05:57.3278190Z env:
+2026-09-17T23:05:57.3278509Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:57.3278881Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:57.3279167Z ##[endgroup]
+2026-09-17T23:05:57.7286412Z Resolved 19 packages in 274ms
+2026-09-17T23:05:57.7296189Z    Building sera-learning @ file:///home/runner/work/sera/sera
+2026-09-17T23:05:57.7443867Z Downloading ruff (9.8MiB)
+2026-09-17T23:05:57.7444359Z Downloading pygments (1.2MiB)
+2026-09-17T23:05:57.7591128Z Downloading scipy (33.7MiB)
+2026-09-17T23:05:57.7591685Z Downloading numpy (15.9MiB)
+2026-09-17T23:05:57.8789182Z  Downloaded pygments
+2026-09-17T23:05:57.9799463Z  Downloaded ruff
+2026-09-17T23:05:58.0439465Z  Downloaded numpy
+2026-09-17T23:05:58.3190171Z  Downloaded scipy
+2026-09-17T23:05:58.9559131Z       Built sera-learning @ file:///home/runner/work/sera/sera
+2026-09-17T23:05:58.9569380Z Prepared 9 packages in 1.22s
+2026-09-17T23:05:58.9736883Z Installed 9 packages in 16ms
+2026-09-17T23:05:58.9738310Z  + iniconfig==2.3.0
+2026-09-17T23:05:58.9738601Z  + numpy==2.5.3
+2026-09-17T23:05:58.9738871Z  + packaging==26.3
+2026-09-17T23:05:58.9739158Z  + pluggy==1.6.0
+2026-09-17T23:05:58.9739456Z  + pygments==2.21.0
+2026-09-17T23:05:58.9739783Z  + pytest==9.1.1
+2026-09-17T23:05:58.9740049Z  + ruff==0.16.8
+2026-09-17T23:05:58.9740327Z  + scipy==1.18.1
+2026-09-17T23:05:58.9740738Z  + sera-learning==0.5.0 (from file:///home/runner/work/sera/sera)
+2026-09-17T23:05:58.9824517Z ##[group]Run uv run --no-sync python -m ruff check src tests scripts experiments
+2026-09-17T23:05:58.9825066Z [36;1muv run --no-sync python -m ruff check src tests scripts experiments[0m
+2026-09-17T23:05:58.9846577Z shell: /usr/bin/bash -e {0}
+2026-09-17T23:05:58.9846897Z env:
+2026-09-17T23:05:58.9847214Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:58.9847589Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:58.9848065Z ##[endgroup]
+2026-09-17T23:05:59.0497374Z All checks passed!
+2026-09-17T23:05:59.0537354Z ##[group]Run uv run --no-sync python scripts/restore_test_artifacts.py
+2026-09-17T23:05:59.0538038Z [36;1muv run --no-sync python scripts/restore_test_artifacts.py[0m
+2026-09-17T23:05:59.0558464Z shell: /usr/bin/bash -e {0}
+2026-09-17T23:05:59.0558743Z env:
+2026-09-17T23:05:59.0559106Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:59.0559454Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:59.0559705Z ##[endgroup]
+2026-09-17T23:05:59.2664930Z {"restored": 17, "already_identical": 0, "experiments_restarted": 0}
+2026-09-17T23:05:59.2754375Z ##[group]Run uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
+2026-09-17T23:05:59.2755004Z [36;1muv run --no-sync python -m experiments.concept_refinement.replay_diagnostic[0m
+2026-09-17T23:05:59.2778431Z shell: /usr/bin/bash -e {0}
+2026-09-17T23:05:59.2778821Z env:
+2026-09-17T23:05:59.2779157Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-17T23:05:59.2779514Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:59.2779779Z ##[endgroup]
+2026-09-17T23:06:03.0114725Z Traceback (most recent call last):
+2026-09-17T23:06:03.0123269Z   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-09-17T23:06:03.0124268Z   File "<frozen runpy>", line 88, in _run_code
+2026-09-17T23:06:03.0125005Z   File "/home/runner/work/sera/sera/experiments/concept_refinement/replay_diagnostic.py", line 108, in <module>
+2026-09-17T23:06:03.0125761Z     main()
+2026-09-17T23:06:03.0126721Z   File "/home/runner/work/sera/sera/experiments/concept_refinement/replay_diagnostic.py", line 58, in main
+2026-09-17T23:06:03.0127165Z     runtime = Runtime(saved["checkpoint"])
+2026-09-17T23:06:03.0127398Z               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:06:03.0127863Z   File "/home/runner/work/sera/sera/experiments/language_inquiry/runtime.py", line 32, in __init__
+2026-09-17T23:06:03.0128254Z     self.session, self.fit = restore_fit(path)
+2026-09-17T23:06:03.0128502Z                              ^^^^^^^^^^^^^^^^^
+2026-09-17T23:06:03.0128888Z   File "/home/runner/work/sera/sera/experiments/language_inquiry/study.py", line 62, in restore_fit
+2026-09-17T23:06:03.0129306Z     session = base(bundle)
+2026-09-17T23:06:03.0129510Z               ^^^^^^^^^^^^
+2026-09-17T23:06:03.0129818Z   File "/home/runner/work/sera/sera/experiments/language_inquiry/study.py", line 55, in base
+2026-09-17T23:06:03.0130267Z     return TaskSession(copy.deepcopy(bundle["workbench"]), copy.deepcopy(bundle["tasks"]))
+2026-09-17T23:06:03.0130626Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:06:03.0131068Z   File "/home/runner/work/sera/sera/experiments/task_transfer/runtime.py", line 95, in __init__
+2026-09-17T23:06:03.0131441Z     self.learner = Learner(copy.deepcopy(parent))
+2026-09-17T23:06:03.0131688Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:06:03.0132293Z   File "/home/runner/work/sera/sera/workbench/model.py", line 64, in __init__
+2026-09-17T23:06:03.0132736Z     self.session = ContinuingSession.restore(self.solver.components["r1"], record["interaction"])
+2026-09-17T23:06:03.0133129Z                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:06:03.0133525Z   File "/home/runner/work/sera/sera/experiments/continuing_control/core.py", line 172, in restore
+2026-09-17T23:06:03.0133980Z     raise ValueError("Factual replay disagrees with stored owner state")
+2026-09-17T23:06:03.0134323Z ValueError: Factual replay disagrees with stored owner state
+2026-09-17T23:06:03.3909729Z ##[error]Process completed with exit code 1.
+2026-09-17T23:06:03.4044296Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T23:06:03.4045275Z Post job cleanup.
+2026-09-17T23:06:03.4755487Z [command]/usr/bin/git version
+2026-09-17T23:06:03.4790235Z git version 2.55.0
+2026-09-17T23:06:03.4818950Z Temporarily overriding HOME='/home/runner/work/_temp/a765d737-3264-46ff-90ee-7be4357d623a' before making global git config changes
+2026-09-17T23:06:03.4820188Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T23:06:03.4823783Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sera/sera
+2026-09-17T23:06:03.5388463Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T23:06:03.5425501Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T23:06:03.5611535Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T23:06:03.5699369Z http.https://github.com/.extraheader
+2026-09-17T23:06:03.5708914Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-17T23:06:03.6886465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T23:06:03.7079984Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T23:06:03.7108456Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T23:06:03.7390792Z Cleaning up orphan processes
+2026-09-17T23:06:03.7562332Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
