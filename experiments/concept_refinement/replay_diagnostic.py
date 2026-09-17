@@ -11,6 +11,7 @@ from experiments.language_inquiry.graph import advance, answer, interpret, langu
 from experiments.language_inquiry.model import apply, delta
 from experiments.language_inquiry.runtime import Runtime
 from experiments.language_inquiry.study import ROOT, read
+from experiments.stream_curriculum.runtime import RequestSession
 from sera.session_state import model_identity, unpack_tensors
 
 
@@ -120,6 +121,16 @@ def main():
             rows.extend(differences(branch[key], replay[key], branch["id"] + "/" + key))
     print(json.dumps({"schema": "sera.constraint-replay-diagnostic.1",
                       "platform": platform.platform(), "owner_byte_identity": constraint_saved["owner"],
+                      "difference_count": len(rows), "differences": rows,
+                      "stored_evidence_changed": False}, allow_nan=False))
+    request_saved = read(ROOT / "research-continuation/27_self_study/parent-request.json")
+    request = RequestSession(request_saved["checkpoint"])
+    assert model_identity(request.owner) == request_saved["owner"]
+    rows = []
+    for key, frame in request_saved["requests"].items():
+        rows.extend(differences(frame, request.interpret(frame["text"]), key))
+    print(json.dumps({"schema": "sera.request-replay-diagnostic.1",
+                      "platform": platform.platform(), "owner_byte_identity": request_saved["owner"],
                       "difference_count": len(rows), "differences": rows,
                       "stored_evidence_changed": False}, allow_nan=False))
 

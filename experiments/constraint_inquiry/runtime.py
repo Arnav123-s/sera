@@ -3,6 +3,7 @@
 import argparse
 import copy
 import json
+import math
 from pathlib import Path
 
 import numpy as np
@@ -15,6 +16,7 @@ from sera.session_state import model_identity
 from sera.storage import digest
 from workbench.storage import Store
 
+from .compatibility import REPLAY_SOURCES
 from .data import ENTITIES, corpus
 from .model import ConstraintR1, apply, language_identity, source
 from .settling import context, initialize, step, summarize
@@ -23,6 +25,44 @@ from .study import OUT, pin
 
 def runtime_source():
     return sha(Path(__file__))
+
+
+def admitted_runtime(value):
+    return value == runtime_source() or value in REPLAY_SOURCES
+
+
+def same_binding(expected, stored):
+    left, right = copy.deepcopy(expected), copy.deepcopy(stored)
+    if not isinstance(left, dict) or not isinstance(right, dict):
+        return False
+    a, b = left.pop("scores", None), right.pop("scores", None)
+    if left != right or not isinstance(a, list) or not isinstance(b, list) or len(a) != 3 or len(b) != 3:
+        return False
+    epsilon = float(np.finfo(np.float32).eps)
+    for row, saved in zip(a, b, strict=True):
+        if not isinstance(row, list) or not isinstance(saved, list) or len(row) != 4 or len(saved) != 4:
+            return False
+        for x, y in zip(row, saved, strict=True):
+            if (type(x) is not float or type(y) is not float or not 0 <= x <= 1 or not 0 <= y <= 1
+                    or not math.isclose(x, y, rel_tol=64*epsilon, abs_tol=64*epsilon**2)):
+                return False
+    return True
+
+
+def same_starting_proposal(expected, stored):
+    a, b = np.asarray(expected, dtype=np.float64), np.asarray(stored, dtype=np.float64)
+    if (a.shape != (8, 2) or b.shape != (8, 2) or not np.isfinite(a).all()
+            or not np.isfinite(b).all() or (np.abs(a) > 1).any() or (np.abs(b) > 1).any()):
+        return False
+    # Random starts, their order and the jitter construction remain exact.
+    if not np.array_equal(a[4:], b[4:]):
+        return False
+    offsets = np.asarray([[0., 0.], [.1, -.1], [-.1, .1], [.15, .15]], dtype=np.float32).astype(np.float64)
+    for points in (a, b):
+        if (not np.array_equal(points[0], points[0].astype(np.float32).astype(np.float64))
+                or not np.array_equal(points[:4], np.clip(points[0] + offsets, -1, 1))):
+            return False
+    return bool((np.abs(a[0]-b[0]) <= np.finfo(np.float32).eps).all())
 
 
 def supported_text(text):
@@ -50,10 +90,11 @@ class ConstraintRuntime:
         ConstraintR1.attach(self.owner, saved["seed"], saved["kind"])
         apply(self.owner, saved["delta"])
         self.observations, self.jobs, self.history = [], {}, []
+        self.replay_migrations = []
         self.work = {"paid_location_observations": 0, "gradient_batches": 0,
                      "conditional_transition_points": 0, "restore_gradient_batches": 0}
         if record is not None:
-            if record["schema"] != "sera.constraint-inquiry.1" or record["source"] != runtime_source():
+            if record["schema"] != "sera.constraint-inquiry.1" or not admitted_runtime(record["source"]):
                 raise ValueError("Changed runtime; explicit migration is required")
             for row in record["observations"]:
                 self._admit(row)
@@ -62,20 +103,30 @@ class ConstraintRuntime:
             self.jobs = copy.deepcopy(record["jobs"])
             self.history = copy.deepcopy(record["history"])
             self.work = copy.deepcopy(record["work"])
+            self.replay_migrations = copy.deepcopy(record.get("replay_migrations", []))
             if len(self.jobs) > 32 or len(self.history) > 64:
                 raise ValueError("Unbounded investigation history")
             for branch in [*self.jobs.values(), *self.history]:
                 self._validate_branch(branch)
+                if "source" in branch and branch["source"] != runtime_source():
+                    witness = {"source": branch["source"], "sha256": digest(branch)}
+                    branch["source"] = runtime_source()
+                    if "dependency" in branch and branch["status"] != "stale":
+                        branch["dependency"] = self.dependency(branch["frame"]["target"])
+                    branch["predecessor_replay"] = witness
+            if record["source"] != runtime_source():
+                self.replay_migrations.append({"from": record["source"], "to": runtime_source(),
+                                               "record_sha256": digest(record)})
         self.reproof = learner.rebind(facts, library)
         if not (self.owner is learner.session.owner is learner.solver.neural.owner
                 is learner.solver.components["typed"].owner is self.base.session.owner):
             raise AssertionError("The numerical and language routes lost their actual owner")
 
-    def dependency(self, target):
+    def dependency(self, target, *, interpreter=None):
         from experiments.language_inquiry.graph import situation
         return digest({"language": language_identity(self.owner), "situation": situation(self.owner),
                        "target": target, "evidence": [r for r in self.observations if r["entity"] == target],
-                       "checkpoint": self.checkpoint, "interpreter": runtime_source()})
+                       "checkpoint": self.checkpoint, "interpreter": runtime_source() if interpreter is None else interpreter})
 
     def _new(self, identifier, text):
         if not supported_text(text):
@@ -225,9 +276,11 @@ class ConstraintRuntime:
         return candidate
 
     def _validate_branch(self, branch):
+        if "source" in branch and not admitted_runtime(branch["source"]):
+            raise ValueError("Invalid branch interpreter")
         if "model" not in branch:
             return
-        if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+        if not admitted_runtime(branch["source"]) or not 0 <= branch["steps"] <= 12:
             raise ValueError("Invalid branch interpreter or budget")
         points = torch.tensor(branch["initial"], dtype=torch.float64)
         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
@@ -239,11 +292,13 @@ class ConstraintRuntime:
             raise ValueError("Saved refinement differs from replay")
         if summarize(branch["model"], points) != branch["result"]:
             raise ValueError("Saved conditional result differs from replay")
-        if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+        if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"], interpreter=branch["source"]):
             raise ValueError("A current branch has stale dependencies")
         if branch["status"] != "stale":
             expected = self._new(branch["id"], branch["text"])
-            if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+            if (not same_binding(expected.get("frame"), branch.get("frame"))
+                    or expected.get("model") != branch.get("model")
+                    or not same_starting_proposal(expected.get("initial"), branch.get("initial"))):
                 raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
 
     def snapshot(self):
@@ -251,7 +306,8 @@ class ConstraintRuntime:
         return {"schema": "sera.constraint-inquiry.1", "source": runtime_source(),
                 "checkpoint": copy.deepcopy(self.checkpoint), "parent": copy.deepcopy(self.parent_record),
                 "owner": model_identity(self.owner), "observations": copy.deepcopy(self.observations),
-                "jobs": copy.deepcopy(self.jobs), "history": copy.deepcopy(self.history), "work": dict(self.work)}
+                "jobs": copy.deepcopy(self.jobs), "history": copy.deepcopy(self.history), "work": dict(self.work),
+                "replay_migrations": copy.deepcopy(self.replay_migrations)}
 
     def status(self):
         self.sync()
