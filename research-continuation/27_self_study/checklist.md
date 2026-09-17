@@ -16,7 +16,7 @@
 - [x] Complete the bounded mathematical correction and fresh transfer checks.
 - [x] Integrate supported capabilities into an append-only live descendant.
 - [x] Audit preservation, costs, claims, source identities and exact continuation.
-- [ ] Publish the completed continuation and tested usage instructions.
+- [x] Publish the completed continuation and tested usage instructions.
 
 Routine repairs retain their failed code, receipts and checkpoints under failures/.
 The numerical allowance is read from the existing live ledger, not inferred from
