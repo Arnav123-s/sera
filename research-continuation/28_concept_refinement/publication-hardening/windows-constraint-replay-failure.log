@@ -1,0 +1,921 @@
+﻿2026-09-17T23:05:45.2724794Z Current runner version: '2.337.0'
+2026-09-17T23:05:45.2759290Z ##[group]Runner Image Provisioner
+2026-09-17T23:05:45.2760520Z Hosted Compute Agent
+2026-09-17T23:05:45.2761394Z Version: 20260828.587
+2026-09-17T23:05:45.2762333Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-17T23:05:45.2763476Z Build Date: 2026-08-28T16:44:25Z
+2026-09-17T23:05:45.2764505Z Worker ID: {a70f1880-83bc-4551-891a-b93951fd5cf3}
+2026-09-17T23:05:45.2765573Z Azure Region: westus
+2026-09-17T23:05:45.2766438Z ##[endgroup]
+2026-09-17T23:05:45.2768414Z ##[group]Operating System
+2026-09-17T23:05:45.2769806Z Microsoft Windows Server 2025
+2026-09-17T23:05:45.2770775Z 10.0.26100
+2026-09-17T23:05:45.2771516Z Datacenter
+2026-09-17T23:05:45.2772310Z ##[endgroup]
+2026-09-17T23:05:45.2773109Z ##[group]Runner Image
+2026-09-17T23:05:45.2773979Z Image: windows-2025-vs2026
+2026-09-17T23:05:45.2774899Z Version: 20260907.229.1
+2026-09-17T23:05:45.2777378Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260907.229/images/windows/Windows2025-VS2026-Readme.md
+2026-09-17T23:05:45.2780192Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260907.229
+2026-09-17T23:05:45.2781813Z ##[endgroup]
+2026-09-17T23:05:45.2783501Z ##[group]GITHUB_TOKEN Permissions
+2026-09-17T23:05:45.2786186Z Contents: read
+2026-09-17T23:05:45.2787147Z Metadata: read
+2026-09-17T23:05:45.2787986Z ##[endgroup]
+2026-09-17T23:05:45.2791219Z Secret source: Actions
+2026-09-17T23:05:45.2792565Z Cache mode: write
+2026-09-17T23:05:45.2793832Z Prepare workflow directory
+2026-09-17T23:05:45.3260512Z Prepare all required actions
+2026-09-17T23:05:45.3310789Z Getting action download info
+2026-09-17T23:05:45.6646560Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-17T23:05:45.7997295Z Download action repository 'astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9' (SHA:c771a70e6277c0a99b617c7a806ffedaca235ff9)
+2026-09-17T23:05:46.3463502Z Complete job name: test (windows-latest)
+2026-09-17T23:05:46.5069959Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T23:05:46.5079658Z ##[group]Run actions/checkout@v4
+2026-09-17T23:05:46.5080433Z with:
+2026-09-17T23:05:46.5080875Z   fetch-depth: 0
+2026-09-17T23:05:46.5081653Z   repository: Arnav123-s/sera
+2026-09-17T23:05:46.5086130Z   token: ***
+2026-09-17T23:05:46.5086576Z   ssh-strict: true
+2026-09-17T23:05:46.5087029Z   ssh-user: git
+2026-09-17T23:05:46.5087687Z   persist-credentials: true
+2026-09-17T23:05:46.5088269Z   clean: true
+2026-09-17T23:05:46.5088719Z   sparse-checkout-cone-mode: true
+2026-09-17T23:05:46.5089266Z   fetch-tags: false
+2026-09-17T23:05:46.5089727Z   show-progress: true
+2026-09-17T23:05:46.5090209Z   lfs: false
+2026-09-17T23:05:46.5090656Z   submodules: false
+2026-09-17T23:05:46.5091111Z   set-safe-directory: true
+2026-09-17T23:05:46.5091618Z   allow-unsafe-pr-checkout: false
+2026-09-17T23:05:46.5092446Z ##[endgroup]
+2026-09-17T23:05:46.6637426Z Syncing repository: Arnav123-s/sera
+2026-09-17T23:05:46.6639349Z ##[group]Getting Git version info
+2026-09-17T23:05:46.6640009Z Working directory is 'D:\a\sera\sera'
+2026-09-17T23:05:46.7581197Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-17T23:05:47.1324068Z git version 2.55.0.windows.5
+2026-09-17T23:05:47.1378537Z ##[endgroup]
+2026-09-17T23:05:47.1399574Z Temporarily overriding HOME='D:\a\_temp\a5aa879b-de2f-4b29-8faf-da611cf91d9e' before making global git config changes
+2026-09-17T23:05:47.1401548Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T23:05:47.1410263Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\sera\sera
+2026-09-17T23:05:47.2100061Z Deleting the contents of 'D:\a\sera\sera'
+2026-09-17T23:05:47.2106416Z ##[group]Initializing the repository
+2026-09-17T23:05:47.2115613Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\sera\sera
+2026-09-17T23:05:47.2927930Z Initialized empty Git repository in D:/a/sera/sera/.git/
+2026-09-17T23:05:47.2978893Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Arnav123-s/sera
+2026-09-17T23:05:47.3686116Z ##[endgroup]
+2026-09-17T23:05:47.3688873Z ##[group]Disabling automatic garbage collection
+2026-09-17T23:05:47.3698232Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-09-17T23:05:47.4063947Z ##[endgroup]
+2026-09-17T23:05:47.4065744Z ##[group]Setting up auth
+2026-09-17T23:05:47.4076651Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T23:05:47.4406330Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-17T23:05:48.9734178Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T23:05:49.0056176Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-17T23:05:49.5798121Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T23:05:49.6144346Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-17T23:05:50.1980978Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-09-17T23:05:50.2328670Z ##[endgroup]
+2026-09-17T23:05:50.2331856Z ##[group]Fetching the repository
+2026-09-17T23:05:50.2345332Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-09-17T23:05:55.2971741Z From https://github.com/Arnav123-s/sera
+2026-09-17T23:05:55.2974498Z  * [new branch]      main       -> origin/main
+2026-09-17T23:05:55.2975515Z  * [new branch]      research/v3-calibration-consolidation -> origin/research/v3-calibration-consolidation
+2026-09-17T23:05:55.3036137Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/research/v3-calibration-consolidation
+2026-09-17T23:05:55.3725290Z   origin/research/v3-calibration-consolidation
+2026-09-17T23:05:55.3772317Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/research/v3-calibration-consolidation
+2026-09-17T23:05:55.4207873Z 06c5f42e86fbeea10c74917e6c72aaef9c0531a0
+2026-09-17T23:05:55.4245298Z ##[endgroup]
+2026-09-17T23:05:55.4246061Z ##[group]Determining the checkout info
+2026-09-17T23:05:55.4248338Z ##[endgroup]
+2026-09-17T23:05:55.4263623Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-09-17T23:05:55.4718051Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-09-17T23:05:55.5043319Z ##[group]Checking out the ref
+2026-09-17T23:05:55.5044354Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B research/v3-calibration-consolidation refs/remotes/origin/research/v3-calibration-consolidation
+2026-09-17T23:05:56.5553401Z Updating files:  59% (1384/2315)
+2026-09-17T23:05:56.6233184Z Updating files:  60% (1389/2315)
+2026-09-17T23:05:56.6312998Z Updating files:  61% (1413/2315)
+2026-09-17T23:05:56.6436004Z Updating files:  62% (1436/2315)
+2026-09-17T23:05:56.7627824Z Updating files:  63% (1459/2315)
+2026-09-17T23:05:56.8143202Z Updating files:  64% (1482/2315)
+2026-09-17T23:05:56.8231324Z Updating files:  65% (1505/2315)
+2026-09-17T23:05:56.8339985Z Updating files:  66% (1528/2315)
+2026-09-17T23:05:56.8425671Z Updating files:  67% (1552/2315)
+2026-09-17T23:05:56.8506277Z Updating files:  68% (1575/2315)
+2026-09-17T23:05:56.8667149Z Updating files:  69% (1598/2315)
+2026-09-17T23:05:56.8781430Z Updating files:  70% (1621/2315)
+2026-09-17T23:05:56.9928472Z Updating files:  71% (1644/2315)
+2026-09-17T23:05:57.0142285Z Updating files:  72% (1667/2315)
+2026-09-17T23:05:57.0592344Z Updating files:  73% (1690/2315)
+2026-09-17T23:05:57.0665765Z Updating files:  74% (1714/2315)
+2026-09-17T23:05:57.0757922Z Updating files:  75% (1737/2315)
+2026-09-17T23:05:57.0834956Z Updating files:  76% (1760/2315)
+2026-09-17T23:05:57.0945262Z Updating files:  77% (1783/2315)
+2026-09-17T23:05:57.1021487Z Updating files:  78% (1806/2315)
+2026-09-17T23:05:57.1481532Z Updating files:  79% (1829/2315)
+2026-09-17T23:05:57.1552515Z Updating files:  80% (1852/2315)
+2026-09-17T23:05:57.1619128Z Updating files:  81% (1876/2315)
+2026-09-17T23:05:57.1681075Z Updating files:  82% (1899/2315)
+2026-09-17T23:05:57.2114637Z Updating files:  83% (1922/2315)
+2026-09-17T23:05:57.2246309Z Updating files:  84% (1945/2315)
+2026-09-17T23:05:57.2318862Z Updating files:  85% (1968/2315)
+2026-09-17T23:05:57.2381359Z Updating files:  86% (1991/2315)
+2026-09-17T23:05:57.2457991Z Updating files:  87% (2015/2315)
+2026-09-17T23:05:57.2515504Z Updating files:  88% (2038/2315)
+2026-09-17T23:05:57.2578500Z Updating files:  89% (2061/2315)
+2026-09-17T23:05:57.2651492Z Updating files:  90% (2084/2315)
+2026-09-17T23:05:57.2709580Z Updating files:  91% (2107/2315)
+2026-09-17T23:05:57.2765934Z Updating files:  92% (2130/2315)
+2026-09-17T23:05:57.2825778Z Updating files:  93% (2153/2315)
+2026-09-17T23:05:57.2883121Z Updating files:  94% (2177/2315)
+2026-09-17T23:05:57.2947035Z Updating files:  95% (2200/2315)
+2026-09-17T23:05:57.3009700Z Updating files:  96% (2223/2315)
+2026-09-17T23:05:57.3065748Z Updating files:  97% (2246/2315)
+2026-09-17T23:05:57.3127931Z Updating files:  98% (2269/2315)
+2026-09-17T23:05:57.3198016Z Updating files:  99% (2292/2315)
+2026-09-17T23:05:57.3198483Z Updating files: 100% (2315/2315)
+2026-09-17T23:05:57.3198833Z Updating files: 100% (2315/2315), done.
+2026-09-17T23:05:57.3371990Z Switched to a new branch 'research/v3-calibration-consolidation'
+2026-09-17T23:05:57.3440032Z branch 'research/v3-calibration-consolidation' set up to track 'origin/research/v3-calibration-consolidation'.
+2026-09-17T23:05:57.3976209Z ##[endgroup]
+2026-09-17T23:05:57.4434435Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-09-17T23:05:57.4709672Z 06c5f42e86fbeea10c74917e6c72aaef9c0531a0
+2026-09-17T23:05:57.5282640Z ##[group]Run astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9
+2026-09-17T23:05:57.5283094Z with:
+2026-09-17T23:05:57.5283281Z   version: 0.12.15
+2026-09-17T23:05:57.5283487Z   python-version: 3.12.14
+2026-09-17T23:05:57.5283701Z   enable-cache: false
+2026-09-17T23:05:57.5283932Z   activate-environment: false
+2026-09-17T23:05:57.5284174Z   no-project: false
+2026-09-17T23:05:57.5284385Z   working-directory: D:\a\sera\sera
+2026-09-17T23:05:57.5287040Z   github-token: ***
+2026-09-17T23:05:57.5287626Z   cache-dependency-glob: **/*requirements*.txt
+**/*requirements*.in
+**/*constraints*.txt
+**/*constraints*.in
+**/pyproject.toml
+**/uv.lock
+**/*.py.lock
+
+2026-09-17T23:05:57.5288534Z   restore-cache: true
+2026-09-17T23:05:57.5288740Z   save-cache: true
+2026-09-17T23:05:57.5288929Z   prune-cache: false
+2026-09-17T23:05:57.5289136Z   cache-python: false
+2026-09-17T23:05:57.5289357Z   ignore-nothing-to-cache: false
+2026-09-17T23:05:57.5289628Z   ignore-empty-workdir: false
+2026-09-17T23:05:57.5289881Z   download-from-astral-mirror: true
+2026-09-17T23:05:57.5290134Z   add-problem-matchers: true
+2026-09-17T23:05:57.5290348Z   quiet: false
+2026-09-17T23:05:57.5290535Z   resolution-strategy: highest
+2026-09-17T23:05:57.5290760Z ##[endgroup]
+2026-09-17T23:05:57.7344274Z Fetching manifest data from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson ...
+2026-09-17T23:05:57.7884814Z Downloading uv from "https://releases.astral.sh/github/uv/releases/download/0.12.15/uv-x86_64-pc-windows-msvc.zip" ...
+2026-09-17T23:05:58.4969176Z [command]C:\Windows\system32\tar.exe x -C D:\a\_temp\eec80818-ac73-40c9-8cc6-77e73feeb0e3 -f D:\a\_temp\a3f112d3-1d23-47ea-95db-53cd3f7e44b4
+2026-09-17T23:05:58.6600674Z Set UV_TOOL_BIN_DIR to D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:05:58.6604239Z Added D:\a\_temp\uv-tool-bin-dir to the path
+2026-09-17T23:05:58.6614485Z Added C:\hostedtoolcache\windows\uv\0.12.15\x86_64 to the path
+2026-09-17T23:05:58.6617097Z Set UV_TOOL_DIR to D:\a\_temp\uv-tool-dir
+2026-09-17T23:05:58.6619935Z Set UV_PYTHON_INSTALL_DIR to D:\a\_temp\uv-python-dir
+2026-09-17T23:05:58.6623317Z Added D:\a\_temp\uv-python-dir to the path
+2026-09-17T23:05:58.6626960Z Set UV_PYTHON to 3.12.14
+2026-09-17T23:05:58.6650227Z Successfully installed uv version 0.12.15
+2026-09-17T23:05:58.7931786Z ##[group]Run uv venv --python 3.12.14
+2026-09-17T23:05:58.7932194Z [36;1muv venv --python 3.12.14[0m
+2026-09-17T23:05:58.8258330Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:05:58.8258793Z env:
+2026-09-17T23:05:58.8259066Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:05:58.8259423Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:05:58.8259777Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:05:58.8260123Z   UV_PYTHON: 3.12.14
+2026-09-17T23:05:58.8260368Z ##[endgroup]
+2026-09-17T23:06:00.6159870Z Downloading cpython-3.12.14-windows-x86_64-none (download) (21.0MiB)
+2026-09-17T23:06:01.9503485Z  Downloaded cpython-3.12.14-windows-x86_64-none (download)
+2026-09-17T23:06:02.1919526Z Using CPython 3.12.14
+2026-09-17T23:06:02.1919847Z Creating virtual environment at: .venv
+2026-09-17T23:06:02.1969841Z Activate with: .venv\Scripts\activate
+2026-09-17T23:06:02.3548163Z ##[group]Run uv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+2026-09-17T23:06:02.3549033Z [36;1muv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu[0m
+2026-09-17T23:06:02.3622815Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:06:02.3623171Z env:
+2026-09-17T23:06:02.3623387Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:06:02.3623673Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:06:02.3623951Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:06:02.3624242Z   UV_PYTHON: 3.12.14
+2026-09-17T23:06:02.3624435Z ##[endgroup]
+2026-09-17T23:06:03.0715505Z Resolved 10 packages in 200ms
+2026-09-17T23:06:03.0819789Z Downloading sympy (6.0MiB)
+2026-09-17T23:06:03.0835612Z Downloading networkx (2.0MiB)
+2026-09-17T23:06:03.0892959Z Downloading setuptools (1.2MiB)
+2026-09-17T23:06:03.1042623Z Downloading torch (108.4MiB)
+2026-09-17T23:06:05.4537665Z  Downloaded setuptools
+2026-09-17T23:06:06.0788818Z  Downloaded networkx
+2026-09-17T23:06:08.9796881Z  Downloaded sympy
+2026-09-17T23:06:19.7458840Z  Downloaded torch
+2026-09-17T23:06:19.7472045Z Prepared 10 packages in 16.67s
+2026-09-17T23:06:19.7503666Z warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+2026-09-17T23:06:19.7505627Z          If the cache and target directories are on different filesystems, hardlinking may not be supported.
+2026-09-17T23:06:19.7507022Z          If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+2026-09-17T23:06:28.0815731Z Installed 10 packages in 8.33s
+2026-09-17T23:06:28.0817823Z  + filelock==3.32.3
+2026-09-17T23:06:28.0819338Z  + fsspec==2026.7.0
+2026-09-17T23:06:28.0820824Z  + jinja2==3.1.6
+2026-09-17T23:06:28.0822197Z  + markupsafe==3.0.3
+2026-09-17T23:06:28.0823726Z  + mpmath==1.3.0
+2026-09-17T23:06:28.0825525Z  + networkx==3.6.1
+2026-09-17T23:06:28.0828409Z  + setuptools==78.1.0
+2026-09-17T23:06:28.0829138Z  + sympy==1.14.0
+2026-09-17T23:06:28.0829477Z  + torch==2.10.0+cpu
+2026-09-17T23:06:28.0832841Z  + typing-extensions==4.16.0
+2026-09-17T23:06:28.2066588Z ##[group]Run uv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
+2026-09-17T23:06:28.2067850Z [36;1muv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1[0m
+2026-09-17T23:06:28.2152317Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:06:28.2152680Z env:
+2026-09-17T23:06:28.2152895Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:06:28.2153189Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:06:28.2153477Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:06:28.2153756Z   UV_PYTHON: 3.12.14
+2026-09-17T23:06:28.2153952Z ##[endgroup]
+2026-09-17T23:06:31.0499537Z Resolved 20 packages in 2.32s
+2026-09-17T23:06:31.0562332Z    Building sera-learning @ file:///D:/a/sera/sera
+2026-09-17T23:06:31.0714542Z Downloading pygments (1.2MiB)
+2026-09-17T23:06:31.0748256Z Downloading numpy (12.0MiB)
+2026-09-17T23:06:31.0749021Z Downloading ruff (10.1MiB)
+2026-09-17T23:06:31.0771777Z Downloading scipy (35.0MiB)
+2026-09-17T23:06:31.5337480Z  Downloaded ruff
+2026-09-17T23:06:31.8366625Z  Downloaded pygments
+2026-09-17T23:06:33.2233159Z  Downloaded numpy
+2026-09-17T23:06:34.4107665Z  Downloaded scipy
+2026-09-17T23:06:35.2419983Z       Built sera-learning @ file:///D:/a/sera/sera
+2026-09-17T23:06:35.2528499Z Prepared 10 packages in 4.20s
+2026-09-17T23:06:35.2546619Z warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+2026-09-17T23:06:35.2587019Z          If the cache and target directories are on different filesystems, hardlinking may not be supported.
+2026-09-17T23:06:35.2631108Z          If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+2026-09-17T23:06:36.5080605Z Installed 10 packages in 1.25s
+2026-09-17T23:06:36.5081259Z  + colorama==0.4.6
+2026-09-17T23:06:36.5083122Z  + iniconfig==2.3.0
+2026-09-17T23:06:36.5084338Z  + numpy==2.5.3
+2026-09-17T23:06:36.5085702Z  + packaging==26.3
+2026-09-17T23:06:36.5087156Z  + pluggy==1.6.0
+2026-09-17T23:06:36.5088572Z  + pygments==2.21.0
+2026-09-17T23:06:36.5089937Z  + pytest==9.1.1
+2026-09-17T23:06:36.5091390Z  + ruff==0.16.8
+2026-09-17T23:06:36.5092765Z  + scipy==1.18.1
+2026-09-17T23:06:36.5094801Z  + sera-learning==0.5.0 (from file:///D:/a/sera/sera)
+2026-09-17T23:06:36.7717057Z ##[group]Run uv run --no-sync python -m ruff check src tests scripts experiments
+2026-09-17T23:06:36.7717707Z [36;1muv run --no-sync python -m ruff check src tests scripts experiments[0m
+2026-09-17T23:06:36.7800337Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:06:36.7800697Z env:
+2026-09-17T23:06:36.7800926Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:06:36.7801515Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:06:36.7801837Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:06:36.7802160Z   UV_PYTHON: 3.12.14
+2026-09-17T23:06:36.7802356Z ##[endgroup]
+2026-09-17T23:06:37.2606194Z All checks passed!
+2026-09-17T23:06:37.4076462Z ##[group]Run uv run --no-sync python scripts/restore_test_artifacts.py
+2026-09-17T23:06:37.4077060Z [36;1muv run --no-sync python scripts/restore_test_artifacts.py[0m
+2026-09-17T23:06:37.4149176Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:06:37.4149536Z env:
+2026-09-17T23:06:37.4149754Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:06:37.4150045Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:06:37.4150338Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:06:37.4150627Z   UV_PYTHON: 3.12.14
+2026-09-17T23:06:37.4150826Z ##[endgroup]
+2026-09-17T23:06:38.0084626Z {"restored": 17, "already_identical": 0, "experiments_restarted": 0}
+2026-09-17T23:06:38.1407651Z ##[group]Run uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
+2026-09-17T23:06:38.1409119Z [36;1muv run --no-sync python -m experiments.concept_refinement.replay_diagnostic[0m
+2026-09-17T23:06:38.1480363Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:06:38.1480721Z env:
+2026-09-17T23:06:38.1480940Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:06:38.1481253Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:06:38.1481564Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:06:38.1481863Z   UV_PYTHON: 3.12.14
+2026-09-17T23:06:38.1482065Z ##[endgroup]
+2026-09-17T23:06:47.2701449Z {"schema": "sera.platform-replay-diagnostic.1", "platform": "Windows-2025Server-10.0.26100-SP0", "torch": "2.10.0+cpu", "numpy": "2.5.3", "owner_byte_identity": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1", "difference_count": 6, "differences": [{"path": "ready/interpretation/alternatives/1/proposal_score", "kind": "float", "expected": 3.418021762551784e-05, "observed": 3.418018488375151e-05, "absolute_difference": 3.2741766329419386e-11}, {"path": "ready/interpretation/alternatives/2/proposal_score", "kind": "float", "expected": 1.1060657829161687e-06, "observed": 1.1060625999279532e-06, "absolute_difference": 3.1829882154478517e-12}, {"path": "ready/interpretation/alternatives/3/proposal_score", "kind": "float", "expected": 9.918377782551255e-09, "observed": 9.918339593797554e-09, "absolute_difference": 3.818875370096474e-14}, {"path": "unfinished/interpretation/alternatives/1/proposal_score", "kind": "float", "expected": 1.188587193587992e-05, "observed": 1.1885882849791622e-05, "absolute_difference": 1.0913911701465606e-11}, {"path": "unfinished/interpretation/alternatives/2/proposal_score", "kind": "float", "expected": 1.1061256171705833e-06, "observed": 1.1061214108553689e-06, "absolute_difference": 4.20631521442812e-12}, {"path": "unfinished/interpretation/alternatives/3/proposal_score", "kind": "float", "expected": 2.14804751541395e-07, "observed": 2.1480433943643384e-07, "absolute_difference": 4.1210496115866996e-13}], "stored_evidence_changed": false}
+2026-09-17T23:06:47.8082577Z ##[group]Run uv run --no-sync python -m pytest
+2026-09-17T23:06:47.8083041Z [36;1muv run --no-sync python -m pytest[0m
+2026-09-17T23:06:47.8159143Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-17T23:06:47.8159511Z env:
+2026-09-17T23:06:47.8159738Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-17T23:06:47.8160032Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-17T23:06:47.8160646Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-17T23:06:47.8160949Z   UV_PYTHON: 3.12.14
+2026-09-17T23:06:47.8161151Z ##[endgroup]
+2026-09-17T23:07:03.1370404Z ......................................EEEEEEEEE............s....ssssssss [ 18%]
+2026-09-17T23:07:09.3249372Z ssssss.........sssss.................................................... [ 36%]
+2026-09-17T23:07:16.9299891Z ..s...............ss.sssssssssssssss.................................... [ 54%]
+2026-09-17T23:07:35.1966735Z ..............................F......................................... [ 72%]
+2026-09-17T23:07:47.9765211Z ......................................s.......ss.....s.............ss... [ 90%]
+2026-09-17T23:07:53.6522295Z .......s..............................                                   [100%]
+2026-09-17T23:07:53.6523084Z =================================== ERRORS ====================================
+2026-09-17T23:07:53.6523897Z _______ ERROR at setup of test_restore_rejects_changed_support[weights] _______
+2026-09-17T23:07:53.6524783Z 
+2026-09-17T23:07:53.6525213Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6525829Z 
+2026-09-17T23:07:53.6526019Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6526464Z     def saved(source):
+2026-09-17T23:07:53.6527126Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6528176Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6529400Z >       session = RefinementSession()
+2026-09-17T23:07:53.6529858Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6530151Z 
+2026-09-17T23:07:53.6530422Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6552880Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6555140Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6555798Z     self.study = restore_parent()
+2026-09-17T23:07:53.6556243Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6556830Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6557526Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6558059Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6558615Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6559270Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6559913Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6560528Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6561120Z     self.base = load_parent()
+2026-09-17T23:07:53.6561862Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6562424Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6563124Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6563718Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6564336Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6564957Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6565569Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6565996Z 
+2026-09-17T23:07:53.6566571Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6571566Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6573347Z 
+2026-09-17T23:07:53.6573531Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6574089Z         if "model" not in branch:
+2026-09-17T23:07:53.6574542Z             return
+2026-09-17T23:07:53.6575101Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6575929Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6576670Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6577590Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6578424Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6578970Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6579527Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6580053Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6580862Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6582114Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6582898Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6583599Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6584433Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6585315Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6585841Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6586281Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6587312Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6588194Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6589238Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6589850Z 
+2026-09-17T23:07:53.6590115Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6590884Z _________ ERROR at setup of test_restore_rejects_changed_support[tau] _________
+2026-09-17T23:07:53.6591450Z 
+2026-09-17T23:07:53.6591868Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6592470Z 
+2026-09-17T23:07:53.6592642Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6593094Z     def saved(source):
+2026-09-17T23:07:53.6593745Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6594760Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6595474Z >       session = RefinementSession()
+2026-09-17T23:07:53.6595876Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6596161Z 
+2026-09-17T23:07:53.6596319Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6596837Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6597468Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6598045Z     self.study = restore_parent()
+2026-09-17T23:07:53.6598432Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6598963Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6599620Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6600077Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6600535Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6602403Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6603035Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6603580Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6604084Z     self.base = load_parent()
+2026-09-17T23:07:53.6604415Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6604882Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6605480Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6605988Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6606496Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6607008Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6607488Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6607873Z 
+2026-09-17T23:07:53.6608340Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6610253Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6611776Z 
+2026-09-17T23:07:53.6611923Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6612308Z         if "model" not in branch:
+2026-09-17T23:07:53.6612660Z             return
+2026-09-17T23:07:53.6613116Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6613825Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6614502Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6615276Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6616286Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6616772Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6617213Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6617709Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6618380Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6619215Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6619984Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6620720Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6621651Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6622864Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6623422Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6623985Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6624810Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6625826Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6626904Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6627505Z 
+2026-09-17T23:07:53.6627738Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6628426Z _______ ERROR at setup of test_restore_rejects_changed_support[history] _______
+2026-09-17T23:07:53.6628900Z 
+2026-09-17T23:07:53.6629254Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6629772Z 
+2026-09-17T23:07:53.6629924Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6630303Z     def saved(source):
+2026-09-17T23:07:53.6631037Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6631980Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6632641Z >       session = RefinementSession()
+2026-09-17T23:07:53.6633020Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6633270Z 
+2026-09-17T23:07:53.6633414Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6633887Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6634509Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6635055Z     self.study = restore_parent()
+2026-09-17T23:07:53.6635437Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6635919Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6636524Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6636979Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6637434Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6637998Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6639847Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6640686Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6641187Z     self.base = load_parent()
+2026-09-17T23:07:53.6641541Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6642007Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6642617Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6643133Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6643667Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6644185Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6644639Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6646008Z 
+2026-09-17T23:07:53.6646509Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6648477Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6649989Z 
+2026-09-17T23:07:53.6650145Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6650538Z         if "model" not in branch:
+2026-09-17T23:07:53.6650873Z             return
+2026-09-17T23:07:53.6651330Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6652022Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6652674Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6653436Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6654163Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6654631Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6655079Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6655549Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6656205Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6656962Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6657574Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6658228Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6659098Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6659977Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6660962Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6661445Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6662116Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6663108Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6664129Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6664726Z 
+2026-09-17T23:07:53.6664948Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6665631Z _______ ERROR at setup of test_restore_rejects_changed_support[source] ________
+2026-09-17T23:07:53.6666087Z 
+2026-09-17T23:07:53.6666436Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6666953Z 
+2026-09-17T23:07:53.6667105Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6667481Z     def saved(source):
+2026-09-17T23:07:53.6668034Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6668937Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6669604Z >       session = RefinementSession()
+2026-09-17T23:07:53.6669972Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6670212Z 
+2026-09-17T23:07:53.6670361Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6670830Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6671438Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6671945Z     self.study = restore_parent()
+2026-09-17T23:07:53.6672304Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6672776Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6673544Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6673979Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6674414Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6674952Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6675458Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6675960Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6676443Z     self.base = load_parent()
+2026-09-17T23:07:53.6676773Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6677214Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6677790Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6678302Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6678803Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6679314Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6679770Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6680133Z 
+2026-09-17T23:07:53.6680835Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6682820Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6684374Z 
+2026-09-17T23:07:53.6684519Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6684936Z         if "model" not in branch:
+2026-09-17T23:07:53.6685295Z             return
+2026-09-17T23:07:53.6685772Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6686486Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6687142Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6688612Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6689389Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6689860Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6690310Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6690796Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6691478Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6692242Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6692815Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6693434Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6694298Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6695160Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6695687Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6696146Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6696807Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6697744Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6698774Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6699379Z 
+2026-09-17T23:07:53.6699628Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6700338Z ____ ERROR at setup of test_restore_rejects_changed_support[extra_weight] _____
+2026-09-17T23:07:53.6701093Z 
+2026-09-17T23:07:53.6701454Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6702196Z 
+2026-09-17T23:07:53.6702342Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6702727Z     def saved(source):
+2026-09-17T23:07:53.6703321Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6704234Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6704920Z >       session = RefinementSession()
+2026-09-17T23:07:53.6705285Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6705532Z 
+2026-09-17T23:07:53.6705679Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6706150Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6706782Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6707369Z     self.study = restore_parent()
+2026-09-17T23:07:53.6707730Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6708211Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6708787Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6709216Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6709666Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6710202Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6710703Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6711198Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6711726Z     self.base = load_parent()
+2026-09-17T23:07:53.6712060Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6712482Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6713064Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6713545Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6714065Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6714743Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6715201Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6715574Z 
+2026-09-17T23:07:53.6716028Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6717961Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6719554Z 
+2026-09-17T23:07:53.6719700Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6720086Z         if "model" not in branch:
+2026-09-17T23:07:53.6720419Z             return
+2026-09-17T23:07:53.6721101Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6721791Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6722444Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6723268Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6723961Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6724392Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6724797Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6725250Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6725881Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6726614Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6727236Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6727883Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6728978Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6729835Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6730368Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6730820Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6731510Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6732449Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6733464Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6734058Z 
+2026-09-17T23:07:53.6734285Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6734971Z __________ ERROR at setup of test_branch_and_live_weight_validation ___________
+2026-09-17T23:07:53.6735454Z 
+2026-09-17T23:07:53.6735817Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6736345Z 
+2026-09-17T23:07:53.6736488Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6736855Z     def saved(source):
+2026-09-17T23:07:53.6737403Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6738306Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6738981Z >       session = RefinementSession()
+2026-09-17T23:07:53.6739355Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6739597Z 
+2026-09-17T23:07:53.6739746Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6740202Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6741016Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6741567Z     self.study = restore_parent()
+2026-09-17T23:07:53.6742088Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6742570Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6743172Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6743604Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6744035Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6744574Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6745066Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6745568Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6746051Z     self.base = load_parent()
+2026-09-17T23:07:53.6746372Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6746798Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6747395Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6747909Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6748422Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6748908Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6749342Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6749729Z 
+2026-09-17T23:07:53.6750171Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6752105Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6753622Z 
+2026-09-17T23:07:53.6753770Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6754154Z         if "model" not in branch:
+2026-09-17T23:07:53.6754481Z             return
+2026-09-17T23:07:53.6754922Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6755779Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6756414Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6757172Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6757871Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6758315Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6758746Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6759202Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6759849Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6760578Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6761450Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6762124Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6762986Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6763869Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6764399Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6764857Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6765531Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6766465Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6767496Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6768074Z 
+2026-09-17T23:07:53.6768298Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6769118Z ______________ ERROR at setup of test_goal_reuse_and_exact_route ______________
+2026-09-17T23:07:53.6769577Z 
+2026-09-17T23:07:53.6769920Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6770446Z 
+2026-09-17T23:07:53.6770575Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6770943Z     def saved(source):
+2026-09-17T23:07:53.6771510Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6772378Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6773045Z >       session = RefinementSession()
+2026-09-17T23:07:53.6773422Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6773657Z 
+2026-09-17T23:07:53.6773798Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6774253Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6774855Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6775357Z     self.study = restore_parent()
+2026-09-17T23:07:53.6775699Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6776167Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6776711Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6777131Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6777567Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6778155Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6778701Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6779246Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6779718Z     self.base = load_parent()
+2026-09-17T23:07:53.6780030Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6780458Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6781449Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6781939Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6782430Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6782907Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6783326Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6783681Z 
+2026-09-17T23:07:53.6784101Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6785933Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6787347Z 
+2026-09-17T23:07:53.6787496Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6787869Z         if "model" not in branch:
+2026-09-17T23:07:53.6788194Z             return
+2026-09-17T23:07:53.6788634Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6789291Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6789897Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6790624Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6791292Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6791721Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6792144Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6792592Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6793190Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6793887Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6796574Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6797286Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6798123Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6798935Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6799450Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6799882Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6800522Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6801410Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6802364Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6802921Z 
+2026-09-17T23:07:53.6803131Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6803758Z ________ ERROR at setup of test_rejected_acquisition_is_transactional _________
+2026-09-17T23:07:53.6804187Z 
+2026-09-17T23:07:53.6804528Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6805016Z 
+2026-09-17T23:07:53.6805150Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6805502Z     def saved(source):
+2026-09-17T23:07:53.6806025Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6806860Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6807485Z >       session = RefinementSession()
+2026-09-17T23:07:53.6807837Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6808069Z 
+2026-09-17T23:07:53.6808213Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6808852Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6809415Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6809911Z     self.study = restore_parent()
+2026-09-17T23:07:53.6810244Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6810693Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6811222Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6811619Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6812046Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6812568Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6813052Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6813530Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6813988Z     self.base = load_parent()
+2026-09-17T23:07:53.6814302Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6814727Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6815634Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6818218Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6818612Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6818959Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6819259Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6819498Z 
+2026-09-17T23:07:53.6819785Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6820941Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6821839Z 
+2026-09-17T23:07:53.6821946Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6822402Z         if "model" not in branch:
+2026-09-17T23:07:53.6822643Z             return
+2026-09-17T23:07:53.6822947Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6823399Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6823812Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6824304Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6824750Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6825056Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6825337Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6825653Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6826072Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6826548Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6826941Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6827355Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6827907Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6828460Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6828819Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6829135Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6829580Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6830172Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6830805Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6831293Z 
+2026-09-17T23:07:53.6831440Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6831877Z ___ ERROR at setup of test_constant_command_does_not_identify_gain_and_bias ___
+2026-09-17T23:07:53.6832176Z 
+2026-09-17T23:07:53.6832395Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T23:07:53.6832725Z 
+2026-09-17T23:07:53.6832826Z     @pytest.fixture(scope="module")
+2026-09-17T23:07:53.6833071Z     def saved(source):
+2026-09-17T23:07:53.6833424Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T23:07:53.6834250Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T23:07:53.6834696Z >       session = RefinementSession()
+2026-09-17T23:07:53.6835153Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6835361Z 
+2026-09-17T23:07:53.6835466Z tests\test_concept_refinement.py:27: 
+2026-09-17T23:07:53.6835773Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6836162Z experiments\concept_refinement\runtime.py:148: in __init__
+2026-09-17T23:07:53.6836497Z     self.study = restore_parent()
+2026-09-17T23:07:53.6836729Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6837031Z experiments\concept_refinement\common.py:45: in restore_parent
+2026-09-17T23:07:53.6837675Z     return StudySession(saved["parent"], saved)
+2026-09-17T23:07:53.6838089Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6838377Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6838727Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6840315Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6840707Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6841050Z     self.base = load_parent()
+2026-09-17T23:07:53.6841448Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6841758Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6842136Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6842464Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6842790Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6843104Z     self._validate_branch(branch)
+2026-09-17T23:07:53.6843393Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6843632Z 
+2026-09-17T23:07:53.6843920Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x000001853AD21190>
+2026-09-17T23:07:53.6845537Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.6846499Z 
+2026-09-17T23:07:53.6846607Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.6846888Z         if "model" not in branch:
+2026-09-17T23:07:53.6847125Z             return
+2026-09-17T23:07:53.6847425Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.6847863Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.6848272Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.6848760Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.6849197Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.6849491Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.6849767Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.6850067Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.6851201Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.6851684Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.6852077Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.6852502Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.6853047Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.6853579Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.6854062Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.6855390Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.6855953Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.6856556Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.6857225Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.6857591Z 
+2026-09-17T23:07:53.6857738Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.6858103Z ================================== FAILURES ===================================
+2026-09-17T23:07:53.6859387Z ______________ test_resume_preserves_acquisition_order_and_owner ______________
+2026-09-17T23:07:53.6859896Z 
+2026-09-17T23:07:53.6860123Z     def test_resume_preserves_acquisition_order_and_owner():
+2026-09-17T23:07:53.6860720Z         parent = json.loads((OUT / "parent-request.json").read_text())
+2026-09-17T23:07:53.6861418Z         lessons = calculus(json.loads((OUT / "calculus-source.json").read_text()))
+2026-09-17T23:07:53.6862005Z >       complete = StudySession(parent)
+2026-09-17T23:07:53.6862358Z                    ^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6862600Z 
+2026-09-17T23:07:53.6863037Z tests\test_self_study_lifecycle.py:15: 
+2026-09-17T23:07:53.6863800Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.6864204Z experiments\self_study\runtime.py:56: in __init__
+2026-09-17T23:07:53.6864588Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T23:07:53.6864928Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6865265Z experiments\stream_curriculum\runtime.py:27: in __init__
+2026-09-17T23:07:53.6865584Z     self.base = load_parent()
+2026-09-17T23:07:53.6865805Z                 ^^^^^^^^^^^^^
+2026-09-17T23:07:53.6866079Z experiments\stream_curriculum\study.py:23: in load_parent
+2026-09-17T23:07:53.6866469Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T23:07:53.6866795Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T23:07:53.6867117Z experiments\constraint_inquiry\runtime.py:68: in __init__
+2026-09-17T23:07:53.6867444Z     self._validate_branch(branch)
+2026-09-17T23:07:53.9026459Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2026-09-17T23:07:53.9027035Z 
+2026-09-17T23:07:53.9027938Z self = <experiments.constraint_inquiry.runtime.ConstraintRuntime object at 0x0000018539ABAA50>
+2026-09-17T23:07:53.9030065Z branch = {'dependency': 'b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2', 'evidence_role': 'conditional_imagi...[0.9999784231185913, 7.108115369192092e-06, 1.5441920595549163e-06, 1.2834239896619692e-05]], ...}, 'id': 'reach', ...}
+2026-09-17T23:07:53.9031848Z 
+2026-09-17T23:07:53.9032039Z     def _validate_branch(self, branch):
+2026-09-17T23:07:53.9032637Z         if "model" not in branch:
+2026-09-17T23:07:53.9033029Z             return
+2026-09-17T23:07:53.9033553Z         if branch["source"] != runtime_source() or not 0 <= branch["steps"] <= 12:
+2026-09-17T23:07:53.9034476Z             raise ValueError("Invalid branch interpreter or budget")
+2026-09-17T23:07:53.9036818Z         points = torch.tensor(branch["initial"], dtype=torch.float64)
+2026-09-17T23:07:53.9037737Z         if points.shape != (8, 2) or not torch.isfinite(points).all() or (points.abs() > 1).any():
+2026-09-17T23:07:53.9038566Z             raise ValueError("Invalid initial cloud")
+2026-09-17T23:07:53.9039085Z         for _ in range(branch["steps"]):
+2026-09-17T23:07:53.9039573Z             points = step(branch["model"], points)
+2026-09-17T23:07:53.9040113Z             self.work["restore_gradient_batches"] += 1
+2026-09-17T23:07:53.9040860Z         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
+2026-09-17T23:07:53.9041689Z             raise ValueError("Saved refinement differs from replay")
+2026-09-17T23:07:53.9042402Z         if summarize(branch["model"], points) != branch["result"]:
+2026-09-17T23:07:53.9043163Z             raise ValueError("Saved conditional result differs from replay")
+2026-09-17T23:07:53.9044181Z         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"]):
+2026-09-17T23:07:53.9045168Z             raise ValueError("A current branch has stale dependencies")
+2026-09-17T23:07:53.9045793Z         if branch["status"] != "stale":
+2026-09-17T23:07:53.9046312Z             expected = self._new(branch["id"], branch["text"])
+2026-09-17T23:07:53.9047449Z             if any(expected.get(k) != branch.get(k) for k in ("frame", "model", "initial")):
+2026-09-17T23:07:53.9048493Z >               raise ValueError("Saved constraints differ from their learned binding or eligible evidence")
+2026-09-17T23:07:53.9049164Z E               ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9049541Z 
+2026-09-17T23:07:53.9049859Z experiments\constraint_inquiry\runtime.py:247: ValueError
+2026-09-17T23:07:53.9050301Z =========================== short test summary info ===========================
+2026-09-17T23:07:53.9051445Z FAILED tests/test_self_study_lifecycle.py::test_resume_preserves_acquisition_order_and_owner - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9052730Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[weights] - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9053883Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[tau] - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9055016Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[history] - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9056204Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[source] - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9057375Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[extra_weight] - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9058529Z ERROR tests/test_concept_refinement.py::test_branch_and_live_weight_validation - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9059614Z ERROR tests/test_concept_refinement.py::test_goal_reuse_and_exact_route - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9060708Z ERROR tests/test_concept_refinement.py::test_rejected_acquisition_is_transactional - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9061878Z ERROR tests/test_concept_refinement.py::test_constant_command_does_not_identify_gain_and_bias - ValueError: Saved constraints differ from their learned binding or eligible evidence
+2026-09-17T23:07:53.9062687Z 1 failed, 343 passed, 45 skipped, 9 errors in 63.06s (0:01:03)
+2026-09-17T23:07:54.6929313Z ##[error]Process completed with exit code 1.
+2026-09-17T23:07:54.7229166Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T23:07:54.7230501Z Post job cleanup.
+2026-09-17T23:07:54.9242689Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-17T23:07:54.9534446Z git version 2.55.0.windows.5
+2026-09-17T23:07:54.9605441Z Temporarily overriding HOME='D:\a\_temp\eeb36786-edfd-4cbb-b0dd-e2b3e24bb14d' before making global git config changes
+2026-09-17T23:07:54.9606637Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T23:07:54.9616889Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\sera\sera
+2026-09-17T23:07:54.9955009Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T23:07:55.0294980Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-17T23:07:55.6297268Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T23:07:55.6569092Z http.https://github.com/.extraheader
+2026-09-17T23:07:55.6624311Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-09-17T23:07:55.6956971Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-17T23:07:56.2668778Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T23:07:56.2988243Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-17T23:07:56.8813246Z Cleaning up orphan processes
+2026-09-17T23:07:56.9070751Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

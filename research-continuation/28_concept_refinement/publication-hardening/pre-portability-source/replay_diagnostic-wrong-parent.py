@@ -104,10 +104,9 @@ def main():
         )
     )
     constraint_saved = read(ROOT / "research-continuation/26_stream_curriculum/parent.json")
-    # Restore the actual corrected parent and its observations, then independently
-    # inspect original branches outside the constructor's exact replay check.
-    owner_record = {**constraint_saved, "jobs": {}, "history": []}
-    constraint = ConstraintRuntime(constraint_saved["checkpoint"], owner_record)
+    constraint = ConstraintRuntime(constraint_saved["checkpoint"])
+    for row in constraint_saved["observations"]:
+        constraint._admit(row)
     assert model_identity(constraint.owner) == constraint_saved["owner"]
     rows = []
     for branch in [*constraint_saved["jobs"].values(), *constraint_saved["history"]]:
