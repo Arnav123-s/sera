@@ -1,0 +1,33 @@
+{
+  "source": "d0c32bc48e971bd9df321d4f0943224bf9229d6998fbe1a8dbce57a3ab3797b3",
+  "evaluator": "3cf19f2a4725315c7195fd553e850e9563ca12b6bb8af718386c537624418fb9",
+  "protocol": "31ac5e09e638732caa89b5fdb940c5d306abb452fd520d99b4bf55b01140ad62",
+  "selection": {
+    "checkpoint": "runs/CI-fits-final-001/selected.pt",
+    "sha256": "dcc544e08ef48d8a37d00a426e8e75287df4f1d76ddf8a6828476f6926e1523e",
+    "language": {
+      "seed": 2502,
+      "kind": "ordered",
+      "steps": 200,
+      "teaching_exact": 1.0,
+      "teaching_loss": 6.03007611061912e-05,
+      "teaching_strings": 80,
+      "presentations": 16000,
+      "checkpoint": "runs/CI-fits-final-001/ordered-200-2502/step-0200.pt",
+      "sha256": "f6752b5b2507f23e6d0a4c9444937d2d71da8f630501b866ec6d4283504f4f89",
+      "old_tensors_unchanged": 130,
+      "shared_path_gradient_norm": 0.8185156583786011,
+      "new_parameters": 11336,
+      "seconds": 21.83923050001613
+    },
+    "proposal": {
+      "steps": 400,
+      "examples": 4096,
+      "presentations": 51200,
+      "last_loss": 0.00036869742325507104,
+      "seconds": 0.2865062000055332,
+      "source": "Supplied inverse control teacher applied to the acquired parent dynamics"
+    },
+    "owner": "5057a292b218f0ead021a04dcf49b1c57ddb08806798ababe4854fbf621278c2"
+  }
+}

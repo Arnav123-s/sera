@@ -69,3 +69,8 @@ I completed three development models, two development acquisition assessments, n
 I preserve the empirical guard's five incorrect admissions and add a supplied finite-language contract. This is a corrective execution restriction, checked against archived failures and exhaustive finite productions. It does not retroactively improve final neural scores. Accepted interpretations now execute the previously acquired guarded program and must agree with independent arithmetic. An explicit migration preserves the live owner's identity and tensors; all older interpreter versions remain available.
 
 The real browser completed three language lessons, kept the existing numerical contexts and motion history, restored the result after reload and reused the learned interpretation without another lesson. The full 241-test regression and later contract/integration checks pass. The user-approved local extension covers all numerical costs; unused allowance stays available to the live application. General document learning and independently improved eta remain unqualified.
+
+
+## v10 actual-owner constraint inquiry
+
+I integrated finite learned role binding, an acquired-model initializer, continuous conditional search, grounded simulator acquisition and persistent correction. CI-001 retains its 50% new-wording failure and omitted-law errors; CI-002 adds a fixed residual stop on fresh same-family cases. The analytic baseline remains cheaper. This is an optional conditional route, not a replacement applicability certificate or learned investigator. See release 25 for the full records.

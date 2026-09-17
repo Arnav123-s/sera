@@ -1,5 +1,7 @@
 # Next uncompleted cycle: acquisition from grounded material
 
+Latest: [v10 actual-owner constraint integration](25_constraint_inquiry/report.md). 302 regressions and two finite cycles completed; learned directed pairs work, new wording and omitted laws still fail. [Use the saved learner](25_constraint_inquiry/README.md); all older checklists below remain historical.
+
 V5 continuation update: the latest executed integration is [release 24](24_language_inquiry/report.md). Its [current checklist](24_language_inquiry/checklist.md) prioritizes world-disjoint applicability and informative probing through the actual language/inquiry owner. The broader grounded-material direction below remains open; its older execution priorities must be reconciled with this newer evidence before use.
 
 Status: **future design, not executed or source-frozen**. L10's finite language interface and L11's continuing acquisition/reacquisition cycle are complete. The application is usable for its qualified numerical and sentence families. A09 was executed and rejected against persistence; its older design below is historical.
