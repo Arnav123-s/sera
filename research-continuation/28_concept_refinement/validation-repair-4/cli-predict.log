@@ -1,0 +1,48 @@
+{
+  "status": "EMPIRICAL_PREDICTION",
+  "evidence_kind": "CONDITIONAL_IMAGINATION",
+  "branch": "query",
+  "subject": "body-1",
+  "position_velocity": [
+    [
+      9.972438404766997,
+      -0.2680394278952856
+    ],
+    [
+      9.959759630996299,
+      -0.25357547541395026
+    ],
+    [
+      9.947769473630808,
+      -0.23980314730982272
+    ],
+    [
+      9.936433302694475,
+      -0.2267234187266773
+    ]
+  ],
+  "commands": [
+    0.8,
+    0.8,
+    0.8,
+    0.8
+  ],
+  "model": "memory",
+  "parameter_hash": "721618619f3fc75a3eb212b66e3c0648705aef407d9e7a9244880a3d9c919478",
+  "parent_owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+  "uncertainty": {
+    "kind": "held-out observed acceleration residual, not calibrated coverage",
+    "mse": 0.00011562197130813367
+  },
+  "assumptions": [
+    "same airborne mechanism and subject",
+    "one-dimensional consistent units",
+    "gravity=1",
+    "future command executed as specified",
+    "no unmodeled contact or force change"
+  ],
+  "source_kinds": [
+    "SYNTHETIC"
+  ],
+  "occurrence_established": false
+}

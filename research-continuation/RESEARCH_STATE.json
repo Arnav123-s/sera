@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-17T07:12:30.855921+00:00",
+  "date": "2026-09-17T22:28:04.756667+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Actual-owner acquisition from real requests, exact optimizer continuation, measured successive-domain replay and useful request-file annotation; next connect corrected request entities to persistent task execution.",
+  "active_direction": "Progressively refine grounded concepts through the actual learner, keeping valid simple operators and old abilities.",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -122,6 +122,11 @@
       "status": "completed_finite_training_and_usable_annotation",
       "evidence": "26_stream_curriculum/report.md",
       "detail": "Five finite cycles, 16 terminal cohort checkpoints, four successive-domain lifetimes, one frozen official evaluation and exact selected-owner persistence."
+    },
+    {
+      "id": "28-concept-refinement",
+      "status": "integrated_and_evaluated",
+      "evidence": "28_concept_refinement/report.md"
     }
   ],
   "preserved_branches": [
@@ -142,7 +147,7 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "Use scripts/sera_annotate.py or scripts/sera_requests.py on the saved learner. For research, read 26_stream_curriculum/next-cycle.md and freeze a fresh correction-to-task stream; preserve the now-exposed MASSIVE test. Read live resource balance first.",
+  "next_action": "C03: prospectively freeze new worlds to compare complexity/adequacy selection and output-error fitting; retain this runtime and both completed cohorts",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -282,9 +287,20 @@
       "workspace": "../runs/sera-requests-live",
       "owner": "81a948e40ccd2fd1984a92667d7ba35ee8c22ec4c3555ecc32f5f48b553d9e25",
       "remaining_seconds_at_release": 1002.4911958999146
+    },
+    "concept_refinement": {
+      "report": "28_concept_refinement/report.md",
+      "owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+      "workspace": "../runs/sera-refinement-live",
+      "final_views": 216,
+      "independent_worlds": 36,
+      "optimizer_resumptions": 10,
+      "retained_tensors": 162,
+      "language_development_probes": 128,
+      "remaining_seconds_at_release": 1724.0638096000039
     }
   },
-  "latest_continuation": "26_stream_curriculum/report.md",
+  "latest_continuation": "28_concept_refinement/report.md",
   "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
   "latest_user_steering": {
     "task_time_learning": true,
@@ -294,6 +310,7 @@
     "compressed_sensing": "Read Tao and MRI primary research; investigate memory, weight networks and multiple variations with adequate controls.",
     "v5": "Prioritize actual shared-owner language/interpretation/investigation; supplied grammar, exact caching, fixed schedulers, broader-state failures and one correction must retain their explicit limits.",
     "v10": "Reconcile all v5-v10 addenda, preserve newer work and applicability, integrate actual shared-owner learned constraints, grounded acquisition and efficient settling.",
-    "capability_reporting": "Teach and evaluate before conclusions; report demonstrated acquisition and investigate finite errors without universal inability or unmatched LLM ranking."
+    "capability_reporting": "Teach and evaluate before conclusions; report demonstrated acquisition and investigate finite errors without universal inability or unmatched LLM ranking.",
+    "v13": "Read v12/v13; complete C01/C02 on actual StudyR1; test existing memory, preserve exact algebra and old language weights, distinguish empirical predictions and supplied concepts."
   }
 }

@@ -21,6 +21,7 @@ EVOLVING_FILES = {
     "research-continuation/EXPERIMENT_REGISTRY.jsonl", "research-continuation/FAILURE_LEDGER.jsonl",
     "research-continuation/DECISION_LOG.md", "research-continuation/EVIDENCE_MAP.json",
     "research-continuation/ARCHITECTURE_REGISTRY.jsonl",
+    "research-continuation/LITERATURE_LEDGER.jsonl",
 }
 
 

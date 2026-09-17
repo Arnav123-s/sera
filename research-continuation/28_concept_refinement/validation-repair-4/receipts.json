@@ -1,0 +1,77 @@
+[
+  {
+    "job": "verify_v3_release",
+    "arguments": [
+      "scripts/verify_v3_release.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.21641759999329224,
+    "log_sha256": "4957c100b50c565b674eaecbe802542c1fffdcfb2970e8162dde0fe7e94d06c0"
+  },
+  {
+    "job": "verify_transfer_release",
+    "arguments": [
+      "scripts/verify_transfer_release.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.5611407999822404,
+    "log_sha256": "fb6a30d4d12e8528920fe1d8f8b9421006ea5b2702b414065499d150ddf87543"
+  },
+  {
+    "job": "verify_continuing_release",
+    "arguments": [
+      "scripts/verify_continuing_release.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.3228071000194177,
+    "log_sha256": "a3d5484f21ad39fec040bddcf517299c8ece34842b67dd826bf4c13b0ada39c2"
+  },
+  {
+    "job": "sera-help",
+    "arguments": [
+      "-m",
+      "sera",
+      "--help"
+    ],
+    "returncode": 0,
+    "seconds": 2.166985800024122,
+    "log_sha256": "fbd00a6843e1e1ae60540ff4618667c126cf589bff8665e7ec4dba3dca16f229"
+  },
+  {
+    "job": "cli-predict",
+    "arguments": [
+      "-m",
+      "experiments.concept_refinement.runtime",
+      "predict",
+      "--commands",
+      "0.8,0.8,0.8,0.8"
+    ],
+    "returncode": 0,
+    "seconds": 9.060010500019416,
+    "log_sha256": "38a3e763e662bc577140b3a943c1fd39b63ce6185b745b1cd1b5ff009a061ba7"
+  },
+  {
+    "job": "cli-motion",
+    "arguments": [
+      "-m",
+      "experiments.concept_refinement.runtime",
+      "motion"
+    ],
+    "returncode": 0,
+    "seconds": 8.996162399998866,
+    "log_sha256": "811f990f75ffd7872c0bc8bf477ea8acc5f58fce5eb6d1dc2ffd4e8ca9002ffd"
+  },
+  {
+    "job": "cli-interpret",
+    "arguments": [
+      "-m",
+      "experiments.concept_refinement.runtime",
+      "interpret",
+      "--text",
+      "enciende las luces"
+    ],
+    "returncode": 0,
+    "seconds": 8.979318199999398,
+    "log_sha256": "8a15281476d6c9052ca2347a605179f87a966bd68a5279c7e0045b81240ba49d"
+  }
+]

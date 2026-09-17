@@ -1,0 +1,166 @@
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\runtime.py:294:38
+    |
+292 |         if args.action == "task":
+293 |             result = session.autonomous_refine(args.goal, args.subject, commands, read(args.input) if args.input else None)
+294 |         elif args.action == "observe": result = session.observe(args.subject, read(args.input))
+    |                                      ^
+295 |         elif args.action == "refine": result = session.refine(args.subject)
+296 |         elif args.action == "predict": result = session.predict(args.subject, commands)
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\runtime.py:295:37
+    |
+293 | …         result = session.autonomous_refine(args.goal, args.subject, commands, read(args.input) if args.input else None)
+294 | …     elif args.action == "observe": result = session.observe(args.subject, read(args.input))
+295 | …     elif args.action == "refine": result = session.refine(args.subject)
+    |                                   ^
+296 | …     elif args.action == "predict": result = session.predict(args.subject, commands)
+297 | …     elif args.action == "motion": result = session.exact_motion(args.coefficients.split(","), args.time, args.position, args.veloci…
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\runtime.py:296:38
+    |
+294 | …     elif args.action == "observe": result = session.observe(args.subject, read(args.input))
+295 | …     elif args.action == "refine": result = session.refine(args.subject)
+296 | …     elif args.action == "predict": result = session.predict(args.subject, commands)
+    |                                    ^
+297 | …     elif args.action == "motion": result = session.exact_motion(args.coefficients.split(","), args.time, args.position, args.veloci…
+298 | …     elif args.action == "interpret": result = session.study.interpret(args.text)
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\runtime.py:297:37
+    |
+295 | …     elif args.action == "refine": result = session.refine(args.subject)
+296 | …     elif args.action == "predict": result = session.predict(args.subject, commands)
+297 | …     elif args.action == "motion": result = session.exact_motion(args.coefficients.split(","), args.time, args.position, args.veloci…
+    |                                   ^
+298 | …     elif args.action == "interpret": result = session.study.interpret(args.text)
+299 | …     else: result = {"owner": model_identity(session.owner), "subjects": list(session.subjects), "goals": session.goals}
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\runtime.py:298:40
+    |
+296 | …     elif args.action == "predict": result = session.predict(args.subject, commands)
+297 | …     elif args.action == "motion": result = session.exact_motion(args.coefficients.split(","), args.time, args.position, args.veloci…
+298 | …     elif args.action == "interpret": result = session.study.interpret(args.text)
+    |                                      ^
+299 | …     else: result = {"owner": model_identity(session.owner), "subjects": list(session.subjects), "goals": session.goals}
+300 | …     if args.action in ("task", "observe", "refine"):
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\runtime.py:299:13
+    |
+297 | …     elif args.action == "motion": result = session.exact_motion(args.coefficients.split(","), args.time, args.position, args.veloci…
+298 | …     elif args.action == "interpret": result = session.study.interpret(args.text)
+299 | …     else: result = {"owner": model_identity(session.owner), "subjects": list(session.subjects), "goals": session.goals}
+    |           ^
+300 | …     if args.action in ("task", "observe", "refine"):
+301 | …         store.commit(session.snapshot(), previous)
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\study.py:241:32
+    |
+239 |     parser.add_argument("--arm", default="physical")
+240 |     args = parser.parse_args()
+241 |     if args.action == "prepare": prepare()
+    |                                ^
+242 |     if args.action == "train": train(args.kind, args.seed, args.pilot, args.resume)
+243 |     if args.action == "evaluate": evaluate(args.split, args.arm)
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\study.py:242:30
+    |
+240 |     args = parser.parse_args()
+241 |     if args.action == "prepare": prepare()
+242 |     if args.action == "train": train(args.kind, args.seed, args.pilot, args.resume)
+    |                              ^
+243 |     if args.action == "evaluate": evaluate(args.split, args.arm)
+244 |     if args.action == "select": select()
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\study.py:243:33
+    |
+241 |     if args.action == "prepare": prepare()
+242 |     if args.action == "train": train(args.kind, args.seed, args.pilot, args.resume)
+243 |     if args.action == "evaluate": evaluate(args.split, args.arm)
+    |                                 ^
+244 |     if args.action == "select": select()
+245 |     if args.action == "training":
+    |
+
+E701 Multiple statements on one line (colon)
+   --> experiments\concept_refinement\study.py:244:31
+    |
+242 |     if args.action == "train": train(args.kind, args.seed, args.pilot, args.resume)
+243 |     if args.action == "evaluate": evaluate(args.split, args.arm)
+244 |     if args.action == "select": select()
+    |                               ^
+245 |     if args.action == "training":
+246 |         for kind in KINDS:
+    |
+
+E701 Multiple statements on one line (colon)
+  --> tests\test_concept_refinement.py:81:27
+   |
+79 |     snapshot = copy.deepcopy(saved)
+80 |     model = snapshot["subjects"]["body-1"]["models"][0]
+81 |     if tamper == "weights": snapshot["weights"][model["weight_key"]][0] += .1
+   |                           ^
+82 |     if tamper == "tau": model["tau"] = 20
+83 |     if tamper == "history": snapshot["subjects"]["body-1"]["observations"][4]["velocity"] += .5
+   |
+
+E701 Multiple statements on one line (colon)
+  --> tests\test_concept_refinement.py:82:23
+   |
+80 |     model = snapshot["subjects"]["body-1"]["models"][0]
+81 |     if tamper == "weights": snapshot["weights"][model["weight_key"]][0] += .1
+82 |     if tamper == "tau": model["tau"] = 20
+   |                       ^
+83 |     if tamper == "history": snapshot["subjects"]["body-1"]["observations"][4]["velocity"] += .5
+84 |     if tamper == "source": snapshot["source"] = "wrong"
+   |
+
+E701 Multiple statements on one line (colon)
+  --> tests\test_concept_refinement.py:83:27
+   |
+81 |     if tamper == "weights": snapshot["weights"][model["weight_key"]][0] += .1
+82 |     if tamper == "tau": model["tau"] = 20
+83 |     if tamper == "history": snapshot["subjects"]["body-1"]["observations"][4]["velocity"] += .5
+   |                           ^
+84 |     if tamper == "source": snapshot["source"] = "wrong"
+85 |     if tamper == "extra_weight": snapshot["weights"]["unowned"] = [1, 2]
+   |
+
+E701 Multiple statements on one line (colon)
+  --> tests\test_concept_refinement.py:84:26
+   |
+82 |     if tamper == "tau": model["tau"] = 20
+83 |     if tamper == "history": snapshot["subjects"]["body-1"]["observations"][4]["velocity"] += .5
+84 |     if tamper == "source": snapshot["source"] = "wrong"
+   |                          ^
+85 |     if tamper == "extra_weight": snapshot["weights"]["unowned"] = [1, 2]
+86 |     with pytest.raises(ValueError):
+   |
+
+E701 Multiple statements on one line (colon)
+  --> tests\test_concept_refinement.py:85:32
+   |
+83 |     if tamper == "history": snapshot["subjects"]["body-1"]["observations"][4]["velocity"] += .5
+84 |     if tamper == "source": snapshot["source"] = "wrong"
+85 |     if tamper == "extra_weight": snapshot["weights"]["unowned"] = [1, 2]
+   |                                ^
+86 |     with pytest.raises(ValueError):
+87 |         RefinementSession(snapshot)
+   |
+
+Found 19 errors (4 fixed, 15 remaining).

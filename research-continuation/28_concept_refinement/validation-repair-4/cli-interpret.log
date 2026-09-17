@@ -1,0 +1,29 @@
+{
+  "text": "enciende las luces",
+  "intent": "iot_hue_lighton",
+  "intent_score": 0.8010860085487366,
+  "entities": [],
+  "tags": [
+    "O",
+    "O",
+    "O"
+  ],
+  "evidence_kind": "learned_interpretation_of_user_request",
+  "qualification": "multilingual request interpretation; qualification recorded in selected experiment",
+  "checkpoint": {
+    "path": "runs/SS-rehearsal-2721/step-002000.pt",
+    "sha256": "39631cd5fbce7693684ef02fe90f3e2ba9dc09b033cba1679c4ea286d3b6fa24"
+  },
+  "actions_executed": 0,
+  "current_owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+  "training_lineage": {
+    "parent_updates": 5400,
+    "continuation_updates": 2000,
+    "checkpoint_seen_ids_scope": "rehearsal_extension",
+    "unique_ids_in_checkpoint": 11278,
+    "new_language_ids_in_checkpoint": 3485,
+    "english_rehearsal_ids_in_checkpoint": 7793,
+    "other_ids_in_checkpoint": 0,
+    "parent_unique_training_ids": 11514
+  }
+}

@@ -47,3 +47,8 @@ select = ["E4", "E7", "E9", "F", "I"]
 "experiments/self_study/study.py" = ["I001"]
 "experiments/self_study/correction.py" = ["F401"]
 "experiments/self_study/runtime.py" = ["E741"]
+# Executed C01/C02 model/data bytes are part of the frozen checkpoint contract.
+# Keep only their pre-existing import/statement formatting; error checks still run.
+"experiments/concept_refinement/data.py" = ["I001"]
+"experiments/concept_refinement/model.py" = ["I001"]
+"experiments/concept_refinement/physical.py" = ["I001", "E702"]

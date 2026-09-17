@@ -1,0 +1,9 @@
+{"job": "verify_v3_release", "arguments": ["scripts/verify_v3_release.py"], "returncode": 1, "seconds": 0.1724263000069186, "log_sha256": "a2e7ac1a05614d5dfb0f23edb74110f172e42459a69e5da11cf7ffd742014047"}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\concept_refinement\validation.py", line 75, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\concept_refinement\validation.py", line 66, in main
+    raise RuntimeError("Preserved validation failure; inspect before continuing")
+RuntimeError: Preserved validation failure; inspect before continuing

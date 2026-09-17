@@ -1,0 +1,11 @@
+{"job": "lint", "arguments": ["-m", "ruff", "check", "src", "tests", "scripts", "experiments"], "returncode": 0, "seconds": 0.3298471000161953, "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"}
+{"job": "verify_release", "arguments": ["scripts/verify_release.py"], "returncode": 0, "seconds": 6.727818999992451, "log_sha256": "3cfff0e0ccc63a4a34ff1d1c156fc78eda0ceb2877aef9cec6925ba5091abe1f"}
+{"job": "verify_continuation", "arguments": ["scripts/verify_continuation.py"], "returncode": 1, "seconds": 1.4951473000110127, "log_sha256": "cebf12384563a5ee282a586dca0c29f9809bd5ecb58ce3f2bc3db11dead4513b"}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\concept_refinement\validation.py", line 67, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\concept_refinement\validation.py", line 58, in main
+    raise RuntimeError("Preserved validation failure; inspect before continuing")
+RuntimeError: Preserved validation failure; inspect before continuing

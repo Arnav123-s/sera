@@ -1,0 +1,838 @@
+{
+  "status": "PASS",
+  "source": "bdd1d6215b78ea6fd0cd97d8e8bd0097ff9369863e2e7a90bc349c4bb9672279",
+  "owner_before_learning": "2072e0d1b2fca494fc022ccb57cba2ab7080b00715689c554ef8584c58d05399",
+  "owner_after_first_learning": "7f337c76bc0654f24559ac06ecf976b0e2199fba4256fd11cff16419c94c86b0",
+  "final_owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+  "actual_owner_shared": true,
+  "protected_parent_tensors": 162,
+  "protected_files": {
+    "runs/sera-study-live/current.json": "a4c683c893216d81c49f716241d4c15662f71b8cbc96e954688a11567bb42633",
+    "runs/sera-study-live/revisions/000004-45d7df3f2f20.json": "45d7df3f2f209be870516fbc9dc5e0b897f9f4f47edeead2c02544ee7679c57e",
+    "runs/SS-rehearsal-2721/step-002000.pt": "39631cd5fbce7693684ef02fe90f3e2ba9dc09b033cba1679c4ea286d3b6fa24",
+    "research-continuation/27_self_study/release-manifest.json": "28d576dfb61ab39658919659bd18b53ea88c87cc47d2e6fa408f928a403d6082"
+  },
+  "four_language_logits_identical": {
+    "en-US": true,
+    "es-ES": true,
+    "fr-FR": true,
+    "de-DE": true
+  },
+  "language_probe_ids": {
+    "en-US": [
+      "8859",
+      "4175",
+      "15174",
+      "9454",
+      "8385",
+      "12550",
+      "5084",
+      "12168",
+      "4579",
+      "13806",
+      "12791",
+      "8127",
+      "10685",
+      "10751",
+      "5655",
+      "10969",
+      "15897",
+      "13938",
+      "9215",
+      "10614",
+      "541",
+      "7620",
+      "8039",
+      "5943",
+      "14218",
+      "14764",
+      "2641",
+      "3721",
+      "13836",
+      "7555",
+      "12919",
+      "16570"
+    ],
+    "es-ES": [
+      "es-ES:24",
+      "es-ES:26",
+      "es-ES:30",
+      "es-ES:42",
+      "es-ES:58",
+      "es-ES:68",
+      "es-ES:74",
+      "es-ES:90",
+      "es-ES:112",
+      "es-ES:138",
+      "es-ES:148",
+      "es-ES:188",
+      "es-ES:230",
+      "es-ES:232",
+      "es-ES:242",
+      "es-ES:298",
+      "es-ES:312",
+      "es-ES:318",
+      "es-ES:346",
+      "es-ES:368",
+      "es-ES:388",
+      "es-ES:392",
+      "es-ES:406",
+      "es-ES:434",
+      "es-ES:444",
+      "es-ES:476",
+      "es-ES:480",
+      "es-ES:490",
+      "es-ES:510",
+      "es-ES:516",
+      "es-ES:532",
+      "es-ES:534"
+    ],
+    "fr-FR": [
+      "fr-FR:24",
+      "fr-FR:26",
+      "fr-FR:30",
+      "fr-FR:42",
+      "fr-FR:58",
+      "fr-FR:68",
+      "fr-FR:74",
+      "fr-FR:90",
+      "fr-FR:112",
+      "fr-FR:138",
+      "fr-FR:148",
+      "fr-FR:188",
+      "fr-FR:230",
+      "fr-FR:232",
+      "fr-FR:242",
+      "fr-FR:298",
+      "fr-FR:312",
+      "fr-FR:318",
+      "fr-FR:346",
+      "fr-FR:368",
+      "fr-FR:388",
+      "fr-FR:392",
+      "fr-FR:406",
+      "fr-FR:434",
+      "fr-FR:444",
+      "fr-FR:476",
+      "fr-FR:480",
+      "fr-FR:490",
+      "fr-FR:510",
+      "fr-FR:516",
+      "fr-FR:532",
+      "fr-FR:534"
+    ],
+    "de-DE": [
+      "de-DE:24",
+      "de-DE:26",
+      "de-DE:30",
+      "de-DE:42",
+      "de-DE:58",
+      "de-DE:68",
+      "de-DE:74",
+      "de-DE:90",
+      "de-DE:112",
+      "de-DE:138",
+      "de-DE:148",
+      "de-DE:188",
+      "de-DE:230",
+      "de-DE:232",
+      "de-DE:242",
+      "de-DE:298",
+      "de-DE:312",
+      "de-DE:318",
+      "de-DE:346",
+      "de-DE:368",
+      "de-DE:388",
+      "de-DE:392",
+      "de-DE:406",
+      "de-DE:434",
+      "de-DE:444",
+      "de-DE:476",
+      "de-DE:480",
+      "de-DE:490",
+      "de-DE:510",
+      "de-DE:516",
+      "de-DE:532",
+      "de-DE:534"
+    ]
+  },
+  "exact_motion": {
+    "status": "VERIFIED",
+    "position": "125/4",
+    "velocity": "55/2",
+    "time": "3",
+    "position_polynomial": [
+      "5",
+      "-1",
+      "1",
+      "1/2",
+      "1/12",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "velocity_polynomial": [
+      "-1",
+      "2",
+      "3/2",
+      "1/3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "assumptions": [
+      "one dimension",
+      "supplied polynomial acceleration valid for this interval",
+      "consistent units",
+      "initial conditions at t=0"
+    ],
+    "certificates": [
+      {
+        "accepted": true,
+        "base_zero": true,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "q'(x)=p(x) for every real x and q(0)=0"
+      },
+      {
+        "accepted": true,
+        "base_zero": true,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "q'(x)=p(x) for every real x and q(0)=0"
+      }
+    ]
+  },
+  "original_research_goals_retained": [
+    "RH"
+  ],
+  "independent_final_rollouts": 216,
+  "max_independent_difference": 8.881784197001252e-15,
+  "branch_isolation": true,
+  "subject_isolation": true,
+  "observation_invalidates_model": true,
+  "previous_refinement_retained": true,
+  "weight_parameters": 15,
+  "snapshot_exact_replay": true,
+  "optimizer_resumptions": [
+    {
+      "kind": "r1_frozen",
+      "seed": 2801,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "r1_frozen",
+      "seed": 2802,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "r1_adapted",
+      "seed": 2801,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "r1_adapted",
+      "seed": 2802,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "r1_reset",
+      "seed": 2801,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "r1_reset",
+      "seed": 2802,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "gru",
+      "seed": 2801,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "gru",
+      "seed": 2802,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "window",
+      "seed": 2801,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    },
+    {
+      "kind": "window",
+      "seed": 2802,
+      "from_step": 200,
+      "to_step": 240,
+      "exact": true
+    }
+  ],
+  "live_store": "runs/sera-refinement-live",
+  "live_revisions": 2,
+  "example_task": {
+    "task": {
+      "subject": "body-1",
+      "commands": [
+        0.8,
+        0.9610544218094228,
+        1.046362432497115,
+        1.0158023416622186,
+        0.8837470375389763,
+        0.7123041930775951,
+        0.5821060568966031,
+        0.5543868468439169,
+        0.6421833405319196,
+        0.8042034751210875,
+        0.9642466496796973,
+        1.0470420584692501
+      ]
+    },
+    "attempts": [
+      {
+        "before": {
+          "status": "MISSING_KNOWLEDGE",
+          "needed": "observations and an admitted empirical fit"
+        },
+        "acquisition": {
+          "status": "OBSERVATIONS_RETAINED",
+          "observations": 81
+        },
+        "learning": {
+          "status": "EMPIRICAL_MODEL_LEARNED",
+          "model": {
+            "kind": "memory",
+            "tau": 1.0,
+            "coef": [
+              1.221107577435388,
+              -0.10642574204448596,
+              0.1807131746735533,
+              0.7721532496806874,
+              0.08381164537537075
+            ],
+            "observed_transitions": 80,
+            "validation_transitions": 16,
+            "design_rank": 5,
+            "optimality": 2.608717853759897e-14,
+            "selection_validation_mse": 0.00015705419140422223,
+            "validation_mse_after_refit_is_not_independent": 1.1190888130804217e-05,
+            "candidates": [
+              {
+                "kind": "coarse",
+                "tau": null,
+                "coef": [
+                  1.582369239025326,
+                  0.45944261743345577
+                ],
+                "validation_mse": 0.009305108397095842,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 2,
+                "optimality": 6.773851339870005e-15
+              },
+              {
+                "kind": "instant",
+                "tau": null,
+                "coef": [
+                  1.5847488269482106,
+                  0.4254616359448725,
+                  0.0339861398347141
+                ],
+                "validation_mse": 0.008912169903243812,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 3,
+                "optimality": 1.719814336881949e-14
+              },
+              {
+                "kind": "memory",
+                "tau": 0.1,
+                "coef": [
+                  1.5059345256896015,
+                  0.4721060503054512,
+                  8.504485634116393e-17,
+                  0.04373511236542035,
+                  -0.38225486426667404
+                ],
+                "validation_mse": 0.007639747419019797,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 9.447552617219321e-11
+              },
+              {
+                "kind": "memory",
+                "tau": 0.15,
+                "coef": [
+                  1.4861916652055098,
+                  0.48056696207493027,
+                  0.05461415509585508,
+                  2.985332866421283e-24,
+                  -0.43371894958161566
+                ],
+                "validation_mse": 0.007788892578035375,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 5.927997870769563e-15
+              },
+              {
+                "kind": "memory",
+                "tau": 0.25,
+                "coef": [
+                  1.4443518296891293,
+                  0.4791876137930039,
+                  0.09509883056968045,
+                  3.3993002482104925e-27,
+                  -0.44711559424550124
+                ],
+                "validation_mse": 0.007961254135882563,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 6.151333586721092e-16
+              },
+              {
+                "kind": "memory",
+                "tau": 0.4,
+                "coef": [
+                  1.4118656121795428,
+                  0.46024038520712635,
+                  0.16188792096379975,
+                  3.754626674642319e-08,
+                  -0.468833451670528
+                ],
+                "validation_mse": 0.009360615870498891,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 2.156034907167222e-11
+              },
+              {
+                "kind": "memory",
+                "tau": 0.65,
+                "coef": [
+                  1.2754236373586778,
+                  0.2158192096972643,
+                  0.12676655194887887,
+                  0.39575928146669165,
+                  -0.19275825019581935
+                ],
+                "validation_mse": 0.0013112091608928865,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 2.888655700511222e-14
+              },
+              {
+                "kind": "memory",
+                "tau": 1.0,
+                "coef": [
+                  1.1947356417668111,
+                  -0.17353612059771045,
+                  0.17383254593059116,
+                  0.8632346655395504,
+                  0.14773512068253075
+                ],
+                "validation_mse": 0.00015705419140422223,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 6.0598431923104155e-15
+              },
+              {
+                "kind": "memory",
+                "tau": 1.6,
+                "coef": [
+                  1.2135706729113276,
+                  -0.4999999999996688,
+                  0.26916104825241177,
+                  1.2415187823571734,
+                  0.39527828858988173
+                ],
+                "validation_mse": 0.00018426731653755957,
+                "observed_transitions": 48,
+                "validation_transitions": 16,
+                "design_rank": 5,
+                "optimality": 2.327638679400702e-15
+              }
+            ],
+            "weight_key": "85e08f281bf3d004_0000",
+            "parameter_hash": "6451336e71b04547c360390e350d4779f9f436a814cb413fc48d98d35321e7b1",
+            "subject": "body-1",
+            "variables": [
+              "position",
+              "velocity",
+              "command",
+              "relaxing_force_if_supported"
+            ],
+            "units": [
+              "m",
+              "m/s",
+              "1"
+            ],
+            "scale": {
+              "dt": 0.05,
+              "maximum_horizon_steps": 12,
+              "gravity": 1.0
+            },
+            "evidence_hash": "3ccaf3262d15741e9ee7a19833344c4d309d3ce1ad39fa2f0aa352f4e3f81b26",
+            "parent_approximation": null,
+            "evidence_end": 4.0,
+            "unresolved_obligations": [
+              "physical premises",
+              "omitted mechanisms",
+              "uncalibrated uncertainty"
+            ],
+            "temporal_state": {
+              "force_estimate": 0.40609304772891425,
+              "history_length": 81
+            },
+            "provenance": [
+              "SYNTHETIC"
+            ]
+          }
+        },
+        "after": {
+          "status": "EMPIRICAL_PREDICTION",
+          "evidence_kind": "CONDITIONAL_IMAGINATION",
+          "branch": "query",
+          "subject": "body-1",
+          "position_velocity": [
+            [
+              9.985826918300088,
+              -0.28346163399825974
+            ],
+            [
+              9.97294367537549,
+              -0.2576648584919672
+            ],
+            [
+              9.961577252935268,
+              -0.22732844880443642
+            ],
+            [
+              9.951597497238065,
+              -0.19959511394402493
+            ],
+            [
+              9.942563862384661,
+              -0.18067269706806702
+            ],
+            [
+              9.933918144574006,
+              -0.1729143562131117
+            ],
+            [
+              9.92523259451121,
+              -0.17371100125592584
+            ],
+            [
+              9.916396748011024,
+              -0.1767169300036857
+            ],
+            [
+              9.907655134730703,
+              -0.17483226560644233
+            ],
+            [
+              9.89947815744945,
+              -0.16353954562508324
+            ],
+            [
+              9.892326894987532,
+              -0.14302524923834276
+            ],
+            [
+              9.886422469446611,
+              -0.11808851081841296
+            ]
+          ],
+          "commands": [
+            0.8,
+            0.9610544218094228,
+            1.046362432497115,
+            1.0158023416622186,
+            0.8837470375389763,
+            0.7123041930775951,
+            0.5821060568966031,
+            0.5543868468439169,
+            0.6421833405319196,
+            0.8042034751210875,
+            0.9642466496796973,
+            1.0470420584692501
+          ],
+          "model": "memory",
+          "parameter_hash": "6451336e71b04547c360390e350d4779f9f436a814cb413fc48d98d35321e7b1",
+          "parent_owner": "7f337c76bc0654f24559ac06ecf976b0e2199fba4256fd11cff16419c94c86b0",
+          "uncertainty": {
+            "kind": "held-out observed acceleration residual, not calibrated coverage",
+            "mse": 0.00015705419140422223
+          },
+          "assumptions": [
+            "same airborne mechanism and subject",
+            "one-dimensional consistent units",
+            "gravity=1",
+            "future command executed as specified",
+            "no unmodeled contact or force change"
+          ],
+          "source_kinds": [
+            "SYNTHETIC"
+          ],
+          "occurrence_established": false
+        }
+      }
+    ],
+    "status": "EMPIRICAL_PREDICTION"
+  },
+  "updated_model": {
+    "status": "EMPIRICAL_MODEL_LEARNED",
+    "model": {
+      "kind": "memory",
+      "tau": 1.6,
+      "coef": [
+        1.2464193709729836,
+        -0.4130139540674178,
+        0.23384575300135985,
+        1.1297607191186128,
+        0.39966285942088536
+      ],
+      "observed_transitions": 80,
+      "validation_transitions": 16,
+      "design_rank": 5,
+      "optimality": 2.6844386353949363e-14,
+      "selection_validation_mse": 0.00011562197130813367,
+      "validation_mse_after_refit_is_not_independent": 0.00016747481993217796,
+      "candidates": [
+        {
+          "kind": "coarse",
+          "tau": null,
+          "coef": [
+            1.5609854508669911,
+            0.47624928660784616
+          ],
+          "validation_mse": 0.011887189423569523,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 2,
+          "optimality": 2.595767476370331e-14
+        },
+        {
+          "kind": "instant",
+          "tau": null,
+          "coef": [
+            1.562421306505835,
+            0.4500398373067387,
+            0.026600019398332397
+          ],
+          "validation_mse": 0.01108185192003185,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 3,
+          "optimality": 7.202231049855093e-15
+        },
+        {
+          "kind": "memory",
+          "tau": 0.1,
+          "coef": [
+            1.4886507810114964,
+            0.48282068795202654,
+            8.29163181157414e-16,
+            0.04590286079258136,
+            -0.3279023399115525
+          ],
+          "validation_mse": 0.010044271285100131,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 6.002330107789445e-08
+        },
+        {
+          "kind": "memory",
+          "tau": 0.15,
+          "coef": [
+            1.4724914011264123,
+            0.48662265071184946,
+            0.05917807736383645,
+            7.958689997770358e-18,
+            -0.383499124989415
+          ],
+          "validation_mse": 0.010203291336546894,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 4.341590963571528e-09
+        },
+        {
+          "kind": "memory",
+          "tau": 0.25,
+          "coef": [
+            1.4364185124378308,
+            0.48004872931460757,
+            0.10099634471541202,
+            2.2582653682999065e-20,
+            -0.39927234784941024
+          ],
+          "validation_mse": 0.010142001497498115,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 7.728148616312135e-12
+        },
+        {
+          "kind": "memory",
+          "tau": 0.4,
+          "coef": [
+            1.390153546282484,
+            0.43943442920939507,
+            0.13646267481357638,
+            0.056209172798602436,
+            -0.3785618449818368
+          ],
+          "validation_mse": 0.009143946731091325,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 1.8336683482214337e-14
+        },
+        {
+          "kind": "memory",
+          "tau": 0.65,
+          "coef": [
+            1.2642258603434158,
+            0.19599037815904247,
+            0.117978671044112,
+            0.4296833225581862,
+            -0.12533854669338348
+          ],
+          "validation_mse": 0.001059031241387902,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 3.472808488851962e-14
+        },
+        {
+          "kind": "memory",
+          "tau": 1.0,
+          "coef": [
+            1.1980459136363,
+            -0.16395274501418122,
+            0.17536476838027215,
+            0.8503170220023251,
+            0.17131721333628655
+          ],
+          "validation_mse": 0.00012910270230960454,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 3.4378936202842155e-14
+        },
+        {
+          "kind": "memory",
+          "tau": 1.6,
+          "coef": [
+            1.2164250154194445,
+            -0.49999999999997924,
+            0.26339706489232856,
+            1.238839063067429,
+            0.4309704033553654
+          ],
+          "validation_mse": 0.00011562197130813367,
+          "observed_transitions": 48,
+          "validation_transitions": 16,
+          "design_rank": 5,
+          "optimality": 3.0774530302235425e-15
+        }
+      ],
+      "weight_key": "85e08f281bf3d004_0001",
+      "parameter_hash": "721618619f3fc75a3eb212b66e3c0648705aef407d9e7a9244880a3d9c919478",
+      "subject": "body-1",
+      "variables": [
+        "position",
+        "velocity",
+        "command",
+        "relaxing_force_if_supported"
+      ],
+      "units": [
+        "m",
+        "m/s",
+        "1"
+      ],
+      "scale": {
+        "dt": 0.05,
+        "maximum_horizon_steps": 12,
+        "gravity": 1.0
+      },
+      "evidence_hash": "09ba0f295e43354c025a43892836fbff2ff2ccaaeabd1f99d326742b6d63a883",
+      "parent_approximation": 0,
+      "evidence_end": 4.05,
+      "unresolved_obligations": [
+        "physical premises",
+        "omitted mechanisms",
+        "uncalibrated uncertainty"
+      ],
+      "temporal_state": {
+        "force_estimate": 0.6527160767057082,
+        "history_length": 81
+      },
+      "provenance": [
+        "SYNTHETIC"
+      ]
+    }
+  }
+}

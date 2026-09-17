@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\concept_refinement\packet_portability.py", line 88, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\concept_refinement\packet_portability.py", line 64, in main
+    assert actual == read_json(packet / "results" / f"{name}.json")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

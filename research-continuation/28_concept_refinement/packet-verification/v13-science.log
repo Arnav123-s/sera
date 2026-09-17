@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\research\intake\v13-continuation-20260917\SERA_v13\code\conceptlab\verify.py", line 59, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--output',type=Path);a=p.parse_args();r=all_checks()
+                                                                                        ^^^^^^^^^^^^
+  File "D:\ai\projects\sera\research\intake\v13-continuation-20260917\SERA_v13\code\conceptlab\verify.py", line 48, in all_checks
+    results['neural']=reservoir.verify(ROOT/'results/neural',save=False)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\research\intake\v13-continuation-20260917\SERA_v13\code\conceptlab\reservoir.py", line 123, in verify
+    if not np.allclose(p,preds[split],atol=2e-6,rtol=2e-6):raise AssertionError('torch replay')
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: torch replay

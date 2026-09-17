@@ -1,0 +1,50 @@
+{
+  "kind": "gru",
+  "seed": 2801,
+  "updates": 240,
+  "before_dev_mse": 0.36856532096862793,
+  "best_dev_mse": 0.03853454813361168,
+  "logs": [
+    {
+      "step": 40,
+      "train_loss": 0.14624564349651337,
+      "dev_mse": 0.21403944492340088,
+      "elapsed_seconds": 0.4290706999890972
+    },
+    {
+      "step": 80,
+      "train_loss": 0.08958958089351654,
+      "dev_mse": 0.08171188831329346,
+      "elapsed_seconds": 0.8937212000018917
+    },
+    {
+      "step": 120,
+      "train_loss": 0.07367346435785294,
+      "dev_mse": 0.05713905394077301,
+      "elapsed_seconds": 1.325562899990473
+    },
+    {
+      "step": 160,
+      "train_loss": 0.059798721224069595,
+      "dev_mse": 0.04756217449903488,
+      "elapsed_seconds": 1.7633832999854349
+    },
+    {
+      "step": 200,
+      "train_loss": 0.0587463453412056,
+      "dev_mse": 0.039272598922252655,
+      "elapsed_seconds": 2.209136099991156
+    },
+    {
+      "step": 240,
+      "train_loss": 0.01620466634631157,
+      "dev_mse": 0.03853454813361168,
+      "elapsed_seconds": 2.6496222999994643
+    }
+  ],
+  "protected_tensors": 162,
+  "trainable_parameters": 22178,
+  "conditional_memory_parameters": [],
+  "wall_seconds": 2.752325799985556,
+  "checkpoint_sha256": "0b1e21cb7072d9cf235a0337b9bf8a107b5dbc1f0fb776189d26830c487acac1"
+}

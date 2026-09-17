@@ -12,6 +12,7 @@ I am building one persistent learner that acquires executable knowledge, imagine
 
 | Task | Saved learner and instructions | Evidence |
 |---|---|---|
+| Learn motion dynamics from observed histories, refine them after new evidence and forecast conditional trajectories | [Empirical concept refinement](research-continuation/28_concept_refinement/README.md) | C01/C02: 95.90% lower delayed-system MSE than instantaneous identification; 216 independently replayed forecasts; retained mathematics and four-language weights |
 | Learn checked equations from arXiv, retain corrected operators and calculate polynomial motion | [Continuing study learner](research-continuation/27_self_study/README.md) |256/256 polynomial and64/64 motion checks;128/128 fresh correction-transfer problems |
 | Interpret Spanish, French and German requests with the continuing owner | [Language acquisition and retention](research-continuation/27_self_study/report.md) |63.13%,66.88%,61.88% final intent accuracy;78.75% English development retention after rehearsal |
 | Label English requests and extract entities into a local file | [Request annotation](research-continuation/26_stream_curriculum/README.md) | 11,514 teaching requests; 74.54% intent accuracy, 50.20% entity-span F1 and 41.14% exact frames on 2,973 eligible held-out requests |
@@ -20,7 +21,7 @@ I am building one persistent learner that acquires executable knowledge, imagine
 | Learn finite mathematical instruction forms and execute checked programs | [Grounded language](research-continuation/21_grounded_language/README.md) | 1,536/1,536 familiar-form held-out instructions per retained-core model; continuing task-time lessons |
 | Process numerical data and continue adaptive simulated control | [Local workbench](research-continuation/20_live_workbench/README.md) | Held-out task checks, persistent revisions, observed corrections and guarded reuse |
 
-The results apply to the taught tasks and stated evaluation protocols. Source labels, finite grammars, simulators, independent checkers and learning schedules are documented engineering inputs. Learned mappings and retained updates are reported separately. [The latest report](research-continuation/27_self_study/report.md) includes every comparison, failed candidate, exclusion and cost; completed final evaluation partitions remain closed to further tuning.
+The results apply to the taught tasks and stated evaluation protocols. Source labels, finite grammars, simulators, independent checkers and learning schedules are documented engineering inputs. Learned mappings and retained updates are reported separately. [The latest report](research-continuation/28_concept_refinement/report.md) includes comparisons, the preserved teacher defect, repairs and costs; completed final evaluation partitions remain closed to further tuning.
 
 ## Use the prepared local workspace
 

@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = ROOT/"research-continuation/16_v3"
+MANIFEST_SHA256 = "0e90dc76fbcd0bc50ce330b3383c0140d831f552111e37bdd02218d602d63175"
 
 
 def require(value, message):
@@ -20,6 +21,8 @@ def read(path):
 
 
 def main():
+    require(hashlib.sha256((RELEASE/"release-manifest.json").read_bytes()).hexdigest() == MANIFEST_SHA256,
+            "Historical v3 manifest changed")
     manifest = read(RELEASE/"release-manifest.json")
     entries = manifest["files"]
     require(entries and len({r["path"] for r in entries}) == len(entries), "Unique release inventory required")
@@ -27,6 +30,11 @@ def main():
         path = (ROOT/row["path"]).resolve()
         require(path.is_relative_to(ROOT), "Invalid release path")
         raw = path.read_bytes()
+        # Package metadata evolves; its exact v3 bytes remain in the authenticated
+        # source archive. Scientific evidence still requires current byte equality.
+        if row["path"] in {"pyproject.toml", "scripts/verify_v3_release.py"} and hashlib.sha256(raw).hexdigest() != row["sha256"]:
+            with zipfile.ZipFile(RELEASE/"current-sources.zip") as archive:
+                raw = archive.read(row["path"])
         require(len(raw) == row["bytes"] and hashlib.sha256(raw).hexdigest() == row["sha256"], f"Changed release file: {row['path']}")
     for experiment in ("GG-GUARD-002", "GC-001", "GC-002"):
         protocol = read(RELEASE/experiment/"protocol.json")

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "ruff",
+    "format",
+    "experiments/concept_refinement/common.py",
+    "experiments/concept_refinement/study.py",
+    "experiments/concept_refinement/runtime.py",
+    "experiments/concept_refinement/audit.py",
+    "experiments/concept_refinement/packet_verify.py",
+    "experiments/concept_refinement/packet_portability.py",
+    "experiments/concept_refinement/packet_finish.py",
+    "scripts/run_concept_bounded.py",
+    "tests/test_concept_refinement.py"
+  ],
+  "reserved_seconds": 20.0,
+  "charged_seconds": 0.18353379998006858,
+  "memory_limit_bytes": 2147483648,
+  "peak_job_committed_bytes": 78053376,
+  "peak_process_committed_bytes": 69079040,
+  "observed_process_ids": [
+    11288,
+    13680
+  ],
+  "worker_threads": 1,
+  "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+  "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+  "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+  "child_pid": 13680,
+  "returncode": 0,
+  "log_sha256": "e024a3e2c53a92d170403c32ce1a67e1d02ad31affd468cfd68c3562a0edd718"
+}

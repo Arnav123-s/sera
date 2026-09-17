@@ -1,0 +1,138 @@
+{
+  "contracts": {
+    "parent": "45d7df3f2f209be870516fbc9dc5e0b897f9f4f47edeead2c02544ee7679c57e",
+    "protocol": "6a6b8a10132fb56b2ba304ad623cc06bd8b03a043dfff9afc04ffd26e3b8b5b8",
+    "data.py": "ca8d5a2626e9e5efb636a164c48a512b4e0d203327f02e7eaac64bdfd10c5cc4",
+    "model.py": "783906849837838ba1df83bb409cea22f440cb2fc9da8e91d57e08dd04220196",
+    "physical.py": "d0648bbbc4f1a72fb386ff2e13747486d12859452f61aa35f1b4c7fd71d3374e"
+  },
+  "selected": "physical",
+  "candidates": {
+    "physical": {
+      "checks": {
+        "delayed_improvement": true,
+        "history_sign": true,
+        "simple_retention": true,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": true
+    },
+    "r1_frozen-2801": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "r1_frozen-2802": {
+      "checks": {
+        "delayed_improvement": true,
+        "history_sign": true,
+        "simple_retention": true,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": true
+    },
+    "r1_adapted-2801": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": true,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "r1_adapted-2802": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": true,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "r1_reset-2801": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "r1_reset-2802": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "gru-2801": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "gru-2802": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "window-2801": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    },
+    "window-2802": {
+      "checks": {
+        "delayed_improvement": false,
+        "history_sign": false,
+        "simple_retention": false,
+        "noisy": true,
+        "missing": true
+      },
+      "admitted": false
+    }
+  },
+  "development_receipts": {
+    "dev-coarse.json": "bacaac7943c64f7c088362a125c8a7eec253dc7365b9b0ecb4132a99739e19f3",
+    "dev-gru-2801.json": "c61311a4572cae10f4b469369288f9e259e104564808d22e488bacd9f826c9d8",
+    "dev-gru-2802.json": "43aebff3dbb70861e0cfe4d9f76b59ceb7ebc1fb57f401bd07c8ff8a85c991d8",
+    "dev-instant.json": "984e739a08ff5fa7e983ca95363501efaa2fe869c939e9a4a4ee242491a17e32",
+    "dev-memory.json": "5422365f938df631b74eddf9f636e654b876dad9d3555392b06ef23daf1bb2cf",
+    "dev-physical.json": "fe2a03cd275de851e50a17c0d97c190e738b2f13a2bf06fa774024cadaf3a315",
+    "dev-r1_adapted-2801.json": "e40e84568e5a917acf4b1535f0d2784aa0137425bf118c995b20701ba924700a",
+    "dev-r1_adapted-2802.json": "3ebbedcc7ee5543db97ee2794336a75a6d0426bd0336df8b9f6887702517ece6",
+    "dev-r1_frozen-2801.json": "ad1d7a893b7db7abe1e8f8f5607f0a158fee945e140eea63003406b55ecb8d12",
+    "dev-r1_frozen-2802.json": "cbe5260bc3f77f3f33d8603e4888c2364c69ad4c7e33a848cc34f9fca81eb65a",
+    "dev-r1_reset-2801.json": "2392d34ccfb664d91e3ca928a759d0e81ef74f64e8ed1606b1efb032eaad73b9",
+    "dev-r1_reset-2802.json": "7231f597d7db7726452c570392a207d51c7ae285e78a09dc459468449244a1da",
+    "dev-window-2801.json": "b3164dd78906818f2369daa1ef3bd4fc1754dc58a01c16e3805d70e24e0745ad",
+    "dev-window-2802.json": "42410538c182a57d9c8482945cf09a4bf8d3c1d829d9853d3708833609225382"
+  }
+}

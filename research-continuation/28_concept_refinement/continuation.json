@@ -1,0 +1,38 @@
+{
+  "stage": "C01/C02",
+  "status": "integrated_and_evaluated",
+  "date": "2026-09-17T22:28:04.756667+00:00",
+  "parent_head": "9da1b21b06da4504d7d2b83777d69e874d4caeff",
+  "actual_owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+  "live_store": "runs/sera-refinement-live",
+  "live_pointer_sha256": "bfa791056023b2d9b760ccb7006fd35db0166f2c2cf1b67496d44094a3f0df13",
+  "source": "bdd1d6215b78ea6fd0cd97d8e8bd0097ff9369863e2e7a90bc349c4bb9672279",
+  "contracts": {
+    "parent": "45d7df3f2f209be870516fbc9dc5e0b897f9f4f47edeead2c02544ee7679c57e",
+    "protocol": "6a6b8a10132fb56b2ba304ad623cc06bd8b03a043dfff9afc04ffd26e3b8b5b8",
+    "repair": "e3bea9909bb9c7f7dfd7a679b1dca563b549b40a8db635a244b42743cb6068f8",
+    "data.py": "212710be180471104c2dd4f7e64d7df92f7026be7bb692c4d1ad26afde8a99e6",
+    "model.py": "783906849837838ba1df83bb409cea22f440cb2fc9da8e91d57e08dd04220196",
+    "physical.py": "d0648bbbc4f1a72fb386ff2e13747486d12859452f61aa35f1b4c7fd71d3374e"
+  },
+  "remaining_seconds_at_seal": 1724.0638096000039,
+  "new_allowance_granted": false,
+  "owned_jobs": "all settled; no other jobs stopped",
+  "sealed_final": "runs/CR-study-r2/final.json; do not use for tuning",
+  "completed_training": [
+    "gru-2801",
+    "gru-2802",
+    "r1_adapted-2801",
+    "r1_adapted-2802",
+    "r1_frozen-2801",
+    "r1_frozen-2802",
+    "r1_reset-2801",
+    "r1_reset-2802",
+    "window-2801",
+    "window-2802"
+  ],
+  "next_executable_action": ".venv/Scripts/python.exe scripts/run_concept_bounded.py --seconds 60 --output runs/CR-next-use-001 --module experiments.concept_refinement.runtime -- predict --subject body-1 --commands 0.8,0.8,0.8,0.8",
+  "next_research_package": "C03: prospectively freeze new worlds to compare complexity/adequacy selection and output-error fitting; retain this runtime and both completed cohorts",
+  "resume_training": "No incomplete fit; each corrected run retains step-0240.pt with optimizer/RNG state, and selected.pt. Ten exact resumptions passed.",
+  "resume_runtime": "Restore the checksummed current.json revision through RefinementSession; observe later measurements, refine, then retry the unchanged task."
+}

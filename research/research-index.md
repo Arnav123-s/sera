@@ -8,6 +8,9 @@ single aggregate benchmark.
 
 ## Current starting points
 
+- [Use observed-history learning, correction and conditional forecasts](../research-continuation/28_concept_refinement/README.md).
+- [Read v13 C01/C02 comparisons and actual-owner verification](../research-continuation/28_concept_refinement/report.md).
+- [Audit alignment with v12/v13 and preserve exact continuation](../research-continuation/28_concept_refinement/architecture-audit.md).
 - [Use the source-learning and four-language successor](../research-continuation/27_self_study/README.md).
 - [Read its measured acquisition, retention and correction results](../research-continuation/27_self_study/report.md).
 - [Audit v11 integration and preserve exact continuation](../research-continuation/27_self_study/architecture-audit.md).

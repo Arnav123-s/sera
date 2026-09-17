@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\ai\projects\sera\scripts\verify_v3_release.py", line 66, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\verify_v3_release.py", line 35, in main
+    require(len(raw) == row["bytes"] and hashlib.sha256(raw).hexdigest() == row["sha256"], f"Changed release file: {row['path']}")
+  File "D:\ai\projects\sera\scripts\verify_v3_release.py", line 15, in require
+    raise ValueError(message)
+ValueError: Changed release file: scripts/verify_v3_release.py

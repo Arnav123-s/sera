@@ -1,0 +1,57 @@
+{
+  "kind": "r1_adapted",
+  "seed": 2802,
+  "updates": 240,
+  "before_dev_mse": 0.2538436949253082,
+  "best_dev_mse": 0.02196001447737217,
+  "logs": [
+    {
+      "step": 40,
+      "train_loss": 0.07223618030548096,
+      "dev_mse": 0.07684503495693207,
+      "elapsed_seconds": 6.113109700003406
+    },
+    {
+      "step": 80,
+      "train_loss": 0.04645881801843643,
+      "dev_mse": 0.058974940329790115,
+      "elapsed_seconds": 10.963633400009712
+    },
+    {
+      "step": 120,
+      "train_loss": 0.04348187893629074,
+      "dev_mse": 0.06638167053461075,
+      "elapsed_seconds": 15.683459899999434
+    },
+    {
+      "step": 160,
+      "train_loss": 0.06022484973073006,
+      "dev_mse": 0.030110513791441917,
+      "elapsed_seconds": 20.41335459999391
+    },
+    {
+      "step": 200,
+      "train_loss": 0.02243804931640625,
+      "dev_mse": 0.02819925546646118,
+      "elapsed_seconds": 25.337609800015343
+    },
+    {
+      "step": 240,
+      "train_loss": 0.016470085829496384,
+      "dev_mse": 0.02196001447737217,
+      "elapsed_seconds": 30.098114599997643
+    }
+  ],
+  "protected_tensors": 162,
+  "trainable_parameters": 30657,
+  "conditional_memory_parameters": [
+    "memory.cores.delta.key.weight",
+    "memory.cores.delta.query.weight",
+    "memory.cores.delta.value.weight",
+    "memory.cores.delta.gates.weight",
+    "memory.cores.delta.output.weight",
+    "fusion.0.weight"
+  ],
+  "wall_seconds": 30.207027900003595,
+  "checkpoint_sha256": "968ecc5e3179244e2cdd469062015beb38156bc1232e142cde05d7731637da0b"
+}

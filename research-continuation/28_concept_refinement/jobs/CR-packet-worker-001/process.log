@@ -1,0 +1,11 @@
+{"version": 13, "job": "manifest", "returncode": 0, "wall_seconds": 22.497260500007542}
+{"version": 13, "job": "tests", "returncode": 0, "wall_seconds": 6.115087599988328}
+{"version": 13, "job": "science", "returncode": 1, "wall_seconds": 7.989364299981389}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\concept_refinement\packet_verify.py", line 57, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\concept_refinement\packet_verify.py", line 43, in main
+    raise RuntimeError("Preserve and inspect the failed verification; do not silently change tolerances")
+RuntimeError: Preserve and inspect the failed verification; do not silently change tolerances

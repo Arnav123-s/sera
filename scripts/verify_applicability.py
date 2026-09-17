@@ -13,6 +13,7 @@ RELEASE = ROOT/"research-continuation/15_applicability"
 HISTORICAL_COMMIT = "9104839400d5053152ca423be6da1efe355aa71a"
 MANIFEST_SHA256 = "26efe2ff94833bc92d63d9ff09dbd571065f8e0964a97dcdb8f2079d18e83a7e"
 EVOLVING_FILES = {
+    "scripts/verify_continuation.py",
     "README.md", "scripts/verify_applicability.py", ".github/workflows/ci.yml",
     "research-continuation/DECISION_LOG.md", "research-continuation/EVIDENCE_LEDGER.jsonl",
     "research-continuation/EVIDENCE_MAP.json", "research-continuation/EXPERIMENT_REGISTRY.jsonl",

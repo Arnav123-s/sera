@@ -1,0 +1,621 @@
+{
+  "arm": "r1_adapted-2801",
+  "split": "dev",
+  "metrics": {
+    "simple/clean": {
+      "1": {
+        "position_rmse": 0.00020350132134599327,
+        "velocity_rmse": 0.0040700264269183,
+        "mse": 8.303263951801456e-06
+      },
+      "4": {
+        "position_rmse": 0.0016488069465852473,
+        "velocity_rmse": 0.012775981936878148,
+        "mse": 8.297213939927224e-05
+      },
+      "12": {
+        "position_rmse": 0.010051567003813598,
+        "velocity_rmse": 0.030435917347621327,
+        "mse": 0.0005136895320116954
+      },
+      "pairs": [
+        {
+          "truth": 0.0,
+          "prediction": 0.015764761192258447,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.01474077229067916,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.01408668770454824,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.03696768928784877,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.10056322562741116,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.05946929799392825,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": -0.02236551372334361,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.0627125758328475,
+          "eligible": false,
+          "sign_correct": false
+        }
+      ],
+      "pair_sign_accuracy": null
+    },
+    "simple/noisy": {
+      "1": {
+        "position_rmse": 0.0002021955707408381,
+        "velocity_rmse": 0.004043911414815597,
+        "mse": 8.197051289851546e-06
+      },
+      "4": {
+        "position_rmse": 0.0016380201286490899,
+        "velocity_rmse": 0.012702609233359806,
+        "mse": 8.201969563864867e-05
+      },
+      "12": {
+        "position_rmse": 0.009982782897214004,
+        "velocity_rmse": 0.030258544509501592,
+        "mse": 0.0005076177351031987
+      },
+      "pairs": [
+        {
+          "truth": 0.0,
+          "prediction": 0.014862146752420813,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.013020123646128923,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.015890288865193725,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.035411284130532295,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.09976768713386264,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.05913090554531669,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": -0.01926498745160643,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.06259153899736702,
+          "eligible": false,
+          "sign_correct": false
+        }
+      ],
+      "pair_sign_accuracy": null
+    },
+    "simple/missing": {
+      "1": {
+        "position_rmse": 0.00028085671427616877,
+        "velocity_rmse": 0.005617134285521017,
+        "mse": 1.5815539037764853e-05
+      },
+      "4": {
+        "position_rmse": 0.0020844216182564143,
+        "velocity_rmse": 0.015782334748517243,
+        "mse": 0.00012671345179845475
+      },
+      "12": {
+        "position_rmse": 0.013744200458964817,
+        "velocity_rmse": 0.03965586299147027,
+        "mse": 0.0008807452579272347
+      },
+      "pairs": [
+        {
+          "truth": 0.0,
+          "prediction": -0.07695647861692123,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": -0.010969215945806354,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.01617863599676639,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": -0.01052975806305767,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.049907274544239044,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.0428019436076284,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": -0.012678188155405223,
+          "eligible": false,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.0,
+          "prediction": 0.06276645735488273,
+          "eligible": false,
+          "sign_correct": false
+        }
+      ],
+      "pair_sign_accuracy": null
+    },
+    "delayed/clean": {
+      "1": {
+        "position_rmse": 0.0002771806793881777,
+        "velocity_rmse": 0.005543613587763946,
+        "mse": 1.5404240369733575e-05
+      },
+      "4": {
+        "position_rmse": 0.002789985325590596,
+        "velocity_rmse": 0.022187209677736654,
+        "mse": 0.0002500281457004309
+      },
+      "12": {
+        "position_rmse": 0.01885053143280381,
+        "velocity_rmse": 0.055197571246866965,
+        "mse": 0.0017010572034260399
+      },
+      "pairs": [
+        {
+          "truth": 0.07175434146313614,
+          "prediction": 0.04448332957690582,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.02820271534295485,
+          "prediction": 0.18610088000423275,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.0020456816149086454,
+          "prediction": -0.023883159148681443,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.07548644606338234,
+          "prediction": 0.07944888142810669,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.012561439362989646,
+          "prediction": 0.03760703906300478,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.015036895203572681,
+          "prediction": -0.12250889340066351,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.008741404104819772,
+          "prediction": 0.004617063328623772,
+          "eligible": true,
+          "sign_correct": false
+        },
+        {
+          "truth": -0.014757046324396061,
+          "prediction": -0.0631899880245328,
+          "eligible": true,
+          "sign_correct": true
+        }
+      ],
+      "pair_sign_accuracy": 0.875
+    },
+    "delayed/noisy": {
+      "1": {
+        "position_rmse": 0.0002759957432969636,
+        "velocity_rmse": 0.005519914865937488,
+        "mse": 1.527281688875786e-05
+      },
+      "4": {
+        "position_rmse": 0.0027758863833721873,
+        "velocity_rmse": 0.022072152495271145,
+        "mse": 0.0002474427304939476
+      },
+      "12": {
+        "position_rmse": 0.018760218734414535,
+        "velocity_rmse": 0.054956176483055036,
+        "mse": 0.0016860635702998844
+      },
+      "pairs": [
+        {
+          "truth": 0.07175434146313614,
+          "prediction": 0.04387625912204385,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.02820271534295485,
+          "prediction": 0.18617425503907725,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.0020456816149086454,
+          "prediction": -0.022722992307535606,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.07548644606338234,
+          "prediction": 0.08019468680140562,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.012561439362989646,
+          "prediction": 0.03992182979709469,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.015036895203572681,
+          "prediction": -0.12095246161334217,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.008741404104819772,
+          "prediction": 0.003607133578043431,
+          "eligible": true,
+          "sign_correct": false
+        },
+        {
+          "truth": -0.014757046324396061,
+          "prediction": -0.06461195670999587,
+          "eligible": true,
+          "sign_correct": true
+        }
+      ],
+      "pair_sign_accuracy": 0.875
+    },
+    "delayed/missing": {
+      "1": {
+        "position_rmse": 0.00022552896372188378,
+        "velocity_rmse": 0.004510579274437078,
+        "mse": 1.0198094352229391e-05
+      },
+      "4": {
+        "position_rmse": 0.002218083742677925,
+        "velocity_rmse": 0.018280568613085257,
+        "mse": 0.00016954954215362496
+      },
+      "12": {
+        "position_rmse": 0.015558409257566052,
+        "velocity_rmse": 0.047962673241890755,
+        "mse": 0.0012712410615671505
+      },
+      "pairs": [
+        {
+          "truth": 0.07175434146313614,
+          "prediction": 0.03456279681995511,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.02820271534295485,
+          "prediction": 0.12558193824952468,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.0020456816149086454,
+          "prediction": -0.03718267413205467,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.07548644606338234,
+          "prediction": 0.08270110533339903,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.012561439362989646,
+          "prediction": -0.040988778811879456,
+          "eligible": true,
+          "sign_correct": false
+        },
+        {
+          "truth": -0.015036895203572681,
+          "prediction": -0.039292354878853075,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.008741404104819772,
+          "prediction": 0.010472963098436594,
+          "eligible": true,
+          "sign_correct": false
+        },
+        {
+          "truth": -0.014757046324396061,
+          "prediction": 0.0022395767009584233,
+          "eligible": true,
+          "sign_correct": false
+        }
+      ],
+      "pair_sign_accuracy": 0.625
+    },
+    "omitted/clean": {
+      "1": {
+        "position_rmse": 0.0003988571239426528,
+        "velocity_rmse": 0.007977142478853396,
+        "mse": 3.189694456662356e-05
+      },
+      "4": {
+        "position_rmse": 0.004140931030809246,
+        "velocity_rmse": 0.03376660399579925,
+        "mse": 0.0005786654276055223
+      },
+      "12": {
+        "position_rmse": 0.031514433757461234,
+        "velocity_rmse": 0.09695311560479188,
+        "mse": 0.005196533080264776
+      },
+      "pairs": [
+        {
+          "truth": 0.16899838120298394,
+          "prediction": 0.40659306885208935,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.06924117049382958,
+          "prediction": 0.3190155756092281,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.027741919461723913,
+          "prediction": -0.1544117817247752,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.03462620188110688,
+          "prediction": 0.23516860257950611,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.024049429903404355,
+          "prediction": -0.03369383793324232,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.0060134153818351965,
+          "prediction": -0.03664090734673664,
+          "eligible": true,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.03685902128512644,
+          "prediction": 0.17235904806875624,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.009112156210025868,
+          "prediction": 0.026554602198302746,
+          "eligible": true,
+          "sign_correct": true
+        }
+      ],
+      "pair_sign_accuracy": 0.875
+    },
+    "omitted/noisy": {
+      "1": {
+        "position_rmse": 0.0003997653322124968,
+        "velocity_rmse": 0.007995306644255145,
+        "mse": 3.204237032825472e-05
+      },
+      "4": {
+        "position_rmse": 0.004151861753427156,
+        "velocity_rmse": 0.033856082429205486,
+        "mse": 0.0005817361367363637
+      },
+      "12": {
+        "position_rmse": 0.031569550400462776,
+        "velocity_rmse": 0.09707550266813311,
+        "mse": 0.005210144865379039
+      },
+      "pairs": [
+        {
+          "truth": 0.16899838120298394,
+          "prediction": 0.4065285795368254,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.06924117049382958,
+          "prediction": 0.32142641316750087,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.027741919461723913,
+          "prediction": -0.15652981371385977,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.03462620188110688,
+          "prediction": 0.23516149100032635,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.024049429903404355,
+          "prediction": -0.03267806814983487,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.0060134153818351965,
+          "prediction": -0.03731303867243696,
+          "eligible": true,
+          "sign_correct": false
+        },
+        {
+          "truth": 0.03685902128512644,
+          "prediction": 0.17264643739326857,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.009112156210025868,
+          "prediction": 0.026452625315869227,
+          "eligible": true,
+          "sign_correct": true
+        }
+      ],
+      "pair_sign_accuracy": 0.875
+    },
+    "omitted/missing": {
+      "1": {
+        "position_rmse": 0.0004621058104578159,
+        "velocity_rmse": 0.009242116209162368,
+        "mse": 4.281512690186032e-05
+      },
+      "4": {
+        "position_rmse": 0.004645354012221346,
+        "velocity_rmse": 0.03756071340313721,
+        "mse": 0.000716193252625736
+      },
+      "12": {
+        "position_rmse": 0.03417026434688507,
+        "velocity_rmse": 0.10197002375355049,
+        "mse": 0.00578274635491783
+      },
+      "pairs": [
+        {
+          "truth": 0.16899838120298394,
+          "prediction": 0.511449928424554,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.06924117049382958,
+          "prediction": 0.30701711931760656,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.027741919461723913,
+          "prediction": -0.11823058326262981,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.03462620188110688,
+          "prediction": 0.22655020011006854,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": -0.024049429903404355,
+          "prediction": -0.05091235530562699,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.0060134153818351965,
+          "prediction": 0.006972831615712494,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.03685902128512644,
+          "prediction": 0.15715357766021043,
+          "eligible": true,
+          "sign_correct": true
+        },
+        {
+          "truth": 0.009112156210025868,
+          "prediction": 0.008774275775067508,
+          "eligible": true,
+          "sign_correct": true
+        }
+      ],
+      "pair_sign_accuracy": 1.0
+    }
+  },
+  "raw_path": "runs\\CR-study-r2\\evaluation-dev-r1_adapted-2801.json",
+  "raw_sha": "1dab99671f23522b2557cc5cfb4353b0f82e54f18bd2c09f2ec22fed5f74acfc",
+  "wall_seconds": 13.567256900016218
+}
