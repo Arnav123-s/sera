@@ -1,0 +1,65 @@
+{
+  "schema": "sera.concept-publication-local-verification.1",
+  "recorded_at": "2026-09-17T22:49:37.252060+00:00",
+  "scientific_commit": "2c51d2338d6be5c6e0f560fb4cf5b261fd0429b2",
+  "first_remote_run": 35282528008,
+  "first_remote_result": "5 failed, 314 passed, 58 skipped; missing ignored local artifacts",
+  "fresh_checkout": "runs/CR-ci-clean",
+  "fresh_affected_tests_passed": 23,
+  "restoration_contract_tests_passed": 8,
+  "whole_tree_ruff": "PASS",
+  "sealed_release_check": {
+    "status": "PASS",
+    "artifacts": 188,
+    "archive_members": 270
+  },
+  "additional_jobs": [
+    {
+      "job": "runs/CR-ci-fixture-trace-001",
+      "status": "PASS",
+      "charged_seconds": 95.03564149999875,
+      "state_sha256": "48d662c1db0349a268e0a9340f7942fbadcb765b0d030e8067d2812a742c143c",
+      "log_sha256": "7ada2977564f711f3ab31f07fc46f84cc34ab9513629976fd407e33f1631b88f"
+    },
+    {
+      "job": "runs/CR-ci-style-001",
+      "status": "PASS",
+      "charged_seconds": 0.17601999998441897,
+      "state_sha256": "12706bbc99d10319ad6809da036e342c9752fe27661bf759ab95ead1128aecaa",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "job": "runs/CR-ci-format-001",
+      "status": "PASS",
+      "charged_seconds": 0.17169930000090972,
+      "state_sha256": "f2913ea37558b8255d2df70999b0dc019d1d4c2cc1937de6f752425023b7a953",
+      "log_sha256": "779cd08be038ac289c50927416d74769a286b3d89191260af669534feb28cf68"
+    },
+    {
+      "job": "runs/CR-ci-fresh-001",
+      "status": "PASS",
+      "charged_seconds": 91.41667109998525,
+      "state_sha256": "3199065cbc3665a97b0f4fa5ade8a30446bf6e08eb14232389a1deedeb851323",
+      "log_sha256": "37e72b336b0e5e3436b48b85a771ddc513f3cfc0d73bce624e76093efa07b4ca"
+    },
+    {
+      "job": "runs/CR-ci-contracts-001",
+      "status": "PASS",
+      "charged_seconds": 2.776606500003254,
+      "state_sha256": "b3ab3679a5a7540836d5e14f68f00fed0c550dbd0d1f4a803081a150f46faa93",
+      "log_sha256": "389527bdacc89c43279e3d43fb3fd6e00dbe0b4bf9f991963b64ee217a108e02"
+    },
+    {
+      "job": "runs/CR-ci-all-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.17259300002478994,
+      "state_sha256": "cb3af01f9bf2f202c025bd5ea7c23ff1a119d347611972c633e93ef285aece99",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    }
+  ],
+  "additional_charged_seconds": 189.74923139999737,
+  "remaining_seconds": 1534.3145782000065,
+  "new_allowance_granted": false,
+  "ledger_sha256": "af6e061c963db8e69171d3f06c3f7de13ccb33912ad26fc134ad4e061d27a2ef",
+  "scope": "Local numerical work; remote CI machine time reported separately."
+}
