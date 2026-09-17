@@ -1,0 +1,1053 @@
+{
+  "question": "Find q(n)=sum_{k=0}^{n-1}(1+2k+k^3) and certify it for all natural n.",
+  "before": {
+    "status": "missing_concept",
+    "needed": "sum",
+    "accepted": false
+  },
+  "after": {
+    "status": "verified",
+    "q": [
+      "0",
+      "0",
+      "5/4",
+      "-1/2",
+      "1/4"
+    ],
+    "accepted": true,
+    "reason": "exact_identity_and_base",
+    "domain": "sum",
+    "base_zero": true,
+    "identity_residual": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "scope": "all natural n by induction"
+  },
+  "new_problem": {
+    "status": "verified",
+    "q": [
+      "0",
+      "3",
+      "-3/2",
+      "0",
+      "1/2"
+    ],
+    "accepted": true,
+    "reason": "exact_identity_and_base",
+    "domain": "sum",
+    "base_zero": true,
+    "identity_residual": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "scope": "all natural n by induction"
+  },
+  "source_actions": [
+    {
+      "source_id": "sum-intro",
+      "source_sha256": "50bdd528a41e52636c4c70ef60ccece9dea41961b2583c5ba541ca8e3b334a91",
+      "domain": "sum",
+      "kind": "concept",
+      "counted_action": 1,
+      "learned": false,
+      "accepted": true,
+      "reason": "supplied_concept_schema",
+      "goal_result": {
+        "status": "needs_learning",
+        "q": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "accepted": false,
+        "reason": "failed_identity_or_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "-1",
+          "-2",
+          "0",
+          "-1",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-corrupt-1",
+      "source_sha256": "7b6778b93a5f4c2cae3d703a316b69fefe9d86a0041031b7205dbadac2909c0c",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 2,
+      "learned": false,
+      "accepted": false,
+      "reason": "failed_identity_or_base",
+      "goal_result": {
+        "status": "needs_learning",
+        "q": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "accepted": false,
+        "reason": "failed_identity_or_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "-1",
+          "-2",
+          "0",
+          "-1",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-01",
+      "source_sha256": "c00368227e6cf618446bc16743d9989f4276387e32f2c95991dee9aff4864b47",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 3,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "needs_learning",
+        "q": [
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        "accepted": false,
+        "reason": "failed_identity_or_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-06",
+      "source_sha256": "8b8b7bdc6733c7fc056ef5f85dbff7dc14218ed3f31c595542f10e5fce9e7914",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 4,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "needs_learning",
+        "q": [
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        "accepted": false,
+        "reason": "failed_identity_or_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-02",
+      "source_sha256": "894a1fea4b1e19609927ce76a9b80bbb48476b4befa1b89b102f81eb34e4bbd7",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 5,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "needs_learning",
+        "q": [
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0"
+        ],
+        "accepted": false,
+        "reason": "failed_identity_or_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-04",
+      "source_sha256": "8cf8cfbaa581fe2a9ab1cbe5235a9d20ca7f80cdcd03ce9d1d1cdd10fd4bf98c",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 6,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-14",
+      "source_sha256": "da4d667d37945e07e8e25c4bf2ab99532c8df1c8828e3aecfbf398bcffb009a8",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 7,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-08",
+      "source_sha256": "7a53a0204220c4b720f14c025b2318612bcb1caf9d8b7d92e5ade2e48b11e769",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 8,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-13",
+      "source_sha256": "35ed773207a1d0ac2c788dd87b4be003e68c696b55de8d8e9492845373322b70",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 9,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-corrupt-2",
+      "source_sha256": "f5ff1239e455a50770c5c35771a6bb95255bb055b4f8effa3f6203af19280c9a",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 10,
+      "learned": false,
+      "accepted": false,
+      "reason": "failed_identity_or_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-00",
+      "source_sha256": "e150e661882a495574717159b900b1a6bff564f5e85d70d2242661a0ed19f45c",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 11,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    },
+    {
+      "source_id": "sum-05",
+      "source_sha256": "d348be725eac8df07a67517497f8a61b312a2d7827cd0af38cc10f069aad3dce",
+      "domain": "sum",
+      "kind": "example",
+      "counted_action": 12,
+      "learned": true,
+      "accepted": true,
+      "reason": "exact_identity_and_base",
+      "goal_result": {
+        "status": "verified",
+        "q": [
+          "0",
+          "0",
+          "5/4",
+          "-1/2",
+          "1/4"
+        ],
+        "accepted": true,
+        "reason": "exact_identity_and_base",
+        "domain": "sum",
+        "base_zero": true,
+        "identity_residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all natural n by induction"
+      }
+    }
+  ],
+  "checkpoint": {
+    "payload": {
+      "events": [
+        {
+          "accepted": true,
+          "counted_action": 1,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": false,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "-1",
+              "-2",
+              "0",
+              "-1",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "reason": "failed_identity_or_base",
+            "scope": "all natural n by induction",
+            "status": "needs_learning"
+          },
+          "kind": "concept",
+          "learned": false,
+          "reason": "supplied_concept_schema",
+          "source_id": "sum-intro",
+          "source_sha256": "50bdd528a41e52636c4c70ef60ccece9dea41961b2583c5ba541ca8e3b334a91"
+        },
+        {
+          "accepted": false,
+          "counted_action": 2,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": false,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "-1",
+              "-2",
+              "0",
+              "-1",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "reason": "failed_identity_or_base",
+            "scope": "all natural n by induction",
+            "status": "needs_learning"
+          },
+          "kind": "example",
+          "learned": false,
+          "reason": "failed_identity_or_base",
+          "source_id": "sum-corrupt-1",
+          "source_sha256": "7b6778b93a5f4c2cae3d703a316b69fefe9d86a0041031b7205dbadac2909c0c"
+        },
+        {
+          "accepted": true,
+          "counted_action": 3,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": false,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "-1",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "q": [
+              "0",
+              "-1",
+              "1",
+              "0",
+              "0"
+            ],
+            "reason": "failed_identity_or_base",
+            "scope": "all natural n by induction",
+            "status": "needs_learning"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-01",
+          "source_sha256": "c00368227e6cf618446bc16743d9989f4276387e32f2c95991dee9aff4864b47"
+        },
+        {
+          "accepted": true,
+          "counted_action": 4,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": false,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "-1",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "q": [
+              "0",
+              "-1",
+              "1",
+              "0",
+              "0"
+            ],
+            "reason": "failed_identity_or_base",
+            "scope": "all natural n by induction",
+            "status": "needs_learning"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-06",
+          "source_sha256": "8b8b7bdc6733c7fc056ef5f85dbff7dc14218ed3f31c595542f10e5fce9e7914"
+        },
+        {
+          "accepted": true,
+          "counted_action": 5,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": false,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "-1",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "q": [
+              "0",
+              "-1",
+              "1",
+              "0",
+              "0"
+            ],
+            "reason": "failed_identity_or_base",
+            "scope": "all natural n by induction",
+            "status": "needs_learning"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-02",
+          "source_sha256": "894a1fea4b1e19609927ce76a9b80bbb48476b4befa1b89b102f81eb34e4bbd7"
+        },
+        {
+          "accepted": true,
+          "counted_action": 6,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-04",
+          "source_sha256": "8cf8cfbaa581fe2a9ab1cbe5235a9d20ca7f80cdcd03ce9d1d1cdd10fd4bf98c"
+        },
+        {
+          "accepted": true,
+          "counted_action": 7,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-14",
+          "source_sha256": "da4d667d37945e07e8e25c4bf2ab99532c8df1c8828e3aecfbf398bcffb009a8"
+        },
+        {
+          "accepted": true,
+          "counted_action": 8,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-08",
+          "source_sha256": "7a53a0204220c4b720f14c025b2318612bcb1caf9d8b7d92e5ade2e48b11e769"
+        },
+        {
+          "accepted": true,
+          "counted_action": 9,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-13",
+          "source_sha256": "35ed773207a1d0ac2c788dd87b4be003e68c696b55de8d8e9492845373322b70"
+        },
+        {
+          "accepted": false,
+          "counted_action": 10,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": false,
+          "reason": "failed_identity_or_base",
+          "source_id": "sum-corrupt-2",
+          "source_sha256": "f5ff1239e455a50770c5c35771a6bb95255bb055b4f8effa3f6203af19280c9a"
+        },
+        {
+          "accepted": true,
+          "counted_action": 11,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-00",
+          "source_sha256": "e150e661882a495574717159b900b1a6bff564f5e85d70d2242661a0ed19f45c"
+        },
+        {
+          "accepted": true,
+          "counted_action": 12,
+          "domain": "sum",
+          "goal_result": {
+            "accepted": true,
+            "base_zero": true,
+            "domain": "sum",
+            "identity_residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "q": [
+              "0",
+              "0",
+              "5/4",
+              "-1/2",
+              "1/4"
+            ],
+            "reason": "exact_identity_and_base",
+            "scope": "all natural n by induction",
+            "status": "verified"
+          },
+          "kind": "example",
+          "learned": true,
+          "reason": "exact_identity_and_base",
+          "source_id": "sum-05",
+          "source_sha256": "d348be725eac8df07a67517497f8a61b312a2d7827cd0af38cc10f069aad3dce"
+        }
+      ],
+      "goal": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "models": {
+        "integral": {
+          "dim": 4,
+          "gram": [
+            [
+              1e-06,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1e-06,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1e-06,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1e-06
+            ]
+          ],
+          "observations": 0,
+          "outputs": 5,
+          "rhs": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "ridge": 1e-06
+        },
+        "noise": {
+          "dim": 4,
+          "gram": [
+            [
+              1e-06,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1e-06,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1e-06,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1e-06
+            ]
+          ],
+          "observations": 0,
+          "outputs": 5,
+          "rhs": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "ridge": 1e-06
+        },
+        "sum": {
+          "dim": 4,
+          "gram": [
+            [
+              21.000000999999997,
+              7.0,
+              0.0,
+              4.0
+            ],
+            [
+              7.0,
+              25.000001,
+              3.0,
+              -13.0
+            ],
+            [
+              0.0,
+              3.0,
+              24.000001,
+              6.0
+            ],
+            [
+              4.0,
+              -13.0,
+              6.0,
+              26.000000999999997
+            ]
+          ],
+          "observations": 9,
+          "outputs": 5,
+          "rhs": [
+            [
+              0.0,
+              17.5,
+              4.5,
+              -2.0,
+              1.0
+            ],
+            [
+              0.0,
+              -5.0,
+              7.75,
+              7.5,
+              -3.25
+            ],
+            [
+              0.0,
+              2.5,
+              -9.0,
+              5.0,
+              1.5
+            ],
+            [
+              0.0,
+              11.5,
+              -3.0,
+              -11.0,
+              6.5
+            ]
+          ],
+          "ridge": 1e-06
+        }
+      },
+      "policy": "goal_information_gain",
+      "rng": {
+        "bit_generator": "PCG64",
+        "has_uint32": 1,
+        "state": {
+          "inc": 82012446978272293174685423052644866401,
+          "state": 8717972300811593662740637358525317301
+        },
+        "uinteger": 4290052607
+      },
+      "schema": "sera.v11.scholar.v1",
+      "seed": 113,
+      "seen": [
+        "sum-00",
+        "sum-01",
+        "sum-02",
+        "sum-04",
+        "sum-05",
+        "sum-06",
+        "sum-08",
+        "sum-13",
+        "sum-14",
+        "sum-corrupt-1",
+        "sum-corrupt-2",
+        "sum-intro"
+      ],
+      "unlocked": [
+        "sum"
+      ]
+    },
+    "sha256": "6906a80a898229239128f73fa41c4511dd9f9f8766b94cd45c899fac3e2def1b"
+  },
+  "scope": "Supplied polynomial basis and checker; learned numerical map from verified structured examples. No Riemann proof."
+}

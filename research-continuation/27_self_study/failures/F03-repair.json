@@ -1,0 +1,19 @@
+{
+  "schema": "sera.explicit-migration.1",
+  "old_runtime": "72a3de9623c2fd547246f72225e72981a70504a83283b2f8413e481b2cb01a6f",
+  "new_runtime": "8b1526987b51e26cbce4d6df0f73ba98400462735e6a3d643df3c8cd52c353d5",
+  "regression_before": "runs/SS-regression-before-worker-001/state.json",
+  "regression_after": "runs/SS-regression-after-worker-001/state.json",
+  "before_failures": 5,
+  "after_passed": 26,
+  "preserved_archive": "F03-before-hardening.zip",
+  "changes": [
+    "Shuffle the full fixed source catalogue before removing already acquired lessons.",
+    "Bound coefficient syntax before Fraction allocation, including evaluation coordinates.",
+    "Verify content-addressed cache body names and URLs before file access.",
+    "Report parent and continuation training counts separately.",
+    "Expose explicit cache refresh without deleting old source bodies.",
+    "Retain the pinned RH parent contract alongside its executable child goal."
+  ],
+  "evaluation_policy": "No retraining or second access to completed final sets. Audit re-counts saved predictions and checks migration on independent probes."
+}

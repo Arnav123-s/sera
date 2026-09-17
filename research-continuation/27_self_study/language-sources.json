@@ -1,0 +1,86 @@
+{
+  "url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz",
+  "discovery": "https://huggingface.co/datasets/AmazonScience/massive",
+  "license": "CC BY 4.0",
+  "utc": "2026-09-17T19:21:27.423959+00:00",
+  "source_files": {
+    "es-ES": {
+      "member": "1.1/data/es-ES.jsonl",
+      "bytes": 12102823,
+      "sha256": "310462a79fa181ff83c643a8d356c7b8155fd37a25e80a77ba3ca9b29305c4a5",
+      "rows": {
+        "train": 1200,
+        "development": 160,
+        "final": 160
+      },
+      "rejected": []
+    },
+    "fr-FR": {
+      "member": "1.1/data/fr-FR.jsonl",
+      "bytes": 12187582,
+      "sha256": "f9bf3db170ad415b389e4c9594dd0f8f80c38188143e05cc4459a6fa7df7cf49",
+      "rows": {
+        "train": 1200,
+        "development": 160,
+        "final": 160
+      },
+      "rejected": []
+    },
+    "de-DE": {
+      "member": "1.1/data/de-DE.jsonl",
+      "bytes": 12111590,
+      "sha256": "5e09cc550b38d37faf002e0ff42103acd330906e23032689e8f071e1cf3ff621",
+      "rows": {
+        "train": 1200,
+        "development": 160,
+        "final": 160
+      },
+      "rejected": []
+    },
+    "license": {
+      "member": "1.1/LICENSE",
+      "bytes": 18704,
+      "sha256": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435"
+    }
+  },
+  "seconds": 5.192228800005978,
+  "prepared": {
+    "de-DE-development.jsonl": {
+      "sha256": "3ec89ef92f81d5290feead9b16ae1d9431bb4bfc8a8066aca5ffc1847b305995",
+      "bytes": 49794
+    },
+    "de-DE-final.jsonl": {
+      "sha256": "c19ae8d5e9f7fddf76d42fbe015d0bc6b2b8915f20e21e2643a6e49ba1746d99",
+      "bytes": 47398
+    },
+    "de-DE-train.jsonl": {
+      "sha256": "d444db0acd6b1b72d28304d183bc191951fbbb69fc15737e6b979961570524ab",
+      "bytes": 359849
+    },
+    "es-ES-development.jsonl": {
+      "sha256": "c90951bdf499fc35547b32b893392a402d903524e41ec73257b8ab5ef1d0b192",
+      "bytes": 50679
+    },
+    "es-ES-final.jsonl": {
+      "sha256": "cff65e12f5ec749e1fbbe57e7547d1daa666b184a66593c09a35f4dd5d98680d",
+      "bytes": 47594
+    },
+    "es-ES-train.jsonl": {
+      "sha256": "d0874a1ee983a4596a55b55db1abf90f75aeb77991c84126508cb171f0fff78c",
+      "bytes": 363173
+    },
+    "fr-FR-development.jsonl": {
+      "sha256": "5a04ea7f5e7cbfeae11563bfe015e2c0272b3c2b33efbd017dfc320c1c0ebf8d",
+      "bytes": 51823
+    },
+    "fr-FR-final.jsonl": {
+      "sha256": "a10f24eb0c667c1b9562b5a9cf79881bb54d920e167ac642c41d5d9949868019",
+      "bytes": 48947
+    },
+    "fr-FR-train.jsonl": {
+      "sha256": "65b58a974305623c7e572d58d85a290b5a6daa929b5fa72f9e7bd54df478da0e",
+      "bytes": 375585
+    }
+  },
+  "scope": "Translation learning on supplied MASSIVE intent/entity labels. Parallel semantic IDs can have been seen in prior English training/development; this is not new-domain semantic transfer. Official test records unused."
+}

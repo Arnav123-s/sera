@@ -1,0 +1,44 @@
+{
+  "schema": "sera.self-study.evidence.1",
+  "claims": [
+    {
+      "id": "SS-001",
+      "claim": "Learned source operators:256/256 new polynomial and64/64 motion results",
+      "evidence": "evaluation-001/summary.json",
+      "controls": [
+        "read_only",
+        "unchecked_control",
+        "installed_symbolic_reference"
+      ]
+    },
+    {
+      "id": "SS-002",
+      "claim": "Two paired sequential multilingual lifetimes and retained failures",
+      "evidence": "language-evaluation/summary.json",
+      "source_scope": "3600 new-language examples; parallel semantic IDs can overlap earlier English learning"
+    },
+    {
+      "id": "SS-004",
+      "claim": "Prospective larger rehearsal restored English development to126/160 while admitting new-language learning",
+      "evidence": "language-evaluation/selection.json",
+      "boundary": "Larger rehearsal resource; not storage-matched to SS-002"
+    },
+    {
+      "id": "SS-003",
+      "claim": "Unique correction among96 candidates, then128/128 new transfer results",
+      "evidence": "correction-final/result.json",
+      "boundary": "Supplied bounded proposer/checkers, retained operator update learned"
+    },
+    {
+      "id": "integration",
+      "claim": "Same owner, source-free reuse, exact restore, protected tensors and unchanged parent statement",
+      "evidence": "integration/integration.json",
+      "metadata_correction": "metadata-migration/migration.json"
+    },
+    {
+      "id": "audit",
+      "claim": "Independent recount of2400 language and1088 mathematical outcomes",
+      "evidence": "independent-audit/recount.json"
+    }
+  ]
+}

@@ -12,19 +12,25 @@ I am building one persistent learner that acquires executable knowledge, imagine
 
 | Task | Saved learner and instructions | Evidence |
 |---|---|---|
+| Learn checked equations from arXiv, retain corrected operators and calculate polynomial motion | [Continuing study learner](research-continuation/27_self_study/README.md) |256/256 polynomial and64/64 motion checks;128/128 fresh correction-transfer problems |
+| Interpret Spanish, French and German requests with the continuing owner | [Language acquisition and retention](research-continuation/27_self_study/report.md) |63.13%,66.88%,61.88% final intent accuracy;78.75% English development retention after rehearsal |
 | Label English requests and extract entities into a local file | [Request annotation](research-continuation/26_stream_curriculum/README.md) | 11,514 teaching requests; 74.54% intent accuracy, 50.20% entity-span F1 and 41.14% exact frames on 2,973 eligible held-out requests |
 | Learn and apply a three-input numerical transformation from examples | [Persistent task learner](research-continuation/23_task_transfer/README.md) | Acquired structure admitted 24/24 related and 19/24 sparse-change tasks at the registered fitting budget |
 | Interpret finite action requests, acquire missing simulated facts and resume investigation | [Constraint inquiry](research-continuation/25_constraint_inquiry/README.md) | Learned role binding, acquired dynamics and conditional settling through the continuing owner |
 | Learn finite mathematical instruction forms and execute checked programs | [Grounded language](research-continuation/21_grounded_language/README.md) | 1,536/1,536 familiar-form held-out instructions per retained-core model; continuing task-time lessons |
 | Process numerical data and continue adaptive simulated control | [Local workbench](research-continuation/20_live_workbench/README.md) | Held-out task checks, persistent revisions, observed corrections and guarded reuse |
 
-The results apply to the taught tasks and stated evaluation protocols. Source labels, finite grammars, simulators, independent checkers and learning schedules are documented engineering inputs. Learned mappings and retained updates are reported separately. [The latest report](research-continuation/26_stream_curriculum/report.md) includes every comparison, failed candidate, exclusion and cost; the final evaluation partition remains closed to further tuning.
+The results apply to the taught tasks and stated evaluation protocols. Source labels, finite grammars, simulators, independent checkers and learning schedules are documented engineering inputs. Learned mappings and retained updates are reported separately. [The latest report](research-continuation/27_self_study/report.md) includes every comparison, failed candidate, exclusion and cost; completed final evaluation partitions remain closed to further tuning.
 
 ## Use the prepared local workspace
 
 Run from the repository with its existing environment and trained checkpoints:
 
 ```powershell
+.venv/Scripts/python.exe scripts/sera_study.py solve --domain integral --coefficients "1,2,3"
+.venv/Scripts/python.exe scripts/sera_study.py motion --coefficients "2,3,1" --time 3 --position 5 --velocity=-1
+.venv/Scripts/python.exe scripts/sera_study.py interpret --text "schalte das licht aus"
+.venv/Scripts/python.exe scripts/sera_sources.py search 'ti:"Faulhaber" AND au:"Knuth"'
 .venv/Scripts/python.exe scripts/sera_requests.py ask --id my-request --text "set an alarm for nine am"
 .venv/Scripts/python.exe scripts/sera_requests.py result --id my-request --json
 .venv/Scripts/python.exe scripts/sera_annotate.py --input requests.jsonl --output runs/my-inbox/annotations.jsonl
@@ -36,7 +42,9 @@ The workbench opens at `http://127.0.0.1:8765`. Request annotation writes intent
 
 ## What has been evaluated
 
-The current request interface adds 450,219 trained parameters to the preserved SERA owner. Sixteen terminal checkpoints were assessed in one frozen final cohort. In successive-domain learning, a 256-record replay reservoir improved final equal-block development accuracy from 15.50% to 46.56% and from 15.62% to 47.01% in two paired lifetimes. The latest release passed 331 regression tests and independently recounted 120,756 prediction records. See the [complete results](research-continuation/26_stream_curriculum/report.md), [architecture audit](research-continuation/26_stream_curriculum/architecture-audit.md) and [cost record](research-continuation/26_stream_curriculum/costs.json).
+The continuing study release passed357 repository regression tests and28 targeted tests after its final metadata correction. Independent recounting verified2400 saved language predictions and1088 mathematical outcomes. Its source-learned numerical operators share the preserved owner with the request interface, while keeping their supplied representations and independent checkers explicit. See the [results](research-continuation/27_self_study/report.md), [architecture audit](research-continuation/27_self_study/architecture-audit.md) and [cost record](research-continuation/27_self_study/costs.json).
+
+The preceding English interface added450219 trained parameters and assessed16 terminal checkpoints in one final cohort. Its successive-domain replay results and120756-record audit remain in [the preserved phase26 report](research-continuation/26_stream_curriculum/report.md).
 
 Earlier studies cover shared recurrent ownership, guarded applicability, acquisition-dependent transfer, continuing control, sparse memory and weight correction. The [research index](research/research-index.md) gives their order and exact evidence locations. Quantum-inspired operators remain testable mechanisms; their mathematical validity and measured usefulness are evaluated separately.
 

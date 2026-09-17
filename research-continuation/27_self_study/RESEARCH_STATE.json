@@ -1,0 +1,26 @@
+{
+  "schema": "sera.self-study.state.1",
+  "utc": "2026-09-17T20:21:11.466154+00:00",
+  "status": "INTEGRATED_AND_VERIFIED",
+  "completed": [
+    "v11-replay",
+    "SS-001",
+    "SS-002",
+    "SS-003",
+    "SS-004"
+  ],
+  "owner": "d1145665bcd0d1c1b2f6a0034cc469be44c8a1190640788c5ffb1c5f94a67a2b",
+  "runtime_source": "0f7c88a5494a7808b13dc7ffedfe3c67b7b7a7c233033fbd72524ec10ce4a590",
+  "checkpoint": {
+    "path": "runs/SS-rehearsal-2721/step-002000.pt",
+    "sha256": "39631cd5fbce7693684ef02fe90f3e2ba9dc09b033cba1679c4ea286d3b6fa24"
+  },
+  "live_store": "runs/sera-study-live",
+  "open_parent_goals": [
+    "RH"
+  ],
+  "final_partitions": "Closed to further tuning; saved predictions may be independently recounted.",
+  "background_jobs": [],
+  "next_action": ".venv/Scripts/python.exe scripts/sera_study.py motion --coefficients 2,3,1 --time 3 --position 5 --velocity=-1",
+  "next_research": "Freeze a fresh multilingual request-to-local-task transition curriculum; preserve the applicability gate and compare verified correction/replay controls."
+}

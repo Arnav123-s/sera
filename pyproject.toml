@@ -35,3 +35,15 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I"]
+
+# These byte-fingerprinted, completed research protocols are preserved exactly.
+# Exceptions concern import order, unused imports and short comprehension names;
+# executable-error diagnostics remain enabled. New implementations use defaults.
+[tool.ruff.lint.per-file-ignores]
+"experiments/self_study/model.py" = ["I001"]
+"experiments/self_study/multilingual.py" = ["I001", "E741"]
+"experiments/self_study/prepare.py" = ["I001", "F401"]
+"experiments/self_study/rehearsal.py" = ["I001", "E741"]
+"experiments/self_study/study.py" = ["I001"]
+"experiments/self_study/correction.py" = ["F401"]
+"experiments/self_study/runtime.py" = ["E741"]

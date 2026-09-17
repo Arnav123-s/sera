@@ -8,6 +8,9 @@ single aggregate benchmark.
 
 ## Current starting points
 
+- [Use the source-learning and four-language successor](../research-continuation/27_self_study/README.md).
+- [Read its measured acquisition, retention and correction results](../research-continuation/27_self_study/report.md).
+- [Audit v11 integration and preserve exact continuation](../research-continuation/27_self_study/architecture-audit.md).
 - [Use the English request learner](../research-continuation/26_stream_curriculum/README.md).
 - [Inspect its curriculum, comparisons and held-out results](../research-continuation/26_stream_curriculum/report.md).
 - [Audit the shared-owner connection](../research-continuation/26_stream_curriculum/architecture-audit.md).
@@ -41,6 +44,7 @@ single aggregate benchmark.
 | 24 | Learned interpretation connected to persistent investigation | [Use](../research-continuation/24_language_inquiry/README.md), [report](../research-continuation/24_language_inquiry/report.md) |
 | 25 | Learned role binding, conditional imagination and missing-fact acquisition | [Use](../research-continuation/25_constraint_inquiry/README.md), [report](../research-continuation/25_constraint_inquiry/report.md) |
 | 26 | Real English requests, successive domains, replay and file annotation | [Use](../research-continuation/26_stream_curriculum/README.md), [report](../research-continuation/26_stream_curriculum/report.md) |
+| 27 | Actual-owner self-study, arXiv equations, multilingual retention and certified source correction | [Use](../research-continuation/27_self_study/README.md), [report](../research-continuation/27_self_study/report.md), [v11 audit](../research-continuation/27_self_study/architecture-audit.md) |
 
 Each continuation directory holds its own raw results and additional protocol,
 cost, failure and preservation records. Existing applicability gates remain
@@ -57,7 +61,8 @@ publication preserves the entire intervening history. The pinned Kavi source is
 `50f743cc44794b67bc1d30b927e25991197edce2`. Live local stores and resource balances
 must be read at execution time; values printed in sealed reports are historical.
 
-The v11 self-study addendum has been received and reconciled with this newer local
-work. Its finite source-to-weight experiment is supplied evidence. Integration,
-new source acquisition and teaching results will receive a separate continuation
-record after their own implementation and checks.
+The v11 self-study addendum was reconciled with this newer local work and its
+finite evidence verified once. The independently implemented acquisition,
+teaching, retention repair and source-correction integration is preserved in
+[phase27](../research-continuation/27_self_study/README.md), separately from the
+supplied packet's results.

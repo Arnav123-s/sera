@@ -1,0 +1,37 @@
+{
+  "schema": "sera.research-goal.1",
+  "id": "RH",
+  "status": "OPEN_RESEARCH",
+  "source": {
+    "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+    "sha256": "1454b2909f99271726ffb68b056aef45b7d3e6893a66282cad596339d69bafa9",
+    "bytes": 159267,
+    "utc": "2026-09-17T19:21:29.299393+00:00",
+    "reading": "Engineering source review; separate from learned SERA capability"
+  },
+  "statement": "For every complex s, if the meromorphic continuation of the Riemann zeta function is zero at s and s is not a negative even integer, then Re(s)=1/2.",
+  "initial_definition": "The Dirichlet series defines zeta only for Re(s)>1; use its unique meromorphic continuation elsewhere.",
+  "targeted_next_lemma": "Establish the Euler-product zero-free region Re(s)>1 with explicit absolute-convergence and logarithm obligations.",
+  "child_tasks": [
+    {
+      "id": "power-sum",
+      "status": "new learned polynomial operator; development checked"
+    },
+    {
+      "id": "logarithmic-series-prerequisite",
+      "task": "Integrate the finite polynomial 1+x+x^2+x^3+x^4+x^5 using retained weights, then verify its derivative exactly."
+    }
+  ],
+  "proof_obligations": [
+    "Convergence of the prime logarithm double sum for sigma>1.",
+    "Justified rearrangement and equality with the Euler product.",
+    "Passage from finite logarithmic polynomials to analytic logarithm on the stated domain.",
+    "A further argument about zeros in the critical strip; the sigma>1 lemma alone does not establish RH."
+  ],
+  "invalid_shortcuts": [
+    "finite zero sampling as a universal proof",
+    "reflection symmetry alone",
+    "circular assumption of the target"
+  ],
+  "toolchain": "No lean or lake command was found on PATH during reconciliation; Python exact finite-polynomial certificates are independently checked."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "sera.self-study.reconciliation.1",
+  "utc": "2026-09-17T19:11:08.787712+00:00",
+  "initial_head": "73dd66caecb7a0f3d3ab0bba21a725e2fc4d5678",
+  "initial_dirty": [],
+  "published_head": "e05183b2773d863e0e3f7d4398d2d40e3434c5e0",
+  "branch": "research/v3-calibration-consolidation",
+  "current_dirty": [
+    "?? experiments/self_study/",
+    "?? scripts/run_self_study_bounded.py"
+  ],
+  "owned_numerical_lock_exists": false,
+  "preserved": {
+    "runs/sera-requests-live/current.json": {
+      "sha256": "9462dae142565343e06da013dbacb45721326bd867a0a7d52d49fd3f9d184d1f",
+      "bytes": 116
+    },
+    "runs/sera-constraints/current.json": {
+      "sha256": "0150ec21e5af8914c05c553fac588830de1d2aa7fa6f8ddb3ca2ca67314d7b92",
+      "bytes": 116
+    },
+    "runs/v3-batch-001/budget.json": {
+      "sha256": "2913d5dd10deabd7b66801bec9da6e7bbb86bee996abef624d5f86ddf959dc82",
+      "bytes": 39474
+    },
+    "runs/SC-exposure-shared-2642/step-005400.pt": {
+      "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3",
+      "bytes": 5988384
+    }
+  },
+  "notes": [
+    "Initial repository was clean; all new dirty paths belong to this continuation.",
+    "OS-wide CIM process inventory denied; no other sessions terminated. Existing supervisor lock absent.",
+    "GitHub main and research branch independently verified at published HEAD after fast-forward push."
+  ]
+}
