@@ -2,111 +2,54 @@
 
 **State-Space Engine for Reasoning and Adaptation**
 
-[Repository](https://github.com/Arnav123-s/sera) · Research by [Arnav123-s](https://github.com/Arnav123-s)
+Research by [Arnav123-s](https://github.com/Arnav123-s).
 
-I am building SERA to study how a learner maintains state, predicts action consequences, acquires executable skills, retains them and improves its learning procedure. The [project context](research/project-context.md) and [original research references](research/references.md) define that direction.
+I am building one persistent learner that acquires executable knowledge, imagines consequences, investigates missing information, corrects its mistakes and retains useful abilities. Each release connects a measured capability to the existing parameter owner and preserves the evidence, checkpoints, unsuccessful candidates and research costs.
 
-Version 0.5 implements one shared R1 parameter owner behind world prediction, typed tasks and legacy sequence inference. I train both a simpler associative core and the handbook-sized rotor/associative/low-rank reference from scratch, then compare corrective learning with replay, full updating, adapters, scratch learning and a separate-model control. Shared views remain connected after checkpoint restoration. The controller still selects from a finite supplied method set; ordinary continued learning does not train a new improvement policy.
+**Start here:** [research and evidence index](research/research-index.md) · [architecture](research/architecture.md) · [project direction](research/project-context.md) · [original sources](research/references.md).
 
-**Research status:** a bounded research system trained locally from scratch. Task vocabularies, simulators, arithmetic grammar, action alphabet and feedback access are supplied. Classical controls, failed learning, retention losses and rejected candidates are part of the evidence. General intelligence, broad language/perception and sustained research acceleration have not been established. R3–R8 remain separate architecture hypotheses under the handbook's narrow-first recommendation.
+## Current usable capabilities
 
-Start with the [shared-learner results](reports/shared-learner-study.md), [source comparison](reports/shared-source-audit.md), [training protocol and checklist](research/shared-learner-protocol.md), and [preserved variants](research/variants.md). The [0.4 report](reports/evaluation-v2-study.md), [full 0.3 source-packet comparison](reports/source-packet-comparison.md), [0.3 study](reports/stage-three-study.md), [0.2 results](reports/connected-study.md) and [earlier workspace snapshot](research/workspace-index.md) remain historical evidence.
+| Task | Saved learner and instructions | Evidence |
+|---|---|---|
+| Label English requests and extract entities into a local file | [Request annotation](research-continuation/26_stream_curriculum/README.md) | 11,514 teaching requests; 74.54% intent accuracy, 50.20% entity-span F1 and 41.14% exact frames on 2,973 eligible held-out requests |
+| Learn and apply a three-input numerical transformation from examples | [Persistent task learner](research-continuation/23_task_transfer/README.md) | Acquired structure admitted 24/24 related and 19/24 sparse-change tasks at the registered fitting budget |
+| Interpret finite action requests, acquire missing simulated facts and resume investigation | [Constraint inquiry](research-continuation/25_constraint_inquiry/README.md) | Learned role binding, acquired dynamics and conditional settling through the continuing owner |
+| Learn finite mathematical instruction forms and execute checked programs | [Grounded language](research-continuation/21_grounded_language/README.md) | 1,536/1,536 familiar-form held-out instructions per retained-core model; continuing task-time lessons |
+| Process numerical data and continue adaptive simulated control | [Local workbench](research-continuation/20_live_workbench/README.md) | Held-out task checks, persistent revisions, observed corrections and guarded reuse |
 
-The [15 September continuation](research-continuation/RESULTS_2026-09-15.md) adds 5,120 geometric-memory artifacts, 300 fixed-inquiry runs and generator acquisition inside the actual trained R1 parent. That cohort passed 156 tests and preserved 40 checked capability groups exactly. The strongest unresolved failure is confident prediction outside the supplied model class.
+The results apply to the taught tasks and stated evaluation protocols. Source labels, finite grammars, simulators, independent checkers and learning schedules are documented engineering inputs. Learned mappings and retained updates are reported separately. [The latest report](research-continuation/26_stream_curriculum/report.md) includes every comparison, failed candidate, exclusion and cost; the final evaluation partition remains closed to further tuning.
 
-The subsequent [learned-applicability study](research-continuation/15_applicability/report.md) trains and audits a guard on 1,344 distinct worlds. It improves the declared score over fixed controls, but fails the conditional-risk gate on exceptions and changing mechanisms. The complete model, raw cohort, failed checks and exact replay are preserved; it remains an experimental candidate. That release passed **174 tests** and preserved 16,556 prior model/result files byte-for-byte. Its [packet comparison](research-continuation/15_applicability/architecture-audit.md) remains historical evidence.
+## Use the prepared local workspace
 
-The [SERA/Kavi v3 continuation](research-continuation/16_v3/README.md) calibrates that frozen guard on independent worlds and develops guarded trace consolidation. Its matched grouped policy answers 664/1,000 queries with zero observed errors, while abstaining on all abrupt-jump cases. A finite compiler reduces its per-candidate full-work proxy by 15.1% after an unsuccessful first candidate; subsequent proof and interpreter repairs have explicit migrated checkpoints. That release passed 199 tests and its [architecture audit](research-continuation/16_v3/architecture-audit.md) remains preserved.
+Run from the repository with its existing environment and trained checkpoints:
 
-The [acquisition-dependent transfer study](research-continuation/18_instance_transfer/report.md) completes 70 prospective training runs and three development candidates. Corrected acquired knowledge lowers neural motion MSE by **15.0%** versus observed-only learning and **23.3%** versus incorrect acquired knowledge, with no measured loss in 61 retained groups. Only the 514 existing motion-readout parameters change. A larger shared-path update fails retention; an earlier normalization-based result remains useful but does not identify transfer of fitted coefficients. I preserve both failures and integrate the qualified readout through explicit factual replay and finite reproof. That release passed 210 tests.
+```powershell
+.venv/Scripts/python.exe scripts/sera_requests.py ask --id my-request --text "set an alarm for nine am"
+.venv/Scripts/python.exe scripts/sera_requests.py result --id my-request --json
+.venv/Scripts/python.exe scripts/sera_annotate.py --input requests.jsonl --output runs/my-inbox/annotations.jsonl
+.venv/Scripts/python.exe scripts/sera_tasks.py status
+.venv/Scripts/python.exe -X utf8 -m workbench
+```
 
-The latest [continuing-control study](research-continuation/19_continuing/report.md) executes 168 prospective lifetimes in 24 paired simulated worlds. From positions and actions, the shared owner learns action-response coefficients, imagines consequences and corrects a reversed response without resetting between targets. Nominal physical cost falls **43.2%** versus reactive control and **44.4%** versus one-step prediction. A restored descendant continues to 79 observations, retains exact scores in a fresh 61-group bank and adds 248 bytes of registered state. **219 tests pass.** Its uncertainty intervals remain too narrow; the circle/action grammar and investigator procedure are supplied. Shared-representation plasticity, calibrated adaptive-policy uncertainty and learned eta remain open. [Resume the saved learner](research-continuation/19_continuing/resume.md).
+The workbench opens at `http://127.0.0.1:8765`. Request annotation writes intent and entity predictions for review. The [request guide](research-continuation/26_stream_curriculum/README.md) specifies input limits, model identities, exact continuation and checkpoint archives. Local commands honor the recorded numerical allowance: one CPU thread, a 2 GiB process-tree committed-memory limit and bounded invocation time.
 
-The [grounded-language continuation](research-continuation/21_grounded_language/report.md) adds a trainable mathematical instruction interface to that same persistent owner. Three retained-core models translate **1,536/1,536 familiar-form held-out cases** exactly, while their 61 older capability-group scores remain unchanged. Unseen wording remains weak until taught. In a continuing six-request run, five lessons acquire or reacquire the requested forms, and all six requested answers are correct. New interpretations execute the existing guarded finite programs. Shared-core adaptation and the imperfect statistical wording guard remain recorded failures; the live application uses an explicit finite-language contract. General English, scientific-paper comprehension and independently improved learning procedures remain open.
+## What has been evaluated
 
-## Run
+The current request interface adds 450,219 trained parameters to the preserved SERA owner. Sixteen terminal checkpoints were assessed in one frozen final cohort. In successive-domain learning, a 256-record replay reservoir improved final equal-block development accuracy from 15.50% to 46.56% and from 15.62% to 47.01% in two paired lifetimes. The latest release passed 331 regression tests and independently recounted 120,756 prediction records. See the [complete results](research-continuation/26_stream_curriculum/report.md), [architecture audit](research-continuation/26_stream_curriculum/architecture-audit.md) and [cost record](research-continuation/26_stream_curriculum/costs.json).
 
-The [local live workbench](research-continuation/20_live_workbench/README.md) performs numerical tasks now: it learns a transformation from retrieved/provided examples on request, validates held-out cases, processes changing CSV data, continues adaptive control, and checks finite equations. Run `.venv/Scripts/python.exe -X utf8 -m workbench` and open `http://127.0.0.1:8765`. The preserved local trained checkpoint is required. [Results and limitations](research-continuation/20_live_workbench/report.md) include the rejected learned procedure and the [larger task-driven research target](research-continuation/20_live_workbench/RESEARCH_LEARNER_TARGET.md).
+Earlier studies cover shared recurrent ownership, guarded applicability, acquisition-dependent transfer, continuing control, sparse memory and weight correction. The [research index](research/research-index.md) gives their order and exact evidence locations. Quantum-inspired operators remain testable mechanisms; their mathematical validity and measured usefulness are evaluated separately.
 
-Open [Verified reasoning](http://127.0.0.1:8765/?panel=reason) for the new task-time language lessons. Try `subtract three from x then multiply by two to get four modulo eleven`; the checked solution is `x = 5`. The [usage and results](research-continuation/21_grounded_language/README.md) specify supported wording, forgetting, checks and saved state. Run `python scripts/verify_grounded_release.py --local-checkpoints` to inspect the frozen evidence without training or repeating a completed experiment.
+## Development and preservation
 
-The [sparse-mechanism and memory study](research-continuation/22_sparse_mechanisms/README.md) adds 23,096 final records across mechanism recovery, paid investigation, memory sketches, corruption repair, neural weight updates and synthetic Fourier imaging. Sparse corrections also repair a copy of the actual trained SERA readout, but this does not establish a new language capability. Failed adequacy and cost gates prevent live predictor/investigator promotion. A small-artifact recovery command returns bytes only after independent digest verification; direct sparse storage and ordinary replication remain strong controls. [Results and limitations](research-continuation/22_sparse_mechanisms/report.md), [Tao/MRI source notes](research-continuation/22_sparse_mechanisms/literature.md), [architecture audit](research-continuation/22_sparse_mechanisms/architecture-audit.md), and `python scripts/verify_sparse_release.py` preserve a reviewable record.
-
-The [task-transfer continuation](research-continuation/23_task_transfer/README.md) adds a usable persistent learner for three-input numerical CSV tasks. Across 3,888 prospective outcomes, acquired task structure admits 24/24 related and 19/24 sparse-change tasks using twelve fitting examples plus eighty selection/calibration examples; scratch and wrong-prior controls admit none at that fitting budget. An extra-label scratch control wins on total acquisition cost, and rare exceptions remain a limitation. The actual-owner descendant executes new tasks, withdraws contradicted rules, learns fresh corrections and preserves its earlier routes. Its calibration-scope repair retains every older revision. [Results](research-continuation/23_task_transfer/report.md) and the [source audit](research-continuation/23_task_transfer/architecture-audit.md) separate acquired K from learned eta. Start with `.venv/Scripts/python.exe scripts/sera_tasks.py status`.
-
-Use Python 3.12 and CPU PyTorch 2.10. On Linux/macOS replace `.venv/Scripts/python.exe` with `.venv/bin/python`.
-
-The [v5 language/investigation integration](research-continuation/24_language_inquiry/README.md) connects learned action phrases to the actual continuing owner and a persistent inquiry graph. It can pause, restore, clarify, predict, execute a local simulator control and correct itself from the observation. Three shared-path interfaces interpret all supported finite queries correctly; their grammar is supplied. New evidence sharply reduces forecast error after hidden response changes, while omitted-mechanism errors remain. [Results](research-continuation/24_language_inquiry/report.md) and the [architecture audit](research-continuation/24_language_inquiry/architecture-audit.md) distinguish this connection from learned abstraction or an improved investigator. Start with `.venv/Scripts/python.exe scripts/sera_inquiry.py result --id ready`.
+The tested environment uses Python 3.12 and CPU PyTorch 2.10. On Linux/macOS use `.venv/bin/python` in place of `.venv/Scripts/python.exe`.
 
 ```powershell
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
 .venv/Scripts/python.exe -m pip install -e ".[dev,reports,reference]"
-.venv/Scripts/python.exe -m pytest
-.venv/Scripts/python.exe -m sera shared-study --output runs/my-shared-study --seeds 0 1 2
 ```
 
-This trains both shared cores from scratch: 1,600 joint updates, then 192 updates per adaptation control at 32, 128 and 512 support cases. It writes evidence, checkpoints, raw paired scores, validation histories and costs. Each seed uses one CPU thread. All candidate weights freeze before final scoring. Use `--pretrain-steps 2 --adapt-steps 2 --support-sizes 8 --samples 8 --seeds 19 --kinds delta` only for a plumbing check. A fresh output directory is required. The earlier standalone typed protocol remains available through `scripts/evaluate_variants.py`.
+`src/sera/` contains the original learning and ownership contracts; `experiments/` contains the registered continuations; `workbench/` contains local task tools; `tests/` contains regression checks. `research-continuation/` preserves protocols, result records, source identities, checkpoint archives and decisions. Ignored `runs/` stores live revisions and intermediate checkpoints. Completed experiments are resumed or inspected according to their own guides, with fresh outputs for new work. The [previous landing page](https://github.com/Arnav123-s/sera/blob/73dd66caecb7a0f3d3ab0bba21a725e2fc4d5678/README.md) retains the historical training and reproduction commands.
 
-Assemble the first delta seed into a persistent solver, train its bounded R2/controller, and attempt corrective learning:
-
-```text
-python scripts/start_shared.py --study runs/my-shared-study/0/delta --output runs/my-shared-solver --review runs/my-shared-assembly
-python -m sera status runs/my-shared-solver
-python -m sera typed-solve runs/my-shared-solver examples/typed-addition.json
-python -m sera typed-solve runs/my-shared-solver examples/typed-binding-first.json
-python -m sera typed-solve runs/my-shared-solver examples/typed-binding-latest.json
-python -m sera learn-binding runs/my-shared-solver --seed 1200001 --support 128 --steps 192
-python scripts/audit_shared.py --root runs/my-shared-study --seed 0 --output runs/my-shared-audit-0.json
-```
-
-`learn-binding` teaches the explicitly instructed first-binding rule from simulator corrections. Its default trains scoped low-rank residuals while freezing the shared base; full/replay/global-adapter controls remain available. It freezes the candidate, checks fresh gain and 34 retained capabilities, and keeps rejected proposals. The supplied first/latest example pair has the same writes and query but different explicit instructions. Continued world learning on a shared solver also checks both instructed binding rules, for 40 retained capabilities with one world. These retention checks are empirical; the objective gain uses a separate conservative bound. Bounded Brier calibration is gated for instructed binding only.
-
-The earlier R1/R2 experiment driver `scripts/study_stage_three.py` remains available and retains the v1 typed generator for historical work. Exact 0.3 reproduction uses the pinned source commit in [release source identities](research/release-sources.json). For an existing full solver, the ordinary commands are:
-
-```text
-python -m sera status runs/sera-0.4-current
-python -m sera solve runs/sera-0.4-current --family permutation --world-seed 310000 --start 0 --goal 3
-python -m sera typed-solve runs/sera-0.4-current examples/typed-addition.json
-python -m sera evaluate runs/sera-0.4-current --output runs/current-evaluation
-```
-
-`typed-solve` routes a declared typed request to its trained component and applicable verified procedure. The example adds a sequence of integers modulo four. Returned values are labeled predictions. `solve` executes a saved skill or plans through the learned world model. The legacy sequence decoder is also trained and stored, so ordinary symbolic evaluation uses learned weights.
-
-The active local shared solver is `runs/sera-0.5-current`. The earlier `runs/sera-0.4-current` retains its entire ledger, versions and replay. The new shared solver has its own explicit initial version; it does not rewrite that history or imply a promotion across different solver architectures. `sera learn` collects simulator feedback, reads attempt history and remaining budget, follows the saved controller and checks fresh paired world gain. Binding correction currently uses the explicitly selected CLI method. `sera rollback` preserves cumulative history. The standalone v1/v2 typed cohorts and useful older sequence, HMM and instrument variants remain available. [Workspace roles](research/shared-workspace.md) identify every new attempt and artifact family.
-
-## Implemented paths
-
-| Path | Behavior | Boundary |
-|---|---|---|
-| R1 | Learned recurrent state, action prediction, reward prediction and planning | Supplied symbolic worlds; heuristic imagined observations |
-| R2 | General multi-Kraus events, shared likelihood/conditioning and execution-guided programs | Finite state and action grammar; matched classical controls |
-| Typed tasks | Modality adapters and categorical/numeric heads using the same R1 core as world and sequence tasks | Small synthetic representations; supplied arithmetic grammar; explicit task instructions |
-| Learning loop | Failure categories, targeted evidence, full/adapter/replay updates, saved attempt budgets | Learned selection among finite supplied methods |
-| Library | Domain/version-checked calls, verification traces and future composition | Explicit domain applicability and bounded expansion |
-| Persistence | Owned live sessions, immutable solver versions, cumulative replay and useful archive retrieval | Local ownership and integrity checks; no hostile-process isolation |
-| Reference memory | Full-size rotor/delta/density shared learner, compared with equal update/example budgets | Unequal parameter/runtime costs; core bytes exclude weights, activations and optimizer state |
-
-## Reproduce and inspect
-
-```text
-python scripts/reproduce_archive.py research/reference-materials/sera-research-archive.zip --output runs/source-reproduction --retrain
-python scripts/review_source_models.py research/reference-materials/sera-research-archive.zip --output runs/source-model-comparison
-python scripts/review_integration.py runs/stage-three-complete --output runs/integration-review.json
-python scripts/build_stage_three_report.py
-python scripts/verify_release.py
-python -m ruff check src tests scripts
-python -m pytest
-```
-
-Source reproduction requires the original local archive. The first command covers the 12-core benchmark; `review_source_models.py` adds the original replay, instrument and program-discovery experiments plus direct restricted-model comparisons. These commands verify reviewed source hashes, redirect output to fresh directories and load checkpoints with `weights_only=True`. Fresh training initializes independently. Source results and SERA measurements stay separate. The supplied 36,900 configuration entries are an index, not trained architectures.
-
-`src/sera/` contains executable models and learning; `tests/` contains numerical and lifecycle checks; `research/` contains source provenance and protocols; `reports/` contains findings and checksummed evidence. Full checkpoints, journals and original materials remain under ignored `runs/` and `research/reference-materials/`. The [architecture](research/architecture.md) explains the contracts and the [roadmap](research/roadmap.md) records unresolved research objectives.
-
-All cost categories remain separate. The admission operation sum is a declared proxy, not FLOPs or complete research cost. No quantum advantage is claimed. I have not assigned an open-source license to this research release; original references retain their source attribution.
-
-
-The [v10 constraint-inquiry continuation](research-continuation/25_constraint_inquiry/README.md) connects learned actor/target/modality binding, acquired dynamics, learned initialization and conditional settling through the actual owner. It can acquire a missing simulated landmark, preserve unfinished work, restore it exactly and invalidate plans after new evidence. The release passes 302 regressions and preserves its failed new-wording and omitted-law tests. [Results](research-continuation/25_constraint_inquiry/report.md), [architecture audit](research-continuation/25_constraint_inquiry/architecture-audit.md) and [costs](research-continuation/25_constraint_inquiry/costs.json) retain the limits. Run `.venv/Scripts/python.exe scripts/sera_constraints.py result --id reach` in the prepared local workspace.
-
-
-The [real-request learner](research-continuation/26_stream_curriculum/README.md) now labels task requests and extracts entities from local text/JSONL files. It was taught 11,514 real requests across 18 domains. [Held-out results, replay and costs](research-continuation/26_stream_curriculum/report.md) and the [architecture audit](research-continuation/26_stream_curriculum/architecture-audit.md) preserve the complete experiment. Run `.venv/Scripts/python.exe scripts/sera_requests.py ask --id my-request --text "set an alarm for nine am"` in the prepared workspace.
+I have not assigned an open-source license to this research release. Original data and references retain their own licenses and attribution. MASSIVE teaching data is attributed to [FitzGerald et al.](https://github.com/alexa/massive), CC BY 4.0; detailed source identities accompany each study.
