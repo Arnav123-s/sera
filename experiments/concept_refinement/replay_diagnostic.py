@@ -116,11 +116,12 @@ def main():
     assert model_identity(constraint.owner) == constraint_saved["owner"]
     rows = []
     for branch in [*constraint_saved["jobs"].values(), *constraint_saved["history"]]:
-        if "model" not in branch or branch["status"] == "stale":
+        if "model" not in branch:
             continue
-        replay = constraint._new(branch["id"], branch["text"])
-        for key in ("frame", "model", "initial"):
-            rows.extend(differences(branch[key], replay[key], branch["id"] + "/" + key))
+        if branch["status"] != "stale":
+            replay = constraint._new(branch["id"], branch["text"])
+            for key in ("frame", "model", "initial"):
+                rows.extend(differences(branch[key], replay[key], branch["id"] + "/" + key))
         points = torch.tensor(branch["initial"], dtype=torch.float64)
         for _ in range(branch["steps"]):
             points = step(branch["model"], points)
