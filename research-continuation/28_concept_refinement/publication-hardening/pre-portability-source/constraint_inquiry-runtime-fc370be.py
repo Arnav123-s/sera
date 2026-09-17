@@ -65,18 +65,6 @@ def same_starting_proposal(expected, stored):
     return bool((np.abs(a[0]-b[0]) <= np.finfo(np.float32).eps).all())
 
 
-def same_conditional_result(expected, stored):
-    left, right = copy.deepcopy(expected), copy.deepcopy(stored)
-    if not isinstance(left, dict) or not isinstance(right, dict):
-        return False
-    a, b = left.pop("energy", None), right.pop("energy", None)
-    # Only the seven-term float64 quadrature's last bits may vary. Selected
-    # controls, endpoints, distances, statuses and qualifications remain exact.
-    return (left == right and type(a) is float and type(b) is float
-            and math.isfinite(a) and math.isfinite(b) and a >= 0 and b >= 0
-            and abs(a - b) <= 8 * max(math.ulp(a), math.ulp(b)))
-
-
 def supported_text(text):
     return text.lower().strip().rstrip(".?") in {
         r["text"] for part in ("train", "pairs") for r in corpus(part)
@@ -302,7 +290,7 @@ class ConstraintRuntime:
             self.work["restore_gradient_batches"] += 1
         if not torch.equal(points, torch.tensor(branch["points"], dtype=torch.float64)):
             raise ValueError("Saved refinement differs from replay")
-        if not same_conditional_result(summarize(branch["model"], points), branch["result"]):
+        if summarize(branch["model"], points) != branch["result"]:
             raise ValueError("Saved conditional result differs from replay")
         if branch["status"] != "stale" and branch["dependency"] != self.dependency(branch["frame"]["target"], interpreter=branch["source"]):
             raise ValueError("A current branch has stale dependencies")

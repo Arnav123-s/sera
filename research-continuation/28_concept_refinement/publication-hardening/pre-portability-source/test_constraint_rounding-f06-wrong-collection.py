@@ -107,7 +107,7 @@ def test_migration_keeps_original_record_owner_and_unfinished_progress(record):
 
 
 def test_measured_archived_energy_last_bit_preserves_full_result(record):
-    original = record["jobs"]["wording"]["result"]
+    original = next(row["result"] for row in record["history"] if row["id"] == "wording")
     assert original["energy"] == 0.0008018090864610274
     replay = {**original, "energy": 0.0008018090864610273}
     assert same_conditional_result(original, replay)

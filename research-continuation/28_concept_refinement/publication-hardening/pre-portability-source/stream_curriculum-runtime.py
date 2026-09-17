@@ -3,31 +3,17 @@
 import argparse
 import copy
 import json
-import math
 from pathlib import Path
 
 import torch
 
 from experiments.task_transfer.runtime import lock
 from sera.session_state import model_identity
-from sera.storage import digest
 from workbench.storage import Store
 
-from .compatibility import REPLAY_SOURCES
 from .data import ROOT, sha
 from .model import StreamR1, apply, encode
 from .study import identities, load_parent, spans
-
-
-def same_request_frame(expected, stored):
-    left, right = copy.deepcopy(expected), copy.deepcopy(stored)
-    if not isinstance(left, dict) or not isinstance(right, dict):
-        return False
-    a, b = left.pop("intent_score", None), right.pop("intent_score", None)
-    epsilon = float(torch.finfo(torch.float32).eps)
-    return (left == right and type(a) is float and type(b) is float
-            and 0 <= a <= 1 and 0 <= b <= 1
-            and math.isclose(a, b, rel_tol=64 * epsilon, abs_tol=64 * epsilon**2))
 
 
 class RequestSession:
@@ -49,22 +35,16 @@ class RequestSession:
         self.owner.eval()
         self.reproof = learner.rebind(facts, library)
         self.checkpoint, self.requests = copy.deepcopy(checkpoint), {}
-        self.replay_migrations = []
         self.training_step, self.seen = saved["step"], len(saved["seen_ids"])
         if record is not None:
-            if (record["schema"] != "sera.request-session.1"
-                    or record["source"] not in {sha(Path(__file__)), *REPLAY_SOURCES}
+            if (record["schema"] != "sera.request-session.1" or record["source"] != sha(Path(__file__))
                     or record["owner"] != model_identity(self.owner) or record["checkpoint"] != checkpoint
                     or len(record["requests"]) > 32):
                 raise ValueError("Changed saved request session")
             for identifier, frame in record["requests"].items():
-                if not same_request_frame(self.interpret(frame["text"]), frame):
-                    raise ValueError("Saved frame differs from qualified checkpoint replay")
+                if frame != self.interpret(frame["text"]):
+                    raise ValueError("Saved frame differs from exact checkpoint replay")
                 self.requests[identifier] = copy.deepcopy(frame)
-            self.replay_migrations = copy.deepcopy(record.get("replay_migrations", []))
-            if record["source"] != sha(Path(__file__)):
-                self.replay_migrations.append({"from": record["source"], "to": sha(Path(__file__)),
-                                               "record_sha256": digest(record)})
 
     @torch.no_grad()
     def interpret(self, text):
@@ -93,7 +73,7 @@ class RequestSession:
     def snapshot(self):
         return {"schema": "sera.request-session.1", "source": sha(Path(__file__)),
                 "checkpoint": self.checkpoint, "owner": model_identity(self.owner),
-                "requests": copy.deepcopy(self.requests), "replay_migrations": copy.deepcopy(self.replay_migrations)}
+                "requests": copy.deepcopy(self.requests)}
 
 
 def main():

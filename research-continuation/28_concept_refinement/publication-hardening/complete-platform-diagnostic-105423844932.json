@@ -1,0 +1,185 @@
+{
+  "run": 35287780685,
+  "job": 105423844932,
+  "diagnostics": [
+    {
+      "schema": "sera.constraint-replay-diagnostic.1",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "owner_byte_identity": "5b1dc35e772f5c00ffe8fe0e43fbf1ea14f10378bbf990ebb50002ee7d728a7b",
+      "difference_count": 21,
+      "differences": [
+        {
+          "path": "reach/frame/scores/0/1",
+          "kind": "float",
+          "expected": 0.0000012377137181829312,
+          "observed": 0.0000012377101938909618,
+          "absolute_difference": 3.524291969370097e-12
+        },
+        {
+          "path": "reach/frame/scores/2/2",
+          "kind": "float",
+          "expected": 0.0000015441920595549163,
+          "observed": 0.0000015441936511706444,
+          "absolute_difference": 1.5916157281026244e-12
+        },
+        {
+          "path": "reach/initial/0/0",
+          "kind": "float",
+          "expected": -0.8516620397567749,
+          "observed": -0.8516619801521301,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/0/1",
+          "kind": "float",
+          "expected": -0.562703549861908,
+          "observed": -0.5627034902572632,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/1/0",
+          "kind": "float",
+          "expected": -0.7516620382666588,
+          "observed": -0.751661978662014,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/1/1",
+          "kind": "float",
+          "expected": -0.6627035513520241,
+          "observed": -0.6627034917473793,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/2/0",
+          "kind": "float",
+          "expected": -0.951662041246891,
+          "observed": -0.9516619816422462,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/2/1",
+          "kind": "float",
+          "expected": -0.46270354837179184,
+          "observed": -0.46270348876714706,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/3/0",
+          "kind": "float",
+          "expected": -0.7016620337963104,
+          "observed": -0.7016619741916656,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "reach/initial/3/1",
+          "kind": "float",
+          "expected": -0.4127035439014435,
+          "observed": -0.4127034842967987,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/frame/scores/2/0",
+          "kind": "float",
+          "expected": 0.000013178961125959177,
+          "observed": 0.000013178948393033352,
+          "absolute_difference": 1.2732925824820995e-11
+        },
+        {
+          "path": "unfinished/frame/scores/2/2",
+          "kind": "float",
+          "expected": 0.000017120499251177534,
+          "observed": 0.000017120515622082166,
+          "absolute_difference": 1.6370904631912708e-11
+        },
+        {
+          "path": "unfinished/initial/0/0",
+          "kind": "float",
+          "expected": -0.8516620397567749,
+          "observed": -0.8516619801521301,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/0/1",
+          "kind": "float",
+          "expected": -0.562703549861908,
+          "observed": -0.5627034902572632,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/1/0",
+          "kind": "float",
+          "expected": -0.7516620382666588,
+          "observed": -0.751661978662014,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/1/1",
+          "kind": "float",
+          "expected": -0.6627035513520241,
+          "observed": -0.6627034917473793,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/2/0",
+          "kind": "float",
+          "expected": -0.951662041246891,
+          "observed": -0.9516619816422462,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/2/1",
+          "kind": "float",
+          "expected": -0.46270354837179184,
+          "observed": -0.46270348876714706,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/3/0",
+          "kind": "float",
+          "expected": -0.7016620337963104,
+          "observed": -0.7016619741916656,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "unfinished/initial/3/1",
+          "kind": "float",
+          "expected": -0.4127035439014435,
+          "observed": -0.4127034842967987,
+          "absolute_difference": 5.960464477539063e-8
+        },
+        {
+          "path": "wording/result/energy",
+          "kind": "float",
+          "expected": 0.0008018090864610274,
+          "observed": 0.0008018090864610273,
+          "absolute_difference": 1.0842021724855044e-19
+        }
+      ],
+      "stored_evidence_changed": false
+    },
+    {
+      "schema": "sera.request-replay-diagnostic.1",
+      "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+      "owner_byte_identity": "81a948e40ccd2fd1984a92667d7ba35ee8c22ec4c3555ecc32f5f48b553d9e25",
+      "difference_count": 2,
+      "differences": [
+        {
+          "path": "example-2/intent_score",
+          "kind": "float",
+          "expected": 0.9999947547912598,
+          "observed": 0.9999946355819702,
+          "absolute_difference": 1.1920928955078125e-7
+        },
+        {
+          "path": "example-3/intent_score",
+          "kind": "float",
+          "expected": 0.9982641339302063,
+          "observed": 0.9982640147209167,
+          "absolute_difference": 1.1920928955078125e-7
+        }
+      ],
+      "stored_evidence_changed": false
+    }
+  ]
+}
