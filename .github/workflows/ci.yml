@@ -12,6 +12,15 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+      ATEN_CPU_CAPABILITY: avx2
+      MKL_ENABLE_INSTRUCTIONS: AVX2
+      OPENBLAS_CORETYPE: Haswell
+      NPY_DISABLE_CPU_FEATURES: X86_V4
     steps:
       - uses: actions/checkout@v4
         with:

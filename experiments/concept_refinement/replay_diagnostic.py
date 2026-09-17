@@ -55,6 +55,8 @@ def differences(expected, observed, path=""):
 
 def main():
     torch.set_num_threads(1)
+    print(json.dumps({"torch_cpu_capability": torch.backends.cpu.get_cpu_capability(),
+                      "numpy_simd": np.__config__.CONFIG["SIMD Extensions"]}), flush=True)
     saved = read(ROOT / "research-continuation/25_constraint_inquiry/parent.json")
     runtime = Runtime(saved["checkpoint"])
     apply(runtime.owner, unpack_tensors(saved["language_delta"], delta(runtime.owner)))
