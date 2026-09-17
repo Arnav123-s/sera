@@ -2,7 +2,6 @@
 import copy
 import hashlib
 import itertools
-import math
 from pathlib import Path
 
 import numpy as np
@@ -10,39 +9,16 @@ import numpy as np
 from experiments.continuing_control.core import SPEED_LIMIT
 from sera.storage import digest
 
-from .compatibility import GRAPH_SCORE_REPLAY_SOURCES, GRAPH_SOURCES
+from .compatibility import GRAPH_SOURCES
 from .data import surface
 from .model import parser_identity
 
 WEIGHTS = np.array([.25]+[.125]*6)
 MAX_JOBS, MAX_VERSIONS, MAX_HISTORY = 256, 128, 512
-# Float32 neural proposal products can round differently across CPU platforms.
-# These bounds apply only to diagnostic scores, never frames or derived states.
-SCORE_RTOL = 64 * float(np.finfo(np.float32).eps)
-SCORE_ATOL = 64 * float(np.finfo(np.float32).eps)**2
 
 
 def source():
     return hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
-
-
-def same_interpretation(expected, stored):
-    left, right = copy.deepcopy(expected), copy.deepcopy(stored)
-    if not isinstance(left, dict) or not isinstance(right, dict):
-        return False
-    a, b = left.get("alternatives"), right.get("alternatives")
-    if not isinstance(a, list) or not isinstance(b, list) or len(a) != len(b):
-        return False
-    for proposal, saved in zip(a, b, strict=True):
-        if not isinstance(proposal, dict) or not isinstance(saved, dict):
-            return False
-        x, y = proposal.pop("proposal_score", None), saved.pop("proposal_score", None)
-        if (type(x) is not float or type(y) is not float
-                or not math.isfinite(x) or not math.isfinite(y)
-                or not 0 <= x <= 1 or not 0 <= y <= 1
-                or not math.isclose(x, y, rel_tol=SCORE_RTOL, abs_tol=SCORE_ATOL)):
-            return False
-    return left == right
 
 
 def language_identity(owner):
@@ -247,8 +223,7 @@ class Investigation:
             raise ValueError("Inquiry snapshot checksum mismatch")
         p = copy.deepcopy(record["payload"])
         obj = cls(owner, reuse=p["reuse"])
-        permitted_source = (p["source"] == source() or p["source"] in GRAPH_SCORE_REPLAY_SOURCES
-                            or (migrate and p["source"] in GRAPH_SOURCES))
+        permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
@@ -278,7 +253,7 @@ class Investigation:
                         if type(action) is not int or action not in allowed:
                             raise ValueError("Saved clarification contradicts interpretation")
                     expected["frame"]["actions"] = list(actions)
-                if not same_interpretation(expected, j["interpretation"]):
+                if expected != j["interpretation"]:
                     raise ValueError("Saved interpretation disagrees with its current parser and text")
             actions = [] if frame is None else frame["actions"]
             if type(j["cursor"]) is not int or not 0 <= j["cursor"] <= len(actions):

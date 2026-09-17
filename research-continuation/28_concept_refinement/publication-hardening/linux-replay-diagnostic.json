@@ -1,0 +1,39 @@
+{
+  "schema": "sera.platform-replay-diagnostic.1",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "torch": "2.10.0+cpu",
+  "numpy": "2.5.3",
+  "owner_byte_identity": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+  "difference_count": 4,
+  "differences": [
+    {
+      "path": "ready/interpretation/alternatives/1/proposal_score",
+      "kind": "float",
+      "expected": 0.00003418021762551784,
+      "observed": 0.00003418015214198518,
+      "absolute_difference": 6.548353265883877e-11
+    },
+    {
+      "path": "ready/interpretation/alternatives/2/proposal_score",
+      "kind": "float",
+      "expected": 0.0000011060657829161687,
+      "observed": 0.0000011060636230313082,
+      "absolute_difference": 2.159884860482471e-12
+    },
+    {
+      "path": "ready/interpretation/alternatives/3/proposal_score",
+      "kind": "float",
+      "expected": 9.918377782551255e-9,
+      "observed": 9.918339593797554e-9,
+      "absolute_difference": 3.818875370096474e-14
+    },
+    {
+      "path": "unfinished/interpretation/alternatives/2/proposal_score",
+      "kind": "float",
+      "expected": 0.0000011061256171705833,
+      "observed": 0.0000011061214108553689,
+      "absolute_difference": 4.20631521442812e-12
+    }
+  ],
+  "stored_evidence_changed": false
+}

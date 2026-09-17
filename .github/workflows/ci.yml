@@ -16,20 +16,23 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
         with:
-          python-version: '3.12'
-      - run: python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -e ".[dev,reference]"
-      - run: python -m ruff check src tests scripts experiments
-      - run: python scripts/restore_test_artifacts.py
-      - run: python -m experiments.concept_refinement.replay_diagnostic
-      - run: python -m pytest
-      - run: python scripts/verify_release.py
-      - run: python scripts/verify_continuation.py
-      - run: python scripts/verify_applicability.py
-      - run: python scripts/verify_v3_release.py
-      - run: python scripts/verify_transfer_release.py
-      - run: python scripts/verify_continuing_release.py
-      - run: python scripts/verify_concept_release.py
-      - run: python -m sera --help
+          version: '0.12.15'
+          python-version: '3.12.14'
+          enable-cache: false
+      - run: uv venv --python 3.12.14
+      - run: uv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: uv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
+      - run: uv run --no-sync python -m ruff check src tests scripts experiments
+      - run: uv run --no-sync python scripts/restore_test_artifacts.py
+      - run: uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
+      - run: uv run --no-sync python -m pytest
+      - run: uv run --no-sync python scripts/verify_release.py
+      - run: uv run --no-sync python scripts/verify_continuation.py
+      - run: uv run --no-sync python scripts/verify_applicability.py
+      - run: uv run --no-sync python scripts/verify_v3_release.py
+      - run: uv run --no-sync python scripts/verify_transfer_release.py
+      - run: uv run --no-sync python scripts/verify_continuing_release.py
+      - run: uv run --no-sync python scripts/verify_concept_release.py
+      - run: uv run --no-sync python -m sera --help

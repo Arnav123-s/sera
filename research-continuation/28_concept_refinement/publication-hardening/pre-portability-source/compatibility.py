@@ -20,8 +20,4 @@ TRAINING_SOURCES = ({"1708da71bb6a7a5fe442691a0bd4f9f92e65c562e06afe37eb49b859dd
 RUNTIME_SOURCES = ({"1d44b9114bb829d5e3b47333dfc213c1213beba05503042e4128649ffeaf1961"}
     if reviewed("runtime.py", "80428f122a3eb64915910741b95369abef72e05d8e7edc2b3d88e2ba6587d702") else set())
 GRAPH_SOURCES = ({"6b32a70d0768f0cc81971f88f0ff22c2d068155bb1c861baf8df73824ce64248"}
-    if reviewed("graph.py", "2cf856172086627df42dd4260c054052adf84b07f49bf74a9246075284ad93cc") else set())
-
-# Only this audited predecessor receives proposal-score rounding compatibility.
-GRAPH_SCORE_REPLAY_SOURCES = ({"103f05f6fb895f49d7704022f220feadfca9d8fa5593ee67e79f3e1ef2c5cb15"}
-    if reviewed("graph.py", "2cf856172086627df42dd4260c054052adf84b07f49bf74a9246075284ad93cc") else set())
+    if reviewed("graph.py", "103f05f6fb895f49d7704022f220feadfca9d8fa5593ee67e79f3e1ef2c5cb15") else set())
