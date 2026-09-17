@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "selected": {
+    "path": "runs/SC-exposure-shared-2642/step-005400.pt",
+    "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3",
+    "fit": "runs/SC-exposure-shared-2642",
+    "qualified_annotation_aid": true,
+    "criterion": "development exact frames; then intent accuracy; then path"
+  },
+  "owner": "81a948e40ccd2fd1984a92667d7ba35ee8c22ec4c3555ecc32f5f48b553d9e25",
+  "shared_owner_aliases": true,
+  "exact_session_restore": true,
+  "parent_store_pointer_unchanged": "0150ec21e5af8914c05c553fac588830de1d2aa7fa6f8ddb3ca2ca67314d7b92",
+  "old_task": {
+    "id": "stream-retention-full",
+    "text": "can orbit reach beacon",
+    "frame": {
+      "actor": "orbit",
+      "target": "beacon",
+      "mode": 0,
+      "scores": [
+        [
+          0.9999988079071045,
+          1.2377137181829312e-06,
+          0.0,
+          0.0
+        ],
+        [
+          1.7271581782551948e-06,
+          0.9999983310699463,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999784231185913,
+          7.108115369192092e-06,
+          1.5441920595549163e-06,
+          1.2834239896619692e-05
+        ]
+      ],
+      "scope": "Finite supervised binding; scores are not applicability probabilities"
+    },
+    "dependency": "b028bea1bd3efc078c0db22acda1a5602cf0885df2a03bfb7df1aa7cd6f7fed2",
+    "steps": 0,
+    "result": {
+      "status": "UNRESOLVED_SEARCH",
+      "controls": [
+        -0.951662041246891,
+        -0.46270354837179184
+      ],
+      "parameter_endpoints": [
+        [
+          0.2206488306794494,
+          0.4368675891824208
+        ],
+        [
+          0.24626520600630364,
+          0.43747747856734603
+        ],
+        [
+          0.2789432131970087,
+          0.43713002940109663
+        ],
+        [
+          0.20392680185308,
+          0.43605046633831673
+        ],
+        [
+          0.1957457647463979,
+          0.4355298122364792
+        ],
+        [
+          0.16251071099614195,
+          0.4325940721693127
+        ],
+        [
+          0.23738374814860405,
+          0.4373538762507893
+        ]
+      ],
+      "nominal_distance_m": 0.050884160270501036,
+      "worst_parameter_distance_m": 0.10850052542610106,
+      "energy": 0.003693638998712702,
+      "occurrence": "NOT_ESTABLISHED",
+      "applicability": "UNCALIBRATED; GG-GUARD-002 does not cover this route",
+      "assumptions": [
+        "Acquired circle and linear action-response family",
+        "Continuous control interpolation",
+        "Static parameters across the imagined branch",
+        "Declared target location and modality"
+      ],
+      "uncertainty": "Finite parameter quadrature; neither exhaustive modes nor model-adequacy probability"
+    },
+    "evidence_role": "conditional_imagination",
+    "source": "74abc339e58b074b32468270895a7f6dac66f35bdc63344df7cc6397b7bfe5d9",
+    "premise_status": "user_request; not independently measured event",
+    "status": "pending",
+    "model": {
+      "center": [
+        0.2536050454130459,
+        -0.40907833764735096
+      ],
+      "radius": 0.846587634689669,
+      "mean": [
+        0.8629936212890984,
+        -0.07849657030141752,
+        0.0007824440435518435
+      ],
+      "covariance": [
+        [
+          0.0002742143892460066,
+          2.077966665144983e-05,
+          1.4007831052214136e-06
+        ],
+        [
+          2.0779666651449862e-05,
+          6.366882628719344e-05,
+          -4.618671738261664e-05
+        ],
+        [
+          1.4007831052213225e-06,
+          -4.618671738261664e-05,
+          4.6448160060575064e-05
+        ]
+      ],
+      "angle": 1.9170498329488337,
+      "velocity": -0.30169204920736714,
+      "revision": 87,
+      "source": "13ee3eb010df3818770877c07312f5523bf5dab87e4f36fc563c51cd545b205a",
+      "units": {
+        "position": "m",
+        "velocity": "rad/tick"
+      },
+      "parameters": [
+        [
+          0.8629936212890984,
+          -0.07849657030141752,
+          0.0007824440435518435
+        ],
+        [
+          0.896112461199156,
+          -0.07598686081788704,
+          0.0009516266730189981
+        ],
+        [
+          0.8629936212890984,
+          -0.06273660001397563,
+          -0.010967036786855577
+        ],
+        [
+          0.8629936212890984,
+          -0.07849657030141752,
+          0.007689955730119982
+        ],
+        [
+          0.8298747813790408,
+          -0.081006279784948,
+          0.000613261414084689
+        ],
+        [
+          0.8629936212890984,
+          -0.0942565405888594,
+          0.012531924873959262
+        ],
+        [
+          0.8629936212890984,
+          -0.07849657030141752,
+          -0.006125067643016294
+        ]
+      ],
+      "target": [
+        0.17098136971798672,
+        0.44792837975432914
+      ],
+      "avoid": false
+    },
+    "initial": [
+      [
+        -0.8516620397567749,
+        -0.562703549861908
+      ],
+      [
+        -0.7516620382666588,
+        -0.6627035513520241
+      ],
+      [
+        -0.951662041246891,
+        -0.46270354837179184
+      ],
+      [
+        -0.7016620337963104,
+        -0.4127035439014435
+      ],
+      [
+        0.16268183961514904,
+        -0.4235282157276996
+      ],
+      [
+        -0.09426230223777154,
+        -0.6464009475925718
+      ],
+      [
+        -0.28946648332138714,
+        0.24381049735905536
+      ],
+      [
+        -0.03630319843658292,
+        -0.11839900191128105
+      ]
+    ],
+    "points": [
+      [
+        -0.8516620397567749,
+        -0.562703549861908
+      ],
+      [
+        -0.7516620382666588,
+        -0.6627035513520241
+      ],
+      [
+        -0.951662041246891,
+        -0.46270354837179184
+      ],
+      [
+        -0.7016620337963104,
+        -0.4127035439014435
+      ],
+      [
+        0.16268183961514904,
+        -0.4235282157276996
+      ],
+      [
+        -0.09426230223777154,
+        -0.6464009475925718
+      ],
+      [
+        -0.28946648332138714,
+        0.24381049735905536
+      ],
+      [
+        -0.03630319843658292,
+        -0.11839900191128105
+      ]
+    ]
+  },
+  "fixed_illustrations": [
+    {
+      "text": "set an alarm for nine am",
+      "intent": "alarm_set",
+      "intent_score": 0.9999889135360718,
+      "entities": [
+        {
+          "type": "time",
+          "value": "nine am",
+          "token_start": 4,
+          "token_end": 6
+        }
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-time",
+        "I-time"
+      ],
+      "evidence_kind": "learned_interpretation_of_user_request",
+      "qualification": "development_checkpoint",
+      "training_step": 5400,
+      "training_examples_seen": 11514,
+      "checkpoint": {
+        "path": "runs/SC-exposure-shared-2642/step-005400.pt",
+        "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3"
+      },
+      "actions_executed": 0
+    },
+    {
+      "text": "what is the weather in london",
+      "intent": "weather_query",
+      "intent_score": 0.9999947547912598,
+      "entities": [
+        {
+          "type": "place_name",
+          "value": "london",
+          "token_start": 5,
+          "token_end": 6
+        }
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-place_name"
+      ],
+      "evidence_kind": "learned_interpretation_of_user_request",
+      "qualification": "development_checkpoint",
+      "training_step": 5400,
+      "training_examples_seen": 11514,
+      "checkpoint": {
+        "path": "runs/SC-exposure-shared-2642/step-005400.pt",
+        "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3"
+      },
+      "actions_executed": 0
+    },
+    {
+      "text": "add milk to my shopping list",
+      "intent": "lists_createoradd",
+      "intent_score": 0.9982641339302063,
+      "entities": [
+        {
+          "type": "list_name",
+          "value": "shopping",
+          "token_start": 4,
+          "token_end": 5
+        }
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-list_name",
+        "O"
+      ],
+      "evidence_kind": "learned_interpretation_of_user_request",
+      "qualification": "development_checkpoint",
+      "training_step": 5400,
+      "training_examples_seen": 11514,
+      "checkpoint": {
+        "path": "runs/SC-exposure-shared-2642/step-005400.pt",
+        "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3"
+      },
+      "actions_executed": 0
+    }
+  ],
+  "batch": {
+    "predictions": 3,
+    "input_errors": 0,
+    "input_format": "one request per line",
+    "source_sha256": "dac22ebd0d3d5540c13c53b7635ba12e187cebeb75e25eb5de282ab8269695b7",
+    "output_sha256": "95f6f4a099a44a4cafaf2e58b12623b43f02bc7c45a46b799ffeb46ac410669e",
+    "checkpoint": {
+      "path": "runs/SC-exposure-shared-2642/step-005400.pt",
+      "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3"
+    },
+    "actions_executed": 0
+  },
+  "saved_store": "runs/sera-requests-live",
+  "development_admission": true,
+  "selection_changed_after_test": false,
+  "actions_executed": 0,
+  "integration_source_sha256": "88eca2469a1e671814d3b9b77ca5a6e98b8a021650e05d643174c27f437f82bb"
+}

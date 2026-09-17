@@ -74,3 +74,8 @@ The real browser completed three language lessons, kept the existing numerical c
 ## v10 actual-owner constraint inquiry
 
 I integrated finite learned role binding, an acquired-model initializer, continuous conditional search, grounded simulator acquisition and persistent correction. CI-001 retains its 50% new-wording failure and omitted-law errors; CI-002 adds a fixed residual stop on fresh same-family cases. The analytic baseline remains cheaper. This is an optional conditional route, not a replacement applicability certificate or learned investigator. See release 25 for the full records.
+
+
+## Real-request acquisition and successive-domain replay
+
+I trained the actual owner's request interface from 11,514 MASSIVE requests, repaired exposure order through a frozen comparison, measured two replay lifetimes per arm, resumed longer fits exactly, and evaluated a fixed cohort once on the official test. I selected the annotation checkpoint on development exact frames and preserved all alternatives and costs. See release 26 for the complete records and source attribution.

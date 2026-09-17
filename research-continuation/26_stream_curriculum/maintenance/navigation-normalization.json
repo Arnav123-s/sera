@@ -1,0 +1,49 @@
+{
+  "change": "Normalize generated navigation line endings and make the sealer emit LF explicitly; preserve original seal/source archive",
+  "initial_manifest_sha256": "e472080061811a1fb1d3e13ba0600c277ee20128d9b10a13967d458d473e144a",
+  "navigation_changes": [
+    {
+      "path": "README.md",
+      "old_sha256": "3ef3ff3d34d81bd91cc97fa3b51c1dc345303103a14d84c46dd8fb78bd325542",
+      "new_sha256": "e384141de6dcf30a520871118a6b19418c76c9ce3c5be46495ba00e9bec97902",
+      "only_crlf_to_lf": true
+    },
+    {
+      "path": "research-continuation/RESEARCH_STATE.json",
+      "old_sha256": "07e33e3f082574890657bed7236332e6437a562c7e3fea0d9f93630c584d30c0",
+      "new_sha256": "2b85e823b9b5534c34536cc5ee486c50ea261b0bab16f5c4bbcf2268eb255663",
+      "only_crlf_to_lf": true
+    },
+    {
+      "path": "research-continuation/NEXT_ACTIONS.md",
+      "old_sha256": "1798e5fe5060fe69af851e730ff49e560f8eee867c7eb0418937982dceadaeb3",
+      "new_sha256": "fd5546cb1fb5b53865ab9fbb76fb3deb6d2cf93e9ef9648de19254791aeb15f6",
+      "only_crlf_to_lf": true
+    },
+    {
+      "path": "research-continuation/NEXT_EXPERIMENT_PROTOCOL.md",
+      "old_sha256": "544ccc638a7cc55aaa1a0644d3af45bd536673f8207c9bf957ba2b2cdf804c00",
+      "new_sha256": "8df3208328654dc94cd7d3a5758165e141d4a417946ea55a31e90e698b648b1f",
+      "only_crlf_to_lf": true
+    },
+    {
+      "path": "research-continuation/DECISION_LOG.md",
+      "old_sha256": "eef14820be17a0f32e93d06a7d089afd4a50b3cf7eae6b113e6be0802f492251",
+      "new_sha256": "df3ea6418d6a414e41698b7c90135c60a40725906243bf6d6a37d4ee31b0504c",
+      "only_crlf_to_lf": true
+    }
+  ],
+  "sealer_old_sha256": "8e651920983907618bcffff1d4189e356bbd03c28e46b35e739c4bcd8a2d573e",
+  "sealer_new_sha256": "76b618fb1215bf0fb50302e2156735975ae57fa0ff34ea03f982b89534f028f4",
+  "learned_sources_and_experimental_records_unchanged": true,
+  "current_source_archive": "sources-current.zip",
+  "original_source_archive": "sources.zip",
+  "static_attempt_failure": {
+    "error": "TypeError: WindowsPath object is not subscriptable",
+    "failed_expression": "row(root[r['path']])",
+    "corrected_expression": "row(root / r['path'])",
+    "completed_before_error": "LF navigation and current source ZIP; both retained and verified",
+    "resumption": "Only missing manifests completed; no training or evaluation repeated",
+    "cost_scope": "Static engineering, separately unmeasured"
+  }
+}

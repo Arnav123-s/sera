@@ -1,0 +1,57 @@
+{
+  "schema": "sera.stream-data-audit.1",
+  "full_training_rows": 11514,
+  "full_training_domains": {
+    "alarm": 390,
+    "audio": 290,
+    "iot": 769,
+    "calendar": 1688,
+    "play": 1377,
+    "general": 652,
+    "datetime": 402,
+    "takeaway": 257,
+    "news": 503,
+    "music": 332,
+    "weather": 573,
+    "qa": 1183,
+    "recommendation": 433,
+    "social": 391,
+    "transport": 571,
+    "email": 953,
+    "lists": 539,
+    "cooking": 211
+  },
+  "supplied_intents": 60,
+  "supplied_bio_tags": 111,
+  "training_word_types": 5302,
+  "occupied_hash_buckets": 3886,
+  "pilot_domains": 11,
+  "pilot_intents": 31,
+  "development_rows_with_teaching_text": 1,
+  "development_novel_text_rows": 127,
+  "novel_text_intent_correct": 64,
+  "development_rows_with_untaught_intent": 1,
+  "fixed_control": {
+    "rule": "Most frequent pilot teaching intent; all tokens outside entities",
+    "intent": "weather_query",
+    "scores": {
+      "teaching": {
+        "examples": 256,
+        "intent_correct": 31,
+        "exact_frames": 7,
+        "intent_accuracy": 0.12109375,
+        "frame_accuracy": 0.02734375,
+        "slot_span_f1": 0.0
+      },
+      "development": {
+        "examples": 128,
+        "intent_correct": 18,
+        "exact_frames": 3,
+        "intent_accuracy": 0.140625,
+        "frame_accuracy": 0.0234375,
+        "slot_span_f1": 0.0
+      }
+    }
+  },
+  "final_test_opened": false
+}

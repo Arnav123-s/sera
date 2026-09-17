@@ -1,5 +1,7 @@
 # Execution checklist
 
+Latest: [real-request acquisition and replay](26_stream_curriculum/report.md). The saved learner annotates local request files; [commands](26_stream_curriculum/README.md), [next research cycle](26_stream_curriculum/next-cycle.md). Earlier checklists below remain historical.
+
 Latest: [v10 actual-owner constraint integration](25_constraint_inquiry/report.md). 302 regressions and two finite cycles completed; learned directed pairs work, new wording and omitted laws still fail. [Use the saved learner](25_constraint_inquiry/README.md); all older checklists below remain historical.
 
 Current continuation: [v5 shared-owner language and inquiry](24_language_inquiry/report.md). The [usable runner and exact commands](24_language_inquiry/README.md) restore `runs/sera-inquiry`; its `unfinished` node is paused after one of three steps. Older completed cohorts below remain historical evidence.
