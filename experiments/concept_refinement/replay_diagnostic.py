@@ -2,11 +2,13 @@
 
 import json
 import platform
+from unittest.mock import patch
 
 import numpy as np
 import torch
 
 from experiments.constraint_inquiry.runtime import ConstraintRuntime
+from experiments.constraint_inquiry.settling import step, summarize
 from experiments.language_inquiry.graph import advance, answer, interpret, language_identity, start
 from experiments.language_inquiry.model import apply, delta
 from experiments.language_inquiry.runtime import Runtime
@@ -119,12 +121,20 @@ def main():
         replay = constraint._new(branch["id"], branch["text"])
         for key in ("frame", "model", "initial"):
             rows.extend(differences(branch[key], replay[key], branch["id"] + "/" + key))
+        points = torch.tensor(branch["initial"], dtype=torch.float64)
+        for _ in range(branch["steps"]):
+            points = step(branch["model"], points)
+        rows.extend(differences(branch["points"], points.tolist(), branch["id"] + "/points"))
+        rows.extend(differences(branch["result"], summarize(branch["model"], points), branch["id"] + "/result"))
     print(json.dumps({"schema": "sera.constraint-replay-diagnostic.1",
                       "platform": platform.platform(), "owner_byte_identity": constraint_saved["owner"],
                       "difference_count": len(rows), "differences": rows,
                       "stored_evidence_changed": False}, allow_nan=False))
     request_saved = read(ROOT / "research-continuation/27_self_study/parent-request.json")
-    request = RequestSession(request_saved["checkpoint"])
+    # This diagnostic compares the unchanged owner directly. Branches are checked
+    # above; they are not admitted or rewritten to make the request check run.
+    with patch("experiments.stream_curriculum.runtime.load_parent", return_value=constraint):
+        request = RequestSession(request_saved["checkpoint"])
     assert model_identity(request.owner) == request_saved["owner"]
     rows = []
     for key, frame in request_saved["requests"].items():
