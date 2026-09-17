@@ -1,0 +1,1197 @@
+﻿2026-09-17T22:50:51.4300671Z Current runner version: '2.337.0'
+2026-09-17T22:50:51.4325870Z ##[group]Runner Image Provisioner
+2026-09-17T22:50:51.4326930Z Hosted Compute Agent
+2026-09-17T22:50:51.4327584Z Version: 20260828.587
+2026-09-17T22:50:51.4328350Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-17T22:50:51.4329167Z Build Date: 2026-08-28T16:44:25Z
+2026-09-17T22:50:51.4329902Z Worker ID: {06f3b73f-53c6-4bab-8621-a60b952b85c0}
+2026-09-17T22:50:51.4330770Z Azure Region: westus
+2026-09-17T22:50:51.4331428Z ##[endgroup]
+2026-09-17T22:50:51.4333129Z ##[group]Operating System
+2026-09-17T22:50:51.4333787Z Ubuntu
+2026-09-17T22:50:51.4334594Z 24.04.5
+2026-09-17T22:50:51.4335165Z LTS
+2026-09-17T22:50:51.4335699Z ##[endgroup]
+2026-09-17T22:50:51.4336222Z ##[group]Runner Image
+2026-09-17T22:50:51.4336870Z Image: ubuntu-24.04
+2026-09-17T22:50:51.4337438Z Version: 20260907.300.1
+2026-09-17T22:50:51.4338727Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-17T22:50:51.4340769Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+2026-09-17T22:50:51.4341837Z ##[endgroup]
+2026-09-17T22:50:51.4342915Z ##[group]GITHUB_TOKEN Permissions
+2026-09-17T22:50:51.4345750Z Contents: read
+2026-09-17T22:50:51.4346437Z Metadata: read
+2026-09-17T22:50:51.4347077Z ##[endgroup]
+2026-09-17T22:50:51.4349169Z Secret source: Actions
+2026-09-17T22:50:51.4350158Z Cache mode: write
+2026-09-17T22:50:51.4350896Z Prepare workflow directory
+2026-09-17T22:50:51.4691344Z Prepare all required actions
+2026-09-17T22:50:51.4745000Z Getting action download info
+2026-09-17T22:50:51.8410335Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-17T22:50:51.9500554Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-09-17T22:50:52.1381572Z Complete job name: test (ubuntu-latest)
+2026-09-17T22:50:52.2231693Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T22:50:52.2240831Z ##[group]Run actions/checkout@v4
+2026-09-17T22:50:52.2241584Z with:
+2026-09-17T22:50:52.2241998Z   fetch-depth: 0
+2026-09-17T22:50:52.2242450Z   repository: Arnav123-s/sera
+2026-09-17T22:50:52.2246623Z   token: ***
+2026-09-17T22:50:52.2247050Z   ssh-strict: true
+2026-09-17T22:50:52.2247490Z   ssh-user: git
+2026-09-17T22:50:52.2247923Z   persist-credentials: true
+2026-09-17T22:50:52.2248405Z   clean: true
+2026-09-17T22:50:52.2248843Z   sparse-checkout-cone-mode: true
+2026-09-17T22:50:52.2249360Z   fetch-tags: false
+2026-09-17T22:50:52.2249794Z   show-progress: true
+2026-09-17T22:50:52.2250243Z   lfs: false
+2026-09-17T22:50:52.2250686Z   submodules: false
+2026-09-17T22:50:52.2251131Z   set-safe-directory: true
+2026-09-17T22:50:52.2251632Z   allow-unsafe-pr-checkout: false
+2026-09-17T22:50:52.2252427Z ##[endgroup]
+2026-09-17T22:50:52.3322881Z Syncing repository: Arnav123-s/sera
+2026-09-17T22:50:52.3326438Z ##[group]Getting Git version info
+2026-09-17T22:50:52.3327516Z Working directory is '/home/runner/work/sera/sera'
+2026-09-17T22:50:52.3329288Z [command]/usr/bin/git version
+2026-09-17T22:50:52.3408947Z git version 2.55.0
+2026-09-17T22:50:52.3436146Z ##[endgroup]
+2026-09-17T22:50:52.3453514Z Temporarily overriding HOME='/home/runner/work/_temp/fdaa3331-c565-4ea6-8026-a3d682d70f8f' before making global git config changes
+2026-09-17T22:50:52.3456228Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T22:50:52.3461170Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sera/sera
+2026-09-17T22:50:52.3528480Z Deleting the contents of '/home/runner/work/sera/sera'
+2026-09-17T22:50:52.3534058Z ##[group]Initializing the repository
+2026-09-17T22:50:52.3539063Z [command]/usr/bin/git init /home/runner/work/sera/sera
+2026-09-17T22:50:52.3670575Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-17T22:50:52.3672667Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-17T22:50:52.3674814Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-17T22:50:52.3677195Z hint: call:
+2026-09-17T22:50:52.3678238Z hint:
+2026-09-17T22:50:52.3679510Z hint: 	git config --global init.defaultBranch <name>
+2026-09-17T22:50:52.3681598Z hint:
+2026-09-17T22:50:52.3682851Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-17T22:50:52.3684859Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-17T22:50:52.3686490Z hint:
+2026-09-17T22:50:52.3687628Z hint: 	git branch -m <name>
+2026-09-17T22:50:52.3688578Z hint:
+2026-09-17T22:50:52.3689788Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-17T22:50:52.3691551Z Initialized empty Git repository in /home/runner/work/sera/sera/.git/
+2026-09-17T22:50:52.3694461Z [command]/usr/bin/git remote add origin https://github.com/Arnav123-s/sera
+2026-09-17T22:50:52.3748418Z ##[endgroup]
+2026-09-17T22:50:52.3749744Z ##[group]Disabling automatic garbage collection
+2026-09-17T22:50:52.3754036Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-17T22:50:52.3789052Z ##[endgroup]
+2026-09-17T22:50:52.3790628Z ##[group]Setting up auth
+2026-09-17T22:50:52.3798144Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T22:50:52.3842037Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T22:50:52.4276542Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T22:50:52.4315618Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T22:50:52.4548103Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T22:50:52.4585872Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T22:50:52.4826376Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-17T22:50:52.4882358Z ##[endgroup]
+2026-09-17T22:50:52.4883320Z ##[group]Fetching the repository
+2026-09-17T22:50:52.4898212Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-09-17T22:50:58.6830338Z From https://github.com/Arnav123-s/sera
+2026-09-17T22:50:58.6831437Z  * [new branch]      main       -> origin/main
+2026-09-17T22:50:58.6832616Z  * [new branch]      research/v3-calibration-consolidation -> origin/research/v3-calibration-consolidation
+2026-09-17T22:50:58.6844603Z [command]/usr/bin/git branch --list --remote origin/main
+2026-09-17T22:50:58.6874499Z   origin/main
+2026-09-17T22:50:58.6884212Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-09-17T22:50:58.6911167Z 6da7fd98d01043dbd2aa2be571192aae48c88537
+2026-09-17T22:50:58.6916506Z ##[endgroup]
+2026-09-17T22:50:58.6918090Z ##[group]Determining the checkout info
+2026-09-17T22:50:58.6919829Z ##[endgroup]
+2026-09-17T22:50:58.6958154Z [command]/usr/bin/git sparse-checkout disable
+2026-09-17T22:50:58.7014583Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-17T22:50:58.7045818Z ##[group]Checking out the ref
+2026-09-17T22:50:58.7049005Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-17T22:50:59.7173670Z Updating files:  83% (1926/2305)
+2026-09-17T22:50:59.7237055Z Updating files:  84% (1937/2305)
+2026-09-17T22:50:59.7252771Z Updating files:  85% (1960/2305)
+2026-09-17T22:50:59.7265677Z Updating files:  86% (1983/2305)
+2026-09-17T22:50:59.7292748Z Updating files:  87% (2006/2305)
+2026-09-17T22:50:59.7306860Z Updating files:  88% (2029/2305)
+2026-09-17T22:50:59.7325141Z Updating files:  89% (2052/2305)
+2026-09-17T22:50:59.7346608Z Updating files:  90% (2075/2305)
+2026-09-17T22:50:59.7360210Z Updating files:  91% (2098/2305)
+2026-09-17T22:50:59.7371215Z Updating files:  92% (2121/2305)
+2026-09-17T22:50:59.7386136Z Updating files:  93% (2144/2305)
+2026-09-17T22:50:59.7400967Z Updating files:  94% (2167/2305)
+2026-09-17T22:50:59.7417357Z Updating files:  95% (2190/2305)
+2026-09-17T22:50:59.7435572Z Updating files:  96% (2213/2305)
+2026-09-17T22:50:59.7448358Z Updating files:  97% (2236/2305)
+2026-09-17T22:50:59.7460516Z Updating files:  98% (2259/2305)
+2026-09-17T22:50:59.7476131Z Updating files:  99% (2282/2305)
+2026-09-17T22:50:59.7477171Z Updating files: 100% (2305/2305)
+2026-09-17T22:50:59.7478203Z Updating files: 100% (2305/2305), done.
+2026-09-17T22:50:59.7516474Z Switched to a new branch 'main'
+2026-09-17T22:50:59.7523254Z branch 'main' set up to track 'origin/main'.
+2026-09-17T22:50:59.7591500Z ##[endgroup]
+2026-09-17T22:50:59.7645145Z [command]/usr/bin/git log -1 --format=%H
+2026-09-17T22:50:59.7676136Z 6da7fd98d01043dbd2aa2be571192aae48c88537
+2026-09-17T22:50:59.8117269Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T22:50:59.8123671Z ##[group]Run actions/setup-python@v5
+2026-09-17T22:50:59.8125124Z with:
+2026-09-17T22:50:59.8125953Z   python-version: 3.12
+2026-09-17T22:50:59.8126923Z   check-latest: false
+2026-09-17T22:50:59.8137884Z   token: ***
+2026-09-17T22:50:59.8138771Z   update-environment: true
+2026-09-17T22:50:59.8139809Z   allow-prereleases: false
+2026-09-17T22:50:59.8140844Z   freethreaded: false
+2026-09-17T22:50:59.8141744Z ##[endgroup]
+2026-09-17T22:50:59.9496005Z ##[group]Installed versions
+2026-09-17T22:50:59.9602365Z (node:2259) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-17T22:50:59.9608727Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-17T22:50:59.9612619Z Successfully set up CPython (3.12.14)
+2026-09-17T22:50:59.9616225Z ##[endgroup]
+2026-09-17T22:50:59.9800522Z ##[group]Run python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+2026-09-17T22:50:59.9803384Z [36;1mpython -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu[0m
+2026-09-17T22:50:59.9867488Z shell: /usr/bin/bash -e {0}
+2026-09-17T22:50:59.9868540Z env:
+2026-09-17T22:50:59.9869594Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:50:59.9871433Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-17T22:50:59.9873266Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:50:59.9875119Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:50:59.9876776Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:50:59.9878468Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-17T22:50:59.9879866Z ##[endgroup]
+2026-09-17T22:51:01.9696470Z Looking in indexes: https://download.pytorch.org/whl/cpu
+2026-09-17T22:51:02.1070811Z Collecting torch==2.10.0
+2026-09-17T22:51:02.1697269Z   Downloading torch-2.10.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (29 kB)
+2026-09-17T22:51:02.1999158Z Collecting filelock (from torch==2.10.0)
+2026-09-17T22:51:02.2479874Z   Downloading filelock-3.32.3-py3-none-any.whl.metadata (2.0 kB)
+2026-09-17T22:51:02.2666741Z Collecting typing-extensions>=4.10.0 (from torch==2.10.0)
+2026-09-17T22:51:02.2764905Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-09-17T22:51:02.2879493Z Collecting setuptools (from torch==2.10.0)
+2026-09-17T22:51:02.2916207Z   Downloading setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+2026-09-17T22:51:02.3138775Z Collecting sympy>=1.13.3 (from torch==2.10.0)
+2026-09-17T22:51:02.3228251Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2026-09-17T22:51:02.3490090Z Collecting networkx>=2.5.1 (from torch==2.10.0)
+2026-09-17T22:51:02.3554830Z   Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+2026-09-17T22:51:02.3707352Z Collecting jinja2 (from torch==2.10.0)
+2026-09-17T22:51:02.3750619Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2026-09-17T22:51:02.4118346Z Collecting fsspec>=0.8.5 (from torch==2.10.0)
+2026-09-17T22:51:02.4149804Z   Downloading fsspec-2026.7.0-py3-none-any.whl.metadata (10 kB)
+2026-09-17T22:51:02.4487949Z Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.10.0)
+2026-09-17T22:51:02.4518344Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2026-09-17T22:51:02.4759689Z Collecting MarkupSafe>=2.0 (from jinja2->torch==2.10.0)
+2026-09-17T22:51:02.4797963Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+2026-09-17T22:51:02.5021477Z Downloading torch-2.10.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl (188.9 MB)
+2026-09-17T22:51:03.3365528Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.9/188.9 MB 228.3 MB/s  0:00:00
+2026-09-17T22:51:03.3401834Z Downloading fsspec-2026.7.0-py3-none-any.whl (206 kB)
+2026-09-17T22:51:03.3551629Z Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+2026-09-17T22:51:03.3737023Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 125.0 MB/s  0:00:00
+2026-09-17T22:51:03.3770641Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2026-09-17T22:51:03.4092943Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 209.2 MB/s  0:00:00
+2026-09-17T22:51:03.4127724Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2026-09-17T22:51:03.4187539Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 80.6 MB/s  0:00:00
+2026-09-17T22:51:03.4219036Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-09-17T22:51:03.4272772Z Downloading filelock-3.32.3-py3-none-any.whl (98 kB)
+2026-09-17T22:51:03.4343270Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2026-09-17T22:51:03.4423583Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+2026-09-17T22:51:03.4494325Z Downloading setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+2026-09-17T22:51:03.4600611Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 140.5 MB/s  0:00:00
+2026-09-17T22:51:03.9166919Z Installing collected packages: mpmath, typing-extensions, sympy, setuptools, networkx, MarkupSafe, fsspec, filelock, jinja2, torch
+2026-09-17T22:51:23.6679587Z 
+2026-09-17T22:51:23.6699023Z Successfully installed MarkupSafe-3.0.3 filelock-3.32.3 fsspec-2026.7.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 setuptools-78.1.0 sympy-1.14.0 torch-2.10.0+cpu typing-extensions-4.16.0
+2026-09-17T22:51:23.7455834Z ##[group]Run python -m pip install -e ".[dev,reference]"
+2026-09-17T22:51:23.7456291Z [36;1mpython -m pip install -e ".[dev,reference]"[0m
+2026-09-17T22:51:23.7495635Z shell: /usr/bin/bash -e {0}
+2026-09-17T22:51:23.7495914Z env:
+2026-09-17T22:51:23.7496193Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:23.7496669Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-17T22:51:23.7497140Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:23.7497545Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:23.7497958Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:23.7498375Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-17T22:51:23.7498721Z ##[endgroup]
+2026-09-17T22:51:24.1765051Z Obtaining file:///home/runner/work/sera/sera
+2026-09-17T22:51:24.1786998Z   Installing build dependencies: started
+2026-09-17T22:51:25.1722127Z   Installing build dependencies: finished with status 'done'
+2026-09-17T22:51:25.1729373Z   Checking if build backend supports build_editable: started
+2026-09-17T22:51:25.6995113Z   Checking if build backend supports build_editable: finished with status 'done'
+2026-09-17T22:51:25.7004406Z   Getting requirements to build editable: started
+2026-09-17T22:51:26.2857073Z   Getting requirements to build editable: finished with status 'done'
+2026-09-17T22:51:26.2868069Z   Preparing editable metadata (pyproject.toml): started
+2026-09-17T22:51:26.4925347Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+2026-09-17T22:51:26.4967315Z Requirement already satisfied: torch<2.11,>=2.10 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from sera-learning==0.5.0) (2.10.0+cpu)
+2026-09-17T22:51:26.7650306Z Collecting numpy<3,>=2.3 (from sera-learning==0.5.0)
+2026-09-17T22:51:26.8130611Z   Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-09-17T22:51:26.8398728Z Collecting pytest<10,>=8 (from sera-learning==0.5.0)
+2026-09-17T22:51:26.8430156Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-09-17T22:51:27.1577547Z Collecting ruff<1,>=0.11 (from sera-learning==0.5.0)
+2026-09-17T22:51:27.1613775Z   Downloading ruff-0.16.8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+2026-09-17T22:51:27.2927557Z Collecting scipy<2,>=1.16 (from sera-learning==0.5.0)
+2026-09-17T22:51:27.2960359Z   Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+2026-09-17T22:51:27.3286634Z Collecting iniconfig>=1.0.1 (from pytest<10,>=8->sera-learning==0.5.0)
+2026-09-17T22:51:27.3315922Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-09-17T22:51:27.3461115Z Collecting packaging>=22 (from pytest<10,>=8->sera-learning==0.5.0)
+2026-09-17T22:51:27.3495218Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-09-17T22:51:27.3606392Z Collecting pluggy<2,>=1.5 (from pytest<10,>=8->sera-learning==0.5.0)
+2026-09-17T22:51:27.3638934Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-09-17T22:51:27.3862271Z Collecting pygments>=2.7.2 (from pytest<10,>=8->sera-learning==0.5.0)
+2026-09-17T22:51:27.3894805Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-09-17T22:51:27.3976878Z Requirement already satisfied: filelock in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (3.32.3)
+2026-09-17T22:51:27.3983164Z Requirement already satisfied: typing-extensions>=4.10.0 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (4.16.0)
+2026-09-17T22:51:27.3990588Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (78.1.0)
+2026-09-17T22:51:27.3997191Z Requirement already satisfied: sympy>=1.13.3 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (1.14.0)
+2026-09-17T22:51:27.4002799Z Requirement already satisfied: networkx>=2.5.1 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (3.6.1)
+2026-09-17T22:51:27.4008354Z Requirement already satisfied: jinja2 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (3.1.6)
+2026-09-17T22:51:27.4014327Z Requirement already satisfied: fsspec>=0.8.5 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from torch<2.11,>=2.10->sera-learning==0.5.0) (2026.7.0)
+2026-09-17T22:51:27.4134514Z Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from sympy>=1.13.3->torch<2.11,>=2.10->sera-learning==0.5.0) (1.3.0)
+2026-09-17T22:51:27.4166091Z Requirement already satisfied: MarkupSafe>=2.0 in /opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages (from jinja2->torch<2.11,>=2.10->sera-learning==0.5.0) (3.0.3)
+2026-09-17T22:51:27.4250573Z Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+2026-09-17T22:51:27.4864053Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 298.0 MB/s  0:00:00
+2026-09-17T22:51:27.4899950Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-09-17T22:51:27.4958939Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-09-17T22:51:27.5018287Z Downloading ruff-0.16.8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.3 MB)
+2026-09-17T22:51:27.5452203Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.3/10.3 MB 247.7 MB/s  0:00:00
+2026-09-17T22:51:27.5489488Z Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+2026-09-17T22:51:27.7280094Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 198.9 MB/s  0:00:00
+2026-09-17T22:51:27.7325141Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-09-17T22:51:27.7379063Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-09-17T22:51:27.7434520Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-09-17T22:51:27.7510506Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 203.6 MB/s  0:00:00
+2026-09-17T22:51:27.8449421Z Building wheels for collected packages: sera-learning
+2026-09-17T22:51:27.8458382Z   Building editable for sera-learning (pyproject.toml): started
+2026-09-17T22:51:28.0782025Z   Building editable for sera-learning (pyproject.toml): finished with status 'done'
+2026-09-17T22:51:28.0790279Z   Created wheel for sera-learning: filename=sera_learning-0.5.0-0.editable-py3-none-any.whl size=1740 sha256=aa202187bc35f112413699d81e43dc7dcf94d0d98dd27d89e8c808b7f3069b1e
+2026-09-17T22:51:28.0793588Z   Stored in directory: /tmp/pip-ephem-wheel-cache-q2jgv27k/wheels/b3/c9/ec/09e40337931bd187795fac30a47a02b0683d35603277e7903f
+2026-09-17T22:51:28.0809671Z Successfully built sera-learning
+2026-09-17T22:51:28.1519188Z Installing collected packages: ruff, pygments, pluggy, packaging, numpy, iniconfig, scipy, pytest, sera-learning
+2026-09-17T22:51:35.9193840Z 
+2026-09-17T22:51:35.9216515Z Successfully installed iniconfig-2.3.0 numpy-2.5.3 packaging-26.3 pluggy-1.6.0 pygments-2.21.0 pytest-9.1.1 ruff-0.16.8 scipy-1.18.1 sera-learning-0.5.0
+2026-09-17T22:51:36.0141984Z ##[group]Run python -m ruff check src tests scripts experiments
+2026-09-17T22:51:36.0142511Z [36;1mpython -m ruff check src tests scripts experiments[0m
+2026-09-17T22:51:36.0180300Z shell: /usr/bin/bash -e {0}
+2026-09-17T22:51:36.0180593Z env:
+2026-09-17T22:51:36.0180873Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.0181345Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-17T22:51:36.0181803Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.0182207Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.0182633Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.0183079Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-17T22:51:36.0183432Z ##[endgroup]
+2026-09-17T22:51:36.0931149Z All checks passed!
+2026-09-17T22:51:36.0970029Z ##[group]Run python scripts/restore_test_artifacts.py
+2026-09-17T22:51:36.0970465Z [36;1mpython scripts/restore_test_artifacts.py[0m
+2026-09-17T22:51:36.1008638Z shell: /usr/bin/bash -e {0}
+2026-09-17T22:51:36.1008924Z env:
+2026-09-17T22:51:36.1009200Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.1009669Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-17T22:51:36.1010127Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.1010517Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.1010904Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.1011499Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-17T22:51:36.1011826Z ##[endgroup]
+2026-09-17T22:51:36.3281146Z {"restored": 17, "already_identical": 0, "experiments_restarted": 0}
+2026-09-17T22:51:36.3379085Z ##[group]Run python -m pytest
+2026-09-17T22:51:36.3379465Z [36;1mpython -m pytest[0m
+2026-09-17T22:51:36.3416578Z shell: /usr/bin/bash -e {0}
+2026-09-17T22:51:36.3416846Z env:
+2026-09-17T22:51:36.3417127Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.3417599Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-17T22:51:36.3418062Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.3418475Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.3418884Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-17T22:51:36.3419316Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-17T22:51:36.3419677Z ##[endgroup]
+2026-09-17T22:51:46.0851893Z ......................................EEEEEEEEE............s....ssssssss [ 18%]
+2026-09-17T22:51:48.4246508Z ssssss.........sssss.................................................... [ 37%]
+2026-09-17T22:51:54.3873107Z ..s..ss.sssssssssssssss................................................. [ 56%]
+2026-09-17T22:52:07.4479896Z .................F...................................................... [ 74%]
+2026-09-17T22:52:20.3102296Z .........................s.......ss.....s.............sss.........s..... [ 93%]
+2026-09-17T22:52:20.5264008Z .........................                                                [100%]
+2026-09-17T22:52:20.5264990Z ==================================== ERRORS ====================================
+2026-09-17T22:52:20.5265970Z _______ ERROR at setup of test_restore_rejects_changed_support[weights] ________
+2026-09-17T22:52:20.5266636Z 
+2026-09-17T22:52:20.5267329Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5267987Z 
+2026-09-17T22:52:20.5268176Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5268674Z     def saved(source):
+2026-09-17T22:52:20.5269397Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5270470Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5271285Z >       session = RefinementSession()
+2026-09-17T22:52:20.5271779Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5272078Z 
+2026-09-17T22:52:20.5272275Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5272870Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5273753Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5274742Z     self.study = restore_parent()
+2026-09-17T22:52:20.5275284Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5275998Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5304822Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5305490Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5306076Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5306797Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5307461Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5308130Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5308758Z     self.base = load_parent()
+2026-09-17T22:52:20.5309199Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5309747Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5310471Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5311034Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5311610Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5312787Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5313569Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5315433Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5316217Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5316948Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5317525Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5317911Z 
+2026-09-17T22:52:20.5318204Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5318750Z owner = InquiryR1(
+2026-09-17T22:52:20.5319073Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5319430Z     (encoder): Sequential(
+2026-09-17T22:52:20.5320079Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5320933Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5321468Z )
+2026-09-17T22:52:20.5322843Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5324528Z migrate = False
+2026-09-17T22:52:20.5324712Z 
+2026-09-17T22:52:20.5324834Z     @classmethod
+2026-09-17T22:52:20.5325206Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5325895Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5326661Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5327205Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5327662Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5328330Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5329277Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5330225Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5331193Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5331993Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5332791Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5333600Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5334757Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5335691Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5336197Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5336642Z             if key != digest(model):
+2026-09-17T22:52:20.5337089Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5337533Z         replayed = 0
+2026-09-17T22:52:20.5337909Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5338474Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5339066Z             states = start(model)
+2026-09-17T22:52:20.5339786Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5340594Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5341117Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5341707Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5342354Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5343105Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5343582Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5344528Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5345126Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5345668Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5346406Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5347224Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5347935Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5348634Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5349265Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5350000Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5350944Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5351477Z 
+2026-09-17T22:52:20.5351705Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5352354Z _________ ERROR at setup of test_restore_rejects_changed_support[tau] __________
+2026-09-17T22:52:20.5352816Z 
+2026-09-17T22:52:20.5353173Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5353694Z 
+2026-09-17T22:52:20.5354032Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5354441Z     def saved(source):
+2026-09-17T22:52:20.5355021Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5355915Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5356619Z >       session = RefinementSession()
+2026-09-17T22:52:20.5357023Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5357267Z 
+2026-09-17T22:52:20.5357441Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5357935Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5358563Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5359089Z     self.study = restore_parent()
+2026-09-17T22:52:20.5359482Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5359967Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5360542Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5360987Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5361449Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5361994Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5362522Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5363031Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5363536Z     self.base = load_parent()
+2026-09-17T22:52:20.5364077Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5364510Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5365109Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5365624Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5366128Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5366837Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5367535Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5368105Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5368808Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5369693Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5370419Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5370803Z 
+2026-09-17T22:52:20.5371067Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5371584Z owner = InquiryR1(
+2026-09-17T22:52:20.5371896Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5372247Z     (encoder): Sequential(
+2026-09-17T22:52:20.5372857Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5373670Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5374396Z )
+2026-09-17T22:52:20.5375693Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5377175Z migrate = False
+2026-09-17T22:52:20.5377359Z 
+2026-09-17T22:52:20.5377480Z     @classmethod
+2026-09-17T22:52:20.5377841Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5378521Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5379260Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5379793Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5380227Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5380858Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5381743Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5382605Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5383496Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5384502Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5385281Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5386035Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5386934Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5387795Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5388285Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5388707Z             if key != digest(model):
+2026-09-17T22:52:20.5389120Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5389552Z         replayed = 0
+2026-09-17T22:52:20.5389919Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5390388Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5390791Z             states = start(model)
+2026-09-17T22:52:20.5391489Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5392299Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5392807Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5393391Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5394241Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5394758Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5395229Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5395784Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5396394Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5397164Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5398106Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5398955Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5399686Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5400368Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5400876Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5401584Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5402520Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5403048Z 
+2026-09-17T22:52:20.5403264Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5404122Z _______ ERROR at setup of test_restore_rejects_changed_support[history] ________
+2026-09-17T22:52:20.5404594Z 
+2026-09-17T22:52:20.5404958Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5405471Z 
+2026-09-17T22:52:20.5405618Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5406013Z     def saved(source):
+2026-09-17T22:52:20.5406591Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5407408Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5408055Z >       session = RefinementSession()
+2026-09-17T22:52:20.5408443Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5408680Z 
+2026-09-17T22:52:20.5408840Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5409321Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5409911Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5410427Z     self.study = restore_parent()
+2026-09-17T22:52:20.5410790Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5411262Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5411837Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5412298Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5412783Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5413341Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5414047Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5414572Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5415076Z     self.base = load_parent()
+2026-09-17T22:52:20.5415433Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5415869Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5416475Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5416978Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5417479Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5418232Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5418918Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5419490Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5420170Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5420845Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5421387Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5421757Z 
+2026-09-17T22:52:20.5422027Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5422789Z owner = InquiryR1(
+2026-09-17T22:52:20.5423109Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5423460Z     (encoder): Sequential(
+2026-09-17T22:52:20.5424562Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5425530Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5426030Z )
+2026-09-17T22:52:20.5427298Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5428705Z migrate = False
+2026-09-17T22:52:20.5428885Z 
+2026-09-17T22:52:20.5428999Z     @classmethod
+2026-09-17T22:52:20.5429359Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5430041Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5430798Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5431330Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5431774Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5432422Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5433293Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5434361Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5435270Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5436050Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5436836Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5437590Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5438456Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5439289Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5439749Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5440163Z             if key != digest(model):
+2026-09-17T22:52:20.5440565Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5440995Z         replayed = 0
+2026-09-17T22:52:20.5441354Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5441786Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5442205Z             states = start(model)
+2026-09-17T22:52:20.5442901Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5443688Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5444391Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5444991Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5445626Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5446158Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5446623Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5447157Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5447754Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5448283Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5449055Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5449908Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5450831Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5451526Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5452205Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5452914Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5454024Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5454551Z 
+2026-09-17T22:52:20.5454766Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5455422Z ________ ERROR at setup of test_restore_rejects_changed_support[source] ________
+2026-09-17T22:52:20.5455890Z 
+2026-09-17T22:52:20.5456220Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5456720Z 
+2026-09-17T22:52:20.5456880Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5457293Z     def saved(source):
+2026-09-17T22:52:20.5457864Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5458770Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5459426Z >       session = RefinementSession()
+2026-09-17T22:52:20.5459806Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5460056Z 
+2026-09-17T22:52:20.5460205Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5460684Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5461315Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5461845Z     self.study = restore_parent()
+2026-09-17T22:52:20.5462215Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5462707Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5463286Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5463725Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5464348Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5464911Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5465430Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5465979Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5466479Z     self.base = load_parent()
+2026-09-17T22:52:20.5466829Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5467267Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5467865Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5468371Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5468881Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5469602Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5470280Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5470829Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5471517Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5472211Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5472762Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5473137Z 
+2026-09-17T22:52:20.5473396Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5474130Z owner = InquiryR1(
+2026-09-17T22:52:20.5474442Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5474781Z     (encoder): Sequential(
+2026-09-17T22:52:20.5475399Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5476213Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5476946Z )
+2026-09-17T22:52:20.5478434Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5479848Z migrate = False
+2026-09-17T22:52:20.5480040Z 
+2026-09-17T22:52:20.5480163Z     @classmethod
+2026-09-17T22:52:20.5480523Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5481213Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5481969Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5482533Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5482973Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5483614Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5484754Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5485647Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5486595Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5487365Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5488131Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5488874Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5489738Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5490614Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5491149Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5491650Z             if key != digest(model):
+2026-09-17T22:52:20.5492070Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5492496Z         replayed = 0
+2026-09-17T22:52:20.5492870Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5493322Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5493716Z             states = start(model)
+2026-09-17T22:52:20.5494567Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5495334Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5495825Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5496389Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5497012Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5497521Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5497992Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5498512Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5499086Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5499605Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5500317Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5501111Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5501770Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5502424Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5502924Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5503591Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5504851Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5505337Z 
+2026-09-17T22:52:20.5505710Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5506368Z _____ ERROR at setup of test_restore_rejects_changed_support[extra_weight] _____
+2026-09-17T22:52:20.5506827Z 
+2026-09-17T22:52:20.5507146Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5507626Z 
+2026-09-17T22:52:20.5507772Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5508162Z     def saved(source):
+2026-09-17T22:52:20.5508721Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5509580Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5510211Z >       session = RefinementSession()
+2026-09-17T22:52:20.5510614Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5510863Z 
+2026-09-17T22:52:20.5511012Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5511485Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5512090Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5512586Z     self.study = restore_parent()
+2026-09-17T22:52:20.5512969Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5513442Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5514226Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5514661Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5515111Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5515649Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5516160Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5516663Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5517169Z     self.base = load_parent()
+2026-09-17T22:52:20.5517505Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5517952Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5518528Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5519002Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5519486Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5520165Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5520845Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5521393Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5522082Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5522760Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5523301Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5523656Z 
+2026-09-17T22:52:20.5524092Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5524611Z owner = InquiryR1(
+2026-09-17T22:52:20.5524933Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5525272Z     (encoder): Sequential(
+2026-09-17T22:52:20.5525878Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5526688Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5527203Z )
+2026-09-17T22:52:20.5528417Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5529781Z migrate = False
+2026-09-17T22:52:20.5530145Z 
+2026-09-17T22:52:20.5530269Z     @classmethod
+2026-09-17T22:52:20.5530626Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5531446Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5532185Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5532707Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5533151Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5533774Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5534839Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5535683Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5536569Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5537326Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5538068Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5538814Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5539666Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5540491Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5540956Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5541378Z             if key != digest(model):
+2026-09-17T22:52:20.5541785Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5542196Z         replayed = 0
+2026-09-17T22:52:20.5542558Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5543014Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5543428Z             states = start(model)
+2026-09-17T22:52:20.5544282Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5545054Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5545557Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5546139Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5546769Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5547285Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5547815Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5548365Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5548966Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5549501Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5550238Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5551031Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5551708Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5552361Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5552855Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5553535Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5555217Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5555788Z 
+2026-09-17T22:52:20.5556024Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5556701Z ___________ ERROR at setup of test_branch_and_live_weight_validation ___________
+2026-09-17T22:52:20.5557457Z 
+2026-09-17T22:52:20.5557813Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5558329Z 
+2026-09-17T22:52:20.5558628Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5559039Z     def saved(source):
+2026-09-17T22:52:20.5559626Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5560524Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5561193Z >       session = RefinementSession()
+2026-09-17T22:52:20.5561584Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5561822Z 
+2026-09-17T22:52:20.5561982Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5562462Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5563064Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5563578Z     self.study = restore_parent()
+2026-09-17T22:52:20.5564262Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5564814Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5565401Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5565827Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5566260Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5566790Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5567289Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5567779Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5568251Z     self.base = load_parent()
+2026-09-17T22:52:20.5568584Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5569006Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5569563Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5570039Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5570532Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5571206Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5571865Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5572394Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5573062Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5573724Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5574473Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5574822Z 
+2026-09-17T22:52:20.5575084Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5575532Z owner = InquiryR1(
+2026-09-17T22:52:20.5575757Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5576002Z     (encoder): Sequential(
+2026-09-17T22:52:20.5576432Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5577002Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5577369Z )
+2026-09-17T22:52:20.5578268Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5579269Z migrate = False
+2026-09-17T22:52:20.5579452Z 
+2026-09-17T22:52:20.5579542Z     @classmethod
+2026-09-17T22:52:20.5579806Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5580281Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5580802Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5581325Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5581639Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5582193Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5582805Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5583418Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5584190Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5584736Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5585264Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5585788Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5586360Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5586918Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5587239Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5587523Z             if key != digest(model):
+2026-09-17T22:52:20.5587800Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5588080Z         replayed = 0
+2026-09-17T22:52:20.5588322Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5588622Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5588905Z             states = start(model)
+2026-09-17T22:52:20.5589349Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5589852Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5590183Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5590571Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5590993Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5591336Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5591660Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5592028Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5592418Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5592775Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5593259Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5593921Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5594395Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5594851Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5595183Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5595673Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5596261Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5596587Z 
+2026-09-17T22:52:20.5596736Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5597148Z ______________ ERROR at setup of test_goal_reuse_and_exact_route _______________
+2026-09-17T22:52:20.5597436Z 
+2026-09-17T22:52:20.5597665Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5597993Z 
+2026-09-17T22:52:20.5598096Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5598361Z     def saved(source):
+2026-09-17T22:52:20.5598735Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5599428Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5600030Z >       session = RefinementSession()
+2026-09-17T22:52:20.5600296Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5600457Z 
+2026-09-17T22:52:20.5600557Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5600864Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5601252Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5601591Z     self.study = restore_parent()
+2026-09-17T22:52:20.5601845Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5602158Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5602533Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5602829Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5603126Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5603495Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5603958Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5604300Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5604625Z     self.base = load_parent()
+2026-09-17T22:52:20.5604862Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5605145Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5605521Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5605846Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5606176Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5606633Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5607073Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5607444Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5607895Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5608347Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5608702Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5608932Z 
+2026-09-17T22:52:20.5609115Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5609464Z owner = InquiryR1(
+2026-09-17T22:52:20.5609678Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5609909Z     (encoder): Sequential(
+2026-09-17T22:52:20.5610309Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5610851Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5611195Z )
+2026-09-17T22:52:20.5612018Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5612917Z migrate = False
+2026-09-17T22:52:20.5613041Z 
+2026-09-17T22:52:20.5613124Z     @classmethod
+2026-09-17T22:52:20.5613369Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5614059Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5614580Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5614943Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5615243Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5615662Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5616220Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5616932Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5617627Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5618132Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5618625Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5619116Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5619686Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5620240Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5620555Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5620838Z             if key != digest(model):
+2026-09-17T22:52:20.5621118Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5621408Z         replayed = 0
+2026-09-17T22:52:20.5621654Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5621961Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5622358Z             states = start(model)
+2026-09-17T22:52:20.5622800Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5623299Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5623626Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5624126Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5624551Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5624894Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5625208Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5625581Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5625965Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5626324Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5626803Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5627328Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5627788Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5628225Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5628554Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5629021Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5629606Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5629942Z 
+2026-09-17T22:52:20.5630085Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5630517Z _________ ERROR at setup of test_rejected_acquisition_is_transactional _________
+2026-09-17T22:52:20.5630821Z 
+2026-09-17T22:52:20.5631049Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5631380Z 
+2026-09-17T22:52:20.5631481Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5631743Z     def saved(source):
+2026-09-17T22:52:20.5632119Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5632683Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5633114Z >       session = RefinementSession()
+2026-09-17T22:52:20.5633378Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5633542Z 
+2026-09-17T22:52:20.5633642Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5634210Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5634604Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5635054Z     self.study = restore_parent()
+2026-09-17T22:52:20.5635314Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5635629Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5635999Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5636290Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5636586Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5636948Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5637286Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5637624Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5637948Z     self.base = load_parent()
+2026-09-17T22:52:20.5638190Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5638482Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5638867Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5639203Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5639539Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5640006Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5640452Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5640813Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5641261Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5641709Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5642061Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5642302Z 
+2026-09-17T22:52:20.5642495Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5642848Z owner = InquiryR1(
+2026-09-17T22:52:20.5643063Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5643296Z     (encoder): Sequential(
+2026-09-17T22:52:20.5643700Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5644351Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5644694Z )
+2026-09-17T22:52:20.5645517Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5646419Z migrate = False
+2026-09-17T22:52:20.5646539Z 
+2026-09-17T22:52:20.5646624Z     @classmethod
+2026-09-17T22:52:20.5646879Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5647334Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5647821Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5648176Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5648478Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5648897Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5649459Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5650023Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5650619Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5651125Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5651745Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5652239Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5652919Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5653486Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5654051Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5654371Z             if key != digest(model):
+2026-09-17T22:52:20.5654661Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5654976Z         replayed = 0
+2026-09-17T22:52:20.5655223Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5655528Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5655808Z             states = start(model)
+2026-09-17T22:52:20.5656257Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5656777Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5657116Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5657505Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5657932Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5658273Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5658588Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5658955Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5659342Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5659696Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5660176Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5660705Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5661164Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5661599Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5661927Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5662389Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5662979Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5663657Z 
+2026-09-17T22:52:20.5664080Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5664800Z ___ ERROR at setup of test_constant_command_does_not_identify_gain_and_bias ____
+2026-09-17T22:52:20.5665129Z 
+2026-09-17T22:52:20.5665546Z source = {'id': 'dev/delayed/0/0/clean', 'family': 'delayed', 'world': 0, 'history': 0, ...}
+2026-09-17T22:52:20.5665920Z 
+2026-09-17T22:52:20.5666093Z     @pytest.fixture(scope="module")
+2026-09-17T22:52:20.5666432Z     def saved(source):
+2026-09-17T22:52:20.5666962Z         if not (EXPERIMENT / "selection.json").exists() or not (RUNS / "final.json").exists():
+2026-09-17T22:52:20.5667628Z             pytest.skip("Run the frozen concept study before actual-owner integration tests")
+2026-09-17T22:52:20.5668213Z >       session = RefinementSession()
+2026-09-17T22:52:20.5668628Z                   ^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5679764Z 
+2026-09-17T22:52:20.5679993Z tests/test_concept_refinement.py:27: 
+2026-09-17T22:52:20.5680388Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5680805Z experiments/concept_refinement/runtime.py:148: in __init__
+2026-09-17T22:52:20.5681156Z     self.study = restore_parent()
+2026-09-17T22:52:20.5681419Z                  ^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5681946Z experiments/concept_refinement/common.py:45: in restore_parent
+2026-09-17T22:52:20.5682341Z     return StudySession(saved["parent"], saved)
+2026-09-17T22:52:20.5682640Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5683059Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5683436Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5683954Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5684315Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5684649Z     self.base = load_parent()
+2026-09-17T22:52:20.5684887Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5685179Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5685563Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5685905Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5686236Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5686701Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5687145Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5687507Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5687957Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5688393Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5688744Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5688983Z 
+2026-09-17T22:52:20.5689160Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5689500Z owner = InquiryR1(
+2026-09-17T22:52:20.5689713Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5689951Z     (encoder): Sequential(
+2026-09-17T22:52:20.5690363Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5690897Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.5691235Z )
+2026-09-17T22:52:20.5692055Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.5692968Z migrate = False
+2026-09-17T22:52:20.5693091Z 
+2026-09-17T22:52:20.5693178Z     @classmethod
+2026-09-17T22:52:20.5693429Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.5694164Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.5694664Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.5695032Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.5695329Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.5695758Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.5696347Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.5696920Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.5697517Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.5698030Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.5698534Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.5699020Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.5699594Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.5700308Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.5700633Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.5700923Z             if key != digest(model):
+2026-09-17T22:52:20.5701313Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.5701601Z         replayed = 0
+2026-09-17T22:52:20.5701850Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.5702153Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.5702429Z             states = start(model)
+2026-09-17T22:52:20.5702875Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.5703382Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.5703717Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.5704413Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.5704855Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.5705195Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.5705516Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.5705884Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.5706286Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.5706651Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.5707138Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.5707677Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.5708145Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.5708609Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.5708951Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.5709425Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.5710019Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.5710360Z 
+2026-09-17T22:52:20.5710512Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.5710873Z =================================== FAILURES ===================================
+2026-09-17T22:52:20.5711300Z ______________ test_resume_preserves_acquisition_order_and_owner _______________
+2026-09-17T22:52:20.5711593Z 
+2026-09-17T22:52:20.5711743Z     def test_resume_preserves_acquisition_order_and_owner():
+2026-09-17T22:52:20.5712158Z         parent = json.loads((OUT / "parent-request.json").read_text())
+2026-09-17T22:52:20.5712636Z         lessons = calculus(json.loads((OUT / "calculus-source.json").read_text()))
+2026-09-17T22:52:20.5713046Z >       complete = StudySession(parent)
+2026-09-17T22:52:20.5713327Z                    ^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5713488Z 
+2026-09-17T22:52:20.5713677Z tests/test_self_study_lifecycle.py:15: 
+2026-09-17T22:52:20.5714513Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5714967Z experiments/self_study/runtime.py:56: in __init__
+2026-09-17T22:52:20.5715544Z     self.base = RequestSession(parent["checkpoint"], parent)
+2026-09-17T22:52:20.5715896Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5716237Z experiments/stream_curriculum/runtime.py:27: in __init__
+2026-09-17T22:52:20.5716568Z     self.base = load_parent()
+2026-09-17T22:52:20.5716806Z                 ^^^^^^^^^^^^^
+2026-09-17T22:52:20.5717103Z experiments/stream_curriculum/study.py:23: in load_parent
+2026-09-17T22:52:20.5717489Z     return ConstraintRuntime(record["checkpoint"], record)
+2026-09-17T22:52:20.5717821Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5718327Z experiments/constraint_inquiry/runtime.py:46: in __init__
+2026-09-17T22:52:20.5718786Z     self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+2026-09-17T22:52:20.5719337Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5719705Z experiments/language_inquiry/runtime.py:52: in __init__
+2026-09-17T22:52:20.5720157Z     self.graph = Investigation.restore(self.owner, record["graph"], migrate=migrate)
+2026-09-17T22:52:20.5720600Z                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-17T22:52:20.5720954Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2026-09-17T22:52:20.5721196Z 
+2026-09-17T22:52:20.5721379Z cls = <class 'experiments.language_inquiry.graph.Investigation'>
+2026-09-17T22:52:20.5721734Z owner = InquiryR1(
+2026-09-17T22:52:20.5721949Z   (memory): StatefulModel(
+2026-09-17T22:52:20.5722188Z     (encoder): Sequential(
+2026-09-17T22:52:20.5722609Z       (0): Linear(in_features=22, out_features=256, b...Norm((256,), eps=1e-05, elementwise_affine=True)
+2026-09-17T22:52:20.5723143Z   (inquiry_head): Linear(in_features=256, out_features=5, bias=True)
+2026-09-17T22:52:20.7773408Z )
+2026-09-17T22:52:20.7775593Z record = {'payload': {'cache': {'2954423a038c19311b644903e768fe96482fdc31ed94ab7732a85d54491bd7a9': {'actions': [0, -1], 'model...rsor': 3, 'entity': 'orbit', ...}], ...}, 'sha256': 'e674c7fafd0db6b5132b19e0a92a53949b1fa52415ee0132962af4ecd4fce8be'}
+2026-09-17T22:52:20.7777352Z migrate = False
+2026-09-17T22:52:20.7777572Z 
+2026-09-17T22:52:20.7777721Z     @classmethod
+2026-09-17T22:52:20.7778182Z     def restore(cls, owner, record, *, migrate=False):
+2026-09-17T22:52:20.7779008Z         if set(record) != {"payload", "sha256"} or digest(record["payload"]) != record["sha256"]:
+2026-09-17T22:52:20.7779903Z             raise ValueError("Inquiry snapshot checksum mismatch")
+2026-09-17T22:52:20.7780553Z         p = copy.deepcopy(record["payload"])
+2026-09-17T22:52:20.7781062Z         obj = cls(owner, reuse=p["reuse"])
+2026-09-17T22:52:20.7781688Z         permitted_source = p["source"] == source() or (migrate and p["source"] in GRAPH_SOURCES)
+2026-09-17T22:52:20.7782550Z         if not permitted_source or p["current"] != obj.current or p["parser"] != obj.parser:
+2026-09-17T22:52:20.7783407Z             raise ValueError("Saved inquiry interpreter or current owner dependencies differ")
+2026-09-17T22:52:20.7784708Z         if len(p["jobs"]) > MAX_JOBS or len(p["models"]) > MAX_VERSIONS or len(p["history"]) > MAX_HISTORY:
+2026-09-17T22:52:20.7785468Z             raise ValueError("Archive exceeds its bounded contract")
+2026-09-17T22:52:20.7786211Z         if len(p["cache"]) > (MAX_JOBS+MAX_HISTORY)*3 or any(k != j["id"] for k, j in p["jobs"].items()):
+2026-09-17T22:52:20.7786945Z             raise ValueError("Invalid cache budget or job keys")
+2026-09-17T22:52:20.7787798Z         if set(p["work"]) != set(obj.work) or any(type(v) is not int or v < 0 for v in p["work"].values()) or p["work"]["ticks"] != p["clock"]:
+2026-09-17T22:52:20.7788626Z             raise ValueError("Invalid work accounting")
+2026-09-17T22:52:20.7789098Z         for key, model in p["models"].items():
+2026-09-17T22:52:20.7789525Z             if key != digest(model):
+2026-09-17T22:52:20.7789841Z                 raise ValueError("Model key differs")
+2026-09-17T22:52:20.7790148Z         replayed = 0
+2026-09-17T22:52:20.7790410Z         for j in [*p["jobs"].values(), *p["history"]]:
+2026-09-17T22:52:20.7790737Z             model = p["models"][j["model"]]
+2026-09-17T22:52:20.7791030Z             states = start(model)
+2026-09-17T22:52:20.7791511Z             if j["status"] not in ("queued", "running", "paused", "clarification", "complete", "rejected", "stale"):
+2026-09-17T22:52:20.7792053Z                 raise ValueError("Unknown persisted state")
+2026-09-17T22:52:20.7792410Z             frame = j["interpretation"].get("frame")
+2026-09-17T22:52:20.7792825Z             if frame is not None and j["interpretation"]["parser"] == obj.parser:
+2026-09-17T22:52:20.7793613Z                 expected = interpret(owner, j["text"], j["entity"])
+2026-09-17T22:52:20.7794295Z                 if j["clarification"] is not None:
+2026-09-17T22:52:20.7794638Z                     actions = j["clarification"]["actions"]
+2026-09-17T22:52:20.7795019Z                     if len(actions) != len(expected["frame"]["actions"]):
+2026-09-17T22:52:20.7795433Z                         raise ValueError("Invalid saved clarification")
+2026-09-17T22:52:20.7795807Z                     for i, action in enumerate(actions):
+2026-09-17T22:52:20.7796334Z                         allowed = expected["support"]["ambiguities"].get(str(i), [expected["frame"]["actions"][i]])
+2026-09-17T22:52:20.7796906Z                         if type(action) is not int or action not in allowed:
+2026-09-17T22:52:20.7797398Z                             raise ValueError("Saved clarification contradicts interpretation")
+2026-09-17T22:52:20.7797884Z                     expected["frame"]["actions"] = list(actions)
+2026-09-17T22:52:20.7798247Z                 if expected != j["interpretation"]:
+2026-09-17T22:52:20.7798752Z >                   raise ValueError("Saved interpretation disagrees with its current parser and text")
+2026-09-17T22:52:20.7799388Z E                   ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7799734Z 
+2026-09-17T22:52:20.7799881Z experiments/language_inquiry/graph.py:257: ValueError
+2026-09-17T22:52:20.7800257Z =========================== short test summary info ============================
+2026-09-17T22:52:20.7801179Z FAILED tests/test_self_study_lifecycle.py::test_resume_preserves_acquisition_order_and_owner - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7802346Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[weights] - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7803458Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[tau] - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7804713Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[history] - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7805799Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[source] - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7806906Z ERROR tests/test_concept_refinement.py::test_restore_rejects_changed_support[extra_weight] - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7807991Z ERROR tests/test_concept_refinement.py::test_branch_and_live_weight_validation - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7809008Z ERROR tests/test_concept_refinement.py::test_goal_reuse_and_exact_route - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7810067Z ERROR tests/test_concept_refinement.py::test_rejected_acquisition_is_transactional - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7811182Z ERROR tests/test_concept_refinement.py::test_constant_command_does_not_identify_gain_and_bias - ValueError: Saved interpretation disagrees with its current parser and text
+2026-09-17T22:52:20.7811931Z 1 failed, 329 passed, 46 skipped, 9 errors in 41.81s
+2026-09-17T22:52:21.4423050Z ##[error]Process completed with exit code 1.
+2026-09-17T22:52:21.4596265Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T22:52:21.4597717Z Post job cleanup.
+2026-09-17T22:52:21.5513584Z [command]/usr/bin/git version
+2026-09-17T22:52:21.5561832Z git version 2.55.0
+2026-09-17T22:52:21.5617698Z Temporarily overriding HOME='/home/runner/work/_temp/3526fbfd-8852-406f-9d70-ab9501799654' before making global git config changes
+2026-09-17T22:52:21.5619230Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T22:52:21.5620231Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sera/sera
+2026-09-17T22:52:21.5659852Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T22:52:21.5696463Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T22:52:21.5963484Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T22:52:21.5984682Z http.https://github.com/.extraheader
+2026-09-17T22:52:21.5998086Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-17T22:52:21.6037605Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T22:52:21.6308887Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T22:52:21.6348813Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T22:52:21.6749015Z Cleaning up orphan processes
+2026-09-17T22:52:21.7038047Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

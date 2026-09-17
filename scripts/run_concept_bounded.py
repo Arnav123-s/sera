@@ -13,6 +13,7 @@ supervisor.ALLOWED = {
     "experiments.concept_refinement.validation",
     "experiments.concept_refinement.ci_trace",
     "experiments.concept_refinement.portable",
+    "experiments.concept_refinement.replay_diagnostic",
     "pytest",
     "ruff",
 }
