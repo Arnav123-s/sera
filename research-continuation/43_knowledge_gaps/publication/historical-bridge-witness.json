@@ -1,0 +1,3846 @@
+{
+  "id": "f32306fe055878878ad86430241b81793c94ec71",
+  "request": {
+    "mode": "boss",
+    "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+    "candidate": "f2f991d74dfbb2edf7f4475dcb7d82989de00a71e44bb11d4a6fbb49442577b6",
+    "owner": "dadac2a173615ec980ca52e1e3d5dbad85f1503138213f16c6906cb0224375b7",
+    "retention": {
+      "owner": "dadac2a173615ec980ca52e1e3d5dbad85f1503138213f16c6906cb0224375b7",
+      "protected_equal": true,
+      "language_max_error": 0.0,
+      "probes": 128,
+      "source": "f72e31eb03095dabdeed70b406c12b7e775c01469758318e09792be93cb04691",
+      "old_definition_gate": false
+    },
+    "decision": "7982f22ce1eb6dae6f2c75e8446c670ee7c0acd013a33e824c5a81da919c364c"
+  },
+  "index": 1,
+  "attempt": 4,
+  "alpha": 0.00125,
+  "seed": 1645076998985633929,
+  "cases": [
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "j": "27/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "7/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "9/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "5/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "-15/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "35/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "19/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1",
+      "t": "1"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "285/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "27/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "-189/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "33/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "90"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "51/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "30"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "45/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/3",
+      "t": "17/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "j": "15"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "-5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "819/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "595/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "28"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "0",
+      "t": "5/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1",
+      "t": "13/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "21"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "-91/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-5/6",
+      "t": "5/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/3",
+      "t": "3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "15/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "7"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "1/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "135/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1",
+      "t": "7/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "77/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "45"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/2",
+      "t": "5/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "1"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1",
+      "t": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "105/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "75/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "j": "-35/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "9"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/2",
+      "t": "4/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "99/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "63/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/3",
+      "t": "11/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "63/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "27/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "495/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "135/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "5/6",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "15/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "495/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "5/6",
+      "t": "1/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "9"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "25"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "99/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "35/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/3",
+      "t": "23/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "153/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "7/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-7/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "j": "85/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1",
+      "t": "8/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1",
+      "t": "19/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "245/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/2",
+      "t": "8/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/3",
+      "t": "1/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "j": "11/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "21"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "32"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "39/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "35/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "-7/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "j": "12"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "63/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "297/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "11/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/2",
+      "t": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1",
+      "t": "11/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "-1/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "12"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "-91/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "j": "-2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/2",
+      "t": "5/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "63/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/3",
+      "t": "7/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "12"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "105/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "119/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/6",
+      "t": "4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "-315/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "20"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "j": "-15/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "13/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "1/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "28"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "5/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/3",
+      "t": "10/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "99/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "j": "6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "45/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "13/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "405/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "81/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "j": "20"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "64"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "-315/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "-75/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "7/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "9/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1",
+      "t": "1/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "51/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "8/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "117/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "0",
+      "t": "7/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "9"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "273/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "9"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "75/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "j": "6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "297/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "j": "-3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "3/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "-315/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "325/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "45/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/2",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "75/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "2/3",
+      "t": "3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "15"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "j": "18"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "3/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "85/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "j": "5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "285/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "153/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "7/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/2",
+      "t": "1"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "21/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "51/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "-385/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1",
+      "t": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "1/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-45/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "j": "5/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "27/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "33/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "j": "25/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "1"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "2/3",
+      "t": "19/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "27/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "35"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "90"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "j": "10"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-5"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/3",
+      "t": "23/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/3",
+      "t": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "j": "5/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "j": "9"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "30"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "w": "385/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "5/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "-35/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "5/6",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5/2",
+      "j": "75/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "j": "16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "55/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "833/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "81/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "10/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "135/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "399/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "5/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "39/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "77/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "9"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "105/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-39/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "0",
+      "t": "4/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "j": "-3/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "4/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "j": "21"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "-105/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1",
+      "t": "1"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "-12"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "-9/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/2",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "1/6",
+      "t": "3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "189/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "2/3",
+      "t": "7/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "1/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "j": "9/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "-5/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-2/3",
+      "t": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "2/3",
+      "t": "13/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "945/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "27/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "245/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "14"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "w": "-27/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "7/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "j": "-35/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "j": "32"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "0",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "j": "10"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "0",
+      "t": "5/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "j": "65/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-13/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-5/6",
+      "t": "3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "12"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "5",
+      "w": "-65/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "105/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "1/2",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "9/2",
+      "j": "27/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-3/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "0"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "2/3",
+      "t": "5/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "21/2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-5/2",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "7/2",
+      "w": "273/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1/2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/6",
+      "t": "2/3"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "-1",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "0",
+      "t": "2"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "2",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-5/6",
+      "t": "7/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "w": "39/8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-8"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "2",
+      "w": "-7"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_negative",
+      "v0": "-4",
+      "assumptions": {
+        "constant_mass": true,
+        "negative_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3/2",
+      "w": "27/4"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "4",
+      "j": "28"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "time",
+      "v0": "4",
+      "assumptions": {
+        "constant_mass": true,
+        "constant_acceleration": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "a": "-1/2",
+      "t": "17/6"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "work_positive",
+      "v0": "-7/2",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "1/2",
+      "w": "15/16"
+    },
+    {
+      "mechanism": "constant_mechanics",
+      "units": "SI",
+      "scope": "impulse",
+      "v0": "-3",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "m": "3",
+      "j": "27"
+    }
+  ],
+  "truth": [
+    4.5,
+    2.5,
+    -5.5,
+    1.5,
+    -2.5,
+    -2.0,
+    -3.0277777777777777,
+    2.5,
+    -6.0,
+    3.5,
+    2.0,
+    1.0,
+    -3.0,
+    -6.0,
+    4.5,
+    -4.0,
+    5.0,
+    -0.05555555555555555,
+    5.0,
+    -1.5,
+    5.5,
+    2.5,
+    6.0,
+    6.0,
+    4.5,
+    -1.5,
+    -1.8333333333333333,
+    -2.5,
+    6.0,
+    -3.0,
+    -2.5833333333333335,
+    1.0,
+    2.0,
+    1.5,
+    0.5,
+    3.0,
+    1.6666666666666667,
+    2.0,
+    -4.5,
+    4.5,
+    2.6666666666666665,
+    0.5,
+    0.8333333333333334,
+    -1.0,
+    5.0,
+    -5.0,
+    2.0,
+    0.5,
+    2.5,
+    -1.6666666666666667,
+    5.0,
+    2.5,
+    5.0,
+    1.3888888888888888,
+    4.0,
+    2.5,
+    4.0,
+    6.0,
+    -5.166666666666667,
+    5.0,
+    -0.5,
+    -6.0,
+    1.0555555555555556,
+    -1.0,
+    2.0,
+    -5.0,
+    0.4166666666666667,
+    5.0,
+    4.5,
+    5.0,
+    4.0,
+    -1.7777777777777777,
+    4.5,
+    2.5,
+    3.111111111111111,
+    -1.5,
+    5.5,
+    4.666666666666667,
+    1.5,
+    -3.1666666666666665,
+    6.0,
+    0.6666666666666666,
+    -1.1666666666666667,
+    1.5,
+    5.5,
+    -6.0,
+    6.0,
+    -6.0,
+    -0.5,
+    6.0,
+    -4.0,
+    -5.0,
+    3.0,
+    0.5,
+    6.666666666666667,
+    1.0,
+    -3.5,
+    3.0,
+    4.5,
+    3.0,
+    -2.75,
+    4.0,
+    5.166666666666667,
+    4.5,
+    3.5,
+    -4.5,
+    -1.8333333333333333,
+    -1.0,
+    -6.0,
+    2.5,
+    -0.9444444444444444,
+    -1.0277777777777777,
+    4.0,
+    3.0,
+    -0.6111111111111112,
+    -5.0,
+    4.5,
+    4.0,
+    -3.4444444444444446,
+    -3.5,
+    4.5,
+    5.0,
+    6.0,
+    -0.5,
+    0.5,
+    1.5,
+    -2.5,
+    -3.5,
+    -1.3333333333333333,
+    5.0,
+    4.0,
+    -0.9444444444444444,
+    4.0,
+    -3.5,
+    0.5,
+    5.0,
+    -4.0,
+    -4.0,
+    5.0,
+    3.5,
+    0.0,
+    2.0,
+    1.5,
+    0.5,
+    4.5,
+    -3.0,
+    2.8333333333333335,
+    5.0,
+    3.5,
+    4.0,
+    6.0,
+    5.5,
+    5.5,
+    6.0,
+    6.0,
+    5.5,
+    -0.3333333333333333,
+    -0.5,
+    2.5,
+    5.0,
+    -1.5,
+    2.0,
+    -3.5555555555555554,
+    1.0,
+    3.5,
+    -5.5,
+    6.0,
+    3.5,
+    -2.1666666666666665,
+    4.5,
+    5.0,
+    5.0,
+    1.6111111111111112,
+    4.0,
+    -6.0,
+    6.0,
+    0.5,
+    -2.0,
+    -0.7222222222222222,
+    3.6666666666666665,
+    1.0,
+    2.5,
+    -4.0,
+    4.5,
+    1.5,
+    0.5,
+    -3.4444444444444446,
+    2.5555555555555554,
+    6.0,
+    5.5,
+    -4.0,
+    -6.0,
+    -5.0,
+    -4.055555555555555,
+    -4.0,
+    -5.5,
+    3.5,
+    -3.5,
+    -4.5,
+    5.0,
+    6.0,
+    2.5,
+    -3.0,
+    1.0,
+    1.1111111111111112,
+    3.0,
+    1.0,
+    2.0,
+    0.5,
+    -0.5,
+    -1.6666666666666667,
+    2.5,
+    6.0,
+    -0.5,
+    -3.2222222222222223,
+    -1.5,
+    -1.8333333333333333,
+    4.0,
+    2.0,
+    -4.0,
+    2.1666666666666665,
+    3.5,
+    2.4444444444444446,
+    -2.5,
+    5.5,
+    3.0,
+    -3.0,
+    -3.0,
+    0.5,
+    1.0,
+    4.5,
+    5.0,
+    -1.0,
+    3.5,
+    -3.0,
+    -6.0,
+    4.5,
+    3.0,
+    -5.5,
+    3.5,
+    -1.6111111111111112,
+    4.0,
+    4.111111111111111,
+    -4.0,
+    -4.0,
+    -0.6111111111111112,
+    -1.0,
+    1.0277777777777777,
+    3.5,
+    -1.0,
+    3.0,
+    -5.0,
+    4.0,
+    2.5833333333333335,
+    4.0,
+    6.0
+  ],
+  "predictions": [
+    4.5,
+    2.5,
+    -5.5,
+    1.5,
+    -2.5,
+    -2.0,
+    -3.0277777777777777,
+    2.5,
+    -6.0,
+    3.5,
+    2.0,
+    1.0,
+    -3.0,
+    -6.0,
+    4.5,
+    -4.0,
+    5.0,
+    -0.05555555555555555,
+    5.0,
+    -1.5,
+    5.5,
+    2.5,
+    6.0,
+    6.0,
+    4.5,
+    -1.5,
+    -1.8333333333333333,
+    -2.5,
+    6.0,
+    -3.0,
+    -2.5833333333333335,
+    1.0,
+    2.0,
+    1.5,
+    0.5,
+    3.0,
+    1.6666666666666667,
+    2.0,
+    -4.5,
+    4.5,
+    2.6666666666666665,
+    0.5,
+    0.8333333333333334,
+    -1.0,
+    5.0,
+    -5.0,
+    2.0,
+    0.5,
+    2.5,
+    -1.6666666666666667,
+    5.0,
+    2.5,
+    5.0,
+    1.3888888888888888,
+    4.0,
+    2.5,
+    4.0,
+    6.0,
+    -5.166666666666667,
+    5.0,
+    -0.5,
+    -6.0,
+    1.0555555555555556,
+    -1.0,
+    2.0,
+    -5.0,
+    0.4166666666666667,
+    5.0,
+    4.5,
+    5.0,
+    4.0,
+    -1.7777777777777777,
+    4.5,
+    2.5,
+    3.111111111111111,
+    -1.5,
+    5.5,
+    4.666666666666667,
+    1.5,
+    -3.1666666666666665,
+    6.0,
+    0.6666666666666666,
+    -1.1666666666666667,
+    1.5,
+    5.5,
+    -6.0,
+    6.0,
+    -6.0,
+    -0.5,
+    6.0,
+    -4.0,
+    -5.0,
+    3.0,
+    0.5,
+    6.666666666666667,
+    1.0,
+    -3.5,
+    3.0,
+    4.5,
+    3.0,
+    -2.75,
+    4.0,
+    5.166666666666667,
+    4.5,
+    3.5,
+    -4.5,
+    -1.8333333333333333,
+    -1.0,
+    -6.0,
+    2.5,
+    -0.9444444444444444,
+    -1.0277777777777777,
+    4.0,
+    3.0,
+    -0.6111111111111112,
+    -5.0,
+    4.5,
+    4.0,
+    -3.4444444444444446,
+    -3.5,
+    4.5,
+    5.0,
+    6.0,
+    -0.5,
+    0.5,
+    1.5,
+    -2.5,
+    -3.5,
+    -1.3333333333333333,
+    5.0,
+    4.0,
+    -0.9444444444444444,
+    4.0,
+    -3.5,
+    0.5,
+    5.0,
+    -4.0,
+    -4.0,
+    5.0,
+    3.5,
+    0.0,
+    2.0,
+    1.5,
+    0.5,
+    4.5,
+    -3.0,
+    2.8333333333333335,
+    5.0,
+    3.5,
+    4.0,
+    6.0,
+    5.5,
+    5.5,
+    6.0,
+    6.0,
+    5.5,
+    -0.3333333333333333,
+    -0.5,
+    2.5,
+    5.0,
+    -1.5,
+    2.0,
+    -3.5555555555555554,
+    1.0,
+    3.5,
+    -5.5,
+    6.0,
+    3.5,
+    -2.1666666666666665,
+    4.5,
+    5.0,
+    5.0,
+    1.6111111111111112,
+    4.0,
+    -6.0,
+    6.0,
+    0.5,
+    -2.0,
+    -0.7222222222222222,
+    3.6666666666666665,
+    1.0,
+    2.5,
+    -4.0,
+    4.5,
+    1.5,
+    0.5,
+    -3.4444444444444446,
+    2.5555555555555554,
+    6.0,
+    5.5,
+    -4.0,
+    -6.0,
+    -5.0,
+    -4.055555555555555,
+    -4.0,
+    -5.5,
+    3.5,
+    -3.5,
+    -4.5,
+    5.0,
+    6.0,
+    2.5,
+    -3.0,
+    1.0,
+    1.1111111111111112,
+    3.0,
+    1.0,
+    2.0,
+    0.5,
+    -0.5,
+    -1.6666666666666667,
+    2.5,
+    6.0,
+    -0.5,
+    -3.2222222222222223,
+    -1.5,
+    -1.8333333333333333,
+    4.0,
+    2.0,
+    -4.0,
+    2.1666666666666665,
+    3.5,
+    2.4444444444444446,
+    -2.5,
+    5.5,
+    3.0,
+    -3.0,
+    -3.0,
+    0.5,
+    1.0,
+    4.5,
+    5.0,
+    -1.0,
+    3.5,
+    -3.0,
+    -6.0,
+    4.5,
+    3.0,
+    -5.5,
+    3.5,
+    -1.6111111111111112,
+    4.0,
+    4.111111111111111,
+    -4.0,
+    -4.0,
+    -0.6111111111111112,
+    -1.0,
+    1.0277777777777777,
+    3.5,
+    -1.0,
+    3.0,
+    -5.0,
+    4.0,
+    2.5833333333333335,
+    4.0,
+    6.0
+  ],
+  "receipt": {
+    "id": "f32306fe055878878ad86430241b81793c94ec71",
+    "mode": "boss",
+    "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+    "owner": "dadac2a173615ec980ca52e1e3d5dbad85f1503138213f16c6906cb0224375b7",
+    "candidate": "f2f991d74dfbb2edf7f4475dcb7d82989de00a71e44bb11d4a6fbb49442577b6",
+    "decision": "7982f22ce1eb6dae6f2c75e8446c670ee7c0acd013a33e824c5a81da919c364c",
+    "retention": {
+      "owner": "dadac2a173615ec980ca52e1e3d5dbad85f1503138213f16c6906cb0224375b7",
+      "protected_equal": true,
+      "language_max_error": 0.0,
+      "probes": 128,
+      "source": "f72e31eb03095dabdeed70b406c12b7e775c01469758318e09792be93cb04691",
+      "old_definition_gate": false
+    },
+    "inputs_sha256": "af12edf8566edf9f09c9f87f92815b94a343a3675688c4ca914cafadcd710f1e",
+    "prediction_sha256": "f78d30ed8bb24d7eaa380540940a5ec71ca2b6599ebe279099d8efb99d409885",
+    "correct": 256,
+    "wrong": 0,
+    "returned": 256,
+    "n": 256,
+    "valid_scopes": [
+      "impulse",
+      "time",
+      "work_negative",
+      "work_positive"
+    ],
+    "counterexamples": [],
+    "global_quest_index": 1,
+    "attempt": 4,
+    "alpha": 0.00125,
+    "lower_bound": 0.9742261995601322,
+    "qualified": true,
+    "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+    "signature": "6950c2e30afb07d19469279be20d8b8a8873c7457b0eeaa1403da52b2d4aadf1"
+  }
+}

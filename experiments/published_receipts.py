@@ -15,6 +15,7 @@ from experiments.quest_portfolio.assessor import challenge, lower_bound
 from experiments.quest_portfolio.common import ROOT, digest
 
 ARCHIVE_SHA256 = "a49c9c8c31167553b317f0ee1c76e2af88bb4b4777d69b54e22165092764eee0"
+BRIDGE_WITNESS_SHA256 = "3d7cfd3d0c611fb8dbf3e034174eab4b0d0ccb1fe6dcd9a2bccfe15db1a40802"
 
 
 def replay(record):
@@ -57,6 +58,14 @@ class PublishedVerifier:
                     prior = self.receipts.setdefault(receipt["id"], receipt)
                     if prior != receipt:
                         raise ValueError("Conflicting published receipt")
+        witness = root / "research-continuation/43_knowledge_gaps/publication/historical-bridge-witness.json"
+        if hashlib.sha256(witness.read_bytes()).hexdigest() != BRIDGE_WITNESS_SHA256:
+            raise ValueError("Published bridge witness changed")
+        receipt = replay(json.loads(witness.read_bytes()))
+        published = json.loads((root / "research-continuation/34_learning_progress/qualification.json").read_text())
+        if receipt != published:
+            raise ValueError("Bridge witness differs from the previously published qualification")
+        self.receipts[receipt["id"]] = receipt
         self.verified = 0
 
     def __call__(self, path, request):
@@ -74,12 +83,16 @@ class PublishedVerifier:
 @contextmanager
 def historical_replay():
     """Explicit restore-only adapter; never accesses an embedded host path."""
+    from experiments.learning_progress import bridge
     from experiments.quest_portfolio import runtime
 
     verifier = PublishedVerifier()
     original = runtime.call_assessor
+    bridge_original = bridge.call_assessor
     runtime.call_assessor = verifier
+    bridge.call_assessor = verifier
     try:
         yield verifier
     finally:
         runtime.call_assessor = original
+        bridge.call_assessor = bridge_original
