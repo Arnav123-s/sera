@@ -1,0 +1,718 @@
+﻿2026-09-18T18:43:40.7817453Z Current runner version: '2.337.0'
+2026-09-18T18:43:40.7855957Z ##[group]Runner Image Provisioner
+2026-09-18T18:43:40.7857240Z Hosted Compute Agent
+2026-09-18T18:43:40.7858168Z Version: 20260828.587
+2026-09-18T18:43:40.7859163Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-18T18:43:40.7860306Z Build Date: 2026-08-28T16:44:25Z
+2026-09-18T18:43:40.7861433Z Worker ID: {521f8383-8736-4530-a9b8-710ad4ee45e6}
+2026-09-18T18:43:40.7863210Z Azure Region: eastus2
+2026-09-18T18:43:40.7864127Z ##[endgroup]
+2026-09-18T18:43:40.7866324Z ##[group]Operating System
+2026-09-18T18:43:40.7867309Z Microsoft Windows Server 2025
+2026-09-18T18:43:40.7868323Z 10.0.26100
+2026-09-18T18:43:40.7869174Z Datacenter
+2026-09-18T18:43:40.7870010Z ##[endgroup]
+2026-09-18T18:43:40.7870878Z ##[group]Runner Image
+2026-09-18T18:43:40.7871814Z Image: windows-2025-vs2026
+2026-09-18T18:43:40.7872806Z Version: 20260907.229.1
+2026-09-18T18:43:40.7875454Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260907.229/images/windows/Windows2025-VS2026-Readme.md
+2026-09-18T18:43:40.7878423Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260907.229
+2026-09-18T18:43:40.7880509Z ##[endgroup]
+2026-09-18T18:43:40.7882361Z ##[group]GITHUB_TOKEN Permissions
+2026-09-18T18:43:40.7886185Z Contents: read
+2026-09-18T18:43:40.7887169Z Metadata: read
+2026-09-18T18:43:40.7888054Z ##[endgroup]
+2026-09-18T18:43:40.7891167Z Secret source: Actions
+2026-09-18T18:43:40.7892737Z Cache mode: write
+2026-09-18T18:43:40.7893950Z Prepare workflow directory
+2026-09-18T18:43:40.8431671Z Prepare all required actions
+2026-09-18T18:43:40.8482556Z Getting action download info
+2026-09-18T18:43:41.0295427Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-18T18:43:41.1779922Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-09-18T18:43:41.4552847Z Download action repository 'astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9' (SHA:c771a70e6277c0a99b617c7a806ffedaca235ff9)
+2026-09-18T18:43:41.8907185Z Complete job name: test (windows-latest)
+2026-09-18T18:43:42.0576313Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-18T18:43:42.0587442Z ##[group]Run actions/checkout@v4
+2026-09-18T18:43:42.0588381Z with:
+2026-09-18T18:43:42.0588948Z   fetch-depth: 0
+2026-09-18T18:43:42.0589529Z   repository: Arnav123-s/sera
+2026-09-18T18:43:42.0662995Z   token: ***
+2026-09-18T18:43:42.0663901Z   ssh-strict: true
+2026-09-18T18:43:42.0664368Z   ssh-user: git
+2026-09-18T18:43:42.0665055Z   persist-credentials: true
+2026-09-18T18:43:42.0665586Z   clean: true
+2026-09-18T18:43:42.0666045Z   sparse-checkout-cone-mode: true
+2026-09-18T18:43:42.0666679Z   fetch-tags: false
+2026-09-18T18:43:42.0667156Z   show-progress: true
+2026-09-18T18:43:42.0667640Z   lfs: false
+2026-09-18T18:43:42.0668369Z   submodules: false
+2026-09-18T18:43:42.0668858Z   set-safe-directory: true
+2026-09-18T18:43:42.0669412Z   allow-unsafe-pr-checkout: false
+2026-09-18T18:43:42.0670918Z env:
+2026-09-18T18:43:42.0671362Z   OMP_NUM_THREADS: 1
+2026-09-18T18:43:42.0671836Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:43:42.0672329Z   MKL_NUM_THREADS: 1
+2026-09-18T18:43:42.0672794Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:43:42.0673297Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:43:42.0673822Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:43:42.0674375Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:43:42.0674918Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:43:42.0675452Z ##[endgroup]
+2026-09-18T18:43:42.2194118Z Syncing repository: Arnav123-s/sera
+2026-09-18T18:43:42.2197639Z ##[group]Getting Git version info
+2026-09-18T18:43:42.2198917Z Working directory is 'D:\a\sera\sera'
+2026-09-18T18:43:42.3317237Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-18T18:43:42.6927441Z git version 2.55.0.windows.5
+2026-09-18T18:43:42.6974798Z ##[endgroup]
+2026-09-18T18:43:42.6995582Z Temporarily overriding HOME='D:\a\_temp\b093fb67-2ca3-4d73-a904-acf6ed65519a' before making global git config changes
+2026-09-18T18:43:42.6997476Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-18T18:43:42.7007085Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\sera\sera
+2026-09-18T18:43:42.7620026Z Deleting the contents of 'D:\a\sera\sera'
+2026-09-18T18:43:42.7626629Z ##[group]Initializing the repository
+2026-09-18T18:43:42.7635998Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\sera\sera
+2026-09-18T18:43:42.8501845Z Initialized empty Git repository in D:/a/sera/sera/.git/
+2026-09-18T18:43:42.8582561Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/Arnav123-s/sera
+2026-09-18T18:43:42.9184739Z ##[endgroup]
+2026-09-18T18:43:42.9186434Z ##[group]Disabling automatic garbage collection
+2026-09-18T18:43:42.9193584Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-09-18T18:43:42.9498415Z ##[endgroup]
+2026-09-18T18:43:42.9500215Z ##[group]Setting up auth
+2026-09-18T18:43:42.9512322Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-18T18:43:42.9824762Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-18T18:43:44.4361746Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-18T18:43:44.4685194Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-18T18:43:45.0622808Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-18T18:43:45.0969664Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-18T18:43:45.6269263Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-09-18T18:43:45.6593238Z ##[endgroup]
+2026-09-18T18:43:45.6594091Z ##[group]Fetching the repository
+2026-09-18T18:43:45.6608850Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-09-18T18:43:52.2534690Z From https://github.com/Arnav123-s/sera
+2026-09-18T18:43:52.2537793Z  * [new branch]      main       -> origin/main
+2026-09-18T18:43:52.2539582Z  * [new branch]      research/v3-calibration-consolidation -> origin/research/v3-calibration-consolidation
+2026-09-18T18:43:52.2541306Z  * [new tag]         research-2026-09-18-discovery -> research-2026-09-18-discovery
+2026-09-18T18:43:52.2542290Z  * [new tag]         research-2026-09-18-knowledge-gaps -> research-2026-09-18-knowledge-gaps
+2026-09-18T18:43:52.2597440Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/main
+2026-09-18T18:43:52.2983018Z   origin/main
+2026-09-18T18:43:52.3041839Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/main
+2026-09-18T18:43:52.3488083Z 3724e35bdf96ec5636a2e6b4350867bc99caf826
+2026-09-18T18:43:52.3522539Z ##[endgroup]
+2026-09-18T18:43:52.3523273Z ##[group]Determining the checkout info
+2026-09-18T18:43:52.3524515Z ##[endgroup]
+2026-09-18T18:43:52.3535916Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-09-18T18:43:52.4012808Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-09-18T18:43:52.4367686Z ##[group]Checking out the ref
+2026-09-18T18:43:52.4383592Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-09-18T18:43:53.5194427Z Updating files:  40% (1451/3561)
+2026-09-18T18:43:53.6051963Z Updating files:  41% (1461/3561)
+2026-09-18T18:43:53.6221650Z Updating files:  42% (1496/3561)
+2026-09-18T18:43:53.7512455Z Updating files:  43% (1532/3561)
+2026-09-18T18:43:53.8126200Z Updating files:  44% (1567/3561)
+2026-09-18T18:43:53.8287833Z Updating files:  45% (1603/3561)
+2026-09-18T18:43:53.8405415Z Updating files:  46% (1639/3561)
+2026-09-18T18:43:53.8654565Z Updating files:  47% (1674/3561)
+2026-09-18T18:43:53.9852609Z Updating files:  48% (1710/3561)
+2026-09-18T18:43:54.0153178Z Updating files:  49% (1745/3561)
+2026-09-18T18:43:54.0614975Z Updating files:  50% (1781/3561)
+2026-09-18T18:43:54.0736649Z Updating files:  51% (1817/3561)
+2026-09-18T18:43:54.0880586Z Updating files:  52% (1852/3561)
+2026-09-18T18:43:54.0995904Z Updating files:  53% (1888/3561)
+2026-09-18T18:43:54.1495294Z Updating files:  54% (1923/3561)
+2026-09-18T18:43:54.1599101Z Updating files:  55% (1959/3561)
+2026-09-18T18:43:54.2071203Z Updating files:  56% (1995/3561)
+2026-09-18T18:43:54.2249303Z Updating files:  57% (2030/3561)
+2026-09-18T18:43:54.2345113Z Updating files:  58% (2066/3561)
+2026-09-18T18:43:54.2471809Z Updating files:  59% (2101/3561)
+2026-09-18T18:43:54.2584852Z Updating files:  60% (2137/3561)
+2026-09-18T18:43:54.2688201Z Updating files:  61% (2173/3561)
+2026-09-18T18:43:54.3021427Z Updating files:  62% (2208/3561)
+2026-09-18T18:43:54.3184584Z Updating files:  63% (2244/3561)
+2026-09-18T18:43:54.3313228Z Updating files:  64% (2280/3561)
+2026-09-18T18:43:54.3425276Z Updating files:  65% (2315/3561)
+2026-09-18T18:43:54.3697195Z Updating files:  66% (2351/3561)
+2026-09-18T18:43:54.3796766Z Updating files:  67% (2386/3561)
+2026-09-18T18:43:54.3993763Z Updating files:  68% (2422/3561)
+2026-09-18T18:43:54.4074995Z Updating files:  69% (2458/3561)
+2026-09-18T18:43:54.4168834Z Updating files:  70% (2493/3561)
+2026-09-18T18:43:54.5124011Z Updating files:  71% (2529/3561)
+2026-09-18T18:43:54.5192464Z Updating files:  71% (2540/3561)
+2026-09-18T18:43:54.5327394Z Updating files:  72% (2564/3561)
+2026-09-18T18:43:54.7203723Z Updating files:  73% (2600/3561)
+2026-09-18T18:43:54.7525195Z Updating files:  74% (2636/3561)
+2026-09-18T18:43:54.7613222Z Updating files:  75% (2671/3561)
+2026-09-18T18:43:54.7922355Z Updating files:  76% (2707/3561)
+2026-09-18T18:43:54.8253271Z Updating files:  77% (2742/3561)
+2026-09-18T18:43:54.8369498Z Updating files:  78% (2778/3561)
+2026-09-18T18:43:54.8469372Z Updating files:  79% (2814/3561)
+2026-09-18T18:43:54.8571907Z Updating files:  80% (2849/3561)
+2026-09-18T18:43:54.8658758Z Updating files:  81% (2885/3561)
+2026-09-18T18:43:54.8768259Z Updating files:  82% (2921/3561)
+2026-09-18T18:43:54.8877902Z Updating files:  83% (2956/3561)
+2026-09-18T18:43:54.8972021Z Updating files:  84% (2992/3561)
+2026-09-18T18:43:54.9094373Z Updating files:  85% (3027/3561)
+2026-09-18T18:43:54.9188463Z Updating files:  86% (3063/3561)
+2026-09-18T18:43:54.9276518Z Updating files:  87% (3099/3561)
+2026-09-18T18:43:54.9383244Z Updating files:  88% (3134/3561)
+2026-09-18T18:43:54.9484520Z Updating files:  89% (3170/3561)
+2026-09-18T18:43:54.9571248Z Updating files:  90% (3205/3561)
+2026-09-18T18:43:54.9675010Z Updating files:  91% (3241/3561)
+2026-09-18T18:43:54.9771056Z Updating files:  92% (3277/3561)
+2026-09-18T18:43:54.9863841Z Updating files:  93% (3312/3561)
+2026-09-18T18:43:54.9940632Z Updating files:  94% (3348/3561)
+2026-09-18T18:43:55.0035787Z Updating files:  95% (3383/3561)
+2026-09-18T18:43:55.0129816Z Updating files:  96% (3419/3561)
+2026-09-18T18:43:55.0221263Z Updating files:  97% (3455/3561)
+2026-09-18T18:43:55.0357981Z Updating files:  98% (3490/3561)
+2026-09-18T18:43:55.0448625Z Updating files:  99% (3526/3561)
+2026-09-18T18:43:55.0449061Z Updating files: 100% (3561/3561)
+2026-09-18T18:43:55.0449318Z Updating files: 100% (3561/3561), done.
+2026-09-18T18:43:55.0635477Z Switched to a new branch 'main'
+2026-09-18T18:43:55.0705700Z branch 'main' set up to track 'origin/main'.
+2026-09-18T18:43:55.1445223Z ##[endgroup]
+2026-09-18T18:43:55.1859617Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-09-18T18:43:55.2156824Z 3724e35bdf96ec5636a2e6b4350867bc99caf826
+2026-09-18T18:43:55.2678300Z ##[group]Run astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9
+2026-09-18T18:43:55.2679215Z with:
+2026-09-18T18:43:55.2679421Z   version: 0.12.15
+2026-09-18T18:43:55.2679647Z   python-version: 3.12.14
+2026-09-18T18:43:55.2679894Z   enable-cache: false
+2026-09-18T18:43:55.2680135Z   activate-environment: false
+2026-09-18T18:43:55.2680404Z   no-project: false
+2026-09-18T18:43:55.2680646Z   working-directory: D:\a\sera\sera
+2026-09-18T18:43:55.2683642Z   github-token: ***
+2026-09-18T18:43:55.2684330Z   cache-dependency-glob: **/*requirements*.txt
+**/*requirements*.in
+**/*constraints*.txt
+**/*constraints*.in
+**/pyproject.toml
+**/uv.lock
+**/*.py.lock
+
+2026-09-18T18:43:55.2685059Z   restore-cache: true
+2026-09-18T18:43:55.2685288Z   save-cache: true
+2026-09-18T18:43:55.2685502Z   prune-cache: false
+2026-09-18T18:43:55.2685722Z   cache-python: false
+2026-09-18T18:43:55.2685962Z   ignore-nothing-to-cache: false
+2026-09-18T18:43:55.2686283Z   ignore-empty-workdir: false
+2026-09-18T18:43:55.2686567Z   download-from-astral-mirror: true
+2026-09-18T18:43:55.2686862Z   add-problem-matchers: true
+2026-09-18T18:43:55.2687109Z   quiet: false
+2026-09-18T18:43:55.2687323Z   resolution-strategy: highest
+2026-09-18T18:43:55.2687569Z env:
+2026-09-18T18:43:55.2687751Z   OMP_NUM_THREADS: 1
+2026-09-18T18:43:55.2687976Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:43:55.2688207Z   MKL_NUM_THREADS: 1
+2026-09-18T18:43:55.2688431Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:43:55.2688675Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:43:55.2688928Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:43:55.2689198Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:43:55.2689460Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:43:55.2689727Z ##[endgroup]
+2026-09-18T18:43:55.4783703Z Fetching manifest data from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson ...
+2026-09-18T18:43:55.5452288Z Downloading uv from "https://releases.astral.sh/github/uv/releases/download/0.12.15/uv-x86_64-pc-windows-msvc.zip" ...
+2026-09-18T18:43:56.1304814Z [command]C:\Windows\system32\tar.exe x -C D:\a\_temp\3c37291a-25ec-4a98-a7b4-a88a2571cde4 -f D:\a\_temp\74793165-5b8c-4fff-bc2d-edd01336e997
+2026-09-18T18:43:56.3015809Z Set UV_TOOL_BIN_DIR to D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:43:56.3019379Z Added D:\a\_temp\uv-tool-bin-dir to the path
+2026-09-18T18:43:56.3028956Z Added C:\hostedtoolcache\windows\uv\0.12.15\x86_64 to the path
+2026-09-18T18:43:56.3031505Z Set UV_TOOL_DIR to D:\a\_temp\uv-tool-dir
+2026-09-18T18:43:56.3034780Z Set UV_PYTHON_INSTALL_DIR to D:\a\_temp\uv-python-dir
+2026-09-18T18:43:56.3038137Z Added D:\a\_temp\uv-python-dir to the path
+2026-09-18T18:43:56.3041617Z Set UV_PYTHON to 3.12.14
+2026-09-18T18:43:56.3063307Z Successfully installed uv version 0.12.15
+2026-09-18T18:43:56.4373022Z ##[group]Run uv venv --python 3.12.14
+2026-09-18T18:43:56.4373503Z [36;1muv venv --python 3.12.14[0m
+2026-09-18T18:43:56.4716807Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:43:56.4717228Z env:
+2026-09-18T18:43:56.4717432Z   OMP_NUM_THREADS: 1
+2026-09-18T18:43:56.4717668Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:43:56.4717904Z   MKL_NUM_THREADS: 1
+2026-09-18T18:43:56.4718121Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:43:56.4718364Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:43:56.4718623Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:43:56.4718890Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:43:56.4719169Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:43:56.4719731Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:43:56.4720060Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:43:56.4720388Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:43:56.4720713Z   UV_PYTHON: 3.12.14
+2026-09-18T18:43:56.4720972Z ##[endgroup]
+2026-09-18T18:43:58.6357262Z Downloading cpython-3.12.14-windows-x86_64-none (download) (21.0MiB)
+2026-09-18T18:43:59.9564402Z  Downloaded cpython-3.12.14-windows-x86_64-none (download)
+2026-09-18T18:44:00.1871647Z Using CPython 3.12.14
+2026-09-18T18:44:00.1872150Z Creating virtual environment at: .venv
+2026-09-18T18:44:00.1920435Z Activate with: .venv\Scripts\activate
+2026-09-18T18:44:00.3455690Z ##[group]Run uv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+2026-09-18T18:44:00.3456532Z [36;1muv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu[0m
+2026-09-18T18:44:00.3528011Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:00.3528366Z env:
+2026-09-18T18:44:00.3528534Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:00.3528731Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:00.3528928Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:00.3529113Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:00.3529320Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:00.3529532Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:00.3529753Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:00.3529977Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:00.3530232Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:00.3530497Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:00.3530803Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:00.3531064Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:00.3531253Z ##[endgroup]
+2026-09-18T18:44:01.2079639Z Resolved 10 packages in 335ms
+2026-09-18T18:44:01.2200824Z Downloading setuptools (1.2MiB)
+2026-09-18T18:44:01.2209183Z Downloading networkx (2.0MiB)
+2026-09-18T18:44:01.2225966Z Downloading sympy (6.0MiB)
+2026-09-18T18:44:01.2370429Z Downloading torch (108.4MiB)
+2026-09-18T18:44:03.1934595Z  Downloaded setuptools
+2026-09-18T18:44:04.0607226Z  Downloaded networkx
+2026-09-18T18:44:06.1440028Z  Downloaded sympy
+2026-09-18T18:44:19.0400774Z  Downloaded torch
+2026-09-18T18:44:19.0413837Z Prepared 10 packages in 17.83s
+2026-09-18T18:44:19.0453107Z warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+2026-09-18T18:44:19.0455568Z          If the cache and target directories are on different filesystems, hardlinking may not be supported.
+2026-09-18T18:44:19.0459060Z          If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+2026-09-18T18:44:27.4840359Z Installed 10 packages in 8.44s
+2026-09-18T18:44:27.4842146Z  + filelock==3.32.3
+2026-09-18T18:44:27.4843855Z  + fsspec==2026.7.0
+2026-09-18T18:44:27.4845553Z  + jinja2==3.1.6
+2026-09-18T18:44:27.4847368Z  + markupsafe==3.0.3
+2026-09-18T18:44:27.4848732Z  + mpmath==1.3.0
+2026-09-18T18:44:27.4850123Z  + networkx==3.6.1
+2026-09-18T18:44:27.4852796Z  + setuptools==78.1.0
+2026-09-18T18:44:27.4853321Z  + sympy==1.14.0
+2026-09-18T18:44:27.4853668Z  + torch==2.10.0+cpu
+2026-09-18T18:44:27.4855784Z  + typing-extensions==4.16.0
+2026-09-18T18:44:27.6006215Z ##[group]Run uv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
+2026-09-18T18:44:27.6006922Z [36;1muv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1[0m
+2026-09-18T18:44:27.6095685Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:27.6096034Z env:
+2026-09-18T18:44:27.6096213Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:27.6096618Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:27.6097264Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:27.6098356Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:27.6098790Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:27.6099311Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:27.6102239Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:27.6102647Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:27.6103075Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:27.6103417Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:27.6103795Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:27.6104086Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:27.6104279Z ##[endgroup]
+2026-09-18T18:44:28.4774698Z Resolved 20 packages in 313ms
+2026-09-18T18:44:28.4831385Z    Building sera-learning @ file:///D:/a/sera/sera
+2026-09-18T18:44:29.3692208Z Downloading pygments (1.2MiB)
+2026-09-18T18:44:29.3712663Z Downloading numpy (12.0MiB)
+2026-09-18T18:44:29.3742962Z Downloading ruff (10.1MiB)
+2026-09-18T18:44:29.3783087Z Downloading scipy (35.0MiB)
+2026-09-18T18:44:29.6595628Z  Downloaded ruff
+2026-09-18T18:44:29.7849570Z  Downloaded pygments
+2026-09-18T18:44:30.4516167Z  Downloaded numpy
+2026-09-18T18:44:32.2910075Z  Downloaded scipy
+2026-09-18T18:44:33.1178783Z       Built sera-learning @ file:///D:/a/sera/sera
+2026-09-18T18:44:33.1268826Z Prepared 10 packages in 4.64s
+2026-09-18T18:44:33.1295479Z warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+2026-09-18T18:44:33.1305039Z          If the cache and target directories are on different filesystems, hardlinking may not be supported.
+2026-09-18T18:44:33.1307520Z          If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+2026-09-18T18:44:34.4034827Z Installed 10 packages in 1.27s
+2026-09-18T18:44:34.4036594Z  + colorama==0.4.6
+2026-09-18T18:44:34.4038603Z  + iniconfig==2.3.0
+2026-09-18T18:44:34.4040924Z  + numpy==2.5.3
+2026-09-18T18:44:34.4043060Z  + packaging==26.3
+2026-09-18T18:44:34.4044406Z  + pluggy==1.6.0
+2026-09-18T18:44:34.4046223Z  + pygments==2.21.0
+2026-09-18T18:44:34.4048308Z  + pytest==9.1.1
+2026-09-18T18:44:34.4050261Z  + ruff==0.16.8
+2026-09-18T18:44:34.4052164Z  + scipy==1.18.1
+2026-09-18T18:44:34.4055438Z  + sera-learning==0.5.0 (from file:///D:/a/sera/sera)
+2026-09-18T18:44:34.6771984Z ##[group]Run uv run --no-sync python -m ruff check src tests scripts experiments
+2026-09-18T18:44:34.6772778Z [36;1muv run --no-sync python -m ruff check src tests scripts experiments[0m
+2026-09-18T18:44:34.6850530Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:34.6850891Z env:
+2026-09-18T18:44:34.6851075Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:34.6851287Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:34.6851511Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:34.6851709Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:34.6851921Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:34.6852150Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:34.6852384Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:34.6852620Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:34.6852903Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:34.6853184Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:34.6854081Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:34.6854625Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:34.6854832Z ##[endgroup]
+2026-09-18T18:44:35.2006038Z All checks passed!
+2026-09-18T18:44:35.3346076Z ##[group]Run uv run --no-sync python scripts/restore_test_artifacts.py
+2026-09-18T18:44:35.3346720Z [36;1muv run --no-sync python scripts/restore_test_artifacts.py[0m
+2026-09-18T18:44:35.3422143Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:35.3422489Z env:
+2026-09-18T18:44:35.3422668Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:35.3422871Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:35.3423086Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:35.3423282Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:35.3423495Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:35.3423718Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:35.3423947Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:35.3424172Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:35.3424651Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:35.3424937Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:35.3425211Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:35.3425528Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:35.3425718Z ##[endgroup]
+2026-09-18T18:44:35.9551667Z {"restored": 17, "already_identical": 0, "experiments_restarted": 0}
+2026-09-18T18:44:36.0913097Z ##[group]Run uv run --no-sync python scripts/reading_artifacts.py --restore
+2026-09-18T18:44:36.0913713Z [36;1muv run --no-sync python scripts/reading_artifacts.py --restore[0m
+2026-09-18T18:44:36.0988175Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:36.0988676Z env:
+2026-09-18T18:44:36.0988930Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:36.0989216Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:36.0989501Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:36.0989758Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:36.0990051Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:36.0990410Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:36.0990749Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:36.0991091Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:36.0991486Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:36.0991873Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:36.0992281Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:36.0993060Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:36.0993401Z ##[endgroup]
+2026-09-18T18:44:36.5887797Z {"verified_files": 86, "runtime_members": 4, "restored": 4, "experiments_restarted": 0}
+2026-09-18T18:44:36.7252397Z ##[group]Run uv run --no-sync python scripts/books_artifacts.py --restore
+2026-09-18T18:44:36.7253012Z [36;1muv run --no-sync python scripts/books_artifacts.py --restore[0m
+2026-09-18T18:44:36.7328778Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:36.7329142Z env:
+2026-09-18T18:44:36.7329320Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:36.7329554Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:36.7329758Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:36.7329948Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:36.7330639Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:36.7330879Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:36.7331107Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:36.7331335Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:36.7331600Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:36.7331890Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:36.7332177Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:36.7332499Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:36.7332693Z ##[endgroup]
+2026-09-18T18:44:37.1964038Z {"verified_files": 113, "runtime_members": 4, "restored": 4, "experiments_restarted": 0}
+2026-09-18T18:44:37.3246418Z ##[group]Run uv run --no-sync python scripts/completion_artifacts.py --restore
+2026-09-18T18:44:37.3247117Z [36;1muv run --no-sync python scripts/completion_artifacts.py --restore[0m
+2026-09-18T18:44:37.3319586Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:37.3319928Z env:
+2026-09-18T18:44:37.3320096Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:37.3320294Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:37.3320491Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:37.3320672Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:37.3320889Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:37.3321108Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:37.3321327Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:37.3321876Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:37.3322129Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:37.3322396Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:37.3322703Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:37.3322971Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:37.3323151Z ##[endgroup]
+2026-09-18T18:44:37.7656647Z {"verified_files": 75, "runtime_members": 1, "research_members": 101, "restored": 1, "experiments_restarted": 0}
+2026-09-18T18:44:37.8964515Z ##[group]Run uv run --no-sync python scripts/quest_artifacts.py --restore
+2026-09-18T18:44:37.8965104Z [36;1muv run --no-sync python scripts/quest_artifacts.py --restore[0m
+2026-09-18T18:44:37.9036240Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:37.9036590Z env:
+2026-09-18T18:44:37.9036763Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:37.9036960Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:37.9037165Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:37.9037349Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:37.9037557Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:37.9037767Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:37.9037987Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:37.9038210Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:37.9038479Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:37.9038750Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:37.9039037Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:37.9039340Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:37.9039522Z ##[endgroup]
+2026-09-18T18:44:38.6392888Z {"files_verified": 65, "restored": 2, "runtime_members": 2, "research_members": 72, "experiments_restarted": 0}
+2026-09-18T18:44:38.7703927Z ##[group]Run uv run --no-sync python scripts/quest_retention_artifacts.py
+2026-09-18T18:44:38.7704526Z [36;1muv run --no-sync python scripts/quest_retention_artifacts.py[0m
+2026-09-18T18:44:38.7778016Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:38.7778596Z env:
+2026-09-18T18:44:38.7778872Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:38.7779205Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:38.7779556Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:38.7779876Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:38.7780232Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:38.7780603Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:38.7780987Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:38.7781392Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:38.7781843Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:38.7782313Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:38.7782775Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:38.7783280Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:38.7783586Z ##[endgroup]
+2026-09-18T18:44:39.1646714Z {"restored": 5, "already_identical": 0, "models_changed": 0, "experiments_restarted": 0}
+2026-09-18T18:44:39.2923810Z ##[group]Run uv run --no-sync python scripts/learning_artifacts.py
+2026-09-18T18:44:39.2924399Z [36;1muv run --no-sync python scripts/learning_artifacts.py[0m
+2026-09-18T18:44:39.2995959Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:39.2996301Z env:
+2026-09-18T18:44:39.2996538Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:39.2996747Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:39.2996960Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:39.2997152Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:39.2997371Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:39.2997587Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:39.2997809Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:39.2998030Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:39.2998284Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:39.2998550Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:39.2998810Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:39.2999100Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:39.2999281Z ##[endgroup]
+2026-09-18T18:44:40.4706646Z {"source_files": 56, "archive_members": 83, "restore": false}
+2026-09-18T18:44:40.6079032Z ##[group]Run uv run --no-sync python -m scripts.discovery_artifacts
+2026-09-18T18:44:40.6079597Z [36;1muv run --no-sync python -m scripts.discovery_artifacts[0m
+2026-09-18T18:44:40.6150719Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:44:40.6151067Z env:
+2026-09-18T18:44:40.6151242Z   OMP_NUM_THREADS: 1
+2026-09-18T18:44:40.6151652Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:44:40.6151872Z   MKL_NUM_THREADS: 1
+2026-09-18T18:44:40.6152072Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:44:40.6152282Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:44:40.6152498Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:44:40.6152724Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:44:40.6152950Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:44:40.6153209Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:44:40.6153792Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:44:40.6154071Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:44:40.6154380Z   UV_PYTHON: 3.12.14
+2026-09-18T18:44:40.6154562Z ##[endgroup]
+2026-09-18T18:44:59.8162492Z {"source_files": 25, "checkpoint_reconstructions": 9, "independently_verified_relations": 5}
+2026-09-18T18:45:00.3978616Z ##[group]Run uv run --no-sync python -m scripts.autonomous_artifacts
+2026-09-18T18:45:00.3979214Z [36;1muv run --no-sync python -m scripts.autonomous_artifacts[0m
+2026-09-18T18:45:00.4053174Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:00.4053534Z env:
+2026-09-18T18:45:00.4053710Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:00.4053923Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:00.4054120Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:00.4054306Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:00.4054508Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:00.4054722Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:00.4054941Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:00.4055163Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:00.4055430Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:00.4055702Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:00.4055975Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:00.4056306Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:00.4056493Z ##[endgroup]
+2026-09-18T18:45:08.0258994Z {"source_files": 32, "checkpoint_reconstructions": 3, "verified_discoveries": 0, "verified_procedure_advances": 0}
+2026-09-18T18:45:08.6048201Z ##[group]Run uv run --no-sync python -m scripts.acquisition_artifacts
+2026-09-18T18:45:08.6048781Z [36;1muv run --no-sync python -m scripts.acquisition_artifacts[0m
+2026-09-18T18:45:08.6124705Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:08.6125055Z env:
+2026-09-18T18:45:08.6125227Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:08.6125428Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:08.6125635Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:08.6125819Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:08.6126027Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:08.6126237Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:08.6126452Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:08.6126682Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:08.6126938Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:08.6127205Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:08.6127470Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:08.6127789Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:08.6127976Z ##[endgroup]
+2026-09-18T18:45:17.4089856Z {"source_files": 25, "checkpoint_reconstructions": 4, "verified_basis_acquisitions": 3, "verified_relations": 8}
+2026-09-18T18:45:17.8798441Z ##[group]Run uv run --no-sync python -m scripts.growth_artifacts
+2026-09-18T18:45:17.8799240Z [36;1muv run --no-sync python -m scripts.growth_artifacts[0m
+2026-09-18T18:45:17.8901919Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:17.8902489Z env:
+2026-09-18T18:45:17.8902759Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:17.8903076Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:17.8903414Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:17.8903714Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:17.8904058Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:17.8905374Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:17.8905755Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:17.8907413Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:17.8907844Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:17.8908295Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:17.8908739Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:17.8909236Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:17.8909540Z ##[endgroup]
+2026-09-18T18:45:32.2529547Z {"stage": 38, "verified_files": 44, "archive_members": 1205}
+2026-09-18T18:45:32.2530072Z {"exact_checkpoints": 16, "main_decisions": 6144}
+2026-09-18T18:45:32.7418843Z ##[group]Run uv run --no-sync python -m scripts.refinement_artifacts --stage 39
+2026-09-18T18:45:32.7419501Z [36;1muv run --no-sync python -m scripts.refinement_artifacts --stage 39[0m
+2026-09-18T18:45:32.7491605Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:32.7491943Z env:
+2026-09-18T18:45:32.7492110Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:32.7492309Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:32.7492516Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:32.7492721Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:32.7492934Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:32.7493152Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:32.7493377Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:32.7493606Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:32.7493867Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:32.7494141Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:32.7494449Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:32.7494718Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:32.7494905Z ##[endgroup]
+2026-09-18T18:45:41.4181534Z {"stage": 39, "verified_files": 30, "archive_members": 1279}
+2026-09-18T18:45:41.8379085Z ##[group]Run uv run --no-sync python -m scripts.refinement_artifacts --stage 40
+2026-09-18T18:45:41.8380087Z [36;1muv run --no-sync python -m scripts.refinement_artifacts --stage 40[0m
+2026-09-18T18:45:41.8455011Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:41.8455401Z env:
+2026-09-18T18:45:41.8455577Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:41.8455774Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:41.8455986Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:41.8456177Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:41.8456391Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:41.8456875Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:41.8457273Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:41.8457499Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:41.8458031Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:41.8458311Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:41.8458628Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:41.8458894Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:41.8459077Z ##[endgroup]
+2026-09-18T18:45:45.9650253Z {"stage": 40, "verified_files": 53, "archive_members": 382}
+2026-09-18T18:45:46.3819787Z ##[group]Run uv run --no-sync python -m scripts.self_chosen_artifacts
+2026-09-18T18:45:46.3820383Z [36;1muv run --no-sync python -m scripts.self_chosen_artifacts[0m
+2026-09-18T18:45:46.3896594Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:46.3896949Z env:
+2026-09-18T18:45:46.3897123Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:46.3897327Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:46.3897536Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:46.3897717Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:46.3897928Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:46.3898147Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:46.3898379Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:46.3898615Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:46.3898886Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:46.3899158Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:46.3899437Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:46.3899748Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:46.3899932Z ##[endgroup]
+2026-09-18T18:45:51.0282708Z {"stage": 41, "verified_files": 88, "archive_members": 1667}
+2026-09-18T18:45:51.0286274Z {"selected": "learned-4101", "audited_proposals": 2048, "checked_routes": 60}
+2026-09-18T18:45:51.4954579Z ##[group]Run uv run --no-sync python -m scripts.frontier_artifacts
+2026-09-18T18:45:51.4955155Z [36;1muv run --no-sync python -m scripts.frontier_artifacts[0m
+2026-09-18T18:45:51.5028185Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:51.5028529Z env:
+2026-09-18T18:45:51.5028697Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:51.5028890Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:51.5029093Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:51.5029285Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:51.5029503Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:51.5029722Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:51.5029944Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:51.5030166Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:51.5030422Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:51.5030730Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:51.5031020Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:51.5031767Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:51.5031989Z ##[endgroup]
+2026-09-18T18:45:56.4146890Z {"stage": 42, "verified_files": 74, "archive_members": 1332}
+2026-09-18T18:45:56.4147509Z {"selected": "learned-4201", "independent_checks": 3456}
+2026-09-18T18:45:56.9256519Z ##[group]Run uv run --no-sync python -m scripts.gap_artifacts --restore
+2026-09-18T18:45:56.9257105Z [36;1muv run --no-sync python -m scripts.gap_artifacts --restore[0m
+2026-09-18T18:45:56.9328354Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:45:56.9328707Z env:
+2026-09-18T18:45:56.9328885Z   OMP_NUM_THREADS: 1
+2026-09-18T18:45:56.9329083Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:45:56.9329284Z   MKL_NUM_THREADS: 1
+2026-09-18T18:45:56.9329469Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:45:56.9329665Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:45:56.9329896Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:45:56.9330119Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:45:56.9330341Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:45:56.9330601Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:45:56.9331453Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:45:56.9331870Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:45:56.9332305Z   UV_PYTHON: 3.12.14
+2026-09-18T18:45:56.9332492Z ##[endgroup]
+2026-09-18T18:46:04.0820993Z Verified 19 exact gap records and 34 source/evidence files.
+2026-09-18T18:46:04.5629760Z ##[group]Run uv run --no-sync python -m scripts.gap_use --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/ci-gap-examples.json
+2026-09-18T18:46:04.5631070Z [36;1muv run --no-sync python -m scripts.gap_use --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/ci-gap-examples.json[0m
+2026-09-18T18:46:04.5701335Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-09-18T18:46:04.5701689Z env:
+2026-09-18T18:46:04.5701857Z   OMP_NUM_THREADS: 1
+2026-09-18T18:46:04.5702054Z   OPENBLAS_NUM_THREADS: 1
+2026-09-18T18:46:04.5702257Z   MKL_NUM_THREADS: 1
+2026-09-18T18:46:04.5702441Z   NUMEXPR_NUM_THREADS: 1
+2026-09-18T18:46:04.5702653Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-18T18:46:04.5702869Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-18T18:46:04.5703095Z   OPENBLAS_CORETYPE: Haswell
+2026-09-18T18:46:04.5703327Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-18T18:46:04.5703612Z   UV_TOOL_BIN_DIR: D:\a\_temp\uv-tool-bin-dir
+2026-09-18T18:46:04.5703896Z   UV_TOOL_DIR: D:\a\_temp\uv-tool-dir
+2026-09-18T18:46:04.5704177Z   UV_PYTHON_INSTALL_DIR: D:\a\_temp\uv-python-dir
+2026-09-18T18:46:04.5704444Z   UV_PYTHON: 3.12.14
+2026-09-18T18:46:04.5704623Z ##[endgroup]
+2026-09-18T18:46:22.2849774Z Traceback (most recent call last):
+2026-09-18T18:46:22.2860496Z   File "<frozen runpy>", line 198, in _run_module_as_main
+2026-09-18T18:46:22.2861236Z   File "<frozen runpy>", line 88, in _run_code
+2026-09-18T18:46:22.2862294Z   File "D:\a\sera\sera\scripts\gap_use.py", line 123, in <module>
+2026-09-18T18:46:22.2862891Z     main()
+2026-09-18T18:46:22.2863348Z   File "D:\a\sera\sera\scripts\gap_use.py", line 108, in main
+2026-09-18T18:46:22.2863906Z     session, growth = restore()
+2026-09-18T18:46:22.2864295Z                       ^^^^^^^^^
+2026-09-18T18:46:22.2864847Z   File "D:\a\sera\sera\scripts\gap_use.py", line 24, in restore
+2026-09-18T18:46:22.2865470Z     session = GapSession(parent, stored["state"])
+2026-09-18T18:46:22.2865990Z               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2866684Z   File "D:\a\sera\sera\experiments\gap_inquiry.py", line 165, in __init__
+2026-09-18T18:46:22.2867508Z     self.base = ObservationSession(parent["parent"], parent["evidence"])
+2026-09-18T18:46:22.2868178Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2868963Z   File "D:\a\sera\sera\experiments\discovery_observation.py", line 112, in __init__
+2026-09-18T18:46:22.2869913Z     self.base = FrontierSession(parent["parent"], saved=decode(parent["state"]))
+2026-09-18T18:46:22.2870648Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2871504Z   File "D:\a\sera\sera\experiments\discovery_frontier.py", line 203, in __init__
+2026-09-18T18:46:22.2872324Z     super().__init__(parent["parent"], saved=decode(parent["state"]))
+2026-09-18T18:46:22.2873186Z   File "D:\a\sera\sera\experiments\self_chosen\runtime.py", line 99, in __init__
+2026-09-18T18:46:22.2874075Z     self.base = GrowthSession(parent["parent"], saved=decode(parent["state"]))
+2026-09-18T18:46:22.2874811Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2875645Z   File "D:\a\sera\sera\experiments\continuing_growth\runtime.py", line 19, in __init__
+2026-09-18T18:46:22.2876418Z     self.base = AcquisitionSession(saved=parent)
+2026-09-18T18:46:22.2876936Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2878025Z   File "D:\a\sera\sera\experiments\autonomous_discovery\acquire.py", line 77, in __init__
+2026-09-18T18:46:22.2878834Z     self.base = AutonomousSession(saved=self.parent)
+2026-09-18T18:46:22.2879370Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2880199Z   File "D:\a\sera\sera\experiments\autonomous_discovery\runtime.py", line 69, in __init__
+2026-09-18T18:46:22.2881028Z     self.base = DiscoverySession(saved=self.parent_record)
+2026-09-18T18:46:22.2884302Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2885230Z   File "D:\a\sera\sera\experiments\operator_discovery\runtime.py", line 33, in __init__
+2026-09-18T18:46:22.2886043Z     self.base = LiveSession(self.parent_record)
+2026-09-18T18:46:22.2886664Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2887487Z   File "D:\a\sera\sera\experiments\learning_progress\bridge.py", line 24, in __init__
+2026-09-18T18:46:22.2888239Z     super().__init__(saved=saved)
+2026-09-18T18:46:22.2888968Z   File "D:\a\sera\sera\experiments\learning_progress\runtime.py", line 72, in __init__
+2026-09-18T18:46:22.2889750Z     self.base = QuestSession(self.parent_record)
+2026-09-18T18:46:22.2890234Z                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2890940Z   File "D:\a\sera\sera\experiments\quest_portfolio\runtime.py", line 74, in __init__
+2026-09-18T18:46:22.2891839Z     call_assessor(self.authority, {"action": "verify", "receipts": receipts})
+2026-09-18T18:46:22.2892787Z   File "D:\a\sera\sera\experiments\quest_portfolio\runtime.py", line 39, in call_assessor
+2026-09-18T18:46:22.2893937Z     result = subprocess.run([sys.executable, "-m", "experiments.quest_portfolio.assessor", "--store", str(path)],
+2026-09-18T18:46:22.2894842Z              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-18T18:46:22.2895713Z   File "D:\a\_temp\uv-python-dir\cpython-3.12.14-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+2026-09-18T18:46:22.2896840Z     raise CalledProcessError(retcode, process.args,
+2026-09-18T18:46:22.2898810Z subprocess.CalledProcessError: Command '['D:\\a\\sera\\sera\\.venv\\Scripts\\python.exe', '-m', 'experiments.quest_portfolio.assessor', '--store', 'D:\\ai\\projects\\sera\\runs\\sera-quests-live\\assessor']' returned non-zero exit status 1.
+2026-09-18T18:46:23.6000020Z ##[error]Process completed with exit code 1.
+2026-09-18T18:46:23.6300653Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-18T18:46:23.6302043Z Post job cleanup.
+2026-09-18T18:46:23.8385240Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-09-18T18:46:23.8744020Z git version 2.55.0.windows.5
+2026-09-18T18:46:23.8823921Z Temporarily overriding HOME='D:\a\_temp\cdc17146-6a64-4170-b2bc-abbbb780b685' before making global git config changes
+2026-09-18T18:46:23.8825130Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-18T18:46:23.8837261Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\sera\sera
+2026-09-18T18:46:23.9188535Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-09-18T18:46:23.9521347Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-09-18T18:46:24.5177667Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-18T18:46:24.5451821Z http.https://github.com/.extraheader
+2026-09-18T18:46:24.5502673Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2026-09-18T18:46:24.5837460Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-09-18T18:46:25.1466318Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-18T18:46:25.1788604Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-09-18T18:46:25.7756882Z Cleaning up orphan processes
+2026-09-18T18:46:25.7923186Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

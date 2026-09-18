@@ -6,9 +6,9 @@
 - [x] Implement autonomous inventory/coverage inspection without a supplied target or missing-mechanism label.
 - [x] Test independent execution, aliases, evidence isolation, reward integrity and exact search resumption.
 - [x] Freeze a substantial three-procedure study before reserved evidence access.
-- [ ] Complete the same resumable study across all 12,288 distinct candidate programs.
-- [ ] Evaluate the fixed portfolios and strong controls once.
-- [ ] Independently replay, inspect qualifications and preserve all failures.
-- [ ] Integrate supported scoped explanations on the actual parent owner.
-- [ ] Check practical use and inherited abilities.
+- [x] Complete the same resumable study across all 12,288 distinct candidate programs.
+- [x] Evaluate the fixed portfolios and strong controls once.
+- [x] Independently replay, inspect qualifications and preserve all failures.
+- [x] Integrate supported scoped explanations on the actual parent owner.
+- [x] Check practical use and inherited abilities.
 - [ ] Preserve full evidence, costs and source identities; update public navigation and GitHub verification.
