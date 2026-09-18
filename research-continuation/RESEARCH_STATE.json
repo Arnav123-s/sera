@@ -1,6 +1,6 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-18T11:17:40.956511+00:00",
+  "date": "2026-09-18T11:32:55.102466+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
   "active_direction": "Self-selected internal discovery, identified prerequisite acquisition, independent verification and useful diverse routes",
   "source_pins": {
@@ -382,19 +382,19 @@
   "latest_user_steering": "Let the learner choose gaps and construct discoveries from retained knowledge, with independent accuracy and novelty credit",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
   "latest_publication": {
-    "implementation": "9ca50a7aab26fa4b75e7adbcd22de38026344343",
-    "run": "https://github.com/Arnav123-s/sera/actions/runs/35317484025",
+    "implementation": "5195a2ea75eb085f60e13bae98f9acaa0e681aa3",
+    "run": "https://github.com/Arnav123-s/sera/actions/runs/35339284292",
     "conclusion": "success",
-    "linux_tests": 440,
-    "windows_tests": 441,
+    "linux_tests": 455,
+    "windows_tests": 456,
     "optional_fixture_skips": {
       "linux": 46,
       "windows": 45
     },
-    "receipt": "33_capability_portfolio/publication/github-run-42.json"
+    "receipt": "37_constraint_acquisition/publication/github-run-45.json"
   },
   "resource_balance_at_publication": {
-    "remaining_seconds": 1995.7677897998801,
+    "remaining_seconds": 72.43434449973574,
     "live_ledger": "runs/v3-batch-001/budget.json",
     "snapshot_only": true,
     "new_grant_seconds": 0
@@ -405,5 +405,19 @@
     "live_ledger": "runs/v3-batch-001/budget.json",
     "new_grants": 0,
     "extension_request": "60 minutes requested after completed Stage 37; pending explicit approval"
-  }
+  },
+  "preserved_publication_receipts": [
+    {
+      "implementation": "9ca50a7aab26fa4b75e7adbcd22de38026344343",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35317484025",
+      "conclusion": "success",
+      "linux_tests": 440,
+      "windows_tests": 441,
+      "optional_fixture_skips": {
+        "linux": 46,
+        "windows": 45
+      },
+      "receipt": "33_capability_portfolio/publication/github-run-42.json"
+    }
+  ]
 }

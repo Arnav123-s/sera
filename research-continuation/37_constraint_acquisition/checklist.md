@@ -9,4 +9,4 @@
 - [x] Pass all 256 fresh alternative executions and freeze learning during evaluation.
 - [x] Replay exact continuation and preserve 202 protected tensor records.
 - [x] Verify the saved command and compact archives.
-- [ ] Publish the complete record and successful remote verification receipts.
+- [x] Publish the complete record and successful remote verification receipts.

@@ -9,4 +9,4 @@
 - [x] Retain zero new discoveries, 32 gap records and exact continuation.
 - [x] Carry the actual gap into the following acquisition cycle.
 - [x] Verify exact reconstruction of all compact checkpoints.
-- [ ] Publish completed remote verification receipts.
+- [x] Publish completed remote verification receipts.

@@ -10,4 +10,4 @@
 - [x] Verify 256 alternative executions on 64 fresh polynomials.
 - [x] Preserve all 204 inherited tensors and earlier source/task state.
 - [x] Verify the usable command and exact reconstruction of all compact checkpoints.
-- [ ] Publish results and retain completed Linux/Windows verification receipts.
+- [x] Publish results and retain completed Linux/Windows verification receipts.

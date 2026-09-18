@@ -8,6 +8,8 @@ SERA followed its own recorded summation gap, constructed three missing basis ca
 
 The preceding [Stage 36](../research-continuation/36_autonomous_discovery/report.md) is preserved with its zero new-discovery result, 32 execution-gap records and exact continuation. It provided the actual prerequisite gap for Stage 37. All previous live stores and completed evaluations remain intact.
 
+Implementation [`5195a2e`](https://github.com/Arnav123-s/sera/commit/5195a2ea75eb085f60e13bae98f9acaa0e681aa3) passed [GitHub run 45](https://github.com/Arnav123-s/sera/actions/runs/35339284292): **455 Linux tests and 456 Windows tests**, with the 46/45 existing optional-fixture skips. All archive, certificate and release checks passed. The prior full local regression and subsequent affected checks cover 501 distinct local tests. [Receipt and original logs](../research-continuation/37_constraint_acquisition/publication/github-run-45.json).
+
 ## Preserved Stage 35 internal discovery
 
 Starting from its retained learned integral, SERA generated five new operator relationships and independently certified their degree-bounded algebra. It executed 256 alternative calculations on 64 fresh polynomials, resumed exactly, and preserved all 204 inherited tensor records. The discovery run used no web queries or supplied completed equations. The current owner is **runs/sera-discovery-live**. [Use the discovered motion route](../research-continuation/35_operator_discovery/README.md) · [Full results, assumptions and controls](../research-continuation/35_operator_discovery/report.md).

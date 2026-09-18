@@ -11,4 +11,4 @@
 - [x] Independently replay predictions, exact resume, language and inherited weights.
 - [x] Save the selected continuing learner and independently requalify its portfolio.
 - [x] Complete full regression, concrete commands and public archive verification.
-- [ ] Publish organized implementation, results, costs and CI receipts.
+- [x] Publish organized implementation, results, costs and CI receipts.
