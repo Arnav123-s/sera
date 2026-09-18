@@ -9,4 +9,6 @@
 - [x] Reassess proposals, replay exact continuation and audit retained weights.
 - [x] Integrate the qualified successor and preserve every alternative.
 - [x] Return to the physical observation goal; preserve and repair the CSV import defect.
-- [ ] Finish portable archives, publication and remote verification.
+- [x] Finish portable archives, publication and remote verification.
+
+Implementation verification: [GitHub run 47](https://github.com/Arnav123-s/sera/actions/runs/35376538918); Linux 486 passed, Windows 487 passed. All archive parts are in the [public release](https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery).

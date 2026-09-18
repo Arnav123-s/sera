@@ -12,6 +12,8 @@ One generated relation was checked against attributed laboratory measurements. W
 
 The complete local regression passed **532 tests with zero skips**, alongside the targeted integration checks and whole-tree lint. The newest saved owner is `runs/sera-observed-discovery-live`; exact identity and resource receipts are in the [local verification record](../research-continuation/42_composed_discovery/verification.json) and [observed-owner audit](../research-continuation/41_self_chosen_discovery/observation-integration.json).
 
+Implementation [`5d332fd`](https://github.com/Arnav123-s/sera/commit/5d332fdf0d9bada764e83fbb774f55ff8124e7ea) passed [GitHub run 47](https://github.com/Arnav123-s/sera/actions/runs/35376538918): **486 Linux tests and 487 Windows tests**, with 46/45 existing optional-fixture skips. Both platforms passed every artifact and release check. [Exact receipt and original logs](../research-continuation/42_composed_discovery/publication/github-run-47.json) · [All resumable archives](https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery).
+
 ## Preserved sustained continuation: Stages 38–40
 
 The completed continuation covers **twelve strands, 16,384 main decisions and 1,703,936 recorded main practice presentations** across its comparison runs. The independently admitted model is saved at **runs/sera-growth-live**. It improved retained-source dictionary, grammar, reading and mechanics-method results; all strand results and comparisons are preserved. [Complete cycle summary](../research-continuation/40_step_resolution/cycle-summary.md) · [Admitted model results](../research-continuation/38_continuing_growth/report.md) · [Batch task interface](START_HERE.md#run-several-tasks-through-the-continuing-learner).

@@ -153,12 +153,12 @@
     },
     {
       "id": "41-SD-001",
-      "status": "complete_audited_integrated_pending_publication",
+      "status": "complete_audited_integrated_published",
       "report": "41_self_chosen_discovery/report.md"
     },
     {
       "id": "42-CF-001",
-      "status": "complete_audited_integrated_pending_publication",
+      "status": "complete_audited_integrated_published",
       "report": "42_composed_discovery/report.md"
     }
   ],
@@ -392,7 +392,8 @@
       "selected": "self_directed-3802",
       "admitted": true,
       "checkpoint_owner": "11653a31b45b36be4d02a81c1a0d2aae5a30561ea9b4a305e0dc617a4751dd81",
-      "status": "complete_verified"
+      "status": "complete_verified",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
     },
     "sustained_refinement": {
       "report": "39_sustained_refinement/report.md",
@@ -400,7 +401,8 @@
       "selected": "balanced_adam-3902",
       "admitted": false,
       "checkpoint_owner": "918ab71d7f1cd9eb8dd72382c46bb3977bbecf22cf1a31a9b6d443fae38f64ab",
-      "status": "complete_verified"
+      "status": "complete_verified",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
     },
     "step_resolution": {
       "report": "40_step_resolution/report.md",
@@ -408,13 +410,15 @@
       "selected": "4002",
       "admitted": false,
       "checkpoint_owner": "904a5494f98c6c3d8aa50ba8b6ac790d0b0b7ec266791d8f514c5928c562a29a",
-      "status": "complete_verified"
+      "status": "complete_verified",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
     },
     "self_chosen_discovery": {
       "report": "41_self_chosen_discovery/report.md",
       "audit": "41_self_chosen_discovery/audit.json",
       "selected": "learned-4101",
-      "retained_records": 66
+      "retained_records": 66,
+      "publication": "42_composed_discovery/publication/github-run-47.json"
     },
     "composed_discovery": {
       "report": "42_composed_discovery/report.md",
@@ -423,7 +427,8 @@
       "new_exact_routes": 80,
       "fresh_exact_cases": 7680,
       "local_tests": 532,
-      "latest_observed_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230"
+      "latest_observed_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
     }
   },
   "latest_continuation": "42_composed_discovery",
@@ -431,16 +436,23 @@
   "latest_user_steering": "Teach three elementary examples, then broaden self-chosen accurate discoveries and distinct useful approaches; standing approval for the same bounded local resources",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
   "latest_publication": {
-    "implementation": "5195a2ea75eb085f60e13bae98f9acaa0e681aa3",
-    "run": "https://github.com/Arnav123-s/sera/actions/runs/35339284292",
+    "implementation": "5d332fdf0d9bada764e83fbb774f55ff8124e7ea",
+    "run": "https://github.com/Arnav123-s/sera/actions/runs/35376538918",
     "conclusion": "success",
-    "linux_tests": 455,
-    "windows_tests": 456,
-    "optional_fixture_skips": {
-      "linux": 46,
-      "windows": 45
+    "platforms": {
+      "linux": {
+        "passed": 486,
+        "skipped": 46
+      },
+      "windows": {
+        "passed": 487,
+        "skipped": 45
+      }
     },
-    "receipt": "37_constraint_acquisition/publication/github-run-45.json"
+    "local_tests": 532,
+    "receipt": "42_composed_discovery/publication/github-run-47.json",
+    "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery",
+    "archive_parts": 18
   },
   "resource_balance_at_publication": {
     "remaining_seconds": 72.43434449973574,
@@ -479,5 +491,19 @@
     "independent_prediction_max_difference": 8.881784197001252e-16,
     "empirical_points": 1,
     "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
-  }
+  },
+  "publication_history": [
+    {
+      "implementation": "5195a2ea75eb085f60e13bae98f9acaa0e681aa3",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35339284292",
+      "conclusion": "success",
+      "linux_tests": 455,
+      "windows_tests": 456,
+      "optional_fixture_skips": {
+        "linux": 46,
+        "windows": 45
+      },
+      "receipt": "37_constraint_acquisition/publication/github-run-45.json"
+    }
+  ]
 }

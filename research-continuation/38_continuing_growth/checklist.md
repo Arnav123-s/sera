@@ -10,4 +10,6 @@
 - [x] Freeze selection; evaluate once; compare learning procedures at matched cost.
 - [x] Independently audit scores, exact resume, retention and actual ownership.
 - [x] Integrate supported knowledge, demonstrate use and preserve open goals.
-- [ ] Publish organized report, all outcomes, resource costs and resumable artifacts.
+- [x] Publish organized report, all outcomes, resource costs and resumable artifacts.
+
+Implementation verification: [GitHub run 47](https://github.com/Arnav123-s/sera/actions/runs/35376538918); Linux 486 passed, Windows 487 passed. All archive parts are in the [public release](https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery).
