@@ -1,0 +1,92 @@
+[
+  {
+    "id": "English alarm",
+    "kind": "request",
+    "text": "wake me up at nine am on friday"
+  },
+  {
+    "id": "Spanish alarm",
+    "kind": "request",
+    "text": "despiértame a las nueve de la mañana el viernes"
+  },
+  {
+    "id": "French alarm",
+    "kind": "request",
+    "text": "réveille moi à neuf heures vendredi"
+  },
+  {
+    "id": "German alarm",
+    "kind": "request",
+    "text": "wecke mich am freitag um neun uhr"
+  },
+  {
+    "id": "linear sum",
+    "kind": "sum",
+    "coefficients": [
+      "2",
+      "1"
+    ]
+  },
+  {
+    "id": "constant integral",
+    "kind": "integral",
+    "coefficients": [
+      "2"
+    ]
+  },
+  {
+    "id": "discovered double sum",
+    "kind": "discovered_route",
+    "coefficients": [
+      "2"
+    ]
+  },
+  {
+    "id": "conditional physical alternatives",
+    "kind": "imagine",
+    "request": {
+      "id": "continuing-retained-force-001",
+      "goal": "Where is the body after two seconds with 6 N net force and 3 kg mass?",
+      "term": "tension",
+      "definition": "a pulling force that acts along a connecting medium, especially a stretched flexible connector, such as a rope or cable; when a rope supports the weight of an object, the force exerted on the object by the rope is called tension",
+      "source": "https://raw.githubusercontent.com/openstax/osbooks-physics/dfdfd7a5356ecdd42e504de3df50d9153e33ea49/modules/m54131/index.cnxml",
+      "value": "6",
+      "unit": "N",
+      "time": "2",
+      "mass": "3",
+      "force": "6",
+      "assumptions": {
+        "physical_context": true,
+        "one_dimension": true,
+        "constant_quantity": true,
+        "inertial_frame": true,
+        "nonrelativistic": true,
+        "si_units": true,
+        "net_force": true
+      }
+    }
+  },
+  {
+    "id": "preserved source question",
+    "kind": "read",
+    "question": "In what other country besides the US does GE provide lending services?",
+    "sentences": [
+      {
+        "text": "Since over half of GE's revenue is derived from financial services, it is arguably a financial company with a manufacturing arm.",
+        "start": 0,
+        "end": 128
+      },
+      {
+        "text": "It is also one of the largest lenders in countries other than the United States, such as Japan.",
+        "start": 129,
+        "end": 224
+      },
+      {
+        "text": "[citation needed]",
+        "start": 487,
+        "end": 504
+      }
+    ],
+    "source": "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json"
+  }
+]

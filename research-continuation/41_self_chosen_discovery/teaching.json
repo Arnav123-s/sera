@@ -1,0 +1,207 @@
+{
+  "examples": [
+    {
+      "id": "double",
+      "description": "2 maps to 4 and 3 maps to 6. Propose twice the input; test 5 before credit.",
+      "context": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "action": "test",
+      "independent_check": {
+        "input": 5,
+        "prediction": 10,
+        "answer": 10
+      }
+    },
+    {
+      "id": "alias",
+      "description": "Adding two and then one equals adding three. Renaming the same expression earns no new discovery; seek another useful route.",
+      "context": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "action": "diversify",
+      "independent_check": {
+        "same_canonical_expression": true,
+        "new_discovery_credit": 0
+      }
+    },
+    {
+      "id": "exception",
+      "description": "A sequence increased on two checks, then decreased. Keep the counterexample and revise the always-increasing claim.",
+      "context": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "action": "revise",
+      "independent_check": {
+        "observations": [
+          1,
+          2,
+          3,
+          2
+        ],
+        "always_increasing": false
+      }
+    }
+  ],
+  "before": [
+    0,
+    0,
+    0
+  ],
+  "after": [
+    0,
+    1,
+    2
+  ],
+  "updates": 120,
+  "transfer": [
+    {
+      "context": [
+        0.35,
+        0.05,
+        0.08
+      ],
+      "expected": "test",
+      "chosen": "test",
+      "correct": true
+    },
+    {
+      "context": [
+        0.6,
+        0.05,
+        0.08
+      ],
+      "expected": "test",
+      "chosen": "test",
+      "correct": true
+    },
+    {
+      "context": [
+        1.4,
+        0.05,
+        0.08
+      ],
+      "expected": "test",
+      "chosen": "test",
+      "correct": true
+    },
+    {
+      "context": [
+        2.0,
+        0.05,
+        0.08
+      ],
+      "expected": "test",
+      "chosen": "test",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        0.35,
+        0.08
+      ],
+      "expected": "diversify",
+      "chosen": "diversify",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        0.6,
+        0.08
+      ],
+      "expected": "diversify",
+      "chosen": "diversify",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        1.4,
+        0.08
+      ],
+      "expected": "diversify",
+      "chosen": "diversify",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        2.0,
+        0.08
+      ],
+      "expected": "diversify",
+      "chosen": "diversify",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        0.05,
+        0.35
+      ],
+      "expected": "revise",
+      "chosen": "revise",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        0.05,
+        0.6
+      ],
+      "expected": "revise",
+      "chosen": "revise",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        0.05,
+        1.4
+      ],
+      "expected": "revise",
+      "chosen": "revise",
+      "correct": true
+    },
+    {
+      "context": [
+        0.1,
+        0.05,
+        2.0
+      ],
+      "expected": "revise",
+      "chosen": "revise",
+      "correct": true
+    }
+  ],
+  "transfer_correct": 12,
+  "meaning": "learned selection of three investigation actions from supplied structured status; measured process transfer",
+  "actual_example_execution": {
+    "double": {
+      "actual_owner_result": "10",
+      "independent_addition": 10
+    },
+    "alias": {
+      "two_integrals": "21",
+      "one_integral": "21",
+      "independent_addition": 21
+    },
+    "exception": {
+      "counterexample_detected": true,
+      "observations": [
+        1,
+        2,
+        3,
+        2
+      ]
+    }
+  }
+}

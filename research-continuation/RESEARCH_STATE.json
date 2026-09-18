@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-18T11:32:55.102466+00:00",
+  "date": "2026-09-18T17:12:18.576596+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Self-selected internal discovery, identified prerequisite acquisition, independent verification and useful diverse routes",
+  "active_direction": "Self-chosen missing-knowledge investigation, independent discovery credit, owned rule composition and measured-task return",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -150,6 +150,16 @@
       "status": "complete_scoped_capability_qualified",
       "report": "33_capability_portfolio/report.md",
       "detail": "Both verified-reward seeds answer 512/512 fresh mechanics requests. Balanced remains default. Actual owner learning, qualification renewal and 485-test regression pass."
+    },
+    {
+      "id": "41-SD-001",
+      "status": "complete_audited_integrated_pending_publication",
+      "report": "41_self_chosen_discovery/report.md"
+    },
+    {
+      "id": "42-CF-001",
+      "status": "complete_audited_integrated_pending_publication",
+      "report": "42_composed_discovery/report.md"
     }
   ],
   "preserved_branches": [
@@ -170,7 +180,7 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "Follow 37_constraint_acquisition/NEXT_ACTION.md using the actual live ledger and saved owner.",
+  "next_action": "42_composed_discovery/NEXT_ACTION.md",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -375,11 +385,50 @@
       "acquired_basis_cases": 3,
       "prior_basis_retention": 11,
       "protected_tensors": 202
+    },
+    "continuing_growth": {
+      "report": "38_continuing_growth/report.md",
+      "audit": "38_continuing_growth/audit.json",
+      "selected": "self_directed-3802",
+      "admitted": true,
+      "checkpoint_owner": "11653a31b45b36be4d02a81c1a0d2aae5a30561ea9b4a305e0dc617a4751dd81",
+      "status": "complete_verified"
+    },
+    "sustained_refinement": {
+      "report": "39_sustained_refinement/report.md",
+      "audit": "39_sustained_refinement/audit.json",
+      "selected": "balanced_adam-3902",
+      "admitted": false,
+      "checkpoint_owner": "918ab71d7f1cd9eb8dd72382c46bb3977bbecf22cf1a31a9b6d443fae38f64ab",
+      "status": "complete_verified"
+    },
+    "step_resolution": {
+      "report": "40_step_resolution/report.md",
+      "audit": "40_step_resolution/audit.json",
+      "selected": "4002",
+      "admitted": false,
+      "checkpoint_owner": "904a5494f98c6c3d8aa50ba8b6ac790d0b0b7ec266791d8f514c5928c562a29a",
+      "status": "complete_verified"
+    },
+    "self_chosen_discovery": {
+      "report": "41_self_chosen_discovery/report.md",
+      "audit": "41_self_chosen_discovery/audit.json",
+      "selected": "learned-4101",
+      "retained_records": 66
+    },
+    "composed_discovery": {
+      "report": "42_composed_discovery/report.md",
+      "audit": "42_composed_discovery/audit.json",
+      "selected": "learned-4201",
+      "new_exact_routes": 80,
+      "fresh_exact_cases": 7680,
+      "local_tests": 532,
+      "latest_observed_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230"
     }
   },
-  "latest_continuation": "37_constraint_acquisition",
+  "latest_continuation": "42_composed_discovery",
   "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
-  "latest_user_steering": "Let the learner choose gaps and construct discoveries from retained knowledge, with independent accuracy and novelty credit",
+  "latest_user_steering": "Teach three elementary examples, then broaden self-chosen accurate discoveries and distinct useful approaches; standing approval for the same bounded local resources",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
   "latest_publication": {
     "implementation": "5195a2ea75eb085f60e13bae98f9acaa0e681aa3",
@@ -400,11 +449,10 @@
     "new_grant_seconds": 0
   },
   "latest_resource_snapshot": {
-    "remaining_seconds": 72.43434449973574,
-    "snapshot_only": true,
-    "live_ledger": "runs/v3-batch-001/budget.json",
-    "new_grants": 0,
-    "extension_request": "60 minutes requested after completed Stage 37; pending explicit approval"
+    "remaining_seconds": 1262.2714172999986,
+    "standing_approval": true,
+    "policy": "RESOURCE_POLICY.md",
+    "receipt": "42_composed_discovery/publication/cost-summary.json"
   },
   "preserved_publication_receipts": [
     {
@@ -419,5 +467,17 @@
       },
       "receipt": "33_capability_portfolio/publication/github-run-42.json"
     }
-  ]
+  ],
+  "latest_usable_owner": {
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "store": "runs/sera-observed-discovery-live",
+    "same_actual_owner": true,
+    "inherited_equal": true,
+    "protected_tensors": 379,
+    "exact_restore": true,
+    "repeat_credit_rejected": true,
+    "independent_prediction_max_difference": 8.881784197001252e-16,
+    "empirical_points": 1,
+    "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+  }
 }

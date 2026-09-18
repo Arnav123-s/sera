@@ -1,0 +1,31 @@
+{
+  "status": "FAILED",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "ruff",
+    "check",
+    "experiments/sustained_refinement.py",
+    "tests/test_sustained_refinement.py",
+    "scripts/run_refinement_bounded.py",
+    "scripts/growth_artifacts.py"
+  ],
+  "reserved_seconds": 40.0,
+  "charged_seconds": 0.16022660001181066,
+  "memory_limit_bytes": 2147483648,
+  "peak_job_committed_bytes": 65257472,
+  "peak_process_committed_bytes": 56508416,
+  "observed_process_ids": [
+    4512,
+    22204
+  ],
+  "worker_threads": 1,
+  "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+  "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+  "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+  "child_pid": 22204,
+  "returncode": 1,
+  "log_sha256": "eb8068b73208fab31355ee3de5f830df5228d0e2c38b5966d4e8bf353527174a"
+}

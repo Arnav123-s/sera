@@ -1,0 +1,333 @@
+[
+  {
+    "id": "acceleration-from-position",
+    "kind": "solve_discovery",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "CONDITIONAL_LEARNED_ROUTES",
+      "domain": "motion_0",
+      "target": "a0",
+      "routes": [
+        {
+          "id": "25fe09116af993b665b86fc5a8853c9caa889a02d9d79271e290b23cc56dabd6",
+          "result": "2",
+          "requires": [
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 11
+        }
+      ],
+      "fact_added": false,
+      "source": "independently certified polynomial-model identity"
+    }
+  },
+  {
+    "id": "changing-acceleration",
+    "kind": "solve_discovery",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "CONDITIONAL_LEARNED_ROUTES",
+      "domain": "motion_1",
+      "target": "a1",
+      "routes": [
+        {
+          "id": "3b58de3d05543fd9b3e31865b83b3856dd16615488756cd131822849eac78d50",
+          "result": "2",
+          "requires": [
+            "a0",
+            "t",
+            "v",
+            "v0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 11
+        },
+        {
+          "id": "13ada39306609d89e71e7a1ec52f2a9675716bf5784a0fdd6b6c71f37ca540b1",
+          "result": "2",
+          "requires": [
+            "a0",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 17
+        },
+        {
+          "id": "8df0968166e0953d86e78acbec4e403c837a89fa5c96a6c3d62848d18c273a02",
+          "result": "2",
+          "requires": [
+            "a0",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 17
+        },
+        {
+          "id": "aa994af20b6b50bda30216a566b3c574ff5e171cb6abec0ad5f80f9be293cbaf",
+          "result": "2",
+          "requires": [
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 18
+        }
+      ],
+      "fact_added": false,
+      "source": "independently certified polynomial-model identity"
+    }
+  },
+  {
+    "id": "curved-acceleration",
+    "kind": "solve_discovery",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "CONDITIONAL_LEARNED_ROUTES",
+      "domain": "motion_2",
+      "target": "a2",
+      "routes": [
+        {
+          "id": "22248b0f7ca31ff3bed43fdc8d84c1d18c099c1ba1a3fa3edd4d868f70c9c2ce",
+          "result": "2",
+          "requires": [
+            "a0",
+            "a1",
+            "t",
+            "v",
+            "v0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 17
+        },
+        {
+          "id": "23c6e87b630be0f7d01193d3f81df707c6e5134220696899a18fb940a7a3a492",
+          "result": "2",
+          "requires": [
+            "a0",
+            "a1",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 24
+        },
+        {
+          "id": "af1d4523e368eaa2275a2cc07fd3bd49a098cb749beb9e1f96c8110a75f0bb9c",
+          "result": "2",
+          "requires": [
+            "a0",
+            "a1",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 24
+        },
+        {
+          "id": "1087b12d22cf1fed62d28b4c2bb90a886c52736650a43463226d26f14bda45cd",
+          "result": "2",
+          "requires": [
+            "a1",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 25
+        },
+        {
+          "id": "232ff4c9acf4935b6295702879a4b3c8b8fc138cd19eefa70234fd3c8423a44f",
+          "result": "2",
+          "requires": [
+            "a0",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 26
+        }
+      ],
+      "fact_added": false,
+      "source": "independently certified polynomial-model identity"
+    }
+  },
+  {
+    "id": "retained-integral",
+    "kind": "integral",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "CERTIFIED_ALGEBRA",
+      "operator": "integral",
+      "coefficients": [
+        "0",
+        "2",
+        "3/2",
+        "1/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_check": true
+    }
+  },
+  {
+    "id": "retained-sum",
+    "kind": "sum",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "CERTIFIED_ALGEBRA",
+      "operator": "sum",
+      "coefficients": [
+        "0",
+        "3/2",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_check": true
+    }
+  },
+  {
+    "id": "english",
+    "kind": "request",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "INTERPRETED_REQUEST",
+      "intent": "alarm_set",
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-time",
+        "I-time",
+        "O",
+        "B-date"
+      ]
+    }
+  },
+  {
+    "id": "spanish",
+    "kind": "request",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "INTERPRETED_REQUEST",
+      "intent": "alarm_set",
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-place_name",
+        "B-time"
+      ]
+    }
+  },
+  {
+    "id": "french",
+    "kind": "request",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "INTERPRETED_REQUEST",
+      "intent": "play_music",
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-timeofday"
+      ]
+    }
+  },
+  {
+    "id": "german",
+    "kind": "request",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "INTERPRETED_REQUEST",
+      "intent": "alarm_set",
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-time",
+        "I-time"
+      ]
+    }
+  },
+  {
+    "id": "measured-motion-model",
+    "kind": "observed_motion",
+    "owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "result": {
+      "status": "EMPIRICAL_MODEL_PREDICTION",
+      "time_since_model_origin_seconds": 0.75,
+      "position_metres": 2.4152099454545466,
+      "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+      "evidence_id": "40a7f0b455507b531562d81f6314ee60d41de1029a1d41a14f8f6865f1d7ba4d",
+      "measured_event": false,
+      "observed_interval_seconds": [
+        0.050000000000000044,
+        1.0
+      ]
+    }
+  }
+]

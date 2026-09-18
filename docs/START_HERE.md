@@ -1,14 +1,24 @@
 # Use SERA
 
-The newest [autonomous acquisition and discovery interface](../research-continuation/37_constraint_acquisition/README.md) uses `runs/sera-acquisition-live`. It retains the full predecessor chain and can execute its newly discovered discrete-accumulation route.
+The [continuing learner](../research-continuation/42_composed_discovery/README.md) retains language, reading, mathematics, physical meanings and a portfolio of learned discoveries in one owner. The batch interface automatically loads the latest independently admitted successor. Every predecessor store remains available.
 
 [Home](../README.md) · [Status](STATUS.md) · [Repository map](REPOSITORY_MAP.md) · [Archive](RESEARCH_ARCHIVE.md)
 
 These commands use the prepared workspace at `D:/ai/projects/sera`, its environment and retained checkpoints. Numerical tasks use one CPU thread and the existing 2 GiB process-tree memory cap. The wrapper charges the live resource ledger; every output folder must be fresh.
 
+## Run several tasks through the continuing learner
+
+```powershell
+.venv/Scripts/python.exe scripts/run_resolution_bounded.py --seconds 90 --output runs/my-continuing-batch-001 --module scripts.continuing_use -- --input research-continuation/42_composed_discovery/example-tasks.json --output runs/my-continuing-results-001.json
+```
+
+The example batch asks for missing acceleration coefficients using learned equations, checks a polynomial integral and sum, interprets four-language requests and predicts measured motion with its separately checked empirical parameters. The model loads once for the batch. Edit a copy of the JSON to supply your own tasks; the results retain source attribution and the exact owner identity. The [earlier batch](../research-continuation/40_step_resolution/example-tasks.json) also contains attributed reading and conditional physical imagination.
+
+Supported `kind` values are `request`, `read`, `sum`, `integral`, `imagine`, `discovered_route`, `discoveries`, `solve_discovery` and `observed_motion`. A `read` task supplies a question, attributed source and up to sixteen source sentences. Polynomial coefficients are ordered from the constant term upward. `discoveries` returns the retained portfolio with its independent evaluation; `solve_discovery` executes applicable learned coefficients and reports each route's assumptions. `observed_motion` preserves the source and measured range of the fitted model. Request interpretation returns an intent and entity tags; external actions have their own execution interfaces.
+
 ## Practice investigation and learn from checked progress
 
-For the newest saved owner, begin with [internal discovery](../research-continuation/35_operator_discovery/README.md). It constructs and proves relationships from its retained learned operators, then uses them to calculate motion through alternative programs. Its parent preserves [verified learning progress and the qualified mechanics portfolio](../research-continuation/34_learning_progress/README.md). The completion command below remains available on its preserved predecessor store.
+Begin with [self-chosen and composed discovery](../research-continuation/42_composed_discovery/README.md). Three elementary process examples precede a sustained investigation study. SERA selects missing-input questions, proposes fitted programs or combines owned rules, and retains independently checked coverage. Its [earlier internal discovery](../research-continuation/35_operator_discovery/README.md) and [learning-progress portfolio](../research-continuation/34_learning_progress/README.md) remain preserved. The completion command below uses its predecessor store.
 
 ```powershell
 .venv/Scripts/python.exe scripts/run_completion_bounded.py --seconds 60 --output runs/my-completion-001 --module experiments.verified_completion.runtime -- practice --id my-response-1 --seed 32510

@@ -1,0 +1,2444 @@
+{
+  "selected": "learned-4201",
+  "results": {
+    "learned-4201": {
+      "checks": [
+        {
+          "id": "f4f902de8088ac49132c978f7a01c68f0aa049f0dd8c078f4c129876e084e339",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 14,
+            "count": 16,
+            "accuracy": 0.875,
+            "verified_ids": [
+              "5029",
+              "4742",
+              "1950",
+              "2755",
+              "5927",
+              "106",
+              "1670",
+              "1859",
+              "2491",
+              "772",
+              "2980",
+              "1296",
+              "5058",
+              "3452"
+            ],
+            "covered_ids": [
+              "5029",
+              "4742",
+              "1950",
+              "2755",
+              "5927",
+              "106",
+              "1670",
+              "1859",
+              "2491",
+              "772",
+              "2980",
+              "15816",
+              "1296",
+              "5058",
+              "3452",
+              "12288"
+            ],
+            "counterexamples": [
+              {
+                "id": "15816",
+                "text": "any news from agnes",
+                "intent": "email_query"
+              },
+              {
+                "id": "12288",
+                "text": "system pull any traffic news for my commute",
+                "intent": "transport_traffic"
+              }
+            ],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "7b73258041b3535c0940e8a89feec8de590dc9a92f3f05b0b45afdc666239314",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1f790777ca5406bdd275339b9cd7cf58c729ad29b51521baec38fcdcdef39ab7",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "f33066336a730ab44b0ce0a4b1230b6c917aeefe5499a865ca41f4bb91815e63",
+          "domain": "en-US",
+          "result": {
+            "accepted": true,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 16,
+            "count": 16,
+            "accuracy": 1.0,
+            "verified_ids": [
+              "16171",
+              "15834",
+              "16215",
+              "16338",
+              "16008",
+              "16380",
+              "17059",
+              "16542",
+              "15769",
+              "15969",
+              "15915",
+              "16390",
+              "17083",
+              "16539",
+              "15929",
+              "16088"
+            ],
+            "covered_ids": [
+              "16171",
+              "15834",
+              "16215",
+              "16338",
+              "16008",
+              "16380",
+              "17059",
+              "16542",
+              "15769",
+              "15969",
+              "15915",
+              "16390",
+              "17083",
+              "16539",
+              "15929",
+              "16088"
+            ],
+            "counterexamples": [],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "0008451a53582549a16256d776683a37f1a1a1b165019e65f6c685d1de655694",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c866fce175e8b63c8e121451f76ca8baeed7dfd6cb12e2c3310a5e3fa43013ee",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "79a12ad98a92bd1d62062e43314f20c7a2959d8776f3e7b8675638356b2896df",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "710966cda9156eca028a3fed9a2f33c67e242c53a45fea61ea02c15b47098731",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "6fe24ad3cb7fecbbee6655753d2c805048ed9342145c97004feccf3efa20bf7d",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "801fb415869e9ac944a5f77c709e931850927bc6c9552a767a57912e1c27edac",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "cc4ec6fabdb1fb230267517e09ce4f09d959f06dc92058a30cc175ebea79ff25",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4c358dfa81f7f6750c2bce52e1001b79dd1b4531dbf9ffa94269f53720b6dca5",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2b53b822d5cdd74e7ec12bb9c526ded28733a1559256fd43b6a8767aec5ffa8e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "653a0f01536a57b473e049d1f773799733d2b9be6ab83eeb9a8d7777c1b033ea",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c46ca04a54048cae17f5da5f02cd93d7965d7055c999f0ba8ecf76639d46e8df",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "370ffa38f7a8cbbcadcd3463ab9932ff49a58624e0ce1777b8cb2ed5a171b55e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2920fd9f15ccc6bb0e6ad0fd29f1922007fafd570e66361d5edbb5a24ecec466",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "31fa7943fda0ed8908077e1fb78bcacf17ce780af9f8f220bdf470a731f9064d",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9d3bf5b2f168e786030a34f01473135a11ec78191b29a191cc7efabfbc532a83",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "b9c99b8127e7ade06551b64595869cf9f811405915f3f635958d8e63fd8eff9c",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "7f5230a50617cfcbf3d2302720c960af71156b47cac2a306604f1a4fe3bafdea",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "78f8a07139b32184b0ecf6a4ef1b232288c705872b71a43d1ebcc3786f929715",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "52cc7d860447ae509b4cbb484b2e23f535a5819a489f2c021ce371690d4b2b68",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "6100c204b8866dd703cb115def959eda9a874471ed6b6bfb5be5f7ec0f722b13",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "fb89eda8de5cef4ea3861f7e516d8ed622aa6bac45a9f130ae06b6ba1e0b19a2",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "77e3f3174caeefd16d85036c8595650e885d656b3ff1daf8cabd7a5726d86c87",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "bb122297028b3df516446c2be1c74264552e6a78cff0767ab19a09fcbcf79bfa",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c58c3eb3106193e8be0b4d066d7e30dfe7a879648a8655621b619bd04a72d3f9",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a4ff88c0e7b6f4bc48c415239a42204a66670d3740ff20089e333b1cd2c22e82",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4fb9d63ad4317598defb5b6f00de1cf7de17b07e6be5753f5d56cd77936d7f4c",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "759f81579768ceb5010b90318edb8913c3a0530041c0f299aac8ece232c91f84",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "3bf7be5bb541a182402e30365628845e08fab0ec40597e3d964b411b16c189fb",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d48d6f8a88686f6ffaec605fef137e83f1c5c7ba0b809d6cfab70c272cbe88f4",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "eaf323063d0207143f38993acbd5b4ae63a4b4eb17bb0133805562895a5554ce",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1a3125c79560edfec2e7bd1f7cd7cf4cff2e99a374f357af9279dd482cf05615",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d85c73bb4231a7c897fb3f2a3dd9aac5cfbde2857bc33925edc8472b775de81d",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "72f8c7162b353ec1cba2f1b559e95d61c9110dad5ee903b0cf00ac288d21e52e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c22f7bd1f0fc7676fe3541df0d66d2aae64f302f2bc50d741e08f8dcb7300ce1",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "f3a9225c1f7dec01292df835111a4b6b556a19629402342213592b21b617fcd3",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "3a3defe454c7a7cabb95aafe7e065fef68e84c5bc2864ec68713c6da1becf5e0",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1d656ace64318475f7fa3367951828bc79359b8342d273ecdb2ae161a2e08d38",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "fc2b3fc933150ef657fe0e773c3809c07c51788bf5f581e68123da992544392d",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "edcb25f0865ba80f38f1884fac3874f56c4615b48e2305c908ac2c1d55262624",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "eef4c149f68cefe620a396f375faa807773cae6428a64c6f1bc66af8d2619583",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c6d72b354c874695c7d7bdf24049666b3153665ea96a1d8532fa22c6ef6cfb53",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1a49b9b603c9ab0d1684227bfe44f78814a3ab758a6c6039d0f847ba439d6ea4",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 4,
+            "count": 4,
+            "accuracy": 1.0,
+            "verified_ids": [
+              "11404",
+              "11276",
+              "11504",
+              "11277"
+            ],
+            "covered_ids": [
+              "11404",
+              "11276",
+              "11504",
+              "11277"
+            ],
+            "counterexamples": [],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "177778472bc0d44826e91b3ea01675bc1c56a195eefda47a85e828b47791a11f",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "036afe74c38e5984854b6f1051ffbaa2810fceec3f78b81fd6c2d45d22c1e988",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "af1d4523e368eaa2275a2cc07fd3bd49a098cb749beb9e1f96c8110a75f0bb9c",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2b708e714e35b35a8d176868628daf02f8fd7d1fe047c276a47b3065e4ea6ba5",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "e04192f0e213e149ea46792b0bfdacccf2476ecfec803094342d15646ee2c021",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "23c6e87b630be0f7d01193d3f81df707c6e5134220696899a18fb940a7a3a492",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1087b12d22cf1fed62d28b4c2bb90a886c52736650a43463226d26f14bda45cd",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "232ff4c9acf4935b6295702879a4b3c8b8fc138cd19eefa70234fd3c8423a44f",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d426be48118ffedeffd5d79c774fddd0939bb0bc765cd274d1c5026becf6f83e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2d2667682a8193663d3371fad9f094fc127c70e0546248b84a738cf185fa215e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "edabe6418f848095c98af1f065cc60d5c093a0b09b182c6028adc880aed8f0f4",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "23dbdb955dacb0dc338aaa897400e7a5840a2e6cc92fe7a58b12300ed4b02adb",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c9882e326bb25f184d8b9921e7a4b13010089f7252738243e4d1ff31f0696c2d",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "78142722c1c942c0a30d95fd51b51206c08b2b9d7234e7f7310ea428602eb796",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "e4f3c4f81ae9da08abb8ee35331164d4f57634416dcd2a803b089147cebb3d62",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "f16c2d654c71446a8fca4b55e46c0537660755ae939699b726925554af0f4bf1",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c70074459059a2c45c86d733d2b92c95ea6088a0a5704b8be78ad13680c1d0c8",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "0a0808ad2a64de9af08d8d46ea9ecf15480c3f1127b94089814b8830150fb3c6",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "dc46e946deac87a79da8594f228e757f5b92225f50033d2f2f6d134f079533f4",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "8af75b2c77dad6c705dc93064765624f344078552233c207b2f005b501690ad5",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2f1ca6b00c14bfcb79bff72fe507bd7a68f3ec1e6935bdc5d4c12d35bd0aeaaf",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "b9aaeaae15ad6c87e86e9425c72f7bfada2363dffdeb72d425ab667f64105856",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "0fdef6edd442c9d2db1aa9a9c1b4bc48564b9a6e5a1fc491ae92d93a9c0d8421",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "562d666107a2feab931cc12009356c19e03d91a357f592bc1e8f74ab0a556a14",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "691e51e692e740df5268b4f44753744535e9d7d888d263907e09eec5fa1ec1a0",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "38b66137b330bd05a6f8953aa12d75992e25950b8650b71b6b0c68d79e08a061",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2075d526db3f1ac84895dafa98715345879f9b72e2ead78e9378eb674da5b74f",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2b1d1a8194897b4b735b963c0169817a68279ee21d7ceb612c3a29352296e15e",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4af713857725ce8429b333a2c8f0be1e0c5d86d11ff52ae9cc4752c9a68b578b",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9f66e030118e2df1efa9a6aafb4d46b471ca29695602aadeef794c6eee8a2e9f",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "62ecc990f8c22c8cf3eb1d579628ad91de86abe5c17dd8e3db7c08142b0802c2",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "aa994af20b6b50bda30216a566b3c574ff5e171cb6abec0ad5f80f9be293cbaf",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "779b2f80e0593754f947408cb265e0d9cc22eb6a9811c1e0719d23d7e7c00de3",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1fa1d7e4dff3fab27adaadebe4a825c068d565220de6e661dd2d4bb802c239fb",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "92b6e1d06e447d7bba39793843e7c1c97401ac3dc37d4cd362abddb208421351",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "0764ffc53bc46c7afef287886e5a0b0c5cff6809546821ecf4a138804621df0f",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "25fe09116af993b665b86fc5a8853c9caa889a02d9d79271e290b23cc56dabd6",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        }
+      ],
+      "exact_pass": true,
+      "exact_routes": 80,
+      "exact_cases": 7680,
+      "language_confirmed": 1,
+      "language_attempted": 3
+    },
+    "learned-4202": {
+      "checks": [
+        {
+          "id": "33b40c188415497c4fe0830ba5268bfc3ce736982ed470fe16df40bb04411586",
+          "domain": "en-US",
+          "result": {
+            "accepted": true,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 16,
+            "count": 16,
+            "accuracy": 1.0,
+            "verified_ids": [
+              "16171",
+              "15834",
+              "16215",
+              "16338",
+              "16008",
+              "16380",
+              "17059",
+              "16542",
+              "15769",
+              "15969",
+              "15915",
+              "16390",
+              "17083",
+              "16539",
+              "15929",
+              "16088"
+            ],
+            "covered_ids": [
+              "16171",
+              "15834",
+              "16215",
+              "16338",
+              "16008",
+              "16380",
+              "17059",
+              "16542",
+              "15769",
+              "15969",
+              "15915",
+              "16390",
+              "17083",
+              "16539",
+              "15929",
+              "16088"
+            ],
+            "counterexamples": [],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "a048c54bccbda91a43c644a8fb0bfc4c4e2ca05298c4fceea9d3bccd8d3ff4f0",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "b1351753e6ad067c597d1759547f8130ebbf4bd938be3af7b1959acc844a1d3f",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "5f4ab54eadae367f7b8cc1570d14589537f106ac9e3817038f6214ef8e94ee3d",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "45a9b870b6c0238c4e506291983343117ecf63b20188d59bae70377c0037ce9d",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2bdc1b005b713334e4a43a4678c091dda4c1ff50df2b689d8fc77c9f6232e7fb",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "7a18efa096622ed2329fa0b514521c82aa2467590f340eee991cfb3a821a814a",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "727c3580944b4bc76c00e1ace58f4e476c31e2ac04df5cd3b7dadcf606397328",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "caf3dcf865892548670171f23af1ae5a71b8f8dee46ad24bc7a06ea48996b5b6",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "629ecb50098df5e4b00bbb748e9a1409371c2ab1356c1f193af11b2c26fc1788",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "92581a3ee5c05c5b0a5c525928a9d871463b51c7b9cc76dbaf2568c216c9761a",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "83dad12f3f001a90cf30cafebe4487ade49e0cf6e61a85870ac3a787e7e21371",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "7e5ccbd3236a2710d6bc9e6f5f190dc172e6592f4252b4e89070a930e4b73a96",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1ccb868058a529de47d16f799d24bbf80cead1d51a361e93cae8f7b6db725bc7",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "8e5e4e039b635a1a450a34ea96f0944329197848dbaffe7336e1d94f6eb723d7",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "3381ab2e37d27eefe174a16183cf79082324014ff9aebdc4f24958eb6f0db2b2",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a0f7189d1b1a75a4e1d392420f7b0cbe029e6fcdb4311db4b88932fc322a4bd2",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "8b68f4a08666d8847a164d1509b8499029f86435140395a06c95493d7c6f26d7",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "38f6f0b479c1f94af85587582815859f14376d2e086ec5b3c731c2124a44a78c",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "95080ff4fd36410e01ceab822c5155ef33ae596bc499035436d24b3b04afdc4b",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9b510c74e22e733217f815327f4183a3e9988b9555aeade9449bb2e633a9b433",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "bc3a1c46d9fd4e2e4e9d6cc7a9fdcd6c18217fcb85f2045829d9be0d34317493",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "65d5d79a8b5461f6675367e6f3e7c2df4b9a217b52d9cf537c9e777ffe6132e8",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4f4d492a6a436346615edf1c36f1c660b010feadf38296f64b38fb9ee50729a6",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 4,
+            "count": 4,
+            "accuracy": 1.0,
+            "verified_ids": [
+              "11404",
+              "11276",
+              "11504",
+              "11277"
+            ],
+            "covered_ids": [
+              "11404",
+              "11276",
+              "11504",
+              "11277"
+            ],
+            "counterexamples": [],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "90a6fd5e8a0aec5c63ad734e23a6ef3dd19184476cab9934b466c166ca9d6565",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "deff2440e221255703b682aacf961dbf906f9a268592976c2a6c150a17e987b9",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "f4ea6c1fbd8cb02136201678ca75c65ef9497721fc1cda628525e3755ba8b53a",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "6f9263c4f7e6bfb743b3b77815afed9cff91284bf135a1ee354e9adc679d52c7",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9ba01793c4dcf467c5b94a564b647b464bdddd9b964a7332867e54313651393e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "95eb8c05525cf26d88a345063c00148e2f09e5e4b303c3b2c951461c343e50c2",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "7d299f4568b68ba46242d7a196754a2eabf18675ece2b493acebd8dd80dbc797",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "81437ba49bea769d0dae272a1d4a854dd3bcdccd236afba5ee82c9186f038068",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2f6e2077ff9f1a42b430e11b64789e2467246f16440030d2457eed1ed276f8e1",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "387c56db955825c5c171f6ec6c65ef20e6c93224b218ec62613bb93cc7b23335",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "88423072bb6e02f9414fcc6ea1e5b2e13c278d677a2e575a9af3cd434230967c",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "e58971e852c70a14fb6d82842b6968424f41632efd2ac50fed63ab66a8978dd8",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "ef01e2dbab463a364a0c1b7afe64ba226e935f6649eb16f2965067d67aadd818",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a147c7958ac73d8e4e9e0a95fee4189f2f8adf97b4988cee5e240bebb10f9961",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "5db6d8e1c81b95efd4455f63219a580483ef55f445fe55efe88e4e0aa4da1b88",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "72049bfd394cd74cb75be423b82079db932067f1f611601f3e9eec0040a1d7fa",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "97ac82212f20dbe3c2e8e600adcbef33e13efcb365a91fdfb2f9152c16cacb26",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1e6cfa999988d897ed933b6146ed388b49dd72b2662711f60227035c218c0ba4",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "73d9e649e4c3aaa1a1765ec413df42bc2cacfe0cf6ff3d2a1b2cbfe22f8835af",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "790585af4025a1a37fc82e1339f1bdff61d5b79e9d7cd8e218d46de9fe916a87",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "414b0ed864ee93553fd8d0190ef344ba6a1511fe087519348458c88eb56cf014",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a6747cd4a74ba8b2229933338b3f5df14b4e4938699c893fd19bcd12413276d5",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "af908cecd98f25ddb5849223497868c41f4f9e17c28e85560f6238155aa22d52",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "baca7a2775ac7950dd5259a59f7964d53b18b41562b78e00094724d4d3013341",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a57ff068fa1ae72df60440257f7af818ebfb65850e7fb022b408f7969f01d5d8",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "020147d5635d390aef2c4a8400dc5d53249c86d2432ae761e1627592fc5a0792",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "e2c7e6c65f8479714e4a1f7b6a0cdfd441cfb9b17792b8542b1b997b0e66ee2e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9b74b47ee53946558f6329e77b3dbabd25f805e85d85917ed67609a9553c9e6e",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "f0741a4bd55029ae0bd885c17d92d30afdbc8e833be298250772e79421536cee",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "beabb4017db4f60c88161869bf6ce4c8c26ee745dc17858818fea6f9c6dabaf9",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a8caf73d21de11ab8192cfbdb341629d6e91b9a9e6e76590f21ac4fc1d21960b",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "79cf7dad6302482e491abecd8385f0bc13b5b8e55487ebe89308a6c0eea20183",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "70a947e538c100aa8cd8b735647a39c5c48ac2e7a1834931aaf0d3c7e2b0f477",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d4e4e17b25eb4a506fc8c3593a9b729425578ae11eab4085c3c6ff0bbb76f7e7",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "8968fcfa20d689116608e5f001ab4f9cacb9edac13e65e62e3dc318eee1ad11f",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "438a1a6bf7725bc6c816655532ee00b3e4259ea8f6c200589f1541e7cb4c9cfa",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "6f4b292875fa165239aec8071a903b92de379bb02ac277e54a968dc32c4f788c",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "15c8c675c6756848b271f11ba0c35c220d382922fab6561c88c01e6431f4b324",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "af3519f17e89dc9fc5e19b0a80c9b03aea0136090dd30878075cf7de98658f16",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c9f89d45cbefa417dabda18358814c469722092adb68095a2fde7694ba619319",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 14,
+            "count": 16,
+            "accuracy": 0.875,
+            "verified_ids": [
+              "5029",
+              "4742",
+              "1950",
+              "2755",
+              "5927",
+              "106",
+              "1670",
+              "1859",
+              "2491",
+              "772",
+              "2980",
+              "1296",
+              "5058",
+              "3452"
+            ],
+            "covered_ids": [
+              "5029",
+              "4742",
+              "1950",
+              "2755",
+              "5927",
+              "106",
+              "1670",
+              "1859",
+              "2491",
+              "772",
+              "2980",
+              "15816",
+              "1296",
+              "5058",
+              "3452",
+              "12288"
+            ],
+            "counterexamples": [
+              {
+                "id": "15816",
+                "text": "any news from agnes",
+                "intent": "email_query"
+              },
+              {
+                "id": "12288",
+                "text": "system pull any traffic news for my commute",
+                "intent": "transport_traffic"
+              }
+            ],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "22f49be338e3285c1306333d09696d11d1aaf43b1e6f909666b8c1424eb8092e",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1244b39f6456eddf66c5cdaad0300f46f1ab4aa680616173d97f8a861d570fa2",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "bd06719ce81821b89872bd3b43643c43ff4da86306e6a36745fc437c26c52d1b",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "fc72bf9d3e169c89ee18f0873ea31a69c2b0cdc00f30b10fd3792e52109de8f6",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "ed1268de9676992ab9825fc7bf87c16687fea8c0e0e8ea67b3faf611f0abc51c",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "8fd3a79d82c20dd252282d1a289038af31266b9717ada0b29f1a1fa04a4ada8e",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d9da90f3b2a6e50d11a862445c47ca3bdd9db0884827464b6d9d3291fc8e8c65",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "66fe9eb1d2c6cfacc55bd87b53b5b5a9a994181de00a7edac0ca8870a6f116e7",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d7fe8decf14d031e532ad4dbeb07a7e17f86607ce32c427a7e1b8e4f92c39cba",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a4c81f2dcf2cbd5cdeb840e825d6de7b3451a46cb472e4c77f535ae9672ec2ab",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "3d0250badfe0eefeb64a8fcca2f4f9404c8a42094a8a01d19fd89f3791911e9b",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "eee6a7d309df88b2c36f1e55f84d9e69704797853520c79d71b5a4458f39b273",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d68c4b63133e00712e14432766d4b8817e2207c0ed67c08f4e25873a6601040e",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2a6f747b26dd5480c618e716ae12efae9380a6dbee4296573cc7c16d0406c0dd",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c1e1ae560b6984563f5173f3269b91598f61229d9ab8edb111a9978e8c0d000b",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4d9ebe18c297eadff0f1ef7b1b06fc23287060b07c96d0b481cf3b32af89d73d",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9c8ab15d0778a8cca17a5e8120904035da273ca38d3184374c922f53326aff0c",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "b8a1cf38a1e42098e74fe73dd23789e967c597309913d4ba3eb560d9574349ca",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        }
+      ],
+      "exact_pass": true,
+      "exact_routes": 79,
+      "exact_cases": 7584,
+      "language_confirmed": 1,
+      "language_attempted": 3
+    },
+    "balanced-4201": {
+      "checks": [
+        {
+          "id": "d19eb76cb4ec7df5c24e828189789b583222337aaa8423adbde654fe43898c4d",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a32dd6d15c9edb853e3874a89e20c070c7142c2ae6d2310cd597f897a604781c",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c14285bf8f1702f49ec0e197186154c9ac3a76471d2c77357ea7bda1dad462ea",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 4,
+            "count": 4,
+            "accuracy": 1.0,
+            "verified_ids": [
+              "11404",
+              "11276",
+              "11504",
+              "11277"
+            ],
+            "covered_ids": [
+              "11404",
+              "11276",
+              "11504",
+              "11277"
+            ],
+            "counterexamples": [],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "a81078545a0ef57eb58bbea7da4be664f725afd366e71b743d48e80013d41ad3",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "b12c068b90c44e1cf418bd931a290ba3312aa6cddf053477c033d45123be4a74",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "dc3589c029f7718fa46b2e3cbb654ba7db93130d82047e0523d9ff05aea4cc38",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "893ad9ad986c69fb82e7cb65ed2ac0cab29bae3e06f4d84f3931863645db7d5d",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 14,
+            "count": 16,
+            "accuracy": 0.875,
+            "verified_ids": [
+              "5029",
+              "4742",
+              "1950",
+              "2755",
+              "5927",
+              "106",
+              "1670",
+              "1859",
+              "2491",
+              "772",
+              "2980",
+              "1296",
+              "5058",
+              "3452"
+            ],
+            "covered_ids": [
+              "5029",
+              "4742",
+              "1950",
+              "2755",
+              "5927",
+              "106",
+              "1670",
+              "1859",
+              "2491",
+              "772",
+              "2980",
+              "15816",
+              "1296",
+              "5058",
+              "3452",
+              "12288"
+            ],
+            "counterexamples": [
+              {
+                "id": "15816",
+                "text": "any news from agnes",
+                "intent": "email_query"
+              },
+              {
+                "id": "12288",
+                "text": "system pull any traffic news for my commute",
+                "intent": "transport_traffic"
+              }
+            ],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "bfc1a04c889696f25229b1510691e6c246c764be6c79b6ef62fd95fd16728e57",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "cc0fd58b0439e744b84d440a016618c57613110df7617d0c4f1f62c1792d16a2",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "007cf2767e5e09923ed6fccfb4e77b7639ea5b6a6f8e7568680708acf85731bc",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "986e417d00dc07d9edc456833d3e87d1caf6c348e233e70972ebb783481028b8",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4d1aedee5d14176e75635c153295b5d24f1cd2e88a7aca634f25c4a3924658e1",
+          "domain": "en-US",
+          "result": {
+            "accepted": true,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 16,
+            "count": 16,
+            "accuracy": 1.0,
+            "verified_ids": [
+              "16171",
+              "15834",
+              "16215",
+              "16338",
+              "16008",
+              "16380",
+              "17059",
+              "16542",
+              "15769",
+              "15969",
+              "15915",
+              "16390",
+              "17083",
+              "16539",
+              "15929",
+              "16088"
+            ],
+            "covered_ids": [
+              "16171",
+              "15834",
+              "16215",
+              "16338",
+              "16008",
+              "16380",
+              "17059",
+              "16542",
+              "15769",
+              "15969",
+              "15915",
+              "16390",
+              "17083",
+              "16539",
+              "15929",
+              "16088"
+            ],
+            "counterexamples": [],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "a0b955fcaceecbea20f65dde42155ad4929dfcd5a8e46d024e888e350e58c7c0",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "55b8cbad3ce85e391be928b95aefe271c2659d44324d01ef104ee118faa09e1d",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "f8ccd6e1184f6245ffd5cce48c35d9eb77e8865f5fbbd12323cd9d3db8fcd9f4",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "1630d0e902ec270ea21234c5243c9ced53291e9338a8e1836c08be01bdb791b5",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "708ce3ecb0216bd5283410d88a5051e45127dab39c5e4a96b9f1a2ea62bc048a",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "da62e1bf4498fb796d46cb174508021da3dd6504bc9232b7b56ef7315e36145f",
+          "domain": "polynomials",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "d1b700f2059416d5141713275f99084c78f6c5e9845c1eaf757b8f348df26d0e",
+          "domain": "en-US",
+          "result": {
+            "accepted": false,
+            "kind": "HUMAN_ANNOTATED_ASSOCIATION",
+            "partition": "final",
+            "correct": 5,
+            "count": 6,
+            "accuracy": 0.8333333333333334,
+            "verified_ids": [
+              "4089",
+              "3195",
+              "6150",
+              "6057",
+              "3559"
+            ],
+            "covered_ids": [
+              "1496",
+              "4089",
+              "3195",
+              "6150",
+              "6057",
+              "3559"
+            ],
+            "counterexamples": [
+              {
+                "id": "1496",
+                "text": "recommend songs based on my playlist",
+                "intent": "music_query"
+              }
+            ],
+            "source": "c5fea6b8b3b481af27f887814f1cb930c19165c555616ba3dcef50d27ae02612",
+            "scope": "new request groups, specified locale and source corpus",
+            "applicability_permission": false
+          }
+        },
+        {
+          "id": "4cf9c18aecc51755c6fb18a49bf57bfcba29dc244c0c2efad051a1a9f3935957",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "dfa76ece757dd98b8df20b0c9bfe13e2c12ed7b9cdb7dac04754b761c93f0396",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "06149e17c782c17fc915f99f240e77430f6a60eaa1c0a75dcaf0e4e1b55decd9",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "821ecfeb8b4e12c6e1b79320b301ec636f43254980fb00d1eafcecb3e15bdbb0",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "44e25a657072a3ab1b3d6449ad03d3b40d6a91218a776769c892293f0a0ff6db",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "6ba75e3f6d0216ce19b04875a747dae67535699de8856e0032d257a0a14ac45f",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "9c1d6b34290160f0393cb29bf721f639f972229736c43b7ace5e7517f2973051",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "60568b22cc08fa2c043ba30803bcb18409e335991d12f6aaf9a02e82e33ca558",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "af818cdf2aad8445fdad9d88945fec5f2e5e379fa468bfa1d5ae94bbb94b8bc4",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "c54c336f3392bad5921a0cd1864e71d43b7bdc7e8459814e29668bb5ccfd6530",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "4a28577485307f926c3a89c6d6b5edd237bd25ad46ff98eea206d2685086a810",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "3d5816de4cebbbb701813dfa8ae2a06e5586601ec1d41390748c648a6884f7cb",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "2d9dec51863a9131173bf94848f2a5129834d22bc5aee78378783cac0e8f4c55",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "a2e83a0de78ab6590238c66baa8d79c03fe175f922f212895f7a10510d306bed",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "8f53e53a222ec9731c920c222ef75a5a724cde7a0775be03b1c664c48205f723",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "3b6fa96f69ffb539f67f617b778fd0d9e8e5f225601391d9d3e54017e0eb57f5",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "e54885c26b7d2bbf55bc7a140715e4d0a2d7ee79c8a41ddf3f97d84a12a5d67b",
+          "domain": "motion_2",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "568e41951652079820f77c96ef67e7bf321b64d13168acc130568045a4349e6e",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "45bb445082604f2179820861c3fae2f3a549ac0e31dd090ea4a05dcb3f5374b7",
+          "domain": "motion_0",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "44093e26a9e020a7beaa222d6a01271d3726c2b10557fd4840e66cfd26f59bff",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        },
+        {
+          "id": "5cae5a0778d293a980885b5da547e11c3fea17c9d98c9d60e6204bc9fce82969",
+          "domain": "motion_1",
+          "result": {
+            "checked": 96,
+            "skipped_outside_scope": 0,
+            "failures": [],
+            "accepted": true
+          }
+        }
+      ],
+      "exact_pass": true,
+      "exact_routes": 36,
+      "exact_cases": 3456,
+      "language_confirmed": 1,
+      "language_attempted": 4
+    }
+  },
+  "admitted": true,
+  "prior_final_reused": false
+}

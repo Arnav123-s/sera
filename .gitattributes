@@ -61,3 +61,15 @@ research-continuation/36_autonomous_discovery/results.json -diff linguist-genera
 research-continuation/37_constraint_acquisition/** whitespace=cr-at-eol
 research-continuation/37_constraint_acquisition/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 research-continuation/37_constraint_acquisition/results.json -diff linguist-generated=true
+research-continuation/38_continuing_growth/** whitespace=cr-at-eol
+research-continuation/39_sustained_refinement/** whitespace=cr-at-eol
+research-continuation/40_step_resolution/** whitespace=cr-at-eol
+research-continuation/41_self_chosen_discovery/** whitespace=cr-at-eol
+research-continuation/42_composed_discovery/** whitespace=cr-at-eol
+research-continuation/38_continuing_growth/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/39_sustained_refinement/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/40_step_resolution/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/41_self_chosen_discovery/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/42_composed_discovery/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+# Keep the source-pinned numerical entry point byte-identical to its archive.
+scripts/run_self_chosen_bounded.py whitespace=-blank-at-eof

@@ -1,0 +1,7 @@
+# Correct the measurement-column import
+
+The first completed observation evaluation used `csv.DictReader` on a CSV with four named columns and five fields per row. Its first field is an unlabeled sequential row index. The provider's published table confirms row zero has time 0.05 s and position 1.478452 m; the adapter instead treated index zero as time and 0.05 as position. That invalid evaluation is preserved under `failures/observation-csv-index-v2`, including the exact source, predictor selection, output, process log and resource receipt. It earned zero empirical credit.
+
+Correct only this schema defect: recognize exactly one additional field only when it contains the complete sequential row indices, strip it, require uniform row widths and unique named columns, then map by names. Malformed extra fields are rejected. A regression test pins the source's first two time/position rows and rejects an unrelated extra field.
+
+The raw CSV remains byte-identical (SHA-256 `8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e`). Preserve the same selected conjecture `25fe09116af993b665b86fc5a8853c9caa889a02d9d79271e290b23cc56dabd6`, original protocol, rows 16:36, first-ten calibration, final-ten evaluation, nuisance parameters and thresholds. The corrected evaluation is a documented defect replay after the original import was inspected, not an untouched first evaluation or an opportunity to select another model. No discovery policy or equation is retrained from these outcomes.

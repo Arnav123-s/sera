@@ -1,0 +1,222 @@
+"""A precommitted learned relation meets attributed physical measurements."""
+
+import argparse
+import copy
+import csv
+import io
+import json
+import time
+import urllib.request
+from fractions import Fraction as Q
+from pathlib import Path
+
+import numpy as np
+import torch
+from torch import nn
+
+from experiments.self_chosen.common import OUT, ROOT, RUN, read, sha, write
+from experiments.self_chosen.equations import value
+from experiments.self_chosen.runtime import InvestigatingR1, Session
+from experiments.verified_completion.common import digest
+from experiments.verified_completion.credit import decode
+from sera.session_state import model_identity
+from workbench.storage import Store
+
+URL = "https://madisoncollegephysics.net/comp/data_freefall.csv"
+
+
+def point(proposal, t, theta):
+    # Invert the learned relation in observed position by two evaluations.
+    row = {"t": Q(float(t)), "x0": Q(float(theta[0])), "v0": Q(float(theta[1])), "x": Q(0)}
+    def rhs(x):
+        row["x"] = Q(x)
+        return sum(Q(c)*value(term, row) for term, c in zip(proposal["terms"], proposal["coefficients"], strict=True))
+    origin, one = rhs(0), rhs(1)
+    if one == origin:
+        raise ValueError("This retained route cannot invert measured position")
+    return float((Q(float(theta[2]))-origin)/(one-origin))
+
+
+def fit_and_check(proposal, raw):
+    rows = list(csv.DictReader(io.StringIO(raw.decode("utf-8-sig"))))
+    interval = rows[16:36]
+    if len(interval) != 20:
+        raise ValueError("The declared observed interval changed")
+    absolute = np.array([float(r["Time (s)"]) for r in interval])
+    y = np.array([float(r["Position (m)"]) for r in interval])
+    origin = absolute[0]-(absolute[1]-absolute[0])
+    t = absolute-origin
+    basis = np.array([[point(proposal, s, e) for e in np.eye(3)] for s in t])
+    offset = np.array([point(proposal, s, np.zeros(3)) for s in t])
+    basis -= offset[:, None]
+    theta = np.linalg.lstsq(basis[:10], y[:10]-offset[:10], rcond=None)[0]
+    prediction = np.array([point(proposal, s, theta) for s in t])
+    controls = {}
+    for degree in (0, 1, 2):
+        x = np.vander(t, degree+1, increasing=True)
+        fitted = np.linalg.lstsq(x[:10], y[:10], rcond=None)[0]
+        projected = x @ fitted
+        controls[str(degree)] = {"parameters": fitted.tolist(), "rmse": float(np.sqrt(np.mean((projected[10:]-y[10:])**2))),
+                                 "predictions": projected.tolist()}
+    rmse = float(np.sqrt(np.mean((prediction[10:]-y[10:])**2)))
+    residual = y[:10]-prediction[:10]
+    covariance = np.linalg.inv(basis[:10].T @ basis[:10])*float(residual @ residual)/7
+    accepted = rmse <= .02 and rmse < .5*controls["1"]["rmse"]
+    return {"accepted": accepted, "calibration_rows": list(range(16, 26)), "held_out_rows": list(range(26, 36)),
+            "nuisance_parameters": dict(zip(("x0", "v0", "a0"), theta.tolist(), strict=True)),
+            "conditional_standard_errors": np.sqrt(np.diag(covariance)).tolist(),
+            "uncertainty_scope": "least-squares residual estimate, conditional on independent homoscedastic errors and the fixed model; no instrument systematic estimate supplied",
+            "origin_seconds": float(origin), "times": t.tolist(), "measured_position": y.tolist(),
+            "predictions": prediction.tolist(), "residuals": (prediction-y).tolist(), "held_out_rmse_metres": rmse,
+            "controls": controls, "source_rows": len(rows), "used_columns": ["Time (s)", "Position (m)"],
+            "curator_supplied_interval": [16, 36], "observed_evidence": True}
+
+
+class ObservingR1(InvestigatingR1):
+    @classmethod
+    def attach(cls, owner):
+        if type(owner) is not InvestigatingR1:
+            raise ValueError("Continue the actual independently admitted discovery owner")
+        owner.__class__ = cls
+        owner.observed_parameters = nn.ParameterDict()
+        owner.observation_contract = {"source": sha(Path(__file__)), "protocol": sha(OUT / "OBSERVATION_PROTOCOL.md")}
+        return owner
+
+    def export_config(self):
+        return {**super().export_config(), "observed_discovery": self.observation_contract,
+                "observed_keys": sorted(self.observed_parameters)}
+
+
+class ObservationSession:
+    def __init__(self, parent, evidence=None):
+        self.parent = parent
+        if parent["schema"] == "sera.composed-discovery.1":
+            from experiments.discovery_frontier import FrontierSession
+            self.base = FrontierSession(parent["parent"], saved=decode(parent["state"]))
+        else:
+            self.base = Session(parent["parent"], saved=decode(parent["state"]))
+        self.owner = ObservingR1.attach(self.base.owner)
+        self.evidence = copy.deepcopy(evidence) if evidence else {}
+        for key, record in self.evidence.items():
+            if record["id"] != key or record["source_hash"] != sha(RUN / "observation.csv"):
+                raise ValueError("Changed physical evidence source")
+            self.owner.observed_parameters[key] = nn.Parameter(torch.tensor(record["weights"], dtype=torch.float64), requires_grad=False)
+
+    def retain(self, record):
+        if self.evidence:
+            raise ValueError("This observed source already received non-repeatable credit")
+        if not record["evaluation"]["accepted"] or record["predictor_owner"] != self.parent["owner"]:
+            raise ValueError("Independent observed progress is required")
+        unsigned = {k: v for k, v in record.items() if k != "id"}
+        if digest(unsigned) != record["id"]:
+            raise ValueError("Changed evidence credit")
+        self.evidence[record["id"]] = copy.deepcopy(record)
+        self.owner.observed_parameters[record["id"]] = nn.Parameter(torch.tensor(record["weights"], dtype=torch.float64), requires_grad=False)
+
+    def snapshot(self):
+        return {"schema": "sera.observed-discovery.1", "parent": self.parent, "evidence": copy.deepcopy(self.evidence),
+                "owner": model_identity(self.owner), "contract": self.owner.observation_contract}
+
+
+def selection():
+    if (OUT / "observation-selection.json").exists():
+        raise FileExistsError("Preserve pre-observation predictor selection")
+    saved = Store(ROOT / "runs/sera-composed-discovery-live").read()
+    if saved is None:
+        raise ValueError("Complete independent frontier qualification before this resumed observation goal")
+    state = decode(saved["state"])
+    if "inner" in state:
+        state = state["inner"]
+    candidates = [r for r in state["records"] if r["question"]["domain"] == "motion_0" and r["proposal"]["target"] == "a0"
+                  and set(r["proposal"]["requires"]) <= {"t", "x", "x0", "v0"}
+                  and set(r["proposal"]["nonzero"]) <= {"t"}
+                  and "x" in r["proposal"]["requires"]]
+    if not candidates:
+        write(OUT / "observation-selection.json", {"status": "RETAINED_OPEN", "reason": "No qualified position-to-acceleration discovery"})
+        return
+    selected = min(candidates, key=lambda r: (r["proposal"]["execution_cost"], r["id"]))
+    write(OUT / "observation-selection.json", {"status": "PREDICTOR_FROZEN", "record": selected,
+          "parent_owner": saved["owner"], "goal": "Check a self-generated missing-acceleration relation against independent measured motion",
+          "protocol": sha(OUT / "OBSERVATION_PROTOCOL.md"), "source": sha(Path(__file__)), "csv_not_opened": True})
+
+
+def observe():
+    if (OUT / "observation.json").exists():
+        raise FileExistsError("Preserve the one-shot physical observation check")
+    selected = read(OUT / "observation-selection.json")
+    if selected["status"] != "PREDICTOR_FROZEN" or selected["protocol"] != sha(OUT / "OBSERVATION_PROTOCOL.md") or selected["source"] != sha(Path(__file__)):
+        raise ValueError("A fixed prospective predictor and observation protocol are required")
+    path = RUN / "observation.csv"
+    started = time.perf_counter()
+    if path.exists():
+        raw = path.read_bytes()
+    else:
+        request = urllib.request.Request(URL, headers={"User-Agent": "SERA-research/1.0"})
+        with urllib.request.urlopen(request, timeout=30) as response:
+            raw = response.read(1000001)
+        if len(raw) > 1000000:
+            raise ValueError("Observed source exceeds the declared small-data bound")
+        path.write_bytes(raw)
+    retrieval_seconds = time.perf_counter()-started
+    evaluation = fit_and_check(selected["record"]["proposal"], raw)
+    record = {"source": URL, "source_hash": sha(path), "predictor_owner": selected["parent_owner"],
+              "original_goal": selected["goal"], "conjecture": selected["record"]["id"],
+              "precheck_commitment": selected["record"]["commitment"], "evaluation": evaluation,
+              "weights": list(evaluation["nuisance_parameters"].values()),
+              "empirical_points": 1 if evaluation["accepted"] else 0, "retrieval_seconds": retrieval_seconds,
+              "evidence_kind": "HUMAN_LAB_MEASUREMENTS_WITH_CURATOR_SUPPLIED_SCOPE"}
+    record["id"] = digest(record)
+    write(OUT / "observation.json", record)
+    print(json.dumps({"accepted": evaluation["accepted"], "parameters": evaluation["nuisance_parameters"],
+                      "rmse": evaluation["held_out_rmse_metres"], "points": record["empirical_points"]}, indent=2))
+
+
+def integrate():
+    parent = Store(ROOT / "runs/sera-composed-discovery-live").read()
+    record = read(OUT / "observation.json")
+    selected = read(OUT / "observation-selection.json")
+    # Repeat the arithmetic from immutable raw observations before factual credit.
+    if fit_and_check(selected["record"]["proposal"], (RUN / "observation.csv").read_bytes()) != record["evaluation"]:
+        raise ValueError("Observed independent replay differs")
+    times = np.array(record["evaluation"]["times"])
+    position, velocity, acceleration = record["weights"]
+    independent = position+velocity*times+acceleration*times**2/2
+    discrepancy = float(np.max(np.abs(independent-np.array(record["evaluation"]["predictions"]))))
+    if discrepancy > 1e-10:
+        raise AssertionError("Independent kinematic evaluation differs from the learned relation")
+    session = ObservationSession(parent)
+    protected = {k: v.detach().clone() for k, v in session.owner.state_dict().items()}
+    session.retain(record)
+    if not all(torch.equal(v, session.owner.state_dict()[k]) for k, v in protected.items()):
+        raise AssertionError("An observation changed previous retained weights")
+    repeated_rejected = False
+    try:
+        session.retain(record)
+    except ValueError:
+        repeated_rejected = True
+    snapshot = session.snapshot()
+    restored = ObservationSession(parent, snapshot["evidence"])
+    if restored.snapshot() != snapshot or not repeated_rejected:
+        raise AssertionError("Observed state or nonrepeatable credit did not restore")
+    live = Store(ROOT / "runs/sera-observed-discovery-live")
+    if live.read() is not None:
+        raise FileExistsError("Preserve the observed continuing owner")
+    live.commit(snapshot, None)
+    write(OUT / "observation-integration.json", {"owner": snapshot["owner"], "store": "runs/sera-observed-discovery-live",
+          "same_actual_owner": session.owner is session.base.owner, "inherited_equal": True,
+          "protected_tensors": len(protected), "exact_restore": True, "repeat_credit_rejected": repeated_rejected,
+          "independent_prediction_max_difference": discrepancy,
+          "empirical_points": record["empirical_points"], "source": record["source_hash"]})
+    print(json.dumps(read(OUT / "observation-integration.json"), indent=2))
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("action", choices=("selection", "observe", "integrate"))
+    args = p.parse_args()
+    torch.set_num_threads(1)
+    globals()[args.action]()
+
+
+if __name__ == "__main__":
+    main()

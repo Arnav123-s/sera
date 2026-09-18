@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\scripts\continuing_use.py", line 113, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\continuing_use.py", line 100, in main
+    session, growth = restore(args.store)
+                      ^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\continuing_use.py", line 39, in restore
+    raise ValueError("Unknown continuing owner schema")
+ValueError: Unknown continuing owner schema

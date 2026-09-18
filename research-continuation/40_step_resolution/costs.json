@@ -1,0 +1,61 @@
+{
+  "jobs": {
+    "runs/RS-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 3.5210504000424407
+    },
+    "runs/RS-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1707968999980949
+    },
+    "runs/RS-train-001": {
+      "status": "INTERRUPTED",
+      "charged_seconds": 900.0,
+      "accounting": "full interrupted reservation retained"
+    },
+    "runs/RS-train-002": {
+      "status": "PASS",
+      "charged_seconds": 311.38453079998726
+    },
+    "runs/RS-final-001": {
+      "status": "PASS",
+      "charged_seconds": 59.11933650000719
+    },
+    "runs/RS-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 98.44016790000023
+    },
+    "runs/RS-use-001": {
+      "status": "FAILED",
+      "charged_seconds": 3.227540299994871
+    },
+    "runs/RS-use-002": {
+      "status": "PASS",
+      "charged_seconds": 27.666072499996517
+    },
+    "runs/RS-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.17684979998739436
+    },
+    "runs/RS-regression-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 500.02281570003834
+    },
+    "runs/RS-collect-001": {
+      "status": "PASS",
+      "charged_seconds": 8.27890540001681
+    },
+    "runs/RS-regression-tail-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 110.0361635000445
+    },
+    "runs/RS-regression-tail-002": {
+      "status": "PASS",
+      "charged_seconds": 109.72046010004124
+    }
+  },
+  "charged_seconds": 2131.764689800155,
+  "remaining_seconds_snapshot": 1294.4318512999598,
+  "cpu_threads": 1,
+  "memory_limit_bytes": 2147483648
+}

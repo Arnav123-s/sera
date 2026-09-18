@@ -1,0 +1,12 @@
+[
+  {"id":"acceleration-from-position","kind":"solve_discovery","domain":"motion_0","target":"a0","observations":{"t":"2","x":"4","x0":"0","v0":"0"}},
+  {"id":"changing-acceleration","kind":"solve_discovery","domain":"motion_1","target":"a1","observations":{"t":"3","x":"9","v":"9","x0":"0","v0":"0","a0":"0"}},
+  {"id":"curved-acceleration","kind":"solve_discovery","domain":"motion_2","target":"a2","observations":{"t":"3","x":"27/2","v":"18","x0":"0","v0":"0","a0":"0","a1":"0"}},
+  {"id":"retained-integral","kind":"integral","coefficients":["2","3","1"]},
+  {"id":"retained-sum","kind":"sum","coefficients":["2","1"]},
+  {"id":"english","kind":"request","text":"wake me up at nine am on friday"},
+  {"id":"spanish","kind":"request","text":"pon una alarma a las ocho"},
+  {"id":"french","kind":"request","text":"mets une alarme pour demain matin"},
+  {"id":"german","kind":"request","text":"stelle einen wecker für sieben uhr"},
+  {"id":"measured-motion-model","kind":"observed_motion","time":"3/4"}
+]

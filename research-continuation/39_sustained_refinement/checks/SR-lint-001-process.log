@@ -1,0 +1,47 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> experiments\sustained_refinement.py:3:1
+   |
+ 1 |   """Long continuing practice with retained-ability floors and learned optimizer choice."""
+ 2 |
+ 3 | / import argparse
+ 4 | | import copy
+ 5 | | import json
+ 6 | | import time
+ 7 | | from pathlib import Path
+ 8 | |
+ 9 | | import numpy as np
+10 | | import torch
+11 | | from torch import nn
+12 | |
+13 | | from experiments.continuing_growth.common import PREFIXES, SKILLS
+14 | | from experiments.continuing_growth.data import load as growth_data
+15 | | from experiments.continuing_growth.data import take
+16 | | from experiments.continuing_growth.model import GrowingR1, apply, credit, errors, identity, knowledge, measure
+17 | | from experiments.continuing_growth.runtime import GrowthSession
+18 | | from experiments.learning_progress.data import method_rows
+19 | | from experiments.verified_completion.common import ROOT, digest, read, sha, write
+20 | | from experiments.verified_completion.credit import decode, encode
+21 | | from sera.session_state import model_identity
+22 | | from workbench.storage import Store
+   | |___________________________________^
+23 |
+24 |   OUT = ROOT / "research-continuation/39_sustained_refinement"
+   |
+help: Organize imports
+   |
+15 | from experiments.continuing_growth.data import take
+   - from experiments.continuing_growth.model import GrowingR1, apply, credit, errors, identity, knowledge, measure
+16 + from experiments.continuing_growth.model import (
+17 +     GrowingR1,
+18 +     apply,
+19 +     credit,
+20 +     errors,
+21 +     identity,
+22 +     knowledge,
+23 +     measure,
+24 + )
+25 | from experiments.continuing_growth.runtime import GrowthSession
+   |
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

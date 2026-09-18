@@ -1,0 +1,158 @@
+"""Compact exact semantic checkpoints with deduplicated tensor blobs, plus raw evidence."""
+
+import argparse
+import hashlib
+import io
+import json
+import shutil
+import zipfile
+from pathlib import Path
+
+import numpy as np
+import torch
+
+from experiments.verified_completion.common import ROOT, read, sha, write
+
+STAGES = {38: ("38_continuing_growth", "CG-study-001", "CG-"),
+          39: ("39_sustained_refinement", "SR-study-001", "SR-"),
+          40: ("40_step_resolution", "RS-study-001", "RS-")}
+
+
+def packed(value, archive, names):
+    if isinstance(value, torch.Tensor):
+        array = value.detach().cpu().contiguous().numpy()
+        buffer = io.BytesIO()
+        np.save(buffer, array, allow_pickle=False)
+        raw = buffer.getvalue()
+        name = "tensors/"+hashlib.sha256(raw).hexdigest()+".npy"
+        if name not in names:
+            archive.writestr(name, raw)
+            names.add(name)
+        return {"kind": "tensor", "blob": name}
+    if isinstance(value, dict):
+        return {"kind": "dict", "items": [[k, packed(v, archive, names)] for k, v in value.items()]}
+    if isinstance(value, (list, tuple)):
+        return {"kind": "tuple" if isinstance(value, tuple) else "list",
+                "items": [packed(v, archive, names) for v in value]}
+    return value
+
+
+def unpacked(value, archive):
+    if not isinstance(value, dict):
+        return value
+    if value["kind"] == "tensor":
+        raw = archive.read(value["blob"])
+        if hashlib.sha256(raw).hexdigest() != Path(value["blob"]).stem:
+            raise ValueError("Changed shared tensor blob")
+        return torch.from_numpy(np.load(io.BytesIO(raw), allow_pickle=False).copy())
+    if value["kind"] == "dict":
+        return {k: unpacked(v, archive) for k, v in value["items"]}
+    if value["kind"] in {"list", "tuple"}:
+        return (list if value["kind"] == "list" else tuple)(unpacked(v, archive) for v in value["items"])
+    raise ValueError("Unknown safe checkpoint component")
+
+
+def costs(stage):
+    name, _, prefix = STAGES[stage]
+    out = ROOT / "research-continuation" / name
+    target = out / "publication" if (out / "release-manifest.json").exists() else out
+    ledger = read(ROOT / "runs/v3-batch-001/budget.json")
+    jobs = {k: v for k, v in ledger["jobs"].items() if Path(k).name.startswith(prefix) and v["status"] != "RESERVED"}
+    for key in jobs:
+        for filename in ("state.json", "process.log"):
+            dest = target / "checks" / (Path(key).name+"-"+filename)
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(ROOT / key / filename, dest)
+    write(target / "costs.json", {"jobs": jobs, "charged_seconds": sum(v["charged_seconds"] for v in jobs.values()),
+                                 "remaining_seconds_snapshot": ledger["remaining_seconds"],
+                                 "cpu_threads": 1, "memory_limit_bytes": 2147483648})
+
+
+def seal(stage):
+    name, run_name, _ = STAGES[stage]
+    out, run = ROOT / "research-continuation" / name, ROOT / "runs" / run_name
+    if (out / "release-manifest.json").exists():
+        raise FileExistsError("Preserve an existing scientific archive")
+    costs(stage)
+    names, originals, members = set(), [], []
+    from scripts.refinement_audit import equal
+    with zipfile.ZipFile(out / "research.zip", "x", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
+        for path in sorted(run.rglob("*")):
+            if not path.is_file() or path.suffix not in {".pt", ".json", ".npz"}:
+                continue
+            rel = path.relative_to(ROOT).as_posix()
+            if path.suffix == ".pt":
+                saved = torch.load(path, weights_only=True)
+                raw = json.dumps(packed(saved, archive, names), separators=(",", ":"), allow_nan=False).encode()
+                member = rel+".json"
+                archive.writestr(member, raw)
+                originals.append({"original_path": rel, "original_sha256": sha(path), "portable": member})
+            else:
+                raw, member = path.read_bytes(), rel
+                archive.writestr(member, raw)
+            members.append({"path": member, "sha256": hashlib.sha256(raw).hexdigest()})
+    # Verify semantic byte-exact tensor/optimizer/RNG/event recovery against
+    # every original local checkpoint before publishing the compact archive.
+    with zipfile.ZipFile(out / "research.zip") as archive:
+        for record in originals:
+            restored = unpacked(json.loads(archive.read(record["portable"])), archive)
+            original = torch.load(ROOT / record["original_path"], weights_only=True)
+            if not equal(restored, original):
+                raise AssertionError("Portable checkpoint differs from original")
+        for name in sorted(names):
+            members.append({"path": name, "sha256": hashlib.sha256(archive.read(name)).hexdigest()})
+    write(out / "checkpoint-index.json", {"originals": originals, "semantic_roundtrip_exact": True,
+                                          "shared_tensor_blobs": len(names)})
+    sources = [ROOT / "scripts/refinement_artifacts.py", ROOT / "scripts/refinement_audit.py",
+               ROOT / "scripts/continuing_use.py"]
+    if stage == 38:
+        sources += sorted((ROOT / "experiments/continuing_growth").glob("*.py"))
+        sources += [ROOT / p for p in ("scripts/run_growth_bounded.py", "scripts/growth_artifacts.py",
+                                      "tests/test_continuing_growth.py")]
+    elif stage == 39:
+        sources += [ROOT / p for p in ("experiments/sustained_refinement.py", "scripts/run_refinement_bounded.py",
+                                      "tests/test_sustained_refinement.py")]
+    else:
+        sources += [ROOT / p for p in ("experiments/refinement_resolution.py", "scripts/run_resolution_bounded.py",
+                                      "scripts/resolution_audit.py", "tests/test_refinement_resolution.py")]
+    sources += [p for p in out.rglob("*") if p.is_file() and p.suffix != ".zip"
+                and p.name not in {"release-manifest.json", "checklist.md"} and "publication" not in p.parts]
+    write(out / "release-manifest.json", {"archive": sha(out / "research.zip"), "members": members,
+        "files": [{"path": p.relative_to(ROOT).as_posix(), "sha256": sha(p)} for p in sorted(sources)]})
+
+
+def verify(stage):
+    out = ROOT / "research-continuation" / STAGES[stage][0]
+    manifest = read(out / "release-manifest.json")
+    for row in manifest["files"]:
+        if sha(ROOT / row["path"]) != row["sha256"]:
+            raise ValueError("Changed scientific source: "+row["path"])
+    if sha(out / "research.zip") != manifest["archive"]:
+        raise ValueError("Changed compact checkpoint archive")
+    with zipfile.ZipFile(out / "research.zip") as archive:
+        if set(archive.namelist()) != {r["path"] for r in manifest["members"]}:
+            raise ValueError("Changed archive membership")
+        for row in manifest["members"]:
+            if hashlib.sha256(archive.read(row["path"])).hexdigest() != row["sha256"]:
+                raise ValueError("Changed checkpoint component")
+    print(json.dumps({"stage": stage, "verified_files": len(manifest["files"]),
+                      "archive_members": len(manifest["members"])}))
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--stage", type=int, choices=STAGES, required=True)
+    p.add_argument("--seal", action="store_true")
+    p.add_argument("--costs", action="store_true")
+    args = p.parse_args()
+    torch.set_num_threads(1)
+    if args.seal:
+        seal(args.stage)
+    if args.costs:
+        costs(args.stage)
+    else:
+        verify(args.stage)
+
+
+if __name__ == "__main__":
+    main()

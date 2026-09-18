@@ -1,0 +1,15 @@
+# Sustained cross-domain continuation
+
+I completed three connected research cycles on the actual continuing owner: broad practice, rehearsal with optimizer choice, and a verified repair for rejected update sizes. The work preserves **16,384 completed main decisions and 1,703,936 main practice presentations** across all comparison trajectories. Presentations include repeated practice on retained material. The currently admitted successor itself received 98,304 main practice presentations in its selected Stage 38 trajectory.
+
+Twelve strands participate: dictionary, conversation, grammar, philosophy, mathematics prose, science prose, source reading, English, Spanish, French, German and conditional mechanics methods. The model's certified algebra, taught physical meanings, empirical models, existing discoveries and source gates remain retained. No web answer retrieval entered these cycles.
+
+The independently admitted Stage 38 successor improved dictionary prediction from 45/192 to 58/192, grammar from 34/192 to 40/192, source reading from 151/192 to 152/192, and mechanics-method choice from 36/192 to 45/192 on its frozen continuation cohort. Every strand and comparator is in the [full report](../38_continuing_growth/report.md). These sources had historical parent exposure; the continuation partitions and evaluation use are explicitly recorded.
+
+The two later cycles remain preserved experimental work. Smaller fractions recovered **94 proposals** while passing the unchanged original checker, with **17,456 recorded step checks**. Their selected final weights did not satisfy retention requirements, so the usable Stage 38 checkpoint remains current. The two future-procedure studies retain all 24 crossed comparisons; balanced remains its operational default.
+
+Independent NumPy replay checked **51,922 prediction items** across the three cycles. Checkpoint replay reproduced **640 decisions**, including weights, optimizer state, RNG and rewards. All **192 fresh algebra checks** passed. The worker interruption is charged the full 900-second reservation; unknown work in any lost uncheckpointed fragment is not assigned an invented presentation count.
+
+The saved-owner batch recognized `alarm_set` in four languages, certified the sum of `2+x` as `3n/2+n²/2`, integrated `2` to `2x`, reused the discovered double-sum result `n²−n`, and calculated base/opposite-force/double-mass physical branches. Entity tags are returned as predictions; the intent demonstration does not certify all entity spans. The preserved GE source question still selects an unrelated sentence and remains an open correction task. [Exact inputs](example-tasks.json) · [Outputs](example-results.json) · [Use the model](../../docs/START_HERE.md#run-several-tasks-through-the-continuing-learner).
+
+All original local states remain untouched. Public archives deduplicate repeated tensors while preserving exact semantic checkpoint restoration. The reports, source identities, failed jobs, comparisons, resource grants and numerical costs remain indexed alongside each stage.

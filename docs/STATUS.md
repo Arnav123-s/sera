@@ -2,9 +2,25 @@
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Current Stage 37 acquisition and internal discovery
+## Current self-chosen discovery: Stages 41–42
 
-SERA followed its own recorded summation gap, constructed three missing basis cases from retained constraints, and returned to investigation. It added **eight further certified relationships**, completed **256/256 fresh alternative routes**, and retained four verified reconstruction-setting advances. Fresh summation correctness moved from **0/32 to 32/32**; all 11 previously passing basis cases and 202 protected tensor records were retained. The current owner is **runs/sera-acquisition-live**. [Use it](../research-continuation/37_constraint_acquisition/README.md) · [Full results and feedback contract](../research-continuation/37_constraint_acquisition/report.md).
+After three elementary investigation examples, the process-action head passed **12/12 fresh structured-context checks**. Across the two main discovery studies, the learner and controls completed **2,176 choices and 5,504 committed proposals**. The selected owner retains **149 discovery records**, including **140 exact conditional routes** and nine scoped language associations. Each association keeps its own development and reserved result. [Starter examples and first study](../research-continuation/41_self_chosen_discovery/report.md) · [Broader study and equations](../research-continuation/42_composed_discovery/report.md).
+
+The broader selected run added **80 exact routes**, all passing **7,680 fresh executions**, versus 36 routes for its balanced control. It also retained three English associations, one meeting the reserved confirmation threshold. Independent audits checked all 5,504 main proposals, replayed 128 decisions exactly, and preserved inherited tensors and twelve-strand predictions. The selected equations and question-policy weights belong to the continuing R1 owner; the search vocabulary and verification contracts are supplied engineering.
+
+One generated relation was checked against attributed laboratory measurements. With ten calibration positions, it predicted ten reserved positions at **0.013956 m RMSE**. A corrected CSV column-mapping defect and its original zero-credit result remain recorded; the equation, raw data, split and thresholds were unchanged. [Observation and correction](../research-continuation/41_self_chosen_discovery/OBSERVATION_CORRECTION.md) · [Run a batch](START_HERE.md#run-several-tasks-through-the-continuing-learner).
+
+The complete local regression passed **532 tests with zero skips**, alongside the targeted integration checks and whole-tree lint. The newest saved owner is `runs/sera-observed-discovery-live`; exact identity and resource receipts are in the [local verification record](../research-continuation/42_composed_discovery/verification.json) and [observed-owner audit](../research-continuation/41_self_chosen_discovery/observation-integration.json).
+
+## Preserved sustained continuation: Stages 38–40
+
+The completed continuation covers **twelve strands, 16,384 main decisions and 1,703,936 recorded main practice presentations** across its comparison runs. The independently admitted model is saved at **runs/sera-growth-live**. It improved retained-source dictionary, grammar, reading and mechanics-method results; all strand results and comparisons are preserved. [Complete cycle summary](../research-continuation/40_step_resolution/cycle-summary.md) · [Admitted model results](../research-continuation/38_continuing_growth/report.md) · [Batch task interface](START_HERE.md#run-several-tasks-through-the-continuing-learner).
+
+Independent replay checked **51,922 prediction items**, reproduced **640 continuation decisions**, and retained **192/192 fresh algebra checks**. The later rehearsal and step-resolution successors remain experimental checkpoints after their retention tests; all prior stores are preserved. [Rehearsal results](../research-continuation/39_sustained_refinement/report.md) · [Step-resolution results](../research-continuation/40_step_resolution/report.md).
+
+## Preserved Stage 37 acquisition and internal discovery
+
+SERA followed its own recorded summation gap, constructed three missing basis cases from retained constraints, and returned to investigation. It added **eight further certified relationships**, completed **256/256 fresh alternative routes**, and retained four verified reconstruction-setting advances. Fresh summation correctness moved from **0/32 to 32/32**; all 11 previously passing basis cases and 202 protected tensor records were retained. Its preserved owner is **runs/sera-acquisition-live**. [Use it](../research-continuation/37_constraint_acquisition/README.md) · [Full results and feedback contract](../research-continuation/37_constraint_acquisition/report.md).
 
 The preceding [Stage 36](../research-continuation/36_autonomous_discovery/report.md) is preserved with its zero new-discovery result, 32 execution-gap records and exact continuation. It provided the actual prerequisite gap for Stage 37. All previous live stores and completed evaluations remain intact.
 

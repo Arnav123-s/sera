@@ -1,0 +1,106 @@
+F821 Undefined name `training`
+  --> experiments\continuing_growth\audit.py:81:55
+   |
+79 |         session.restore(load_state(path))
+80 |         for _ in range(128):
+81 |             session.step(load("train") if _ == 0 else training, load("probe") if _ == 0 else probe, arm)
+   |                                                       ^^^^^^^^
+82 |             if _ == 0:
+83 |                 training, probe = load("train"), load("probe")
+   |
+
+F821 Undefined name `probe`
+  --> experiments\continuing_growth\audit.py:81:94
+   |
+79 |         session.restore(load_state(path))
+80 |         for _ in range(128):
+81 |             session.step(load("train") if _ == 0 else training, load("probe") if _ == 0 else probe, arm)
+   |                                                                                              ^^^^^
+82 |             if _ == 0:
+83 |                 training, probe = load("train"), load("probe")
+   |
+
+F841 Local variable `training` is assigned to but never used
+  --> experiments\continuing_growth\audit.py:83:17
+   |
+81 |             session.step(load("train") if _ == 0 else training, load("probe") if _ == 0 else probe, arm)
+82 |             if _ == 0:
+83 |                 training, probe = load("train"), load("probe")
+   |                 ^^^^^^^^
+84 |         expected = load_state(RUN / f"{arm}-3801-{DECISIONS:04d}.pt")
+85 |         validate_events(session.events, session.highwater)
+   |
+help: Remove assignment to unused variable `training`
+
+F841 Local variable `probe` is assigned to but never used
+  --> experiments\continuing_growth\audit.py:83:27
+   |
+81 |             session.step(load("train") if _ == 0 else training, load("probe") if _ == 0 else probe, arm)
+82 |             if _ == 0:
+83 |                 training, probe = load("train"), load("probe")
+   |                           ^^^^^
+84 |         expected = load_state(RUN / f"{arm}-3801-{DECISIONS:04d}.pt")
+85 |         validate_events(session.events, session.highwater)
+   |
+help: Remove assignment to unused variable `probe`
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> experiments\continuing_growth\study.py:3:1
+   |
+ 1 |   """Finite sustained training, immutable checkpoints and a single sealed evaluation."""
+ 2 |
+ 3 | / import argparse
+ 4 | | import copy
+ 5 | | import json
+ 6 | | import time
+ 7 | |
+ 8 | | import numpy as np
+ 9 | | import torch
+10 | |
+11 | | from workbench.storage import Store
+12 | |
+13 | | from .common import ARMS, BLOCK, DECISIONS, OUT, ROOT, RUN, SEEDS, SKILLS, contracts, read, sha, write
+14 | | from .data import load, prepare
+15 | | from .model import apply, measure
+16 | | from .runtime import GrowthSession
+   | |__________________________________^
+help: Organize imports
+   |
+12 |
+   - from .common import ARMS, BLOCK, DECISIONS, OUT, ROOT, RUN, SEEDS, SKILLS, contracts, read, sha, write
+13 + from .common import (
+14 +     ARMS,
+15 +     BLOCK,
+16 +     DECISIONS,
+17 +     OUT,
+18 +     ROOT,
+19 +     RUN,
+20 +     SEEDS,
+21 +     SKILLS,
+22 +     contracts,
+23 +     read,
+24 +     sha,
+25 +     write,
+26 + )
+27 | from .data import load, prepare
+   |
+
+F401 [*] `.model.apply` imported but unused
+  --> experiments\continuing_growth\study.py:15:20
+   |
+13 | from .common import ARMS, BLOCK, DECISIONS, OUT, ROOT, RUN, SEEDS, SKILLS, contracts, read, sha, write
+14 | from .data import load, prepare
+15 | from .model import apply, measure
+   |                    ^^^^^
+16 | from .runtime import GrowthSession
+   |
+help: Remove unused import: `.model.apply`
+   |
+14 | from .data import load, prepare
+   - from .model import apply, measure
+15 + from .model import measure
+16 | from .runtime import GrowthSession
+   |
+
+Found 6 errors.
+[*] 2 fixable with the `--fix` option (2 hidden fixes can be enabled with the `--unsafe-fixes` option).

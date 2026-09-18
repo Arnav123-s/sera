@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\discovery_observation.py", line 214, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\discovery_observation.py", line 210, in main
+    globals()[args.action]()
+  File "D:\ai\projects\sera\experiments\discovery_observation.py", line 140, in observe
+    raise ValueError("A fixed prospective predictor and observation protocol are required")
+ValueError: A fixed prospective predictor and observation protocol are required

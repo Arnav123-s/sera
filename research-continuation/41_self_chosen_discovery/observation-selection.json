@@ -1,0 +1,139 @@
+{
+  "status": "PREDICTOR_FROZEN",
+  "record": {
+    "id": "25fe09116af993b665b86fc5a8853c9caa889a02d9d79271e290b23cc56dabd6",
+    "question": {
+      "domain": "motion_0",
+      "target": "a0",
+      "missing": [
+        "f",
+        "v"
+      ],
+      "id": "274a074cb9d3c636847a4876cfdf67f3c7509edd02aeb8d61b01158924ef8a25",
+      "question": "Predict a0 from retained motion_0 knowledge without f, v"
+    },
+    "proposal": {
+      "status": "CONJECTURE",
+      "target": "a0",
+      "method": "sparse",
+      "terms": [
+        [
+          [
+            "t",
+            -1
+          ],
+          [
+            "v0",
+            1
+          ]
+        ],
+        [
+          [
+            "t",
+            -2
+          ],
+          [
+            "x",
+            1
+          ]
+        ],
+        [
+          [
+            "t",
+            -2
+          ],
+          [
+            "x0",
+            1
+          ]
+        ]
+      ],
+      "coefficients": [
+        "-2",
+        "2",
+        "-2"
+      ],
+      "requires": [
+        "t",
+        "v0",
+        "x",
+        "x0"
+      ],
+      "nonzero": [
+        "t"
+      ],
+      "canonical": [
+        [
+          [
+            [
+              "a0",
+              1
+            ],
+            [
+              "t",
+              2
+            ]
+          ],
+          "1"
+        ],
+        [
+          [
+            [
+              "t",
+              1
+            ],
+            [
+              "v0",
+              1
+            ]
+          ],
+          "2"
+        ],
+        [
+          [
+            [
+              "x",
+              1
+            ]
+          ],
+          "-2"
+        ],
+        [
+          [
+            [
+              "x0",
+              1
+            ]
+          ],
+          "2"
+        ]
+      ],
+      "execution_cost": 11,
+      "imagined_error": "0",
+      "linear_solves": 3
+    },
+    "receipt": {
+      "accepted": true,
+      "kind": "EXACT_CONDITIONAL_IDENTITY",
+      "nonzero": [
+        "t"
+      ],
+      "residual_numerator": "0",
+      "denominator": "1",
+      "scope": "motion_0",
+      "assumptions": "polynomial inputs; real time > 0, positive mass for motion; natural time for sums; declared nonzero denominators",
+      "observed_event": false
+    },
+    "relation": "354345f5a3860e0f185b0be168c29d7f2e9943eb0525d95ad375e642d5886dec",
+    "route": "ba081d0306722dde4bd9d4a79d1a3a2938005bec4791263cbef37d9753dd3edb",
+    "commitment": "1a721d8e6d32b47c24161432310339fbdacb5a013400b240d6f0dc420a3b520c",
+    "sequence": 379,
+    "origin": "own execution fit or composition of owned learned rules"
+  },
+  "parent_owner": "6387f8496878a30cf9a4ccba6e036bfb6ce28a2cb408a098da1c97b4350911a0",
+  "goal": "Check a self-generated missing-acceleration relation against independent measured motion",
+  "protocol": "b5ca44831914521dae7ebd28d8286a4c6332c56a06f8c5922c704ae3320eb2f4",
+  "source": "79bb821298c2bab3a0d136939fa532cc6a7e54363938d24cc41f70d59f7bed08",
+  "csv_not_opened": false,
+  "parser_correction": "170cfeea9bc9ed2267aa4dd759d372e609f43f7f224bab88a343ecb2587e9f01"
+}

@@ -6,6 +6,10 @@
 |---|---|
 | [`src/sera/`](../src/sera/) | Core model, state, ownership and learning contracts |
 | [`experiments/`](../experiments/) | Registered research implementations |
+| [`experiments/self_chosen/`](../experiments/self_chosen/) | Elementary process teaching, learned question selection, conjectures and independent credit |
+| [`experiments/discovery_frontier.py`](../experiments/discovery_frontier.py) | Broader missing-input investigations and composition of owned learned rules |
+| [`experiments/discovery_observation.py`](../experiments/discovery_observation.py) | Source-attributed physical observations and separately verified empirical parameters |
+| [`experiments/continuing_growth/`](../experiments/continuing_growth/) | Sustained twelve-strand practice through the persistent owner |
 | [`experiments/operator_discovery/`](../experiments/operator_discovery/) | Internal proposal generation, rational certificates and executable discovered relations |
 | [`experiments/autonomous_discovery/`](../experiments/autonomous_discovery/) | Self-selected investigations, prerequisite acquisition, exact credit and continuation |
 | [`experiments/learning_progress/`](../experiments/learning_progress/) | Continuing practice, progress credit, procedure learning and independent replay |
@@ -38,6 +42,11 @@ python -m venv .venv
 .venv/Scripts/python.exe -m scripts.discovery_artifacts
 .venv/Scripts/python.exe -m scripts.autonomous_artifacts
 .venv/Scripts/python.exe -m scripts.acquisition_artifacts
+.venv/Scripts/python.exe -m scripts.growth_artifacts
+.venv/Scripts/python.exe -m scripts.refinement_artifacts --stage 39
+.venv/Scripts/python.exe -m scripts.refinement_artifacts --stage 40
+.venv/Scripts/python.exe -m scripts.self_chosen_artifacts
+.venv/Scripts/python.exe -m scripts.frontier_artifacts
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```
@@ -54,7 +63,9 @@ In the managed research workspace, run numerical work through the existing bound
 4. Verify archived bytes through the release manifest.
 5. Read the latest continuation and live ledger before new work.
 
-The current [acquisition and discovery release](../research-continuation/37_constraint_acquisition/README.md) preserves the identified gap, three acquired basis corrections, eight further relationships, exact continuation and frozen evaluation. Its compact archive reconstructs all four successor checkpoints; the [preceding autonomous experiment](../research-continuation/36_autonomous_discovery/README.md) retains its three checkpoints and unsuccessful discovery attempts.
+The current [self-chosen discovery release](../research-continuation/42_composed_discovery/README.md) contains elementary teaching, two sustained investigation studies, composed rules, independent reward audits and a measured-task return. Stages 38–42 store their full numerical archives as numbered [release assets](https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery). Each stage's manifest pins every part and archived member. The verifier downloads absent parts into `runs/artifact-cache`, checks their hashes and preserves existing local artifacts. Tensor deduplication retains exact semantic checkpoint recovery, including optimizer, RNG and event state; original local `.pt` files remain untouched.
+
+The preserved [acquisition and discovery release](../research-continuation/37_constraint_acquisition/README.md) retains the identified gap, three acquired basis corrections, eight further relationships, exact continuation and frozen evaluation. Its compact archive reconstructs all four successor checkpoints; the [preceding autonomous experiment](../research-continuation/36_autonomous_discovery/README.md) retains its three checkpoints and unsuccessful discovery attempts.
 
 The preserved [internal-discovery release](../research-continuation/35_operator_discovery/README.md) stores its inherited parent once and verifies exact reconstruction of all nine discovery checkpoints. The [learning-progress release](../research-continuation/34_learning_progress/README.md) publishes both successor transitions, both learned seeds, all controls and independent prediction witnesses in five compact archives. `scripts/learning_artifacts.py --restore` restores missing research endpoints without replacing divergent files.
 

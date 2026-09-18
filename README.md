@@ -25,6 +25,8 @@ The central idea is to turn experience into something reusable: a learned interp
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Choose questions, propose equations, combine learned rules and retain independently checked discoveries | [Self-chosen discovery](research-continuation/42_composed_discovery/README.md) | [Examples, investigations, exact executions and observed-data checks](research-continuation/42_composed_discovery/report.md) |
+| Continue practice across dictionary, conversation, grammar, philosophy, STEM prose, reading, four-language requests and mechanics | [Continuing learner](research-continuation/38_continuing_growth/README.md) | [Twelve-strand study, exact continuation and independent score replay](research-continuation/38_continuing_growth/report.md) |
 | Identify a missing mathematical prerequisite, acquire it from retained constraints and return to internal discovery | [Autonomous acquisition and discovery](research-continuation/37_constraint_acquisition/README.md) | [Three acquired basis cases, eight further relationships and 256 checked routes](research-continuation/37_constraint_acquisition/report.md) |
 | Construct and prove new connections from retained executable knowledge | [Internal discovery](research-continuation/35_operator_discovery/README.md) | [Five generated relationships and 256 independently checked alternative executions](research-continuation/35_operator_discovery/report.md) |
 | Continue human-text and checked-method practice with rewards for verified learning progress | [Learning progress](research-continuation/34_learning_progress/README.md) | [Six curriculum strands, two successor transitions and independent replay](research-continuation/34_learning_progress/report.md) |
@@ -66,6 +68,12 @@ flowchart TD
 ```
 
 The current integration is in [`experiments/`](docs/REPOSITORY_MAP.md); its reusable core is in [`src/sera/`](src/sera/). The [research archive](docs/RESEARCH_ARCHIVE.md) traces the successive implementations and their results.
+
+### Learning through self-chosen investigations
+
+The discovery continuation starts with three elementary process examples: check a proposed pattern, seek a genuinely different route when two expressions are equivalent, and revise a claim after a counterexample. Its learned investigation weights select questions about missing quantities or text associations. Candidate programs fit the retained operator's executions or compose previously learned rules, then commit their predictions before independent assessment.
+
+Checked discoveries become coefficient weights on the same R1 owner, accompanied by assumptions, dependencies and executable routes. Reward measures additional useful coverage, with aliases and already available calculations receiving no fresh discovery credit. The current portfolio preserves 149 records and can return multiple applicable routes for a supplied task. A generated acceleration relation also passed a separately attributed laboratory-data check. [How to use these capabilities and inspect their evidence](research-continuation/42_composed_discovery/README.md).
 
 ### Working memory and learned weights
 
