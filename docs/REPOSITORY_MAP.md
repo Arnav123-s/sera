@@ -30,6 +30,7 @@ python -m venv .venv
 .venv/Scripts/python.exe scripts/books_artifacts.py --restore
 .venv/Scripts/python.exe scripts/completion_artifacts.py --restore
 .venv/Scripts/python.exe scripts/quest_artifacts.py --restore
+.venv/Scripts/python.exe scripts/quest_retention_artifacts.py
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```

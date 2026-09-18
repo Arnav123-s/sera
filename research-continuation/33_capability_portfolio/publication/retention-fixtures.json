@@ -1,0 +1,44 @@
+{
+  "schema": "sera.quest-retention-fixtures.1",
+  "purpose": "Restore identical existing language-retention inputs; no training or evaluation changes",
+  "source": "FitzGerald et al. MASSIVE, CC BY 4.0; original archived preparation and license retained",
+  "archives": [
+    {
+      "path": "research-continuation/26_stream_curriculum/data.zip",
+      "sha256": "21ad6c7b95deda9505cf81dfe411d8ef0ce6c8d1712d51542b900e42ae83bec8",
+      "files": [
+        {
+          "path": "runs/SC-data-002/dev.jsonl",
+          "sha256": "f1f24c6f059c1fae2ed3bc45df4057484584db2c6cf159a4dbe3485d9cf51e46",
+          "bytes": 526843
+        }
+      ]
+    },
+    {
+      "path": "research-continuation/27_self_study/data.zip",
+      "sha256": "03a7477a0c261cb3a24b1e1e6d3a28519d08c308cd45b620111507355f686e57",
+      "files": [
+        {
+          "path": "runs/SS-language-data/de-DE-development.jsonl",
+          "sha256": "3ec89ef92f81d5290feead9b16ae1d9431bb4bfc8a8066aca5ffc1847b305995",
+          "bytes": 49794
+        },
+        {
+          "path": "runs/SS-language-data/es-ES-development.jsonl",
+          "sha256": "c90951bdf499fc35547b32b893392a402d903524e41ec73257b8ab5ef1d0b192",
+          "bytes": 50679
+        },
+        {
+          "path": "runs/SS-language-data/fr-FR-development.jsonl",
+          "sha256": "5a04ea7f5e7cbfeae11563bfe015e2c0272b3c2b33efbd017dfc320c1c0ebf8d",
+          "bytes": 51823
+        },
+        {
+          "path": "runs/SS-language-data/LICENSE.txt",
+          "sha256": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435",
+          "bytes": 18704
+        }
+      ]
+    }
+  ]
+}

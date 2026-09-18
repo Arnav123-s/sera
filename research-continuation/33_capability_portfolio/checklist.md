@@ -17,4 +17,5 @@
 - [x] Complete and record full local regression: 485 passed, zero skips.
 - [x] Seal source, result, checkpoint and cost archives: 65 files and 74 archived artifacts verified.
 - [x] Separate future live assessment updates from the completed audit directory, preserving model and evidence identities.
+- [x] Repair clean-checkout retention prerequisites from existing archives; 11 targeted checks passed, including empty-directory restoration.
 - [ ] Publish the organized release and verify GitHub's checks.
