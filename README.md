@@ -6,7 +6,9 @@ Research by [Arnav123-s](https://github.com/Arnav123-s).
 
 [![Verification](https://github.com/Arnav123-s/sera/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Arnav123-s/sera/actions/workflows/ci.yml?query=branch%3Amain)
 
-I am building one persistent learner that acquires executable knowledge, investigates missing information, imagines consequences and corrects its understanding with evidence. Learned weights, retained observations and independent verification have distinct roles.
+I am building one persistent learner that acquires executable knowledge, investigates missing information, imagines consequences and corrects its understanding with evidence. SERA brings learned language interfaces, recurrent memory, quantitative models, an executable skill library and independent verification into a continuing research system.
+
+The central idea is to turn experience into something reusable: a learned interpretation, a compact mathematical operator, a model of a system, or a verified procedure. A task can remain open across sessions while the learner gathers the information and skills needed to return to it.
 
 ## Start here
 
@@ -23,6 +25,7 @@ I am building one persistent learner that acquires executable knowledge, investi
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Learn which evidence improves a missing response, imagine motion and retain checked policy updates | [Verified completion and practice](research-continuation/32_verified_completion/README.md) | [768 fresh worlds, six controls and exact continuation](research-continuation/32_verified_completion/report.md) |
 | Use a taught physical definition to calculate and compare conditional motion | [Grounded definition example](research-continuation/30_grounded_books/README.md) | [300 cases, 900 branches and retention audit](research-continuation/30_grounded_books/report.md) |
 | Rank source sentences and investigate missing information on arXiv | [Source reading and research](docs/START_HERE.md#read-a-source-or-investigate-a-gap) | [Human-text study and audit](research-continuation/29_human_reading/report.md) |
 | Learn a body's motion from observations; refine and forecast | [Motion learning](research-continuation/28_concept_refinement/README.md) | [C01/C02 results](research-continuation/28_concept_refinement/report.md) |
@@ -31,13 +34,97 @@ I am building one persistent learner that acquires executable knowledge, investi
 | Label English requests and extract entities into a file | [Request annotation](research-continuation/26_stream_curriculum/README.md) | [Held-out evaluation](research-continuation/26_stream_curriculum/report.md) |
 | Resume conditional investigations and acquire observations | [Investigation](research-continuation/25_constraint_inquiry/README.md) | [Owner and evidence audit](research-continuation/25_constraint_inquiry/architecture-audit.md) |
 
-Each result belongs to its stated teaching and evaluation conditions. I document supplied representations, data, algorithms and checkers separately from the mappings and coefficients the learner acquires.
+The linked reports give the teaching conditions, evaluation cases, comparison methods and complete measurements for each capability.
+
+## How SERA is engineered
+
+### One continuing parameter owner
+
+The computational center is **R1**, a recurrent state-space learner implemented in PyTorch. Language, typed quantities, sequences and world observations enter through appropriate encoders. They connect to an owned memory and fusion computation, with output heads for their tasks. The continuing implementation extends this same object with reading weights, mathematical operators and empirical models.
+
+This ownership is enforced in code: the task interface, learning session, solver and typed view refer to the same registered parameter object. Checkpoints record the configuration and tensor identities. A parameter update is followed by rebinding and checking retained knowledge against the updated owner.
+
+```mermaid
+flowchart TD
+    A[Language, quantities and observations] --> B[Encoders and learned interpretations]
+    B --> C[Shared R1 owner and working state]
+    C --> D[Predictions and executable proposals]
+    D --> E[Conditional calculation and imagination]
+    E --> F[Independent verification]
+    F --> G[Source-linked knowledge and retained procedures]
+    G --> C
+    F --> H[Specific missing ability or evidence]
+    H --> I[Textbook study, source reading or investigation]
+    I --> J[Verified practice and weight updates]
+    J --> C
+    K[Original task and saved history] --> E
+    K --> I
+```
+
+The current integration is in [`experiments/`](docs/REPOSITORY_MAP.md); its reusable core is in [`src/sera/`](src/sera/). The [research archive](docs/RESEARCH_ARCHIVE.md) traces the successive implementations and their results.
+
+### Working memory and learned weights
+
+R1 keeps **working state** for an unfolding episode and **weights** that persist across episodes. The associative memory learns keys, queries, values and write gates. A write corrects what memory currently predicts at a key; a query reads the resulting association. The fusion layer combines the current input with recalled information before a task head makes its prediction.
+
+This supports several useful time scales:
+
+| State | What changes it | What it provides |
+|---|---|---|
+| Recurrent working memory | Admitted events in an episode | Context and history for the current computation |
+| Learned parameters | Verified teaching and controlled training | Reusable mappings, coefficients and predictions |
+| Retained knowledge and programs | Checked acquisition and revision | Source identities, assumptions, dependencies and executable procedures |
+| Task history | Investigation, attempts and corrections | Continuity when a task resumes |
+
+The repository also contains complex rotor, density-factor and quantum-instrument research. These implement explicit propagation, conditioning and measurement operations. Their conventional controls, numerical costs and experimental decisions are indexed alongside them.
+
+### Language becomes an actionable situation
+
+The language stack includes request intent and entity prediction, interfaces trained on English, Spanish, French and German, sentence selection for source reading, and learned bindings between physical definitions and quantity roles.
+
+For a taught physical meaning, SERA retains the original term, definition, source identity and learned association. A numerical task adds quantities, units and explicit physical premises. These establish the situation that its quantitative operator can execute. For example, a force task supplies net force, mass, elapsed time and initial conditions; its interpretation leads into the continuing mathematical learner.
+
+The [human-text curriculum](research-continuation/29_human_reading/report.md) and [book curriculum](research-continuation/30_grounded_books/report.md) preserve the progression through lexical resources, questions and passages, human conversation, grammar, philosophy, calculus and physics. Teaching sources and transformed training records retain separate identities.
+
+### Compact executable mathematics
+
+The StudyR1 extension learns numerical operators over rational polynomial representations. Its acquired integration and summation maps live in the owner's parameter tensors. A proposed result is checked using an independent mathematical identity before being returned as verified algebra.
+
+These operators compose. Given an acceleration polynomial, the motion route integrates to velocity, applies the initial velocity, integrates to position and applies the initial position. It then evaluates the resulting functions at the requested time. The result includes the functions and verification records, making the computation inspectable and reusable.
+
+SERA also learns empirical motion models from observed histories. The refinement interface preserves observations, fits the admitted model, checks identifiability and forecasts from retained history. Source assumptions, measured observations and calculated consequences remain individually inspectable.
+
+### Imagination, investigation and learning
+
+An imagined branch uses a copy of the relevant state and explicit premises. The grounded interface compares consequences such as reversing a force or doubling a mass. Each branch carries its inputs and algebra checks, while the observation history continues to represent what was actually received.
+
+The verified-completion interface adds a **learned investigator** on the same owner. For a missing acceleration response, it retains joint mechanism weights and uncertainty, samples consistent possible mechanisms, and executes their consequences through the existing integral operator. The investigator learns to choose an informative observation or STOP. It commits its choice and predictions before a separate check calculates the reward. Useful choices strengthen its selection procedure; policy state and evidence receipts persist for the next task.
+
+In the frozen conditional-practice study, teaching reduced matched prediction error by **80.4% from the initial policy** and **74.0% from random choice**. The full comparison also keeps an analytic recommendation option. [Run the loop and inspect the evidence](research-continuation/32_verified_completion/README.md).
+
+When a task identifies missing knowledge, its original question and current attempts are saved. The source interface can search arXiv, pin paper identities, read available material and rank supporting passages. Verified teaching can then change retained parameters, after which the task is attempted again. The [self-study interface](research-continuation/27_self_study/README.md) implements diagnosis, source acquisition, practice, checking, updating and return to the original task.
+
+### Reusable knowledge, correction and persistence
+
+The executable library records a procedure's domain, assumptions, dependencies and verification history. Applicability checks determine when a stored procedure can run. Updates retain the earlier version and their evidence, so results can be inspected and replayed.
+
+Session storage uses append-only revisions, checksums and a current-revision pointer. Training checkpoints include the state needed for exact continuation. Research releases preserve source hashes, protocols, selected and rejected candidates, resource costs and independent replay results. These mechanisms let the learner continue from an earlier session with its acquired state and unfinished work intact.
+
+### What the engineering supplies and what SERA learns
+
+I supply the encoders, representation contracts, learning algorithms, unit rules, independent checkers and experiment protocols. SERA acquires the trained request and reading mappings, quantity associations, numerical operator coefficients, empirical parameters, evidence-selection weights and admitted procedures through their recorded teaching or acquisition processes. The reports identify the origin of each component and measure the resulting behavior.
+
+## A concrete task
+
+Give the grounded interface the taught force definition and these premises: a constant net force of **6 N**, mass **3 kg**, motion in one dimension, initial rest and an elapsed time of **2 s**. The saved learner calculates **4 m** of displacement and **4 m/s** of velocity. It also compares an opposite-force branch and a doubled-mass branch, with independent rational checks for all three.
+
+The [runnable request and instructions](research-continuation/30_grounded_books/README.md) include the exact input, source attribution, assumptions and saved output. This is the working pattern for the STEM curriculum: connect a taught meaning to quantities, execute a learned relationship, verify the result and retain what makes the relationship reusable.
 
 ## Current release
 
-Stage 30 connects learned quantity bindings to the continuing StudyR1 motion operator. Its supported interface reuses 26 taught physical definitions with source, unit and assumption checks. The human-book curriculum and both definition studies, including all controls, are in the [new report](research-continuation/30_grounded_books/report.md). The [status page](docs/STATUS.md) links verification, costs and earlier results.
+Stage 32 connects joint completion, coherent imagined motion, learned investigation and independently checked reward on the continuing owner. It preserves **186 inherited tensors, 128 four-language probes, 26 taught physical meanings**, exact mathematics, reading and empirical forecasts. The [completion report](research-continuation/32_verified_completion/report.md) records teaching, all six comparisons, independent replay and costs. The earlier human-book curriculum remains in the [book report](research-continuation/30_grounded_books/report.md); the [status page](docs/STATUS.md) links verification and earlier results.
 
-The [runnable example](research-continuation/30_grounded_books/README.md) predicts conditional motion from a taught force definition. Unknown meanings remain open for source acquisition. Exact taught-source reuse and held-out interpretation are reported separately; all previous studies remain preserved.
+The development direction is progressively deeper STEM capability through human-authored lessons, useful quantitative tasks, verified acquisition and cumulative retention. Each completed curriculum adds its executable interface and measured results to the archive.
 
 ## Development and preservation
 

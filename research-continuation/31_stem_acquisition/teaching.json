@@ -1,0 +1,854 @@
+{
+  "schema": "sera.stem-teaching.1",
+  "units": {
+    "kg": [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "m": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "s": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "m/s": [
+      0,
+      1,
+      -1,
+      0,
+      0
+    ],
+    "m/s^2": [
+      0,
+      1,
+      -2,
+      0,
+      0
+    ],
+    "N": [
+      1,
+      1,
+      -2,
+      0,
+      0
+    ],
+    "kg*m/s": [
+      1,
+      1,
+      -1,
+      0,
+      0
+    ],
+    "N*s": [
+      1,
+      1,
+      -1,
+      0,
+      0
+    ],
+    "J": [
+      1,
+      2,
+      -2,
+      0,
+      0
+    ],
+    "W": [
+      1,
+      2,
+      -3,
+      0,
+      0
+    ],
+    "N/m": [
+      1,
+      0,
+      -2,
+      0,
+      0
+    ],
+    "A": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "V": [
+      1,
+      2,
+      -3,
+      -1,
+      0
+    ],
+    "ohm": [
+      1,
+      2,
+      -3,
+      -2,
+      0
+    ],
+    "C": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "K": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "J/(kg*K)": [
+      0,
+      2,
+      -2,
+      0,
+      -1
+    ]
+  },
+  "relations": {
+    "momentum": {
+      "inputs": {
+        "mass": "kg",
+        "velocity": "m/s"
+      },
+      "output": [
+        "momentum",
+        "kg*m/s"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "one_dimension",
+        "nonrelativistic",
+        "inertial_frame"
+      ],
+      "positive": [
+        "mass"
+      ],
+      "lessons": [
+        {
+          "id": "car-momentum",
+          "source_id": "m58318#fs-id1167133647686",
+          "split": "train",
+          "inputs": [
+            "1400",
+            "15"
+          ],
+          "output": "21000",
+          "transcription": "Original car mass, velocity and momentum."
+        },
+        {
+          "id": "box-momentum",
+          "source_id": "m58318#fs-id1167132413861",
+          "split": "human_check",
+          "inputs": [
+            "5",
+            "5"
+          ],
+          "output": "25",
+          "transcription": "Box mass and speed; published answer is 25 kg m/s."
+        }
+      ]
+    },
+    "impulse": {
+      "inputs": {
+        "force": "N",
+        "time": "s"
+      },
+      "output": [
+        "impulse",
+        "N*s"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "one_dimension",
+        "nonrelativistic",
+        "inertial_frame",
+        "net_force",
+        "constant_or_average_force"
+      ],
+      "positive": [
+        "time"
+      ],
+      "lessons": [
+        {
+          "id": "restrained-driver",
+          "source_id": "m58319#fs-id1167131159147",
+          "split": "train",
+          "inputs": [
+            "-948.24",
+            "2.5"
+          ],
+          "output": "-2370.6",
+          "transcription": "Original 87.8*(-27)/2.5 force and 87.8*(-27) momentum change, before rounding."
+        },
+        {
+          "id": "unrestrained-driver",
+          "source_id": "m58319#fs-id1167131159147",
+          "split": "train",
+          "inputs": [
+            "-11853",
+            "0.20"
+          ],
+          "output": "-2370.6",
+          "transcription": "Second published collision interval; same original driver and velocity change."
+        }
+      ]
+    },
+    "newton": {
+      "inputs": {
+        "mass": "kg",
+        "acceleration": "m/s^2"
+      },
+      "output": [
+        "force",
+        "N"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "one_dimension",
+        "nonrelativistic",
+        "inertial_frame",
+        "constant_mass",
+        "net_force"
+      ],
+      "positive": [
+        "mass"
+      ],
+      "lessons": [
+        {
+          "id": "soccer-x",
+          "source_id": "m58297#fs-id1165039045618",
+          "split": "train",
+          "inputs": [
+            "0.400",
+            "3"
+          ],
+          "output": "1.2",
+          "transcription": "Original x component."
+        },
+        {
+          "id": "car-force",
+          "source_id": "m58297#fs-id1165039443202",
+          "split": "train",
+          "inputs": [
+            "3000",
+            "-0.2"
+          ],
+          "output": "-600",
+          "transcription": "Original signed component with published solved mass."
+        },
+        {
+          "id": "soccer-y",
+          "source_id": "m58297#fs-id1165039045618",
+          "split": "human_check",
+          "inputs": [
+            "0.400",
+            "7"
+          ],
+          "output": "2.8",
+          "transcription": "Untaught y component of same example; part overlap is explicit."
+        }
+      ]
+    },
+    "kinetic_energy": {
+      "inputs": {
+        "mass": "kg",
+        "speed": "m/s"
+      },
+      "output": [
+        "kinetic_energy",
+        "J"
+      ],
+      "reference": {
+        "coefficient": "1/2",
+        "powers": [
+          1,
+          2
+        ]
+      },
+      "assumptions": [
+        "one_dimension",
+        "nonrelativistic",
+        "inertial_frame",
+        "translational_motion"
+      ],
+      "positive": [
+        "mass"
+      ],
+      "lessons": [
+        {
+          "id": "athlete-energy",
+          "source_id": "m58308#fs-id1165038048633",
+          "split": "train",
+          "inputs": [
+            "80",
+            "10"
+          ],
+          "output": "4000",
+          "transcription": "Original athlete example, kJ converted to J."
+        },
+        {
+          "id": "subway-person",
+          "source_id": "m58308#fs-id1165037049856",
+          "split": "train",
+          "inputs": [
+            "75",
+            "1.50"
+          ],
+          "output": "84.375",
+          "transcription": "Original 1/2*75*1.50^2 before published rounding to 84.4 J."
+        },
+        {
+          "id": "basketball",
+          "source_id": "m58308#fs-id1165038198441",
+          "split": "human_check",
+          "inputs": [
+            "0.624",
+            "7.5"
+          ],
+          "output": "17.55",
+          "transcription": "Original 1/2*0.624*7.5^2 before published rounding to 17.6 J."
+        }
+      ]
+    },
+    "work": {
+      "inputs": {
+        "parallel_force": "N",
+        "displacement": "m"
+      },
+      "output": [
+        "work",
+        "J"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "constant_force",
+        "signed_parallel_component"
+      ],
+      "positive": [],
+      "lessons": [
+        {
+          "id": "lower-book",
+          "source_id": "m58719#fs-id1165039051160",
+          "split": "train",
+          "inputs": [
+            "20",
+            "1"
+          ],
+          "output": "20",
+          "transcription": "Choose downward positive for the source's gravitational work."
+        },
+        {
+          "id": "couch-friction",
+          "source_id": "m58719#fs-id1165039346377",
+          "split": "train",
+          "inputs": [
+            "-600",
+            "4"
+          ],
+          "output": "-2400",
+          "transcription": "Source friction 0.6*1000 N opposite its 3+1 m path."
+        }
+      ]
+    },
+    "power": {
+      "inputs": {
+        "work": "J",
+        "time": "s"
+      },
+      "output": [
+        "power",
+        "W"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          -1
+        ]
+      },
+      "assumptions": [
+        "average_over_interval"
+      ],
+      "positive": [
+        "time"
+      ],
+      "lessons": [
+        {
+          "id": "pull-up",
+          "source_id": "m58310#fs-id1165037910246",
+          "split": "train",
+          "inputs": [
+            "423.36",
+            "0.8"
+          ],
+          "output": "529.2",
+          "transcription": "Source work 0.9*80*9.8*0.60 J, before rounding power to 529 W."
+        },
+        {
+          "id": "winch-mechanical",
+          "source_id": "m58734#fs-id1170902335576",
+          "split": "train",
+          "inputs": [
+            "49000",
+            "30"
+          ],
+          "output": "4900/3",
+          "transcription": "Source 4900*10 J over 30 s, before rounding."
+        }
+      ]
+    },
+    "spring_energy": {
+      "inputs": {
+        "spring_constant": "N/m",
+        "extension": "m"
+      },
+      "output": [
+        "spring_energy",
+        "J"
+      ],
+      "reference": {
+        "coefficient": "1/2",
+        "powers": [
+          1,
+          2
+        ]
+      },
+      "assumptions": [
+        "hooke_regime",
+        "zero_at_equilibrium"
+      ],
+      "positive": [
+        "spring_constant"
+      ],
+      "lessons": [
+        {
+          "id": "spring-6cm",
+          "source_id": "m58719#fs-id1165039118668",
+          "split": "train",
+          "inputs": [
+            "300",
+            "0.06"
+          ],
+          "output": "0.54",
+          "transcription": "Original spring constant 3 N/cm converted to N/m."
+        },
+        {
+          "id": "spring-3cm",
+          "source_id": "m58312#fs-id1165035980783",
+          "split": "human_check",
+          "inputs": [
+            "400",
+            "0.03"
+          ],
+          "output": "0.18",
+          "transcription": "Original 4 N/cm, displacement 23-20 cm."
+        }
+      ]
+    },
+    "gravitational_energy": {
+      "inputs": {
+        "mass": "kg",
+        "gravity": "m/s^2",
+        "height": "m"
+      },
+      "output": [
+        "potential_energy",
+        "J"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "uniform_gravity",
+        "specified_height_zero"
+      ],
+      "positive": [
+        "mass",
+        "gravity"
+      ],
+      "lessons": [
+        {
+          "id": "hiker-summit",
+          "source_id": "m58312#fs-id1165038964832",
+          "split": "train",
+          "inputs": [
+            "75",
+            "9.8",
+            "147"
+          ],
+          "output": "108045",
+          "transcription": "Original 75*9.8*147 before published 108 kJ rounding."
+        },
+        {
+          "id": "hiker-sea",
+          "source_id": "m58312#fs-id1165038964832",
+          "split": "train",
+          "inputs": [
+            "75",
+            "9.8",
+            "-48"
+          ],
+          "output": "-35280",
+          "transcription": "Original 75*9.8*(-48) before published -35.3 kJ rounding."
+        }
+      ]
+    },
+    "ohm": {
+      "inputs": {
+        "current": "A",
+        "resistance": "ohm"
+      },
+      "output": [
+        "voltage",
+        "V"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "ohmic_element",
+        "fixed_temperature"
+      ],
+      "positive": [
+        "resistance"
+      ],
+      "lessons": [
+        {
+          "id": "carbon-resistor",
+          "source_id": "m58732#fs-id1170902116601",
+          "split": "train",
+          "inputs": [
+            "0.003",
+            "3000"
+          ],
+          "output": "9",
+          "transcription": "Original voltage, measured current and solved room-temperature resistance."
+        }
+      ]
+    },
+    "electric_power": {
+      "inputs": {
+        "voltage": "V",
+        "current": "A"
+      },
+      "output": [
+        "power",
+        "W"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "dc_or_instantaneous",
+        "passive_sign_convention"
+      ],
+      "positive": [],
+      "lessons": [
+        {
+          "id": "winch-electric",
+          "source_id": "m58734#fs-id1170902335576",
+          "split": "train",
+          "inputs": [
+            "115",
+            "20"
+          ],
+          "output": "2300",
+          "transcription": "Original motor electrical power calculation."
+        }
+      ]
+    },
+    "charge": {
+      "inputs": {
+        "current": "A",
+        "time": "s"
+      },
+      "output": [
+        "charge",
+        "C"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "constant_or_average_current"
+      ],
+      "positive": [
+        "time"
+      ],
+      "lessons": [
+        {
+          "id": "starter-charge",
+          "source_id": "m58729#fs-id1170902884663",
+          "split": "train",
+          "inputs": [
+            "180",
+            "4"
+          ],
+          "output": "720",
+          "transcription": "Original truck starter charge, time and solved current."
+        }
+      ]
+    },
+    "heat": {
+      "inputs": {
+        "mass": "kg",
+        "specific_heat": "J/(kg*K)",
+        "temperature_change": "K"
+      },
+      "output": [
+        "heat",
+        "J"
+      ],
+      "reference": {
+        "coefficient": "1",
+        "powers": [
+          1,
+          1,
+          1
+        ]
+      },
+      "assumptions": [
+        "constant_specific_heat",
+        "single_phase"
+      ],
+      "positive": [
+        "mass",
+        "specific_heat"
+      ],
+      "lessons": [
+        {
+          "id": "water-heating",
+          "source_id": "m58387#fs-id1170903904170",
+          "split": "train",
+          "inputs": [
+            "0.250",
+            "4186",
+            "60"
+          ],
+          "output": "62790",
+          "transcription": "Original water heat expression before rounding to 62.8 kJ."
+        },
+        {
+          "id": "pan-heating",
+          "source_id": "m58387#fs-id1170903904170",
+          "split": "train",
+          "inputs": [
+            "0.500",
+            "900",
+            "60"
+          ],
+          "output": "27000",
+          "transcription": "Original aluminum pan heat expression."
+        },
+        {
+          "id": "brake-heating",
+          "source_id": "m58387#fs-id1170903814928",
+          "split": "human_check",
+          "inputs": [
+            "10",
+            "800",
+            "735/8"
+          ],
+          "output": "735000",
+          "transcription": "Original Q/(mc) temperature change before rounded 92 degrees."
+        }
+      ]
+    }
+  },
+  "sources": {
+    "m58318#fs-id1167133647686": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58318/index.cnxml",
+      "anchor": "fs-id1167133647686",
+      "sha256": "d6b2374a712a7269d988551296255df6dd913162ac0f98e1bc49a15734f935ef",
+      "excerpt": "pcar=(1400kg)(15ms)=21,000kg·ms.",
+      "excerpt_sha256": "21856544860dbe5b8f17bff90378e533ac80525a06db90ca401f5673a190f765"
+    },
+    "m58318#fs-id1167132413861": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58318/index.cnxml",
+      "anchor": "fs-id1167132413861",
+      "sha256": "d6b2374a712a7269d988551296255df6dd913162ac0f98e1bc49a15734f935ef",
+      "excerpt": "A skater of mass 40 kg is carrying a box of mass 5 kg. The skater has a speed of 5 m/s with respect to the floor and is gliding without any friction on a smooth surface.",
+      "excerpt_sha256": "fc87fa27944795053683c7615a1eb46720ddeaea524720231d43272da5258748"
+    },
+    "m58297#fs-id1165039045618": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58297/index.cnxml",
+      "anchor": "fs-id1165039045618",
+      "sha256": "b7458fe053328886086f01e78e0b204cb5c9c00f3835105ed39482bffa241a6f",
+      "excerpt": "Force on a Soccer Ball A 0.400-kg soccer ball is kicked across the field by a player; it undergoes acceleration given by a→=3.00i^+7.00j^m/s2. Find (a) the resultant force acting on the ball and (b) the magnitude and direction of the resultant force. Strategy The vectors in i^ and j^ format, which indicate force direction along the x-axis and the y-axis, respectively, are involved, so we apply Newton’s second law in vector form. Solution We apply Newton’s second law: F→net=ma→=(0.400kg)(3.00i^+7.00j^m/s2)=1.20i^+2.80j^N. Magnitude and direction are found using the components of F→net: Fnet=(1.20N)2+(2.80N)2=3.05Nandθ=tan−1(2.801.20)=66.8°. Significance We must remember that Newton’s second law is a vector equation. In (a), we are multiplying a vector by a scalar to determine the net force in vector form. While the vector form gives a compact representation of the force vector, it does not tell us how “big” it is, or where it goes, in intuitive terms. In (b), we are determining the actual size (magnitude) of this force and the direction in which it travels.",
+      "excerpt_sha256": "7d21e39185ca02647e5de83df179e930ab0b4cd0fb3f4bc3008aff2cbcd3003b"
+    },
+    "m58297#fs-id1165039443202": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58297/index.cnxml",
+      "anchor": "fs-id1165039443202",
+      "sha256": "b7458fe053328886086f01e78e0b204cb5c9c00f3835105ed39482bffa241a6f",
+      "excerpt": "Mass of a Car Find the mass of a car if a net force of −600.0j^N produces an acceleration of −0.2j^m/s2. Strategy Vector division is not defined, so m=F→net/a→ cannot be performed. However, mass m is a scalar, so we can use the scalar form of Newton’s second law, m=Fnet/a. Solution We use m=Fnet/a and substitute the magnitudes of the two vectors: Fnet=600.0N and a=0.2m/s2. Therefore, m=Fneta=600.0N0.2m/s2=3000kg. Significance Force and acceleration were given in the i^ and j^ format, but the answer, mass m, is a scalar and thus is not given in i^ and j^ form.",
+      "excerpt_sha256": "5b5883beb6f98925f39ad1ae4221a495357a4d4ca179226a0ef633e90a24860c"
+    },
+    "m58308#fs-id1165038048633": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58308/index.cnxml",
+      "anchor": "fs-id1165038048633",
+      "sha256": "b62469b558e3ffe9e3c6c0f7d7930119aba89a5886c7a95dbe0670d065c2cc77",
+      "excerpt": "Kinetic Energy of an Object (a) What is the kinetic energy of an 80-kg athlete, running at 10 m/s? (b) The Chicxulub crater in Yucatan, one of the largest existing impact craters on Earth, is thought to have been created by an asteroid, traveling at22 km/s and releasing 4.2×1023J of kinetic energy upon impact. What was its mass? (c) In nuclear reactors, thermal neutrons, traveling at about 2.2 km/s, play an important role. What is the kinetic energy of such a particle? Strategy To answer these questions, you can use the definition of kinetic energy in . You also have to look up the mass of a neutron. Solution Don’t forget to convert km into m to do these calculations, although, to save space, we omitted showing these conversions. K=12(80kg)(10 m/s)2=4.0kJ. m=2K/ v2=2(4.2× 1023J)/ (22km/s)2=1.7× 1015kg. K=12(1.68× 10−27kg) (2.2km/s)2 =4.1× 10−21J. Significance In this example, we used the way mass and speed are related to kinetic energy, and we encountered a very wide range of values for the kinetic energies. Different units are commonly used for such very large and very small values. The energy of the impactor in part (b) can be compared to the explosive yield of TNT and nuclear explosions, 1megaton=4.18×1015J. The Chicxulub asteroid’s kinetic energy was about a hundred million megatons. At the other extreme, the energy of subatomic particle is expressed in electron-volts, 1eV=1.6×10−19J. The thermal neutron in part (c) has a kinetic energy of about one fortieth of an electron-volt.",
+      "excerpt_sha256": "14cb8a972b073d9aa1e6d25f2f945d5283fa97895652223f22f4529a67b5dcf2"
+    },
+    "m58308#fs-id1165037049856": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58308/index.cnxml",
+      "anchor": "fs-id1165037049856",
+      "sha256": "b62469b558e3ffe9e3c6c0f7d7930119aba89a5886c7a95dbe0670d065c2cc77",
+      "excerpt": "Kinetic Energy Relative to Different Frames A 75.0-kg person walks down the central aisle of a subway car at a speed of 1.50 m/s relative to the car, whereas the train is moving at 15.0 m/s relative to the tracks. (a) What is the person’s kinetic energy relative to the car? (b) What is the person’s kinetic energy relative to the tracks? (c) What is the person’s kinetic energy relative to a frame moving with the person? Strategy Since speeds are given, we can use 12mv2 to calculate the person’s kinetic energy. However, in part (a), the person’s speed is relative to the subway car (as given); in part (b), it is relative to the tracks; and in part (c), it is zero. If we denote the car frame by C, the track frame by T, and the person by P, the relative velocities in part (b) are related by v→PT=v→PC+v→CT. We can assume that the central aisle and the tracks lie along the same line, but the direction the person is walking relative to the car isn’t specified, so we will give an answer for each possibility, vPT=vCT±vPC, as shown in . The possible motions of a person walking in a train are (a) toward the front of the car and (b) toward the back of the car. Solution K=12(75.0kg)(1.50m/s)2=84.4J. vPT=(15.0±1.50)m/s. Therefore, the two possible values for kinetic energy relative to the track are K=12(75.0kg)(13.5m/s)2=6.83kJ and K=12(75.0kg)(16.5m/s)2=10.2kJ. In a frame where vP=0,K=0 as well. Significance You can see that the kinetic energy of an object can have very different values, depending on the frame of reference. However, the kinetic energy of an object can never be negative, since it is the product of the mass and the square of the speed, both of which are always positive or zero.",
+      "excerpt_sha256": "ad907fa884080273c03ae1c04e660f437dd135a53b50adb1dceba510c26a2058"
+    },
+    "m58308#fs-id1165038198441": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58308/index.cnxml",
+      "anchor": "fs-id1165038198441",
+      "sha256": "b62469b558e3ffe9e3c6c0f7d7930119aba89a5886c7a95dbe0670d065c2cc77",
+      "excerpt": "Special Names for Kinetic Energy (a) A player lobs a mid-court pass with a 624-g basketball, which covers 15 m in 2 s. What is the basketball’s horizontal translational kinetic energy while in flight? (b) An average molecule of air, in the basketball in part (a), has a mass of 29 u, and an average speed of 500 m/s, relative to the basketball. There are about 3×1023 molecules inside it, moving in random directions, when the ball is properly inflated. What is the average translational kinetic energy of the random motion of all the molecules inside, relative to the basketball? (c) How fast would the basketball have to travel relative to the court, as in part (a), so as to have a kinetic energy equal to the amount in part (b)? Strategy In part (a), first find the horizontal speed of the basketball and then use the definition of kinetic energy in terms of mass and speed, K=12mv2. Then in part (b), convert unified units to kilograms and then use K=12mv2 to get the average translational kinetic energy of one molecule, relative to the basketball. Then multiply by the number of molecules to get the total result. Finally, in part (c), we can substitute the amount of kinetic energy in part (b), and the mass of the basketball in part (a), into the definition K=12mv2, and solve for v. Solution The horizontal speed is (15 m)/(2 s), so the horizontal kinetic energy of the basketball is 12(0.624kg)(7.5m/s)2=17.6J. The average translational kinetic energy of a molecule is 12(29u)(1.66×10−27kg/u)(500m/s)2=6.02×10−21J, and the total kinetic energy of all the molecules is (3×1023)(6.02×10−21J)=1.80kJ. v=2(1.8kJ)/(0.624kg)=76.0m/s. Significance In part (a), this kind of kinetic energy can be called the horizontal kinetic energy of an object (the basketball), relative to its surroundings (the court). If the basketball were spinning, all parts of it would have not just the average speed, but it would also have rotational kinetic energy. Part (b) reminds us that this kind of kinetic energy can be called internal or thermal kinetic energy. Notice that this energy is about a hundred times the energy in part (a). How to make use of thermal energy will be the subject of the chapters on thermodynamics. In part (c), since the energy in part (b) is about 100 times that in part (a), the speed should be about 10 times as big, which it is (76 compared to 7.5 m/s).",
+      "excerpt_sha256": "d9ab997717e3689775e4364572f20b86be94875df899fdeb58ddd1ed7e388047"
+    },
+    "m58719#fs-id1165039051160": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58719/index.cnxml",
+      "anchor": "fs-id1165039051160",
+      "sha256": "c94baea42a6817b5cc6bace6974f2dce1192a419ad6d353861c7daffb63ed6af",
+      "excerpt": "Shelving a Book You lift an oversized library book, weighing 20 N, 1 m vertically down from a shelf, and carry it 3 m horizontally to a table (). (a) How much work does gravity do on the book? (b) When you’re finished, you move the book in a straight line back to its original place on the shelf. What was the total work done against gravity, moving the book away from its original position on the shelf and back again? Side view of the paths for moving a book to and from a shelf. Strategy We have just seen that the work done by a constant force of gravity depends only on the weight of the object moved and the difference in height for the path taken, WAB=−mg(yB−yA). We can evaluate the difference in height to answer (a) and (b). Solution Since the book starts on the shelf and is lifted down yB−yA=−1m, we have W=−(20N)(−1m)=20J. There is zero difference in height for any path that begins and ends at the same place on the shelf, so W=0. Significance Gravity does positive work (20 J) when the book moves down from the shelf. The gravitational force between two objects is an attractive force, which does positive work when the objects get closer together. Gravity does zero work (0 J) when the book moves horizontally from the shelf to the table and negative work (−20 J) when the book moves from the table back to the shelf. The total work done by gravity is zero [20J+0J+(−20J)=0]. Unlike friction or other dissipative forces, described in , the total work done against gravity, over any closed path, is zero. Positive work is done against gravity on the upward parts of a closed path, but an equal amount of negative work is done against gravity on the downward parts. In other words, work done against gravity, lifting an object up, is “given back” when the object comes back down. Forces like gravity (those that do zero work over any closed path) are classified as conservative forces and play an important role in physics.",
+      "excerpt_sha256": "f6dba9ff3c45c7829b0f2a138aadb0751f8df5e59eb8399a7ba62124783067aa"
+    },
+    "m58719#fs-id1165039346377": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58719/index.cnxml",
+      "anchor": "fs-id1165039346377",
+      "sha256": "c94baea42a6817b5cc6bace6974f2dce1192a419ad6d353861c7daffb63ed6af",
+      "excerpt": "Moving a Couch You decide to move your couch to a new position on your horizontal living room floor. The normal force on the couch is 1 kN and the coefficient of friction is 0.6. (a) You first push the couch 3 m parallel to a wall and then 1 m perpendicular to the wall (A to B in ). How much work is done by the frictional force? (b) You don’t like the new position, so you move the couch straight back to its original position (B to A in ). What was the total work done against friction moving the couch away from its original position and back again? Top view of paths for moving a couch. Strategy The magnitude of the force of kinetic friction on the couch is constant, equal to the coefficient of friction times the normal force, fK=μKN. Therefore, the work done by it is Wfr=−fKd, where d is the path length traversed. The segments of the paths are the sides of a right triangle, so the path lengths are easily calculated. In part (b), you can use the fact that the work done against a force is the negative of the work done by the force. Solution The work done by friction i W=−(0.6)(1kN)(3m+1m)=−2.4kJ. The length of the path along the hypotenuse is 10m, so the total work done against friction is W=(0.6)(1kN)(3m+1m+10m)=4.3kJ. Significance The total path over which the work of friction was evaluated began and ended at the same point (it was a closed path), so that the total displacement of the couch was zero. However, the total work was not zero. The reason is that forces like friction are classified as nonconservative forces, or dissipative forces, as we discuss in the next chapter.",
+      "excerpt_sha256": "073b94537fca2dd387b7f687630b7cb46e191d7fb5d475e6edff93d1b1bd799b"
+    },
+    "m58310#fs-id1165037910246": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58310/index.cnxml",
+      "anchor": "fs-id1165037910246",
+      "sha256": "4b37b5573d47afdd966e97df64602c0678a86c2e4c4f955092ab970acf82a8e6",
+      "excerpt": "Pull-Up PowerAn 80-kg army trainee does pull-ups on a horizontal bar (). It takes the trainee 0.8 seconds to raise the body from a lower position to where the chin is above the bar. How much power do the trainee’s muscles supply moving his body from the lower position to where the chin is above the bar? (Hint: Make reasonable estimates for any quantities needed.) What is the power expended in doing ten pull-ups in ten seconds? StrategyThe work done against gravity, going up or down a distance Δy, is mgΔy. Let’s assume that Δy=2ft≈60cm. Also, assume that the arms comprise 10% of the body mass and are not included in the moving mass. With these assumptions, we can calculate the work done.Solution The result we get, applying our assumptions, is P=mg(Δy)t= 0.9(80kg)(9.8m/s2)(0.60m)0.8s=529W.Significance This is typical for power expenditure in strenuous exercise; in everyday units, it’s somewhat more than one horsepower (1hp=746W).",
+      "excerpt_sha256": "d3bd3aca7c69497f354935f4733e609434bc4ff4593d7890a4afbaa7d45b2213"
+    },
+    "m58734#fs-id1170902335576": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58734/index.cnxml",
+      "anchor": "fs-id1170902335576",
+      "sha256": "bb86289ef38a9d82018bacb8c99216e5d36494e839ae3ec326b00f77ad660e30",
+      "excerpt": "Calculating Power in Electric Devices A DC winch motor is rated at 20.00 A with a voltage of 115 V. When the motor is running at its maximum power, it can lift an object with a weight of 4900.00 N a distance of 10.00 m, in 30.00 s, at a constant speed. (a) What is the power consumed by the motor? (b) What is the power used in lifting the object? Ignore air resistance. (c) Assuming that the difference in the power consumed by the motor and the power used lifting the object are dissipated as heat by the resistance of the motor, estimate the resistance of the motor? Strategy(a) The power consumed by the motor can be found using P=IV. (b) The power used in lifting the object at a constant speed can be found using P=Fv, where the speed is the distance divided by the time. The upward force supplied by the motor is equal to the weight of the object because the acceleration is zero. (c) The resistance of the motor can be found using P=I2R.Solution The power consumed by the motor is equal to P=IV and the current is given as 20.00 A and the voltage is 115.00 V: P=IV=(20.00A)115.00V=2300.00W. The power used lifting the object is equal to P=Fv where the force is equal to the weight of the object (4900 N) and the magnitude of the velocity is v=10.00m30.00s=0.33ms, P=Fv=(4900N)0.33m/s=1633.33W. The difference in the power equals 2300.00W−1633.33W=666.67W and the resistance can be found using P=I2R: R=PI2=666.67W(20.00A)2=1.67Ω. SignificanceThe resistance of the motor is quite small. The resistance of the motor is due to many windings of copper wire. The power dissipated by the motor can be significant since the thermal power dissipated by the motor would be quite large due to this small resistance; however, due to back emf, the current drawn by the motor is very small.",
+      "excerpt_sha256": "d27ded04ce14f83a7b61f4582dc6fb60db688507ead6c17c0989c374f84b7f73"
+    },
+    "m58719#fs-id1165039118668": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58719/index.cnxml",
+      "anchor": "fs-id1165039118668",
+      "sha256": "c94baea42a6817b5cc6bace6974f2dce1192a419ad6d353861c7daffb63ed6af",
+      "excerpt": "Work Done by a Spring Force A perfectly elastic spring requires 0.54 J of work to stretch 6 cm from its equilibrium position, as in (b). (a) What is its spring constant k? (b) How much work is required to stretch it an additional 6 cm? Strategy Work “required” means work done against the spring force, which is the negative of the work in , that is W=12k(xB2−xA2). For part (a), xA=0 and xB=6cm; for part (b), xA=6cm and xB=12cm. In part (a), the work is given and you can solve for the spring constant; in part (b), you can use the value of k, from part (a), to solve for the work. Solution W=0.54J=12k[(6cm)2−0], so k=3N/cm. W=12(3N/cm)[(12cm)2−(6cm)2]=1.62J. Significance Since the work done by a spring force is independent of the path, you only needed to calculate the difference in the quantity ½kx2 at the end points. Notice that the work required to stretch the spring from 0 to 12 cm is four times that required to stretch it from 0 to 6 cm, because that work depends on the square of the amount of stretch from equilibrium, ½kx2. In this circumstance, the work to stretch the spring from 0 to 12 cm is also equal to the work for a composite path from 0 to 6 cm followed by an additional stretch from 6 cm to 12 cm. Therefore, 4W(0cmto6cm)=W(0cmto6cm)+W(6cmto12cm), or W(6cmto12cm)=3W(0cmto6cm), as we found above.",
+      "excerpt_sha256": "4d39ed789e673d68e82e6367c870a73d4fe8fe0733356b2d5c2399541b275e00"
+    },
+    "m58312#fs-id1165035980783": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58312/index.cnxml",
+      "anchor": "fs-id1165035980783",
+      "sha256": "75c3a1dc733b5ca26f8ce1ae3a5c6bae1a3d303261b3528d3f01b827a1c93947",
+      "excerpt": "Spring Potential Energy A system contains a perfectly elastic spring, with an unstretched length of 20 cm and a spring constant of 4 N/cm. (a) How much elastic potential energy does the spring contribute when its length is 23 cm? (b) How much more potential energy does it contribute if its length increases to 26 cm? Strategy When the spring is at its unstretched length, it contributes nothing to the potential energy of the system, so we can use with the constant equal to zero. The value of x is the length minus the unstretched length. When the spring is expanded, the spring’s displacement or difference between its relaxed length and stretched length should be used for the x-value in calculating the potential energy of the spring. Solution The displacement of the spring is x=23cm−20cm=3cm, so the contributed potential energy is U=12kx2=12(4N/cm)(3cm)2=0.18J. When the spring’s displacement is x=26cm−20cm=6cm, the potential energy is U=12kx2=12(4N/cm)(6cm)2=0.72J, which is a 0.54-J increase over the amount in part (a). Significance Calculating the elastic potential energy and potential energy differences from involves solving for the potential energies based on the given lengths of the spring. Since U depends on x2, the potential energy for a compression (negative x) is the same as for an extension of equal magnitude.",
+      "excerpt_sha256": "6c1450d1f529a8efc2c7fc7645531726eda1f476ac1e9e681559a893727058a5"
+    },
+    "m58312#fs-id1165038964832": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58312/index.cnxml",
+      "anchor": "fs-id1165038964832",
+      "sha256": "75c3a1dc733b5ca26f8ce1ae3a5c6bae1a3d303261b3528d3f01b827a1c93947",
+      "excerpt": "Gravitational Potential Energy of a Hiker The summit of Great Blue Hill in Milton, MA, is 147 m above its base and has an elevation above sea level of 195 m (). (Its Native American name, Massachusett, was adopted by settlers for naming the Bay Colony and state near its location.) A 75-kg hiker ascends from the base to the summit. What is the gravitational potential energy of the hiker-Earth system with respect to zero gravitational potential energy at base height, when the hiker is (a) at the base of the hill, (b) at the summit, and (c) at sea level, afterward? Sketch of the profile of Great Blue Hill, Milton, MA. The altitudes of the three levels are indicated. Strategy First, we need to pick an origin for the y-axis and then determine the value of the constant that makes the potential energy zero at the height of the base. Then, we can determine the potential energies from , based on the relationship between the zero potential energy height and the height at which the hiker is located. Solution Let’s choose the origin for the y-axis at base height, where we also want the zero of potential energy to be. This choice makes the constant equal to zero and U(base)=U(0)=0. At the summit, y=147m, so U(summit)=U(147m)=mgh=(75×9.8N)(147m)=108kJ. At sea level, y=(147−195)m=−48m, so U(sea-level)=(75×9.8N)(−48m)=−35.3kJ. Significance Besides illustrating the use of and , the values of gravitational potential energy we found are reasonable. The gravitational potential energy is higher at the summit than at the base, and lower at sea level than at the base. Gravity does work on you on your way up, too! It does negative work and not quite as much (in magnitude), as your muscles do. But it certainly does work. Similarly, your muscles do work on your way down, as negative work. The numerical values of the potential energies depend on the choice of zero of potential energy, but the physically meaningful differences of potential energy do not. [Note that since is a difference, the numerical values do not depend on the origin of coordinates.]",
+      "excerpt_sha256": "15c6d19a352ba6fbb1eb5e7451209b20c77afa148dd8aac5f2d880aad47aea87"
+    },
+    "m58732#fs-id1170902116601": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58732/index.cnxml",
+      "anchor": "fs-id1170902116601",
+      "sha256": "f9fd5da2fbe119bd14e694cdc5d83cc7c80842fa579fe960060b2de7f2e144cd",
+      "excerpt": "Measuring Resistance A carbon resistor at room temperature (20°C) is attached to a 9.00-V battery and the current measured through the resistor is 3.00 mA. (a) What is the resistance of the resistor measured in ohms? (b) If the temperature of the resistor is increased to 60°C by heating the resistor, what is the current through the resistor? Strategy (a) The resistance can be found using Ohm’s law. Ohm’s law states that V=IR, so the resistance can be found using R=V/I. (b) First, the resistance is temperature dependent so the new resistance after the resistor has been heated can be found using R=R0(1+αΔT). The current can be found using Ohm’s law in the form I=V/R. Solution Using Ohm’s law and solving for the resistance yields the resistance at room temperature: R=VI=9.00V3.00×10−3A=3.00×103Ω=3.00kΩ. The resistance at 60°C can be found using R=R0(1+αΔT) where the temperature coefficient for carbon is α=−0.0005. R=R0(1+αΔT)=3.00×103(1−0.0005(60°C−20°C))=2.94kΩ. The current through the heated resistor is I=VR=9.00V2.94×103Ω=3.06×10−3A=3.06mA. Significance A change in temperature of 40°C resulted in a 2.00% change in current. This may not seem like a very great change, but changing electrical characteristics can have a strong effect on the circuits. For this reason, many electronic appliances, such as computers, contain fans to remove the heat dissipated by components in the electric circuits.",
+      "excerpt_sha256": "43af976fed7c0c834b9fe4f2571ab90637ae2a93b1f8e0e106dadb3148b25d53"
+    },
+    "m58729#fs-id1170902884663": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58729/index.cnxml",
+      "anchor": "fs-id1170902884663",
+      "sha256": "4e28162acf4b49ec06bba1f03f6b094d0175bdcbf8cc74c7e7711db42d61a408",
+      "excerpt": "Calculating the Average Current The main purpose of a battery in a car or truck is to run the electric starter motor, which starts the engine. The operation of starting the vehicle requires a large current to be supplied by the battery. Once the engine starts, a device called an alternator takes over supplying the electric power required for running the vehicle and for charging the battery. (a) What is the average current involved when a truck battery sets in motion 720 C of charge in 4.00 s while starting an engine? (b) How long does it take 1.00 C of charge to flow from the battery? Strategy We can use the definition of the average current in the equation I=ΔQΔt to find the average current in part (a), since charge and time are given. For part (b), once we know the average current, we can its definition I=ΔQΔt to find the time required for 1.00 C of charge to flow from the battery. Solution a. Entering the given values for charge and time into the definition of current gives I=ΔQΔt=720C4.00s=180C/s=180A. b. Solving the relationship I=ΔQΔt for time Δt and entering the known values for charge and current gives Δt=ΔQI=1.00C180C/s=5.56×10−3s=5.56ms. Significance a. This large value for current illustrates the fact that a large charge is moved in a small amount of time. The currents in these “starter motors” are fairly large to overcome the inertia of the engine. b. A high current requires a short time to supply a large amount of charge. This large current is needed to supply the large amount of energy needed to start the engine.",
+      "excerpt_sha256": "d7355f5c6ac0d6e614c98236c4ef1a53cb5209913f2f24277cdd49ec4ba64184"
+    },
+    "m58387#fs-id1170903904170": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58387/index.cnxml",
+      "anchor": "fs-id1170903904170",
+      "sha256": "272849307e088760bdf4a8b5d8a870c81067d9a7ad33b379e20ff26eb1c10d89",
+      "excerpt": "Calculating the Required Heat A 0.500-kg aluminum pan on a stove and 0.250 L of water in it are heated from 20.0°C to 80.0°C. (a) How much heat is required? What percentage of the heat is used to raise the temperature of (b) the pan and (c) the water? Strategy We can assume that the pan and the water are always at the same temperature. When you put the pan on the stove, the temperature of the water and that of the pan are increased by the same amount. We use the equation for the heat transfer for the given temperature change and mass of water and aluminum. The specific heat values for water and aluminum are given in . Solution Calculate the temperature difference: ΔT=Tf−Ti=60.0°C. Calculate the mass of water. Because the density of water is 1000kg/m3, 1 L of water has a mass of 1 kg, and the mass of 0.250 L of water is mw=0.250kg. Calculate the heat transferred to the water. Use the specific heat of water in : Qw=mwcwΔT=(0.250kg)(4186J/kg°C)(60.0°C)=62.8kJ. Calculate the heat transferred to the aluminum. Use the specific heat for aluminum in : QAl=mA1cA1ΔT=(0.500kg)(900J/kg°C)(60.0°C)=27.0kJ. Find the total transferred heat: QTotal=QW+QAl=89.8kJ. Significance In this example, the heat transferred to the water is more than the aluminum pan. Although the mass of the pan is twice that of the water, the specific heat of water is over four times that of aluminum. Therefore, it takes a bit more than twice as much heat to achieve the given temperature change for the water as for the aluminum pan.",
+      "excerpt_sha256": "032c45c5edf590b8b85058be26036b26ef8e5e0e93689d452f76c96bf41ee7e9"
+    },
+    "m58387#fs-id1170903814928": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58387/index.cnxml",
+      "anchor": "fs-id1170903814928",
+      "sha256": "272849307e088760bdf4a8b5d8a870c81067d9a7ad33b379e20ff26eb1c10d89",
+      "excerpt": "Calculating the Temperature Increase from the Work Done on a Substance Truck brakes used to control speed on a downhill run do work, converting gravitational potential energy into increased internal energy (higher temperature) of the brake material (). This conversion prevents the gravitational potential energy from being converted into kinetic energy of the truck. Since the mass of the truck is much greater than that of the brake material absorbing the energy, the temperature increase may occur too fast for sufficient heat to transfer from the brakes to the environment; in other words, the brakes may overheat. The smoking brakes on a braking truck are visible evidence of the mechanical equivalent of heat. Calculate the temperature increase of 10 kg of brake material with an average specific heat of 800J/kg·°C if the material retains 10% of the energy from a 10,000-kg truck descending 75.0 m (in vertical displacement) at a constant speed. Strategy We calculate the gravitational potential energy (Mgh) that the entire truck loses in its descent, equate it to the increase in the brakes’ internal energy, and then find the temperature increase produced in the brake material alone. Solution First we calculate the change in gravitational potential energy as the truck goes downhill: Mgh=(10,000kg)(9.80m/s2)(75.0m)=7.35×106J. Because the kinetic energy of the truck does not change, conservation of energy tells us the lost potential energy is dissipated, and we assume that 10% of it is transferred to internal energy of the brakes, so take Q=Mgh/10. Then we calculate the temperature change from the heat transferred, using ΔT=Qmc, where m is the mass of the brake material. Insert the given values to find ΔT=7.35×105J(10kg)(800J/kg°C)=92°C. Significance If the truck had been traveling for some time, then just before the descent, the brake temperature would probably be higher than the ambient temperature. The temperature increase in the descent would likely raise the temperature of the brake material very high, so this technique is not practical. Instead, the truck would use the technique of engine braking. A different idea underlies the recent technology of hybrid and electric cars, where mechanical energy (kinetic and gravitational potential energy) is converted by the brakes into electrical energy in the battery, a process called regenerative braking.",
+      "excerpt_sha256": "eb31ba65dacd26e1fa9f24b8d8acdd89fc60ddbff1b4d031e35015b32b5016ec"
+    },
+    "m58319#fs-id1167131159147": {
+      "url": "https://raw.githubusercontent.com/openstax/osbooks-university-physics-bundle/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/modules/m58319/index.cnxml",
+      "anchor": "fs-id1167131159147",
+      "sha256": "18685bddb3f94872875a5d0ae68b65f696ea8ded26a3053d5dc70ab40f6bb5cb",
+      "excerpt": "The Benefits of Impulse A car traveling at 27 m/s collides with a building. The collision with the building causes the car to come to a stop in approximately 1 second. The driver, who weighs 860 N, is protected by a combination of a variable-tension seatbelt and an airbag (). (In effect, the driver collides with the seatbelt and airbag and not with the building.) The airbag and seatbelt slow his velocity, such that he comes to a stop in approximately 2.5 s. What average force does the driver experience during the collision? Without the seatbelt and airbag, his collision time (with the steering wheel) would have been approximately 0.20 s. What force would he experience in this case? The motion of a car and its driver at the instant before and the instant after colliding with the wall. The restrained driver experiences a large backward force from the seatbelt and airbag, which causes his velocity to decrease to zero. (The forward force from the seatbelt is much smaller than the backward force, so we neglect it in the solution.) Strategy We are given the driver’s weight, his initial and final velocities, and the time of collision; we are asked to calculate a force. Impulse seems the right way to tackle this; we can combine and . Solution Define the +x-direction to be the direction the car is initially moving. We know J→=F→Δt and J→=mΔv→. Since J is equal to both those things, they must be equal to each other: F→Δt=mΔv→. We need to convert this weight to the equivalent mass, expressed in SI units: 860N9.8m/s2=87.8kg. Remembering that Δv→=v→f−v→i, and noting that the final velocity is zero, we solve for the force: F→=m0−vii^Δt=(87.8kg)(−(27m/s)i^2.5s)=−(948N)i^. The negative sign implies that the force slows him down. For perspective, this is about 1.1 times his own weight. Same calculation, just the different time interval: F→=(87.8kg)(−(27m/s)i^0.20s)=−(11,853N)i^ which is about 14 times his own weight. Big difference! Significance You see that the value of an airbag is how greatly it reduces the force on the vehicle occupants. For this reason, they have been required on all passenger vehicles in the United States since 1991, and have been commonplace throughout Europe and Asia since the mid-1990s. The change of momentum in a crash is the same, with or without an airbag; the force, however, is vastly different.",
+      "excerpt_sha256": "2bf5c133ba18edb959eff39a0ec8dab39256886acdcf3fbcc161b2cf8ec2d733"
+    }
+  },
+  "teaching_origin": "human textbook; supervised transcription of original calculations",
+  "source_license": "CC BY-NC-SA 4.0",
+  "generated_training_examples": 0
+}

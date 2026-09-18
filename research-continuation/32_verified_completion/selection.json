@@ -1,0 +1,22 @@
+{
+  "seed": 3212,
+  "checkpoint": "runs/VC-study-001/3212/step-0800.pt",
+  "sha256": "a53bf500727e6339a221d1f7179b38e4aa6492720bbb08711ecdea7c1707bb60",
+  "development": {
+    "cases": 512,
+    "reward": 0.5079635375187639,
+    "mse": 0.03634182430030381,
+    "coverage": 0.94921875,
+    "mean_cost": 0.17274234069872732,
+    "stop_rate": 0.181640625
+  },
+  "predecessor_tensors_retained": 186,
+  "contracts": {
+    "credit.py": "fd60a9a304ff51c19ee3b44f08b4175a6453e8cfccdb3a69fb1dfbb65ddd05fc",
+    "model.py": "b87a2841709e98785da48a2f44bd8895390229c662d6723252a63a690036111c",
+    "runtime.py": "4db75103c9bfd1209d7d4678663e531199494c7ccebe800ecb1b945504870f42",
+    "task.py": "738e359c7e818acde89bd138aeb4201f20ce531ba87fbe939cb98f625a9f40f7",
+    "protocol": "52d52b376d61d83addc59b3a5c5eb0a9bba62ae35da3a96ef1f6846b1b3b285a"
+  },
+  "criterion": "development independent mean reward"
+}

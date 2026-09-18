@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "tests/test_verified_completion.py",
+    "tests/test_workbench.py",
+    "tests/test_workbench_retention.py",
+    "tests/test_world_calibration.py",
+    "tests/test_world_graph.py"
+  ],
+  "reserved_seconds": 200.0,
+  "charged_seconds": 174.7558710000012,
+  "memory_limit_bytes": 2147483648,
+  "peak_job_committed_bytes": 511229952,
+  "peak_process_committed_bytes": 510373888,
+  "observed_process_ids": [
+    460,
+    1972,
+    16864
+  ],
+  "worker_threads": 1,
+  "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+  "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+  "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+  "child_pid": 16864,
+  "returncode": 0,
+  "log_sha256": "7e41de444cddd259af485ec021f9749c2db2b2bf1bfafacc64e13a944bbef2ab"
+}

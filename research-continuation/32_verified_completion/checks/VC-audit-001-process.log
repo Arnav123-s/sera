@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "actual_shared_owner": true,
+  "protected_tensors_exact": 186,
+  "language_probes_exact": {
+    "en-US": 32,
+    "es-ES": 32,
+    "fr-FR": 32,
+    "de-DE": 32
+  },
+  "taught_physical_bindings_exact": 26,
+  "retained_math_reader_empirical": true,
+  "novel_definition_gate": {
+    "threshold": 1.1,
+    "development_admitted": 0,
+    "autonomous": false
+  },
+  "parent_store_sha256": "f68779d2bb63487a8796f34ff0403ab1f93102dd9563ade7a2ab37a5b9cfef2d",
+  "open_momentum_task_preserved": true,
+  "imagined_factual_observations": 0,
+  "training_replay": [
+    {
+      "seed": 3211,
+      "steps_replayed": 400,
+      "exact_weights_optimizer_rng_baseline_trace": true
+    },
+    {
+      "seed": 3212,
+      "steps_replayed": 400,
+      "exact_weights_optimizer_rng_baseline_trace": true
+    }
+  ],
+  "independent_final_replay": {
+    "independent_precision_form_and_logscore": 4608,
+    "numpy_policy_maximum_error": 3.552713678800501e-15,
+    "actions_and_published_summaries_match": true
+  },
+  "online_rewards": [
+    0.7950664955145613,
+    0.3934325264077832,
+    0.867034961069225
+  ],
+  "online_policy_steps": 3,
+  "exact_interrupted_online_resume": true,
+  "saved_owner": "2375e1fd5dc028e3d052e50043f4906fa6aa0d4669e9a821e17d4912daa7d4d1",
+  "history_revisions_verified": 5,
+  "selection_sha256": "94877d67a90f82fce0a64fe93b135917c362ef49d776ba3e88bfd14dda120e29"
+}

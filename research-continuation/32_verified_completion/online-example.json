@@ -1,0 +1,684 @@
+{
+  "receipts": [
+    {
+      "after": [
+        1.2727604740916931,
+        0.023757555420480622
+      ],
+      "before": [
+        1.1870245130776291,
+        0.11206293338625027
+      ],
+      "cost": 0.017017712673130733,
+      "decision": {
+        "action": 1,
+        "features": [
+          [
+            0.10206293338625026,
+            0.14623145236743934,
+            -0.047231682359955215,
+            0.010741263287879218,
+            0.20011338907254198,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.09443352053977025,
+            0.09788628694391469,
+            0.014073179645360262,
+            0.17017712673130733,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.0688112489336657,
+            -0.0038221605317422594,
+            0.01821505890452422,
+            0.2670373212039607,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.052753227017328826,
+            -0.004787281825998836,
+            0.12111245179412244,
+            0.06148462592053379,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.03266553380214573,
+            0.002306369153316286,
+            0.024151814492219884,
+            0.050583858732460504,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.08019907215651798,
+            0.02033807171551503,
+            0.00943095443575795,
+            0.08997229232848412,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.028515203161978173,
+            0.034167305851777574,
+            0.06324574541114553,
+            0.14029147721335553,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.0,
+            0.0,
+            9.0,
+            0.21643470039474091,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.10206293338625026,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "goal": "14279a189962af97627a624ff7987b3308f1c8bc7d3f3bffd7386d0064c78864",
+        "identity": "a216999d5874e850a13e7048e155c93d7201c596894da2c72e912a516924d3ad",
+        "policy": "1d8ae7ae13d7578b64fac1ced0dd32ce2596826cf53aa67c7c84e9dd409072ca",
+        "predictor_before": "7c53ad260f4e0bdd03b98561e81c81a78a42da31c51382d3a7154ddae4594451",
+        "probabilities": [
+          1.8493167494362526e-07,
+          0.9987565726266927,
+          2.9297498810231632e-05,
+          4.6168721034573643e-05,
+          0.00017572623596644204,
+          0.0003642712359506305,
+          2.7591908295439933e-05,
+          3.545742704058664e-06,
+          0.0005966410988710331
+        ],
+        "sampling": "on-policy categorical",
+        "sequence": 0
+      },
+      "observation": {
+        "action": 1,
+        "decision": "a216999d5874e850a13e7048e155c93d7201c596894da2c72e912a516924d3ad",
+        "event_id": "de2e4cba6714bb1207d183e2e8abacfa0d89920b9a1815c1140cc63dea83257b",
+        "identity": "aa236b1903c9ef40b52eb8dc0fa66d11319687fb1250ed4ac63d706a92a62be7",
+        "origin": "MODEL_CONDITIONAL_PRACTICE",
+        "purpose": "acquisition",
+        "source": "4aca37f17aab9bfdfefa198e58a90c7bede008782bdded09129c199d210d94b7",
+        "value": 1.3959867144283817
+      },
+      "predictor_after": "ed409b26a804e3a2a286e010e091fb4abcefce55d3a9da5c4c94af4a2934eb97",
+      "stage": "CREDITED",
+      "receipt": {
+        "decision": "a216999d5874e850a13e7048e155c93d7201c596894da2c72e912a516924d3ad",
+        "goal": "14279a189962af97627a624ff7987b3308f1c8bc7d3f3bffd7386d0064c78864",
+        "predictor_before": "7c53ad260f4e0bdd03b98561e81c81a78a42da31c51382d3a7154ddae4594451",
+        "predictor_after": "ed409b26a804e3a2a286e010e091fb4abcefce55d3a9da5c4c94af4a2934eb97",
+        "before": [
+          1.1870245130776291,
+          0.11206293338625027
+        ],
+        "after": [
+          1.2727604740916931,
+          0.023757555420480622
+        ],
+        "audit": {
+          "source": "4aca37f17aab9bfdfefa198e58a90c7bede008782bdded09129c199d210d94b7",
+          "purpose": "independent_audit",
+          "origin": "MODEL_CONDITIONAL_PRACTICE",
+          "event_id": "dd26ebbe6b161b61211e44d06b4bbc25a9d228d1028d24fc93d32359ff608dca",
+          "decision": "a216999d5874e850a13e7048e155c93d7201c596894da2c72e912a516924d3ad",
+          "action": 1,
+          "value": 1.3133913375397732,
+          "identity": "8b1ed91d1bcba78a518389cc0260faf8393fb350c8e1346f6db489dd9251abb4"
+        },
+        "acquisition_ids": [
+          "de2e4cba6714bb1207d183e2e8abacfa0d89920b9a1815c1140cc63dea83257b"
+        ],
+        "cost": 0.017017712673130733,
+        "reward": 0.7950664955145613,
+        "identity": "db2333b21fe01281214ee533461805c96965a1cf14172e55a19a20c6caea13e7"
+      },
+      "credit": {
+        "policy_before": "1d8ae7ae13d7578b64fac1ced0dd32ce2596826cf53aa67c7c84e9dd409072ca",
+        "policy_after": "eb18426cd5a0ca3cc464f7b032d9936844d75668c6508c550149b4bc591b9fa1",
+        "step": 1,
+        "reward": 0.7950664955145613,
+        "factual_updates": 0
+      }
+    },
+    {
+      "decision": {
+        "goal": "ec4ccbfc0a44cf43464203baeb4f01f77635f43f8cd0362039503d2175604cfd",
+        "predictor_before": "18a85c97d4158f991e8550f89d124258e440850526ddd8efa55ca29252b5d806",
+        "policy": "eb18426cd5a0ca3cc464f7b032d9936844d75668c6508c550149b4bc591b9fa1",
+        "features": [
+          [
+            0.16929694449606292,
+            0.19789508022980834,
+            0.1829699187649096,
+            0.1457050441445986,
+            0.28508031197122174,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.02153492703049297,
+            0.019072660594145495,
+            0.05699579565796656,
+            0.16089531577618063,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.0,
+            0.0,
+            9.0,
+            0.283586362215793,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.09170266539928894,
+            0.04793456670068649,
+            0.011802877980639661,
+            0.2602585376714329,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.21368541885091488,
+            0.1543561296573653,
+            0.023528852442901187,
+            0.28912352681633885,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.060379000047779394,
+            0.0561196199763343,
+            0.08701602595049893,
+            0.10699268872984359,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.19094694993584252,
+            -0.10088152115073484,
+            0.10034946726114798,
+            0.04464776011372913,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.1166083522841832,
+            0.10769541158319693,
+            0.022962822013126178,
+            0.28554694562472827,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.16929694449606292,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.9404475741277143,
+          8.621005787414259e-08,
+          5.40687534809761e-08,
+          1.5629550141594453e-05,
+          0.053864723350991246,
+          9.273835616281597e-05,
+          1.8296477782122793e-10,
+          0.005573780776815812,
+          5.413376398101671e-06
+        ],
+        "action": 0,
+        "sequence": 1,
+        "sampling": "on-policy categorical",
+        "identity": "57984f09ff52c1536a193b2f6061fc592ae83558d640a6807973d3c672f2e838"
+      },
+      "before": [
+        -0.4004406400799308,
+        0.17929694449606293
+      ],
+      "stage": "CREDITED",
+      "observation": {
+        "source": "8e6474bb191ecf2300bd044e3bb245d063424864e3acd7546cbe67c6debe38e6",
+        "purpose": "acquisition",
+        "origin": "MODEL_CONDITIONAL_PRACTICE",
+        "event_id": "03b798c4b76d88b6ad6944915a2a5eb9b55666058cb499a784c9293829c62c8b",
+        "decision": "57984f09ff52c1536a193b2f6061fc592ae83558d640a6807973d3c672f2e838",
+        "action": 0,
+        "value": -0.22723854722550269,
+        "identity": "c512b4fb5df55d87f14499f602ff0f6a1e187e8477e3a1db08051520114c118f"
+      },
+      "after": [
+        -0.30311332268895985,
+        0.08186394375489313
+      ],
+      "predictor_after": "e58cd60417dbee532763052a422574372576cb1c7849752783da6fa16c9ed277",
+      "cost": 0.028508031197122176,
+      "receipt": {
+        "decision": "57984f09ff52c1536a193b2f6061fc592ae83558d640a6807973d3c672f2e838",
+        "goal": "ec4ccbfc0a44cf43464203baeb4f01f77635f43f8cd0362039503d2175604cfd",
+        "predictor_before": "18a85c97d4158f991e8550f89d124258e440850526ddd8efa55ca29252b5d806",
+        "predictor_after": "e58cd60417dbee532763052a422574372576cb1c7849752783da6fa16c9ed277",
+        "before": [
+          -0.4004406400799308,
+          0.17929694449606293
+        ],
+        "after": [
+          -0.30311332268895985,
+          0.08186394375489313
+        ],
+        "audit": {
+          "source": "8e6474bb191ecf2300bd044e3bb245d063424864e3acd7546cbe67c6debe38e6",
+          "purpose": "independent_audit",
+          "origin": "MODEL_CONDITIONAL_PRACTICE",
+          "event_id": "34620c5ad92e8ef0f066acb79ae42ade7cbd15ac06536555b0205a26efecd7a5",
+          "decision": "57984f09ff52c1536a193b2f6061fc592ae83558d640a6807973d3c672f2e838",
+          "action": 0,
+          "value": -0.2963244085437691,
+          "identity": "1be1bf8dab305d15c6c59f87dac0b32e477663a327f68b3a502ce76dc097e608"
+        },
+        "acquisition_ids": [
+          "03b798c4b76d88b6ad6944915a2a5eb9b55666058cb499a784c9293829c62c8b"
+        ],
+        "cost": 0.028508031197122176,
+        "reward": 0.3934325264077832,
+        "identity": "411458668f66a8c568d9c09a15aa08f07585c6f2fc06746df9f31334b703f012"
+      },
+      "credit": {
+        "policy_before": "eb18426cd5a0ca3cc464f7b032d9936844d75668c6508c550149b4bc591b9fa1",
+        "policy_after": "b61744c915291e4c10810d0f1ac929e3689a72f59440c8b324ffc46b083cea69",
+        "step": 2,
+        "reward": 0.3934325264077832,
+        "factual_updates": 0
+      }
+    },
+    {
+      "decision": {
+        "goal": "0d5b52e9cc7e4ea213944e9ff804f85f049c75a2386ae574513647f9924cf75c",
+        "predictor_before": "630857e57c907f0cbddde93a748f976b0e074fd712b3139ae258d88f54533cbe",
+        "policy": "b61744c915291e4c10810d0f1ac929e3689a72f59440c8b324ffc46b083cea69",
+        "features": [
+          [
+            0.31111322984345774,
+            0.13153972502386832,
+            0.13884949246161427,
+            0.0038586172185275974,
+            0.08410672239798252,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.0,
+            0.0,
+            9.0,
+            0.07673025348519563,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.3685859452247128,
+            0.3383873006264348,
+            0.01286700485609594,
+            0.2348505076717725,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.021629282146109305,
+            0.02400175487094722,
+            0.06043404584281921,
+            0.2775168830834394,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.12554344228466754,
+            -0.14021015676228932,
+            0.04067330861126931,
+            0.2398507367504221,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.025763370496850034,
+            0.012830867837719133,
+            0.013879920166738526,
+            0.16675031860540765,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.03161335305151956,
+            0.032329482643001006,
+            0.004897179849919069,
+            0.23014968034897382,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.10063421687094384,
+            -0.09834520156271687,
+            0.011992427076922376,
+            0.25105094859095006,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.31111322984345774,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          1.7094753955884696e-05,
+          3.7334109486111073e-10,
+          0.9999828902361579,
+          2.2826589061236566e-10,
+          1.4035986035405202e-12,
+          1.3433580539073512e-09,
+          4.913028718063529e-09,
+          4.131685596475085e-12,
+          8.146356974087008e-09
+        ],
+        "action": 2,
+        "sequence": 2,
+        "sampling": "on-policy categorical",
+        "identity": "4a44cdbc862c7990eabdf8a2ea4ee82de794033203d7e9a5f97fa66a15fb96f4"
+      },
+      "before": [
+        0.6296407538175264,
+        0.3211132298434578
+      ],
+      "stage": "CREDITED",
+      "observation": {
+        "source": "bcfd3c1b2b8779fd6e958f87e621d58ce2d983e27a88c1bc09e7a1bb615cc50e",
+        "purpose": "acquisition",
+        "origin": "MODEL_CONDITIONAL_PRACTICE",
+        "event_id": "887d9af955246dedbdf83c5eafe856dbcf723427aac77c29b5504d2bdd386e34",
+        "decision": "4a44cdbc862c7990eabdf8a2ea4ee82de794033203d7e9a5f97fa66a15fb96f4",
+        "action": 2,
+        "value": 0.8609819255758309,
+        "identity": "f4939dbd17e70c29557784b409db700a3d1ad61f3237b4b70bce8ea08e432a12"
+      },
+      "after": [
+        0.8011337780141317,
+        0.020929510721642834
+      ],
+      "predictor_after": "60005622bc98949345f00fb0de807b2034df2fb857493494528c7ebf56f4dfbe",
+      "cost": 0.023485050767177253,
+      "receipt": {
+        "decision": "4a44cdbc862c7990eabdf8a2ea4ee82de794033203d7e9a5f97fa66a15fb96f4",
+        "goal": "0d5b52e9cc7e4ea213944e9ff804f85f049c75a2386ae574513647f9924cf75c",
+        "predictor_before": "630857e57c907f0cbddde93a748f976b0e074fd712b3139ae258d88f54533cbe",
+        "predictor_after": "60005622bc98949345f00fb0de807b2034df2fb857493494528c7ebf56f4dfbe",
+        "before": [
+          0.6296407538175264,
+          0.3211132298434578
+        ],
+        "after": [
+          0.8011337780141317,
+          0.020929510721642834
+        ],
+        "audit": {
+          "source": "bcfd3c1b2b8779fd6e958f87e621d58ce2d983e27a88c1bc09e7a1bb615cc50e",
+          "purpose": "independent_audit",
+          "origin": "MODEL_CONDITIONAL_PRACTICE",
+          "event_id": "b010aecae73d526abaf8a356077a6308d6768bde409624bcffb8d7df7b2d80d9",
+          "decision": "4a44cdbc862c7990eabdf8a2ea4ee82de794033203d7e9a5f97fa66a15fb96f4",
+          "action": 2,
+          "value": 0.9662367462006576,
+          "identity": "bc1ccc19ad23b2d88bd634cd09648e7bcaadb08f38127beb0391c15a32554ba2"
+        },
+        "acquisition_ids": [
+          "887d9af955246dedbdf83c5eafe856dbcf723427aac77c29b5504d2bdd386e34"
+        ],
+        "cost": 0.023485050767177253,
+        "reward": 0.867034961069225,
+        "identity": "3761f4944715f482e4339fde58ee2124106a1c628f1ca8d4bfad40679330148c"
+      },
+      "credit": {
+        "policy_before": "b61744c915291e4c10810d0f1ac929e3689a72f59440c8b324ffc46b083cea69",
+        "policy_after": "cd1ac436e8090ffd8e3e6ccd38c17b2132bdc6d542b7d43282ff055bd9e95db4",
+        "step": 3,
+        "reward": 0.867034961069225,
+        "factual_updates": 0
+      }
+    }
+  ],
+  "candidate": {
+    "status": "COMPLETION_CANDIDATE",
+    "goal": "Improve a conditional acceleration prediction by choosing independent evidence",
+    "goal_hash": "0d5b52e9cc7e4ea213944e9ff804f85f049c75a2386ae574513647f9924cf75c",
+    "variable": "acceleration",
+    "unit": "m/s^2",
+    "mean": 0.8011337780141317,
+    "variance": 0.020929510721642834,
+    "joint_weights": [
+      1.1303249689420862,
+      0.3223737412982344,
+      0.11766179882001011
+    ],
+    "joint_covariance": [
+      [
+        0.061991441517646996,
+        0.05074168113561828,
+        -0.0014138770096285274
+      ],
+      [
+        0.05074168113561828,
+        0.05899947084341706,
+        0.007906900737715617
+      ],
+      [
+        -0.0014138770096285274,
+        0.007906900737715617,
+        0.012790808139668297
+      ]
+    ],
+    "branches": [
+      {
+        "mechanism_weights": [
+          1.196538106370943,
+          0.2750803575593401,
+          0.08553343270366195
+        ],
+        "raw_acceleration": 0.8630724621241158,
+        "acceleration": "13/15",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "13/30",
+            "velocity": "13/15",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "26/15",
+            "velocity": "26/15",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": 0.003594204542550883
+        }
+      },
+      {
+        "mechanism_weights": [
+          1.103670710930426,
+          0.19435319212691413,
+          0.20022207983894733
+        ],
+        "raw_acceleration": 0.9658915720621664,
+        "acceleration": "29/30",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "29/60",
+            "velocity": "29/30",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "29/15",
+            "velocity": "29/15",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": 0.0007750946045003149
+        }
+      },
+      {
+        "mechanism_weights": [
+          1.1033382008160422,
+          0.12849873535811038,
+          0.05440680063026157
+        ],
+        "raw_acceleration": 0.8735639745575716,
+        "acceleration": "13/15",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "13/30",
+            "velocity": "13/15",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "26/15",
+            "velocity": "26/15",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": -0.006897307890904925
+        }
+      },
+      {
+        "mechanism_weights": [
+          1.168340184580602,
+          0.30457188369217436,
+          0.25522024109844443
+        ],
+        "raw_acceleration": 0.9850648865220551,
+        "acceleration": "59/60",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "59/120",
+            "velocity": "59/60",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "59/30",
+            "velocity": "59/30",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": -0.0017315531887218683
+        }
+      }
+    ],
+    "predictor": "60005622bc98949345f00fb0de807b2034df2fb857493494528c7ebf56f4dfbe",
+    "owner": "2375e1fd5dc028e3d052e50043f4906fa6aa0d4669e9a821e17d4912daa7d4d1",
+    "evidence_kind": "MODEL_CONDITIONAL_PRACTICE",
+    "source": "bcfd3c1b2b8779fd6e958f87e621d58ce2d983e27a88c1bc09e7a1bb615cc50e",
+    "rollout_assumptions": [
+      "one-dimensional inertial frame",
+      "constant sampled acceleration over interval",
+      "initial rest at origin"
+    ],
+    "physical_occurrence_verified": false,
+    "autonomous_definition_admission": false,
+    "observation_updates_from_imagination": 0
+  },
+  "recommendation": {
+    "action": 2,
+    "stop": false,
+    "controller": "goal_information",
+    "policy_credit": false,
+    "evidence_kind": "MODEL_CONDITIONAL_PRACTICE"
+  }
+}

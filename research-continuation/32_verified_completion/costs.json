@@ -1,0 +1,119 @@
+{
+  "schema": "sera.verified-completion.costs.1",
+  "snapshot_utc": "2026-09-18T04:50:58.964567+00:00",
+  "ledger_sha256": "0515852a9e57f3ac536777b115bfbc6438c610bed01ab48ea2dd4e732731b529",
+  "charged_seconds": 1107.1424593999982,
+  "remaining_seconds_snapshot": 2021.322130399858,
+  "new_grant_seconds": 0,
+  "cpu_threads": 1,
+  "process_tree_memory_cap": 2147483648,
+  "maximum_observed_committed_bytes": 1319071744,
+  "jobs": [
+    {
+      "job": "runs/ST-intake-001",
+      "status": "PASS",
+      "charged_seconds": 14.976387600007001,
+      "peak_committed_bytes": 18079744,
+      "state_sha256": "52f62321324409a716f797459d1d8c5d1c4bc9d445d5c801d18396583cb3ed85"
+    },
+    {
+      "job": "runs/VC-packet-job-001",
+      "status": "FAILED",
+      "charged_seconds": 29.722359400009736,
+      "peak_committed_bytes": 399069184,
+      "state_sha256": "a59ae9722c4a3feef9aa30173894c1fe5d5d48958fa8e0bc3a767cff20153a29"
+    },
+    {
+      "job": "runs/VC-prior-001",
+      "status": "PASS",
+      "charged_seconds": 7.324031399999512,
+      "peak_committed_bytes": 229310464,
+      "state_sha256": "099f22229472012e2837331cfe79915a119afb93a7e131502095d42e3c75f031"
+    },
+    {
+      "job": "runs/VC-tests-001",
+      "status": "FAILED",
+      "charged_seconds": 70.71289409999736,
+      "peak_committed_bytes": 457310208,
+      "state_sha256": "25ca2a6e9937ec4e44c3eae0524f172f1b10c58daec1aa067d75e2d34732ad93"
+    },
+    {
+      "job": "runs/VC-tests-002",
+      "status": "PASS",
+      "charged_seconds": 101.31790900000487,
+      "peak_committed_bytes": 498348032,
+      "state_sha256": "478505cfbbbe06f1eda1abe7784ecb17a788d5d922d54348911df1f99aa98f8f"
+    },
+    {
+      "job": "runs/VC-packet-portable-001",
+      "status": "PASS",
+      "charged_seconds": 2.3780262999935076,
+      "peak_committed_bytes": 254885888,
+      "state_sha256": "02351ca8fcbaee55fe3e9dae571840440f0897b620dbb493979630e5ad5a9ebc"
+    },
+    {
+      "job": "runs/VC-tests-003",
+      "status": "PASS",
+      "charged_seconds": 99.67146519999369,
+      "peak_committed_bytes": 497823744,
+      "state_sha256": "61627336ff1a6f22dcef6085e5358f6430815f00fd1b61310ff482dfa37ade61"
+    },
+    {
+      "job": "runs/VC-train-001",
+      "status": "PASS",
+      "charged_seconds": 28.484643000003416,
+      "peak_committed_bytes": 457392128,
+      "state_sha256": "728672fa2c79be8cf1ffc9ebeb9ef9a3448fc50f0322a5156ffc64e6d9f96ae6"
+    },
+    {
+      "job": "runs/VC-final-001",
+      "status": "PASS",
+      "charged_seconds": 15.029523200006224,
+      "peak_committed_bytes": 368017408,
+      "state_sha256": "f6dadd3f5f30ceffcff94706737ce87de6903ebde660e918ed26789451b1c2b9"
+    },
+    {
+      "job": "runs/VC-audit-001",
+      "status": "PASS",
+      "charged_seconds": 76.52155430000857,
+      "peak_committed_bytes": 498892800,
+      "state_sha256": "f0bd4f32fd92a4ee2533c0e2bb2e3471586a803387e0fb98564e0e45d8290ca5"
+    },
+    {
+      "job": "runs/VC-live-001",
+      "status": "PASS",
+      "charged_seconds": 20.34671700000763,
+      "peak_committed_bytes": 369102848,
+      "state_sha256": "327f7f19aeb1b73dfe492bce1946b269868ded5ab2011d14743aef476f29f33d"
+    },
+    {
+      "job": "runs/VC-regression-001",
+      "status": "TIMEOUT",
+      "charged_seconds": 420.02036989998305,
+      "peak_committed_bytes": 1319071744,
+      "state_sha256": "ff912140b1a3ddf124f616ff894befdfac4a4b9481cba6e74a52e5c8a38803d8"
+    },
+    {
+      "job": "runs/VC-collect-001",
+      "status": "PASS",
+      "charged_seconds": 9.151103699987289,
+      "peak_committed_bytes": 243744768,
+      "state_sha256": "768eb5adac745b6d137e9ac0bbe3d26dc6e9fdfd92b927fc369132dc9b43435d"
+    },
+    {
+      "job": "runs/VC-regression-tail-001",
+      "status": "PASS",
+      "charged_seconds": 174.7558710000012,
+      "peak_committed_bytes": 511229952,
+      "state_sha256": "5c3852dba17b6f4539e15d138371ccfb0ed81e1d05b9df4982904989c19c62a1"
+    },
+    {
+      "job": "runs/VC-predecessors-001",
+      "status": "PASS",
+      "charged_seconds": 36.72960429999512,
+      "peak_committed_bytes": 258801664,
+      "state_sha256": "f1868b78292eb31a5b22fdf75dd4cc4d7e26db15c8cfc31bf7a9aa61afae6ed5"
+    }
+  ],
+  "scope": "All supervised Stage 31/32 local source intake, numerical teaching, tests, replay and verification through this seal. Post-seal checks are accounted in publication.json; remote CI wall time is separate."
+}

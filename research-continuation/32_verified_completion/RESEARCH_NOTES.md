@@ -1,0 +1,7 @@
+# Research and discussion context
+
+I read the recent v14 exchange and earlier neural-region, imagination, compact-generator and continual-study discussions in the user's linked **Evaluate Project Architecture** conversation (`6aa88670-da48-83ea-9288-30aa2edd599c`). The recurring objective is learned weight-based connections, coherent alternative worlds, deep investigation, retained unfinished work, and reinforcement of independently useful procedures. Those discussions describe intended mechanisms and reference results; they do not replace local evidence.
+
+[Sutton's original Dyna paper](https://doi.org/10.1145/122344.122377) motivates keeping model-based practice connected to planning and learning. Here, practice under a supplied mechanism is labeled separately from observations about the physical world. [Williams's REINFORCE paper](https://doi.org/10.1007/BF00992696) motivates sampled policy credit; the decision's policy version and baseline are retained. [Gneiting and Raftery](https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf) provide the proper-scoring rationale for rewarding predictive quality rather than confidence.
+
+The v14 experiments motivate retaining strong analytic information controls. This implementation adds an explicit zero-cost STOP and an actual GroundR1 connection. It does not select coherent routing on the basis of the packet's near ties. Model misspecification is evaluated prospectively; a narrow posterior alone does not establish adequacy.

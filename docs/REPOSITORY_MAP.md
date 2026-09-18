@@ -28,6 +28,7 @@ python -m venv .venv
 .venv/Scripts/python.exe scripts/restore_test_artifacts.py
 .venv/Scripts/python.exe scripts/reading_artifacts.py --restore
 .venv/Scripts/python.exe scripts/books_artifacts.py --restore
+.venv/Scripts/python.exe scripts/completion_artifacts.py --restore
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```
@@ -43,3 +44,5 @@ In the managed research workspace, run numerical work through the existing bound
 3. Inspect the independent audit and retained failures.
 4. Verify archived bytes through the release manifest.
 5. Read the latest continuation and live ledger before new work.
+
+The current [completion release](../research-continuation/32_verified_completion/README.md) separates the selected runtime checkpoint from its full numerical research archive. `scripts/completion_artifacts.py --restore --research` restores both without replacing divergent files or restarting experiments.

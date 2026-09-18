@@ -6,6 +6,8 @@ Completed work, checkpoints and unsuccessful candidates remain preserved. Curren
 
 | Stages | Topic | Starting point |
 |---|---|---|
+| 32 | Joint completion, learned investigation and checked credit | [Use it](../research-continuation/32_verified_completion/README.md) · [Report](../research-continuation/32_verified_completion/report.md) · [Audit](../research-continuation/32_verified_completion/integration-audit.json) |
+| 31 | Human STEM source preparation, preserved without model training | [Status](../research-continuation/31_stem_acquisition/STATUS.md) · [Source catalog](../research-continuation/31_stem_acquisition/teaching.json) |
 | 30 | Human books, named definitions and guarded conditional execution | [Use it](../research-continuation/30_grounded_books/README.md) · [Report](../research-continuation/30_grounded_books/report.md) · [Audit](../research-continuation/30_grounded_books/integration-audit.json) |
 | 29 | Human-text association, source reading and arXiv investigation | [Report](../research-continuation/29_human_reading/report.md) · [Audit](../research-continuation/29_human_reading/integration-audit.json) |
 | 28 | History-sensitive concept refinement | [Report](../research-continuation/28_concept_refinement/report.md) · [Audit](../research-continuation/28_concept_refinement/architecture-audit.md) · [Publication](../research-continuation/28_concept_refinement/publication.json) |

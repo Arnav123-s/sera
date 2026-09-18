@@ -1,0 +1,171 @@
+F.FF.F.....                                                              [100%]
+================================== FAILURES ===================================
+___________ test_actual_owner_branch_consistency_and_fact_isolation ___________
+
+session = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210E3A865A0>
+
+    def test_actual_owner_branch_consistency_and_fact_isolation(session):
+        source = PracticeSource(32410)
+        before = copy.deepcopy(session.grounded.base.subjects)
+>       result = session.begin("unit-gap", "Learn which check helps this motion prediction", source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_verified_completion.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+experiments\verified_completion\runtime.py:117: in begin
+    return self.candidate(identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210E3A865A0>
+identifier = 'unit-gap', branches = 4
+
+    def candidate(self, identifier, *, branches=4):
+        if type(branches) is not int or not 1 <= branches <= 16:
+            raise ValueError("One to sixteen imagined branches required")
+        goal = self.goals[identifier]
+        cloud = self.owner.completion_clouds[identifier]
+        public = goal["contract"]["public"]
+        mean, variance = cloud.predict(public["target"], AUDIT_VARIANCE)
+        rng = np.random.default_rng(int(goal["goal_hash"][:12], 16))
+        weights = rng.multivariate_normal(cloud.mean.detach().numpy(), cloud.covariance.numpy(), branches)
+        imagined = []
+        for values in weights:
+            acceleration = Fraction(float(np.dot(values, public["target"]))).limit_denominator(10000)
+            # One sampled mechanism supplies all consequences in this branch.
+            results = []
+            for time in (1, 2):
+                answer = self.grounded.base.exact_motion([str(acceleration)], str(time), "0", "0")
+                expected = {"velocity": acceleration*time, "position": acceleration*time*time/2}
+                if answer["status"] != "CERTIFIED_ALGEBRA" or any(Fraction(answer["result"][k]) != v for k, v in expected.items()):
+>                   raise ValueError("Retained motion operator failed independent branch checking")
+E                   ValueError: Retained motion operator failed independent branch checking
+
+experiments\verified_completion\runtime.py:137: ValueError
+______________ test_goal_substitution_and_repeated_source_credit ______________
+
+session = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210E3A865A0>
+
+    def test_goal_substitution_and_repeated_source_credit(session):
+        source = PracticeSource(32410)
+        with pytest.raises(ValueError, match="original goal"):
+            session.begin("unit-gap", "A substituted question", source)
+>       session.begin("renamed-source", "An alias of an already checked world", source)
+
+tests\test_verified_completion.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+experiments\verified_completion\runtime.py:117: in begin
+    return self.candidate(identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210E3A865A0>
+identifier = 'renamed-source', branches = 4
+
+    def candidate(self, identifier, *, branches=4):
+        if type(branches) is not int or not 1 <= branches <= 16:
+            raise ValueError("One to sixteen imagined branches required")
+        goal = self.goals[identifier]
+        cloud = self.owner.completion_clouds[identifier]
+        public = goal["contract"]["public"]
+        mean, variance = cloud.predict(public["target"], AUDIT_VARIANCE)
+        rng = np.random.default_rng(int(goal["goal_hash"][:12], 16))
+        weights = rng.multivariate_normal(cloud.mean.detach().numpy(), cloud.covariance.numpy(), branches)
+        imagined = []
+        for values in weights:
+            acceleration = Fraction(float(np.dot(values, public["target"]))).limit_denominator(10000)
+            # One sampled mechanism supplies all consequences in this branch.
+            results = []
+            for time in (1, 2):
+                answer = self.grounded.base.exact_motion([str(acceleration)], str(time), "0", "0")
+                expected = {"velocity": acceleration*time, "position": acceleration*time*time/2}
+                if answer["status"] != "CERTIFIED_ALGEBRA" or any(Fraction(answer["result"][k]) != v for k, v in expected.items()):
+>                   raise ValueError("Retained motion operator failed independent branch checking")
+E                   ValueError: Retained motion operator failed independent branch checking
+
+experiments\verified_completion\runtime.py:137: ValueError
+____________ test_stale_policy_and_predictor_cannot_receive_credit ____________
+
+session = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210E3A865A0>
+
+    def test_stale_policy_and_predictor_cannot_receive_credit(session):
+        source = PracticeSource(32412)
+>       session.begin("stale-gap", "Check stale predictor rejection", source)
+
+tests\test_verified_completion.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+experiments\verified_completion\runtime.py:117: in begin
+    return self.candidate(identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210E3A865A0>
+identifier = 'stale-gap', branches = 4
+
+    def candidate(self, identifier, *, branches=4):
+        if type(branches) is not int or not 1 <= branches <= 16:
+            raise ValueError("One to sixteen imagined branches required")
+        goal = self.goals[identifier]
+        cloud = self.owner.completion_clouds[identifier]
+        public = goal["contract"]["public"]
+        mean, variance = cloud.predict(public["target"], AUDIT_VARIANCE)
+        rng = np.random.default_rng(int(goal["goal_hash"][:12], 16))
+        weights = rng.multivariate_normal(cloud.mean.detach().numpy(), cloud.covariance.numpy(), branches)
+        imagined = []
+        for values in weights:
+            acceleration = Fraction(float(np.dot(values, public["target"]))).limit_denominator(10000)
+            # One sampled mechanism supplies all consequences in this branch.
+            results = []
+            for time in (1, 2):
+                answer = self.grounded.base.exact_motion([str(acceleration)], str(time), "0", "0")
+                expected = {"velocity": acceleration*time, "position": acceleration*time*time/2}
+                if answer["status"] != "CERTIFIED_ALGEBRA" or any(Fraction(answer["result"][k]) != v for k, v in expected.items()):
+>                   raise ValueError("Retained motion operator failed independent branch checking")
+E                   ValueError: Retained motion operator failed independent branch checking
+
+experiments\verified_completion\runtime.py:137: ValueError
+__________ test_exact_resume_between_decision_observation_and_reward __________
+
+    def test_exact_resume_between_decision_observation_and_reward():
+        original = CompletionSession(load_selected=False)
+        source = PracticeSource(32413)
+>       original.begin("resume-gap", "Resume the same original goal", source)
+
+tests\test_verified_completion.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+experiments\verified_completion\runtime.py:117: in begin
+    return self.candidate(identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <experiments.verified_completion.runtime.CompletionSession object at 0x00000210EB4084D0>
+identifier = 'resume-gap', branches = 4
+
+    def candidate(self, identifier, *, branches=4):
+        if type(branches) is not int or not 1 <= branches <= 16:
+            raise ValueError("One to sixteen imagined branches required")
+        goal = self.goals[identifier]
+        cloud = self.owner.completion_clouds[identifier]
+        public = goal["contract"]["public"]
+        mean, variance = cloud.predict(public["target"], AUDIT_VARIANCE)
+        rng = np.random.default_rng(int(goal["goal_hash"][:12], 16))
+        weights = rng.multivariate_normal(cloud.mean.detach().numpy(), cloud.covariance.numpy(), branches)
+        imagined = []
+        for values in weights:
+            acceleration = Fraction(float(np.dot(values, public["target"]))).limit_denominator(10000)
+            # One sampled mechanism supplies all consequences in this branch.
+            results = []
+            for time in (1, 2):
+                answer = self.grounded.base.exact_motion([str(acceleration)], str(time), "0", "0")
+                expected = {"velocity": acceleration*time, "position": acceleration*time*time/2}
+                if answer["status"] != "CERTIFIED_ALGEBRA" or any(Fraction(answer["result"][k]) != v for k, v in expected.items()):
+>                   raise ValueError("Retained motion operator failed independent branch checking")
+E                   ValueError: Retained motion operator failed independent branch checking
+
+experiments\verified_completion\runtime.py:137: ValueError
+=========================== short test summary info ===========================
+FAILED tests/test_verified_completion.py::test_actual_owner_branch_consistency_and_fact_isolation
+FAILED tests/test_verified_completion.py::test_goal_substitution_and_repeated_source_credit
+FAILED tests/test_verified_completion.py::test_stale_policy_and_predictor_cannot_receive_credit
+FAILED tests/test_verified_completion.py::test_exact_resume_between_decision_observation_and_reward
+4 failed, 7 passed in 68.07s (0:01:08)

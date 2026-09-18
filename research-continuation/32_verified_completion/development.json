@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    {
+      "seed": 3211,
+      "checkpoint": "runs/VC-study-001/3211/step-0800.pt",
+      "sha256": "e3993bca9c44a52ab66f4c7033cb9e9186e1a0371be7050de86497792371ea2e",
+      "development": {
+        "cases": 512,
+        "reward": 0.49459411746611204,
+        "mse": 0.0313291952135487,
+        "coverage": 0.947265625,
+        "mean_cost": 0.21568142420127473,
+        "stop_rate": 0.13671875
+      },
+      "predecessor_tensors_retained": 186
+    },
+    {
+      "seed": 3212,
+      "checkpoint": "runs/VC-study-001/3212/step-0800.pt",
+      "sha256": "a53bf500727e6339a221d1f7179b38e4aa6492720bbb08711ecdea7c1707bb60",
+      "development": {
+        "cases": 512,
+        "reward": 0.5079635375187639,
+        "mse": 0.03634182430030381,
+        "coverage": 0.94921875,
+        "mean_cost": 0.17274234069872732,
+        "stop_rate": 0.181640625
+      },
+      "predecessor_tensors_retained": 186
+    }
+  ],
+  "cases": 512,
+  "conditional_reward_presentations": 102400,
+  "unique_training_worlds": 4096,
+  "human_foundation_updates": 0
+}

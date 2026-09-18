@@ -2,7 +2,15 @@
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Current Stage 30 integration
+## Current Stage 32 completion integration
+
+The continuing owner now supports joint conditional completions, imagined motion, a learned evidence-selection policy and independently checked credit. The frozen study evaluated **768 fresh worlds across six methods**. On matched cases, the learned policy reduced prediction error **80.4% against its initial policy and 74.0% against random selection**. Goal-information selection retained the strongest reward and remains the default recommendation. [Run a task](../research-continuation/32_verified_completion/README.md) · [Complete results](../research-continuation/32_verified_completion/report.md).
+
+Independent replay checked all 4,608 evaluated decisions and resumed both training checkpoints exactly. The integration retained 186 inherited tensors, 128 four-language probes, all 26 taught physical bindings, exact mathematics, reading and empirical forecasts. Original task history, including the open momentum investigation, remains preserved. [Audit](../research-continuation/32_verified_completion/integration-audit.json) · [Checklist](../research-continuation/32_verified_completion/checklist.md).
+
+Stage 31 retains its human STEM source preparation and unexecuted supervised protocol. The newer direction teaches the investigator through checked practice; the source preparation remains clearly labeled for future use.
+
+## Preserved Stage 30 integration
 
 The saved learner connects attributed, taught physical definitions to its existing learned motion operator. **26 physical entries passed source-reuse checks; 300 numerical cases and 900 conditional branches passed independent verification.** Earlier reading, four-language interpretation, exact algebra and empirical forecasts were retained. [Use the example](START_HERE.md#apply-a-taught-definition-to-a-situation) · [Full report](../research-continuation/30_grounded_books/report.md).
 

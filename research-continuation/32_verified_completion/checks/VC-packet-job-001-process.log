@@ -1,0 +1,19 @@
+{"verified_entries": 253, "passed": true}
+Traceback (most recent call last):
+  File "D:\ai\projects\sera\research\intake\v14-update\SERA_v14\code\run_all.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\ai\projects\sera\research\intake\v14-update\SERA_v14\code\run_all.py", line 49, in main
+    if r.returncode!=0:write(state_path,state);raise RuntimeError(f'{name} failed; log retained')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: lifecycle failed; log retained
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\verified_completion\packet.py", line 18, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\verified_completion\packet.py", line 13, in main
+    subprocess.run([sys.executable, "code/run_all.py", "--output", str(ROOT / "runs/VC-packet-check-001"),
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe', 'code/run_all.py', '--output', 'D:\\ai\\projects\\sera\\runs\\VC-packet-check-001', '--budget-seconds', '260']' returned non-zero exit status 1.

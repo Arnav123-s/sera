@@ -4,6 +4,14 @@
 
 These commands use the prepared workspace at `D:/ai/projects/sera`, its environment and retained checkpoints. Numerical tasks use one CPU thread and the existing 2 GiB process-tree memory cap. The wrapper charges the live resource ledger; every output folder must be fresh.
 
+## Practice investigation and learn from checked progress
+
+```powershell
+.venv/Scripts/python.exe scripts/run_completion_bounded.py --seconds 60 --output runs/my-completion-001 --module experiments.verified_completion.runtime -- practice --id my-response-1 --seed 32510
+```
+
+This starts a reproducible conditional task: propose a missing acceleration response, imagine consistent motion, choose evidence, independently check the revised prediction and retain the rewarded investigation weights. Reusing the task identifier resumes its saved stages. [Full interface, status and analytic recommendation](../research-continuation/32_verified_completion/README.md) · [Training and measured results](../research-continuation/32_verified_completion/report.md).
+
 ## Apply a taught definition to a situation
 
 ```powershell

@@ -1,0 +1,257 @@
+"""Persistent conditional completion and independent credit through the actual owner."""
+
+import argparse
+import copy
+import json
+import re
+from fractions import Fraction
+
+import numpy as np
+import torch
+
+from experiments.book_learning.runtime import GroundedSession
+from experiments.task_transfer.runtime import lock
+from sera.session_state import model_identity
+from workbench.storage import Store
+
+from .common import OUT, ROOT, contracts, digest, model_hash, read, sha
+from .credit import Credit
+from .model import CompletionR1, JointCompletion
+from .task import AUDIT_VARIANCE, STOP, PracticeSource, features, phi
+
+
+class CompletionSession:
+    def __init__(self, saved=None, *, parent_saved=None, load_selected=True, seed=3211):
+        self.parent = copy.deepcopy(saved["parent"] if saved else parent_saved)
+        self.grounded = GroundedSession(self.parent)
+        self.parent_identity = copy.deepcopy(self.grounded.identity)
+        learner = self.grounded.base.learner
+        facts, library = learner.legacy.snapshot(), learner.library.record()
+        self.owner = CompletionR1.attach(self.grounded.owner, seed)
+        self.selection = None
+        if saved:
+            if saved["schema"] != "sera.verified-completion.1" or saved["contracts"] != contracts():
+                raise ValueError("Completion contract changed; preserve and explicitly migrate")
+            self.selection = saved["selection"]
+        elif load_selected and (OUT / "selection.json").exists():
+            self.selection = read(OUT / "selection.json")
+        if self.selection:
+            if self.selection["contracts"] != contracts() or sha(ROOT / self.selection["checkpoint"]) != self.selection["sha256"]:
+                raise ValueError("Changed selected investigator")
+            state = torch.load(ROOT / self.selection["checkpoint"], weights_only=True, map_location="cpu")
+            self.owner.completion_policy.load_state_dict(state["weights"])
+        self.goals = copy.deepcopy(saved["goals"] if saved else {})
+        self.credit = Credit(self.owner.completion_policy, saved["credit"] if saved else None)
+        for identifier, goal in self.goals.items():
+            if digest(goal["contract"]) != goal["goal_hash"]:
+                raise ValueError("Original completion goal changed")
+            provider = PracticeSource(goal["source_seed"])
+            if provider.public() != goal["contract"]["public"]:
+                raise ValueError("Stored source or evidence scope changed")
+            cloud = self._initial_cloud(goal["contract"]["public"])
+            pending = goal.get("pending")
+            if pending:
+                decision = pending["decision"]
+                if digest({k: v for k, v in decision.items() if k != "identity"}) != decision["identity"] or decision["goal"] != goal["goal_hash"]:
+                    raise ValueError("Stored decision lost its original goal")
+            if pending and pending.get("observation"):
+                event = pending["observation"]
+                if not provider.verify(event):
+                    raise ValueError("Stored practice observation changed")
+                action = pending["decision"]["action"]
+                public = goal["contract"]["public"]
+                cloud.observe(public["design"][action], event["value"], public["variance"][action])
+            self.owner.completion_clouds[identifier] = cloud
+            if model_hash(cloud) != goal["cloud_identity"]:
+                raise ValueError("Completion weights disagree with evidence replay")
+            if pending and pending.get("receipt"):
+                receipt = pending["receipt"]
+                if receipt not in self.credit.receipts or receipt["decision"] != pending["decision"]["identity"] or not provider.verify(receipt["audit"]):
+                    raise ValueError("Stored reward lost its independent evidence")
+        learner.rebind(facts, library)
+        self._refresh()
+        if saved and model_identity(self.owner) != saved["owner"]:
+            raise ValueError("Saved continuing owner identity mismatch")
+
+    def _refresh(self):
+        self.grounded.identity["owner"] = model_identity(self.owner)
+        self.grounded.base.assert_owner()
+
+    def _mutation(self, callback):
+        learner = self.grounded.base.learner
+        facts, library = learner.legacy.snapshot(), learner.library.record()
+        result = callback()
+        learner.rebind(facts, library)
+        self._refresh()
+        return result
+
+    @staticmethod
+    def _initial_cloud(public):
+        if public.get("origin") != "MODEL_CONDITIONAL_PRACTICE" or public.get("unit") != "m/s^2" or public.get("variable") != "acceleration":
+            raise ValueError("An explicitly typed conditional acceleration gap is required")
+        prior = read(OUT / "prior.json")
+        cloud = JointCompletion(prior["mean"], prior["covariance"])
+        if len(public["support_uv"]) != 2:
+            raise ValueError("Two attributed support observations required")
+        for uv, y, variance in zip(public["support_uv"], public["support_y"], public["support_variance"], strict=True):
+            cloud.observe(phi(uv), y, variance)
+        return cloud
+
+    def begin(self, identifier, question, source):
+        if type(source) is not PracticeSource:
+            raise ValueError("Use the qualified conditional-practice source boundary")
+        if not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", identifier) or not isinstance(question, str) or not 1 <= len(question) <= 512:
+            raise ValueError("Bounded original task required")
+        contract = {"id": identifier, "question": question, "public": source.public()}
+        if identifier in self.goals:
+            if self.goals[identifier]["contract"] != contract:
+                raise ValueError("Do not substitute the original goal")
+            return self.candidate(identifier)
+        if len(self.goals) >= 64:
+            raise ValueError("Export before adding further completion goals")
+        cloud = self._initial_cloud(contract["public"])
+        self._mutation(lambda: self.owner.completion_clouds.__setitem__(identifier, cloud))
+        self.goals[identifier] = {"contract": contract, "goal_hash": digest(contract),
+                                 "source_seed": int(source.bank["seed"]), "cloud_identity": model_hash(cloud),
+                                 "status": "COMPLETION_CANDIDATE", "pending": None}
+        return self.candidate(identifier)
+
+    def candidate(self, identifier, *, branches=4):
+        if type(branches) is not int or not 1 <= branches <= 16:
+            raise ValueError("One to sixteen imagined branches required")
+        goal = self.goals[identifier]
+        cloud = self.owner.completion_clouds[identifier]
+        public = goal["contract"]["public"]
+        mean, variance = cloud.predict(public["target"], AUDIT_VARIANCE)
+        rng = np.random.default_rng(int(goal["goal_hash"][:12], 16))
+        weights = rng.multivariate_normal(cloud.mean.detach().numpy(), cloud.covariance.numpy(), branches)
+        imagined = []
+        for values in weights:
+            acceleration = Fraction(float(np.dot(values, public["target"]))).limit_denominator(10000)
+            # One sampled mechanism supplies all consequences in this branch.
+            results = []
+            for time in (1, 2):
+                answer = self.grounded.base.exact_motion([str(acceleration)], str(time), "0", "0")
+                expected = {"velocity": acceleration*time, "position": acceleration*time*time/2}
+                if answer["status"] != "CERTIFIED_ALGEBRA" or any(Fraction(answer["result"][k]) != v for k, v in expected.items()):
+                    raise ValueError("Retained motion operator failed independent branch checking")
+                results.append({"time": time, "position": str(expected["position"]), "velocity": str(expected["velocity"]),
+                                "checked_by_retained_operator": True})
+            imagined.append({"mechanism_weights": values.tolist(), "acceleration": str(acceleration), "consequences": results})
+        return {"status": "COMPLETION_CANDIDATE", "goal": goal["contract"]["question"], "goal_hash": goal["goal_hash"],
+                "variable": "acceleration", "unit": "m/s^2", "mean": mean, "variance": variance,
+                "joint_weights": cloud.mean.detach().tolist(), "joint_covariance": cloud.covariance.tolist(),
+                "branches": imagined, "predictor": model_hash(cloud), "owner": model_identity(self.owner),
+                "evidence_kind": "MODEL_CONDITIONAL_PRACTICE", "source": public["source"],
+                "rollout_assumptions": ["one-dimensional inertial frame", "constant sampled acceleration over interval", "initial rest at origin"],
+                "physical_occurrence_verified": False, "autonomous_definition_admission": False,
+                "observation_updates_from_imagination": 0}
+
+    def decide(self, identifier):
+        goal = self.goals[identifier]
+        if goal["pending"] is not None:
+            raise ValueError("Complete or preserve the pending decision before another")
+        public = goal["contract"]["public"]
+        cloud = self.owner.completion_clouds[identifier]
+        bank = {k: np.asarray(public[k], dtype=np.float64)[None] for k in ("target", "design", "variance", "price", "duplicate", "irrelevant")}
+        bank.update(mean=cloud.mean.detach().numpy()[None], covariance=cloud.covariance.numpy()[None])
+        decision = self.credit.decision(features(bank)[0], goal["goal_hash"], model_hash(cloud))
+        goal["pending"] = {"decision": decision, "before": list(cloud.predict(public["target"], AUDIT_VARIANCE)), "stage": "DECIDED"}
+        return copy.deepcopy(decision)
+
+    def acquire(self, identifier, source):
+        goal = self.goals[identifier]
+        public, pending = goal["contract"]["public"], goal["pending"]
+        if type(source) is not PracticeSource or source.public() != public or pending is None or pending["stage"] != "DECIDED":
+            raise ValueError("Acquisition must match the committed goal and decision")
+        decision = pending["decision"]
+        cloud = self.owner.completion_clouds[identifier]
+        if decision["policy"] != model_hash(self.owner.completion_policy) or decision["predictor_before"] != model_hash(cloud):
+            raise ValueError("Stale decision before acquisition")
+        action = decision["action"]
+        if action != STOP and not public["duplicate"][action]:
+            observation = source.receipt(decision["identity"], action, "acquisition")
+            self._mutation(lambda: cloud.observe(public["design"][action], observation["value"], public["variance"][action]))
+            pending["observation"] = observation
+        pending.update(after=list(cloud.predict(public["target"], AUDIT_VARIANCE)), predictor_after=model_hash(cloud),
+                       cost=0. if action == STOP else .1*public["price"][action], stage="PREDICTIONS_FROZEN")
+        goal["cloud_identity"] = model_hash(cloud)
+        return copy.deepcopy(pending)
+
+    def verify_and_credit(self, identifier, source):
+        goal = self.goals[identifier]
+        pending = goal["pending"]
+        if type(source) is not PracticeSource or source.public() != goal["contract"]["public"] or pending is None or pending["stage"] != "PREDICTIONS_FROZEN":
+            raise ValueError("Independent audit requires committed before/after predictions")
+        decision = pending["decision"]
+        cloud = self.owner.completion_clouds[identifier]
+        if pending["predictor_after"] != model_hash(cloud) or decision["policy"] != model_hash(self.owner.completion_policy):
+            raise ValueError("Stale predictor or policy before audit")
+        audit = source.receipt(decision["identity"], decision["action"], "independent_audit")
+        acquisition_ids = [pending["observation"]["event_id"]] if "observation" in pending else []
+        row = {"decision": decision["identity"], "goal": goal["goal_hash"],
+               "predictor_before": decision["predictor_before"], "predictor_after": pending["predictor_after"],
+               "before": pending["before"], "after": pending["after"], "audit": audit,
+               "acquisition_ids": acquisition_ids, "cost": pending["cost"],
+               "reward": Credit.reward(pending["before"], pending["after"], audit["value"], pending["cost"])}
+        receipt = row | {"identity": digest(row)}
+        before_cloud = model_hash(cloud)
+        result = self._mutation(lambda: self.credit.apply(decision, receipt))
+        if model_hash(cloud) != before_cloud:
+            raise AssertionError("Reward changed factual/completion evidence")
+        pending.update(stage="CREDITED", receipt=receipt, credit=result)
+        goal["status"] = "CONDITIONAL_PROGRESS_CHECKED" if receipt["reward"] > 0 else "CHECKED_ATTEMPT_RETAINED"
+        return copy.deepcopy(pending)
+
+    def snapshot(self):
+        parent = self.grounded.snapshot()
+        parent["identity"] = copy.deepcopy(self.parent_identity)
+        return {"schema": "sera.verified-completion.1", "contracts": contracts(), "parent": parent,
+                "selection": copy.deepcopy(self.selection), "owner": model_identity(self.owner),
+                "credit": self.credit.snapshot(), "goals": copy.deepcopy(self.goals)}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("action", choices=("practice", "status"))
+    parser.add_argument("--seed", type=int, default=32410)
+    parser.add_argument("--id", default="completion-practice-1")
+    parser.add_argument("--store", default="runs/sera-completion-live")
+    args = parser.parse_args()
+    torch.set_num_threads(1)
+    path = (ROOT / args.store).resolve()
+    if not path.is_relative_to(ROOT / "runs") or path == ROOT / "runs/sera-grounded-live":
+        raise ValueError("Use a separate continuing completion store")
+    path.mkdir(parents=True, exist_ok=True)
+    with lock(path):
+        store = Store(path)
+        previous = store.read()
+        session = CompletionSession(previous, parent_saved=Store(ROOT / "runs/sera-grounded-live").read())
+
+        def save():
+            nonlocal previous
+            previous = store.commit(session.snapshot(), previous)
+
+        if args.action == "practice":
+            source = PracticeSource(args.seed)
+            initial = session.begin(args.id, "Complete an unknown acceleration response, imagine motion and improve the evidence-selection procedure.", source)
+            save()
+            pending = session.goals[args.id]["pending"]
+            if pending is None:
+                session.decide(args.id)
+                save()
+            if session.goals[args.id]["pending"]["stage"] == "DECIDED":
+                session.acquire(args.id, source)
+                save()
+            if session.goals[args.id]["pending"]["stage"] == "PREDICTIONS_FROZEN":
+                session.verify_and_credit(args.id, source)
+                save()
+            result = {"initial": initial, "final": session.candidate(args.id), "attempt": session.goals[args.id]["pending"]}
+        else:
+            result = {"owner": model_identity(session.owner), "goals": {k: v["status"] for k, v in session.goals.items()},
+                      "verified_policy_updates": session.credit.steps, "retained_grounded_goals": list(session.grounded.tasks)}
+        print(json.dumps(result, indent=2))
+
+
+if __name__ == "__main__":
+    main()

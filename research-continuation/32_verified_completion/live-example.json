@@ -1,0 +1,488 @@
+{
+  "initial": {
+    "status": "COMPLETION_CANDIDATE",
+    "goal": "Complete an unknown acceleration response, imagine motion and improve the evidence-selection procedure.",
+    "goal_hash": "5e0115fa797a5565a1c85746f45b8fa57eb25c7382f2418c99cfda307cc703dd",
+    "variable": "acceleration",
+    "unit": "m/s^2",
+    "mean": -1.457595358808649,
+    "variance": 0.1127555743552584,
+    "joint_weights": [
+      0.9986050093231047,
+      0.2767908673529344,
+      -0.5219851723231783
+    ],
+    "joint_covariance": [
+      [
+        0.1666378366683921,
+        0.012045301662078484,
+        0.059260145875026884
+      ],
+      [
+        0.012045301662078484,
+        0.0713038015736548,
+        -0.025149381852433466
+      ],
+      [
+        0.059260145875026884,
+        -0.025149381852433466,
+        0.04580398747356103
+      ]
+    ],
+    "branches": [
+      {
+        "mechanism_weights": [
+          0.9158744297168406,
+          0.6519738932287809,
+          -0.8103491400983114
+        ],
+        "raw_acceleration": -1.4026284387599912,
+        "acceleration": "-7/5",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-7/10",
+            "velocity": "-7/5",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-14/5",
+            "velocity": "-14/5",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": 0.002628438759991303
+        }
+      },
+      {
+        "mechanism_weights": [
+          1.8228404517772654,
+          0.429449411618691,
+          -0.26712033909888916
+        ],
+        "raw_acceleration": -2.025582893722522,
+        "acceleration": "-61/30",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-61/60",
+            "velocity": "-61/30",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-61/15",
+            "velocity": "-61/15",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": -0.007750439610811011
+        }
+      },
+      {
+        "mechanism_weights": [
+          0.5389821308736019,
+          0.1534441447644037,
+          -0.6809890739714678
+        ],
+        "raw_acceleration": -1.1832662477135365,
+        "acceleration": "-71/60",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-71/120",
+            "velocity": "-71/60",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-71/30",
+            "velocity": "-71/30",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": -6.708561979684724e-05
+        }
+      },
+      {
+        "mechanism_weights": [
+          1.2153984964595963,
+          0.5803336645836644,
+          -0.5263964545837015
+        ],
+        "raw_acceleration": -1.502571909465444,
+        "acceleration": "-3/2",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-3/4",
+            "velocity": "-3/2",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-3",
+            "velocity": "-3",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": 0.0025719094654439445
+        }
+      }
+    ],
+    "predictor": "24113e89584bb106c4536f8176e86455ea5bcb5850898e82a5ef974f8dda3ebf",
+    "owner": "df2ed08ff32d0941ba2841f4f1b3fe76f51e063604a15bd8b6b04bc4b912984b",
+    "evidence_kind": "MODEL_CONDITIONAL_PRACTICE",
+    "source": "df3583a9ab8f28aee5224c6d5b3efd9b7e67cc14278d794f8e50064f0b7be3ae",
+    "rollout_assumptions": [
+      "one-dimensional inertial frame",
+      "constant sampled acceleration over interval",
+      "initial rest at origin"
+    ],
+    "physical_occurrence_verified": false,
+    "autonomous_definition_admission": false,
+    "observation_updates_from_imagination": 0
+  },
+  "final": {
+    "status": "COMPLETION_CANDIDATE",
+    "goal": "Complete an unknown acceleration response, imagine motion and improve the evidence-selection procedure.",
+    "goal_hash": "5e0115fa797a5565a1c85746f45b8fa57eb25c7382f2418c99cfda307cc703dd",
+    "variable": "acceleration",
+    "unit": "m/s^2",
+    "mean": -1.2352184415477887,
+    "variance": 0.019766815367521146,
+    "joint_weights": [
+      0.729448744450214,
+      0.2852076315252715,
+      -0.6072180617138068
+    ],
+    "joint_covariance": [
+      [
+        0.03041182977361746,
+        0.016305214299497363,
+        0.01612187382599029
+      ],
+      [
+        0.016305214299497363,
+        0.07117059018405239,
+        -0.023800408374850354
+      ],
+      [
+        0.01612187382599029,
+        -0.023800408374850354,
+        0.03214352308944296
+      ]
+    ],
+    "branches": [
+      {
+        "mechanism_weights": [
+          0.4831554206823621,
+          0.12257811747473227,
+          -0.7994581699460256
+        ],
+        "raw_acceleration": -1.2597075956661283,
+        "acceleration": "-19/15",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-19/30",
+            "velocity": "-19/15",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-38/15",
+            "velocity": "-38/15",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": -0.006959071000538275
+        }
+      },
+      {
+        "mechanism_weights": [
+          0.7395701874814966,
+          0.7905148453861088,
+          -0.8977796941103604
+        ],
+        "raw_acceleration": -1.1997445938853233,
+        "acceleration": "-6/5",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-3/5",
+            "velocity": "-6/5",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-12/5",
+            "velocity": "-12/5",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": -0.0002554061146766706
+        }
+      },
+      {
+        "mechanism_weights": [
+          0.7503767898573804,
+          -0.00511187989263151,
+          -0.4418918443735484
+        ],
+        "raw_acceleration": -1.2872184103622515,
+        "acceleration": "-77/60",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-77/120",
+            "velocity": "-77/60",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-77/30",
+            "velocity": "-77/30",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": 0.003885077028918049
+        }
+      },
+      {
+        "mechanism_weights": [
+          0.5603008515835349,
+          0.391047908537552,
+          -0.7873556411198137
+        ],
+        "raw_acceleration": -1.154905067117903,
+        "acceleration": "-23/20",
+        "consequences": [
+          {
+            "time": 1,
+            "position": "-23/40",
+            "velocity": "-23/20",
+            "checked_by_retained_operator": true
+          },
+          {
+            "time": 2,
+            "position": "-23/10",
+            "velocity": "-23/10",
+            "checked_by_retained_operator": true
+          }
+        ],
+        "projection": {
+          "grid": "1/60",
+          "maximum_acceleration_error": "1/120",
+          "actual_acceleration_error": 0.004905067117903172
+        }
+      }
+    ],
+    "predictor": "a4f75231cd73b7360a3ecd3e66922b4760ff774c0d718fa9f1cdf84f40491ac2",
+    "owner": "9d4bbea3e30c88fedbc9182ee2192c5e5819ead2df48693070baa8b4a3d1ba5c",
+    "evidence_kind": "MODEL_CONDITIONAL_PRACTICE",
+    "source": "df3583a9ab8f28aee5224c6d5b3efd9b7e67cc14278d794f8e50064f0b7be3ae",
+    "rollout_assumptions": [
+      "one-dimensional inertial frame",
+      "constant sampled acceleration over interval",
+      "initial rest at origin"
+    ],
+    "physical_occurrence_verified": false,
+    "autonomous_definition_admission": false,
+    "observation_updates_from_imagination": 0
+  },
+  "attempt": {
+    "decision": {
+      "goal": "5e0115fa797a5565a1c85746f45b8fa57eb25c7382f2418c99cfda307cc703dd",
+      "predictor_before": "24113e89584bb106c4536f8176e86455ea5bcb5850898e82a5ef974f8dda3ebf",
+      "policy": "1d8ae7ae13d7578b64fac1ced0dd32ce2596826cf53aa67c7c84e9dd409072ca",
+      "features": [
+        [
+          0.10275557435525838,
+          0.0,
+          0.0,
+          9.0,
+          0.12923242270824492,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.12612747038792915,
+          -0.08827099220222474,
+          0.04103842319532878,
+          0.18702400812908018,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.15303599545410856,
+          0.12489157754807591,
+          0.014703700313892877,
+          0.10460278879675931,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.10985176894411951,
+          -0.07974793108761367,
+          0.016369695213073937,
+          0.2682507162327247,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.13241993581109762,
+          0.020939511144683575,
+          0.01924762308563585,
+          0.10655914448315244,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.11087015842898726,
+          0.06318135346759018,
+          0.004730028839995671,
+          0.20807217503803405,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.10573238358209713,
+          0.08985664241121068,
+          0.010239855425157584,
+          0.23919562095611427,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.012548762342120476,
+          0.013637470301009202,
+          0.04173672606361821,
+          0.26546225098934456,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.10275557435525838,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "probabilities": [
+        9.331188079848954e-07,
+        4.5376442470383706e-09,
+        0.9199747931212585,
+        8.151229944314742e-09,
+        2.529499712717614e-05,
+        0.0039202869214392515,
+        0.07593263053096681,
+        1.5938384547912167e-06,
+        0.00014445478307144557
+      ],
+      "action": 2,
+      "sequence": 0,
+      "sampling": "on-policy categorical",
+      "identity": "0149c652738ca2e6131991466707a7e3842249d4cbee511820eb34508873bcc5"
+    },
+    "before": [
+      -1.457595358808649,
+      0.1127555743552584
+    ],
+    "stage": "CREDITED",
+    "observation": {
+      "source": "df3583a9ab8f28aee5224c6d5b3efd9b7e67cc14278d794f8e50064f0b7be3ae",
+      "purpose": "acquisition",
+      "origin": "MODEL_CONDITIONAL_PRACTICE",
+      "event_id": "9660ecdf58f98cd83f88e282847034ceb8a73862ae06afed765aebceea05ad85",
+      "decision": "0149c652738ca2e6131991466707a7e3842249d4cbee511820eb34508873bcc5",
+      "action": 2,
+      "value": -1.353338930322257,
+      "identity": "8cd81a81c138b49abfb7fce8f47758769ec25162a9e570c6e1211cd731e8fe73"
+    },
+    "after": [
+      -1.2352184415477887,
+      0.019766815367521146
+    ],
+    "predictor_after": "a4f75231cd73b7360a3ecd3e66922b4760ff774c0d718fa9f1cdf84f40491ac2",
+    "cost": 0.010460278879675933,
+    "receipt": {
+      "decision": "0149c652738ca2e6131991466707a7e3842249d4cbee511820eb34508873bcc5",
+      "goal": "5e0115fa797a5565a1c85746f45b8fa57eb25c7382f2418c99cfda307cc703dd",
+      "predictor_before": "24113e89584bb106c4536f8176e86455ea5bcb5850898e82a5ef974f8dda3ebf",
+      "predictor_after": "a4f75231cd73b7360a3ecd3e66922b4760ff774c0d718fa9f1cdf84f40491ac2",
+      "before": [
+        -1.457595358808649,
+        0.1127555743552584
+      ],
+      "after": [
+        -1.2352184415477887,
+        0.019766815367521146
+      ],
+      "audit": {
+        "source": "df3583a9ab8f28aee5224c6d5b3efd9b7e67cc14278d794f8e50064f0b7be3ae",
+        "purpose": "independent_audit",
+        "origin": "MODEL_CONDITIONAL_PRACTICE",
+        "event_id": "4430f60ba5eeb0df27d85ab962b80b0273efcb57124b4bb97a9f683609fd37cf",
+        "decision": "0149c652738ca2e6131991466707a7e3842249d4cbee511820eb34508873bcc5",
+        "action": 2,
+        "value": -1.2599438086210966,
+        "identity": "ee42833663d673b146029d3a789b09296b7a89e0d2b8671ff55174dea5e974ea"
+      },
+      "acquisition_ids": [
+        "9660ecdf58f98cd83f88e282847034ceb8a73862ae06afed765aebceea05ad85"
+      ],
+      "cost": 0.010460278879675933,
+      "reward": 1.017918488544614,
+      "identity": "0f1e554d6e1886efe3a26a85df50fdaa80b4432036314e19f0e1f6fd3811cc93"
+    },
+    "credit": {
+      "policy_before": "1d8ae7ae13d7578b64fac1ced0dd32ce2596826cf53aa67c7c84e9dd409072ca",
+      "policy_after": "e7073bd353cac4868df395b04c71ed93c807c19f401117f02751d8d65e3cec81",
+      "step": 1,
+      "reward": 1.017918488544614,
+      "factual_updates": 0
+    }
+  }
+}
