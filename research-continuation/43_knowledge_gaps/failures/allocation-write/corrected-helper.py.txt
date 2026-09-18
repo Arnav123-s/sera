@@ -1,0 +1,31 @@
+import datetime
+import hashlib
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[1]
+out = root / "research-continuation/43_knowledge_gaps"
+path = root / "runs/v3-batch-001/budget.json"
+if path.with_name("active.lock").exists():
+    raise RuntimeError("Owned job active")
+raw = path.read_bytes()
+ledger = json.loads(raw)
+old = (out / "resource-grant.json").read_bytes()
+grant = json.loads(old)
+if any(g.get("grant_id") == grant["grant_id"] for g in ledger["extensions"]):
+    raise RuntimeError("Allocation already applied")
+with (out / "resource-grant-prewrite-attempt.json").open("xb") as f:
+    f.write(old)
+with (out / "budget-before-application.json").open("xb") as f:
+    f.write(raw)
+grant.update(authorized_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+             previous_remaining_seconds=ledger["remaining_seconds"],
+             previous_ledger_sha256=hashlib.sha256(raw).hexdigest(),
+             reconciliation="The first receipt write succeeded but ledger update failed on an invalid temporary suffix; no allocation was applied then. This is the sole applied allocation.")
+ledger["extensions"].append(grant)
+ledger["remaining_seconds"] += grant["added_seconds"]
+temporary = path.with_suffix(".tmp")
+temporary.write_text(json.dumps(ledger, indent=2) + "\n", encoding="utf-8", newline="\n")
+temporary.replace(path)
+(out / "resource-grant.json").write_text(json.dumps(grant, indent=2) + "\n", encoding="utf-8", newline="\n")
+print(json.dumps({"applied_once": grant["grant_id"], "remaining_seconds": ledger["remaining_seconds"]}))

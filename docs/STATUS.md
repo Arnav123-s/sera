@@ -1,5 +1,11 @@
 # Current status
 
+## Latest: self-identified knowledge gaps
+
+The current owner is **runs/sera-gap-inquiry-live**. It selected an incomplete observation record from its own retained evidence, searched **12,288 distinct programs**, and retained **eight qualified empirical explanations**. The fixed selected program scored **2.66 cm RMSE on 13 reserved positions**. All **380 inherited tensor records** remain unchanged. [Use it](../research-continuation/43_knowledge_gaps/README.md) · [Full results and controls](../research-continuation/43_knowledge_gaps/report.md) · [Audit](../research-continuation/43_knowledge_gaps/audit.json).
+
+The interface compares alternative predictions, computes their conditional missing-acceleration consequences and proposes a discriminating observation. It also routes earlier mathematics, language and physical tasks through the same continuing owner. Verification and exact publication receipts are recorded with this stage's [costs and checks](../research-continuation/43_knowledge_gaps/publication/costs.json).
+
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
 ## Current self-chosen discovery: Stages 41–42

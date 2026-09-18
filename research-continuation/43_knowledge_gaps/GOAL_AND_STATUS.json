@@ -1,0 +1,35 @@
+{
+  "goal": "Let SERA find gaps in retained knowledge itself, construct multiple accurate missing explanations without target hints, reward independently checked novelty and use a substantial finite run.",
+  "status": "complete_verified_local",
+  "chosen_gap": {
+    "goal": {
+      "parent": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+      "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+      "target": "Position (m)",
+      "question": "Does the retained explanation cover its own unexamined observations, and what executable refinements explain any mismatch?"
+    },
+    "id": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+    "input": "Time (s)",
+    "target": "Position (m)",
+    "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+    "source_hash": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+    "reason": "The retained prediction covers only part of its own recorded observation source",
+    "development_rmse_of_retained_explanation": 20.4784094267622,
+    "mismatch_detected": true,
+    "tolerance": 0.05,
+    "original_scope_preserved": true,
+    "novel_mechanism_labels_supplied": [],
+    "gap_kind": "empirical coverage beyond the previously checked interval"
+  },
+  "latest_owner": {
+    "admitted": true,
+    "store": "runs/sera-gap-inquiry-live",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "parent_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "models": 8,
+    "same_actual_owner": true,
+    "scope": "source-bound empirical interpolation and preserved alternative explanations"
+  },
+  "next_action": "NEXT_ACTION.md",
+  "standing_resources": "../RESOURCE_POLICY.md"
+}

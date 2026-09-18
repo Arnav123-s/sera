@@ -1,0 +1,25 @@
+{
+  "contracts": {
+    "runtime": "50b79f53634c76fe4b310e2efdbc3ee9889b044f5450e47b825c4a7f9c0292e9",
+    "assessor": "3622b2c70431dfcd69e7ca31e8dc00374ea2f586843d7c0232971b98ca7a558d",
+    "protocol": "e475bcbd3c2112de014ca9663f2fc23f2700715f2ce8df535515107d31aef012"
+  },
+  "driver": "8ee5e252fb576a9bdd6ca243600b3306db76e66b69030f31f041db6bbf94037d",
+  "parent": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+  "inputs": {
+    "credit-baseline.json": "01197bbe724188f6a7c56cd1a3e63c480e8104857c60f9938b578e65d6f2fe1c",
+    "credit.json": "4e9c807c921a01c41bc1f017a4e824c837031124073cfec97a0ae5410b0119c3",
+    "development-baseline.json": "4052920f2913368e1630c3a709af8dd8718eb719ff76ff3497f56b118f7a684c",
+    "development.json": "a8758a9bdb028029f51238b6b74d9eb7205468aaf27b30655a724389ddf77130",
+    "final-baseline.json": "d844a80649202650c974539389b421f97aa49f71ff2c4aabdbbdfc8c429cf487",
+    "final.json": "e1f2737bcf18fed26be2dac51fff0b9561f55169e70670ca5c0307b31faf7f8a"
+  },
+  "arms": [
+    "learned",
+    "residual",
+    "balanced"
+  ],
+  "programs_per_arm": 4096,
+  "final_opened": false,
+  "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5"
+}

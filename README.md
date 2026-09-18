@@ -25,6 +25,7 @@ The central idea is to turn experience into something reusable: a learned interp
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Identify a gap in retained observations, construct competing explanations and calculate their missing-influence consequences | [Self-identified gaps](research-continuation/43_knowledge_gaps/README.md) | [12,288-program study, eight retained alternatives and independent measurements](research-continuation/43_knowledge_gaps/report.md) |
 | Choose questions, propose equations, combine learned rules and retain independently checked discoveries | [Self-chosen discovery](research-continuation/42_composed_discovery/README.md) | [Examples, investigations, exact executions and observed-data checks](research-continuation/42_composed_discovery/report.md) |
 | Continue practice across dictionary, conversation, grammar, philosophy, STEM prose, reading, four-language requests and mechanics | [Continuing learner](research-continuation/38_continuing_growth/README.md) | [Twelve-strand study, exact continuation and independent score replay](research-continuation/38_continuing_growth/report.md) |
 | Identify a missing mathematical prerequisite, acquire it from retained constraints and return to internal discovery | [Autonomous acquisition and discovery](research-continuation/37_constraint_acquisition/README.md) | [Three acquired basis cases, eight further relationships and 256 checked routes](research-continuation/37_constraint_acquisition/report.md) |
@@ -70,6 +71,8 @@ flowchart TD
 The current integration is in [`experiments/`](docs/REPOSITORY_MAP.md); its reusable core is in [`src/sera/`](src/sera/). The [research archive](docs/RESEARCH_ARCHIVE.md) traces the successive implementations and their results.
 
 ### Learning through self-chosen investigations
+
+The latest continuation lets SERA inspect its own retained evidence for incomplete coverage. It selected an unexplained part of an existing measured trajectory, constructed alternative conditional programs from its learned integration basis and checked their predictions against reserved observations. Eight qualified explanations remain on the same owner. Their differences can drive a proposed next observation, and each program can calculate the additional acceleration needed relative to its older explanation. [Use the investigation and inspect its findings](research-continuation/43_knowledge_gaps/README.md).
 
 The discovery continuation starts with three elementary process examples: check a proposed pattern, seek a genuinely different route when two expressions are equivalent, and revise a claim after a counterexample. Its learned investigation weights select questions about missing quantities or text associations. Candidate programs fit the retained operator's executions or compose previously learned rules, then commit their predictions before independent assessment.
 

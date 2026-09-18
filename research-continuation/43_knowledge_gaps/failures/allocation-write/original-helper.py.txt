@@ -1,0 +1,34 @@
+import datetime
+import hashlib
+import json
+from pathlib import Path
+
+root = Path(__file__).resolve().parents[1]
+batch = root / "runs/v3-batch-001"
+out = root / "research-continuation/43_knowledge_gaps"
+if (batch / "active.lock").exists():
+    raise RuntimeError("Do not alter the allowance during an owned job")
+out.mkdir(parents=True, exist_ok=True)
+path = batch / "budget.json"
+raw = path.read_bytes()
+ledger = json.loads(raw)
+grant_id = "knowledge-gaps-standing-2026-09-18"
+if any(g.get("grant_id") == grant_id for g in ledger["extensions"]):
+    raise RuntimeError("This allocation was already recorded")
+if (out / "resource-grant.json").exists():
+    raise RuntimeError("Reconcile the existing receipt")
+(out / "budget-before.json").write_bytes(raw)
+grant = {"schema": "sera.resource-grant.1", "grant_id": grant_id,
+         "authorized_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+         "authority": "Standing user approval: dont keep asking ur alwas approved for this. See ../RESOURCE_POLICY.md.",
+         "standing_approval": True, "added_seconds": 3600,
+         "previous_remaining_seconds": ledger["remaining_seconds"],
+         "previous_ledger_sha256": hashlib.sha256(raw).hexdigest(),
+         "cpu_threads": 1, "worker_memory_limit_bytes": 2147483648, "paid_services": False}
+ledger["extensions"].append(grant)
+ledger["remaining_seconds"] += grant["added_seconds"]
+(out / "resource-grant.json").write_text(json.dumps(grant, indent=2) + "\n", encoding="utf-8", newline="\n")
+temporary = path.with_suffix("tmp")
+temporary.write_text(json.dumps(ledger, indent=2) + "\n", encoding="utf-8", newline="\n")
+temporary.replace(path)
+print(json.dumps({"grant": grant_id, "remaining_seconds": ledger["remaining_seconds"]}))

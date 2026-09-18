@@ -1,0 +1,2696 @@
+{
+  "selected": "residual",
+  "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+  "admitted": true,
+  "arms": {
+    "residual": [
+      {
+        "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+        "program": {
+          "kind": "continuous",
+          "degree": 2,
+          "cuts": [
+            0.32499999999999996,
+            0.575,
+            1.3250000000000002,
+            1.975,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "a041cfcfb452550f093a4240f8bec94c6411ca4ec281cb19cf0d4e44d4e9d66e",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [
+            "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+            "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+            "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+            "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+            "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+            "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+            "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+            "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+            "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+            "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+            "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+            "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+            "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+          ],
+          "points": 12.99976709528272,
+          "assessment": {
+            "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4833990987052426,
+              1.4769692812262796,
+              1.2898565908529624,
+              1.2375598299568598,
+              1.1976082548788045,
+              1.178084449346745,
+              1.1310909162019525,
+              0.9888154272563391,
+              0.9895207806700892,
+              0.9899360388521048,
+              0.9904764599843507,
+              0.9916747544055817,
+              0.9916873922369611
+            ],
+            "rmse": 0.011134360860479364,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "08caf25d42d03e402b24bc335508d249156e55c2b71c8219b8240c2b4eeac560"
+        },
+        "final": {
+          "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0899808405610518,
+            1.247171072053904,
+            1.2584476341673274,
+            1.255497672135796,
+            1.2144834197173129,
+            1.10362118858922,
+            0.987107842322049,
+            0.9890615405463488,
+            0.9903073150923642,
+            0.9912604241421221,
+            0.9916113517574792,
+            0.9916485508242573,
+            0.9916941751119588
+          ],
+          "rmse": 0.026596166387399697,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+        "program": {
+          "kind": "continuous",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.4000000000000004,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "d6fd6e220d0a094f910e01c9f71ac08176ff703e2c5de0cb537a0d133654093f",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.48207258522811,
+              1.4851450447340824,
+              1.312293490887626,
+              1.2126618322638267,
+              1.2118865087446427,
+              1.1921514609370933,
+              1.1404988211966391,
+              0.9893228261047977,
+              0.9904385633956415,
+              0.9908472920117678,
+              0.9910929868683737,
+              0.9912827625532707,
+              0.9921525283437708
+            ],
+            "rmse": 0.012858102198370098,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "f071d7b472d1b5fb2adf2ff584ab503aa7b14be879278057ff5f966a51bda4f4"
+        },
+        "final": {
+          "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.084357681335985,
+            1.2271046400868864,
+            1.2588342633167995,
+            1.230071942994316,
+            1.226908139038385,
+            1.1095600834718105,
+            0.9846123626266025,
+            0.9897707742037829,
+            0.9910510585717294,
+            0.9909312127144071,
+            0.9909989718420513,
+            0.991115770092857,
+            0.9917943793635471
+          ],
+          "rmse": 0.027970849936509536,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+        "program": {
+          "kind": "continuous",
+          "degree": 2,
+          "cuts": [
+            0.32499999999999996,
+            0.575,
+            0.775,
+            1.975,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "53d1d3eca14794b54cb35fb3492efa8d682997af6c44e8a63b6a9215dd225b26",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4829700574989202,
+              1.4772782367509336,
+              1.2869592226532638,
+              1.2320857501687388,
+              1.1996641169795652,
+              1.1801310010794412,
+              1.1327719219286432,
+              0.9886051026363891,
+              0.9894750102964266,
+              0.9899731747071485,
+              0.9905977602792566,
+              0.9916033979486887,
+              0.9914429528393811
+            ],
+            "rmse": 0.011276590511501518,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "7a292d9fbae3730d5d4a94979122f1a94f408d1ab57de87669547eb9d84b5149"
+        },
+        "final": {
+          "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0825865739275775,
+            1.2429597412206375,
+            1.256414875973894,
+            1.255865459727396,
+            1.216432950429491,
+            1.104945958677971,
+            0.9864237075580121,
+            0.9889114266622494,
+            0.9904059198944163,
+            0.9914053516651719,
+            0.9916285873255504,
+            0.991624170040045,
+            0.9915127893483613
+          ],
+          "rmse": 0.026594996003377565,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+        "program": {
+          "kind": "continuous",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.4000000000000004,
+            3.025,
+            3.325
+          ]
+        },
+        "credit": {
+          "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "6a12d340ccbfba01b9577719eb52df07fe888ebb44be7195dcca961d9747531b",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4821229981241686,
+              1.4850282990826429,
+              1.3129449259424746,
+              1.212169443277982,
+              1.2123416583573563,
+              1.193887458526117,
+              1.1438061455799422,
+              0.9896174409201622,
+              0.9889650290318026,
+              0.9890048575216939,
+              0.9895648291920516,
+              0.992315799525508,
+              0.9914148712403759
+            ],
+            "rmse": 0.013753552289741565,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "388cb140e18bf0378f1eac3f9ae912583eca679ce009394304dc3d3b0b8dd544"
+        },
+        "final": {
+          "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.084649143620427,
+            1.226388621727466,
+            1.2583417845211606,
+            1.2331643984852811,
+            1.2262187640070386,
+            1.112458217095511,
+            0.9937046813518352,
+            0.989290887961702,
+            0.9893256031562041,
+            0.9914365645421639,
+            0.9924022015861241,
+            0.9924033580458002,
+            0.9918321524068774
+          ],
+          "rmse": 0.02861455403290187,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+        "program": {
+          "kind": "continuous",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.025,
+            2.825,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "3d51344dfee739a1bba01c579ea924e4a3e49bcc2504fad1ae70ba326968f457",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.482060537943454,
+              1.4851729437120298,
+              1.3121378159550403,
+              1.2291708072419352,
+              1.2032443691285928,
+              1.1857138662593167,
+              1.143405162053964,
+              0.9884378486379208,
+              0.9884956673473112,
+              0.9888337912120475,
+              0.9896323856873086,
+              0.9922055263560062,
+              0.9913940513506219
+            ],
+            "rmse": 0.012143028332455374,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "02d66eb7a2a25712ea9556b54e3ba4ec8c056ef3c385da8d60cb582e0fe3a22e"
+        },
+        "final": {
+          "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0842880299241828,
+            1.2399025179938106,
+            1.253318984547323,
+            1.253689595403448,
+            1.2183266793176537,
+            1.1340850673545406,
+            0.9907218268654114,
+            0.9883866753686343,
+            0.9893378635989214,
+            0.991496751748665,
+            0.992308948504934,
+            0.9922957282689426,
+            0.9917625858172209
+          ],
+          "rmse": 0.0344259345709248,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+        "program": {
+          "kind": "continuous",
+          "degree": 2,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.025,
+            2.925,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "ff5d63a964b0466be2e8f158e791f48b7accc138cb707112453873b43046821f",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.500149690698363,
+              1.4782057976747822,
+              1.3432045486682291,
+              1.2328429043327445,
+              1.2030379049588733,
+              1.185634419254374,
+              1.1434804776919163,
+              0.989649331467633,
+              0.9897022530406873,
+              0.989788800997147,
+              0.9899955232935569,
+              0.99195767159323,
+              0.9926565562043974
+            ],
+            "rmse": 0.016838755825616898,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "466285ef28db7a0828a23ceb45bc55e93f94dd111853b9c339705491d01e1269"
+        },
+        "final": {
+          "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0855486378639674,
+            1.2423783091908516,
+            1.2541021487536406,
+            1.253320482714201,
+            1.2179924006122365,
+            1.1187300218339613,
+            0.9898203296236171,
+            0.9896567186104164,
+            0.9899163624798414,
+            0.9906858091883649,
+            0.9915430154268972,
+            0.9917452168193011,
+            0.9924133412857515
+          ],
+          "rmse": 0.030281344782065314,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+        "program": {
+          "kind": "continuous",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.25,
+            3.025,
+            3.325
+          ]
+        },
+        "credit": {
+          "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "1e7ae25ee94bb9c1a7e1a6d3295fe2d849a5d8e117beb642cd5e42dd884b77ab",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4816616130358966,
+              1.486096769806494,
+              1.3069829113286175,
+              1.216901939889455,
+              1.2068247557637668,
+              1.1895640249446124,
+              1.143514338363132,
+              0.9898543164131931,
+              0.9890264358749953,
+              0.9889999909313287,
+              0.9895190989321938,
+              0.9923584629122503,
+              0.9914061040214827
+            ],
+            "rmse": 0.012504146234245303,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "d71d2ec9ae8d02d696a3c996863d465ac57d255cafcd16b19aec6c1409ade142"
+        },
+        "final": {
+          "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0819816445603594,
+            1.2326518003965443,
+            1.260543202722484,
+            1.2518422244542418,
+            1.2207879095789507,
+            1.1139076356354145,
+            0.9942279513472855,
+            0.9894579653036105,
+            0.9892868553900296,
+            0.9914331897813167,
+            0.992448134955379,
+            0.9924501743987597,
+            0.9918478996087141
+          ],
+          "rmse": 0.02872818122435131,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+        "program": {
+          "kind": "continuous",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.25,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "ffbadb91c47c4654bb9113905b6e9a66d8b2a7975b8e97011b3944d07f40f96e",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.48157871473299,
+              1.4862887448248046,
+              1.3059117000777576,
+              1.217454609553927,
+              1.2040563342184212,
+              1.1859366942379257,
+              1.1398197009259925,
+              0.9895460459953936,
+              0.9909286245100393,
+              0.9913551619240346,
+              0.9914613976447455,
+              0.9910500117263338,
+              0.9923438407282491
+            ],
+            "rmse": 0.011209536338082148,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "5b2159c249d16bfe7d1dbe99e9dcf12004903b1fc02cda3ff15b7568c61d9303"
+        },
+        "final": {
+          "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.081502367807241,
+            1.2327340337506651,
+            1.2573003292693974,
+            1.2533930690083457,
+            1.219154306470036,
+            1.1114159925124494,
+            0.9830713584846275,
+            0.9901198886188729,
+            0.9914831816581596,
+            0.990788565508447,
+            0.9906685534296427,
+            0.9908181465406003,
+            0.9918023987202969
+          ],
+          "rmse": 0.028094037165576142,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      }
+    ],
+    "learned": [
+      {
+        "candidate": "34c2f28f4986deefdfcd0f4cb7fba537d7e4bfeb4331fd1662569917e83f8359",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.875,
+            2.475,
+            2.925,
+            3.225
+          ]
+        },
+        "credit": {
+          "candidate": "34c2f28f4986deefdfcd0f4cb7fba537d7e4bfeb4331fd1662569917e83f8359",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "cf0477fda043846185ade96af2384cacfc1bdb3d3a012c1a778c9db3875677b3",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "34c2f28f4986deefdfcd0f4cb7fba537d7e4bfeb4331fd1662569917e83f8359",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.486248209257269,
+              1.489100250400952,
+              1.3113491115595934,
+              1.2225359482075187,
+              1.1902473282874706,
+              1.1760238301200627,
+              1.1559925197032768,
+              0.9881890965320412,
+              0.9885995695081439,
+              0.9890738534188824,
+              0.9899232122795227,
+              0.991922596727143,
+              0.991484136133816
+            ],
+            "rmse": 0.013813800349174583,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "82c263e3970b56f22a4fd1fcb9a3cfe07fb5c4bc3bff0f8de9737d6880507525"
+        },
+        "final": {
+          "candidate": "34c2f28f4986deefdfcd0f4cb7fba537d7e4bfeb4331fd1662569917e83f8359",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0968464903504858,
+            1.2362548594546048,
+            1.2565104974024193,
+            1.248978940914175,
+            1.2095248813197612,
+            1.136136118450592,
+            0.9910849861505779,
+            0.9882738628638152,
+            0.9896315066413022,
+            0.9914693880808219,
+            0.9919949229927663,
+            0.9919804868272206,
+            0.9916743724816124
+          ],
+          "rmse": 0.035444138584333214,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "21e0c835ae7ec96440f6b2527ca27b0ae8691b4a5acd503a18f3465c6e125366",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.9249999999999998,
+            2.475,
+            2.925,
+            3.275
+          ]
+        },
+        "credit": {
+          "candidate": "21e0c835ae7ec96440f6b2527ca27b0ae8691b4a5acd503a18f3465c6e125366",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "7818ee3ac66aa5ada14e6986063bade61dacadb7336f52dc3e5f36429a43fce5",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "21e0c835ae7ec96440f6b2527ca27b0ae8691b4a5acd503a18f3465c6e125366",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.486409737036638,
+              1.4889492108928835,
+              1.311449722652469,
+              1.2211961761212315,
+              1.1916458718684357,
+              1.176766651342851,
+              1.1547490092112733,
+              0.9880577685584399,
+              0.9889314325715977,
+              0.9893890430079724,
+              0.9900236677477067,
+              0.9921718095550545,
+              0.9915558020865514
+            ],
+            "rmse": 0.01348332858991761,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "a637f3a9a8b875f79037fd0be1a2fcf9a95c25c2c90e69f9ba3378e89afd9058"
+        },
+        "final": {
+          "candidate": "21e0c835ae7ec96440f6b2527ca27b0ae8691b4a5acd503a18f3465c6e125366",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0964328104210663,
+            1.236087866233172,
+            1.257641783757635,
+            1.2480463306789673,
+            1.2109915498018433,
+            1.1345544221552948,
+            0.9893548766403363,
+            0.9883859141928032,
+            0.9898129284831934,
+            0.9913422723325735,
+            0.9921530307723385,
+            0.9921956618766208,
+            0.9918676892175582
+          ],
+          "rmse": 0.03494083593839965,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "cfa9cff55b7a125784d36c64b132ab273533b9601a5610112c6e398acbbe2475",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.625,
+            1.875,
+            2.475,
+            2.925,
+            3.275
+          ]
+        },
+        "credit": {
+          "candidate": "cfa9cff55b7a125784d36c64b132ab273533b9601a5610112c6e398acbbe2475",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "ee942361588682ff17009316f9c86559b59081549f353e50e49d76d39feaac52",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "cfa9cff55b7a125784d36c64b132ab273533b9601a5610112c6e398acbbe2475",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.490892222861362,
+              1.4863816534472107,
+              1.31101150382176,
+              1.222424455569527,
+              1.1914720315206626,
+              1.1768819757401083,
+              1.154866165629905,
+              0.9880577072226975,
+              0.988918882176622,
+              0.9893782574132772,
+              0.9900209258711796,
+              0.9921628149095003,
+              0.9915534159792583
+            ],
+            "rmse": 0.013684753867448302,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "a42e3c27ce04efbf2204965cc6504117308849180e23a62382f01bf813e0f0bc"
+        },
+        "final": {
+          "candidate": "cfa9cff55b7a125784d36c64b132ab273533b9601a5610112c6e398acbbe2475",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0992944537155147,
+            1.236162274534192,
+            1.2565338944002744,
+            1.249035377136743,
+            1.210489101750545,
+            1.1344596491651269,
+            0.9893115826407212,
+            0.9883788884925168,
+            0.98980730128438,
+            0.9913467118369359,
+            0.9921471043215626,
+            0.9921877794662883,
+            0.9918608970815743
+          ],
+          "rmse": 0.03503836504441282,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "25a99ee92051cc294c349a893c8fc08db5a2dee666ce2483fa61d30f3045c514",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.875,
+            2.475,
+            2.925,
+            3.425
+          ]
+        },
+        "credit": {
+          "candidate": "25a99ee92051cc294c349a893c8fc08db5a2dee666ce2483fa61d30f3045c514",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "bf3234f48097d5e8f647d8e0a7dbcc0e08d2500542d3a5d2e9d3bf9dd8e556f0",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "25a99ee92051cc294c349a893c8fc08db5a2dee666ce2483fa61d30f3045c514",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.486249440471056,
+              1.489099058115471,
+              1.3113499681035137,
+              1.2221513729987878,
+              1.195168036083252,
+              1.1795196840177848,
+              1.1514401241253005,
+              0.9813631982536557,
+              0.987720412235433,
+              0.9899393860160882,
+              0.9909261734476513,
+              0.9927602289662643,
+              0.9918875905506512
+            ],
+            "rmse": 0.013065108501579579,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "67881fdc3755f90e2c4b714a3cb2e576e15949d49d7ccd0c1f280d0c60e4bc2f"
+        },
+        "final": {
+          "candidate": "25a99ee92051cc294c349a893c8fc08db5a2dee666ce2483fa61d30f3045c514",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0968471260302397,
+            1.235854625527701,
+            1.2565019755628102,
+            1.249301953573645,
+            1.2133496015931111,
+            1.1291574279442038,
+            0.9825710016572597,
+            0.9833327987932656,
+            0.9907982432059543,
+            0.9909810454146026,
+            0.9923366170325179,
+            0.9926020501607389,
+            0.9924834481666656
+          ],
+          "rmse": 0.03348535029519631,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "bb9fa56ea6b1a87c9c5e4d378b0b45c9b837f22b1e14dcd565f59ffb4eb858af",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.625,
+            1.975,
+            2.475,
+            2.925,
+            3.275
+          ]
+        },
+        "credit": {
+          "candidate": "bb9fa56ea6b1a87c9c5e4d378b0b45c9b837f22b1e14dcd565f59ffb4eb858af",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "9e6af46be76fecdec1a51320f28a26c96f2c0e1c873664be409ae2b83bfb8fee",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "bb9fa56ea6b1a87c9c5e4d378b0b45c9b837f22b1e14dcd565f59ffb4eb858af",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4918255278031438,
+              1.4859077331963135,
+              1.3108040536774297,
+              1.2202938939668577,
+              1.1916099368169804,
+              1.1768045268909204,
+              1.1547786226313028,
+              0.9880577513333497,
+              0.9889279572768293,
+              0.98938605645181,
+              0.9900229085499668,
+              0.9921693189125964,
+              0.9915551413753749
+            ],
+            "rmse": 0.013650157109875138,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "4dff65f99843e5251dd82fc0571f037dc72ff809db0b4caf99adc299eedc51ee"
+        },
+        "final": {
+          "candidate": "bb9fa56ea6b1a87c9c5e4d378b0b45c9b837f22b1e14dcd565f59ffb4eb858af",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0953557399555007,
+            1.2351576160115738,
+            1.2572459350213003,
+            1.248399197357756,
+            1.2108663145316925,
+            1.1345258979765913,
+            0.9893428745251229,
+            0.9883839685925057,
+            0.9898113703252469,
+            0.9913435016515355,
+            0.9921513897174781,
+            0.9921934792170641,
+            0.9918658084633187
+          ],
+          "rmse": 0.034890001812216444,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "f0514aa2bb54ed660786d3fe4db4d8c8364afbdd923779379b4dd42ce203fd07",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.875,
+            2.4000000000000004,
+            3.0999999999999996
+          ]
+        },
+        "credit": {
+          "candidate": "f0514aa2bb54ed660786d3fe4db4d8c8364afbdd923779379b4dd42ce203fd07",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "f3bb2bbeaebf60e3d360bb5566f8cba861c365bca31afbb770cc4965c704a551",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "f0514aa2bb54ed660786d3fe4db4d8c8364afbdd923779379b4dd42ce203fd07",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4862525740458068,
+              1.4890960183145125,
+              1.3113521597633735,
+              1.2211752283439128,
+              1.2148726933282528,
+              1.1963147377709171,
+              1.1414890209645936,
+              0.9908989628002034,
+              0.9908585874378996,
+              0.9902626994531738,
+              0.9895107229092033,
+              0.9938341454859021,
+              0.9917526529583895
+            ],
+            "rmse": 0.014190716676145724,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "605fe6bcfc30e612743f661876b0e88f04d4383d4347fc9017e57f60c72a61cf"
+        },
+        "final": {
+          "candidate": "f0514aa2bb54ed660786d3fe4db4d8c8364afbdd923779379b4dd42ce203fd07",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0968492427989653,
+            1.2349823381296028,
+            1.2568781635465975,
+            1.2489577576456423,
+            1.2274709941336863,
+            1.1072768327822462,
+            0.9802898317799873,
+            0.9910837715075747,
+            0.9896942323770418,
+            0.9907536005882269,
+            0.993499606256913,
+            0.9937842673734281,
+            0.9929083463519204
+          ],
+          "rmse": 0.027267805099590387,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "d8389e2682b4f7a1bc2b0cde16fc6e9a99f48a222920ef7feec5e81fb5074518",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.9249999999999998,
+            2.525,
+            2.925,
+            3.325
+          ]
+        },
+        "credit": {
+          "candidate": "d8389e2682b4f7a1bc2b0cde16fc6e9a99f48a222920ef7feec5e81fb5074518",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "54fd735109364e847f41c7621e78a8ba59f0bec0c5e5e53aaed42a4e5298a622",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "d8389e2682b4f7a1bc2b0cde16fc6e9a99f48a222920ef7feec5e81fb5074518",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4864556926421528,
+              1.4889065502850372,
+              1.3114776670914807,
+              1.2181007132158646,
+              1.19993043914954,
+              1.1803252792184897,
+              1.1514860664929245,
+              0.9872346774537912,
+              0.9889476386069929,
+              0.9895780523782627,
+              0.9901751634490996,
+              0.992291861104472,
+              0.9916135923145455
+            ],
+            "rmse": 0.012706576399741388,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "55909013d09d877f3996760da80c56c1a3a870558fbd001d87864a09caa2525c"
+        },
+        "final": {
+          "candidate": "d8389e2682b4f7a1bc2b0cde16fc6e9a99f48a222920ef7feec5e81fb5074518",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0962863154942484,
+            1.2322257324762498,
+            1.2564793942298587,
+            1.2518024958782925,
+            1.221244902090676,
+            1.131658249575771,
+            0.9864874176335799,
+            0.9879420992307104,
+            0.990000872911992,
+            0.9912671750270186,
+            0.992202832387644,
+            0.9922853113633399,
+            0.9919828932247454
+          ],
+          "rmse": 0.03384936941743565,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "a8cf7c4db280706793a00e8cb47679b447c5dda45a2f5beaa379a2c940817f3b",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.9249999999999998,
+            2.125,
+            2.975,
+            3.325
+          ]
+        },
+        "credit": {
+          "candidate": "a8cf7c4db280706793a00e8cb47679b447c5dda45a2f5beaa379a2c940817f3b",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "54e7c5033d8ac71a25d009fdbf0f3b9cbca9caea192b73ced6fe4a4b565ff403",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "a8cf7c4db280706793a00e8cb47679b447c5dda45a2f5beaa379a2c940817f3b",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.486329632037382,
+              1.48902373186354,
+              1.3114006641235392,
+              1.2167995695090745,
+              1.2045129550216942,
+              1.1879208831267332,
+              1.1444410035791406,
+              0.9870024869080449,
+              0.9890489317229693,
+              0.989713280735252,
+              0.9902359853868673,
+              0.9923996297517061,
+              0.9916486570294598
+            ],
+            "rmse": 0.012617753983004418,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "d576f18cc90cb981de11def2f1d1185c587df91bb70f8c5d61ec856f5fac8d0d"
+        },
+        "final": {
+          "candidate": "a8cf7c4db280706793a00e8cb47679b447c5dda45a2f5beaa379a2c940817f3b",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.096673451592249,
+            1.2331149518261089,
+            1.2544984095847789,
+            1.2539529584401998,
+            1.2185204093441673,
+            1.1158159726743835,
+            0.9833543089948745,
+            0.987871226326571,
+            0.9900947143386623,
+            0.9912104241302193,
+            0.9922664687593765,
+            0.9923758302355745,
+            0.9920704551423887
+          ],
+          "rmse": 0.02964623082999156,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      }
+    ],
+    "balanced": [
+      {
+        "candidate": "c6a019a53001343e517a44106e1cbfd2562ac8dbab4d7f2b64e96064100c0e6c",
+        "program": {
+          "kind": "smooth",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            0.525,
+            1.3250000000000002,
+            2.125,
+            3.325
+          ]
+        },
+        "credit": {
+          "candidate": "c6a019a53001343e517a44106e1cbfd2562ac8dbab4d7f2b64e96064100c0e6c",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "4c3e8210182473abbf1d883f9738689eefd589211a3ea5a44c2aed55208d9ad9",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "c6a019a53001343e517a44106e1cbfd2562ac8dbab4d7f2b64e96064100c0e6c",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.480605179831258,
+              1.4880425623611586,
+              1.2978813987785713,
+              1.2012888674252133,
+              1.1867494427214345,
+              1.1650802963365239,
+              1.118942294681129,
+              0.9825597567113185,
+              0.9924773431640384,
+              0.9956017497872164,
+              0.9963991347441761,
+              0.9877865314029278,
+              0.9932114104838421
+            ],
+            "rmse": 0.009444762190784672,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "1efd7f76cf19979d2b03a48932ac1e469b7da9154ad477435adcfd1090931c83"
+        },
+        "final": {
+          "candidate": "c6a019a53001343e517a44106e1cbfd2562ac8dbab4d7f2b64e96064100c0e6c",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0923256542722688,
+            1.2235633921186477,
+            1.2553094509312486,
+            1.259521885902464,
+            1.206766194667467,
+            1.0955521766266159,
+            0.9969651583997279,
+            0.9866525325011196,
+            0.9965624529854513,
+            0.990634364890604,
+            0.9869441348754551,
+            0.9871326392386738,
+            0.9907588294498106
+          ],
+          "rmse": 0.024934254199960468,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "372f8a9d6419d595e09a4a1f3e2402542008fca361176936342e40524c37cd58",
+        "program": {
+          "kind": "continuous",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            1.975,
+            2.975,
+            3.325,
+            4.025
+          ]
+        },
+        "credit": {
+          "candidate": "372f8a9d6419d595e09a4a1f3e2402542008fca361176936342e40524c37cd58",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "17ec8bc04ceccb8bd3ff9711850ca0d71d9d75a03bf2bc4bc3520044273646f5",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "372f8a9d6419d595e09a4a1f3e2402542008fca361176936342e40524c37cd58",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4827644070164752,
+              1.4932087905890512,
+              1.3073187812002516,
+              1.2338245857187033,
+              1.2106103510898845,
+              1.1932345164803546,
+              1.1456082017422378,
+              0.989039229276893,
+              0.9882725022372488,
+              0.988510754735655,
+              0.9895415964564234,
+              0.9917162173617825,
+              0.9914420444681564
+            ],
+            "rmse": 0.014641677438085997,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "ccdf7a5d88114ecd4fa7ce8b4f53d48795cd6c7a67c2a78b4d59d3b55957471f"
+        },
+        "final": {
+          "candidate": "372f8a9d6419d595e09a4a1f3e2402542008fca361176936342e40524c37cd58",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0854080650464932,
+            1.2406780667550588,
+            1.2497076349347305,
+            1.251222018563536,
+            1.224367690276151,
+            1.1142177750806943,
+            0.9881806572194365,
+            0.9885979036407405,
+            0.989132404015697,
+            0.9916462290887389,
+            0.9917995799269018,
+            0.9917760535081019,
+            0.9915288380873991
+          ],
+          "rmse": 0.028906333494239187,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "8258efbc48d1b15b24bb85b2c753c89b712d372b72535ca0dcfdfe14863567cb",
+        "program": {
+          "kind": "continuous",
+          "degree": 4,
+          "cuts": [
+            0.575,
+            2.025,
+            3.0999999999999996,
+            3.6500000000000004
+          ]
+        },
+        "credit": {
+          "candidate": "8258efbc48d1b15b24bb85b2c753c89b712d372b72535ca0dcfdfe14863567cb",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "1daaf0b8b526b88e668b869f60e2ce3ac5e76aa8b6d011b4ad4474644873e020",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "8258efbc48d1b15b24bb85b2c753c89b712d372b72535ca0dcfdfe14863567cb",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.482873112199286,
+              1.49304477847204,
+              1.3075228357110973,
+              1.2278723963329863,
+              1.2030441912957692,
+              1.1820564883372866,
+              1.1313296783959694,
+              0.9827425687883471,
+              0.9912789364305816,
+              0.983188031040338,
+              0.9894725277514806,
+              0.9920220970763327,
+              0.9917698800880846
+            ],
+            "rmse": 0.010142574794313896,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "3fa8885b97c432faef14fb5737a1455cada25877287be0ccfb32577d7d1f1a11"
+        },
+        "final": {
+          "candidate": "8258efbc48d1b15b24bb85b2c753c89b712d372b72535ca0dcfdfe14863567cb",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.086750711228377,
+            1.2353141610640166,
+            1.2489854979993211,
+            1.2557108961592527,
+            1.220680693013424,
+            1.1025233717060097,
+            0.9528600430037731,
+            0.9837503351890198,
+            0.9880244414966084,
+            0.9915535197922685,
+            0.9917585154854521,
+            0.9918978957199889,
+            0.9920245900484885
+          ],
+          "rmse": 0.027670641147791657,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "c5c2be9038ea24c7eabff7a413356d7f5e594d6a70662a1be8621b456a8dd2db",
+        "program": {
+          "kind": "continuous",
+          "degree": 2,
+          "cuts": [
+            0.32499999999999996,
+            0.625,
+            1.9249999999999998,
+            3.025
+          ]
+        },
+        "credit": {
+          "candidate": "c5c2be9038ea24c7eabff7a413356d7f5e594d6a70662a1be8621b456a8dd2db",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "8b311dd6a9078575c3c9ed76a8bd3bac6d95330031ae9bea6afa22705cedf627",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "c5c2be9038ea24c7eabff7a413356d7f5e594d6a70662a1be8621b456a8dd2db",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4843234383874329,
+              1.4763036578612505,
+              1.293813512133187,
+              1.2581190450359627,
+              1.187792875539754,
+              1.1685067592018294,
+              1.1234881124250458,
+              0.9898637983900299,
+              0.9897489248529298,
+              0.9897509337586627,
+              0.9898718340129331,
+              0.9920304334016755,
+              0.992905809788353
+            ],
+            "rmse": 0.01380166481366702,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "91dcf268dcc22bd7d7d1e15e489400e123207686c158cfe2a62733ca4d1cbd78"
+        },
+        "final": {
+          "candidate": "c5c2be9038ea24c7eabff7a413356d7f5e594d6a70662a1be8621b456a8dd2db",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.1213122241533708,
+            1.26246978040153,
+            1.2647248370317083,
+            1.2519913867246057,
+            1.2049301871773577,
+            1.0977555819861706,
+            0.9905179382886963,
+            0.9898097889582359,
+            0.9898158156754103,
+            0.9905380273459656,
+            0.9915254404076884,
+            0.9917700777783127,
+            0.992598299406706
+          ],
+          "rmse": 0.028855916912180177,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "6740b540322283eeb65e73ffead478b7b8ec7f5b636c8838dadf5c5b9303cd0a",
+        "program": {
+          "kind": "continuous",
+          "degree": 3,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            2.525
+          ]
+        },
+        "credit": {
+          "candidate": "6740b540322283eeb65e73ffead478b7b8ec7f5b636c8838dadf5c5b9303cd0a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "62618f4aa8b18fae479794d85e0ef0b3c0061556fe9ed8b751b66158b4d13940",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "6740b540322283eeb65e73ffead478b7b8ec7f5b636c8838dadf5c5b9303cd0a",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4834097557536836,
+              1.4820484393058138,
+              1.3295723983696632,
+              1.2045373720811243,
+              1.164833116329517,
+              1.1398315245113508,
+              1.096250721900127,
+              0.9772555058559572,
+              0.974339091486897,
+              0.9758387979611134,
+              0.9814763760827485,
+              0.997414186306406,
+              0.985620057499316
+            ],
+            "rmse": 0.01699279622082862,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "3103090f3ff8d6de1ba3a63cf01e1bae6de94a923049ac1dbd76d4c24eef7df6"
+        },
+        "final": {
+          "candidate": "6740b540322283eeb65e73ffead478b7b8ec7f5b636c8838dadf5c5b9303cd0a",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.092088536165697,
+            1.2110802569018988,
+            1.2388564457487086,
+            1.271346072534487,
+            1.1920940322007918,
+            1.0774937155400492,
+            1.0104867218539777,
+            0.97547604081075,
+            0.9792639779654173,
+            0.99614751803237,
+            1.0004237951019839,
+            0.999345039889462,
+            0.9906405928947938
+          ],
+          "rmse": 0.024691203059723027,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "a57cf98faac3a4d4e99d293eaa21ad32abdedc0639bbaa5160054876e543e0bd",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.475,
+            2.025,
+            3.025,
+            3.325
+          ]
+        },
+        "credit": {
+          "candidate": "a57cf98faac3a4d4e99d293eaa21ad32abdedc0639bbaa5160054876e543e0bd",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "c6f2705c8267d3a33b7c685eccbecc0961511dee8d318c279be45369781183c3",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "a57cf98faac3a4d4e99d293eaa21ad32abdedc0639bbaa5160054876e543e0bd",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4830800306433503,
+              1.488160108761008,
+              1.319075113842132,
+              1.2259852262947937,
+              1.2043447782559884,
+              1.184211958936138,
+              1.1346425976639156,
+              0.9869460102421278,
+              0.9889259095534281,
+              0.989616444253385,
+              0.9902119998667701,
+              0.9923291634394307,
+              0.991629757777404
+            ],
+            "rmse": 0.01080519101809361,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "4c2e5ff05482054c9e8c31d97a9e169ad24a490ede3ba3be668527751a1247a4"
+        },
+        "final": {
+          "candidate": "a57cf98faac3a4d4e99d293eaa21ad32abdedc0639bbaa5160054876e543e0bd",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.104116924360912,
+            1.2345758147559949,
+            1.2487170022851504,
+            1.254800944572398,
+            1.2211573648133733,
+            1.105714571001477,
+            0.9759961605652451,
+            0.9877726251239117,
+            0.9900457695516235,
+            0.9912462403418991,
+            0.9922201378109836,
+            0.9923141070227679,
+            0.9920171752498597
+          ],
+          "rmse": 0.02754759519536837,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "beb70cd77b96a4cdf99b133712bf221cf46acd81f470a4375d1d71a048c1c6a9",
+        "program": {
+          "kind": "continuous",
+          "degree": 2,
+          "cuts": [
+            0.4,
+            1.3250000000000002,
+            1.9249999999999998,
+            2.65,
+            3.6500000000000004
+          ]
+        },
+        "credit": {
+          "candidate": "beb70cd77b96a4cdf99b133712bf221cf46acd81f470a4375d1d71a048c1c6a9",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "94f8de4dae018aeacd87134c4649d994a9a2179b502d680eacaf5adacfe59749",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "beb70cd77b96a4cdf99b133712bf221cf46acd81f470a4375d1d71a048c1c6a9",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4998675342430836,
+              1.4780433439581255,
+              1.3442934771527728,
+              1.242254493399146,
+              1.2156801097830832,
+              1.1821947293227737,
+              1.1225031987530707,
+              0.9681724651605181,
+              0.9841840093942834,
+              1.0069904228016222,
+              0.999083641765999,
+              0.9899596135490476,
+              0.9936553046384287
+            ],
+            "rmse": 0.017845377241834957,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "eb487630c95fde976ad0b4a33c13f6f2ab7853e588561232ee82f484d3c70562"
+        },
+        "final": {
+          "candidate": "beb70cd77b96a4cdf99b133712bf221cf46acd81f470a4375d1d71a048c1c6a9",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.0852932667803263,
+            1.2461780131844475,
+            1.2502214290502818,
+            1.2467774935870544,
+            1.2244353356804036,
+            1.0962970486436692,
+            1.0016624498513096,
+            0.9710832364548001,
+            1.001477517275239,
+            0.9897964702649743,
+            0.9887044103358078,
+            0.9892111528577933,
+            0.9921816894393198
+          ],
+          "rmse": 0.025210256949380016,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      },
+      {
+        "candidate": "5fb984ec7a4cdee5f223f923526a86c520ca827f10c79d5b9b83934ebe0d4671",
+        "program": {
+          "kind": "smooth",
+          "degree": 4,
+          "cuts": [
+            0.625,
+            1.975,
+            2.125,
+            2.925
+          ]
+        },
+        "credit": {
+          "candidate": "5fb984ec7a4cdee5f223f923526a86c520ca827f10c79d5b9b83934ebe0d4671",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "predictor": "724b3427331a1ac415267b2e2a1ba2e21d66d5b86e62ead4ded3db130d56a143",
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "credited_ids": [],
+          "points": 0.0,
+          "assessment": {
+            "candidate": "5fb984ec7a4cdee5f223f923526a86c520ca827f10c79d5b9b83934ebe0d4671",
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4917568376015424,
+              1.4859425447807553,
+              1.3108194586645823,
+              1.2517141080115854,
+              1.1998720659551856,
+              1.1763132132790848,
+              1.1212512580118887,
+              0.9783146682025656,
+              0.9845081753230237,
+              0.9895970938244021,
+              0.9953464619330559,
+              0.9830098660945097,
+              0.9914080152039478
+            ],
+            "rmse": 0.012719819586018633,
+            "baseline_rmse": 23.25012553310017,
+            "accepted": true,
+            "scope": "reserved measurements from the retained source; empirical interpolation",
+            "causal_mechanism_identified": false
+          },
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "identity": "e78b1e1a7e35487b3a65b7bc5aba263bab9d7c481709c75668984e6c8a345a6c"
+        },
+        "final": {
+          "candidate": "5fb984ec7a4cdee5f223f923526a86c520ca827f10c79d5b9b83934ebe0d4671",
+          "ids": [
+            "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+            "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+            "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+            "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+            "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+            "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+            "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+            "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+            "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+            "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+            "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+            "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+            "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+          ],
+          "predictions": [
+            1.095651947532778,
+            1.254285735561985,
+            1.249863080122862,
+            1.254201273364727,
+            1.219517223559885,
+            1.0925356072332968,
+            0.9973564554449653,
+            0.9798996560097214,
+            0.9938368594050166,
+            0.9934016157909413,
+            0.9839603073539884,
+            0.9830396489964778,
+            0.986851564805646
+          ],
+          "rmse": 0.024667116043780052,
+          "baseline_rmse": 25.98743273195964,
+          "accepted": true,
+          "scope": "reserved measurements from the retained source; empirical interpolation",
+          "causal_mechanism_identified": false
+        }
+      }
+    ]
+  },
+  "controls": {
+    "global_degree_0": {
+      "predictions": [
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446,
+        1.1297012765957446
+      ],
+      "rmse": 0.12479441859099961
+    },
+    "global_degree_1": {
+      "predictions": [
+        1.284950815202416,
+        1.1589953859637894,
+        1.1503088046369876,
+        1.1372789326467847,
+        1.1199057699931811,
+        1.0981893166761765,
+        1.0764728633591718,
+        1.0460698287153654,
+        1.0200100847349598,
+        0.9896070500911535,
+        0.9678905967741488,
+        0.9635473061107478,
+        0.9505174341205451
+      ],
+      "rmse": 0.0897774188612421
+    },
+    "global_degree_2": {
+      "predictions": [
+        1.28351193666061,
+        1.167147726696741,
+        1.1584925879096586,
+        1.1453574553277754,
+        1.1275594196695797,
+        1.1048546018930563,
+        1.0816417027790008,
+        1.0482900673722693,
+        1.0189103444228067,
+        0.9837092929474586,
+        0.9579559871457429,
+        0.9527443562248958,
+        0.9369875239413472
+      ],
+      "rmse": 0.08903286763200627
+    },
+    "global_degree_3": {
+      "predictions": [
+        1.2855861934717074,
+        1.1687041746482647,
+        1.1596719611075097,
+        1.1459592486636299,
+        1.127403661485951,
+        1.1038468563479469,
+        1.0799844019384452,
+        1.046261211784559,
+        1.017256833587301,
+        0.983555158765419,
+        0.9597222583833956,
+        0.9549904515054017,
+        0.9408795321519371
+      ],
+      "rmse": 0.08851789391881049
+    },
+    "global_degree_4": {
+      "predictions": [
+        1.1750770395373455,
+        1.2186652276648036,
+        1.2161576018480995,
+        1.2071861385218925,
+        1.1854080226799257,
+        1.14365521034876,
+        1.0896399287808465,
+        1.0070505910674792,
+        0.9493457355869096,
+        0.9313098745277432,
+        0.9762551784515136,
+        0.9931388964590989,
+        1.0628326896466331
+      ],
+      "rmse": 0.06374554983453184
+    },
+    "linear_interpolation": {
+      "predictions": [
+        1.1048564,
+        1.2356994666666665,
+        1.2533067999999998,
+        1.2504256,
+        1.216743,
+        1.1178904,
+        0.9904316000000002,
+        0.9885565333333334,
+        0.9887394666666666,
+        0.9915292,
+        0.9916664000000002,
+        0.9916664000000002,
+        0.9915749333333334
+      ],
+      "rmse": 0.030630279335999665
+    },
+    "dynamic_segmentation": {
+      "predictions": [
+        1.0978300697247718,
+        1.2438552822116513,
+        1.2565298873761843,
+        1.2553619620447802,
+        1.216135706523595,
+        1.1065633878875025,
+        0.9903597333333327,
+        0.9903597333333327,
+        0.9903597333333327,
+        0.9903597333333327,
+        0.9903597333333327,
+        0.9903597333333327,
+        0.9903597333333327
+      ],
+      "rmse": 0.02747277587529126
+    }
+  },
+  "dynamic_control": {
+    "kind": "dynamic_segmentation",
+    "segments": [
+      {
+        "left": 0,
+        "right": 4,
+        "degree": 0,
+        "weights": [
+          1.4761196
+        ],
+        "origin": 0.05
+      },
+      {
+        "left": 4,
+        "right": 12,
+        "degree": 2,
+        "weights": [
+          1.422251427522936,
+          -3.0849902507645224,
+          6.165920244648314
+        ],
+        "origin": 0.35
+      },
+      {
+        "left": 12,
+        "right": 15,
+        "degree": 1,
+        "weights": [
+          1.3757806666666663,
+          -1.468040000000002
+        ],
+        "origin": 1.85
+      },
+      {
+        "left": 15,
+        "right": 26,
+        "degree": 2,
+        "weights": [
+          1.2046635413866482,
+          0.3419976044795013,
+          -0.5381288820854281
+        ],
+        "origin": 2.0
+      },
+      {
+        "left": 26,
+        "right": 47,
+        "degree": 0,
+        "weights": [
+          0.9903597333333327
+        ],
+        "origin": 3.0
+      }
+    ],
+    "cuts": [
+      0.32499999999999996,
+      1.3250000000000002,
+      1.975,
+      2.975
+    ],
+    "objective": 0.024539385697840026,
+    "penalty": 0.002153778103162513
+  },
+  "tolerance": 0.05,
+  "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+  "final_ids": [
+    "45b56f9ef11f9656202cceff9a05d80f0cad406f8e6b6f3d8329cf9a0844c3cf",
+    "e9f6f72b46c77761d4cebb95d90229942ec22c1c56395f1de164bd5615baa2bb",
+    "b16e0dd11a34ca9261aff2cd8726f4739aa679722cbf2d10de4baa47d95aa4d5",
+    "1da1ba03bca51c7ab58e515a698a4813a33165ef929ab78c10ff535cf0fcd380",
+    "1fda14f5c67caac6522cd45c001dfb206e0e9079c215fa56d8228e586b0455e9",
+    "ea0fe9f20ba7b70c64fb0e5f92b9d2ec044557f2c93270e8515133bfe7dc1750",
+    "ce2743f2fe583ec3a8b17318c70b3c427a70c5d8bf9a03a58e7f2350882dd43f",
+    "6dd2098de00eb7cbf4a8eab8a023d7aab962962c8a347f90104809f736244b24",
+    "8279f71a279c584887aaa76b57647ec9b7c8836f8b73d87b8fc2a5ff4fee84d0",
+    "7e3cfe4f75e494e17d9ea9c871b2f84145ccf577f6185f50fba12c946e38bf13",
+    "9e1a250386bd02e9f973b497f70e679580264f0df6fa0704cbf67404ba6d8ba1",
+    "dd47977e78aa417789b67ea26842f4a1adaf45fc3a31c8975f24124707cd994d",
+    "5be77f3c15d33b580fffedb83f956fa26cc1ba912762709ac242975f340a2a5a"
+  ],
+  "unique_credited_ids": [
+    "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+    "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66",
+    "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+    "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+    "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+    "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+    "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+    "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+    "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+    "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+    "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+    "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+    "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11"
+  ],
+  "points": 12.99976709528272,
+  "selection_unchanged": true,
+  "contracts": {
+    "runtime": "50b79f53634c76fe4b310e2efdbc3ee9889b044f5450e47b825c4a7f9c0292e9",
+    "assessor": "3622b2c70431dfcd69e7ca31e8dc00374ea2f586843d7c0232971b98ca7a558d",
+    "protocol": "e475bcbd3c2112de014ca9663f2fc23f2700715f2ce8df535515107d31aef012"
+  }
+}

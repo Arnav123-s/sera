@@ -1,0 +1,1959 @@
+[
+  {
+    "id": "self-identified-gap",
+    "kind": "gap_findings",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "goal": {
+        "goal": {
+          "parent": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "target": "Position (m)",
+          "question": "Does the retained explanation cover its own unexamined observations, and what executable refinements explain any mismatch?"
+        },
+        "id": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+        "input": "Time (s)",
+        "target": "Position (m)",
+        "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+        "source_hash": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+        "reason": "The retained prediction covers only part of its own recorded observation source",
+        "development_rmse_of_retained_explanation": 20.4784094267622,
+        "mismatch_detected": true,
+        "tolerance": 0.05,
+        "original_scope_preserved": true,
+        "novel_mechanism_labels_supplied": [],
+        "gap_kind": "empirical coverage beyond the previously checked interval"
+      },
+      "investigation": {
+        "arm": "residual",
+        "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+        "basis": "lowest development score; fixed before independent credit/final",
+        "contracts": {
+          "runtime": "50b79f53634c76fe4b310e2efdbc3ee9889b044f5450e47b825c4a7f9c0292e9",
+          "assessor": "3622b2c70431dfcd69e7ca31e8dc00374ea2f586843d7c0232971b98ca7a558d",
+          "protocol": "e475bcbd3c2112de014ca9663f2fc23f2700715f2ce8df535515107d31aef012"
+        },
+        "portfolios": {
+          "learned": [
+            "34c2f28f4986deefdfcd0f4cb7fba537d7e4bfeb4331fd1662569917e83f8359",
+            "21e0c835ae7ec96440f6b2527ca27b0ae8691b4a5acd503a18f3465c6e125366",
+            "cfa9cff55b7a125784d36c64b132ab273533b9601a5610112c6e398acbbe2475",
+            "25a99ee92051cc294c349a893c8fc08db5a2dee666ce2483fa61d30f3045c514",
+            "bb9fa56ea6b1a87c9c5e4d378b0b45c9b837f22b1e14dcd565f59ffb4eb858af",
+            "f0514aa2bb54ed660786d3fe4db4d8c8364afbdd923779379b4dd42ce203fd07",
+            "d8389e2682b4f7a1bc2b0cde16fc6e9a99f48a222920ef7feec5e81fb5074518",
+            "a8cf7c4db280706793a00e8cb47679b447c5dda45a2f5beaa379a2c940817f3b"
+          ],
+          "residual": [
+            "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+            "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+            "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+            "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+            "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+            "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+            "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+            "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443"
+          ],
+          "balanced": [
+            "c6a019a53001343e517a44106e1cbfd2562ac8dbab4d7f2b64e96064100c0e6c",
+            "372f8a9d6419d595e09a4a1f3e2402542008fca361176936342e40524c37cd58",
+            "8258efbc48d1b15b24bb85b2c753c89b712d372b72535ca0dcfdfe14863567cb",
+            "c5c2be9038ea24c7eabff7a413356d7f5e594d6a70662a1be8621b456a8dd2db",
+            "6740b540322283eeb65e73ffead478b7b8ec7f5b636c8838dadf5c5b9303cd0a",
+            "a57cf98faac3a4d4e99d293eaa21ad32abdedc0639bbaa5160054876e543e0bd",
+            "beb70cd77b96a4cdf99b133712bf221cf46acd81f470a4375d1d71a048c1c6a9",
+            "5fb984ec7a4cdee5f223f923526a86c520ca827f10c79d5b9b83934ebe0d4671"
+          ]
+        },
+        "search_wall_seconds_this_invocation": 110.65279139997438,
+        "counts": {
+          "learned": {
+            "candidates": 4096,
+            "attempts": 12175,
+            "duplicates": 8079,
+            "fitted": 2365
+          },
+          "residual": {
+            "candidates": 4096,
+            "attempts": 9712,
+            "duplicates": 5616,
+            "fitted": 2785
+          },
+          "balanced": {
+            "candidates": 4096,
+            "attempts": 5576,
+            "duplicates": 1480,
+            "fitted": 2591
+          }
+        }
+      },
+      "open_goals": [
+        {
+          "id": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "question": "What independently observed variable explains the retained time-local changes?",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "status": "EMPIRICAL_ALTERNATIVES_RETAINED_CAUSE_OPEN"
+        }
+      ],
+      "scope": {
+        "new_source_range": [
+          0.05,
+          4.65
+        ],
+        "preserved_original_range": [
+          0.85,
+          1.7999999999999998
+        ],
+        "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+        "origin": 0.7999999999999999
+      },
+      "models": [
+        {
+          "id": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -171.9490296188501,
+            -1025.9216788739932,
+            -4042.8845328654656,
+            -7960.140261706138,
+            -1.039828996397091,
+            658.606100930877,
+            9427.306188764634,
+            -135.87309988209165,
+            278.1965910380316,
+            -5800.137621134109,
+            4.691534139331054,
+            151.15760498826808,
+            4714.082706871492,
+            3.7133805578102113,
+            7.676380642052422,
+            -375.84527930950196
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -183.2662361468326,
+            -1093.9871639494058,
+            -4315.490243528296,
+            -8505.435987622648,
+            0.06892421318964798,
+            651.3287888043776,
+            10678.735040684409,
+            -152.60528822432732,
+            278.3199362426627,
+            -7205.095591957332,
+            -0.7845916385432106,
+            101.11095369375516,
+            4713.4116643718435,
+            7.5314089065744785,
+            -118.46623807814437,
+            4815.678979042045,
+            -1.155664500223522,
+            -119.6754709611244,
+            -4506.227123978009
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.825,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -172.28078349862105,
+            -1027.9169582476047,
+            -4050.875727683346,
+            -7976.125122656179,
+            -1.0073268786640588,
+            658.3927729753348,
+            9463.99071650786,
+            -133.7322034969118,
+            199.8826957934105,
+            -4979.949929107175,
+            1.497162562901563,
+            -217.60903980975263,
+            3510.944075638036,
+            4.772667469753626,
+            -780.1078267242308,
+            37086.428893642435,
+            -2.8657481479865967,
+            -811.9748323627758,
+            -37111.43864994223
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -170.5607771759702,
+            -1017.5722619310288,
+            -4009.444695672818,
+            -7893.250245894657,
+            -1.1758368838603928,
+            659.4987899807388,
+            9273.796649410506,
+            -133.83538253699902,
+            278.588178789787,
+            -5631.878933713083,
+            4.149601942462694,
+            161.08279129137134,
+            4360.031390978649,
+            6.648679304727343,
+            -117.5760387752624,
+            3738.362391968653,
+            -0.980668965914091,
+            -102.26266947562281,
+            -3855.312452265459
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "program": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              1.3250000000000002,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          },
+          "weights": [
+            -1.9998284702581977,
+            -13.708381960132717,
+            -26.97494287431547,
+            -10.759584947795307,
+            164.48528510780068,
+            2.8543295370249453,
+            142.77042413855807,
+            -88.25573683849748,
+            11.053575203552803,
+            4.466889370203402,
+            -313.75243640584785,
+            3.532649815561509,
+            22.325029041533824
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "program": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              0.775,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          },
+          "weights": [
+            -1.619444172227848,
+            -12.211359631237183,
+            -24.032461921587036,
+            -11.350348836739593,
+            184.88428868953332,
+            -0.12795454661879546,
+            232.64842345935563,
+            -6.511270220920398,
+            -448.4264561168287,
+            9.145724333056155,
+            31.529319231171602,
+            3.617463508224728,
+            23.258459581535114
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.925,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          },
+          "weights": [
+            -13.247355424254238,
+            -58.29308998234944,
+            -115.20678743521724,
+            -8.033261449686748,
+            424.96917195075844,
+            -96.85492827606205,
+            21.187321582210515,
+            -0.4166159653873507,
+            -351.67795789065866,
+            -7.528041911845852,
+            595.6802798550468,
+            -2.2501259832875373,
+            -574.8652434406379
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -185.54906023963036,
+            -1107.7168355634747,
+            -4370.47827282636,
+            -8615.429051523844,
+            0.2925737978930556,
+            649.8608626496316,
+            10931.164112002647,
+            -156.09485128922813,
+            281.62747979183115,
+            -7523.129368120066,
+            -0.23013963016802563,
+            99.42600457810192,
+            5049.182394566877,
+            4.308686454883713,
+            36.734764009124675,
+            166.35706714903262
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        }
+      ],
+      "credit": [
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4833990987052426,
+              1.4769692812262796,
+              1.2898565908529624,
+              1.2375598299568598,
+              1.1976082548788045,
+              1.178084449346745,
+              1.1310909162019525,
+              0.9888154272563391,
+              0.9895207806700892,
+              0.9899360388521048,
+              0.9904764599843507,
+              0.9916747544055817,
+              0.9916873922369611
+            ],
+            "rmse": 0.011134360860479364,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "credited_ids": [
+            "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+            "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+            "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+            "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+            "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+            "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+            "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+            "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+            "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+            "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+            "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+            "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+            "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+          ],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "08caf25d42d03e402b24bc335508d249156e55c2b71c8219b8240c2b4eeac560",
+          "points": 12.99976709528272,
+          "predictor": "a041cfcfb452550f093a4240f8bec94c6411ca4ec281cb19cf0d4e44d4e9d66e",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.48207258522811,
+              1.4851450447340824,
+              1.312293490887626,
+              1.2126618322638267,
+              1.2118865087446427,
+              1.1921514609370933,
+              1.1404988211966391,
+              0.9893228261047977,
+              0.9904385633956415,
+              0.9908472920117678,
+              0.9910929868683737,
+              0.9912827625532707,
+              0.9921525283437708
+            ],
+            "rmse": 0.012858102198370098,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "f071d7b472d1b5fb2adf2ff584ab503aa7b14be879278057ff5f966a51bda4f4",
+          "points": 0.0,
+          "predictor": "d6fd6e220d0a094f910e01c9f71ac08176ff703e2c5de0cb537a0d133654093f",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4829700574989202,
+              1.4772782367509336,
+              1.2869592226532638,
+              1.2320857501687388,
+              1.1996641169795652,
+              1.1801310010794412,
+              1.1327719219286432,
+              0.9886051026363891,
+              0.9894750102964266,
+              0.9899731747071485,
+              0.9905977602792566,
+              0.9916033979486887,
+              0.9914429528393811
+            ],
+            "rmse": 0.011276590511501518,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "7a292d9fbae3730d5d4a94979122f1a94f408d1ab57de87669547eb9d84b5149",
+          "points": 0.0,
+          "predictor": "53d1d3eca14794b54cb35fb3492efa8d682997af6c44e8a63b6a9215dd225b26",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4821229981241686,
+              1.4850282990826429,
+              1.3129449259424746,
+              1.212169443277982,
+              1.2123416583573563,
+              1.193887458526117,
+              1.1438061455799422,
+              0.9896174409201622,
+              0.9889650290318026,
+              0.9890048575216939,
+              0.9895648291920516,
+              0.992315799525508,
+              0.9914148712403759
+            ],
+            "rmse": 0.013753552289741565,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "388cb140e18bf0378f1eac3f9ae912583eca679ce009394304dc3d3b0b8dd544",
+          "points": 0.0,
+          "predictor": "6a12d340ccbfba01b9577719eb52df07fe888ebb44be7195dcca961d9747531b",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.482060537943454,
+              1.4851729437120298,
+              1.3121378159550403,
+              1.2291708072419352,
+              1.2032443691285928,
+              1.1857138662593167,
+              1.143405162053964,
+              0.9884378486379208,
+              0.9884956673473112,
+              0.9888337912120475,
+              0.9896323856873086,
+              0.9922055263560062,
+              0.9913940513506219
+            ],
+            "rmse": 0.012143028332455374,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "02d66eb7a2a25712ea9556b54e3ba4ec8c056ef3c385da8d60cb582e0fe3a22e",
+          "points": 0.0,
+          "predictor": "3d51344dfee739a1bba01c579ea924e4a3e49bcc2504fad1ae70ba326968f457",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.500149690698363,
+              1.4782057976747822,
+              1.3432045486682291,
+              1.2328429043327445,
+              1.2030379049588733,
+              1.185634419254374,
+              1.1434804776919163,
+              0.989649331467633,
+              0.9897022530406873,
+              0.989788800997147,
+              0.9899955232935569,
+              0.99195767159323,
+              0.9926565562043974
+            ],
+            "rmse": 0.016838755825616898,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "466285ef28db7a0828a23ceb45bc55e93f94dd111853b9c339705491d01e1269",
+          "points": 0.0,
+          "predictor": "ff5d63a964b0466be2e8f158e791f48b7accc138cb707112453873b43046821f",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4816616130358966,
+              1.486096769806494,
+              1.3069829113286175,
+              1.216901939889455,
+              1.2068247557637668,
+              1.1895640249446124,
+              1.143514338363132,
+              0.9898543164131931,
+              0.9890264358749953,
+              0.9889999909313287,
+              0.9895190989321938,
+              0.9923584629122503,
+              0.9914061040214827
+            ],
+            "rmse": 0.012504146234245303,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "d71d2ec9ae8d02d696a3c996863d465ac57d255cafcd16b19aec6c1409ade142",
+          "points": 0.0,
+          "predictor": "1e7ae25ee94bb9c1a7e1a6d3295fe2d849a5d8e117beb642cd5e42dd884b77ab",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.48157871473299,
+              1.4862887448248046,
+              1.3059117000777576,
+              1.217454609553927,
+              1.2040563342184212,
+              1.1859366942379257,
+              1.1398197009259925,
+              0.9895460459953936,
+              0.9909286245100393,
+              0.9913551619240346,
+              0.9914613976447455,
+              0.9910500117263338,
+              0.9923438407282491
+            ],
+            "rmse": 0.011209536338082148,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "5b2159c249d16bfe7d1dbe99e9dcf12004903b1fc02cda3ff15b7568c61d9303",
+          "points": 0.0,
+          "predictor": "ffbadb91c47c4654bb9113905b6e9a66d8b2a7975b8e97011b3944d07f40f96e",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        }
+      ],
+      "status": "VERIFIED_EMPIRICAL_EXPLANATION_PORTFOLIO"
+    }
+  },
+  {
+    "id": "imagined-alternatives",
+    "kind": "gap_predict",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "scope": {
+        "new_source_range": [
+          0.05,
+          4.65
+        ],
+        "preserved_original_range": [
+          0.85,
+          1.7999999999999998
+        ],
+        "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+        "origin": 0.7999999999999999
+      },
+      "predictions": [
+        {
+          "time": 0.1,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.4757118152593875,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 1.4750590492778883,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 1.475692680003931,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 1.475791888373692,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.4818334764532923,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.4815569068045789,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 1.490704555315915,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.4749273781010288,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            1.4749273781010288,
+            1.490704555315915
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 0.5,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.108652247525356,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 1.109985894239344,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 1.1086913421976305,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 1.1084886525343336,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.114820129517845,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.11534498204135,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 1.1109287041804456,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.1102549076964578,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            1.1084886525343336,
+            1.11534498204135
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 1.25,
+          "route": "preserved_original_scope",
+          "prediction": {
+            "status": "EMPIRICAL_MODEL_PREDICTION",
+            "time_since_model_origin_seconds": 0.45000000000000007,
+            "position_metres": 2.6231864363636377,
+            "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+            "evidence_id": "40a7f0b455507b531562d81f6314ee60d41de1029a1d41a14f8f6865f1d7ba4d",
+            "measured_event": false,
+            "observed_interval_seconds": [
+              0.050000000000000044,
+              1.0
+            ]
+          }
+        },
+        {
+          "time": 2.0,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.2144424822436264,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 1.2141033523609792,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 1.2109837616859522,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 1.2145439405946519,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.2103914236821072,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.202044920714387,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 1.2093546389158925,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.214340183734265,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            1.202044920714387,
+            1.2145439405946519
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 3.0,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.002167324128095,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 0.9938536079118592,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 0.9878498041735213,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 0.9948604513804185,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.0053201615897045,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.00488237422488,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 0.9862202681831856,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.0023858897499451,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            0.9862202681831856,
+            1.0053201615897045
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 4.0,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 0.9910187875102565,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 0.9907724711915544,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 0.9909094285250291,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 0.9908001748192197,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 0.9910430846979309,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 0.9912015737600108,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 0.9904147003638801,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 0.9910463713760009,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            0.9904147003638801,
+            0.9912015737600108
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 10.0,
+          "status": "NEW_OBSERVATION_NEEDED",
+          "goal_preserved": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "next-check",
+    "kind": "gap_next_observation",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "status": "PROPOSED_DISCRIMINATING_OBSERVATION",
+      "source_clock_time": 0.8496093750000001,
+      "model_disagreement": 0.11416602870145187,
+      "predicted_alternatives": [
+        1.4591317139885973,
+        1.4675966534827012,
+        1.459379856188491,
+        1.4580933417635151,
+        1.4384264793146495,
+        1.3551381104380154,
+        1.449409850140679,
+        1.4693041391394672
+      ],
+      "observed": false,
+      "original_goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+      "purpose": "Distinguish retained predictive explanations using new independent measurement"
+    }
+  },
+  {
+    "id": "missing-influence",
+    "kind": "gap_consequences",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "time": 3.5,
+      "retained_acceleration": -9.653059393939394,
+      "alternatives": [
+        {
+          "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "position": 0.9901404325290398,
+          "velocity": 0.006655350867094401,
+          "acceleration": -0.0286109835218904,
+          "additional_acceleration_relative_to_retained_model": 9.624448410417504,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "position": 0.9891858290857881,
+          "velocity": -0.0042770546693860646,
+          "acceleration": 0.045097202656489976,
+          "additional_acceleration_relative_to_retained_model": 9.698156596595883,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "position": 0.9884085809118002,
+          "velocity": 0.0011162461870967144,
+          "acceleration": 0.026072356823263476,
+          "additional_acceleration_relative_to_retained_model": 9.679131750762657,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.825,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "position": 0.9890769494269219,
+          "velocity": -0.0032232683519450855,
+          "acceleration": 0.04080725576063404,
+          "additional_acceleration_relative_to_retained_model": 9.693866649700027,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "position": 0.9892966583509463,
+          "velocity": 0.004592401237445531,
+          "acceleration": -0.004398194173814596,
+          "additional_acceleration_relative_to_retained_model": 9.648661199765579,
+          "assumptions": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              1.3250000000000002,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "position": 0.9892013958822741,
+          "velocity": 0.005635836341661846,
+          "acceleration": -0.006541922344994067,
+          "additional_acceleration_relative_to_retained_model": 9.6465174715944,
+          "assumptions": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              0.775,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "position": 0.9896743591347633,
+          "velocity": 0.00045534430246658986,
+          "acceleration": 0.004101352622966292,
+          "additional_acceleration_relative_to_retained_model": 9.65716074656236,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.925,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "position": 0.9905772614237912,
+          "velocity": 0.008052491911433195,
+          "acceleration": -0.04240388755886526,
+          "additional_acceleration_relative_to_retained_model": 9.610655506380528,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        }
+      ],
+      "kind": "MODEL_CONDITIONAL_MISSING_INFLUENCE",
+      "measured_force": false,
+      "derivation": "Differentiate each learned position program twice, then subtract the retained acceleration.",
+      "next_obligation": "Observe an independent explanatory variable to distinguish physical causes."
+    }
+  },
+  {
+    "id": "retained-mathematics",
+    "kind": "integral",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "status": "CERTIFIED_ALGEBRA",
+      "operator": "integral",
+      "coefficients": [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_check": true
+    }
+  },
+  {
+    "id": "retained-language",
+    "kind": "request",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "status": "INTERPRETED_REQUEST",
+      "intent": "alarm_set",
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-date",
+        "B-timeofday"
+      ]
+    }
+  },
+  {
+    "id": "retained-physical-route",
+    "kind": "solve_discovery",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "result": {
+      "status": "CONDITIONAL_LEARNED_ROUTES",
+      "domain": "motion_0",
+      "target": "a0",
+      "routes": [
+        {
+          "id": "25fe09116af993b665b86fc5a8853c9caa889a02d9d79271e290b23cc56dabd6",
+          "result": "2",
+          "requires": [
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 11
+        }
+      ],
+      "fact_added": false,
+      "source": "independently certified polynomial-model identity"
+    }
+  }
+]

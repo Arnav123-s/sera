@@ -1,6 +1,6 @@
 # Use SERA
 
-The [continuing learner](../research-continuation/42_composed_discovery/README.md) retains language, reading, mathematics, physical meanings and a portfolio of learned discoveries in one owner. The batch interface automatically loads the latest independently admitted successor. Every predecessor store remains available.
+The [continuing learner](../research-continuation/43_knowledge_gaps/README.md) retains language, reading, mathematics, physical meanings and a portfolio of learned discoveries in one owner. Its latest interface also exposes self-identified knowledge gaps and competing empirical explanations. Every predecessor store remains available.
 
 [Home](../README.md) · [Status](STATUS.md) · [Repository map](REPOSITORY_MAP.md) · [Archive](RESEARCH_ARCHIVE.md)
 
@@ -9,10 +9,12 @@ These commands use the prepared workspace at `D:/ai/projects/sera`, its environm
 ## Run several tasks through the continuing learner
 
 ```powershell
-.venv/Scripts/python.exe scripts/run_resolution_bounded.py --seconds 90 --output runs/my-continuing-batch-001 --module scripts.continuing_use -- --input research-continuation/42_composed_discovery/example-tasks.json --output runs/my-continuing-results-001.json
+.venv/Scripts/python.exe scripts/run_gap_bounded.py --seconds 120 --output runs/my-continuing-batch-001 --module scripts.gap_use -- --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/my-continuing-results-001.json
 ```
 
-The example batch asks for missing acceleration coefficients using learned equations, checks a polynomial integral and sum, interprets four-language requests and predicts measured motion with its separately checked empirical parameters. The model loads once for the batch. Edit a copy of the JSON to supply your own tasks; the results retain source attribution and the exact owner identity. The [earlier batch](../research-continuation/40_step_resolution/example-tasks.json) also contains attributed reading and conditional physical imagination.
+The example batch asks what gap SERA identified, compares its eight explanations, calculates their missing-influence consequences and requests its next discriminating observation. It also checks an integral, interprets an English alarm request and executes an earlier physical route. The model loads once for the batch. Edit a copy of the JSON to supply your own tasks; the results retain source attribution and the exact owner identity. The [previous batch](../research-continuation/42_composed_discovery/example-tasks.json) exercises four-language requests and more learned equations; the [earlier batch](../research-continuation/40_step_resolution/example-tasks.json) contains attributed reading and conditional physical imagination.
+
+New task kinds are `gap_findings`, `gap_predict`, `gap_consequences` and `gap_next_observation`. [Input fields and examples](../research-continuation/43_knowledge_gaps/README.md).
 
 Supported `kind` values are `request`, `read`, `sum`, `integral`, `imagine`, `discovered_route`, `discoveries`, `solve_discovery` and `observed_motion`. A `read` task supplies a question, attributed source and up to sixteen source sentences. Polynomial coefficients are ordered from the constant term upward. `discoveries` returns the retained portfolio with its independent evaluation; `solve_discovery` executes applicable learned coefficients and reports each route's assumptions. `observed_motion` preserves the source and measured range of the fitted model. Request interpretation returns an intent and entity tags; external actions have their own execution interfaces.
 
