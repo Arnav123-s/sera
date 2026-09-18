@@ -1,12 +1,14 @@
 # Current status
 
+The [published solution release](https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-solutions) passed [both platform jobs](https://github.com/Arnav123-s/sera/actions/runs/35389534369). Linux passed 512 tests and Windows passed 513; the established optional-fixture skips are recorded alongside 554 local regression tests and four subsequent credit tests. [Exact verification, logs and costs](../research-continuation/44_solution_portfolios/publication/VERIFICATION.md).
+
 ## Latest: checked solution portfolios
 
 The current owner is **runs/sera-solution-progress-live**. Its portfolio has **217 qualified solution routes**, making **58 more saved questions executable** beyond its prior methods. The audited reward recognizes **54 new input-and-guard combinations**. The frozen evaluation returned **27,263 correct answers**, with 513 explicit denominator guards across 27,776 cases. [Use it](../research-continuation/44_solution_portfolios/README.md) · [Full results](../research-continuation/44_solution_portfolios/report.md).
 
 Curiosity normally continues through complete proposal generation, independent proof/checking, return to the original question and unique credit. Exact interruption/restart and repeated-question checks passed. Corrected proof rewards updated the procedure-value weights while preserving 607 other tensor records and all 11 practical example answers. [Runtime audit](../research-continuation/44_solution_portfolios/runtime-audit.json) · [Reward reconciliation](../research-continuation/44_solution_portfolios/credit-repair.md) · [Current owner and reward audit](../research-continuation/44_solution_portfolios/coverage-audit.json).
 
-Full local regression passed **554 tests with no skips**, followed by two credit-repair tests and the actual-owner runtime checks. The one-thread, 2 GiB runner now uses the user's unrestricted local-time authorization and keeps Windows awake during owned jobs. [Full costs and publication receipts](../research-continuation/44_solution_portfolios/publication/costs.json).
+Full local regression passed **554 tests with no skips**, followed by four credit-repair tests and the actual-owner runtime checks. The one-thread, 2 GiB runner now uses the user's unrestricted local-time authorization and keeps Windows awake during owned jobs. [Full costs and publication receipts](../research-continuation/44_solution_portfolios/publication/costs.json).
 
 ## Preserved self-identified knowledge gaps
 
@@ -16,7 +18,7 @@ The interface compares alternative predictions, computes their conditional missi
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Current self-chosen discovery: Stages 41–42
+## Preserved self-chosen discovery: Stages 41–42
 
 After three elementary investigation examples, the process-action head passed **12/12 fresh structured-context checks**. Across the two main discovery studies, the learner and controls completed **2,176 choices and 5,504 committed proposals**. The selected owner retains **149 discovery records**, including **140 exact conditional routes** and nine scoped language associations. Each association keeps its own development and reserved result. [Starter examples and first study](../research-continuation/41_self_chosen_discovery/report.md) · [Broader study and equations](../research-continuation/42_composed_discovery/report.md).
 

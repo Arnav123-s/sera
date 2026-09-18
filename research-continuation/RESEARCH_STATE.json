@@ -448,34 +448,40 @@
       "publication": "42_composed_discovery/publication/github-run-47.json"
     }
   },
-  "latest_continuation": "43_knowledge_gaps",
+  "latest_continuation": "44_solution_portfolios",
   "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
   "latest_user_steering": "Exhaust diverse self-generated answers before independent feedback; complete curiosity with solutions; remove local time allowance and keep the device awake during owned work.",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
   "latest_publication": {
-    "implementation": "5d332fdf0d9bada764e83fbb774f55ff8124e7ea",
-    "run": "https://github.com/Arnav123-s/sera/actions/runs/35376538918",
+    "implementation": "497139252dd2da670e85727f9ce78137b2e076b0",
+    "run": "https://github.com/Arnav123-s/sera/actions/runs/35389534369",
     "conclusion": "success",
     "platforms": {
-      "linux": {
-        "passed": 486,
-        "skipped": 46
-      },
       "windows": {
-        "passed": 487,
+        "passed": 513,
         "skipped": 45
+      },
+      "linux": {
+        "passed": 512,
+        "skipped": 46
       }
     },
-    "local_tests": 532,
-    "receipt": "42_composed_discovery/publication/github-run-47.json",
-    "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery",
-    "archive_parts": 18
+    "local_tests": 558,
+    "local_full_regression": 554,
+    "subsequent_targeted_tests": 4,
+    "local_skips": 0,
+    "receipt": "44_solution_portfolios/publication/github-run-51.json",
+    "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-solutions",
+    "archive_sha256": "330923373a88ce95d15ac6a970b025454949403f0349d43773941cbd0a7f9384",
+    "archive_parts": 1
   },
   "resource_balance_at_publication": {
     "remaining_seconds": 72.43434449973574,
     "live_ledger": "runs/v3-batch-001/budget.json",
     "snapshot_only": true,
-    "new_grant_seconds": 0
+    "new_grant_seconds": 0,
+    "historical": true,
+    "superseded_by": "44_solution_portfolios/time-authorization.json"
   },
   "latest_resource_snapshot": {
     "time_limit_seconds": null,
@@ -528,10 +534,29 @@
         "windows": 45
       },
       "receipt": "37_constraint_acquisition/publication/github-run-45.json"
+    },
+    {
+      "implementation": "5d332fdf0d9bada764e83fbb774f55ff8124e7ea",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35376538918",
+      "conclusion": "success",
+      "platforms": {
+        "linux": {
+          "passed": 486,
+          "skipped": 46
+        },
+        "windows": {
+          "passed": 487,
+          "skipped": 45
+        }
+      },
+      "local_tests": 532,
+      "receipt": "42_composed_discovery/publication/github-run-47.json",
+      "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery",
+      "archive_parts": 18
     }
   ],
   "knowledge_gap_inquiry": {
-    "status": "complete_verified_local",
+    "status": "complete_verified_published",
     "report": "43_knowledge_gaps/report.md",
     "audit": "43_knowledge_gaps/audit.json",
     "source": "retained observations",
@@ -554,6 +579,7 @@
     "explicit_guards": 513,
     "wrong_reference_answers": 0,
     "credited_points": 57.25,
-    "credit_audit": "44_solution_portfolios/coverage-audit.json"
+    "credit_audit": "44_solution_portfolios/coverage-audit.json",
+    "status": "complete_verified_published"
   }
 }

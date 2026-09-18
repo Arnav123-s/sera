@@ -10,4 +10,4 @@
 - [x] Reconcile novelty against executable forward procedures as well as the explicit route registry; check distinct input and guard coverage.
 - [x] Verify practical use and interrupted curiosity-to-answer continuation on the reconciled owner.
 - [x] Preserve full costs, checkpoints, negative attempts, original scores and their corrections.
-- [ ] Publish organized documentation, exact artifacts and passing platform checks.
+- [x] Publish organized documentation, exact artifacts and passing platform checks.
