@@ -8,6 +8,8 @@ single aggregate benchmark.
 
 ## Current starting points
 
+The [current navigation hub](../docs/START_HERE.md), [release status](../docs/STATUS.md) and [grouped research archive](../docs/RESEARCH_ARCHIVE.md) identify the latest entry points. The detailed records below remain at their original paths.
+
 - [Use observed-history learning, correction and conditional forecasts](../research-continuation/28_concept_refinement/README.md).
 - [Read v13 C01/C02 comparisons and actual-owner verification](../research-continuation/28_concept_refinement/report.md).
 - [Audit alignment with v12/v13 and preserve exact continuation](../research-continuation/28_concept_refinement/architecture-audit.md).
@@ -34,6 +36,7 @@ single aggregate benchmark.
 
 | Phase | Research question / integrated behavior | Review |
 |---|---|---|
+| 28 | History-sensitive concept refinement, retained exact algebra and platform-qualified restoration | [Use](../research-continuation/28_concept_refinement/README.md), [report](../research-continuation/28_concept_refinement/report.md), [publication](../research-continuation/28_concept_refinement/publication.json) |
 | Initial shared learner | One recurrent owner behind world prediction, typed tasks and sequence inference | [Results](../reports/shared-learner-study.md), [protocol](shared-learner-protocol.md) |
 | 01–14 | Source reproduction, geometric memory and generator acquisition | [Continuation results](../research-continuation/RESULTS_2026-09-15.md) |
 | 15 | Learned applicability and conditional risk | [Report](../research-continuation/15_applicability/report.md), [audit](../research-continuation/15_applicability/architecture-audit.md) |
@@ -55,9 +58,9 @@ attached to their original domains; a successful new interface does not widen
 those domains automatically. Source reproduction results remain distinguishable
 from new SERA training.
 
-## Publication and local state
+## Historical publication context: stage 27
 
-The September 17 publication reconciles local research HEAD
+The stage 27 September 17 publication reconciled local research HEAD
 `73dd66caecb7a0f3d3ab0bba21a725e2fc4d5678` with the earlier remote
 `9104839400d5053152ca423be6da1efe355aa71a`. The remote is an ancestor, so the
 publication preserves the entire intervening history. The pinned Kavi source is
