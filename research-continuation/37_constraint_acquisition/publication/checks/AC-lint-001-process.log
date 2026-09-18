@@ -1,0 +1,37 @@
+F401 [*] `experiments.self_study.algebra.SIZE` imported but unused
+  --> experiments\autonomous_discovery\acquire.py:12:44
+   |
+10 | import torch
+11 |
+12 | from experiments.self_study.algebra import SIZE, check, independent, vector
+   |                                            ^^^^
+13 | from experiments.verified_completion.common import ROOT, read, sha, write
+14 | from experiments.verified_completion.credit import decode, encode
+   |
+help: Remove unused import: `experiments.self_study.algebra.SIZE`
+   |
+11 |
+   - from experiments.self_study.algebra import SIZE, check, independent, vector
+12 + from experiments.self_study.algebra import check, independent, vector
+13 | from experiments.verified_completion.common import ROOT, read, sha, write
+   |
+
+F401 [*] `.core.reference` imported but unused
+  --> experiments\autonomous_discovery\acquire.py:18:58
+   |
+16 | from workbench.storage import Store
+17 |
+18 | from .core import DEGREE, DEPTH, TOKENS, AcquisitionGap, reference
+   |                                                          ^^^^^^^^^
+19 | from .runtime import AutonomousR1, AutonomousSession
+   |
+help: Remove unused import: `.core.reference`
+   |
+17 |
+   - from .core import DEGREE, DEPTH, TOKENS, AcquisitionGap, reference
+18 + from .core import DEGREE, DEPTH, TOKENS, AcquisitionGap
+19 | from .runtime import AutonomousR1, AutonomousSession
+   |
+
+Found 2 errors.
+[*] 2 fixable with the `--fix` option.

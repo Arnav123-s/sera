@@ -1,5 +1,7 @@
 # Use SERA
 
+The newest [autonomous acquisition and discovery interface](../research-continuation/37_constraint_acquisition/README.md) uses `runs/sera-acquisition-live`. It retains the full predecessor chain and can execute its newly discovered discrete-accumulation route.
+
 [Home](../README.md) · [Status](STATUS.md) · [Repository map](REPOSITORY_MAP.md) · [Archive](RESEARCH_ARCHIVE.md)
 
 These commands use the prepared workspace at `D:/ai/projects/sera`, its environment and retained checkpoints. Numerical tasks use one CPU thread and the existing 2 GiB process-tree memory cap. The wrapper charges the live resource ledger; every output folder must be fresh.

@@ -2,7 +2,13 @@
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Current Stage 35 internal discovery
+## Current Stage 37 acquisition and internal discovery
+
+SERA followed its own recorded summation gap, constructed three missing basis cases from retained constraints, and returned to investigation. It added **eight further certified relationships**, completed **256/256 fresh alternative routes**, and retained four verified reconstruction-setting advances. Fresh summation correctness moved from **0/32 to 32/32**; all 11 previously passing basis cases and 202 protected tensor records were retained. The current owner is **runs/sera-acquisition-live**. [Use it](../research-continuation/37_constraint_acquisition/README.md) · [Full results and feedback contract](../research-continuation/37_constraint_acquisition/report.md).
+
+The preceding [Stage 36](../research-continuation/36_autonomous_discovery/report.md) is preserved with its zero new-discovery result, 32 execution-gap records and exact continuation. It provided the actual prerequisite gap for Stage 37. All previous live stores and completed evaluations remain intact.
+
+## Preserved Stage 35 internal discovery
 
 Starting from its retained learned integral, SERA generated five new operator relationships and independently certified their degree-bounded algebra. It executed 256 alternative calculations on 64 fresh polynomials, resumed exactly, and preserved all 204 inherited tensor records. The discovery run used no web queries or supplied completed equations. The current owner is **runs/sera-discovery-live**. [Use the discovered motion route](../research-continuation/35_operator_discovery/README.md) · [Full results, assumptions and controls](../research-continuation/35_operator_discovery/report.md).
 

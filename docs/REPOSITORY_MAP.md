@@ -7,6 +7,7 @@
 | [`src/sera/`](../src/sera/) | Core model, state, ownership and learning contracts |
 | [`experiments/`](../experiments/) | Registered research implementations |
 | [`experiments/operator_discovery/`](../experiments/operator_discovery/) | Internal proposal generation, rational certificates and executable discovered relations |
+| [`experiments/autonomous_discovery/`](../experiments/autonomous_discovery/) | Self-selected investigations, prerequisite acquisition, exact credit and continuation |
 | [`experiments/learning_progress/`](../experiments/learning_progress/) | Continuing practice, progress credit, procedure learning and independent replay |
 | [`scripts/`](../scripts/) | Task entry points, resource supervisors and verification |
 | [`tests/`](../tests/) | Behavioral, persistence, mathematical and integrity checks |
@@ -34,7 +35,9 @@ python -m venv .venv
 .venv/Scripts/python.exe scripts/quest_artifacts.py --restore
 .venv/Scripts/python.exe scripts/quest_retention_artifacts.py
 .venv/Scripts/python.exe scripts/learning_artifacts.py
-.venv/Scripts/python.exe scripts/discovery_artifacts.py
+.venv/Scripts/python.exe -m scripts.discovery_artifacts
+.venv/Scripts/python.exe -m scripts.autonomous_artifacts
+.venv/Scripts/python.exe -m scripts.acquisition_artifacts
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```
@@ -51,6 +54,8 @@ In the managed research workspace, run numerical work through the existing bound
 4. Verify archived bytes through the release manifest.
 5. Read the latest continuation and live ledger before new work.
 
-The current [internal-discovery release](../research-continuation/35_operator_discovery/README.md) stores its inherited parent once and verifies exact reconstruction of all nine discovery checkpoints. The [learning-progress release](../research-continuation/34_learning_progress/README.md) publishes both successor transitions, both learned seeds, all controls and independent prediction witnesses in five compact archives. `scripts/learning_artifacts.py --restore` restores missing research endpoints without replacing divergent files.
+The current [acquisition and discovery release](../research-continuation/37_constraint_acquisition/README.md) preserves the identified gap, three acquired basis corrections, eight further relationships, exact continuation and frozen evaluation. Its compact archive reconstructs all four successor checkpoints; the [preceding autonomous experiment](../research-continuation/36_autonomous_discovery/README.md) retains its three checkpoints and unsuccessful discovery attempts.
+
+The preserved [internal-discovery release](../research-continuation/35_operator_discovery/README.md) stores its inherited parent once and verifies exact reconstruction of all nine discovery checkpoints. The [learning-progress release](../research-continuation/34_learning_progress/README.md) publishes both successor transitions, both learned seeds, all controls and independent prediction witnesses in five compact archives. `scripts/learning_artifacts.py --restore` restores missing research endpoints without replacing divergent files.
 
 The preserved [portfolio release](../research-continuation/33_capability_portfolio/README.md) separates the selected runtime checkpoint and parent from its full numerical research archive. `scripts/quest_artifacts.py --restore --research` restores both without replacing divergent files or restarting experiments. The [completion release](../research-continuation/32_verified_completion/README.md) remains preserved with its own restorer. Private assessor keys remain local; research replay and published certificates have separate entry points from live assessment authority.

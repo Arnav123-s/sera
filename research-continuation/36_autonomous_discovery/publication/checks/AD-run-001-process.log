@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\runtime.py", line 250, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\runtime.py", line 235, in main
+    study()
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\runtime.py", line 188, in study
+    event = session.advance()
+            ^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\runtime.py", line 114, in advance
+    names, columns, generation = signatures(self.owner, depth, 36100+sequence)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\core.py", line 149, in signatures
+    columns = [[v for p in imagined for v in execute(owner, w, p, cache, counts)] for w in names]
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\core.py", line 137, in execute
+    raise ValueError("An imagined primitive needs further acquisition")
+ValueError: An imagined primitive needs further acquisition

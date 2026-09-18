@@ -1,0 +1,82 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> experiments\autonomous_discovery\runtime.py:3:1
+   |
+ 1 |   """Continue the real owner, choose gaps and retain independently checked discoveries."""
+ 2 |
+ 3 | / import argparse
+ 4 | | import copy
+ 5 | | import json
+ 6 | | from fractions import Fraction as Q
+ 7 | | from pathlib import Path
+ 8 | |
+ 9 | | import numpy as np
+10 | | import torch
+11 | | from torch import nn
+12 | |
+13 | | from experiments.operator_discovery.core import WORDS as OLD_WORDS
+14 | | from experiments.operator_discovery.core import DiscoveryR1
+15 | | from experiments.operator_discovery.runtime import DiscoverySession
+16 | | from experiments.task_transfer.runtime import lock
+17 | | from experiments.verified_completion.common import ROOT, digest, read, sha, write
+18 | | from sera.session_state import model_identity
+19 | | from workbench.storage import Store
+20 | |
+21 | | from .core import (
+22 | |     DEGREE, DEPTH, TOKENS, WORDS, canonical, certify, consequence_span,
+23 | |     elimination_proposals, execute, numerical_proposals, reference, signatures,
+24 | | )
+   | |_^
+25 |
+26 |   OUT = ROOT / "research-continuation/36_autonomous_discovery"
+   |
+help: Organize imports
+   |
+21 | from .core import (
+   -     DEGREE, DEPTH, TOKENS, WORDS, canonical, certify, consequence_span,
+   -     elimination_proposals, execute, numerical_proposals, reference, signatures,
+22 +     DEGREE,
+23 +     DEPTH,
+24 +     TOKENS,
+25 +     WORDS,
+26 +     canonical,
+27 +     certify,
+28 +     consequence_span,
+29 +     elimination_proposals,
+30 +     execute,
+31 +     numerical_proposals,
+32 +     reference,
+33 +     signatures,
+34 | )
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+ --> tests\test_autonomous_discovery.py:1:1
+  |
+1 | / from fractions import Fraction as Q
+2 | |
+3 | | import pytest
+4 | |
+5 | | from experiments.autonomous_discovery.core import (
+6 | |     WORDS, canonical, certify, consequence_span, elimination_proposals,
+7 | |     numerical_proposals, reference, reference_step,
+8 | | )
+9 | | from experiments.self_study.algebra import check, independent
+  | |_____________________________________________________________^
+help: Organize imports
+   |
+5  | from experiments.autonomous_discovery.core import (
+   -     WORDS, canonical, certify, consequence_span, elimination_proposals,
+   -     numerical_proposals, reference, reference_step,
+6  +     WORDS,
+7  +     canonical,
+8  +     certify,
+9  +     consequence_span,
+10 +     elimination_proposals,
+11 +     numerical_proposals,
+12 +     reference,
+13 +     reference_step,
+14 | )
+   |
+
+Found 2 errors.
+[*] 2 fixable with the `--fix` option.

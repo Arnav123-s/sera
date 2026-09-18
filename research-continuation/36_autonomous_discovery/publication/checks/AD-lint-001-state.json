@@ -1,0 +1,30 @@
+{
+  "status": "FAILED",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "ruff",
+    "check",
+    "experiments/autonomous_discovery",
+    "scripts/run_autonomous_bounded.py",
+    "tests/test_autonomous_discovery.py"
+  ],
+  "reserved_seconds": 10.0,
+  "charged_seconds": 0.16263929998967797,
+  "memory_limit_bytes": 2147483648,
+  "peak_job_committed_bytes": 66400256,
+  "peak_process_committed_bytes": 57651200,
+  "observed_process_ids": [
+    4856,
+    18612
+  ],
+  "worker_threads": 1,
+  "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+  "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+  "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+  "child_pid": 18612,
+  "returncode": 1,
+  "log_sha256": "7f9f5836f2cfc6b23c73384ea445058882bbd6991c8e26b728248adbae8b6ab6"
+}
