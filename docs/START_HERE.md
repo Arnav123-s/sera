@@ -6,6 +6,8 @@ These commands use the prepared workspace at `D:/ai/projects/sera`, its environm
 
 ## Practice investigation and learn from checked progress
 
+For the newest saved owner, begin with [verified alternatives](../research-continuation/33_capability_portfolio/README.md). It can apply several checked mechanics routes, retain their assumptions and renew qualification after learning. The example solves the same 3 kg, 6 N, 2 s scenario through time, impulse and work. The completion command below remains available on its preserved predecessor store.
+
 ```powershell
 .venv/Scripts/python.exe scripts/run_completion_bounded.py --seconds 60 --output runs/my-completion-001 --module experiments.verified_completion.runtime -- practice --id my-response-1 --seed 32510
 ```

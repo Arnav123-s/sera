@@ -1,0 +1,80 @@
+{
+  "goal": "Final speed of a 3 kg body from rest under a 6 N force for 2 seconds",
+  "supplied_consistent_views": {
+    "time": {
+      "mechanism": "constant_mechanics",
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "units": "SI",
+      "v0": "0",
+      "scope": "time",
+      "a": "2",
+      "t": "2",
+      "assumptions": {
+        "constant_acceleration": true
+      }
+    },
+    "impulse": {
+      "mechanism": "constant_mechanics",
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "units": "SI",
+      "v0": "0",
+      "scope": "impulse",
+      "j": "12",
+      "m": "3",
+      "assumptions": {
+        "constant_mass": true
+      }
+    },
+    "work": {
+      "mechanism": "constant_mechanics",
+      "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+      "units": "SI",
+      "v0": "0",
+      "scope": "work_positive",
+      "w": "24",
+      "m": "3",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      }
+    }
+  },
+  "results": {
+    "time": {
+      "answer": 4.0,
+      "method": 0,
+      "unit": "m/s",
+      "status": "CONDITIONAL_CHECKED_ROUTE",
+      "assumptions": {
+        "constant_acceleration": true
+      },
+      "original_goal": "Find multiple independently checked routes to final velocity.",
+      "factual_updates": 0
+    },
+    "impulse": {
+      "answer": 4.0,
+      "method": 1,
+      "unit": "m/s",
+      "status": "CONDITIONAL_CHECKED_ROUTE",
+      "assumptions": {
+        "constant_mass": true
+      },
+      "original_goal": "Find multiple independently checked routes to final velocity.",
+      "factual_updates": 0
+    },
+    "work": {
+      "answer": 4.0,
+      "method": 2,
+      "unit": "m/s",
+      "status": "CONDITIONAL_CHECKED_ROUTE",
+      "assumptions": {
+        "constant_mass": true,
+        "positive_final_velocity": true
+      },
+      "original_goal": "Find multiple independently checked routes to final velocity.",
+      "factual_updates": 0
+    }
+  },
+  "state_unchanged": true,
+  "learned_method_weights": "65a44e5d9c4cb7dad00852a23296ce5d7033adb150a9a9c6614d24ecb68eefe8"
+}

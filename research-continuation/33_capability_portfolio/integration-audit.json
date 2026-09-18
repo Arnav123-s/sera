@@ -1,0 +1,1369 @@
+{
+  "owner": "42d55d9a0cf0ae7be65164fae3296b538a5ee2d629886a239d43b181ca8584a3",
+  "actual_shared_owner": true,
+  "initial_assessment": {
+    "id": "7facca62a81eb5422ab37b9b8209ddc7218e2119",
+    "mode": "boss",
+    "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+    "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+    "candidate": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "decision": "cefb26084d83b855684a867ec78c16bca992edff8b60fd1e96424efda932441b",
+    "retention": {
+      "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "protected_equal": true,
+      "language_max_error": 0.0,
+      "probes": 128,
+      "source": "f3b2cd77955c63a77bc306f4d08d3d9276f0c2a9c491655647e699fe9ffad9d3",
+      "old_definition_gate": false
+    },
+    "inputs_sha256": "d35780ac7e060e75c1e48f4afbb776faa859b8036f038bbcc830d9b37de6184e",
+    "prediction_sha256": "815c1430f10bfb473703e78202baa3a7190e28b8e75d9e0060d7a7094794e577",
+    "correct": 0,
+    "wrong": 0,
+    "returned": 0,
+    "n": 256,
+    "valid_scopes": [],
+    "counterexamples": [],
+    "global_quest_index": 1,
+    "attempt": 1,
+    "alpha": 0.0125,
+    "lower_bound": 0.0,
+    "qualified": false,
+    "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+    "signature": "f2c0a92cbd98d1812a5d9c716c4d25ac93a09c1910cb3d49cc9b967df6ffb4a2"
+  },
+  "first_qualification": {
+    "id": "0bc7a06f70dd0131cb80a2b770532acdfc9e371b",
+    "mode": "boss",
+    "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+    "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+    "candidate": "f2f991d74dfbb2edf7f4475dcb7d82989de00a71e44bb11d4a6fbb49442577b6",
+    "decision": "a7f9833af9d4c00a3eda83a3ee0744eaa705bdc1f3789bff010b32e8a830ada5",
+    "retention": {
+      "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "protected_equal": true,
+      "language_max_error": 0.0,
+      "probes": 128,
+      "source": "f3b2cd77955c63a77bc306f4d08d3d9276f0c2a9c491655647e699fe9ffad9d3",
+      "old_definition_gate": false
+    },
+    "inputs_sha256": "c4da6e2596a43b0bf67ea937173767e6b788375f835f2f892a07c23c6e859df5",
+    "prediction_sha256": "bdab3dcabaa59db3fc02b0135e92e8128612c362fab013beb8e1cfb963bcafca",
+    "correct": 256,
+    "wrong": 0,
+    "returned": 256,
+    "n": 256,
+    "valid_scopes": [
+      "impulse",
+      "time",
+      "work_negative",
+      "work_positive"
+    ],
+    "counterexamples": [],
+    "global_quest_index": 1,
+    "attempt": 2,
+    "alpha": 0.004166666666666667,
+    "lower_bound": 0.9788187947254303,
+    "qualified": true,
+    "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+    "signature": "c4d740e11c351092ae778243cebd7ed5ec60ae5667092e418942aab36bc2e4ef"
+  },
+  "revalidation": {
+    "id": "0257ea9d3b93feaeb518cb923568f9b3d81aeb12",
+    "mode": "boss",
+    "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+    "owner": "42d55d9a0cf0ae7be65164fae3296b538a5ee2d629886a239d43b181ca8584a3",
+    "candidate": "f2f991d74dfbb2edf7f4475dcb7d82989de00a71e44bb11d4a6fbb49442577b6",
+    "decision": "e41dee062b9394785cbd03185fa0b15626ffbc463e658ea0d9465986708040cc",
+    "retention": {
+      "owner": "42d55d9a0cf0ae7be65164fae3296b538a5ee2d629886a239d43b181ca8584a3",
+      "protected_equal": true,
+      "language_max_error": 0.0,
+      "probes": 128,
+      "source": "f3b2cd77955c63a77bc306f4d08d3d9276f0c2a9c491655647e699fe9ffad9d3",
+      "old_definition_gate": false
+    },
+    "inputs_sha256": "4c64c86fe1c68bc9504e200b45fabb2b7cb15f712a62b503fbf36fa1c9615d21",
+    "prediction_sha256": "3f22f0f2a5aa8a8d160949a6215a49df074f1a23c926045d331423e9b872b86a",
+    "correct": 256,
+    "wrong": 0,
+    "returned": 256,
+    "n": 256,
+    "valid_scopes": [
+      "impulse",
+      "time",
+      "work_negative",
+      "work_positive"
+    ],
+    "counterexamples": [],
+    "global_quest_index": 1,
+    "attempt": 3,
+    "alpha": 0.0020833333333333333,
+    "lower_bound": 0.976172123602005,
+    "qualified": true,
+    "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+    "signature": "86ba97b721ebfbf9b253650544368b7e174de9780cf58c0714a9aefbb6981720"
+  },
+  "practice_attempts": [
+    {
+      "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+      "method": 0,
+      "decision": {
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "original_goal": "Find multiple independently checked routes to final velocity.",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "policy": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+        "features": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.21233859654235399,
+          0.3284208622315691,
+          0.25971370083832007,
+          0.13202720426073794,
+          0.03090397347407042,
+          0.020271940915196903,
+          0.016323721737751488
+        ],
+        "action": 0,
+        "step": 0,
+        "forced_exploration": false,
+        "controller": "balanced"
+      },
+      "decision_id": "f0d089eed4ee7fceb866e5c280ba1c5a452e3f0e49f0ec4fcbd39b1fec4dc2a9",
+      "receipt": {
+        "id": "b9eec4b889870137aa6f3911a4eefc6476f2744d",
+        "mode": "practice",
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "candidate": "b92842da30beb3a6af5490416165fc24cb133f4de6a2d93e02ce8fc6029e2533",
+        "decision": "f0d089eed4ee7fceb866e5c280ba1c5a452e3f0e49f0ec4fcbd39b1fec4dc2a9",
+        "retention": null,
+        "inputs_sha256": "5af9272bbed6c53841c503b66c0184b335a4556943d0781ae084c6ef30a21dc3",
+        "prediction_sha256": "53d6634041f9e2a2b808eb74c3df60a5c228940d25a58817429ffb78fe3e7489",
+        "correct": 13,
+        "wrong": 0,
+        "returned": 13,
+        "n": 64,
+        "valid_scopes": [
+          "time"
+        ],
+        "counterexamples": [],
+        "global_quest_index": 1,
+        "attempt": null,
+        "alpha": null,
+        "lower_bound": null,
+        "qualified": false,
+        "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+        "signature": "33146de9ee8b252a9d956a3c997b6ade951c87f8185e8849e4b38f666edc4151"
+      },
+      "reward": 0.25,
+      "updated": false,
+      "owner_after": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "factual_updates": 0
+    },
+    {
+      "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+      "method": 1,
+      "decision": {
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "original_goal": "Find multiple independently checked routes to final velocity.",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "policy": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+        "features": [
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            1.0,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            0.0,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.5,
+            0.0,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.1,
+            0.0,
+            0.2,
+            0.0
+          ],
+          [
+            0.0,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.016242094080345958,
+          0.4141281217058989,
+          0.3229970933953709,
+          0.1629661816441886,
+          0.038253979772187245,
+          0.02512864142532629,
+          0.02028388797668204
+        ],
+        "action": 1,
+        "step": 1,
+        "forced_exploration": false,
+        "controller": "balanced"
+      },
+      "decision_id": "62e3c49426e5cc58f0bd1ee4f66589e9fce90bb00c71c4426ce4ca28f550135a",
+      "receipt": {
+        "id": "1fbe9fcd1ef123ec0ba5692c4d29b268b617b136",
+        "mode": "practice",
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "candidate": "1e9289f1587b0025eb944fe286c6399fd909f4c6a3ba10ec0fedcbdae488ccd0",
+        "decision": "62e3c49426e5cc58f0bd1ee4f66589e9fce90bb00c71c4426ce4ca28f550135a",
+        "retention": null,
+        "inputs_sha256": "b9cda48e0bb57b2d2d8bec2caf809f575a0b1800e87a503d2015b2950f35eb40",
+        "prediction_sha256": "b9857aa42f5c61c80151db75dd1d0172d3edc4c9b19ca628159cc5bb9423f47f",
+        "correct": 15,
+        "wrong": 0,
+        "returned": 15,
+        "n": 64,
+        "valid_scopes": [
+          "impulse"
+        ],
+        "counterexamples": [],
+        "global_quest_index": 1,
+        "attempt": null,
+        "alpha": null,
+        "lower_bound": null,
+        "qualified": false,
+        "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+        "signature": "905eae0458e0feeb94fc6d3f98da501e6853f0e8b1f8306374f6780d58fdc7eb"
+      },
+      "reward": 0.27,
+      "updated": false,
+      "owner_after": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "factual_updates": 0
+    },
+    {
+      "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+      "method": 2,
+      "decision": {
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "original_goal": "Find multiple independently checked routes to final velocity.",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "policy": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+        "features": [
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            1.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.5,
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.1,
+            0.0,
+            0.4,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.4,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.026167218822292317,
+          0.0358643163458937,
+          0.5296719872908047,
+          0.26864263129907046,
+          0.06390170934584279,
+          0.04185540589430833,
+          0.033896731001787896
+        ],
+        "action": 2,
+        "step": 2,
+        "forced_exploration": false,
+        "controller": "balanced"
+      },
+      "decision_id": "986edd1db24aa7a9bb67dc2e1a95bd0dd1136e1e81e14fc4cee185f262454576",
+      "receipt": {
+        "id": "9a10d04ab8bf46ae0e726d7cfe85b506d84174c0",
+        "mode": "practice",
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "candidate": "e3aa379ae59f6b870b90ecbc3978f702969334b9f4123bab74b9f66db1c200f0",
+        "decision": "986edd1db24aa7a9bb67dc2e1a95bd0dd1136e1e81e14fc4cee185f262454576",
+        "retention": null,
+        "inputs_sha256": "64b2d2cdcfe20012817265451c34cf08ae41f8b80769cfd3d95b4697dec9f130",
+        "prediction_sha256": "40256a9648a21bcecd9236112d1ae41fd256e66c6a06443858a745aab9027975",
+        "correct": 16,
+        "wrong": 0,
+        "returned": 16,
+        "n": 64,
+        "valid_scopes": [
+          "work_positive"
+        ],
+        "counterexamples": [],
+        "global_quest_index": 1,
+        "attempt": null,
+        "alpha": null,
+        "lower_bound": null,
+        "qualified": false,
+        "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+        "signature": "d5a7b900d4e8baaa65a0ff86b14fed35262a51c9a9d0eb9fef61fb010a9aa43f"
+      },
+      "reward": 0.26,
+      "updated": false,
+      "owner_after": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "factual_updates": 0
+    },
+    {
+      "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+      "method": 3,
+      "decision": {
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "original_goal": "Find multiple independently checked routes to final velocity.",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "policy": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+        "features": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            1.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            1.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.5,
+            0.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.1,
+            0.0,
+            0.6,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.6,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.05203193349628902,
+          0.07183867293200497,
+          0.056221274086704826,
+          0.5382717666804813,
+          0.12890574563365087,
+          0.0842866240998288,
+          0.06844398307104026
+        ],
+        "action": 3,
+        "step": 3,
+        "forced_exploration": false,
+        "controller": "balanced"
+      },
+      "decision_id": "33866291758134b719da1864fb285981f3aafca9f16fe57352e194b972bf09c5",
+      "receipt": {
+        "id": "62a4340e2e8dd2d59ecc70a2ff8ae5866bc82b85",
+        "mode": "practice",
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "candidate": "09dcc62a829c0a6a9237e798660c3a60e51c42365e1ab4558aaf26a792151446",
+        "decision": "33866291758134b719da1864fb285981f3aafca9f16fe57352e194b972bf09c5",
+        "retention": null,
+        "inputs_sha256": "6deb4d88972cdf0c52f3ec996ac2e465a6172f970a8739183fcb0e66b977e77a",
+        "prediction_sha256": "b0d1119ecd332656ac64b53266bfa34790b72cbab3501caa90ef048dbbb3ed89",
+        "correct": 15,
+        "wrong": 0,
+        "returned": 15,
+        "n": 64,
+        "valid_scopes": [
+          "work_negative"
+        ],
+        "counterexamples": [],
+        "global_quest_index": 1,
+        "attempt": null,
+        "alpha": null,
+        "lower_bound": null,
+        "qualified": false,
+        "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+        "signature": "2b08aa8bc32e0e5590a80e0026edec8941a97bc36202a3681ae729e239ca2a31"
+      },
+      "reward": 0.26,
+      "updated": false,
+      "owner_after": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "factual_updates": 0
+    },
+    {
+      "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+      "method": 4,
+      "decision": {
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "original_goal": "Find multiple independently checked routes to final velocity.",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "policy": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+        "features": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            1.0,
+            0.8,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.8,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            1.0,
+            0.8,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            1.0,
+            0.8,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.5,
+            0.0,
+            0.8,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.1,
+            0.0,
+            0.8,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.8,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.10305408163134235,
+          0.14500093236869568,
+          0.11358730894571575,
+          0.06212953289282619,
+          0.2631040622850403,
+          0.17219311142728402,
+          0.14093097044909583
+        ],
+        "action": 4,
+        "step": 4,
+        "forced_exploration": true,
+        "controller": "balanced"
+      },
+      "decision_id": "4aa2705a3dcd91a4789791be59759407f95823a5de673dc29bed5286a1b3dcab",
+      "receipt": {
+        "id": "c1acb130a40015709acbd6ac9863d743d83e61e8",
+        "mode": "practice",
+        "quest": "7eab4f852c3be2a9a62c2917080029bd29362f3ac5ad2f4a844eac38d1ad3d89",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "candidate": "7d5fb4707037776074b1fd30fa6d716ce73535f4502ca2ed02da8c35c3cd00d3",
+        "decision": "4aa2705a3dcd91a4789791be59759407f95823a5de673dc29bed5286a1b3dcab",
+        "retention": null,
+        "inputs_sha256": "066ffdf4053d9ce8c69cc6af558e35273e4039844ef4f28a9a603733b0e5adc2",
+        "prediction_sha256": "b121a392697ef7b1ce021e58ec4419333ad8604386bdb6867f4359fb4bf0ec4a",
+        "correct": 0,
+        "wrong": 18,
+        "returned": 18,
+        "n": 64,
+        "valid_scopes": [],
+        "counterexamples": [
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "2",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "4",
+              "w": "65/2"
+            },
+            "prediction": 4.5,
+            "expected": -4.5
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "1",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "3/2",
+              "w": "15/16"
+            },
+            "prediction": 1.5,
+            "expected": -1.5
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "-3",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "3",
+              "w": "-12"
+            },
+            "prediction": 1.0,
+            "expected": -1.0
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "7/2",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "3",
+              "w": "-135/8"
+            },
+            "prediction": 1.0,
+            "expected": -1.0
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "-7/2",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "3/2",
+              "w": "285/16"
+            },
+            "prediction": 6.0,
+            "expected": -6.0
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "-3/2",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "1/2",
+              "w": "7/16"
+            },
+            "prediction": 2.0,
+            "expected": -2.0
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "1",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "1/2",
+              "w": "45/16"
+            },
+            "prediction": 3.5,
+            "expected": -3.5
+          },
+          {
+            "input": {
+              "mechanism": "constant_mechanics",
+              "units": "SI",
+              "scope": "work_negative",
+              "v0": "1/2",
+              "assumptions": {
+                "constant_mass": true,
+                "negative_final_velocity": true
+              },
+              "origin": "SUPPLIED_CONDITIONAL_MECHANICS",
+              "m": "3/2",
+              "w": "45/2"
+            },
+            "prediction": 5.5,
+            "expected": -5.5
+          }
+        ],
+        "global_quest_index": 1,
+        "attempt": null,
+        "alpha": null,
+        "lower_bound": null,
+        "qualified": false,
+        "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+        "signature": "8b6ca551f1062ef62c47c63c3cc4db88648ba16cf21b2b82b2963a2552358b3a"
+      },
+      "reward": -0.005,
+      "updated": false,
+      "owner_after": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+      "factual_updates": 0
+    }
+  ],
+  "online_maintenance": [
+    {
+      "quest": "3a6596d5389ee8f466d7a02c54b1f8bdfc3c73de3c921906f528e14ea7703218",
+      "method": 1,
+      "decision": {
+        "quest": "3a6596d5389ee8f466d7a02c54b1f8bdfc3c73de3c921906f528e14ea7703218",
+        "original_goal": "Practise alternate time and impulse procedures.",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "policy": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+        "features": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "probabilities": [
+          0.21233859654235399,
+          0.3284208622315691,
+          0.25971370083832007,
+          0.13202720426073794,
+          0.03090397347407042,
+          0.020271940915196903,
+          0.016323721737751488
+        ],
+        "action": 1,
+        "step": 0,
+        "forced_exploration": false,
+        "controller": "learned"
+      },
+      "decision_id": "cfeacfd9ca2bf9564235f5e66f138cb345a181fd17b458f3d82bd8b8c5845cbd",
+      "receipt": {
+        "id": "3847398362c45f16e119145cfca2aca1ecd92f12",
+        "mode": "practice",
+        "quest": "3a6596d5389ee8f466d7a02c54b1f8bdfc3c73de3c921906f528e14ea7703218",
+        "owner": "d24f963e652b2e560e0d3407723b672302e30e7ca95caa5caa11e6de7afd517c",
+        "candidate": "1e9289f1587b0025eb944fe286c6399fd909f4c6a3ba10ec0fedcbdae488ccd0",
+        "decision": "cfeacfd9ca2bf9564235f5e66f138cb345a181fd17b458f3d82bd8b8c5845cbd",
+        "retention": null,
+        "inputs_sha256": "2671b75fb78401723f2a001687307e71765d0ceafee78114d08341192fcf2cec",
+        "prediction_sha256": "1e3b77064da311e6bdcc92c552f3c07ebbdb10a4b1b06df45d3652ddadced20f",
+        "correct": 10,
+        "wrong": 0,
+        "returned": 10,
+        "n": 64,
+        "valid_scopes": [
+          "impulse"
+        ],
+        "counterexamples": [],
+        "global_quest_index": 2,
+        "attempt": null,
+        "alpha": null,
+        "lower_bound": null,
+        "qualified": false,
+        "evidence_kind": "SUPPLIED_CONDITIONAL_MECHANICS",
+        "signature": "339f497c6f86c1126ec9ff29c1d0a2f0ff1748cba89f061db3781f6465105dae"
+      },
+      "reward": -0.01,
+      "updated": true,
+      "owner_after": "136d5652c70607f431f1023822d2362718e9dc26bf4305fe186a8256e4dce953",
+      "factual_updates": 0
+    }
+  ],
+  "lower_level_update": {
+    "decision": {
+      "goal": "9a15278811fd313be568b88df83040b4c0640e7b5b944d9a6c12c36a4f7d367b",
+      "predictor_before": "c401c2c6f879dc4309d26953c95c94f92b7b6d738b189abc05d85fee7b8131ad",
+      "policy": "e7073bd353cac4868df395b04c71ed93c807c19f401117f02751d8d65e3cec81",
+      "features": [
+        [
+          0.044827332771843253,
+          0.09346187013592204,
+          -0.019631811455960893,
+          0.14383332679827682,
+          11.30162471637932,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.23644362955461917,
+          0.02632255873697205,
+          0.03176103476144429,
+          10.4719251630948,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.10459603098352543,
+          -0.015000092882772043,
+          0.029941415258453955,
+          13.200455746148998,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.06807976286315624,
+          0.05240736420657782,
+          0.03194212309217911,
+          5.840349549763856,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.0,
+          0.0,
+          9.0,
+          1.0513329092794896,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.0221212766611057,
+          0.017324897357898772,
+          0.05434616539746817,
+          13.351443611710053,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.04850396890100542,
+          0.03239805322906854,
+          0.1440308547909743,
+          4.895883660020031,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.11540237781103016,
+          0.03759994867904548,
+          0.028130797634665968,
+          4.881268611835419,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.044827332771843253,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "probabilities": [
+        2.3194793817255045e-07,
+        1.1014679242660523e-06,
+        1.3236692332919882e-07,
+        0.014440681479074844,
+        0.0018671177167027076,
+        1.3502127299792727e-06,
+        0.008940625023343744,
+        0.0034227404842199563,
+        0.9713260193011428
+      ],
+      "action": 8,
+      "sequence": 1,
+      "sampling": "on-policy categorical",
+      "identity": "f19b7e724bbd58447446e434f6f0bc145c92d2d2b7483502f0f085c77a4137f6"
+    },
+    "before": [
+      0.04393084070110004,
+      0.05482733277184326
+    ],
+    "stage": "CREDITED",
+    "after": [
+      0.04393084070110004,
+      0.05482733277184326
+    ],
+    "predictor_after": "c401c2c6f879dc4309d26953c95c94f92b7b6d738b189abc05d85fee7b8131ad",
+    "cost": 0.0,
+    "receipt": {
+      "decision": "f19b7e724bbd58447446e434f6f0bc145c92d2d2b7483502f0f085c77a4137f6",
+      "goal": "9a15278811fd313be568b88df83040b4c0640e7b5b944d9a6c12c36a4f7d367b",
+      "predictor_before": "c401c2c6f879dc4309d26953c95c94f92b7b6d738b189abc05d85fee7b8131ad",
+      "predictor_after": "c401c2c6f879dc4309d26953c95c94f92b7b6d738b189abc05d85fee7b8131ad",
+      "before": [
+        0.04393084070110004,
+        0.05482733277184326
+      ],
+      "after": [
+        0.04393084070110004,
+        0.05482733277184326
+      ],
+      "audit": {
+        "source": "b0a2f292c408afe9b20375a51aa3bc75eee2c4b8b9e22a812ff471c29e2b0d7c",
+        "purpose": "independent_audit",
+        "origin": "MODEL_CONDITIONAL_PRACTICE",
+        "event_id": "a09b010406ca98d30c0aa234e2237c5ba3ebd41522d22d281c620a96e73881ca",
+        "decision": "f19b7e724bbd58447446e434f6f0bc145c92d2d2b7483502f0f085c77a4137f6",
+        "action": 8,
+        "value": -0.13349662583090063,
+        "identity": "c78638fd12cb5718665b8fb918a809e04ae57798caca32ba61f28e7d134297a6"
+      },
+      "acquisition_ids": [],
+      "cost": 0.0,
+      "reward": 0.0,
+      "identity": "28b42d28a047a96504304291c7e490c1fab57352347d0e2cbe490e4225d68984"
+    },
+    "credit": {
+      "policy_before": "e7073bd353cac4868df395b04c71ed93c807c19f401117f02751d8d65e3cec81",
+      "policy_after": "28eecf630d02cadb9460ebc7f0a1035b3fc10b47f71c40c77df1be8111398fda",
+      "step": 2,
+      "reward": 0.0,
+      "factual_updates": 0
+    }
+  },
+  "retention": {
+    "owner": "42d55d9a0cf0ae7be65164fae3296b538a5ee2d629886a239d43b181ca8584a3",
+    "protected_equal": true,
+    "language_max_error": 0.0,
+    "probes": 128,
+    "source": "f3b2cd77955c63a77bc306f4d08d3d9276f0c2a9c491655647e699fe9ffad9d3",
+    "old_definition_gate": false
+  },
+  "inherited_tensors_before": 194,
+  "inherited_tensors_changed": [
+    "completion_policy.net.0.weight",
+    "completion_policy.net.0.bias",
+    "completion_policy.net.2.weight",
+    "completion_policy.net.2.bias"
+  ],
+  "old_tasks_preserved": [
+    "force-demo",
+    "momentum-gap-001"
+  ],
+  "physical_definitions": 26,
+  "lower_policy_updates_before": 1,
+  "lower_policy_updates_after": 2,
+  "exact_restarts": 2,
+  "history_revisions": 21,
+  "example": {
+    "answer": 4.0,
+    "method": 1,
+    "unit": "m/s",
+    "status": "CONDITIONAL_CHECKED_ROUTE",
+    "assumptions": {
+      "constant_mass": true
+    },
+    "original_goal": "Find multiple independently checked routes to final velocity.",
+    "factual_updates": 0
+  },
+  "live_store": "runs/sera-quests-live",
+  "factual_updates": 0,
+  "head_sha256": "65a44e5d9c4cb7dad00852a23296ce5d7033adb150a9a9c6614d24ecb68eefe8",
+  "state_digest": "96558939695c48880a2e9ee90291d56d91cda12a1b92e69d41cac1d8ce328e7a"
+}

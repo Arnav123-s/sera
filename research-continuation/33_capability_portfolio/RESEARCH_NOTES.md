@@ -1,0 +1,7 @@
+# Competing mechanisms
+
+I read the v15 report and mathematical contracts alongside primary sources. [Teacher–Student Curriculum Learning](https://arxiv.org/abs/1707.00183) motivates tracking progress and forgetting, while the supplied v15 comparison requires keeping balanced and useful-source random controls. [MAP-Elites](https://arxiv.org/abs/1504.04909) motivates preserving useful alternatives across declared behavior dimensions. The current implementation uses a small supplied method menu rather than claiming a reproduction of open-ended MAP-Elites.
+
+[Ng, Harada and Russell](https://people.eecs.berkeley.edu/~russell/papers/icml99-shaping.pdf) specify when potential-based shaping preserves policies. Our capped coverage/connection reward is a measured heuristic; its high-water ledger prevents the tested repetition cycle but is not that general theorem. [Howard et al.](https://arxiv.org/abs/1810.08240) provide stronger time-uniform inference machinery. This integration uses the simpler prospective exact-binomial bound with summable allocation across both quests and attempts.
+
+The packet's complementary-coverage selector beat its chosen log-volume selector; repeated-success reward concentrated practice. Accordingly, accuracy, coverage, actual deployment and retained capability determine decisions. Geometric diversity, verbal volume and points do not establish correctness. Novelty gets a bounded opportunity for testing. The finite registry, method assumptions and teaching metric remain explicitly supplied.

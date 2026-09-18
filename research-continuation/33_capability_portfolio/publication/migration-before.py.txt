@@ -1,0 +1,52 @@
+"""Copy an archived assessor into its live owner without changing learning state."""
+
+import hashlib
+import json
+import shutil
+import time
+from pathlib import Path
+
+from workbench.storage import Store
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main():
+    started = time.perf_counter()
+    live = ROOT / "runs/sera-quests-live"
+    store = Store(live)
+    previous = store.read()
+    source = Path(previous["authority"]).resolve()
+    target = (live / "assessor").resolve()
+    if source == target:
+        print("Live assessor is already independent of the sealed audit.")
+        return
+    if not source.is_relative_to(ROOT / "runs") or not target.is_relative_to(live) or target.exists():
+        raise ValueError("Preserve existing or external assessor directories")
+    inventory = {p.relative_to(source).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                 for p in source.rglob("*") if p.is_file()}
+    if "issuer.key" not in inventory or "ledger.json" not in inventory:
+        raise ValueError("The trusted issuer key and complete ledger must travel together")
+    shutil.copytree(source, target)
+    for relative, expected in inventory.items():
+        if hashlib.sha256((target / relative).read_bytes()).hexdigest() != expected:
+            raise ValueError("Assessor copy identity failed")
+    following = dict(previous, authority=str(target))
+    saved = store.commit(following, previous)
+    fields = [k for k in previous if k not in {"authority", "revision", "previous_sha256"}]
+    if any(saved[k] != previous[k] for k in fields):
+        raise AssertionError("Metadata relocation changed learning or evidence")
+    evidence = {"schema": "sera.quest-live-relocation.1", "owner": saved["owner"],
+                "source": source.relative_to(ROOT).as_posix(), "destination": target.relative_to(ROOT).as_posix(),
+                "copied_files": len(inventory), "key_and_ledger_verified_locally": True,
+                "model_and_optimizer_changed": False, "audit_source_changed": False,
+                "learner_history_revisions": store.verify_history(), "operation": "file-copy-and-append-metadata-only",
+                "file_operation_seconds": time.perf_counter()-started}
+    output = ROOT / "research-continuation/33_capability_portfolio/publication/live-state.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(evidence, indent=2)+"\n", encoding="utf-8", newline="\n")
+    print(json.dumps(evidence, indent=2))
+
+
+if __name__ == "__main__":
+    main()

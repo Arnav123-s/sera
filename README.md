@@ -25,6 +25,7 @@ The central idea is to turn experience into something reusable: a learned interp
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Retain several verified ways to solve a task and learn which alternatives add coverage | [Verified method portfolios](research-continuation/33_capability_portfolio/README.md) | [512 fresh cases, reward comparisons and persistent qualification](research-continuation/33_capability_portfolio/report.md) |
 | Learn which evidence improves a missing response, imagine motion and retain checked policy updates | [Verified completion and practice](research-continuation/32_verified_completion/README.md) | [768 fresh worlds, six controls and exact continuation](research-continuation/32_verified_completion/report.md) |
 | Use a taught physical definition to calculate and compare conditional motion | [Grounded definition example](research-continuation/30_grounded_books/README.md) | [300 cases, 900 branches and retention audit](research-continuation/30_grounded_books/report.md) |
 | Rank source sentences and investigate missing information on arXiv | [Source reading and research](docs/START_HERE.md#read-a-source-or-investigate-a-gap) | [Human-text study and audit](research-continuation/29_human_reading/report.md) |
@@ -106,6 +107,10 @@ When a task identifies missing knowledge, its original question and current atte
 
 ### Reusable knowledge, correction and persistence
 
+The verified-portfolio extension adds a learned method scorer to this same owner. A quest retains its original goal, alternative prerequisites, checked methods and unfinished work. Reward measures additional verified coverage and distinct valid methods. A reserved exploration attempt examines another candidate. Method identity includes executable content and assumptions, so different names for one procedure share credit while different valid approaches remain available.
+
+An independent assessor qualifies the complete portfolio for a declared scope and owner. Qualification is renewed after learning changes the weights. In the current mechanics study, reward for new coverage taught both seeds to select all four supplied valid routes; each answered **512/512 fresh requests correctly**. Time integration, impulse and work–energy also reach the same worked answer through distinct checked routes. [Run these examples](research-continuation/33_capability_portfolio/README.md).
+
 The executable library records a procedure's domain, assumptions, dependencies and verification history. Applicability checks determine when a stored procedure can run. Updates retain the earlier version and their evidence, so results can be inspected and replayed.
 
 Session storage uses append-only revisions, checksums and a current-revision pointer. Training checkpoints include the state needed for exact continuation. Research releases preserve source hashes, protocols, selected and rejected candidates, resource costs and independent replay results. These mechanisms let the learner continue from an earlier session with its acquired state and unfinished work intact.
@@ -122,7 +127,7 @@ The [runnable request and instructions](research-continuation/30_grounded_books/
 
 ## Current release
 
-Stage 32 connects joint completion, coherent imagined motion, learned investigation and independently checked reward on the continuing owner. It preserves **186 inherited tensors, 128 four-language probes, 26 taught physical meanings**, exact mathematics, reading and empirical forecasts. The [completion report](research-continuation/32_verified_completion/report.md) records teaching, all six comparisons, independent replay and costs. The earlier human-book curriculum remains in the [book report](research-continuation/30_grounded_books/report.md); the [status page](docs/STATUS.md) links verification and earlier results.
+Stage 33 connects learned method selection, cumulative discovery credit, alternative solution routes and independent capability qualification to the continuing owner. Training preserved all **194 predecessor tensors**; the live loop also demonstrated checked updates to both policy levels, exact restarts and qualification renewal. All **128 four-language probes and 26 taught physical meanings** were retained. The [portfolio report](research-continuation/33_capability_portfolio/report.md) records every control, fresh evaluation, failed attempt and cost. Earlier [completion](research-continuation/32_verified_completion/report.md) and [human-book](research-continuation/30_grounded_books/report.md) results remain indexed on the [status page](docs/STATUS.md).
 
 The development direction is progressively deeper STEM capability through human-authored lessons, useful quantitative tasks, verified acquisition and cumulative retention. Each completed curriculum adds its executable interface and measured results to the archive.
 

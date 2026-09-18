@@ -2,7 +2,15 @@
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Current Stage 32 completion integration
+## Current Stage 33 verified portfolios
+
+Reward for newly verified coverage taught both seeds to retain four valid conditional mechanics routes. Each answered **512/512 fresh requests correctly**; repeated-success selection answered 232/512, and useful-source random selection answered 453/512. Balanced and greedy coverage also reached 512/512, so balanced remains the default. [Use it](../research-continuation/33_capability_portfolio/README.md) · [Complete results](../research-continuation/33_capability_portfolio/report.md).
+
+The actual owner passed acquisition, independent qualification, exact restart, checked updates and fresh revalidation. All 128 language probes, 26 physical meanings, original task records and source gates were retained. Four training resumptions matched exactly. Full local regression passed **485 tests with zero skips**. [Audit](../research-continuation/33_capability_portfolio/integration-audit.json) · [Checklist](../research-continuation/33_capability_portfolio/checklist.md).
+
+Current live state and its private assessor reside together under **runs/sera-quests-live**. [Preservation record](../research-continuation/33_capability_portfolio/publication/README.md) explains the metadata-only relocation from the completed audit directory.
+
+## Preserved Stage 32 completion integration
 
 The continuing owner now supports joint conditional completions, imagined motion, a learned evidence-selection policy and independently checked credit. The frozen study evaluated **768 fresh worlds across six methods**. On matched cases, the learned policy reduced prediction error **80.4% against its initial policy and 74.0% against random selection**. Goal-information selection retained the strongest reward and remains the default recommendation. [Run a task](../research-continuation/32_verified_completion/README.md) · [Complete results](../research-continuation/32_verified_completion/report.md).
 

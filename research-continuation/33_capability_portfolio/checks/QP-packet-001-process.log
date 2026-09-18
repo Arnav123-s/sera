@@ -1,0 +1,20 @@
+{
+  "checked": 378,
+  "bad": [],
+  "valid": true
+}
+Traceback (most recent call last):
+  File "D:\ai\projects\sera\research\intake\v15-update\SERA_v15\code\run_checks.py", line 44, in <module>
+    if error:row['error']=error;state['failed'].append(row);dump(statefile,state);raise RuntimeError(error)
+                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: exit 1
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\quest_portfolio\packet.py", line 18, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\quest_portfolio\packet.py", line 13, in main
+    subprocess.run([sys.executable, "code/run_checks.py", "--output", str(ROOT / "runs/QP-packet-check-001"),
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe', 'code/run_checks.py', '--output', 'D:\\ai\\projects\\sera\\runs\\QP-packet-check-001', '--wall-budget-seconds', '150']' returned non-zero exit status 1.

@@ -1,0 +1,44 @@
+{
+  "training_resumptions": [
+    {
+      "arm": "verified",
+      "seed": 3301,
+      "from_step": 150,
+      "to_step": 300,
+      "exact": true
+    },
+    {
+      "arm": "verified",
+      "seed": 3302,
+      "from_step": 150,
+      "to_step": 300,
+      "exact": true
+    },
+    {
+      "arm": "repeated_success",
+      "seed": 3301,
+      "from_step": 150,
+      "to_step": 300,
+      "exact": true
+    },
+    {
+      "arm": "repeated_success",
+      "seed": 3302,
+      "from_step": 150,
+      "to_step": 300,
+      "exact": true
+    }
+  ],
+  "numpy_max_logit_error": 4.440892098500626e-16,
+  "independent_actions": 512,
+  "fresh_mechanics_checks": 128,
+  "maximum_mechanics_error": 0.0,
+  "contracts": {
+    "assessor.py": "c2497d36490565fcf4f62162487ab7e7fbcf1d1c3ddf637328502b9f6d83eca7",
+    "board.py": "4c8c25ed054d6d60a2c1967796f139ff36f59c53fa7686e88e80fe59769ce907",
+    "methods.py": "778df1b8d5671a7059d2b00942ad553e111a50fa8702edf39cdfe2423f0a61a8",
+    "model.py": "0b24338f983ff2e640c4ac62d8e3b6d3685cc0eba1b04a160b08f76e73e9dbb4",
+    "runtime.py": "e3b65242990b7025adcaab086b07e4e296af271e704223c583ae0b00d53818fd",
+    "protocol": "bbdcf0b4993c0228d15e7a1c4d352dba7c35e69c5666bbe82e8720cfdbbf2286"
+  }
+}

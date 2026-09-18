@@ -1,0 +1,86 @@
+{
+  "arm": "verified",
+  "seed": 3301,
+  "checkpoint": "runs/QP-study-001/verified-3301/step-0300.pt",
+  "development": {
+    "coverage": 1.0,
+    "methods": 4.0,
+    "cost": 8.5,
+    "verified_utility": 1.0350000000000001,
+    "own_reward": 1.0350000000000001,
+    "repeated_attempt_fraction": 0.0
+  },
+  "model": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5",
+  "sha256": "621a056bbcd4266b0551044667b95edf511a170e501dc789b0e699307700ca36",
+  "contracts": {
+    "assessor.py": "c2497d36490565fcf4f62162487ab7e7fbcf1d1c3ddf637328502b9f6d83eca7",
+    "board.py": "4c8c25ed054d6d60a2c1967796f139ff36f59c53fa7686e88e80fe59769ce907",
+    "methods.py": "778df1b8d5671a7059d2b00942ad553e111a50fa8702edf39cdfe2423f0a61a8",
+    "model.py": "0b24338f983ff2e640c4ac62d8e3b6d3685cc0eba1b04a160b08f76e73e9dbb4",
+    "runtime.py": "e3b65242990b7025adcaab086b07e4e296af271e704223c583ae0b00d53818fd",
+    "protocol": "bbdcf0b4993c0228d15e7a1c4d352dba7c35e69c5666bbe82e8720cfdbbf2286"
+  },
+  "rule": "development verified utility; final data unopened",
+  "all_development": [
+    {
+      "arm": "verified",
+      "seed": 3301,
+      "checkpoint": "runs/QP-study-001/verified-3301/step-0300.pt",
+      "development": {
+        "coverage": 1.0,
+        "methods": 4.0,
+        "cost": 8.5,
+        "verified_utility": 1.0350000000000001,
+        "own_reward": 1.0350000000000001,
+        "repeated_attempt_fraction": 0.0
+      },
+      "model": "68584c22735396f51043353cb41c31dafd88ca1408302e96697b8caaedca7cf5"
+    },
+    {
+      "arm": "verified",
+      "seed": 3302,
+      "checkpoint": "runs/QP-study-001/verified-3302/step-0300.pt",
+      "development": {
+        "coverage": 1.0,
+        "methods": 4.0,
+        "cost": 8.5,
+        "verified_utility": 1.0350000000000001,
+        "own_reward": 1.0350000000000001,
+        "repeated_attempt_fraction": 0.0
+      },
+      "model": "17dbf50101540927564f06c51cf5dd1d575033be0919f5e94226fc077f0b454e"
+    },
+    {
+      "arm": "repeated_success",
+      "seed": 3301,
+      "checkpoint": "runs/QP-study-001/repeated_success-3301/step-0300.pt",
+      "development": {
+        "coverage": 0.7657966701921219,
+        "methods": 2.0,
+        "cost": 13.0,
+        "verified_utility": 0.6957966701921219,
+        "own_reward": 0.6957966701921219,
+        "repeated_attempt_fraction": 0.6
+      },
+      "model": "54ceac014115d8c910b08ef26f718a680e958e05c68fe2917df5a611f224ddaf"
+    },
+    {
+      "arm": "repeated_success",
+      "seed": 3302,
+      "checkpoint": "runs/QP-study-001/repeated_success-3302/step-0300.pt",
+      "development": {
+        "coverage": 0.7657966701921219,
+        "methods": 2.0,
+        "cost": 13.0,
+        "verified_utility": 0.6957966701921219,
+        "own_reward": 0.6957966701921219,
+        "repeated_attempt_fraction": 0.6
+      },
+      "model": "052c201e436471547ccc4ca6588d671b7fe3a483a7e9e5ea786ae5e9260887e5"
+    }
+  ],
+  "parent_owner": "9d4bbea3e30c88fedbc9182ee2192c5e5819ead2df48693070baa8b4a3d1ba5c",
+  "old_tensors_unchanged": 194,
+  "training_presentations_per_arm_seed": 19200,
+  "attempt_slots_per_arm_seed": 96000
+}
