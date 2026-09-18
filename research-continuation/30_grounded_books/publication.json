@@ -1,0 +1,55 @@
+{
+  "schema": "sera.grounded-books.publication.1",
+  "verified_commit": "7936b2ae064163670b3baa8faf65af864221d043",
+  "public_main_run": {
+    "number": 37,
+    "id": 35300066010,
+    "url": "https://github.com/Arnav123-s/sera/actions/runs/35300066010",
+    "linux": {
+      "job": 105460646929,
+      "passed": 417,
+      "existing_optional_skips": 46,
+      "test_seconds": 119.11
+    },
+    "windows": {
+      "job": 105460646753,
+      "passed": 418,
+      "existing_optional_skips": 45,
+      "test_seconds": 146.05
+    }
+  },
+  "local_full_regression": {
+    "passed": 463,
+    "skipped": 0,
+    "test_seconds": 308.77
+  },
+  "release_manifest_sha256": "5a23f411faa75a644a53eade160193f8b0bd16d3f4e53a7541a47276b291f902",
+  "verified_release_files": 113,
+  "runtime_members": 4,
+  "runtime_bytes": 8764697,
+  "original_local_cost_record": "08af38adf8c511d63695ab5c377a588a15a304871e5bcd8989da053ac89e15e3",
+  "post_seal_local_jobs": {
+    "runs/HB-release-verify-002": {
+      "status": "PASS",
+      "charged_seconds": 0.3140125000209082
+    }
+  },
+  "total_stage_local_charged_seconds": 652.7050984001253,
+  "remaining_seconds_snapshot": 3128.464589799856,
+  "new_grant_seconds": 0,
+  "remote_logs": {
+    "run-37-linux.log": "e84a6764ddf553da9355c23c4f145fe32b7f7964d8b9e97789f4d5075b977332",
+    "run-37-windows.log": "d5cebcb897acce6c3feb53b7d0ace004b89406c0a3e46fd3235563a84bd2df28"
+  },
+  "historical_alerts": {
+    "runs": [
+      30,
+      31,
+      32
+    ],
+    "cause": "Archived conditional-result replay comparison; F06 repair verified in later runs.",
+    "notifications_changed": false
+  },
+  "publication_followup": "This receipt and navigation additions do not change the tested implementation or sealed scientific files.",
+  "recorded_at": "2026-09-18T02:43:39.775850+00:00"
+}

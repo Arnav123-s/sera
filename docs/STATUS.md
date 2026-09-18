@@ -8,7 +8,7 @@ The saved learner connects attributed, taught physical definitions to its existi
 
 The human-book curriculum trained on 10,723 original windows. The definition transfer probe scored 50/59 with the selected learned head; every comparison is preserved, including the stronger headword-rule macro score. Novel-definition admission remains gated; the executable route is labeled taught-source reuse. [Architecture audit](../research-continuation/30_grounded_books/architecture-audit.md) · [Checklist](../research-continuation/30_grounded_books/checklist.md).
 
-The full local regression passed **463 tests with no skips**, including the 21 new targeted checks. The exact release's full Linux/Windows status appears in the [main workflow](https://github.com/Arnav123-s/sera/actions/workflows/ci.yml?query=branch%3Amain); publication receipts record the completed run after the push. [Previously completed run #36](https://github.com/Arnav123-s/sera/actions/runs/35296019350) passed 396 tests on Linux and 397 on Windows, with the established optional-fixture skips.
+The full local regression passed **463 tests with no skips**, including the 21 new targeted checks. The published implementation [`7936b2a`](https://github.com/Arnav123-s/sera/commit/7936b2ae064163670b3baa8faf65af864221d043) passed [run #37](https://github.com/Arnav123-s/sera/actions/runs/35300066010): **417 tests on Linux and 418 on Windows**, with 46/45 established optional-fixture skips. Both platforms passed all release and archive checks. [Exact receipt and preserved logs](../research-continuation/30_grounded_books/publication.json) · [Latest main workflow](https://github.com/Arnav123-s/sera/actions/workflows/ci.yml?query=branch%3Amain).
 
 ## Preserved Stage 28 verified release
 
