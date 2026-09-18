@@ -1,0 +1,7 @@
+# Mechanism choice
+
+I use measured acquisition progress to train a finite procedure selector while preserving balanced practice as a strong control. [Matiisen et al., Teacher–Student Curriculum Learning](https://arxiv.org/abs/1707.00183v2) motivates using changes in task performance and revisiting forgetting. I separate signed maintenance from a persistent high-water discovery bonus so repeated easy success does not mint discovery credit.
+
+[Andrychowicz et al., Learning to learn by gradient descent by gradient descent](https://arxiv.org/abs/1606.04474v2) learns an optimizer from an outer objective. [Wichrowska et al., Learned Optimizers that Scale and Generalize](https://proceedings.mlr.press/v70/wichrowska17a.html) emphasizes generalization of learned optimization. LP-001 takes the narrower, affordable route of learning which supplied update rate and curriculum action to use. Its old/new knowledge by old/new procedure experiment tests the distinction directly; registering another head on one owner is not itself evidence of procedure transfer.
+
+The empirical route in the actual live owner is the supported physical identification route, not the archived recurrent prediction challenger. I preserve it. The numerical strand therefore exercises the owner's admitted mechanics-method selector instead of quietly reinstating that challenger. Conditional imagination remains independently checked by the Stage 33 method contracts.

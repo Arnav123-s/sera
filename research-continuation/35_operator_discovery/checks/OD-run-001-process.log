@@ -1,0 +1,75 @@
+{"step": 1, "discoveries": 0}
+{"step": 2, "discoveries": 1}
+{"step": 3, "discoveries": 5}
+{"step": 4, "discoveries": 5}
+{"step": 5, "discoveries": 5}
+{"step": 6, "discoveries": 5}
+{"step": 7, "discoveries": 5}
+{"step": 8, "discoveries": 5}
+{"step": 9, "discoveries": 5}
+{
+  "contracts": {
+    "core": "3d6c96cddb4ab79896f3ff16fa1f7bca562142c356cb322c2e63b68f6c608942",
+    "runtime": "3cebc6b6c86a2bfe61b4612268ab6405f8db8e48624cac096426609f9ed758f7",
+    "protocol": "3fec614a383cb1ab80cf62361d170b57c8b7c51e4acc7fec9c8e9f1578041045"
+  },
+  "owner": "ce851ec425e517a76d7c31d36d4d9ae39af9cf6ab1a780fc5e6adbfa4a5bb333",
+  "model_hash": "d525808d3c0a72ec066511b6cdda3ca4a95a39bbd7dbdb0a943d71f0baa25a4e",
+  "novel_to_learner_relations": 5,
+  "fresh_polynomials": 64,
+  "checked_alternatives": 256,
+  "exact_resume": true,
+  "inherited_tensors": 204,
+  "inherited_equal": true,
+  "source_gate": false,
+  "example": {
+    "status": "CERTIFIED_DISCOVERED_ALTERNATIVES",
+    "acceleration": [
+      "2"
+    ],
+    "position_polynomial": [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "alternative_routes": [
+      {
+        "rule": "96ad73f645033b5e6147f628e163998576bcaa0afb2626df144040c8e7af8e5f",
+        "result": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "scope": "all rational-coefficient polynomials of degree at most three; I anchored at zero; M multiplies by time"
+      }
+    ],
+    "initial_conditions": {
+      "velocity": "0",
+      "position": "0"
+    },
+    "factual_updates": 0
+  },
+  "research_scope": "new to this retained library; generated from learned integration under a supplied finite grammar; exact degree-bounded identities",
+  "web_queries_by_learner": 0,
+  "supplied_completed_equations": 0
+}

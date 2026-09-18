@@ -1,0 +1,5 @@
+# Mechanisms and scope
+
+[Brunton, Proctor and Kutz](https://www.pnas.org/doi/10.1073/pnas.1517384113) motivate searching a supplied function library for compact relations. [Udrescu and Tegmark](https://arxiv.org/abs/1905.11481) motivate combining numerical discovery with structure in symbolic regression. OD-001 uses imagined executions of SERA's already learned operator as its data and exact algebra as its acceptance test. The grammar, dependency-fitting algorithm and proof rule are supplied engineering; the coefficients and relationships are generated from the learner's executions and retained as computational parameters.
+
+Sparse fitting alone can propose a coincidence. The independent degree-bounded identity certificate supplies the reason to reuse a relation. The novelty measure uses exact rational row-space rank, so renaming or combining existing results cannot farm points. Independently useful alternative presentations remain in the evidence record even when they receive no new-rank reward.

@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-18T07:08:51.7253326Z",
+  "date": "2026-09-18T10:26:51.436179+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Verified alternatives and capability qualification integrated through the continuing owner; grounded acquisition of a new method next",
+  "active_direction": "Internal discovery of new executable relationships from retained knowledge, exact verification and guarded rewards",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -170,7 +170,7 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "33_capability_portfolio/NEXT_ACTION.md",
+  "next_action": "35_operator_discovery/NEXT_ACTION.md",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -349,11 +349,27 @@
       "training_resumptions": 4,
       "local_tests": 485,
       "new_allowance_seconds": 0
+    },
+    "learning_progress": {
+      "report": "34_learning_progress/report.md",
+      "owner": "dadac2a173615ec980ca52e1e3d5dbad85f1503138213f16c6906cb0224375b7",
+      "workspace": "../runs/sera-learning-live",
+      "local_tests": 493,
+      "default": "balanced"
+    },
+    "internal_discovery": {
+      "report": "35_operator_discovery/report.md",
+      "owner": "ce851ec425e517a76d7c31d36d4d9ae39af9cf6ab1a780fc5e6adbfa4a5bb333",
+      "workspace": "../runs/sera-discovery-live",
+      "relationships": 5,
+      "checked_alternatives": 256,
+      "inherited_tensors": 204,
+      "new_tests": 3
     }
   },
-  "latest_continuation": "33_capability_portfolio",
+  "latest_continuation": "35_operator_discovery",
   "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
-  "latest_user_steering": "Use imagination and independently checked rewards to learn useful procedures through the actual owner; preserve human foundations, applicability, original goals and the v14 evidence distinctions.",
+  "latest_user_steering": "Construct and prove new connections internally from what SERA knows; no web search for completed discoveries",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
   "latest_publication": {
     "implementation": "9ca50a7aab26fa4b75e7adbcd22de38026344343",
@@ -374,7 +390,7 @@
     "new_grant_seconds": 0
   },
   "latest_resource_snapshot": {
-    "remaining_seconds": 1166.0691055996722,
+    "remaining_seconds": 262.82200599958014,
     "live_ledger": "runs/v3-batch-001/budget.json",
     "snapshot_only": true
   }

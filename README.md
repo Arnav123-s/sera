@@ -25,6 +25,8 @@ The central idea is to turn experience into something reusable: a learned interp
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Construct and prove new connections from retained executable knowledge | [Internal discovery](research-continuation/35_operator_discovery/README.md) | [Five generated relationships and 256 independently checked alternative executions](research-continuation/35_operator_discovery/report.md) |
+| Continue human-text and checked-method practice with rewards for verified learning progress | [Learning progress](research-continuation/34_learning_progress/README.md) | [Six curriculum strands, two successor transitions and independent replay](research-continuation/34_learning_progress/report.md) |
 | Retain several verified ways to solve a task and learn which alternatives add coverage | [Verified method portfolios](research-continuation/33_capability_portfolio/README.md) | [512 fresh cases, reward comparisons and persistent qualification](research-continuation/33_capability_portfolio/report.md) |
 | Learn which evidence improves a missing response, imagine motion and retain checked policy updates | [Verified completion and practice](research-continuation/32_verified_completion/README.md) | [768 fresh worlds, six controls and exact continuation](research-continuation/32_verified_completion/report.md) |
 | Use a taught physical definition to calculate and compare conditional motion | [Grounded definition example](research-continuation/30_grounded_books/README.md) | [300 cases, 900 branches and retention audit](research-continuation/30_grounded_books/report.md) |
@@ -93,6 +95,8 @@ The StudyR1 extension learns numerical operators over rational polynomial repres
 
 These operators compose. Given an acceleration polynomial, the motion route integrates to velocity, applies the initial velocity, integrates to position and applies the initial position. It then evaluates the resulting functions at the requested time. The result includes the functions and verification records, making the computation inspectable and reusable.
 
+The internal-discovery extension uses the retained integral to generate and execute candidate compositions with time-weighting. It fits possible relationships, checks them with exact rational algebra, and stores accepted coefficients as executable parameters on the same owner. In the first completed cycle it constructed one connection and four composed extensions, then used them for 256 checked alternative calculations. New independent coverage earns credit; aliases share the existing credit. [Discoveries, assumptions and comparisons](research-continuation/35_operator_discovery/report.md).
+
 SERA also learns empirical motion models from observed histories. The refinement interface preserves observations, fits the admitted model, checks identifiability and forecasts from retained history. Source assumptions, measured observations and calculated consequences remain individually inspectable.
 
 ### Imagination, investigation and learning
@@ -116,6 +120,8 @@ The executable library records a procedure's domain, assumptions, dependencies a
 Session storage uses append-only revisions, checksums and a current-revision pointer. Training checkpoints include the state needed for exact continuation. Research releases preserve source hashes, protocols, selected and rejected candidates, resource costs and independent replay results. These mechanisms let the learner continue from an earlier session with its acquired state and unfinished work intact.
 
 ### What the engineering supplies and what SERA learns
+
+The learning-progress extension trains a procedure scorer on realized acquisition gains across human prose, source reading and checked mechanics. It rewards gains above the learner's retained best score and separately records maintenance. Old/new knowledge crossed with old/new learning policies tests whether the procedure helps the next acquisition task. The latest saved owner retains the selected weight updates and its freshly qualified four-route portfolio. [Implementation, all controls and results](research-continuation/34_learning_progress/report.md).
 
 I supply the encoders, representation contracts, learning algorithms, unit rules, independent checkers and experiment protocols. SERA acquires the trained request and reading mappings, quantity associations, numerical operator coefficients, empirical parameters, evidence-selection weights and admitted procedures through their recorded teaching or acquisition processes. The reports identify the origin of each component and measure the resulting behavior.
 

@@ -6,6 +6,8 @@ Completed work, checkpoints and unsuccessful candidates remain preserved. Curren
 
 | Stages | Topic | Starting point |
 |---|---|---|
+| 35 | Internal operator discovery, exact proofs and executable new relationships | [Use it](../research-continuation/35_operator_discovery/README.md) · [Report](../research-continuation/35_operator_discovery/report.md) · [Records](../research-continuation/35_operator_discovery/results.json) |
+| 34 | Verified learning-progress rewards, continued human practice and old/new procedure comparisons | [Use it](../research-continuation/34_learning_progress/README.md) · [Report](../research-continuation/34_learning_progress/report.md) · [Audit](../research-continuation/34_learning_progress/architecture-audit.md) |
 | 33 | Learned method selection, verified alternatives and persistent capability qualification | [Use it](../research-continuation/33_capability_portfolio/README.md) · [Report](../research-continuation/33_capability_portfolio/report.md) · [Audit](../research-continuation/33_capability_portfolio/architecture-audit.md) |
 | 32 | Joint completion, learned investigation and checked credit | [Use it](../research-continuation/32_verified_completion/README.md) · [Report](../research-continuation/32_verified_completion/report.md) · [Audit](../research-continuation/32_verified_completion/integration-audit.json) |
 | 31 | Human STEM source preparation, preserved without model training | [Status](../research-continuation/31_stem_acquisition/STATUS.md) · [Source catalog](../research-continuation/31_stem_acquisition/teaching.json) |

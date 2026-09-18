@@ -2,13 +2,23 @@
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Current Stage 33 verified portfolios
+## Current Stage 35 internal discovery
+
+Starting from its retained learned integral, SERA generated five new operator relationships and independently certified their degree-bounded algebra. It executed 256 alternative calculations on 64 fresh polynomials, resumed exactly, and preserved all 204 inherited tensor records. The discovery run used no web queries or supplied completed equations. The current owner is **runs/sera-discovery-live**. [Use the discovered motion route](../research-continuation/35_operator_discovery/README.md) · [Full results, assumptions and controls](../research-continuation/35_operator_discovery/report.md).
+
+## Preserved Stage 34 learning progress
+
+The continuing owner now combines verified alternative methods with rewards for acquisition progress. Six curriculum strands, four controllers and two seeds were carried through two successive learning stages, followed by 40 matched future-acquisition comparisons. The selected weights passed the frozen admission gate; balanced remains the default scheduler. [Use the latest learner](../research-continuation/34_learning_progress/README.md) · [Full results](../research-continuation/34_learning_progress/report.md).
+
+Independent replay checked 23,832 prediction scores, exact continuation, 190 protected tensors, 128 language probes and 64 mechanics executions. The updated owner then passed **256/256 fresh portfolio qualification cases**. The current store is **runs/sera-learning-live**; its original assessor authority remains under **runs/sera-quests-live/assessor**. All predecessor stores and unfinished goals remain preserved. [Architecture audit](../research-continuation/34_learning_progress/architecture-audit.md) · [Checklist](../research-continuation/34_learning_progress/checklist.md).
+
+## Preserved Stage 33 verified portfolios
 
 Reward for newly verified coverage taught both seeds to retain four valid conditional mechanics routes. Each answered **512/512 fresh requests correctly**; repeated-success selection answered 232/512, and useful-source random selection answered 453/512. Balanced and greedy coverage also reached 512/512, so balanced remains the default. [Use it](../research-continuation/33_capability_portfolio/README.md) · [Complete results](../research-continuation/33_capability_portfolio/report.md).
 
 The actual owner passed acquisition, independent qualification, exact restart, checked updates and fresh revalidation. All 128 language probes, 26 physical meanings, original task records and source gates were retained. Four training resumptions matched exactly. Full local regression passed **485 tests with zero skips**. [Audit](../research-continuation/33_capability_portfolio/integration-audit.json) · [Checklist](../research-continuation/33_capability_portfolio/checklist.md).
 
-Current live state and its private assessor reside together under **runs/sera-quests-live**. [Preservation record](../research-continuation/33_capability_portfolio/publication/README.md) explains the metadata-only relocation from the completed audit directory.
+The preserved Stage 33 state and its private assessor reside together under **runs/sera-quests-live**. [Preservation record](../research-continuation/33_capability_portfolio/publication/README.md) explains the metadata-only relocation from the completed audit directory.
 
 Implementation [`9ca50a7`](https://github.com/Arnav123-s/sera/commit/9ca50a7aab26fa4b75e7adbcd22de38026344343) passed [GitHub run 42](https://github.com/Arnav123-s/sera/actions/runs/35317484025): **440 tests on Linux and 441 on Windows**, with 46/45 existing optional-fixture skips. All release and archive checks passed. The clean-checkout retention repair added one test; full local regression plus the targeted repair checks cover 486 distinct checks. [Receipt and original logs](../research-continuation/33_capability_portfolio/publication/github-run-42.json).
 

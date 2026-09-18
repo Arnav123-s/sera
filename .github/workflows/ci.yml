@@ -49,6 +49,8 @@ jobs:
       - run: uv run --no-sync python scripts/completion_artifacts.py --restore
       - run: uv run --no-sync python scripts/quest_artifacts.py --restore
       - run: uv run --no-sync python scripts/quest_retention_artifacts.py
+      - run: uv run --no-sync python scripts/learning_artifacts.py
+      - run: uv run --no-sync python scripts/discovery_artifacts.py
       - run: uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
       - run: uv run --no-sync python -m pytest
       - run: uv run --no-sync python scripts/verify_release.py
