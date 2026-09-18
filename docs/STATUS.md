@@ -10,6 +10,8 @@ The actual owner passed acquisition, independent qualification, exact restart, c
 
 Current live state and its private assessor reside together under **runs/sera-quests-live**. [Preservation record](../research-continuation/33_capability_portfolio/publication/README.md) explains the metadata-only relocation from the completed audit directory.
 
+Implementation [`9ca50a7`](https://github.com/Arnav123-s/sera/commit/9ca50a7aab26fa4b75e7adbcd22de38026344343) passed [GitHub run 42](https://github.com/Arnav123-s/sera/actions/runs/35317484025): **440 tests on Linux and 441 on Windows**, with 46/45 existing optional-fixture skips. All release and archive checks passed. The clean-checkout retention repair added one test; full local regression plus the targeted repair checks cover 486 distinct checks. [Receipt and original logs](../research-continuation/33_capability_portfolio/publication/github-run-42.json).
+
 ## Preserved Stage 32 completion integration
 
 The continuing owner now supports joint conditional completions, imagined motion, a learned evidence-selection policy and independently checked credit. The frozen study evaluated **768 fresh worlds across six methods**. On matched cases, the learned policy reduced prediction error **80.4% against its initial policy and 74.0% against random selection**. Goal-information selection retained the strongest reward and remains the default recommendation. [Run a task](../research-continuation/32_verified_completion/README.md) · [Complete results](../research-continuation/32_verified_completion/report.md).

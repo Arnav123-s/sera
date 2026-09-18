@@ -18,4 +18,4 @@
 - [x] Seal source, result, checkpoint and cost archives: 65 files and 74 archived artifacts verified.
 - [x] Separate future live assessment updates from the completed audit directory, preserving model and evidence identities.
 - [x] Repair clean-checkout retention prerequisites from existing archives; 11 targeted checks passed, including empty-directory restoration.
-- [ ] Publish the organized release and verify GitHub's checks.
+- [x] Publish the organized release and verify GitHub's checks: run 42 passed on Linux (440 tests) and Windows (441 tests), including every archive and release check.
