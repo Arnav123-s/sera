@@ -1,0 +1,61 @@
+{
+  "contracts": {
+    "protocol": "754fccc59d17d747141d4c8bd8bbdc6e4950eb8c50f785b4bc8187a983e83de9",
+    "preparation_repair": "66c1bc898c63ac4f1cb9a05e41b5123764cfeb80d42e291cc478c82c1d1c544d",
+    "data": "655393b790f19b07383a9991d190c8266be5e71db6bc54b7d2926345991120f8",
+    "model": "7e3432376bb220a88d0fdd9cae79363a811560ad7b1c0e8c9c3a68bb6a0f5399",
+    "study": "b22963d89788bc89e5f2ff93f8c7f52b396f877b14291545268e2c27dc5ff7d5",
+    "manifest": "0dc9980c8a2b2c2c98443f1597563a7ae153ee4e2f12a7c081844bde45d31753",
+    "parent": "cf0e0061e0f43ca62813ce77aa79bdc364029aba21e9064400b1a83d30fb62a8"
+  },
+  "selected": "shared",
+  "checkpoint": "runs/HB-study-002/science/step-0120.pt",
+  "sha256": "5a9363052f589b88911cdaa1b4b7724cf9c6aa1346997513962ef777ff3b49ae",
+  "history": [
+    {
+      "stage": "dictionary",
+      "mean_development_cross_entropy": {
+        "shared": 5.715155442555745,
+        "pooled": 6.058960596720378
+      }
+    },
+    {
+      "stage": "conversation",
+      "mean_development_cross_entropy": {
+        "shared": 6.1236419677734375,
+        "pooled": 6.450512886047363
+      }
+    },
+    {
+      "stage": "grammar",
+      "mean_development_cross_entropy": {
+        "shared": 6.060752232869466,
+        "pooled": 6.502028226852417
+      }
+    },
+    {
+      "stage": "philosophy",
+      "mean_development_cross_entropy": {
+        "shared": 6.115826924641927,
+        "pooled": 6.653597513834636
+      }
+    },
+    {
+      "stage": "mathematics",
+      "mean_development_cross_entropy": {
+        "shared": 6.453406413396199,
+        "pooled": 7.356616258621216
+      }
+    },
+    {
+      "stage": "science",
+      "mean_development_cross_entropy": {
+        "shared": 6.215654214223226,
+        "pooled": 6.734408696492513
+      }
+    }
+  ],
+  "predecessor_tensors_exact": 172,
+  "wall_seconds": 23.670241199986776,
+  "final_opened": false
+}

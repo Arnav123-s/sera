@@ -4,6 +4,16 @@
 
 These commands use the prepared workspace at `D:/ai/projects/sera`, its environment and retained checkpoints. Numerical tasks use one CPU thread and the existing 2 GiB process-tree memory cap. The wrapper charges the live resource ledger; every output folder must be fresh.
 
+## Apply a taught definition to a situation
+
+```powershell
+.venv/Scripts/python.exe scripts/run_books_bounded.py --seconds 40 --output runs/my-grounded-example-001 --module experiments.book_learning.runtime -- imagine --request research-continuation/30_grounded_books/example-request.json
+```
+
+The saved example supplies an original force definition, 6 N net force, 3 kg mass and two seconds from rest. SERA checks its learned type against the taught source, applies the declared physical premises and returns **4 m position and 4 m/s velocity**. It also checks opposite-force and doubled-mass alternatives. These results certify conditional algebra, not an observed event.
+
+[Choose entries, change the request, preserve sessions and investigate missing meanings](../research-continuation/30_grounded_books/README.md). The supported route is explicitly labeled taught-source reuse. [Full training and transfer results](../research-continuation/30_grounded_books/report.md).
+
 ## Read a source or investigate a gap
 
 ```powershell
@@ -15,7 +25,7 @@ These commands use the prepared workspace at `D:/ai/projects/sera`, its environm
 
 `match` compares two to sixteen attributed alternatives using the learned semantic weights; repeat `--candidate "text"` for each alternative and supply `--source`. [Measured tasks, controls and source provenance](../research-continuation/29_human_reading/report.md).
 
-For a fresh checkout, first run `scripts/restore_test_artifacts.py`, then `scripts/reading_artifacts.py --restore`. These verify hashes and preserve divergent local files. The artifact restore does not create a new compute allowance.
+For a fresh checkout, run `scripts/restore_test_artifacts.py`, `scripts/reading_artifacts.py --restore`, then `scripts/books_artifacts.py --restore`. These verify hashes and preserve divergent local files. The artifact restore does not create a new compute allowance.
 
 ## Predict motion from a learned history
 

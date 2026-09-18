@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-17T23:55:24.516548+00:00",
+  "date": "2026-09-18T02:26:17.642686+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Complete human books and definition-to-situation learning; Stage 29 preliminary associations preserved",
+  "active_direction": "Grounded taught-definition execution completed; targeted human concept acquisition next",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -127,6 +127,12 @@
       "id": "28-concept-refinement",
       "status": "integrated_and_evaluated",
       "evidence": "28_concept_refinement/report.md"
+    },
+    {
+      "id": "30-human-books-grounded-definitions",
+      "status": "complete_local_guarded_reuse",
+      "evidence": "30_grounded_books/report.md",
+      "detail": "Human-book and definition studies preserved; 26 taught physical entries, 300 numerical cases, 900 branches, 172 predecessor tensors and 128 language probes audited. Novel-definition gate remains closed."
     }
   ],
   "preserved_branches": [
@@ -147,7 +153,7 @@
     "M4": "not established"
   },
   "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
-  "next_action": "HB-001: prepare complete dictionary and human prose windows; implement ordered-context learning and guarded physical definition binding through the actual owner",
+  "next_action": "30_grounded_books/NEXT_ACTION.md",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -300,14 +306,19 @@
       "remaining_seconds_at_release": 1724.0638096000039
     }
   },
-  "latest_continuation": "29_human_reading",
+  "latest_continuation": "30_grounded_books",
   "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
   "latest_user_steering": "Full dictionaries, everyday conversations, grammar, philosophy and mathematics/science; connect definitions to imagination and verification",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
-  "latest_publication": "28_concept_refinement/publication.json",
+  "latest_publication": "29_human_reading/publication.json",
   "resource_balance_at_publication": {
     "remaining_seconds": 512.0372116000653,
     "new_grant_seconds": 0,
     "live_ledger": "runs/v3-batch-001/budget.json"
+  },
+  "latest_resource_snapshot": {
+    "remaining_seconds": 3128.778602299877,
+    "live_ledger": "runs/v3-batch-001/budget.json",
+    "snapshot_only": true
   }
 }

@@ -1,0 +1,9 @@
+# Executable scope decided from development evidence
+
+GD-002 improved development macro accuracy from 0.236111 to 0.380556 by retaining the named term, but its autonomous novel-definition gate remains closed. The selected model is the lexical head at update 160; neither neural condition established a benefit. I do not change that threshold or retrain against the College Physics final.
+
+The supported executable interface is guarded reuse of taught entries. A candidate must exactly match the term, original definition and source of a retained teaching entry; its learned top type must agree with the supplied human-source label. This is supervised knowledge reuse, not learned abstraction. The entry record verifies the teacher association and the neural readout must still produce the type. The record does not replace the learned computation. Other/unrecognized senses cannot become physical quantities through matching units alone.
+
+This is a separate applicability rule, not a relaxation of the failed novel-definition gate. For new wording the interface returns all scored interpretations, keeps the task open and supports the arXiv acquisition route. Exact source reuse remains labeled separately in every result. The old applicability checks, compatible SI unit, physical context and explicit model premises are required before any execution. No physical observation or general lexical truth is certified by the algebra checker.
+
+I freeze the reuse rule before running the integration cohort. All eligible source entries are tested, not selected from successful outcomes. The cohort uses 60 generated rational conditions per eligible physical type, with opposite-force and doubled-mass checks. Teaching-source reuse results and held-out transfer results are reported separately. The final source cohort cannot add entries to this bank.

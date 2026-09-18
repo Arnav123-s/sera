@@ -45,6 +45,7 @@ jobs:
       - run: uv run --no-sync python -m ruff check src tests scripts experiments
       - run: uv run --no-sync python scripts/restore_test_artifacts.py
       - run: uv run --no-sync python scripts/reading_artifacts.py --restore
+      - run: uv run --no-sync python scripts/books_artifacts.py --restore
       - run: uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
       - run: uv run --no-sync python -m pytest
       - run: uv run --no-sync python scripts/verify_release.py

@@ -26,6 +26,8 @@ python -m venv .venv
 .venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
 .venv/Scripts/python.exe -m pip install -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
 .venv/Scripts/python.exe scripts/restore_test_artifacts.py
+.venv/Scripts/python.exe scripts/reading_artifacts.py --restore
+.venv/Scripts/python.exe scripts/books_artifacts.py --restore
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```

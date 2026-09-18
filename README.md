@@ -23,6 +23,7 @@ I am building one persistent learner that acquires executable knowledge, investi
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Use a taught physical definition to calculate and compare conditional motion | [Grounded definition example](research-continuation/30_grounded_books/README.md) | [300 cases, 900 branches and retention audit](research-continuation/30_grounded_books/report.md) |
 | Rank source sentences and investigate missing information on arXiv | [Source reading and research](docs/START_HERE.md#read-a-source-or-investigate-a-gap) | [Human-text study and audit](research-continuation/29_human_reading/report.md) |
 | Learn a body's motion from observations; refine and forecast | [Motion learning](research-continuation/28_concept_refinement/README.md) | [C01/C02 results](research-continuation/28_concept_refinement/report.md) |
 | Learn verified operators and calculate polynomial motion | [Mathematical study](research-continuation/27_self_study/README.md) | [Acquisition and correction](research-continuation/27_self_study/report.md) |
@@ -34,9 +35,9 @@ Each result belongs to its stated teaching and evaluation conditions. I document
 
 ## Current release
 
-The human-text curriculum and arXiv investigation interface extend the continuing StudyR1 owner. The [status page](docs/STATUS.md) links the exact results, costs and checks. C01/C02 and all earlier successful and failed studies remain preserved.
+Stage 30 connects learned quantity bindings to the continuing StudyR1 motion operator. Its supported interface reuses 26 taught physical definitions with source, unit and assumption checks. The human-book curriculum and both definition studies, including all controls, are in the [new report](research-continuation/30_grounded_books/report.md). The [status page](docs/STATUS.md) links verification, costs and earlier results.
 
-The next curriculum uses complete dictionary books, everyday conversations, grammar, philosophy and mathematics/science texts, with a definition-to-situation investigation. [Prospective protocol](research-continuation/30_grounded_books/PROTOCOL.md).
+The [runnable example](research-continuation/30_grounded_books/README.md) predicts conditional motion from a taught force definition. Unknown meanings remain open for source acquisition. Exact taught-source reuse and held-out interpretation are reported separately; all previous studies remain preserved.
 
 ## Development and preservation
 

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\book_learning\data.py", line 159, in <module>
+    prepare(parser.parse_args().final)
+  File "D:\ai\projects\sera\experiments\book_learning\data.py", line 147, in prepare
+    raise ValueError("Insufficient human text windows")
+ValueError: Insufficient human text windows

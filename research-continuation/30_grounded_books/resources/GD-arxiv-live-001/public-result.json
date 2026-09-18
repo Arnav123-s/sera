@@ -1,0 +1,203 @@
+{
+  "request": {
+    "id": "momentum-gap-001",
+    "goal": "Use the definition of linear momentum to investigate how a change in force affects motion.",
+    "term": "linear momentum",
+    "definition": "the product of a system's mass and velocity",
+    "source": "https://raw.githubusercontent.com/openstax/osbooks-physics/dfdfd7a5356ecdd42e504de3df50d9153e33ea49/modules/m54215/index.cnxml",
+    "value": "6",
+    "unit": "kg*m/s",
+    "time": "2",
+    "public_gap": "momentum force impulse",
+    "assumptions": {}
+  },
+  "request_sha256": "7bd889b5515f97c2b1a789896f58b6032cc9a5b887ab9fd836797dbe0e11e825",
+  "status": "RETAINED_OPEN",
+  "binding": {
+    "candidate": "other",
+    "admitted": false,
+    "admission": "TENTATIVE",
+    "source_entry": "m54215:fs-id1167067035720",
+    "human_label_agreement": true,
+    "alternatives": [
+      {
+        "role": "other",
+        "score": 0.9391085505485535
+      },
+      {
+        "role": "force",
+        "score": 0.018610134720802307
+      },
+      {
+        "role": "velocity",
+        "score": 0.011993461288511753
+      },
+      {
+        "role": "mass",
+        "score": 0.010941499844193459
+      },
+      {
+        "role": "acceleration",
+        "score": 0.00990388635545969
+      },
+      {
+        "role": "position",
+        "score": 0.009442498907446861
+      }
+    ],
+    "score_meaning": "learned classifier scores; not calibrated truth probabilities",
+    "owner": "3b67700c14e23c1a8fcc6828f1eeacd3ca9bdb4d23ca849d1a303fc7175831de",
+    "definition_sha256": "48502832ba14b901832629aa5f00857c89c102f95c08a7aa023d4f73f0d9c4a9",
+    "source": "https://raw.githubusercontent.com/openstax/osbooks-physics/dfdfd7a5356ecdd42e504de3df50d9153e33ea49/modules/m54215/index.cnxml"
+  },
+  "reason": "This source meaning needs checked teaching evidence before physical execution",
+  "original_goal_preserved": true,
+  "learned_weight_updates": 0,
+  "investigation": {
+    "question": "Use the definition of linear momentum to investigate how a change in force affects motion.",
+    "question_sha256": "c7328d11ba36e0f75f3308be9f955083435f03fc8a38cdc2c985753dd77fec28",
+    "gap": "momentum force impulse",
+    "query": "all:\"momentum\" AND all:\"force\" AND all:\"impulse\"",
+    "status": "REFERENCES_TO_VERIFY",
+    "diagnosis": "no verified local source supplied for the requested gap",
+    "original_goal_preserved": true,
+    "references": [
+      {
+        "id": "1710.08182v1",
+        "url": "https://arxiv.org/abs/1710.08182v1",
+        "title": "Minimum-domain impulse theory for unsteady aerodynamic force",
+        "authors": [
+          "Linlin Kang",
+          "Luoqin Liu",
+          "Weidong Su",
+          "Jiezhi Wu"
+        ],
+        "published": "2017-10-23T10:25:31Z",
+        "updated": "2017-10-23T10:25:31Z",
+        "evidence_status": "UNVERIFIED_REFERENCE",
+        "feed_sha256": "cc10850595f74b2b5e7217aa4aa2c56d425468d18c437d1ae85ab91e41269343",
+        "paper_receipt": {
+          "url": "https://arxiv.org/html/1710.08182v1",
+          "retrieved_utc": "2026-09-18T02:18:21.053261+00:00",
+          "read_only": true,
+          "commands_executed": 0,
+          "final_url": "https://arxiv.org/html/1710.08182v1",
+          "content_type": "text/html; charset=utf-8",
+          "etag": "\"CLDkoduSupYDEAE=\"",
+          "status": "received",
+          "bytes": 418503,
+          "sha256": "c847bf9be3dbbabcad6408b2235fa361d3f6a66f5485dfb7455642de132ced5b",
+          "body": "c847bf9be3dbbabcad6408b2235fa361d3f6a66f5485dfb7455642de132ced5b.body",
+          "wall_seconds": 0.3927986000198871
+        },
+        "reading": {
+          "status": "CANDIDATE_SUPPORT",
+          "question": "Use the definition of linear momentum to investigate how a change in force affects motion.",
+          "source": "https://arxiv.org/html/1710.08182v1",
+          "passage_sha256": "6904e9a498d1ddde59dce827739098722191e4ec6d9defaa6afef9139d6c31e4",
+          "owner": "3b67700c14e23c1a8fcc6828f1eeacd3ca9bdb4d23ca849d1a303fc7175831de",
+          "candidates": [
+            {
+              "start": 9,
+              "end": 457,
+              "score": 2.8593082427978516,
+              "index": 1
+            },
+            {
+              "start": 0,
+              "end": 8,
+              "score": -0.6881272792816162,
+              "index": 0
+            }
+          ],
+          "verified_claim": false,
+          "score_meaning": "ranking score; not a correctness probability"
+        }
+      },
+      {
+        "id": "2601.19392v1",
+        "url": "https://arxiv.org/abs/2601.19392v1",
+        "title": "Nanomechanical sensor resolving impulsive forces below its zero-point fluctuations",
+        "authors": [
+          "Martynas Skrabulis",
+          "Martin Colombano Sosa",
+          "Nicola Carlon Zambon",
+          "Andrei Militaru",
+          "Massimiliano Rossi",
+          "Martin Frimmer",
+          "Lukas Novotny"
+        ],
+        "published": "2026-01-27T09:22:04Z",
+        "updated": "2026-01-27T09:22:04Z",
+        "evidence_status": "UNVERIFIED_REFERENCE",
+        "feed_sha256": "cc10850595f74b2b5e7217aa4aa2c56d425468d18c437d1ae85ab91e41269343",
+        "paper_receipt": {
+          "url": "https://arxiv.org/html/2601.19392v1",
+          "retrieved_utc": "2026-09-18T02:18:24.158493+00:00",
+          "read_only": true,
+          "commands_executed": 0,
+          "final_url": "https://arxiv.org/html/2601.19392v1",
+          "content_type": "text/html; charset=utf-8",
+          "etag": "\"COb55oCLupYDEAE=\"",
+          "status": "received",
+          "bytes": 180496,
+          "sha256": "3e3cc04366da891ae2c82a9669cca300b73d43ccbd3327111d2fd2b6779c32b6",
+          "body": "3e3cc04366da891ae2c82a9669cca300b73d43ccbd3327111d2fd2b6779c32b6.body",
+          "wall_seconds": 0.5554725999827497
+        },
+        "reading": {
+          "status": "CANDIDATE_SUPPORT",
+          "question": "Use the definition of linear momentum to investigate how a change in force affects motion.",
+          "source": "https://arxiv.org/html/2601.19392v1",
+          "passage_sha256": "541f7a18084a1974166ecaa932358b40d087b8efabeb819584efdcd20b82532d",
+          "owner": "3b67700c14e23c1a8fcc6828f1eeacd3ca9bdb4d23ca849d1a303fc7175831de",
+          "candidates": [
+            {
+              "start": 103,
+              "end": 240,
+              "score": 2.850111484527588,
+              "index": 1
+            },
+            {
+              "start": 241,
+              "end": 371,
+              "score": 1.2230099439620972,
+              "index": 2
+            },
+            {
+              "start": 459,
+              "end": 500,
+              "score": 0.4241415560245514,
+              "index": 3
+            }
+          ],
+          "verified_claim": false,
+          "score_meaning": "ranking score; not a correctness probability"
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "status": "received",
+        "feed_sha256": "cc10850595f74b2b5e7217aa4aa2c56d425468d18c437d1ae85ab91e41269343"
+      }
+    ],
+    "weight_updates": 0,
+    "training_admission": "reference_only; human foundation curriculum remains separate",
+    "search_receipt": {
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22momentum%22+AND+all%3A%22force%22+AND+all%3A%22impulse%22&start=0&max_results=3&sortBy=relevance",
+      "retrieved_utc": "2026-09-18T02:18:17.952260+00:00",
+      "read_only": true,
+      "commands_executed": 0,
+      "final_url": "https://export.arxiv.org/api/query?search_query=all%3A%22momentum%22+AND+all%3A%22force%22+AND+all%3A%22impulse%22&start=0&max_results=3&sortBy=relevance",
+      "content_type": "application/atom+xml; charset=utf-8",
+      "etag": null,
+      "status": "received",
+      "bytes": 7835,
+      "sha256": "cc10850595f74b2b5e7217aa4aa2c56d425468d18c437d1ae85ab91e41269343",
+      "body": "cc10850595f74b2b5e7217aa4aa2c56d425468d18c437d1ae85ab91e41269343.body",
+      "wall_seconds": 0.7154125999950338
+    },
+    "next_action": "Check the relevant claims and assumptions against an independent task verifier; retain only supported updates."
+  }
+}

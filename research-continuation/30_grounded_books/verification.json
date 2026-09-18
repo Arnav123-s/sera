@@ -1,0 +1,31 @@
+{
+  "targeted": {
+    "job": "runs/GD-tests-001",
+    "passed": 21,
+    "test_seconds": 40.85,
+    "state_sha256": "cabf4daa487c70234bbab0734203a241375f7d360dc6d223573f5dcc895b0c17"
+  },
+  "all_code_lint": "PASS",
+  "integration_audit": "7f8bbb76d09bbff810f61d755c8baa32b0100054458c79f0fbc9c306b1abb13c",
+  "live_example": {
+    "job": "runs/GD-live-001",
+    "status": "CONDITIONAL_RESULT",
+    "position": "4",
+    "velocity": "4",
+    "log_sha256": "ceebe2b3bb15a94dc341997c446e8df2aeac27bbf73b16bc5bd48b1d26e35fa2"
+  },
+  "remote_status": "recorded in publication.json after exact commit verification",
+  "full_local": {
+    "job": "runs/HB-full-regression-001",
+    "passed": 463,
+    "skipped": 0,
+    "seconds": 308.77,
+    "state_sha256": "477779d47f0f26285d407a7c0d87941a034bb775375ae18f1c9df02a478389d5"
+  },
+  "independent_persistence_test": {
+    "job": "runs/GD-test-isolation-001",
+    "passed": 1,
+    "seconds": 37.46,
+    "change": "Create its own teaching record to remove test-order dependency; production code unchanged."
+  }
+}

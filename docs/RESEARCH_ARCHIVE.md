@@ -6,6 +6,7 @@ Completed work, checkpoints and unsuccessful candidates remain preserved. Curren
 
 | Stages | Topic | Starting point |
 |---|---|---|
+| 30 | Human books, named definitions and guarded conditional execution | [Use it](../research-continuation/30_grounded_books/README.md) · [Report](../research-continuation/30_grounded_books/report.md) · [Audit](../research-continuation/30_grounded_books/integration-audit.json) |
 | 29 | Human-text association, source reading and arXiv investigation | [Report](../research-continuation/29_human_reading/report.md) · [Audit](../research-continuation/29_human_reading/integration-audit.json) |
 | 28 | History-sensitive concept refinement | [Report](../research-continuation/28_concept_refinement/report.md) · [Audit](../research-continuation/28_concept_refinement/architecture-audit.md) · [Publication](../research-continuation/28_concept_refinement/publication.json) |
 | 27 | Self-study, arXiv equations, language retention and correction | [Report](../research-continuation/27_self_study/report.md) |

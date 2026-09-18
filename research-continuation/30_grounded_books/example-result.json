@@ -1,0 +1,352 @@
+{
+  "request": {
+    "id": "force-demo",
+    "goal": "Where is the body after two seconds with 6 N net force and 3 kg mass?",
+    "term": "tension",
+    "definition": "a pulling force that acts along a connecting medium, especially a stretched flexible connector, such as a rope or cable; when a rope supports the weight of an object, the force exerted on the object by the rope is called tension",
+    "source": "https://raw.githubusercontent.com/openstax/osbooks-physics/dfdfd7a5356ecdd42e504de3df50d9153e33ea49/modules/m54131/index.cnxml",
+    "value": "6",
+    "unit": "N",
+    "time": "2",
+    "mass": "3",
+    "force": "6",
+    "assumptions": {
+      "physical_context": true,
+      "one_dimension": true,
+      "constant_quantity": true,
+      "inertial_frame": true,
+      "nonrelativistic": true,
+      "si_units": true,
+      "net_force": true
+    }
+  },
+  "request_sha256": "8f4d7cda4c18926ea5280f82cf2c28e02ab27652914af0736fc49a7cff2408d8",
+  "status": "CONDITIONAL_RESULT",
+  "binding": {
+    "candidate": "force",
+    "admitted": true,
+    "admission": "TAUGHT_SOURCE_REUSE",
+    "source_entry": "m54131:fs-idm3272768",
+    "human_label_agreement": true,
+    "alternatives": [
+      {
+        "role": "force",
+        "score": 0.9586024284362793
+      },
+      {
+        "role": "other",
+        "score": 0.019147269427776337
+      },
+      {
+        "role": "mass",
+        "score": 0.007204192224889994
+      },
+      {
+        "role": "position",
+        "score": 0.005317844450473785
+      },
+      {
+        "role": "velocity",
+        "score": 0.004969008266925812
+      },
+      {
+        "role": "acceleration",
+        "score": 0.004759299103170633
+      }
+    ],
+    "score_meaning": "learned classifier scores; not calibrated truth probabilities",
+    "owner": "3b67700c14e23c1a8fcc6828f1eeacd3ca9bdb4d23ca849d1a303fc7175831de",
+    "definition_sha256": "192f8a296cdabae5d4d33fff573a4b9d07914e769b8b22042399f851c9fb0d19",
+    "source": "https://raw.githubusercontent.com/openstax/osbooks-physics/dfdfd7a5356ecdd42e504de3df50d9153e33ea49/modules/m54131/index.cnxml"
+  },
+  "role": "force",
+  "branches": {
+    "base": {
+      "status": "CERTIFIED_ALGEBRA",
+      "result": {
+        "status": "VERIFIED",
+        "position": "4",
+        "velocity": "4",
+        "time": "2",
+        "position_polynomial": [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "velocity_polynomial": [
+          "0",
+          "2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "assumptions": [
+          "one dimension",
+          "supplied polynomial acceleration valid for this interval",
+          "consistent units",
+          "initial conditions at t=0"
+        ],
+        "certificates": [
+          {
+            "accepted": true,
+            "base_zero": true,
+            "residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "scope": "q'(x)=p(x) for every real x and q(0)=0"
+          },
+          {
+            "accepted": true,
+            "base_zero": true,
+            "residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "scope": "q'(x)=p(x) for every real x and q(0)=0"
+          }
+        ]
+      },
+      "empirical_premises_verified": false,
+      "independent_check": {
+        "position": "4",
+        "velocity": "4"
+      },
+      "observed_event": false,
+      "lexical_interpretation_certified": false
+    },
+    "opposite_drive": {
+      "status": "CERTIFIED_ALGEBRA",
+      "result": {
+        "status": "VERIFIED",
+        "position": "-4",
+        "velocity": "-4",
+        "time": "2",
+        "position_polynomial": [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "velocity_polynomial": [
+          "0",
+          "-2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "assumptions": [
+          "one dimension",
+          "supplied polynomial acceleration valid for this interval",
+          "consistent units",
+          "initial conditions at t=0"
+        ],
+        "certificates": [
+          {
+            "accepted": true,
+            "base_zero": true,
+            "residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "scope": "q'(x)=p(x) for every real x and q(0)=0"
+          },
+          {
+            "accepted": true,
+            "base_zero": true,
+            "residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "scope": "q'(x)=p(x) for every real x and q(0)=0"
+          }
+        ]
+      },
+      "empirical_premises_verified": false,
+      "independent_check": {
+        "position": "-4",
+        "velocity": "-4"
+      },
+      "observed_event": false,
+      "lexical_interpretation_certified": false
+    },
+    "double_mass": {
+      "status": "CERTIFIED_ALGEBRA",
+      "result": {
+        "status": "VERIFIED",
+        "position": "2",
+        "velocity": "2",
+        "time": "2",
+        "position_polynomial": [
+          "0",
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "velocity_polynomial": [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "assumptions": [
+          "one dimension",
+          "supplied polynomial acceleration valid for this interval",
+          "consistent units",
+          "initial conditions at t=0"
+        ],
+        "certificates": [
+          {
+            "accepted": true,
+            "base_zero": true,
+            "residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "scope": "q'(x)=p(x) for every real x and q(0)=0"
+          },
+          {
+            "accepted": true,
+            "base_zero": true,
+            "residual": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "scope": "q'(x)=p(x) for every real x and q(0)=0"
+          }
+        ]
+      },
+      "empirical_premises_verified": false,
+      "independent_check": {
+        "position": "2",
+        "velocity": "2"
+      },
+      "observed_event": false,
+      "lexical_interpretation_certified": false
+    }
+  },
+  "original_goal_preserved": true,
+  "source_interpretation": "supervised taught-entry reuse",
+  "supplied_physics": "one-dimensional Newtonian kinematics; F/m when force or mass is supplied",
+  "imagined_evidence_added_to_observations": false,
+  "learned_weight_updates": 0
+}

@@ -1,0 +1,129 @@
+{"role": "position", "checked": 60}
+{"role": "velocity", "checked": 60}
+{"role": "acceleration", "checked": 60}
+{"role": "force", "checked": 60}
+{"role": "mass", "checked": 60}
+{
+  "status": "PASS",
+  "actual_shared_owner": true,
+  "owner": "3b67700c14e23c1a8fcc6828f1eeacd3ca9bdb4d23ca849d1a303fc7175831de",
+  "predecessor_tensors_exact": 172,
+  "four_language_probes_exact": {
+    "en-US": 32,
+    "es-ES": 32,
+    "fr-FR": 32,
+    "de-DE": 32
+  },
+  "old_reader_exact": true,
+  "polynomial_route_exact": true,
+  "empirical_forecast_exact": true,
+  "book_resume_80_to_120_exact": true,
+  "binding_resume_80_to_160_exact": true,
+  "snapshot_restore_exact": true,
+  "source_isolation": {
+    "dictionary": {
+      "windows": [
+        2000,
+        160,
+        160
+      ],
+      "groups": [
+        1890,
+        156,
+        151
+      ],
+      "disjoint": true
+    },
+    "conversation": {
+      "windows": [
+        2000,
+        160,
+        160
+      ],
+      "groups": [
+        1761,
+        143,
+        145
+      ],
+      "disjoint": true
+    },
+    "grammar": {
+      "windows": [
+        2000,
+        160,
+        160
+      ],
+      "groups": [
+        121,
+        19,
+        21
+      ],
+      "disjoint": true
+    },
+    "philosophy": {
+      "windows": [
+        2000,
+        160,
+        160
+      ],
+      "groups": [
+        118,
+        15,
+        17
+      ],
+      "disjoint": true
+    },
+    "mathematics": {
+      "windows": [
+        723,
+        120,
+        37
+      ],
+      "groups": [
+        35,
+        5,
+        2
+      ],
+      "disjoint": true
+    },
+    "science": {
+      "windows": [
+        2000,
+        160,
+        160
+      ],
+      "groups": [
+        79,
+        10,
+        10
+      ],
+      "disjoint": true
+    }
+  },
+  "teaching_reuse": {
+    "entries": 97,
+    "physical_entries": 26,
+    "admitted": 26,
+    "rejected_physical": []
+  },
+  "conditional_integration": {
+    "cases": 300,
+    "branches": 900,
+    "roles": [
+      "position",
+      "velocity",
+      "acceleration",
+      "force",
+      "mass"
+    ],
+    "numerical_source": "generated diagnostics; not human language teaching",
+    "cases_sha256": "d09d04df2015b38eea3a7d0a8f3a1bfcf80acefd75c3d2a3bc77b3e3e0002c55"
+  },
+  "imagined_observations_added": 0,
+  "novel_definition_gate_unchanged": {
+    "threshold": 1.1,
+    "development_admitted": 0,
+    "autonomous": false
+  },
+  "limits": "Exact source reuse and supplied premises; conditional algebra does not verify meaning or occurrence."
+}

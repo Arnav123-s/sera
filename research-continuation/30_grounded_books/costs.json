@@ -1,0 +1,190 @@
+{
+  "ledger_sha256": "47509f839a2ddec49e2be5fdb629f7033f173b232e168ad29874f2f34cda705e",
+  "charged_seconds": 652.3910859001044,
+  "remaining_seconds_snapshot": 3128.778602299877,
+  "cpu_threads": 1,
+  "process_tree_memory_cap": 2147483648,
+  "maximum_observed_committed_bytes": 1285222400,
+  "jobs": [
+    {
+      "job": "runs/HB-prepare-001",
+      "status": "FAILED",
+      "charged_seconds": 8.829359000024851,
+      "peak_committed_bytes": 629874688,
+      "state_sha256": "eea5089024e4b773cd4c24060e37368fdb93143fe4c99c1945a82a2cd747f7d8"
+    },
+    {
+      "job": "runs/HB-prepare-002",
+      "status": "PASS",
+      "charged_seconds": 9.203607900009956,
+      "peak_committed_bytes": 631230464,
+      "state_sha256": "9f64ff6fb6cd8712a91936297058699cf359a7588117a7d3fff2022d758e63ab"
+    },
+    {
+      "job": "runs/HB-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.15947569999843836,
+      "peak_committed_bytes": 66920448,
+      "state_sha256": "14a67099f6d791dea06bde5c12a66664f3b83f5750514f0c5be2a010914c8f58"
+    },
+    {
+      "job": "runs/HB-unit-001",
+      "status": "PASS",
+      "charged_seconds": 9.39052840002114,
+      "peak_committed_bytes": 321536000,
+      "state_sha256": "19d42cf7d16217716ca77558b1027486efc850c8609ca7843babfce4ffd78589"
+    },
+    {
+      "job": "runs/HB-train-001",
+      "status": "PASS",
+      "charged_seconds": 26.985712099995,
+      "peak_committed_bytes": 508985344,
+      "state_sha256": "c80f002e24f790f2396ad5a0caab9c57c2ba04021aceac8ac53885f3bdbba6c0"
+    },
+    {
+      "job": "runs/HB-final-001",
+      "status": "PASS",
+      "charged_seconds": 14.4066368000058,
+      "peak_committed_bytes": 381108224,
+      "state_sha256": "f3037e3f2ffae880ff363c63257c348b3b3709d8015c80228bc2b25d4cf22085"
+    },
+    {
+      "job": "runs/GD-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.1774802000145428,
+      "peak_committed_bytes": 62693376,
+      "state_sha256": "bb8b95cb2fdacbe565b677f97e633ead0407440c8b6dd4d66a4a7b81e13fe64d"
+    },
+    {
+      "job": "runs/GD-acquire-001",
+      "status": "PASS",
+      "charged_seconds": 9.54425900001661,
+      "peak_committed_bytes": 235900928,
+      "state_sha256": "3514a7bc3552524078e55cbc9137a973fe3cdb37b54e4ece59c32812c9b8b364"
+    },
+    {
+      "job": "runs/GD-prepare-001",
+      "status": "PASS",
+      "charged_seconds": 4.269336899975315,
+      "peak_committed_bytes": 420945920,
+      "state_sha256": "3c9c4d8ae12c16d464619511e39a289571215914b959d4f2d46d5a1abe4b9f2c"
+    },
+    {
+      "job": "runs/GD-train-001",
+      "status": "PASS",
+      "charged_seconds": 13.158639400004176,
+      "peak_committed_bytes": 417271808,
+      "state_sha256": "e88a32feea89b20d2d06e7fabedecbad0ac329117cc1aa2cd395733223857abe"
+    },
+    {
+      "job": "runs/GD2-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.16610109998146072,
+      "peak_committed_bytes": 56438784,
+      "state_sha256": "0b450dbc852ec94e8fd01487e44156bc7376aef598850c17e837e3f9503dc301"
+    },
+    {
+      "job": "runs/GD2-train-001",
+      "status": "PASS",
+      "charged_seconds": 12.617776600003708,
+      "peak_committed_bytes": 416948224,
+      "state_sha256": "ec13fa6c3b4a6962d998f67f775982ec3e44d3f6465981db5ac644ca78b283cd"
+    },
+    {
+      "job": "runs/GD2-final-001",
+      "status": "PASS",
+      "charged_seconds": 10.527421900012996,
+      "peak_committed_bytes": 352202752,
+      "state_sha256": "2393944ffe7d874415eab1ed3c3eae6213fb0ce51134eaeada7795d063997176"
+    },
+    {
+      "job": "runs/GD-runtime-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.17436149998684414,
+      "peak_committed_bytes": 50262016,
+      "state_sha256": "fc5eb9a503d09f294b72b1257be2b8ccb3eed4b48f07f6064c0ca54a2a702b3c"
+    },
+    {
+      "job": "runs/GD-tests-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.19107710002572276,
+      "peak_committed_bytes": 61485056,
+      "state_sha256": "8ac1b4e895ec14259d29b36947df9a32d95963306a5f55801a19bc08800b5bf8"
+    },
+    {
+      "job": "runs/GD-tests-001",
+      "status": "PASS",
+      "charged_seconds": 43.26736019999953,
+      "peak_committed_bytes": 401649664,
+      "state_sha256": "cabf4daa487c70234bbab0734203a241375f7d360dc6d223573f5dcc895b0c17"
+    },
+    {
+      "job": "runs/GD-audit-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.1709724000247661,
+      "peak_committed_bytes": 50274304,
+      "state_sha256": "753105ae38b33c7648534ece14f167b976297de26b7d74d79187b0094d41f059"
+    },
+    {
+      "job": "runs/GD-audit-001",
+      "status": "FAILED",
+      "charged_seconds": 22.540820399997756,
+      "peak_committed_bytes": 398848000,
+      "state_sha256": "3e551c9cc74ca1261f7b0f88afcf7bfb6c20544c9541ac87e5c9536b393c1ad2"
+    },
+    {
+      "job": "runs/GD-audit-002",
+      "status": "PASS",
+      "charged_seconds": 79.18309989999398,
+      "peak_committed_bytes": 512339968,
+      "state_sha256": "d87a0e4d54f3e607b98f9661804302d00ecb156a61ee937d26444a2c11623e2c"
+    },
+    {
+      "job": "runs/GD-live-001",
+      "status": "PASS",
+      "charged_seconds": 14.235573299985845,
+      "peak_committed_bytes": 352350208,
+      "state_sha256": "83b3f5e1ee157da1ec6f955b472fd40a3e58e378c8fc4878f9bb01e412cfdb1a"
+    },
+    {
+      "job": "runs/GD-arxiv-live-001",
+      "status": "PASS",
+      "charged_seconds": 21.20346019999124,
+      "peak_committed_bytes": 351969280,
+      "state_sha256": "9f7c372d0361a5f8d028ad3e8aadcf6e0743d09b051925bdb872d693ff1e6f44"
+    },
+    {
+      "job": "runs/HB-release-lint-001",
+      "status": "PASS",
+      "charged_seconds": 0.172636400006013,
+      "peak_committed_bytes": 84369408,
+      "state_sha256": "ca9fc644256b0f9a15b0a72cf2ff8a6bd61dfe1d88a945d8666d7742895f572d"
+    },
+    {
+      "job": "runs/HB-artifacts-001",
+      "status": "PASS",
+      "charged_seconds": 0.3277397000056226,
+      "peak_committed_bytes": 47685632,
+      "state_sha256": "2bf7cbe39c9a8db530425ee5823b02494079667d55bd2c5a48666b07534cb22b"
+    },
+    {
+      "job": "runs/HB-full-regression-001",
+      "status": "PASS",
+      "charged_seconds": 311.5226787000138,
+      "peak_committed_bytes": 1285222400,
+      "state_sha256": "477779d47f0f26285d407a7c0d87941a034bb775375ae18f1c9df02a478389d5"
+    },
+    {
+      "job": "runs/GD-test-isolation-001",
+      "status": "PASS",
+      "charged_seconds": 39.96497110000928,
+      "peak_committed_bytes": 400482304,
+      "state_sha256": "7d4cb947e82f6851e34e2db6b3f9026d7f87ef47e60b4aaf26b0916be5e58fe7"
+    }
+  ],
+  "source_intake": {
+    "original_book_download_seconds": 15.535366199997952,
+    "note": "Original book network intake preceded the numerical jobs. College Physics acquisition is already included in GD-acquire-001; do not add it twice."
+  },
+  "new_grant_seconds_this_snapshot": 0
+}
