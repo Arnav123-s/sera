@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "actual_shared_owner": true,
+  "owner": "a4dba5883c9a7b6e1352a1f9412555723031a0308563f5ad0d0555d983cbf543",
+  "predecessor_tensors_exact": 165,
+  "four_language_probes_exact": {
+    "en-US": 32,
+    "es-ES": 32,
+    "fr-FR": 32,
+    "de-DE": 32
+  },
+  "retained_algebra": {
+    "status": "CERTIFIED_ALGEBRA",
+    "result": {
+      "status": "VERIFIED",
+      "position": "125/4",
+      "velocity": "55/2",
+      "time": "3",
+      "position_polynomial": [
+        "5",
+        "-1",
+        "1",
+        "1/2",
+        "1/12",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "velocity_polynomial": [
+        "-1",
+        "2",
+        "3/2",
+        "1/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "assumptions": [
+        "one dimension",
+        "supplied polynomial acceleration valid for this interval",
+        "consistent units",
+        "initial conditions at t=0"
+      ],
+      "certificates": [
+        {
+          "accepted": true,
+          "base_zero": true,
+          "residual": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "scope": "q'(x)=p(x) for every real x and q(0)=0"
+        },
+        {
+          "accepted": true,
+          "base_zero": true,
+          "residual": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "scope": "q'(x)=p(x) for every real x and q(0)=0"
+        }
+      ]
+    },
+    "empirical_premises_verified": false
+  },
+  "empirical_forecast_exact": true,
+  "checkpoint_resume_exact": true,
+  "restore_exact": true,
+  "tamper_rejected": true,
+  "interrupted_goal_preserved": true,
+  "cohort_isolation": {
+    "dictionary": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    },
+    "sentences": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    },
+    "conversation": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    },
+    "textbook": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    }
+  },
+  "reading_vs_bm25": {
+    "difference": -0.005,
+    "group_bootstrap_95": [
+      -0.0141876604446765,
+      0.0055868527474360035
+    ],
+    "groups": 48
+  },
+  "curriculum_vs_initial": {
+    "dictionary": {
+      "difference": 0.1175,
+      "group_bootstrap_95": [
+        0.0675,
+        0.1670927369077306
+      ],
+      "groups": 396
+    },
+    "sentences": {
+      "difference": 0.2725,
+      "group_bootstrap_95": [
+        0.19752765752765752,
+        0.34135591736694676
+      ],
+      "groups": 48
+    },
+    "conversation": {
+      "difference": 0.0475,
+      "group_bootstrap_95": [
+        0.011868558284901586,
+        0.07901107484956606
+      ],
+      "groups": 8
+    },
+    "textbook": {
+      "difference": 0.09375,
+      "group_bootstrap_95": null,
+      "groups": 1,
+      "reason": "One held-out group cannot estimate between-group uncertainty"
+    }
+  },
+  "example": {
+    "status": "CANDIDATE_SUPPORT",
+    "question": "In what other country besides the US does GE provide lending services?",
+    "source": "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json#570d2598fed7b91900d45c52",
+    "passage_sha256": "49e4b002fc1b609f6efc73e9b05ac7449b243785e81d47274822fc8d243dc0a5",
+    "owner": "a4dba5883c9a7b6e1352a1f9412555723031a0308563f5ad0d0555d983cbf543",
+    "candidates": [
+      {
+        "text": "Since over half of GE's revenue is derived from financial services, it is arguably a financial company with a manufacturing arm.",
+        "start": 0,
+        "end": 128,
+        "score": 3.1402862071990967,
+        "index": 0
+      },
+      {
+        "text": "It is also one of the largest lenders in countries other than the United States, such as Japan.",
+        "start": 129,
+        "end": 224,
+        "score": 1.8557482957839966,
+        "index": 1
+      },
+      {
+        "text": "[citation needed]",
+        "start": 487,
+        "end": 504,
+        "score": -0.09177453070878983,
+        "index": 2
+      }
+    ],
+    "verified_claim": false,
+    "score_meaning": "ranking score; not a correctness probability"
+  },
+  "final_identity": "52dbad91d4493eec8076964440e6ffa2070e7fb52bfe0f2b2e887a07acf2e9b3",
+  "curriculum_final_identity": "06108464fc9811d63ed1633049972cf82fa8db8f33803d44173c722a379c1511"
+}

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\human_reading\curriculum.py", line 201, in <module>
+    (train if args.action == "train" else evaluate)()
+  File "D:\ai\projects\sera\experiments\human_reading\curriculum.py", line 157, in train
+    scores = {d: measure(owner, rows, choices[d]) for d, rows in development.items()}
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\human_reading\curriculum.py", line 66, in measure
+    order = scores.argsort(-1, descending=True, stable=True).tolist()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argsort() takes from 1 to 0 positional arguments but 1 were given

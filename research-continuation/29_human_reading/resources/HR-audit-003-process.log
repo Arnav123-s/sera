@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "actual_shared_owner": true,
+  "owner": "a4dba5883c9a7b6e1352a1f9412555723031a0308563f5ad0d0555d983cbf543",
+  "predecessor_tensors_exact": 165,
+  "four_language_probes_exact": {
+    "en-US": 32,
+    "es-ES": 32,
+    "fr-FR": 32,
+    "de-DE": 32
+  },
+  "empirical_forecast_exact": true,
+  "checkpoint_resume_exact": true,
+  "restore_exact": true,
+  "tamper_rejected": true,
+  "interrupted_goal_preserved": true,
+  "cohort_isolation": {
+    "dictionary": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    },
+    "sentences": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    },
+    "conversation": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    },
+    "textbook": {
+      "groups_disjoint": true,
+      "exact_texts_disjoint": true
+    }
+  },
+  "reading_vs_bm25": {
+    "difference": -0.005,
+    "group_bootstrap_95": [
+      -0.0141876604446765,
+      0.0055868527474360035
+    ],
+    "groups": 48
+  },
+  "curriculum_vs_initial": {
+    "dictionary": {
+      "difference": 0.1175,
+      "group_bootstrap_95": [
+        0.0675,
+        0.1670927369077306
+      ],
+      "groups": 396
+    },
+    "sentences": {
+      "difference": 0.2725,
+      "group_bootstrap_95": [
+        0.19752765752765752,
+        0.34135591736694676
+      ],
+      "groups": 48
+    },
+    "conversation": {
+      "difference": 0.0475,
+      "group_bootstrap_95": [
+        0.011868558284901586,
+        0.07901107484956606
+      ],
+      "groups": 8
+    },
+    "textbook": {
+      "difference": 0.09375,
+      "group_bootstrap_95": null,
+      "groups": 1,
+      "reason": "One held-out group cannot estimate between-group uncertainty"
+    }
+  },
+  "final_identity": "52dbad91d4493eec8076964440e6ffa2070e7fb52bfe0f2b2e887a07acf2e9b3",
+  "curriculum_final_identity": "06108464fc9811d63ed1633049972cf82fa8db8f33803d44173c722a379c1511"
+}

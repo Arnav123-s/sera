@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-09-18T00:50:12.936653+00:00",
+  "records": [
+    {
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json",
+      "path": "runs\\HR-corpus\\raw\\train-v1.1.json",
+      "sha256": "3527663986b8295af4f7fcdff1ba1ff3f72d07d61a20f487cb238a6ef92fd955",
+      "bytes": 30288272,
+      "download_seconds": 6.221550899994327,
+      "license": "CC-BY-SA-4.0",
+      "authors": "Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, Percy Liang; human crowdworker annotations over Wikipedia",
+      "source_paper": "https://aclanthology.org/D16-1264/",
+      "role": "teaching/development"
+    },
+    {
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json",
+      "path": "runs\\HR-corpus\\raw\\dev-v1.1.json",
+      "sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+      "bytes": 4854279,
+      "download_seconds": 1.182645799999591,
+      "license": "CC-BY-SA-4.0",
+      "authors": "Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, Percy Liang; human crowdworker annotations over Wikipedia",
+      "source_paper": "https://aclanthology.org/D16-1264/",
+      "role": "sealed evaluation; labels not inspected during intake"
+    }
+  ],
+  "huggingface_discovery": {
+    "repository": "rajpurkar/squad",
+    "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+    "license": "cc-by-sa-4.0"
+  },
+  "excluded": [
+    "new arXiv teaching",
+    "model-generated questions",
+    "model-generated answers",
+    "model-generated paraphrases",
+    "quarantined local corpora"
+  ]
+}

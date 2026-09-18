@@ -6,6 +6,7 @@ Completed work, checkpoints and unsuccessful candidates remain preserved. Curren
 
 | Stages | Topic | Starting point |
 |---|---|---|
+| 29 | Human-text association, source reading and arXiv investigation | [Report](../research-continuation/29_human_reading/report.md) · [Audit](../research-continuation/29_human_reading/integration-audit.json) |
 | 28 | History-sensitive concept refinement | [Report](../research-continuation/28_concept_refinement/report.md) · [Audit](../research-continuation/28_concept_refinement/architecture-audit.md) · [Publication](../research-continuation/28_concept_refinement/publication.json) |
 | 27 | Self-study, arXiv equations, language retention and correction | [Report](../research-continuation/27_self_study/report.md) |
 | 26 | Human-authored English requests and entity annotation | [Report](../research-continuation/26_stream_curriculum/report.md) |

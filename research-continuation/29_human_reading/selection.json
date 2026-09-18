@@ -1,0 +1,55 @@
+{
+  "contracts": {
+    "parent": "df6fef759565d0355f30e2524f117e339e75b63cdadde91d19ce8bbe0190009f",
+    "protocol": "b7b36d71611e250b117732c0749141bb7d5ba3356f840f514775c902b2c6d5a6",
+    "model": "881711f8ecfaf6f83c2176bfaa28955ab30662d666d60f9ef0b6448a0be81f16",
+    "data": "8f04fdf0f81e8fae5441cf918baf6cc395c2a5c0ea43420238f702a136d77189",
+    "study": "70b1f8505a546bff20b24cdd33da67cb7801d433cc496c51ef572b0f79e54792",
+    "teaching": "fda2cd1e9b99fa4951e912339a0d476edc8dcd320c71d64c7d2668cd87b423ff",
+    "amendment": "df3e63e32558cf6eb8c2bed5181e88689b2d13195f66a07fe929bc12209f1114",
+    "curriculum": "eb8ca7642f39d11c954e9e0f01c474778998ae08a1d679d09c1c46ebf430dc1d"
+  },
+  "selected": "lexical-2902",
+  "best_trained": {
+    "name": "lexical-2902",
+    "checkpoint": "runs/HR-study-001/lexical-2902/step-0420.pt",
+    "sha256": "2b718589a07f28b613f3e38fdf47ba03190c73bf5a32608657f17d74bb797c9c",
+    "accuracy": 0.775,
+    "article_macro_accuracy": 0.767045494559853
+  },
+  "candidates": [
+    {
+      "name": "lexical-2901",
+      "checkpoint": "runs/HR-study-001/lexical-2901/step-0420.pt",
+      "sha256": "0038184434779600ec1dbd3442a46edb77196a9f8ee13e4458c1b1e223a78a41",
+      "accuracy": 0.771,
+      "article_macro_accuracy": 0.7670568614254397
+    },
+    {
+      "name": "lexical-2902",
+      "checkpoint": "runs/HR-study-001/lexical-2902/step-0420.pt",
+      "sha256": "2b718589a07f28b613f3e38fdf47ba03190c73bf5a32608657f17d74bb797c9c",
+      "accuracy": 0.775,
+      "article_macro_accuracy": 0.767045494559853
+    },
+    {
+      "name": "shared-2901",
+      "checkpoint": "runs/HR-study-001/shared-2901/step-0420.pt",
+      "sha256": "9ec1f0d42c631826048d4fd5f7a52e73e0e00736b52e73bab5ff659826e3507f",
+      "accuracy": 0.744,
+      "article_macro_accuracy": 0.749689160564091
+    },
+    {
+      "name": "shared-2902",
+      "checkpoint": "runs/HR-study-001/shared-2902/step-0420.pt",
+      "sha256": "402c61bde752593f85881656180d9a9e61dc15813fd5aad546b936bcf2fc0ad1",
+      "accuracy": 0.736,
+      "article_macro_accuracy": 0.7355911148648412
+    }
+  ],
+  "baseline_accuracy": 0.769,
+  "parent_owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+  "preserved_tensors": 165,
+  "wall_seconds": 23.9453036999912,
+  "final_labels_opened": false
+}

@@ -1,0 +1,166 @@
+{
+  "question": "What assumptions allow compressed sensing to recover a signal from few measurements?",
+  "question_sha256": "f171d0a91f43bc8a74514e5931e36ed077c6da9b2093d1df31479313f0f00050",
+  "gap": "compressed sensing",
+  "query": "all:\"compressed\" AND all:\"sensing\"",
+  "status": "REFERENCES_TO_VERIFY",
+  "diagnosis": "no verified local source supplied for the requested gap",
+  "original_goal_preserved": true,
+  "references": [
+    {
+      "id": "2410.18954v2",
+      "url": "https://arxiv.org/abs/2410.18954v2",
+      "title": "Learning Structured Compressed Sensing with Automatic Resource Allocation",
+      "authors": [
+        "Han Wang",
+        "Eduardo P\u00e9rez",
+        "Iris A. M. Huijben",
+        "Hans van Gorp",
+        "Ruud van Sloun",
+        "Florian R\u00f6mer"
+      ],
+      "published": "2024-10-24T17:53:33Z",
+      "updated": "2025-03-04T14:36:43Z",
+      "evidence_status": "UNVERIFIED_REFERENCE",
+      "feed_sha256": "14b3040c433625fd00c1b14f7e174073e87154a0d74d46588346a38fe6995338",
+      "full_text_issue": {
+        "type": "HTTPError",
+        "detail": "HTTP Error 406: Not Acceptable"
+      },
+      "reading": {
+        "status": "CANDIDATE_SUPPORT",
+        "question": "What assumptions allow compressed sensing to recover a signal from few measurements?",
+        "source": "https://arxiv.org/abs/2410.18954v2",
+        "passage_sha256": "90f1846337a9ff5e6c9076d85b304d79676afc4c89645805a4c345e072b00741",
+        "owner": "a4dba5883c9a7b6e1352a1f9412555723031a0308563f5ad0d0555d983cbf543",
+        "candidates": [
+          {
+            "start": 162,
+            "end": 375,
+            "score": 3.721705675125122,
+            "index": 1,
+            "text_sha256": "a25f5584361e1a70ed95581c6e509b0953d7df4e0f742b87c4f27a9d29900813",
+            "characters": 213
+          },
+          {
+            "start": 654,
+            "end": 835,
+            "score": 2.821450710296631,
+            "index": 4,
+            "text_sha256": "aa32c667575d6d75034983e8a4a57d34e9783a16ff77ebba44e629d550f2832d",
+            "characters": 181
+          },
+          {
+            "start": 376,
+            "end": 537,
+            "score": 0.4301294982433319,
+            "index": 2,
+            "text_sha256": "add146faf538687c753114e83bf1091f1e856cef99424a56fc287445ad18790b",
+            "characters": 161
+          }
+        ],
+        "verified_claim": false,
+        "score_meaning": "ranking score; not a correctness probability"
+      },
+      "abstract_identity": {
+        "sha256": "90f1846337a9ff5e6c9076d85b304d79676afc4c89645805a4c345e072b00741",
+        "characters": 1442
+      }
+    },
+    {
+      "id": "1903.07824v1",
+      "url": "https://arxiv.org/abs/1903.07824v1",
+      "title": "Compressed Sensing: From Research to Clinical Practice with Data-Driven Learning",
+      "authors": [
+        "Joseph Y. Cheng",
+        "Feiyu Chen",
+        "Christopher Sandino",
+        "Morteza Mardani",
+        "John M. Pauly",
+        "Shreyas S. Vasanawala"
+      ],
+      "published": "2019-03-19T04:28:07Z",
+      "updated": "2019-03-19T04:28:07Z",
+      "evidence_status": "UNVERIFIED_REFERENCE",
+      "feed_sha256": "14b3040c433625fd00c1b14f7e174073e87154a0d74d46588346a38fe6995338",
+      "paper_receipt": {
+        "url": "https://arxiv.org/html/1903.07824v1",
+        "retrieved_utc": "2026-09-18T01:22:25.159386+00:00",
+        "read_only": true,
+        "commands_executed": 0,
+        "final_url": "https://arxiv.org/html/1903.07824v1",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"CNq7uoWSupYDEAE=\"",
+        "status": "received",
+        "bytes": 152762,
+        "sha256": "a239f001bb7d66b898bb30240c3db0c803c6dfb8d108742d52ba5329057a5316",
+        "body": "a239f001bb7d66b898bb30240c3db0c803c6dfb8d108742d52ba5329057a5316.body",
+        "wall_seconds": 0.35263370000757277
+      },
+      "reading": {
+        "status": "CANDIDATE_SUPPORT",
+        "question": "What assumptions allow compressed sensing to recover a signal from few measurements?",
+        "source": "https://arxiv.org/html/1903.07824v1",
+        "passage_sha256": "3c9f7a6715dcbaa79cecd80c5df1c9e27cb3a03cb45478b9875d1fd1ea703b20",
+        "owner": "a4dba5883c9a7b6e1352a1f9412555723031a0308563f5ad0d0555d983cbf543",
+        "candidates": [
+          {
+            "start": 61,
+            "end": 154,
+            "score": 3.642289161682129,
+            "index": 1,
+            "text_sha256": "22e5337b877a3f19556d8aea2a4c6533c60b65685d7cef5aa731b03f1b5e9a7b",
+            "characters": 93
+          },
+          {
+            "start": 0,
+            "end": 60,
+            "score": 2.101296901702881,
+            "index": 0,
+            "text_sha256": "38677aa2a7a8db5aa8064219832438e1ee72e16ab47d42f20548c84f5ee5597d",
+            "characters": 60
+          },
+          {
+            "start": 155,
+            "end": 233,
+            "score": 0.24086253345012665,
+            "index": 2,
+            "text_sha256": "64e94333017f70d17ca02eb5cec10c2835b9a8569fe930ed1cf91031e7df882b",
+            "characters": 78
+          }
+        ],
+        "verified_claim": false,
+        "score_meaning": "ranking score; not a correctness probability"
+      },
+      "abstract_identity": {
+        "sha256": "af22572fb35e7b9e79c7a636f50786aabd97e5cdf86d266969da98fd2317bf4a",
+        "characters": 1137
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "status": "received",
+      "feed_sha256": "14b3040c433625fd00c1b14f7e174073e87154a0d74d46588346a38fe6995338"
+    }
+  ],
+  "weight_updates": 0,
+  "training_admission": "reference_only; human foundation curriculum remains separate",
+  "search_receipt": {
+    "url": "https://export.arxiv.org/api/query?search_query=all%3A%22compressed%22+AND+all%3A%22sensing%22&start=0&max_results=3&sortBy=relevance",
+    "retrieved_utc": "2026-09-18T01:22:18.953485+00:00",
+    "read_only": true,
+    "commands_executed": 0,
+    "final_url": "https://export.arxiv.org/api/query?search_query=all%3A%22compressed%22+AND+all%3A%22sensing%22&start=0&max_results=3&sortBy=relevance",
+    "content_type": "application/atom+xml; charset=utf-8",
+    "etag": null,
+    "status": "received",
+    "bytes": 8123,
+    "sha256": "14b3040c433625fd00c1b14f7e174073e87154a0d74d46588346a38fe6995338",
+    "body": "14b3040c433625fd00c1b14f7e174073e87154a0d74d46588346a38fe6995338.body",
+    "wall_seconds": 0.41900940000778064
+  },
+  "next_action": "Check the relevant claims and assumptions against an independent task verifier; retain only supported updates.",
+  "local_full_record": "runs/HR-arxiv-live-001/process.log",
+  "publication": "Source excerpts retained locally; public record contains links, offsets, scores and text hashes."
+}

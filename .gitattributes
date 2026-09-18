@@ -26,3 +26,10 @@ research-continuation/28_concept_refinement/results*.svg -diff linguist-generate
 research-continuation/28_concept_refinement/** whitespace=cr-at-eol
 # Keep the original remote failure log byte-for-byte, including runner whitespace.
 research-continuation/28_concept_refinement/publication-hardening/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/29_human_reading/** whitespace=cr-at-eol
+research-continuation/29_human_reading/*LICENSE.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/29_human_reading/curriculum-dev-*.json -diff linguist-generated=true
+research-continuation/29_human_reading/curriculum-final.json -diff linguist-generated=true
+research-continuation/29_human_reading/dev-*.json -diff linguist-generated=true
+research-continuation/29_human_reading/final.json -diff linguist-generated=true
+research-continuation/29_human_reading/parent-empirical.json -diff linguist-generated=true

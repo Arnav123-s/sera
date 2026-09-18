@@ -44,6 +44,7 @@ jobs:
       - run: uv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
       - run: uv run --no-sync python -m ruff check src tests scripts experiments
       - run: uv run --no-sync python scripts/restore_test_artifacts.py
+      - run: uv run --no-sync python scripts/reading_artifacts.py --restore
       - run: uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
       - run: uv run --no-sync python -m pytest
       - run: uv run --no-sync python scripts/verify_release.py

@@ -1,0 +1,76 @@
+{
+  "scope": "Stage 29 jobs through targeted verification; full-suite timeout and failed audits included",
+  "jobs": {
+    "runs/HR-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 5.908537800016347
+    },
+    "runs/HR-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.18928310001501814
+    },
+    "runs/HC-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 7.482137500017416
+    },
+    "runs/HC-train-001": {
+      "status": "FAILED",
+      "charged_seconds": 10.291023900004802
+    },
+    "runs/HR-test-001": {
+      "status": "PASS",
+      "charged_seconds": 3.5295548000140116
+    },
+    "runs/HC-train-002": {
+      "status": "PASS",
+      "charged_seconds": 18.136203900008695
+    },
+    "runs/HR-train-001": {
+      "status": "PASS",
+      "charged_seconds": 27.475956599984784
+    },
+    "runs/HR-final-001": {
+      "status": "PASS",
+      "charged_seconds": 10.858969099994283
+    },
+    "runs/HC-final-001": {
+      "status": "PASS",
+      "charged_seconds": 12.872330500016687
+    },
+    "runs/HR-audit-001": {
+      "status": "FAILED",
+      "charged_seconds": 14.871434100001352
+    },
+    "runs/HR-audit-002": {
+      "status": "FAILED",
+      "charged_seconds": 16.800749000016367
+    },
+    "runs/HR-arxiv-live-001": {
+      "status": "PASS",
+      "charged_seconds": 16.42382169998018
+    },
+    "runs/HR-audit-003": {
+      "status": "PASS",
+      "charged_seconds": 43.40607729999465
+    },
+    "runs/HR-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.17596039999625646
+    },
+    "runs/HR-regression-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 120.00539850001223
+    },
+    "runs/HR-targeted-002": {
+      "status": "PASS",
+      "charged_seconds": 22.163168400002178
+    }
+  },
+  "charged_seconds": 330.59060660007526,
+  "remaining_seconds_at_record": 181.4466049999901,
+  "cpu_threads": 1,
+  "memory_limit_bytes": 2147483648,
+  "max_observed_committed_bytes": 845754368,
+  "network_acquisition": "separately itemized in sources.json and curriculum-sources.json; live arXiv duration is included in its owned worker charge",
+  "paid_services": false
+}

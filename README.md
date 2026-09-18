@@ -23,6 +23,7 @@ I am building one persistent learner that acquires executable knowledge, investi
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Rank source sentences and investigate missing information on arXiv | [Source reading and research](docs/START_HERE.md#read-a-source-or-investigate-a-gap) | [Human-text study and audit](research-continuation/29_human_reading/report.md) |
 | Learn a body's motion from observations; refine and forecast | [Motion learning](research-continuation/28_concept_refinement/README.md) | [C01/C02 results](research-continuation/28_concept_refinement/report.md) |
 | Learn verified operators and calculate polynomial motion | [Mathematical study](research-continuation/27_self_study/README.md) | [Acquisition and correction](research-continuation/27_self_study/report.md) |
 | Interpret English, Spanish, French and German requests | [Language interfaces](docs/START_HERE.md#interpret-a-request) | [Language and retention](research-continuation/27_self_study/report.md) |
@@ -33,9 +34,9 @@ Each result belongs to its stated teaching and evaluation conditions. I document
 
 ## Current release
 
-C01/C02 are integrated through the continuing StudyR1 owner. The release passed **436 local tests**, and verification passed on **Linux and Windows**. The [status page](docs/STATUS.md) links the exact code, results, costs and checks. Earlier failed workflow runs remain visible as historical records.
+The human-text curriculum and arXiv investigation interface extend the continuing StudyR1 owner. The [status page](docs/STATUS.md) links the exact results, costs and checks. C01/C02 and all earlier successful and failed studies remain preserved.
 
-The next teaching cycle uses human-authored reading material with source attribution, deduplication and separate development/evaluation articles. Its progress and final decision are recorded on the status page.
+The next curriculum uses complete dictionary books, everyday conversations, grammar, philosophy and mathematics/science texts, with a definition-to-situation investigation. [Prospective protocol](research-continuation/30_grounded_books/PROTOCOL.md).
 
 ## Development and preservation
 

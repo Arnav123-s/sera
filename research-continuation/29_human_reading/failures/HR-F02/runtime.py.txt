@@ -1,0 +1,257 @@
+"""Usable source reading and persistent missing-knowledge investigation on one owner."""
+
+import argparse
+import copy
+import json
+import re
+import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
+from urllib.parse import urlparse
+
+import torch
+
+from experiments.self_study.sources import ID, Arxiv
+from experiments.task_transfer.runtime import lock
+from sera.session_state import model_identity
+from workbench.storage import Store
+
+from .data import OUT, ROOT, digest, read, sentences, sha
+from .model import ReadingR1, apply, encode, lexical, load_curriculum, parent
+from .study import contracts
+
+
+def entries(raw):
+    if len(raw) > 8*1024*1024 or b"<!DOCTYPE" in raw.upper() or b"<!ENTITY" in raw.upper():
+        raise ValueError("Unsupported search feed")
+    ns = {"a": "http://www.w3.org/2005/Atom"}
+    root = ET.fromstring(raw)
+    if root.tag != "{http://www.w3.org/2005/Atom}feed":
+        raise ValueError("Expected an arXiv Atom feed")
+    result = []
+    for item in root.findall("a:entry", ns)[:5]:
+        original = item.findtext("a:id", "", ns)
+        url = urlparse(original)
+        identifier = url.path.removeprefix("/abs/")
+        if url.hostname != "arxiv.org" or not url.path.startswith("/abs/") or not ID.fullmatch(identifier):
+            raise ValueError("Search result has an invalid paper identity")
+        result.append({"id": identifier, "url": "https://arxiv.org/abs/"+identifier,
+                       "title": " ".join(item.findtext("a:title", "", ns).split()),
+                       "abstract": " ".join(item.findtext("a:summary", "", ns).split()),
+                       "authors": [a.findtext("a:name", "", ns) for a in item.findall("a:author", ns)],
+                       "published": item.findtext("a:published", "", ns),
+                       "updated": item.findtext("a:updated", "", ns)})
+    return result
+
+
+class PaperText(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.parts, self.current, self.active, self.suppressed = [], [], False, 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {"script", "style"}:
+            self.suppressed += 1
+        if tag == "p" and not self.suppressed:
+            self.active, self.current = True, []
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style"}:
+            self.suppressed = max(0, self.suppressed-1)
+        if tag == "p" and self.active:
+            text = " ".join("".join(self.current).split())
+            if 40 <= len(text) <= 5000 and len(self.parts) < 256:
+                self.parts.append(text)
+            self.active = False
+
+    def handle_data(self, data):
+        if self.active and not self.suppressed:
+            self.current.append(data)
+
+
+def public_query(gap):
+    words = re.findall(r"[A-Za-z][A-Za-z-]{2,}", gap)
+    stop = {"what", "does", "this", "that", "with", "from", "which", "about", "explain", "the", "and", "for"}
+    terms = list(dict.fromkeys(w.lower() for w in words if w.lower() not in stop))[:8]
+    if not terms:
+        raise ValueError("Provide a specific public research topic")
+    return " AND ".join('all:"'+word+'"' for word in terms)
+
+
+class ReadingSession:
+    def __init__(self, saved=None):
+        selected = read(OUT / "selection.json")
+        final = read(OUT / "final.json")
+        if selected["contracts"] != contracts() or final["selection_sha256"] != sha(OUT / "selection.json") or not final["numerical_admission"]:
+            raise ValueError("Reading selection/admission changed")
+        self.base = parent()
+        self.owner = load_curriculum(ReadingR1.attach(self.base.owner))
+        self.mode = selected["selected"]
+        checkpoint = selected["best_trained"]
+        path = ROOT / checkpoint["checkpoint"]
+        if sha(path) != checkpoint["sha256"]:
+            raise ValueError("Reader checkpoint identity changed")
+        saved_weights = torch.load(path, map_location="cpu", weights_only=True)
+        if saved_weights["contracts"] != contracts():
+            raise ValueError("Reader source contract changed")
+        apply(self.owner, saved_weights["delta"])
+        self.owner.reading_config = copy.deepcopy(saved_weights["config"])
+        self.owner.eval()
+        self.identity = {"reader": sha(OUT / "selection.json"), "curriculum": sha(OUT / "curriculum-selection.json"),
+                         "parent": sha(OUT / "parent-empirical.json"), "owner": model_identity(self.owner)}
+        self.goals, self.events = {}, []
+        if saved:
+            if saved.get("schema") != "sera.reading.session.1" or saved.get("identity") != self.identity:
+                raise ValueError("Saved reader lineage changed")
+            self.goals, self.events = copy.deepcopy(saved["goals"]), copy.deepcopy(saved["events"])
+            for goal in self.goals.values():
+                if goal["question_sha256"] != digest(goal["question"]) or goal["status"] not in {
+                    "MISSING_KNOWLEDGE", "REFERENCES_TO_VERIFY", "RETAINED_OPEN"}:
+                    raise ValueError("Saved research goal changed")
+        facts, library = self.base.learner.legacy.snapshot(), self.base.learner.library.record()
+        self.reproof = self.base.learner.rebind(facts, library)
+        self.base.assert_owner()
+
+    def snapshot(self):
+        return {"schema": "sera.reading.session.1", "identity": copy.deepcopy(self.identity),
+                "goals": copy.deepcopy(self.goals), "events": copy.deepcopy(self.events)}
+
+    @torch.no_grad()
+    def match(self, question, candidates, source):
+        if not isinstance(question, str) or not 1 <= len(question) <= 512:
+            raise ValueError("Provide a bounded question or description")
+        if not isinstance(candidates, list) or not 2 <= len(candidates) <= 16 or any(
+            not isinstance(c, str) or not 1 <= len(c) <= 5000 for c in candidates
+        ):
+            raise ValueError("Provide two to sixteen attributed text alternatives")
+        if not isinstance(source, str) or not 1 <= len(source) <= 1024:
+            raise ValueError("Attribute the alternatives to their source")
+        scores = self.owner.semantic(encode([question])) @ self.owner.semantic(encode(candidates)).T
+        order = scores[0].argsort(descending=True, stable=True).tolist()
+        return {"status": "LEARNED_ASSOCIATION", "question": question, "source": source,
+                "candidates": [{"index": i, "text": candidates[i], "sha256": digest(candidates[i]),
+                                "score": float(scores[0, i])} for i in order],
+                "owner": self.identity["owner"], "verified_claim": False,
+                "score_meaning": "learned cosine similarity; not a correctness probability"}
+
+    @torch.no_grad()
+    def read_passage(self, question, text, source):
+        if not isinstance(question, str) or not 1 <= len(question) <= 512:
+            raise ValueError("Question must contain 1..512 characters")
+        if not isinstance(source, str) or not 1 <= len(source) <= 1024:
+            raise ValueError("An attributed source is required")
+        if not isinstance(text, str) or not 1 <= len(text) <= 6000:
+            raise ValueError("Passage must contain 1..6000 characters")
+        candidates = sentences(text)
+        if not 1 <= len(candidates) <= 16:
+            raise ValueError("Provide a passage containing at most sixteen sentences")
+        row = {"question": question, "sentences": candidates}
+        features, mask = self.owner.reading_features([row])
+        logits = 4*features[0, :, 1] if self.mode == "bm25" else self.owner.reading_logits(features, mask)[0]
+        order = logits[:len(candidates)].argsort(descending=True, stable=True).tolist()
+        result = {"status": "CANDIDATE_SUPPORT", "question": question, "source": source,
+                  "passage_sha256": digest(text), "owner": self.identity["owner"],
+                  "candidates": [{**candidates[i], "score": float(logits[i]), "index": i} for i in order[:3]],
+                  "verified_claim": False, "score_meaning": "ranking score; not a correctness probability"}
+        self.events.append({"operation": "read", "question_sha256": digest(question),
+                            "passage_sha256": result["passage_sha256"], "source": source})
+        return result
+
+    def investigate(self, identifier, question, gap=None, client=None, persist=None):
+        if not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", identifier) or not 1 <= len(question) <= 512:
+            raise ValueError("Use a bounded goal identifier and question")
+        gap = question if gap is None else gap
+        if not isinstance(gap, str) or not 1 <= len(gap) <= 512:
+            raise ValueError("A bounded missing concept or ability is required")
+        query = public_query(gap)
+        if identifier in self.goals:
+            goal = self.goals[identifier]
+            if (goal["question"], goal["gap"]) != (question, gap):
+                raise ValueError("The original task and gap cannot be silently changed")
+            if goal["status"] == "REFERENCES_TO_VERIFY":
+                return copy.deepcopy(goal)
+        else:
+            if len(self.goals) >= 64:
+                raise ValueError("Export this research session before adding more goals")
+            goal = {"question": question, "question_sha256": digest(question), "gap": gap, "query": query,
+                    "status": "MISSING_KNOWLEDGE", "diagnosis": "no verified local source supplied for the requested gap",
+                    "original_goal_preserved": True, "references": [], "attempts": [], "weight_updates": 0,
+                    "training_admission": "reference_only; human foundation curriculum remains separate"}
+            self.goals[identifier] = goal
+        if persist:
+            persist(self.snapshot())
+        client = client if client is not None else Arxiv(ROOT / "runs/SS-sources")
+        try:
+            receipt, raw = client.search(query, limit=3)
+            papers = entries(raw)
+            goal["search_receipt"] = receipt
+            for paper in papers[:2]:
+                if any(r["id"] == paper["id"] for r in goal["references"]):
+                    continue
+                record = {**paper, "evidence_status": "UNVERIFIED_REFERENCE", "feed_sha256": receipt["sha256"]}
+                passage, source = paper["abstract"][:5000], paper["url"]
+                try:
+                    meta, body = client.paper(paper["id"], "html")
+                    parser = PaperText()
+                    parser.feed(body.decode("utf-8"))
+                    record["paper_receipt"] = meta
+                    if parser.parts:
+                        scores = lexical(question, [{"text": p} for p in parser.parts])[:, 1]
+                        passage = parser.parts[int(scores.argmax())]
+                        source = meta["url"]
+                except (OSError, UnicodeError, ValueError) as error:
+                    record["full_text_issue"] = {"type": type(error).__name__, "detail": str(error)}
+                spans = sentences(passage)
+                if spans:
+                    passage = passage[:spans[min(len(spans), 16)-1]["end"]]
+                    record["reading"] = self.read_passage(question, passage, source)
+                goal["references"].append(record)
+                if persist:
+                    persist(self.snapshot())
+            goal["status"] = "REFERENCES_TO_VERIFY" if goal["references"] else "RETAINED_OPEN"
+            goal["next_action"] = "Check the relevant claims and assumptions against an independent task verifier; retain only supported updates."
+            goal["attempts"].append({"status": "received", "feed_sha256": receipt["sha256"]})
+        except (OSError, ValueError, ET.ParseError) as error:
+            goal["status"] = "RETAINED_OPEN"
+            goal["attempts"].append({"status": "failed", "type": type(error).__name__, "detail": str(error)})
+            goal["next_action"] = "Resume the same goal after source access or interpretation is repaired."
+        if persist:
+            persist(self.snapshot())
+        return copy.deepcopy(goal)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("action", choices=("read", "match", "research"))
+    parser.add_argument("--question", required=True)
+    parser.add_argument("--text")
+    parser.add_argument("--source")
+    parser.add_argument("--candidate", action="append")
+    parser.add_argument("--gap")
+    parser.add_argument("--id", default="research-1")
+    parser.add_argument("--store", default="runs/sera-reading-live")
+    args = parser.parse_args()
+    torch.set_num_threads(1)
+    destination = (ROOT / args.store).resolve()
+    if not destination.is_relative_to(ROOT / "runs"):
+        raise ValueError("Session storage must remain inside runs")
+    store = Store(destination)
+    destination.mkdir(parents=True, exist_ok=True)
+    with lock(destination):
+        previous = store.read()
+        session = ReadingSession(previous)
+        def persist(value):
+            nonlocal previous
+            previous = store.commit(value, previous)
+        if args.action == "read":
+            result = session.read_passage(args.question, args.text, args.source)
+            persist(session.snapshot())
+        elif args.action == "match":
+            result = session.match(args.question, args.candidate, args.source)
+            persist(session.snapshot())
+        else:
+            result = session.investigate(args.id, args.question, args.gap, persist=persist)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

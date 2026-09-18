@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\experiments\human_reading\audit.py", line 145, in <module>
+    main()
+  File "D:\ai\projects\sera\experiments\human_reading\audit.py", line 78, in main
+    runtime = ReadingSession()
+              ^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\human_reading\runtime.py", line 110, in __init__
+    facts, library = self.base.learner.legacy.snapshot(), self.base.learner.library.record()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\src\sera\generative.py", line 412, in snapshot
+    self._guard()
+  File "D:\ai\projects\sera\src\sera\generative.py", line 377, in _guard
+    self.situation._guard()
+  File "D:\ai\projects\sera\src\sera\world_graph.py", line 401, in _guard
+    self.mechanism.validate(self.graph, self.owner)
+  File "D:\ai\projects\sera\src\sera\world_graph.py", line 260, in validate
+    raise ValueError("Mechanism graph, parameters, schema or interpreter changed")
+ValueError: Mechanism graph, parameters, schema or interpreter changed

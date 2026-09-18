@@ -4,6 +4,19 @@
 
 These commands use the prepared workspace at `D:/ai/projects/sera`, its environment and retained checkpoints. Numerical tasks use one CPU thread and the existing 2 GiB process-tree memory cap. The wrapper charges the live resource ledger; every output folder must be fresh.
 
+## Read a source or investigate a gap
+
+```powershell
+.venv/Scripts/python.exe scripts/run_reading_bounded.py --seconds 60 --output runs/my-source-reading-001 --module experiments.human_reading.runtime -- read --question "What does physics study?" --source "my-attributed-document" --text "Physics studies matter, energy and their interactions. Botany studies plants."
+.venv/Scripts/python.exe scripts/run_reading_bounded.py --seconds 80 --output runs/my-research-001 --module experiments.human_reading.runtime -- ask --id sparse-recovery-002 --question "What assumptions allow sparse recovery?" --gap "compressed sensing"
+```
+
+`read` returns ranked original sentences with offsets and source hashes. `ask` reads a supplied passage or, when no local source is supplied, retains the question and searches arXiv for the specified gap. The result contains source identities and candidate evidence for verification. A completed goal keeps its pinned evidence; use a new ID for a new investigation. State is preserved in `runs/sera-reading-live` and the output is in the bounded job's `process.log`.
+
+`match` compares two to sixteen attributed alternatives using the learned semantic weights; repeat `--candidate "text"` for each alternative and supply `--source`. [Measured tasks, controls and source provenance](../research-continuation/29_human_reading/report.md).
+
+For a fresh checkout, first run `scripts/restore_test_artifacts.py`, then `scripts/reading_artifacts.py --restore`. These verify hashes and preserve divergent local files. The artifact restore does not create a new compute allowance.
+
 ## Predict motion from a learned history
 
 ```powershell

@@ -1,0 +1,85 @@
+{
+  "stage": "textbook",
+  "checkpoint": "runs/HC-study-002/textbook/step-0300.pt",
+  "sha256": "a7a48277e48d815cc6b3e866cc89a197dc7f54a1bb6e70833ed74907c21ca2de",
+  "development": {
+    "dictionary": 0.39,
+    "sentences": 0.715,
+    "conversation": 0.255,
+    "textbook": 0.5
+  },
+  "mean_accuracy": 0.46499999999999997,
+  "contracts": {
+    "model": "881711f8ecfaf6f83c2176bfaa28955ab30662d666d60f9ef0b6448a0be81f16",
+    "curriculum": "a84cc5d06f94f0da3dfc6082ab58c1bdf4023098587078f0d2475a939a436c0d",
+    "corpus": "093b315974cd4155890c2551213bfe18a82ea1d5ff05e3109eb140ef23318e7e",
+    "manifest": "77c1f498e5f044cc4f5a038b6c9aa1b776254eaac92ebe6a6bf7d9585830a40d",
+    "protocol": "df3e63e32558cf6eb8c2bed5181e88689b2d13195f66a07fe929bc12209f1114",
+    "parent": "df6fef759565d0355f30e2524f117e339e75b63cdadde91d19ce8bbe0190009f"
+  },
+  "stages": [
+    {
+      "stage": "initial",
+      "checkpoint": "runs/HC-study-002/initial.pt",
+      "sha256": "da3d6811a199acbba03d0d6be7cf091b7f9ba63ebca85f1d21dfc08d6166b8a5",
+      "development": {
+        "dictionary": 0.27,
+        "sentences": 0.495,
+        "conversation": 0.2075,
+        "textbook": 0.25925925925925924
+      },
+      "mean_accuracy": 0.3079398148148148
+    },
+    {
+      "stage": "dictionary",
+      "checkpoint": "runs/HC-study-002/dictionary/step-0400.pt",
+      "sha256": "0d10156ab78ac0d2c88c78e129c94c004aababad0f59b98d094708ace1fb1375",
+      "development": {
+        "dictionary": 0.3825,
+        "sentences": 0.585,
+        "conversation": 0.26,
+        "textbook": 0.35185185185185186
+      },
+      "mean_accuracy": 0.394837962962963
+    },
+    {
+      "stage": "sentences",
+      "checkpoint": "runs/HC-study-002/sentences/step-0300.pt",
+      "sha256": "386ee20ab469f640f89961beea57be9dff3c56e763686053fe60a895e2de7d3e",
+      "development": {
+        "dictionary": 0.3925,
+        "sentences": 0.735,
+        "conversation": 0.25,
+        "textbook": 0.35185185185185186
+      },
+      "mean_accuracy": 0.43233796296296295
+    },
+    {
+      "stage": "conversation",
+      "checkpoint": "runs/HC-study-002/conversation/step-0300.pt",
+      "sha256": "dc64d39eec28e0022368c7ffaca36b371fb6c3b573fea45df8642d23c446f0a2",
+      "development": {
+        "dictionary": 0.4025,
+        "sentences": 0.7225,
+        "conversation": 0.275,
+        "textbook": 0.4074074074074074
+      },
+      "mean_accuracy": 0.45185185185185184
+    },
+    {
+      "stage": "textbook",
+      "checkpoint": "runs/HC-study-002/textbook/step-0300.pt",
+      "sha256": "a7a48277e48d815cc6b3e866cc89a197dc7f54a1bb6e70833ed74907c21ca2de",
+      "development": {
+        "dictionary": 0.39,
+        "sentences": 0.715,
+        "conversation": 0.255,
+        "textbook": 0.5
+      },
+      "mean_accuracy": 0.46499999999999997
+    }
+  ],
+  "preserved_tensors": 165,
+  "final_opened": false,
+  "wall_seconds": 14.952200100000482
+}

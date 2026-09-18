@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Use SERA](START_HERE.md) · [Archive](RESEARCH_ARCHIVE.md)
 
-## Verified release
+## Preserved Stage 28 verified release
 
 | Item | Evidence |
 |---|---|
@@ -29,8 +29,12 @@ Earlier clean-checkout runs exposed missing ignored fixtures, an interpreter-ver
 
 [Full report](../research-continuation/28_concept_refinement/report.md) · [Architecture audit](../research-continuation/28_concept_refinement/architecture-audit.md) · [Checklist](../research-continuation/28_concept_refinement/checklist.md).
 
-## Current work
+## Current human-text integration
 
-Repository navigation and real-text learning are being extended. The new curriculum uses attributed human-authored questions and source passages, with article-disjoint development and evaluation. Results are admitted only after comparison, retention and integration checks.
+Stage 29 completed the ordered WordNet/example, SQuAD sentence, AMI manual-transcript and OpenStax physics-prose curriculum. The selected semantic weights improved source-association accuracy over the starting weights in all four final domains. The selected sentence reader scored 82.6% on 1,000 unseen human questions; BM25 scored 83.1%. All controls and failed candidates remain in the [full report](../research-continuation/29_human_reading/report.md).
 
-The last recorded balance is 512.037 numerical seconds. The live `runs/v3-batch-001/budget.json` governs new reservations; this page grants no additional compute.
+The integration audit passed: 165 predecessor tensors, 128 four-language probes, exact algebra and empirical forecasts were retained; checkpoint resumption and persistence passed. Live arXiv search retrieved and ranked sources while preserving the original question. It recorded zero unverified weight updates. [Use the interface](START_HERE.md#read-a-source-or-investigate-a-gap).
+
+Full local regression reached its 120-second cap; the partial log is retained. Targeted reader/source tests passed. The latest commit's full Linux/Windows result is linked through the main verification badge; see the stage costs for exact local charges.
+
+Current work follows the user's full-book and grounded-definition request. [Next finite protocol](../research-continuation/30_grounded_books/PROTOCOL.md). Numerical time is governed by the live ledger; source intake grants no additional resources.

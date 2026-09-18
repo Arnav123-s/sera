@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "experiments.human_reading.runtime",
+    "research",
+    "--id",
+    "sparse-recovery-001",
+    "--question",
+    "What assumptions allow compressed sensing to recover a signal from few measurements?",
+    "--gap",
+    "compressed sensing",
+    "--store",
+    "runs/sera-reading-live"
+  ],
+  "reserved_seconds": 80.0,
+  "charged_seconds": 16.42382169998018,
+  "memory_limit_bytes": 2147483648,
+  "peak_job_committed_bytes": 312057856,
+  "peak_process_committed_bytes": 311144448,
+  "observed_process_ids": [
+    8244,
+    13676,
+    16872
+  ],
+  "worker_threads": 1,
+  "runner_sha256": "6f602735056b3e468c1b945d1e358d857e95ed12349c910eacc542122fc1de3b",
+  "job_helper_sha256": "95c48725b0e1a44e1d5e22614e8499644b0c96d35b7df2c9f66443a3932648c2",
+  "boundary": "Wall allowance and job COMMITTED memory, not RSS. All descendant processes belong to this owned job. Full reservation persists if the supervisor is externally interrupted.",
+  "child_pid": 16872,
+  "returncode": 0,
+  "log_sha256": "60c330e26e0fdbeddf2c5c253157489300709211059b3565d180783b5d2978e4"
+}
