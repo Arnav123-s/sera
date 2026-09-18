@@ -6,6 +6,7 @@
 |---|---|
 | [`src/sera/`](../src/sera/) | Core model, state, ownership and learning contracts |
 | [`experiments/`](../experiments/) | Registered research implementations |
+| [`experiments/solution_search.py`](../experiments/solution_search.py) · [`solution_owner.py`](../experiments/solution_owner.py) · [`solution_credit.py`](../experiments/solution_credit.py) | Imagined rational proposals, complete question lifecycles and corrected proof rewards on the actual owner |
 | [`experiments/self_chosen/`](../experiments/self_chosen/) | Elementary process teaching, learned question selection, conjectures and independent credit |
 | [`experiments/discovery_frontier.py`](../experiments/discovery_frontier.py) | Broader missing-input investigations and composition of owned learned rules |
 | [`experiments/discovery_observation.py`](../experiments/discovery_observation.py) | Source-attributed physical observations and separately verified empirical parameters |
@@ -47,13 +48,15 @@ python -m venv .venv
 .venv/Scripts/python.exe -m scripts.refinement_artifacts --stage 40
 .venv/Scripts/python.exe -m scripts.self_chosen_artifacts
 .venv/Scripts/python.exe -m scripts.frontier_artifacts
+.venv/Scripts/python.exe -m scripts.gap_artifacts --restore
+.venv/Scripts/python.exe -m scripts.solution_artifacts --restore
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```
 
 On Linux, use `.venv/bin/python`. The [workflow](../.github/workflows/ci.yml) pins the qualified CPU profile. Fixture restoration checks hashes and refuses to overwrite divergent files; it restores test prerequisites without restarting training or replacing live stores.
 
-In the managed research workspace, run numerical work through the existing bounded supervisors and resource ledger. The plain test command documents the clean-checkout entry point used in CI.
+In the managed research workspace, run current numerical work through `scripts/run_solution_persistent.py` and the resource ledger. It applies the user's unrestricted local-time authorization, one CPU thread, a 2 GiB process-tree memory ceiling and a scoped Windows keep-awake request. Historical bounded supervisors remain preserved. The plain test command documents the clean-checkout entry point used in CI.
 
 ## Review a study
 

@@ -1,0 +1,20 @@
+F401 [*] `experiments.gap_inquiry.sha` imported but unused
+  --> scripts\solution_coverage_review.py:8:57
+   |
+ 6 | import torch
+ 7 |
+ 8 | from experiments.gap_inquiry import ROOT, digest, read, sha, write
+   |                                                         ^^^
+ 9 | from experiments.solution_credit import ReconciledSession
+10 | from experiments.solution_owner import features
+   |
+help: Remove unused import: `experiments.gap_inquiry.sha`
+  |
+7 |
+  - from experiments.gap_inquiry import ROOT, digest, read, sha, write
+8 + from experiments.gap_inquiry import ROOT, digest, read, write
+9 | from experiments.solution_credit import ReconciledSession
+  |
+
+Found 1 error.
+[*] 1 fixable with the `--fix` option.

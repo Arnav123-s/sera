@@ -1,0 +1,11 @@
+# Architecture and continuation audit
+
+The current path extends the actual GapR1 owner with fitted rational coefficient parameters and procedure-value weights. The same inherited object remains reachable through the reading, study, discovery and empirical views. Initial integration preserved 390 tensor records. The later credit and feedback updates preserved all 607 non-policy tensor records, including the new solution coefficients.
+
+The adopted completion/portfolio direction is exercised through a complete lifecycle: a retained self-chosen question, owned forward imagination, multiple committed solution proposals, separate proof and reference checks, return to the original goal, reusable guarded weights and evidence-bound credit. The source applicability gate stays closed to unsupported new definitions. A statistical guess is not promoted to a measurement or proof.
+
+The question frontier, units, model families, finite search grammar, exact checker and update rule are supplied engineering. Newly fitted coefficient vectors and reward-trained procedure values are learned contents on the owner. The preserved old/new route inventory identifies which returned answers add executable coverage. Shared ownership itself is not used as a transfer score, and a practice loss reduction is not used as a learning-to-learn verdict.
+
+The novelty defects are preserved and repaired additively. Existing forward calculations and routes dominated in both information requirements and guard coverage earn no new credit; identities, guards and conditional solutions remain useful even when they earn zero novelty points. Incomparable guards retain distinct coverage. The old predictors, their exact implementation, all sealed results, rejected search outcomes and predecessor stores remain available. Public restoration validates pinned historical evidence without exporting private assessor keys or granting new assessment authority.
+
+The runtime deliberately interrupted a committed investigation before feedback, restored its exact state, completed the original question, and checked that repeating it added no reward or parameter change. New curiosity normally uses the same complete cycle. An exhausted declared search preserves the goal, full attempts and a concrete acquisition/representation next action, rather than asserting impossibility.

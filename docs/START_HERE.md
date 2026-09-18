@@ -1,6 +1,6 @@
 # Use SERA
 
-The [continuing learner](../research-continuation/43_knowledge_gaps/README.md) retains language, reading, mathematics, physical meanings and a portfolio of learned discoveries in one owner. Its latest interface also exposes self-identified knowledge gaps and competing empirical explanations. Every predecessor store remains available.
+The [continuing learner](../research-continuation/44_solution_portfolios/README.md) retains language, reading, mathematics, physical meanings and checked discoveries in one owner. Its latest interface solves questions through alternative learned routes and normally investigates a missing route before returning. Every predecessor store remains available.
 
 [Home](../README.md) · [Status](STATUS.md) · [Repository map](REPOSITORY_MAP.md) · [Archive](RESEARCH_ARCHIVE.md)
 
@@ -9,10 +9,12 @@ These commands use the prepared workspace at `D:/ai/projects/sera`, its environm
 ## Run several tasks through the continuing learner
 
 ```powershell
-.venv/Scripts/python.exe scripts/run_gap_bounded.py --seconds 120 --output runs/my-continuing-batch-001 --module scripts.gap_use -- --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/my-continuing-results-001.json
+.venv/Scripts/python.exe scripts/run_solution_persistent.py --output runs/my-continuing-batch-001 --module scripts.solution_use -- --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/my-continuing-results-001.json
 ```
 
-The example batch asks what gap SERA identified, compares its eight explanations, calculates their missing-influence consequences and requests its next discriminating observation. It also checks an integral, interprets an English alarm request and executes an earlier physical route. The model loads once for the batch. Edit a copy of the JSON to supply your own tasks; the results retain source attribution and the exact owner identity. The [previous batch](../research-continuation/42_composed_discovery/example-tasks.json) exercises four-language requests and more learned equations; the [earlier batch](../research-continuation/40_step_resolution/example-tasks.json) contains attributed reading and conditional physical imagination.
+The 11-task example batch returns multiple checked answers in four mathematical domains, then exercises the earlier empirical investigation, integral, English request and physical route. The model loads once for the batch. Edit a copy of the JSON to supply your own tasks; results retain source attribution and the exact owner identity. The persistent runner keeps Windows awake during its owned job, with unrestricted authorized local time and the existing memory protection. [Solution task fields and complete examples](../research-continuation/44_solution_portfolios/README.md).
+
+Use `solve_solution` for all applicable answers, `curiosity` to complete a new imagination/proof/reward cycle, and `solution_findings` to inspect retained questions and evidence. `--read-only` prevents new investigation. The [earlier batch](../research-continuation/42_composed_discovery/example-tasks.json) exercises four-language requests and more learned equations.
 
 New task kinds are `gap_findings`, `gap_predict`, `gap_consequences` and `gap_next_observation`. [Input fields and examples](../research-continuation/43_knowledge_gaps/README.md).
 

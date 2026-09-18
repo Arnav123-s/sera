@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "selected_question": {
+    "domain": "motion_2",
+    "id": "ebe6a05bdbd909272edd917dd4eba1f33fc16806e5212998cc017e532d823a16",
+    "missing": [
+      "a0",
+      "a1"
+    ],
+    "question": "Predict v0 from retained motion_2 knowledge without a0, a1",
+    "target": "v0"
+  },
+  "selection": "retained question-policy score over owned answerable questions",
+  "input_origin": "actual learned forward imagination; target withheld from the proposal input",
+  "expected": "5/3",
+  "answer": {
+    "status": "CHECKED_SOLUTION_PORTFOLIO",
+    "domain": "motion_2",
+    "target": "v0",
+    "answers": [
+      "5/3"
+    ],
+    "routes": [
+      {
+        "id": "cc4ec6fabdb1fb230267517e09ce4f09d959f06dc92058a30cc175ebea79ff25",
+        "result": "5/3",
+        "requires": [
+          "a2",
+          "f",
+          "m",
+          "t",
+          "v",
+          "x",
+          "x0"
+        ],
+        "nonzero": [
+          "m",
+          "t"
+        ],
+        "expression_cost": 17,
+        "origin": "retained earlier route"
+      },
+      {
+        "id": "85e394111ec2deba18f6332097305f1dd58c3afc281106712a2a3886562eb0b3",
+        "result": "5/3",
+        "requires": [
+          "a2",
+          "f",
+          "m",
+          "t",
+          "v",
+          "x",
+          "x0"
+        ],
+        "guard": "m*t != 0",
+        "expression": "v0 = (-a2*m*t**4/12 + f*t**2/2 - 2*m*t*v + 3*m*x - 3*m*x0)/(m*t)",
+        "proof": {
+          "accepted": true,
+          "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+          "candidate": "85e394111ec2deba18f6332097305f1dd58c3afc281106712a2a3886562eb0b3",
+          "commitment": "aa9d2b11441a09c24851bf30073fd292d135f4c6161ec89ce9683cacdb4d9ddb",
+          "id": "f70e45d1b61037c05e9558fe88132a5d39ea654d9d41d5e0cf986c257a54625a",
+          "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+          "original_goal": "Predict v0 from retained motion_2 knowledge without a0, a1",
+          "physical_fact_added": false,
+          "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+          "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+          "question": "ebe6a05bdbd909272edd917dd4eba1f33fc16806e5212998cc017e532d823a16",
+          "residual": "0",
+          "substituted_denominator": "m*t"
+        },
+        "origin": "new owned rational route"
+      }
+    ],
+    "physical_fact_added": false,
+    "original_observations": {
+      "t": "3/4",
+      "x0": "-1/3",
+      "m": "5/3",
+      "a2": "-2/3",
+      "v": "313/96",
+      "x": "2317/1536",
+      "f": "85/24"
+    },
+    "investigation": "ebe6a05bdbd909272edd917dd4eba1f33fc16806e5212998cc017e532d823a16",
+    "reward": 0,
+    "search_completed_before_feedback": true,
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "credit_reconciled": true
+  },
+  "interrupted_before_feedback": true,
+  "exact_pending_restore": true,
+  "repeated_question_no_new_credit_or_weight_change": true,
+  "branch_owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+  "live_owner_preserved": true
+}

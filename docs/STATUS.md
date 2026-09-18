@@ -1,8 +1,16 @@
 # Current status
 
-## Latest: self-identified knowledge gaps
+## Latest: checked solution portfolios
 
-The current owner is **runs/sera-gap-inquiry-live**. It selected an incomplete observation record from its own retained evidence, searched **12,288 distinct programs**, and retained **eight qualified empirical explanations**. The fixed selected program scored **2.66 cm RMSE on 13 reserved positions**. All **380 inherited tensor records** remain unchanged. [Use it](../research-continuation/43_knowledge_gaps/README.md) · [Full results and controls](../research-continuation/43_knowledge_gaps/report.md) · [Audit](../research-continuation/43_knowledge_gaps/audit.json).
+The current owner is **runs/sera-solution-progress-live**. Its portfolio has **217 qualified solution routes**, making **58 more saved questions executable** beyond its prior methods. The audited reward recognizes **54 new input-and-guard combinations**. The frozen evaluation returned **27,263 correct answers**, with 513 explicit denominator guards across 27,776 cases. [Use it](../research-continuation/44_solution_portfolios/README.md) · [Full results](../research-continuation/44_solution_portfolios/report.md).
+
+Curiosity normally continues through complete proposal generation, independent proof/checking, return to the original question and unique credit. Exact interruption/restart and repeated-question checks passed. Corrected proof rewards updated the procedure-value weights while preserving 607 other tensor records and all 11 practical example answers. [Runtime audit](../research-continuation/44_solution_portfolios/runtime-audit.json) · [Reward reconciliation](../research-continuation/44_solution_portfolios/credit-repair.md) · [Current owner and reward audit](../research-continuation/44_solution_portfolios/coverage-audit.json).
+
+Full local regression passed **554 tests with no skips**, followed by two credit-repair tests and the actual-owner runtime checks. The one-thread, 2 GiB runner now uses the user's unrestricted local-time authorization and keeps Windows awake during owned jobs. [Full costs and publication receipts](../research-continuation/44_solution_portfolios/publication/costs.json).
+
+## Preserved self-identified knowledge gaps
+
+The preserved empirical owner is **runs/sera-gap-inquiry-live**. It selected an incomplete observation record from its own retained evidence, searched **12,288 distinct programs**, and retained **eight qualified empirical explanations**. The fixed selected program scored **2.66 cm RMSE on 13 reserved positions**. All **380 inherited tensor records** remain unchanged. [Use it](../research-continuation/43_knowledge_gaps/README.md) · [Full results and controls](../research-continuation/43_knowledge_gaps/report.md) · [Audit](../research-continuation/43_knowledge_gaps/audit.json).
 
 The interface compares alternative predictions, computes their conditional missing-acceleration consequences and proposes a discriminating observation. It also routes earlier mathematics, language and physical tasks through the same continuing owner. Verification and exact publication receipts are recorded with this stage's [costs and checks](../research-continuation/43_knowledge_gaps/publication/costs.json).
 

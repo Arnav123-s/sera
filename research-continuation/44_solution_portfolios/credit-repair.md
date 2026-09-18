@@ -1,0 +1,13 @@
+# Reward reconciliation
+
+The first completed study correctly checked its proposed answers, but its novelty accounting inspected the explicit equation registry without checking every retained executable forward procedure. This awarded discovery credit to several already available calculations. The unchanged original selection, learned predictor, owner and sealed evaluation remain preserved.
+
+The additive credit successor checks the actual forward input requirements used by retained polynomial imagination and the earlier constant-force route. It keeps every qualified answer, revokes the affected credit and records both values. It archives the predictor trained on that target and retains neutral exhaustive scheduling; the opened held-out questions are not used for retuning or a new superiority claim.
+
+The second audit includes input-and-guard dominance. For a fixed domain and target, route A dominates route B when A needs a subset of B's inputs, A's nonzero guard factors are a subset of B's, and at least one subset is strict. Guard factors are reduced using the separate exact model laws and declared positive time/mass assumptions. Thus A is available wherever B is, using no additional information. Routes with incomparable guard scopes retain distinct coverage. This check is applied after independent proof, not fed back as a target equation during proposal search.
+
+The two corrections change discovery reward from 85 to 72.75 to **57.25 points**; the final ledger credits **54 input-and-guard combinations**. They preserve all 217 solutions and the 58 newly executable saved questions. Equivalent or more demanding expressions remain usable and archived, including cross-operator relationships. Their presence alone does not earn an extra coverage reward.
+
+Each corrected value predictor uses the original 3,948 practice rows and the same 80-epoch rule. No held-out or final evaluation is reopened. The final audit preserves 607 non-policy tensor records, all 11 practical answers and exact restoration. The earlier implementation is retained byte-for-byte in [the source preservation record](repairs/source-preservation.json) for the first two credit-store revisions. The latest implementation and third revision use the final coverage contract. Original scientific sources and sealed results are unchanged.
+
+Future curiosity rounds complete proposal generation before independent feedback, apply the corrected novelty gate, bind credit to the original question and checked predictor, and update procedure values from that verified progress. The exact-check and source-applicability gates are unchanged. The repair neither repeats the sealed experiment nor changes its numerical answers.

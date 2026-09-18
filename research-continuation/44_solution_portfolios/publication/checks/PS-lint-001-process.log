@@ -1,0 +1,44 @@
+I001 [*] Import block is un-sorted or un-formatted
+  --> experiments\solution_check.py:3:1
+   |
+ 1 |   """Independent exact certificates and literal reference replay for proposed answers."""
+ 2 |
+ 3 | / from fractions import Fraction as Q
+ 4 | | from functools import lru_cache
+ 5 | | import json
+ 6 | |
+ 7 | | import sympy as sp
+ 8 | |
+ 9 | | from experiments.gap_inquiry import digest
+10 | | from experiments.self_chosen import equations as eq
+   | |___________________________________________________^
+help: Organize imports
+  |
+2 |
+3 + import json
+4 | from fractions import Fraction as Q
+5 | from functools import lru_cache
+  - import json
+6 |
+  |
+
+I001 [*] Import block is un-sorted or un-formatted
+   --> scripts\solution_study.py:188:5
+    |
+187 |   def audit():
+188 | /     import gc
+189 | |     from experiments.solution_owner import SolutionSession
+190 | |     from experiments.verified_completion.credit import decode
+    | |_____________________________________________________________^
+191 |       verified_freeze()
+192 |       if (OUT / "audit.json").exists():
+    |
+help: Organize imports
+    |
+188 |     import gc
+189 +
+190 |     from experiments.solution_owner import SolutionSession
+    |
+
+Found 2 errors.
+[*] 2 fixable with the `--fix` option.

@@ -1,0 +1,3861 @@
+[
+  {
+    "id": "motion_0",
+    "kind": "solve_solution",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "CHECKED_SOLUTION_PORTFOLIO",
+      "domain": "motion_0",
+      "target": "m",
+      "answers": [
+        "2/3"
+      ],
+      "routes": [
+        {
+          "id": "02b5b6001a568378cc79ac98c6fb4c658666a126f12b672cd95a2273715899d5",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "guard": "a0*t*v != 0",
+          "expression": "m = (a0*f*t**2/2 + f*x - f*x0)/(a0*t*v)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "02b5b6001a568378cc79ac98c6fb4c658666a126f12b672cd95a2273715899d5",
+            "commitment": "688007ec8fa6e1d1762fe5305cb7d6f5347a89590b7b944ac791d0d548fa492f",
+            "id": "ea96a86f755c1a615cd332d3eddd5396f15c4da978e08789b1339840c8a7ea77",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without v0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1291552583f7997ba1696d800eb399185fdfbfe6238e17e59cb30c2caa51a303",
+            "residual": "0",
+            "substituted_denominator": "a0**2*t**2 + a0*t*v0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "49cf96af92acb5a7f9fdefdf612e1660e56018bc30022ed04487acb9057c4c76",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "a0*t*v0 - v**2/2 + v0**2/2 != 0",
+          "expression": "m = -a0*f*t**2/(2*(a0*t*v0 - v**2/2 + v0**2/2))",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "49cf96af92acb5a7f9fdefdf612e1660e56018bc30022ed04487acb9057c4c76",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "abde166da777779347dbd78032dd2d23840e58e895f17d72df854e6c7d375da3",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "-a0**2*t**2/2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "54798fbec30609544a10c115f04da04e72a900e38e20f433fd5178b2db4cfc6a",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "-v**3 + v0**3 != 0",
+          "expression": "m = (-f*t*v0**2 - 2*f*v*x + 2*f*v*x0)/(-v**3 + v0**3)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "54798fbec30609544a10c115f04da04e72a900e38e20f433fd5178b2db4cfc6a",
+            "commitment": "47ed81726526a2c71538a5e7e4f2b84015d4cc7354783950e6e758dae76c1400",
+            "id": "078a65e564b26e8c87426df54a97a9b0b777ce7852ae772d8a1169a637b8503d",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without a0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1a8dcb4cb142dbae0ebbd46f9423e87eb0739097f17fbe92bf81d85495c71672",
+            "residual": "0",
+            "substituted_denominator": "-a0**3*t**3 - 3*a0**2*t**2*v0 - 3*a0*t*v0**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "64abddd96a4e0dfa831587d8c9a11046192c5651a689e05a71de2b770914366e",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "a0*v0 != 0",
+          "expression": "m = (-a0*f*t + f*v)/(a0*v0)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "64abddd96a4e0dfa831587d8c9a11046192c5651a689e05a71de2b770914366e",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "1f5b32ee4b1bd5362ce8bbb41e7b1ab977885e6b6aed4ce9e735d6cfee89a094",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "a0*v0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "753e6068b6ccbbeb68d3967b67520773338995ad1cadd2a770d6a5af06704275",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "guard": "a0*x != 0",
+          "expression": "m = (-a0*f*t**2/2 + f*t*v + f*x0)/(a0*x)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "753e6068b6ccbbeb68d3967b67520773338995ad1cadd2a770d6a5af06704275",
+            "commitment": "688007ec8fa6e1d1762fe5305cb7d6f5347a89590b7b944ac791d0d548fa492f",
+            "id": "4941ad6833e03500f762568765ad8aed2523adf63d69ec7a3a707065fe66de50",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without v0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1291552583f7997ba1696d800eb399185fdfbfe6238e17e59cb30c2caa51a303",
+            "residual": "0",
+            "substituted_denominator": "a0**2*t**2/2 + a0*t*v0 + a0*x0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "93d31b56e8770729ab0d13e09025fa0eb1a36cfca8e5746dc7d0d9a325ae19d2",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t*v*x/2 + t*v0*x/2 + t*v0*x0 - x**2 + x0**2 != 0",
+          "expression": "m = -f*t**2*x0/(2*(t*v*x/2 + t*v0*x/2 + t*v0*x0 - x**2 + x0**2))",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "93d31b56e8770729ab0d13e09025fa0eb1a36cfca8e5746dc7d0d9a325ae19d2",
+            "commitment": "47ed81726526a2c71538a5e7e4f2b84015d4cc7354783950e6e758dae76c1400",
+            "id": "e59d96b71326b99affceacc9dfdbad5e09accf6dd0aaf98b4b7e061e436f209d",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without a0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1a8dcb4cb142dbae0ebbd46f9423e87eb0739097f17fbe92bf81d85495c71672",
+            "residual": "0",
+            "substituted_denominator": "-a0*t**2*x0/2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "a0da6546147d64ccaf5fc8ab573660e48c0b0071adc97f48a458dc05ad441444",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "-v + v0 != 0",
+          "expression": "m = -f*t/(-v + v0)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "a0da6546147d64ccaf5fc8ab573660e48c0b0071adc97f48a458dc05ad441444",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "6d6a0ffb994edcf918dc3a977dcde9a46feca21a9397f1c294177331049c22af",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "-a0*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "a46b1fcb4a0c94f412babd351618505133864faface1a31a576a3acf85a84a85",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "a0*v**2 != 0",
+          "expression": "m = (a0*f*t*v + a0*f*t*v0 + f*v0**2)/(a0*v**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "a46b1fcb4a0c94f412babd351618505133864faface1a31a576a3acf85a84a85",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "1fd82c9659807b777ef01072ca09f4477756bb9e0dcc5ece75f3218e8988c347",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "a0**3*t**2 + 2*a0**2*t*v0 + a0*v0**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "b6918ae85931d56807cebb88cdb0f5fa6d7eebdcd679013e6bd410653b56b342",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "guard": "a0*t*v - a0*x != 0",
+          "expression": "m = (a0*f*t**2/2 - f*x0)/(a0*t*v - a0*x)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "b6918ae85931d56807cebb88cdb0f5fa6d7eebdcd679013e6bd410653b56b342",
+            "commitment": "688007ec8fa6e1d1762fe5305cb7d6f5347a89590b7b944ac791d0d548fa492f",
+            "id": "55eb915c421248183be7cd10b6c8416e3074950ba92b68a1b04b7cdce1ef4cc7",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without v0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1291552583f7997ba1696d800eb399185fdfbfe6238e17e59cb30c2caa51a303",
+            "residual": "0",
+            "substituted_denominator": "a0**2*t**2/2 - a0*x0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "bae745ead72d4e97e80f7fb638b13cfb818ce224d71bb46751ef824a255eb4cd",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "a0*v0**2 != 0",
+          "expression": "m = (-a0*f*t*v - a0*f*t*v0 + f*v**2)/(a0*v0**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "bae745ead72d4e97e80f7fb638b13cfb818ce224d71bb46751ef824a255eb4cd",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "7e552dd73b3d745702dea6e6af603bdfea8158a189c60c2e1cb99760d1abdf3e",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "a0*v0**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "c3b4f1ff90bd7656c67e532f4bfa1f7e36326283f404397297a3b99fbe929bad",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "guard": "-a0*x + a0*x0 != 0",
+          "expression": "m = (a0*f*t**2/2 - f*t*v)/(-a0*x + a0*x0)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "c3b4f1ff90bd7656c67e532f4bfa1f7e36326283f404397297a3b99fbe929bad",
+            "commitment": "688007ec8fa6e1d1762fe5305cb7d6f5347a89590b7b944ac791d0d548fa492f",
+            "id": "e0ec4a13a506db17a27dc38dec6775676fea06143dfcd545effed9be5966eb8f",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without v0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1291552583f7997ba1696d800eb399185fdfbfe6238e17e59cb30c2caa51a303",
+            "residual": "0",
+            "substituted_denominator": "-a0**2*t**2/2 - a0*t*v0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "c4abd732ae44049b010db59a507a2055d59c87044c4601c446a771def8cb4716",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "guard": "t*v - x + x0 != 0",
+          "expression": "m = f*t**2/(2*(t*v - x + x0))",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "c4abd732ae44049b010db59a507a2055d59c87044c4601c446a771def8cb4716",
+            "commitment": "688007ec8fa6e1d1762fe5305cb7d6f5347a89590b7b944ac791d0d548fa492f",
+            "id": "765c80d586ae592bac1e658d7b831f1be35edf9c52330e291ad9efd97e9d82bf",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without v0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1291552583f7997ba1696d800eb399185fdfbfe6238e17e59cb30c2caa51a303",
+            "residual": "0",
+            "substituted_denominator": "a0*t**2/2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "ca864b4a2c135b2befd025fc9f207a1ead11a96fa6da71a03a4068193def6de7",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t*v**2 + t*v0**2 - 2*v*x + 2*v0*x0 != 0",
+          "expression": "m = (-f*t**2*v0 - 2*f*t*x0)/(t*v**2 + t*v0**2 - 2*v*x + 2*v0*x0)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "ca864b4a2c135b2befd025fc9f207a1ead11a96fa6da71a03a4068193def6de7",
+            "commitment": "47ed81726526a2c71538a5e7e4f2b84015d4cc7354783950e6e758dae76c1400",
+            "id": "fc8b4715f4147efd6a7eecc309544e575ba71514dd367c04db8a40ad986d870a",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without a0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1a8dcb4cb142dbae0ebbd46f9423e87eb0739097f17fbe92bf81d85495c71672",
+            "residual": "0",
+            "substituted_denominator": "-a0*t**2*v0 - 2*a0*t*x0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "d29b0961da1e16d62b6f918ce6c25b9b8374f8835fdd09b4834ca2fc70569fb5",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f"
+          ],
+          "guard": "a0 != 0",
+          "expression": "m = f/a0",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "d29b0961da1e16d62b6f918ce6c25b9b8374f8835fdd09b4834ca2fc70569fb5",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "100d361a2e855911b98ed00cdfa4369fef9a88abb4047e90771a6240922f5c2f",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "a0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "df3ca7b947d2f22d149aecaddb5388ac52e3a0dd9fc767f1f9ba508da1281e66",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "a0**2*t != 0",
+          "expression": "m = (f*v - f*v0)/(a0**2*t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "df3ca7b947d2f22d149aecaddb5388ac52e3a0dd9fc767f1f9ba508da1281e66",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "a23c7b39818e9157065a0fd282030475341e2ab37422eed6e84a111bc501a4f1",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "a0**2*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "e7ab0092ce705b80854abf514979f1300cae7f1a6ad2706c9157c7454aa671e7",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "-v**2 + v0**2 != 0",
+          "expression": "m = (-2*f*x + 2*f*x0)/(-v**2 + v0**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "e7ab0092ce705b80854abf514979f1300cae7f1a6ad2706c9157c7454aa671e7",
+            "commitment": "47ed81726526a2c71538a5e7e4f2b84015d4cc7354783950e6e758dae76c1400",
+            "id": "a1792108b44edaa5024cc49d4d02dfaf16d06cba230056ae055afefda0905659",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without a0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1a8dcb4cb142dbae0ebbd46f9423e87eb0739097f17fbe92bf81d85495c71672",
+            "residual": "0",
+            "substituted_denominator": "-a0**2*t**2 - 2*a0*t*v0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "f157fc46028e6481ace08c6cbade7d551f0e225d8902dd2bc13882783af95233",
+          "result": "2/3",
+          "requires": [
+            "f",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t*v0 - x + x0 != 0",
+          "expression": "m = -f*t**2/(2*(t*v0 - x + x0))",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "f157fc46028e6481ace08c6cbade7d551f0e225d8902dd2bc13882783af95233",
+            "commitment": "47ed81726526a2c71538a5e7e4f2b84015d4cc7354783950e6e758dae76c1400",
+            "id": "a92748e2e119157b11aebdfc8134ebe1067f441544501ea54cb6912239769de1",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without a0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "1a8dcb4cb142dbae0ebbd46f9423e87eb0739097f17fbe92bf81d85495c71672",
+            "residual": "0",
+            "substituted_denominator": "-a0*t**2/2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "f6ce42c760fbbdb4bb756c005d0ab64ab9638cb0b4ad0cee2a68eea22db14699",
+          "result": "2/3",
+          "requires": [
+            "a0",
+            "f",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "a0*v != 0",
+          "expression": "m = (a0*f*t + f*v0)/(a0*v)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "f6ce42c760fbbdb4bb756c005d0ab64ab9638cb0b4ad0cee2a68eea22db14699",
+            "commitment": "1cc5ac332c6e6a5f82e70715fbb5ba3e2aba6ff32c02aa4ec69704670069c2e6",
+            "id": "a6ca57693b65ab26a1d4ba0b87892770eb633e7ddc70986f1c6ea4ee079c3044",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict m from retained motion_0 knowledge without x0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "10b1fc087417d89fc9389973e0df3f16e913be7589586b3fd6a68da46d893dd2",
+            "residual": "0",
+            "substituted_denominator": "a0**2*t + a0*v0"
+          },
+          "origin": "new owned rational route"
+        }
+      ],
+      "physical_fact_added": false,
+      "original_observations": {
+        "t": "3/4",
+        "x0": "-2/3",
+        "v0": "-4/3",
+        "a0": "2",
+        "v": "1/6",
+        "x": "-53/48",
+        "f": "4/3"
+      }
+    }
+  },
+  {
+    "id": "motion_1",
+    "kind": "solve_solution",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "CHECKED_SOLUTION_PORTFOLIO",
+      "domain": "motion_1",
+      "target": "v",
+      "answers": [
+        "7/96"
+      ],
+      "routes": [
+        {
+          "id": "536dc4cfcffda6ac056b8338239d0055b9cbf43ab09a803f37751c2279eee8d5",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "v0"
+          ],
+          "nonzero": [
+            "m"
+          ],
+          "expression_cost": 9,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "f16c2d654c71446a8fca4b55e46c0537660755ae939699b726925554af0f4bf1",
+          "result": "7/96",
+          "requires": [
+            "a1",
+            "f",
+            "m",
+            "t",
+            "v0"
+          ],
+          "nonzero": [
+            "m"
+          ],
+          "expression_cost": 10,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "c70074459059a2c45c86d733d2b92c95ea6088a0a5704b8be78ad13680c1d0c8",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 11,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "0a0808ad2a64de9af08d8d46ea9ecf15480c3f1127b94089814b8830150fb3c6",
+          "result": "7/96",
+          "requires": [
+            "a1",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 12,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "92820fd73da84414f6c649b11e05f72b5d0a79a92156180a771f113249be6aa0",
+          "result": "7/96",
+          "requires": [
+            "f",
+            "m",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 12,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "169bbb2ba3d880a966edd8dbf29bc4e7bb922dff58c9271c3462a01c62e73c36",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "a1",
+            "t",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 13,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "cce70b04cd7be78a5ebcb125224324f2ee681877c917fa070298d040efd01cd1",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 13,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "dc46e946deac87a79da8594f228e757f5b92225f50033d2f2f6d134f079533f4",
+          "result": "7/96",
+          "requires": [
+            "a1",
+            "f",
+            "m",
+            "t",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 14,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "0d9eb355f40a15924dd6d8d4faf7133c30759d3450f08755d6feaed8204e4b04",
+          "result": "7/96",
+          "requires": [
+            "a1",
+            "f",
+            "m",
+            "t",
+            "v0"
+          ],
+          "guard": "m != 0",
+          "expression": "v = (-a1*m*t**2/2 + f*t + m*v0)/m",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "0d9eb355f40a15924dd6d8d4faf7133c30759d3450f08755d6feaed8204e4b04",
+            "commitment": "9ed4b22c0f16ce354e85d85f5e14a63bc69c8251bdf095bee98a1868ab35a35a",
+            "id": "33dab3355ec5fe992c1bead020859c7cca0e3513004741b3ec20f186ea14939f",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without a0, x",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "c835f379306116183cc6858a78bbab2df9fc8e8d2984e967c2b2b4bd579d5858",
+            "residual": "0",
+            "substituted_denominator": "m"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "182b56acb3bd981d26ae110985cf16e240a175bf51ed7605e33f47880d89d4a9",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "a1",
+            "f",
+            "m",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "a1*f != 0",
+          "expression": "v = (-a0**3*m + a0**2*f + 3*a0*a1*m*v0 + 3*a1**2*m*x - 3*a1**2*m*x0 - 2*a1*f*v0)/(a1*f)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "182b56acb3bd981d26ae110985cf16e240a175bf51ed7605e33f47880d89d4a9",
+            "commitment": "66f3099e8ba63644276b3a518029ca9652e983c891e0ca8804c83cb81419fc29",
+            "id": "77f9148ded3099f62a80f8e9a659164c3700d973d27a1404f4e4e38f56289469",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without t",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "7a500aff75f46d2e89a6154cf5108ee167f19d3b552855ebf568fa42d72556bd",
+            "residual": "0",
+            "substituted_denominator": "a0*a1*m + a1**2*m*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "27b47036119421c8092e6d337b0ae8424c277057040c207115e4497452e2e9b9",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "a1",
+            "t",
+            "v0"
+          ],
+          "guard": "1 != 0",
+          "expression": "v = a0*t + a1*t**2/2 + v0",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "27b47036119421c8092e6d337b0ae8424c277057040c207115e4497452e2e9b9",
+            "commitment": "772973eecac4b2eb4cbd82f28abeaecf175b0656aaf387bc9eba484bbe22bedf",
+            "id": "41faf2b29bb4480faf5147de84edc94b3058ae6bbbc375afdb41384fda72e350",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without x0, f",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "84fffb114388a51c12b2b19a470d45bad036bae66b4a0f7d4e1c59f2a71b16f0",
+            "residual": "0",
+            "substituted_denominator": "1"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "2b0808dbb7eab222f3ffd85b7fed6bcfa892b32e62117a0ac3be74810eb16269",
+          "result": "7/96",
+          "requires": [
+            "a1",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t != 0",
+          "expression": "v = (a1*t**3/6 - t*v0 + 2*x - 2*x0)/t",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "2b0808dbb7eab222f3ffd85b7fed6bcfa892b32e62117a0ac3be74810eb16269",
+            "commitment": "eaf2dbb1476b662cd2ef41c2a01cf0bfc62bbb7445e6b4f78750f41e79ff1e60",
+            "id": "d3cda0dbfc2558b4ca69540360f8ce565cf4de5de88d0e712eb318a02e237096",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without a0, f",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "ee34571df05b34044bd166797806cb4a9404f89c9accc52a59af809358bed7b3",
+            "residual": "0",
+            "substituted_denominator": "t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "6b05379f218c90b2a6e806e2381d0dbe207bd05dbc486a0ba3dd0da94db08a1c",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t != 0",
+          "expression": "v = (-a0*t**2/2 - 2*t*v0 + 3*x - 3*x0)/t",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "6b05379f218c90b2a6e806e2381d0dbe207bd05dbc486a0ba3dd0da94db08a1c",
+            "commitment": "a2bae0cc78b661d372484640bd75d8b26b1a52f1f3fe9604efa9992fc57b9d65",
+            "id": "8e1fad2cf09d86b04d29aeb1a46a3ace0779c8ec3bd01fe858354580fbcee8a8",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without m, a1",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "aa25a8f799d583b5149e93a621865a22019543df8cbe98cf0b170f116e11fbd2",
+            "residual": "0",
+            "substituted_denominator": "t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "abd446a8b5012e91618a4a85cb8f8cc7caaee09ae6c15a422ee69f57222f8a48",
+          "result": "7/96",
+          "requires": [
+            "a1",
+            "f",
+            "m",
+            "t",
+            "x",
+            "x0"
+          ],
+          "guard": "m*t != 0",
+          "expression": "v = (-a1*m*t**3/6 + f*t**2/2 + m*x - m*x0)/(m*t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "abd446a8b5012e91618a4a85cb8f8cc7caaee09ae6c15a422ee69f57222f8a48",
+            "commitment": "43343e4ab4e041654d4b9860dc3656eab7c484e35e8aa8c320fd09bb8209a817",
+            "id": "670bc930b29e7a33bf45e61d9a9ae10fada5365e6b487d345ec6f04ef85904d3",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without v0, a0",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "13b3a174ed8e68b1a6cd1993bb6c1494695729bdd18645ccc165ca81e94200af",
+            "residual": "0",
+            "substituted_denominator": "m*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "ac2926a3c4c1f676b0f4242190d1f0c0aa71e5ac3257062fb3cfb2d331b23348",
+          "result": "7/96",
+          "requires": [
+            "a0",
+            "a1",
+            "f",
+            "m",
+            "v0"
+          ],
+          "guard": "a1*m**2 != 0",
+          "expression": "v = (-a0**2*m**2/2 + a1*m**2*v0 + f**2/2)/(a1*m**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "ac2926a3c4c1f676b0f4242190d1f0c0aa71e5ac3257062fb3cfb2d331b23348",
+            "commitment": "66f3099e8ba63644276b3a518029ca9652e983c891e0ca8804c83cb81419fc29",
+            "id": "30f10c37924df1fce982278024e1b32b02f88be2b774c46ced1255d44b41ec7a",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict v from retained motion_1 knowledge without t",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "7a500aff75f46d2e89a6154cf5108ee167f19d3b552855ebf568fa42d72556bd",
+            "residual": "0",
+            "substituted_denominator": "a1*m**2"
+          },
+          "origin": "new owned rational route"
+        }
+      ],
+      "physical_fact_added": false,
+      "original_observations": {
+        "t": "3/4",
+        "x0": "-2/3",
+        "v0": "-4/3",
+        "m": "2/3",
+        "a0": "2",
+        "a1": "-1/3",
+        "x": "-433/384",
+        "f": "7/6"
+      }
+    }
+  },
+  {
+    "id": "motion_2",
+    "kind": "solve_solution",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "CHECKED_SOLUTION_PORTFOLIO",
+      "domain": "motion_2",
+      "target": "a1",
+      "answers": [
+        "-1/3"
+      ],
+      "routes": [
+        {
+          "id": "1d656ace64318475f7fa3367951828bc79359b8342d273ecdb2ae161a2e08d38",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "a2",
+            "f",
+            "m",
+            "t"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 10,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "f831759ac0946e681744d7bf45d42d20fc4746dda55032d535987e077dd9274d",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "a2",
+            "t",
+            "v",
+            "v0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 14,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "c1ecf87889229a2089033c8a56401003c9828f1f3ec6e66051c41070ec1aea5c",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "a2",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 20,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "eef4c149f68cefe620a396f375faa807773cae6428a64c6f1bc66af8d2619583",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "a2",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 20,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "036afe74c38e5984854b6f1051ffbaa2810fceec3f78b81fd6c2d45d22c1e988",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 21,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "177778472bc0d44826e91b3ea01675bc1c56a195eefda47a85e828b47791a11f",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 21,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "3a3defe454c7a7cabb95aafe7e065fef68e84c5bc2864ec68713c6da1becf5e0",
+          "result": "-1/3",
+          "requires": [
+            "a2",
+            "f",
+            "m",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 21,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "b523b22866f2b7ddc057fca5d9e28263e222f10be43c82c0333bcf662955c1d4",
+          "result": "-1/3",
+          "requires": [
+            "a2",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 21,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "c6d72b354c874695c7d7bdf24049666b3153665ea96a1d8532fa22c6ef6cfb53",
+          "result": "-1/3",
+          "requires": [
+            "a2",
+            "f",
+            "m",
+            "t",
+            "v",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "m",
+            "t"
+          ],
+          "expression_cost": 21,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "edcb25f0865ba80f38f1884fac3874f56c4615b48e2305c908ac2c1d55262624",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 21,
+          "origin": "retained earlier route"
+        },
+        {
+          "id": "186a7a042076dde488e15d0e5b92c6c649387c88616d3aa1bdd1c6e15b7042aa",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "a2",
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t**3 != 0",
+          "expression": "a1 = (-3*a0*t**2 - a2*t**4/2 - 6*t*v0 + 6*x - 6*x0)/t**3",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "186a7a042076dde488e15d0e5b92c6c649387c88616d3aa1bdd1c6e15b7042aa",
+            "commitment": "79e6398250858ca9e15728a05f77ba6e333e7154cd5256b3a81bd554435b7b44",
+            "id": "4096d9323cf6d86d45e5c5e0f41e7afa4df42d162611125bb3242f28ec163ff5",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict a1 from retained motion_2 knowledge without m, v",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "ebbfc37d7ce5872426df19dba1152e2e9d8e1871a06e982a668c5f4a6a0958d7",
+            "residual": "0",
+            "substituted_denominator": "t**3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "228c4804b74ac1597cbc4dbc0979513c4621505e879be18e34fc65770601651c",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "f*t**2 - 6*m*t*v - 6*m*t*v0 + 12*m*x - 12*m*x0 != 0",
+          "expression": "a1 = (-4*a0**2*m*t - 2*a0*f*t + 6*a0*m*v - 6*a0*m*v0)/(f*t**2 - 6*m*t*v - 6*m*t*v0 + 12*m*x - 12*m*x0)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "228c4804b74ac1597cbc4dbc0979513c4621505e879be18e34fc65770601651c",
+            "commitment": "c392f4d5f8eb0a9c56b30b2c61e66373633cfcb3454ef0bd7ce2385b2a40c506",
+            "id": "b743fabe38e6a3dc20b6f21bda43e2798dbfa9e024070906a233a3ea60441e76",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict a1 from retained motion_2 knowledge without a2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "0c8eb38892c311bf6420dca2cb36ecc3af3ffff0dabb8d54655e0a28322496f9",
+            "residual": "0",
+            "substituted_denominator": "a0*m*t**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "491d460e49d8410aa2efd669db0de03e8925558f9e62fc220a9c82de65c438e9",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "-m*t*x + m*t*x0 != 0",
+          "expression": "a1 = (-a0*m*t*v/2 + a0*m*t*v0/2 + 4*a0*m*x - 4*a0*m*x0 + f*t*v/2 - f*t*v0/2 + 2*f*x - 2*f*x0 - 3*m*v**2 + 3*m*v0**2)/(-m*t*x + m*t*x0)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "491d460e49d8410aa2efd669db0de03e8925558f9e62fc220a9c82de65c438e9",
+            "commitment": "c392f4d5f8eb0a9c56b30b2c61e66373633cfcb3454ef0bd7ce2385b2a40c506",
+            "id": "c9d240dcbd41efb06c5f86d65c31aad328b003c734ec3f1616ac8bc55bc401be",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict a1 from retained motion_2 knowledge without a2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "0c8eb38892c311bf6420dca2cb36ecc3af3ffff0dabb8d54655e0a28322496f9",
+            "residual": "0",
+            "substituted_denominator": "-a0*m*t**3/2 - a1*m*t**4/6 - a2*m*t**5/12 - m*t**2*v0"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "623c58e1d86714f809c4765ac6e4bd11d4796837c1d65be6a038e000732a7c09",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "f",
+            "m",
+            "t",
+            "v",
+            "v0"
+          ],
+          "guard": "m*t**2 != 0",
+          "expression": "a1 = (-4*a0*m*t - 2*f*t + 6*m*v - 6*m*v0)/(m*t**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "623c58e1d86714f809c4765ac6e4bd11d4796837c1d65be6a038e000732a7c09",
+            "commitment": "c392f4d5f8eb0a9c56b30b2c61e66373633cfcb3454ef0bd7ce2385b2a40c506",
+            "id": "b7399ca0aa8351be1e2ff717d7fc586f553a831433f0f3f3818d1b17f7c58741",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict a1 from retained motion_2 knowledge without a2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "0c8eb38892c311bf6420dca2cb36ecc3af3ffff0dabb8d54655e0a28322496f9",
+            "residual": "0",
+            "substituted_denominator": "m*t**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "7fb824540a2d129af389a25baee53ed1b33c69ece4d0621378e1d7cc8dd98d2e",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "t",
+            "v",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "guard": "t**3 != 0",
+          "expression": "a1 = (-6*a0*t**2 - 6*t*v - 18*t*v0 + 24*x - 24*x0)/t**3",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "7fb824540a2d129af389a25baee53ed1b33c69ece4d0621378e1d7cc8dd98d2e",
+            "commitment": "c392f4d5f8eb0a9c56b30b2c61e66373633cfcb3454ef0bd7ce2385b2a40c506",
+            "id": "a3c172f6e0376dad0b28865fb0b03b453f5fd0bf0ada0e8c4d6630c8c8f130df",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict a1 from retained motion_2 knowledge without a2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "0c8eb38892c311bf6420dca2cb36ecc3af3ffff0dabb8d54655e0a28322496f9",
+            "residual": "0",
+            "substituted_denominator": "t**3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "b4b02aae3ecc7b7e675615a3790b4ba075b05e6dfdfe8ab5fea42ab9fa1da1d3",
+          "result": "-1/3",
+          "requires": [
+            "a0",
+            "a2",
+            "f",
+            "m",
+            "t"
+          ],
+          "guard": "m*t != 0",
+          "expression": "a1 = (-a0*m - a2*m*t**2 + f)/(m*t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "b4b02aae3ecc7b7e675615a3790b4ba075b05e6dfdfe8ab5fea42ab9fa1da1d3",
+            "commitment": "225aaa3ad56f1c65420870a4d673e233428280a9f20dcf623bb32f605676f404",
+            "id": "f9ab5ec1978af9d51a5357a81bb15bcf29cb3c0ee7b20a7b6125d0b52b0ca90a",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict a1 from retained motion_2 knowledge without v0, x",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "133fdf3b43116fab45724580824d337db2e8ed409e39316f96b37518b6bb8859",
+            "residual": "0",
+            "substituted_denominator": "m*t"
+          },
+          "origin": "new owned rational route"
+        }
+      ],
+      "physical_fact_added": false,
+      "original_observations": {
+        "t": "3/4",
+        "x0": "-2/3",
+        "v0": "-4/3",
+        "m": "2/3",
+        "a0": "2",
+        "a2": "-2/3",
+        "v": "-1/48",
+        "x": "-1759/1536",
+        "f": "11/12"
+      }
+    }
+  },
+  {
+    "id": "polynomials",
+    "kind": "solve_solution",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "CHECKED_SOLUTION_PORTFOLIO",
+      "domain": "polynomials",
+      "target": "c1",
+      "answers": [
+        "-5/3"
+      ],
+      "routes": [
+        {
+          "id": "014db375f2d0038a4b004f26d12519c5875a258e165f24797155f692d41c7ab8",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t + 3*c0 + c2*t + p*t - 3*p - 6*s != 0",
+          "expression": "c1 = (2*c0**2 - 2*c0*c2*t**2 - 3*c0*c2*t - c2**2*t**2 + 3*c2*p*t + 6*c2*s*t - 2*p**2)/(c0*t + 3*c0 + c2*t + p*t - 3*p - 6*s)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "014db375f2d0038a4b004f26d12519c5875a258e165f24797155f692d41c7ab8",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "4b3b8d3faef51d4455983502f799cfadc2021a351c92481f1e4c38a6e936460d",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "-4*c0*t - 2*c1*t**2 - c2*t**3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "034a58036353fe0d448f84ea4198b859f3b8389857b12e27cb2c09fdb7222e29",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t**2 - 21*c0*t/4 - 9*c0/4 - 3*c2*t/4 - p*t**2/2 - 3*p*t/4 + 9*p/4 + 3*s*t + 9*s/2 != 0",
+          "expression": "c1 = (-4*c0**2*t + 6*c0*c2*t**2 + 5*c0*c2*t/4 + 3*c0*s + 3*c2**2*t**2/4 - 7*c2*p*t/4 - 3*c2*s*t**2 - 9*c2*s*t/2 + p**2*t)/(c0*t**2 - 21*c0*t/4 - 9*c0/4 - 3*c2*t/4 - p*t**2/2 - 3*p*t/4 + 9*p/4 + 3*s*t + 9*s/2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "034a58036353fe0d448f84ea4198b859f3b8389857b12e27cb2c09fdb7222e29",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "d9c3ceee77c53335fcc37f5cf4ce4b28ea4de9e4d4115974c86aecf532ba1692",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "7*c0*t**2/2 - 3*c0*t/2 + c1*t**3 + c2*t**4/2 - 3*c2*t**3/4 + c2*t**2/2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "05a991b70fed8681c7ad54e45fffd63741912fef4fc4d5c694c6970e16f78998",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t**2 - c0*t/3 - 2*i - p*t**2 + p*t/3 - 2*s*t**2 != 0",
+          "expression": "c1 = (-4*c0**2*t + 4*c0**2/3 + 2*c0*p*t - 2*c0*p/3 + 8*c0*s*t - 12*i**2 + 2*p**2*t - 2*p**2/3 + 4*p*s*t)/(c0*t**2 - c0*t/3 - 2*i - p*t**2 + p*t/3 - 2*s*t**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "05a991b70fed8681c7ad54e45fffd63741912fef4fc4d5c694c6970e16f78998",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "84aaf10e6b6b8389fbd65ddb86a11cc466997b0ad768ddcc24089032dc3da2e1",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "-2*c0*t**3 - 2*c0*t - c1*t**4 - 2*c1*t**2/3 - 2*c2*t**5/3 - 2*c2*t**3/3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "424e674e559ca7bd93fe7eec740398152ce8882676248718b50c269eca96d600",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "s",
+            "t"
+          ],
+          "guard": "t**2 - t != 0",
+          "expression": "c1 = (-2*c0*t - 2*c2*t**3/3 + c2*t**2 - c2*t/3 + 2*s)/(t**2 - t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "424e674e559ca7bd93fe7eec740398152ce8882676248718b50c269eca96d600",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "799396d7aacada2a8313961d8536e0473f61b0c1de08e86429f4ecb4e62b2ef8",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "t**2 - t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "470b12895da7184840946bddc8f20b548a1cde6085225675c641b853c1ee08e6",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "t**3 - t/3 != 0",
+          "expression": "c1 = (2*c0*t**3 - 2*c0*t**2 - c0*t + c0/3 + 4*i*t**3 - 2*p*t**3 + p*t - p/3 - 4*s*t**3 + 2*s*t)/(t**3 - t/3)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "470b12895da7184840946bddc8f20b548a1cde6085225675c641b853c1ee08e6",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "613b7ce33b4ff0606c57a84d4a27b367d7a4ec1a717fa58167ba99e2a501073e",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "t**3 - t/3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "68059cbcda3156e27c3627b2d669bd08338d7fd554ae6db6cc694938b983d15f",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "2*c0*t/3 + 2*c0 + c2*t**2 - 7*c2*t/3 + 2*p*t/3 - 2*p - 4*s != 0",
+          "expression": "c1 = (4*c0**2/3 - 4*c0*c2*t**2/3 - 6*c0*c2*t + 7*c2**2*t**2/3 - c2**2*t + 4*c2*s*t + 6*c2*s - 4*p**2/3)/(2*c0*t/3 + 2*c0 + c2*t**2 - 7*c2*t/3 + 2*p*t/3 - 2*p - 4*s)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "68059cbcda3156e27c3627b2d669bd08338d7fd554ae6db6cc694938b983d15f",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "ef019f1d459dcd818e552d0fad07b99100557b6e3d2d39d846bf4595f361dd62",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "-8*c0*t/3 - 4*c1*t**2/3 - 2*c2*t**3/3 + c2*t**2 - 3*c2*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "68f4be885e54075fbc57b2f6e3930d9c30e78737a0b766fe8079469221358e2d",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t - 3*c0 - p*t + 3*p + 6*s != 0",
+          "expression": "c1 = (-4*c0**2 + 3*c0*c2*t - c0*c2 + 2*c0*p - 3*c2*p*t + c2*p - 6*c2*s*t + 2*p**2)/(c0*t - 3*c0 - p*t + 3*p + 6*s)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "68f4be885e54075fbc57b2f6e3930d9c30e78737a0b766fe8079469221358e2d",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "034c49a5d9953d00736672450595b87f3b5d86c41e2b6d122f9fb8681f54b537",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "6*c0*t + 2*c1*t**2 + c2*t**3 + c2*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "6b9fd4049f99cf2ad31b0930431b2cd3c8f74a8de5265f5b2a866e2db4570c10",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t + 6*i - p*t != 0",
+          "expression": "c1 = (-4*c0**2 + 18*c0*i + 2*c0*p + 36*i**2 - 18*i*p - 36*i*s + 2*p**2)/(c0*t + 6*i - p*t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "6b9fd4049f99cf2ad31b0930431b2cd3c8f74a8de5265f5b2a866e2db4570c10",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "5c1a9240a44bdebdf2b8c8139cb59f51678ff66c2d2b1c717cc70a1461aa7cf9",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "6*c0*t + 2*c1*t**2 + c2*t**3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "6d919de781e4d8d076568f05fd1b8f212ea7dca6f47efd70fef15bffd3685df6",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "t**3 - t != 0",
+          "expression": "c1 = (-4*c0*t**2 - 3*c0*t + c0 - 2*p*t**2 + 3*p*t - p + 6*s*t)/(t**3 - t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "6d919de781e4d8d076568f05fd1b8f212ea7dca6f47efd70fef15bffd3685df6",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "30761024c4b255ed54541cf4ad680dfdc3f8e7643070773b31e291ed13f7eacc",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "t**3 - t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "72bcad08479151a5c93ab4fc9f93a328cb1896da54397d782145ffcb03d32c26",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "t"
+          ],
+          "guard": "t**2 != 0",
+          "expression": "c1 = (-4*c0*t + 6*i - 2*p*t)/t**2",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "72bcad08479151a5c93ab4fc9f93a328cb1896da54397d782145ffcb03d32c26",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "9bbac3fdb86046eae080588b5f32ac313a3a0a7e502cd02d36c6506b1f313c01",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "t**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "7e31f58946692f2c2ae344d56c062eedfbc935f2da54c4ce2778986641705026",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t + c0 + c2*t/3 + p*t - p - 2*s != 0",
+          "expression": "c1 = (-4*c0*c2*t**2/3 - c0*c2*t - c2**2*t**2/3 - 2*c2*p*t**2/3 + c2*p*t + 2*c2*s*t)/(c0*t + c0 + c2*t/3 + p*t - p - 2*s)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "7e31f58946692f2c2ae344d56c062eedfbc935f2da54c4ce2778986641705026",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "d39ca9966809261982a782c3278779eb5e9366f0962c25501753920a4667618a",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "c2*t**3/3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "7e362cdf8725168cd4a8c0e4427256aa63967e9e3b9c6dc7908f2332afc839d0",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "-c0*t/3 + i + p*t**2 - 2*p*t/3 + 2*s*t**2 != 0",
+          "expression": "c1 = (3*c0**2*t**2/2 - c0**2/6 + 6*c0*i*t**2 - c0*p*t + c0*p/3 - 2*c0*s*t + 6*i**2*t**2 - 3*p**2*t**2/2 + p**2*t - p**2/6 - 6*p*s*t**2 + 2*p*s*t - 6*s**2*t**2)/(-c0*t/3 + i + p*t**2 - 2*p*t/3 + 2*s*t**2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "7e362cdf8725168cd4a8c0e4427256aa63967e9e3b9c6dc7908f2332afc839d0",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "18696ad447637aac3b820e05c7d4d24bd85b3dbea969a51b49fe2c3782ef7cc8",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "2*c0*t**3 + c0*t**2 + c1*t**4 - c1*t**2/6 + 2*c2*t**5/3"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "84dfd0cefe57a6833fe9b66becd1f93afccdd4a04c544b8832b55f13f9c98246",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t**2 - 21*c0*t/4 - 9*c0/4 - 7*c2*t**2/8 + 15*c2*t/8 - p*t**2/2 - 3*p*t/4 + 9*p/4 + 3*s*t + 9*s/2 != 0",
+          "expression": "c1 = (-4*c0**2*t + 6*c0*c2*t**2 + 19*c0*c2*t/4 + 3*c0*s - 15*c2**2*t**2/8 + 7*c2**2*t/8 - 3*c2*s*t**2 - 9*c2*s*t/2 - 21*c2*s/4 + p**2*t)/(c0*t**2 - 21*c0*t/4 - 9*c0/4 - 7*c2*t**2/8 + 15*c2*t/8 - p*t**2/2 - 3*p*t/4 + 9*p/4 + 3*s*t + 9*s/2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "84dfd0cefe57a6833fe9b66becd1f93afccdd4a04c544b8832b55f13f9c98246",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "bba8d191faa47a9c55dc48a8516713c6b94e24618595ed0d030666171f12ce7d",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "7*c0*t**2/2 - 3*c0*t/2 + c1*t**3 + c2*t**4/2 - 3*c2*t**3/4 - 3*c2*t**2/8 + 21*c2*t/8"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "a47a2b557f1635e1b1436b70a059c704c8ab29b306f907c95d8428f1e0fe1de1",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0*t**2 - 3*c0*t + 6*i*t - p*t**2 + 3*p*t + 6*s*t != 0",
+          "expression": "c1 = (-13*c0**2*t + 3*c0**2 + 20*c0*p*t - 6*c0*p + 36*c0*s*t - 6*c0*s + 36*i**2*t - 7*p**2*t + 3*p**2 - 36*p*s*t + 6*p*s - 36*s**2*t)/(c0*t**2 - 3*c0*t + 6*i*t - p*t**2 + 3*p*t + 6*s*t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "a47a2b557f1635e1b1436b70a059c704c8ab29b306f907c95d8428f1e0fe1de1",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "b9a1c79c477c62e69b0b67978ffa090406775469fbd6b0393f9576cbfb49829a",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "12*c0*t**2 + 5*c1*t**3 + 3*c2*t**4 + c2*t**2"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "d10684da71c5c5de793ab6b645dd4a917355e56925c254041170a9c2b0fbb352",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "2*c0*t + 2*c0 + c2*t**2 - 7*c2*t/3 + 2*p*t - 2*p - 4*s != 0",
+          "expression": "c1 = (-8*c0*c2*t**2/3 - 6*c0*c2*t + 7*c2**2*t**2/3 - c2**2*t - 4*c2*p*t**2/3 + 4*c2*s*t + 6*c2*s)/(2*c0*t + 2*c0 + c2*t**2 - 7*c2*t/3 + 2*p*t - 2*p - 4*s)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "d10684da71c5c5de793ab6b645dd4a917355e56925c254041170a9c2b0fbb352",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "05c906bac3a765b42918b5affa9431018bc0f44ebd805ba235bffa288b6b8939",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "2*c2*t**3/3 + c2*t**2 - 3*c2*t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "e8250a54aa89bc655e6dbcf0293e0b1e315cf7e407d92ba78ce97c5c36a55f7f",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "c0**2*t - 9*c0*i*t/5 + 3*c0*i/5 - 2*c0*p*t - 18*c0*s*t/5 + 18*i**2*t/5 + 9*i*p*t/5 - 3*i*p/5 + 18*i*s*t/5 + p**2*t + 18*p*s*t/5 + 18*s**2*t/5 != 0",
+          "expression": "c1 = (27*c0**3*t/10 - 13*c0**3/10 + 18*c0**2*i/5 - 81*c0**2*p*t/10 + 33*c0**2*p/10 - 81*c0**2*s*t/5 + 18*c0**2*s/5 - 36*c0*i*p/5 - 36*c0*i*s/5 + 81*c0*p**2*t/10 - 27*c0*p**2/10 + 162*c0*p*s*t/5 - 36*c0*p*s/5 + 162*c0*s**2*t/5 - 18*c0*s**2/5 + 108*i**3*t/5 + 18*i*p**2/5 + 36*i*p*s/5 - 27*p**3*t/10 + 7*p**3/10 - 81*p**2*s*t/5 + 18*p**2*s/5 - 162*p*s**2*t/5 + 18*p*s**2/5 - 108*s**3*t/5)/(c0**2*t - 9*c0*i*t/5 + 3*c0*i/5 - 2*c0*p*t - 18*c0*s*t/5 + 18*i**2*t/5 + 9*i*p*t/5 - 3*i*p/5 + 18*i*s*t/5 + p**2*t + 18*p*s*t/5 + 18*s**2*t/5)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "e8250a54aa89bc655e6dbcf0293e0b1e315cf7e407d92ba78ce97c5c36a55f7f",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "01440b00f78f2beff5f8a5e3e7446e9d782abed9060d357b216af37f4055a9e5",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "54*c0**2*t**3/5 + 54*c0*c1*t**4/5 - 3*c0*c1*t**2/5 + 36*c0*c2*t**5/5 + 6*c0*c2*t**3/5 + 27*c1**2*t**5/10 - c1**2*t**3/5 + 18*c1*c2*t**6/5 + 3*c1*c2*t**4/5 + 6*c2**2*t**7/5 + c2**2*t**5/2 + c2**2*t**3/10"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "eed1e7db2a44cc90263a81fb8d3674a7e7d13311b451e2b0c8ad86d8bb2a1aab",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "t"
+          ],
+          "guard": "t != 0",
+          "expression": "c1 = (-c0 - c2*t**2 + p)/t",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "eed1e7db2a44cc90263a81fb8d3674a7e7d13311b451e2b0c8ad86d8bb2a1aab",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "8df524a4b37c67ce2b81ad2fdf7f024052d530dc1507b65baffe64622e205f7d",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "ef1caaa2547851caf79e57d1ac2eb7fae4927db9653ccb47bed5e5322351bcaa",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "t**3 - 2*t**2/3 - t != 0",
+          "expression": "c1 = (-6*c0*t**2 - 7*c0*t/3 + c0 - 4*i*t**2 + 7*p*t/3 - p + 4*s*t**2 + 6*s*t)/(t**3 - 2*t**2/3 - t)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "ef1caaa2547851caf79e57d1ac2eb7fae4927db9653ccb47bed5e5322351bcaa",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "e790bd36c396bc1a09ea18a4be05c632327a023ef0f084715a902af90dd906c0",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "t**3 - 2*t**2/3 - t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "f006d2cf628fd4134b976211b8e0496f589320adb2cc7a1ccb5efc9e13e6c42e",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "i",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "t != 0",
+          "expression": "c1 = (3*c0*t - c0 + 6*i*t - 3*p*t + p - 6*s*t)/t",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "f006d2cf628fd4134b976211b8e0496f589320adb2cc7a1ccb5efc9e13e6c42e",
+            "commitment": "5c70d31cdb43a276aba45bed41cdfd64a41bdb5e15d08ff40ef2cb98fd30b35f",
+            "id": "92b2c9fb463be29bdd46385487b73655b82543c91ff0c074045996c966f2c013",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without c2",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "2aa63e0498afe3abd6855a3e21d7e763c718091e24a80d6a01609d7bef7921fb",
+            "residual": "0",
+            "substituted_denominator": "t"
+          },
+          "origin": "new owned rational route"
+        },
+        {
+          "id": "fc587faddaf1d4f11926e690d11e231e1d0c52fc43d67738f1a45aea60b584ec",
+          "result": "-5/3",
+          "requires": [
+            "c0",
+            "c2",
+            "p",
+            "s",
+            "t"
+          ],
+          "guard": "t**3 + 3*t**2/2 - 9*t/2 != 0",
+          "expression": "c1 = (-4*c0*t**2 - 9*c0*t + 7*c2*t**2/2 - 3*c2*t/2 - 2*p*t**2 + 6*s*t + 9*s)/(t**3 + 3*t**2/2 - 9*t/2)",
+          "proof": {
+            "accepted": true,
+            "assumptions": "retained polynomial-model laws; t > 0; m > 0 for motion; integer t for finite sums; explicit denominator guard",
+            "candidate": "fc587faddaf1d4f11926e690d11e231e1d0c52fc43d67738f1a45aea60b584ec",
+            "commitment": "d506767a011bf0b57962e51b0ce56ff19c52a8f3591fa2a32d1c91e1e0f3a4e3",
+            "id": "feb51c38f04eaf485a2eab5c83b773dc45f4e17bbbbb87008c9dacf875729d4b",
+            "kind": "EXACT_CONDITIONAL_RATIONAL_IDENTITY",
+            "original_goal": "Predict c1 from retained polynomials knowledge without i",
+            "physical_fact_added": false,
+            "predictor": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+            "proof": "Substitute the independently specified domain laws; expand target*D - N; verify zero. Divide only when D != 0.",
+            "question": "07b63db46460968a6ad9082d2d1ad3251f7e1363cd83eb4e8b9039236e884d37",
+            "residual": "0",
+            "substituted_denominator": "t**3 + 3*t**2/2 - 9*t/2"
+          },
+          "origin": "new owned rational route"
+        }
+      ],
+      "physical_fact_added": false,
+      "original_observations": {
+        "t": "3",
+        "c0": "-2/3",
+        "c2": "-7/3",
+        "p": "-80/3",
+        "i": "-61/2",
+        "s": "-56/3"
+      }
+    }
+  },
+  {
+    "id": "self-identified-gap",
+    "kind": "gap_findings",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "goal": {
+        "goal": {
+          "parent": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "target": "Position (m)",
+          "question": "Does the retained explanation cover its own unexamined observations, and what executable refinements explain any mismatch?"
+        },
+        "id": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+        "input": "Time (s)",
+        "target": "Position (m)",
+        "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+        "source_hash": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+        "reason": "The retained prediction covers only part of its own recorded observation source",
+        "development_rmse_of_retained_explanation": 20.4784094267622,
+        "mismatch_detected": true,
+        "tolerance": 0.05,
+        "original_scope_preserved": true,
+        "novel_mechanism_labels_supplied": [],
+        "gap_kind": "empirical coverage beyond the previously checked interval"
+      },
+      "investigation": {
+        "arm": "residual",
+        "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+        "basis": "lowest development score; fixed before independent credit/final",
+        "contracts": {
+          "runtime": "50b79f53634c76fe4b310e2efdbc3ee9889b044f5450e47b825c4a7f9c0292e9",
+          "assessor": "3622b2c70431dfcd69e7ca31e8dc00374ea2f586843d7c0232971b98ca7a558d",
+          "protocol": "e475bcbd3c2112de014ca9663f2fc23f2700715f2ce8df535515107d31aef012"
+        },
+        "portfolios": {
+          "learned": [
+            "34c2f28f4986deefdfcd0f4cb7fba537d7e4bfeb4331fd1662569917e83f8359",
+            "21e0c835ae7ec96440f6b2527ca27b0ae8691b4a5acd503a18f3465c6e125366",
+            "cfa9cff55b7a125784d36c64b132ab273533b9601a5610112c6e398acbbe2475",
+            "25a99ee92051cc294c349a893c8fc08db5a2dee666ce2483fa61d30f3045c514",
+            "bb9fa56ea6b1a87c9c5e4d378b0b45c9b837f22b1e14dcd565f59ffb4eb858af",
+            "f0514aa2bb54ed660786d3fe4db4d8c8364afbdd923779379b4dd42ce203fd07",
+            "d8389e2682b4f7a1bc2b0cde16fc6e9a99f48a222920ef7feec5e81fb5074518",
+            "a8cf7c4db280706793a00e8cb47679b447c5dda45a2f5beaa379a2c940817f3b"
+          ],
+          "residual": [
+            "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+            "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+            "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+            "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+            "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+            "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+            "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+            "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443"
+          ],
+          "balanced": [
+            "c6a019a53001343e517a44106e1cbfd2562ac8dbab4d7f2b64e96064100c0e6c",
+            "372f8a9d6419d595e09a4a1f3e2402542008fca361176936342e40524c37cd58",
+            "8258efbc48d1b15b24bb85b2c753c89b712d372b72535ca0dcfdfe14863567cb",
+            "c5c2be9038ea24c7eabff7a413356d7f5e594d6a70662a1be8621b456a8dd2db",
+            "6740b540322283eeb65e73ffead478b7b8ec7f5b636c8838dadf5c5b9303cd0a",
+            "a57cf98faac3a4d4e99d293eaa21ad32abdedc0639bbaa5160054876e543e0bd",
+            "beb70cd77b96a4cdf99b133712bf221cf46acd81f470a4375d1d71a048c1c6a9",
+            "5fb984ec7a4cdee5f223f923526a86c520ca827f10c79d5b9b83934ebe0d4671"
+          ]
+        },
+        "search_wall_seconds_this_invocation": 110.65279139997438,
+        "counts": {
+          "learned": {
+            "candidates": 4096,
+            "attempts": 12175,
+            "duplicates": 8079,
+            "fitted": 2365
+          },
+          "residual": {
+            "candidates": 4096,
+            "attempts": 9712,
+            "duplicates": 5616,
+            "fitted": 2785
+          },
+          "balanced": {
+            "candidates": 4096,
+            "attempts": 5576,
+            "duplicates": 1480,
+            "fitted": 2591
+          }
+        }
+      },
+      "open_goals": [
+        {
+          "id": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "question": "What independently observed variable explains the retained time-local changes?",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e",
+          "status": "EMPIRICAL_ALTERNATIVES_RETAINED_CAUSE_OPEN"
+        }
+      ],
+      "scope": {
+        "new_source_range": [
+          0.05,
+          4.65
+        ],
+        "preserved_original_range": [
+          0.85,
+          1.7999999999999998
+        ],
+        "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+        "origin": 0.7999999999999999
+      },
+      "models": [
+        {
+          "id": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -171.9490296188501,
+            -1025.9216788739932,
+            -4042.8845328654656,
+            -7960.140261706138,
+            -1.039828996397091,
+            658.606100930877,
+            9427.306188764634,
+            -135.87309988209165,
+            278.1965910380316,
+            -5800.137621134109,
+            4.691534139331054,
+            151.15760498826808,
+            4714.082706871492,
+            3.7133805578102113,
+            7.676380642052422,
+            -375.84527930950196
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -183.2662361468326,
+            -1093.9871639494058,
+            -4315.490243528296,
+            -8505.435987622648,
+            0.06892421318964798,
+            651.3287888043776,
+            10678.735040684409,
+            -152.60528822432732,
+            278.3199362426627,
+            -7205.095591957332,
+            -0.7845916385432106,
+            101.11095369375516,
+            4713.4116643718435,
+            7.5314089065744785,
+            -118.46623807814437,
+            4815.678979042045,
+            -1.155664500223522,
+            -119.6754709611244,
+            -4506.227123978009
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.825,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -172.28078349862105,
+            -1027.9169582476047,
+            -4050.875727683346,
+            -7976.125122656179,
+            -1.0073268786640588,
+            658.3927729753348,
+            9463.99071650786,
+            -133.7322034969118,
+            199.8826957934105,
+            -4979.949929107175,
+            1.497162562901563,
+            -217.60903980975263,
+            3510.944075638036,
+            4.772667469753626,
+            -780.1078267242308,
+            37086.428893642435,
+            -2.8657481479865967,
+            -811.9748323627758,
+            -37111.43864994223
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -170.5607771759702,
+            -1017.5722619310288,
+            -4009.444695672818,
+            -7893.250245894657,
+            -1.1758368838603928,
+            659.4987899807388,
+            9273.796649410506,
+            -133.83538253699902,
+            278.588178789787,
+            -5631.878933713083,
+            4.149601942462694,
+            161.08279129137134,
+            4360.031390978649,
+            6.648679304727343,
+            -117.5760387752624,
+            3738.362391968653,
+            -0.980668965914091,
+            -102.26266947562281,
+            -3855.312452265459
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "program": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              1.3250000000000002,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          },
+          "weights": [
+            -1.9998284702581977,
+            -13.708381960132717,
+            -26.97494287431547,
+            -10.759584947795307,
+            164.48528510780068,
+            2.8543295370249453,
+            142.77042413855807,
+            -88.25573683849748,
+            11.053575203552803,
+            4.466889370203402,
+            -313.75243640584785,
+            3.532649815561509,
+            22.325029041533824
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "program": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              0.775,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          },
+          "weights": [
+            -1.619444172227848,
+            -12.211359631237183,
+            -24.032461921587036,
+            -11.350348836739593,
+            184.88428868953332,
+            -0.12795454661879546,
+            232.64842345935563,
+            -6.511270220920398,
+            -448.4264561168287,
+            9.145724333056155,
+            31.529319231171602,
+            3.617463508224728,
+            23.258459581535114
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.925,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          },
+          "weights": [
+            -13.247355424254238,
+            -58.29308998234944,
+            -115.20678743521724,
+            -8.033261449686748,
+            424.96917195075844,
+            -96.85492827606205,
+            21.187321582210515,
+            -0.4166159653873507,
+            -351.67795789065866,
+            -7.528041911845852,
+            595.6802798550468,
+            -2.2501259832875373,
+            -574.8652434406379
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        },
+        {
+          "id": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "program": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          },
+          "weights": [
+            -185.54906023963036,
+            -1107.7168355634747,
+            -4370.47827282636,
+            -8615.429051523844,
+            0.2925737978930556,
+            649.8608626496316,
+            10931.164112002647,
+            -156.09485128922813,
+            281.62747979183115,
+            -7523.129368120066,
+            -0.23013963016802563,
+            99.42600457810192,
+            5049.182394566877,
+            4.308686454883713,
+            36.734764009124675,
+            166.35706714903262
+          ],
+          "basis": [
+            [
+              1.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.16666666666666666
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.041666666666666664
+            ]
+          ],
+          "coordinate_center": 2.4872340425531916,
+          "coordinate_scale": 4.6000000000000005
+        }
+      ],
+      "credit": [
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4833990987052426,
+              1.4769692812262796,
+              1.2898565908529624,
+              1.2375598299568598,
+              1.1976082548788045,
+              1.178084449346745,
+              1.1310909162019525,
+              0.9888154272563391,
+              0.9895207806700892,
+              0.9899360388521048,
+              0.9904764599843507,
+              0.9916747544055817,
+              0.9916873922369611
+            ],
+            "rmse": 0.011134360860479364,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "credited_ids": [
+            "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+            "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+            "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+            "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+            "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+            "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+            "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+            "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+            "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+            "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+            "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+            "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+            "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+          ],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "08caf25d42d03e402b24bc335508d249156e55c2b71c8219b8240c2b4eeac560",
+          "points": 12.99976709528272,
+          "predictor": "a041cfcfb452550f093a4240f8bec94c6411ca4ec281cb19cf0d4e44d4e9d66e",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.48207258522811,
+              1.4851450447340824,
+              1.312293490887626,
+              1.2126618322638267,
+              1.2118865087446427,
+              1.1921514609370933,
+              1.1404988211966391,
+              0.9893228261047977,
+              0.9904385633956415,
+              0.9908472920117678,
+              0.9910929868683737,
+              0.9912827625532707,
+              0.9921525283437708
+            ],
+            "rmse": 0.012858102198370098,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "f071d7b472d1b5fb2adf2ff584ab503aa7b14be879278057ff5f966a51bda4f4",
+          "points": 0.0,
+          "predictor": "d6fd6e220d0a094f910e01c9f71ac08176ff703e2c5de0cb537a0d133654093f",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4829700574989202,
+              1.4772782367509336,
+              1.2869592226532638,
+              1.2320857501687388,
+              1.1996641169795652,
+              1.1801310010794412,
+              1.1327719219286432,
+              0.9886051026363891,
+              0.9894750102964266,
+              0.9899731747071485,
+              0.9905977602792566,
+              0.9916033979486887,
+              0.9914429528393811
+            ],
+            "rmse": 0.011276590511501518,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "7a292d9fbae3730d5d4a94979122f1a94f408d1ab57de87669547eb9d84b5149",
+          "points": 0.0,
+          "predictor": "53d1d3eca14794b54cb35fb3492efa8d682997af6c44e8a63b6a9215dd225b26",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4821229981241686,
+              1.4850282990826429,
+              1.3129449259424746,
+              1.212169443277982,
+              1.2123416583573563,
+              1.193887458526117,
+              1.1438061455799422,
+              0.9896174409201622,
+              0.9889650290318026,
+              0.9890048575216939,
+              0.9895648291920516,
+              0.992315799525508,
+              0.9914148712403759
+            ],
+            "rmse": 0.013753552289741565,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "388cb140e18bf0378f1eac3f9ae912583eca679ce009394304dc3d3b0b8dd544",
+          "points": 0.0,
+          "predictor": "6a12d340ccbfba01b9577719eb52df07fe888ebb44be7195dcca961d9747531b",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.482060537943454,
+              1.4851729437120298,
+              1.3121378159550403,
+              1.2291708072419352,
+              1.2032443691285928,
+              1.1857138662593167,
+              1.143405162053964,
+              0.9884378486379208,
+              0.9884956673473112,
+              0.9888337912120475,
+              0.9896323856873086,
+              0.9922055263560062,
+              0.9913940513506219
+            ],
+            "rmse": 0.012143028332455374,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "02d66eb7a2a25712ea9556b54e3ba4ec8c056ef3c385da8d60cb582e0fe3a22e",
+          "points": 0.0,
+          "predictor": "3d51344dfee739a1bba01c579ea924e4a3e49bcc2504fad1ae70ba326968f457",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.500149690698363,
+              1.4782057976747822,
+              1.3432045486682291,
+              1.2328429043327445,
+              1.2030379049588733,
+              1.185634419254374,
+              1.1434804776919163,
+              0.989649331467633,
+              0.9897022530406873,
+              0.989788800997147,
+              0.9899955232935569,
+              0.99195767159323,
+              0.9926565562043974
+            ],
+            "rmse": 0.016838755825616898,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "466285ef28db7a0828a23ceb45bc55e93f94dd111853b9c339705491d01e1269",
+          "points": 0.0,
+          "predictor": "ff5d63a964b0466be2e8f158e791f48b7accc138cb707112453873b43046821f",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.4816616130358966,
+              1.486096769806494,
+              1.3069829113286175,
+              1.216901939889455,
+              1.2068247557637668,
+              1.1895640249446124,
+              1.143514338363132,
+              0.9898543164131931,
+              0.9890264358749953,
+              0.9889999909313287,
+              0.9895190989321938,
+              0.9923584629122503,
+              0.9914061040214827
+            ],
+            "rmse": 0.012504146234245303,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "d71d2ec9ae8d02d696a3c996863d465ac57d255cafcd16b19aec6c1409ade142",
+          "points": 0.0,
+          "predictor": "1e7ae25ee94bb9c1a7e1a6d3295fe2d849a5d8e117beb642cd5e42dd884b77ab",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        },
+        {
+          "assessment": {
+            "accepted": true,
+            "baseline_rmse": 23.25012553310017,
+            "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+            "causal_mechanism_identified": false,
+            "ids": [
+              "e9a3d22a80753305b10dec7d426d98d4a08abccab6ca161db05a223be5bcdfb6",
+              "c8280aad1ccd0331397db7a886c33dbc32b4c9179a6a11331c032eb1947dd247",
+              "ada8bfc90c0dbe8df4d245836d8a9b70eda265b2485d2d4ccfa8716eb1f98d69",
+              "f8def7bfcf8eb61475c0a706249b19a8594f65c2fb288062b44f27df1c863e11",
+              "efacae2131c92fe2fcb688c01014bb05af107f3980413c5648bf30e92a1b30c6",
+              "c3d71723b66d634246e1080e70dd731ab9657a945f47becb1f073ed91821e8fd",
+              "a2484537d2a07a43910738daf0dfdfc8628e5051f77635c36e12ccdd70e332fd",
+              "e90d30db7f545216f3c7c906675e5481ed678a73636a8c699309fc603dbeca32",
+              "aed620499877e29f904009778a5ad01f9da75f0b605934c6e5d2b90cbd52b835",
+              "d64ea37bbe236ea5fa7ca505f5236b406365469792d922a2951e2379d3fc3058",
+              "1fa5fa572db16aea40d676209ba035b15dc7bd1c61eaf4bd726e9ec173248f81",
+              "840d3415f878b9209cbf3f6660d6fd4bb7c31452efdd7b2cb80bbb61eacbc825",
+              "7f236eab5262510cd61c0a7644b20c407fec13ca88687ab9b9f316443e5bfd66"
+            ],
+            "predictions": [
+              1.48157871473299,
+              1.4862887448248046,
+              1.3059117000777576,
+              1.217454609553927,
+              1.2040563342184212,
+              1.1859366942379257,
+              1.1398197009259925,
+              0.9895460459953936,
+              0.9909286245100393,
+              0.9913551619240346,
+              0.9914613976447455,
+              0.9910500117263338,
+              0.9923438407282491
+            ],
+            "rmse": 0.011209536338082148,
+            "scope": "reserved measurements from the retained source; empirical interpolation"
+          },
+          "candidate": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "credited_ids": [],
+          "evidence": "1eaa024a1fa855128e0c004fa0e7b2d1d96149589a6001b34e7023243cf1fb2a",
+          "goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+          "identity": "5b2159c249d16bfe7d1dbe99e9dcf12004903b1fc02cda3ff15b7568c61d9303",
+          "points": 0.0,
+          "predictor": "ffbadb91c47c4654bb9113905b6e9a66d8b2a7975b8e97011b3944d07f40f96e",
+          "purpose": "independent_credit",
+          "qualification": "empirical_prediction",
+          "source": "8e33086344445868dee132927f9cbb83c91285cd4d16a4ae912fe4f518296c7e"
+        }
+      ],
+      "status": "VERIFIED_EMPIRICAL_EXPLANATION_PORTFOLIO"
+    }
+  },
+  {
+    "id": "imagined-alternatives",
+    "kind": "gap_predict",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "scope": {
+        "new_source_range": [
+          0.05,
+          4.65
+        ],
+        "preserved_original_range": [
+          0.85,
+          1.7999999999999998
+        ],
+        "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+        "origin": 0.7999999999999999
+      },
+      "predictions": [
+        {
+          "time": 0.1,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.4757118152593875,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 1.4750590492778883,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 1.475692680003931,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 1.475791888373692,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.4818334764532923,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.4815569068045789,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 1.490704555315915,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.4749273781010288,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            1.4749273781010288,
+            1.490704555315915
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 0.5,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.108652247525356,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 1.109985894239344,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 1.1086913421976305,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 1.1084886525343336,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.114820129517845,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.11534498204135,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 1.1109287041804456,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.1102549076964578,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            1.1084886525343336,
+            1.11534498204135
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 1.25,
+          "route": "preserved_original_scope",
+          "prediction": {
+            "status": "EMPIRICAL_MODEL_PREDICTION",
+            "time_since_model_origin_seconds": 0.45000000000000007,
+            "position_metres": 2.6231864363636377,
+            "source": "https://madisoncollegephysics.net/comp/data_freefall.csv",
+            "evidence_id": "40a7f0b455507b531562d81f6314ee60d41de1029a1d41a14f8f6865f1d7ba4d",
+            "measured_event": false,
+            "observed_interval_seconds": [
+              0.050000000000000044,
+              1.0
+            ]
+          }
+        },
+        {
+          "time": 2.0,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.2144424822436264,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 1.2141033523609792,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 1.2109837616859522,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 1.2145439405946519,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.2103914236821072,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.202044920714387,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 1.2093546389158925,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.214340183734265,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            1.202044920714387,
+            1.2145439405946519
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 3.0,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 1.002167324128095,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 0.9938536079118592,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 0.9878498041735213,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 0.9948604513804185,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 1.0053201615897045,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 1.00488237422488,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 0.9862202681831856,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 1.0023858897499451,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            0.9862202681831856,
+            1.0053201615897045
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 4.0,
+          "status": "SCOPED_EMPIRICAL_PREDICTION",
+          "alternatives": [
+            {
+              "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+              "value": 0.9910187875102565,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+              "value": 0.9907724711915544,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+              "value": 0.9909094285250291,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.825,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+              "value": 0.9908001748192197,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.4000000000000004,
+                  3.025,
+                  3.325
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+              "value": 0.9910430846979309,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  1.3250000000000002,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+              "value": 0.9912015737600108,
+              "assumptions": {
+                "cuts": [
+                  0.32499999999999996,
+                  0.575,
+                  0.775,
+                  1.975,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+              "value": 0.9904147003638801,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.025,
+                  2.925,
+                  3.025
+                ],
+                "degree": 2,
+                "kind": "continuous"
+              }
+            },
+            {
+              "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+              "value": 0.9910463713760009,
+              "assumptions": {
+                "cuts": [
+                  0.4,
+                  1.3250000000000002,
+                  2.25,
+                  3.025
+                ],
+                "degree": 3,
+                "kind": "continuous"
+              }
+            }
+          ],
+          "model_disagreement_range": [
+            0.9904147003638801,
+            0.9912015737600108
+          ],
+          "range_is_confidence_interval": false,
+          "measured_event": false
+        },
+        {
+          "time": 10.0,
+          "status": "NEW_OBSERVATION_NEEDED",
+          "goal_preserved": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "next-check",
+    "kind": "gap_next_observation",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "PROPOSED_DISCRIMINATING_OBSERVATION",
+      "source_clock_time": 0.8496093750000001,
+      "model_disagreement": 0.11416602870145187,
+      "predicted_alternatives": [
+        1.4591317139885973,
+        1.4675966534827012,
+        1.459379856188491,
+        1.4580933417635151,
+        1.4384264793146495,
+        1.3551381104380154,
+        1.449409850140679,
+        1.4693041391394672
+      ],
+      "observed": false,
+      "original_goal": "46cf0382d1bf9da763f873a72bf01c708cc49810baa19d5eadfc095fe8238ee5",
+      "purpose": "Distinguish retained predictive explanations using new independent measurement"
+    }
+  },
+  {
+    "id": "missing-influence",
+    "kind": "gap_consequences",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "time": 3.5,
+      "retained_acceleration": -9.653059393939394,
+      "alternatives": [
+        {
+          "model": "1c13ec3d34c69641277e7d13c5fa5f886b080f01f0ddb4f4c61209868e47c1a0",
+          "position": 0.9901404325290398,
+          "velocity": 0.006655350867094401,
+          "acceleration": -0.0286109835218904,
+          "additional_acceleration_relative_to_retained_model": 9.624448410417504,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "3a89b64698301129a4d1e50537e743637d70fc120956fc502ee54161818fd672",
+          "position": 0.9891858290857881,
+          "velocity": -0.0042770546693860646,
+          "acceleration": 0.045097202656489976,
+          "additional_acceleration_relative_to_retained_model": 9.698156596595883,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "52085c7096994e6ba3a1abae10f774bd637ac8473264501ab918ef401eab3b1a",
+          "position": 0.9884085809118002,
+          "velocity": 0.0011162461870967144,
+          "acceleration": 0.026072356823263476,
+          "additional_acceleration_relative_to_retained_model": 9.679131750762657,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.825,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "80c2d8a0b08953266107ef4badd10a6dd3d57bbc78146f4fc3d73f5f1dbb77b1",
+          "position": 0.9890769494269219,
+          "velocity": -0.0032232683519450855,
+          "acceleration": 0.04080725576063404,
+          "additional_acceleration_relative_to_retained_model": 9.693866649700027,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.4000000000000004,
+              3.025,
+              3.325
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "9397521a357af2aba17e41e304fc743a0fb9a8c015f639e17b5a04b1dea1846c",
+          "position": 0.9892966583509463,
+          "velocity": 0.004592401237445531,
+          "acceleration": -0.004398194173814596,
+          "additional_acceleration_relative_to_retained_model": 9.648661199765579,
+          "assumptions": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              1.3250000000000002,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "a79e50784b0fe8684a773f01f5a695fdc466959f9bc0b91589b8ffece9961621",
+          "position": 0.9892013958822741,
+          "velocity": 0.005635836341661846,
+          "acceleration": -0.006541922344994067,
+          "additional_acceleration_relative_to_retained_model": 9.6465174715944,
+          "assumptions": {
+            "cuts": [
+              0.32499999999999996,
+              0.575,
+              0.775,
+              1.975,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "b35354e9e9b89cce343d8f1890f95452f6bfc9453af3ad6768c5af120f6b38dd",
+          "position": 0.9896743591347633,
+          "velocity": 0.00045534430246658986,
+          "acceleration": 0.004101352622966292,
+          "additional_acceleration_relative_to_retained_model": 9.65716074656236,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.025,
+              2.925,
+              3.025
+            ],
+            "degree": 2,
+            "kind": "continuous"
+          }
+        },
+        {
+          "model": "e0da70f40ad3db6e91de96dc27fa7305ca819c9006f8884378f48a6f2c683443",
+          "position": 0.9905772614237912,
+          "velocity": 0.008052491911433195,
+          "acceleration": -0.04240388755886526,
+          "additional_acceleration_relative_to_retained_model": 9.610655506380528,
+          "assumptions": {
+            "cuts": [
+              0.4,
+              1.3250000000000002,
+              2.25,
+              3.025
+            ],
+            "degree": 3,
+            "kind": "continuous"
+          }
+        }
+      ],
+      "kind": "MODEL_CONDITIONAL_MISSING_INFLUENCE",
+      "measured_force": false,
+      "derivation": "Differentiate each learned position program twice, then subtract the retained acceleration.",
+      "next_obligation": "Observe an independent explanatory variable to distinguish physical causes."
+    }
+  },
+  {
+    "id": "retained-mathematics",
+    "kind": "integral",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "CERTIFIED_ALGEBRA",
+      "operator": "integral",
+      "coefficients": [
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "independent_check": true
+    }
+  },
+  {
+    "id": "retained-language",
+    "kind": "request",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "INTERPRETED_REQUEST",
+      "intent": "alarm_set",
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-date",
+        "B-timeofday"
+      ]
+    }
+  },
+  {
+    "id": "retained-physical-route",
+    "kind": "solve_discovery",
+    "owner": "9c20323f61c5bff4c22dd9ca3e3f00c2eaa742a4ae304f7ec990022e3ef24764",
+    "result": {
+      "status": "CONDITIONAL_LEARNED_ROUTES",
+      "domain": "motion_0",
+      "target": "a0",
+      "routes": [
+        {
+          "id": "25fe09116af993b665b86fc5a8853c9caa889a02d9d79271e290b23cc56dabd6",
+          "result": "2",
+          "requires": [
+            "t",
+            "v0",
+            "x",
+            "x0"
+          ],
+          "nonzero": [
+            "t"
+          ],
+          "expression_cost": 11
+        }
+      ],
+      "fact_added": false,
+      "source": "independently certified polynomial-model identity"
+    }
+  }
+]

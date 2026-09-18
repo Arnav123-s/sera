@@ -73,3 +73,11 @@ research-continuation/41_self_chosen_discovery/**/*.log whitespace=-blank-at-eol
 research-continuation/42_composed_discovery/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
 # Keep the source-pinned numerical entry point byte-identical to its archive.
 scripts/run_self_chosen_bounded.py whitespace=-blank-at-eof
+research-continuation/43_knowledge_gaps/** whitespace=cr-at-eol
+research-continuation/44_solution_portfolios/** whitespace=cr-at-eol
+research-continuation/43_knowledge_gaps/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/44_solution_portfolios/**/*.log whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+research-continuation/44_solution_portfolios/selection.json -diff linguist-generated=true
+research-continuation/44_solution_portfolios/final.json -diff linguist-generated=true
+research-continuation/44_solution_portfolios/freeze.json -diff linguist-generated=true
+research-continuation/44_solution_portfolios/budget-before-time-removal.json -diff linguist-generated=true

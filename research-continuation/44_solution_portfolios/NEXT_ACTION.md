@@ -1,0 +1,7 @@
+# Continue from the actual owner
+
+Use `runs/sera-solution-progress-live`, whose current identity is recorded in `coverage-audit.json`. Restore through `scripts.solution_use`; it verifies the original parent, corrected credit and exact state. Preserve both the original PS-001 study and the credit successor's append-only history. Earlier credit revisions remain reproducible with the exact source preserved in `repairs/source-preservation.json`.
+
+Run practical tasks with `scripts/run_solution_persistent.py --output runs/PS-my-tasks-001 --module scripts.solution_use -- --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/PS-my-tasks-001/answers.json`. A new typed curiosity task invokes complete proposal generation, checking, return and corrected reward. Repeat a pending request exactly to resume it. The user's time-limit removal remains in effect; CPU, memory and paid-service constraints remain as recorded in `../RESOURCE_POLICY.md`.
+
+For the next research extension, inspect the saved `FINITE_SEARCH_EXHAUSTED` questions and their failed program families. Derive any representation expansion from the existing owner's operators and residuals, freeze a new finite protocol and prospectively compare its costs and newly verified coverage. Do not rerun or tune against PS-001's opened final cases. The saved open empirical influence question still retains its alternative explanations and proposed discriminating observation; any physical-cause claim requires its own attributed evidence.

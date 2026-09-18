@@ -60,6 +60,8 @@ jobs:
       - run: uv run --no-sync python -m scripts.frontier_artifacts
       - run: uv run --no-sync python -m scripts.gap_artifacts --restore
       - run: uv run --no-sync python -m scripts.portable_gap_use --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/ci-gap-examples.json
+      - run: uv run --no-sync python -m scripts.solution_artifacts --restore
+      - run: uv run --no-sync python -m scripts.solution_use --read-only --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/ci-solution-examples.json
       - run: uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
       - run: uv run --no-sync python -m pytest
       - run: uv run --no-sync python scripts/verify_release.py

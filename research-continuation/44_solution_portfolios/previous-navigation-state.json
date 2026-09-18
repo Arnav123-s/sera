@@ -1,0 +1,518 @@
+{
+  "schema": "sera.research-state.v1",
+  "date": "2026-09-18T17:12:18.576596+00:00",
+  "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
+  "active_direction": "Self-chosen missing-knowledge investigation, independent discovery credit, owned rule composition and measured-task return",
+  "source_pins": {
+    "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
+    "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
+    "local_probability_cloud_commit": "8dd87f9a02a3752c041f05a101fd250e73e82cd7"
+  },
+  "stages": [
+    {
+      "id": "01-intake",
+      "status": "complete",
+      "evidence": "../runs/probability-cloud-intake/manifest-verification.json",
+      "detail": "Both ZIPs preserved; 176 and 726 entries verified. Embedded first ZIP is byte-identical."
+    },
+    {
+      "id": "02-source-audit",
+      "status": "complete_with_declared_scope",
+      "detail": "Pinned SERA 71 tests and reduced shared study pass; pinned Kavi 321 tests pass. Full historical SERA training remains separate evidence.",
+      "evidence": "01_audit/pinned-sera-execution.md"
+    },
+    {
+      "id": "03-reproduction",
+      "status": "completed_with_disclosed_strict_portability_failures",
+      "detail": "First bundle57checkpoints/603conditions: exact correctness,2NLL failures. Second bundle55tests,1050eval/240teaching/50snapshot portable replay; fresh7job reproduction passes. Archived/fresh strict P2 hashes and101numeric leaves across2records differ.",
+      "evidence": [
+        "01_audit/bundle1-evidence.json",
+        "01_audit/bundle2-evidence.json"
+      ]
+    },
+    {
+      "id": "04-generative-geometry",
+      "status": "GG-P0_subset_complete_and_audited",
+      "detail": "640paired cases,5120models,20480query partitions;8controls/4of10task families. Exact replay and full refit pass. Six task families and unordered geometry remain open.",
+      "evidence": "08_analysis/GG-P0-001/audit-and-interpretation.md"
+    },
+    {
+      "id": "05-competing-hypotheses",
+      "status": "bounded_shared_owner_integration_complete",
+      "detail": "Four supplied generator explanations in registered R1 buffers; four trained-parent fixtures, corrections, predecessors and reload pass. No positive neural transfer.",
+      "evidence": "05_experiments/shared-generative-integration.md"
+    },
+    {
+      "id": "06-active-investigation",
+      "status": "fixed_policy_component_complete_full_integration_open",
+      "detail": "300 policy runs, 3000 observations and 12000 independently audited class posteriors. No broad advantage over space filling; no new eta trained.",
+      "evidence": "08_analysis/GG-ACT-001/report.md"
+    },
+    {
+      "id": "07-imagination",
+      "status": "prospective_decision_value_component_qualified",
+      "detail": "Four-step conditional control improves nominal cost 43.2% versus reactive and 44.4% versus one-step on 12 paired worlds; 12 additional omitted-torque worlds diagnose limits. 12,096 decisions independently checked; uncertainty rectangles remain uncalibrated.",
+      "evidence": "19_continuing/report.md"
+    },
+    {
+      "id": "08-guarded-consolidation",
+      "status": "finite_component_acquired_proved_corrected_and_migrated",
+      "evidence": "16_v3/GC-002/report.md",
+      "detail": "GC-001 fails full-cost proxy; GC-002 reduces per-candidate proxy 15.1% vs local reasoning, with 18 observations and no new neural parameters. Failed proof-domain contract fixed; original and repaired graphs retained. No learned eta or neural transfer."
+    },
+    {
+      "id": "09-learned-applicability",
+      "status": "prospective_conditional_calibration_passes_shared_integration_open",
+      "detail": "Frozen GG-GUARD-001 weights, 1800 new calibration worlds and 2012 final worlds. Matched grouped policy accepts 664/1000 with zero errors; abrupt-jump coverage zero; global policy has higher utility. Only declared IID world/query risk is certified.",
+      "evidence": "16_v3/GG-GUARD-002/report.md"
+    },
+    {
+      "id": "10-continual-revision",
+      "status": "continuing_hidden_phase_component_with_factual_replay",
+      "detail": "One actual A06 descendant learns registered action-response statistics and continues after full restore to 79 interaction observations. Original facts/correction and finite programs replay/reprove under new owner. Fresh 61-group behavior is exact; no learned latent migration.",
+      "evidence": "19_continuing/integration/owner.json"
+    },
+    {
+      "id": "11-investigator-training",
+      "status": "trained_but_rejected_against_strongest_baseline",
+      "evidence": "20_live_workbench/A09-FINAL-001/summary.json"
+    },
+    {
+      "id": "12-knowledge-policy-factorial",
+      "status": "bounded_numerical_factorial_executed_no_promotion",
+      "evidence": "20_live_workbench/A09-FINAL-001/summary.json"
+    },
+    {
+      "id": "13-successive-generations",
+      "status": "three_successive_numerical_generations_executed_general_advantage_unproven",
+      "evidence": "20_live_workbench/A09-FINAL-001/audit.json"
+    },
+    {
+      "id": "14-language-acquisition",
+      "status": "finite_grounded_interface_qualified_and_integrated_general_language_open",
+      "evidence": "21_grounded_language/report.md",
+      "detail": "Nine prospective models; retained-core condition translates 1536/1536 familiar-form cases and preserves 61 older groups exactly. Unseen wording fails without lessons. One continuing learner answers six requests with five lessons/816 examples. Finite supplied-language contract and acquired-program execution are explicit; no general English or learned eta claim."
+    },
+    {
+      "id": "15-cross-route-transfer",
+      "status": "qualified_instance_readout_component",
+      "evidence": "18_instance_transfer/report.md",
+      "detail": "70 prospective trained descendants and 3 development candidates. Corrected K reduces motion MSE 14.97% versus observed-only and 23.26% versus uncorrected K across five streams, with no measured loss in 61 retained groups. Only 514 readout parameters change; shared-path update fails retention. A normalization-induced attribution failure is independently diagnosed and preserved."
+    },
+    {
+      "id": "22-sparse-mechanisms",
+      "status": "complete_with_rejected_promotions_and_conditional_utilities",
+      "evidence": "22_sparse_mechanisms/results.json",
+      "detail": "23,096 fresh final records across six cohorts; primary-source research, development repairs, independent audits, actual-owner repair, all failures and full numerical charges preserved."
+    },
+    {
+      "id": "23-task-transfer",
+      "status": "bounded_empirical_route_complete_with_cost_and_exception_limits",
+      "evidence": "23_task_transfer/report.md",
+      "detail": "3888 final outcomes across 24 independent task families; acquired K helps scarce-label adaptation, but amortized extra-label scratch is stronger. Actual-owner persistence/correction/retention pass. Cross-name calibration reuse repaired through an explicit preserving migration."
+    },
+    {
+      "id": "24-language-inquiry",
+      "status": "restricted_shared_owner_integration_complete",
+      "evidence": "24_language_inquiry/report.md",
+      "detail": "Three recurrent and three bag interfaces; prospective language/world evaluation; persistent simulator execution and one supervised correction; exact migration preserves owner and progress."
+    },
+    {
+      "id": "26-stream-curriculum",
+      "status": "completed_finite_training_and_usable_annotation",
+      "evidence": "26_stream_curriculum/report.md",
+      "detail": "Five finite cycles, 16 terminal cohort checkpoints, four successive-domain lifetimes, one frozen official evaluation and exact selected-owner persistence."
+    },
+    {
+      "id": "28-concept-refinement",
+      "status": "integrated_and_evaluated",
+      "evidence": "28_concept_refinement/report.md"
+    },
+    {
+      "id": "30-human-books-grounded-definitions",
+      "status": "published_verified_linux_windows_guarded_reuse",
+      "evidence": "30_grounded_books/report.md",
+      "detail": "Human-book and definition studies preserved; 26 taught physical entries, 300 numerical cases, 900 branches, 172 predecessor tensors and 128 language probes audited. Novel-definition gate remains closed."
+    },
+    {
+      "id": "31-stem-source-preparation",
+      "status": "preserved_unexecuted_protocol",
+      "evidence": "31_stem_acquisition/STATUS.md"
+    },
+    {
+      "id": "32-verified-completion",
+      "status": "published_verified_linux_windows_conditional_practice",
+      "evidence": "32_verified_completion/report.md",
+      "detail": "Learned evidence selection qualified for explicit conditional practice; analytic goal information retained as default. 768 fresh worlds, 4608 comparisons, 186 inherited tensors and 128 language probes retained."
+    },
+    {
+      "id": "33-verified-portfolios",
+      "status": "complete_scoped_capability_qualified",
+      "report": "33_capability_portfolio/report.md",
+      "detail": "Both verified-reward seeds answer 512/512 fresh mechanics requests. Balanced remains default. Actual owner learning, qualification renewal and 485-test regression pass."
+    },
+    {
+      "id": "41-SD-001",
+      "status": "complete_audited_integrated_published",
+      "report": "41_self_chosen_discovery/report.md"
+    },
+    {
+      "id": "42-CF-001",
+      "status": "complete_audited_integrated_published",
+      "report": "42_composed_discovery/report.md"
+    }
+  ],
+  "preserved_branches": [
+    {
+      "id": "R7-parameter-cloud",
+      "status": "executed_optional_not_promoted",
+      "models": 1260,
+      "replayed_conditions": 3780,
+      "source_sha256": "bec9ffcec68f35ffb15dbc46fa84455e07d0d8137d2aa38768fc003d698ab47b",
+      "evidence": "../runs/parameter-cloud-verification/verification.json",
+      "scope": "Finite clouds on quadratic weight losses; no quantum advantage or general neural-training claim."
+    }
+  ],
+  "milestones": {
+    "M1": "restricted mechanisms demonstrated in prior work",
+    "M2": "open",
+    "M3": "not established",
+    "M4": "not established"
+  },
+  "resource_boundary": "Local CPU only; no paid compute or external model training services. Individual experiment caps recorded in protocols.",
+  "next_action": "42_composed_discovery/NEXT_ACTION.md",
+  "completed_local_evidence": {
+    "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
+    "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
+    "geometry_source": "b83aab04331d39eadb59db4d6bff183ad69a84324adecadc09d4eee444dcc590",
+    "geometry_protocol": "dbbd8ef1d7d1bec79dd8727d89331377c08042779e08ef9d595b77e959006ffd",
+    "resource_supervisor": "../runs/GG-P0-resource-supervisor-v2/state.json",
+    "peak_memory_boundary": "Corrected refit job peak committed memory308879360bytes; original peakRSS unavailable.",
+    "applicability": {
+      "protocol": "15_applicability/protocol.json",
+      "report": "15_applicability/report.md",
+      "raw_complete": "15_applicability/records.json.gz",
+      "model": "15_applicability/guard-model.json",
+      "replay": "15_applicability/replay.json",
+      "independent": "15_applicability/independent.json",
+      "preservation": "15_applicability/preservation.json",
+      "candidate_promoted": false
+    },
+    "v3": {
+      "report": "16_v3/README.md",
+      "current_guard_model": "15_applicability/guard-model.json",
+      "group_certificate": "16_v3/GG-GUARD-002/certificates.json",
+      "current_library": "16_v3/GC-002/repair/corrected-library.json",
+      "library_parent": "../runs/SHARED-GG-001/circle/corrected",
+      "scope": "Research components; operational solver/parameters unchanged"
+    },
+    "transfer": {
+      "normalized_report": "17_transfer/report.md",
+      "instance_report": "18_instance_transfer/report.md",
+      "intervention": "17_transfer/acquisition-intervention/result.json",
+      "experimental_store": "../runs/A06-integrated-001/solver",
+      "integration": "17_transfer/integration/result.json",
+      "operational_parent_preserved": true,
+      "current_tests": 210,
+      "scope": "Supplied circle family, one simulated source instance, protected readout; no eta improvement"
+    },
+    "continuing": {
+      "report": "19_continuing/report.md",
+      "independent_audit": "19_continuing/A08-FINAL-001/independent-audit.json",
+      "experimental_owner": "19_continuing/integration/owner.json",
+      "retention": "19_continuing/retention/result.json",
+      "tests": 219,
+      "scope": "Supplied circle and action grammar, learned online coefficients, fixed engineered eta; no added neural weights"
+    },
+    "live_workbench": {
+      "report": "20_live_workbench/report.md",
+      "qualified_numerical_tasks": 60,
+      "withheld_tasks": 30,
+      "retained_groups": 61,
+      "tests_across_preserved_runs": 233,
+      "full_suite_timeout_preserved": true,
+      "local_url": "http://127.0.0.1:8765"
+    },
+    "grounded_language": {
+      "report": "21_grounded_language/report.md",
+      "manifest": "21_grounded_language/release-manifest.json",
+      "qualification": "21_grounded_language/qualification.json",
+      "independent_audit": "21_grounded_language/independent-audit.json",
+      "continuing": "21_grounded_language/L11-ONREQUEST-001/result.json",
+      "migration": "21_grounded_language/program-reuse-migration.json",
+      "full_regression_tests": 241,
+      "distinct_tests_across_runs": 243,
+      "local_url": "http://127.0.0.1:8765/?panel=reason",
+      "scope": "Finite English arithmetic productions, supplied teacher/checker/update rule; protected plastic language interface on unchanged R1 core. General language, current-paper understanding and improved eta remain open."
+    },
+    "sparse_mechanisms": {
+      "report": "22_sparse_mechanisms/report.md",
+      "manifest": "22_sparse_mechanisms/release-manifest.json",
+      "new_final_records": 23096,
+      "source_packet_replayed_solutions": 400,
+      "actual_owner_readout_trials": 360,
+      "small_file_repair": "experiments.sparse_mechanisms.repair",
+      "mechanism_promoted": false,
+      "investigator_promoted": false,
+      "live_owner_unchanged": true,
+      "scope": "Supplied sparse dictionaries, fixed/query policies, readout updates and exact-byte integrity-gated fault repair. No arbitrary-memory compression, new semantic skill, clinical MRI or learned eta claim."
+    },
+    "task_transfer": {
+      "report": "23_task_transfer/report.md",
+      "manifest": "23_task_transfer/release-manifest.json",
+      "final_outcomes": 3888,
+      "actual_owner": "a33ba52e98517abbf0573c27838abeeda93cb72dd14fda0a564bf11c16a5f119",
+      "workspace": "../runs/sera-task-transfer",
+      "remaining_seconds_at_release": 962.9074793000036,
+      "distinct_targeted_tests": 22,
+      "learned_eta": false,
+      "general_task_learning": false
+    },
+    "language_inquiry": {
+      "report": "24_language_inquiry/report.md",
+      "manifest": "24_language_inquiry/release-manifest.json",
+      "actual_owner": "f9d65ba13d1ccad4656a61ae4b2c1223569050af2f230df58f6fd57b505364b1",
+      "workspace": "../runs/sera-inquiry",
+      "full_suite_tests": 283,
+      "new_inquiry_cases": 18,
+      "language_records": 8424,
+      "world_method_records": 16848,
+      "independent_worlds": 12,
+      "charged_seconds": 400.1019048000744,
+      "remaining_seconds_at_release": 562.8055744999292,
+      "learned_grammar": false,
+      "learned_eta": false,
+      "physical_applicability_calibrated": false,
+      "migration_target_guard_checked": true
+    },
+    "constraint_inquiry": {
+      "report": "25_constraint_inquiry/report.md",
+      "manifest": "25_constraint_inquiry/release-manifest.json",
+      "full_suite_tests": 302,
+      "new_contract_cases": 19,
+      "language_records": 384,
+      "numeric_records": 7680,
+      "workspace": "../runs/sera-constraints",
+      "owner": "5b1dc35e772f5c00ffe8fe0e43fbf1ea14f10378bbf990ebb50002ee7d728a7b",
+      "remaining_seconds_at_release": 67.82661569984339,
+      "learned_eta": false,
+      "physical_applicability_calibrated": false,
+      "unseen_surface_exact": 0.5
+    },
+    "stream_curriculum": {
+      "report": "26_stream_curriculum/report.md",
+      "manifest": "26_stream_curriculum/release-manifest.json",
+      "full_suite_tests": 331,
+      "source_training_requests": 11514,
+      "domains": 18,
+      "intents": 60,
+      "test_requests": 2973,
+      "selected": {
+        "path": "runs/SC-exposure-shared-2642/step-005400.pt",
+        "sha256": "5ab3bf1e77b0710ea0d516e645ef22e14e3f31fc4f0c3df238dce2e0dc3f93c3",
+        "fit": "runs/SC-exposure-shared-2642",
+        "qualified_annotation_aid": true,
+        "criterion": "development exact frames; then intent accuracy; then path"
+      },
+      "selected_test_intent_accuracy": 0.7453750420450723,
+      "selected_test_slot_f1": 0.501980198019802,
+      "selected_test_frame_accuracy": 0.4113689875546586,
+      "workspace": "../runs/sera-requests-live",
+      "owner": "81a948e40ccd2fd1984a92667d7ba35ee8c22ec4c3555ecc32f5f48b553d9e25",
+      "remaining_seconds_at_release": 1002.4911958999146
+    },
+    "concept_refinement": {
+      "report": "28_concept_refinement/report.md",
+      "owner": "cfad1b83a2d289a7cadc43334b1e571db87ac4c4ade6021c4f04c1e0578cf129",
+      "workspace": "../runs/sera-refinement-live",
+      "final_views": 216,
+      "independent_worlds": 36,
+      "optimizer_resumptions": 10,
+      "retained_tensors": 162,
+      "language_development_probes": 128,
+      "remaining_seconds_at_release": 1724.0638096000039
+    },
+    "verified_completion": {
+      "report": "32_verified_completion/report.md",
+      "audit": "32_verified_completion/integration-audit.json",
+      "workspace": "../runs/sera-completion-live",
+      "selected_seed": 3212,
+      "training_worlds": 4096,
+      "repeated_reward_presentations": 102400,
+      "final_worlds": 768,
+      "default_control": "goal_information",
+      "qualified_conditional_practice": true,
+      "protected_tensors": 186,
+      "owner": "9d4bbea3e30c88fedbc9182ee2192c5e5819ead2df48693070baa8b4a3d1ba5c",
+      "live_verified_policy_updates": 1,
+      "local_regression_distinct_tests": 475,
+      "regression_completed_in_partitions": true
+    },
+    "verified_portfolios": {
+      "report": "33_capability_portfolio/report.md",
+      "audit": "33_capability_portfolio/integration-audit.json",
+      "workspace": "../runs/sera-quests-live",
+      "owner": "42d55d9a0cf0ae7be65164fae3296b538a5ee2d629886a239d43b181ca8584a3",
+      "default_control": "balanced",
+      "fresh_requests_per_model": 512,
+      "qualified_routes": 4,
+      "training_resumptions": 4,
+      "local_tests": 485,
+      "new_allowance_seconds": 0
+    },
+    "learning_progress": {
+      "report": "34_learning_progress/report.md",
+      "owner": "dadac2a173615ec980ca52e1e3d5dbad85f1503138213f16c6906cb0224375b7",
+      "workspace": "../runs/sera-learning-live",
+      "local_tests": 493,
+      "default": "balanced"
+    },
+    "internal_discovery": {
+      "report": "35_operator_discovery/report.md",
+      "owner": "ce851ec425e517a76d7c31d36d4d9ae39af9cf6ab1a780fc5e6adbfa4a5bb333",
+      "workspace": "../runs/sera-discovery-live",
+      "relationships": 5,
+      "checked_alternatives": 256,
+      "inherited_tensors": 204,
+      "new_tests": 3
+    },
+    "autonomous_acquisition": {
+      "report": "37_constraint_acquisition/report.md",
+      "owner": "e127e23509a9134cdc38dfd77be641be66ce2b82063d4e6aefd9a06dd0462636",
+      "workspace": "../runs/sera-acquisition-live",
+      "new_relations": 8,
+      "checked_routes": 256,
+      "acquired_basis_cases": 3,
+      "prior_basis_retention": 11,
+      "protected_tensors": 202
+    },
+    "continuing_growth": {
+      "report": "38_continuing_growth/report.md",
+      "audit": "38_continuing_growth/audit.json",
+      "selected": "self_directed-3802",
+      "admitted": true,
+      "checkpoint_owner": "11653a31b45b36be4d02a81c1a0d2aae5a30561ea9b4a305e0dc617a4751dd81",
+      "status": "complete_verified",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
+    },
+    "sustained_refinement": {
+      "report": "39_sustained_refinement/report.md",
+      "audit": "39_sustained_refinement/audit.json",
+      "selected": "balanced_adam-3902",
+      "admitted": false,
+      "checkpoint_owner": "918ab71d7f1cd9eb8dd72382c46bb3977bbecf22cf1a31a9b6d443fae38f64ab",
+      "status": "complete_verified",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
+    },
+    "step_resolution": {
+      "report": "40_step_resolution/report.md",
+      "audit": "40_step_resolution/audit.json",
+      "selected": "4002",
+      "admitted": false,
+      "checkpoint_owner": "904a5494f98c6c3d8aa50ba8b6ac790d0b0b7ec266791d8f514c5928c562a29a",
+      "status": "complete_verified",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
+    },
+    "self_chosen_discovery": {
+      "report": "41_self_chosen_discovery/report.md",
+      "audit": "41_self_chosen_discovery/audit.json",
+      "selected": "learned-4101",
+      "retained_records": 66,
+      "publication": "42_composed_discovery/publication/github-run-47.json"
+    },
+    "composed_discovery": {
+      "report": "42_composed_discovery/report.md",
+      "audit": "42_composed_discovery/audit.json",
+      "selected": "learned-4201",
+      "new_exact_routes": 80,
+      "fresh_exact_cases": 7680,
+      "local_tests": 532,
+      "latest_observed_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+      "publication": "42_composed_discovery/publication/github-run-47.json"
+    }
+  },
+  "latest_continuation": "43_knowledge_gaps",
+  "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
+  "latest_user_steering": "Let SERA find gaps in retained knowledge itself, construct multiple accurate missing explanations without target hints, reward independently checked novelty and use a substantial finite run.",
+  "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
+  "latest_publication": {
+    "implementation": "5d332fdf0d9bada764e83fbb774f55ff8124e7ea",
+    "run": "https://github.com/Arnav123-s/sera/actions/runs/35376538918",
+    "conclusion": "success",
+    "platforms": {
+      "linux": {
+        "passed": 486,
+        "skipped": 46
+      },
+      "windows": {
+        "passed": 487,
+        "skipped": 45
+      }
+    },
+    "local_tests": 532,
+    "receipt": "42_composed_discovery/publication/github-run-47.json",
+    "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery",
+    "archive_parts": 18
+  },
+  "resource_balance_at_publication": {
+    "remaining_seconds": 72.43434449973574,
+    "live_ledger": "runs/v3-batch-001/budget.json",
+    "snapshot_only": true,
+    "new_grant_seconds": 0
+  },
+  "latest_resource_snapshot": {
+    "remaining_seconds": 1262.2714172999986,
+    "standing_approval": true,
+    "policy": "RESOURCE_POLICY.md",
+    "receipt": "42_composed_discovery/publication/cost-summary.json"
+  },
+  "preserved_publication_receipts": [
+    {
+      "implementation": "9ca50a7aab26fa4b75e7adbcd22de38026344343",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35317484025",
+      "conclusion": "success",
+      "linux_tests": 440,
+      "windows_tests": 441,
+      "optional_fixture_skips": {
+        "linux": 46,
+        "windows": 45
+      },
+      "receipt": "33_capability_portfolio/publication/github-run-42.json"
+    }
+  ],
+  "latest_usable_owner": {
+    "admitted": true,
+    "store": "runs/sera-gap-inquiry-live",
+    "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+    "parent_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
+    "models": 8,
+    "same_actual_owner": true,
+    "scope": "source-bound empirical interpolation and preserved alternative explanations"
+  },
+  "publication_history": [
+    {
+      "implementation": "5195a2ea75eb085f60e13bae98f9acaa0e681aa3",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35339284292",
+      "conclusion": "success",
+      "linux_tests": 455,
+      "windows_tests": 456,
+      "optional_fixture_skips": {
+        "linux": 46,
+        "windows": 45
+      },
+      "receipt": "37_constraint_acquisition/publication/github-run-45.json"
+    }
+  ],
+  "knowledge_gap_inquiry": {
+    "status": "complete_verified_local",
+    "report": "43_knowledge_gaps/report.md",
+    "audit": "43_knowledge_gaps/audit.json",
+    "source": "retained observations",
+    "programs": 12288,
+    "retained_models": 8,
+    "selected": "residual",
+    "final_rmse": 0.026596166387399697,
+    "final_observations": 13,
+    "source_gate_preserved": true
+  }
+}

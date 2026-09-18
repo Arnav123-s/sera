@@ -25,6 +25,7 @@ The central idea is to turn experience into something reusable: a learned interp
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Complete self-chosen questions with multiple proved answers and learn from verified progress | [Solution portfolios](research-continuation/44_solution_portfolios/README.md) | [217 routes, 58 newly executable questions and 27,263 correct reference answers](research-continuation/44_solution_portfolios/report.md) |
 | Identify a gap in retained observations, construct competing explanations and calculate their missing-influence consequences | [Self-identified gaps](research-continuation/43_knowledge_gaps/README.md) | [12,288-program study, eight retained alternatives and independent measurements](research-continuation/43_knowledge_gaps/report.md) |
 | Choose questions, propose equations, combine learned rules and retain independently checked discoveries | [Self-chosen discovery](research-continuation/42_composed_discovery/README.md) | [Examples, investigations, exact executions and observed-data checks](research-continuation/42_composed_discovery/report.md) |
 | Continue practice across dictionary, conversation, grammar, philosophy, STEM prose, reading, four-language requests and mechanics | [Continuing learner](research-continuation/38_continuing_growth/README.md) | [Twelve-strand study, exact continuation and independent score replay](research-continuation/38_continuing_growth/report.md) |
@@ -71,6 +72,8 @@ flowchart TD
 The current integration is in [`experiments/`](docs/REPOSITORY_MAP.md); its reusable core is in [`src/sera/`](src/sera/). The [research archive](docs/RESEARCH_ARCHIVE.md) traces the successive implementations and their results.
 
 ### Learning through self-chosen investigations
+
+The latest owner carries curiosity through to checked solutions. It searches alternative expressions from its own retained executions, commits candidates before independent feedback, proves conditional identities, returns applicable routes to the original task and updates procedure-value weights from verified progress. A full cycle covered 358 saved questions, made 58 more questions executable, and retained 217 checked routes. Reward recognizes 54 new input-and-guard combinations after accounting for existing procedures and redundant requirements. Proofs, denominator guards, failed searches and corrected credit remain attached to the continuing learner. [Run a solution or start an investigation](research-continuation/44_solution_portfolios/README.md).
 
 The latest continuation lets SERA inspect its own retained evidence for incomplete coverage. It selected an unexplained part of an existing measured trajectory, constructed alternative conditional programs from its learned integration basis and checked their predictions against reserved observations. Eight qualified explanations remain on the same owner. Their differences can drive a proposed next observation, and each program can calculate the additional acceleration needed relative to its older explanation. [Use the investigation and inspect its findings](research-continuation/43_knowledge_gaps/README.md).
 

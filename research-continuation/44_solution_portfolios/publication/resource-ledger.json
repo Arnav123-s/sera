@@ -1,0 +1,2638 @@
+{
+  "schema": "sera.v3.local-resource-budget.1",
+  "initial_seconds": 10800,
+  "remaining_seconds": 3925.114909299955,
+  "maximum_job_seconds": 900,
+  "memory_limit_bytes": 2147483648,
+  "measured_total_physical_bytes": 34123927552,
+  "measured_available_physical_bytes": 23153029120,
+  "cpu_workers": 1,
+  "threads_per_worker": 1,
+  "authority": "User-adopted v3 initial batch plus explicit 60-minute local extension approved in response annotation 1; local CPU only, one numerical thread and 2 GiB worker memory.",
+  "jobs": {
+    "runs/v3-batch-001/unit-first": {
+      "status": "FAILED",
+      "charged_seconds": 4.40027160000318
+    },
+    "runs/v3-batch-001/unit-corrected": {
+      "status": "PASS",
+      "charged_seconds": 3.2188916000013705
+    },
+    "runs/v3-batch-001/timing": {
+      "status": "PASS",
+      "charged_seconds": 3.2325442000001203
+    },
+    "runs/v3-batch-001/deadline-control": {
+      "status": "TIMEOUT",
+      "charged_seconds": 0.22923240000091027
+    },
+    "runs/v3-batch-001/GG-GUARD-002-final": {
+      "status": "FAILED",
+      "charged_seconds": 2.729249500000151
+    },
+    "runs/v3-batch-001/GG-GUARD-002-final-v2": {
+      "status": "PASS",
+      "charged_seconds": 134.37445409999782
+    },
+    "runs/v3-batch-001/GG-GUARD-002-audit": {
+      "status": "PASS",
+      "charged_seconds": 22.72744760000205
+    },
+    "runs/v3-batch-001/GC-001-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.4729354999944917
+    },
+    "runs/v3-batch-001/GC-001-owner-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.4669113000054494
+    },
+    "runs/v3-batch-001/GC-001-final": {
+      "status": "PASS",
+      "charged_seconds": 5.218895899997733
+    },
+    "runs/v3-batch-001/GC-002-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.58389399999578
+    },
+    "runs/v3-batch-001/GC-002-final": {
+      "status": "PASS",
+      "charged_seconds": 5.185481900000013
+    },
+    "runs/v3-batch-001/GC-001-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.5874817000003532
+    },
+    "runs/v3-batch-001/GC-002-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.5773969000001671
+    },
+    "runs/v3-batch-001/GC-002-proof-domain-counterexample": {
+      "status": "FAILED",
+      "charged_seconds": 2.333837099999073
+    },
+    "runs/v3-batch-001/GC-002-repaired-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.981681099998241
+    },
+    "runs/v3-batch-001/GC-002-migration": {
+      "status": "PASS",
+      "charged_seconds": 2.728025600001274
+    },
+    "runs/v3-batch-001/full-regression": {
+      "status": "PASS",
+      "charged_seconds": 32.863680399997975
+    },
+    "runs/v3-batch-001/release-check": {
+      "status": "PASS",
+      "charged_seconds": 9.337489300000016
+    },
+    "runs/v3-batch-001/A06-mechanism-tests": {
+      "status": "FAILED",
+      "charged_seconds": 3.724886299998616
+    },
+    "runs/v3-batch-001/A06-mechanism-tests-fixed": {
+      "status": "PASS",
+      "charged_seconds": 3.716582599998219
+    },
+    "runs/v3-batch-001/A06-pilot-integrated": {
+      "status": "PASS",
+      "charged_seconds": 20.110056900004565
+    },
+    "runs/v3-batch-001/A06-pilot-anchored": {
+      "status": "PASS",
+      "charged_seconds": 44.73225639999873
+    },
+    "runs/v3-batch-001/A06-pilot-readout": {
+      "status": "PASS",
+      "charged_seconds": 27.124454400000104
+    },
+    "runs/v3-batch-001/A06-resume-tests": {
+      "status": "PASS",
+      "charged_seconds": 5.311746100000164
+    },
+    "runs/v3-batch-001/A06-freeze-shared": {
+      "status": "PASS",
+      "charged_seconds": 3.1162914000015007
+    },
+    "runs/v3-batch-001/A06-freeze-readout": {
+      "status": "PASS",
+      "charged_seconds": 3.0327044000005117
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 45.59510810000211
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-detached": {
+      "status": "PASS",
+      "charged_seconds": 41.81482420000248
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-integrated": {
+      "status": "PASS",
+      "charged_seconds": 43.14345509999839
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 45.54890890000388
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-181-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 49.976530800006
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 51.36119509999844
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-detached": {
+      "status": "PASS",
+      "charged_seconds": 46.58784040000319
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-integrated": {
+      "status": "PASS",
+      "charged_seconds": 47.18513820000226
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 47.21472760000324
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-191-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 46.492340999997396
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 55.80965380000271
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-detached": {
+      "status": "PASS",
+      "charged_seconds": 47.74966139999742
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-integrated": {
+      "status": "PASS",
+      "charged_seconds": 46.66467499999999
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 46.67436650000309
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-211-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 49.30540689999907
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 53.024548100001994
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-detached": {
+      "status": "PASS",
+      "charged_seconds": 47.594703499999014
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-integrated": {
+      "status": "PASS",
+      "charged_seconds": 49.67661670000234
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 48.134598099997675
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-223-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 47.38881499999843
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 52.63279359999433
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-detached": {
+      "status": "PASS",
+      "charged_seconds": 48.53879519999464
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-integrated": {
+      "status": "PASS",
+      "charged_seconds": 47.365587499996764
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 47.68841999999859
+    },
+    "runs/v3-batch-001/A06-TRANSFER-001-227-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 49.456093200002215
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.65016960000503
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-detached": {
+      "status": "PASS",
+      "charged_seconds": 28.268254700000398
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.93310349999956
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 28.237150799999654
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-181-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 29.012191499998153
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.553387400002975
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.448514600000635
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-integrated": {
+      "status": "PASS",
+      "charged_seconds": 29.0098913000038
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 27.841879899999185
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-191-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.59508540000388
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 33.64350249999552
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.909871099996963
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.98518939999485
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 27.72935719999805
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-211-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 28.71870630000194
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.69501019999734
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.774361700001464
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.71489940000174
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 28.89741459999641
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-223-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.977685799996834
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 33.04912850000255
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-detached": {
+      "status": "PASS",
+      "charged_seconds": 27.881057899998268
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-integrated": {
+      "status": "PASS",
+      "charged_seconds": 27.89113240000006
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-extra_capacity": {
+      "status": "PASS",
+      "charged_seconds": 27.995855200002552
+    },
+    "runs/v3-batch-001/A06-TRANSFER-002-227-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.80978199999663
+    },
+    "runs/v3-batch-001/A06-followup-tests": {
+      "status": "PASS",
+      "charged_seconds": 3.7258509999956004
+    },
+    "runs/v3-batch-001/A06-acquisition-audit": {
+      "status": "PASS",
+      "charged_seconds": 3.2277893999998923
+    },
+    "runs/v3-batch-001/A06-INSTANCE-freeze": {
+      "status": "PASS",
+      "charged_seconds": 4.109835399998701
+    },
+    "runs/v3-batch-001/A06-shared-audit": {
+      "status": "FAILED",
+      "charged_seconds": 8.29686390000279
+    },
+    "runs/v3-batch-001/A06-shared-audit-compatible": {
+      "status": "FAILED",
+      "charged_seconds": 2.235202299998491
+    },
+    "runs/v3-batch-001/A06-shared-audit-compatible-v2": {
+      "status": "PASS",
+      "charged_seconds": 8.136304200001177
+    },
+    "runs/v3-batch-001/A06-readout-audit-compatible-v2": {
+      "status": "PASS",
+      "charged_seconds": 6.195093399997859
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 30.429076200001873
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 26.52999550000095
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.128312399996503
+    },
+    "runs/v3-batch-001/A06-INSTANCE-307-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 29.096983800001908
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.140709599996626
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.125785799995356
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 27.502873500001442
+    },
+    "runs/v3-batch-001/A06-INSTANCE-311-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.98524550000002
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.987597899998946
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.320162199997867
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.052023000003828
+    },
+    "runs/v3-batch-001/A06-INSTANCE-313-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.830332700003055
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.88488399999915
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 28.044520700001158
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 27.822991799999727
+    },
+    "runs/v3-batch-001/A06-INSTANCE-317-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 27.873766700002307
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-observed_only": {
+      "status": "PASS",
+      "charged_seconds": 32.90027330000157
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-corrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 27.969387299999653
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-uncorrected_teacher": {
+      "status": "PASS",
+      "charged_seconds": 30.05232199999591
+    },
+    "runs/v3-batch-001/A06-INSTANCE-331-oracle_exposure": {
+      "status": "PASS",
+      "charged_seconds": 28.499212200003967
+    },
+    "runs/v3-batch-001/A06-INSTANCE-audit": {
+      "status": "PASS",
+      "charged_seconds": 5.504120499994315
+    },
+    "runs/v3-batch-001/A06-parameter-preservation": {
+      "status": "PASS",
+      "charged_seconds": 3.600745099996857
+    },
+    "runs/v3-batch-001/A06-supported-integration": {
+      "status": "PASS",
+      "charged_seconds": 3.71102900000551
+    },
+    "runs/v3-batch-001/A06-full-regression": {
+      "status": "PASS",
+      "charged_seconds": 36.59822189999977
+    },
+    "runs/v3-batch-001/A06-resume-status": {
+      "status": "PASS",
+      "charged_seconds": 2.3537028999999166
+    },
+    "runs/v3-batch-001/A06-resume-finite": {
+      "status": "PASS",
+      "charged_seconds": 2.378424800001085
+    },
+    "runs/v3-batch-001/A06-resume-motion": {
+      "status": "PASS",
+      "charged_seconds": 2.3752695999937714
+    },
+    "runs/v3-batch-001/A08-mechanism-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.363025899991044
+    },
+    "runs/v3-batch-001/A08-development-001": {
+      "status": "PASS",
+      "charged_seconds": 29.351867600009427
+    },
+    "runs/v3-batch-001/A08-correction-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.423441399994772
+    },
+    "runs/v3-batch-001/A08-development-002": {
+      "status": "PASS",
+      "charged_seconds": 24.323142299996107
+    },
+    "runs/v3-batch-001/A08-independent-contract-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.491112699994119
+    },
+    "runs/v3-batch-001/A08-prospective-freeze": {
+      "status": "PASS",
+      "charged_seconds": 1.9898787999991328
+    },
+    "runs/v3-batch-001/A08-prospective-final": {
+      "status": "PASS",
+      "charged_seconds": 221.13885940000182
+    },
+    "runs/v3-batch-001/A08-independent-audit": {
+      "status": "PASS",
+      "charged_seconds": 26.623619200006942
+    },
+    "runs/v3-batch-001/A08-extension-scope-tests": {
+      "status": "PASS",
+      "charged_seconds": 2.386557499994524
+    },
+    "runs/v3-batch-001/A08-qualified-integration": {
+      "status": "PASS",
+      "charged_seconds": 3.5264741999999387
+    },
+    "runs/v3-batch-001/A08-integrated-status": {
+      "status": "PASS",
+      "charged_seconds": 2.429437600003439
+    },
+    "runs/v3-batch-001/A08-full-regression": {
+      "status": "PASS",
+      "charged_seconds": 35.95541089998733
+    },
+    "runs/v3-batch-001/A08-fresh-retention": {
+      "status": "PASS",
+      "charged_seconds": 10.532853800003068
+    },
+    "runs/v3-batch-001/WB-first-tests": {
+      "status": "PASS",
+      "charged_seconds": 9.856741299998248
+    },
+    "runs/v3-batch-001/A09-pilot": {
+      "status": "PASS",
+      "charged_seconds": 1.0821374999941327
+    },
+    "runs/sera-workbench/requests/7a326313-7873-402c-b843-7fbd9365fe6d/worker": {
+      "status": "PASS",
+      "charged_seconds": 3.518189700000221
+    },
+    "runs/v3-batch-001/A09-final": {
+      "status": "PASS",
+      "charged_seconds": 3.0499135999998543
+    },
+    "runs/v3-batch-001/A09-independent-audit": {
+      "status": "PASS",
+      "charged_seconds": 0.32791809999616817
+    },
+    "runs/sera-workbench/requests/34ab9014-ad41-43b9-8e42-1809156f4b19/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.7353008999925805
+    },
+    "runs/sera-workbench/requests/f4b70f09-a35e-4ee7-a474-844e6dd64b45/worker": {
+      "status": "PASS",
+      "charged_seconds": 6.385728100009146
+    },
+    "runs/sera-workbench/requests/7b540261-3817-4e8a-9859-2a7d0ab69102/worker": {
+      "status": "PASS",
+      "charged_seconds": 6.166099599999143
+    },
+    "runs/v3-batch-001/WB-task-learning-tests": {
+      "status": "PASS",
+      "charged_seconds": 19.951666500011925
+    },
+    "runs/sera-workbench/requests/0c7dbe4a-ee0b-42ff-ac08-b8ca22ce1be5/worker": {
+      "status": "PASS",
+      "charged_seconds": 6.001660299996729
+    },
+    "runs/sera-workbench/requests/e0db4658-3058-4706-a529-cb6f5efd6d5e/worker": {
+      "status": "PASS",
+      "charged_seconds": 7.074249099998269
+    },
+    "runs/sera-workbench/requests/d452f538-8988-4d5f-901e-f3749b03b51b/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.955843500007177
+    },
+    "runs/sera-workbench/requests/45bfab52-7d65-458e-bd4c-fc3f53dcb8b6/worker": {
+      "status": "PASS",
+      "charged_seconds": 6.767795399995521
+    },
+    "runs/sera-workbench/requests/9c389a4d-e05f-4343-91a9-e18e92957186/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.001012599997921
+    },
+    "runs/v3-batch-001/WB-ondemand-qualification": {
+      "status": "PASS",
+      "charged_seconds": 0.8423200999968685
+    },
+    "runs/v3-batch-001/WB-full-regression": {
+      "status": "TIMEOUT",
+      "charged_seconds": 80.03532690000429
+    },
+    "runs/v3-batch-001/WB-collect-tests": {
+      "status": "PASS",
+      "charged_seconds": 8.097914300000411
+    },
+    "runs/v3-batch-001/WB-regression-remainder": {
+      "status": "PASS",
+      "charged_seconds": 21.221481100001256
+    },
+    "runs/L10-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 8.929837499992573
+    },
+    "runs/L10-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 20.14680239999143
+    },
+    "runs/L10-pilot-002": {
+      "status": "PASS",
+      "charged_seconds": 97.7802304999932
+    },
+    "runs/L10-pilot-interface": {
+      "status": "PASS",
+      "charged_seconds": 82.61407450000115
+    },
+    "runs/L10-assess-pilot-shared": {
+      "status": "PASS",
+      "charged_seconds": 55.62984180000785
+    },
+    "runs/L10-assess-pilot-interface": {
+      "status": "PASS",
+      "charged_seconds": 48.7443762000039
+    },
+    "runs/L10-tests-002": {
+      "status": "PASS",
+      "charged_seconds": 10.49940030000289
+    },
+    "runs/L10-resume-test": {
+      "status": "PASS",
+      "charged_seconds": 11.852313299998059
+    },
+    "runs/l10-final-151001-interface-owned": {
+      "status": "PASS",
+      "charged_seconds": 83.5612919999985
+    },
+    "runs/l10-final-151001-shared-owned": {
+      "status": "PASS",
+      "charged_seconds": 96.74634060000244
+    },
+    "runs/l10-final-151001-scratch-owned": {
+      "status": "PASS",
+      "charged_seconds": 96.27619270001014
+    },
+    "runs/l10-final-151009-interface-owned": {
+      "status": "PASS",
+      "charged_seconds": 81.71298639998713
+    },
+    "runs/l10-final-151009-shared-owned": {
+      "status": "PASS",
+      "charged_seconds": 94.10688259999733
+    },
+    "runs/l10-final-151009-scratch-owned": {
+      "status": "PASS",
+      "charged_seconds": 93.29909040000348
+    },
+    "runs/l10-final-151027-interface-owned": {
+      "status": "PASS",
+      "charged_seconds": 84.61624400000437
+    },
+    "runs/l10-final-151027-shared-owned": {
+      "status": "PASS",
+      "charged_seconds": 96.77403110000887
+    },
+    "runs/l10-final-151027-scratch-owned": {
+      "status": "PASS",
+      "charged_seconds": 94.89066790000652
+    },
+    "runs/l10-final-151001-interface-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 72.09475459999521
+    },
+    "runs/l10-final-151001-shared-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 76.17117940000026
+    },
+    "runs/l10-final-151001-scratch-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 76.60148700000718
+    },
+    "runs/l10-final-151009-interface-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 73.3847672999982
+    },
+    "runs/l10-final-151009-shared-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 74.85519800000475
+    },
+    "runs/l10-final-151009-scratch-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 72.41229879998718
+    },
+    "runs/l10-final-151027-interface-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 70.45358039998973
+    },
+    "runs/l10-final-151027-shared-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 73.83641600000556
+    },
+    "runs/l10-final-151027-scratch-assessment-owned": {
+      "status": "PASS",
+      "charged_seconds": 74.15181450000091
+    },
+    "runs/L10-independent-audit": {
+      "status": "PASS",
+      "charged_seconds": 13.909274399993592
+    },
+    "runs/L10-qualification": {
+      "status": "PASS",
+      "charged_seconds": 4.960441000002902
+    },
+    "runs/L10-runtime-integration-test": {
+      "status": "PASS",
+      "charged_seconds": 13.760228700004518
+    },
+    "runs/L11-onrequest-001-owned": {
+      "status": "PASS",
+      "charged_seconds": 118.473674199995
+    },
+    "runs/L11-full-regression": {
+      "status": "PASS",
+      "charged_seconds": 102.92580510000698
+    },
+    "runs/L11-contract-and-integration-tests": {
+      "status": "PASS",
+      "charged_seconds": 12.482010799998534
+    },
+    "runs/L11-output-contract-audit": {
+      "status": "PASS",
+      "charged_seconds": 5.220960500009824
+    },
+    "runs/sera-workbench/requests/0192de65-3607-41b1-b532-ed166fab5b49/worker": {
+      "status": "PASS",
+      "charged_seconds": 26.709436000004644
+    },
+    "runs/sera-workbench/requests/1bf6f2e4-307b-4c97-b46b-947db047da6d/worker": {
+      "status": "PASS",
+      "charged_seconds": 24.854980799995246
+    },
+    "runs/sera-workbench/requests/65e18855-2129-4989-943c-1555e6043318/worker": {
+      "status": "PASS",
+      "charged_seconds": 30.07427810000081
+    },
+    "runs/sera-workbench/requests/76e7642b-ab42-4ab8-9019-42acf131b6d1/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.9801210000005085
+    },
+    "runs/L11-program-reuse-tests": {
+      "status": "PASS",
+      "charged_seconds": 14.521793199994136
+    },
+    "runs/sera-workbench/requests/30a2be40-1519-4bd6-b184-2f6713dd40a0/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.9888355000002775
+    },
+    "runs/sera-workbench/requests/01603961-035e-4233-9cbf-d4dd96f70cc4/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.016362800000934
+    },
+    "runs/CS-packet-verification-owned-001": {
+      "status": "PASS",
+      "charged_seconds": 4.904512899986003
+    },
+    "runs/CS-contract-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 6.836664400005247
+    },
+    "runs/CS-recovery-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 5.364388100002543
+    },
+    "runs/CS-recovery-final-001": {
+      "status": "PASS",
+      "charged_seconds": 72.02441279999039
+    },
+    "runs/CS-recovery-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 18.49252639999031
+    },
+    "runs/CS-investigation-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 7.884002999999211
+    },
+    "runs/CS-investigation-final-001": {
+      "status": "PASS",
+      "charged_seconds": 64.54927080000925
+    },
+    "runs/CS-application-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 6.793006899999455
+    },
+    "runs/CS-variants-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 3.4069433999975445
+    },
+    "runs/CS-imaging-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 6.252950299996883
+    },
+    "runs/CS-variants-pilot-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 2.86396980000427
+    },
+    "runs/CS-imaging-pilot-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 2.6361100999929477
+    },
+    "runs/CS-imaging-continuation-test": {
+      "status": "PASS",
+      "charged_seconds": 2.695703200006392
+    },
+    "runs/CS-imaging-pilot-002": {
+      "status": "PASS",
+      "charged_seconds": 14.814502599998377
+    },
+    "runs/CS-imaging-pilot-audit-002": {
+      "status": "PASS",
+      "charged_seconds": 2.892558999999892
+    },
+    "runs/CS-query-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 5.277010200006771
+    },
+    "runs/CS-variants-final-001": {
+      "status": "PASS",
+      "charged_seconds": 22.676363699996728
+    },
+    "runs/CS-imaging-final-001": {
+      "status": "PASS",
+      "charged_seconds": 79.48567180000828
+    },
+    "runs/CS-variants-final-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 14.314254700002493
+    },
+    "runs/CS-imaging-final-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 5.371945999999298
+    },
+    "runs/CS-repair-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 2.706876199998078
+    },
+    "runs/CS-real-memory-repair-001": {
+      "status": "PASS",
+      "charged_seconds": 3.2193361000099685
+    },
+    "runs/CS-owner-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 4.033629600002314
+    },
+    "runs/CS-owner-pilot-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 2.4458872000104748
+    },
+    "runs/CS-cost-and-owner-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 2.8041136000101687
+    },
+    "runs/CS-owner-final-001": {
+      "status": "PASS",
+      "charged_seconds": 8.064904999991995
+    },
+    "runs/CS-owner-final-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 2.9871861999999965
+    },
+    "runs/CS-repair-cli-restore-001": {
+      "status": "PASS",
+      "charged_seconds": 2.408083999995142
+    },
+    "runs/CS-repair-cli-expected-reject-001": {
+      "status": "FAILED",
+      "charged_seconds": 2.3749727999966126
+    },
+    "runs/CS-report-001": {
+      "status": "PASS",
+      "charged_seconds": 4.448058099995251
+    },
+    "runs/CS-figure-layout-002": {
+      "status": "PASS",
+      "charged_seconds": 8.407856500009075
+    },
+    "runs/TT-contract-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 4.128284700011136
+    },
+    "runs/TT-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 5.818655700000818
+    },
+    "runs/TT-pilot-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 5.515337900011218
+    },
+    "runs/TT-final-001": {
+      "status": "PASS",
+      "charged_seconds": 20.157052499998827
+    },
+    "runs/TT-final-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 19.532147700010682
+    },
+    "runs/TT-runtime-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 3.3329713999992236
+    },
+    "runs/TT-owner-integration-001": {
+      "status": "PASS",
+      "charged_seconds": 10.502989500004333
+    },
+    "runs/TT-final-math-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 6.732842299999902
+    },
+    "runs/TT-retention-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 22.93876169998839
+    },
+    "runs/task-command-f02cd68f-3337-4497-8226-afadd13b5291": {
+      "status": "PASS",
+      "charged_seconds": 3.69527989999915
+    },
+    "runs/TT-report-001": {
+      "status": "PASS",
+      "charged_seconds": 3.4027732999966247
+    },
+    "runs/TT-calibration-scope-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 3.2358053000061773
+    },
+    "runs/TT-calibration-migration-001": {
+      "status": "PASS",
+      "charged_seconds": 5.797381799988216
+    },
+    "runs/task-command-237a6db5-8486-4ae0-a25d-371015712b24": {
+      "status": "PASS",
+      "charged_seconds": 3.646202899995842
+    },
+    "runs/LI-v5-verification-001": {
+      "status": "FAILED",
+      "charged_seconds": 11.252037099999143
+    },
+    "runs/LI-pilot-001": {
+      "status": "FAILED",
+      "charged_seconds": 8.699262799986172
+    },
+    "runs/LI-pilot-resume-001": {
+      "status": "PASS",
+      "charged_seconds": 5.934808600024553
+    },
+    "runs/LI-acquisition-final-001": {
+      "status": "PASS",
+      "charged_seconds": 13.573419099993771
+    },
+    "runs/LI-contracts-001": {
+      "status": "FAILED",
+      "charged_seconds": 5.153754700004356
+    },
+    "runs/LI-contracts-002": {
+      "status": "FAILED",
+      "charged_seconds": 6.136907100008102
+    },
+    "runs/LI-contracts-003": {
+      "status": "PASS",
+      "charged_seconds": 45.57431200001156
+    },
+    "runs/LI-evaluation-final-001": {
+      "status": "PASS",
+      "charged_seconds": 55.34015350000118
+    },
+    "runs/LI-retention-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 69.0845915999962
+    },
+    "runs/LI-math-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 4.241825999983121
+    },
+    "runs/LI-v5-portability-001": {
+      "status": "PASS",
+      "charged_seconds": 2.8189471999939997
+    },
+    "runs/LI-owner-integration-001": {
+      "status": "PASS",
+      "charged_seconds": 17.78841080001439
+    },
+    "runs/inquiry-command-0f9944ac-e012-481e-805d-da0e7fc628ef/worker": {
+      "status": "PASS",
+      "charged_seconds": 4.725743100018008
+    },
+    "runs/LI-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.6027470999979414
+    },
+    "runs/LI-lint-fix-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1355086000112351
+    },
+    "runs/inquiry-command-20d7257b-b4c1-4a1c-92f0-a7440c140211/worker": {
+      "status": "PASS",
+      "charged_seconds": 4.728951900004176
+    },
+    "runs/LI-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 110.54881760000717
+    },
+    "runs/LI-preservation-checks-001": {
+      "status": "FAILED",
+      "charged_seconds": 14.777932400000282
+    },
+    "runs/LI-historical-checker-repair-001": {
+      "status": "PASS",
+      "charged_seconds": 3.9134814999997616
+    },
+    "runs/LI-lint-final-001": {
+      "status": "PASS",
+      "charged_seconds": 0.14029960002517328
+    },
+    "runs/LI-cli-help-001": {
+      "status": "PASS",
+      "charged_seconds": 1.923413900018204
+    },
+    "runs/LI-final-static-001": {
+      "status": "PASS",
+      "charged_seconds": 0.12887580000096932
+    },
+    "runs/LI-migration-guard-test-001": {
+      "status": "PASS",
+      "charged_seconds": 7.9554387999814935
+    },
+    "runs/LI-migration-guard-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.12767499999608845
+    },
+    "runs/inquiry-command-b0f7d883-6d1e-492b-81bc-464c9acc22b9/worker": {
+      "status": "PASS",
+      "charged_seconds": 4.664765800000168
+    },
+    "runs/LI-seal-tool-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.12982319999719039
+    },
+    "runs/CI-v10-replay-001": {
+      "status": "PASS",
+      "charged_seconds": 36.96805770002538
+    },
+    "runs/CI-lint-before-fit-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16547919998993166
+    },
+    "runs/CI-pilot-job-001": {
+      "status": "PASS",
+      "charged_seconds": 29.05457170002046
+    },
+    "runs/CI-acquisition-final-job-001": {
+      "status": "PASS",
+      "charged_seconds": 187.29588449999574
+    },
+    "runs/CI-runtime-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.15889349998906255
+    },
+    "runs/CI-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 24.34256980000646
+    },
+    "runs/CI-evaluation-final-job-001": {
+      "status": "PASS",
+      "charged_seconds": 26.950785499997437
+    },
+    "runs/CI-followup-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17511920002289116
+    },
+    "runs/CI-stopping-followup-001": {
+      "status": "PASS",
+      "charged_seconds": 10.031574100023136
+    },
+    "runs/CI-independent-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 3.258611400000518
+    },
+    "runs/CI-owner-integration-001": {
+      "status": "PASS",
+      "charged_seconds": 20.658238900010474
+    },
+    "runs/CI-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 140.27150989999063
+    },
+    "runs/constraint-command-2ad74e33-c224-47e4-8dc6-70ddb175e082/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.724992599978577
+    },
+    "runs/CI-report-001": {
+      "status": "PASS",
+      "charged_seconds": 4.1795316000061575
+    },
+    "runs/CI-final-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16254800002207048
+    },
+    "runs/constraint-command-d5baa510-28e6-413a-821f-3d7cae592766/worker": {
+      "status": "PASS",
+      "charged_seconds": 5.580591200006893
+    },
+    "runs/SC-prepare-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 8.017537800013088
+    },
+    "runs/SC-prepare-002": {
+      "status": "FAILED",
+      "charged_seconds": 0.131551300000865
+    },
+    "runs/SC-data-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 2.458604999992531
+    },
+    "runs/SC-prepare-003": {
+      "status": "PASS",
+      "charged_seconds": 0.435249100002693
+    },
+    "runs/SC-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.6251062999945134
+    },
+    "runs/SC-pilot-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 13.029008899990004
+    },
+    "runs/SC-audit-worker-001": {
+      "status": "FAILED",
+      "charged_seconds": 6.081122799980221
+    },
+    "runs/SC-audit-worker-002": {
+      "status": "PASS",
+      "charged_seconds": 10.918619000003673
+    },
+    "runs/request-command-e59f39a9-5895-4d4f-bbae-167d3f66ab16": {
+      "status": "PASS",
+      "charged_seconds": 6.041346500016516
+    },
+    "runs/SC-data-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 0.22355369999422692
+    },
+    "runs/SC-full-shared-2641-worker": {
+      "status": "PASS",
+      "charged_seconds": 163.0624334999884
+    },
+    "runs/SC-full-shared-2642-worker": {
+      "status": "PASS",
+      "charged_seconds": 170.79411029999028
+    },
+    "runs/SC-full-pooled-2641-worker": {
+      "status": "PASS",
+      "charged_seconds": 24.963259100011783
+    },
+    "runs/SC-full-pooled-2642-worker": {
+      "status": "PASS",
+      "charged_seconds": 24.888826500013238
+    },
+    "runs/SC-interface-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 7.209477600001264
+    },
+    "runs/SC-mixed-shared-2641-worker": {
+      "status": "PASS",
+      "charged_seconds": 169.71791669999948
+    },
+    "runs/SC-mixed-shared-2642-worker": {
+      "status": "PASS",
+      "charged_seconds": 170.6976078999869
+    },
+    "runs/SC-mixed-pooled-2641-worker": {
+      "status": "PASS",
+      "charged_seconds": 24.69127720000688
+    },
+    "runs/SC-mixed-pooled-2642-worker": {
+      "status": "PASS",
+      "charged_seconds": 23.345276599982753
+    },
+    "runs/SC-schedule-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 8.689536799996858
+    },
+    "runs/SC-dev-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 38.910820500022965
+    },
+    "runs/SC-sequential-naive-2651-worker": {
+      "status": "PASS",
+      "charged_seconds": 157.3042460999859
+    },
+    "runs/SC-sequential-replay-2651-worker": {
+      "status": "PASS",
+      "charged_seconds": 178.29994100000476
+    },
+    "runs/SC-sequential-naive-2652-worker": {
+      "status": "PASS",
+      "charged_seconds": 156.61004029997275
+    },
+    "runs/SC-sequential-replay-2652-worker": {
+      "status": "PASS",
+      "charged_seconds": 189.57054499999504
+    },
+    "runs/SC-exposure-shared-2641-worker": {
+      "status": "PASS",
+      "charged_seconds": 354.8328911999997
+    },
+    "runs/SC-exposure-shared-2642-worker": {
+      "status": "PASS",
+      "charged_seconds": 363.306631799991
+    },
+    "runs/SC-exposure-pooled-2641-worker": {
+      "status": "PASS",
+      "charged_seconds": 41.904850899998564
+    },
+    "runs/SC-exposure-pooled-2642-worker": {
+      "status": "PASS",
+      "charged_seconds": 41.70776210000622
+    },
+    "runs/SC-release-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16698219999670982
+    },
+    "runs/SC-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 157.31232729999465
+    },
+    "runs/SC-dev-worker-002": {
+      "status": "PASS",
+      "charged_seconds": 23.76156980000087
+    },
+    "runs/SC-final-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 93.43575000000419
+    },
+    "runs/SC-integration-001": {
+      "status": "PASS",
+      "charged_seconds": 10.690381599997636
+    },
+    "runs/SC-independent-report-001": {
+      "status": "PASS",
+      "charged_seconds": 8.198224699997809
+    },
+    "runs/request-command-653b361d-5715-4f87-928b-4c543fdd671d": {
+      "status": "PASS",
+      "charged_seconds": 6.682749600004172
+    },
+    "runs/annotation-command-8c3a47f2-b0b5-4f5b-9c4c-237b23643b16": {
+      "status": "PASS",
+      "charged_seconds": 6.46171659999527
+    },
+    "runs/SC-release-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.15656649999436922
+    },
+    "runs/SS-v11-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 25.9410253999813
+    },
+    "runs/SS-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 24.755365899996832
+    },
+    "runs/SS-development-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 68.61708309999085
+    },
+    "runs/SS-lang-replay-2711-worker": {
+      "status": "FAILED",
+      "charged_seconds": 30.62850679998519
+    },
+    "runs/SS-lang-replay-2711-r1-worker": {
+      "status": "PASS",
+      "charged_seconds": 153.17851249998785
+    },
+    "runs/SS-lang-naive-2711-worker": {
+      "status": "PASS",
+      "charged_seconds": 148.67610379998223
+    },
+    "runs/SS-lang-replay-2712-worker": {
+      "status": "PASS",
+      "charged_seconds": 168.89900759997545
+    },
+    "runs/SS-lang-naive-2712-worker": {
+      "status": "PASS",
+      "charged_seconds": 139.40669590001926
+    },
+    "runs/SS-rehearsal-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 124.80865710001672
+    },
+    "runs/SS-final-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 38.11432570000761
+    },
+    "runs/SS-language-final-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 38.436273600003915
+    },
+    "runs/SS-regression-before-worker-001": {
+      "status": "FAILED",
+      "charged_seconds": 58.69721949999803
+    },
+    "runs/SS-regression-after-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 42.34412110000267
+    },
+    "runs/SS-correction-development-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 15.96297809999669
+    },
+    "runs/SS-correction-final-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 14.342733899975428
+    },
+    "runs/SS-integration-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 42.277505000005476
+    },
+    "runs/SS-recount-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 11.909296700003324
+    },
+    "runs/SS-full-tests-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 262.67263370001456
+    },
+    "runs/SS-final-regression-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 38.16108499999973
+    },
+    "runs/SS-metadata-migration-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 13.571443399996497
+    },
+    "runs/study-command-ab4a3bb1-28d3-430b-affc-1dc31a1b8749": {
+      "status": "PASS",
+      "charged_seconds": 12.916834500007099
+    },
+    "runs/study-command-627be239-93d1-44c7-9be5-30de0182afa3": {
+      "status": "PASS",
+      "charged_seconds": 11.447431899985531
+    },
+    "runs/SS-figure-worker-001": {
+      "status": "PASS",
+      "charged_seconds": 3.018163500004448
+    },
+    "runs/CR-packet-worker-001": {
+      "status": "FAILED",
+      "charged_seconds": 43.647408100019675
+    },
+    "runs/CR-portability-worker-001": {
+      "status": "FAILED",
+      "charged_seconds": 17.02911280002445
+    },
+    "runs/CR-packet-finish-001": {
+      "status": "PASS",
+      "charged_seconds": 15.388225500006229
+    },
+    "runs/CR-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 3.8558593000052497
+    },
+    "runs/CR-pilot-001": {
+      "status": "PASS",
+      "charged_seconds": 11.130115899984958
+    },
+    "runs/CR-training-001": {
+      "status": "PASS",
+      "charged_seconds": 210.55359350002254
+    },
+    "runs/CR-development-001": {
+      "status": "PASS",
+      "charged_seconds": 112.49712079999154
+    },
+    "runs/CR-selection-001": {
+      "status": "PASS",
+      "charged_seconds": 3.2978137000172865
+    },
+    "runs/CR-prepare-r2": {
+      "status": "PASS",
+      "charged_seconds": 3.7412402000045404
+    },
+    "runs/CR-training-r2": {
+      "status": "PASS",
+      "charged_seconds": 228.5449399999925
+    },
+    "runs/CR-development-r2": {
+      "status": "PASS",
+      "charged_seconds": 122.58783830000903
+    },
+    "runs/CR-selection-r2": {
+      "status": "PASS",
+      "charged_seconds": 3.351594000007026
+    },
+    "runs/CR-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.17862319998675957
+    },
+    "runs/CR-format-001": {
+      "status": "PASS",
+      "charged_seconds": 0.18353379998006858
+    },
+    "runs/CR-final-r2": {
+      "status": "PASS",
+      "charged_seconds": 154.72151040000608
+    },
+    "runs/CR-lint-fix-002": {
+      "status": "PASS",
+      "charged_seconds": 0.1718438999960199
+    },
+    "runs/CR-format-002": {
+      "status": "PASS",
+      "charged_seconds": 0.16397809999762103
+    },
+    "runs/CR-targeted-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 62.796216799994
+    },
+    "runs/CR-integration-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 60.31561660001171
+    },
+    "runs/CR-reporting-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16290339999250136
+    },
+    "runs/CR-reporting-format-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16528469999320805
+    },
+    "runs/CR-reporting-001": {
+      "status": "PASS",
+      "charged_seconds": 5.029961499996716
+    },
+    "runs/CR-full-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 264.30572049997863
+    },
+    "runs/CR-final-style-001": {
+      "status": "PASS",
+      "charged_seconds": 0.21047659998293966
+    },
+    "runs/CR-final-format-001": {
+      "status": "PASS",
+      "charged_seconds": 0.18099989998154342
+    },
+    "runs/CR-plot-layout-002": {
+      "status": "PASS",
+      "charged_seconds": 5.496427600010065
+    },
+    "runs/CR-validation-001": {
+      "status": "FAILED",
+      "charged_seconds": 11.882809800008545
+    },
+    "runs/CR-validation-style-002": {
+      "status": "PASS",
+      "charged_seconds": 0.1611953999963589
+    },
+    "runs/CR-validation-002": {
+      "status": "FAILED",
+      "charged_seconds": 5.152064499998232
+    },
+    "runs/CR-validation-003": {
+      "status": "FAILED",
+      "charged_seconds": 5.574864099995466
+    },
+    "runs/CR-validation-004": {
+      "status": "FAILED",
+      "charged_seconds": 3.477871099981712
+    },
+    "runs/CR-validation-005": {
+      "status": "PASS",
+      "charged_seconds": 33.512666399998125
+    },
+    "runs/CR-maintenance-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17495220000273548
+    },
+    "runs/CR-ci-fixture-trace-001": {
+      "status": "PASS",
+      "charged_seconds": 95.03564149999875
+    },
+    "runs/CR-ci-style-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17601999998441897
+    },
+    "runs/CR-ci-format-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17169930000090972
+    },
+    "runs/CR-ci-fresh-001": {
+      "status": "PASS",
+      "charged_seconds": 91.41667109998525
+    },
+    "runs/CR-ci-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 2.776606500003254
+    },
+    "runs/CR-ci-all-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17259300002478994
+    },
+    "runs/CR-diag-style-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1580692999996245
+    },
+    "runs/CR-diag-format-001": {
+      "status": "PASS",
+      "charged_seconds": 0.15990469997632317
+    },
+    "runs/CR-diag-replay-001": {
+      "status": "PASS",
+      "charged_seconds": 5.3282797999854665
+    },
+    "runs/CR-rounding-targeted-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 120.02683600000455
+    },
+    "runs/CR-rounding-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1822233000129927
+    },
+    "runs/CR-rounding-full-001": {
+      "status": "PASS",
+      "charged_seconds": 260.8849076000042
+    },
+    "runs/CR-constraint-diag-style-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1671171000052709
+    },
+    "runs/CR-constraint-diag-001": {
+      "status": "FAILED",
+      "charged_seconds": 8.345110399997793
+    },
+    "runs/CR-constraint-diag-002": {
+      "status": "PASS",
+      "charged_seconds": 8.295527099980973
+    },
+    "runs/CR-isa-profile-001": {
+      "status": "PASS",
+      "charged_seconds": 8.165693099988857
+    },
+    "runs/CR-isa-profile-matched-001": {
+      "status": "PASS",
+      "charged_seconds": 7.809928200003924
+    },
+    "runs/CR-release-forecast-001": {
+      "status": "PASS",
+      "charged_seconds": 8.131088299996918
+    },
+    "runs/CR-constraint-repair-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1699257000000216
+    },
+    "runs/CR-constraint-repair-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 8.994680100004189
+    },
+    "runs/CR-post-constraint-diag-001": {
+      "status": "PASS",
+      "charged_seconds": 11.301861899992218
+    },
+    "runs/CR-post-constraint-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17049250000854954
+    },
+    "runs/CR-constraint-repair-full-001": {
+      "status": "PASS",
+      "charged_seconds": 232.68081799999345
+    },
+    "runs/CR-result-diag-001": {
+      "status": "PASS",
+      "charged_seconds": 9.081508300005225
+    },
+    "runs/CR-request-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16669460001867265
+    },
+    "runs/CR-request-contracts-001": {
+      "status": "PASS",
+      "charged_seconds": 11.014571599982446
+    },
+    "runs/CR-final-reader-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16935999999986961
+    },
+    "runs/CR-final-reader-contracts-001": {
+      "status": "FAILED",
+      "charged_seconds": 16.86945850000484
+    },
+    "runs/CR-final-reader-contracts-002": {
+      "status": "PASS",
+      "charged_seconds": 17.054563599987887
+    },
+    "runs/CR-qualified-readers-full-001": {
+      "status": "PASS",
+      "charged_seconds": 277.1409988999949
+    },
+    "runs/CR-publication-forecast-001": {
+      "status": "PASS",
+      "charged_seconds": 9.807747999991989
+    },
+    "runs/HR-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 5.908537800016347
+    },
+    "runs/HR-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.18928310001501814
+    },
+    "runs/HC-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 7.482137500017416
+    },
+    "runs/HC-train-001": {
+      "status": "FAILED",
+      "charged_seconds": 10.291023900004802
+    },
+    "runs/HR-test-001": {
+      "status": "PASS",
+      "charged_seconds": 3.5295548000140116
+    },
+    "runs/HC-train-002": {
+      "status": "PASS",
+      "charged_seconds": 18.136203900008695
+    },
+    "runs/HR-train-001": {
+      "status": "PASS",
+      "charged_seconds": 27.475956599984784
+    },
+    "runs/HR-final-001": {
+      "status": "PASS",
+      "charged_seconds": 10.858969099994283
+    },
+    "runs/HC-final-001": {
+      "status": "PASS",
+      "charged_seconds": 12.872330500016687
+    },
+    "runs/HR-audit-001": {
+      "status": "FAILED",
+      "charged_seconds": 14.871434100001352
+    },
+    "runs/HR-audit-002": {
+      "status": "FAILED",
+      "charged_seconds": 16.800749000016367
+    },
+    "runs/HR-arxiv-live-001": {
+      "status": "PASS",
+      "charged_seconds": 16.42382169998018
+    },
+    "runs/HR-audit-003": {
+      "status": "PASS",
+      "charged_seconds": 43.40607729999465
+    },
+    "runs/HR-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.17596039999625646
+    },
+    "runs/HR-regression-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 120.00539850001223
+    },
+    "runs/HR-targeted-002": {
+      "status": "PASS",
+      "charged_seconds": 22.163168400002178
+    },
+    "runs/HR-release-check-001": {
+      "status": "PASS",
+      "charged_seconds": 0.27691680000862107
+    },
+    "runs/HB-prepare-001": {
+      "status": "FAILED",
+      "charged_seconds": 8.829359000024851
+    },
+    "runs/HB-prepare-002": {
+      "status": "PASS",
+      "charged_seconds": 9.203607900009956
+    },
+    "runs/HB-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.15947569999843836
+    },
+    "runs/HB-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 9.39052840002114
+    },
+    "runs/HB-train-001": {
+      "status": "PASS",
+      "charged_seconds": 26.985712099995
+    },
+    "runs/HB-final-001": {
+      "status": "PASS",
+      "charged_seconds": 14.4066368000058
+    },
+    "runs/GD-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1774802000145428
+    },
+    "runs/GD-acquire-001": {
+      "status": "PASS",
+      "charged_seconds": 9.54425900001661
+    },
+    "runs/GD-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 4.269336899975315
+    },
+    "runs/GD-train-001": {
+      "status": "PASS",
+      "charged_seconds": 13.158639400004176
+    },
+    "runs/GD2-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16610109998146072
+    },
+    "runs/GD2-train-001": {
+      "status": "PASS",
+      "charged_seconds": 12.617776600003708
+    },
+    "runs/GD2-final-001": {
+      "status": "PASS",
+      "charged_seconds": 10.527421900012996
+    },
+    "runs/GD-runtime-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17436149998684414
+    },
+    "runs/GD-tests-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.19107710002572276
+    },
+    "runs/GD-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 43.26736019999953
+    },
+    "runs/GD-audit-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1709724000247661
+    },
+    "runs/GD-audit-001": {
+      "status": "FAILED",
+      "charged_seconds": 22.540820399997756
+    },
+    "runs/GD-audit-002": {
+      "status": "PASS",
+      "charged_seconds": 79.18309989999398
+    },
+    "runs/GD-live-001": {
+      "status": "PASS",
+      "charged_seconds": 14.235573299985845
+    },
+    "runs/GD-arxiv-live-001": {
+      "status": "PASS",
+      "charged_seconds": 21.20346019999124
+    },
+    "runs/HB-release-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.172636400006013
+    },
+    "runs/HB-artifacts-001": {
+      "status": "PASS",
+      "charged_seconds": 0.3277397000056226
+    },
+    "runs/HB-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 311.5226787000138
+    },
+    "runs/GD-test-isolation-001": {
+      "status": "PASS",
+      "charged_seconds": 39.96497110000928
+    },
+    "runs/HB-release-verify-002": {
+      "status": "PASS",
+      "charged_seconds": 0.3140125000209082
+    },
+    "runs/ST-intake-001": {
+      "status": "PASS",
+      "charged_seconds": 14.976387600007001
+    },
+    "runs/VC-packet-job-001": {
+      "status": "FAILED",
+      "charged_seconds": 29.722359400009736
+    },
+    "runs/VC-prior-001": {
+      "status": "PASS",
+      "charged_seconds": 7.324031399999512
+    },
+    "runs/VC-tests-001": {
+      "status": "FAILED",
+      "charged_seconds": 70.71289409999736
+    },
+    "runs/VC-tests-002": {
+      "status": "PASS",
+      "charged_seconds": 101.31790900000487
+    },
+    "runs/VC-packet-portable-001": {
+      "status": "PASS",
+      "charged_seconds": 2.3780262999935076
+    },
+    "runs/VC-tests-003": {
+      "status": "PASS",
+      "charged_seconds": 99.67146519999369
+    },
+    "runs/VC-train-001": {
+      "status": "PASS",
+      "charged_seconds": 28.484643000003416
+    },
+    "runs/VC-final-001": {
+      "status": "PASS",
+      "charged_seconds": 15.029523200006224
+    },
+    "runs/VC-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 76.52155430000857
+    },
+    "runs/VC-live-001": {
+      "status": "PASS",
+      "charged_seconds": 20.34671700000763
+    },
+    "runs/VC-regression-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 420.02036989998305
+    },
+    "runs/VC-collect-001": {
+      "status": "PASS",
+      "charged_seconds": 9.151103699987289
+    },
+    "runs/VC-regression-tail-001": {
+      "status": "PASS",
+      "charged_seconds": 174.7558710000012
+    },
+    "runs/VC-predecessors-001": {
+      "status": "PASS",
+      "charged_seconds": 36.72960429999512
+    },
+    "runs/VC-release-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 0.7674949999782257
+    },
+    "runs/VC-live-status-001": {
+      "status": "PASS",
+      "charged_seconds": 24.78684559999965
+    },
+    "runs/QP-packet-001": {
+      "status": "FAILED",
+      "charged_seconds": 17.394146000006003
+    },
+    "runs/QP-packet-portable-job-001": {
+      "status": "PASS",
+      "charged_seconds": 5.239104100008262
+    },
+    "runs/QP-style-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16715530000510626
+    },
+    "runs/QP-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 40.39045020000776
+    },
+    "runs/QP-style-002": {
+      "status": "PASS",
+      "charged_seconds": 0.1524906000122428
+    },
+    "runs/QP-tests-002": {
+      "status": "PASS",
+      "charged_seconds": 55.404837500012945
+    },
+    "runs/QP-style-003": {
+      "status": "PASS",
+      "charged_seconds": 0.149956299981568
+    },
+    "runs/QP-training-001": {
+      "status": "PASS",
+      "charged_seconds": 24.826112399983685
+    },
+    "runs/QP-final-001": {
+      "status": "PASS",
+      "charged_seconds": 38.74405400000978
+    },
+    "runs/QP-replay-001": {
+      "status": "PASS",
+      "charged_seconds": 28.43981920002261
+    },
+    "runs/QP-lifecycle-001": {
+      "status": "PASS",
+      "charged_seconds": 60.26636939996388
+    },
+    "runs/QP-all-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1587743000127375
+    },
+    "runs/QP-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 423.97595150000416
+    },
+    "runs/QP-worked-example-001": {
+      "status": "PASS",
+      "charged_seconds": 17.150498899980448
+    },
+    "runs/QP-cli-solve-001": {
+      "status": "PASS",
+      "charged_seconds": 16.72295969998231
+    },
+    "runs/QP-release-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16244490002281964
+    },
+    "runs/QP-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 4.360838400025386
+    },
+    "runs/QP-release-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 0.8196869999519549
+    },
+    "runs/QP-parent-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 0.24107730004470795
+    },
+    "runs/QP-live-status-001": {
+      "status": "PASS",
+      "charged_seconds": 16.401585600047838
+    },
+    "runs/QP-live-status-002": {
+      "status": "PASS",
+      "charged_seconds": 21.278676800022367
+    },
+    "runs/QP-publication-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16493959998479113
+    },
+    "runs/QP-preservation-002": {
+      "status": "PASS",
+      "charged_seconds": 0.8108450000290759
+    },
+    "runs/QP-publication-costs-001": {
+      "status": "PASS",
+      "charged_seconds": 0.23463230003835633
+    },
+    "runs/QP-retention-fix-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 55.889351100020576
+    },
+    "runs/QP-fixture-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.15192680002655834
+    },
+    "runs/LP-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.6418266000109725
+    },
+    "runs/LP-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 9.0566814999911
+    },
+    "runs/LP-train-001": {
+      "status": "PASS",
+      "charged_seconds": 66.51872950000688
+    },
+    "runs/LP-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.16116320004221052
+    },
+    "runs/LP-final-001": {
+      "status": "PASS",
+      "charged_seconds": 86.63525639998261
+    },
+    "runs/LP-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 37.483296199992765
+    },
+    "runs/LP-lint-003": {
+      "status": "PASS",
+      "charged_seconds": 0.1592357000336051
+    },
+    "runs/LP-qualify-001": {
+      "status": "PASS",
+      "charged_seconds": 21.308961900009308
+    },
+    "runs/LP-lint-004": {
+      "status": "PASS",
+      "charged_seconds": 0.1606984999962151
+    },
+    "runs/LP-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 514.7753400999936
+    },
+    "runs/LP-use-work-001": {
+      "status": "PASS",
+      "charged_seconds": 19.816690300009213
+    },
+    "runs/LP-use-reading-001": {
+      "status": "PASS",
+      "charged_seconds": 21.59960710001178
+    },
+    "runs/OD-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16404050000710413
+    },
+    "runs/OD-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 3.6987535000080243
+    },
+    "runs/OD-run-001": {
+      "status": "PASS",
+      "charged_seconds": 68.24759059998905
+    },
+    "runs/OD-use-001": {
+      "status": "PASS",
+      "charged_seconds": 20.694187400047667
+    },
+    "runs/LP-lint-005": {
+      "status": "PASS",
+      "charged_seconds": 0.16210139996837825
+    },
+    "runs/LP-full-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.16968789999373257
+    },
+    "runs/LP-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 6.6575945999938995
+    },
+    "runs/OD-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 9.642845900030807
+    },
+    "runs/LP-artifact-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 1.2585062999860384
+    },
+    "runs/OD-artifact-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 14.234304499987047
+    },
+    "runs/AD-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.16263929998967797
+    },
+    "runs/AD-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 2.392055599950254
+    },
+    "runs/AD-run-001": {
+      "status": "FAILED",
+      "charged_seconds": 22.48201560002053
+    },
+    "runs/AD-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.15304120001383126
+    },
+    "runs/AD-tests-002": {
+      "status": "PASS",
+      "charged_seconds": 2.431884999969043
+    },
+    "runs/AD-run-002": {
+      "status": "PASS",
+      "charged_seconds": 51.852095999987796
+    },
+    "runs/AC-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.17422419996000826
+    },
+    "runs/AC-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 3.381427500047721
+    },
+    "runs/AC-run-001": {
+      "status": "PASS",
+      "charged_seconds": 58.70888829999603
+    },
+    "runs/AC-full-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17245349998120219
+    },
+    "runs/AC-use-001": {
+      "status": "PASS",
+      "charged_seconds": 24.423172599985264
+    },
+    "runs/AD-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 3.911642099963501
+    },
+    "runs/AC-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 4.77206109999679
+    },
+    "runs/AD-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 7.066014099982567
+    },
+    "runs/AC-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 8.304045400000177
+    },
+    "runs/CG-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.1808224999695085
+    },
+    "runs/CG-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 3.654888499993831
+    },
+    "runs/CG-train-001": {
+      "status": "PASS",
+      "charged_seconds": 293.4432074999786
+    },
+    "runs/CG-final-001": {
+      "status": "PASS",
+      "charged_seconds": 33.41270179999992
+    },
+    "runs/CG-future-001": {
+      "status": "PASS",
+      "charged_seconds": 69.73665470001288
+    },
+    "runs/CG-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 47.914943400013726
+    },
+    "runs/CG-integrate-001": {
+      "status": "PASS",
+      "charged_seconds": 28.95261080004275
+    },
+    "runs/SR-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.16022660001181066
+    },
+    "runs/SR-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 3.4243762000114657
+    },
+    "runs/SR-train-001": {
+      "status": "PASS",
+      "charged_seconds": 480.85934119997546
+    },
+    "runs/RS-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 3.5210504000424407
+    },
+    "runs/RS-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.1707968999980949
+    },
+    "runs/RS-train-001": {
+      "status": "INTERRUPTED",
+      "charged_seconds": 900.0,
+      "accounting": "full interrupted reservation retained"
+    },
+    "runs/RS-train-002": {
+      "status": "PASS",
+      "charged_seconds": 311.38453079998726
+    },
+    "runs/SR-final-001": {
+      "status": "PASS",
+      "charged_seconds": 36.37312740000198
+    },
+    "runs/RS-final-001": {
+      "status": "PASS",
+      "charged_seconds": 59.11933650000719
+    },
+    "runs/SR-future-001": {
+      "status": "PASS",
+      "charged_seconds": 85.87891450000461
+    },
+    "runs/SR-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 54.96402060001856
+    },
+    "runs/RS-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 98.44016790000023
+    },
+    "runs/RS-use-001": {
+      "status": "FAILED",
+      "charged_seconds": 3.227540299994871
+    },
+    "runs/RS-use-002": {
+      "status": "PASS",
+      "charged_seconds": 27.666072499996517
+    },
+    "runs/RS-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.17684979998739436
+    },
+    "runs/RS-regression-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 500.02281570003834
+    },
+    "runs/RS-collect-001": {
+      "status": "PASS",
+      "charged_seconds": 8.27890540001681
+    },
+    "runs/RS-regression-tail-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 110.0361635000445
+    },
+    "runs/RS-regression-tail-002": {
+      "status": "PASS",
+      "charged_seconds": 109.72046010004124
+    },
+    "runs/CG-package-001": {
+      "status": "TIMEOUT",
+      "charged_seconds": 160.0067966999486
+    },
+    "runs/SD-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 5.087441299983766
+    },
+    "runs/SD-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.17286890000104904
+    },
+    "runs/SD-unit-002": {
+      "status": "PASS",
+      "charged_seconds": 4.8805840000277385
+    },
+    "runs/SD-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 55.06488099996932
+    },
+    "runs/SD-train-001": {
+      "status": "PASS",
+      "charged_seconds": 38.59764009999344
+    },
+    "runs/SD-train-002": {
+      "status": "PASS",
+      "charged_seconds": 40.36980659997789
+    },
+    "runs/SD-train-003": {
+      "status": "PASS",
+      "charged_seconds": 56.651267000008374
+    },
+    "runs/SD-train-004": {
+      "status": "PASS",
+      "charged_seconds": 57.88391049997881
+    },
+    "runs/SD-select-001": {
+      "status": "PASS",
+      "charged_seconds": 9.739028199983295
+    },
+    "runs/SD-final-001": {
+      "status": "PASS",
+      "charged_seconds": 11.046466399973724
+    },
+    "runs/SD-future-001": {
+      "status": "PASS",
+      "charged_seconds": 68.38024060003227
+    },
+    "runs/SD-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 80.67223430000013
+    },
+    "runs/SD-integrate-001": {
+      "status": "PASS",
+      "charged_seconds": 48.25300839997362
+    },
+    "runs/SD-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.28316769999219105
+    },
+    "runs/SD-unit-003": {
+      "status": "PASS",
+      "charged_seconds": 8.806920100003481
+    },
+    "runs/SD-observation-select-001": {
+      "status": "PASS",
+      "charged_seconds": 9.310945699980948
+    },
+    "runs/SD-observe-001": {
+      "status": "FAILED",
+      "charged_seconds": 7.59916499996325
+    },
+    "runs/CF-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.30844220001017675
+    },
+    "runs/CF-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 9.638445499993395
+    },
+    "runs/CF-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 52.74037269997643
+    },
+    "runs/CF-train-001": {
+      "status": "PASS",
+      "charged_seconds": 81.78199659998063
+    },
+    "runs/CF-train-002": {
+      "status": "PASS",
+      "charged_seconds": 78.45828299998539
+    },
+    "runs/CF-train-003": {
+      "status": "PASS",
+      "charged_seconds": 77.06081649998669
+    },
+    "runs/CF-select-001": {
+      "status": "PASS",
+      "charged_seconds": 11.360606000002008
+    },
+    "runs/CF-final-001": {
+      "status": "PASS",
+      "charged_seconds": 13.580440299992915
+    },
+    "runs/CF-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 75.25031189998845
+    },
+    "runs/CF-integrate-001": {
+      "status": "PASS",
+      "charged_seconds": 47.553282400011085
+    },
+    "runs/CF-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.5630837999633513
+    },
+    "runs/CF-observation-select-001": {
+      "status": "PASS",
+      "charged_seconds": 9.114437000011094
+    },
+    "runs/CF-observe-001": {
+      "status": "PASS",
+      "charged_seconds": 8.171770200016908
+    },
+    "runs/CF-unit-002": {
+      "status": "PASS",
+      "charged_seconds": 9.939079399977345
+    },
+    "runs/CF-lint-003": {
+      "status": "PASS",
+      "charged_seconds": 0.28928949998226017
+    },
+    "runs/CF-observation-select-002": {
+      "status": "PASS",
+      "charged_seconds": 8.684628100018017
+    },
+    "runs/CF-observe-002": {
+      "status": "PASS",
+      "charged_seconds": 6.973494999983814
+    },
+    "runs/CF-observe-integrate-001": {
+      "status": "PASS",
+      "charged_seconds": 82.64541289996123
+    },
+    "runs/CF-use-001": {
+      "status": "PASS",
+      "charged_seconds": 46.1130770999589
+    },
+    "runs/SD-report-001": {
+      "status": "PASS",
+      "charged_seconds": 5.871254900004715
+    },
+    "runs/CF-report-001": {
+      "status": "PASS",
+      "charged_seconds": 9.489948700007517
+    },
+    "runs/CF-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 718.4550484999781
+    },
+    "runs/CF-lint-004": {
+      "status": "PASS",
+      "charged_seconds": 0.49413270002696663
+    },
+    "runs/CG-package-002": {
+      "status": "PASS",
+      "charged_seconds": 12.390176299959421
+    },
+    "runs/CG-package-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 21.24144430004526
+    },
+    "runs/SR-package-001": {
+      "status": "PASS",
+      "charged_seconds": 356.30631969997194
+    },
+    "runs/RS-package-001": {
+      "status": "PASS",
+      "charged_seconds": 170.56980499997735
+    },
+    "runs/SD-package-001": {
+      "status": "PASS",
+      "charged_seconds": 88.37262199999532
+    },
+    "runs/CF-package-001": {
+      "status": "PASS",
+      "charged_seconds": 73.21800699998857
+    },
+    "runs/KG-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.163207900011912
+    },
+    "runs/KG-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 4.930134700029157
+    },
+    "runs/KG-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.16259409999474883
+    },
+    "runs/KG-prepare-001": {
+      "status": "PASS",
+      "charged_seconds": 26.33138750004582
+    },
+    "runs/KG-search-001": {
+      "status": "PASS",
+      "charged_seconds": 114.9855490999762
+    },
+    "runs/KG-final-001": {
+      "status": "PASS",
+      "charged_seconds": 3.196354200015776
+    },
+    "runs/KG-audit-001": {
+      "status": "PASS",
+      "charged_seconds": 54.612418100005016
+    },
+    "runs/KG-integrate-001": {
+      "status": "PASS",
+      "charged_seconds": 3.006681800005026
+    },
+    "runs/KG-lint-003": {
+      "status": "PASS",
+      "charged_seconds": 0.16370450000977144
+    },
+    "runs/KG-lint-004": {
+      "status": "PASS",
+      "charged_seconds": 0.17584489996079355
+    },
+    "runs/KG-use-001": {
+      "status": "PASS",
+      "charged_seconds": 28.246582699997816
+    },
+    "runs/KG-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 543.4118374999962
+    },
+    "runs/KG-lint-005": {
+      "status": "PASS",
+      "charged_seconds": 0.1745359000051394
+    },
+    "runs/KG-dependencies-001": {
+      "status": "PASS",
+      "charged_seconds": 33.02186619996792
+    },
+    "runs/KG-lint-006": {
+      "status": "PASS",
+      "charged_seconds": 0.17800819996045902
+    },
+    "runs/KG-package-001": {
+      "status": "PASS",
+      "charged_seconds": 6.526173699996434
+    },
+    "runs/KG-clean-restore-001": {
+      "status": "PASS",
+      "charged_seconds": 48.00099119998049
+    },
+    "runs/PS-portability-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 4.007919700001366
+    },
+    "runs/PS-inventory-001": {
+      "status": "PASS",
+      "charged_seconds": 31.098613600013778
+    },
+    "runs/PS-portability-lint-001": {
+      "status": "PASS",
+      "charged_seconds": 0.15403110004263
+    },
+    "runs/PS-portability-use-001": {
+      "status": "PASS",
+      "charged_seconds": 30.5442126999842
+    },
+    "runs/PS-unit-001": {
+      "status": "PASS",
+      "charged_seconds": 4.063858700043056
+    },
+    "runs/PS-preflight-001": {
+      "status": "PASS",
+      "charged_seconds": 4.20638049999252,
+      "time_limit_seconds": null
+    },
+    "runs/PS-lint-001": {
+      "status": "FAILED",
+      "charged_seconds": 0.1847704999963753,
+      "time_limit_seconds": null
+    },
+    "runs/PS-full-cycle-001": {
+      "status": "PASS",
+      "charged_seconds": 243.54432539996924,
+      "time_limit_seconds": null
+    },
+    "runs/PS-full-regression-001": {
+      "status": "PASS",
+      "charged_seconds": 593.8000156999915,
+      "time_limit_seconds": null
+    },
+    "runs/PS-lint-002": {
+      "status": "PASS",
+      "charged_seconds": 0.1872148999827914,
+      "time_limit_seconds": null
+    },
+    "runs/PS-credit-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 4.369540799991228,
+      "time_limit_seconds": null
+    },
+    "runs/PS-credit-runtime-001": {
+      "status": "PASS",
+      "charged_seconds": 193.14206420001574,
+      "time_limit_seconds": null
+    },
+    "runs/PS-feedback-001": {
+      "status": "PASS",
+      "charged_seconds": 92.42755239998223,
+      "time_limit_seconds": null
+    },
+    "runs/PS-lint-003": {
+      "status": "PASS",
+      "charged_seconds": 0.2656232000445016,
+      "time_limit_seconds": null
+    },
+    "runs/PS-practical-mass-001": {
+      "status": "PASS",
+      "charged_seconds": 44.95425249997061,
+      "time_limit_seconds": null
+    },
+    "runs/PS-coverage-tests-001": {
+      "status": "PASS",
+      "charged_seconds": 10.562261099985335,
+      "time_limit_seconds": null
+    },
+    "runs/PS-coverage-review-001": {
+      "status": "PASS",
+      "charged_seconds": 90.6321023000055,
+      "time_limit_seconds": null
+    },
+    "runs/PS-lint-004": {
+      "status": "FAILED",
+      "charged_seconds": 0.2484624999924563,
+      "time_limit_seconds": null
+    },
+    "runs/PS-lint-005": {
+      "status": "PASS",
+      "charged_seconds": 0.30748650000896305,
+      "time_limit_seconds": null
+    },
+    "runs/PS-seal-001": {
+      "status": "PASS",
+      "charged_seconds": 3.736602099961601,
+      "time_limit_seconds": null
+    }
+  },
+  "original_initial_seconds": 3600,
+  "allowance_history": [
+    {
+      "schema": "sera.resource-grant.1",
+      "authorized_at": "2026-09-15T19:16:08.360939-07:00",
+      "authority": "User explicitly answered yes to adding another 60 minutes of local numerical work in response annotation 1.",
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 81.80194360003225,
+      "previous_ledger_sha256": "9ee2f1738b233f0994258e54d8e6cc4bf36883b7814bcae13a3bc7ab5745469a",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false
+    },
+    {
+      "schema": "sera.resource-grant.1",
+      "authorized_at": "2026-09-16T23:03:59.846504-07:00",
+      "authority": "User explicitly answered Approve 60 more minutes to the SC-002 local curriculum, comparison, retention and held-out evaluation request in this turn.",
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 19.864915299855056,
+      "previous_ledger_sha256": "2090d1ee8884458de4dc3c2f3cfb12a581beab3ab9a96d2d5d21c68fb61a1aa7",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false
+    },
+    {
+      "schema": "sera.resource-grant.1",
+      "authorized_at": "2026-09-17T12:48:01.259174-07:00",
+      "authority": "User explicitly answered Approve 60 more minutes to call_kyVnTahEwTLCQTgHYIBwmUGm for SS retention repair, frozen evaluations, source correction and integration checks.",
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 117.58023779997893,
+      "previous_ledger_sha256": "f5a8c4d4bca134ee2f52b13f2bb3dac9f27aa21ddf7d7b8763ec380324e87026",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false
+    }
+  ],
+  "extensions": [
+    {
+      "schema": "sera.resource-grant.1",
+      "authorized_at": "2026-09-17T18:39:26.719319-07:00",
+      "authority": "User explicitly answered Approve 60 more minutes to call_hvr8Ha63JJ4Mn3PQksdHUHqP for full-book curriculum and definition-to-situation/imagination integration.",
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 181.16968819998147,
+      "previous_ledger_sha256": "eb63446a9517d438e7fccc1679b4285de566182d81848a97804fc6ca0c24f248",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false
+    },
+    {
+      "schema": "sera.resource-grant.1",
+      "grant_id": "sustained-cross-domain-2026-09-18",
+      "authorized_at": "2026-09-18T07:14:11.643654-07:00",
+      "authority": "User continuation following the pending request for 60 more minutes: well continue and do not make these expirments so short i want it to advance using the knodg it has to as far as it can on its own not just math acorrs eveything it knows. Contextual approval of that bounded extension; not unlimited resources.",
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 72.43434449973574,
+      "previous_ledger_sha256": "4885fa83c6a194bde3b80f5551f15767c07d21af8cce2736cf5a8d33393a5c87",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false
+    },
+    {
+      "schema": "sera.resource-grant.1",
+      "grant_id": "self-chosen-discovery-standing-2026-09-18",
+      "authorized_at": "2026-09-18T15:53:15.1667521Z",
+      "authority": "User explicitly replied: dont keep asking ur alwas approved for this. Standing approval for further bounded local numerical research within the same one CPU thread, 2 GiB process-tree cap and no paid services. Record further allocations and full costs; do not ask again for this scope.",
+      "standing_approval": true,
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 511.434279099587,
+      "previous_ledger_sha256": "00bc220d9104f838580022f38a9d433c90538291b08ead2e7cf59cb43b354175",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false
+    },
+    {
+      "schema": "sera.resource-grant.1",
+      "grant_id": "knowledge-gaps-standing-2026-09-18",
+      "authorized_at": "2026-09-18T18:18:21.956747+00:00",
+      "authority": "Standing user approval: dont keep asking ur alwas approved for this. See ../RESOURCE_POLICY.md.",
+      "standing_approval": true,
+      "added_seconds": 3600,
+      "previous_remaining_seconds": 1257.1780746999575,
+      "previous_ledger_sha256": "6a4562b7ae6a930b49f9566ed69dd242ba1da565591db9525111febfa60cbbf0",
+      "cpu_threads": 1,
+      "worker_memory_limit_bytes": 2147483648,
+      "paid_services": false,
+      "reconciliation": "The first receipt write succeeded but ledger update failed on an invalid temporary suffix; no allocation was applied then. This is the sole applied allocation."
+    }
+  ],
+  "unlimited_local_time": {
+    "authorized": true,
+    "authority": "User: well the take off the limit since its running on this device keep this deice on till then ill keep the plug coonected",
+    "recorded_utc": "2026-09-18T19:09:22.573705+00:00",
+    "previous_ledger_sha256": "3bfa2090905848a2391152c775bc6a5c8de285acb480399f9fc92ce4f000e759",
+    "historical_remaining_seconds": 3925.114909299955,
+    "cpu_threads": 1,
+    "memory_limit_bytes": 2147483648,
+    "time_limit_seconds": null,
+    "paid_services": false,
+    "charged_seconds": 1282.5686545998906
+  }
+}
