@@ -1,0 +1,80 @@
+{
+  "schema": "sera.verified-completion.publication.1",
+  "verified_commit": "0feaf8ab106aa1f7f2ddcfd6d1f77a1c4ce0261a",
+  "main_run": {
+    "id": 35308605341,
+    "number": 39,
+    "url": "https://github.com/Arnav123-s/sera/actions/runs/35308605341",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 105485789984,
+        "name": "test (ubuntu-latest)",
+        "started_at": "2026-09-18T04:52:17Z",
+        "completed_at": "2026-09-18T04:55:38Z",
+        "conclusion": "success"
+      },
+      {
+        "id": 105485790193,
+        "name": "test (windows-latest)",
+        "started_at": "2026-09-18T04:52:17Z",
+        "completed_at": "2026-09-18T04:56:12Z",
+        "conclusion": "success"
+      }
+    ],
+    "linux": {
+      "passed": 429,
+      "existing_optional_skips": 46,
+      "test_seconds": 163.02,
+      "log_sha256": "392aaac7fbd708f1828c4634157414dcaf5c9d97bf418fe22111e65df8b57627"
+    },
+    "windows": {
+      "passed": 430,
+      "existing_optional_skips": 45,
+      "test_seconds": 161.05,
+      "log_sha256": "cb52a937bff55ed7101175c74e305fafaa279b18a8ea2f2d877b92c8f90ce92b"
+    }
+  },
+  "local_regression": {
+    "collected": 475,
+    "first_job_passing_prefix": 432,
+    "tail_modules": [
+      "tests/test_verified_completion.py",
+      "tests/test_workbench.py",
+      "tests/test_workbench_retention.py",
+      "tests/test_world_calibration.py",
+      "tests/test_world_graph.py"
+    ],
+    "tail_tests": 52,
+    "overlap": 9,
+    "union": 475,
+    "collection_sha256": "4adedc269f0114c8eb42bef6612b49c7e920ffe1a0ae61ee1b7a07d48f820292",
+    "tail_passed": 52,
+    "completed_union": 475,
+    "unexecuted_tests": 0,
+    "skipped_tests": 0,
+    "single_invocation_completed": false
+  },
+  "release_manifest_sha256": "af8f6f989aac01e3250430e9ab1adc7dcd57dcd818fcfe37b4e18b789c6dec72",
+  "verified_files": 75,
+  "runtime_members": 1,
+  "research_members": 101,
+  "runtime_bytes": 13810,
+  "research_bytes": 4898059,
+  "post_seal_jobs": {
+    "runs/VC-release-verify-001": {
+      "status": "PASS",
+      "charged_seconds": 0.7674949999782257
+    },
+    "runs/VC-live-status-001": {
+      "status": "PASS",
+      "charged_seconds": 24.78684559999965
+    }
+  },
+  "total_local_charged_seconds": 1132.696799999976,
+  "remaining_seconds_snapshot": 1995.7677897998801,
+  "ledger_sha256": "57cf3bd1c1ddce713fb626c7a9f17e2c506dba0c1590bbb10856869a154ee289",
+  "new_grant_seconds": 0,
+  "source_contracts_unchanged_since_training": true,
+  "publication_scope": "Receipt and navigation updates are separate from the sealed numerical release; raw hosted CI timing is preserved separately from the local resource ledger."
+}

@@ -8,6 +8,8 @@ The continuing owner now supports joint conditional completions, imagined motion
 
 Independent replay checked all 4,608 evaluated decisions and resumed both training checkpoints exactly. The integration retained 186 inherited tensors, 128 four-language probes, all 26 taught physical bindings, exact mathematics, reading and empirical forecasts. Original task history, including the open momentum investigation, remains preserved. [Audit](../research-continuation/32_verified_completion/integration-audit.json) · [Checklist](../research-continuation/32_verified_completion/checklist.md).
 
+Implementation [`0feaf8a`](https://github.com/Arnav123-s/sera/commit/0feaf8ab106aa1f7f2ddcfd6d1f77a1c4ce0261a) passed [GitHub run #39](https://github.com/Arnav123-s/sera/actions/runs/35308605341): **429 tests on Linux and 430 on Windows**, with 46/45 established optional-fixture skips. All artifact, archive and release checks passed. Locally, two bounded regression segments covered all **475 tests with zero skips**. [Exact receipt, costs and logs](../research-continuation/32_verified_completion/publication.json).
+
 Stage 31 retains its human STEM source preparation and unexecuted supervised protocol. The newer direction teaches the investigator through checked practice; the source preparation remains clearly labeled for future use.
 
 ## Preserved Stage 30 integration

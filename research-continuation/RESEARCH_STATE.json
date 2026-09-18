@@ -1,6 +1,6 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-18T04:42:50.911961+00:00",
+  "date": "2026-09-18T04:59:20.550664+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
   "active_direction": "Verified conditional completion and learned investigation integrated; grounded human-source acquisition next",
   "source_pins": {
@@ -141,7 +141,7 @@
     },
     {
       "id": "32-verified-completion",
-      "status": "integrated_evaluated_local_publication_pending",
+      "status": "published_verified_linux_windows_conditional_practice",
       "evidence": "32_verified_completion/report.md",
       "detail": "Learned evidence selection qualified for explicit conditional practice; analytic goal information retained as default. 768 fresh worlds, 4608 comparisons, 186 inherited tensors and 128 language probes retained."
     }
@@ -326,21 +326,26 @@
       "final_worlds": 768,
       "default_control": "goal_information",
       "qualified_conditional_practice": true,
-      "protected_tensors": 186
+      "protected_tensors": 186,
+      "owner": "9d4bbea3e30c88fedbc9182ee2192c5e5819ead2df48693070baa8b4a3d1ba5c",
+      "live_verified_policy_updates": 1,
+      "local_regression_distinct_tests": 475,
+      "regression_completed_in_partitions": true
     }
   },
   "latest_continuation": "32_verified_completion",
   "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
   "latest_user_steering": "Use imagination and independently checked rewards to learn useful procedures through the actual owner; preserve human foundations, applicability, original goals and the v14 evidence distinctions.",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
-  "latest_publication": "30_grounded_books/publication.json",
+  "latest_publication": "32_verified_completion/publication.json",
   "resource_balance_at_publication": {
-    "remaining_seconds": 512.0372116000653,
-    "new_grant_seconds": 0,
-    "live_ledger": "runs/v3-batch-001/budget.json"
+    "remaining_seconds": 1995.7677897998801,
+    "live_ledger": "runs/v3-batch-001/budget.json",
+    "snapshot_only": true,
+    "new_grant_seconds": 0
   },
   "latest_resource_snapshot": {
-    "remaining_seconds": 2021.322130399858,
+    "remaining_seconds": 1995.7677897998801,
     "live_ledger": "runs/v3-batch-001/budget.json",
     "snapshot_only": true
   }

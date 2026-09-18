@@ -16,4 +16,4 @@
 - [x] Independently replay policy training and online credit.
 - [x] Verify all protected capabilities and the closed novel-definition gate.
 - [x] Run a saved usable completion cycle and preserve the open momentum goal.
-- [ ] Publish documentation, exact artifacts, costs and passing repository checks.
+- [x] Publish documentation, exact artifacts, costs and passing repository checks.
