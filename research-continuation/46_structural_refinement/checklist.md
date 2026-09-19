@@ -15,4 +15,4 @@
 - [x] Execute every final world and preserve all baselines and unsuccessful alternatives.
 - [x] Independently replay predictions, check earlier capabilities and reproduce interrupted acquisition.
 - [x] Finish runnable examples, measured report, full regression and complete cost accounting.
-- [ ] Publish incremental artifacts, organized navigation and both-platform verification receipts.
+- [x] Publish incremental artifacts, organized navigation and both-platform verification receipts.

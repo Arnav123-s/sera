@@ -1,6 +1,6 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-19T00:16:56.193605+00:00",
+  "date": "2026-09-19T00:38:09.674724+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
   "active_direction": "Qualified physical model refinement through the actual continuing counterfactual owner",
   "source_pins": {
@@ -519,7 +519,8 @@
     "physical_subjects": 72,
     "retained_practical_tasks": 29,
     "practical_example_batch": 33,
-    "publication_pending": true
+    "publication_pending": false,
+    "status": "complete_verified_published"
   },
   "publication_history": [
     {
@@ -552,6 +553,15 @@
       "receipt": "42_composed_discovery/publication/github-run-47.json",
       "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-discovery",
       "archive_parts": 18
+    },
+    {
+      "implementation": "a93293d2be171d9ab40e24d50684ded37babe72d",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35409326749",
+      "conclusion": "success",
+      "local_tests": 593,
+      "receipt": "46_structural_refinement/publication/github-run-52.json",
+      "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-structural",
+      "previous_stage_release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-counterfactual"
     }
   ],
   "knowledge_gap_inquiry": {
@@ -584,8 +594,8 @@
   "counterfactual_inquiry": {
     "protocol": "45_counterfactual_inquiry/qualification/PROTOCOL.md",
     "parent_store": "runs/sera-counterfactual-live",
-    "status": "complete_verified_local_publication_pending",
-    "next_action": "Seal Stage 45 then Stage 46; publish exact source and artifacts, then verify Linux and Windows CI",
+    "status": "complete_verified_published",
+    "next_action": "Retain sealed evaluations; start any further learning-procedure comparison with fresh task lifetimes and a new protocol",
     "preserved_failure": "runs/CI-study-001/validation",
     "completed_original_practice_questions": 26,
     "candidate_store": "runs/sera-counterfactual-qualified-live",
@@ -604,15 +614,17 @@
     "final_wrong_consensus": 0,
     "final_selected_observations": 401,
     "background_transfer_checks": 360,
-    "local_regression_passed": 593
+    "local_regression_passed": 593,
+    "publication": "45_counterfactual_inquiry/publication/VERIFICATION.md",
+    "implementation": "a93293d2be171d9ab40e24d50684ded37babe72d"
   },
   "structural_refinement": {
-    "status": "complete_verified_local_publication_pending",
+    "status": "complete_verified_published",
     "packet_sha256": "9bff86beba894ffd7afb5313d0e28f187920526e771a469edb8e5723fb156909",
     "verified_manifest_entries": 298,
     "protocol": "46_structural_refinement/PROTOCOL.md",
     "actual_parent": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
-    "next_action": "Seal Stage 45 then Stage 46; publish exact source and artifacts, then verify Linux and Windows CI",
+    "next_action": "Retain sealed evaluations; start any further learning-procedure comparison with fresh task lifetimes and a new protocol",
     "no_new_recurrent_core": true,
     "reconciliation": "46_structural_refinement/LOCAL_RECONCILIATION.json",
     "packet_verification": "46_structural_refinement/packet-verification.json",
@@ -637,6 +649,8 @@
       "disagreement": 24,
       "balanced": 24
     },
-    "practical_batch_passed": 33
+    "practical_batch_passed": 33,
+    "publication": "46_structural_refinement/publication/VERIFICATION.md",
+    "implementation": "a93293d2be171d9ab40e24d50684ded37babe72d"
   }
 }

@@ -1,6 +1,6 @@
 # Execution checklist
 
-Current work: [v16 C01/C02 physical refinement](46_structural_refinement/report.md) and the [counterfactual curriculum](45_counterfactual_inquiry/report.md) passed final evaluation, actual-owner replay, the 33-task batch, 593 local tests and seven existing release verifiers. Saved-result analysis is complete. Seal Stage 45 followed by Stage 46, publish both exact archives and source, then collect Linux and Windows verification receipts. Earlier “Latest” entries below are historical records.
+Completed: [v16 C01/C02 physical refinement](46_structural_refinement/report.md) and the [counterfactual curriculum](45_counterfactual_inquiry/report.md) passed final evaluation, actual-owner replay, the 33-task batch, 593 local tests and seven existing release verifiers. Both exact research archives and source are public; [Linux and Windows verification](https://github.com/Arnav123-s/sera/actions/runs/35409326749) passed. [Receipts and costs](46_structural_refinement/publication/VERIFICATION.md). Earlier “Latest” entries below are historical.
 
 The current learner's usable entry point is `scripts.sera_current`; its task batch is `46_structural_refinement/example-tasks.json`. Every prior store remains intact. Completed final cohorts stay sealed. Further learned-update or missing-mechanism research must use a new protocol and new task lifetimes, retaining the fixed fit, balanced investigation and strong classical controls from this release.
 

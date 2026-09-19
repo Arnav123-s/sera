@@ -15,4 +15,4 @@
 - [x] Complete all practice, validation and sealed final questions.
 - [x] Audit inherited behavior, symbolic generalization, fresh-background transfer and exact restore.
 - [x] Execute usable examples and full regression checks.
-- [ ] Publish complete raw artifacts, costs, organized documentation and portable CI receipts.
+- [x] Publish complete raw artifacts, costs, organized documentation and portable CI receipts.

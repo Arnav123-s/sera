@@ -6,7 +6,7 @@ The current local owner is **`runs/sera-structural-live`**, available through **
 
 The frozen study completed **72 paired investigations across 36 simulated worlds**. All twelve directional worlds qualified a direction-dependent model; all twelve radial worlds retained the simpler model; all twelve omitted-mechanism worlds stayed open with their alternatives preserved. Directional acceleration MSE fell from **0.806441 to 0.000010887**, matching strong independent least squares. The current R1 readout, extra-data and balanced controls remain in the report.
 
-Replay preserved **855 inherited tensor records, 217 routes, 29 practical outputs and 26 taught physical meanings**, including the original source gate. All 72 investigations replayed, checkpoint restoration was exact, and an interrupted acquisition resumed its remaining 60 observations without repeating the first twelve. The full 33-task command-line batch, **593 local tests**, lint and seven existing release verifiers passed. Public release verification is in progress.
+Replay preserved **855 inherited tensor records, 217 routes, 29 practical outputs and 26 taught physical meanings**, including the original source gate. All 72 investigations replayed, checkpoint restoration was exact, and an interrupted acquisition resumed its remaining 60 observations without repeating the first twelve. The full 33-task command-line batch, **593 local tests**, lint and seven existing release verifiers passed. [Both GitHub platform jobs](https://github.com/Arnav123-s/sera/actions/runs/35409326749) passed from clean checkouts. [Publication receipts and costs](../research-continuation/46_structural_refinement/publication/VERIFICATION.md).
 
 ## Completed counterfactual investigation
 
