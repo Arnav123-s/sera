@@ -1,0 +1,578 @@
+﻿2026-09-19T01:51:33.3757892Z Current runner version: '2.337.0'
+2026-09-19T01:51:33.3784899Z ##[group]Runner Image Provisioner
+2026-09-19T01:51:33.3785837Z Hosted Compute Agent
+2026-09-19T01:51:33.3786884Z Version: 20260828.587
+2026-09-19T01:51:33.3787596Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-19T01:51:33.3788326Z Build Date: 2026-08-28T16:44:25Z
+2026-09-19T01:51:33.3789078Z Worker ID: {8fdf1856-eefa-4f9b-a526-c346a6d757c0}
+2026-09-19T01:51:33.3789798Z Azure Region: eastus
+2026-09-19T01:51:33.3790658Z ##[endgroup]
+2026-09-19T01:51:33.3792232Z ##[group]Operating System
+2026-09-19T01:51:33.3792922Z Ubuntu
+2026-09-19T01:51:33.3793526Z 24.04.5
+2026-09-19T01:51:33.3794072Z LTS
+2026-09-19T01:51:33.3794611Z ##[endgroup]
+2026-09-19T01:51:33.3795222Z ##[group]Runner Image
+2026-09-19T01:51:33.3795815Z Image: ubuntu-24.04
+2026-09-19T01:51:33.3796475Z Version: 20260907.300.1
+2026-09-19T01:51:33.3797761Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-19T01:51:33.3799406Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+2026-09-19T01:51:33.3800626Z ##[endgroup]
+2026-09-19T01:51:33.3801870Z ##[group]GITHUB_TOKEN Permissions
+2026-09-19T01:51:33.3804039Z Contents: read
+2026-09-19T01:51:33.3804767Z Metadata: read
+2026-09-19T01:51:33.3805392Z ##[endgroup]
+2026-09-19T01:51:33.3807653Z Secret source: Actions
+2026-09-19T01:51:33.3808676Z Cache mode: write
+2026-09-19T01:51:33.3809696Z Prepare workflow directory
+2026-09-19T01:51:33.4217757Z Prepare all required actions
+2026-09-19T01:51:33.4267915Z Getting action download info
+2026-09-19T01:51:33.6471618Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-19T01:51:33.7726825Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-09-19T01:51:33.8596692Z Download action repository 'astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9' (SHA:c771a70e6277c0a99b617c7a806ffedaca235ff9)
+2026-09-19T01:51:34.1619932Z Complete job name: test (ubuntu-latest)
+2026-09-19T01:51:34.2476372Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-19T01:51:34.2485594Z ##[group]Run actions/checkout@v4
+2026-09-19T01:51:34.2486347Z with:
+2026-09-19T01:51:34.2486767Z   fetch-depth: 0
+2026-09-19T01:51:34.2487210Z   repository: Arnav123-s/sera
+2026-09-19T01:51:34.2491050Z   token: ***
+2026-09-19T01:51:34.2491486Z   ssh-strict: true
+2026-09-19T01:51:34.2491915Z   ssh-user: git
+2026-09-19T01:51:34.2492345Z   persist-credentials: true
+2026-09-19T01:51:34.2492816Z   clean: true
+2026-09-19T01:51:34.2493254Z   sparse-checkout-cone-mode: true
+2026-09-19T01:51:34.2493771Z   fetch-tags: false
+2026-09-19T01:51:34.2494212Z   show-progress: true
+2026-09-19T01:51:34.2494670Z   lfs: false
+2026-09-19T01:51:34.2495103Z   submodules: false
+2026-09-19T01:51:34.2495549Z   set-safe-directory: true
+2026-09-19T01:51:34.2496063Z   allow-unsafe-pr-checkout: false
+2026-09-19T01:51:34.2496843Z env:
+2026-09-19T01:51:34.2497254Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:34.2497713Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:34.2498177Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:34.2498615Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:34.2499086Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:34.2499574Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:34.2500120Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:34.2500831Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:34.2501340Z ##[endgroup]
+2026-09-19T01:51:34.3589900Z Syncing repository: Arnav123-s/sera
+2026-09-19T01:51:34.3593092Z ##[group]Getting Git version info
+2026-09-19T01:51:34.3594259Z Working directory is '/home/runner/work/sera/sera'
+2026-09-19T01:51:34.3595903Z [command]/usr/bin/git version
+2026-09-19T01:51:34.3694039Z git version 2.55.0
+2026-09-19T01:51:34.3719067Z ##[endgroup]
+2026-09-19T01:51:34.3745363Z Temporarily overriding HOME='/home/runner/work/_temp/c5d0ea4f-648f-4b8a-94e8-a606d8a5d72b' before making global git config changes
+2026-09-19T01:51:34.3747083Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-19T01:51:34.3771637Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sera/sera
+2026-09-19T01:51:34.3856809Z Deleting the contents of '/home/runner/work/sera/sera'
+2026-09-19T01:51:34.3881052Z ##[group]Initializing the repository
+2026-09-19T01:51:34.3893108Z [command]/usr/bin/git init /home/runner/work/sera/sera
+2026-09-19T01:51:34.4089149Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-19T01:51:34.4091560Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-19T01:51:34.4093969Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-19T01:51:34.4095674Z hint: call:
+2026-09-19T01:51:34.4097181Z hint:
+2026-09-19T01:51:34.4098762Z hint: 	git config --global init.defaultBranch <name>
+2026-09-19T01:51:34.4101127Z hint:
+2026-09-19T01:51:34.4102571Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-19T01:51:34.4104918Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-19T01:51:34.4106612Z hint:
+2026-09-19T01:51:34.4107935Z hint: 	git branch -m <name>
+2026-09-19T01:51:34.4109158Z hint:
+2026-09-19T01:51:34.4111366Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-19T01:51:34.4113641Z Initialized empty Git repository in /home/runner/work/sera/sera/.git/
+2026-09-19T01:51:34.4118080Z [command]/usr/bin/git remote add origin https://github.com/Arnav123-s/sera
+2026-09-19T01:51:34.4182994Z ##[endgroup]
+2026-09-19T01:51:34.4184526Z ##[group]Disabling automatic garbage collection
+2026-09-19T01:51:34.4188922Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-19T01:51:34.4224694Z ##[endgroup]
+2026-09-19T01:51:34.4226732Z ##[group]Setting up auth
+2026-09-19T01:51:34.4233247Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-19T01:51:34.4269360Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-19T01:51:34.4706396Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-19T01:51:34.4768764Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-19T01:51:34.5006353Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-19T01:51:34.5054499Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-19T01:51:34.5298079Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-19T01:51:34.5338811Z ##[endgroup]
+2026-09-19T01:51:34.5339598Z ##[group]Fetching the repository
+2026-09-19T01:51:34.5351418Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-09-19T01:51:41.7305764Z From https://github.com/Arnav123-s/sera
+2026-09-19T01:51:41.7307437Z  * [new branch]      main       -> origin/main
+2026-09-19T01:51:41.7309452Z  * [new branch]      research/v3-calibration-consolidation -> origin/research/v3-calibration-consolidation
+2026-09-19T01:51:41.7312303Z  * [new tag]         research-2026-09-18-counterfactual -> research-2026-09-18-counterfactual
+2026-09-19T01:51:41.7314590Z  * [new tag]         research-2026-09-18-discovery -> research-2026-09-18-discovery
+2026-09-19T01:51:41.7316712Z  * [new tag]         research-2026-09-18-interventions -> research-2026-09-18-interventions
+2026-09-19T01:51:41.7319175Z  * [new tag]         research-2026-09-18-knowledge-gaps -> research-2026-09-18-knowledge-gaps
+2026-09-19T01:51:41.7321872Z  * [new tag]         research-2026-09-18-solutions -> research-2026-09-18-solutions
+2026-09-19T01:51:41.7323717Z  * [new tag]         research-2026-09-18-structural -> research-2026-09-18-structural
+2026-09-19T01:51:41.7326804Z [command]/usr/bin/git branch --list --remote origin/main
+2026-09-19T01:51:41.7352048Z   origin/main
+2026-09-19T01:51:41.7364539Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-09-19T01:51:41.7393687Z e9b4cf2760b93afafd23d93005b104c715a981e4
+2026-09-19T01:51:41.7399743Z ##[endgroup]
+2026-09-19T01:51:41.7406071Z ##[group]Determining the checkout info
+2026-09-19T01:51:41.7408459Z ##[endgroup]
+2026-09-19T01:51:41.7422727Z [command]/usr/bin/git sparse-checkout disable
+2026-09-19T01:51:41.7476311Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-19T01:51:41.7508532Z ##[group]Checking out the ref
+2026-09-19T01:51:41.7512487Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-19T01:51:42.7828517Z Updating files:  51% (2029/3949)
+2026-09-19T01:51:42.7854680Z Updating files:  52% (2054/3949)
+2026-09-19T01:51:42.7882321Z Updating files:  53% (2093/3949)
+2026-09-19T01:51:42.7925276Z Updating files:  54% (2133/3949)
+2026-09-19T01:51:42.7961165Z Updating files:  55% (2172/3949)
+2026-09-19T01:51:42.8132748Z Updating files:  56% (2212/3949)
+2026-09-19T01:51:42.8188986Z Updating files:  57% (2251/3949)
+2026-09-19T01:51:42.8274822Z Updating files:  58% (2291/3949)
+2026-09-19T01:51:42.8312119Z Updating files:  59% (2330/3949)
+2026-09-19T01:51:42.8446582Z Updating files:  60% (2370/3949)
+2026-09-19T01:51:42.8464139Z Updating files:  61% (2409/3949)
+2026-09-19T01:51:42.8557322Z Updating files:  62% (2449/3949)
+2026-09-19T01:51:42.8574795Z Updating files:  63% (2488/3949)
+2026-09-19T01:51:42.9413337Z Updating files:  64% (2528/3949)
+2026-09-19T01:51:42.9472783Z Updating files:  65% (2567/3949)
+2026-09-19T01:51:43.0733129Z Updating files:  66% (2607/3949)
+2026-09-19T01:51:43.0943638Z Updating files:  67% (2646/3949)
+2026-09-19T01:51:43.0960726Z Updating files:  68% (2686/3949)
+2026-09-19T01:51:43.1158975Z Updating files:  69% (2725/3949)
+2026-09-19T01:51:43.1372299Z Updating files:  70% (2765/3949)
+2026-09-19T01:51:43.1401326Z Updating files:  71% (2804/3949)
+2026-09-19T01:51:43.1430523Z Updating files:  72% (2844/3949)
+2026-09-19T01:51:43.1449804Z Updating files:  73% (2883/3949)
+2026-09-19T01:51:43.1477397Z Updating files:  74% (2923/3949)
+2026-09-19T01:51:43.1500884Z Updating files:  75% (2962/3949)
+2026-09-19T01:51:43.1522968Z Updating files:  76% (3002/3949)
+2026-09-19T01:51:43.1553871Z Updating files:  77% (3041/3949)
+2026-09-19T01:51:43.1569049Z Updating files:  78% (3081/3949)
+2026-09-19T01:51:43.1589746Z Updating files:  79% (3120/3949)
+2026-09-19T01:51:43.1624195Z Updating files:  80% (3160/3949)
+2026-09-19T01:51:43.1646661Z Updating files:  81% (3199/3949)
+2026-09-19T01:51:43.1698064Z Updating files:  82% (3239/3949)
+2026-09-19T01:51:43.1721369Z Updating files:  83% (3278/3949)
+2026-09-19T01:51:43.1782071Z Updating files:  84% (3318/3949)
+2026-09-19T01:51:43.1798914Z Updating files:  85% (3357/3949)
+2026-09-19T01:51:43.1816759Z Updating files:  86% (3397/3949)
+2026-09-19T01:51:43.1877321Z Updating files:  87% (3436/3949)
+2026-09-19T01:51:43.1903322Z Updating files:  88% (3476/3949)
+2026-09-19T01:51:43.1922234Z Updating files:  89% (3515/3949)
+2026-09-19T01:51:43.1954425Z Updating files:  90% (3555/3949)
+2026-09-19T01:51:43.1986708Z Updating files:  91% (3594/3949)
+2026-09-19T01:51:43.2012111Z Updating files:  92% (3634/3949)
+2026-09-19T01:51:43.2035009Z Updating files:  93% (3673/3949)
+2026-09-19T01:51:43.2055066Z Updating files:  94% (3713/3949)
+2026-09-19T01:51:43.2082388Z Updating files:  95% (3752/3949)
+2026-09-19T01:51:43.2113458Z Updating files:  96% (3792/3949)
+2026-09-19T01:51:43.2140916Z Updating files:  97% (3831/3949)
+2026-09-19T01:51:43.2162659Z Updating files:  98% (3871/3949)
+2026-09-19T01:51:43.2186900Z Updating files:  99% (3910/3949)
+2026-09-19T01:51:43.2187652Z Updating files: 100% (3949/3949)
+2026-09-19T01:51:43.2188154Z Updating files: 100% (3949/3949), done.
+2026-09-19T01:51:43.2756297Z Switched to a new branch 'main'
+2026-09-19T01:51:43.2762266Z branch 'main' set up to track 'origin/main'.
+2026-09-19T01:51:43.2851575Z ##[endgroup]
+2026-09-19T01:51:43.2899084Z [command]/usr/bin/git log -1 --format=%H
+2026-09-19T01:51:43.2927750Z e9b4cf2760b93afafd23d93005b104c715a981e4
+2026-09-19T01:51:43.3190042Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-19T01:51:43.3192155Z ##[group]Run actions/setup-python@v5
+2026-09-19T01:51:43.3192459Z with:
+2026-09-19T01:51:43.3192659Z   python-version: 3.12.14
+2026-09-19T01:51:43.3192889Z   check-latest: false
+2026-09-19T01:51:43.3195094Z   token: ***
+2026-09-19T01:51:43.3195306Z   update-environment: true
+2026-09-19T01:51:43.3195549Z   allow-prereleases: false
+2026-09-19T01:51:43.3195776Z   freethreaded: false
+2026-09-19T01:51:43.3195974Z env:
+2026-09-19T01:51:43.3196156Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:43.3196367Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:43.3196585Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:43.3196787Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:43.3197051Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:43.3197286Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:43.3197534Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:43.3197771Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:43.3198013Z ##[endgroup]
+2026-09-19T01:51:43.4536353Z ##[group]Installed versions
+2026-09-19T01:51:43.4579442Z (node:2250) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-19T01:51:43.4580556Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-19T01:51:43.4581559Z Successfully set up CPython (3.12.14)
+2026-09-19T01:51:43.4582870Z ##[endgroup]
+2026-09-19T01:51:43.4810971Z ##[group]Run astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9
+2026-09-19T01:51:43.4811411Z with:
+2026-09-19T01:51:43.4811611Z   version: 0.12.15
+2026-09-19T01:51:43.4811836Z   python-version: 3.12.14
+2026-09-19T01:51:43.4812077Z   enable-cache: false
+2026-09-19T01:51:43.4812310Z   activate-environment: false
+2026-09-19T01:51:43.4812555Z   no-project: false
+2026-09-19T01:51:43.4812806Z   working-directory: /home/runner/work/sera/sera
+2026-09-19T01:51:43.4815161Z   github-token: ***
+2026-09-19T01:51:43.4815738Z   cache-dependency-glob: **/*requirements*.txt
+**/*requirements*.in
+**/*constraints*.txt
+**/*constraints*.in
+**/pyproject.toml
+**/uv.lock
+**/*.py.lock
+
+2026-09-19T01:51:43.4816368Z   restore-cache: true
+2026-09-19T01:51:43.4816622Z   save-cache: true
+2026-09-19T01:51:43.4816844Z   prune-cache: false
+2026-09-19T01:51:43.4817065Z   cache-python: false
+2026-09-19T01:51:43.4817301Z   ignore-nothing-to-cache: false
+2026-09-19T01:51:43.4817605Z   ignore-empty-workdir: false
+2026-09-19T01:51:43.4817874Z   download-from-astral-mirror: true
+2026-09-19T01:51:43.4818383Z   add-problem-matchers: true
+2026-09-19T01:51:43.4818775Z   quiet: false
+2026-09-19T01:51:43.4819108Z   resolution-strategy: highest
+2026-09-19T01:51:43.4819496Z env:
+2026-09-19T01:51:43.4819785Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:43.4820338Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:43.4820714Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:43.4821065Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:43.4821444Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:43.4821802Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:43.4822178Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:43.4822565Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:43.4823081Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:43.4824059Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:51:43.4824675Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:43.4825075Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:43.4825460Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:43.4825844Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:51:43.4826166Z ##[endgroup]
+2026-09-19T01:51:43.6673066Z Fetching manifest data from https://raw.githubusercontent.com/astral-sh/versions/main/v1/uv.ndjson ...
+2026-09-19T01:51:43.7207011Z Downloading uv from "https://releases.astral.sh/github/uv/releases/download/0.12.15/uv-x86_64-unknown-linux-gnu.tar.gz" ...
+2026-09-19T01:51:44.0589533Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/54483423-6246-4d05-9c59-5dc998582c93 -f /home/runner/work/_temp/2b133109-0ce9-42c1-9515-b6da91215422
+2026-09-19T01:51:44.5201368Z Added /home/runner/.local/bin to the path
+2026-09-19T01:51:44.5202558Z Added /opt/hostedtoolcache/uv/0.12.15/x86_64 to the path
+2026-09-19T01:51:44.5203730Z Set UV_PYTHON_INSTALL_DIR to /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:51:44.5204798Z Added /home/runner/work/_temp/uv-python-dir to the path
+2026-09-19T01:51:44.5205560Z Set UV_PYTHON to 3.12.14
+2026-09-19T01:51:44.5213640Z Successfully installed uv version 0.12.15
+2026-09-19T01:51:44.6356894Z ##[group]Run python -m venv .venv
+2026-09-19T01:51:44.6357273Z [36;1mpython -m venv .venv[0m
+2026-09-19T01:51:44.6414434Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:51:44.6414881Z env:
+2026-09-19T01:51:44.6415193Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:44.6415560Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:44.6415946Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:44.6416310Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:44.6416696Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:44.6417091Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:44.6417530Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:44.6417939Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:44.6418472Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:44.6419178Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:51:44.6419886Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:44.6420835Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:44.6421477Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:44.6421909Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:51:44.6422347Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:51:44.6422683Z   UV_PYTHON: 3.12.14
+2026-09-19T01:51:44.6422897Z ##[endgroup]
+2026-09-19T01:51:48.2618135Z ##[group]Run uv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+2026-09-19T01:51:48.2618977Z [36;1muv pip install --python .venv torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu[0m
+2026-09-19T01:51:48.2657374Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:51:48.2657629Z env:
+2026-09-19T01:51:48.2657820Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:48.2658041Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:48.2658281Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:48.2658494Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:48.2658722Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:48.2658959Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:48.2659204Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:48.2659456Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:48.2659782Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:48.2660491Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:51:48.2660967Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:48.2661345Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:48.2661954Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:48.2662338Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:51:48.2662734Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:51:48.2663070Z   UV_PYTHON: 3.12.14
+2026-09-19T01:51:48.2663277Z ##[endgroup]
+2026-09-19T01:51:48.7480524Z Resolved 10 packages in 424ms
+2026-09-19T01:51:48.7523123Z Downloading sympy (6.0MiB)
+2026-09-19T01:51:48.9248820Z Downloading networkx (2.0MiB)
+2026-09-19T01:51:48.9272626Z Downloading torch (180.2MiB)
+2026-09-19T01:51:48.9279061Z Downloading setuptools (1.2MiB)
+2026-09-19T01:51:49.1515829Z  Downloaded setuptools
+2026-09-19T01:51:49.1702706Z  Downloaded networkx
+2026-09-19T01:51:49.2766931Z  Downloaded sympy
+2026-09-19T01:51:51.1721175Z  Downloaded torch
+2026-09-19T01:51:51.1721698Z Prepared 10 packages in 2.42s
+2026-09-19T01:51:51.4054692Z Installed 10 packages in 233ms
+2026-09-19T01:51:51.4055179Z  + filelock==3.32.3
+2026-09-19T01:51:51.4055692Z  + fsspec==2026.7.0
+2026-09-19T01:51:51.4056041Z  + jinja2==3.1.6
+2026-09-19T01:51:51.4056467Z  + markupsafe==3.0.3
+2026-09-19T01:51:51.4056856Z  + mpmath==1.3.0
+2026-09-19T01:51:51.4057204Z  + networkx==3.6.1
+2026-09-19T01:51:51.4057511Z  + setuptools==78.1.0
+2026-09-19T01:51:51.4057858Z  + sympy==1.14.0
+2026-09-19T01:51:51.4058203Z  + torch==2.10.0+cpu
+2026-09-19T01:51:51.4058670Z  + typing-extensions==4.16.0
+2026-09-19T01:51:51.4122238Z ##[group]Run uv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
+2026-09-19T01:51:51.4122897Z [36;1muv pip install --python .venv -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1[0m
+2026-09-19T01:51:51.4161166Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:51:51.4161430Z env:
+2026-09-19T01:51:51.4161624Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:51.4161841Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:51.4162066Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:51.4162275Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:51.4162510Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:51.4162770Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:51.4163015Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:51.4163261Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:51.4163587Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:51.4164016Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:51:51.4164465Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:51.4164847Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:51.4165226Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:51.4165605Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:51:51.4165995Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:51:51.4166315Z   UV_PYTHON: 3.12.14
+2026-09-19T01:51:51.4166527Z ##[endgroup]
+2026-09-19T01:51:51.6429775Z Resolved 19 packages in 149ms
+2026-09-19T01:51:51.6437570Z    Building sera-learning @ file:///home/runner/work/sera/sera
+2026-09-19T01:51:51.6527845Z Downloading ruff (9.8MiB)
+2026-09-19T01:51:51.6545964Z Downloading numpy (15.9MiB)
+2026-09-19T01:51:51.6558279Z Downloading pygments (1.2MiB)
+2026-09-19T01:51:51.6558873Z Downloading scipy (33.7MiB)
+2026-09-19T01:51:51.7558856Z  Downloaded pygments
+2026-09-19T01:51:51.8282898Z  Downloaded ruff
+2026-09-19T01:51:51.9396176Z  Downloaded numpy
+2026-09-19T01:51:52.1338217Z  Downloaded scipy
+2026-09-19T01:51:52.6797831Z       Built sera-learning @ file:///home/runner/work/sera/sera
+2026-09-19T01:51:52.6808398Z Prepared 9 packages in 1.03s
+2026-09-19T01:51:52.7127916Z Installed 9 packages in 31ms
+2026-09-19T01:51:52.7128433Z  + iniconfig==2.3.0
+2026-09-19T01:51:52.7128799Z  + numpy==2.5.3
+2026-09-19T01:51:52.7129320Z  + packaging==26.3
+2026-09-19T01:51:52.7129710Z  + pluggy==1.6.0
+2026-09-19T01:51:52.7130059Z  + pygments==2.21.0
+2026-09-19T01:51:52.7142866Z  + pytest==9.1.1
+2026-09-19T01:51:52.7143429Z  + ruff==0.16.8
+2026-09-19T01:51:52.7144062Z  + scipy==1.18.1
+2026-09-19T01:51:52.7242399Z  + sera-learning==0.5.0 (from file:///home/runner/work/sera/sera)
+2026-09-19T01:51:52.7270498Z ##[group]Run uv run --no-sync python -m ruff check src tests scripts experiments
+2026-09-19T01:51:52.7271108Z [36;1muv run --no-sync python -m ruff check src tests scripts experiments[0m
+2026-09-19T01:51:52.7308358Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:51:52.7308615Z env:
+2026-09-19T01:51:52.7308806Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:52.7309030Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:52.7309261Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:52.7309469Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:52.7309698Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:52.7309950Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:52.7310487Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:52.7310750Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:52.7311073Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.7311501Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:51:52.7311961Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.7312357Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.7312733Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.7313118Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:51:52.7313517Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:51:52.7313857Z   UV_PYTHON: 3.12.14
+2026-09-19T01:51:52.7314064Z ##[endgroup]
+2026-09-19T01:51:52.8425692Z All checks passed!
+2026-09-19T01:51:52.8474424Z ##[group]Run uv run --no-sync python scripts/restore_current.py
+2026-09-19T01:51:52.8474940Z [36;1muv run --no-sync python scripts/restore_current.py[0m
+2026-09-19T01:51:52.8513182Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:51:52.8513439Z env:
+2026-09-19T01:51:52.8513633Z   OMP_NUM_THREADS: 1
+2026-09-19T01:51:52.8513855Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:51:52.8514110Z   MKL_NUM_THREADS: 1
+2026-09-19T01:51:52.8514321Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:51:52.8514557Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:51:52.8514794Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:51:52.8515042Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:51:52.8515292Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:51:52.8515622Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.8516073Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:51:52.8516510Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.8516921Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.8517307Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:51:52.8517688Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:51:52.8518088Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:51:52.8518423Z   UV_PYTHON: 3.12.14
+2026-09-19T01:51:52.8518640Z ##[endgroup]
+2026-09-19T01:51:52.8923578Z Restore 1/20: scripts/restore_test_artifacts.py
+2026-09-19T01:51:53.1079196Z {"restored": 17, "already_identical": 0, "experiments_restarted": 0}
+2026-09-19T01:51:53.1137218Z Restore 2/20: scripts/reading_artifacts.py --restore
+2026-09-19T01:51:53.2166598Z {"verified_files": 86, "runtime_members": 4, "restored": 4, "experiments_restarted": 0}
+2026-09-19T01:51:53.2230870Z Restore 3/20: scripts/books_artifacts.py --restore
+2026-09-19T01:51:53.3415997Z {"verified_files": 113, "runtime_members": 4, "restored": 4, "experiments_restarted": 0}
+2026-09-19T01:51:53.3478875Z Restore 4/20: scripts/completion_artifacts.py --restore
+2026-09-19T01:51:53.4536835Z {"verified_files": 75, "runtime_members": 1, "research_members": 101, "restored": 1, "experiments_restarted": 0}
+2026-09-19T01:51:53.4601316Z Restore 5/20: scripts/quest_artifacts.py --restore
+2026-09-19T01:51:53.7751784Z {"files_verified": 65, "restored": 2, "runtime_members": 2, "research_members": 72, "experiments_restarted": 0}
+2026-09-19T01:51:53.7823185Z Restore 6/20: scripts/quest_retention_artifacts.py
+2026-09-19T01:51:53.8245588Z {"restored": 5, "already_identical": 0, "models_changed": 0, "experiments_restarted": 0}
+2026-09-19T01:51:53.8297871Z Restore 7/20: scripts/learning_artifacts.py
+2026-09-19T01:51:54.5563514Z {"source_files": 56, "archive_members": 83, "restore": false}
+2026-09-19T01:51:54.5637981Z Restore 8/20: -m scripts.discovery_artifacts
+2026-09-19T01:52:12.2782011Z {"source_files": 25, "checkpoint_reconstructions": 9, "independently_verified_relations": 5}
+2026-09-19T01:52:12.6378246Z Restore 9/20: -m scripts.autonomous_artifacts
+2026-09-19T01:52:18.9716968Z {"source_files": 32, "checkpoint_reconstructions": 3, "verified_discoveries": 0, "verified_procedure_advances": 0}
+2026-09-19T01:52:19.2969907Z Restore 10/20: -m scripts.acquisition_artifacts
+2026-09-19T01:52:27.0104697Z {"source_files": 25, "checkpoint_reconstructions": 4, "verified_basis_acquisitions": 3, "verified_relations": 8}
+2026-09-19T01:52:27.3176771Z Restore 11/20: -m scripts.growth_artifacts
+2026-09-19T01:52:40.2115476Z {"stage": 38, "verified_files": 44, "archive_members": 1205}
+2026-09-19T01:52:40.2116164Z {"exact_checkpoints": 16, "main_decisions": 6144}
+2026-09-19T01:52:40.5048693Z Restore 12/20: -m scripts.refinement_artifacts --stage 39
+2026-09-19T01:52:47.5065761Z {"stage": 39, "verified_files": 30, "archive_members": 1279}
+2026-09-19T01:52:47.7316625Z Restore 13/20: -m scripts.refinement_artifacts --stage 40
+2026-09-19T01:52:50.6274814Z {"stage": 40, "verified_files": 53, "archive_members": 382}
+2026-09-19T01:52:50.9251927Z Restore 14/20: -m scripts.self_chosen_artifacts
+2026-09-19T01:52:54.4023508Z {"stage": 41, "verified_files": 88, "archive_members": 1667}
+2026-09-19T01:52:54.4024506Z {"selected": "learned-4101", "audited_proposals": 2048, "checked_routes": 60}
+2026-09-19T01:52:54.6204256Z Restore 15/20: -m scripts.frontier_artifacts
+2026-09-19T01:52:58.2124352Z {"stage": 42, "verified_files": 74, "archive_members": 1332}
+2026-09-19T01:52:58.2125271Z {"selected": "learned-4201", "independent_checks": 3456}
+2026-09-19T01:52:58.5761586Z Restore 16/20: -m scripts.gap_artifacts --restore
+2026-09-19T01:53:04.1658690Z Verified 19 exact gap records and 34 source/evidence files.
+2026-09-19T01:53:04.5256193Z Restore 17/20: -m scripts.solution_artifacts --restore
+2026-09-19T01:53:05.0626171Z Verified 954 archived records and 42 source/evidence files.
+2026-09-19T01:53:05.0737237Z Restore 18/20: -m scripts.counterfactual_artifacts --restore
+2026-09-19T01:53:09.8625233Z Verified 4438 archived records and 39 source/evidence files.
+2026-09-19T01:53:09.8733944Z Restore 19/20: -m scripts.structural_artifacts --restore
+2026-09-19T01:53:12.5479917Z Verified 383 archived records and 27 source/evidence files.
+2026-09-19T01:53:12.5588440Z Restore 20/20: -m scripts.intervention_artifacts --restore
+2026-09-19T01:53:14.0344836Z Verified 1308 archived records and 31 source/evidence files.
+2026-09-19T01:53:14.0471272Z The current learner is restored. Run scripts/sera_current.py with a task JSON and a fresh output path.
+2026-09-19T01:53:14.0572827Z ##[group]Run uv run --no-sync python -m scripts.portable_gap_use --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/ci-gap-examples.json
+2026-09-19T01:53:14.0574212Z [36;1muv run --no-sync python -m scripts.portable_gap_use --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/ci-gap-examples.json[0m
+2026-09-19T01:53:14.0622247Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:53:14.0622498Z env:
+2026-09-19T01:53:14.0622694Z   OMP_NUM_THREADS: 1
+2026-09-19T01:53:14.0622918Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:53:14.0623140Z   MKL_NUM_THREADS: 1
+2026-09-19T01:53:14.0623347Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:53:14.0623697Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:53:14.0623943Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:53:14.0624187Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:53:14.0624435Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:53:14.0624941Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:14.0625405Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:53:14.0625838Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:14.0626212Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:14.0626589Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:14.0626971Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:53:14.0627714Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:53:14.0628281Z   UV_PYTHON: 3.12.14
+2026-09-19T01:53:14.0628635Z ##[endgroup]
+2026-09-19T01:53:34.1610866Z {
+2026-09-19T01:53:34.1611945Z   "owner": "0fc25d7a2c39fd23fc33ce0112a6d1ba321870e66ead19aa1033bbdeb6babb3c",
+2026-09-19T01:53:34.1612720Z   "tasks": 7,
+2026-09-19T01:53:34.1613019Z   "output": "runs/ci-gap-examples.json"
+2026-09-19T01:53:34.1613611Z }
+2026-09-19T01:53:34.6711165Z ##[group]Run uv run --no-sync python -m scripts.solution_use --read-only --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/ci-solution-examples.json
+2026-09-19T01:53:34.6713547Z [36;1muv run --no-sync python -m scripts.solution_use --read-only --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/ci-solution-examples.json[0m
+2026-09-19T01:53:34.6752524Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:53:34.6752782Z env:
+2026-09-19T01:53:34.6752972Z   OMP_NUM_THREADS: 1
+2026-09-19T01:53:34.6753193Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:53:34.6753420Z   MKL_NUM_THREADS: 1
+2026-09-19T01:53:34.6753622Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:53:34.6753846Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:53:34.6754084Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:53:34.6754353Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:53:34.6754604Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:53:34.6754965Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:34.6755404Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:53:34.6755822Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:34.6756194Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:34.6756587Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:34.6756974Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:53:34.6757377Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:53:34.6757694Z   UV_PYTHON: 3.12.14
+2026-09-19T01:53:34.6757902Z ##[endgroup]
+2026-09-19T01:53:53.9541474Z {
+2026-09-19T01:53:53.9544177Z   "owner": "1d376d044ddba522401da96e6c36475b3d57cde73ba97358cfc33a502ba4f6f9",
+2026-09-19T01:53:53.9544890Z   "tasks": 11,
+2026-09-19T01:53:53.9545228Z   "output": "runs/ci-solution-examples.json"
+2026-09-19T01:53:53.9545526Z }
+2026-09-19T01:53:54.5696329Z ##[group]Run uv run --no-sync python -m scripts.counterfactual_live --input research-continuation/45_counterfactual_inquiry/example-tasks.json --output runs/ci-counterfactual-examples.json
+2026-09-19T01:53:54.5697740Z [36;1muv run --no-sync python -m scripts.counterfactual_live --input research-continuation/45_counterfactual_inquiry/example-tasks.json --output runs/ci-counterfactual-examples.json[0m
+2026-09-19T01:53:54.5734898Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:53:54.5735147Z env:
+2026-09-19T01:53:54.5735338Z   OMP_NUM_THREADS: 1
+2026-09-19T01:53:54.5735558Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:53:54.5735794Z   MKL_NUM_THREADS: 1
+2026-09-19T01:53:54.5736001Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:53:54.5736227Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:53:54.5736463Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:53:54.5736704Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:53:54.5736955Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:53:54.5737322Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:54.5737753Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:53:54.5738369Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:54.5738749Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:54.5739130Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:53:54.5739518Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:53:54.5739929Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:53:54.5740500Z   UV_PYTHON: 3.12.14
+2026-09-19T01:53:54.5740712Z ##[endgroup]
+2026-09-19T01:54:26.5735968Z {
+2026-09-19T01:54:26.5736434Z   "tasks": 15,
+2026-09-19T01:54:26.5737200Z   "owner": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
+2026-09-19T01:54:26.5738160Z   "output": "runs/ci-counterfactual-examples.json"
+2026-09-19T01:54:26.5738776Z }
+2026-09-19T01:54:27.1430676Z ##[group]Run uv run --no-sync python scripts/sera_current.py --input research-continuation/47_intervention_understanding/example-tasks.json --output runs/ci-current-examples.json
+2026-09-19T01:54:27.1432001Z [36;1muv run --no-sync python scripts/sera_current.py --input research-continuation/47_intervention_understanding/example-tasks.json --output runs/ci-current-examples.json[0m
+2026-09-19T01:54:27.1468444Z shell: /usr/bin/bash -e {0}
+2026-09-19T01:54:27.1468693Z env:
+2026-09-19T01:54:27.1468881Z   OMP_NUM_THREADS: 1
+2026-09-19T01:54:27.1469101Z   OPENBLAS_NUM_THREADS: 1
+2026-09-19T01:54:27.1469324Z   MKL_NUM_THREADS: 1
+2026-09-19T01:54:27.1469529Z   NUMEXPR_NUM_THREADS: 1
+2026-09-19T01:54:27.1469759Z   ATEN_CPU_CAPABILITY: avx2
+2026-09-19T01:54:27.1469993Z   MKL_ENABLE_INSTRUCTIONS: AVX2
+2026-09-19T01:54:27.1470741Z   OPENBLAS_CORETYPE: Haswell
+2026-09-19T01:54:27.1471005Z   NPY_DISABLE_CPU_FEATURES: X86_V4
+2026-09-19T01:54:27.1471360Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:54:27.1471789Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib/pkgconfig
+2026-09-19T01:54:27.1472210Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:54:27.1472580Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:54:27.1472955Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.14/x64
+2026-09-19T01:54:27.1473333Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.14/x64/lib
+2026-09-19T01:54:27.1473727Z   UV_PYTHON_INSTALL_DIR: /home/runner/work/_temp/uv-python-dir
+2026-09-19T01:54:27.1474050Z   UV_PYTHON: 3.12.14
+2026-09-19T01:54:27.1474256Z ##[endgroup]
+2026-09-19T01:54:47.9572752Z Traceback (most recent call last):
+2026-09-19T01:54:47.9581691Z   File "/home/runner/work/sera/sera/scripts/sera_current.py", line 12, in <module>
+2026-09-19T01:54:47.9582312Z     main()
+2026-09-19T01:54:47.9582859Z   File "/home/runner/work/sera/sera/scripts/intervention_use.py", line 62, in main
+2026-09-19T01:54:47.9583398Z     session, growth = restore()
+2026-09-19T01:54:47.9583672Z                       ^^^^^^^^^
+2026-09-19T01:54:47.9584130Z   File "/home/runner/work/sera/sera/scripts/intervention_study.py", line 54, in restore
+2026-09-19T01:54:47.9584700Z     return InterventionSession(parent, saved["state"]), growth
+2026-09-19T01:54:47.9585085Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-19T01:54:47.9585618Z   File "/home/runner/work/sera/sera/experiments/intervention_model.py", line 180, in __init__
+2026-09-19T01:54:47.9586152Z     self.restore_subject(subject, state)
+2026-09-19T01:54:47.9586704Z   File "/home/runner/work/sera/sera/experiments/intervention_model.py", line 364, in restore_subject
+2026-09-19T01:54:47.9587303Z     raise ValueError("Changed saved qualification")
+2026-09-19T01:54:47.9587654Z ValueError: Changed saved qualification
+2026-09-19T01:54:49.2326377Z ##[error]Process completed with exit code 1.
+2026-09-19T01:54:49.2501214Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-19T01:54:49.2502680Z Post job cleanup.
+2026-09-19T01:54:49.3391036Z [command]/usr/bin/git version
+2026-09-19T01:54:49.3430941Z git version 2.55.0
+2026-09-19T01:54:49.3467753Z Temporarily overriding HOME='/home/runner/work/_temp/4eba4f53-0c7f-414d-831b-1f7aac94e9cb' before making global git config changes
+2026-09-19T01:54:49.3468798Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-19T01:54:49.3474415Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/sera/sera
+2026-09-19T01:54:49.3517536Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-19T01:54:49.3553093Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-19T01:54:49.3850973Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-19T01:54:49.3880333Z http.https://github.com/.extraheader
+2026-09-19T01:54:49.3893454Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-19T01:54:49.3938295Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-19T01:54:49.4214797Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-19T01:54:49.4262119Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-19T01:54:49.4701124Z Cleaning up orphan processes
+2026-09-19T01:54:49.5086558Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
