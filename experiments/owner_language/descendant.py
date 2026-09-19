@@ -34,6 +34,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+from contextlib import contextmanager
 from pathlib import Path
 
 import torch
@@ -208,6 +209,27 @@ class LanguageAcquisitionR1(InterventionR1):
 
     def identity(self):
         return model_identity(self)
+
+
+@contextmanager
+def adapter_disabled(owner):
+    """Temporarily return the shared core to exactly its inherited behaviour.
+
+    The adapter is the only channel by which teaching can reach an inherited
+    route, so running a retained task with and without it says, per route,
+    whether that route actually depends on the shared core.
+    """
+    if owner.adapter is None:
+        yield False
+        return
+    saved = owner.adapter[-1].weight.detach().clone()
+    with torch.no_grad():
+        owner.adapter[-1].weight.zero_()
+    try:
+        yield True
+    finally:
+        with torch.no_grad():
+            owner.adapter[-1].weight.copy_(saved)
 
 
 def disconnect_inherited_core(owner, *, seed=48010):

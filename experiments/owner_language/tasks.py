@@ -15,7 +15,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-from pathlib import Path
 
 from .corpus import CORPUS, load_items, load_vocabulary, tokenise
 

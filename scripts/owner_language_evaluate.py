@@ -16,6 +16,7 @@ import json
 import os
 import sys
 import time
+from collections import Counter
 from pathlib import Path
 
 if __package__ in {None, ""}:
@@ -29,6 +30,7 @@ import torch  # noqa: E402
 
 from experiments.owner_language import training as tr  # noqa: E402
 from experiments.owner_language import usage  # noqa: E402
+from experiments.owner_language.descendant import adapter_disabled  # noqa: E402
 from experiments.owner_language.tasks import load_evaluation  # noqa: E402
 
 LAB_ROOT = Path(__file__).resolve().parents[1]
@@ -36,54 +38,83 @@ RUNS = LAB_ROOT / "runs/owner-learning-001"
 STAGE47 = LAB_ROOT / "research-continuation/47_intervention_understanding"
 BASELINE_ATTEMPT = RUNS / "attempts/baseline-verification-002"
 
-PROTECTED_KINDS = {
-    "field_what_if", "field_trajectory", "field_plan", "field_findings", "field_explain",
-    "intervention_what_if", "intervention_explain", "intervention_plan", "intervention_findings",
-    "what_if", "solve_solution", "apply_inquiry_rule", "inquiry_findings", "inquiry_next",
-    "gap_findings", "gap_predict", "gap_next_observation", "gap_consequences",
-    "solution_findings", "curiosity", "solve_discovery", "discovered_route",
-    "observed_motion", "imagine", "read", "request", "status",
-}
-
 
 def canonical(value):
     return json.dumps(value, sort_keys=True, default=str)
 
 
+def answer_case(context, request):
+    try:
+        answer = usage.perform(context, dict(request))
+        return {"status": "ANSWERED", "result": answer.get("result"), "error": None}
+    except Exception as failure:
+        return {"status": "FAILED", "result": None,
+                "error": type(failure).__name__ + ": " + str(failure)}
+
+
 def compare_suite(context, tasks, baseline_cases, label, output):
-    """Run the retained suite through the descendant and diff every case."""
+    """Run the retained suite twice and let each route classify itself.
+
+    The adapter is the only channel by which teaching can reach an inherited
+    route. Running every case with the adapter live and again with it zeroed
+    therefore separates three outcomes without any hand-written list:
+
+    * unchanged either way — the route does not read the shared core, so it is
+      protected by construction and the measurement confirms it;
+    * changed with the adapter live, identical to the baseline with it zeroed —
+      the route does read the shared core, and the change is exactly the
+      learning arriving through the declared connection;
+    * changed even with the adapter zeroed — something other than the adapter
+      moved, which must not happen and is reported as an anomaly.
+    """
     baseline = {case["id"]: case for case in baseline_cases}
     rows, cases = [], []
+    owner = context["owner"]
     for request in tasks:
         identifier = request.get("id")
-        try:
-            answer = usage.perform(context, dict(request))
-            status = "ANSWERED"
-            error = None
-        except Exception as failure:
-            answer, status, error = None, "FAILED", type(failure).__name__ + ": " + str(failure)
-        cases.append({"id": identifier, "kind": request.get("kind"), "status": status,
-                      "error": error, "result": None if answer is None else answer.get("result")})
+        live = answer_case(context, request)
+        with adapter_disabled(owner) as available:
+            zeroed = answer_case(context, request) if available else dict(live)
         reference = baseline.get(identifier)
-        same = None
-        if reference is not None and reference["status"] == "ANSWERED" and status == "ANSWERED":
-            same = canonical(reference["result"]["result"]) == canonical(answer["result"])
-        rows.append({"id": identifier, "kind": request.get("kind"), "status": status, "error": error,
+        same_live = same_zeroed = None
+        if reference is not None and reference["status"] == "ANSWERED":
+            expected = canonical(reference["result"]["result"])
+            if live["status"] == "ANSWERED":
+                same_live = expected == canonical(live["result"])
+            if zeroed["status"] == "ANSWERED":
+                same_zeroed = expected == canonical(zeroed["result"])
+        if same_live is True and same_zeroed is True:
+            classification = "unchanged"
+        elif same_live is False and same_zeroed is True:
+            classification = "changed_through_the_adapter"
+        elif same_zeroed is False:
+            classification = "changed_without_the_adapter"
+        else:
+            classification = "undetermined"
+        cases.append({"id": identifier, "kind": request.get("kind"), "status": live["status"],
+                      "error": live["error"], "result": live["result"],
+                      "adapter_zeroed_result": zeroed["result"], "classification": classification})
+        rows.append({"id": identifier, "kind": request.get("kind"), "status": live["status"],
+                     "error": live["error"],
                      "baseline_status": None if reference is None else reference["status"],
-                     "identical_to_baseline": same,
-                     "protected": request.get("kind") in PROTECTED_KINDS})
+                     "identical_to_baseline": same_live,
+                     "identical_with_adapter_zeroed": same_zeroed,
+                     "classification": classification})
     (output / f"{label}-cases.json").write_text(json.dumps(cases, indent=1, default=str) + "\n", encoding="utf-8")
-    protected = [row for row in rows if row["protected"]]
-    changed_protected = [row for row in protected if row["identical_to_baseline"] is not True]
+    counts = Counter(row["classification"] for row in rows)
+    anomalies = [row["id"] for row in rows if row["classification"] == "changed_without_the_adapter"]
     return {"suite": label, "declared": len(tasks),
             "answered": sum(1 for row in rows if row["status"] == "ANSWERED"),
             "failed": [row["id"] for row in rows if row["status"] != "ANSWERED"],
-            "protected_cases": len(protected),
-            "protected_identical": sum(1 for row in protected if row["identical_to_baseline"] is True),
-            "protected_changed": [row["id"] for row in changed_protected],
-            "unprotected_changed": [row["id"] for row in rows
-                                    if not row["protected"] and row["identical_to_baseline"] is False],
-            "protection_holds": not changed_protected,
+            "classification_counts": dict(counts),
+            "unchanged": [row["id"] for row in rows if row["classification"] == "unchanged"],
+            "changed_through_the_adapter": [row["id"] for row in rows
+                                            if row["classification"] == "changed_through_the_adapter"],
+            "kinds_changed_through_the_adapter": sorted(
+                {row["kind"] for row in rows if row["classification"] == "changed_through_the_adapter"}),
+            "kinds_unchanged": sorted({row["kind"] for row in rows if row["classification"] == "unchanged"}),
+            "anomalies": anomalies,
+            "protection_holds": not anomalies and not [row["id"] for row in rows if row["status"] != "ANSWERED"],
             "rows": rows, "case_file": f"{label}-cases.json"}
 
 
@@ -185,8 +216,9 @@ def main():
                                 for split, value in record["measurements"].items()}}
     if options.retention:
         summary["retention"] = {k: record["retention"][k] for k in
-                                ("declared", "answered", "failed", "protected_cases", "protected_identical",
-                                 "protected_changed", "unprotected_changed", "protection_holds")}
+                                ("declared", "answered", "failed", "classification_counts",
+                                 "kinds_changed_through_the_adapter", "kinds_unchanged",
+                                 "anomalies", "protection_holds")}
     print(json.dumps(summary, indent=2, default=str))
 
 

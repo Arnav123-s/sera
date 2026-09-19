@@ -30,7 +30,7 @@ import torch  # noqa: E402
 
 from experiments.owner_language import training as tr  # noqa: E402
 from experiments.owner_language.corpus import load_items  # noqa: E402
-from experiments.owner_language.tasks import Tokens, load_evaluation  # noqa: E402
+from experiments.owner_language.tasks import load_evaluation  # noqa: E402
 from scripts.owner_language_train import prepare  # noqa: E402
 
 LAB_ROOT = Path(__file__).resolve().parents[1]

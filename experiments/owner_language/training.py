@@ -36,8 +36,7 @@ import numpy as np
 import torch
 from torch.nn import functional as F
 
-from .corpus import CORPUS, load_items
-from .tasks import Tokens
+from .corpus import load_items
 
 LAB_ROOT = Path(__file__).resolve().parents[2]
 RUNS = LAB_ROOT / "runs/owner-learning-001"

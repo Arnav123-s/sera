@@ -15,7 +15,6 @@ works by forgetting is visible.
 """
 
 import argparse
-import copy
 import hashlib
 import json
 import os

@@ -9,6 +9,7 @@ identity the checkpoint recorded.
 
 from __future__ import annotations
 
+import copy
 import json
 import time
 from pathlib import Path
@@ -16,13 +17,14 @@ from pathlib import Path
 import torch
 from torch.nn import functional as F
 
-from .descendant import LanguageAcquisitionR1
+from .descendant import LanguageAcquisitionR1, disconnect_inherited_core
 from .owner import BASELINE_STORE, restore_owner
 from .tasks import Tokens
 from .training import CheckpointStore
 
 LAB_ROOT = Path(__file__).resolve().parents[2]
 RUNS = LAB_ROOT / "runs/owner-learning-001"
+CONTROL_SEED = 48010
 
 
 def descendant_store(run, arm):
@@ -53,11 +55,32 @@ def restore_descendant(run, arm="connected", *, baseline=BASELINE_STORE, revisio
                                          embedding=configuration["embedding"],
                                          adapter_rank=configuration["adapter_rank"],
                                          seed=configuration["seed"])
+    # The descendant's identity covers its exported configuration, and that
+    # configuration records the SHA-256 of the laboratory sources at the moment
+    # of training. Reinstating the saved configuration is what makes the
+    # identity reproducible from the checkpoint alone; the weights come from the
+    # checkpoint either way, so behaviour is the trained behaviour. The current
+    # source digest is reported beside it rather than silently substituted.
+    code_digest_now = owner.language_config["source"]
+    owner.language_config = copy.deepcopy(configuration)
+    disconnected = []
+    if metadata["arm"] == "disconnected":
+        # The disconnected arm trained against a re-randomised shared core. Its
+        # checkpoint stores only the trainable language tensors, so the same
+        # seeded re-randomisation has to be reapplied here or the arm being
+        # measured would not be the arm that was trained. This owner is a
+        # control and is never promoted.
+        disconnected = disconnect_inherited_core(owner, seed=CONTROL_SEED)
     owner.load_language_state(payload["language_state"])
-    if owner.identity() != metadata["descendant_owner"]:
+    if metadata["arm"] != "disconnected" and owner.identity() != metadata["descendant_owner"]:
         raise ValueError("The rebuilt descendant identity differs from the checkpoint")
     return {"session": session, "growth": growth, "owner": owner, "tokens": tokens,
-            "metadata": metadata, "restore": restore_record}
+            "metadata": metadata, "restore": restore_record,
+            "control_core_reinitialised": disconnected,
+            "identity_matches_checkpoint": owner.identity() == metadata["descendant_owner"],
+            "code_digest_at_training": configuration["source"],
+            "code_digest_now": code_digest_now,
+            "code_unchanged_since_training": code_digest_now == configuration["source"]}
 
 
 def complete(owner, tokens, text, *, top=5, context=32):
