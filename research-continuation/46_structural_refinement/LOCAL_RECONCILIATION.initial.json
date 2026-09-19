@@ -1,0 +1,85 @@
+{
+  "packet_sha256": "9bff86beba894ffd7afb5313d0e28f187920526e771a469edb8e5723fb156909",
+  "manifest_entries_verified": 298,
+  "packet_manifest_sha256": "ea601131495fc7acf87dd5d28f973937a54a4b8543e780de18e39b2bf5f9fbe7",
+  "head": "20e836e702102cf531d641c2142e578e76e2f65d",
+  "dirty_files": [
+    " M .github/workflows/ci.yml",
+    " M README.md",
+    " M docs/REPOSITORY_MAP.md",
+    " M docs/RESEARCH_ARCHIVE.md",
+    " M docs/START_HERE.md",
+    " M research-continuation/FAILURE_LEDGER.jsonl",
+    " M research-continuation/NEXT_ACTIONS.md",
+    " M research-continuation/RESEARCH_STATE.json",
+    "?? experiments/counterfactual_challenge.py",
+    "?? experiments/counterfactual_check.py",
+    "?? experiments/counterfactual_core.py",
+    "?? experiments/counterfactual_loop.py",
+    "?? experiments/counterfactual_owner.py",
+    "?? research-continuation/45_counterfactual_inquiry/",
+    "?? scripts/counterfactual_artifacts.py",
+    "?? scripts/counterfactual_inventory.py",
+    "?? scripts/counterfactual_live.py",
+    "?? scripts/counterfactual_qualification.py",
+    "?? scripts/counterfactual_replay.py",
+    "?? scripts/counterfactual_study.py",
+    "?? scripts/counterfactual_use.py",
+    "?? scripts/run_counterfactual_persistent.py",
+    "?? tests/test_counterfactual_challenge.py",
+    "?? tests/test_counterfactual_inquiry.py",
+    "?? tests/test_counterfactual_owner.py"
+  ],
+  "active_job": {
+    "status": "RUNNING",
+    "argv": [
+      "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-m",
+      "scripts.counterfactual_qualification",
+      "--phase",
+      "final"
+    ],
+    "time_limit_seconds": null,
+    "charged_seconds": 96.71297090000007,
+    "memory_limit_bytes": 2147483648,
+    "worker_threads": 1,
+    "peak_job_committed_bytes": 741494784,
+    "peak_process_committed_bytes": 740638720,
+    "observed_process_ids": [
+      16432,
+      22524
+    ],
+    "runner_sha256": "e32314fef16ae421b3c94b8ba112e332a0d83b3df952ae9d307b81196dc00572",
+    "windows_awake_requested": true,
+    "child_pid": 16432
+  },
+  "parent_stores": {
+    "sera-solution-progress-live": {
+      "revision": "000002-2dcc575060da.json",
+      "sha256": "2dcc575060da3a0c954ad982aab635c588cc34590b3aba212c0d58849ea3a156"
+    },
+    "sera-counterfactual-live": {
+      "revision": "000056-79ca4097936c.json",
+      "sha256": "79ca4097936c534f8e1bfb71c5f85015ef17b809a3f2d9ac1f12bb144b0ea877"
+    },
+    "sera-counterfactual-qualified-live": {
+      "revision": "000058-bcf5737f4a77.json",
+      "sha256": "bcf5737f4a77b61591529fce125849fc78ae62f583980dcb1e4c3edd9aa54991"
+    }
+  },
+  "resource_policy": {
+    "authorized": true,
+    "authority": "User: well the take off the limit since its running on this device keep this deice on till then ill keep the plug coonected",
+    "recorded_utc": "2026-09-18T19:09:22.573705+00:00",
+    "previous_ledger_sha256": "3bfa2090905848a2391152c775bc6a5c8de285acb480399f9fc92ce4f000e759",
+    "historical_remaining_seconds": 3925.114909299955,
+    "cpu_threads": 1,
+    "memory_limit_bytes": 2147483648,
+    "time_limit_seconds": null,
+    "paid_services": false,
+    "charged_seconds": 3865.666705699754
+  },
+  "status": "Initial C01 inventory; final qualified Stage45 identity and practical baseline will be pinned after active final evaluation. No parent reset or final retuning."
+}

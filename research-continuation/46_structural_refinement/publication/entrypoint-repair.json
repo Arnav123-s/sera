@@ -1,0 +1,11 @@
+{
+  "id": "SF-entrypoint-001",
+  "status": "repaired",
+  "original_command": ".venv/Scripts/python.exe scripts/sera_current.py --help",
+  "observed_error": "ModuleNotFoundError: No module named 'scripts'",
+  "cause": "Direct script execution placed scripts, rather than the repository root, on sys.path. The tested module invocation already worked.",
+  "repair": "Initialize the repository import path only for direct-script execution; invoke the same qualified main function.",
+  "validation": "Direct --help and ruff passed. The existing 33-task module batch passed; CI now exercises the 33-task direct-script invocation on both platforms.",
+  "source_sha256": "536422e8300bc0e60c1ad831d2be953cd2a11d58ac04aa4acdb1a5a4e29314ed",
+  "scientific_source_changed": false
+}

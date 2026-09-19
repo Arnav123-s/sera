@@ -1,0 +1,11 @@
+Verification failed: inspect preserved log
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\scripts\structural_packet_verify.py", line 21, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\structural_packet_verify.py", line 13, in main
+    subprocess.run([sys.executable, str(packet / "code/run_checks.py"), "--output", str(output)], check=True)
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe', 'D:\\ai\\projects\\sera\\research\\intake\\v16-structure-core\\SERA_v16\\code\\run_checks.py', '--output', 'D:\\ai\\projects\\sera\\runs\\SF-v16-verification']' returned non-zero exit status 1.

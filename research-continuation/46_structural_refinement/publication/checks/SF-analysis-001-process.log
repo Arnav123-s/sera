@@ -1,0 +1,64 @@
+{
+  "groups": [
+    {
+      "family": "radial",
+      "policy": "disagreement",
+      "worlds": 12,
+      "original_goal_initial_mse": 1.0187026493198654e-05,
+      "original_goal_final_mse": 2.293450100289361e-06,
+      "qualified_plans": 12,
+      "independently_best_of_five": 12,
+      "mean_plan_regret_m": 0.0
+    },
+    {
+      "family": "radial",
+      "policy": "balanced",
+      "worlds": 12,
+      "original_goal_initial_mse": 1.0187026493198654e-05,
+      "original_goal_final_mse": 4.4519088740641554e-06,
+      "qualified_plans": 12,
+      "independently_best_of_five": 12,
+      "mean_plan_regret_m": 0.0
+    },
+    {
+      "family": "directional",
+      "policy": "disagreement",
+      "worlds": 12,
+      "original_goal_initial_mse": 0.5933285861806623,
+      "original_goal_final_mse": 3.5974094814871977e-06,
+      "qualified_plans": 12,
+      "independently_best_of_five": 12,
+      "mean_plan_regret_m": 0.0
+    },
+    {
+      "family": "directional",
+      "policy": "balanced",
+      "worlds": 12,
+      "original_goal_initial_mse": 0.5933285861806623,
+      "original_goal_final_mse": 6.663080262748301e-06,
+      "qualified_plans": 12,
+      "independently_best_of_five": 12,
+      "mean_plan_regret_m": 0.0
+    },
+    {
+      "family": "omitted",
+      "policy": "disagreement",
+      "worlds": 12,
+      "original_goal_initial_mse": 0.6571221358128048,
+      "original_goal_final_mse": 0.14638958158046966,
+      "qualified_plans": 0,
+      "independently_best_of_five": 0,
+      "mean_plan_regret_m": null
+    },
+    {
+      "family": "omitted",
+      "policy": "balanced",
+      "worlds": 12,
+      "original_goal_initial_mse": 0.6571221358128048,
+      "original_goal_final_mse": 0.1562357085648177,
+      "qualified_plans": 0,
+      "independently_best_of_five": 0,
+      "mean_plan_regret_m": null
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "family": "radial",
+      "policy": "disagreement",
+      "worlds": 12,
+      "accepted": 12,
+      "directional_selected": 0,
+      "mse": 5.4108583204778474e-06,
+      "wide_mse": 0.00011660252907082099,
+      "trajectory_position_rmse_m": 0.0002171659594571828,
+      "trajectory_velocity_rmse_m_s": 0.0005108930563566326,
+      "controls": {
+        "frozen_radial": 7.897206177292842e-05,
+        "radial_extra_data": 2.8853182746589782e-06,
+        "always_directional": 8.562922401736045e-06,
+        "current_r1_readout": 0.10129416206116819
+      }
+    },
+    {
+      "family": "radial",
+      "policy": "balanced",
+      "worlds": 12,
+      "accepted": 12,
+      "directional_selected": 0,
+      "mse": 7.028399317222482e-06,
+      "wide_mse": 0.00039580688909968413,
+      "trajectory_position_rmse_m": 0.00026369382815248855,
+      "trajectory_velocity_rmse_m_s": 0.0006152890133886442
+    },
+    {
+      "family": "directional",
+      "policy": "disagreement",
+      "worlds": 12,
+      "accepted": 12,
+      "directional_selected": 12,
+      "mse": 1.0887318586089205e-05,
+      "wide_mse": 0.0001308027760795815,
+      "trajectory_position_rmse_m": 0.0002552643224222211,
+      "trajectory_velocity_rmse_m_s": 0.0006034660419158074,
+      "controls": {
+        "frozen_radial": 0.8064412650771305,
+        "radial_extra_data": 0.4520071942571901,
+        "always_directional": 1.0887318586090402e-05,
+        "current_r1_readout": 0.09421693312291973
+      }
+    },
+    {
+      "family": "directional",
+      "policy": "balanced",
+      "worlds": 12,
+      "accepted": 12,
+      "directional_selected": 12,
+      "mse": 1.1220632195891407e-05,
+      "wide_mse": 0.00020069188002047456,
+      "trajectory_position_rmse_m": 0.00026152137567278023,
+      "trajectory_velocity_rmse_m_s": 0.0006152181472312339
+    },
+    {
+      "family": "omitted",
+      "policy": "disagreement",
+      "worlds": 12,
+      "accepted": 0,
+      "directional_selected": 12,
+      "mse": 0.1237017192529322,
+      "wide_mse": 0.316339892969092,
+      "trajectory_position_rmse_m": 0.03916124276415369,
+      "trajectory_velocity_rmse_m_s": 0.09069044120415339,
+      "controls": {
+        "frozen_radial": 0.8283945429415397,
+        "radial_extra_data": 0.485384229377067,
+        "always_directional": 0.12370171925293229,
+        "current_r1_readout": 0.28723411805906973
+      }
+    },
+    {
+      "family": "omitted",
+      "policy": "balanced",
+      "worlds": 12,
+      "accepted": 0,
+      "directional_selected": 12,
+      "mse": 0.12536131701556777,
+      "wide_mse": 0.35430971846681264,
+      "trajectory_position_rmse_m": 0.03964474196132365,
+      "trajectory_velocity_rmse_m_s": 0.09179327481457585
+    }
+  ],
+  "integration_gate": true,
+  "episodes": 72,
+  "observed_pairs": 5184,
+  "final_predictions": 18432,
+  "independent_duplicate_max_error": 1.7763568394002505e-15,
+  "owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+  "phase": "final"
+}

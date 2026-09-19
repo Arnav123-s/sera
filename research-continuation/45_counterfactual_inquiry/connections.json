@@ -1,0 +1,144 @@
+[
+  {
+    "shape": {
+      "d": [
+        "1"
+      ],
+      "n": [
+        "1"
+      ]
+    },
+    "members": [
+      {
+        "rule": "1d51a7e1761467de7febfd77116a9551ee8d18c5098f7c7ac748ce9cf45fb50d",
+        "domain": "motion_0",
+        "axis": "x0",
+        "target": "v",
+        "companion": "m",
+        "power": 1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "1e2407164c7aa609bf86b0cf0b6f7d1b8c3c5e8bed6f95c154291d7c572900aa",
+        "domain": "motion_0",
+        "axis": "x0",
+        "target": "m",
+        "companion": "t",
+        "power": -1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "2ecc17d0d69d9ea9b3f876ba8b1606ed9fe3e955268e7569db76276499a0c882",
+        "domain": "motion_2",
+        "axis": "x0",
+        "target": "m",
+        "companion": "v0",
+        "power": 2,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "4aa0577842ffa2cbe9644648a37da0df6ce74838858068a87a15417bf5ccf2af",
+        "domain": "motion_0",
+        "axis": "x0",
+        "target": "v",
+        "companion": "f",
+        "power": 1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "70f34f036c23ce5f554f8f836cde426fbe256830916d03b85a9b40c5eb89746d",
+        "domain": "motion_1",
+        "axis": "v0",
+        "target": "a0",
+        "companion": "x0",
+        "power": "reverse",
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "796497c448fd0b499f402b054815105437e6f650682ee8652e5417f8171158bb",
+        "domain": "motion_0",
+        "axis": "t",
+        "target": "a0",
+        "companion": "v0",
+        "power": 3,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "cf4f63e3ab105b8f17214813fa1da1902ed4fdbb36a089f7f55945df27f41471",
+        "domain": "motion_0",
+        "axis": "x0",
+        "target": "a0",
+        "companion": "v0",
+        "power": 2,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "ead1fdd9a40fb8e08cdd9058f98b77eb5690bb54ccf1db828b01dca46b0c9423",
+        "domain": "motion_0",
+        "axis": "t",
+        "target": "a0",
+        "companion": "v0",
+        "power": 2,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      }
+    ]
+  },
+  {
+    "shape": {
+      "d": [
+        "1"
+      ],
+      "n": [
+        "0",
+        "1"
+      ]
+    },
+    "members": [
+      {
+        "rule": "1f1f897a7b98f85c77e9bcd3eab325a1fd7ee2ad943f0bf2378232ea03f11120",
+        "domain": "motion_0",
+        "axis": "f",
+        "target": "m",
+        "companion": "v0",
+        "power": "reverse",
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "2c58ab6ed79f444fed4d62e6ca2f78b9d277ddf5bfbfe09cdf683a908489e597",
+        "domain": "motion_0",
+        "axis": "v0",
+        "target": "m",
+        "companion": "a0",
+        "power": -1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "3d62b5dd560435c6f7e302501b2127f212981e14eb4020bc90978baba43725cb",
+        "domain": "motion_1",
+        "axis": "v0",
+        "target": "a1",
+        "companion": "t",
+        "power": -1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "ded1deb88885a4bfa0099c5053c2157cf2aae32fd5223b6cd07a33a0b700ed87",
+        "domain": "motion_0",
+        "axis": "m",
+        "target": "f",
+        "companion": "t",
+        "power": -1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      },
+      {
+        "rule": "e1e24279f7c1d33ec74b53f13f52767be8ddb97377b9002fe455fa0b80a25c4a",
+        "domain": "motion_1",
+        "axis": "t",
+        "target": "a0",
+        "companion": "m",
+        "power": -1,
+        "condition": "Nonzero initial target; all original mechanism/domain guards hold in both worlds"
+      }
+    ]
+  }
+]

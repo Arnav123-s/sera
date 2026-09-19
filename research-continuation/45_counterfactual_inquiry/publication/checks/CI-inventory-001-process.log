@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\scripts\counterfactual_inventory.py", line 47, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\counterfactual_inventory.py", line 28, in main
+    binding = grounded.bind(row["term"], row["text"], row["source"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\book_learning\runtime.py", line 91, in bind
+    raise ValueError("Provide a bounded named definition")
+ValueError: Provide a bounded named definition

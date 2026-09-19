@@ -1,12 +1,24 @@
 # Use SERA
 
-The [continuing learner](../research-continuation/44_solution_portfolios/README.md) retains language, reading, mathematics, physical meanings and checked discoveries in one owner. Its latest interface solves questions through alternative learned routes and normally investigates a missing route before returning. Every predecessor store remains available.
+The [continuing learner](../research-continuation/46_structural_refinement/README.md) retains language, reading, mathematics, physical meanings and checked discoveries in one owner. Its current interface predicts from acquired physical models, compares controls, explains model selection and runs the earlier counterfactual and practical tasks. Every predecessor store remains available.
 
 [Home](../README.md) · [Status](STATUS.md) · [Repository map](REPOSITORY_MAP.md) · [Archive](RESEARCH_ARCHIVE.md)
 
 These commands use the prepared workspace at `D:/ai/projects/sera`, its environment and retained checkpoints. Numerical tasks use one CPU thread and the existing 2 GiB process-tree memory cap. The wrapper charges the live resource ledger; every output folder must be fresh.
 
 ## Run several tasks through the continuing learner
+
+```powershell
+.venv/Scripts/python.exe scripts/run_structural_persistent.py --output runs/my-current-batch-001 --module scripts.sera_current -- --input research-continuation/46_structural_refinement/example-tasks.json --output runs/my-current-results-001.json
+```
+
+The 33-task batch starts with an acquired force prediction, an imagined trajectory, a target-directed control comparison and an explanation of the supporting evidence. It then executes the preserved counterfactual, solution, mathematical and four-language requests. Copy the JSON and edit the task inputs to use it. [Physical task fields and a worked result](../research-continuation/46_structural_refinement/README.md) · [Full results](../research-continuation/46_structural_refinement/report.md).
+
+For a fresh checkout, follow the [environment setup](REPOSITORY_MAP.md#setup-and-verification), then run `python scripts/restore_current.py`. On Linux use `.venv/bin/python -m scripts.sera_current --input ... --output ...` with the same task JSON. Restoration verifies every predecessor and preserves divergent local work.
+
+The retained `what_if` task accepts a domain, axis, target and multipliers; it returns independently checked alternatives with their different control assumptions and domain guards. `inquiry_findings` exposes retained investigations and compact rules. `inquiry_next` reports an unexplored question or an exhausted frontier, so repeated requests do not farm points. [Counterfactual fields and explanations](../research-continuation/45_counterfactual_inquiry/README.md).
+
+The preserved solution-only entry point remains available:
 
 ```powershell
 .venv/Scripts/python.exe scripts/run_solution_persistent.py --output runs/my-continuing-batch-001 --module scripts.solution_use -- --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/my-continuing-results-001.json

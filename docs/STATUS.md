@@ -1,8 +1,24 @@
 # Current status
 
+## Current learner: qualified physical refinement
+
+The current local owner is **`runs/sera-structural-live`**, available through **`scripts/sera_current.py`**. It acquires force coefficients, checks whether its initial physical description needs refinement, predicts conditional motion, compares controls against a target and explains the supporting evidence. [Run the 33-task batch](../research-continuation/46_structural_refinement/README.md) · [Measured report](../research-continuation/46_structural_refinement/report.md) · [Independent audit](../research-continuation/46_structural_refinement/audit.json).
+
+The frozen study completed **72 paired investigations across 36 simulated worlds**. All twelve directional worlds qualified a direction-dependent model; all twelve radial worlds retained the simpler model; all twelve omitted-mechanism worlds stayed open with their alternatives preserved. Directional acceleration MSE fell from **0.806441 to 0.000010887**, matching strong independent least squares. The current R1 readout, extra-data and balanced controls remain in the report.
+
+Replay preserved **855 inherited tensor records, 217 routes, 29 practical outputs and 26 taught physical meanings**, including the original source gate. All 72 investigations replayed, checkpoint restoration was exact, and an interrupted acquisition resumed its remaining 60 observations without repeating the first twelve. The full 33-task command-line batch, **593 local tests**, lint and seven existing release verifiers passed. Public release verification is in progress.
+
+## Completed counterfactual investigation
+
+The preserved Stage 45 owner completed **228 investigations** from retained executable dependencies. Its final evaluation returned **1,227/1,227 correct checked consensus predictions** with zero wrong consensus. The selected spread procedure used 401 final observations. Across the complete question portfolios, **27,917 conditional question/world proposals** received independent algebra checks. The owner retains 16 guarded response rules and three corrected novelty points; all 360 fresh-background transfer checks passed. [Report](../research-continuation/45_counterfactual_inquiry/report.md) · [Use the preserved interface](../research-continuation/45_counterfactual_inquiry/README.md).
+
+The original unsuccessful validation, its completion-challenge repair and a Windows interruption/resumption remain preserved. New physical-model work begins from the qualified successor and retains every earlier store.
+
+## Earlier published solution baseline
+
 The [published solution release](https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-solutions) passed [both platform jobs](https://github.com/Arnav123-s/sera/actions/runs/35389534369). Linux passed 512 tests and Windows passed 513; the established optional-fixture skips are recorded alongside 554 local regression tests and four subsequent credit tests. [Exact verification, logs and costs](../research-continuation/44_solution_portfolios/publication/VERIFICATION.md).
 
-## Latest: checked solution portfolios
+### Checked solution portfolios
 
 The current owner is **runs/sera-solution-progress-live**. Its portfolio has **217 qualified solution routes**, making **58 more saved questions executable** beyond its prior methods. The audited reward recognizes **54 new input-and-guard combinations**. The frozen evaluation returned **27,263 correct answers**, with 513 explicit denominator guards across 27,776 cases. [Use it](../research-continuation/44_solution_portfolios/README.md) · [Full results](../research-continuation/44_solution_portfolios/report.md).
 

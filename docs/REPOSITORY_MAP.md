@@ -6,6 +6,8 @@
 |---|---|
 | [`src/sera/`](../src/sera/) | Core model, state, ownership and learning contracts |
 | [`experiments/`](../experiments/) | Registered research implementations |
+| [`experiments/structural_field.py`](../experiments/structural_field.py) · [`structural_inquiry.py`](../experiments/structural_inquiry.py) · [`structural_check.py`](../experiments/structural_check.py) | Owner-held physical weights, committed investigations, independent qualification and versioned conditional views |
+| [`experiments/counterfactual_core.py`](../experiments/counterfactual_core.py) · [`counterfactual_loop.py`](../experiments/counterfactual_loop.py) · [`counterfactual_owner.py`](../experiments/counterfactual_owner.py) | Retained-weight imagination, evidence-selected follow-ups, procedure learning and compact guarded rules |
 | [`experiments/solution_search.py`](../experiments/solution_search.py) · [`solution_owner.py`](../experiments/solution_owner.py) · [`solution_credit.py`](../experiments/solution_credit.py) | Imagined rational proposals, complete question lifecycles and corrected proof rewards on the actual owner |
 | [`experiments/self_chosen/`](../experiments/self_chosen/) | Elementary process teaching, learned question selection, conjectures and independent credit |
 | [`experiments/discovery_frontier.py`](../experiments/discovery_frontier.py) | Broader missing-input investigations and composition of owned learned rules |
@@ -15,6 +17,7 @@
 | [`experiments/autonomous_discovery/`](../experiments/autonomous_discovery/) | Self-selected investigations, prerequisite acquisition, exact credit and continuation |
 | [`experiments/learning_progress/`](../experiments/learning_progress/) | Continuing practice, progress credit, procedure learning and independent replay |
 | [`scripts/`](../scripts/) | Task entry points, resource supervisors and verification |
+| [`scripts/sera_current.py`](../scripts/sera_current.py) · [`restore_current.py`](../scripts/restore_current.py) | Current task interface and ordered restoration of its verified predecessor chain |
 | [`tests/`](../tests/) | Behavioral, persistence, mathematical and integrity checks |
 | [`workbench/`](../workbench/) | Local task tools and workbench interface |
 | [`docs/`](./) | Current user and contributor navigation |
@@ -23,7 +26,7 @@
 | [`reports/`](../reports/) | Earlier consolidated reports and source comparisons |
 | `runs/` (local, ignored) | Live revisions, downloaded data, logs and resumable checkpoints |
 
-Historical sources and sealed records retain their paths because checkpoint contracts refer to their bytes. Current starting points are indexed above.
+Historical sources and sealed records retain their paths because checkpoint contracts refer to their bytes. Current starting points are indexed above. The [single restoration command](../scripts/restore_current.py) retains the ordered historical restorers and their individual hash checks.
 
 ## Setup and verification
 
@@ -33,30 +36,14 @@ Create the environment with **Python 3.12.14**:
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
 .venv/Scripts/python.exe -m pip install -e ".[dev,reference]" numpy==2.5.3 scipy==1.18.1
-.venv/Scripts/python.exe scripts/restore_test_artifacts.py
-.venv/Scripts/python.exe scripts/reading_artifacts.py --restore
-.venv/Scripts/python.exe scripts/books_artifacts.py --restore
-.venv/Scripts/python.exe scripts/completion_artifacts.py --restore
-.venv/Scripts/python.exe scripts/quest_artifacts.py --restore
-.venv/Scripts/python.exe scripts/quest_retention_artifacts.py
-.venv/Scripts/python.exe scripts/learning_artifacts.py
-.venv/Scripts/python.exe -m scripts.discovery_artifacts
-.venv/Scripts/python.exe -m scripts.autonomous_artifacts
-.venv/Scripts/python.exe -m scripts.acquisition_artifacts
-.venv/Scripts/python.exe -m scripts.growth_artifacts
-.venv/Scripts/python.exe -m scripts.refinement_artifacts --stage 39
-.venv/Scripts/python.exe -m scripts.refinement_artifacts --stage 40
-.venv/Scripts/python.exe -m scripts.self_chosen_artifacts
-.venv/Scripts/python.exe -m scripts.frontier_artifacts
-.venv/Scripts/python.exe -m scripts.gap_artifacts --restore
-.venv/Scripts/python.exe -m scripts.solution_artifacts --restore
+.venv/Scripts/python.exe scripts/restore_current.py
 .venv/Scripts/python.exe -m pytest
 .venv/Scripts/python.exe scripts/verify_concept_release.py
 ```
 
 On Linux, use `.venv/bin/python`. The [workflow](../.github/workflows/ci.yml) pins the qualified CPU profile. Fixture restoration checks hashes and refuses to overwrite divergent files; it restores test prerequisites without restarting training or replacing live stores.
 
-In the managed research workspace, run current numerical work through `scripts/run_solution_persistent.py` and the resource ledger. It applies the user's unrestricted local-time authorization, one CPU thread, a 2 GiB process-tree memory ceiling and a scoped Windows keep-awake request. Historical bounded supervisors remain preserved. The plain test command documents the clean-checkout entry point used in CI.
+In the managed research workspace, run current numerical work through `scripts/run_structural_persistent.py` and the resource ledger. It applies the user's unrestricted local-time authorization, one CPU thread, a 2 GiB process-tree memory ceiling and a scoped Windows keep-awake request. Historical bounded supervisors remain preserved. The plain test command documents the clean-checkout entry point used in CI.
 
 ## Review a study
 

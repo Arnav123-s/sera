@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-18T19:40:46.702819+00:00",
+  "date": "2026-09-19T00:16:56.193605+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Complete self-chosen questions with diverse checked answers, corrected novelty credit and retained procedure learning",
+  "active_direction": "Qualified physical model refinement through the actual continuing counterfactual owner",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -509,18 +509,17 @@
     }
   ],
   "latest_usable_owner": {
-    "store": "runs/sera-solution-progress-live",
-    "owner": "1d376d044ddba522401da96e6c36475b3d57cde73ba97358cfc33a502ba4f6f9",
-    "report": "44_solution_portfolios/report.md",
-    "entry_point": "scripts.solution_use",
+    "store": "runs/sera-structural-live",
+    "owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+    "report": "46_structural_refinement/report.md",
+    "entry_point": "scripts.sera_current",
     "solutions": 217,
-    "new_input_routes": 54,
-    "newly_executable_questions": 58,
-    "correct_reference_answers": 27263,
-    "explicit_guards": 513,
-    "wrong_reference_answers": 0,
-    "credited_points": 57.25,
-    "credit_audit": "44_solution_portfolios/coverage-audit.json"
+    "counterfactual_questions": 228,
+    "compact_rules": 16,
+    "physical_subjects": 72,
+    "retained_practical_tasks": 29,
+    "practical_example_batch": 33,
+    "publication_pending": true
   },
   "publication_history": [
     {
@@ -581,5 +580,63 @@
     "credited_points": 57.25,
     "credit_audit": "44_solution_portfolios/coverage-audit.json",
     "status": "complete_verified_published"
+  },
+  "counterfactual_inquiry": {
+    "protocol": "45_counterfactual_inquiry/qualification/PROTOCOL.md",
+    "parent_store": "runs/sera-counterfactual-live",
+    "status": "complete_verified_local_publication_pending",
+    "next_action": "Seal Stage 45 then Stage 46; publish exact source and artifacts, then verify Linux and Windows CI",
+    "preserved_failure": "runs/CI-study-001/validation",
+    "completed_original_practice_questions": 26,
+    "candidate_store": "runs/sera-counterfactual-qualified-live",
+    "completed_original_validation_questions": 31,
+    "completed_repaired_practice_questions": 26,
+    "completed_repaired_validation_questions": 31,
+    "selected_policy": "spread",
+    "validation_correct_consensus": 216,
+    "validation_wrong_consensus": 0,
+    "sealed_final_questions": 171,
+    "recovery": "runs/CI-guard-final-001/supervisor-recovery.json",
+    "owner": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
+    "questions": 228,
+    "rules": 16,
+    "final_correct_consensus": 1227,
+    "final_wrong_consensus": 0,
+    "final_selected_observations": 401,
+    "background_transfer_checks": 360,
+    "local_regression_passed": 593
+  },
+  "structural_refinement": {
+    "status": "complete_verified_local_publication_pending",
+    "packet_sha256": "9bff86beba894ffd7afb5313d0e28f187920526e771a469edb8e5723fb156909",
+    "verified_manifest_entries": 298,
+    "protocol": "46_structural_refinement/PROTOCOL.md",
+    "actual_parent": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
+    "next_action": "Seal Stage 45 then Stage 46; publish exact source and artifacts, then verify Linux and Windows CI",
+    "no_new_recurrent_core": true,
+    "reconciliation": "46_structural_refinement/LOCAL_RECONCILIATION.json",
+    "packet_verification": "46_structural_refinement/packet-verification.json",
+    "lifecycle_tests_passed": 14,
+    "owned_job": null,
+    "freeze": "46_structural_refinement/freeze.json",
+    "development_gate": true,
+    "queue": "runs/SF-queue-final.json",
+    "owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+    "store": "runs/sera-structural-live",
+    "final_worlds": 36,
+    "paired_episodes": 72,
+    "integration_gate": true,
+    "retained_tensors": 855,
+    "retained_routes": 217,
+    "retained_practical_tasks": 29,
+    "taught_meanings": 26,
+    "exact_interrupt_resume": true,
+    "local_regression_passed": 593,
+    "final_analysis": "46_structural_refinement/analysis.json",
+    "qualified_best_of_five_plans": {
+      "disagreement": 24,
+      "balanced": 24
+    },
+    "practical_batch_passed": 33
   }
 }

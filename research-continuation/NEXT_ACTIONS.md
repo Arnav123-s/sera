@@ -1,5 +1,9 @@
 # Execution checklist
 
+Current work: [v16 C01/C02 physical refinement](46_structural_refinement/report.md) and the [counterfactual curriculum](45_counterfactual_inquiry/report.md) passed final evaluation, actual-owner replay, the 33-task batch, 593 local tests and seven existing release verifiers. Saved-result analysis is complete. Seal Stage 45 followed by Stage 46, publish both exact archives and source, then collect Linux and Windows verification receipts. Earlier “Latest” entries below are historical records.
+
+The current learner's usable entry point is `scripts.sera_current`; its task batch is `46_structural_refinement/example-tasks.json`. Every prior store remains intact. Completed final cohorts stay sealed. Further learned-update or missing-mechanism research must use a new protocol and new task lifetimes, retaining the fixed fit, balanced investigation and strong classical controls from this release.
+
 Latest: [v13 C01/C02 empirical refinement](28_concept_refinement/report.md). The saved successor learns subject-specific motion coefficients, preserves old operators and language weights, and returns to its original conditional forecasting task. [Use it](28_concept_refinement/README.md); [exact scientific continuation](28_concept_refinement/continuation.json); [publication verification and updated allowance receipt](28_concept_refinement/publication.json). The scientific seal records a historical balance; the current local budget ledger governs every new reservation. New C03 evidence must use fresh worlds; all completed final cohorts remain sealed.
 
 Latest: [real-request acquisition and replay](26_stream_curriculum/report.md). The saved learner annotates local request files; [commands](26_stream_curriculum/README.md), [next research cycle](26_stream_curriculum/next-cycle.md). Earlier checklists below remain historical.

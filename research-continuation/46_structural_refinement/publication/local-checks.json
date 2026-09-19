@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "counts": {
+    "tests": 593,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "checks": [
+    {
+      "name": "lint",
+      "command": [
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts",
+        "experiments"
+      ],
+      "returncode": 0,
+      "seconds": 0.12693480000598356
+    },
+    {
+      "name": "regression",
+      "command": [
+        "-m",
+        "pytest",
+        "--junitxml",
+        "D:\\ai\\projects\\sera\\runs\\SF-full-checks-001\\records\\junit.xml"
+      ],
+      "returncode": 0,
+      "seconds": 683.7771330000251
+    },
+    {
+      "name": "verify_release",
+      "command": [
+        "scripts/verify_release.py"
+      ],
+      "returncode": 0,
+      "seconds": 6.802474699972663
+    },
+    {
+      "name": "verify_continuation",
+      "command": [
+        "scripts/verify_continuation.py"
+      ],
+      "returncode": 0,
+      "seconds": 1.0277815000154078
+    },
+    {
+      "name": "verify_applicability",
+      "command": [
+        "scripts/verify_applicability.py"
+      ],
+      "returncode": 0,
+      "seconds": 2.278597600001376
+    },
+    {
+      "name": "verify_v3_release",
+      "command": [
+        "scripts/verify_v3_release.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.21604369999840856
+    },
+    {
+      "name": "verify_transfer_release",
+      "command": [
+        "scripts/verify_transfer_release.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.6255488999886438
+    },
+    {
+      "name": "verify_continuing_release",
+      "command": [
+        "scripts/verify_continuing_release.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.3327511000097729
+    },
+    {
+      "name": "verify_concept_release",
+      "command": [
+        "scripts/verify_concept_release.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.7966290999902412
+    },
+    {
+      "name": "cli",
+      "command": [
+        "-m",
+        "sera",
+        "--help"
+      ],
+      "returncode": 0,
+      "seconds": 2.246162600000389
+    }
+  ],
+  "junit_sha256": "a5d05534c141996c0abc4faa281bcd8ab555c6a519759e24093f7fe9ab65b08e",
+  "charged_job": "runs/SF-full-checks-001",
+  "costs_charged_once_in": "46_structural_refinement/publication/costs.json"
+}

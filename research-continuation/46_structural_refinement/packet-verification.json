@@ -1,0 +1,45 @@
+{
+  "packet_sha256": "9bff86beba894ffd7afb5313d0e28f187920526e771a469edb8e5723fb156909",
+  "strict_status": "43 tests passed; exact regenerated-array equality failed",
+  "strict_receipt_sha256": "de8855253993eed92ce941615fa4b5f9e1e2ee710624cfe062f243c83825f316",
+  "portable_status": "All six relevant checks completed using the original archived scientific arrays; original metric tolerances unchanged",
+  "tests_reused": 43,
+  "regenerated_arrays": 225,
+  "arrays_with_last_bit_differences": 171,
+  "different_elements": 4465,
+  "max_regenerated_difference": 3.552713678800501e-15,
+  "regeneration_atol": 1e-14,
+  "regeneration_rtol": 1e-14,
+  "receipts": {
+    "neural": {
+      "models_reloaded": 54,
+      "prediction_arrays": 162,
+      "forecast_paths": 216,
+      "datasets_regenerated": 9,
+      "max_torch_discrepancy": 2.1316282072803006e-14,
+      "max_independent_force_discrepancy": 8.323155498146662e-10,
+      "independent_teacher_ODEs": 36,
+      "max_teacher_RK4_ODE_discrepancy": 3.721739609274799e-06
+    },
+    "diagnosis": {
+      "episodes_refitted": 480,
+      "max_posterior_discrepancy": 2.531308496145357e-14,
+      "max_prediction_discrepancy": 5.5067062021407764e-14
+    },
+    "operators": {
+      "propagation_records": 288,
+      "independent_ODEs": 32,
+      "max_replay_discrepancy": 5.0182080713057076e-14,
+      "max_independent_ODE_discrepancy": 6.898048798831269e-11,
+      "max_balance_residual": 7.105427357601002e-15
+    },
+    "compilation": {
+      "compiled_models": 18,
+      "max_prediction_discrepancy": 0.0,
+      "timing_not_reproduced": "host timings are observations; only numerical equivalence replayed"
+    }
+  },
+  "portable_receipt_sha256": "2cd7f958724a7fd9df800e31e4d4660e03b6e2f9c032c1d3365e0f415196703b",
+  "packet_modified": false,
+  "models_retrained": 0
+}

@@ -1,0 +1,3871 @@
+{
+  "owner": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
+  "questions": 228,
+  "domains": {
+    "motion_2": 81,
+    "polynomials": 42,
+    "motion_1": 56,
+    "motion_0": 49
+  },
+  "distinct_conditional_worlds": 27917,
+  "independently_proved_worlds": 27917,
+  "selected_trajectory_observations": 536,
+  "followups": {
+    "DISCRIMINATE_EXPLANATIONS": 243,
+    "EXPAND_MECHANISM": 57,
+    "CHALLENGE_NARROW_CONSENSUS": 171
+  },
+  "answered_with_portfolio": 228,
+  "retained_rules": 16,
+  "new_shape_points": 3.0,
+  "comparison_trajectories": 1010,
+  "comparison_observation_attempts": 2567,
+  "selected_policy": "spread",
+  "practice": {
+    "phase": "train",
+    "questions": 26,
+    "owner": "17878ca5dd34971021cfffb89e4262f6ba2dc466e837415d6ff035399be312b0",
+    "rules": 5,
+    "points": 0.0,
+    "comparison": {},
+    "policy_weights": [
+      0.04350792486201149,
+      0.4495839979384383,
+      -0.21214222897975327,
+      -0.9460698401803795,
+      1.5197174569992715,
+      -0.07995638582591721,
+      -0.10079940268011536,
+      -1.0125183551569157
+    ],
+    "source": "abc403bcadb89ff861bb707bb87c2f77b3c7e35fbee2915647c8d487dfd2e734"
+  },
+  "validation": {
+    "phase": "validation",
+    "questions": 31,
+    "owner": "f3b9bf946f7491114f80549297d421ffc0faffe90bc5f43c0ba8b553a5ac8770",
+    "rules": 5,
+    "points": 0.0,
+    "comparison": {
+      "balanced": {
+        "questions": 31,
+        "cases": 216,
+        "covered": 216,
+        "correct_consensus": 216,
+        "wrong_consensus": 0,
+        "observations": 83,
+        "expanded": 31,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "entropy": {
+        "questions": 31,
+        "cases": 216,
+        "covered": 216,
+        "correct_consensus": 216,
+        "wrong_consensus": 0,
+        "observations": 66,
+        "expanded": 31,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "learned": {
+        "questions": 31,
+        "cases": 216,
+        "covered": 216,
+        "correct_consensus": 216,
+        "wrong_consensus": 0,
+        "observations": 68,
+        "expanded": 31,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "random": {
+        "questions": 31,
+        "cases": 216,
+        "covered": 216,
+        "correct_consensus": 216,
+        "wrong_consensus": 0,
+        "observations": 68,
+        "expanded": 31,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "spread": {
+        "questions": 31,
+        "cases": 216,
+        "covered": 216,
+        "correct_consensus": 216,
+        "wrong_consensus": 0,
+        "observations": 59,
+        "expanded": 31,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      }
+    },
+    "policy_weights": [
+      0.04350792486201149,
+      0.4495839979384383,
+      -0.21214222897975327,
+      -0.9460698401803795,
+      1.5197174569992715,
+      -0.07995638582591721,
+      -0.10079940268011536,
+      -1.0125183551569157
+    ],
+    "source": "abc403bcadb89ff861bb707bb87c2f77b3c7e35fbee2915647c8d487dfd2e734"
+  },
+  "final": {
+    "phase": "final",
+    "questions": 171,
+    "owner": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
+    "rules": 16,
+    "points": 3.0,
+    "comparison": {
+      "balanced": {
+        "questions": 171,
+        "cases": 1227,
+        "covered": 1227,
+        "correct_consensus": 1227,
+        "wrong_consensus": 0,
+        "observations": 483,
+        "expanded": 171,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "entropy": {
+        "questions": 171,
+        "cases": 1227,
+        "covered": 1227,
+        "correct_consensus": 1227,
+        "wrong_consensus": 0,
+        "observations": 433,
+        "expanded": 171,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "learned": {
+        "questions": 171,
+        "cases": 1227,
+        "covered": 1227,
+        "correct_consensus": 1227,
+        "wrong_consensus": 0,
+        "observations": 442,
+        "expanded": 171,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "random": {
+        "questions": 171,
+        "cases": 1227,
+        "covered": 1227,
+        "correct_consensus": 1227,
+        "wrong_consensus": 0,
+        "observations": 464,
+        "expanded": 171,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      },
+      "spread": {
+        "questions": 171,
+        "cases": 1227,
+        "covered": 1227,
+        "correct_consensus": 1227,
+        "wrong_consensus": 0,
+        "observations": 401,
+        "expanded": 171,
+        "unresolved": 0,
+        "mean_normalized_error": 0.0
+      }
+    },
+    "policy_weights": [
+      0.04350792486201149,
+      0.4495839979384383,
+      -0.21214222897975327,
+      -0.9460698401803795,
+      1.5197174569992715,
+      -0.07995638582591721,
+      -0.10079940268011536,
+      -1.0125183551569157
+    ],
+    "source": "abc403bcadb89ff861bb707bb87c2f77b3c7e35fbee2915647c8d487dfd2e734"
+  },
+  "audit": {
+    "passed": true,
+    "owner": "a883c07bd128a5eafd3db3f16cd4a275133cda433a8b1db61bb7f1b3586795c6",
+    "parent_owner": "fba5b69093002cbe2845f5e8bf375b59e053b1ea0b358c313e51ac103f74357f",
+    "retained_parent_tensors": 609,
+    "changed_parent_tensors": [],
+    "shared_language_owner": true,
+    "source_gate": {
+      "threshold": 1.1,
+      "development_admitted": 0,
+      "autonomous": false
+    },
+    "questions": 228,
+    "rules": 16,
+    "history_revisions": 230,
+    "earlier_task_results_retained": 11,
+    "background_transfer_checks": 360,
+    "cross_domain_shape_connections": 2,
+    "repeated_credit_rejected": true,
+    "points": 3.0,
+    "trained_procedure_updates": 26,
+    "selected_policy": "spread",
+    "new_tensor_records": 246,
+    "study_final": "d16812f8943a527de1bca941e1313e4c433fb99dc94ef619ecaa6756b1fef216",
+    "exact_owner_restore": true,
+    "exact_investigation_replays": 228,
+    "practical_examples": 15
+  },
+  "question_records": [
+    {
+      "goal": "002cb00e0261658b07068b28bbe9ed367ec812a71349184eb13f24caadbf8f58",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/002cb00e0261658b07068b28bbe9ed367ec812a71349184eb13f24caadbf8f58/spread.json",
+        "sha256": "fba11c7adca4bfd874c72808cf4d020ead05b5b8d22895f654fa7f1c455c40fa"
+      }
+    },
+    {
+      "goal": "003e89af0a90c8cede48d18ebbac5c56ff229922fe44b7eb1c0d6588f2d52189",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/003e89af0a90c8cede48d18ebbac5c56ff229922fe44b7eb1c0d6588f2d52189/spread.json",
+        "sha256": "bb61a9f7d28467a53cb12264563fe3d8cab9a633fe4a2a51cb7f2bc2f13eaead"
+      }
+    },
+    {
+      "goal": "009390107191671f3977b92cf918a4ba5577917c19d514fd05c61c0724df9cfb",
+      "domain": "polynomials",
+      "axis": "c1",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/009390107191671f3977b92cf918a4ba5577917c19d514fd05c61c0724df9cfb/random.json",
+        "sha256": "c3a28dfcecea94945b07cd133185f14133a591720e8e671883f17d76ccace652"
+      }
+    },
+    {
+      "goal": "00ee25921d8ba69cf4863633f63af6a49bd733adc13bbc663b23a768d6dfb894",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/00ee25921d8ba69cf4863633f63af6a49bd733adc13bbc663b23a768d6dfb894/spread.json",
+        "sha256": "1f627cdeb2bbbae1e3b6e4843d20956b735e4ea5b4b9b56b9b25068cf09d8972"
+      }
+    },
+    {
+      "goal": "02159835e1967b7e54dc7f309ff2d4429ce1e55feb6d7aa6ce64ac1ff232abab",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/02159835e1967b7e54dc7f309ff2d4429ce1e55feb6d7aa6ce64ac1ff232abab/spread.json",
+        "sha256": "8cd86015c0825159b9b0590039163bedb1656648816cc1161c920af935d1b011"
+      }
+    },
+    {
+      "goal": "02f8799f8bc9bbf321ca75da544249a59fd0f911942b89f2ec7e25944edac146",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/02f8799f8bc9bbf321ca75da544249a59fd0f911942b89f2ec7e25944edac146/spread.json",
+        "sha256": "17e15ecb740c189dcd9a9675a9b7da66e59efc76067d01d14c54086154a4c152"
+      }
+    },
+    {
+      "goal": "0519cda565cf94fd29a40f115cd92c6c438690bbfe5736bde5df005ee1c3699b",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0519cda565cf94fd29a40f115cd92c6c438690bbfe5736bde5df005ee1c3699b/spread.json",
+        "sha256": "8a8f1e7bb4a3205bb9baad496be1fa8ce6d03592ca213182c8a928199574a2fe"
+      }
+    },
+    {
+      "goal": "062e68a47e831445392712881019ab1b9ca7106ac48d41803104ee35050c1413",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "a0",
+      "survivors": 4,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/062e68a47e831445392712881019ab1b9ca7106ac48d41803104ee35050c1413/entropy.json",
+        "sha256": "6578fa58e04a70a0529db77335307e1d1e078f1667b36e9e9af80c62f6c8ef0c"
+      }
+    },
+    {
+      "goal": "0867139594c0d2684aae0444b6eb896fa0d072f2e3bd3eca4c4973fd7e571414",
+      "domain": "polynomials",
+      "axis": "c2",
+      "target": "i",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0867139594c0d2684aae0444b6eb896fa0d072f2e3bd3eca4c4973fd7e571414/spread.json",
+        "sha256": "e58df43f454a6ed8f644a583731869f89d840f50ebc8c22a7bfcb9142ed5fe91"
+      }
+    },
+    {
+      "goal": "08920ce34efe6339a1013b852c0de99adfea3e52f46336cf53a014c2369c88eb",
+      "domain": "polynomials",
+      "axis": "i",
+      "target": "c0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/08920ce34efe6339a1013b852c0de99adfea3e52f46336cf53a014c2369c88eb/spread.json",
+        "sha256": "1df061e0890e6370c6e3408340e84ee9eefb71af7e2844dd70a90755cb2eed54"
+      }
+    },
+    {
+      "goal": "08c7f34ddbac4dc18a59ba77facfaa61e3b8a7c1b19547390a2264e04295f64d",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/08c7f34ddbac4dc18a59ba77facfaa61e3b8a7c1b19547390a2264e04295f64d/spread.json",
+        "sha256": "c2f1464623f00599122370ab6182734a8b84d6e8824f121289b4afae826f85c3"
+      }
+    },
+    {
+      "goal": "092350c2554d10ebc43f4a12029f10f7fe2f102f54a0a23c85bafc5283893cdd",
+      "domain": "polynomials",
+      "axis": "i",
+      "target": "c2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/092350c2554d10ebc43f4a12029f10f7fe2f102f54a0a23c85bafc5283893cdd/spread.json",
+        "sha256": "e7c689e8cf0947f9cfbb3f8220a4169bccf7fa7f8cdf5c94ffc9e52de39918b9"
+      }
+    },
+    {
+      "goal": "0a1c261dbcb838ef17be24672f9d6f6cd78dba67b816d3b2eb34632d1f5a3d9c",
+      "domain": "polynomials",
+      "axis": "p",
+      "target": "c0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0a1c261dbcb838ef17be24672f9d6f6cd78dba67b816d3b2eb34632d1f5a3d9c/spread.json",
+        "sha256": "8f82c980398d2737adb53c14d0dcdc980e23035f1bd78043ca85ae47e512da05"
+      }
+    },
+    {
+      "goal": "0a739c756f455042deb36079a052fe473e9757f1867af397e86bc137546653eb",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0a739c756f455042deb36079a052fe473e9757f1867af397e86bc137546653eb/spread.json",
+        "sha256": "0e2b77b659c142e4e6c4c0c8cf5d1a82dd18a7be01ea67a21a7f60b0f47ba409"
+      }
+    },
+    {
+      "goal": "0b46fd5591e0f59ba94727e16e665a413395a4f5490c9060beddc51ddccb242f",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0b46fd5591e0f59ba94727e16e665a413395a4f5490c9060beddc51ddccb242f/spread.json",
+        "sha256": "1994b63c672a92872c70c0dcd4382ce98599fa145e8f5bc9afa18e1e9b3d7918"
+      }
+    },
+    {
+      "goal": "0dc885093c170d37203c9bc86d16bcccff6bfcb524ac6c211af81103131a5566",
+      "domain": "polynomials",
+      "axis": "c0",
+      "target": "c1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0dc885093c170d37203c9bc86d16bcccff6bfcb524ac6c211af81103131a5566/spread.json",
+        "sha256": "e9326f903ab79365a888e1475f341a525639ca38cb3709e8c8cfa916f30189fc"
+      }
+    },
+    {
+      "goal": "0e1c4743323c90283738a618e5f1ab035e04e8fef7bf8655a8d8706ea925f511",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/0e1c4743323c90283738a618e5f1ab035e04e8fef7bf8655a8d8706ea925f511/spread.json",
+        "sha256": "8f7e412fde0b1bceea99064723a27e320a1c69377b9f77b83c9aba0c499cf4c6"
+      }
+    },
+    {
+      "goal": "0ee329c4d2f9b2233b00078bb0e8428449a45e6cac62617a9c8bb24ee46be96f",
+      "domain": "polynomials",
+      "axis": "s",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/0ee329c4d2f9b2233b00078bb0e8428449a45e6cac62617a9c8bb24ee46be96f/entropy.json",
+        "sha256": "c8d90d1677d850ea4619a060f2a7c34106ed83324cd2f6202f2fdd9c4c424682"
+      }
+    },
+    {
+      "goal": "10004aaaeea7eff18bc55d0e84957ad3afcc508cff44a56891a45d24e0090356",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/10004aaaeea7eff18bc55d0e84957ad3afcc508cff44a56891a45d24e0090356/spread.json",
+        "sha256": "9ec5d1e1f1c91bbd272cc88ce3df9d348521c8bd09b8c849a2744f4280b1b816"
+      }
+    },
+    {
+      "goal": "101680a192d86a523ec332e5df30e557066dd48a21df4ffaff45f9d8bd17ee96",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/101680a192d86a523ec332e5df30e557066dd48a21df4ffaff45f9d8bd17ee96/spread.json",
+        "sha256": "6d620c1938602f45ff5714042dd76af7e81c546697c501396a723c16d272432f"
+      }
+    },
+    {
+      "goal": "1052fb98fad5e87047a75eedb6926776f137cd3cecde58d7d9d3f2a9e0f21626",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/1052fb98fad5e87047a75eedb6926776f137cd3cecde58d7d9d3f2a9e0f21626/random.json",
+        "sha256": "e446c110f01a0d33f647f0e49731c01d95d0fe21a3e40604b9c505de50548671"
+      }
+    },
+    {
+      "goal": "10d6dcd30b6d3d99ca051723f3584f7c8e6cf1741e3f0c904f12a5001d035e09",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/10d6dcd30b6d3d99ca051723f3584f7c8e6cf1741e3f0c904f12a5001d035e09/spread.json",
+        "sha256": "7a86cc5eb3f5a3b0d4e1e788421169a63f37b04f886c256c659dcdb615c73de4"
+      }
+    },
+    {
+      "goal": "121603bea2dda7e389d6daa37612e362f560f0499f24fdee62083dc6b594b370",
+      "domain": "polynomials",
+      "axis": "c2",
+      "target": "c0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/121603bea2dda7e389d6daa37612e362f560f0499f24fdee62083dc6b594b370/spread.json",
+        "sha256": "6fd982df69d75421e8649c5b534eb1961e03bfb9aff1aa6f7d7aa6d5ed5783e3"
+      }
+    },
+    {
+      "goal": "12ccfb202d071ff50cdc071e1cfa21f10842047452e744f28bb86b0a5fb32c1a",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "m",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/12ccfb202d071ff50cdc071e1cfa21f10842047452e744f28bb86b0a5fb32c1a/random.json",
+        "sha256": "8fedae2baa775345eec2f031b07033a6dc820f2d749cf257061cfee48db6abf9"
+      }
+    },
+    {
+      "goal": "15c20f6df9cfe6555566e78fc17dc8dd6af1711ee01320390b68cffea2296fdf",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/15c20f6df9cfe6555566e78fc17dc8dd6af1711ee01320390b68cffea2296fdf/spread.json",
+        "sha256": "2ce744d55c50a8fd143f18f7a18d248fc1361c4680800a2312fd32e977c16447"
+      }
+    },
+    {
+      "goal": "1694d037fbb7401d0a196f9bb851ec5e9a799304464565b7c19a6e9fdcb05973",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/1694d037fbb7401d0a196f9bb851ec5e9a799304464565b7c19a6e9fdcb05973/spread.json",
+        "sha256": "df100de6d63ada90211fa14605a9e531873d7e35baa4f2efe1b26ed840d1d30b"
+      }
+    },
+    {
+      "goal": "1aaaf8790f467f7c612c65f76bd66179a50dd65ce5921d9c03d48bc62a133da1",
+      "domain": "polynomials",
+      "axis": "c1",
+      "target": "c2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/1aaaf8790f467f7c612c65f76bd66179a50dd65ce5921d9c03d48bc62a133da1/spread.json",
+        "sha256": "c062ac98a79941c81f78ae1f5713f47a71c8b32da4b2731176fb41e091590acb"
+      }
+    },
+    {
+      "goal": "1c9b1e7083f3a95c72629d02586ffbaf6deca84285f6d515c644a952ddd175d3",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/1c9b1e7083f3a95c72629d02586ffbaf6deca84285f6d515c644a952ddd175d3/random.json",
+        "sha256": "c989893bb8eadb1aa65c575fce1a8bcad3a4364c4a09d2d8f0d1aa090243b747"
+      }
+    },
+    {
+      "goal": "1d2d1774ff071e11099e57e26f9841d152ffd13fbcaa16652701e6c08cf4bd07",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/1d2d1774ff071e11099e57e26f9841d152ffd13fbcaa16652701e6c08cf4bd07/entropy.json",
+        "sha256": "c9a52651d84a7b1e5c655fe99ad2684de735d167e122c9ed830d86cf611fc60c"
+      }
+    },
+    {
+      "goal": "1d48f175ffb89669251c592e42784343915a0b89168b54b5e25c99345a864385",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/1d48f175ffb89669251c592e42784343915a0b89168b54b5e25c99345a864385/spread.json",
+        "sha256": "0befb12e79efafe0a7582b6f9befb21dcfe287e3108e64797cfceb6c4c49356a"
+      }
+    },
+    {
+      "goal": "1ea488bb9c4c46f38214feabe5a175907668a99aa6ae826e07f0554ce958a486",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/1ea488bb9c4c46f38214feabe5a175907668a99aa6ae826e07f0554ce958a486/spread.json",
+        "sha256": "1c1e89a28ff88f17e1bb6bf5b1ff810384df7801d4dfe325fd45ba09460d7c59"
+      }
+    },
+    {
+      "goal": "1ecfc1a5b4e54557d8cde0190b77e26e16b4fb6a07e95ef4d41dd99e3f053f64",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/1ecfc1a5b4e54557d8cde0190b77e26e16b4fb6a07e95ef4d41dd99e3f053f64/spread.json",
+        "sha256": "9a1fcbd1574944faaefccc64c45ae4e397d7910efa17038ed7faf60e4825403c"
+      }
+    },
+    {
+      "goal": "20653a2c7cef15e3b07beb46480d696fbff7cd24e78388d6c07b0d3e2e5ba7cd",
+      "domain": "polynomials",
+      "axis": "c0",
+      "target": "i",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/20653a2c7cef15e3b07beb46480d696fbff7cd24e78388d6c07b0d3e2e5ba7cd/entropy.json",
+        "sha256": "b33e529aa5c8a538d0fe0a0530ed7f9e92692295c332b0fcbeb3adbf07e764f2"
+      }
+    },
+    {
+      "goal": "20c2010c13cd58645644ace4e80072942aa24a63b3756a35cc1d85da8ebd93e5",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/20c2010c13cd58645644ace4e80072942aa24a63b3756a35cc1d85da8ebd93e5/entropy.json",
+        "sha256": "e4daf5de5caaed0d5fcb7fab044cb34a3fdd175f6e84a799a069a47899bcf4e4"
+      }
+    },
+    {
+      "goal": "21939f8c0d8c0a813aaace5216f114ca1a3f38da879404c17cca2e178188bf90",
+      "domain": "polynomials",
+      "axis": "t",
+      "target": "c2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/21939f8c0d8c0a813aaace5216f114ca1a3f38da879404c17cca2e178188bf90/entropy.json",
+        "sha256": "8ea33dfb7d9cc5e111611db9e2ca797b4c52a43995f38050f7f351d56b6c6cd8"
+      }
+    },
+    {
+      "goal": "2194f22164d44e66c5f1ebb55a7f61bdcbb9930f8217c48599d386f68e0b4540",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/2194f22164d44e66c5f1ebb55a7f61bdcbb9930f8217c48599d386f68e0b4540/spread.json",
+        "sha256": "2e0eabad5bb49d7d3bb203a80774e06fb7539b1fa46efa1b912c2b795ba872a8"
+      }
+    },
+    {
+      "goal": "25224a751cfd4cbab1bff6edd49675fc3bfd7304f71b3b228bddf8823c2164ad",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/25224a751cfd4cbab1bff6edd49675fc3bfd7304f71b3b228bddf8823c2164ad/spread.json",
+        "sha256": "825d3a38e2fd39a09a7ce66a9cc0530ab28a52154d975d3d78d4f3c968ef84aa"
+      }
+    },
+    {
+      "goal": "26a99a1735618964a4143575e707fc0b957dbecfa1701a1f33bdd70f863e8a26",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/26a99a1735618964a4143575e707fc0b957dbecfa1701a1f33bdd70f863e8a26/spread.json",
+        "sha256": "568adcadb31dfa9b73eeaa488aa06f1ec3cddfb258a393ada984da48230e46a6"
+      }
+    },
+    {
+      "goal": "2714ef5eacfccad3a8c04d5369b745e3c306ff77b38cf841be9ee1a3e78d92fc",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/2714ef5eacfccad3a8c04d5369b745e3c306ff77b38cf841be9ee1a3e78d92fc/spread.json",
+        "sha256": "d961c0464b86994bcc3bd519bf5dbb386519b9bfeb2dd96804f455926c38960c"
+      }
+    },
+    {
+      "goal": "27ffe324afea7ef8be368a59d143bad8ef5ed82e3c97ee8397f2621aaa2af8e9",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/27ffe324afea7ef8be368a59d143bad8ef5ed82e3c97ee8397f2621aaa2af8e9/entropy.json",
+        "sha256": "9c8978071a495503b877bd9b65b5d3d37863b6af621b72d8fdcc513651a617c1"
+      }
+    },
+    {
+      "goal": "281e3b2eb8ccc37c40a6aead54e075d16c8e54ebbc40b96b255d735b8d23f916",
+      "domain": "polynomials",
+      "axis": "c0",
+      "target": "p",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/281e3b2eb8ccc37c40a6aead54e075d16c8e54ebbc40b96b255d735b8d23f916/spread.json",
+        "sha256": "25297b321de84483ba4fc0d6e01ca6b13047bb099aeb1087aa44df588c9f100e"
+      }
+    },
+    {
+      "goal": "286dc2ad947ed81725f51d48d4610c740464b533e4abe518517d871f7fc72a25",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/286dc2ad947ed81725f51d48d4610c740464b533e4abe518517d871f7fc72a25/spread.json",
+        "sha256": "8ae716fa52725225e8ce6d0ab0eea6722c107ea53ae40206ada2a42ed185bacc"
+      }
+    },
+    {
+      "goal": "28b3be4b4ad503023662fe60b8e31ed02eefdd5f4cbacbb59e61f42574383fea",
+      "domain": "polynomials",
+      "axis": "c0",
+      "target": "c2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/28b3be4b4ad503023662fe60b8e31ed02eefdd5f4cbacbb59e61f42574383fea/spread.json",
+        "sha256": "8842a6ab62577d7cd5566f5dac1093f5aaa75b38f3a718adfcab6331f42c915b"
+      }
+    },
+    {
+      "goal": "29c9b93e3d9a380a00de4acede500f165388d8960275f470a63e2bf6e92ecaab",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/29c9b93e3d9a380a00de4acede500f165388d8960275f470a63e2bf6e92ecaab/spread.json",
+        "sha256": "6ed848ac9b3d81aebbb8c0192b41582f7411d4ab3e7d3555d44e3b1e364015de"
+      }
+    },
+    {
+      "goal": "2a2fe5344dd0e38781639d42a4bbdc944e35f28bb1c9a56236b8c800846dc9f2",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/2a2fe5344dd0e38781639d42a4bbdc944e35f28bb1c9a56236b8c800846dc9f2/entropy.json",
+        "sha256": "0af9d0736ca20811764d78a312a0bbb57d2e5e9a2e6e832e485f613366e2526b"
+      }
+    },
+    {
+      "goal": "2ce838673bbfbccee8f2db26984fbc5b1b6b6fd6c2bcfb84140eb1c189079346",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/2ce838673bbfbccee8f2db26984fbc5b1b6b6fd6c2bcfb84140eb1c189079346/spread.json",
+        "sha256": "ab56f7577ff98e16a0bff325c64034d56badcd57b6cb4ba5b6a26f5dd0024fb1"
+      }
+    },
+    {
+      "goal": "321e6c95d96abad875665e5e46d877979eb3f9b328a1d4ba7f7c00f2dd0db38c",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/321e6c95d96abad875665e5e46d877979eb3f9b328a1d4ba7f7c00f2dd0db38c/spread.json",
+        "sha256": "01c3e93331305efa0d5065a4d8983ae180c62efa18587321422606cebc8dac5a"
+      }
+    },
+    {
+      "goal": "3290a7910937c9673c16da9b134edaffea9f3305c2b760d1693eface71f002ab",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/3290a7910937c9673c16da9b134edaffea9f3305c2b760d1693eface71f002ab/spread.json",
+        "sha256": "30cc1b30e1089e741de3e4d759c402d288fd08c1fcdacecac804015b2118755f"
+      }
+    },
+    {
+      "goal": "32cb62a4b3ec5d5806df5c11c6cc310c8c202684c1e4c942de6751b3dbf44f61",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/32cb62a4b3ec5d5806df5c11c6cc310c8c202684c1e4c942de6751b3dbf44f61/entropy.json",
+        "sha256": "a5f945a29ae132d8869f6b7d6621ee87135712d853e8fb6c8cb9ebda5004b4e7"
+      }
+    },
+    {
+      "goal": "36bb98001d9e879a1aaf4ec9a4f60a827987207ca3fd7440b73bebd49acc8852",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/36bb98001d9e879a1aaf4ec9a4f60a827987207ca3fd7440b73bebd49acc8852/random.json",
+        "sha256": "1e2c045489c8208a88e5c7d79acc1cbc4d6557e3ab12442c90ca04f98cc02ad0"
+      }
+    },
+    {
+      "goal": "372f54721f0cecc4345358cb16ee4ac3a45629e62967ace707e59ef254e0f541",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/372f54721f0cecc4345358cb16ee4ac3a45629e62967ace707e59ef254e0f541/spread.json",
+        "sha256": "384a907221c8907567b6f37cdccf41fa661d374b0bf5904a89cb9b8ff8c54154"
+      }
+    },
+    {
+      "goal": "380611349cf2e10bebaba57b8897eec62df394f2fdf51db4a45cd9456fe337b7",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/380611349cf2e10bebaba57b8897eec62df394f2fdf51db4a45cd9456fe337b7/entropy.json",
+        "sha256": "49d1be8747ee4a3a195857cf871f2f5ce24ab8acf594c9e88f666b821cf81172"
+      }
+    },
+    {
+      "goal": "380e32d5f6aae65244c633aa4552efdc400cc6f6887e7013ec1b7ebb0905289a",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 1,
+      "points": 1.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/380e32d5f6aae65244c633aa4552efdc400cc6f6887e7013ec1b7ebb0905289a/spread.json",
+        "sha256": "68643fb443163d15aff1d44248bfbe9842c736a2f48c912d67b4e531a295e874"
+      }
+    },
+    {
+      "goal": "39516f58763a8e0b2c61ff70c2cf805ce90d3a449e39864ad62df3efba3d363f",
+      "domain": "polynomials",
+      "axis": "i",
+      "target": "c1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/39516f58763a8e0b2c61ff70c2cf805ce90d3a449e39864ad62df3efba3d363f/random.json",
+        "sha256": "a95320833e7484c8c77256aa88b5c1c261dccee3e08be2f41f292d2a49125005"
+      }
+    },
+    {
+      "goal": "39e2e62a2a05ba5c6ec90e4733712e38d829d13bc605632eea97bd9328738d05",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/39e2e62a2a05ba5c6ec90e4733712e38d829d13bc605632eea97bd9328738d05/spread.json",
+        "sha256": "6e7487857d81eec801740089013cce54ef565d5fc17af16c26c2b34fa2d2db5a"
+      }
+    },
+    {
+      "goal": "3a0aacc36f6518e28917c373714ba37ee4f4ee2a73d41db1caa4ee8d3668acf6",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "a0",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/3a0aacc36f6518e28917c373714ba37ee4f4ee2a73d41db1caa4ee8d3668acf6/spread.json",
+        "sha256": "2305edf606ff2411074cde04cb3f7248bfa40092331231e8fa15021b3a5bb8fb"
+      }
+    },
+    {
+      "goal": "3a4a7e8485f43b7a14b8acfdbe3a2b2d957bbab5c89f035cfb9ad8a08625b96b",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/3a4a7e8485f43b7a14b8acfdbe3a2b2d957bbab5c89f035cfb9ad8a08625b96b/entropy.json",
+        "sha256": "2132bd2cb4993aa2957a5da594f701cd3d794abb49b4d7c3305ec8486be068bd"
+      }
+    },
+    {
+      "goal": "3aac67114159bb0d3a138055ff6f00944a69ab900a73cede3e4f912b9f9b29b1",
+      "domain": "polynomials",
+      "axis": "c2",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/3aac67114159bb0d3a138055ff6f00944a69ab900a73cede3e4f912b9f9b29b1/spread.json",
+        "sha256": "3f030a19744397d5e26082f21bec4abb615e958b69d63fb3e1e113cbca059118"
+      }
+    },
+    {
+      "goal": "3be0b364a419dd3283bc2adce61f20f578f19ef6f0fbfef032db6843ab6f9cf1",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "v",
+      "survivors": 4,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/3be0b364a419dd3283bc2adce61f20f578f19ef6f0fbfef032db6843ab6f9cf1/entropy.json",
+        "sha256": "4a089eda13157d6ea8823a6e22e096d52a60775a4f1cdc5c4938762508a6a89b"
+      }
+    },
+    {
+      "goal": "3cdeffe5e7bb395fdfe6210f54911450248141ce31b7dd1095e33d5965e7825e",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "x0",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/3cdeffe5e7bb395fdfe6210f54911450248141ce31b7dd1095e33d5965e7825e/spread.json",
+        "sha256": "9228bc1c5c4e61d057a51c30a40f9127ddf74cfcb84293c8374b766efe02a61b"
+      }
+    },
+    {
+      "goal": "3d6fa1cf980fadbd6ca7208bc478dac22c1b0249e8c0aae5e98fb19cfc648041",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/3d6fa1cf980fadbd6ca7208bc478dac22c1b0249e8c0aae5e98fb19cfc648041/spread.json",
+        "sha256": "e2d1d3dccc8cb0ad674b9644e2a206f3f0c11aa4ad749dd5d0c386c789786e64"
+      }
+    },
+    {
+      "goal": "3e78c617b8e23ffa728acc1e7f9c3d2a0f3dba7f1e845c295f8f4bfb99265a16",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/3e78c617b8e23ffa728acc1e7f9c3d2a0f3dba7f1e845c295f8f4bfb99265a16/spread.json",
+        "sha256": "717bbce95f25dc5b339b58aa00832a38018176c5322770ceca50b24a21ac6e37"
+      }
+    },
+    {
+      "goal": "406b779c74b2ddc25b984c43bec8e016a52797b732fc4e697d4f9726a67dac0c",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/406b779c74b2ddc25b984c43bec8e016a52797b732fc4e697d4f9726a67dac0c/entropy.json",
+        "sha256": "a5a20be21e4094cb04436f87c98d355d61c6c7ca3f29d4557cadac89155763a2"
+      }
+    },
+    {
+      "goal": "415ec2362137e2dfa218470a0e4ebe38398d74f017f38125209c6512a36ef97d",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/415ec2362137e2dfa218470a0e4ebe38398d74f017f38125209c6512a36ef97d/spread.json",
+        "sha256": "4dd22c140880731d0978f83447ee58a635549619ba68563d7814f59f732ee5e1"
+      }
+    },
+    {
+      "goal": "4189d19ed463b96929d39e63661c943a2738e408bacb1dc9fbb29ed2d4f89e67",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/4189d19ed463b96929d39e63661c943a2738e408bacb1dc9fbb29ed2d4f89e67/spread.json",
+        "sha256": "80f2f836ecc115fb1246f24b137896f8e72857f41aac97cbae4389b247b54557"
+      }
+    },
+    {
+      "goal": "42e0477a267972c0475d3df461a0eb39bc7a2f5d3a7ce0e1cc179cc7b577289e",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/42e0477a267972c0475d3df461a0eb39bc7a2f5d3a7ce0e1cc179cc7b577289e/spread.json",
+        "sha256": "132c5c1b1553a4615822fb272be06af963799b9974d189bdc36b69026fdac588"
+      }
+    },
+    {
+      "goal": "434c1bcb4f11ee93591c4455d4f37fde57ed801f1af07ab9e4c454e6fba0231f",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/434c1bcb4f11ee93591c4455d4f37fde57ed801f1af07ab9e4c454e6fba0231f/spread.json",
+        "sha256": "f5837e4c1e9f1fe96aea88a56c0fa3c312022443a7cc8c3f92040463820ec9e9"
+      }
+    },
+    {
+      "goal": "444d32456a696a0def9a6ead39040156f48fb2cd330acbc3bd4cb898d47ab3b1",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/444d32456a696a0def9a6ead39040156f48fb2cd330acbc3bd4cb898d47ab3b1/spread.json",
+        "sha256": "7197fece04395613a6daeb459d1280d6f8beaa822c6f883aec0867275ed1db8a"
+      }
+    },
+    {
+      "goal": "457b69c57a2e7d55e1247fb0b900925dab5583075d08fe1b3b4ecec4eb3585f7",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/457b69c57a2e7d55e1247fb0b900925dab5583075d08fe1b3b4ecec4eb3585f7/spread.json",
+        "sha256": "08be65e79f74593bd69c926bd26a39488fd7442483ee537101f9d2a35526e1bf"
+      }
+    },
+    {
+      "goal": "4583cf769c0aaedc872ec64a5e4140f50a3c7b5d4e37b4e40faa0ff373b7b460",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "m",
+      "survivors": 5,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/4583cf769c0aaedc872ec64a5e4140f50a3c7b5d4e37b4e40faa0ff373b7b460/spread.json",
+        "sha256": "92428c0312edc6d0b1ad9b86937df62ab2688a01a73147971c8cc7394ad6f9fa"
+      }
+    },
+    {
+      "goal": "460cd25d20112a43eab4cd97ef8b6f7cde53ce430eb8d4221c605e31ab559d90",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/460cd25d20112a43eab4cd97ef8b6f7cde53ce430eb8d4221c605e31ab559d90/spread.json",
+        "sha256": "76dead8867a955eec039059a1acda14f52bf20ba40935b224e3b467e84fb261a"
+      }
+    },
+    {
+      "goal": "49501a0b04545fa25361f27f1d31084c7b4dedad3dd4d58cfdc6fc76724c12b8",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/49501a0b04545fa25361f27f1d31084c7b4dedad3dd4d58cfdc6fc76724c12b8/spread.json",
+        "sha256": "cade45dce1612fbb15c952ec1a1f82b200885538c80b9c72d18ce7e62b24c5d0"
+      }
+    },
+    {
+      "goal": "496118f8a2e9be1749ab2c0db4d615793ee2b0b151eb0113958de6c2962c70f8",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/496118f8a2e9be1749ab2c0db4d615793ee2b0b151eb0113958de6c2962c70f8/random.json",
+        "sha256": "18bd5ff9b0d6d56e938fea3973a3b98ac71406ae526b9589f232d253f99ae5f0"
+      }
+    },
+    {
+      "goal": "4ddab24d474eec199891cbc7aba85119b0a0fc528eeb794eb3fb72e1190792c2",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "v0",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/4ddab24d474eec199891cbc7aba85119b0a0fc528eeb794eb3fb72e1190792c2/spread.json",
+        "sha256": "539acf3fb9b534a527fe4b3435596771aebd1e5f8412e0ec3c518d674966d9c7"
+      }
+    },
+    {
+      "goal": "4e5456ec80784ff8e21dcf593f1fc27328788b7651bf631d5bc8799b4f4d56ef",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/4e5456ec80784ff8e21dcf593f1fc27328788b7651bf631d5bc8799b4f4d56ef/entropy.json",
+        "sha256": "f26bc852fb22049f8de97238b904fb6e44b9aa625033594a7846002da8e31823"
+      }
+    },
+    {
+      "goal": "51e99afdee4a505d62c4e34a22ef549acef50e7407c314d393b7034e6e245e7f",
+      "domain": "polynomials",
+      "axis": "p",
+      "target": "s",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/51e99afdee4a505d62c4e34a22ef549acef50e7407c314d393b7034e6e245e7f/spread.json",
+        "sha256": "1c834cab5b42ade317df6ecb0bb8945baec1fadceb8b78369337dd836a3c67cf"
+      }
+    },
+    {
+      "goal": "52fc0daee4cf1437d2d7af0fb35a778caeabf37a2a303f8c6859554b8a4d9e99",
+      "domain": "polynomials",
+      "axis": "t",
+      "target": "c1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/52fc0daee4cf1437d2d7af0fb35a778caeabf37a2a303f8c6859554b8a4d9e99/spread.json",
+        "sha256": "5396b04baace8b252909097220165c8f14fe4f50025d89c3098cfd4e5b8c83fe"
+      }
+    },
+    {
+      "goal": "54f81c69ba999cd0cbf25bfadf42f4412ada81426e23058ffa67baf1498f1612",
+      "domain": "polynomials",
+      "axis": "c0",
+      "target": "s",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/54f81c69ba999cd0cbf25bfadf42f4412ada81426e23058ffa67baf1498f1612/spread.json",
+        "sha256": "acb67bcdcf484cc833c9f3f655fafb4447ea690aa53975ed16c73d0104f79d50"
+      }
+    },
+    {
+      "goal": "55f00ba68379765f8d98c568812d61835fed82c1c1e56dd3465236563529a290",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/55f00ba68379765f8d98c568812d61835fed82c1c1e56dd3465236563529a290/spread.json",
+        "sha256": "9cc4e90a0a0a2580166cbfcccf749d5cb2c2d7eb8bb7838e99e2682bb01ac407"
+      }
+    },
+    {
+      "goal": "57c4a82c7bb7fb0ebf589b845acb024e557bb68c2cbbe1fcf28e3dbdbf165ee1",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/57c4a82c7bb7fb0ebf589b845acb024e557bb68c2cbbe1fcf28e3dbdbf165ee1/entropy.json",
+        "sha256": "49de455f801bca1d40d631946dd066875b9b4d6cc94dd4305b54bd9354f8c558"
+      }
+    },
+    {
+      "goal": "5b090ad4d69e848ffec870b0ee2ed278a3b5e2ee5f66d99bc89cf8ca8cd00ed8",
+      "domain": "polynomials",
+      "axis": "p",
+      "target": "c2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/5b090ad4d69e848ffec870b0ee2ed278a3b5e2ee5f66d99bc89cf8ca8cd00ed8/entropy.json",
+        "sha256": "2cbd876075d68ceb7f0ffda6301ccc7007b3dce655f197a391acf62c80ce6189"
+      }
+    },
+    {
+      "goal": "5ccdffda0b4db422bb6f763e64933c60e6a678a00ad19bfa3c3cdec5138f1dc5",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/5ccdffda0b4db422bb6f763e64933c60e6a678a00ad19bfa3c3cdec5138f1dc5/spread.json",
+        "sha256": "01a969b5199ba9d5050fad37bdd8154304cc190430b55e8f61ffe58cef065811"
+      }
+    },
+    {
+      "goal": "5f71f311cabcb071029cfccf04d454155f1d72de4ca7af2aaf6da84c3962801e",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/5f71f311cabcb071029cfccf04d454155f1d72de4ca7af2aaf6da84c3962801e/spread.json",
+        "sha256": "e5410eccf0421d62f8b0328047b77ac52a5a647810a82b06e5cb98f871c6b790"
+      }
+    },
+    {
+      "goal": "61f0a121f29ce5afac4763522cbcf1bbe1846c08d72abfff4bd231259a004850",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "v",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 2,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/61f0a121f29ce5afac4763522cbcf1bbe1846c08d72abfff4bd231259a004850/spread.json",
+        "sha256": "a69a0c1ee3b1a36251d34948893e976e03a62eb50b9cbc3ac82625b73ace6fa0"
+      }
+    },
+    {
+      "goal": "63657765a38438a673428fec764ded490521e86e1ca5b62474a31d7aa7fe3ce5",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/63657765a38438a673428fec764ded490521e86e1ca5b62474a31d7aa7fe3ce5/spread.json",
+        "sha256": "cd642c5145d707ce74084776db55c3eb3010b092a030e2428fa014aa25ccb2ab"
+      }
+    },
+    {
+      "goal": "645405289c456a94a642e378f44c4aafd4372fb780741a9b79d07d90083c857e",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/645405289c456a94a642e378f44c4aafd4372fb780741a9b79d07d90083c857e/random.json",
+        "sha256": "3a89d16d7c5adf34ea1b6c643d702976e51bdf7361c9d0f437e60fd87ddb808d"
+      }
+    },
+    {
+      "goal": "645d96f2c808c7d073bfe16b4ae7c95854ad70eef4c13faa1dafc30d9fcd5295",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/645d96f2c808c7d073bfe16b4ae7c95854ad70eef4c13faa1dafc30d9fcd5295/spread.json",
+        "sha256": "46a5954c5c28c090652125c3422eb9f30591f02eaa453d6acd9a756b96664cd2"
+      }
+    },
+    {
+      "goal": "64bc8013dbd3af6dd87dd7b54e17e4e9880ad5d10cb784a3e1bbd3913ae40e00",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/64bc8013dbd3af6dd87dd7b54e17e4e9880ad5d10cb784a3e1bbd3913ae40e00/spread.json",
+        "sha256": "86e5649c8ccc478b8171bb84e26950bd7d3d89c425840957ae283a3959f8a1ba"
+      }
+    },
+    {
+      "goal": "654a7c52bdbd26f9dcaa9ad3e6834e4233558a416c615393c18b61a4ba26a46b",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/654a7c52bdbd26f9dcaa9ad3e6834e4233558a416c615393c18b61a4ba26a46b/spread.json",
+        "sha256": "04a48c48218b324dc31a47beb4d4ff742a9792e706a15eaaeee1046f44afa74f"
+      }
+    },
+    {
+      "goal": "65aaf1eae953b759baf9269182224c0d74ed5cdafec522f5dcebd5122a460f0c",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/65aaf1eae953b759baf9269182224c0d74ed5cdafec522f5dcebd5122a460f0c/spread.json",
+        "sha256": "04f5d93f2768449d6086e66d0c9344b373534b3c2150a60539c9e4f795f7fbd4"
+      }
+    },
+    {
+      "goal": "66a5d353c18a22fa3aa6072db02ab9424ac3a5d982cbe06e6f1c047d7117c01b",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/66a5d353c18a22fa3aa6072db02ab9424ac3a5d982cbe06e6f1c047d7117c01b/spread.json",
+        "sha256": "0e601413115deb86a2b7a34df28022358e8e3f965f39bbf7afc531bff019fa38"
+      }
+    },
+    {
+      "goal": "678ec7cae2ec3e12c47989c31503cf3f42b422fb3780faaf9321415efb2b8e0d",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/678ec7cae2ec3e12c47989c31503cf3f42b422fb3780faaf9321415efb2b8e0d/spread.json",
+        "sha256": "4385e510a05907b65dc29425ef2d6ca891e42f057a8fcc8ce6d9586f78497d0a"
+      }
+    },
+    {
+      "goal": "679709fd89e63ff1edc59933b30880c55755ad2a6b38cdbbbad24f0447583e5b",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/679709fd89e63ff1edc59933b30880c55755ad2a6b38cdbbbad24f0447583e5b/spread.json",
+        "sha256": "c0ca43a4204565fc435624f4105efa15053b84b862717582d8b55bc8e5c63ea9"
+      }
+    },
+    {
+      "goal": "67b5e4f3ce7980c4817ff6da55a02794264894b7aa9034c92c8f3b1641b397f6",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 7,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/67b5e4f3ce7980c4817ff6da55a02794264894b7aa9034c92c8f3b1641b397f6/spread.json",
+        "sha256": "c372d61cea5c799bfff03cb8f14e062471052a2d4db07c877b4bd98549020823"
+      }
+    },
+    {
+      "goal": "6973c2af7e9024e414671c334cffb6d1bb10378ca0173a3995fb0871d75f17d4",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6973c2af7e9024e414671c334cffb6d1bb10378ca0173a3995fb0871d75f17d4/spread.json",
+        "sha256": "fbb4ffe7eba4ed7a11158057d26b154c53c17e71de0cfecd9fc53fdee84a8228"
+      }
+    },
+    {
+      "goal": "69afeab57c963fbf0f714d0e0730a2107a409915111ccc267bd99296b7f5108a",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/69afeab57c963fbf0f714d0e0730a2107a409915111ccc267bd99296b7f5108a/spread.json",
+        "sha256": "9eb3c88d48132a7477b6c665b367398a5f852d741fdbe4dcf53825a28cecbbf7"
+      }
+    },
+    {
+      "goal": "6cd795815ac597f64b260a924096aa29c1cfcd8cb036b140ea6a8a3f4b9a6da2",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6cd795815ac597f64b260a924096aa29c1cfcd8cb036b140ea6a8a3f4b9a6da2/spread.json",
+        "sha256": "947842419186ae67a7b020937d19a571550c34bb7ca0a689c1387e0f768b7c81"
+      }
+    },
+    {
+      "goal": "6d98758fb632e4325d48330b369e3a393772dc96def83180d90e4e06fc5d684b",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6d98758fb632e4325d48330b369e3a393772dc96def83180d90e4e06fc5d684b/spread.json",
+        "sha256": "89dec0bf55a250c7dc6574cd8a9bb115111e9b380f57afe70577a0698f1eac73"
+      }
+    },
+    {
+      "goal": "6dab8c1956d946e4471c925bef98249a6a2306cf837e85032a3f84435b036978",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "x",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6dab8c1956d946e4471c925bef98249a6a2306cf837e85032a3f84435b036978/spread.json",
+        "sha256": "191957068afeb17c8e2c864f84de2729bf86efafbc5b6958c08896d3b6c3292e"
+      }
+    },
+    {
+      "goal": "6e7c7ffb58b6041aceea520c59fc07b58097171fd626e3d00224d7169e7ea040",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6e7c7ffb58b6041aceea520c59fc07b58097171fd626e3d00224d7169e7ea040/spread.json",
+        "sha256": "e5550f76b421f84fe45c19b629214747e869c91259b840014eaebcedad350e49"
+      }
+    },
+    {
+      "goal": "6ea80f131260f7279d16dcbf2059e50e639143f85e72d1e385b2f5be0bd957f7",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6ea80f131260f7279d16dcbf2059e50e639143f85e72d1e385b2f5be0bd957f7/spread.json",
+        "sha256": "92d58edb6da724a0467ab17bf726c9701ad447980a96899aab05c0eda90cfba6"
+      }
+    },
+    {
+      "goal": "6f2f7ddad5e6358afcd1c7a522afad5924ed48fb93d92e67f8dd185a37262a90",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/6f2f7ddad5e6358afcd1c7a522afad5924ed48fb93d92e67f8dd185a37262a90/spread.json",
+        "sha256": "42bc7f497d39842f98903cc54347184f775e2141e2ccc2620331d80c22025e87"
+      }
+    },
+    {
+      "goal": "716e14304d054c6c65fb75a6972857e58bec261aecb7832bd6bdb29c2138e5a4",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/716e14304d054c6c65fb75a6972857e58bec261aecb7832bd6bdb29c2138e5a4/random.json",
+        "sha256": "957cfc6db765c13b72f7b5e2fd50a5b1dba6ebbe99dbec077969a64c07a0d851"
+      }
+    },
+    {
+      "goal": "74999185c7bd38dad549c868de92b447db6c0d1fb21ef42372cdaa194947645c",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/74999185c7bd38dad549c868de92b447db6c0d1fb21ef42372cdaa194947645c/spread.json",
+        "sha256": "45448dc5b7a7f52713786abef35351096de9b84dc1829c8d839f09e51b309192"
+      }
+    },
+    {
+      "goal": "77caddeeebc5c8d71c498de9cea6c3f2199a72205a9b0409b853aaad3de5015e",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/77caddeeebc5c8d71c498de9cea6c3f2199a72205a9b0409b853aaad3de5015e/spread.json",
+        "sha256": "96dad5a89323eaa3b4da6e97b5b5bac79948220bbf3f077e3c62cc5c9670ba70"
+      }
+    },
+    {
+      "goal": "783e88aea65eac9c3cd4f985149ab25de27e945e4645a912383db4c5ced795bf",
+      "domain": "polynomials",
+      "axis": "s",
+      "target": "c1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/783e88aea65eac9c3cd4f985149ab25de27e945e4645a912383db4c5ced795bf/spread.json",
+        "sha256": "d2900de565b8bdbfefc42e115d7953990479f0b9fba738050b51b985e99f8943"
+      }
+    },
+    {
+      "goal": "79216e005d2263a30bc6ed3a21e17ecdcc6344a97595406bccb8bb481ecd751d",
+      "domain": "polynomials",
+      "axis": "p",
+      "target": "c1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/79216e005d2263a30bc6ed3a21e17ecdcc6344a97595406bccb8bb481ecd751d/random.json",
+        "sha256": "63b858e825f276f426b3d3b47ed676cea3b38670aa9d7f2e49d6c5dcca6b7c46"
+      }
+    },
+    {
+      "goal": "79df56bc67cf699ef67ccd4d92da1e3cf64b1d29b54e6de76e7886cdf157b4c6",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/79df56bc67cf699ef67ccd4d92da1e3cf64b1d29b54e6de76e7886cdf157b4c6/entropy.json",
+        "sha256": "04d4966e9e2615eb526175e0dfb1a753a7272e162df4cbe59d737255f90c7e59"
+      }
+    },
+    {
+      "goal": "8241b192fb82b2139bd7d10c9bf7849c7cc1e39d5f7790eaf66b77dd70f89e20",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/8241b192fb82b2139bd7d10c9bf7849c7cc1e39d5f7790eaf66b77dd70f89e20/spread.json",
+        "sha256": "1a3821557ae2ba146e2a41cfb3d41dd6dcc41dc62fb43cda98f3d20ebcb1c229"
+      }
+    },
+    {
+      "goal": "8401c1b7b4e0506a48b786b90b8d467823132d62bba16cd7c4f2054024eb37f5",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/8401c1b7b4e0506a48b786b90b8d467823132d62bba16cd7c4f2054024eb37f5/spread.json",
+        "sha256": "a2dde0a1c9b687fc08a5dba37ec92e1bd236c49a348a752d7edae39f660da125"
+      }
+    },
+    {
+      "goal": "85c6563ecfc799e2632da8cc3c481967091ad763110dd96e55da0e6b9f0ecd29",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/85c6563ecfc799e2632da8cc3c481967091ad763110dd96e55da0e6b9f0ecd29/spread.json",
+        "sha256": "2d7886ef7d81eb06734232649476d398980ed67394ec793f3dc2b6185ce17533"
+      }
+    },
+    {
+      "goal": "879bca30bcb989252a6bdc12a3dffec51252da7eb91c5273f0d8986410337bc6",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/879bca30bcb989252a6bdc12a3dffec51252da7eb91c5273f0d8986410337bc6/random.json",
+        "sha256": "12af2a7acadc7db16bd5e641022d265b98f60e4b53b1ec2acb5e80489614a492"
+      }
+    },
+    {
+      "goal": "898ac6d08e491945bb6d59ad0e409340d0efb09ae5b332f4a17b4e968a3e6228",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/898ac6d08e491945bb6d59ad0e409340d0efb09ae5b332f4a17b4e968a3e6228/random.json",
+        "sha256": "d3ad19a311a3dbfce956dbbee88fa1bd817cbf271a7e0654dd1de4f181acea4c"
+      }
+    },
+    {
+      "goal": "8a07a1f31355fc9c4289c7f51ca814459781c99da9bef3167381911a16751a2c",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/8a07a1f31355fc9c4289c7f51ca814459781c99da9bef3167381911a16751a2c/spread.json",
+        "sha256": "5e1f7d6de24c724018a1e111084aa37d3c2ebcc9ac951f0fcf56f8eda1056c7e"
+      }
+    },
+    {
+      "goal": "8ef70b615c7b4bdf3aff0021d46fe98bce5fa897659c4936b44eb3ce9b0553e1",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/8ef70b615c7b4bdf3aff0021d46fe98bce5fa897659c4936b44eb3ce9b0553e1/spread.json",
+        "sha256": "d1949c32bfdd606820363259936756c10a357513d9003db07037c6656061c1cf"
+      }
+    },
+    {
+      "goal": "9038314198291227741565942578989e34f2a4cb0ff96ef62a4d5841b01c8a62",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 7,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/9038314198291227741565942578989e34f2a4cb0ff96ef62a4d5841b01c8a62/spread.json",
+        "sha256": "e306b31bd55d171012da9cdd26b4444acc816504e53bcbd481430d76852e43a8"
+      }
+    },
+    {
+      "goal": "90b22820544839dbdcfad6b3d3629432d4751cb1e980e96754bfb9ecb5df062c",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "a0",
+      "survivors": 3,
+      "status": "SCOPED_ANSWER",
+      "observations": 6,
+      "followups": 5,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/90b22820544839dbdcfad6b3d3629432d4751cb1e980e96754bfb9ecb5df062c/random.json",
+        "sha256": "f4a0256057f0e9292579776952cb6cc8da18a9e703625a9e3211856816dbd8b4"
+      }
+    },
+    {
+      "goal": "90d80f2317efbd9c631f8c228162c68d925aa2d681ccf8aeafe389c9e763600c",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/90d80f2317efbd9c631f8c228162c68d925aa2d681ccf8aeafe389c9e763600c/spread.json",
+        "sha256": "06901044b033f23bb8eb3713cc76f0267fdd387641b133a021237ba8cac97cf1"
+      }
+    },
+    {
+      "goal": "928fdfec8ce6e0d89166e5a591e785318425b63404b14d4e26c9906fcfc1d378",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/928fdfec8ce6e0d89166e5a591e785318425b63404b14d4e26c9906fcfc1d378/entropy.json",
+        "sha256": "b6a3d390fa7ab9ef15cf8719a9d72646d10bcc0284d479357541b61f75d46fec"
+      }
+    },
+    {
+      "goal": "95e723a602fbadf16c3ad89abbaf75c17b7cd916804eac03e64b5ed1a9725760",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "t",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/95e723a602fbadf16c3ad89abbaf75c17b7cd916804eac03e64b5ed1a9725760/spread.json",
+        "sha256": "96e30a5ea86c2e78e91e9bf46d9ad63187a252663d0e3dc92f2326393c20c2fe"
+      }
+    },
+    {
+      "goal": "964a092ca2bad24e54e9e8e195026ca619f574f527da027072db1d9f9320ba1a",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/964a092ca2bad24e54e9e8e195026ca619f574f527da027072db1d9f9320ba1a/entropy.json",
+        "sha256": "b9e1b5e9c28708d6eae86d9eff688d82a1bb1297de7aa7b3229bf5521e384a09"
+      }
+    },
+    {
+      "goal": "9752f0675ec3c68c7742b907aec1af624af98b4b7326d62e329f80375a3725c4",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/9752f0675ec3c68c7742b907aec1af624af98b4b7326d62e329f80375a3725c4/spread.json",
+        "sha256": "77d6be65c6919c82437a68f7889994e06d32b5dd69308cd82c8c9c91b082187b"
+      }
+    },
+    {
+      "goal": "98dce166a6fb91d8d02b143ed658d7eb775d87775486444e4e84d4243e00b1ab",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/98dce166a6fb91d8d02b143ed658d7eb775d87775486444e4e84d4243e00b1ab/spread.json",
+        "sha256": "8d9750b37a93d00437bac034a6f99b4219e9d546f2d4c9726e46e178b98377e8"
+      }
+    },
+    {
+      "goal": "992c4987ba5117e62701d0f56a8b09e8f9e038f2362ae54c7345b1c0585c6112",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "m",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 1,
+      "points": 1.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/992c4987ba5117e62701d0f56a8b09e8f9e038f2362ae54c7345b1c0585c6112/spread.json",
+        "sha256": "3fb639be03093bf5fe7e8aef333a78490d8f5b220a790c1224aca7a3822273a0"
+      }
+    },
+    {
+      "goal": "9aa3cb2438b9e87dcafc4534da74ef96e884d80145046b2772d185844710628a",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/9aa3cb2438b9e87dcafc4534da74ef96e884d80145046b2772d185844710628a/entropy.json",
+        "sha256": "8a430fff235415bdc9f8917514bde8616372d283ad153a34bca54e55c7bd6177"
+      }
+    },
+    {
+      "goal": "9d56226b4a03fcdef170001d3623b691862ffb0c24906994fbc7d85d6a0bbcf4",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/9d56226b4a03fcdef170001d3623b691862ffb0c24906994fbc7d85d6a0bbcf4/spread.json",
+        "sha256": "c89b6d27d77cdcc1b4de4a36d69c590fafb10e960d2e6aa81c18bf6b62063b1d"
+      }
+    },
+    {
+      "goal": "a02efa214441685553405ef9eb38a240cc5b0efb3029ee335aa160657d98c0b1",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a02efa214441685553405ef9eb38a240cc5b0efb3029ee335aa160657d98c0b1/spread.json",
+        "sha256": "c07b2d671b497ea67b6747e7b1a4eb9a0edc2ad6d15783ff2cc7b58cc87c881d"
+      }
+    },
+    {
+      "goal": "a0671513555d82b486f1735c6b93bd9e90f40707a543e4abe98de499cd7c404c",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a0671513555d82b486f1735c6b93bd9e90f40707a543e4abe98de499cd7c404c/spread.json",
+        "sha256": "b483dadf5f5e7d09f7317731aa290293530db683168b962088ad3965d6b24355"
+      }
+    },
+    {
+      "goal": "a0eefbd1e6c965af4b3fad476f746ddc00e87990c3200f36b5362f120b0ba337",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a0eefbd1e6c965af4b3fad476f746ddc00e87990c3200f36b5362f120b0ba337/spread.json",
+        "sha256": "0a080a4e6c39871bd1d69d3e17105f28b9f57bf6e6b1e079554dea8db6c0d5a1"
+      }
+    },
+    {
+      "goal": "a4132c65fc209ea3667b118ed7d1eadf8d03797a01143669697d8eb242c8b4c7",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 8,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a4132c65fc209ea3667b118ed7d1eadf8d03797a01143669697d8eb242c8b4c7/spread.json",
+        "sha256": "304cd4ae4c635d1d073e1485972788f23694007fa9fbbf1ce146ae91212113d7"
+      }
+    },
+    {
+      "goal": "a46f905ac5d275643b28cd2813ef4387d1a5572b23e796614b6402ddd3457758",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 7,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a46f905ac5d275643b28cd2813ef4387d1a5572b23e796614b6402ddd3457758/spread.json",
+        "sha256": "3dad3842162a11c18fe99cf9b904b91300bc097e0bf4cc2a0b7499c89f506290"
+      }
+    },
+    {
+      "goal": "a5f28048403c6dac86b4c31438f03f63cc82346a44a7ca10ed8d90bf345abadb",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/a5f28048403c6dac86b4c31438f03f63cc82346a44a7ca10ed8d90bf345abadb/random.json",
+        "sha256": "39fca7404a2e60252db6f7c3b8d6cbb0b8f19312fb6f4361b93d051a3af8de02"
+      }
+    },
+    {
+      "goal": "a6fffde371d89a54ef0f9bd23a5704693bcf3ca2fef17354eb45d34d82e56088",
+      "domain": "motion_0",
+      "axis": "f",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a6fffde371d89a54ef0f9bd23a5704693bcf3ca2fef17354eb45d34d82e56088/spread.json",
+        "sha256": "c48bfd76ec5938aff2e3e28f337213ce309d76fd7fcf8bb8da900fe26ca70e70"
+      }
+    },
+    {
+      "goal": "a7f1cbcc1da45eb85e11320d6200b957e11bb462e77526392ff1211633da77ca",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/a7f1cbcc1da45eb85e11320d6200b957e11bb462e77526392ff1211633da77ca/entropy.json",
+        "sha256": "4fcf7bcd2dfe5c097a644eaa989345754366308d68113613b61837e98d9759e5"
+      }
+    },
+    {
+      "goal": "a8e06ed52d945f0ae0d493ae7d957cb605ded9d2deb8cdec029e5005131c04aa",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a8e06ed52d945f0ae0d493ae7d957cb605ded9d2deb8cdec029e5005131c04aa/spread.json",
+        "sha256": "3ff369fe935b84dc09bb345c0cfbfd8603ceda247b300777b52f5778efa0ec32"
+      }
+    },
+    {
+      "goal": "a968f19792a09bfbcd1a88871c1b8952e8d4cf886e8ef4b86ca661751d557c6c",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/a968f19792a09bfbcd1a88871c1b8952e8d4cf886e8ef4b86ca661751d557c6c/spread.json",
+        "sha256": "77becace30bc6f6c0a9ef9a8f55ba111d30d6555f5b4326bb35e9f7b5eaa3843"
+      }
+    },
+    {
+      "goal": "a9fa6ff42d18c01b0ada21c4e168fc5f3779d217f30b1c9eb6c250681f875e2b",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/a9fa6ff42d18c01b0ada21c4e168fc5f3779d217f30b1c9eb6c250681f875e2b/entropy.json",
+        "sha256": "dfe3963dfda9094f9cd50cf958368a0a7271a77043c2eb09dd9b72b2c445e0a3"
+      }
+    },
+    {
+      "goal": "ac2004a345b607e6728e638da6578a7950f356ba99683d4a91614df26b7be1bc",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ac2004a345b607e6728e638da6578a7950f356ba99683d4a91614df26b7be1bc/spread.json",
+        "sha256": "3bb456533bf7de4764be54e6a2379e9a891f9aba5c577f37253590f8e5dae4ab"
+      }
+    },
+    {
+      "goal": "ad0438ab546624c03745b015bda55c74ee61d72d7a7476117921673e8171b206",
+      "domain": "motion_2",
+      "axis": "a2",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ad0438ab546624c03745b015bda55c74ee61d72d7a7476117921673e8171b206/spread.json",
+        "sha256": "4b74c2132a41f0eba2088af842427bc6a0a180aff632e3a9f8cd649c4ca7bbbb"
+      }
+    },
+    {
+      "goal": "ad099aac4ca66a61ec4ecd72cd2bf80ef60435141d28f694deeb3acac4fc0a91",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/ad099aac4ca66a61ec4ecd72cd2bf80ef60435141d28f694deeb3acac4fc0a91/entropy.json",
+        "sha256": "49b40b04116760911a4c24f8595c1c7eb787257e2aee43114e83b507c311f359"
+      }
+    },
+    {
+      "goal": "afd620a10294a557bb158e76c828dccefe1a7b5f7ad40ee5abf583b9663abc1d",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "v",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/afd620a10294a557bb158e76c828dccefe1a7b5f7ad40ee5abf583b9663abc1d/spread.json",
+        "sha256": "541ccc0faa0ac6025e0dcc6b0836909b4a7d83f83017dabff6a18c8b7551d6bd"
+      }
+    },
+    {
+      "goal": "b101547fc7275f4a2a3dd59e71c1b29bef80f25ed5d1d1d7fe9a323c611189d3",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b101547fc7275f4a2a3dd59e71c1b29bef80f25ed5d1d1d7fe9a323c611189d3/spread.json",
+        "sha256": "2a8ddf380c9e096ff1efd6e5f8ee7c9b9b9bc2072a09a1fbb1c699d607a9206e"
+      }
+    },
+    {
+      "goal": "b17ef9f5dce801029d9b610fbea6f556e32d5a19515a1394c41a2cb866df9a1a",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b17ef9f5dce801029d9b610fbea6f556e32d5a19515a1394c41a2cb866df9a1a/spread.json",
+        "sha256": "4e89ba5c20a0e48f88adfbd09bcc0607c34f70466ee652b23219b8e23c4fb3e5"
+      }
+    },
+    {
+      "goal": "b24158c49e1b2d485834394aa5949ca5d40d051b13d09295fd3cf7a79cdcd94b",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "v",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/b24158c49e1b2d485834394aa5949ca5d40d051b13d09295fd3cf7a79cdcd94b/entropy.json",
+        "sha256": "e234e54d61c3af87dfa7e971176a16c4a5554a5032ac41e97e329cceb7d3f160"
+      }
+    },
+    {
+      "goal": "b31462ed5fa5ce9c8c5b65a6179ffcea90ed961bb30144bd5b94b8c7c2a8a3e8",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "v",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b31462ed5fa5ce9c8c5b65a6179ffcea90ed961bb30144bd5b94b8c7c2a8a3e8/spread.json",
+        "sha256": "91a038caece31534833013deff2ef24bed9f10b054575325327080b512e1a09e"
+      }
+    },
+    {
+      "goal": "b323093cc26b08ebbbb8d71c47b6f383c0a5396fc6ee67f9c4f94f97f4b1abc3",
+      "domain": "polynomials",
+      "axis": "t",
+      "target": "s",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/b323093cc26b08ebbbb8d71c47b6f383c0a5396fc6ee67f9c4f94f97f4b1abc3/entropy.json",
+        "sha256": "1fa45538a07cb4adac62bd632274e9602e498646033566468b94d9e30547f0d2"
+      }
+    },
+    {
+      "goal": "b3bd39567236430075b175d9938607b5e9cfc22931ebd271db727e7060d68b5b",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b3bd39567236430075b175d9938607b5e9cfc22931ebd271db727e7060d68b5b/spread.json",
+        "sha256": "b8cf000e4d6dda3c1af6939c44554d5842eba024ca1c42046f8b5e625ce752f9"
+      }
+    },
+    {
+      "goal": "b4a10ef0d2a456767557dbadd352b067cfc08092ba174f61960cf12645784fa5",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/b4a10ef0d2a456767557dbadd352b067cfc08092ba174f61960cf12645784fa5/random.json",
+        "sha256": "4ff23ed15383301acac6c841a39a872e0a7b66f487a6a7dfc4223c3eec7689a7"
+      }
+    },
+    {
+      "goal": "b4bf6f819c3eb3e08cf3b6150c3d9726a7fe3f427f20072edf86c3fa104ed178",
+      "domain": "motion_1",
+      "axis": "v0",
+      "target": "a1",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b4bf6f819c3eb3e08cf3b6150c3d9726a7fe3f427f20072edf86c3fa104ed178/spread.json",
+        "sha256": "8fd21c0ed53686786099070593a44402ae50285fa49a1c7dd7935e939e40a844"
+      }
+    },
+    {
+      "goal": "b4bfb86f09e46a149f961e27d080eb75b9035428223f4433e08876831c200ba6",
+      "domain": "polynomials",
+      "axis": "c2",
+      "target": "p",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b4bfb86f09e46a149f961e27d080eb75b9035428223f4433e08876831c200ba6/spread.json",
+        "sha256": "eb281eba01845c2362b3f2023ea685fb6ce46bcab726cad744dc09be69bfe506"
+      }
+    },
+    {
+      "goal": "b4d21bf074984a7f0d3e8444ae4d2401357d5562282990da74e12e0c945b82ca",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/b4d21bf074984a7f0d3e8444ae4d2401357d5562282990da74e12e0c945b82ca/random.json",
+        "sha256": "7626af15b628542d9d411bef9014fa71bff14d968d3a7d696a688a3391db91dc"
+      }
+    },
+    {
+      "goal": "b4efbe26a6ff1ecb6c09700a035ba6a57a814df249fee248bc71c2ce32c97968",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b4efbe26a6ff1ecb6c09700a035ba6a57a814df249fee248bc71c2ce32c97968/spread.json",
+        "sha256": "50ac75ffbb86fd5e662610398cea1b848de46ea6e517704fe8a647e512081088"
+      }
+    },
+    {
+      "goal": "b66e4407bd4af9ef1a06fa53c31679c3aaaeb75b6a3178c9052536bce045f950",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b66e4407bd4af9ef1a06fa53c31679c3aaaeb75b6a3178c9052536bce045f950/spread.json",
+        "sha256": "8e8754d9c80177a6cbe7487a31fadc928b134fddf95943e26904ca048b12d891"
+      }
+    },
+    {
+      "goal": "b6b796bc54728ffaf785312e418596d21ea7bd4a4d5190eca7c9f78f68e279ea",
+      "domain": "polynomials",
+      "axis": "p",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 10,
+      "followups": 10,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/b6b796bc54728ffaf785312e418596d21ea7bd4a4d5190eca7c9f78f68e279ea/entropy.json",
+        "sha256": "8649cd463a37ed89f121934343e2b6465bd495f0938b939193729b6711fd88b7"
+      }
+    },
+    {
+      "goal": "b86a579dcf20e314b561e98cf76e71b779d105fe2d50a338d4be6efaa0f549de",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/b86a579dcf20e314b561e98cf76e71b779d105fe2d50a338d4be6efaa0f549de/spread.json",
+        "sha256": "e959bfdb55e58622a7098f34d53f342598edc6fbd0bebbf7e64380d97ac2eb4a"
+      }
+    },
+    {
+      "goal": "ba5ec7781950c5ad1f3dac502ada7c251ad2cbf95b107dab00e9626bf4186403",
+      "domain": "polynomials",
+      "axis": "p",
+      "target": "i",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/ba5ec7781950c5ad1f3dac502ada7c251ad2cbf95b107dab00e9626bf4186403/random.json",
+        "sha256": "2b1ac5c7e5202686b61c2717d28d7ee0ab46f903a0ec335303fe7b98e0a134e0"
+      }
+    },
+    {
+      "goal": "baa3f43129b0120438c72e0a344a6a082fcc3c8aa0f185dd3367e9806b66eed3",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/baa3f43129b0120438c72e0a344a6a082fcc3c8aa0f185dd3367e9806b66eed3/spread.json",
+        "sha256": "3e1d02db2ddad9886124ae1a87ef93b51fa3e89072c2f7e91f37d20db25cdbc8"
+      }
+    },
+    {
+      "goal": "bd39e5e31e33c968a5b4d98debb04aa2c5ec520354380b6e4153ff1d94040fb5",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "t",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 4,
+      "followups": 4,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/bd39e5e31e33c968a5b4d98debb04aa2c5ec520354380b6e4153ff1d94040fb5/spread.json",
+        "sha256": "51bfa0d4fbd79e73eb226598b125b354f24ccbc94215fce7f1ba8f58e4bc0898"
+      }
+    },
+    {
+      "goal": "bdbdff8b149631cd5d202ad2c5b9894668761486ce0b6c080745bf80197d2614",
+      "domain": "polynomials",
+      "axis": "c1",
+      "target": "c0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/bdbdff8b149631cd5d202ad2c5b9894668761486ce0b6c080745bf80197d2614/spread.json",
+        "sha256": "aa02c3e5effd7cb683198087ba0cefd60298506fbc3b29098ca472a813618dfc"
+      }
+    },
+    {
+      "goal": "bf115c8b684edae201908fdb7fe0580dbd6808892269e2a22f5e41de4d7339e0",
+      "domain": "polynomials",
+      "axis": "c2",
+      "target": "s",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/bf115c8b684edae201908fdb7fe0580dbd6808892269e2a22f5e41de4d7339e0/spread.json",
+        "sha256": "31cf0394af82e9ae00cdea65a23529e8011d5e76196318bb730e2b42c3f57150"
+      }
+    },
+    {
+      "goal": "bf6dc95e5e50c80d9568b46893ab3cfbbac0102ed2a1e8fa1eb25b4bb3d18adb",
+      "domain": "polynomials",
+      "axis": "t",
+      "target": "c0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/bf6dc95e5e50c80d9568b46893ab3cfbbac0102ed2a1e8fa1eb25b4bb3d18adb/spread.json",
+        "sha256": "ef04a558b9b34e0724a006e936a50549b025f7eb3d14da5fe4446c3eeafe0ba3"
+      }
+    },
+    {
+      "goal": "c08e752eed05a9621e2f99f0cf82a92f3c8ffc589588b4835a20579365c4e1f8",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c08e752eed05a9621e2f99f0cf82a92f3c8ffc589588b4835a20579365c4e1f8/spread.json",
+        "sha256": "044ecf4dfecc82fd2f06da7ff1c4ccac44cb8bbfb76b132782c5d64bb52b229a"
+      }
+    },
+    {
+      "goal": "c1274fbcb95f8078ec4a7a60b288c69a20e118a0bf65b69b594221f39777acae",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/c1274fbcb95f8078ec4a7a60b288c69a20e118a0bf65b69b594221f39777acae/entropy.json",
+        "sha256": "f1e5a76087786a2180371f49fadb2e253b870aa645e8776e12430fa7d3400703"
+      }
+    },
+    {
+      "goal": "c17b7dad90fe35341467577663f45d7bcb5856f777b87fbc75928f41dd623a9b",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c17b7dad90fe35341467577663f45d7bcb5856f777b87fbc75928f41dd623a9b/spread.json",
+        "sha256": "582d30c7e85ee2e20c0ff20346f949ab45024df08957b0048c8b38a1deeb1b7a"
+      }
+    },
+    {
+      "goal": "c22a22edd65cdb873060cc99f503b5b96754c164055b12f8d4dd6db3fb285232",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c22a22edd65cdb873060cc99f503b5b96754c164055b12f8d4dd6db3fb285232/spread.json",
+        "sha256": "56db0ba1076db4ed0c2dc4cf871e392803e67cd3227f66abc24f6e8077dc5e30"
+      }
+    },
+    {
+      "goal": "c26e22f87441fb9a968bc54bbc858ceb476e5e9488c4e37ddf1b3913c2c6ad48",
+      "domain": "polynomials",
+      "axis": "i",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/c26e22f87441fb9a968bc54bbc858ceb476e5e9488c4e37ddf1b3913c2c6ad48/random.json",
+        "sha256": "40fd506e8526ea88072ff07c9fb49b98ce067bd65a24875e2354ca6030bb8a68"
+      }
+    },
+    {
+      "goal": "c3d4576736ba89f77cc7a800b410b05297d2fc04c3f7e7010f585685f0fb6430",
+      "domain": "polynomials",
+      "axis": "s",
+      "target": "c2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c3d4576736ba89f77cc7a800b410b05297d2fc04c3f7e7010f585685f0fb6430/spread.json",
+        "sha256": "d4708eb25df3fd1c4638dc2900460333413c60c4e3b54d400c9fc5e8e79edb62"
+      }
+    },
+    {
+      "goal": "c402ca9db6ec635bfcd197f0221d82c1d43a576efab1ee4dfe031153489371ac",
+      "domain": "polynomials",
+      "axis": "t",
+      "target": "p",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c402ca9db6ec635bfcd197f0221d82c1d43a576efab1ee4dfe031153489371ac/spread.json",
+        "sha256": "698be12ac28953f7f9036c54a0240e7ec6822edb996ebcf13323bbded3a01f5a"
+      }
+    },
+    {
+      "goal": "c57e689daff335936b9c3071c10838e48a6a688f02241e1e9456d2a242bc1054",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c57e689daff335936b9c3071c10838e48a6a688f02241e1e9456d2a242bc1054/spread.json",
+        "sha256": "5f3d476ae30b135bed9f9913861f0bb38e78b1c678754bac326d4389d87f48b7"
+      }
+    },
+    {
+      "goal": "c59f2fd759d419541b594bc97ec48e9451cc1e4bcef8747c47374f1ae93f1820",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c59f2fd759d419541b594bc97ec48e9451cc1e4bcef8747c47374f1ae93f1820/spread.json",
+        "sha256": "73640eb62a110ecfd92cfdb0cf33c2951c8d6ffd31d35e4451038d01cdbf84f0"
+      }
+    },
+    {
+      "goal": "c65bb45f13c3be6ebb330ef28e68ac62d2c78bfed9f8d793a455440b39ae9983",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "x0",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c65bb45f13c3be6ebb330ef28e68ac62d2c78bfed9f8d793a455440b39ae9983/spread.json",
+        "sha256": "8ff4e2f9df4864c196527a8fbcf978a9fa12e6496d588931f84adb7e155a4ecf"
+      }
+    },
+    {
+      "goal": "c742fc9e932c65d8d6d06de83987621e691b3ef2d862ba409eda68a10adbf289",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c742fc9e932c65d8d6d06de83987621e691b3ef2d862ba409eda68a10adbf289/spread.json",
+        "sha256": "788e21a755ce2a2382ee1ac8f3c06db7ccb1284fe3d4231c5c8df76a2b961602"
+      }
+    },
+    {
+      "goal": "c78fafc34d752b01066d0d6cb5b4cf3334003b8564994595d995bec99f38bc4b",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c78fafc34d752b01066d0d6cb5b4cf3334003b8564994595d995bec99f38bc4b/spread.json",
+        "sha256": "7201530c6a094e16b461b3278f670462120424c77de2ee1032319b2e6e94f801"
+      }
+    },
+    {
+      "goal": "c7bf0f22ab2bea8ca5925850eea08d069046740d451935796ca8b649d211d796",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c7bf0f22ab2bea8ca5925850eea08d069046740d451935796ca8b649d211d796/spread.json",
+        "sha256": "c57f7d34e80d89df706db95ad928982b9348947cb87e7d497df151d26cbfb012"
+      }
+    },
+    {
+      "goal": "c7d08b433cb847c4de459a1feba7a28533239383f6975600eb1e1448f4b0ae47",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c7d08b433cb847c4de459a1feba7a28533239383f6975600eb1e1448f4b0ae47/spread.json",
+        "sha256": "bcb3b18987d49dfb700c68179e4289c28944c784785fa37c324358e1270518dd"
+      }
+    },
+    {
+      "goal": "c7fe294e921b1e56085633503152f3764c14542e45a79965e06caf9eb95b76f8",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c7fe294e921b1e56085633503152f3764c14542e45a79965e06caf9eb95b76f8/spread.json",
+        "sha256": "7e20f4c62e8f0862b58ea3fcd4510a112f981312203766b99ca9ed9a851eb9b0"
+      }
+    },
+    {
+      "goal": "c84b853f51d0cfed473246abea0ea54260713222033ef709b9cb2f40b90f3b4a",
+      "domain": "motion_2",
+      "axis": "x",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c84b853f51d0cfed473246abea0ea54260713222033ef709b9cb2f40b90f3b4a/spread.json",
+        "sha256": "2806dbf28d6394eadab74daaf8299896a9fa02aa4b9fbb51205d706679b46417"
+      }
+    },
+    {
+      "goal": "c8bbdc889cab1da5afab4c4c2acf2413db984d99024d6a83afa0ef94ea0cada5",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/c8bbdc889cab1da5afab4c4c2acf2413db984d99024d6a83afa0ef94ea0cada5/random.json",
+        "sha256": "508b5e2023f8b22ecbbc479b57c8d978dc8b406eef94bda41a62920acb97aecf"
+      }
+    },
+    {
+      "goal": "c9bd9e1b1a4a0380c0e25b092f699b2d233a8a380e229b5eeb98e45cd1e74657",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/c9bd9e1b1a4a0380c0e25b092f699b2d233a8a380e229b5eeb98e45cd1e74657/spread.json",
+        "sha256": "4bdc318bcb19ed8d4054ad09068907ef542f49b99acce0a6a3ebf326c1a0bb19"
+      }
+    },
+    {
+      "goal": "ca500a9908d10b7235792bb629f686295a5489e98219b1675a418c2c4324685b",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ca500a9908d10b7235792bb629f686295a5489e98219b1675a418c2c4324685b/spread.json",
+        "sha256": "83fdb06201ec25fb37d83ff2fc998400989fa6f6107d92345ae36180772fc388"
+      }
+    },
+    {
+      "goal": "cb4e180e50dbd429ce58da217311770059384b6312522c725c2549e810fbf1f1",
+      "domain": "motion_1",
+      "axis": "a0",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/cb4e180e50dbd429ce58da217311770059384b6312522c725c2549e810fbf1f1/spread.json",
+        "sha256": "23a6025811bb10b0148940505be1afd798ec9308ae8baf913881c37c1e407c3a"
+      }
+    },
+    {
+      "goal": "cc58082917dff6c64ce89e735718d4c102728ba1666834e0c080e4b84515892a",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "x0",
+      "survivors": 3,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/cc58082917dff6c64ce89e735718d4c102728ba1666834e0c080e4b84515892a/spread.json",
+        "sha256": "61572169dad478dd3ff5436f8ff2fc2183554e5e51b676a89922d15f32934e48"
+      }
+    },
+    {
+      "goal": "cdc40e773ffab26d0d8f522aaf7ea5b408e5c52e9b696ce7d12d437a96fd4fec",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/cdc40e773ffab26d0d8f522aaf7ea5b408e5c52e9b696ce7d12d437a96fd4fec/spread.json",
+        "sha256": "ad3b3bd7aefc8f06a3335d356de9f891b02f064485e100f6d8479dba17786962"
+      }
+    },
+    {
+      "goal": "d195a06effb9d8830a7dc04cdba195f02f1a3a71811ccc4bf2abc0b231cebb10",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "v0",
+      "survivors": 3,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d195a06effb9d8830a7dc04cdba195f02f1a3a71811ccc4bf2abc0b231cebb10/spread.json",
+        "sha256": "978df3e387bd66abea2c79ab936f47d02f0de576ee56929048c6b950dd6b991f"
+      }
+    },
+    {
+      "goal": "d1c348037c8042d61705e47f2914c2a707640a6a3d0ff8975da998b9ab20d0c8",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d1c348037c8042d61705e47f2914c2a707640a6a3d0ff8975da998b9ab20d0c8/spread.json",
+        "sha256": "cf34949db3a35b3d35a9e037305d9df6892afb07bc81d940d64c5c2e39e4df21"
+      }
+    },
+    {
+      "goal": "d455befc930652d920ee6e45ec820af27752e286e1b7ab0418e71782241f847a",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/d455befc930652d920ee6e45ec820af27752e286e1b7ab0418e71782241f847a/entropy.json",
+        "sha256": "d89cd254ebd1d92e70a7f73a142875e30da9340b936f48cbbb632f861bfb4d6a"
+      }
+    },
+    {
+      "goal": "d570212cf5eae8e8b188349e7528ee21dda971ab436af2373231a50e63eb8e29",
+      "domain": "polynomials",
+      "axis": "c1",
+      "target": "i",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/d570212cf5eae8e8b188349e7528ee21dda971ab436af2373231a50e63eb8e29/entropy.json",
+        "sha256": "083bae3a35b8c738dba3c84b4ac70e226c14d4f5b4157552d6c41c0a0113c232"
+      }
+    },
+    {
+      "goal": "d5ccc0f7b0e272828daad9c8107a65130d1cf09a092ddba3f777170cd4699020",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d5ccc0f7b0e272828daad9c8107a65130d1cf09a092ddba3f777170cd4699020/spread.json",
+        "sha256": "c918f5c85ff4624c7944f1faad1bf888bc05fa0de5f85b9e16ece98569288e2c"
+      }
+    },
+    {
+      "goal": "d705f277b843c8d82145be5b70c8be3f041bb559cc901858432034d7b2169ce6",
+      "domain": "motion_0",
+      "axis": "m",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d705f277b843c8d82145be5b70c8be3f041bb559cc901858432034d7b2169ce6/spread.json",
+        "sha256": "9451a87e8e2ef03adaaa2945e6aba7cab9cf38e58ce6e6e67b2794bcf780a166"
+      }
+    },
+    {
+      "goal": "d711fc413a99ec36f8a8380cee484c783ed3e8a9ff5833c2606eff3835a368c1",
+      "domain": "polynomials",
+      "axis": "c0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 8,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d711fc413a99ec36f8a8380cee484c783ed3e8a9ff5833c2606eff3835a368c1/spread.json",
+        "sha256": "d22b16a0f44d1feb34d6b8a8ce83cd9a1c069638519cc7417d7b1c62063d3c1f"
+      }
+    },
+    {
+      "goal": "d7a669aa53d71aa2ac690e93a9f2d8fd603ad8aec8b332826439608d50f944fc",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "f",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d7a669aa53d71aa2ac690e93a9f2d8fd603ad8aec8b332826439608d50f944fc/spread.json",
+        "sha256": "4dbc47f35c1b9893b5be4ca722a8095efb41ccf2085bc82ad484be713ca5be4a"
+      }
+    },
+    {
+      "goal": "d800574dae0a933ff22e850aade5340f07b0d48f4b996e6163f32b475c5b8de4",
+      "domain": "motion_2",
+      "axis": "v0",
+      "target": "x0",
+      "survivors": 5,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/d800574dae0a933ff22e850aade5340f07b0d48f4b996e6163f32b475c5b8de4/spread.json",
+        "sha256": "33734a5de6c59a3c1baa176c1b59810ddd0117eb1d0121a8b42b9a87346366f3"
+      }
+    },
+    {
+      "goal": "d964e5f847ba2e0abf76f0e5c72f5490ee36fb2f07123f8e4d432478e2b3d745",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/d964e5f847ba2e0abf76f0e5c72f5490ee36fb2f07123f8e4d432478e2b3d745/random.json",
+        "sha256": "da98d9316ff989b2e54f5cbf2fcf4ea9f05891b5ce254c7a82cba96b2b79196a"
+      }
+    },
+    {
+      "goal": "daf221e588768da4d2259b96aae50791be1d6ac80cec9482bf798bb6086bc6cd",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "x",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/daf221e588768da4d2259b96aae50791be1d6ac80cec9482bf798bb6086bc6cd/spread.json",
+        "sha256": "67f6e194518c2c84ba3aaa5611a040e31fd59ee77dc4ffbeb60a3c0e1ec342ad"
+      }
+    },
+    {
+      "goal": "dc09c4693010d70a2cfc630c67d337cbc35dae5e105db80e5f38fb06960ed7d1",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "t",
+      "survivors": 6,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/dc09c4693010d70a2cfc630c67d337cbc35dae5e105db80e5f38fb06960ed7d1/spread.json",
+        "sha256": "0f5867f31b07be0d8fbab2b49ccac4ab4290276fc6ba629e820908213bba1a07"
+      }
+    },
+    {
+      "goal": "dc729b3ea03fc5ee1e92fb48a604384a10e4596bb998e9554c6fb6260860c8bf",
+      "domain": "motion_1",
+      "axis": "x0",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/dc729b3ea03fc5ee1e92fb48a604384a10e4596bb998e9554c6fb6260860c8bf/spread.json",
+        "sha256": "e596fbffaa2c78b203948011fa41ac74f6263b2bb08db4354d21ac19adcfd28d"
+      }
+    },
+    {
+      "goal": "ddd3073fda41d94779b1f7cae4e456b419895d890521aaf7663398e7c1345132",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ddd3073fda41d94779b1f7cae4e456b419895d890521aaf7663398e7c1345132/spread.json",
+        "sha256": "742ace81cfe85deffecab3a2c31c2105bff6d636daf648c7fe74080f1a4c6929"
+      }
+    },
+    {
+      "goal": "dfe46668c0eda4f3c568e90b33ad865546605fb4ce8387af0d4544044358da9d",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/dfe46668c0eda4f3c568e90b33ad865546605fb4ce8387af0d4544044358da9d/random.json",
+        "sha256": "b047379d1a7512d9f417987a9369d07043f655cc621714f8171b70d33dbd9016"
+      }
+    },
+    {
+      "goal": "e0d1657bc4cf7b3769e8936227832a3fe9fcdbbf719f2912c06406ee9fe8a5be",
+      "domain": "motion_2",
+      "axis": "t",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e0d1657bc4cf7b3769e8936227832a3fe9fcdbbf719f2912c06406ee9fe8a5be/spread.json",
+        "sha256": "83f13a97e7b3357252f28df76372705265e1bd0bfa56a93f190a275977e9d763"
+      }
+    },
+    {
+      "goal": "e1c7319c9f628b8481d56a202e9dc4d9fd3e6f60bfac4ac23e86d57d52f86ff0",
+      "domain": "polynomials",
+      "axis": "i",
+      "target": "p",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/e1c7319c9f628b8481d56a202e9dc4d9fd3e6f60bfac4ac23e86d57d52f86ff0/entropy.json",
+        "sha256": "ed240a1140f4e644928e75767a176c3b6b792153c0db48a468f1c7a773dac8f0"
+      }
+    },
+    {
+      "goal": "e25dd73f8d622dc949eb6a3ccd173c6b7f1d44c3d11781030d8bbc5ff2eb8d66",
+      "domain": "polynomials",
+      "axis": "t",
+      "target": "i",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e25dd73f8d622dc949eb6a3ccd173c6b7f1d44c3d11781030d8bbc5ff2eb8d66/spread.json",
+        "sha256": "ce13fd2aaf403602f8950c195383d1fb1a341d3b6976d1d80ec07965101f3c48"
+      }
+    },
+    {
+      "goal": "e311aa3bee519439f3ca5f8d7b439186d1c0b444227a76c983e8acd5c76a0b00",
+      "domain": "polynomials",
+      "axis": "c1",
+      "target": "s",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 8,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e311aa3bee519439f3ca5f8d7b439186d1c0b444227a76c983e8acd5c76a0b00/spread.json",
+        "sha256": "8af02c9db8957fead7cc1c75c992eb43677a84d7f90231d3439f53c1dcbaa9eb"
+      }
+    },
+    {
+      "goal": "e35b806f4e42ee8a7324e0048cd989d0a466e5aba076cc437e59ccaf4070909c",
+      "domain": "motion_2",
+      "axis": "a0",
+      "target": "v0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e35b806f4e42ee8a7324e0048cd989d0a466e5aba076cc437e59ccaf4070909c/spread.json",
+        "sha256": "dc447684e43c78075120833e4bf4c62aecfb25d626123e8dc14eb06d6371b9a3"
+      }
+    },
+    {
+      "goal": "e36f304fb7cc3a422d0ee7c66d8a1412bd4ddc1949c7685ae2ce770e9c07af01",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 5,
+      "followups": 5,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e36f304fb7cc3a422d0ee7c66d8a1412bd4ddc1949c7685ae2ce770e9c07af01/spread.json",
+        "sha256": "db210d9c7a53c5cf1c0fae69bae3375c20f4624bcc8c1a6d7c4213955232a9ac"
+      }
+    },
+    {
+      "goal": "e8d5e0665a5e71b72df78c4de647ed85b68eb05b78a5980ab1e620bf196db9cf",
+      "domain": "polynomials",
+      "axis": "s",
+      "target": "c0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e8d5e0665a5e71b72df78c4de647ed85b68eb05b78a5980ab1e620bf196db9cf/spread.json",
+        "sha256": "6ea0209662b973c1595dafdc0dd2dc535df65f677ff3ca7628692e56b3c7c94a"
+      }
+    },
+    {
+      "goal": "e934d54b9d547b7dbf269fd59a4fbcb48cedc56d166652817ad305c5b720bb8f",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/e934d54b9d547b7dbf269fd59a4fbcb48cedc56d166652817ad305c5b720bb8f/spread.json",
+        "sha256": "b616e1f2b5abf45fc61e98d1f5d173271b796e0b5b91d6da89ec0264d3f39434"
+      }
+    },
+    {
+      "goal": "e95dec60e00ec63eae54dce82b8c280a676fbbdaeb109619e2ccefada375949b",
+      "domain": "motion_0",
+      "axis": "x",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/e95dec60e00ec63eae54dce82b8c280a676fbbdaeb109619e2ccefada375949b/random.json",
+        "sha256": "1ed31550ca43bc9a7d34f816f0d46c1ab4ff2b4cb1f5bbd083f51186b2b040ab"
+      }
+    },
+    {
+      "goal": "ea191762462323bcd901473ad8c0971f61f87ae4974ff22b98b700cb730559b3",
+      "domain": "motion_0",
+      "axis": "t",
+      "target": "m",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 2,
+      "rules_added": 1,
+      "points": 1.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ea191762462323bcd901473ad8c0971f61f87ae4974ff22b98b700cb730559b3/spread.json",
+        "sha256": "0dbf73a469687e65ad11c7b231714263fb42008c4a93e4fa7528a3f7f1572d81"
+      }
+    },
+    {
+      "goal": "ea658851a6e9d4dc0420a84d4ca85e2b2875ca7f9c4073ac866437efe5705d97",
+      "domain": "polynomials",
+      "axis": "s",
+      "target": "i",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ea658851a6e9d4dc0420a84d4ca85e2b2875ca7f9c4073ac866437efe5705d97/spread.json",
+        "sha256": "738601547d650b42b99b40ea52034faa9e582e310ec0a17cb801aeed64154fa5"
+      }
+    },
+    {
+      "goal": "ea872ba6372b71a8370059ef2974b8a8a2f19207987d5bc28a8c343d122a7e95",
+      "domain": "motion_0",
+      "axis": "v0",
+      "target": "x0",
+      "survivors": 3,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ea872ba6372b71a8370059ef2974b8a8a2f19207987d5bc28a8c343d122a7e95/spread.json",
+        "sha256": "305acc0202482c5bceb149ac979fb887f89616f817af0c2b6154e11588d6bba0"
+      }
+    },
+    {
+      "goal": "eb6f3f89ddd6e639ffbf73f66c5f3589e903696a55e6cdaf55899b4b701d01c6",
+      "domain": "motion_2",
+      "axis": "m",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/eb6f3f89ddd6e639ffbf73f66c5f3589e903696a55e6cdaf55899b4b701d01c6/spread.json",
+        "sha256": "fd5f46acddb203b93498b2a6326919938d7c80503b42d89d9b8255b1ff22db11"
+      }
+    },
+    {
+      "goal": "ebfc1b05adb4cc374cc1768c2a119b25740fe6b736558a2510ff67b92dfa53f6",
+      "domain": "polynomials",
+      "axis": "s",
+      "target": "p",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 8,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ebfc1b05adb4cc374cc1768c2a119b25740fe6b736558a2510ff67b92dfa53f6/spread.json",
+        "sha256": "aff875b11f8d0d65822cb16fc5b25b3fb7614126129b362ea44f29daf7b9cd57"
+      }
+    },
+    {
+      "goal": "ec592383d1d973507c907b2859b7626a16730c75975feb41bd522a61561494de",
+      "domain": "motion_1",
+      "axis": "m",
+      "target": "x0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ec592383d1d973507c907b2859b7626a16730c75975feb41bd522a61561494de/spread.json",
+        "sha256": "03339f53ce5171c442fa55f66b17fbe57c023887c603c53cc65741480a17a9c7"
+      }
+    },
+    {
+      "goal": "eca4669a713e51e1281a2f84e861f8aae61178c0ecfea3892ad0230952670339",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "a0",
+      "survivors": 3,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/eca4669a713e51e1281a2f84e861f8aae61178c0ecfea3892ad0230952670339/spread.json",
+        "sha256": "534c2d0134882a0b430fd5a4d0990f9328dd46c00a15834752305928504671e0"
+      }
+    },
+    {
+      "goal": "ed9aff58d27f63d8e751fdf03aeaab27f2f445cc74a319f32474540fd9dc092b",
+      "domain": "motion_1",
+      "axis": "f",
+      "target": "v",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/ed9aff58d27f63d8e751fdf03aeaab27f2f445cc74a319f32474540fd9dc092b/random.json",
+        "sha256": "355f4744fb4295f864e6c1eb01444251f3e79b73d97bb0c85c532ebafdc682d2"
+      }
+    },
+    {
+      "goal": "ee6b42a552bb875b496969e211b74c7a79dd16fa54e539a8b5b451d9634ac75e",
+      "domain": "motion_1",
+      "axis": "t",
+      "target": "x",
+      "survivors": 2,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/ee6b42a552bb875b496969e211b74c7a79dd16fa54e539a8b5b451d9634ac75e/spread.json",
+        "sha256": "e2a620251c6d60f4ae5f46497eb0f1918daf45db0ed8424ba7d5da6e8d3f5ce9"
+      }
+    },
+    {
+      "goal": "eea8acfe4d8f213071b65e9f81f94c75efd13e61484d3024e0efdc86e71a4095",
+      "domain": "polynomials",
+      "axis": "c2",
+      "target": "c1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/eea8acfe4d8f213071b65e9f81f94c75efd13e61484d3024e0efdc86e71a4095/spread.json",
+        "sha256": "dfaebe7db89dd03a6af0a29c2f01bb0b9e30b34822e1a79e5312135732a61567"
+      }
+    },
+    {
+      "goal": "f08048c09dd1f4600e076223fbecddad791f2cc096ed21c9db12ae73d4924215",
+      "domain": "motion_2",
+      "axis": "x0",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 7,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/f08048c09dd1f4600e076223fbecddad791f2cc096ed21c9db12ae73d4924215/random.json",
+        "sha256": "ace516dcf54953ef450e913e2f9439810cea38562062dedcba33bf9f9ca351c0"
+      }
+    },
+    {
+      "goal": "f22108b538c19f87eb89d802fb4cac7cd16849382b51d671874e4fcd8f694eab",
+      "domain": "polynomials",
+      "axis": "c1",
+      "target": "p",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/f22108b538c19f87eb89d802fb4cac7cd16849382b51d671874e4fcd8f694eab/spread.json",
+        "sha256": "3baf3b9c75e599396e58e00d45b449b34d5633a3239789ab756c294739a847f1"
+      }
+    },
+    {
+      "goal": "f68a2619a78f0c6b8945b8c748ec3d7eb9435c24d6013c5dccc85dde63515ea7",
+      "domain": "motion_0",
+      "axis": "x0",
+      "target": "m",
+      "survivors": 3,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 1,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/f68a2619a78f0c6b8945b8c748ec3d7eb9435c24d6013c5dccc85dde63515ea7/spread.json",
+        "sha256": "073fbb9e40f5f408abd8d71ae119a7ccf97c887be187aafa1ac6d12eac4414b9"
+      }
+    },
+    {
+      "goal": "f719db584726664ff797c7cd8cd87cfbbb9da89a60a5e37f98584b7868019784",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "a2",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 5,
+      "followups": 5,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/f719db584726664ff797c7cd8cd87cfbbb9da89a60a5e37f98584b7868019784/random.json",
+        "sha256": "9a831e0aee5cd003187fab96da5e6deb57763deda11298762217a95c90945ff5"
+      }
+    },
+    {
+      "goal": "f832d4770d78230619e834cb5b7016c916e19fed6ecb49346fc33d04f1a5265c",
+      "domain": "polynomials",
+      "axis": "i",
+      "target": "s",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/f832d4770d78230619e834cb5b7016c916e19fed6ecb49346fc33d04f1a5265c/spread.json",
+        "sha256": "0dc1bf727f2373ced1209fcbef4a59ada5736c2d7ffba727c482f23eebf32e82"
+      }
+    },
+    {
+      "goal": "f89820547c5735c0ba314021f77352122be462ec7d30d243bad882764b26b100",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "a0",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/validation/f89820547c5735c0ba314021f77352122be462ec7d30d243bad882764b26b100/entropy.json",
+        "sha256": "c0e020108add471623ba2881a469c07e21a6e41afd65c5eeb4c2ad9d8364d157"
+      }
+    },
+    {
+      "goal": "f9eaf5a94d3b258905d102c3c8dfb192b89880de6abd4d178277d2dd43de0b89",
+      "domain": "motion_0",
+      "axis": "a0",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 3,
+      "followups": 3,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/f9eaf5a94d3b258905d102c3c8dfb192b89880de6abd4d178277d2dd43de0b89/spread.json",
+        "sha256": "23f9db5fbb314013f120a24e18c45bf4070d1f8af25a4715f34b47dbe0e0510b"
+      }
+    },
+    {
+      "goal": "fac4fb62c140dc57dd5079475cd517b1cb3b3452c5ed85490eb7e5dd2cd713a6",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "t",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/fac4fb62c140dc57dd5079475cd517b1cb3b3452c5ed85490eb7e5dd2cd713a6/spread.json",
+        "sha256": "9775640f011a670a883c4b03d56b8c2db3895119a7a2b324bfe6bbb4be1feeb6"
+      }
+    },
+    {
+      "goal": "fc5e3727a617f54c9da8f7c514b9ffbf75af2999fa6347502107d8c7cbc04449",
+      "domain": "motion_2",
+      "axis": "a1",
+      "target": "m",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/fc5e3727a617f54c9da8f7c514b9ffbf75af2999fa6347502107d8c7cbc04449/spread.json",
+        "sha256": "82559807430e8bebbc4ab3c92cf830bc63dc140ce74146c694e337f03d2cbaa4"
+      }
+    },
+    {
+      "goal": "fd5209306e0d956d46a389e3eed5674db723866cb1e0cbf0e436152c8f6e28ff",
+      "domain": "motion_1",
+      "axis": "a1",
+      "target": "x",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 1,
+      "followups": 1,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/train/fd5209306e0d956d46a389e3eed5674db723866cb1e0cbf0e436152c8f6e28ff/random.json",
+        "sha256": "8a6b8b7dd19b5cf2b559f0cf83b5ed02eca1b954f14fa5a88bdffeb0ab1672f3"
+      }
+    },
+    {
+      "goal": "fe18a1e2b09a3dada8979b24b5516769f5ef93b4ee3b1c7e502a5b21d6a7f626",
+      "domain": "motion_2",
+      "axis": "f",
+      "target": "a1",
+      "survivors": 1,
+      "status": "SCOPED_ANSWER",
+      "observations": 2,
+      "followups": 2,
+      "rules_added": 0,
+      "points": 0.0,
+      "artifact": {
+        "path": "runs/CI-qualified-001/final/fe18a1e2b09a3dada8979b24b5516769f5ef93b4ee3b1c7e502a5b21d6a7f626/spread.json",
+        "sha256": "aa93286915092b1253328265f581a61c9155b6724f9a4ef373c8b6a0207120df"
+      }
+    }
+  ]
+}
