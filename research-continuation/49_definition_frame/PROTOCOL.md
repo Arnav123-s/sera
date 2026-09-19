@@ -123,3 +123,58 @@ worked around.
 
 It also does not touch the OLA-001 descendants. The corrected weights are
 written to a separate store and OLA-001's checkpoints stay byte-identical.
+
+## Amendments
+
+Amendments are appended with a date. The frozen text above is never rewritten,
+so a reader can always see what was predicted and what actually happened.
+
+### 2026-09-19T21:05Z — the source digest does not have to change after all
+
+The frozen text says `source_digest()` will change, because `corpus.py` and
+`training.py` would change. While drafting the implementation it turned out that
+neither has to.
+
+`source_digest()` hashes an explicit tuple,
+`SOURCE_FILES = ("descendant.py", "corpus.py", "training.py")`
+([`descendant.py:48`](../../experiments/owner_language/descendant.py#L48)). The
+framed view can live in a *new* module, `experiments/owner_language/frame.py`,
+holding a `FramedStream` that subclasses `SourceStream` and overrides only how
+an entry is rendered to ids. `Trainer` builds `self.streams` in its constructor
+and never rebuilds them, so the OLA-002 driver substitutes the webster stream
+after construction. The cursor, the seeded per-epoch permutation, the resume
+contract and the exposure counters are all inherited unchanged.
+
+Nothing in `SOURCE_FILES` is touched, so:
+
+- `source_digest()` is unchanged;
+- every OLA-001 descendant keeps reporting `code_unchanged_since_training: true`
+  rather than merely staying restorable through its saved `language_config`;
+- OLA-001 and OLA-002 descendants are directly comparable at the code level.
+
+This is strictly better than what was frozen and changes no question, arm,
+threshold or decision rule. It is recorded here rather than silently corrected
+above.
+
+### 2026-09-19T21:05Z — the format control drills the same entries
+
+The frozen text describes the `unframed` arm as "the definition body alone,
+exactly as OLA-001" on "the same webster training entries". Taken literally that
+would have let the control stream over *all* webster training entries while the
+`framed` arm streams only entries with a single in-vocabulary headword — the
+only entries that can carry a frame. A gain in the framed arm could then have
+come from drilling a narrower, easier population rather than from the frame.
+
+So the eligibility filter is applied in **both** arms and only the rendering
+differs. The driver records `matched_entry_population` as a pre-condition with
+both counts, so the reader can check it rather than take it on trust.
+
+### 2026-09-19T21:05Z — restoring a descendant does not restore its arm
+
+`restore_descendant` rebuilds through `LanguageAcquisitionR1.attach`, which
+makes every `lex_*` and `adapter.*` tensor trainable. If the OLA-001 decision
+rule selects `blocked`, continuing from that checkpoint without re-freezing the
+adapter would silently turn OLA-002 into a connected run and the comparison
+would be against a different architecture than the one it started from. The
+driver re-applies the arm's freeze after restore and records which tensors it
+re-froze.

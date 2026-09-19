@@ -28,30 +28,59 @@
     "rendering": "<def> + definition words capped at 40 + <is> + headword + <eos>, built directly as ids from the frozen vocabulary",
     "adds_words_to_vocabulary": false,
     "eligible_entries": "split == train, single-word headword present in the frozen vocabulary, definition at least 6 words",
-    "never_framed": ["dev", "final", "transfer"],
-    "source_digest_changes": true,
-    "ola_001_remains_restorable_because": "each OLA-001 checkpoint carries its own language_config and restore_descendant reinstates it; the restore report states code_unchanged_since_training false rather than hiding it"
+    "never_framed": [
+      "dev",
+      "final",
+      "transfer"
+    ],
+    "source_digest_changes": false,
+    "ola_001_remains_restorable_because": "SOURCE_FILES is untouched, so source_digest() is unchanged and every OLA-001 checkpoint still verifies with code_unchanged_since_training true",
+    "source_digest_note": "see amendment source-digest-unchanged; the view lives in a new module outside SOURCE_FILES"
   },
   "arms": [
-    {"name": "framed", "view": "definition_frame", "role": "the proposal"},
-    {"name": "unframed", "view": "definition body alone, exactly as OLA-001",
-     "role": "format control; is any gain just more webster training?"}
+    {
+      "name": "framed",
+      "view": "definition_frame",
+      "role": "the proposal"
+    },
+    {
+      "name": "unframed",
+      "view": "definition body alone, exactly as OLA-001",
+      "role": "format control; is any gain just more webster training?"
+    }
   ],
-  "optimiser": {"algorithm": "Adam", "learning_rate": 0.001, "gradient_clip_norm": 1.0},
+  "optimiser": {
+    "algorithm": "Adam",
+    "learning_rate": 0.001,
+    "gradient_clip_norm": 1.0
+  },
   "batch": 8,
   "sequence_length": 64,
   "seed": 4802,
   "steps_per_arm": 1500,
   "steps_rationale": "matched to one OLA-001 stage so the additional teaching is bounded and comparable to the original definitions stage",
-  "sources": ["webster"],
+  "sources": [
+    "webster"
+  ],
   "preconditions": [
-    {"id": "frame-tokens-untrained",
-     "check": "the <def> and <is> rows of lex_embedding in the selected OLA-001 checkpoint are bit-identical to what LanguageAcquisitionR1.attach produces at the recorded seed",
-     "if_it_fails": "the diagnosis is wrong and this protocol is withdrawn, not adjusted"},
-    {"id": "no-evaluation-leakage",
-     "check": "no framed item's entry has split dev or final"},
-    {"id": "vocabulary-unmoved",
-     "check": "the vocabulary digest after adding the view equals 78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c"}
+    {
+      "id": "frame-tokens-untrained",
+      "check": "the <def> and <is> rows of lex_embedding in the selected OLA-001 checkpoint are bit-identical to what LanguageAcquisitionR1.attach produces at the recorded seed",
+      "if_it_fails": "the diagnosis is wrong and this protocol is withdrawn, not adjusted"
+    },
+    {
+      "id": "no-evaluation-leakage",
+      "check": "no framed item's entry has split dev or final"
+    },
+    {
+      "id": "vocabulary-unmoved",
+      "check": "the vocabulary digest after adding the view equals 78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c"
+    },
+    {
+      "id": "matched-entry-population",
+      "check": "both arms drill the same eligible entries, so only the rendering differs",
+      "if_it_fails": "the comparison is confounded by entry population and the run is void"
+    }
   ],
   "statistics": {
     "dev_definition_questions": 589,
@@ -82,5 +111,31 @@
     "memory_limit_bytes": 2147483648,
     "estimated_seconds_per_arm": 460,
     "paid_compute": "none"
-  }
+  },
+  "amendments": [
+    {
+      "utc": "2026-09-19T21:05:00Z",
+      "id": "source-digest-unchanged",
+      "was": "source_digest_changes: true",
+      "now": "the framed view lives in a new module experiments/owner_language/frame.py, so none of SOURCE_FILES is touched and source_digest() is unchanged",
+      "effect": "OLA-001 descendants keep reporting code_unchanged_since_training true; OLA-001 and OLA-002 descendants stay comparable at the code level",
+      "changes_question_arms_thresholds_or_rule": false
+    },
+    {
+      "utc": "2026-09-19T21:05:00Z",
+      "id": "matched-entry-population",
+      "was": "the unframed control described only as the OLA-001 view on the same entries",
+      "now": "the framable eligibility filter is applied in both arms so only the rendering differs; the driver records matched_entry_population with both counts",
+      "effect": "a gain in the framed arm cannot come from drilling a narrower, easier population",
+      "changes_question_arms_thresholds_or_rule": false
+    },
+    {
+      "utc": "2026-09-19T21:05:00Z",
+      "id": "reapply-arm-control",
+      "was": "not stated",
+      "now": "restore_descendant rebuilds through attach and makes every lex_ and adapter. tensor trainable, so the driver re-applies the blocked arm's adapter freeze after restore and records the tensors it re-froze",
+      "effect": "continuing from a blocked checkpoint cannot silently become a connected run",
+      "changes_question_arms_thresholds_or_rule": false
+    }
+  ]
 }
