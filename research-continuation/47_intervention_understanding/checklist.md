@@ -12,4 +12,4 @@
 - [x] Preserve alternative explanations and separate model confidence, adequacy and conditional proof.
 - [x] Complete development, diagnose defects, freeze, evaluate and independently replay.
 - [x] Verify interrupted continuation, old mathematics/language/physical tasks and unchanged corrected reward history.
-- [ ] Publish runnable examples, complete results, source identities, failures, costs and platform verification.
+- [x] Publish runnable examples, complete results, source identities, failures, costs and platform verification.

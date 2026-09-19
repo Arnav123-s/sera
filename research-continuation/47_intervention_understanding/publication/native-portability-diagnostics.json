@@ -1,0 +1,36 @@
+{
+  "scope": "Visible current-interface replay diagnostics in completed native Linux job; other comparisons used the unchanged strict comparison. The full job passed.",
+  "run": "https://github.com/Arnav123-s/sera/actions/runs/35414873944",
+  "job": 105821417516,
+  "raw_log": "github-job-105821417516.log",
+  "raw_log_sha256": "934f5c7ffa13aca65c2be327bdb07741cb6b756ab151127ab1a0131063666e9c",
+  "fallback_records": [
+    {
+      "qualification_portability": true,
+      "subject": "pulse_loss-47106-passive",
+      "same_scientific_decisions": true,
+      "independent_refit_probability_difference": 1.0978373765624383e-09,
+      "differing_fields": [
+        {
+          "path": "/independent_fit/message",
+          "saved": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+          "replayed": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "path": "/independent_fit/max_prediction_difference",
+          "saved": 2.0801859124119915e-09,
+          "replayed": 9.823485358495532e-10
+        }
+      ]
+    }
+  ],
+  "all_replays_accepted": true,
+  "all_scientific_decisions_unchanged": true,
+  "maximum_independent_refit_probability_difference": 1.0978373765624383e-09,
+  "original_fit_admission_threshold": 0.002,
+  "adapter_prediction_tolerance": 2e-06,
+  "adapter_nll_tolerance": 1e-10,
+  "native_tests_passed": 579,
+  "optional_fixture_skips": 46,
+  "practical_requests": 39
+}

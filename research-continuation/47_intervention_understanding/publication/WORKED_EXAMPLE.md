@@ -20,7 +20,7 @@ These are conditional examples of an unresolved class, not three established phy
 
 ## 2. Choose and check an intervention
 
-The information policy committed twelve further controls before requesting outcomes. It selected histories including:
+For each of twelve further controls, the information policy committed its decision before requesting the corresponding outcome. It selected histories including:
 
 - Eight quarter-second ticks with pulses at boundaries 2, 4 and 6.
 - Sixteen ticks with a pulse at boundary 8.

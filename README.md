@@ -16,6 +16,7 @@ The central idea is to turn experience into something reusable: a learned interp
 |---|---|
 | Run a task with the saved learner | **[Use SERA](docs/START_HERE.md)** |
 | See current results and verification | **[Current status](docs/STATUS.md)** |
+| Follow one question from ambiguity to a checked answer | **[Complete intervention example](research-continuation/47_intervention_understanding/publication/WORKED_EXAMPLE.md)** |
 | Understand the implementation | **[Repository map](docs/REPOSITORY_MAP.md)** |
 | Find a past experiment, checkpoint or failure | **[Research archive](docs/RESEARCH_ARCHIVE.md)** |
 | Understand the intended architecture | [Architecture](research/architecture.md) · [Project direction](research/project-context.md) |

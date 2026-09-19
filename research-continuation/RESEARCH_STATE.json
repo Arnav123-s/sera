@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-19T01:37:10.591865Z",
+  "date": "2026-09-19T02:21:55.010801+00:00",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Intervention-qualified understanding through the current shared owner; v18 W01/W02 complete, publication checks running",
+  "active_direction": "Intervention-qualified understanding through the current shared owner; v18 W01/W02 completed and published",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -173,9 +173,10 @@
     },
     {
       "id": "47-intervention-understanding",
-      "status": "complete_local_audit_publication_pending",
+      "status": "complete_verified_published",
       "evidence": "47_intervention_understanding/report.md",
-      "detail": "144 investigations,48 worlds,40/40 supported information-policy admissions,99.84% original-goal error reduction; actual-owner replay and inherited capabilities preserved"
+      "detail": "144 investigations,48 worlds,40/40 supported information-policy admissions,99.84% original-goal error reduction; actual-owner replay and inherited capabilities preserved",
+      "publication": "47_intervention_understanding/publication/VERIFICATION.md"
     }
   ],
   "preserved_branches": [
@@ -203,7 +204,7 @@
     "authority": "RESOURCE_POLICY.md",
     "keep_awake": "scoped to each owned job"
   },
-  "next_action": "44_solution_portfolios/NEXT_ACTION.md",
+  "next_action": "47_intervention_understanding/report.md#next-executable-research",
   "completed_local_evidence": {
     "geometry_replay": "../runs/generative-memory-GG-P0-001-verification/verification.json",
     "geometry_refit": "../runs/generative-memory-GG-P0-001-refit-resource-v2/verification.json",
@@ -452,33 +453,41 @@
       "local_tests": 532,
       "latest_observed_owner": "91f6c21ffcf80e8aab05ca8eea8e34499a27803cd823aa5a087839ac44957230",
       "publication": "42_composed_discovery/publication/github-run-47.json"
+    },
+    "intervention_understanding": {
+      "report": "47_intervention_understanding/report.md",
+      "audit": "47_intervention_understanding/audit.json",
+      "qualified_supported_worlds": 40,
+      "inherited_tensor_records_retained": 1575,
+      "publication": "47_intervention_understanding/publication/VERIFICATION.md"
     }
   },
-  "latest_continuation": "44_solution_portfolios",
-  "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved.",
-  "latest_user_steering": "Exhaust diverse self-generated answers before independent feedback; complete curiosity with solutions; remove local time allowance and keep the device awake during owned work.",
+  "latest_continuation": "47_intervention_understanding",
+  "source_pins_scope": "Historical audit anchors. A06 began at 0c5d018; A08 began at 29b06a1173bd525e31920c8388f2ab5a8b185ea7. Latest immutable evidence is bound by 19_continuing/release-manifest.json. L10/L11 began at 01e622e; the latest immutable language evidence is bound by 21_grounded_language/release-manifest.json. Earlier pins remain historical anchors. Sparse study began at local 4625d8b; its source packet public-main anchor is historical. Release 22 freezes the new evidence and exact sources while preserving all previous states. Task-transfer release 23 begins at 1848b80; its source/receipt manifests and explicit calibration-scope migration bind the new evidence. V5 integration release 24 begins at b48f58c. Its final source archive includes the closing navigation state; the initial seal, scientific evidence and trained artifacts remain separately preserved. Current v18 integration starts from local 54e64945; Stage 47 release-manifest.json pins scientific sources and publication/portability-contract.json pins the additive platform restoration adapter. latest_publication and latest_usable_owner identify the current verified successor.",
+  "latest_user_steering": "Preserve actual newer lineage; distinguish omitted and unread measurements, observational equivalence and actual intervention success; acquire, independently qualify, revise and return to the original goal through the continuing owner.",
   "publication_hardening": "28_concept_refinement/publication-hardening/qualified-local-verification.json",
   "latest_publication": {
-    "implementation": "497139252dd2da670e85727f9ce78137b2e076b0",
-    "run": "https://github.com/Arnav123-s/sera/actions/runs/35389534369",
+    "implementation": "94fb2d9e98a4cc92ea68c9a16617e8a4124be97f",
+    "scientific_implementation": "e9b4cf2760b93afafd23d93005b104c715a981e4",
+    "run": "https://github.com/Arnav123-s/sera/actions/runs/35414873944",
     "conclusion": "success",
     "platforms": {
       "windows": {
-        "passed": 513,
+        "passed": 580,
         "skipped": 45
       },
       "linux": {
-        "passed": 512,
+        "passed": 579,
         "skipped": 46
       }
     },
-    "local_tests": 558,
-    "local_full_regression": 554,
-    "subsequent_targeted_tests": 4,
+    "local_tests": 625,
+    "local_full_regression": 613,
+    "subsequent_targeted_tests": 12,
     "local_skips": 0,
-    "receipt": "44_solution_portfolios/publication/github-run-51.json",
-    "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-solutions",
-    "archive_sha256": "330923373a88ce95d15ac6a970b025454949403f0349d43773941cbd0a7f9384",
+    "receipt": "47_intervention_understanding/publication/github-run-54.json",
+    "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-interventions",
+    "archive_sha256": "150ea830fa57f8ee3cf44550c6943a92b5d28d74a556d96d7143e5002e02de4f",
     "archive_parts": 1
   },
   "resource_balance_at_publication": {
@@ -515,18 +524,19 @@
     }
   ],
   "latest_usable_owner": {
-    "store": "runs/sera-structural-live",
-    "owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
-    "report": "46_structural_refinement/report.md",
+    "store": "runs/sera-intervention-live",
+    "owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+    "report": "47_intervention_understanding/report.md",
     "entry_point": "scripts.sera_current",
     "solutions": 217,
     "counterfactual_questions": 228,
     "compact_rules": 16,
     "physical_subjects": 72,
-    "retained_practical_tasks": 29,
-    "practical_example_batch": 33,
+    "retained_practical_tasks": 33,
+    "practical_example_batch": 39,
     "publication_pending": false,
-    "status": "complete_verified_published"
+    "status": "complete_verified_published",
+    "intervention_subjects": 144
   },
   "publication_history": [
     {
@@ -568,6 +578,29 @@
       "receipt": "46_structural_refinement/publication/github-run-52.json",
       "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-structural",
       "previous_stage_release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-counterfactual"
+    },
+    {
+      "implementation": "497139252dd2da670e85727f9ce78137b2e076b0",
+      "run": "https://github.com/Arnav123-s/sera/actions/runs/35389534369",
+      "conclusion": "success",
+      "platforms": {
+        "windows": {
+          "passed": 513,
+          "skipped": 45
+        },
+        "linux": {
+          "passed": 512,
+          "skipped": 46
+        }
+      },
+      "local_tests": 558,
+      "local_full_regression": 554,
+      "subsequent_targeted_tests": 4,
+      "local_skips": 0,
+      "receipt": "44_solution_portfolios/publication/github-run-51.json",
+      "release": "https://github.com/Arnav123-s/sera/releases/tag/research-2026-09-18-solutions",
+      "archive_sha256": "330923373a88ce95d15ac6a970b025454949403f0349d43773941cbd0a7f9384",
+      "archive_parts": 1
     }
   ],
   "knowledge_gap_inquiry": {
@@ -660,7 +693,7 @@
     "implementation": "a93293d2be171d9ab40e24d50684ded37babe72d"
   },
   "intervention_understanding": {
-    "status": "published_platform_portability_verification",
+    "status": "complete_verified_published",
     "owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
     "store": "runs/sera-intervention-live",
     "baseline_head": "54e64945f3de4280387cfba5fa296225a568ccd3",
@@ -676,13 +709,31 @@
     "final_predictions": 10224,
     "integration_gate": true,
     "exact_interrupt_resume": true,
-    "next_action": "Verify the additive restoration adapter on both platforms; preserve the unchanged scientific release and all failed publication evidence",
+    "next_action": "Preserve sealed evaluations; qualify model-family acquisition and language binding with a fresh prospective protocol and final cohort",
     "owned_job": null,
     "local_regression_passed": 613,
     "practical_batch_passed": 39,
-    "implementation": "e9b4cf2760b93afafd23d93005b104c715a981e4",
+    "implementation": "94fb2d9e98a4cc92ea68c9a16617e8a4124be97f",
     "publication": "47_intervention_understanding/publication/VERIFICATION.md",
-    "publication_run": "https://github.com/Arnav123-s/sera/actions/runs/35413935752",
-    "portability_contract": "47_intervention_understanding/publication/portability-contract.json"
-  }
+    "publication_run": "https://github.com/Arnav123-s/sera/actions/runs/35414873944",
+    "portability_contract": "47_intervention_understanding/publication/portability-contract.json",
+    "scientific_implementation": "e9b4cf2760b93afafd23d93005b104c715a981e4",
+    "portability_tests_passed": 12
+  },
+  "preserved_usable_owners": [
+    {
+      "store": "runs/sera-structural-live",
+      "owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+      "report": "46_structural_refinement/report.md",
+      "entry_point": "scripts.sera_current",
+      "solutions": 217,
+      "counterfactual_questions": 228,
+      "compact_rules": 16,
+      "physical_subjects": 72,
+      "retained_practical_tasks": 29,
+      "practical_example_batch": 33,
+      "publication_pending": false,
+      "status": "complete_verified_published"
+    }
+  ]
 }
