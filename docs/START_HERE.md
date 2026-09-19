@@ -1,6 +1,6 @@
 # Use SERA
 
-The [continuing learner](../research-continuation/46_structural_refinement/README.md) retains language, reading, mathematics, physical meanings and checked discoveries in one owner. Its current interface predicts from acquired physical models, compares controls, explains model selection and runs the earlier counterfactual and practical tasks. Every predecessor store remains available.
+The [continuing learner](../research-continuation/47_intervention_understanding/README.md) retains language, reading, mathematics, physical meanings and checked discoveries in one owner. It acquires temporal models, compares monitored interventions, explains supporting evidence and runs the earlier physical, counterfactual and practical tasks. Every predecessor store remains available.
 
 [Home](../README.md) · [Status](STATUS.md) · [Repository map](REPOSITORY_MAP.md) · [Archive](RESEARCH_ARCHIVE.md)
 
@@ -9,10 +9,10 @@ These commands use the prepared workspace at `D:/ai/projects/sera`, its environm
 ## Run several tasks through the continuing learner
 
 ```powershell
-.venv/Scripts/python.exe scripts/run_structural_persistent.py --output runs/my-current-batch-001 --module scripts.sera_current -- --input research-continuation/46_structural_refinement/example-tasks.json --output runs/my-current-results-001.json
+.venv/Scripts/python.exe scripts/run_intervention_persistent.py --output runs/my-current-batch-001 --module scripts.intervention_use -- --input research-continuation/47_intervention_understanding/example-tasks.json --output runs/my-current-results-001.json
 ```
 
-The 33-task batch starts with an acquired force prediction, an imagined trajectory, a target-directed control comparison and an explanation of the supporting evidence. It then executes the preserved counterfactual, solution, mathematical and four-language requests. Copy the JSON and edit the task inputs to use it. [Physical task fields and a worked result](../research-continuation/46_structural_refinement/README.md) · [Full results](../research-continuation/46_structural_refinement/report.md).
+The 39-task batch starts with learned intervention predictions, alternative control histories, explanations and a check of actual pulse execution. It then runs the retained physical models, counterfactuals, solution portfolios, mathematics and four-language requests. Copy the JSON and edit the inputs. [Request fields and a worked example](../research-continuation/47_intervention_understanding/README.md) · [Full results](../research-continuation/47_intervention_understanding/report.md).
 
 For a fresh checkout, follow the [environment setup](REPOSITORY_MAP.md#setup-and-verification), then run `python scripts/restore_current.py`. On Linux use `.venv/bin/python -m scripts.sera_current --input ... --output ...` with the same task JSON. Restoration verifies every predecessor and preserves divergent local work.
 

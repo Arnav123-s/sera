@@ -6,6 +6,7 @@ Completed work, checkpoints and unsuccessful candidates remain preserved. Curren
 
 | Stages | Topic | Starting point |
 |---|---|---|
+| 47 | Acquired temporal mechanisms, monitored interventions, preserved ambiguity and return to the original question | [Use it](../research-continuation/47_intervention_understanding/README.md) · [Results](../research-continuation/47_intervention_understanding/report.md) · [Owner audit](../research-continuation/47_intervention_understanding/audit.json) |
 | 46 | Physical model acquisition, qualified symmetry relaxation and goal-conditioned imagination through the continuing owner | [Use it](../research-continuation/46_structural_refinement/README.md) · [Results](../research-continuation/46_structural_refinement/report.md) · [Owner audit](../research-continuation/46_structural_refinement/audit.json) |
 | 45 | Counterfactual questions, evidence-selected follow-ups, mechanism expansion and compact response rules | [Use it](../research-continuation/45_counterfactual_inquiry/README.md) · [Results](../research-continuation/45_counterfactual_inquiry/report.md) · [Architecture](../research-continuation/45_counterfactual_inquiry/ARCHITECTURE.md) |
 | 44 | Complete self-chosen questions, retain proved solution portfolios, correct novelty credit and reinforce verified progress | [Use it](../research-continuation/44_solution_portfolios/README.md) · [Results](../research-continuation/44_solution_portfolios/report.md) · [Lifecycle audit](../research-continuation/44_solution_portfolios/runtime-audit.json) |

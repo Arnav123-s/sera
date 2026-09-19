@@ -1,0 +1,124 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\scripts\intervention_study.py", line 210, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\intervention_study.py", line 206, in main
+    run(a.action, a.run_name or a.action)
+  File "D:\ai\projects\sera\scripts\intervention_study.py", line 158, in run
+    parent, growth = restore_parent()
+                     ^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\structural_study.py", line 123, in restore
+    parent, growth = restore_parent()
+                     ^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\counterfactual_live.py", line 23, in restore
+    session, growth = restore_qualified()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\counterfactual_qualification.py", line 48, in restore
+    base, growth = restore_parent()
+                   ^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\solution_use.py", line 31, in restore
+    original, growth = restore(state["parent_store"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\solution_use.py", line 35, in restore
+    base, growth = gap_restore()
+                   ^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\portable_gap_use.py", line 11, in restore
+    return gap_use.restore()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\gap_use.py", line 24, in restore
+    session = GapSession(parent, stored["state"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\gap_inquiry.py", line 165, in __init__
+    self.base = ObservationSession(parent["parent"], parent["evidence"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\discovery_observation.py", line 112, in __init__
+    self.base = FrontierSession(parent["parent"], saved=decode(parent["state"]))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\discovery_frontier.py", line 203, in __init__
+    super().__init__(parent["parent"], saved=decode(parent["state"]))
+  File "D:\ai\projects\sera\experiments\self_chosen\runtime.py", line 99, in __init__
+    self.base = GrowthSession(parent["parent"], saved=decode(parent["state"]))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\continuing_growth\runtime.py", line 19, in __init__
+    self.base = AcquisitionSession(saved=parent)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\acquire.py", line 77, in __init__
+    self.base = AutonomousSession(saved=self.parent)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\autonomous_discovery\runtime.py", line 69, in __init__
+    self.base = DiscoverySession(saved=self.parent_record)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\operator_discovery\runtime.py", line 33, in __init__
+    self.base = LiveSession(self.parent_record)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\learning_progress\bridge.py", line 24, in __init__
+    super().__init__(saved=saved)
+  File "D:\ai\projects\sera\experiments\learning_progress\runtime.py", line 72, in __init__
+    self.base = QuestSession(self.parent_record)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\quest_portfolio\runtime.py", line 49, in __init__
+    self.base = CompletionSession(saved["base"] if saved else parent)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\verified_completion\runtime.py", line 26, in __init__
+    self.grounded = GroundedSession(self.parent)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\book_learning\runtime.py", line 44, in __init__
+    previous = restore_books()
+               ^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\book_learning\ground_model.py", line 23, in restore_books
+    session = ReadingSession()
+              ^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\human_reading\runtime.py", line 86, in __init__
+    self.base = parent()
+                ^^^^^^^^
+  File "D:\ai\projects\sera\experiments\human_reading\model.py", line 169, in parent
+    return RefinementSession(read(OUT / "parent-empirical.json"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\concept_refinement\runtime.py", line 148, in __init__
+    self.study = restore_parent()
+                 ^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\concept_refinement\common.py", line 45, in restore_parent
+    return StudySession(saved["parent"], saved)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\self_study\runtime.py", line 56, in __init__
+    self.base = RequestSession(parent["checkpoint"], parent)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\stream_curriculum\runtime.py", line 41, in __init__
+    self.base = load_parent()
+                ^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\stream_curriculum\study.py", line 23, in load_parent
+    return ConstraintRuntime(record["checkpoint"], record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\constraint_inquiry\runtime.py", line 98, in __init__
+    self.base = ParentRuntime(self.parent_record["checkpoint"], self.parent_record)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\language_inquiry\runtime.py", line 32, in __init__
+    self.session, self.fit = restore_fit(path)
+                             ^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\language_inquiry\study.py", line 62, in restore_fit
+    session = base(bundle)
+              ^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\language_inquiry\study.py", line 55, in base
+    return TaskSession(copy.deepcopy(bundle["workbench"]), copy.deepcopy(bundle["tasks"]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\experiments\task_transfer\runtime.py", line 95, in __init__
+    self.learner = Learner(copy.deepcopy(parent))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\workbench\model.py", line 63, in __init__
+    self.solver = parent()
+                  ^^^^^^^^
+  File "D:\ai\projects\sera\experiments\continuing_control\study.py", line 46, in parent
+    solver = ReadOnlyStore(ROOT/record["store"]).load()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\src\sera\solver.py", line 222, in load
+    module = restore_component(component["config"], components)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\src\sera\connected.py", line 32, in restore_component
+    return GenerativeSharedR1(**settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\src\sera\generative.py", line 83, in __init__
+    self._initialize_generator(generator_noise, generator_prior_variance, generator_grammar,
+  File "D:\ai\projects\sera\src\sera\generative.py", line 92, in _initialize_generator
+    raise ValueError("Generator grammar or complete interpreter fingerprint changed")
+ValueError: Generator grammar or complete interpreter fingerprint changed

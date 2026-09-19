@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "argv": [
+    "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "ruff",
+    "check",
+    "--fix",
+    "experiments/intervention_assess.py",
+    "experiments/intervention_controls.py",
+    "experiments/intervention_events.py",
+    "experiments/intervention_model.py",
+    "experiments/intervention_source.py",
+    "scripts/intervention_checks.py",
+    "scripts/intervention_study.py",
+    "scripts/intervention_use.py",
+    "scripts/intervention_packet.py",
+    "scripts/intervention_packet_diagnosis.py",
+    "scripts/intervention_packet_portable.py",
+    "scripts/intervention_packet_tail.py",
+    "scripts/run_intervention_persistent.py",
+    "tests/test_intervention.py"
+  ],
+  "time_limit_seconds": null,
+  "charged_seconds": 0.18988040002295747,
+  "memory_limit_bytes": 2147483648,
+  "worker_threads": 1,
+  "peak_job_committed_bytes": 87666688,
+  "peak_process_committed_bytes": 78991360,
+  "observed_process_ids": [
+    8752
+  ],
+  "runner_sha256": "abab158e3748fdf1b3af57f67e60fbb802e6e399f49b9170b4534b12f1df5a84",
+  "windows_awake_requested": true,
+  "child_pid": 8752,
+  "returncode": 0,
+  "wake_request_released": true
+}

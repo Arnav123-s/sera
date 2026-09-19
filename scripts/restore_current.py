@@ -27,6 +27,7 @@ def main():
         ["-m", "scripts.solution_artifacts", "--restore"],
         ["-m", "scripts.counterfactual_artifacts", "--restore"],
         ["-m", "scripts.structural_artifacts", "--restore"],
+        ["-m", "scripts.intervention_artifacts", "--restore"],
     ]
     environment = {**os.environ, "OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1",
                    "MKL_NUM_THREADS": "1", "NUMEXPR_NUM_THREADS": "1"}

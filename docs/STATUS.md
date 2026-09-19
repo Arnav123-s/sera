@@ -1,8 +1,14 @@
 # Current status
 
-## Current learner: qualified physical refinement
+## Current learner: intervention-qualified understanding
 
-The current local owner is **`runs/sera-structural-live`**, available through **`scripts/sera_current.py`**. It acquires force coefficients, checks whether its initial physical description needs refinement, predicts conditional motion, compares controls against a target and explains the supporting evidence. [Run the 33-task batch](../research-continuation/46_structural_refinement/README.md) · [Measured report](../research-continuation/46_structural_refinement/report.md) · [Independent audit](../research-continuation/46_structural_refinement/audit.json).
+The current owner is **`runs/sera-intervention-live`**, available through **`scripts/sera_current.py`**. It retains observationally equivalent explanations, learns from monitored interventions and returns a qualified prediction to the original question. [Run the 39-task batch](../research-continuation/47_intervention_understanding/README.md) · [Report](../research-continuation/47_intervention_understanding/report.md) · [Independent audit](../research-continuation/47_intervention_understanding/audit.json).
+
+The frozen study completed **144 investigations across 48 simulated worlds**. The information policy qualified **40/40 supported worlds**, selected the pulse-loss refinement in **8/8** relevant worlds and retained open obligations in **8/8** omitted-mechanism worlds. Original-question mean squared error fell **99.84%**. Replay preserved **1,575 inherited tensor records, 217 routes, 33 practical outputs, 26 taught meanings and corrected reward history**, with exact interruption and restoration. [Complete comparisons and preserved failures](../research-continuation/47_intervention_understanding/analysis.json).
+
+## Preserved physical refinement
+
+The preserved local owner is **`runs/sera-structural-live`**, available through **`python -m scripts.structural_use`**. It acquires force coefficients, checks whether its initial physical description needs refinement, predicts conditional motion, compares controls against a target and explains the supporting evidence. [Run the 33-task batch](../research-continuation/46_structural_refinement/README.md) · [Measured report](../research-continuation/46_structural_refinement/report.md) · [Independent audit](../research-continuation/46_structural_refinement/audit.json).
 
 The frozen study completed **72 paired investigations across 36 simulated worlds**. All twelve directional worlds qualified a direction-dependent model; all twelve radial worlds retained the simpler model; all twelve omitted-mechanism worlds stayed open with their alternatives preserved. Directional acceleration MSE fell from **0.806441 to 0.000010887**, matching strong independent least squares. The current R1 readout, extra-data and balanced controls remain in the report.
 

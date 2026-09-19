@@ -25,6 +25,7 @@ The central idea is to turn experience into something reusable: a learned interp
 
 | Capability | Use it | Measured evidence |
 |---|---|---|
+| Acquire a model, test a distinguishing intervention and return to the original question | [Intervention understanding](research-continuation/47_intervention_understanding/README.md) | [48 worlds, 144 investigations and independent owner replay](research-continuation/47_intervention_understanding/report.md) |
 | Acquire a physical model, refine its assumptions, imagine motion and compare controls | [Physical refinement](research-continuation/46_structural_refinement/README.md) | [36 worlds, 72 investigations and complete retained-owner replay](research-continuation/46_structural_refinement/report.md) |
 | Ask what changes, distinguish competing explanations and retain compact response rules | [Counterfactual investigations](research-continuation/45_counterfactual_inquiry/README.md) | [Full prospective study and owner verification](research-continuation/45_counterfactual_inquiry/report.md) |
 | Complete self-chosen questions with multiple proved answers and learn from verified progress | [Solution portfolios](research-continuation/44_solution_portfolios/README.md) | [217 routes, 58 newly executable questions and 27,263 correct reference answers](research-continuation/44_solution_portfolios/report.md) |
@@ -74,6 +75,8 @@ flowchart TD
 The current integration is in [`experiments/`](docs/REPOSITORY_MAP.md); its reusable core is in [`src/sera/`](src/sera/). The [research archive](docs/RESEARCH_ARCHIVE.md) traces the successive implementations and their results.
 
 ### Learning through self-chosen investigations
+
+The intervention extension keeps alternative explanations when passive observations fit the same curve. SERA selects a distinguishing control, learns executable temporal weights from independent outcomes, checks which requested pulses actually occurred, and returns to its saved question. Its answer carries the learned prediction, assumptions, alternatives and independent adequacy check. The final information-policy study qualified all 40 supported worlds, with a **99.84% reduction in original-question squared error**, while preserving all 1,575 inherited tensor records and 33 practical task outputs. [Engineering, controls and full results](research-continuation/47_intervention_understanding/report.md).
 
 The physical-model extension retains a prediction task while SERA chooses distinguishing observations, fits competing descriptions and checks them on separate evidence. Useful direction-dependent force coefficients become executable weights on the same owner. A versioned view supports what-if prediction, fixed-mechanism trajectories, finite control planning and evidence-ranked explanation. The final study preserved all 855 earlier tensor records and 217 solution routes. [Physical-model engineering and measured results](research-continuation/46_structural_refinement/report.md).
 

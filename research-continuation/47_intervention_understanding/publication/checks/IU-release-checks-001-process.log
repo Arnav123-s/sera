@@ -1,0 +1,11 @@
+{'name': 'lint', 'command': ['-m', 'ruff', 'check', 'src', 'tests', 'scripts', 'experiments'], 'returncode': 0, 'seconds': 0.1392702999874018}
+{'name': 'regression', 'command': ['-m', 'pytest', '--junitxml', 'runs\\IU-verification-001\\junit.xml'], 'returncode': 0, 'seconds': 643.955405900022}
+{'name': 'verify_release', 'command': ['scripts/verify_release.py'], 'returncode': 0, 'seconds': 6.2115144999697804}
+{'name': 'verify_continuation', 'command': ['scripts/verify_continuation.py'], 'returncode': 0, 'seconds': 0.912365399999544}
+{'name': 'verify_applicability', 'command': ['scripts/verify_applicability.py'], 'returncode': 0, 'seconds': 2.2210646999883465}
+{'name': 'verify_v3_release', 'command': ['scripts/verify_v3_release.py'], 'returncode': 0, 'seconds': 0.21421730000292882}
+{'name': 'verify_transfer_release', 'command': ['scripts/verify_transfer_release.py'], 'returncode': 0, 'seconds': 0.5796265000244603}
+{'name': 'verify_continuing_release', 'command': ['scripts/verify_continuing_release.py'], 'returncode': 0, 'seconds': 0.3342968999641016}
+{'name': 'verify_concept_release', 'command': ['scripts/verify_concept_release.py'], 'returncode': 0, 'seconds': 0.7678242999827489}
+{'name': 'cli', 'command': ['-m', 'sera', '--help'], 'returncode': 0, 'seconds': 2.1834972000215203}
+{'name': 'current_examples', 'command': ['scripts/sera_current.py', '--input', 'D:\\ai\\projects\\sera\\research-continuation\\47_intervention_understanding\\example-tasks.json', '--output', 'runs\\IU-verification-001\\example-results.json'], 'returncode': 0, 'seconds': 54.66439759999048}

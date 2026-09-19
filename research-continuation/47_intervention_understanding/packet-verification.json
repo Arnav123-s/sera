@@ -1,0 +1,44 @@
+{
+  "scope": "Relevant v18 saved evidence replayed once; v17 source integrity and retained-obligation unit contracts checked. Original packets unchanged.",
+  "v18_archive_sha256": "cc94d6f6a829fedb0b13254aa6a7ff66afb4bbdbab48c488b6cbd863b1ddb26d",
+  "v17_archive_sha256": "12323884ba39ffca90537edb89ec33a86cd29fee24bde7109dcb0830162566e1",
+  "manifest_entries": {"v18": 423, "v17": 177},
+  "original_tests_passed": {"v18": 47, "v17": 50},
+  "portable_replay": {
+    "temporal_models": 48,
+    "refinement_models": 12,
+    "active_intervention_episodes": 1280,
+    "all_intervention_choices_and_counts_exact": true,
+    "pulse_extension_models": 256,
+    "pulse_extension_worlds": 128,
+    "pulse_extension_max_prediction_difference": 1.1102230246251565e-16,
+    "classical_refits": 12,
+    "classical_original_1e_minus_12_tolerance_met": true,
+    "physics_sections": 7,
+    "physics_all_within_1e_minus_12": true
+  },
+  "preserved_strict_failures": [
+    {
+      "attempt": "runs/IU-packet-001",
+      "finding": "Original exact regenerated-array equality assertion failed in operators.",
+      "diagnosis": "Across 576 arrays, controls and analytic probabilities differ by at most 2.220446049250313e-16. Six of 256 regenerated training outcome draws differ for nonstationary seed18103 (copied across the four architecture archives), with maximum fraction difference22/512. All archived outcomes remain unchanged and on the512-shot grid.",
+      "evidence": "runs/IU-v18-verification/regeneration-diagnosis.json"
+    },
+    {
+      "attempt": "runs/IU-packet-portable-001",
+      "finding": "The first portability audit treated changed binomial draws as last-bit differences. It correctly stopped; the diagnosis above distinguishes them.",
+      "repair": "Validate regenerated controls/probabilities separately; replay fitted weights on the original archived training and assessment outcomes. No replacement draws used."
+    },
+    {
+      "attempt": "runs/IU-packet-portable-002",
+      "finding": "Original1e-8 coefficient-refit assertion failed in the pulse extension verifier after four other replay sections passed.",
+      "scope": "The separate archived-weight prediction/selection replay passes for all256 fitted models. This does not assert that the stricter optimizer-refit assertion passed."
+    }
+  ],
+  "receipts": [
+    "runs/IU-v18-verification/strict",
+    "runs/IU-v18-verification/portable-002",
+    "runs/IU-v18-verification/remaining"
+  ],
+  "costs": "publication/costs.json"
+}

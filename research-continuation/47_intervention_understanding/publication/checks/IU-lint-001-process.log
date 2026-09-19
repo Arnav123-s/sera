@@ -1,0 +1,35 @@
+E402 Module level import not at top of file
+  --> scripts\intervention_packet_diagnosis.py:12:1
+   |
+10 | PACKET = ROOT / "research/intake/v18-understanding/SERA_v18"
+11 | sys.path.insert(0, str(PACKET / "src"))
+12 | from core import FAMILIES, SEEDS, dataset
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 |
+14 | rows = []
+   |
+help: Move module level imports to top of file
+
+E402 Module level import not at top of file
+  --> scripts\intervention_packet_tail.py:18:1
+   |
+16 | sys.path.insert(0, str(ROOT))
+17 | sys.path.insert(0, str(PACKET / "src"))
+18 | from scripts.intervention_packet_portable import equal_values
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: Move module level imports to top of file
+
+E731 Do not assign a `lambda` expression, use a `def`
+  --> scripts\intervention_packet_tail.py:43:13
+   |
+41 | … for arm, width in (("base", 2), ("extended", 3)):
+42 | …     weights = np.array(row["fits"][arm]["w"])
+43 | …     predict = lambda actions: np.array([.5+.5*np.exp(-sum(w*v for w, v in zip(weights, [a["duration"], abs(a["area"]), a["flips"]][:width]))) for a in actions])
+   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+44 | …     p = predict(row["test_actions"])
+45 | …     difference = float(np.max(abs(p-row["fits"][arm]["prediction"])))
+   |
+help: Rewrite `predict` as a `def`
+
+Found 4 errors (1 fixed, 3 remaining).
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

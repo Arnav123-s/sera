@@ -1,0 +1,9 @@
+I connected acquired temporal models and checked interventions to SERA's current learner. The saved system retains alternative explanations, monitors whether a requested pulse actually occurred, learns from independent outcomes, and returns a qualified answer to the original question.
+
+The frozen study completed 144 investigations across 48 simulated worlds. The information policy qualified all 40 supported worlds, selected a pulse-loss refinement in all eight relevant worlds, and preserved open obligations in all eight omitted-mechanism worlds. Mean squared error on the original question fell 99.84% across supported worlds. The report retains the balanced control's false admission and supported rejection, along with all other comparisons.
+
+Independent replay preserved all 1,575 inherited tensor records, 217 routes, 33 practical task outputs, 26 taught meanings and the corrected reward history. The successor adds 720 fitted coefficients and supports a 39-task example batch. Its source gate, exact mathematics, languages and previous physical models remain available.
+
+The artifact contains full acquired records, original-goal state, alternative weights, failed attempts, packet source, independent replay and resumable checkpoints. Archive and member hashes are in the release manifest. The supplied mechanism forms and fixed policies are documented separately from the coefficients SERA learned from simulated outcomes.
+
+[Usage](https://github.com/Arnav123-s/sera/blob/main/research-continuation/47_intervention_understanding/README.md) · [Results](https://github.com/Arnav123-s/sera/blob/main/research-continuation/47_intervention_understanding/report.md) · [Architecture audit](https://github.com/Arnav123-s/sera/blob/main/research-continuation/47_intervention_understanding/architecture-audit.md)

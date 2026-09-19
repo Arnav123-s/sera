@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\ai\projects\sera\scripts\intervention_packet_portable.py", line 174, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\intervention_packet_portable.py", line 165, in main
+    result = function()
+             ^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\intervention_packet_portable.py", line 143, in <lambda>
+    jobs = {"dataset_portability": lambda: audit_datasets(verifier), "operators": verifier.operators,
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ai\projects\sera\scripts\intervention_packet_portable.py", line 73, in audit_datasets
+    raise ValueError("Dataset discrepancy exceeds the separate portability bound")
+ValueError: Dataset discrepancy exceeds the separate portability bound
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\scripts\intervention_packet.py", line 30, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\intervention_packet.py", line 26, in main
+    subprocess.run(command, cwd=ROOT, env=environment, check=True)
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe', '-X', 'utf8', 'D:\\ai\\projects\\sera\\scripts\\intervention_packet_portable.py', '--output', 'D:\\ai\\projects\\sera\\runs\\IU-v18-verification\\portable']' returned non-zero exit status 1.

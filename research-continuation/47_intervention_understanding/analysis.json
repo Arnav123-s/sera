@@ -1,0 +1,463 @@
+{
+  "distinct_worlds": 48,
+  "episodes": 144,
+  "supported_information_worlds": 40,
+  "qualified_supported_information_worlds": 40,
+  "original_initial_mse": 0.01291411421521188,
+  "original_final_mse": 2.030408546786527e-05,
+  "original_error_reduction_percent": 99.84277601135084,
+  "supported_final_mse": 1.4288801430241172e-05,
+  "supported_control_mse": {
+    "initial_passive": 0.00435588463448975,
+    "classical_temporal": 0.0002355079542901227,
+    "classical_pulse_loss": 1.7096074369038184e-05,
+    "classical_selection": 1.615932140270501e-05,
+    "trust_command": 0.00021994979134068058,
+    "current_r1_readout": 0.01612408981177208,
+    "current_r2_fitted": 0.005194554328610647
+  },
+  "final_unseen_programs_per_world": 71,
+  "final_distinct_world_programs": 3408,
+  "final_prediction_exposures": 10224,
+  "wide_prediction_exposures": 2160,
+  "all_false_admissions": [
+    "omitted-47102-balanced"
+  ],
+  "supported_rejections": [
+    "pulse_loss-47102-balanced"
+  ],
+  "returned_answers": [
+    {
+      "subject": "markov-47101-information",
+      "initial_probability": 0.74713692807579,
+      "returned_probability": 0.6174801514160557,
+      "independent_expectation": 0.6167523600862209,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47102-information",
+      "initial_probability": 0.8037199990164766,
+      "returned_probability": 0.6867879536231077,
+      "independent_expectation": 0.6877397959930066,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47103-information",
+      "initial_probability": 0.7351326238593637,
+      "returned_probability": 0.6163057652719868,
+      "independent_expectation": 0.6154701627927724,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47104-information",
+      "initial_probability": 0.7909786193020283,
+      "returned_probability": 0.6702342134392156,
+      "independent_expectation": 0.6692753685819095,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47105-information",
+      "initial_probability": 0.8224951811857413,
+      "returned_probability": 0.7048487612458993,
+      "independent_expectation": 0.701928718955042,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47106-information",
+      "initial_probability": 0.742932737852572,
+      "returned_probability": 0.6218479533603614,
+      "independent_expectation": 0.6199830765824715,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47107-information",
+      "initial_probability": 0.7883131258561691,
+      "returned_probability": 0.6636534838081057,
+      "independent_expectation": 0.6639017501726876,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "markov-47108-information",
+      "initial_probability": 0.8125441325004986,
+      "returned_probability": 0.6968999832937585,
+      "independent_expectation": 0.6922243077871244,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47101-information",
+      "initial_probability": 0.775970049141147,
+      "returned_probability": 0.8157400390517597,
+      "independent_expectation": 0.8187460898922974,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47102-information",
+      "initial_probability": 0.7305520370152185,
+      "returned_probability": 0.7492193027508871,
+      "independent_expectation": 0.7434327326535118,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47103-information",
+      "initial_probability": 0.7971614616445232,
+      "returned_probability": 0.8323493244765219,
+      "independent_expectation": 0.8337405412574563,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47104-information",
+      "initial_probability": 0.7770582761471231,
+      "returned_probability": 0.7836124880324218,
+      "independent_expectation": 0.7862493671438118,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47105-information",
+      "initial_probability": 0.7913669851905195,
+      "returned_probability": 0.8034484707486791,
+      "independent_expectation": 0.8041562522465772,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47106-information",
+      "initial_probability": 0.7533138094495623,
+      "returned_probability": 0.7693907743738667,
+      "independent_expectation": 0.7698926193480906,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47107-information",
+      "initial_probability": 0.7623741533515153,
+      "returned_probability": 0.7867462791620472,
+      "independent_expectation": 0.7902271019347195,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "mixed-47108-information",
+      "initial_probability": 0.7813210311352357,
+      "returned_probability": 0.8110459944108557,
+      "independent_expectation": 0.8107043237795033,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47101-information",
+      "initial_probability": 0.8121142385394087,
+      "returned_probability": 0.7560457997976768,
+      "independent_expectation": 0.7889542130755004,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47102-information",
+      "initial_probability": 0.7433259474945436,
+      "returned_probability": 0.7370895184044443,
+      "independent_expectation": 0.7503973673194122,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47103-information",
+      "initial_probability": 0.7714483273994727,
+      "returned_probability": 0.7610643580445267,
+      "independent_expectation": 0.7929520146293225,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47104-information",
+      "initial_probability": 0.7468827087511831,
+      "returned_probability": 0.7429926214063971,
+      "independent_expectation": 0.7669668814226458,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47105-information",
+      "initial_probability": 0.7678947367682756,
+      "returned_probability": 0.7460131445668876,
+      "independent_expectation": 0.7706532536335593,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47106-information",
+      "initial_probability": 0.7453207881106263,
+      "returned_probability": 0.7465041908968021,
+      "independent_expectation": 0.7681130266040251,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47107-information",
+      "initial_probability": 0.7533867118141844,
+      "returned_probability": 0.7808417851388965,
+      "independent_expectation": 0.8046606462429442,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "omitted-47108-information",
+      "initial_probability": 0.7385501212096786,
+      "returned_probability": 0.7479566674818701,
+      "independent_expectation": 0.7729062253754461,
+      "accepted": false,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47101-information",
+      "initial_probability": 0.7794590883610157,
+      "returned_probability": 0.7968288032582216,
+      "independent_expectation": 0.7959473089574727,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47102-information",
+      "initial_probability": 0.7633907203807733,
+      "returned_probability": 0.7622823522699556,
+      "independent_expectation": 0.7519157542437653,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47103-information",
+      "initial_probability": 0.766293349180544,
+      "returned_probability": 0.7593712712088662,
+      "independent_expectation": 0.7629258708599269,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47104-information",
+      "initial_probability": 0.751301804439782,
+      "returned_probability": 0.7632514313389128,
+      "independent_expectation": 0.7715778623552213,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47105-information",
+      "initial_probability": 0.7929442717646294,
+      "returned_probability": 0.7578311974469297,
+      "independent_expectation": 0.7672386380349506,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47106-information",
+      "initial_probability": 0.7949408657075817,
+      "returned_probability": 0.8014477137589551,
+      "independent_expectation": 0.8020837221757997,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47107-information",
+      "initial_probability": 0.7404614777647365,
+      "returned_probability": 0.7446637978207449,
+      "independent_expectation": 0.750643325631444,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "pulse_loss-47108-information",
+      "initial_probability": 0.7319367446904095,
+      "returned_probability": 0.7255944022287417,
+      "independent_expectation": 0.7227130752035457,
+      "accepted": true,
+      "selected": "pulse_loss",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47101-information",
+      "initial_probability": 0.7521888416768135,
+      "returned_probability": 0.9999999999932716,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47102-information",
+      "initial_probability": 0.7686668440980142,
+      "returned_probability": 0.9999999999932714,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47103-information",
+      "initial_probability": 0.7909236120047238,
+      "returned_probability": 0.9999999998877489,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47104-information",
+      "initial_probability": 0.754494278350287,
+      "returned_probability": 0.999999999993991,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47105-information",
+      "initial_probability": 0.8079915739447596,
+      "returned_probability": 0.999999999993382,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47106-information",
+      "initial_probability": 0.7733117634607551,
+      "returned_probability": 0.9999999999920006,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47107-information",
+      "initial_probability": 0.7882712169764279,
+      "returned_probability": 0.9999999998941507,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "static-47108-information",
+      "initial_probability": 0.8295821718262224,
+      "returned_probability": 0.999999999883342,
+      "independent_expectation": 1.0,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 1.0
+    },
+    {
+      "subject": "unreliable_pulses-47101-information",
+      "initial_probability": 0.7511580135469962,
+      "returned_probability": 0.7432682237050198,
+      "independent_expectation": 0.7378838335396887,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.5927455357142857
+    },
+    {
+      "subject": "unreliable_pulses-47102-information",
+      "initial_probability": 0.7359706172353307,
+      "returned_probability": 0.7412509004681979,
+      "independent_expectation": 0.7504081959502311,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.36363852896341464
+    },
+    {
+      "subject": "unreliable_pulses-47103-information",
+      "initial_probability": 0.7656646760905516,
+      "returned_probability": 0.7890242565140508,
+      "independent_expectation": 0.7827517355358052,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.5440848214285714
+    },
+    {
+      "subject": "unreliable_pulses-47104-information",
+      "initial_probability": 0.7639209293012756,
+      "returned_probability": 0.8306303851561894,
+      "independent_expectation": 0.8340752774779635,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.3907137784090909
+    },
+    {
+      "subject": "unreliable_pulses-47105-information",
+      "initial_probability": 0.7374563078137374,
+      "returned_probability": 0.748747764540362,
+      "independent_expectation": 0.738797259250751,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.31041370738636365
+    },
+    {
+      "subject": "unreliable_pulses-47106-information",
+      "initial_probability": 0.7689156727816946,
+      "returned_probability": 0.7893532719078382,
+      "independent_expectation": 0.7832351522911569,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.5494977678571429
+    },
+    {
+      "subject": "unreliable_pulses-47107-information",
+      "initial_probability": 0.7606156956184627,
+      "returned_probability": 0.8233258820840232,
+      "independent_expectation": 0.8181374514469388,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.3594933712121212
+    },
+    {
+      "subject": "unreliable_pulses-47108-information",
+      "initial_probability": 0.7525020990463924,
+      "returned_probability": 0.7439581926526069,
+      "independent_expectation": 0.7517167087048592,
+      "accepted": true,
+      "selected": "temporal",
+      "actual_pulse_application_fraction": 0.3132568359375
+    }
+  ]
+}

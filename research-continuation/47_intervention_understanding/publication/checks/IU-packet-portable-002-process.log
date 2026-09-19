@@ -1,0 +1,24 @@
+dataset_portability {'arrays': 576, 'differing_elements_across_archives': 3236, 'max_abs_difference': 2.220446049250313e-16, 'sampled_outcomes_reproduce': False, 'outcome_differences': [{'archive': 'results/operators/nonstationary-18103-gru', 'array': 'train_y', 'differing_elements': 6, 'max_abs_difference': 0.04296875}, {'archive': 'results/operators/nonstationary-18103-memoryless', 'array': 'train_y', 'differing_elements': 6, 'max_abs_difference': 0.04296875}, {'archive': 'results/operators/nonstationary-18103-psd', 'array': 'train_y', 'differing_elements': 6, 'max_abs_difference': 0.04296875}, {'archive': 'results/operators/nonstationary-18103-spectral', 'array': 'train_y', 'differing_elements': 6, 'max_abs_difference': 0.04296875}], 'archived_outcomes_on_declared_512_shot_grid': True, 'control_and_probability_atol': 1e-14, 'rtol': 1e-14, 'operator_replay_inputs': 'Original archived arrays; original prediction/metric tolerances unchanged'}
+operators {'models': 48, 'prediction_arrays': 144, 'independent_max_abs': 2.220446049250313e-16}
+refinement {'models': 12, 'arrays': 24, 'independent_max_abs': 2.220446049250313e-16}
+interventions {'episodes': 1280, 'discrete_decisions_and_counts_exact': True, 'max_record_float_difference': 3.552713678800501e-15, 'independent_posterior_max_abs': 1.7208456881689926e-14}
+Traceback (most recent call last):
+  File "D:\ai\projects\sera\scripts\intervention_packet_portable.py", line 183, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\intervention_packet_portable.py", line 174, in main
+    result = function()
+             ^^^^^^^^^^
+  File "D:\ai\projects\sera\research\intake\v18-understanding\SERA_v18\verify.py", line 85, in expansion_replay
+    maxdiff=max(maxdiff,float(np.max(abs(w-r['fits'][arm]['w']))));assert maxdiff<1e-8;n+=1
+                                                                          ^^^^^^^^^^^^
+AssertionError
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\ai\projects\sera\scripts\intervention_packet.py", line 33, in <module>
+    main()
+  File "D:\ai\projects\sera\scripts\intervention_packet.py", line 29, in main
+    subprocess.run(command, cwd=ROOT, env=environment, check=True)
+  File "C:\Users\admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe', '-X', 'utf8', 'D:\\ai\\projects\\sera\\scripts\\intervention_packet_portable.py', '--output', 'D:\\ai\\projects\\sera\\runs\\IU-v18-verification\\portable-002']' returned non-zero exit status 1.

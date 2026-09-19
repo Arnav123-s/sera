@@ -47,7 +47,7 @@ jobs:
       - run: uv run --no-sync python -m scripts.portable_gap_use --input research-continuation/43_knowledge_gaps/example-tasks.json --output runs/ci-gap-examples.json
       - run: uv run --no-sync python -m scripts.solution_use --read-only --input research-continuation/44_solution_portfolios/example-tasks.json --output runs/ci-solution-examples.json
       - run: uv run --no-sync python -m scripts.counterfactual_live --input research-continuation/45_counterfactual_inquiry/example-tasks.json --output runs/ci-counterfactual-examples.json
-      - run: uv run --no-sync python scripts/sera_current.py --input research-continuation/46_structural_refinement/example-tasks.json --output runs/ci-current-examples.json
+      - run: uv run --no-sync python scripts/sera_current.py --input research-continuation/47_intervention_understanding/example-tasks.json --output runs/ci-current-examples.json
       - run: uv run --no-sync python -m experiments.concept_refinement.replay_diagnostic
       - run: uv run --no-sync python -m pytest
       - run: uv run --no-sync python scripts/verify_release.py

@@ -6,6 +6,7 @@
 |---|---|
 | [`src/sera/`](../src/sera/) | Core model, state, ownership and learning contracts |
 | [`experiments/`](../experiments/) | Registered research implementations |
+| [`experiments/intervention_model.py`](../experiments/intervention_model.py) · [`intervention_events.py`](../experiments/intervention_events.py) · [`intervention_assess.py`](../experiments/intervention_assess.py) | Owner-held temporal weights, explicit measurement meanings, monitored controls and independent qualification |
 | [`experiments/structural_field.py`](../experiments/structural_field.py) · [`structural_inquiry.py`](../experiments/structural_inquiry.py) · [`structural_check.py`](../experiments/structural_check.py) | Owner-held physical weights, committed investigations, independent qualification and versioned conditional views |
 | [`experiments/counterfactual_core.py`](../experiments/counterfactual_core.py) · [`counterfactual_loop.py`](../experiments/counterfactual_loop.py) · [`counterfactual_owner.py`](../experiments/counterfactual_owner.py) | Retained-weight imagination, evidence-selected follow-ups, procedure learning and compact guarded rules |
 | [`experiments/solution_search.py`](../experiments/solution_search.py) · [`solution_owner.py`](../experiments/solution_owner.py) · [`solution_credit.py`](../experiments/solution_credit.py) | Imagined rational proposals, complete question lifecycles and corrected proof rewards on the actual owner |
@@ -43,7 +44,7 @@ python -m venv .venv
 
 On Linux, use `.venv/bin/python`. The [workflow](../.github/workflows/ci.yml) pins the qualified CPU profile. Fixture restoration checks hashes and refuses to overwrite divergent files; it restores test prerequisites without restarting training or replacing live stores.
 
-In the managed research workspace, run current numerical work through `scripts/run_structural_persistent.py` and the resource ledger. It applies the user's unrestricted local-time authorization, one CPU thread, a 2 GiB process-tree memory ceiling and a scoped Windows keep-awake request. Historical bounded supervisors remain preserved. The plain test command documents the clean-checkout entry point used in CI.
+In the managed research workspace, run current numerical work through `scripts/run_intervention_persistent.py` and the resource ledger. It applies the user's unrestricted local-time authorization, one CPU thread, a 2 GiB process-tree memory ceiling and a scoped Windows keep-awake request. Historical bounded supervisors remain preserved. The plain test command documents the clean-checkout entry point used in CI.
 
 ## Review a study
 

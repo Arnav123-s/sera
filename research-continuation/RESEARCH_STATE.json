@@ -1,8 +1,8 @@
 {
   "schema": "sera.research-state.v1",
-  "date": "2026-09-19T00:38:09.674724+00:00",
+  "date": "2026-09-19T01:37:10.591865Z",
   "objective": "A persistent task-driven learner that acquires prerequisite knowledge and skills from grounded evidence, verifies their use, performs the requested task, and improves acquisition; retain recoverable predecessors and measure reacquisition when older capabilities decline.",
-  "active_direction": "Qualified physical model refinement through the actual continuing counterfactual owner",
+  "active_direction": "Intervention-qualified understanding through the current shared owner; v18 W01/W02 complete, publication checks running",
   "source_pins": {
     "sera": "a4047173fd33d27d33d8a151f32613eae343df56",
     "kavi": "50f743cc44794b67bc1d30b927e25991197edce2",
@@ -170,6 +170,12 @@
       "id": "44-PS-001",
       "status": "complete_audited_integrated",
       "report": "44_solution_portfolios/report.md"
+    },
+    {
+      "id": "47-intervention-understanding",
+      "status": "complete_local_audit_publication_pending",
+      "evidence": "47_intervention_understanding/report.md",
+      "detail": "144 investigations,48 worlds,40/40 supported information-policy admissions,99.84% original-goal error reduction; actual-owner replay and inherited capabilities preserved"
     }
   ],
   "preserved_branches": [
@@ -652,5 +658,27 @@
     "practical_batch_passed": 33,
     "publication": "46_structural_refinement/publication/VERIFICATION.md",
     "implementation": "a93293d2be171d9ab40e24d50684ded37babe72d"
+  },
+  "intervention_understanding": {
+    "status": "complete_verified_locally_ready_to_publish",
+    "owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+    "store": "runs/sera-intervention-live",
+    "baseline_head": "54e64945f3de4280387cfba5fa296225a568ccd3",
+    "protocol": "47_intervention_understanding/PROTOCOL.md",
+    "audit": "47_intervention_understanding/audit.json",
+    "retained_tensors": 1575,
+    "retained_routes": 217,
+    "retained_practical_tasks": 33,
+    "taught_meanings": 26,
+    "final_worlds": 48,
+    "investigations": 144,
+    "observed_shot_exposures": 10616832,
+    "final_predictions": 10224,
+    "integration_gate": true,
+    "exact_interrupt_resume": true,
+    "next_action": "Finish publication verification; subsequent model-family acquisition needs a fresh prospective protocol and final cohort",
+    "owned_job": null,
+    "local_regression_passed": 613,
+    "practical_batch_passed": 39
   }
 }

@@ -8,6 +8,8 @@ single aggregate benchmark.
 
 ## Current starting points
 
+- [Use acquired models and checked interventions through the current learner](../research-continuation/47_intervention_understanding/README.md) · [144-investigation report](../research-continuation/47_intervention_understanding/report.md) · [Architecture and preservation audit](../research-continuation/47_intervention_understanding/architecture-audit.md).
+
 The [current navigation hub](../docs/START_HERE.md), [release status](../docs/STATUS.md) and [grouped research archive](../docs/RESEARCH_ARCHIVE.md) identify the latest entry points. The detailed records below remain at their original paths.
 
 - [Use observed-history learning, correction and conditional forecasts](../research-continuation/28_concept_refinement/README.md).
