@@ -1,0 +1,310 @@
+{
+  "schema": "sera.owner-language.calibration.1",
+  "written_utc": "2026-09-19T19:38:45Z",
+  "process": {
+    "schema": "sera.owner-language.process-identity.1",
+    "lab_root": "D:/ai/labs/sera-owner-001",
+    "executable": "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "executable_sha256": "2204195cec25879507d958a8b6949add67091244b8b4da9cf3672f993548fa49",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pid": 6692,
+    "sys_path_head": [
+      "D:\\ai\\labs\\sera-owner-001\\src",
+      "D:\\ai\\labs\\sera-owner-001",
+      "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip",
+      "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs"
+    ],
+    "modules": {
+      "sera": {
+        "file": "D:/ai/labs/sera-owner-001/src/sera/__init__.py",
+        "sha256": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2"
+      },
+      "experiments": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/__init__.py",
+        "sha256": "155d24647c0338dd74310ec4dcd1ba944455d23002a1e2e15de74caec5fbfd3c"
+      },
+      "scripts": {
+        "file": "D:/ai/labs/sera-owner-001/scripts",
+        "sha256": null
+      },
+      "workbench": {
+        "file": "D:/ai/labs/sera-owner-001/workbench/__init__.py",
+        "sha256": "3e3c008d62288d0050424de878828eab9eb10d4f277360adf4bcce708b74b7ee"
+      },
+      "experiments.owner_language.descendant": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/owner_language/descendant.py",
+        "sha256": "604e5ee8865e60c649298bf63e4c15a7e48c7cb9c72f37eeff90268a126eb218"
+      }
+    },
+    "third_party": {
+      "numpy": {
+        "version": "2.5.3",
+        "file": "D:/ai/projects/sera/.venv/Lib/site-packages/numpy/__init__.py"
+      },
+      "torch": {
+        "version": "2.10.0+cpu",
+        "file": "D:/ai/projects/sera/.venv/Lib/site-packages/torch/__init__.py"
+      }
+    }
+  },
+  "arm": "connected",
+  "batch": 8,
+  "length": 64,
+  "adapter_rank": 32,
+  "steps_timed": 20,
+  "median_seconds_per_step": 0.3042514500002653,
+  "mean_seconds_per_step": 0.311223020000034,
+  "steps_per_minute": 197.20530501973838,
+  "tokens_per_step": 512,
+  "trainable": {
+    "trainable_tensors": 9,
+    "trainable_elements": 2663168,
+    "frozen_tensors": 1242,
+    "frozen_elements": 3069776,
+    "trainable": [
+      {
+        "name": "lex_embedding.weight",
+        "shape": [
+          8192,
+          64
+        ],
+        "elements": 524288
+      },
+      {
+        "name": "lex_projection.weight",
+        "shape": [
+          256,
+          64
+        ],
+        "elements": 16384
+      },
+      {
+        "name": "lex_projection.bias",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "lex_norm.weight",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "lex_norm.bias",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "lex_head.weight",
+        "shape": [
+          8192,
+          256
+        ],
+        "elements": 2097152
+      },
+      {
+        "name": "lex_head.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "adapter.0.weight",
+        "shape": [
+          32,
+          256
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "adapter.2.weight",
+        "shape": [
+          256,
+          32
+        ],
+        "elements": 8192
+      }
+    ],
+    "connection": "residual adapter inside SharedR1.shared_step, shared by every recurrent route",
+    "protected_by_construction": [
+      "exact rational mathematics routes (solve_solution, what_if, apply_inquiry_rule)",
+      "fitted physical field weights (field_what_if, field_trajectory, field_plan)",
+      "fitted intervention coefficients (intervention_what_if, intervention_explain, intervention_plan)",
+      "every inherited neural tensor of the shared core"
+    ]
+  },
+  "evaluation_probe_seconds": 1.702810300001147,
+  "evaluation_probe": {
+    "next_token": {
+      "family": "next_token",
+      "status": "MEASURED",
+      "passages": 32,
+      "predicted_tokens": 755,
+      "mean_nll": 6.420817960650716,
+      "perplexity": 614.5055499706855,
+      "batch_failures": [],
+      "failed_batches": 0,
+      "qualifies": true,
+      "seconds": 0.36122570000043197
+    },
+    "cloze": {
+      "family": "cloze",
+      "status": "MEASURED",
+      "questions": 64,
+      "correct": 7,
+      "accuracy": 0.109375,
+      "chance": 0.125,
+      "by_source": {
+        "calculus": {
+          "questions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "grammar": {
+          "questions": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "plato": {
+          "questions": 1,
+          "correct": 1,
+          "accuracy": 1.0
+        },
+        "webster": {
+          "questions": 61,
+          "correct": 6,
+          "accuracy": 0.09836065573770492
+        }
+      },
+      "batch_failures": [],
+      "failed_batches": 0,
+      "qualifies": true,
+      "seconds": 0.5300588999998581
+    },
+    "definition": {
+      "family": "definition",
+      "status": "MEASURED",
+      "questions": 64,
+      "correct": 12,
+      "accuracy": 0.1875,
+      "chance": 0.125,
+      "by_source": {
+        "webster": {
+          "questions": 64,
+          "correct": 12,
+          "accuracy": 0.1875
+        }
+      },
+      "batch_failures": [],
+      "failed_batches": 0,
+      "qualifies": true,
+      "seconds": 0.7724839999991673
+    },
+    "split": "dev",
+    "all_measured": true
+  },
+  "parent_identity": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+  "descendant_identity": "72e6b27e648af4e3a6b7eff418323bc0b4324509c4a67b4342eb0a1afd47d398",
+  "contract": {
+    "parent_owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+    "contracts": {
+      "experiments/intervention_model.py": "8d3821078fa293e57f2655a2ebc0a4bf5780af45e4f207dfbf7b2a1ebd2de6fd",
+      "experiments/intervention_assess.py": "cc9d9c0987ab018ecf997ebc7334f4365945f909e7ec69f4ba433cea5ab04999",
+      "experiments/intervention_events.py": "24291844995cb66605fc1d1b7266f73d14af841cd292d74ff5be18a8aa7e8cc7",
+      "research-continuation/47_intervention_understanding/PROTOCOL.md": "cccb9f154e9c4e4ee682cd238b1cc551d0fcb957663b1e10d535ca74aca843fe"
+    },
+    "schema": "sera.intervention-session.1",
+    "subjects": 144,
+    "baseline_owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+    "pointer": {
+      "revision": "000000-b29d8cccea6a.json",
+      "sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95"
+    }
+  },
+  "supervisor_state": {
+    "schema": "sera.owner-learning.attempt.1",
+    "label": "calibration-001",
+    "status": "PASS",
+    "argv": [
+      "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-u",
+      "-m",
+      "scripts.owner_language_train",
+      "calibrate",
+      "--steps",
+      "20"
+    ],
+    "module": "scripts.owner_language_train",
+    "output": "D:\\ai\\labs\\sera-owner-001\\runs\\owner-learning-001\\attempts\\calibration-001",
+    "started_utc": "2026-09-19T19:37:52Z",
+    "memory_limit_bytes": 2147483648,
+    "worker_threads": 1,
+    "time_limit_seconds": null,
+    "charged_seconds": 53.93355650000012,
+    "peak_job_committed_bytes": 1152688128,
+    "peak_process_committed_bytes": 1151913984,
+    "observed_process_ids": [
+      1332,
+      6692
+    ],
+    "max_concurrent_processes": 2,
+    "runner_sha256": "b7c1258089410b9a4498075dac66e267c11ffb50fe0a17b750ceb45fb1b35e91",
+    "lease": {
+      "path": "D:\\ai\\projects\\sera\\runs\\v3-batch-001\\active.lock",
+      "acquired": true,
+      "released": "RELEASED"
+    },
+    "source_sha256": {
+      "experiments/owner_language/corpus.py": "bb353d507562cb7bf18249b1f5314fc56131dba37da7203335b1989ad80cfb5c",
+      "experiments/owner_language/descendant.py": "604e5ee8865e60c649298bf63e4c15a7e48c7cb9c72f37eeff90268a126eb218",
+      "experiments/owner_language/isolation.py": "5c54abb5e721ee888f340767babab29cabb3ed5afc4a34a982b6a419c40c6e19",
+      "experiments/owner_language/labstore.py": "cd4e71eeae92f41668d3f75db5ab81a9df6bd8db8d39b99a287c647fa36bcf43",
+      "experiments/owner_language/owner.py": "1183f5dc08a10aff7e01854a2895ed5894a914374bcd770e22f238760fa7be8e",
+      "experiments/owner_language/tasks.py": "d768efac9f484bde3e1216eb8eca329a88d3354a2bccbac361dabc2cd500f42a",
+      "experiments/owner_language/training.py": "b483dc9c09fd01fd967392972037c62865dbead90a42cebea7f275cb6525c5ed",
+      "experiments/owner_language/__init__.py": "586a2da822fd10f49ccbc92216f9e2df2914223a764ad29889c0c1ba7901ffac",
+      "scripts/owner_language_baseline.py": "d0c31d9a5853e9db467f09801c5529f0c453e26604076f48e41591cbc61b9e3e",
+      "scripts/owner_language_corpus.py": "8ea54b2d0ed67cb0b0ff7f1ea026323d5b1469a02d34bcb188592de0306b6aae",
+      "scripts/owner_language_lineage.py": "78a5b2c21ca5e9386c9f2d64ed6b86379f6825a7608ac69485077673c42f236d",
+      "scripts/owner_language_publish.py": "9c8eb9a909894ef17a9800d10bd28dd02b92a9207c536d960060d645a4838afa",
+      "scripts/owner_language_tasks.py": "4717bf905e3b77b4a24fabed263f1dec470880ae90c341e3bf1beb92caa2bf3a",
+      "scripts/owner_language_train.py": "7c322f4bc5b0ff64639591f12590bbcfd2a95cb898ca46f62f692c937395c8d0",
+      "scripts/run_owner_supervised.py": "b7c1258089410b9a4498075dac66e267c11ffb50fe0a17b750ceb45fb1b35e91"
+    },
+    "windows_awake_requested": true,
+    "child_pid": 1332,
+    "verified_job_configuration": {
+      "configured_job_memory_limit_bytes": 2147483648,
+      "configured_limit_flags": 8704,
+      "limit_matches_policy": true,
+      "kill_on_job_close": true,
+      "job_memory_limit_active": true
+    },
+    "returncode": 0,
+    "finished_utc": "2026-09-19T19:38:46Z"
+  },
+  "retained_local_artefacts": {
+    "calibration.json": {
+      "sha256": "643b10df4ed01000d507b2ae11938adb7ca6d836e0aaf3194efe98beec0e5a42",
+      "bytes": 7111
+    },
+    "process.log": {
+      "sha256": "43dd550ec81e81f4504c256aeb5530e362f5089f90d32288e53849dda019a560",
+      "bytes": 2689
+    },
+    "state.json": {
+      "sha256": "1cb7578ed76138bbf5a55155cf36f42a7a572c17ea026d6090ca46756a7f21ed",
+      "bytes": 3036
+    }
+  },
+  "attempt": "runs/owner-learning-001/attempts/calibration-001"
+}

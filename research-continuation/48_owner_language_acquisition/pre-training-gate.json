@@ -1,0 +1,607 @@
+{
+  "schema": "sera.owner-language.pre-training-gate.1",
+  "written_utc": "2026-09-19T19:44:55Z",
+  "process": {
+    "schema": "sera.owner-language.process-identity.1",
+    "lab_root": "D:/ai/labs/sera-owner-001",
+    "executable": "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "executable_sha256": "2204195cec25879507d958a8b6949add67091244b8b4da9cf3672f993548fa49",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pid": 3328,
+    "sys_path_head": [
+      "D:\\ai\\labs\\sera-owner-001\\src",
+      "D:\\ai\\labs\\sera-owner-001",
+      "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip",
+      "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs"
+    ],
+    "modules": {
+      "sera": {
+        "file": "D:/ai/labs/sera-owner-001/src/sera/__init__.py",
+        "sha256": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2"
+      },
+      "experiments": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/__init__.py",
+        "sha256": "155d24647c0338dd74310ec4dcd1ba944455d23002a1e2e15de74caec5fbfd3c"
+      },
+      "scripts": {
+        "file": "D:/ai/labs/sera-owner-001/scripts",
+        "sha256": null
+      },
+      "workbench": {
+        "file": "D:/ai/labs/sera-owner-001/workbench/__init__.py",
+        "sha256": "3e3c008d62288d0050424de878828eab9eb10d4f277360adf4bcce708b74b7ee"
+      },
+      "experiments.owner_language.descendant": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/owner_language/descendant.py",
+        "sha256": "604e5ee8865e60c649298bf63e4c15a7e48c7cb9c72f37eeff90268a126eb218"
+      },
+      "experiments.owner_language.training": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/owner_language/training.py",
+        "sha256": "b483dc9c09fd01fd967392972037c62865dbead90a42cebea7f275cb6525c5ed"
+      }
+    },
+    "third_party": {
+      "numpy": {
+        "version": "2.5.3",
+        "file": "D:/ai/projects/sera/.venv/Lib/site-packages/numpy/__init__.py"
+      },
+      "torch": {
+        "version": "2.10.0+cpu",
+        "file": "D:/ai/projects/sera/.venv/Lib/site-packages/torch/__init__.py"
+      }
+    }
+  },
+  "supervised_token_present": true,
+  "checks": [
+    {
+      "name": "interrupted-and-uninterrupted-development-replay-agree",
+      "status": "PASS",
+      "seconds": 141.76183509999828,
+      "detail": {
+        "steps": 16,
+        "interruption_at": 8,
+        "identical_descendant": "d7a235d15896b0b579fea7580a7360f2b0646684ad4ee9b728f54a03e3738a3d",
+        "probe": {
+          "mean_nll": 6.448103358946651,
+          "predicted_tokens": 332,
+          "status": "MEASURED"
+        },
+        "process_ids": {
+          "uninterrupted": 14112,
+          "interrupted-first": 5432,
+          "interrupted-second": 9912
+        },
+        "cursors_match": true
+      }
+    },
+    {
+      "name": "explicit-baseline-and-descendant-restore",
+      "status": "PASS",
+      "seconds": 0.02645969999866793,
+      "detail": {
+        "store": "D:/ai/labs/sera-owner-001/runs/owner-learning-001/baseline",
+        "pointer": {
+          "revision": "000000-b29d8cccea6a.json",
+          "sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95"
+        },
+        "parent": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+        "descendant": "7a4f2a6a963c7160bf2e9728c85c0dd48a28a4c69c1a227b69fa14fc01e581e8",
+        "distinct": true,
+        "contract": {
+          "parent_owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+          "contracts": {
+            "experiments/intervention_model.py": "8d3821078fa293e57f2655a2ebc0a4bf5780af45e4f207dfbf7b2a1ebd2de6fd",
+            "experiments/intervention_assess.py": "cc9d9c0987ab018ecf997ebc7334f4365945f909e7ec69f4ba433cea5ab04999",
+            "experiments/intervention_events.py": "24291844995cb66605fc1d1b7266f73d14af841cd292d74ff5be18a8aa7e8cc7",
+            "research-continuation/47_intervention_understanding/PROTOCOL.md": "cccb9f154e9c4e4ee682cd238b1cc551d0fcb957663b1e10d535ca74aca843fe"
+          },
+          "schema": "sera.intervention-session.1",
+          "subjects": 144,
+          "baseline_owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+          "pointer": {
+            "revision": "000000-b29d8cccea6a.json",
+            "sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95"
+          }
+        }
+      }
+    },
+    {
+      "name": "ragged-batches-and-masked-loss",
+      "status": "PASS",
+      "seconds": 0.06062699999893084,
+      "detail": {
+        "lengths": [
+          10,
+          4,
+          9
+        ],
+        "counted_positions": 20,
+        "padded_batch_positions": 20,
+        "loss": 9.75516128540039,
+        "same_as_unpadded_within": 7.629394538355427e-07
+      }
+    },
+    {
+      "name": "evaluation-fails-closed",
+      "status": "PASS",
+      "seconds": 0.027933600000324077,
+      "detail": {
+        "empty_next_token": {
+          "family": "next_token",
+          "status": "UNAVAILABLE",
+          "reason": "no eligible held-out passages",
+          "counts": {
+            "rows": 0
+          },
+          "qualifies": false
+        },
+        "empty_cloze": {
+          "family": "cloze",
+          "status": "UNAVAILABLE",
+          "reason": "no eligible held-out questions",
+          "counts": {
+            "rows": 0
+          },
+          "qualifies": false
+        },
+        "failing_next_token": {
+          "family": "next_token",
+          "status": "UNAVAILABLE",
+          "reason": "every batch failed or contained no predicted token",
+          "counts": {
+            "rows": 4,
+            "failures": 1,
+            "examples": [
+              "RuntimeError: deliberate failure inside the measurement"
+            ]
+          },
+          "qualifies": false
+        },
+        "failing_cloze": {
+          "family": "cloze",
+          "status": "UNAVAILABLE",
+          "reason": "every batch failed",
+          "counts": {
+            "rows": 4,
+            "failures": 4,
+            "examples": [
+              "RuntimeError: deliberate failure inside the measurement",
+              "RuntimeError: deliberate failure inside the measurement",
+              "RuntimeError: deliberate failure inside the measurement"
+            ]
+          },
+          "qualifies": false
+        }
+      }
+    },
+    {
+      "name": "schedule-derived-and-validated",
+      "status": "PASS",
+      "seconds": 0.6334501000001183,
+      "detail": {
+        "cumulative": [
+          6,
+          12,
+          18,
+          24
+        ],
+        "rejected": {
+          "duplicate_stage": "Duplicate stage name mini-definitions",
+          "unknown_source": "Stage x declares sources with no training items: ['nonexistent']",
+          "wrong_cumulative": "Stage mini-definitions declares cumulative 999, derived 6",
+          "source_never_taught": "The ladder teaches ['webster'] but training sources are ['calculus', 'grammar', 'plato', 'webster']"
+        }
+      }
+    },
+    {
+      "name": "zero-progress-stream-detected",
+      "status": "PASS",
+      "seconds": 4.720000106317457e-05,
+      "detail": {
+        "raised": "No source in this stage produced a usable example; recorded as no progress"
+      }
+    },
+    {
+      "name": "every-declared-stage-runs-with-recorded-exposure",
+      "status": "PASS",
+      "seconds": 8.727338700000473,
+      "detail": {
+        "stages": [
+          {
+            "stage": "mini-definitions",
+            "status": "COMPLETE",
+            "steps": 6,
+            "exposure": {
+              "webster": {
+                "examples": 48,
+                "tokens": 1195,
+                "groups_seen_total": 48
+              }
+            }
+          },
+          {
+            "stage": "mini-grammar",
+            "status": "COMPLETE",
+            "steps": 6,
+            "exposure": {
+              "grammar": {
+                "examples": 24,
+                "tokens": 1536,
+                "groups_seen_total": 24
+              },
+              "webster": {
+                "examples": 24,
+                "tokens": 621,
+                "groups_seen_total": 72
+              }
+            }
+          },
+          {
+            "stage": "mini-dialogue",
+            "status": "COMPLETE",
+            "steps": 6,
+            "exposure": {
+              "plato": {
+                "examples": 16,
+                "tokens": 1019,
+                "groups_seen_total": 16
+              },
+              "grammar": {
+                "examples": 16,
+                "tokens": 1024,
+                "groups_seen_total": 40
+              },
+              "webster": {
+                "examples": 16,
+                "tokens": 325,
+                "groups_seen_total": 88
+              }
+            }
+          },
+          {
+            "stage": "mini-mathematics",
+            "status": "COMPLETE",
+            "steps": 6,
+            "exposure": {
+              "calculus": {
+                "examples": 12,
+                "tokens": 768,
+                "groups_seen_total": 12
+              },
+              "plato": {
+                "examples": 12,
+                "tokens": 768,
+                "groups_seen_total": 28
+              },
+              "grammar": {
+                "examples": 12,
+                "tokens": 768,
+                "groups_seen_total": 52
+              },
+              "webster": {
+                "examples": 12,
+                "tokens": 245,
+                "groups_seen_total": 100
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "checkpoint-carries-lineage-optimiser-rng-and-cursors",
+      "status": "PASS",
+      "seconds": 1.203852000000552,
+      "detail": {
+        "revision": 0,
+        "descendant": "83064d4c4b42098df81072d88373aaef7b56296c53923e8337a41ebd44c93641",
+        "parent": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+        "cursor_sources": [
+          "calculus",
+          "grammar",
+          "plato",
+          "webster"
+        ],
+        "payload_keys": [
+          "language_state",
+          "optimizer",
+          "rng"
+        ],
+        "weights_sha256": "82279a93f807f23d75e15c9f1b5c13b94519ca09fcc32d0e0ec604392e3529d7",
+        "rng_streams": [
+          "numpy",
+          "python",
+          "torch"
+        ]
+      }
+    },
+    {
+      "name": "retained-tasks-answer-through-the-modified-owner",
+      "status": "PASS",
+      "seconds": 14.176888699999836,
+      "detail": {
+        "declared": 33,
+        "answered": 33,
+        "failed": []
+      }
+    }
+  ],
+  "restore_seconds": 37.92588070000056,
+  "restore": {
+    "store": "D:/ai/labs/sera-owner-001/runs/owner-learning-001/baseline",
+    "pointer": {
+      "revision": "000000-b29d8cccea6a.json",
+      "sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95"
+    },
+    "owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+    "parent_owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+    "subjects": 144,
+    "owner_class": "InterventionR1",
+    "owner_mro": [
+      "InterventionR1",
+      "FieldR1",
+      "ChallengedR1",
+      "CounterfactualR1",
+      "CreditR1",
+      "SolutionR1",
+      "GapR1",
+      "ObservingR1",
+      "InvestigatingR1",
+      "GrowingR1",
+      "AcquiredR1",
+      "AutonomousR1",
+      "DiscoveryR1",
+      "ProgressR1",
+      "QuestR1",
+      "CompletionR1",
+      "GroundR1",
+      "BookR1",
+      "ReadingR1",
+      "ConceptStudyR1",
+      "StudyR1",
+      "StreamR1",
+      "ConstraintR1",
+      "InquiryR1",
+      "TaskR1",
+      "LanguageR1",
+      "LiveR1",
+      "InteractiveR1",
+      "GenerativeSharedR1",
+      "SharedR1",
+      "RecurrentWorldModel",
+      "Module"
+    ]
+  },
+  "parent_identity": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+  "descendant_identity_at_attach": "7a4f2a6a963c7160bf2e9728c85c0dd48a28a4c69c1a227b69fa14fc01e581e8",
+  "trainable": {
+    "trainable_tensors": 9,
+    "trainable_elements": 2663168,
+    "frozen_tensors": 1242,
+    "frozen_elements": 3069776,
+    "trainable": [
+      {
+        "name": "lex_embedding.weight",
+        "shape": [
+          8192,
+          64
+        ],
+        "elements": 524288
+      },
+      {
+        "name": "lex_projection.weight",
+        "shape": [
+          256,
+          64
+        ],
+        "elements": 16384
+      },
+      {
+        "name": "lex_projection.bias",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "lex_norm.weight",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "lex_norm.bias",
+        "shape": [
+          256
+        ],
+        "elements": 256
+      },
+      {
+        "name": "lex_head.weight",
+        "shape": [
+          8192,
+          256
+        ],
+        "elements": 2097152
+      },
+      {
+        "name": "lex_head.bias",
+        "shape": [
+          8192
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "adapter.0.weight",
+        "shape": [
+          32,
+          256
+        ],
+        "elements": 8192
+      },
+      {
+        "name": "adapter.2.weight",
+        "shape": [
+          256,
+          32
+        ],
+        "elements": 8192
+      }
+    ],
+    "connection": "residual adapter inside SharedR1.shared_step, shared by every recurrent route",
+    "protected_by_construction": [
+      "exact rational mathematics routes (solve_solution, what_if, apply_inquiry_rule)",
+      "fitted physical field weights (field_what_if, field_trajectory, field_plan)",
+      "fitted intervention coefficients (intervention_what_if, intervention_explain, intervention_plan)",
+      "every inherited neural tensor of the shared core"
+    ]
+  },
+  "passed": true,
+  "failed": [],
+  "supervisor_state": {
+    "schema": "sera.owner-learning.attempt.1",
+    "label": "pre-training-gate-002",
+    "status": "PASS",
+    "argv": [
+      "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-u",
+      "-m",
+      "scripts.owner_language_checks"
+    ],
+    "module": "scripts.owner_language_checks",
+    "output": "D:\\ai\\labs\\sera-owner-001\\runs\\owner-learning-001\\attempts\\pre-training-gate-002",
+    "started_utc": "2026-09-19T19:44:51Z",
+    "memory_limit_bytes": 2147483648,
+    "worker_threads": 1,
+    "time_limit_seconds": null,
+    "charged_seconds": 209.96088860000054,
+    "peak_job_committed_bytes": 1445793792,
+    "peak_process_committed_bytes": 1189924864,
+    "observed_process_ids": [
+      3328,
+      5432,
+      9728,
+      9912,
+      14112,
+      15004,
+      17132,
+      18456
+    ],
+    "max_concurrent_processes": 4,
+    "runner_sha256": "b7c1258089410b9a4498075dac66e267c11ffb50fe0a17b750ceb45fb1b35e91",
+    "lease": {
+      "path": "D:\\ai\\projects\\sera\\runs\\v3-batch-001\\active.lock",
+      "acquired": true,
+      "released": "RELEASED"
+    },
+    "source_sha256": {
+      "experiments/owner_language/corpus.py": "bb353d507562cb7bf18249b1f5314fc56131dba37da7203335b1989ad80cfb5c",
+      "experiments/owner_language/descendant.py": "604e5ee8865e60c649298bf63e4c15a7e48c7cb9c72f37eeff90268a126eb218",
+      "experiments/owner_language/isolation.py": "5c54abb5e721ee888f340767babab29cabb3ed5afc4a34a982b6a419c40c6e19",
+      "experiments/owner_language/labstore.py": "cd4e71eeae92f41668d3f75db5ab81a9df6bd8db8d39b99a287c647fa36bcf43",
+      "experiments/owner_language/owner.py": "1183f5dc08a10aff7e01854a2895ed5894a914374bcd770e22f238760fa7be8e",
+      "experiments/owner_language/tasks.py": "d768efac9f484bde3e1216eb8eca329a88d3354a2bccbac361dabc2cd500f42a",
+      "experiments/owner_language/training.py": "b483dc9c09fd01fd967392972037c62865dbead90a42cebea7f275cb6525c5ed",
+      "experiments/owner_language/usage.py": "1cbec0af4ed9c3156ec38bab67793c18129061a593adbd9d267229829895b2f1",
+      "experiments/owner_language/__init__.py": "586a2da822fd10f49ccbc92216f9e2df2914223a764ad29889c0c1ba7901ffac",
+      "scripts/owner_language_baseline.py": "d0c31d9a5853e9db467f09801c5529f0c453e26604076f48e41591cbc61b9e3e",
+      "scripts/owner_language_checks.py": "a67bd6e299b1e25bd08c43f993fd14b814e6bbe67b274b3ef27ce94e7f12021d",
+      "scripts/owner_language_corpus.py": "8ea54b2d0ed67cb0b0ff7f1ea026323d5b1469a02d34bcb188592de0306b6aae",
+      "scripts/owner_language_lineage.py": "78a5b2c21ca5e9386c9f2d64ed6b86379f6825a7608ac69485077673c42f236d",
+      "scripts/owner_language_publish.py": "9c8eb9a909894ef17a9800d10bd28dd02b92a9207c536d960060d645a4838afa",
+      "scripts/owner_language_tasks.py": "4717bf905e3b77b4a24fabed263f1dec470880ae90c341e3bf1beb92caa2bf3a",
+      "scripts/owner_language_train.py": "76206f42575ab13cafccaa58efa6ed8ad7a2ec66bac09d215b4d3818f74cd9f5",
+      "scripts/run_owner_supervised.py": "b7c1258089410b9a4498075dac66e267c11ffb50fe0a17b750ceb45fb1b35e91"
+    },
+    "windows_awake_requested": true,
+    "child_pid": 15004,
+    "verified_job_configuration": {
+      "configured_job_memory_limit_bytes": 2147483648,
+      "configured_limit_flags": 8704,
+      "limit_matches_policy": true,
+      "kill_on_job_close": true,
+      "job_memory_limit_active": true
+    },
+    "returncode": 0,
+    "finished_utc": "2026-09-19T19:48:21Z"
+  },
+  "retained_local_artefacts": {
+    "contract-store/current.json": {
+      "sha256": "b9ec2f1baf9e765806d9af5a932071ecf596e846f4ee6ccdc9bd3e37ccb50539",
+      "bytes": 110
+    },
+    "contract-store/revisions/000000.json": {
+      "sha256": "7fdca03ee984aec99b6dcfd80c51deb3d03a78dac191b7e87328f612ecc96401",
+      "bytes": 2967
+    },
+    "contract-store/revisions/000000.pt": {
+      "sha256": "82279a93f807f23d75e15c9f1b5c13b94519ca09fcc32d0e0ec604392e3529d7",
+      "bytes": 31981428
+    },
+    "gate-retention-cases.json": {
+      "sha256": "d36755f8d306adf30d8789b74ea62674eaf9ba46bbcf7090afde2ba044e8c5ca",
+      "bytes": 947271
+    },
+    "pre-training-gate.json": {
+      "sha256": "68ca44789de2f901b07ee6601aef3f93a3aea362bb49f482eacc4a56e76bcf0f",
+      "bytes": 14459
+    },
+    "process.log": {
+      "sha256": "b5d4f088f56b93b01ae199c15504b35be666d6c6689c5f71f97d3ac8721151f3",
+      "bytes": 1161
+    },
+    "replay-interrupted-first.json": {
+      "sha256": "8988f6b972e826b01a132c34714fd74dda0d3f40e1991fe451a5680d44adb030",
+      "bytes": 2589
+    },
+    "replay-interrupted-second.json": {
+      "sha256": "700e079e954f30abfb4deaa07013dd760c7fd0538bd0c27c58adcff38dc62315",
+      "bytes": 4180
+    },
+    "replay-store-split/current.json": {
+      "sha256": "67b292df42f676497f97793b67e0695bef0d796ae5e3ff82a993b8ba45483cd3",
+      "bytes": 110
+    },
+    "replay-store-split/revisions/000000.json": {
+      "sha256": "a29ebbece52645e50de7042f490aa8c855a8fc6b2cb9973c929a6b3f6db15f71",
+      "bytes": 4845
+    },
+    "replay-store-split/revisions/000000.pt": {
+      "sha256": "6fc91294caa52d3c2043fc440d20e080949130ac455b40bcc67c613fedd768c4",
+      "bytes": 31981492
+    },
+    "replay-store-split/revisions/000001.json": {
+      "sha256": "ba9407b46240355c160cc6610db004eaf6dba6f32c53b0c549b0300ea3d60812",
+      "bytes": 6883
+    },
+    "replay-store-split/revisions/000001.pt": {
+      "sha256": "14e507859392f186e9f2ccee699d14cf675856d1980945bdd879b83eab3edae7",
+      "bytes": 31981492
+    },
+    "replay-store-whole/current.json": {
+      "sha256": "b804fb2e97fd91350e504daf9c235b062f8e6f48017289c8a6bd2ca90b4891e2",
+      "bytes": 110
+    },
+    "replay-store-whole/revisions/000000.json": {
+      "sha256": "4eeb8335fb8af7e556f0bc4340211d4d052f94f994c05c205fcf374b6d635a7f",
+      "bytes": 6118
+    },
+    "replay-store-whole/revisions/000000.pt": {
+      "sha256": "728dd6fcf02d98f0d211e0a247ef8a2221833253a5a04b630eacbf086ecfe0ed",
+      "bytes": 31981428
+    },
+    "replay-uninterrupted.json": {
+      "sha256": "65befbf4b06403ee97b075bb493b9e23efafc9f5b3205ed1f3cfb8a4b3720b70",
+      "bytes": 4179
+    },
+    "state.json": {
+      "sha256": "789f95e6c39396bea0ec75b588b9454093021529b003015a048792e9c41b8b6d",
+      "bytes": 3293
+    }
+  },
+  "attempt": "runs/owner-learning-001/attempts/pre-training-gate-002"
+}

@@ -91,16 +91,61 @@ def publish_lineage(name="lineage-summary.json"):
     return out
 
 
+def publish_corpus(name="corpus-manifest.json"):
+    """The reproducibility manifest only: hashes, counts and splits, never the text."""
+    runs = LAB_ROOT / "runs/owner-learning-001/corpus"
+    manifest = json.loads((runs / "manifest.json").read_text())
+    evaluation = json.loads((runs / "evaluation/manifest.json").read_text())
+    for record in manifest["sources"].values():
+        record.pop("laboratory_path", None)
+    published = {"schema": "sera.owner-language.published-corpus.1",
+                 "published_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                 "note": "Raw book bytes and the cut items stay in the ignored runs directory; "
+                         "this manifest is what a reader needs to rebuild them exactly.",
+                 **{key: value for key, value in manifest.items() if key != "items_path"},
+                 "evaluation": {"vocabulary_digest": evaluation["vocabulary_digest"],
+                                "chance_accuracy": evaluation["chance_accuracy"],
+                                "sets": {split: {key: value[key] for key in
+                                                 ("sha256", "counts", "available", "skipped", "groups", "sources")}
+                                         for split, value in evaluation["sets"].items()}}}
+    STAGE.mkdir(parents=True, exist_ok=True)
+    out = STAGE / name
+    out.write_text(json.dumps(published, indent=2) + "\n", encoding="utf-8")
+    return out
+
+
+def publish_attempt(attempt, source_name, name):
+    """Copy one attempt record plus its supervisor state into the stage."""
+    attempt = Path(attempt).resolve()
+    record = json.loads((attempt / source_name).read_text())
+    record["supervisor_state"] = json.loads((attempt / "state.json").read_text())
+    record["retained_local_artefacts"] = retained(attempt)
+    record["attempt"] = attempt.relative_to(LAB_ROOT).as_posix()
+    STAGE.mkdir(parents=True, exist_ok=True)
+    out = STAGE / name
+    out.write_text(json.dumps(record, indent=2, default=str) + "\n", encoding="utf-8")
+    return out
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--baseline-attempt", type=Path)
     parser.add_argument("--lineage", action="store_true")
+    parser.add_argument("--corpus", action="store_true")
+    parser.add_argument("--gate-attempt", type=Path)
+    parser.add_argument("--calibration-attempt", type=Path)
     options = parser.parse_args()
     written = []
     if options.lineage:
         written.append(publish_lineage())
+    if options.corpus:
+        written.append(publish_corpus())
     if options.baseline_attempt:
         written.append(publish_baseline(options.baseline_attempt))
+    if options.calibration_attempt:
+        written.append(publish_attempt(options.calibration_attempt, "calibration.json", "calibration.json"))
+    if options.gate_attempt:
+        written.append(publish_attempt(options.gate_attempt, "pre-training-gate.json", "pre-training-gate.json"))
     print(json.dumps([p.relative_to(LAB_ROOT).as_posix() for p in written], indent=2))
 
 

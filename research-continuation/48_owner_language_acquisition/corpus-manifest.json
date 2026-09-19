@@ -1,0 +1,367 @@
+{
+  "schema": "sera.owner-language.corpus.1",
+  "published_utc": "2026-09-19T19:49:54Z",
+  "note": "Raw book bytes and the cut items stay in the ignored runs directory; this manifest is what a reader needs to rebuild them exactly.",
+  "built_utc": "2026-09-19T19:30:52Z",
+  "reference_root": "D:/ai/projects/sera",
+  "provenance": "D:/ai/projects/sera/runs/HB-corpus/acquisition.json",
+  "provenance_sha256": "78a897713e5f15e9b47669a2a6835f73228b5c2aefd5e8cc3afbbb3803565d11",
+  "sources": {
+    "webster": {
+      "sha256": "86fb9c28c32008ea288ca4bcf34f4f0d3d11ccf9e0898294d98b73671497f1d3",
+      "title": "Webster's Unabridged Dictionary",
+      "authors": "Various dictionary editors",
+      "url": "https://www.gutenberg.org/ebooks/29765",
+      "licence": "Project Gutenberg public domain in the USA; original notice retained in the raw bytes",
+      "structure": "dictionary",
+      "role": "train_dev_final",
+      "human_authored": true,
+      "reference_path": "runs/HB-corpus/raw/webster.txt",
+      "bytes": 28956350,
+      "verified_sha256": "86fb9c28c32008ea288ca4bcf34f4f0d3d11ccf9e0898294d98b73671497f1d3",
+      "quarantined": false,
+      "body_character_start": 863,
+      "body_character_end": 27937652,
+      "body_characters": 27936789
+    },
+    "grammar": {
+      "sha256": "21595f1f94403d10a6a0f4ec910f27ccc8aba95da89a730bc64029a70161a614",
+      "title": "An English Grammar",
+      "authors": "W. M. Baskervill and J. W. Sewell",
+      "url": "https://www.gutenberg.org/ebooks/14006",
+      "licence": "Project Gutenberg public domain in the USA; original notice retained in the raw bytes",
+      "structure": "prose",
+      "role": "train_dev_final",
+      "human_authored": true,
+      "reference_path": "runs/HB-corpus/raw/grammar.txt",
+      "bytes": 580812,
+      "verified_sha256": "21595f1f94403d10a6a0f4ec910f27ccc8aba95da89a730bc64029a70161a614",
+      "quarantined": false,
+      "body_character_start": 920,
+      "body_character_end": 545033,
+      "body_characters": 544113
+    },
+    "plato": {
+      "sha256": "917c1cb469e1a8eba6083808764d7131da8d79140b575b4214c9d02a73ec4528",
+      "title": "The Republic",
+      "authors": "Plato; Benjamin Jowett translation",
+      "url": "https://www.gutenberg.org/ebooks/1497",
+      "licence": "Project Gutenberg public domain in the USA; original notice retained in the raw bytes",
+      "structure": "prose",
+      "role": "train_dev_final",
+      "human_authored": true,
+      "reference_path": "runs/HB-corpus/raw/plato.txt",
+      "bytes": 1244164,
+      "verified_sha256": "917c1cb469e1a8eba6083808764d7131da8d79140b575b4214c9d02a73ec4528",
+      "quarantined": false,
+      "body_character_start": 846,
+      "body_character_end": 1195298,
+      "body_characters": 1194452
+    },
+    "calculus": {
+      "sha256": "fb6a9195621aeba3302d2359af4ff7cd74b285d9fb57c16431c21c0b85ed5776",
+      "title": "Calculus Made Easy",
+      "authors": "Silvanus P. Thompson",
+      "url": "https://www.gutenberg.org/files/33283/33283-t/33283-t.tex",
+      "licence": "Project Gutenberg public domain in the USA; original notice retained in the raw bytes",
+      "structure": "prose",
+      "role": "train_dev_final",
+      "human_authored": true,
+      "reference_path": "runs/HB-corpus/raw/calculus.txt",
+      "bytes": 404500,
+      "verified_sha256": "fb6a9195621aeba3302d2359af4ff7cd74b285d9fb57c16431c21c0b85ed5776",
+      "quarantined": false,
+      "body_character_start": 2128,
+      "body_character_end": 374101,
+      "body_characters": 371973
+    },
+    "descartes": {
+      "sha256": "7768ba8d3895be3d6f1492733ffab983d69875cc743edd23a1840e1530d02924",
+      "title": "Discourse on the Method",
+      "authors": "Rene Descartes; John Veitch translation",
+      "url": "https://www.gutenberg.org/ebooks/59",
+      "licence": "Project Gutenberg public domain in the USA; original notice retained in the raw bytes",
+      "structure": "prose",
+      "role": "transfer_only",
+      "human_authored": true,
+      "reference_path": "runs/HB-corpus/raw/descartes.txt",
+      "bytes": 150603,
+      "verified_sha256": "7768ba8d3895be3d6f1492733ffab983d69875cc743edd23a1840e1530d02924",
+      "quarantined": false,
+      "body_character_start": 1084,
+      "body_character_end": 129555,
+      "body_characters": 128471
+    },
+    "dailydialog": {
+      "sha256": "2de93416a95060057d8b95ef9e2ab9b17a317906f1e352414001a1887f081193",
+      "title": "DailyDialog",
+      "authors": "Yanran Li et al.; human-authored conversations",
+      "reason": "Recorded licence is research-only CC BY-NC-SA 4.0 with an archive README to check, and the shared source inventory marks it quarantined. Not exposed in this stage.",
+      "reference_path": "runs/HB-corpus/raw/dailydialog.zip",
+      "bytes": 4751210,
+      "verified_sha256": "2de93416a95060057d8b95ef9e2ab9b17a317906f1e352414001a1887f081193",
+      "quarantined": true
+    }
+  },
+  "quarantined": [
+    "dailydialog"
+  ],
+  "split_weights": {
+    "train": 8,
+    "dev": 1,
+    "final": 1
+  },
+  "split_rule": "sha256('OLA-48:<source>:<group>') modulo 10; 0-7 train, 8 dev, 9 final",
+  "transfer_rule": "sources with role transfer_only are withheld from every split",
+  "generated_text": "none; no paraphrase, translation or synthetic example is admitted",
+  "items": 73911,
+  "items_sha256": "395f2d0dbe050c83eb9bd03bc49343749490b2121a15aa65e21a1f5fa42ac1d6",
+  "vocabulary": {
+    "schema": "sera.owner-language.vocabulary.1",
+    "size": 8192,
+    "special": [
+      "<pad>",
+      "<unk>",
+      "<eos>",
+      "<def>",
+      "<is>"
+    ],
+    "pattern": "[a-z]+(?:['\\-][a-z]+)*|[0-9]+|[^\\sa-z0-9]",
+    "counted_items": 58977,
+    "distinct_observed": 97564,
+    "coverage": 0.885465,
+    "digest": "78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c"
+  },
+  "partitions": [
+    {
+      "source": "calculus",
+      "split": "dev",
+      "items": 30,
+      "tokens": 13422,
+      "groups": 30
+    },
+    {
+      "source": "calculus",
+      "split": "final",
+      "items": 33,
+      "tokens": 12550,
+      "groups": 33
+    },
+    {
+      "source": "calculus",
+      "split": "train",
+      "items": 252,
+      "tokens": 99394,
+      "groups": 252
+    },
+    {
+      "source": "descartes",
+      "split": "transfer",
+      "items": 17,
+      "tokens": 7274,
+      "groups": 17
+    },
+    {
+      "source": "grammar",
+      "split": "dev",
+      "items": 89,
+      "tokens": 11011,
+      "groups": 89
+    },
+    {
+      "source": "grammar",
+      "split": "final",
+      "items": 106,
+      "tokens": 14139,
+      "groups": 106
+    },
+    {
+      "source": "grammar",
+      "split": "train",
+      "items": 693,
+      "tokens": 86015,
+      "groups": 693
+    },
+    {
+      "source": "plato",
+      "split": "dev",
+      "items": 65,
+      "tokens": 15352,
+      "groups": 65
+    },
+    {
+      "source": "plato",
+      "split": "final",
+      "items": 66,
+      "tokens": 13592,
+      "groups": 66
+    },
+    {
+      "source": "plato",
+      "split": "train",
+      "items": 644,
+      "tokens": 135303,
+      "groups": 644
+    },
+    {
+      "source": "webster",
+      "split": "dev",
+      "items": 7200,
+      "tokens": 179974,
+      "groups": 6549
+    },
+    {
+      "source": "webster",
+      "split": "final",
+      "items": 7328,
+      "tokens": 184391,
+      "groups": 6683
+    },
+    {
+      "source": "webster",
+      "split": "train",
+      "items": 57388,
+      "tokens": 1428196,
+      "groups": 52450
+    }
+  ],
+  "evaluation": {
+    "vocabulary_digest": "78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c",
+    "chance_accuracy": 0.125,
+    "sets": {
+      "dev": {
+        "sha256": "169ad5f1f3f38458910ad7e586229b26bfc03167f72f171f67812ae89a4435d6",
+        "counts": {
+          "cloze": 1200,
+          "definition": 589,
+          "next_token": 600
+        },
+        "available": {
+          "cloze": 37168,
+          "definition": 589,
+          "next_token": 7245
+        },
+        "skipped": {
+          "cloze": {
+            "short_passage": 632,
+            "no_eligible_position": 350,
+            "no_distractors": 0
+          },
+          "definition": {
+            "headword_out_of_vocabulary": 6611,
+            "definition_too_short": 0,
+            "no_distractors": 0
+          }
+        },
+        "groups": {
+          "cloze": 1051,
+          "definition": 390,
+          "next_token": 595
+        },
+        "sources": {
+          "cloze": [
+            "calculus",
+            "grammar",
+            "plato",
+            "webster"
+          ],
+          "definition": [
+            "webster"
+          ],
+          "next_token": [
+            "calculus",
+            "grammar",
+            "plato",
+            "webster"
+          ]
+        }
+      },
+      "final": {
+        "sha256": "24dda419f7bdca3272438faf2e49f5140e44c7f2ae4a6a1cdd828f3d29238cb5",
+        "counts": {
+          "cloze": 1200,
+          "definition": 586,
+          "next_token": 600
+        },
+        "available": {
+          "cloze": 38733,
+          "definition": 586,
+          "next_token": 7390
+        },
+        "skipped": {
+          "cloze": {
+            "short_passage": 685,
+            "no_eligible_position": 320,
+            "no_distractors": 0
+          },
+          "definition": {
+            "headword_out_of_vocabulary": 6742,
+            "definition_too_short": 0,
+            "no_distractors": 0
+          }
+        },
+        "groups": {
+          "cloze": 1036,
+          "definition": 392,
+          "next_token": 596
+        },
+        "sources": {
+          "cloze": [
+            "calculus",
+            "grammar",
+            "plato",
+            "webster"
+          ],
+          "definition": [
+            "webster"
+          ],
+          "next_token": [
+            "calculus",
+            "grammar",
+            "plato",
+            "webster"
+          ]
+        }
+      },
+      "transfer": {
+        "sha256": "4a973b07e925825199ba64f62b4ec0a56b871f8573375fbbe3ad17bc9d3922c3",
+        "counts": {
+          "cloze": 204,
+          "definition": 0,
+          "next_token": 17
+        },
+        "available": {
+          "cloze": 204,
+          "definition": 0,
+          "next_token": 17
+        },
+        "skipped": {
+          "cloze": {
+            "short_passage": 0,
+            "no_eligible_position": 0,
+            "no_distractors": 0
+          },
+          "definition": {
+            "headword_out_of_vocabulary": 0,
+            "definition_too_short": 0,
+            "no_distractors": 0
+          }
+        },
+        "groups": {
+          "cloze": 17,
+          "definition": 0,
+          "next_token": 17
+        },
+        "sources": {
+          "cloze": [
+            "descartes"
+          ],
+          "definition": [],
+          "next_token": [
+            "descartes"
+          ]
+        }
+      }
+    }
+  }
+}

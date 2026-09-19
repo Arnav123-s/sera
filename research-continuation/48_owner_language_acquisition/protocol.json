@@ -1,0 +1,70 @@
+{
+  "schema": "sera.owner-language.protocol.1",
+  "id": "OLA-001",
+  "frozen_utc": "2026-09-19T19:52:00Z",
+  "document": "PROTOCOL.md",
+  "question": "Does routing learning from human text through the owner's own shared recurrent core, instead of through a readout on frozen features, produce a larger and more transferable language gain at equal exposure?",
+  "parent_owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+  "baseline_store": "runs/owner-learning-001/baseline",
+  "baseline_revision_sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95",
+  "corpus_manifest_sha256": "computed at run time from runs/owner-learning-001/corpus/manifest.json",
+  "vocabulary_digest": "78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c",
+  "evaluation_sets": {
+    "dev": "runs/owner-learning-001/corpus/evaluation/dev.json",
+    "final": "runs/owner-learning-001/corpus/evaluation/final.json",
+    "transfer": "runs/owner-learning-001/corpus/evaluation/transfer.json"
+  },
+  "final_split_rule": "Sealed. Opened once, after the schedule and every repair are frozen and after all development selection is complete. Never used to tune.",
+  "arms": [
+    {"name": "connected", "trainable": ["lex_*", "adapter.*"], "core": "inherited, frozen",
+     "role": "the proposal"},
+    {"name": "blocked", "trainable": ["lex_*"], "core": "inherited, frozen; adapter held at zero output",
+     "role": "blocked-update control and the Stage 30 frozen-feature contract"},
+    {"name": "disconnected", "trainable": ["lex_*", "adapter.*"], "core": "re-randomised, seed 48010",
+     "role": "control only; never saved as a descendant"}
+  ],
+  "no_update_parent": "the step-0 checkpoint of the connected arm, which reproduces the restored owner exactly",
+  "optimiser": {"algorithm": "Adam", "learning_rate": 0.001, "gradient_clip_norm": 1.0},
+  "batch": 8,
+  "sequence_length": 64,
+  "seed": 4801,
+  "adapter_rank": 32,
+  "embedding": 64,
+  "checkpoint_every": 500,
+  "report_every": 25,
+  "calibration": {
+    "attempt": "runs/owner-learning-001/attempts/calibration-001",
+    "median_seconds_per_step": 0.30425145,
+    "peak_committed_bytes": 1152688128,
+    "memory_limit_bytes": 2147483648
+  },
+  "stages": [
+    {"name": "definitions", "sources": ["webster"], "steps": 1500,
+     "objective": "next-token prediction over a human lexicographer's definitions"},
+    {"name": "grammar-and-sentences", "sources": ["grammar", "webster"], "steps": 1500,
+     "objective": "sentence structure and parts of speech, rehearsing definitions"},
+    {"name": "argument-and-dialogue", "sources": ["plato", "grammar", "webster"], "steps": 1500,
+     "objective": "extended human argument and dialogue, rehearsing earlier material"},
+    {"name": "mathematics-and-science", "sources": ["calculus", "plato", "grammar", "webster"], "steps": 1500,
+     "objective": "mathematical and scientific exposition, rehearsing everything earlier"}
+  ],
+  "total_steps": 6000,
+  "declared_exposure": {
+    "examples_per_step": 8,
+    "maximum_tokens_per_example": 64,
+    "maximum_tokens_total_per_arm": 3072000
+  },
+  "mixing": "explicit round-robin across the stage's declared sources, one example per source per turn",
+  "failure_rules": {
+    "no_progress": "three consecutive batches with no usable example ends the stage with a recorded NO_PROGRESS failure",
+    "unexposed_source": "a stage consuming zero examples from a declared source is recorded DECLARED_SOURCE_NOT_EXPOSED",
+    "unavailable_evaluation": "an evaluation that cannot run returns UNAVAILABLE with counts and a reason, never a score, and never qualifies or selects"
+  },
+  "acceptance": {
+    "connection_supported_if": "connected beats blocked on held-out dev mean next-token NLL at equal steps, and on descartes transfer",
+    "connection_rejected_if": "blocked matches or beats connected; this is reported as a rejection of the shared-core connection for language",
+    "protection_supported_if": "every exact-mathematics, field and intervention case of the declared 33-task retained suite returns an answer identical to the baseline record after teaching",
+    "protection_failed_if": "any such case differs"
+  },
+  "untouched_for_later_comparison": "the final split is opened once by this run; the transfer source and the 39 practical examples remain available unmodified, and no cohort is consumed beyond what this protocol declares"
+}
