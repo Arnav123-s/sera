@@ -1,8 +1,14 @@
 # The order OLA-001 is closed in, fixed before any held-out number is read
 
 Written 2026-09-19T21:20Z, while the `blocked` arm was at step 2,825 of 6,000
-and the `disconnected` arm had not started. No arm has been evaluated on any
-held-out split yet, so nothing below can have been arranged around a result.
+and the `disconnected` arm had not started.
+
+What was visible at that moment, stated exactly: the in-training development
+curves printed at stage boundaries — the `connected` arm's complete curve
+through step 6,000, and the `blocked` arm's curve through step 3,000. Those are
+`dev` only. What was **not** visible, and still is not: any `transfer`
+measurement for any arm, any `final` measurement for any arm, and any of the
+`evaluation-<arm>.json` records the decision rule actually reads.
 
 The point of writing it down is the sealed split. `protocol.json` says `final`
 is opened once, "after the schedule and every repair are frozen and after all
@@ -40,3 +46,17 @@ order is fixed here first.
   descendants OLA-001 produced and are not conflated with later teaching.
 - If a step fails, the failure is recorded and charged and the order does not
   change to route around it.
+
+## Correction, 2026-09-19T21:26Z
+
+As first committed this document said "No arm has been evaluated on any held-out
+split yet, so nothing below can have been arranged around a result." That was
+false. The training script evaluates on `dev` at every stage boundary and prints
+the result, so the `connected` arm's full development curve and the `blocked`
+arm's first three points were already in the run logs and already read.
+
+The opening paragraph now states what was visible instead. The order itself is
+unchanged: it follows from `protocol.json`, not from a comparison, and `final`
+has never been opened. But "nothing could have been arranged around a result"
+was a stronger claim than the facts support, and the fix is to say what was
+known rather than to leave the stronger sentence standing.
