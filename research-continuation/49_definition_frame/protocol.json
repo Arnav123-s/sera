@@ -1,0 +1,86 @@
+{
+  "schema": "sera.owner-language.protocol.1",
+  "id": "OLA-002",
+  "frozen_utc": "2026-09-19T20:40:00Z",
+  "document": "PROTOCOL.md",
+  "motivating_evidence": "research-continuation/48_owner_language_acquisition/DEFINITION-FAMILY-DIAGNOSIS.md",
+  "question": "Is OLA-001's chance-level definition result a fact about the learner or a fact about the harness, and if the frame is taught does the lexical knowledge already read turn out to be reachable?",
+  "frozen_before": "any weight moved and before the OLA-001 blocked and disconnected arms reported",
+  "parent_owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+  "starting_checkpoint": {
+    "run": "OLA-001",
+    "step": 6000,
+    "arm_selected_by": "the OLA-001 frozen decision rule, not by inspection: connected if it beats blocked on held-out dev mean next-token NLL at equal steps and on descartes transfer, otherwise blocked",
+    "rationale": "the question is whether knowledge already read becomes reachable once the frame is taught, so the comparison is on one set of parameters"
+  },
+  "reused_unchanged": {
+    "corpus_manifest": "runs/owner-learning-001/corpus/manifest.json",
+    "vocabulary_digest": "78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c",
+    "evaluation_sets": {
+      "dev": "runs/owner-learning-001/corpus/evaluation/dev.json",
+      "final": "runs/owner-learning-001/corpus/evaluation/final.json",
+      "transfer": "runs/owner-learning-001/corpus/evaluation/transfer.json"
+    },
+    "new_sources_acquired": 0
+  },
+  "change": {
+    "kind": "an additional training view of dictionary entries already in the training split",
+    "rendering": "<def> + definition words capped at 40 + <is> + headword + <eos>, built directly as ids from the frozen vocabulary",
+    "adds_words_to_vocabulary": false,
+    "eligible_entries": "split == train, single-word headword present in the frozen vocabulary, definition at least 6 words",
+    "never_framed": ["dev", "final", "transfer"],
+    "source_digest_changes": true,
+    "ola_001_remains_restorable_because": "each OLA-001 checkpoint carries its own language_config and restore_descendant reinstates it; the restore report states code_unchanged_since_training false rather than hiding it"
+  },
+  "arms": [
+    {"name": "framed", "view": "definition_frame", "role": "the proposal"},
+    {"name": "unframed", "view": "definition body alone, exactly as OLA-001",
+     "role": "format control; is any gain just more webster training?"}
+  ],
+  "optimiser": {"algorithm": "Adam", "learning_rate": 0.001, "gradient_clip_norm": 1.0},
+  "batch": 8,
+  "sequence_length": 64,
+  "seed": 4802,
+  "steps_per_arm": 1500,
+  "steps_rationale": "matched to one OLA-001 stage so the additional teaching is bounded and comparable to the original definitions stage",
+  "sources": ["webster"],
+  "preconditions": [
+    {"id": "frame-tokens-untrained",
+     "check": "the <def> and <is> rows of lex_embedding in the selected OLA-001 checkpoint are bit-identical to what LanguageAcquisitionR1.attach produces at the recorded seed",
+     "if_it_fails": "the diagnosis is wrong and this protocol is withdrawn, not adjusted"},
+    {"id": "no-evaluation-leakage",
+     "check": "no framed item's entry has split dev or final"},
+    {"id": "vocabulary-unmoved",
+     "check": "the vocabulary digest after adding the view equals 78cb571df98221c676f2168adb2616e35aded70ad0c1b5f02c3efd833dec443c"}
+  ],
+  "statistics": {
+    "dev_definition_questions": 589,
+    "candidates": 8,
+    "chance_accuracy": 0.125,
+    "accuracy_sd": 0.013627,
+    "difference_sd": 0.019272
+  },
+  "acceptance": {
+    "frame_supported_if": "framed dev definition accuracy exceeds 0.1659 (chance + 3 sd) and exceeds unframed by more than 0.0385 (2 sd of the difference)",
+    "frame_rejected_if": "framed does not exceed 0.1659; reported as a negative result about the architecture at this capacity, not about the harness",
+    "diagnosis_rejected_if": "unframed also exceeds 0.1659; the gain would then be extra webster exposure rather than the frame",
+    "retention_guard": "dev cloze must not fall by more than 0.02, dev mean next-token NLL must not rise by more than 2 percent against the starting checkpoint, and every case of the declared 33-task retained suite must still answer; a breach is a failed repair even if the definition number rises",
+    "generalisation_check": "descartes transfer cloze measured before and after and reported either way; it has never been trained on in any protocol"
+  },
+  "sealed_split": {
+    "final_opened_by_this_protocol": false,
+    "reason": "OLA-001 opens final exactly once; opening it again would make it a split that has been looked at twice",
+    "consequence_stated_honestly": "OLA-002's evidence is developmental - dev, never trained on but used for OLA-001's curve, and descartes transfer, never used for anything. Confirming OLA-002 on a genuinely sealed split needs a split that does not yet exist."
+  },
+  "isolation": {
+    "writes_to": "runs/owner-learning-001/descendants/OLA-002/<arm>",
+    "ola_001_checkpoints": "untouched and byte-identical"
+  },
+  "budget": {
+    "shared_lease": "D:/ai/projects/sera/runs/v3-batch-001/active.lock",
+    "worker_threads": 1,
+    "memory_limit_bytes": 2147483648,
+    "estimated_seconds_per_arm": 460,
+    "paid_compute": "none"
+  }
+}
