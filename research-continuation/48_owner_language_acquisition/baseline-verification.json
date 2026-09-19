@@ -1,0 +1,565 @@
+{
+  "schema": "sera.owner-language.published-baseline.1",
+  "published_utc": "2026-09-19T19:21:54Z",
+  "attempt": "runs/owner-learning-001/attempts/baseline-verification-002",
+  "supervisor_state": {
+    "schema": "sera.owner-learning.attempt.1",
+    "label": "baseline-verification-002",
+    "status": "PASS",
+    "argv": [
+      "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-u",
+      "-m",
+      "scripts.owner_language_baseline"
+    ],
+    "module": "scripts.owner_language_baseline",
+    "output": "D:\\ai\\labs\\sera-owner-001\\runs\\owner-learning-001\\attempts\\baseline-verification-002",
+    "started_utc": "2026-09-19T19:19:52Z",
+    "memory_limit_bytes": 2147483648,
+    "worker_threads": 1,
+    "time_limit_seconds": null,
+    "charged_seconds": 54.12351259999923,
+    "peak_job_committed_bytes": 853467136,
+    "peak_process_committed_bytes": 852688896,
+    "observed_process_ids": [
+      12208,
+      16368
+    ],
+    "max_concurrent_processes": 2,
+    "runner_sha256": "b7c1258089410b9a4498075dac66e267c11ffb50fe0a17b750ceb45fb1b35e91",
+    "lease": {
+      "path": "D:\\ai\\projects\\sera\\runs\\v3-batch-001\\active.lock",
+      "acquired": true,
+      "released": "RELEASED"
+    },
+    "windows_awake_requested": true,
+    "child_pid": 16368,
+    "verified_job_configuration": {
+      "configured_job_memory_limit_bytes": 2147483648,
+      "configured_limit_flags": 8704,
+      "limit_matches_policy": true,
+      "kill_on_job_close": true,
+      "job_memory_limit_active": true
+    },
+    "returncode": 0,
+    "finished_utc": "2026-09-19T19:20:46Z"
+  },
+  "process": {
+    "schema": "sera.owner-language.process-identity.1",
+    "lab_root": "D:/ai/labs/sera-owner-001",
+    "executable": "D:\\ai\\projects\\sera\\.venv\\Scripts\\python.exe",
+    "executable_sha256": "2204195cec25879507d958a8b6949add67091244b8b4da9cf3672f993548fa49",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pid": 12208,
+    "sys_path_head": [
+      "D:\\ai\\labs\\sera-owner-001\\src",
+      "D:\\ai\\labs\\sera-owner-001",
+      "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip",
+      "C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs"
+    ],
+    "modules": {
+      "sera": {
+        "file": "D:/ai/labs/sera-owner-001/src/sera/__init__.py",
+        "sha256": "af8fbcd5848518c7a607e8a363521479daee2e398c189cc9bcc40204701e3fa2"
+      },
+      "experiments": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/__init__.py",
+        "sha256": "155d24647c0338dd74310ec4dcd1ba944455d23002a1e2e15de74caec5fbfd3c"
+      },
+      "scripts": {
+        "file": "D:/ai/labs/sera-owner-001/scripts",
+        "sha256": null
+      },
+      "workbench": {
+        "file": "D:/ai/labs/sera-owner-001/workbench/__init__.py",
+        "sha256": "3e3c008d62288d0050424de878828eab9eb10d4f277360adf4bcce708b74b7ee"
+      },
+      "experiments.owner_language.owner": {
+        "file": "D:/ai/labs/sera-owner-001/experiments/owner_language/owner.py",
+        "sha256": "1183f5dc08a10aff7e01854a2895ed5894a914374bcd770e22f238760fa7be8e"
+      }
+    },
+    "third_party": {
+      "numpy": {
+        "version": "2.5.3",
+        "file": "D:/ai/projects/sera/.venv/Lib/site-packages/numpy/__init__.py"
+      },
+      "torch": {
+        "version": "2.10.0+cpu",
+        "file": "D:/ai/projects/sera/.venv/Lib/site-packages/torch/__init__.py"
+      }
+    }
+  },
+  "restore": {
+    "store": "D:/ai/labs/sera-owner-001/runs/owner-learning-001/baseline",
+    "pointer": {
+      "revision": "000000-b29d8cccea6a.json",
+      "sha256": "b29d8cccea6a7b8b9e0f0bbc28432d146a6388bca7716a828c446b3b42036d95"
+    },
+    "owner": "62ea82cff82b88d1eb3848f7246494979c63894d869db603007e3d06111063ec",
+    "parent_owner": "376b3d076294ac5b92f9360bb27553edbd96d1aa2b12ae22913b55c0b135fa94",
+    "subjects": 144,
+    "owner_class": "InterventionR1",
+    "owner_mro": [
+      "InterventionR1",
+      "FieldR1",
+      "ChallengedR1",
+      "CounterfactualR1",
+      "CreditR1",
+      "SolutionR1",
+      "GapR1",
+      "ObservingR1",
+      "InvestigatingR1",
+      "GrowingR1",
+      "AcquiredR1",
+      "AutonomousR1",
+      "DiscoveryR1",
+      "ProgressR1",
+      "QuestR1",
+      "CompletionR1",
+      "GroundR1",
+      "BookR1",
+      "ReadingR1",
+      "ConceptStudyR1",
+      "StudyR1",
+      "StreamR1",
+      "ConstraintR1",
+      "InquiryR1",
+      "TaskR1",
+      "LanguageR1",
+      "LiveR1",
+      "InteractiveR1",
+      "GenerativeSharedR1",
+      "SharedR1",
+      "RecurrentWorldModel",
+      "Module"
+    ]
+  },
+  "restore_seconds": 32.528524800000014,
+  "owner_inventory_summary": {
+    "tensors": 2439,
+    "parameters": 1242,
+    "buffers": 1197,
+    "parameter_elements": 3069776,
+    "buffer_elements": 10030,
+    "trainable_parameters": 461,
+    "identity_digest": "7457f3891349fd215d74900890b5911d4ea9739c5d5776d709476aab6457049d",
+    "intervention_models": 288,
+    "physical_fields": 144
+  },
+  "owner_config_digest": "1ea05e2c6522e213283fc856660a1aa5c3d3d613af70d803ffa97eb84c15f831",
+  "retention": {
+    "suite": "declared-retained-tasks",
+    "declared": 33,
+    "answered": 33,
+    "failed": 0,
+    "read_only": true,
+    "passed": true,
+    "case_file": "retention-cases.json",
+    "failed_ids": []
+  },
+  "practical_examples": {
+    "suite": "declared-practical-examples",
+    "declared": 39,
+    "answered": 39,
+    "failed": 0,
+    "read_only": true,
+    "passed": true,
+    "case_file": "practical-examples-cases.json",
+    "failed_ids": []
+  },
+  "retention_cases": [
+    {
+      "id": "new-direction",
+      "kind": "field_what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "imagine-motion",
+      "kind": "field_trajectory",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "choose-a-control",
+      "kind": "field_plan",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "why-this-model",
+      "kind": "field_explain",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "smaller-and-larger-mass",
+      "kind": "what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "changing-time",
+      "kind": "what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "discrete-accumulation",
+      "kind": "what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "choose-next",
+      "kind": "inquiry_next",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "motion_0",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "motion_1",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "motion_2",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "polynomials",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "self-identified-gap",
+      "kind": "gap_findings",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "imagined-alternatives",
+      "kind": "gap_predict",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "next-check",
+      "kind": "gap_next_observation",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "missing-influence",
+      "kind": "gap_consequences",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-mathematics",
+      "kind": "integral",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-language",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-physical-route",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "acceleration-from-position",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "changing-acceleration",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "curved-acceleration",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-integral",
+      "kind": "integral",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-sum",
+      "kind": "sum",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "english",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "spanish",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "french",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "german",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "measured-motion-model",
+      "kind": "observed_motion",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-en",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-es",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-fr",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-de",
+      "kind": "request",
+      "status": "ANSWERED"
+    }
+  ],
+  "practical_example_cases": [
+    {
+      "id": "return-to-original-question",
+      "kind": "intervention_what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "compare-actual-pulse-histories",
+      "kind": "intervention_plan",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "explain-which-mechanism-survived",
+      "kind": "intervention_explain",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "check-whether-the-pulse-worked",
+      "kind": "intervention_explain",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retain-passive-ambiguity",
+      "kind": "intervention_what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retain-unresolved-explanation",
+      "kind": "intervention_explain",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "new-direction",
+      "kind": "field_what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "imagine-motion",
+      "kind": "field_trajectory",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "choose-a-control",
+      "kind": "field_plan",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "why-this-model",
+      "kind": "field_explain",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "smaller-and-larger-mass",
+      "kind": "what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "changing-time",
+      "kind": "what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "discrete-accumulation",
+      "kind": "what_if",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "choose-next",
+      "kind": "inquiry_next",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "motion_0",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "motion_1",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "motion_2",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "polynomials",
+      "kind": "solve_solution",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "self-identified-gap",
+      "kind": "gap_findings",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "imagined-alternatives",
+      "kind": "gap_predict",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "next-check",
+      "kind": "gap_next_observation",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "missing-influence",
+      "kind": "gap_consequences",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-mathematics",
+      "kind": "integral",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-language",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-physical-route",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "acceleration-from-position",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "changing-acceleration",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "curved-acceleration",
+      "kind": "solve_discovery",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-integral",
+      "kind": "integral",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "retained-sum",
+      "kind": "sum",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "english",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "spanish",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "french",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "german",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "measured-motion-model",
+      "kind": "observed_motion",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-en",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-es",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-fr",
+      "kind": "request",
+      "status": "ANSWERED"
+    },
+    {
+      "id": "language-de",
+      "kind": "request",
+      "status": "ANSWERED"
+    }
+  ],
+  "passed": true,
+  "retained_local_artefacts": {
+    "baseline-verification.json": {
+      "sha256": "bfeec61ae3f7334a7b832df81529873913a055a5d0eee8669edd384fae0b7959",
+      "bytes": 284464
+    },
+    "owner-inventory.json": {
+      "sha256": "3a5c0e81661ab8f564f069ea55931da0548dc36edd92273a7ae761eb6034a54e",
+      "bytes": 704936
+    },
+    "practical-examples-cases.json": {
+      "sha256": "f2237b1260e26b8ed68ba81c11d016e308d01fb88f62c39336442d385147f858",
+      "bytes": 978960
+    },
+    "process.log": {
+      "sha256": "5b77d7bc08c67d9447d8e0c3bf43d596ba3e3067fa40f7f6fd3f0ab70ba1fdbc",
+      "bytes": 2248
+    },
+    "retention-cases.json": {
+      "sha256": "b12794e535db65e4598612e4ffe4296b62ff3bbce60b6a02054b295bc8aedfa9",
+      "bytes": 948447
+    },
+    "state.json": {
+      "sha256": "262dfcbe63a66652e7bf47e0ea47ba0e2ca661b48134720f9ef8b80da226d188",
+      "bytes": 2137
+    }
+  }
+}
